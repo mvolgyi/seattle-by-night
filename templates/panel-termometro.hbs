@@ -1,0 +1,87 @@
+<section class="tab sbn-panel-tab sbn-panel-termometro {{tab.cssClass}}" data-tab="termometro" data-group="primary">
+
+  <div class="sbn-tm-cabecera{{#if termometro.congelado}} sbn-congelado{{/if}}">
+    <div class="sbn-tm-numero">{{termometro.valor}}</div>
+    <div class="sbn-tm-escala">
+      {{#each termometro.escala as |s|}}
+        <span class="sbn-tm-seg{{#if s.on}} sbn-on{{/if}}{{#if s.umbral}} sbn-umbral{{/if}}">{{s.n}}</span>
+      {{/each}}
+    </div>
+    <div class="sbn-tm-controles">
+      <button type="button" data-action="termometro" data-delta="-1" {{#if termometro.bajar}}disabled{{/if}} data-tooltip-text="{{localize 'SBN.indicador.bajar'}}"><i class="fa-solid fa-minus"></i></button>
+      <button type="button" data-action="termometro" data-delta="1" {{#if termometro.subir}}disabled{{/if}} data-tooltip-text="{{localize 'SBN.indicador.subir'}}"><i class="fa-solid fa-plus"></i></button>
+      <input type="number" name="sbn-fijar" min="{{termometro.min}}" max="{{termometro.max}}" value="{{termometro.valor}}" aria-label="{{localize 'SBN.panel.termometro.fijar'}}">
+      <button type="button" data-action="fijar" {{#if termometro.congelado}}disabled{{/if}}><i class="fa-solid fa-equals"></i> {{localize "SBN.panel.termometro.fijar"}}</button>
+      <button type="button" data-action="congelar" class="sbn-btn-congelar{{#if termometro.congelado}} sbn-activo{{/if}}" aria-pressed="{{termometro.congelado}}">
+        <i class="fa-solid fa-snowflake"></i> {{#if termometro.congelado}}{{localize "SBN.panel.termometro.descongelar"}}{{else}}{{localize "SBN.panel.termometro.congelar"}}{{/if}}</button>
+    </div>
+    <input type="text" name="sbn-motivo" class="sbn-tm-motivo" value="{{termometro.motivo}}" placeholder="{{localize 'SBN.panel.termometro.motivoPlaceholder'}}">
+  </div>
+
+  <h3>{{localize "SBN.panel.termometro.umbrales"}}</h3>
+  <table class="sbn-tabla sbn-tm-umbrales">
+    <thead><tr><th></th><th>{{localize "SBN.panel.termometro.enLaCiudad"}}</th><th>{{localize "SBN.panel.termometro.perciben"}}</th></tr></thead>
+    <tbody>
+      {{#each termometro.umbrales as |u|}}
+        <tr class="{{#if u.alcanzado}}sbn-alcanzado{{/if}}{{#if u.actual}} sbn-actual{{/if}}">
+          <td class="sbn-tm-umbral-valor"><span class="sbn-icono">{{u.icono}}</span> {{u.valor}}</td>
+          <td><strong>{{u.texto}}</strong><br>{{u.ciudad}}
+            {{#if u.escenaHTML}}<div class="sbn-enlaces">{{{u.escenaHTML}}}</div>{{/if}}
+            {{#if u.pnjHTML}}<div class="sbn-enlaces">{{{u.pnjHTML}}}</div>{{/if}}</td>
+          <td class="sbn-tm-jugadores">«{{u.jugadores}}»</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <h3>{{localize "SBN.panel.termometro.rapidos"}}</h3>
+  {{#each termometro.grupos as |g|}}
+    <details class="sbn-tm-grupo" data-grupo="{{g.id}}" {{#if g.abierto}}open{{/if}}>
+      <summary>{{g.titulo}} <span class="sbn-cuenta">{{g.movimientos.length}}</span></summary>
+      <ul class="sbn-tm-movimientos">
+        {{#each g.movimientos as |m|}}
+          <li>
+            <button type="button" class="sbn-mov {{m.clase}}" data-action="movimiento" data-cambio="{{m.cambio}}" data-motivo="{{m.motivo}}" data-movimiento="{{m.id}}" {{#if m.deshabilitado}}disabled{{/if}}>{{m.cambio}}</button>
+            <span class="sbn-mov-texto">{{m.motivo}}
+              {{#if m.condicional}}<span class="sbn-etiqueta">{{localize "SBN.panel.termometro.condicional"}}</span>{{/if}}
+              {{#if m.topeTexto}}<span class="sbn-etiqueta">{{m.topeTexto}}</span>{{/if}}
+              {{#if m.escenaHTML}}<span class="sbn-enlaces">{{{m.escenaHTML}}}</span>{{/if}}
+            </span>
+          </li>
+        {{/each}}
+      </ul>
+    </details>
+  {{/each}}
+
+  <details class="sbn-tm-grupo">
+    <summary>{{localize "SBN.panel.termometro.evitar"}} <span class="sbn-cuenta">{{termometro.evitar.length}}</span></summary>
+    <ul class="sbn-lista">
+      {{#each termometro.evitar as |x|}}<li>{{x.motivo}} {{#if x.escenaHTML}}<span class="sbn-enlaces">{{{x.escenaHTML}}}</span>{{/if}}</li>{{/each}}
+    </ul>
+  </details>
+  <details class="sbn-tm-grupo">
+    <summary>{{localize "SBN.panel.termometro.condiciones"}} <span class="sbn-cuenta">{{termometro.condiciones.length}}</span></summary>
+    <ul class="sbn-lista">
+      {{#each termometro.condiciones as |x|}}<li><strong>{{x.valor}}:</strong> {{x.efecto}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <h3>{{localize "SBN.panel.termometro.historial"}} <span class="sbn-cuenta">{{termometro.registro.length}}</span></h3>
+  {{#if termometro.registro.length}}
+    <table class="sbn-tabla sbn-tm-historial">
+      <thead><tr><th>{{localize "SBN.panel.termometro.cuando"}}</th><th>{{localize "SBN.panel.termometro.cambio"}}</th><th>{{localize "SBN.panel.termometro.motivo"}}</th><th>{{localize "SBN.panel.termometro.quien"}}</th></tr></thead>
+      <tbody>
+        {{#each termometro.registro as |r|}}
+          <tr class="{{#if r.sube}}sbn-sube{{/if}}{{#if r.baja}}sbn-baja{{/if}}">
+            <td class="sbn-fecha">{{r.fechaCorta}}{{#if r.noche}} · {{localize "SBN.indicador.noche"}} {{r.noche}}{{/if}}</td>
+            <td class="sbn-tm-cambio"><strong>{{r.cambio}}</strong> <small>{{r.valorAntes}}→{{r.valorDespues}}</small></td>
+            <td>{{r.motivo}}</td>
+            <td>{{r.usuario}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <p class="sbn-vacio">{{localize "SBN.panel.termometro.historialVacio"}}</p>
+  {{/if}}
+</section>

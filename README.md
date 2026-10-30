@@ -11,7 +11,7 @@ Módulo de **Foundry VTT** para **Vampiro: La Mascarada 5ª edición** sobre el 
 | Foundry | v14 (verificado en 14.365) |
 | Idioma | español |
 | Mesa | coterie de 4–5 jugadores |
-| Estado | 0.0.1 — esqueleto; ver `SPEC.md` para el plan y las fases |
+| Estado | 0.4.0 — fases 0–2, 4 y 8 hechas (la crónica importable, el Panel del Narrador y FIRSTLIGHT jugable); arte (retratos, tokens y mapas) en curso. Plan y fases en `SPEC.md` |
 
 ## Estructura del repositorio
 

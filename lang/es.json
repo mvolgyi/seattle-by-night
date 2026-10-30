@@ -14,10 +14,16 @@
       "si": "Importar",
       "no": "Ahora no",
       "actualizarTitulo": "Seattle by Night: actualizar la crónica",
-      "actualizarPregunta": "La crónica de este mundo se importó con la versión {importada} del módulo y ahora tenés la {version}. ¿Actualizás journals, personajes y escenas? Lo que modificaste a mano en esos documentos se sobrescribe; el estado de la crónica (Termómetro, pistas, noche) no se toca.",
+      "actualizarPregunta": "La crónica de este mundo se importó con la versión {importada} del módulo y ahora tenés la {version}. ¿La actualizás?",
+      "actualizarSeActualiza": "Se actualiza:",
+      "actualizarQueSe": "el texto de los journals, las escenas (mapa, muros, luces), las macros y los actores de PNJ con su ficha, como vienen en esta versión.",
+      "actualizarSeConserva": "Se conserva:",
+      "actualizarQueNo": "quién ve y quién es dueño de cada documento; los handouts y páginas que ya revelaste; los PJ y todo actor que tenga un jugador como dueño (no se tocan: hambre, daño, PX y equipo quedan como están; sólo se crean los que falten); las páginas, ítems, tokens, dibujos y notas que agregaste a mano; la escena activa; y el estado de la crónica (Termómetro, pistas, noche).",
+      "actualizarAviso": "Lo que cambiaste a mano DENTRO de un documento del módulo (el texto de una página, la ficha de un PNJ, un muro) se pisa con la versión nueva.",
       "actualizarSi": "Actualizar",
       "sinAventura": "No encuentro la Aventura en el compendio «aventura» del módulo.",
-      "hecho": "Crónica importada: {creados} documentos nuevos, {actualizados} actualizados."
+      "hecho": "Crónica importada: {creados} documentos nuevos, {actualizados} actualizados.",
+      "conservados": "No se actualizaron {n} actor(es) con dueño jugador: {nombres}."
     },
     "termometro": {
       "nombre": "Termómetro",
@@ -39,38 +45,6 @@
         "escena": "Escena: {enlace}",
         "pnj": "Quién: {enlace}",
         "baja": "{icono} El Termómetro baja del umbral {valor}"
-      },
-      "umbrales": {
-        "3": {
-          "icono": "👁",
-          "texto": "Vigilancia pasiva sobre Helen.",
-          "ciudad": "Vigilancia pasiva sobre Helen: una furgoneta frente a su edificio, drones ocasionales.",
-          "jugadores": "Alguien mira a la periodista."
-        },
-        "5": {
-          "icono": "☎",
-          "texto": "Okafor contacta a Helen.",
-          "ciudad": "Okafor contacta a Helen. Le ofrece protección a cambio del archivo.",
-          "jugadores": "Alguien llama a la periodista."
-        },
-        "7": {
-          "icono": "🔍",
-          "texto": "Investigación activa de un activo de la coterie. Visita a la forense «R. A.».",
-          "ciudad": "Investigación activa sobre un activo de la coterie: la sociedad del hangar, la oficina forense, el calendario de Nadia.",
-          "jugadores": "Alguien tira del hilo de uno de los nuestros."
-        },
-        "9": {
-          "icono": "🚨",
-          "texto": "Redada (A4-E02).",
-          "ciudad": "Redada (A4-E02).",
-          "jugadores": "Llaman a la puerta."
-        },
-        "10": {
-          "icono": "🔥",
-          "texto": "Purga (FIN-D).",
-          "ciudad": "Purga: cae al menos un refugio de la Camarilla. La crónica sigue en modo supervivencia.",
-          "jugadores": "Ya no hay puerta."
-        }
       }
     },
     "pistas": {
@@ -83,23 +57,6 @@
         "obtenida": "Pista obtenida",
         "perdida": "Pista desmarcada",
         "cuenta": "La coterie tiene {n} de {total} pistas."
-      },
-      "nombres": {
-        "P-01": "Ladrones profesionales mortales; cámaras en bucle",
-        "P-02": "Vitae de ghoul en el picaporte",
-        "P-03": "La técnica de la Furia Controlada",
-        "P-04": "Copia parcial del Expediente en un USB",
-        "P-05": "Jun, la mensajera sangre débil",
-        "P-06": "Pedido de datos de Gale Sentinel sin registrar",
-        "P-07": "Halloway sabe lo del agua fría",
-        "P-08": "La guardia invertida",
-        "P-09": "Los diarios comprados en 1986",
-        "P-10": "Envíos SEA-0411 / DOC-07",
-        "P-11": "Firma de Gale",
-        "P-12": "El testimonio de Krell",
-        "P-13": "El libro de cuentas de Sal",
-        "P-14": "El pago desde Cascade Holdings",
-        "P-15": "Los folios del alemán"
       }
     },
     "reloj": {
@@ -113,48 +70,6 @@
       "chat": {
         "titulo": "Noche {n} · {dia}",
         "escena": "Escena: {enlace}"
-      },
-      "noches": {
-        "1": {
-          "dia": "jueves 12 nov.",
-          "fecha": "2026-11-12",
-          "evento": "El robo (Prólogo)."
-        },
-        "2": {
-          "dia": "viernes 13 nov.",
-          "fecha": "2026-11-13",
-          "evento": "Krell destruye a Pike en el muelle 46 (A1-E02). Gale descubre que el disco fue copiado. Primera entrega de ARQUERO."
-        },
-        "3": {
-          "dia": "sábado 14 nov.",
-          "fecha": "2026-11-14",
-          "evento": "Noche de Elíseo (A2-E01). Krell vigila el almacén de Sal."
-        },
-        "4": {
-          "dia": "domingo 15 nov.",
-          "fecha": "2026-11-15",
-          "evento": "Krell asalta el almacén del perista: destruye a su protector Corwin, mata a Sal y, si sigue sin protección, a Jun, que había ido a cobrar (A2-E02)."
-        },
-        "5": {
-          "dia": "lunes 16 nov.",
-          "fecha": "2026-11-16",
-          "evento": "Lonnie, aterrado, se cita a las 23:00 con nrthln_research para venderle la USB 3 (A2-E06). Si lo logra: Termómetro +2. Segunda entrega de ARQUERO (+1). Okafor contacta a Helen."
-        },
-        "6": {
-          "dia": "martes 17 nov.",
-          "fecha": "2026-11-17",
-          "evento": "Krell encuentra a Lonnie, si FIRSTLIGHT no lo tiene ya. Krell va a por una Piedra de toque de la coterie (A3-E01). El original pasa a la bóveda de Halloway."
-        },
-        "7": {
-          "dia": "miércoles 18 nov.",
-          "fecha": "2026-11-18",
-          "evento": "Halloway le entrega a Montgomery «pruebas» contra David (A3-E04)."
-        },
-        "8": {
-          "dia": "jueves 19 nov.",
-          "fecha": "2026-11-19",
-          "evento": "Consejo de Primogenitura (A4-E01). Si el Termómetro está en 9 o más, la redada (A4-E02)."
-        }
       }
     },
     "tirada": {
@@ -182,7 +97,113 @@
       "congelado": "Congelado: no sube ni baja.",
       "ultimo": "Último: {cambio} · {motivo}",
       "pistasTooltip": "Pistas obtenidas",
-      "motivo": "Ajuste del Narrador (indicador)"
+      "motivo": "Ajuste del Narrador (indicador)",
+      "abrirPanel": "Abrir el Panel del Narrador"
+    },
+    "pruebas": {
+      "invalida": "«{id}» no es una prueba ni una casilla de las tiradas clave (data/cronica.json)."
+    },
+    "votacion": {
+      "invalido": "Voto inválido: {pnj} → {voto}."
+    },
+    "panel": {
+      "titulo": "Panel del Narrador",
+      "control": "Panel del Narrador (Seattle by Night)",
+      "sinDatos": "No se cargó data/cronica.json: faltan umbrales, noches y pistas. Reinstalá el módulo o corré npm run contenido.",
+      "noImportado": "Ese documento no está en el mundo (¿importaste la crónica?)",
+      "celula": "Célula de FIRSTLIGHT: abrir la hoja",
+      "desesperacion": "Desesperación",
+      "peligro": "Peligro",
+      "tabs": {
+        "termometro": "Termómetro",
+        "reloj": "Reloj",
+        "pistas": "Pistas",
+        "tiradas": "Tiradas clave"
+      },
+      "termometro": {
+        "fijar": "Fijar",
+        "congelar": "Congelar",
+        "descongelar": "Descongelar",
+        "motivoPlaceholder": "Motivo (para ±, fijar y congelar)",
+        "motivoManual": "Ajuste del Narrador (panel)",
+        "umbrales": "Umbrales",
+        "enLaCiudad": "Qué pasa en la ciudad",
+        "perciben": "Lo que perciben los jugadores",
+        "rapidos": "Lo que lo mueve",
+        "grupoNoche": "Esta noche · Noche {n} ({dia})",
+        "grupoMapa": "En este mapa · {lugar}",
+        "grupoSiempre": "En cualquier escena",
+        "grupoResto": "El resto de la crónica",
+        "condicional": "si pasa",
+        "tope": "esta noche {veces}/{tope}",
+        "evitar": "Cómo evitar que suba",
+        "condiciones": "Qué cambia según el valor",
+        "historial": "Historial",
+        "historialVacio": "Todavía nada movió el Termómetro.",
+        "cuando": "Cuándo",
+        "cambio": "Cambio",
+        "motivo": "Motivo",
+        "quien": "Quién"
+      },
+      "reloj": {
+        "actual": "Noche {n} de {total}",
+        "esta": "esta noche",
+        "fijar": "Pasar a esta noche",
+        "horas": "Hora por hora",
+        "variantes": "Si la coterie interviene"
+      },
+      "pistas": {
+        "titulo": "Pistas",
+        "pista": "Pista",
+        "obtencion": "Dónde se obtiene",
+        "dados": "Dados",
+        "pruebas": "Pruebas y testigos (sin número de pista)",
+        "pruebasNota": "Lo que la coterie consiguió o lo que pasó en la mesa y suma (o resta) dados a las tiradas clave. Marcarlas no avisa a nadie."
+      },
+      "tiradas": {
+        "sinActores": "No hay personajes con los que tirar: importá la crónica o asigná personajes a los jugadores.",
+        "dificultad": "Dificultad {dif}",
+        "ruta": "Reserva",
+        "pistasQueSuman": "Pistas que puede enseñar (+{n} cada una)",
+        "mesa": "En la mesa",
+        "dados": "dados",
+        "tirar": "Tirar {n} dados",
+        "porPistas": "Pistas ({n})",
+        "flavor": "Reserva {base} {extra} = {total}",
+        "listaComprobacion": "Lista de comprobación del caso",
+        "aHalloway": "a Halloway",
+        "tirarHalloway": "Tirar por Halloway",
+        "sinHalloway": "Halloway (PNJ-03) no está en el mundo: importá la crónica.",
+        "tiradaHalloway": "A4-E01 · Halloway: {texto} ({n} dados)",
+        "hallowayMenos": "Halloway {n} dados (el Consejo se mudó a la Galería de Vidrio)",
+        "exitosCoterie": "Éxitos de la coterie",
+        "exitosHalloway": "Éxitos de Halloway",
+        "margen": "Margen:",
+        "margenes": "Márgenes",
+        "resultados": "Resultados"
+      },
+      "votacion": {
+        "titulo": "Votación de la regencia",
+        "primogenito": "Primogénito",
+        "defecto": "Por defecto",
+        "cambia": "Cambia si…",
+        "voto": "Voto",
+        "votos": {
+          "si": "Sí (regencia)",
+          "no": "No",
+          "abstencion": "Abstención",
+          "azar": "Imprevisible"
+        },
+        "azar": "Tirar 1 dado: par, sí; impar, no",
+        "tiradaAzar": "Voto de {nombre}: {voto}",
+        "cambiaria": "La coterie ya tiene con qué hacerle cambiar el voto.",
+        "cuenta": "Sí {si} · No {no} · Abstención {abstencion} · Sin decidir {azar}",
+        "veredicto": {
+          "aprobada": "Halloway tiene la regencia ({necesita} de {total})",
+          "pendiente": "Depende de los votos sin decidir",
+          "rechazada": "La regencia no pasa"
+        }
+      }
     }
   }
 }

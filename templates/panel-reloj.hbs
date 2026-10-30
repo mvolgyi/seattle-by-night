@@ -1,0 +1,42 @@
+<section class="tab sbn-panel-tab sbn-panel-reloj {{tab.cssClass}}" data-tab="reloj" data-group="primary">
+  <div class="sbn-reloj-controles">
+    <button type="button" data-action="noche" data-delta="-1" {{#if reloj.primera}}disabled{{/if}}><i class="fa-solid fa-backward-step"></i> {{localize "SBN.indicador.nocheAnterior"}}</button>
+    <span class="sbn-reloj-actual">{{localize "SBN.panel.reloj.actual" n=reloj.actual total=reloj.total}}</span>
+    <button type="button" data-action="noche" data-delta="1" {{#if reloj.ultima}}disabled{{/if}}>{{localize "SBN.indicador.nocheSiguiente"}} <i class="fa-solid fa-forward-step"></i></button>
+  </div>
+
+  <ol class="sbn-noches">
+    {{#each reloj.noches as |n|}}
+      <li class="sbn-noche{{#if n.actual}} sbn-actual{{/if}}{{#if n.pasada}} sbn-pasada{{/if}}" data-n="{{n.n}}">
+        <div class="sbn-noche-cabecera">
+          <span class="sbn-noche-n">{{n.n}}</span>
+          <span class="sbn-noche-fecha" data-tooltip-text="{{n.fechaLarga}}">{{n.dia}}</span>
+          {{#if n.actual}}<span class="sbn-etiqueta sbn-etiqueta-actual">{{localize "SBN.panel.reloj.esta"}}</span>
+          {{else}}<button type="button" class="sbn-noche-fijar" data-action="noche" data-n="{{n.n}}">{{localize "SBN.panel.reloj.fijar"}}</button>{{/if}}
+        </div>
+        <p class="sbn-noche-evento">{{n.evento}}</p>
+        <div class="sbn-enlaces">{{{n.escenaHTML}}}{{#each n.otrasHTML as |x|}} {{{x}}}{{/each}}</div>
+        {{#if n.movimientos.length}}
+          <ul class="sbn-noche-movs">
+            {{#each n.movimientos as |m|}}<li><strong>{{m.cambio}}</strong> {{m.motivo}}{{#if m.condicional}} <span class="sbn-etiqueta">{{localize "SBN.panel.termometro.condicional"}}</span>{{/if}}</li>{{/each}}
+          </ul>
+        {{/if}}
+        {{#if n.horas.length}}
+          <details class="sbn-noche-horas">
+            <summary>{{localize "SBN.panel.reloj.horas"}} <span class="sbn-cuenta">{{n.horas.length}}</span></summary>
+            <ul>{{#each n.horas as |h|}}<li><span class="sbn-hora">{{h.hora}}</span> {{h.evento}}</li>{{/each}}</ul>
+          </details>
+        {{/if}}
+      </li>
+    {{/each}}
+  </ol>
+
+  {{#if reloj.variantes.length}}
+    <details class="sbn-tm-grupo">
+      <summary>{{localize "SBN.panel.reloj.variantes"}} <span class="sbn-cuenta">{{reloj.variantes.length}}</span></summary>
+      <ul class="sbn-lista">
+        {{#each reloj.variantes as |v|}}<li><strong>{{v.si}}</strong> → {{v.entonces}} {{#if v.escenaHTML}}<span class="sbn-enlaces">{{{v.escenaHTML}}}</span>{{/if}}</li>{{/each}}
+      </ul>
+    </details>
+  {{/if}}
+</section>

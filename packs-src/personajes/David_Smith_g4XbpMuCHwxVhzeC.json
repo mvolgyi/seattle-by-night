@@ -3,7 +3,7 @@
   "_key": "!actors!g4XbpMuCHwxVhzeC",
   "name": "David Smith",
   "type": "vampire",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-01.webp",
   "folder": "DBVWeCZJkvu0ZpyU",
   "sort": 10,
   "prototypeToken": {
@@ -15,7 +15,7 @@
       "enabled": true
     },
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/seattle-by-night/assets/tokens/PJ-01.webp"
     }
   },
   "system": {
@@ -44,7 +44,7 @@
     "appearance": "<p>Mandíbula cuadrada y tensa, cicatriz del pómulo derecho al labio, pelo corto oscuro con canas en las sienes, ojos gris oscuro casi negros; chaqueta táctica negra sin insignias; huele a pólvora, óxido y sangre seca.</p>",
     "equipment": "<ul><li>Chaqueta táctica negra con insignias borradas</li><li>Navaja militar antigua (recuerdo mortal; la llevaba el día de su Abrazo)</li></ul>",
     "notes": "",
-    "privatenotes": "<h3>Provisional (doc 16)</h3><ul><li>David llegó a Seattle en los años 80.</li><li>David tiene LOR-01 a nivel 4.</li></ul>",
+    "privatenotes": "",
     "health": {
       "max": 8,
       "value": 8,
@@ -564,7 +564,7 @@
     },
     {
       "effects": [],
-      "sort": 200,
+      "sort": 100,
       "flags": {
         "seattle-by-night": {
           "origen": "actor",
@@ -576,7 +576,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p>Aumenta tu defensa y reacción frente a disparos y emboscadas.</p><p><em>Celeridad 2. Poder del manual básico de V5.</em></p>",
+        "description": "<p>Aumenta tu defensa y reacción frente a disparos y emboscadas.</p><p><em>Celeridad 1. Poder del manual básico de V5.</em></p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -584,7 +584,7 @@
           "book": "Seattle by Night",
           "page": "PJ-01"
         },
-        "level": 2,
+        "level": 1,
         "cost": 0,
         "dicepool": {},
         "discipline": "celerity",
@@ -595,19 +595,19 @@
     },
     {
       "effects": [],
-      "sort": 500,
+      "sort": 300,
       "flags": {
         "seattle-by-night": {
           "origen": "actor",
-          "poder": "Lightning Strike",
+          "poder": "Blink",
           "homebrew": false
         }
       },
-      "name": "Lightning Strike",
+      "name": "Blink · Parpadeo",
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Celeridad 5. Poder del manual básico de V5.</em></p>",
+        "description": "<p>Cruza de golpe una calle, un muelle o una nave entera, en línea recta, y llega con la guardia ya armada, como el soldado que entra por la brecha antes de que se disipe el humo.</p><p><em>Celeridad 3. Poder del manual básico de V5.</em></p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -615,14 +615,14 @@
           "book": "Seattle by Night",
           "page": "PJ-01"
         },
-        "level": 5,
+        "level": 3,
         "cost": 0,
         "dicepool": {},
         "discipline": "celerity",
         "selected": false
       },
-      "_id": "LYFu3OIgjJBs0yyn",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.LYFu3OIgjJBs0yyn"
+      "_id": "E5VCf0ai0wQzKW20",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.E5VCf0ai0wQzKW20"
     },
     {
       "effects": [],
@@ -657,7 +657,7 @@
     },
     {
       "effects": [],
-      "sort": 0,
+      "sort": 300,
       "flags": {
         "seattle-by-night": {
           "origen": "actor",
@@ -669,7 +669,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew.</em></p><p>El libro no lo describe.</p>",
+        "description": "<p><em>Homebrew.</em></p><p>Poder casero. Un arranque de velocidad de pocos pasos para cerrar la distancia cuerpo a cuerpo y golpear en la misma acción, antes de que el rival termine de reaccionar. Donde Parpadeo cruza una calle, Ímpetu Borroso cruza un brazo de distancia: es la entrada de la Furia Controlada.</p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -677,7 +677,7 @@
           "book": "Seattle by Night",
           "page": "PJ-01"
         },
-        "level": 0,
+        "level": 3,
         "cost": 0,
         "dicepool": {},
         "discipline": "celerity",
@@ -1128,8 +1128,8 @@
         "points": 4,
         "featuretype": "background"
       },
-      "_id": "4gxG3lzobowVAlu9",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.4gxG3lzobowVAlu9"
+      "_id": "mUsfZG2pnyvSXHA0",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.mUsfZG2pnyvSXHA0"
     },
     {
       "effects": [],
@@ -1160,8 +1160,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "bw57sDQqWovGJ0R5",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.bw57sDQqWovGJ0R5"
+      "_id": "ubtF48Vn36BjRGEp",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.ubtF48Vn36BjRGEp"
     },
     {
       "effects": [],
@@ -1192,8 +1192,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "m8Rk0eq0JfK0irh0",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.m8Rk0eq0JfK0irh0"
+      "_id": "DELiDySVtnZ0Adqq",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.DELiDySVtnZ0Adqq"
     },
     {
       "effects": [],
@@ -1224,8 +1224,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "rkTl4tE5i4Z3wH29",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.rkTl4tE5i4Z3wH29"
+      "_id": "NcHt1s2wXwTO18fm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.NcHt1s2wXwTO18fm"
     },
     {
       "effects": [],
@@ -1256,8 +1256,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "ppSLyGE4t6BeDJ4D",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.ppSLyGE4t6BeDJ4D"
+      "_id": "Fh5ozRakYVU63bPp",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.Fh5ozRakYVU63bPp"
     },
     {
       "effects": [],
@@ -1288,8 +1288,8 @@
         "points": 3,
         "featuretype": "merit"
       },
-      "_id": "0MdT5chIkl0qzrRy",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.0MdT5chIkl0qzrRy"
+      "_id": "sNh34NKSWeSOslTL",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.sNh34NKSWeSOslTL"
     },
     {
       "effects": [],
@@ -1320,8 +1320,8 @@
         "points": 2,
         "featuretype": "flaw"
       },
-      "_id": "aIUIPV8JRacpaVg4",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.aIUIPV8JRacpaVg4"
+      "_id": "dP8zYK8UhoILMsaf",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.dP8zYK8UhoILMsaf"
     },
     {
       "effects": [],
@@ -1352,8 +1352,8 @@
         "points": 2,
         "featuretype": "flaw"
       },
-      "_id": "hzuJi76HZD2nIrRG",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.hzuJi76HZD2nIrRG"
+      "_id": "EdZ8OKvjsNsbggI9",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.EdZ8OKvjsNsbggI9"
     },
     {
       "effects": [],
@@ -1384,8 +1384,8 @@
         "points": 1,
         "featuretype": "flaw"
       },
-      "_id": "9thaa5T5GTajvXAm",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.9thaa5T5GTajvXAm"
+      "_id": "DZjcEL5wL25K6kco",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.DZjcEL5wL25K6kco"
     },
     {
       "effects": [],
@@ -1416,8 +1416,8 @@
         "points": 2,
         "featuretype": "flaw"
       },
-      "_id": "4ZnCy0SaS7AmlU6t",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.4ZnCy0SaS7AmlU6t"
+      "_id": "dhPmK9f1KdoA2ZV4",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.dhPmK9f1KdoA2ZV4"
     },
     {
       "effects": [],
@@ -1448,8 +1448,8 @@
         "points": 1,
         "featuretype": "flaw"
       },
-      "_id": "UH27yb35hLsNa76p",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.UH27yb35hLsNa76p"
+      "_id": "4vqmOAsxCnjyP2eW",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.4vqmOAsxCnjyP2eW"
     },
     {
       "effects": [],
@@ -1480,8 +1480,8 @@
         "points": 0,
         "featuretype": "flaw"
       },
-      "_id": "YHkLaJlHA5gMfcPH",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.YHkLaJlHA5gMfcPH"
+      "_id": "S86ZKL0jUGhscbnd",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.S86ZKL0jUGhscbnd"
     },
     {
       "effects": [],
@@ -1512,8 +1512,8 @@
         "points": 0,
         "featuretype": "flaw"
       },
-      "_id": "vFTIjrOQgFqirDvn",
-      "_key": "!actors.items!g4XbpMuCHwxVhzeC.vFTIjrOQgFqirDvn"
+      "_id": "ymfIuXpOwBfU8or7",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.ymfIuXpOwBfU8or7"
     }
   ],
   "effects": [],

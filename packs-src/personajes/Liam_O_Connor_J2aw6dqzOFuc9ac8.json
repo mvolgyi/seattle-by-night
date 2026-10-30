@@ -3,7 +3,7 @@
   "_key": "!actors!J2aw6dqzOFuc9ac8",
   "name": "Liam O'Connor",
   "type": "vampire",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-17.webp",
   "folder": "aMxEpfQ4AWpWbYKv",
   "sort": 20,
   "prototypeToken": {
@@ -15,7 +15,7 @@
       "enabled": true
     },
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-17.webp"
     }
   },
   "system": {
@@ -40,11 +40,11 @@
       },
       "history": ""
     },
-    "biography": "<p>@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Perfil: Liam O'Connor}</p><blockquote><p><em>«Llevaba esta placa antes de que hubiera puerto. Me la quitaron con tres fotos.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>El Sheriff que fue</td></tr><tr><th>Concepto</th><td>Testigo e informante (A2-E04)</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Secta</th><td>independiente</td></tr><tr><th>Sire</th><td>Un Brujah sindicalista, destruido en 1934</td></tr><tr><th>Nacimiento</th><td>1868</td></tr><tr><th>Abrazo</th><td>1899</td></tr><tr><th>Ambición</th><td>Que conste la verdad sobre 1978.</td></tr></tbody></table><h3>Semblante</h3><p>Enorme y de hombros caídos, pelo rojo encanecido y barba corta, nariz rota y orejas de coliflor; camiseta interior, tirantes y gorra de lana.</p>",
-    "appearance": "<p>Enorme y de hombros caídos, pelo rojo encanecido y barba corta, nariz rota y orejas de coliflor; camiseta interior, tirantes y gorra de lana.</p>",
+    "biography": "<p>@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Perfil: Liam O'Connor}</p><blockquote><p><em>«Llevaba esta placa antes de que hubiera puerto. Me la quitaron con tres fotos.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>El Sheriff que fue</td></tr><tr><th>Concepto</th><td>Testigo e informante (A2-E04)</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Secta</th><td>independiente</td></tr><tr><th>Sire</th><td>Un Brujah sindicalista, destruido en 1934</td></tr><tr><th>Nacimiento</th><td>1868</td></tr><tr><th>Abrazo</th><td>1899</td></tr><tr><th>Ambición</th><td>Que conste la verdad sobre 1978.</td></tr></tbody></table><h3>Semblante</h3><p>Unos treinta y un años aparentes. Enorme y de hombros caídos, pelo rojo y barba corta, nariz rota y orejas de coliflor; camiseta interior, tirantes y gorra de lana.</p>",
+    "appearance": "<p>Unos treinta y un años aparentes. Enorme y de hombros caídos, pelo rojo y barba corta, nariz rota y orejas de coliflor; camiseta interior, tirantes y gorra de lana.</p>",
     "equipment": "<ul><li>DOC-08: la carta original, guardada en un sobre de plástico debajo del ring</li></ul>",
     "notes": "",
-    "privatenotes": "",
+    "privatenotes": "<p>Nota de edición: el doc 07 decía «aparenta unos cincuenta años» y «pelo rojo encanecido»; se decidió la edad al Abrazo (unos 31, pelo rojo sin canas).</p>",
     "health": {
       "max": 7,
       "value": 7,
@@ -529,8 +529,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "ROosipgNBcxfI3zk",
-      "_key": "!actors.items!J2aw6dqzOFuc9ac8.ROosipgNBcxfI3zk"
+      "_id": "ii9z5SArNA1DyZCp",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.ii9z5SArNA1DyZCp"
     },
     {
       "effects": [],
@@ -561,8 +561,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "qC6ikBEYFN3yEBTY",
-      "_key": "!actors.items!J2aw6dqzOFuc9ac8.qC6ikBEYFN3yEBTY"
+      "_id": "I42guBX3hvGfE2WD",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.I42guBX3hvGfE2WD"
     },
     {
       "effects": [],
@@ -593,8 +593,8 @@
         "points": 2,
         "featuretype": "background"
       },
-      "_id": "N30iPCc5UdQoWxGD",
-      "_key": "!actors.items!J2aw6dqzOFuc9ac8.N30iPCc5UdQoWxGD"
+      "_id": "DLGoFBXDICHX9U3Q",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.DLGoFBXDICHX9U3Q"
     },
     {
       "effects": [],
@@ -625,8 +625,8 @@
         "points": 2,
         "featuretype": "background"
       },
-      "_id": "M9g5RcenN2YHwqjI",
-      "_key": "!actors.items!J2aw6dqzOFuc9ac8.M9g5RcenN2YHwqjI"
+      "_id": "qdow4VcKle1q3Cyt",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.qdow4VcKle1q3Cyt"
     },
     {
       "effects": [],
@@ -657,8 +657,8 @@
         "points": 2,
         "featuretype": "background"
       },
-      "_id": "Uk8B32j9YIk4CVmU",
-      "_key": "!actors.items!J2aw6dqzOFuc9ac8.Uk8B32j9YIk4CVmU"
+      "_id": "0goZdavec3iSlW3T",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.0goZdavec3iSlW3T"
     }
   ],
   "effects": [],

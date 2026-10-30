@@ -1,0 +1,954 @@
+{
+  "_id": "bD0nEA1FjbvkG5Vt",
+  "_key": "!scenes!bD0nEA1FjbvkG5Vt",
+  "name": "Parte 4 · Torre Halloway, el ático (piso 42)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 60,
+  "width": 2100,
+  "height": 1300,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.7,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "nzOgD40Pw9atcm1z",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/torre-atico.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!bD0nEA1FjbvkG5Vt.nzOgD40Pw9atcm1z"
+    }
+  ],
+  "journal": "L6Fl1S0tjkWno2we",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "eAhv8bofuAjf9uCx",
+      "c": [
+        100,
+        100,
+        1300,
+        100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.eAhv8bofuAjf9uCx"
+    },
+    {
+      "_id": "gdKBhGHBTVs0kpxx",
+      "c": [
+        100,
+        1200,
+        2000,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.gdKBhGHBTVs0kpxx"
+    },
+    {
+      "_id": "dWakxHQnUZu62pr3",
+      "c": [
+        1300,
+        100,
+        1300,
+        180
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.dWakxHQnUZu62pr3"
+    },
+    {
+      "_id": "52VlPsbXUu5jZWGZ",
+      "c": [
+        1300,
+        280,
+        1300,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.52VlPsbXUu5jZWGZ"
+    },
+    {
+      "_id": "Vbaw8uA0coqkBpTy",
+      "c": [
+        1300,
+        660,
+        1300,
+        850
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.Vbaw8uA0coqkBpTy"
+    },
+    {
+      "_id": "qLj4RZiL67FxXARp",
+      "c": [
+        1300,
+        1050,
+        1300,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.qLj4RZiL67FxXARp"
+    },
+    {
+      "_id": "RFnxYQKpnukSDlyh",
+      "c": [
+        1300,
+        500,
+        2000,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.RFnxYQKpnukSDlyh"
+    },
+    {
+      "_id": "07KvDWRGNnjPVkjz",
+      "c": [
+        2000,
+        500,
+        2000,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.07KvDWRGNnjPVkjz"
+    },
+    {
+      "_id": "8xhmQ9kBpXO1OrmC",
+      "c": [
+        1300,
+        700,
+        2000,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.8xhmQ9kBpXO1OrmC"
+    },
+    {
+      "_id": "yN1jAo9mymaKXpqq",
+      "c": [
+        1500,
+        500,
+        1500,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.yN1jAo9mymaKXpqq"
+    },
+    {
+      "_id": "N2n0z7pfwzZbr4M2",
+      "c": [
+        1700,
+        700,
+        1700,
+        760
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.N2n0z7pfwzZbr4M2"
+    },
+    {
+      "_id": "7N4ldpL4MUJ6NT25",
+      "c": [
+        1700,
+        860,
+        1700,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.7N4ldpL4MUJ6NT25"
+    },
+    {
+      "_id": "vUzRX6gM1EqDLcaC",
+      "c": [
+        100,
+        100,
+        100,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.vUzRX6gM1EqDLcaC"
+    },
+    {
+      "_id": "hPqzge0il97wUmXy",
+      "c": [
+        1300,
+        100,
+        2000,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.hPqzge0il97wUmXy"
+    },
+    {
+      "_id": "FtRARNoTn8RiGbj4",
+      "c": [
+        2000,
+        100,
+        2000,
+        500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.FtRARNoTn8RiGbj4"
+    },
+    {
+      "_id": "tyw3wApfQfEgxNgT",
+      "c": [
+        1300,
+        180,
+        1300,
+        280
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.tyw3wApfQfEgxNgT"
+    },
+    {
+      "_id": "Axs3H8vyjtnLWhRA",
+      "c": [
+        1300,
+        540,
+        1300,
+        660
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.Axs3H8vyjtnLWhRA"
+    },
+    {
+      "_id": "SUbf1ybrYDuqLpJi",
+      "c": [
+        1300,
+        850,
+        1300,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.SUbf1ybrYDuqLpJi"
+    },
+    {
+      "_id": "uCnsWzPRJ5XNRwfF",
+      "c": [
+        1300,
+        950,
+        1300,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.uCnsWzPRJ5XNRwfF"
+    },
+    {
+      "_id": "4ISBwcgQJlpDoTNE",
+      "c": [
+        1700,
+        760,
+        1700,
+        860
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!bD0nEA1FjbvkG5Vt.4ISBwcgQJlpDoTNE"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "t01i2dHjV6F7xKg4",
+      "name": "Colgante sobre la mesa (oeste)",
+      "x": 520,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!bD0nEA1FjbvkG5Vt.t01i2dHjV6F7xKg4"
+    },
+    {
+      "_id": "zKxtxECkt5oErJdG",
+      "name": "Colgante sobre la mesa (este)",
+      "x": 820,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!bD0nEA1FjbvkG5Vt.zKxtxECkt5oErJdG"
+    },
+    {
+      "_id": "tRxmqVCVRt8ztdCS",
+      "name": "Lámpara del escritorio de Halloway",
+      "x": 1830,
+      "y": 170,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!bD0nEA1FjbvkG5Vt.tRxmqVCVRt8ztdCS"
+    },
+    {
+      "_id": "tBPprGXRUKqYQxma",
+      "name": "Luz de la cabina del ascensor",
+      "x": 1400,
+      "y": 600,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!bD0nEA1FjbvkG5Vt.tBPprGXRUKqYQxma"
+    },
+    {
+      "_id": "ySqIlRkM8oGuD0B5",
+      "name": "Plafón del vestíbulo",
+      "x": 1500,
+      "y": 950,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!bD0nEA1FjbvkG5Vt.ySqIlRkM8oGuD0B5"
+    },
+    {
+      "_id": "afiuO09UuqFebsE6",
+      "name": "Fluorescente de la escalera de emergencia",
+      "x": 1780,
+      "y": 1050,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!bD0nEA1FjbvkG5Vt.afiuO09UuqFebsE6"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "FXrlaDujQAUzw1zW",
+      "name": "Ascensor privado (llega al ático)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1300,
+          "y": 500,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "torre-atico",
+          "region": "ascensor-llegada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!bD0nEA1FjbvkG5Vt.FXrlaDujQAUzw1zW"
+    },
+    {
+      "_id": "2OFPyNurD4mGuoGg",
+      "name": "Ascensor privado: bajar a la bóveda (nivel −3)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1400,
+          "y": 500,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "1GqrUJBqoMZ2C0cn",
+          "name": "Ascensor privado: bajar a la bóveda (nivel −3)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.P4iUF3to7f4omTLX.Region.OqEOxe3ORbyksLTx"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!bD0nEA1FjbvkG5Vt.2OFPyNurD4mGuoGg.1GqrUJBqoMZ2C0cn"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "torre-atico",
+          "region": "ascensor-a-la-boveda",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!bD0nEA1FjbvkG5Vt.2OFPyNurD4mGuoGg"
+    },
+    {
+      "_id": "dRZVk7hJqMxHrmVT",
+      "name": "Llegada por la escalera de emergencia",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1860,
+          "y": 730,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "torre-atico",
+          "region": "escalera-llegada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!bD0nEA1FjbvkG5Vt.dRZVk7hJqMxHrmVT"
+    },
+    {
+      "_id": "Dz0DcJu9MOFpxJZe",
+      "name": "Bajar 42 pisos por la escalera de emergencia",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1860,
+          "y": 1070,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "torre-atico",
+          "region": "escalera-bajar",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la calle ni del piso 40: Resistencia + Atletismo Dif 3 y el Narrador mueve los tokens"
+        }
+      },
+      "_key": "!scenes.regions!bD0nEA1FjbvkG5Vt.Dz0DcJu9MOFpxJZe"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "mBrBsoY96cwmj2Wq",
+      "entryId": "L6Fl1S0tjkWno2we",
+      "pageId": null,
+      "x": 735,
+      "y": 760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-06",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "torre-atico",
+          "id": "LUG-06"
+        }
+      },
+      "_key": "!scenes.notes!bD0nEA1FjbvkG5Vt.mBrBsoY96cwmj2Wq"
+    },
+    {
+      "_id": "3pAl2ne2NqaK0B3o",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "snrsN5RkdAklRIDn",
+      "x": 735,
+      "y": 860,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "torre-atico",
+          "id": "A4-E01"
+        }
+      },
+      "_key": "!scenes.notes!bD0nEA1FjbvkG5Vt.3pAl2ne2NqaK0B3o"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "torre-atico",
+      "id": "LUG-06",
+      "plano": "torre-atico",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Consejo de Primogenitura (A4-E01, Noche 8, 22:30).</strong> «El ascensor privado sube cuarenta y dos pisos sin hacer ruido. Se abre a una sala enorme con una sola pared de cristal sobre Elliott Bay»: la cabina se abre directamente a la <strong>sala del Consejo</strong>, por su pared este. La pared oeste es entera de vidrio (la bahía, las grúas, los ferris, la isla del Sabueso: fuera del mapa). «En el centro hay una mesa larga de madera oscura con siete sillas»: la mesa corre de este a oeste, con la <strong>cabecera contra la pared de cristal</strong>; Halloway, de pie en la cabecera, de espaldas a la bahía y de cara al ascensor por el que entra el Príncipe. Seis sillas a los lados (Whitmore, Marchetti, Voight, Thornquist, Fry y el Sheriff). Delante de cada silla, una carpeta cerrada con un nombre (tiles sin texto; el contenido es AYU-08). Celeste (o su sustituto) y el señor Pell, de pie detrás de Halloway, entre la cabecera y el vidrio. La coterie, de pie. Los muebles de la sala «parecen no haber sido usados nunca».</p>\n<p><strong>El vestíbulo.</strong> Detrás de la doble puerta del este esperan la seguridad ghoul (MEN-04, del piso 40) y los perros de Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».</p>\n<p><strong>El despacho de Halloway</strong>, en la esquina noreste, con vidrio al norte y al este. Para <strong>negociar con Halloway antes del Consejo</strong>, en privado.</p>\n<p><strong>Salir (Escapar).</strong> O por el <strong>ascensor privado</strong>, que necesita la llave de Halloway o la de Pell (la puerta de la cabina está cerrada: la abre la llave), o por la <strong>escalera de emergencia</strong> del vestíbulo: cuarenta y dos pisos (Resistencia + Atletismo Dif 3 para no llegar abajo con el Hambre a 5); la región del pie del tramo marca la bajada, sin mapa del resto de la escalera.</p>\n<p><strong>El ascensor privado</strong> va de la calle al ático y del ático a la bóveda del nivel −3, y es el único acceso a la bóveda. En la cabina, la mitad de la puerta recibe y la mitad del fondo baja a la bóveda (plano «torre-boveda»). La parada de la calle no tiene mapa: el Narrador mueve los tokens a mano.</p>\n<p><strong>Si Halloway huye</strong> (exposición total o derrota): «Y se va hacia el ascensor», baja al nivel −3, saca el maletín de la bóveda y se lo da a Pell. <strong>Si gana</strong>, a las 00:30 sale Pell con el maletín por el mismo ascensor.</p>\n<p><strong>Combate:</strong> atacar a Halloway aquí, delante de la Primogenitura, da la votación por ganada a su favor. Halloway no pelea: Mirada aterradora y al ascensor.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×12, carpeta ×7, sofa, mesa.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar 42 pisos por la escalera de emergencia.</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 2.75,
+          "y": 6.2,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 4.6,
+          "y": 5.05,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 6.4,
+          "y": 5.05,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 8.2,
+          "y": 5.05,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 4.6,
+          "y": 7.35,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 6.4,
+          "y": 7.35,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 8.2,
+          "y": 7.35,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 3.7,
+          "y": 6.38,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 4.75,
+          "y": 5.9,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 6.55,
+          "y": 5.9,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 8.35,
+          "y": 5.9,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 4.75,
+          "y": 6.86,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 6.55,
+          "y": 6.86,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "carpeta",
+          "tile": "tile-carpeta-cerrada",
+          "x": 8.35,
+          "y": 6.86,
+          "w": 0.3,
+          "h": 0.24
+        },
+        {
+          "tipo": "sofa",
+          "tile": "tile-sofa-cuero",
+          "x": 9.4,
+          "y": 10.85,
+          "w": 2.2,
+          "h": 0.9
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-sillon",
+          "x": 8.4,
+          "y": 9.6,
+          "w": 0.75,
+          "h": 0.75
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-sillon",
+          "x": 11.9,
+          "y": 9.6,
+          "w": 0.75,
+          "h": 0.75
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-baja",
+          "x": 9.8,
+          "y": 9.65,
+          "w": 1.4,
+          "h": 0.7
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-despacho",
+          "x": 18.9,
+          "y": 2.55,
+          "w": 0.65,
+          "h": 0.65
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 16.6,
+          "y": 2,
+          "w": 0.6,
+          "h": 0.6
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-consejo",
+          "x": 16.6,
+          "y": 3,
+          "w": 0.6,
+          "h": 0.6
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

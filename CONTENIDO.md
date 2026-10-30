@@ -39,7 +39,12 @@ Texto de introducción.
 - `carpeta`: ruta de carpeta con `/`.
 - `orden`: entero para ordenar dentro de la carpeta (de 10 en 10).
 - `jugadores`: visibilidad por defecto (`si`/`no`). Una página puntual se marca con
-  `{jugadores}` o `{narrador}` al final del título.
+  `{jugadores}` o `{narrador}` al final del título. Con `no`, el journal entero queda
+  oculto y sus páginas `{jugadores}` sólo se ven si el Narrador lo comparte;
+  `jugadores: paginas` deja el journal visible con SÓLO sus páginas `{jugadores}`
+  (la introducción y el resto, para el Narrador).
+- Un `:::recuadro Nota de edición` en una página que ven los jugadores sale como
+  secreto (sólo lo ve el Narrador).
 - `origen`: número del doc.
 - `{#ID}` al final de un `## ` declara que esa página ES esa entidad (escena, lugar, pista…).
   Así los enlaces `@ID[...]` encuentran la página.

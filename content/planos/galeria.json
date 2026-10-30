@@ -1,0 +1,163 @@
+{
+  "_comentario": "LUG-03, la Galería de Vidrio (el Elíseo), Seattle Center. Dos planos en este archivo: la planta del pabellón (galeria) y el sótano con el archivo de la Guardiana (galeria-archivo), unidos por la escalera de servicio con regiones gemelas (una planta por mapa, MAPS_SPEC §4). Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba. El pabellón de 1962 es una caja de cristal y acero de 22 × 14 m: la terraza al norte (al fondo, con la torre de la Feria más allá), la gran sala de las medusas en el centro, el salón privado del Príncipe en la esquina noroeste con su pared norte de vidrio sobre la terraza (desde ahí se le leen los labios), el nicho del cuarteto escondido detrás de una mampara, el vestíbulo de vidrio al sur con la Guardiana y la bandeja en el umbral, y el bloque de servicio opaco al este (office del personal, pasillo, escalera al archivo). Las paredes del pabellón son curvas (`contorno` con arcos): la fachada norte se abomba hacia la terraza con las dos puertas de vidrio como tramos rectos del arco, los dos paños de la fachada sur a cada lado del vestíbulo se abomban hacia la plaza, la pared oeste de vidrio del salón privado es un mirador curvo y el nicho del cuarteto tiene la esquina sudoeste redonda (muro macizo). El umbral, el vestíbulo y el bloque de servicio siguen rectos. La terraza no tiene muros propios (`sinMuros`): la cierran sus barandas y el vidrio curvo. Las piezas de vidrio cuelgan del techo y NO se pintan: su luz de colores son luces de Foundry.",
+  "planos": [
+    {
+      "id": "galeria",
+      "lugar": "LUG-03",
+      "escenas": ["A2-E01", "A4-E01"],
+      "nombre": "Parte 2 · La Galería de Vidrio (Elíseo)",
+      "orden": 30,
+      "ancho": 24,
+      "alto": 17,
+      "paleta": "galeria",
+      "fondo": "acera",
+      "sujeto": "a 1962 glass-and-steel exhibition pavilion with curved glass walls in Seattle Center",
+      "oscuridad": 0.6,
+      "exterior": "a 1962 glass-and-steel exhibition pavilion in Seattle Center seen from directly above at night in November rain: all around it the wide rain-slick concrete paving of the Seattle Center plaza in large square slabs, with puddles; flat and continuous, with no extra walls, kerbs, lawns or structures",
+      "nota": "**Noche de Elíseo (A2-E01, Noche 3).** Se entra por la plaza, al sur, por las puertas de vidrio del **vestíbulo**. Ahí espera Solène Marchetti, la Guardiana (PNJ-14), en su mostrador con el libro de registro abierto (DOC-03), y en el **umbral** que separa el vestíbulo de la gran sala está la **bandeja de terciopelo** sobre su pedestal: «Sus teléfonos, por favor». La cuarta costumbre del Elíseo es literal: *«Ningún dispositivo conectado cruza el umbral»* (CIUDAD-LEYES); el umbral es el hueco de 2 m entre el vestíbulo y la sala, y los aparatos apagados se guardan en el casillero de la pared este del vestíbulo. *Para un solo jugador*, Bear se queda en el banco del vestíbulo con los teléfonos.\n\n**La gran sala de las medusas.** «Cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa.» Las piezas cuelgan a varios metros sobre las cabezas: no se pintan ni estorban el paso; sus charcos de color son las luces de Foundry de la sala (rojas y ámbar, con un temblor leve). En el suelo de terrazo sólo hay dos bancos bajos y tres pedestales con piezas sueltas. Con todas las paredes de cristal, desde casi cualquier punto se ve casi todo lo demás: *«las paredes de cristal hacen imposible saber quién escucha desde fuera»* (LUG-03).\n\n**El cuarteto que nadie ve.** «Suena un cuarteto de cuerdas que nadie ve»: los músicos tocan en el **nicho** del oeste, que se abre a la sala por un hueco tapado con una mampara de vidrio esmerilado (bloquea la vista, no el paso).\n\n**Quién está dónde (Leer la sala, Astucia + Etiqueta Dif 3).** Whitmore, «al fondo, junto a la terraza», junto a las puertas de vidrio del norte. Halloway se mueve por la sala como un anfitrión. Voight, sola, en la **terraza**, mirando el reloj: «prefiere la terraza porque desde ahí ve quién entra» (desde la terraza se ve, a través de la sala de cristal, todo el vestíbulo). Thornquist, en el rincón sudeste de la sala, junto al vidrio de la plaza, donde nadie se le acerca. Fry, donde quiera.\n\n**La terraza.** Losas de piedra, barandas al norte, oeste y este, sin luz propia: la torre de la Feria se ve al norte, fuera del mapa. *Escuchar sin ser vistos* (Astucia + Consciencia Dif 4): en la terraza, Halloway le dice a un Vástago menor «El Sheriff está viejo…». La terraza se comunica con la sala por dos puertas de vidrio.\n\n**El salón privado del Príncipe.** Esquina noroeste: se entra desde la gran sala por una puerta de madera; su pared norte es un paño de vidrio fijo sobre la terraza y la oeste, otro sobre la plaza. El vidrio no deja pasar el sonido, pero sí la vista: el sillón de Whitmore mira al norte, hacia la terraza y la torre, así que **desde la terraza se le ven los labios**. Es el detalle de LUG-03: con Astucia + Consciencia Dif 4 se nota que alguien con un teleobjetivo, desde la terraza, podría leer los labios del salón. Aquí se concede la audiencia privada con el Príncipe.\n\n**El personal** (ghouls, intocables por la tercera costumbre) sale del **office** del bloque de servicio, al este, con las copas que nadie bebe. Del pasillo de servicio sale una puerta a la plaza y la **escalera al archivo de la Guardiana**, en el sótano (plano «galeria-archivo»): bajando por la escalera, la región «Bajar al archivo» lleva al pie de la escalera del sótano. El apartamento de Marchetti (Refugio 2) está «sobre el archivo», en la planta alta del bloque de servicio: no tiene mapa.\n\n**Las paredes curvas** del pabellón de 1962: el vidrio norte se abomba hacia la terraza, los paños de la plaza a los lados del vestíbulo se abomban hacia afuera y el salón privado tiene un mirador de vidrio curvo al oeste. En Foundry cada curva son tramos rectos de vidrio; las dos puertas a la terraza son dos de esos tramos.\n\n**Si el Consejo de A4-E01 se traslada aquí** (el Príncipe recuperó la iniciativa; Halloway pierde 2 dados), se juega en la gran sala con una mesa larga traída por el personal (tile de la torre) o en el salón privado si son pocos.",
+      "habitaciones": [
+        { "nombre": "Terraza (vista a la torre de la Feria)", "x": 1, "y": 1, "w": 17, "h": 3, "piso": "piedra", "sinMuros": true },
+        { "nombre": "Salón privado del Príncipe", "x": 0.4, "y": 4, "w": 5.6, "h": 5, "piso": "parquet", "contorno": [[1, 4, "muro"], [6, 4, "muro"], [6, 9, "muro"], [1, 9, "vidrio"], [0.67, 8.2, "vidrio"], [0.47, 7.36, "vidrio"], [0.4, 6.5, "vidrio"], [0.47, 5.64, "vidrio"], [0.67, 4.8, "vidrio"]] },
+        { "nombre": "Nicho del cuarteto", "x": 1, "y": 9, "w": 5, "h": 3, "piso": "parquet", "limpio": true, "contorno": [[1, 9, "muro"], [6, 9, "muro"], [6, 12, "muro"], [4, 12, "muro"], { "arco": [4, 9, 3, 90, 180], "tramos": 9 }] },
+        { "nombre": "Gran sala de las medusas", "x": 6, "y": 3.1, "w": 12, "h": 9.5, "piso": "terrazo", "limpio": true, "contorno": [[6, 4, "vidrio"], [7, 3.72, "vidrio"], [8, 3.5, "puerta-vidrio"], [9.6, 3.24, "vidrio"], [10.8, 3.14, "vidrio"], [12, 3.1, "vidrio"], [13.2, 3.14, "vidrio"], [14, 3.2, "puerta-vidrio"], [15.6, 3.42, "vidrio"], [16.8, 3.67, "vidrio"], [18, 4, "muro"], [18, 12, "vidrio"], [17.56, 12.33, "vidrio"], [17.05, 12.53, "vidrio"], [16.5, 12.6, "vidrio"], [15.95, 12.53, "vidrio"], [15.44, 12.33, "vidrio"], [15, 12, "muro"], [9, 12, "vidrio"], [8.56, 12.33, "vidrio"], [8.05, 12.53, "vidrio"], [7.5, 12.6, "vidrio"], [6.95, 12.53, "vidrio"], [6.44, 12.33, "vidrio"], [6, 12, "muro"]] },
+        { "nombre": "Mampara de vidrio esmerilado (tapa el nicho)", "x": 6.8, "y": 9.7, "w": 0.15, "h": 1.6, "piso": "macizo" },
+        { "nombre": "Vestíbulo de la Guardiana", "x": 9, "y": 12, "w": 6, "h": 3, "piso": "terrazo", "limpio": true },
+        { "nombre": "Office del personal", "x": 18, "y": 4, "w": 5, "h": 4, "piso": "linoleo" },
+        { "nombre": "Pasillo de servicio", "x": 18, "y": 8, "w": 2, "h": 7, "piso": "linoleo" },
+        { "nombre": "Escalera al archivo", "x": 20, "y": 8, "w": 3, "h": 4, "piso": "hormigon" },
+        { "nombre": "Cuarto de máquinas (cerrado)", "x": 20, "y": 12, "w": 3, "h": 3, "piso": "macizo" }
+      ],
+      "vanos": [
+        { "x": 1, "y": 1, "w": 17, "eje": "h", "tipo": "baranda", "nombre": "Baranda norte de la terraza" },
+        { "x": 1, "y": 1, "w": 3, "eje": "v", "tipo": "baranda", "nombre": "Baranda oeste de la terraza" },
+        { "x": 18, "y": 1, "w": 3, "eje": "v", "tipo": "baranda", "nombre": "Baranda este de la terraza" },
+
+        { "x": 1, "y": 4, "w": 5, "eje": "h", "tipo": "vidrio", "nombre": "Pared de vidrio del salón privado sobre la terraza (se ven los labios, no se oye)" },
+        { "x": 6, "y": 7.6, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "woodHeavy", "nombre": "Puerta del salón privado del Príncipe" },
+        { "x": 6, "y": 9.9, "w": 1.2, "eje": "v", "tipo": "abierto", "nombre": "Hueco del nicho del cuarteto (tapado por la mampara)" },
+
+        { "x": 18, "y": 5.2, "w": 1, "eje": "v", "tipo": "puerta", "nombre": "Puerta del office del personal" },
+        { "x": 18, "y": 9.2, "w": 1, "eje": "v", "tipo": "puerta", "nombre": "Puerta del pasillo de servicio" },
+
+        { "x": 9, "y": 12, "w": 2, "eje": "h", "tipo": "vidrio", "nombre": "Vidrio entre el vestíbulo y la sala" },
+        { "x": 11, "y": 12, "w": 2, "eje": "h", "tipo": "abierto", "nombre": "El umbral: ningún dispositivo conectado lo cruza" },
+        { "x": 13, "y": 12, "w": 2, "eje": "h", "tipo": "vidrio", "nombre": "Vidrio entre el vestíbulo y la sala" },
+
+        { "x": 9, "y": 12, "w": 3, "eje": "v", "tipo": "vidrio", "nombre": "Vidrio oeste del vestíbulo" },
+        { "x": 15, "y": 12, "w": 3, "eje": "v", "tipo": "vidrio", "nombre": "Vidrio este del vestíbulo" },
+        { "x": 9, "y": 15, "w": 1.6, "eje": "h", "tipo": "vidrio", "nombre": "Fachada del vestíbulo" },
+        { "x": 10.6, "y": 15, "w": 1.4, "eje": "h", "tipo": "puerta-vidrio", "nombre": "Puerta de entrada (hoja oeste)" },
+        { "x": 12, "y": 15, "w": 1.4, "eje": "h", "tipo": "puerta-vidrio", "nombre": "Puerta de entrada (hoja este)" },
+        { "x": 13.4, "y": 15, "w": 1.6, "eje": "h", "tipo": "vidrio", "nombre": "Fachada del vestíbulo" },
+
+        { "x": 18.5, "y": 8, "w": 0.9, "eje": "h", "tipo": "puerta", "nombre": "Office → pasillo de servicio" },
+        { "x": 20, "y": 8.6, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "cerrada", "nombre": "Puerta de la escalera al archivo (llave de la Guardiana)" },
+        { "x": 18.6, "y": 15, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Puerta de servicio a la plaza" }
+      ],
+      "muebles": [
+        { "tipo": "mostrador", "x": 9.3, "y": 12.9, "w": 0.7, "h": 1.6, "frente": "e", "desc": "a slender 1960s reception desk of dark walnut with a large open ledger book and a fountain pen on it, no legible writing" },
+        { "tipo": "pedestal", "fijo": true, "x": 10.45, "y": 12.2, "w": 0.4, "h": 0.4, "material": "oscuro", "desc": "a slender dark pedestal beside the inner doorway" },
+        { "tipo": "bandeja", "fijo": false, "x": 10.4, "y": 12.25, "w": 0.5, "h": 0.32, "tile": "tile-bandeja-terciopelo", "desc": "la bandeja de terciopelo para los teléfonos, en el umbral" },
+        { "tipo": "estante", "x": 14.6, "y": 12.3, "w": 0.3, "h": 1.4, "desc": "a wall cabinet of small velvet-lined pigeonholes for switched-off phones" },
+        { "tipo": "banco", "fijo": true, "x": 14.4, "y": 13.85, "w": 0.45, "h": 1.0, "material": "tapizado", "desc": "a low upholstered bench" },
+
+        { "tipo": "banco", "fijo": true, "x": 9.4, "y": 7.75, "w": 2.0, "h": 0.5, "desc": "a long low modernist bench of teak and steel" },
+        { "tipo": "banco", "fijo": true, "x": 13.6, "y": 7.75, "w": 2.0, "h": 0.5, "desc": "a long low modernist bench of teak and steel" },
+        { "tipo": "pedestal", "fijo": true, "x": 8.0, "y": 5.6, "w": 0.8, "h": 0.8, "desc": "a square white plinth with a blown-glass sculpture on it" },
+        { "tipo": "pedestal", "fijo": true, "x": 16.0, "y": 5.6, "w": 0.8, "h": 0.8, "desc": "a square white plinth with a blown-glass sculpture on it" },
+        { "tipo": "pedestal", "fijo": true, "x": 8.6, "y": 10.1, "w": 0.8, "h": 0.8, "desc": "a square white plinth with a blown-glass sculpture on it" },
+
+        { "tipo": "estante", "x": 2.0, "y": 8.5, "w": 2.6, "h": 0.4, "desc": "a low walnut sideboard with crystal decanters" },
+        { "tipo": "silla", "x": 3.0, "y": 7.0, "w": 0.8, "h": 0.8, "tile": "tile-sillon-principe", "hacia": "n", "desc": "el sillón del Príncipe, de cara a la terraza" },
+        { "tipo": "mesa", "x": 2.8, "y": 5.9, "w": 1.2, "h": 0.7, "tile": "tile-mesa-baja" },
+        { "tipo": "silla", "x": 1.8, "y": 4.6, "w": 0.7, "h": 0.7, "tile": "tile-sillon", "hacia": "s" },
+        { "tipo": "silla", "x": 4.2, "y": 4.6, "w": 0.7, "h": 0.7, "tile": "tile-sillon", "hacia": "s" },
+
+        { "tipo": "silla", "x": 2.0, "y": 9.6, "w": 0.45, "h": 0.45, "tile": "tile-silla-musico", "hacia": "e" },
+        { "tipo": "silla", "x": 2.3, "y": 10.7, "w": 0.45, "h": 0.45, "tile": "tile-silla-musico", "hacia": "e" },
+        { "tipo": "silla", "x": 3.3, "y": 9.4, "w": 0.45, "h": 0.45, "tile": "tile-silla-musico", "hacia": "s" },
+        { "tipo": "silla", "x": 3.3, "y": 11.1, "w": 0.45, "h": 0.45, "tile": "tile-silla-musico", "hacia": "n" },
+
+        { "tipo": "banco", "fijo": true, "x": 3.5, "y": 1.25, "w": 2.0, "h": 0.45, "material": "hormigon", "desc": "a long concrete bench" },
+        { "tipo": "banco", "fijo": true, "x": 12.0, "y": 1.25, "w": 2.0, "h": 0.45, "material": "hormigon", "desc": "a long concrete bench" },
+        { "tipo": "jardinera", "fijo": true, "x": 8.0, "y": 1.2, "w": 1.2, "h": 0.6, "desc": "a concrete planter with bare grey winter twigs" },
+        { "tipo": "jardinera", "fijo": true, "x": 16.4, "y": 1.2, "w": 1.2, "h": 0.6, "desc": "a concrete planter with bare grey winter twigs" },
+
+        { "tipo": "mesada", "x": 18.2, "y": 4.15, "w": 3.0, "h": 0.6, "anafe": false, "desc": "a stainless steel service counter with a sink and rows of upturned crystal glasses" },
+        { "tipo": "heladera", "x": 22.15, "y": 4.15, "w": 0.7, "h": 0.65, "desc": "a tall steel wine refrigerator" },
+        { "tipo": "carro", "x": 20.5, "y": 6.6, "w": 0.9, "h": 0.5, "tile": "tile-carro-servicio", "desc": "carro de servicio con copas" },
+
+        { "tipo": "escalera", "x": 21.7, "y": 8.2, "w": 1.2, "h": 3.6, "hacia": "s", "desc": "a narrow concrete service stair going down to the basement" }
+      ],
+      "luces": [
+        { "x": 8.6, "y": 6.6, "preset": "lampara-tenue", "presetIdeal": "vidrio-rojo", "nombre": "Medusas rojas (noroeste)" },
+        { "x": 11.6, "y": 5.6, "preset": "lampara-tenue", "presetIdeal": "vidrio-ambar", "nombre": "Medusas ámbar (norte)" },
+        { "x": 14.6, "y": 6.2, "preset": "lampara-tenue", "presetIdeal": "vidrio-rojo", "nombre": "Medusas rojas (noreste)" },
+        { "x": 16.6, "y": 8.8, "preset": "lampara-tenue", "presetIdeal": "vidrio-ambar", "nombre": "Medusas ámbar (este)" },
+        { "x": 9.2, "y": 9.6, "preset": "lampara-tenue", "presetIdeal": "vidrio-ambar", "nombre": "Medusas ámbar (oeste)" },
+        { "x": 12.4, "y": 9.8, "preset": "lampara-tenue", "presetIdeal": "vidrio-rojo", "nombre": "Medusas rojas (centro)" },
+        { "x": 15.2, "y": 10.8, "preset": "lampara-tenue", "presetIdeal": "vidrio-ambar", "nombre": "Medusas ámbar (sudeste)" },
+        { "x": 9.65, "y": 13.0, "preset": "lampara", "nombre": "Lámpara del mostrador de la Guardiana" },
+        { "x": 2.2, "y": 8.3, "preset": "lampara-tenue", "nombre": "Lámpara del salón privado" },
+        { "x": 3.0, "y": 10.5, "preset": "vela", "nombre": "Luz de atril del cuarteto" },
+        { "x": 20.5, "y": 5.8, "preset": "fluorescente", "nombre": "Fluorescente del office" },
+        { "x": 19.0, "y": 11.5, "preset": "pasillo", "nombre": "Plafón del pasillo de servicio" },
+        { "x": 21.0, "y": 10.0, "preset": "pasillo", "nombre": "Plafón de la escalera" },
+        { "x": 6.5, "y": 16.3, "preset": "farola", "nombre": "Farola de la plaza" }
+      ],
+      "regiones": [
+        { "id": "plaza", "nombre": "Plaza de Seattle Center (entrada y salida)", "x": 10, "y": 15.3, "w": 4, "h": 1.4, "destino": null, "pendiente": "no hay mapa de Seattle Center: el Narrador mueve los tokens a mano" },
+        { "id": "desde-archivo", "nombre": "Llegada desde el archivo (arriba de la escalera)", "x": 21.7, "y": 8.2, "w": 1.2, "h": 1, "llegada": true },
+        { "id": "bajar-al-archivo", "nombre": "Bajar al archivo de la Guardiana", "x": 21.7, "y": 10.8, "w": 1.2, "h": 1, "destino": "galeria-archivo:desde-galeria" }
+      ]
+    },
+    {
+      "id": "galeria-archivo",
+      "lugar": "LUG-03",
+      "escenas": ["A2-E01"],
+      "nombre": "Parte 2 · La Galería de Vidrio: el archivo de la Guardiana",
+      "orden": 31,
+      "ancho": 13,
+      "alto": 11,
+      "paleta": "subterraneo",
+      "fondo": "roca",
+      "sujeto": "the basement archive beneath a 1962 exhibition pavilion in Seattle Center",
+      "oscuridad": 0.9,
+      "exterior": "solid earth and concrete foundations around a basement, a flat featureless dark mass",
+      "nota": "**El archivo de la Guardiana**, en el sótano del bloque de servicio de la Galería. Se baja por la escalera de servicio (llave de Marchetti); la región «Subir a la Galería», arriba del tramo, devuelve al pasillo de servicio.\n\n**El archivo.** Estanterías del suelo al techo con los libros de registro del Elíseo y los papeles de la fundación, una mesa de lectura y una caja fuerte. Marchetti lo registra todo y no interpreta nada: sus libros son «la historia de cada Vástago de Seattle desde 1962» (PNJ-14). El rumor dice que están en una caja fuerte de la Galería; es verdad a medias: **los tres últimos volúmenes** (el XIV incluido, el de DOC-03) están en esta caja fuerte; los once anteriores, en un lugar que sólo conoce ella. La puerta del archivo está trabada: la llave la tiene la Guardiana. Su apartamento (Refugio 2) queda encima, en la planta alta del bloque de servicio; no tiene mapa.\n\n**El depósito.** Cajones con piezas de vidrio de repuesto embaladas en paja: las medusas las sopla Tomás Arriaga (la Piedra de toque de Marchetti), que cree trabajar para una fundación excéntrica.\n\nNinguna escena fija pasa aquí: es para quien pida ver el registro fuera de la sala, para un robo o para la crónica.",
+      "habitaciones": [
+        { "nombre": "Pie de la escalera", "x": 1, "y": 1, "w": 4, "h": 4, "piso": "hormigon" },
+        { "nombre": "Archivo de la Guardiana", "x": 5, "y": 1, "w": 7, "h": 7, "piso": "parquet", "limpio": true },
+        { "nombre": "Depósito de piezas de vidrio", "x": 1, "y": 5, "w": 4, "h": 5, "piso": "hormigon" },
+        { "nombre": "Cimientos (macizo)", "x": 5, "y": 8, "w": 7, "h": 2, "piso": "macizo" }
+      ],
+      "vanos": [
+        { "x": 5, "y": 2.6, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "sonido": "woodHeavy", "nombre": "Puerta del archivo (llave de la Guardiana)" },
+        { "x": 3, "y": 5, "w": 0.9, "eje": "h", "tipo": "puerta", "nombre": "Puerta del depósito" }
+      ],
+      "muebles": [
+        { "tipo": "escalera", "x": 1.2, "y": 1.1, "w": 1.2, "h": 3.6, "hacia": "s", "desc": "a narrow concrete service stair coming down from the ground floor" },
+
+        { "tipo": "estante", "x": 5.2, "y": 1.15, "w": 6.0, "h": 0.45, "desc": "floor-to-ceiling wooden shelving packed with leather-bound ledgers and archive boxes" },
+        { "tipo": "estante", "x": 11.4, "y": 1.15, "w": 0.45, "h": 5.4, "desc": "floor-to-ceiling wooden shelving packed with leather-bound ledgers and archive boxes" },
+        { "tipo": "estante", "x": 6.4, "y": 3.0, "w": 3.6, "h": 0.5, "desc": "a freestanding double-sided wooden bookcase full of ledgers" },
+        { "tipo": "estante", "x": 6.4, "y": 4.4, "w": 3.6, "h": 0.5, "desc": "a freestanding double-sided wooden bookcase full of ledgers" },
+        { "tipo": "mesa", "fijo": true, "x": 6.6, "y": 6.2, "w": 1.8, "h": 0.9, "desc": "a broad oak reading table with an unlit brass lamp and a closed ledger, no legible writing" },
+        { "tipo": "caja-fuerte", "x": 10.9, "y": 6.9, "w": 0.75, "h": 0.65, "desc": "a heavy old steel floor safe with a dial" },
+
+        { "tipo": "estante", "x": 1.15, "y": 5.5, "w": 0.6, "h": 4.2, "desc": "steel racks of wooden crates packed with straw" },
+        { "tipo": "estante", "x": 2.2, "y": 9.25, "w": 2.6, "h": 0.6, "desc": "steel racks of wooden crates packed with straw" },
+        { "tipo": "mesa", "fijo": true, "x": 2.8, "y": 6.6, "w": 1.0, "h": 1.6, "desc": "a scarred wooden packing table" }
+      ],
+      "luces": [
+        { "x": 3.2, "y": 3.0, "preset": "fluorescente-viejo", "nombre": "Fluorescente del pie de la escalera" },
+        { "x": 7.5, "y": 6.6, "preset": "lampara-tenue", "nombre": "Lámpara de la mesa de lectura" },
+        { "x": 3.0, "y": 7.5, "preset": "fluorescente-viejo", "nombre": "Fluorescente del depósito" }
+      ],
+      "regiones": [
+        { "id": "desde-galeria", "nombre": "Llegada desde la Galería (pie de la escalera)", "x": 1.2, "y": 3.7, "w": 1.2, "h": 1, "llegada": true },
+        { "id": "subir-a-la-galeria", "nombre": "Subir a la Galería", "x": 1.2, "y": 1.1, "w": 1.2, "h": 1, "destino": "galeria:desde-archivo" }
+      ]
+    }
+  ]
+}

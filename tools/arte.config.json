@@ -4,12 +4,15 @@
   "estilos": {
     "battlemap": {
       "_comentario": "Para pintar un plano. `prefijo` es para los modelos de edición (Qwen-Edit, klein: «Picture 1» = el esquema); `prefijo_control` es para texto a imagen con ControlNet (Z-Image), que no ve el esquema como imagen sino como bordes. El cuerpo del medio (habitación por habitación) lo arma pintar-planos.mjs desde el plano. `negativo` sólo pesa con CFG > 1 (Qwen sin Lightning). La palabra «night» no aparece: hace que los modelos enciendan lámparas y farolas.",
-      "prefijo": "STYLE TRANSFER. Picture 1 is a flat, simple vector schematic of a floor plan, drawn exactly to scale (1 metre = 1 square): the third floor of an old 1910 brick apartment building in Ballard, Seattle, seen strictly from directly above with the roof removed. Re-render it completely as a richly textured, hand-painted, realistic top-down map in the style of a professionally published modern-horror map pack. Change the RENDERING of every surface — every flat fill becomes real painted material with grain, wear, dirt and soft shading (wood grain on every board, grout on every tile, iron grating, wet asphalt, fabric, enamel, cast iron) — so that the flat vector look of Picture 1 disappears completely. Change NOTHING of the LAYOUT: it is a surveyor's drawing to be rendered, not an inspiration.\n\nKEEP THE LAYOUT EXACTLY: the position, length and thickness of every wall; every gap in the walls (doorways stay empty openings); the outline and size of every room; the position and footprint of every piece of furniture; the image framing and dimensions. Do not shift, zoom, crop, rotate or re-frame anything. Do not add or remove rooms, walls, partitions, steps, kerbs, low walls or counters, and do not subdivide any room.\n\n",
-      "prefijo_control": "A strictly top-down orthographic map, seen from directly above like a drone photograph straight down with the roof removed, of the third floor of an old 1910 brick apartment building in Ballard, Seattle, on a cold wet November evening. Realistic hand-painted floor plan in the style of a professionally published modern-horror map pack. The walls, rooms and furniture follow the control drawing exactly; every gap in a wall is an empty doorway opening.\n\n",
-      "sufijo": "\n\nSTYLE: illustrated photorealism like a professionally published modern-horror map pack: crisp, confident dark ink outlines on every wall and every object, filled with realistic painted materials. The walls are thick, solid, matte slate-grey plaster seen only as their flat top edge, with a dark ink outline on both sides. Palette of rainy Seattle in November: wet slate grey, cold harbour blue, deep black; old floorboards in a muted grey-brown (never orange, honey or golden wood, but still recognisably wood); the only saturated colour is a single small crimson accent (the red pins on the wall maps). The map is in COLOUR, not black-and-white: muted, low saturation overall (about 10 to 15 percent), cool, never warm, never golden, never sepia, no green moss.\n\nFLOORS: real materials drawn board by board and tile by tile — long, wide, weathered grey-brown floorboards with dark seams, small white bathroom tiles with grimy grout, scuffed grey linoleum in the kitchen strip, a worn dark runner carpet down the middle of the corridor, steel grating on the fire escape. Seams and joints follow the pattern already drawn in the schematic, so the floor itself reads the 1-metre grid. NEVER draw grid lines, ruled lines or dashed lines over anything.\n\nDETAIL: lived-in and neglected, restrained and legible at table distance: scuffs along the walking paths, grime along the skirting, water stains, a few paper scraps. Outdoors everything is wet from the rain: dark wet asphalt with shallow puddles, rain-darkened concrete, wet tar-and-gravel roofs; but NO falling rain, no raindrops in the air, no rain streaks.\n\nLIGHT AND SHADOW: one flat, even, dim, cold blue-grey ambient light over the whole map, like an overcast sky, the same brightness everywhere: no room is brighter or warmer than another, and the corridor is as dim as the rest. Soft short drop shadows down and to the right under raised objects, and ambient occlusion where walls meet the floor. NEVER paint a light source or its effect: no lit lamps, no glowing screens, no glowing windows, no ceiling lights, no light fixtures, no glowing LEDs, no street lamp, no light pools, no halos, no glow, no lens flare, no bright spots, no beams, no orange light on the ground. Every light is added later by the virtual tabletop.\n\nCOMPOSITION: full bleed to all four edges: no border, no frame, no vignette, no paper margin, no white space. Strictly top-down orthographic: walls seen only as their top edge, no wall faces, no ceilings, no perspective, no isometric tilt.\n\nABSOLUTELY EMPTY OF INHABITANTS: no people, no figures, no figurines, no miniatures, no game pieces, no tokens, no silhouettes, no bodies, no animals, no cars.\n\nDOORWAYS: every doorway is an empty gap in the wall with at most a faint threshold strip on the floor. NEVER draw a door leaf, a door panel, a hinged door, a sliding door or a shutter in any opening, open or closed.\n\nNO MOVABLE FURNITURE: do not add chairs, stools, sofas, tables, floor lamps, rugs, plants, boxes, bags or loose objects that are not in the schematic; they are placed later as separate pieces.\n\nABSOLUTELY NO TEXT: no letters, numbers, digits, symbols, labels, room names, apartment numbers, signs, logos, writing on the maps pinned to the walls, writing on papers or screens; no compass, no scale bar, no legend.",
+      "prefijo": "STYLE TRANSFER. Picture 1 is a flat, simple vector schematic of a floor plan, drawn exactly to scale (1 metre = 1 square): {LUGAR}, seen strictly from directly above with the roof removed. Re-render it completely as a richly textured, hand-painted, realistic top-down map in the style of a professionally published modern-horror map pack. Change the RENDERING of every surface — every flat fill becomes real painted material with grain, wear, dirt and soft shading ({GRANO}) — so that the flat vector look of Picture 1 disappears completely. Change NOTHING of the LAYOUT: it is a surveyor's drawing to be rendered, not an inspiration.\n\nKEEP THE LAYOUT EXACTLY: the position, length and thickness of every wall; every gap in the walls (doorways stay empty openings); the outline and size of every room; the position and footprint of every piece of furniture; the image framing and dimensions. Do not shift, zoom, crop, rotate or re-frame anything. Do not add or remove rooms, walls, partitions, steps, kerbs, low walls or counters, and do not subdivide any room.\n\n",
+      "prefijo_control": "A strictly top-down orthographic map, seen from directly above like a drone photograph straight down with the roof removed, of {LUGAR}, on a cold wet November evening. Realistic hand-painted floor plan in the style of a professionally published modern-horror map pack. The walls, rooms and furniture follow the control drawing exactly; every gap in a wall is an empty doorway opening.\n\n",
+      "prefijo_detalle": "DETAIL PASS. Picture 1 is a close-up crop, about {W} × {H} metres (one metre is about 200 pixels), of a painted, strictly top-down battlemap of {LUGAR}. Repaint THIS SAME crop at full close-up detail, as a page from a professionally published modern-horror map pack. Keep the layout exactly: every wall, wall gap, window, railing, piece of furniture, floor seam and edge stays at the same position with the same size and outline; nothing moves, nothing is added or removed, the framing does not change. What changes is the RENDERING: replace every flat, smooth, vector-like fill with rich, real, close-up materials — {GRANO_DETALLE} — crisp dark ink outlines on every wall and object, soft contact shadows and ambient occlusion where things meet the floor, scuffs, grime and stains.\n\n",
+      "prefijo_detalle_control": "High-resolution photographic top-down scan, shot straight down from directly above, of a {W} × {H} m crop of a battlemap: part of {LUGAR}, with its roof removed{ALREDEDOR}. Every surface is a photorealistic real-world material exactly as described below: {MATERIALES}. A thin dark ink outline runs along the edge of every wall and every object, like a published modern map pack. Walls are seen only as their flat tops: {TOPES}. Flat, even, shadowless overcast light over the whole crop, the same brightness everywhere: no light beams, no window light, no light gradients, no glints; only soft ambient occlusion and short contact shadows where objects meet the floor. Muted, cold, desaturated colours of a rainy November evening: slate grey, harbour blue{TONO_MADERA}.\n\n",
+      "prefijo_detalle_exterior": "High-resolution photographic top-down scan, shot straight down from high above, of {W} × {H} m of {SUELO} on a rainy November evening, used as a battlemap. Every surface is a photorealistic real-world material exactly as described below: {MATERIALES_FUERA}. Objects get a thin dark ink outline, like a published modern map pack. Flat, even, shadowless overcast light, the same brightness everywhere: no reflections, no light beams, no light pools, no glints, no bright spots, no stars; only short soft contact shadows under objects. Muted, cold, desaturated greys{SIN_AZUL}, no coloured stains.\n\n",
+      "sufijo": "\n\nSTYLE: illustrated photorealism like a professionally published modern-horror map pack: crisp, confident dark ink outlines on every wall and every object, filled with realistic painted materials. The walls are {MUROS} seen only as their flat top edge, with a dark ink outline on both sides. Palette of rainy Seattle in November: wet slate grey, cold harbour blue, deep black; {MADERA}the only saturated colour is a single small crimson accent{ACENTO}. The map is in COLOUR, not black-and-white: muted, low saturation overall (about 10 to 15 percent), cool, never warm, never golden, never sepia, no green moss.\n\nFLOORS: real materials drawn board by board and tile by tile — {PISOS}. Seams and joints follow the pattern already drawn in the schematic, so the floor itself reads the 1-metre grid. NEVER draw grid lines, ruled lines or dashed lines over anything.\n\nDETAIL: {DETALLE}. {AFUERA}NO falling rain, no raindrops in the air, no rain streaks.\n\nLIGHT AND SHADOW: one flat, even, dim, cold blue-grey ambient light over the whole map, like an overcast sky, the same brightness everywhere: no room is brighter or warmer than another{PASILLO}. Soft short drop shadows down and to the right under raised objects, and ambient occlusion where walls meet the floor. NEVER paint a light source or its effect: no lit lamps, no glowing screens, no glowing windows, no ceiling lights, no light fixtures, no glowing LEDs, no street lamp, no light pools, no halos, no glow, no lens flare, no bright spots, no beams, no orange light on the ground. Every light is added later by the virtual tabletop.\n\nCOMPOSITION: full bleed to all four edges: no border, no frame, no vignette, no paper margin, no white space. Strictly top-down orthographic: walls seen only as their top edge, no wall faces, no ceilings, no perspective, no isometric tilt.\n\nABSOLUTELY EMPTY OF INHABITANTS: no people, no figures, no figurines, no miniatures, no game pieces, no tokens, no silhouettes, no bodies, no animals, no cars.\n\nDOORWAYS: every doorway is an empty gap in the wall with at most a faint threshold strip on the floor. NEVER draw a door leaf, a door panel, a hinged door, a sliding door or a shutter in any opening, open or closed.\n\nNO MOVABLE FURNITURE: do not add chairs, stools, sofas, tables, floor lamps, rugs, plants, boxes, bags or loose objects that are not in the schematic; they are placed later as separate pieces.\n\nABSOLUTELY NO TEXT: no letters, numbers, digits, symbols, labels, room names, {NUMEROS}, signs, logos,{EN_MAPAS} writing on papers or screens; no compass, no scale bar, no legend.",
       "negativo": "door leaf, closed door, open door, hinged door, glowing lamp, lit lamp, light pool, glowing screen, glowing window, street lamp glow, LED glow, halo, lens flare, god rays, orange light, warm golden light, text, letters, numbers, labels, signage, logo, watermark, people, person, figure, figurine, miniature, game piece, token, silhouette, body, animal, car, chair, sofa, table, rug, grid lines, ruled lines, perspective, isometric, wall faces, ceiling, roof over rooms, border, frame, vignette, paper margin, falling rain, rain streaks, blurry, low detail, flat vector, cartoon",
       "materiales": {
-        "tablas": "long, wide, weathered floorboards from 1910 in a muted, desaturated grey-brown like old driftwood, dark seams between the boards, scuffed along the walking paths (never orange, honey or golden, and never plain grey either)",
+        "tablas": "long, wide, weathered old floorboards in a muted, desaturated grey-brown like old driftwood, dark seams between the boards, scuffed along the walking paths (never orange, honey or golden, and never plain grey either)",
         "tablas-alfombra": "weathered grey-brown floorboards with a long, worn, dark charcoal runner carpet down the middle, plain with no pattern, its edges frayed, bare boards showing on both sides",
         "parquet": "worn, dull wooden parquet strips, scratched along the walking paths",
         "linoleo": "scuffed pale grey linoleum tiles, slightly lifted at the seams",
@@ -20,13 +23,53 @@
         "tecnico": "raised data-centre floor panels, some perforated for ventilation",
         "hormigon": "stained concrete slab with expansion joints and oil stains",
         "piedra": "old cut stone flagstones with mortar joints",
-        "tierra": "packed wet earth",
-        "grava": "loose wet gravel",
+        "tierra": "packed wet earth and mud, with puddles and boot prints",
+        "grava": "loose wet gravel, grey and uneven",
         "rejilla": "an open steel fire-escape landing of black-painted iron grating with thin railings, the wet alley visible far below through the grating",
         "macizo": "SEALED BLOCK",
-        "asfalto": "dark wet asphalt with shallow puddles, oil stains and cracks",
+        "asfalto": "dark wet asphalt with fine aggregate, tar-sealed seams and darker damp patches",
         "acera": "a rain-darkened concrete sidewalk of large square slabs with a granite kerb",
-        "edificio": "the dark, wet tar-and-gravel flat roof of a neighbouring building"
+        "edificio": "the dark, wet tar-and-gravel flat roof of a neighbouring building",
+        "tablas-quemadas": "charred, fire-blackened floorboards, cracked into alligator-skin char, some boards burnt through to dark gaps, soot and grey ash in the seams",
+        "marmol": "large slabs of pale grey polished marble with fine dark veins, thin straight joints, a dull sheen",
+        "ladrillo": "an old sidewalk of worn dark brown-grey bricks laid in running bond, rounded edges, grime and damp in the joints",
+        "chapa": "steel diamond-plate flooring in welded one-metre panels, the raised pattern worn bright along the walking paths, grey-brown rust stains",
+        "cubierta": "the painted steel deck of a ship, pale grey paint with gritty non-slip coating, welded seams, scuffed and rust-stained at the edges",
+        "goma": "black ribbed rubber gangway matting, the ribs running across the walkway, muddy footprints",
+        "ascensor": "the floor of a lift car: dark stone tiles framed by a border of brushed steel",
+        "vacio": "an open, unlit void dropping away into darkness: a flat, near-black fill with no floor visible",
+        "agua": "dark slate-blue open water, flat and calm, covered in fine small ripples, with no foam, no boats, no reflections of lights",
+        "roca": "solid packed earth and rock seen as a flat, dark, featureless mass",
+        "_breve": {
+          "_comentario": "Versión corta de cada material, para las listas de los prefijos y sufijos ({PISOS}, {MATERIALES}, {ALREDEDOR}, {AFUERA}). Las llena pintar-planos.mjs con los materiales de CADA plano.",
+          "tablas": "long, wide, weathered grey-brown floorboards with dark seams",
+          "tablas-alfombra": "a worn dark runner carpet over old floorboards",
+          "tablas-quemadas": "charred, fire-blackened floorboards with burnt-through gaps",
+          "parquet": "worn, dull wooden parquet",
+          "linoleo": "scuffed grey linoleum",
+          "baldosa": "pale porcelain tiles with grey grout",
+          "azulejo": "small white tiles with grimy grout",
+          "terrazo": "speckled, dull terrazzo",
+          "moqueta": "dark grey carpet tiles",
+          "tecnico": "raised data-centre floor panels",
+          "hormigon": "stained concrete slab with expansion joints",
+          "piedra": "old cut stone flagstones",
+          "marmol": "pale veined marble slabs",
+          "ladrillo": "worn old brick paving",
+          "chapa": "worn steel diamond plate",
+          "cubierta": "painted steel ship's deck with non-slip grit",
+          "goma": "black ribbed rubber matting",
+          "ascensor": "dark stone and brushed steel",
+          "rejilla": "black iron grating",
+          "tierra": "soaked muddy earth",
+          "grava": "loose wet gravel",
+          "agua": "dark slate-blue water with fine ripples",
+          "vacio": "an unlit void",
+          "roca": "solid packed earth and rock",
+          "asfalto": "gritty wet asphalt with oil sheen and shallow puddles",
+          "acera": "rain-darkened concrete slabs",
+          "edificio": "tar-and-gravel roofing"
+        }
       },
       "objetos": {
         "escritorio": "an old wooden desk",
@@ -47,9 +90,179 @@
         "lavabo": "a small white pedestal washbasin",
         "ducha": "a shower tray",
         "banera": "an old white enamel clawfoot bathtub",
-        "maquina": "heavy building machinery (boiler or electrical board)"
+        "maquina": "heavy building machinery (boiler or electrical board)",
+        "videopared": "a wall of large flat screens edge to edge, all of them black and switched off",
+        "panel": "a blank wall panel of dark matte material",
+        "rack": "a black server rack cabinet with a perforated front door",
+        "camara": "a small black security camera on a wall bracket, its lens pointing into the room",
+        "lector": "a small wall-mounted card reader beside the door frame",
+        "banco": "a long fixed bench",
+        "mostrador": "a long service counter",
+        "barra": "a long, scarred wooden bar counter with a rail along its front edge",
+        "maquina-cafe": "a coffee vending machine, its display dark",
+        "expendedora": "a snack vending machine, its front panel dark",
+        "consola": "a control console with rows of dark switched-off screens and buttons",
+        "timon": "a ship's steering stand with a small wheel on a pedestal",
+        "balsa": "a white life-raft canister strapped into a steel cradle",
+        "generador": "a diesel standby generator in a grey steel enclosure with louvred vents",
+        "enfriadora": "an industrial chiller unit with large round fans on top",
+        "chimenea": "a cold fieldstone fireplace with a dark firebox and grey ashes",
+        "banco-trabajo": "a heavy plank workbench with a bench vice and a few hand tools",
+        "caja-fuerte": "a heavy steel safe with a combination dial",
+        "caseta": "a small weathered wooden hut with a pitched plank roof",
+        "picadero": "a stack of heavy timber keel blocks laid crosswise",
+        "carril": "a rusted steel launching rail on timber sleepers",
+        "grua": "the rusted steel base frame of a crane with cross bracing and rail bogies",
+        "tapiado": "rough planks nailed across an opening",
+        "cable": "a bundle of black cables running along the wall",
+        "carbon": "a low heap of old black coal",
+        "escombros": "a heap of fallen charred beams, bricks and broken plaster",
+        "canal": "an open stone drainage channel in the floor with dark water in it",
+        "cinta": "a long stopped conveyor belt on steel rollers in a steel frame",
+        "flores": "a few faded plastic flowers tied together",
+        "pedestal": "a square white display plinth",
+        "jardinera": "a concrete planter with bare winter twigs",
+        "maceta": "a potted plant in a round white pot",
+        "lampara-uv": "a wall-mounted lamp panel of tubes, switched off",
+        "catre": "a folding camp cot with a canvas bed",
+        "auto": "a parked car",
+        "vehiculo": "a parked vehicle",
+        "bandeja": "a small velvet-lined tray",
+        "carpeta": "a closed folder",
+        "maletin": "an aluminium briefcase"
       },
-      "carpeta": "assets/mapas"
+      "aclaraciones": {
+        "_comentario": "Se agregan entre paréntesis a la descripción de cada mueble de ese tipo, en todos los planos (el desc del plano no se toca). Salen de lo que los modelos confunden: con los mapas al lado, la almohada se pintaba como un mapa. Sólo en positivo: con cfg 1 no hay negativo, y nombrar «no laptop, no phone» los hace aparecer (pintó un teléfono sobre el escritorio).",
+        "cama": "a plain white pillow and a crumpled plain grey blanket, nothing printed or drawn on them",
+        "mapas": "flat paper sheets with faint street lines, no letters",
+        "escritorio": "its top holds only a few loose sheets of paper and two coffee mugs, the rest is bare scratched wood",
+        "videopared": "every screen a flat matte black rectangle, no image, no glow",
+        "consola": "every screen dark and every button unlit",
+        "rack": "solid dark metal, no lit indicator lights",
+        "expendedora": "its glass front dark and unlit",
+        "maquina-cafe": "its display dark and unlit",
+        "lampara-uv": "the tubes pale grey and unlit, no glow",
+        "camara": "a tiny dark object, no lit LED",
+        "banco-trabajo": "its top holds only the vice and a few dark hand tools on bare scarred wood",
+        "flores": "dull, faded colours"
+      },
+      "carpeta": "assets/mapas",
+      "sufijo_detalle": "\n\nStrictly top-down orthographic: no perspective, no wall faces. Full bleed: no border, no frame, no vignette. No text, letters or numbers anywhere, not even on {PAPELES}. No people, figures or animals. No lit lamps, glowing screens, light pools or bright spots. Every doorway is an empty gap, never a door leaf. Do not add furniture, rooms or walls that are not described; outdoor areas stay open ground.",
+      "grading": {
+        "_comentario": "Grading determinista (pintar-planos --grading, MAPS_SPEC §5): tabla de color en OKLab aplicada con magick -hald-clut. croma = ganancia global; topes = bandas de tono (grados OKLab) con croma máxima (38–95 naranja/madera: nunca naranja; 110–175 verde: sin musgo; 215–290 azul: manchas azules del modelo, el azul de puerto lo pone el tinte); carmesi = rojos con croma ≥ minimo quedan fuera de los topes (los alfileres); sombras/luces = tinte OKLab (a, b) por luminancia; contraste = S suave. Objetivo: sat HSL 10–15, sin naranja.",
+        "croma": 1.3,
+        "topes": [
+          {
+            "desde": 38,
+            "hasta": 95,
+            "max": 0.035
+          },
+          {
+            "desde": 110,
+            "hasta": 175,
+            "max": 0.015
+          },
+          {
+            "desde": 215,
+            "hasta": 290,
+            "max": 0.03
+          }
+        ],
+        "carmesi": {
+          "hasta": 34,
+          "minimo": 0.1,
+          "ganancia": 1.15
+        },
+        "sombras": {
+          "a": -0.006,
+          "b": -0.02,
+          "fuerza": 1,
+          "pie": 0.35
+        },
+        "luces": {
+          "a": -0.003,
+          "b": -0.008,
+          "fuerza": 1
+        },
+        "negro": 0,
+        "blanco": 1,
+        "gamma": 1,
+        "contraste": 0.08
+      },
+      "paletas": {
+        "_comentario": "Lo que el prompt dice de cada paleta del renderer (tools/planos.mjs): `lugar` = el sujeto si el plano no lo da (`sujeto` o su `exterior`); `muros` y `topes` = cómo se ven los muros; `marco` = el marco de las ventanas; `acento` = el único acento carmesí, sólo si el lugar tiene algo rojo fijo (si no, se omite: pedirlo hace que el modelo invente un objeto). `grano` y `granoDetalle` = los materiales de ejemplo del prefijo y de la pasada de detalle; `detalle` = cuánto uso y mugre se ve; `numeros` = qué números no pintar (apartment numbers, cabin numbers…). Los de apartamento son los de helen y son el respaldo.",
+        "apartamento": {
+          "lugar": "an old brick apartment building in Seattle",
+          "muros": "thick, solid, matte slate-grey plaster",
+          "topes": "flat, matte slate-grey plaster tops",
+          "marco": "a thin painted wooden frame with a narrow sill",
+          "grano": "wood grain on every board, grout on every tile, iron grating, wet asphalt, fabric, enamel, cast iron",
+          "granoDetalle": "individual wood grain, knots, nail holes and worn edges on every floorboard, chipped enamel, grimy grout, scratched steel, woven fabric, rust, wet asphalt grit, puddles with reflections of nothing but the dark sky",
+          "detalle": "lived-in and neglected, restrained and legible at table distance: scuffs along the walking paths, grime along the skirting, water stains, a few paper scraps",
+          "numeros": "apartment numbers"
+        },
+        "industrial": {
+          "lugar": "an industrial building on the Seattle waterfront",
+          "muros": "thick, solid walls of grey concrete block faced with corrugated steel",
+          "topes": "flat tops of grey concrete block and corrugated steel",
+          "marco": "a thin steel frame with a narrow concrete sill",
+          "grano": "grit and oil stains on every concrete slab, ribs on the corrugated steel, rust, grease, worn timber, wet asphalt",
+          "granoDetalle": "pitted concrete with oil stains and hairline cracks, corrugated steel with rust streaks, scratched and greasy steel, splintered timber, wet asphalt grit, puddles with reflections of nothing but the dark sky",
+          "detalle": "worn and grimy, restrained and legible at table distance: oil stains and scuffs along the walking paths, grease and rust along the walls, a few scraps of litter",
+          "numeros": "door numbers"
+        },
+        "subterraneo": {
+          "lugar": "a dark underground space beneath Seattle",
+          "muros": "thick, solid walls of old soot-dark brick and rough stone blocks",
+          "topes": "flat tops of old brick and rough stone blocks, each block outlined",
+          "marco": "a rusted iron frame set in the stone",
+          "grano": "mortar between every brick, chisel marks on every stone, damp stains, rust, rotting timber",
+          "granoDetalle": "individual old bricks with crumbling mortar, rough stone blocks with chisel marks, damp patches and mineral streaks, rusted iron, rotten timber, grime in every joint",
+          "detalle": "damp, old and neglected, restrained and legible at table distance: damp stains and mineral streaks along the walls, grime in the joints, scuffs along the walking paths, a little loose grit",
+          "numeros": "door numbers"
+        },
+        "oficina": {
+          "lugar": "an office floor high up in a Seattle tower",
+          "muros": "thick, solid, matte pale-grey painted drywall",
+          "topes": "flat, matte pale-grey drywall tops",
+          "marco": "a slim aluminium frame",
+          "grano": "fibre on every carpet tile, grout on every floor tile, brushed steel, laminate, glass, upholstery",
+          "granoDetalle": "the fine weave of carpet tiles, polished stone and floor tiles with clean grout, brushed steel, matte laminate, upholstery fabric, scratched glass",
+          "detalle": "clean, cold and orderly, restrained and legible at table distance: faint scuffs along the walking paths and a little grime along the skirting, nothing else",
+          "numeros": "room numbers"
+        },
+        "galeria": {
+          "lugar": "an elegant 1960s modernist glass pavilion in Seattle",
+          "muros": "thick, solid walls of dark charcoal-grey painted concrete",
+          "topes": "flat, matte dark charcoal concrete tops",
+          "marco": "a slender black steel frame",
+          "acento": "the red blown-glass sculptures",
+          "grano": "fine speckles in the polished terrazzo, joints in every stone slab, wood grain on every parquet strip, black steel, glass, velvet",
+          "granoDetalle": "polished terrazzo with fine speckles, worn stone slabs, the grain of every parquet strip, black painted steel, clean glass edges, velvet and leather",
+          "detalle": "immaculate and quiet, restrained and legible at table distance: faint scuffs along the walking paths and a few wet footprints by the doors, nothing else",
+          "numeros": "room numbers"
+        },
+        "rural": {
+          "lugar": "a lonely farmstead in the countryside outside Seattle",
+          "muros": "thick, solid walls of dark, weathered timber planking",
+          "topes": "flat tops of dark weathered timber planks",
+          "marco": "a weathered wooden frame with a narrow sill",
+          "grano": "wood grain on every board, mud, wet gravel, worn stone, rusted iron, waxed canvas",
+          "granoDetalle": "individual wood grain, knots, nail holes and worn edges on every board, caked mud, loose wet gravel, worn stone, rusted iron, frayed canvas and rope, puddles with reflections of nothing but the dark sky",
+          "detalle": "lived-in, muddy and weathered, restrained and legible at table distance: muddy boot tracks along the walking paths, grime along the walls, a few wisps of straw",
+          "numeros": "door numbers"
+        },
+        "naval": {
+          "lugar": "a car ferry on Puget Sound",
+          "muros": "thick, solid bulkheads of pale grey painted riveted steel",
+          "topes": "flat tops of pale grey painted steel with rivets",
+          "marco": "a rounded steel frame",
+          "grano": "welded seams and non-slip grit on every steel plate, rivets, chipped paint, rubber matting, rust streaks, rippled water",
+          "granoDetalle": "painted steel plate with welded seams, rivets and non-slip grit, chipped paint and rust streaks, worn linoleum, ribbed rubber matting, wet steel with shallow puddles reflecting nothing but the dark sky",
+          "detalle": "well used and salt-worn, restrained and legible at table distance: scuffs along the walking paths, rust streaks along the bulkheads, salt stains, a few paper scraps",
+          "numeros": "cabin numbers"
+        }
+      }
     },
     "retrato": {
       "_comentario": "Plantilla del doc 15 (content/arte-doc15.json, plantillas.retrato), adoptada tal cual para retratos (SPEC §4.4). Cada retrato agrega SUJETO + ROPA Y OBJETO + ESCENARIO + ACENTO CARMESÍ. Z-Image Turbo (t2i-zimage), 832×1248.",
@@ -61,10 +274,11 @@
       "carpeta": "assets/retratos"
     },
     "token": {
-      "_comentario": "Retrato → token cenital del MISMO personaje con Qwen-Edit (editar-qwen; Picture 1 = el retrato), después BiRefNet (recortar-birefnet) y el marco circular. Fondo liso claro para que BiRefNet recorte limpio.",
+      "_comentario": "Retrato → token cenital del MISMO personaje con Qwen-Edit (editar-qwen; Picture 1 = el retrato, sin imagen de estilo y sin deformar el 2:3), después BiRefNet (recortar-birefnet) y el marco circular de tools/tokens.mjs (sin croma: usa el alfa de BiRefNet). Fondo liso claro para que BiRefNet recorte limpio. `prefijo_t2i` es para los tokens genéricos sin retrato (Z-Image t2i, flujo del asset). Lo arma tools/generar-arte.mjs.",
       "flujo": "editar-qwen",
-      "prefijo": "Picture 1 is a painted portrait of a character. Paint the SAME person — same face colouring, hair, build, clothes and the object they carry — as a token for a virtual tabletop, seen from DIRECTLY ABOVE: a strict bird's-eye view as if photographed from the ceiling, showing the top of the head and hair, the shoulders and the arms, the face NOT visible from the front, no three-quarter angle. One single figure, centred, filling about 80% of the frame.\n\nSUBJECT: ",
-      "sufijo": "\n\nSTYLE: dark painterly realism with confident ink outlines under painted colour, cold desaturated Seattle palette (wet slate grey, harbour blue, deep black, one crimson accent), matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no texture, no gradient, no shadow on the ground, no vignette.\n\nNo text, no letters, no frame, no border, no ring, no circle, no token base, no second figure, no glow.",
+      "prefijo": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: ",
+      "prefijo_t2i": "Top-down token artwork for a virtual tabletop of a modern urban-horror roleplaying game set in present-day Seattle. ONE single figure seen from DIRECTLY ABOVE, a strict bird's-eye view as if photographed from the ceiling: we see the top of the head and hair, the shoulders, and the arms slightly spread or holding something; the face is NOT visible from the front, no three-quarter angle, no perspective. The figure is centred and fills about 80% of the frame.\n\nSUBJECT: ",
+      "sufijo": "\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure.",
       "ancho": 1024,
       "alto": 1024,
       "carpeta": "assets/tokens"
@@ -80,14 +294,910 @@
     }
   },
   "mapas": {
-    "_comentario": "Cómo se pintó cada mapa (lo lee pintar-planos.mjs sin --camino): camino, semilla y ajustes. helen salió de la prueba de SPEC §4.5 (2026-10-30) y es la referencia de estilo del set.",
+    "_comentario": "Cómo se pintó cada mapa (lo lee pintar-planos.mjs sin --camino): camino, semilla y ajustes. helen salió de la prueba de SPEC §4.5 (2026-10-30) y es la referencia de estilo del set. `detalle` = pasada de detalle por mosaicos (pintar-planos --detalle); `grading: true` = grading de estilos.battlemap.grading (un objeto pisa parámetros).",
     "helen": {
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
       "escalar": true,
-      "escalador": "7b"
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.6,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": true
     }
   },
-  "assets": []
+  "assets": [
+    {
+      "id": "PJ-01",
+      "estilo": "retrato",
+      "prompt": "A powerfully built man who looks about thirty, an angular hard face with a square, clenched jaw, pale skin that has not seen the sun in years. One old, long-healed scar: a single thin pale line on his right cheek only, from the cheekbone down to the corner of his mouth; no fresh wounds, no blood on his face. Short dark hair already turning grey at the temples, dark grey eyes almost black that evaluate rather than look. A thick black tactical jacket reinforced at the shoulders and chest, many pockets and velcro flaps, every insignia removed, an old military folding knife in his hand. Standing in the rain at the edge of a pier outside a corrugated metal hangar, harbour cranes in the mist behind him. Crimson accent: a thin line of fresh blood on the blade of the knife.",
+      "nota": "retrato: David Smith (perfil, «Estética y presencia»)",
+      "semilla": 6006,
+      "candidatas": [
+        6004,
+        6005,
+        6006
+      ]
+    },
+    {
+      "id": "PJ-02",
+      "estilo": "retrato",
+      "prompt": "A poised young woman who looks about twenty-five, sleek straight dark-blonde hair cut at the jaw, sharp cool grey-green eyes, a faint calculating smile, pale flawless skin. An immaculately tailored charcoal coat over a black silk blouse, a thin gold watch, holding a cut-crystal wine glass. Standing at the floor-to-ceiling window of a high-rise office in Bellevue, Lake Washington and the scattered lights of the Eastside far below, rain streaking the glass. Crimson accent: the dark red wine in the crystal glass.",
+      "nota": "retrato: Celeste Arden (PJ-02: Ventrue, analista de inversiones, «la heredera del cristal»)",
+      "semilla": 6102,
+      "candidatas": [
+        6101,
+        6102,
+        6103
+      ]
+    },
+    {
+      "id": "PJ-03",
+      "estilo": "retrato",
+      "prompt": "A Nosferatu who was once a young network engineer of about thirty: completely hairless, grey-white skin stretched thin over a narrow skull, large dark sunken eyes, long pointed ears, a lipless mouth with small sharp teeth, long thin fingers. A worn black hoodie with the hood half up, fingerless gloves, a battered ruggedized laptop open in his hands, its cold blue glow lighting his face from below. Crouched among recycled server racks in a sealed underground gallery of nineteenth-century brick, bundles of network cable dropping through holes in the vaulted ceiling. Crimson accent: a single red status light on a server.",
+      "nota": "retrato: Ezra «Estática» Lund (PJ-03: Nosferatu, ingeniero de redes, Galerías Selladas)",
+      "semilla": 6203,
+      "candidatas": [
+        6201,
+        6202,
+        6203
+      ]
+    },
+    {
+      "id": "PJ-04",
+      "estilo": "retrato",
+      "prompt": "A lean woman who looks about thirty-five, a shaggy dark bob with one faded grey-violet streak, sharp watchful dark eyes, small silver hoops along her right ear, pale skin. A worn black leather jacket over a plain black t-shirt, studio headphones around her neck, one hand resting on the faders of a mixing console. Sitting in a dim, cramped recording booth lined with acoustic foam, a microphone on a boom arm in front of her, rain on a small window. Crimson accent: a single red recording light glowing on the console.",
+      "nota": "retrato: Nadia Ferro (PJ-04: Toreador, ex bajista, productora de sonido del pódcast)",
+      "semilla": 6302,
+      "candidatas": [
+        6301,
+        6302,
+        6303
+      ]
+    },
+    {
+      "id": "PJ-05",
+      "estilo": "retrato",
+      "prompt": "A big, broad-shouldered man of Norwegian descent who looks about thirty, long wind-tangled dirty-blond hair, a thick unkempt beard, a face weathered by the Bering Sea, pale blue eyes with a faint animal gleam, large raw hands. A faded dark oilskin fisherman's jacket open over a thick cream wool sweater, a coil of wet rope over one shoulder. Standing on a rain-swept wooden dock in Salmon Bay beside moored crab boats, stacked crab pots behind him. Crimson accent: a red buoy hanging from the boat behind him.",
+      "nota": "retrato: Halvard «Hal» Brekke (PJ-05: Gangrel, ex pescador de cangrejo de Ballard)",
+      "semilla": 6401,
+      "candidatas": [
+        6401,
+        6402,
+        6403
+      ]
+    },
+    {
+      "id": "PJ-06",
+      "estilo": "retrato",
+      "prompt": "A gaunt, severe woman who looks about forty-two, ash-brown hair pinned up tightly, reading glasses low on her nose, a dry unimpressed stare, thin pale lips. Navy surgical scrubs under a long white coat, nitrile gloves, a steel scalpel in her hand. Standing in a cold county morgue at night between a wall of steel body drawers and an autopsy table with a sheet-covered body. Crimson accent: a single drop of blood on the fingertip of her glove.",
+      "nota": "retrato: Dra. Ruth Abernathy (PJ-06: Tremere, patóloga forense del turno de noche)",
+      "semilla": 6503,
+      "candidatas": [
+        6501,
+        6502,
+        6503
+      ]
+    },
+    {
+      "id": "PNJ-01",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 6601,
+      "candidatas": [
+        6601,
+        6602,
+        6603
+      ]
+    },
+    {
+      "id": "PNJ-02",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 6701,
+      "candidatas": [
+        6701,
+        6702,
+        6703
+      ]
+    },
+    {
+      "id": "PNJ-03",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 6806,
+      "candidatas": [
+        6801,
+        6802,
+        6803,
+        6804,
+        6805,
+        6806
+      ]
+    },
+    {
+      "id": "PNJ-04",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 6902,
+      "candidatas": [
+        6901,
+        6902,
+        6903,
+        6904,
+        6905,
+        6906
+      ]
+    },
+    {
+      "id": "PNJ-05",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7001,
+      "candidatas": [
+        7001,
+        7002,
+        7003
+      ]
+    },
+    {
+      "id": "PNJ-11",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7103,
+      "candidatas": [
+        7101,
+        7102,
+        7103
+      ]
+    },
+    {
+      "id": "PNJ-12",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7202,
+      "candidatas": [
+        7201,
+        7202,
+        7203
+      ]
+    },
+    {
+      "id": "PNJ-13",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7302,
+      "candidatas": [
+        7301,
+        7302,
+        7303
+      ]
+    },
+    {
+      "id": "PNJ-14",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7402,
+      "candidatas": [
+        7401,
+        7402,
+        7403
+      ]
+    },
+    {
+      "id": "PNJ-15",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7503,
+      "candidatas": [
+        7501,
+        7502,
+        7503
+      ]
+    },
+    {
+      "id": "PNJ-16",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7601,
+      "candidatas": [
+        7601,
+        7602,
+        7603
+      ]
+    },
+    {
+      "id": "PNJ-17",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7701,
+      "candidatas": [
+        7701,
+        7702,
+        7703
+      ]
+    },
+    {
+      "id": "PNJ-18",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7801,
+      "candidatas": [
+        7801,
+        7802,
+        7803
+      ]
+    },
+    {
+      "id": "PNJ-19",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 7906,
+      "candidatas": [
+        7901,
+        7902,
+        7903,
+        7904,
+        7905,
+        7906
+      ]
+    },
+    {
+      "id": "PNJ-20",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 8002,
+      "candidatas": [
+        8001,
+        8002,
+        8003
+      ]
+    },
+    {
+      "id": "MEN-09",
+      "estilo": "retrato",
+      "fuente": "doc15",
+      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
+      "semilla": 8101,
+      "candidatas": [
+        8101,
+        8102,
+        8103
+      ]
+    },
+    {
+      "id": "PNJ-21",
+      "estilo": "retrato",
+      "prompt": "A sharp-featured woman of thirty-two, straight brown hair tied back in a practical ponytail, intent analytical eyes with dark circles under them, no make-up. A plain grey sweater with the sleeves pushed up, headphones around her neck, a paper cup of coffee in her hand, her eyes on another screen. Sitting at a desk in a dark open-plan office at night, lit only by three monitors showing waveforms and network graphs. Crimson accent: a single red highlighted line on one of the monitors.",
+      "nota": "retrato: Sasha Hale (analista de la Célula Puget, 32 años, ex inteligencia de señales)",
+      "semilla": 8203,
+      "candidatas": [
+        8203,
+        8204
+      ]
+    },
+    {
+      "id": "PNJ-10",
+      "estilo": "retrato",
+      "prompt": "A neat man who looks about thirty-five, a corporate lawyer, combed-back light-brown hair, a clean-shaven soft face, nervous pale blue eyes behind thin steel-rimmed glasses, a forced confident smile. An expensive navy suit, a leather document folder held tight against his chest. Standing in a glass-walled corporate conference room high in a Seattle tower, rain on the windows, the city lights below. Crimson accent: his deep red silk tie.",
+      "nota": "retrato: Julian Ashby (chiquillo de Halloway, abogado corporativo, sustituto de Celeste)",
+      "semilla": 8301,
+      "candidatas": [
+        8301,
+        8302
+      ]
+    },
+    {
+      "id": "PNJ-06",
+      "estilo": "retrato",
+      "prompt": "A broad-shouldered Irish-American man who looks about thirty-four, a massive square iron jaw, a heavy brow, close-cropped dark auburn hair, cold steady blue-grey eyes, a soldier's stillness. A long grey wool overcoat cut for very broad shoulders over a dark 1970s suit and black leather gloves. Standing on a foggy cobbled quay of an old Mediterranean port at night, fishing boats and gas lamps in the mist. Crimson accent: the deep red silk lining of his open coat.",
+      "nota": "retrato: Marcus «Ironjaw» Vance (sire de David y Krell; Abrazado a los 34 en 1945, familia irlandesa; el abrigo gris que hoy lleva Krell)",
+      "semilla": 8401,
+      "candidatas": [
+        8401,
+        8402
+      ]
+    },
+    {
+      "id": "PNJ-22",
+      "estilo": "retrato",
+      "prompt": "A severe, elegant woman who looks about fifty, silver hair in a tight Edwardian coiffure, cold grey eyes, thin unsmiling lips, the posture of an accountant queen. A high-collared black Edwardian dress with jet buttons and a cameo brooch, an open leather-bound ledger on the desk under her gloved hand. Seated in a dark wood-panelled office of an old port city, a brass oil lamp, rain on a tall window overlooking a harbour of steamships. Crimson accent: a red wax seal on a folded letter beside the ledger.",
+      "nota": "retrato: Adelaide Grange (Príncipe Ventrue de Boston, 1897–1962; trasfondo)",
+      "semilla": 8501,
+      "candidatas": [
+        8501,
+        8502
+      ]
+    },
+    {
+      "id": "REF-01",
+      "estilo": "retrato",
+      "prompt": "A woman of thirty-eight in the mid-1990s, a youth social worker, shoulder-length dark brown hair with a slight wave, dark grey eyes like her father's, a square, determined jaw, no make-up, a kind but stubborn expression, tired from long shifts. A 1990s oversized knitted cardigan over a plain turtleneck, a canvas shoulder bag stuffed with case folders, a styrofoam cup of coffee in her hand. Standing in the rain outside a run-down community youth centre in Rainier Valley in 1996, a payphone and an old sedan behind her; the painting feels like a remembered photograph from the nineties. Crimson accent: her red wool scarf.",
+      "nota": "retrato: Emily Smith (1958–1996, hija de David; retrato de los 90, fallecida)",
+      "semilla": 8602,
+      "candidatas": [
+        8601,
+        8602
+      ]
+    },
+    {
+      "id": "MEN-01",
+      "estilo": "retrato",
+      "prompt": "A wiry man in his mid-forties, unshaven, lank thinning hair, nervous darting eyes, nicotine-stained fingers. A cheap faded windbreaker over a work shirt, a cigarette in one hand and a small USB stick in the other. Sitting on the edge of the bed in a cheap motel room, curtains drawn, an overflowing ashtray on the nightstand. Crimson accent: the glowing ember of his cigarette.",
+      "nota": "retrato: Lonnie Barras (el ladrón que se guardó una: cuarenta y tantos, ex técnico de alarmas, fuma sin parar)",
+      "semilla": 8701,
+      "candidatas": [
+        8701,
+        8702
+      ]
+    },
+    {
+      "id": "MEN-03-DUTCH",
+      "estilo": "retrato",
+      "prompt": "A lean, weathered man of sixty, white stubble, deep-set wary pale eyes, a leathery hunter's face, grey hair under a faded cap. A worn canvas hunting jacket over flannel, a pump shotgun resting on his shoulder. Standing beside an old travel trailer behind a barn in flooded farmland, rain dripping from the trailer awning. Crimson accent: red shotgun shells in his open hand.",
+      "nota": "retrato: Dutch Lindqvist (el mayor de los cazarrecompensas de Montgomery, sesenta años)",
+      "semilla": 8801,
+      "candidatas": [
+        8801,
+        8802
+      ]
+    },
+    {
+      "id": "MEN-04-DAWSON",
+      "estilo": "retrato",
+      "prompt": "A thickset former marine in his forties, a bull neck, a buzz cut, a flattened nose, a heavy jaw, nostrils flared as if catching a scent. A dark security jacket with a radio clipped to the shoulder, an earpiece, a collapsible baton in his hand. Standing in the empty parking lot of a suburban tech campus, wet asphalt, a glass office building behind him. Crimson accent: the red indicator light on his radio.",
+      "nota": "retrato: Dawson (jefe de los ghouls de seguridad de Halloway: ex marine, cuello de toro, olfato sobrenatural)",
+      "semilla": 8901,
+      "candidatas": [
+        8901,
+        8902
+      ]
+    },
+    {
+      "id": "MEN-05-BAS",
+      "estilo": "retrato",
+      "prompt": "A broad, dark-skinned man who looks about forty, close-cropped greying hair, a thick beard, watchful amber-tinged eyes, heavy scarred forearms. A dock worker's hooded canvas jacket, a wool watch cap. Standing in a dry dock among the hulls of old ships used as shelters, a rusted crane above him. Crimson accent: a red lantern hanging from a hull.",
+      "nota": "retrato: Bas Okonjo (Gangrel, ex Lobo de Montgomery, Anarquista de Salitre)",
+      "semilla": 9002,
+      "candidatas": [
+        9001,
+        9002
+      ]
+    },
+    {
+      "id": "MEN-05-TAVI",
+      "estilo": "retrato",
+      "prompt": "A young, wiry man who looks about twenty-three, angry restless eyes, a buzzed undercut, a split lip, a clenched fist. A patched denim jacket over a dark hoodie, a glass bottle with a rag stuffed in its neck held at his side. Standing on the slipway of a closed shipyard, rusted cranes in the rain. Crimson accent: the red rag in the bottle.",
+      "nota": "retrato: Tavi Mercer (Brujah joven e impaciente, Anarquista de Salitre)",
+      "semilla": 9101,
+      "candidatas": [
+        9101,
+        9102
+      ]
+    },
+    {
+      "id": "MEN-06",
+      "estilo": "retrato",
+      "prompt": "A sturdy Latino man of forty, a crane operator, a tired kind face, short black hair, a moustache, the worried eyes of a father who saw something impossible. A worn hi-vis vest over a hooded work jacket, a hard hat under his arm, a steel thermos. Standing at the foot of a giant container crane at a port terminal, stacks of shipping containers in the rain. Crimson accent: the red warning light on top of the crane.",
+      "nota": "retrato: Teo Vásquez (operador de grúa de la Terminal 46, cuarenta años, tres hijos; vio a Krell destruir a Pike)",
+      "semilla": 9201,
+      "candidatas": [
+        9201,
+        9202
+      ]
+    },
+    {
+      "id": "MEN-07",
+      "estilo": "retrato",
+      "prompt": "A conscientious, earnest man of thirty-eight, light brown hair neatly parted, round wire glasses, clean-shaven, worried attentive eyes. A white lab coat over a shirt and tie, latex gloves, a manila case folder held against his chest. Standing in a brightly lit county forensic lab at night, steel tables and a microscope behind him. Crimson accent: a red tag on the case folder.",
+      "nota": "retrato: Dr. Marek Kowalski (patólogo suplente de la oficina forense, treinta y ocho años, concienzudo)",
+      "semilla": 9302,
+      "candidatas": [
+        9301,
+        9302
+      ]
+    },
+    {
+      "id": "MEN-08",
+      "estilo": "retrato",
+      "prompt": "An ancient, emaciated vampire whose face and scalp are a mass of old burn scars, hairless, one eye milky, lips burned back from long yellowed teeth, a patient predatory stillness. Tattered layers of dark rags, barefoot, long clawed fingers. Crouching at the edge of a dark storm drain tunnel, ankle-deep in black water, a faint distant light behind him. Crimson accent: a thin trickle of blood at the corner of his mouth.",
+      "nota": "retrato: El superviviente del Larchmont (antiguo Sabbat, deformado por el fuego de 2014, descalzo, en los desagües de Tacoma)",
+      "semilla": 9401,
+      "candidatas": [
+        9401,
+        9402
+      ]
+    },
+    {
+      "id": "MEN-10",
+      "estilo": "retrato",
+      "prompt": "A Latino man of forty-five, a youth counsellor, short black hair greying at the sides, a short beard, warm but haunted eyes, an old scar through one eyebrow. A dark hooded rain jacket over a plain sweater, a basketball under his arm. Standing outside a community youth centre in Rainier Valley, a chain-link fence and an empty basketball court in the rain. Crimson accent: a red ribbon tied to the fence.",
+      "nota": "retrato: Marcos Delgado (superviviente de la noche de Emily en 1996, hoy consejero de jóvenes, unos cuarenta y cinco)",
+      "semilla": 9501,
+      "candidatas": [
+        9501,
+        9502
+      ]
+    },
+    {
+      "id": "MEN-11",
+      "estilo": "retrato",
+      "prompt": "A rugged man of forty-nine, a thick greying moustache, a weathered squinting face, close-cropped grey hair, the bearing of a former Navy SEAL with bad knees. Black tactical gear without insignia, light body armour, a body camera on the chest, a short rifle with a weapon-mounted light held low, thermal goggles pushed up on his head. Standing at the open rear doors of a black van in a rainy industrial lot. Crimson accent: the red recording light of his body camera.",
+      "nota": "retrato: Cole Ransom (operador de FIRSTLIGHT, cuarenta y nueve años, bigote, ex SEAL compañero de Bear)",
+      "semilla": 9601,
+      "candidatas": [
+        9601,
+        9602
+      ]
+    },
+    {
+      "id": "MEN-12",
+      "estilo": "retrato",
+      "prompt": "A small, hunched Nosferatu courier: hairless mottled grey skin, a flattened bat-like nose, oversized ears, bulging pale eyes, crooked teeth, nervous long-fingered hands. A soaked oversized army surplus parka, a padded envelope clutched against his chest. Standing between stacked shipping containers on a wet concrete dock at night. Crimson accent: a red shipping container beside him.",
+      "nota": "retrato: Pike (recadero Nosferatu de los Topos, destruido en la Noche 2 junto a un contenedor rojo)",
+      "semilla": 9701,
+      "candidatas": [
+        9701,
+        9702
+      ]
+    },
+    {
+      "id": "MEN-13",
+      "estilo": "retrato",
+      "prompt": "A small, dapper old man of seventy, a former antiques dealer, thin white hair combed back, a neat white moustache, shrewd tired eyes behind half-moon glasses. A worn tweed waistcoat over a cardigan, a jeweller's loupe on a cord, an old silver pocket watch in his hand. Standing in a cluttered scrap and antiques warehouse beside railway tracks, piles of old furniture and salvaged metal around him. Crimson accent: a red glass lampshade among the antiques.",
+      "nota": "retrato: Sal Medeiros (perista del SoDo, setenta años, antiguo anticuario)",
+      "semilla": 9802,
+      "candidatas": [
+        9801,
+        9802
+      ]
+    },
+    {
+      "id": "MEN-14",
+      "estilo": "retrato",
+      "prompt": "A huge, bald, heavily built man who looks about thirty-five, a former nightclub bouncer, a thick neck, a flattened nose, a short dark beard, tired loyal eyes, pale skin. A black bomber jacket over a black t-shirt, a heavy steel flashlight in his hand. Standing guard at the sliding door of a junk and antiques warehouse beside railway tracks. Crimson accent: a red signal light on the railway behind him.",
+      "nota": "retrato: Corwin (Caitiff, ex portero de discoteca Abrazado en 2011, protector de Sal)",
+      "semilla": 9902,
+      "candidatas": [
+        9901,
+        9902
+      ]
+    },
+    {
+      "id": "CAZ-01",
+      "estilo": "retrato",
+      "prompt": "A tough Latina woman of thirty-eight, dark hair in a short braid, hard grieving dark eyes, no make-up. Black tactical gear without insignia, light body armour, a short rifle with a weapon-mounted UV flashlight, a small silver Saint Michael medal wrapped around her left hand on its cord. Standing at point at the mouth of a dark warehouse aisle, the beam of her flashlight cutting through the rain. Crimson accent: the thin red cord of the medal.",
+      "nota": "retrato: Teresa «Tess» Navarro (operadora de FIRSTLIGHT, 38, ex ATF; medalla de San Miguel, va en punta con la linterna)",
+      "semilla": 10001,
+      "candidatas": [
+        10001,
+        10002
+      ]
+    },
+    {
+      "id": "CAZ-02",
+      "estilo": "retrato",
+      "prompt": "A slim Korean-American man of thirty-one, a black baseball cap worn backwards, quick alert eyes, light stubble. Black tactical gear without insignia, a ruggedized tablet strapped to his forearm, a small quadcopter drone held in his other hand. Sitting at the open side door of a black van in a rainy industrial lot. Crimson accent: the red navigation light of the drone.",
+      "nota": "retrato: Owen Pak (operador de drones de FIRSTLIGHT, 31, ex Fuerza Aérea; gorra hacia atrás, tablet en el antebrazo)",
+      "semilla": 10102,
+      "candidatas": [
+        10101,
+        10102
+      ]
+    },
+    {
+      "id": "CAZ-03",
+      "estilo": "retrato",
+      "prompt": "A broad-shouldered blonde woman of forty-one with Scandinavian features, hair pulled back tight, a hard weathered face, hands covered in small old scars, chewing nicotine gum. Black tactical gear without insignia, light body armour, a breaching charge held in her hands. Crouched beside a steel door in a dark concrete corridor, counting under her breath. Crimson accent: the small red arming light on the breaching charge.",
+      "nota": "retrato: Lena Sorensen (operadora de brecha de FIRSTLIGHT, 41, ex ingeniera de combate; rubia, ancha de hombros, manos con cicatrices)",
+      "semilla": 10201,
+      "candidatas": [
+        10201,
+        10202
+      ]
+    },
+    {
+      "id": "PJ-01",
+      "estilo": "token",
+      "retrato": "PJ-01",
+      "prompt": "David Smith: short dark hair greying at the temples, a thick black tactical jacket with reinforced shoulders, an old military folding knife in his hand.",
+      "semilla": 6051,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PJ-02",
+      "estilo": "token",
+      "retrato": "PJ-02",
+      "prompt": "Celeste Arden: sleek light golden-blonde jaw-length hair, a tailored charcoal coat, a crystal wine glass in one hand.",
+      "semilla": 6154,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PJ-03",
+      "estilo": "token",
+      "retrato": "PJ-03",
+      "prompt": "Ezra Lund, a Nosferatu: a hairless grey-white head with long pointed ears, a plain black hoodie with clean edges and the hood half up, a ruggedized laptop open in his hands. No cape, no wings, no spikes, no smoke, no aura around him.",
+      "semilla": 6255,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PJ-04",
+      "estilo": "token",
+      "retrato": "PJ-04",
+      "prompt": "Nadia Ferro: a shaggy dark bob with one faded streak, a black leather jacket, studio headphones around her neck.",
+      "semilla": 6351,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PJ-05",
+      "estilo": "token",
+      "retrato": "PJ-05",
+      "prompt": "Hal Brekke: a big broad man with long tangled dirty-blond hair, a dark oilskin jacket over a cream wool sweater, a coil of rope over one shoulder.",
+      "semilla": 6451,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PJ-06",
+      "estilo": "token",
+      "retrato": "PJ-06",
+      "prompt": "Ruth Abernathy: ash-brown hair pinned up in a tight bun, a long white coat over navy scrubs, nitrile gloves, a scalpel in one hand.",
+      "semilla": 6551,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-01",
+      "estilo": "token",
+      "retrato": "PNJ-01",
+      "prompt": "Ethan Montgomery: a broad heavy man with short salt-and-pepper hair, a waxed canvas jacket over flannel, enormous scarred hands.",
+      "semilla": 6651,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-02",
+      "estilo": "token",
+      "retrato": "PNJ-02",
+      "prompt": "Marcus Whitmore: dark hair swept back, an impeccable dark suit, one ring with a black stone.",
+      "semilla": 6752,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-03",
+      "estilo": "token",
+      "retrato": "PNJ-03",
+      "prompt": "Charles Halloway: black hair with a side part, a dark classic suit, hands clasped behind his back.",
+      "semilla": 6851,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-04",
+      "estilo": "token",
+      "retrato": "PNJ-04",
+      "prompt": "Helen Ward: dark hair escaping a grey hoodie, glasses pushed up on her head, a cigarette in one hand and an old flip phone in the other.",
+      "semilla": 6951,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-05",
+      "estilo": "token",
+      "retrato": "PNJ-05",
+      "prompt": "Tom «Bear» Whitman: a huge man with a buzz cut, a grey t-shirt and tactical cargo pants, a black metal canteen on his belt.",
+      "semilla": 7051,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-11",
+      "estilo": "token",
+      "retrato": "PNJ-11",
+      "prompt": "Rosa Iturbe: short black hair, blue work overalls, steel-toed boots, grease-stained hands.",
+      "semilla": 7151,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-12",
+      "estilo": "token",
+      "retrato": "PNJ-12",
+      "prompt": "August Krell: a shaved head, a long grey wool coat clearly too big at the shoulders over dark work clothes, his fists clenched.",
+      "semilla": 7251,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-13",
+      "estilo": "token",
+      "retrato": "PNJ-13",
+      "prompt": "Abel Thornquist: an enormous hunched figure with cracked grey wood-like skin on his bald head, a mended 1920s three-piece suit, a carbide lamp in one root-like hand.",
+      "semilla": 7351,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-14",
+      "estilo": "token",
+      "retrato": "PNJ-14",
+      "prompt": "Solène Marchetti: dark hair in a low bun, a grey vintage-cut dress, a fountain pen and a leather-bound register in her hands.",
+      "semilla": 7451,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-15",
+      "estilo": "token",
+      "retrato": "PNJ-15",
+      "prompt": "Anneliese Voight: very short hair, a black turtleneck under an open white lab coat.",
+      "semilla": 7551,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-16",
+      "estilo": "token",
+      "retrato": "PNJ-16",
+      "prompt": "Wendell Fry: a faded baseball cap, a corduroy jacket, headphones around his neck.",
+      "semilla": 7651,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-17",
+      "estilo": "token",
+      "retrato": "PNJ-17",
+      "prompt": "Liam O'Connor: a huge man with a wool cap over red hair, an undershirt and suspenders, boxing pads on his hands.",
+      "semilla": 7751,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-18",
+      "estilo": "token",
+      "retrato": "PNJ-18",
+      "prompt": "Dana Okafor: very short greying hair, a plain grey blazer, a paper cup of black coffee in her right hand, her left hand in her pocket.",
+      "semilla": 7851,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-19",
+      "estilo": "token",
+      "retrato": "PNJ-19",
+      "prompt": "Preston Gale: a tanned man in an expensive suit with an open collar, slicked hair.",
+      "semilla": 7951,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-20",
+      "estilo": "token",
+      "retrato": "PNJ-20",
+      "prompt": "Jun Takeda: a bike helmet with stickers, a yellow delivery rain jacket, an insulated delivery backpack.",
+      "semilla": 8051,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-09",
+      "estilo": "token",
+      "retrato": "MEN-09",
+      "prompt": "Mr. Pell: an old man with thin grey hair, an impeccable dark suit of another era, an aluminium briefcase handcuffed to his wrist.",
+      "semilla": 8151,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-21",
+      "estilo": "token",
+      "retrato": "PNJ-21",
+      "prompt": "Sasha Hale: brown hair in a ponytail, a plain grey sweater, headphones around her neck, a paper cup of coffee.",
+      "semilla": 8251,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "PNJ-10",
+      "estilo": "token",
+      "retrato": "PNJ-10",
+      "prompt": "Julian Ashby: combed-back light-brown hair, a navy suit, a leather document folder held to his chest.",
+      "semilla": 8351,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-01",
+      "estilo": "token",
+      "retrato": "MEN-01",
+      "prompt": "Lonnie Barras: lank thinning hair, a cheap faded windbreaker, a cigarette in one hand.",
+      "semilla": 8751,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-03-DUTCH",
+      "estilo": "token",
+      "retrato": "MEN-03-DUTCH",
+      "prompt": "Dutch Lindqvist: a faded cap, a worn canvas hunting jacket, a pump shotgun.",
+      "semilla": 8851,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-04-DAWSON",
+      "estilo": "token",
+      "retrato": "MEN-04-DAWSON",
+      "prompt": "Dawson: a thickset man with a buzz cut and a bull neck, a dark security jacket with a radio on the shoulder, a collapsible baton.",
+      "semilla": 8951,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-05-BAS",
+      "estilo": "token",
+      "retrato": "MEN-05-BAS",
+      "prompt": "Bas Okonjo: a broad dark-skinned man in a wool watch cap and a hooded canvas dock jacket.",
+      "semilla": 9051,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-05-TAVI",
+      "estilo": "token",
+      "retrato": "MEN-05-TAVI",
+      "prompt": "Tavi Mercer: a wiry young man with a buzzed undercut, a patched denim jacket over a dark hoodie, a bottle with a rag in its neck.",
+      "semilla": 9151,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-06",
+      "estilo": "token",
+      "retrato": "MEN-06",
+      "prompt": "Teo Vásquez: short black hair, a hi-vis vest over a hooded work jacket, a hard hat under his arm.",
+      "semilla": 9251,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-07",
+      "estilo": "token",
+      "retrato": "MEN-07",
+      "prompt": "Dr. Marek Kowalski: neatly parted light brown hair, a white lab coat, a manila folder held to his chest.",
+      "semilla": 9351,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-08",
+      "estilo": "token",
+      "retrato": "MEN-08",
+      "prompt": "The Larchmont survivor: an emaciated hairless burn-scarred vampire crouching, a long ragged dark coat hanging straight down, barefoot, long clawed fingers. No cape, no wings, no spikes, no smoke, no aura around him.",
+      "semilla": 9455,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-10",
+      "estilo": "token",
+      "retrato": "MEN-10",
+      "prompt": "Marcos Delgado: short black hair greying at the sides, a dark hooded rain jacket, a basketball under his arm.",
+      "semilla": 9551,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-11",
+      "estilo": "token",
+      "retrato": "MEN-11",
+      "prompt": "Cole Ransom: close-cropped grey hair, black tactical gear and light body armour, thermal goggles on his head, a short rifle with a weapon light.",
+      "semilla": 9651,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-12",
+      "estilo": "token",
+      "retrato": "MEN-12",
+      "prompt": "Pike, a small hunched Nosferatu: a hairless mottled grey head with oversized ears, a soaked oversized army parka, a padded envelope clutched to his chest.",
+      "semilla": 9751,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-13",
+      "estilo": "token",
+      "retrato": "MEN-13",
+      "prompt": "Sal Medeiros: a small old man with thin white combed-back hair, a tweed waistcoat over a cardigan, a pocket watch in his hand.",
+      "semilla": 9851,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-14",
+      "estilo": "token",
+      "retrato": "MEN-14",
+      "prompt": "Corwin: a huge bald heavily built man in a black bomber jacket, a heavy steel flashlight in his hand.",
+      "semilla": 9951,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "CAZ-01",
+      "estilo": "token",
+      "retrato": "CAZ-01",
+      "prompt": "Tess Navarro: dark hair in a short braid, black tactical gear and light body armour, a short rifle with a UV flashlight, a medal on a cord in her left hand.",
+      "semilla": 10051,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "CAZ-02",
+      "estilo": "token",
+      "retrato": "CAZ-02",
+      "prompt": "Owen Pak: a black baseball cap worn backwards, black tactical gear, a ruggedized tablet strapped to his forearm, a small drone in his hand.",
+      "semilla": 10151,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "CAZ-03",
+      "estilo": "token",
+      "retrato": "CAZ-03",
+      "prompt": "Lena Sorensen: blonde hair pulled back tight, broad shoulders, black tactical gear and light body armour, a breaching charge in her hands.",
+      "semilla": 10251,
+      "nota": "token desde el retrato"
+    },
+    {
+      "id": "MEN-02",
+      "estilo": "token",
+      "figura": "A FIRSTLIGHT tactical operator, a former soldier of about forty, a black helmet with thermal goggles pushed up, a hard tired face. Black tactical gear without any insignia or patches, light body armour, a body camera on the chest, a short rifle with a weapon-mounted UV flashlight held low. Standing in the rain beside a black van in an industrial port lot. Crimson accent: the small red recording light of the body camera.",
+      "semilla_figura": 20051,
+      "prompt": "a FIRSTLIGHT operator: a black helmet with thermal goggles, black tactical gear and light body armour without insignia, a short rifle with a weapon light held ready.",
+      "semilla": 2,
+      "nota": "token genérico sin retrato (menores.json): figura de referencia → Qwen-Edit"
+    },
+    {
+      "id": "MEN-04",
+      "estilo": "token",
+      "figura": "A burly corporate security guard, a ghoul, about forty, a buzz cut, a hard blank stare. A plain dark security jacket with no badge, no patches and no insignia over a stab vest, an earpiece, a radio on the shoulder, a collapsible baton in one hand. Standing in the empty marble lobby of a glass corporate tower at night. Crimson accent: the red light of his radio.",
+      "semilla_figura": 20151,
+      "prompt": "a burly security guard with a buzz cut, a plain dark security jacket over a stab vest, a radio on the shoulder, a collapsible baton in his hand.",
+      "semilla": 2,
+      "nota": "token genérico sin retrato (menores.json): figura de referencia → Qwen-Edit"
+    },
+    {
+      "id": "MEN-03",
+      "estilo": "token",
+      "figura": "A rural bounty hunter, a former soldier of about forty-five, stubble, a faded cap, a worn canvas hunting jacket over flannel, a hunting rifle held across his body. Standing beside a pickup truck on a gravel farm road in flooded farmland in the rain. Crimson accent: the red tail light of the pickup.",
+      "semilla_figura": 20251,
+      "prompt": "a rural bounty hunter: a faded cap, a worn canvas hunting jacket, a hunting rifle held in both hands.",
+      "semilla": 2,
+      "nota": "token genérico sin retrato (menores.json): figura de referencia → Qwen-Edit"
+    },
+    {
+      "id": "MEN-05",
+      "estilo": "token",
+      "figura": "An Anarch vampire dock worker of about thirty-five, pale, unshaven, hard eyes, a hooded canvas work jacket, a wool watch cap, a heavy wrench in one hand. Standing among the hulls of old ships in a closed shipyard in the rain. Crimson accent: a red lantern hanging from a hull.",
+      "semilla_figura": 20351,
+      "prompt": "an Anarch dock worker: a wool watch cap, a hooded canvas work jacket, a heavy wrench in one hand.",
+      "semilla": 2,
+      "nota": "token genérico sin retrato (menores.json): figura de referencia → Qwen-Edit"
+    },
+    {
+      "id": "PERROS-MONTGOMERY",
+      "estilo": "token",
+      "figura": "A large ghoul working dog, a shepherd and wolf cross, standing alert in the rain on the dark wooden porch of a farmhouse, thick dark grey and black wet fur, faintly amber eyes, bared teeth, a heavy leather collar. Crimson accent: a drop of blood on its muzzle.",
+      "semilla_figura": 20451,
+      "prompt": "a large shepherd and wolf cross with thick dark grey and black wet fur and a heavy leather collar.",
+      "semilla": 2,
+      "nota": "token genérico sin retrato (menores.json): figura de referencia → Qwen-Edit",
+      "prefijo": "Change the camera angle: show the same dog from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only its back, the top of its head and its pointed ears, its tail and its four legs in a stalking stride, the head pointing UP to the top of the frame. Same fur, same colours as in Picture 1. The whole dog, centred. Only the dog: no people, no hands, no leash.\n\nThe dog: "
+    }
+  ]
 }

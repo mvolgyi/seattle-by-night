@@ -1,0 +1,172 @@
+<section class="tab sbn-panel-tab sbn-panel-tiradas {{tab.cssClass}}" data-tab="tiradas" data-group="primary">
+
+  {{#unless tiradas.hayActores}}<p class="sbn-panel-aviso"><i class="fa-solid fa-user-slash"></i> {{localize "SBN.panel.tiradas.sinActores"}}</p>{{/unless}}
+
+  {{#with tiradas.a3 as |a|}}
+  <article class="sbn-tirada-clave" data-tirada="A3-E04">
+    <header>
+      <h3>{{a.d.nombre}}</h3>
+      <div class="sbn-enlaces">{{{a.escenaHTML}}}</div>
+      <p class="sbn-nota">{{a.d.tirada}}</p>
+    </header>
+
+    <div class="sbn-tc-fila">
+      <label>{{localize "SBN.tirada.actor"}}
+        <select data-sbn-cambio="actor" data-tirada="A3-E04">
+          {{#each a.actores as |o|}}<option value="{{o.id}}" {{#if o.sel}}selected{{/if}}>{{o.nombre}}</option>{{/each}}
+        </select></label>
+      <span class="sbn-tc-ruta">{{a.ruta}} · {{localize "SBN.panel.tiradas.dificultad" dif=a.dificultad}}</span>
+    </div>
+
+    <div class="sbn-tc-cuerpo">
+      <div>
+        <h4>{{localize "SBN.panel.tiradas.pistasQueSuman" n=a.d.porPista}}</h4>
+        <ul class="sbn-tc-casillas">
+          {{#each a.pistas as |p|}}
+            <li class="{{#if p.activa}}sbn-on{{/if}}"><button type="button" class="sbn-casilla{{#if p.activa}} sbn-on{{/if}}" data-action="pista" data-id="{{p.id}}" aria-pressed="{{p.activa}}">
+              <i class="fa-solid {{#if p.activa}}fa-square-check{{else}}fa-square{{/if}}"></i></button>
+              <span class="sbn-id">{{p.id}}</span> {{p.nombre}}</li>
+          {{/each}}
+        </ul>
+        <h4>{{localize "SBN.panel.tiradas.mesa"}}</h4>
+        <ul class="sbn-tc-casillas">
+          {{#each a.pruebas as |p|}}
+            <li class="{{#if p.activa}}sbn-on{{/if}}"><button type="button" class="sbn-casilla{{#if p.activa}} sbn-on{{/if}}" data-action="prueba" data-id="{{p.id}}" aria-pressed="{{p.activa}}">
+              <i class="fa-solid {{#if p.activa}}fa-square-check{{else}}fa-square{{/if}}"></i></button>
+              <span class="sbn-chip{{#if p.negativa}} sbn-chip-menos{{/if}}">{{p.signo}}</span> {{p.nombre}}</li>
+          {{/each}}
+        </ul>
+        {{#if a.d.automatico}}<p class="sbn-panel-aviso"><i class="fa-solid fa-hand"></i> {{a.d.automatico}}</p>{{/if}}
+      </div>
+
+      <aside class="sbn-tc-reserva">
+        <div class="sbn-tc-total"><span class="sbn-tc-numero" data-sbn-reserva="A3-E04">{{a.total}}</span> {{localize "SBN.panel.tiradas.dados"}}</div>
+        <ul class="sbn-tc-desglose">
+          {{#each a.desglose as |l|}}<li class="{{#if l.base}}sbn-base{{/if}}"><span>{{l.texto}}</span><strong>{{l.valor}}</strong></li>{{/each}}
+        </ul>
+        <button type="button" class="sbn-tc-tirar" data-action="tirar" data-tirada="A3-E04" {{#unless a.actor}}disabled{{/unless}}>
+          <i class="fa-solid fa-dice-d10"></i> {{localize "SBN.panel.tiradas.tirar" n=a.total}}</button>
+      </aside>
+    </div>
+
+    <details class="sbn-tm-grupo">
+      <summary>{{localize "SBN.panel.tiradas.resultados"}}</summary>
+      <table class="sbn-tabla">
+        {{#each a.d.resultados as |r|}}<tr><th>{{r.resultado}}</th><td>{{r.efecto}}</td></tr>{{/each}}
+      </table>
+    </details>
+  </article>
+  {{/with}}
+
+  {{#with tiradas.a4 as |a|}}
+  <article class="sbn-tirada-clave" data-tirada="A4-E01">
+    <header>
+      <h3>{{a.d.nombre}}</h3>
+      <div class="sbn-enlaces">{{{a.escenaHTML}}}</div>
+      <p class="sbn-nota">{{a.d.tirada}}</p>
+    </header>
+
+    <div class="sbn-tc-fila">
+      <label>{{localize "SBN.tirada.actor"}}
+        <select data-sbn-cambio="actor" data-tirada="A4-E01">
+          {{#each a.actores as |o|}}<option value="{{o.id}}" {{#if o.sel}}selected{{/if}}>{{o.nombre}}</option>{{/each}}
+        </select></label>
+      <label>{{localize "SBN.panel.tiradas.ruta"}}
+        <select data-sbn-cambio="ruta">
+          {{#each a.rutas as |r|}}<option value="{{r.i}}" {{#if r.sel}}selected{{/if}}>{{r.etiqueta}}</option>{{/each}}
+        </select></label>
+      <span class="sbn-tc-ruta">{{localize "SBN.panel.tiradas.dificultad" dif=a.dificultad}}</span>
+    </div>
+
+    <div class="sbn-tc-cuerpo">
+      <div>
+        <h4>{{localize "SBN.panel.tiradas.listaComprobacion"}}</h4>
+        <table class="sbn-tabla sbn-tc-valores">
+          {{#each a.valores as |f|}}
+            <tr class="{{#if f.activa}}sbn-on{{/if}}">
+              <td class="sbn-tc-marcas">
+                {{#each f.pistas as |p|}}<button type="button" class="sbn-casilla{{#if p.activa}} sbn-on{{/if}}" data-action="pista" data-id="{{p.id}}" aria-pressed="{{p.activa}}" data-tooltip-text="{{p.id}}">
+                  <i class="fa-solid {{#if p.activa}}fa-square-check{{else}}fa-square{{/if}}"></i></button>{{/each}}
+                {{#if f.prueba}}<button type="button" class="sbn-casilla{{#if f.prueba.activa}} sbn-on{{/if}}" data-action="prueba" data-id="{{f.prueba.id}}" aria-pressed="{{f.prueba.activa}}">
+                  <i class="fa-solid {{#if f.prueba.activa}}fa-square-check{{else}}fa-square{{/if}}"></i></button>{{/if}}
+              </td>
+              <td>{{#each f.pistas as |p|}}<span class="sbn-id">{{p.id}}</span> {{/each}}{{f.etiqueta}}{{#if f.efecto}}<div class="sbn-nota">{{f.efecto}}</div>{{/if}}</td>
+              <td class="sbn-tc-cantidad">{{f.signo}}</td>
+            </tr>
+          {{/each}}
+        </table>
+        <h4>{{localize "SBN.panel.tiradas.mesa"}}</h4>
+        <table class="sbn-tabla sbn-tc-valores">
+          {{#each a.otros as |f|}}
+            <tr class="{{#if f.activa}}sbn-on{{/if}}">
+              <td class="sbn-tc-marcas">
+                {{#if f.prueba}}<button type="button" class="sbn-casilla{{#if f.prueba.activa}} sbn-on{{/if}}" data-action="prueba" data-id="{{f.prueba.id}}" aria-pressed="{{f.prueba.activa}}">
+                  <i class="fa-solid {{#if f.prueba.activa}}fa-square-check{{else}}fa-square{{/if}}"></i></button>{{/if}}
+                {{#if f.casilla}}<button type="button" class="sbn-casilla{{#if f.casilla.activa}} sbn-on{{/if}}" data-action="prueba" data-id="{{f.casilla.id}}" aria-pressed="{{f.casilla.activa}}">
+                  <i class="fa-solid {{#if f.casilla.activa}}fa-square-check{{else}}fa-square{{/if}}"></i></button>{{/if}}
+              </td>
+              <td>{{f.etiqueta}}</td>
+              <td class="sbn-tc-cantidad">{{f.signo}}{{#if f.contra}} <small>{{localize "SBN.panel.tiradas.aHalloway"}}</small>{{/if}}</td>
+            </tr>
+          {{/each}}
+        </table>
+      </div>
+
+      <aside class="sbn-tc-reserva">
+        <div class="sbn-tc-total"><span class="sbn-tc-numero" data-sbn-reserva="A4-E01">{{a.total}}</span> {{localize "SBN.panel.tiradas.dados"}}</div>
+        <ul class="sbn-tc-desglose">
+          {{#each a.desglose as |l|}}<li class="{{#if l.base}}sbn-base{{/if}}"><span>{{l.texto}}</span><strong>{{l.valor}}</strong></li>{{/each}}
+        </ul>
+        <button type="button" class="sbn-tc-tirar" data-action="tirar" data-tirada="A4-E01" {{#unless a.actor}}disabled{{/unless}}>
+          <i class="fa-solid fa-dice-d10"></i> {{localize "SBN.panel.tiradas.tirar" n=a.total}}</button>
+
+        <div class="sbn-tc-oponente">
+          <div><span class="sbn-tc-numero sbn-tc-numero-oponente" data-sbn-reserva="halloway">{{a.halloway}}</span> {{localize "SBN.panel.tiradas.dados"}}</div>
+          <div class="sbn-enlaces">{{{a.oponente.nombreHTML}}} · {{a.oponente.texto}}</div>
+          <button type="button" data-action="tirarHalloway" {{#unless a.oponente.actor}}disabled data-tooltip-text="{{localize 'SBN.panel.tiradas.sinHalloway'}}"{{/unless}}>
+            <i class="fa-solid fa-dice-d10"></i> {{localize "SBN.panel.tiradas.tirarHalloway"}}</button>
+        </div>
+
+        <div class="sbn-tc-margen">
+          <label>{{localize "SBN.panel.tiradas.exitosCoterie"}} <input type="number" min="0" data-sbn-cambio="exitos" data-lado="coterie" value="{{a.exitos.coterie}}"></label>
+          <label>{{localize "SBN.panel.tiradas.exitosHalloway"}} <input type="number" min="0" data-sbn-cambio="exitos" data-lado="halloway" value="{{a.exitos.halloway}}"></label>
+          {{#if a.margen}}<div class="sbn-tc-margen-valor">{{localize "SBN.panel.tiradas.margen"}} <strong>{{a.margen}}</strong></div>{{/if}}
+        </div>
+      </aside>
+    </div>
+
+    <h4>{{localize "SBN.panel.tiradas.margenes"}}</h4>
+    <table class="sbn-tabla sbn-tc-margenes">
+      {{#each a.resultados as |r|}}<tr class="{{#if r.marcado}}sbn-actual{{/if}}"><th>{{r.margen}}</th><td>{{r.efecto}}</td></tr>{{/each}}
+    </table>
+
+    {{#with a.votacion as |v|}}
+      <h4>{{localize "SBN.panel.votacion.titulo"}} <span class="sbn-nota">{{v.texto}}</span></h4>
+      <table class="sbn-tabla sbn-votacion">
+        <thead><tr><th>{{localize "SBN.panel.votacion.primogenito"}}</th><th>{{localize "SBN.panel.votacion.defecto"}}</th><th>{{localize "SBN.panel.votacion.cambia"}}</th><th>{{localize "SBN.panel.votacion.voto"}}</th></tr></thead>
+        <tbody>
+          {{#each v.primogenitos as |p|}}
+            <tr class="sbn-voto-{{p.voto}}">
+              <td class="sbn-enlaces">{{{p.nombreHTML}}}</td>
+              <td>{{p.defecto}}</td>
+              <td>{{p.cambia}}
+                {{#if p.apoyos.length}}<div>{{#each p.apoyos as |x|}}<span class="sbn-chip{{#if x.tiene}} sbn-chip-si{{/if}}" data-tooltip-text="{{x.nombre}}">{{#if x.tiene}}✓ {{/if}}{{x.etiqueta}}</span>{{/each}}</div>{{/if}}
+                {{#if p.cambiaria}}<div class="sbn-nota sbn-cambiaria"><i class="fa-solid fa-arrow-right-arrow-left"></i> {{localize "SBN.panel.votacion.cambiaria"}}</div>{{/if}}</td>
+              <td class="sbn-voto">
+                <select data-sbn-cambio="voto" data-pnj="{{p.pnj}}">
+                  {{#each p.opciones as |o|}}<option value="{{o.valor}}" {{#if o.sel}}selected{{/if}}>{{o.texto}}</option>{{/each}}
+                </select>
+                {{#if p.azar}}<button type="button" data-action="azar" data-pnj="{{p.pnj}}" data-tooltip-text="{{localize 'SBN.panel.votacion.azar'}}"><i class="fa-solid fa-dice"></i></button>{{/if}}
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <p class="sbn-votacion-cuenta sbn-veredicto-{{v.veredicto}}">
+        {{localize "SBN.panel.votacion.cuenta" si=v.cuenta.si no=v.cuenta.no abstencion=v.cuenta.abstencion azar=v.cuenta.azar}} — <strong>{{v.veredictoTexto}}</strong></p>
+      <p class="sbn-nota">{{v.porDefecto}}</p>
+      <p class="sbn-nota">{{v.automatico}}</p>
+    {{/with}}
+  </article>
+  {{/with}}
+</section>

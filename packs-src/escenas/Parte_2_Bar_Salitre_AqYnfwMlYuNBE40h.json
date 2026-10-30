@@ -1,0 +1,1277 @@
+{
+  "_id": "AqYnfwMlYuNBE40h",
+  "_key": "!scenes!AqYnfwMlYuNBE40h",
+  "name": "Parte 2 · Bar Salitre",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 100,
+  "width": 2000,
+  "height": 2200,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.75,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "PG8AdrxQxpOj6CBv",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/salitre.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!AqYnfwMlYuNBE40h.PG8AdrxQxpOj6CBv"
+    }
+  ],
+  "journal": "JMwTSsJAcyYdCs3m",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "DoMyZDzVFZLkwwp3",
+      "c": [
+        100,
+        1300,
+        480,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.DoMyZDzVFZLkwwp3"
+    },
+    {
+      "_id": "9sYDo9L5sb6HJAAJ",
+      "c": [
+        570,
+        1300,
+        860,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.9sYDo9L5sb6HJAAJ"
+    },
+    {
+      "_id": "Q4rPgbzZqxlxov2E",
+      "c": [
+        940,
+        1300,
+        1000,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.Q4rPgbzZqxlxov2E"
+    },
+    {
+      "_id": "PtIsZWbv6TPW4wob",
+      "c": [
+        100,
+        2100,
+        620,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.PtIsZWbv6TPW4wob"
+    },
+    {
+      "_id": "moQWXUoDKAlxA6cP",
+      "c": [
+        740,
+        2100,
+        1000,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.moQWXUoDKAlxA6cP"
+    },
+    {
+      "_id": "4hPm54xjVbk9dyIf",
+      "c": [
+        100,
+        800,
+        100,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.4hPm54xjVbk9dyIf"
+    },
+    {
+      "_id": "xBiR5BSw240HFHB8",
+      "c": [
+        100,
+        1100,
+        100,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.xBiR5BSw240HFHB8"
+    },
+    {
+      "_id": "iuDbRJHNlYK6oRPv",
+      "c": [
+        1000,
+        800,
+        1000,
+        1420
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.iuDbRJHNlYK6oRPv"
+    },
+    {
+      "_id": "WJA6WhG2YMfyp5to",
+      "c": [
+        1000,
+        1540,
+        1000,
+        1750
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.WJA6WhG2YMfyp5to"
+    },
+    {
+      "_id": "9vjOh7tiJGFP4TaK",
+      "c": [
+        1000,
+        1850,
+        1000,
+        1960
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.9vjOh7tiJGFP4TaK"
+    },
+    {
+      "_id": "s6g42FQzEwXSodNS",
+      "c": [
+        1000,
+        2060,
+        1000,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.s6g42FQzEwXSodNS"
+    },
+    {
+      "_id": "FggcB8GwDuBvzgaF",
+      "c": [
+        100,
+        800,
+        860,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.FggcB8GwDuBvzgaF"
+    },
+    {
+      "_id": "ME6oBaGfVszcjXIn",
+      "c": [
+        950,
+        800,
+        1000,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.ME6oBaGfVszcjXIn"
+    },
+    {
+      "_id": "CIziCBYw7Os9TeeK",
+      "c": [
+        600,
+        800,
+        600,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.CIziCBYw7Os9TeeK"
+    },
+    {
+      "_id": "pIxGbDyHTJcjnwx0",
+      "c": [
+        600,
+        980,
+        600,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.pIxGbDyHTJcjnwx0"
+    },
+    {
+      "_id": "6MShYFBV7P2l7n53",
+      "c": [
+        600,
+        1050,
+        1000,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.6MShYFBV7P2l7n53"
+    },
+    {
+      "_id": "upUM3UKP0bnXW4ns",
+      "c": [
+        1000,
+        1750,
+        1000,
+        1850
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.upUM3UKP0bnXW4ns"
+    },
+    {
+      "_id": "4LBs8CqfHY9wJU1y",
+      "c": [
+        1000,
+        1420,
+        1000,
+        1540
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.4LBs8CqfHY9wJU1y"
+    },
+    {
+      "_id": "HXyiiqnpINJptqo1",
+      "c": [
+        1000,
+        1960,
+        1000,
+        2060
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.HXyiiqnpINJptqo1"
+    },
+    {
+      "_id": "6i2Vb61jskBXQsc4",
+      "c": [
+        620,
+        2100,
+        740,
+        2100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.6i2Vb61jskBXQsc4"
+    },
+    {
+      "_id": "lgHpVXgIUDOvL0Ct",
+      "c": [
+        100,
+        1000,
+        100,
+        1100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.lgHpVXgIUDOvL0Ct"
+    },
+    {
+      "_id": "XYD0OsNCr5YzlPpu",
+      "c": [
+        480,
+        1300,
+        570,
+        1300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.XYD0OsNCr5YzlPpu"
+    },
+    {
+      "_id": "ZUcAn3eiv2oCp8FV",
+      "c": [
+        600,
+        900,
+        600,
+        980
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.ZUcAn3eiv2oCp8FV"
+    },
+    {
+      "_id": "HNozxLpOMCcaGR0h",
+      "c": [
+        860,
+        1300,
+        940,
+        1300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.HNozxLpOMCcaGR0h"
+    },
+    {
+      "_id": "SS2BbvwBdGufNeb8",
+      "c": [
+        860,
+        800,
+        950,
+        800
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.SS2BbvwBdGufNeb8"
+    },
+    {
+      "_id": "JyJxrMTWgVeV1jFC",
+      "c": [
+        0,
+        800,
+        100,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.JyJxrMTWgVeV1jFC"
+    },
+    {
+      "_id": "JSGs3PzfDOGlX8X7",
+      "c": [
+        1000,
+        1100,
+        1150,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.JSGs3PzfDOGlX8X7"
+    },
+    {
+      "_id": "8DNgJVUg80Iau3d5",
+      "c": [
+        1150,
+        1100,
+        1650,
+        1100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetal",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.8DNgJVUg80Iau3d5"
+    },
+    {
+      "_id": "4ohluQa9s7Pc72m2",
+      "c": [
+        1650,
+        1100,
+        2000,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.4ohluQa9s7Pc72m2"
+    },
+    {
+      "_id": "Wpj0KiuF3xX1VEdq",
+      "c": [
+        1200,
+        0,
+        1200,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.Wpj0KiuF3xX1VEdq"
+    },
+    {
+      "_id": "yAlWjIzI3dtCm6QX",
+      "c": [
+        1800,
+        0,
+        1800,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.yAlWjIzI3dtCm6QX"
+    },
+    {
+      "_id": "ktTWwYPRIF56dIw8",
+      "c": [
+        1200,
+        800,
+        1450,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.ktTWwYPRIF56dIw8"
+    },
+    {
+      "_id": "Qx1vgdT5bbmGY0sF",
+      "c": [
+        1600,
+        800,
+        1800,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.Qx1vgdT5bbmGY0sF"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "ndgAveCE03ispGGI",
+      "name": "Letrero de neón «SAL TRE» (le falta una letra)",
+      "x": 1035,
+      "y": 1640,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.ndgAveCE03ispGGI"
+    },
+    {
+      "_id": "UqoHs7eJ7dyEV8gs",
+      "name": "Lámpara colgada del bar",
+      "x": 550,
+      "y": 1550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.UqoHs7eJ7dyEV8gs"
+    },
+    {
+      "_id": "XZKHZGvwuzGiZvC7",
+      "name": "Lámpara colgada del bar",
+      "x": 700,
+      "y": 1900,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.XZKHZGvwuzGiZvC7"
+    },
+    {
+      "_id": "cqui1oJdTfNapUKP",
+      "name": "Luz de detrás de la barra",
+      "x": 240,
+      "y": 1650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.cqui1oJdTfNapUKP"
+    },
+    {
+      "_id": "u6z7G982Ar4C0huW",
+      "name": "Bombita de la trastienda",
+      "x": 320,
+      "y": 1030,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.u6z7G982Ar4C0huW"
+    },
+    {
+      "_id": "LFXMnPMn5jGhLFdl",
+      "name": "Tubo del almacén",
+      "x": 800,
+      "y": 930,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.LFXMnPMn5jGhLFdl"
+    },
+    {
+      "_id": "hvPfIiH9SXA0MK83",
+      "name": "Tubo del baño",
+      "x": 800,
+      "y": 1180,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.hvPfIiH9SXA0MK83"
+    },
+    {
+      "_id": "iTTJdrilqi6QH4P2",
+      "name": "Aplique de la puerta trasera",
+      "x": 900,
+      "y": 785,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.iTTJdrilqi6QH4P2"
+    },
+    {
+      "_id": "86JVavXFp2zYTZd1",
+      "name": "Farola de sodio de la verja",
+      "x": 1700,
+      "y": 1140,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.86JVavXFp2zYTZd1"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "crwPSsHwfq1OXEgH",
+      "name": "Llegada por la carretera",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1250,
+          "y": 1960,
+          "width": 300,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "llegada-carretera",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.crwPSsHwfq1OXEgH"
+    },
+    {
+      "_id": "splFo8wM22szfnDz",
+      "name": "Irse por la única carretera",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 2100,
+          "width": 600,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "carretera",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la carretera de Everett: el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.splFo8wM22szfnDz"
+    },
+    {
+      "_id": "EfHXYGiNhz1SkYba",
+      "name": "La grada baja hacia el agua",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1200,
+          "y": 0,
+          "width": 600,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "grada-agua",
+          "estado": "pendiente",
+          "pendiente": "exterior del astillero (t2i, sin plano): la grada, los tres cascos en dique seco y el agua"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.EfHXYGiNhz1SkYba"
+    },
+    {
+      "_id": "poxE5SMLQBE8X1LW",
+      "name": "Al astillero: los tres cascos en dique seco",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 0,
+          "width": 200,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "astillero",
+          "estado": "pendiente",
+          "pendiente": "exterior del astillero (t2i, sin plano): los refugios en los cascos"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.poxE5SMLQBE8X1LW"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "YEFiaP6SiErovLOd",
+      "entryId": "JMwTSsJAcyYdCs3m",
+      "pageId": null,
+      "x": 560,
+      "y": 1660,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-10",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "salitre",
+          "id": "LUG-10"
+        }
+      },
+      "_key": "!scenes.notes!AqYnfwMlYuNBE40h.YEFiaP6SiErovLOd"
+    },
+    {
+      "_id": "A3qmVnFRcBHEduX8",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "aJxUAHXcYpRWrhmG",
+      "x": 560,
+      "y": 1760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "salitre",
+          "id": "A2-E03"
+        }
+      },
+      "_key": "!scenes.notes!AqYnfwMlYuNBE40h.A3qmVnFRcBHEduX8"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "salitre",
+      "id": "LUG-10",
+      "plano": "salitre",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}</p>\n<p><strong>A2-E03 · Salitre.</strong> «La carretera muere en un astillero cerrado, con grúas oxidadas recortadas contra un cielo color pizarra. Junto a la verja hay un bar con un letrero de neón al que le falta una letra: SAL TRE. Dentro hay mesas de madera marcada, una barra hecha con el casco partido de un barco y fotos de huelgas en blanco y negro.» El letrero es una luz «neon» en la fachada (no se pinta: no hay texto en el mapa). Rosa espera con los codos en la <strong>barra</strong> y un soldador encima (tile o token).</p>\n<p><strong>La sala del bar.</strong> Abierta al público mortal hasta las dos. La <strong>barra</strong> es media cáscara de casco de barco, con el estante de botellas detrás; las <strong>fotos de huelgas</strong> cuelgan en los muros norte y sur. Mesas, sillas y taburetes son móviles (tiles): una docena de Anarquistas los usan de cobertura si la cosa se rompe (Combate: Rosa lo para a la segunda ronda, «Acá no»). Tavi Mercer (MEN-05) no les quita los ojos de encima.</p>\n<p><strong>La trastienda.</strong> Mesa de reuniones (la asamblea vota si ayuda a la coterie) y un corcho con recortes: ahí guarda Rosa su recorte de 1996 (AYU-04: «si sale en A2-E03, que sea ella quien lo saque»). Es el sitio para la confesión a David «a solas». La puerta da a la sala, del lado del público; otra puerta pasa al almacén.</p>\n<p><strong>La parte de atrás.</strong> Bas Okonjo se esconde en el <strong>almacén</strong> (barriles, la cámara de los barriles) para que Hal no lo vea; la <strong>puerta trasera</strong> sale al patio del astillero. Hal puede hablarle a solas ahí.</p>\n<p><strong>El astillero.</strong> La verja corrediza cierra la carretera; el bar queda afuera, pegado a ella. Adentro, la <strong>cabecera de la grada de botadura</strong>: está alineada con la carretera y desde ahí se ve venir cualquier coche por la única carretera (vigía de los Anarquistas). La grada sigue hacia el agua, al norte, fuera del mapa; los <strong>tres cascos en dique seco</strong> (los refugios de Salitre, el de Rosa entre ellos; ahí durmió Ray Dorsey en 1996) son el exterior del astillero (t2i): regiones sin destino.</p>\n<p><strong>Escapar.</strong> Nadie los retiene: la puerta del bar da a la carretera.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×16, mesa ×6, palet, auto ×2.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Irse por la única carretera · La grada baja hacia el agua · Al astillero: los tres cascos en dique seco.</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete",
+          "x": 4.55,
+          "y": 14.4,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete",
+          "x": 4.55,
+          "y": 15.6,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete",
+          "x": 4.55,
+          "y": 16.8,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete",
+          "x": 4.55,
+          "y": 18,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-bar",
+          "x": 6,
+          "y": 14.4,
+          "w": 0.9,
+          "h": 0.9
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 7.05,
+          "y": 14.6,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-bar",
+          "x": 8.3,
+          "y": 15.4,
+          "w": 0.9,
+          "h": 0.9
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 8.5,
+          "y": 14.8,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-bar",
+          "x": 6,
+          "y": 17,
+          "w": 0.9,
+          "h": 0.9
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 6.2,
+          "y": 18,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 7.05,
+          "y": 17.2,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-bar",
+          "x": 6.3,
+          "y": 19.4,
+          "w": 0.9,
+          "h": 0.9
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-bar",
+          "x": 8.4,
+          "y": 19.4,
+          "w": 0.9,
+          "h": 0.9
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 7.35,
+          "y": 19.6,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-reuniones",
+          "x": 1.9,
+          "y": 9.7,
+          "w": 2.6,
+          "h": 1.2
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 2.1,
+          "y": 9.15,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3,
+          "y": 9.15,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3.9,
+          "y": 9.15,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 2.1,
+          "y": 11,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3,
+          "y": 11,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3.9,
+          "y": 11,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 4.6,
+          "y": 10.1,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-barriles",
+          "x": 6.3,
+          "y": 9.4,
+          "w": 1.6,
+          "h": 0.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-pickup",
+          "x": 17.5,
+          "y": 13.5,
+          "w": 2,
+          "h": 4.6
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-coche",
+          "x": 9.4,
+          "y": 2.6,
+          "w": 2,
+          "h": 4.6
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

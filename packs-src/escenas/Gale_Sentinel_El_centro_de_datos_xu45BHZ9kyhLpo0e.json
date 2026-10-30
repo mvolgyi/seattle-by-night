@@ -1,0 +1,1233 @@
+{
+  "_id": "xu45BHZ9kyhLpo0e",
+  "_key": "!scenes!xu45BHZ9kyhLpo0e",
+  "name": "Gale Sentinel · El centro de datos",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 72,
+  "width": 2300,
+  "height": 2000,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.85,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "MaxYXuyWbflW81VS",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/gale-datos.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!xu45BHZ9kyhLpo0e.MaxYXuyWbflW81VS"
+    }
+  ],
+  "journal": "zSkwEUUtkNGhfXun",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "IHuhtOnp3QuzZtlO",
+      "c": [
+        200,
+        100,
+        2100,
+        100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.IHuhtOnp3QuzZtlO"
+    },
+    {
+      "_id": "iUq8guD6N3NQfbQU",
+      "c": [
+        200,
+        1150,
+        1000,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.iUq8guD6N3NQfbQU"
+    },
+    {
+      "_id": "nCDPTA1HoetsPIpp",
+      "c": [
+        1250,
+        1150,
+        2100,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.nCDPTA1HoetsPIpp"
+    },
+    {
+      "_id": "X1xQdztwmeBC8bdz",
+      "c": [
+        200,
+        100,
+        200,
+        170
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.X1xQdztwmeBC8bdz"
+    },
+    {
+      "_id": "1jjSde2Onq3lAvHb",
+      "c": [
+        200,
+        260,
+        200,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.1jjSde2Onq3lAvHb"
+    },
+    {
+      "_id": "D4UlAL3ljmCTP55C",
+      "c": [
+        1000,
+        100,
+        1000,
+        440
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.D4UlAL3ljmCTP55C"
+    },
+    {
+      "_id": "mJJ8B10bzIAsgJkL",
+      "c": [
+        1000,
+        920,
+        1000,
+        960
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.mJJ8B10bzIAsgJkL"
+    },
+    {
+      "_id": "iI2uZsw5F0cbOPIe",
+      "c": [
+        1000,
+        1050,
+        1000,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.iI2uZsw5F0cbOPIe"
+    },
+    {
+      "_id": "eEXOZCSh6eyJffZu",
+      "c": [
+        200,
+        1650,
+        1080,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.eEXOZCSh6eyJffZu"
+    },
+    {
+      "_id": "ssf2kNrxWPU57pgj",
+      "c": [
+        1170,
+        1650,
+        2100,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.ssf2kNrxWPU57pgj"
+    },
+    {
+      "_id": "LZx5FhTHbt71X7QT",
+      "c": [
+        1000,
+        400,
+        1080,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.LZx5FhTHbt71X7QT"
+    },
+    {
+      "_id": "RX9nPhFyjTHkZi6f",
+      "c": [
+        1170,
+        400,
+        1500,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.RX9nPhFyjTHkZi6f"
+    },
+    {
+      "_id": "piAnc4gaNXxODgeG",
+      "c": [
+        1950,
+        400,
+        2100,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.piAnc4gaNXxODgeG"
+    },
+    {
+      "_id": "f4JOYmbTdU0NUmIG",
+      "c": [
+        1350,
+        100,
+        1350,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.f4JOYmbTdU0NUmIG"
+    },
+    {
+      "_id": "XZcmrcr62MsHJubx",
+      "c": [
+        1000,
+        1400,
+        1080,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.XZcmrcr62MsHJubx"
+    },
+    {
+      "_id": "1GozbnA7HN5t1NOn",
+      "c": [
+        1170,
+        1400,
+        1250,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.1GozbnA7HN5t1NOn"
+    },
+    {
+      "_id": "qopCxf9vzfppbeMP",
+      "c": [
+        1250,
+        400,
+        1250,
+        440
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.qopCxf9vzfppbeMP"
+    },
+    {
+      "_id": "nQ4QgDcsctxl8cwf",
+      "c": [
+        1250,
+        940,
+        1250,
+        980
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.nQ4QgDcsctxl8cwf"
+    },
+    {
+      "_id": "YH2TManl4wpnR3tA",
+      "c": [
+        1250,
+        1070,
+        1250,
+        1220
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.YH2TManl4wpnR3tA"
+    },
+    {
+      "_id": "JhvGeETRMkLENJW0",
+      "c": [
+        1250,
+        1310,
+        1250,
+        1430
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.JhvGeETRMkLENJW0"
+    },
+    {
+      "_id": "URQDdxdInHTUDqN6",
+      "c": [
+        1250,
+        1620,
+        1250,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.URQDdxdInHTUDqN6"
+    },
+    {
+      "_id": "h45gCP0QBNhTOddB",
+      "c": [
+        1750,
+        1150,
+        1750,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.h45gCP0QBNhTOddB"
+    },
+    {
+      "_id": "TjKPnLoRk4yaPx00",
+      "c": [
+        2100,
+        100,
+        2100,
+        1020
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.TjKPnLoRk4yaPx00"
+    },
+    {
+      "_id": "R4E9gWJQVL7KglS7",
+      "c": [
+        2100,
+        1110,
+        2100,
+        1650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.R4E9gWJQVL7KglS7"
+    },
+    {
+      "_id": "YRwRO01I92ZpOCYQ",
+      "c": [
+        1080,
+        1650,
+        1170,
+        1650
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.YRwRO01I92ZpOCYQ"
+    },
+    {
+      "_id": "S6ENix0QcYocjTVI",
+      "c": [
+        1080,
+        1400,
+        1170,
+        1400
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.S6ENix0QcYocjTVI"
+    },
+    {
+      "_id": "tmmp7goCWyHbnfIr",
+      "c": [
+        1250,
+        1430,
+        1250,
+        1620
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.tmmp7goCWyHbnfIr"
+    },
+    {
+      "_id": "D6VMwwVZzga3cbcB",
+      "c": [
+        1250,
+        1220,
+        1250,
+        1310
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.D6VMwwVZzga3cbcB"
+    },
+    {
+      "_id": "DBQuBvCMHBDkI1Pn",
+      "c": [
+        1000,
+        960,
+        1000,
+        1050
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.DBQuBvCMHBDkI1Pn"
+    },
+    {
+      "_id": "yDI7KIJKlvhtcRia",
+      "c": [
+        1000,
+        440,
+        1000,
+        920
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.yDI7KIJKlvhtcRia"
+    },
+    {
+      "_id": "LOyHmbopu68SmlKy",
+      "c": [
+        1250,
+        980,
+        1250,
+        1070
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.LOyHmbopu68SmlKy"
+    },
+    {
+      "_id": "utyFeSWOHRPkiO4F",
+      "c": [
+        1250,
+        440,
+        1250,
+        940
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.utyFeSWOHRPkiO4F"
+    },
+    {
+      "_id": "HmqvqgBrX2IEnysR",
+      "c": [
+        1080,
+        400,
+        1170,
+        400
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.HmqvqgBrX2IEnysR"
+    },
+    {
+      "_id": "w16W882WF8Z3QNpk",
+      "c": [
+        200,
+        170,
+        200,
+        260
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.w16W882WF8Z3QNpk"
+    },
+    {
+      "_id": "MM1oXNg2kH8kNxGp",
+      "c": [
+        2100,
+        1020,
+        2100,
+        1110
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!xu45BHZ9kyhLpo0e.MM1oXNg2kH8kNxGp"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "l5yqW72I6ZGerZxh",
+      "name": "LED azules de los racks (oeste)",
+      "x": 400,
+      "y": 550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.l5yqW72I6ZGerZxh"
+    },
+    {
+      "_id": "22a2WkQwaJpg8WRa",
+      "name": "LED azules de los racks (este)",
+      "x": 760,
+      "y": 550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.22a2WkQwaJpg8WRa"
+    },
+    {
+      "_id": "aldo5Uri59tnT9b0",
+      "name": "LED azules de los racks de GPU",
+      "x": 1720,
+      "y": 240,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.aldo5Uri59tnT9b0"
+    },
+    {
+      "_id": "wtKRqFoXxv1sanOm",
+      "name": "Pared de caras (norte)",
+      "x": 2010,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#8fb3f0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 2,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.wtKRqFoXxv1sanOm"
+    },
+    {
+      "_id": "SjE8O1g6dsKcgpkB",
+      "name": "Pared de caras (sur)",
+      "x": 2010,
+      "y": 900,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#8fb3f0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 2,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.SjE8O1g6dsKcgpkB"
+    },
+    {
+      "_id": "R7BeFTevsdEJNKX3",
+      "name": "Pasillo de seguridad",
+      "x": 1125,
+      "y": 850,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.R7BeFTevsdEJNKX3"
+    },
+    {
+      "_id": "lmHt2xEVmPP7Gnqz",
+      "name": "Esclusa",
+      "x": 1125,
+      "y": 1525,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.lmHt2xEVmPP7Gnqz"
+    },
+    {
+      "_id": "j6VmIEayGzBhQphj",
+      "name": "Monitores de la sala de control",
+      "x": 1500,
+      "y": 1200,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.j6VmIEayGzBhQphj"
+    },
+    {
+      "_id": "otHth1JbWJgPTK7u",
+      "name": "Sala de control",
+      "x": 1500,
+      "y": 1460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.otHth1JbWJgPTK7u"
+    },
+    {
+      "_id": "RXDgdmHpuXFnBDIa",
+      "name": "Pantalla del archivo privado",
+      "x": 1240,
+      "y": 160,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.RXDgdmHpuXFnBDIa"
+    },
+    {
+      "_id": "3KNOVDOztbhxhQsJ",
+      "name": "Aplique de la esclusa",
+      "x": 1125,
+      "y": 1685,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.3KNOVDOztbhxhQsJ"
+    },
+    {
+      "_id": "VglLmzN1xCjYHc00",
+      "name": "Farola del vial de servicio",
+      "x": 100,
+      "y": 900,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.VglLmzN1xCjYHc00"
+    },
+    {
+      "_id": "nmCLRkUTl4cjtcI4",
+      "name": "Farola del patio de servicio",
+      "x": 900,
+      "y": 1960,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!xu45BHZ9kyhLpo0e.nmCLRkUTl4cjtcI4"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "4R8bEHw9asCGvOPX",
+      "name": "Llegada desde el edificio de oficinas",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 800,
+          "y": 1880,
+          "width": 200,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-datos",
+          "region": "llegada-desde-edificio",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!xu45BHZ9kyhLpo0e.4R8bEHw9asCGvOPX"
+    },
+    {
+      "_id": "M5vKGgL9jH9Q8gym",
+      "name": "Cruzar el patio hacia el edificio de oficinas",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 400,
+          "y": 1900,
+          "width": 300,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "3tCFwyFA9lhXLXd0",
+          "name": "Cruzar el patio hacia el edificio de oficinas",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.GSUkvBwWMDBXBwmL.Region.XHof51BuIGp4KLQZ"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!xu45BHZ9kyhLpo0e.M5vKGgL9jH9Q8gym.3tCFwyFA9lhXLXd0"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-datos",
+          "region": "al-edificio",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!xu45BHZ9kyhLpo0e.M5vKGgL9jH9Q8gym"
+    },
+    {
+      "_id": "zQFHMchucxSQmRte",
+      "name": "Al estacionamiento del campus (vial de servicio)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 500,
+          "width": 200,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-datos",
+          "region": "al-estacionamiento",
+          "estado": "pendiente",
+          "pendiente": "mapa de zona del campus (t2i, LUG-07): el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!xu45BHZ9kyhLpo0e.zQFHMchucxSQmRte"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "hjfwqsBBlxnpWD9Y",
+      "entryId": "zSkwEUUtkNGhfXun",
+      "pageId": null,
+      "x": 610,
+      "y": 585,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-07",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "gale-datos",
+          "id": "LUG-07"
+        }
+      },
+      "_key": "!scenes.notes!xu45BHZ9kyhLpo0e.hjfwqsBBlxnpWD9Y"
+    },
+    {
+      "_id": "GbMpfFr97GfQi8sx",
+      "entryId": "C7cxKf7kcAELzuJ1",
+      "pageId": "EjJ0vfVBCjTTb0QV",
+      "x": 610,
+      "y": 685,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A3-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "gale-datos",
+          "id": "A3-E02"
+        }
+      },
+      "_key": "!scenes.notes!xu45BHZ9kyhLpo0e.GbMpfFr97GfQi8sx"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "gale-datos",
+      "id": "LUG-07",
+      "plano": "gale-datos",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 3 de A3-E02: el centro de datos.</strong> «Edificio sin ventanas detrás del principal. Tres salas: almacenamiento, entrenamiento de ANOMALY, archivo privado.» «Puerta con biometría (huella y retina) y una esclusa de seguridad. Un ghoul en la sala de control.»</p>\n<p><strong>La franja de infiltración.</strong> El vial de servicio (oeste) viene del estacionamiento (región «Al estacionamiento», pendiente: mapa de zona) y el patio de servicio (sur) viene del edificio de oficinas (región → <code>gale-sentinel</code>). El generador y las enfriadoras del patio dan cobertura para acercarse a la esclusa. Salir corriendo por el campus delante de las cámaras: Termómetro +1.</p>\n<p><strong>Los tres niveles de seguridad</strong> (el texto no los detalla; se reparten así):</p>\n<ol>\n<li><strong>La esclusa.</strong> Puerta exterior con lector de tarjeta; puerta interior <strong>trabada</strong> con lector biométrico (huella y retina de Gale o de Dawson). Las dos puertas no abren a la vez. Forzarla: Fuerza + Atletismo Dif 5, y salta la alarma. Con Gale de la mano (Celeste, Manipulación + Persuasión Dif 4, o Dominación: Gale tiene Compostura 2; Dawson, Resolución 3 y +2 dados por el Vínculo) la puerta interior se abre sin tirada. El ghoul de la <strong>sala de control</strong> ve la esclusa por la ventanilla blindada.</li>\n<li><strong>Las salas</strong> (almacenamiento y pruebas): puertas <strong>trabadas</strong> con tarjeta; se abren desde la consola de la sala de control o con la tarjeta del ghoul. Desde el pasillo se ve adentro por las vidrieras: a la izquierda, «filas de armarios negros zumban bajo luces azules»; a la derecha, la pared de caras.</li>\n<li><strong>El archivo privado</strong>, al fondo del pasillo: puerta <strong>trabada</strong> con cerradura propia, sin red, aislado del resto.</li>\n</ol>\n<p><strong>Cámaras ANOMALY (en los accesos)</strong>, objetos <code>anomaly</code> sin luz: ① sobre la puerta exterior de la esclusa; ② dentro de la esclusa; ③ en la esquina suroeste, cubre el patio y el vial; ④ y ⑤ sobre las dos salidas de emergencia, por fuera. Si la coterie no desactivó el módulo en la capa 1, cada Vástago que entre queda registrado (el Termómetro +1 es uno solo para toda la incursión).</p>\n<p><strong>Qué hay en cada sala:</strong></p>\n<ul>\n<li><strong>Almacenamiento</strong> (oeste): cuatro filas de racks. En el <strong>armario ignífugo de soportes</strong> (esquina suroeste), el <strong>disco original del Expediente, sólo hasta la Noche 6</strong>. En la <strong>consola de gestión</strong>, los registros de envío del canal ARQUERO con la referencia <strong>SEA-0411 (P-10)</strong> y <strong>DOC-07</strong> completo.</li>\n<li><strong>Sala de pruebas · entrenamiento de ANOMALY</strong> (este): «En una pared hay una pantalla con una cuadrícula de rostros, cientos, cada uno con una etiqueta debajo: COLD_SUBJECT, y un número. Algunos los conocen del Elíseo. Uno de ellos es suyo.» Es la <strong>pared de caras</strong> (pared este; apagada en el mapa, la encienden dos luces «neon»). En los puestos, la <strong>base de datos de sujetos fríos</strong> (incluye a la coterie si la cámara del 3B los grabó en A0-E01) y <strong>DOC-11</strong>, si no lo tienen. Al norte, abierta a la sala, la de cómputo con los racks de GPU.</li>\n<li><strong>Archivo privado</strong> (norte, al fondo del pasillo): el <strong>servidor sin red</strong> con el archivo personal de Halloway escaneado por Pell. Copiarlo: Inteligencia + Tecnología Dif 3. Los folios de «el alemán» (<strong>P-15</strong>): Inteligencia + Investigación Dif 4, o automático buscando «allemand». Este servidor es el que puede terminar en el maletín de A4-E03.</li>\n</ul>\n<p><strong>Alarma.</strong> Si salta (esclusa forzada, salida de emergencia abierta), Dawson tarda <strong>cuatro minutos</strong> en llegar desde el edificio de oficinas y la policía de Bellevue, <strong>doce</strong>. Las salidas de emergencia (oeste y este) sólo abren desde dentro y disparan la alarma: son la vía de escape de un asalto.</p>\n<p><strong>Asalto</strong> (Combate): Termómetro +2; Gale avisa a Halloway, que traslada el original esa misma noche si no se lo llevan. Dawson vivo y capturado es un testigo.</p>\n<p>Los bloques rayados (salas técnicas de SAI y baterías al suroeste, enfriamiento al sureste) no se juegan.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×4.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus (vial de servicio).</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 14.6,
+          "y": 13.25,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 12.1,
+          "y": 2.05,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 14.3,
+          "y": 6,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 16.9,
+          "y": 8.9,
+          "w": 0.55,
+          "h": 0.55
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

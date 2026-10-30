@@ -19,21 +19,36 @@ reglas, otra ciudad. Verificado contra Foundry v14.365, sistema wod5e 5.3.28.
 Tres niveles (skill `battlemaps`): un mapa regional (MAP-00), mapas de zona para los lugares
 abiertos y battlemaps de interior construidos desde un plano. La lista sale de SPEC.md §5.
 
-| Mapa | Plano (`content/planos/`) | Lugar | Nivel | Cómo | Escenas | Oscuridad | Luces |
-|---|---|---|---|---|---|---|---|
-| MAP-00 | — | Seattle y el estrecho de Puget (AYU-01) | regional | OpenStreetMap estilizado (§8) | sesión cero, A1-E03 | Pendiente | ninguna |
-| LUG-01 | Pendiente | El hangar de Harbor Island | combate | plano | A4-E02 | Pendiente | Pendiente |
-| LUG-02 | Pendiente | La granja del Sheriff y su embarcadero | zona + combate | t2i (zona) + plano (casa y granero) | A1-E03, A4-E02 | Pendiente | Pendiente |
-| LUG-03 | Pendiente | La Galería de Vidrio, el Elíseo | combate | plano | A2-E01 | Pendiente | Pendiente |
-| LUG-04 | Pendiente | Las Galerías Selladas, subterráneo | combate | plano | A1-E04 | Pendiente | Pendiente |
-| **LUG-05** | **`helen`** | **El apartamento de Helen Ward** | combate | plano (**mapa de prueba**, SPEC §4.5) | A0-E01, A1-E01, A3-E01 | 0.75 | 2 plafones de pasillo, 4 LED de timbre + el verde del 3B, lámpara del salón, pantalla del portátil, aplique de sodio del callejón, farola de Market Street |
-| LUG-06 | Pendiente | Torre Halloway: ático + bóveda | 2 niveles | plano | A4-E01 | Pendiente | Pendiente |
-| LUG-07 | Pendiente | Gale Sentinel: campus + centro de datos | zona + combate | t2i + plano | A1-E05, A3-E02 | Pendiente | Pendiente |
-| LUG-10 | Pendiente | Bar Salitre y el astillero | combate | plano + exterior | A2-E03 | Pendiente | Pendiente |
-| LUG-11 | Pendiente | Edificio Larchmont: planta baja + sala de calderas | 2 niveles | plano | A2-E05 | Pendiente | Pendiente |
-| LUG-14 | Pendiente | Northline Cyber Advisory, piso 11 | combate | plano | interludios de FIRSTLIGHT | Pendiente | Pendiente |
-| LUG-15 | Pendiente | Terminal de ferris + el ferry | 2 niveles | plano | A4-E03 | Pendiente | Pendiente |
-| LUG-16 | Pendiente | Elevador de grano de la Terminal 86 | combate | plano | A3-E03 | Pendiente | Pendiente |
+Los 21 planos de `content/planos/` (13 archivos; un archivo puede traer varias plantas). Medidas
+en metros (= casillas); «luces» es lo que el plano declara (`luces[]` y muebles con `luz`), con
+el preset que usa hoy la escena (el `presetIdeal` ya existe en todos los casos).
+
+| LUG | Plano | Lugar | Medida | Paleta / fondo | Escenas | Oscuridad | Luces | Niveles |
+|---|---|---|---|---|---|---|---|---|
+| MAP-00 | — | Seattle y el estrecho de Puget (AYU-01) | regional | OpenStreetMap estilizado (§8) | sesión cero, A1-E03 | Pendiente | ninguna | — |
+| LUG-01 | `hangar` | El hangar de Harbor Island | 24 × 23 | industrial / asfalto (agua de Elliott Bay y dársena) | A1-E01, A4-E02, AVE-01-EPI | 0.8 | 3 luces de obra, 4 lámparas tenues, fluorescente viejo, aplique de sodio, farola, **reflector de FIRSTLIGHT apagado** (11) | 1 |
+| LUG-02 | `granja` | La granja del Sheriff: casa, granero, perreras, caravanas | 24 × 23 | rural / tierra (grava) | A1-E03, A3-E04, A4-E02 | 0.85 | 7 lámparas tenues, 2 lámparas, 2 apliques, pantalla de la tableta (12) | 2 (+ sótano) |
+| LUG-02 | `granja-sotano` | La granja: el sótano y el túnel | 12 × 14 | subterraneo / roca | A4-E02 | 1 | lámpara tenue (1) | sótano |
+| LUG-03 | `galeria` | La Galería de Vidrio, el Elíseo (pabellón curvo: `contorno`) | 24 × 17 | galeria / acera | A2-E01, A4-E01 | 0.6 | 3 vidrio-rojo + 4 vidrio-ambar (medusas), lámparas, vela, fluorescente, 2 pasillo, farola (14) | 2 (+ archivo) |
+| LUG-03 | `galeria-archivo` | La Galería: el archivo de la Guardiana | 13 × 11 | subterraneo / roca | A2-E01 | 0.9 | 2 fluorescentes viejos, lámpara tenue (3) | sótano |
+| LUG-04 | `subterraneo` | Las Galerías Selladas | 24 × 14 | subterraneo / roca | A1-E04 | 0.9 | 4 claraboyas violeta, carburo, 2 lámparas tenues, vela, LED de rack, pantalla (10) | 1 |
+| **LUG-05** | **`helen`** | **El apartamento de Helen Ward** (referencia del set) | 21 × 20 | apartamento / edificio | A0-E01, A1-E01, A3-E01 | 0.75 | 2 plafones de pasillo, 4 LED de timbre + el verde del 3B, lámpara, pantalla, aplique del callejón, farola (11) | 1 |
+| LUG-06 | `torre-atico` | Torre Halloway, el ático (piso 42) | 21 × 13 | oficina / vacío | A4-E01 | 0.7 | 2 lámparas, lámpara tenue, 2 pasillo, fluorescente (6) | 2 (ascensor) |
+| LUG-06 | `torre-boveda` | Torre Halloway, la bóveda (nivel −3) | 11 × 8 | subterraneo / roca | A4-E01 | 0.9 | fluorescente, 2 pasillo (3) | bóveda |
+| LUG-07 | `gale-sentinel` | Gale Sentinel: vestíbulo (planta baja) | 19 × 14 | oficina / asfalto | A1-E05, A3-E02 | 0.7 | 3 videopared, 2 pantallas, fluorescentes, aplique, 2 farolas (11) | 3 |
+| LUG-07 | `gale-planta3` | Gale Sentinel: planta 3, despacho de Gale | 19 × 14 | oficina / asfalto | A1-E05, A3-E02 | 0.8 | fluorescentes, LED de rack, pantalla, 2 farolas (6) | planta 3 |
+| LUG-07 | `gale-datos` | Gale Sentinel: el centro de datos | 23 × 20 | oficina / asfalto | A3-E02 | 0.85 | 3 neón (racks), 2 videopared (pared de caras), fluorescentes, 2 pantallas, aplique, 2 farolas (13) | edificio aparte |
+| LUG-10 | `salitre` | Bar Salitre (y la cabecera de la grada) | 20 × 22 | industrial / grava | A2-E03 | 0.75 | neón, 2 lámparas, 2 tenues, 2 fluorescentes viejos, aplique, farola (9) | 1 |
+| LUG-11 | `larchmont-planta` | Edificio Larchmont: planta baja quemada | 19 × 14 | apartamento / edificio | A2-E05 | 0.85 | farola de la calle (1) | 2 |
+| LUG-11 | `larchmont-sotano` | Edificio Larchmont: sala de calderas | 19 × 11 | subterraneo / roca | A2-E05 | 1 | ninguna (las linternas son de los PJ) | sótano |
+| LUG-14 | `northline` | Northline Cyber Advisory, piso 11 | 21 × 15 | oficina / vacío | interludios de FIRSTLIGHT | 0.8 | neón, lámpara tenue, fluorescentes, **2 UV apagadas** (6) | 1 |
+| LUG-15 | `terminal-ferry` | Colman Dock, la terminal de ferris | 24 × 16 | naval / agua | A4-E03 | 0.55 | 3 fluorescentes, fluorescente viejo, parpadeo, pantalla, farola, aplique (8) | 1 |
+| LUG-15 | `ferry` | El ferry: salón de pasajeros y cubierta de popa | 24 × 24 | naval / agua | A4-E03 | 0.6 | 5 fluorescentes, fluorescente viejo, 2 apliques (8) | 3 (+ coches, puente) |
+| LUG-15 | `ferry-coches` | El ferry: cubierta de coches | 24 × 24 | naval / agua | A4-E03 | 0.65 | 4 fluorescentes, fluorescente viejo, aplique (6) | cubierta baja |
+| LUG-15 | `ferry-puente` | El ferry: el puente | 13 × 24 | naval / agua | A4-E03 | 0.85 | 2 pantallas, 2 apliques (4) | cubierta alta |
+| LUG-16 | `terminal86` | Elevador de grano de la Terminal 86 (galería de cintas sobre los silos) | 24 × 12 | industrial / agua (techo de silos de hormigón) | A3-E03 | 0.85 | farola, aplique (2) | 1 |
+
+Todos los planos usan ya su paleta, sus pisos y sus tipos de mueble propios, y declaran su `sujeto`.
 
 Sin mapa (escenas de ambiente: una ilustración a pantalla completa, sin cuadrícula): LUG-08 Pike
 Place, LUG-09 Club Ceniza, LUG-12 la tumba de Emily, LUG-13 la Capilla del Observatorio.
@@ -45,21 +60,36 @@ acceso en un plano, se mueve su gemelo: la orientación de un acceso en un mapa 
 mapa de destino. Lo que se deduce de los docs 05, 10–13 y 15:
 
 ```
-helen (escalera de incendios, descanso del 3.º)  ⇄ helen (pie de la escalerilla, callejón)   HECHO, mismo mapa
-helen (escalera común, portal)                   →  Market Street                              Pendiente: no hay mapa de calle
-helen (rellano de la azotea, puerta cerrada)     →  azotea                                     Pendiente: no hay mapa del techo
-helen (callejón de servicio, sale al sur)        →  Market Street                              Pendiente: no hay mapa de calle
-LUG-06 ático (ascensor privado)                  ⇄ LUG-06 bóveda, nivel −3 (ascensor)          dos escenas o dos niveles
-LUG-11 planta baja (hueco de escalera derrumbado) ⇄ LUG-11 sala de calderas (sótano)           dos escenas o dos niveles
-LUG-15 terminal (rampa de vehículos/pasajeros)   ⇄ LUG-15 ferry (cubierta de coches)           dos escenas
-LUG-07 campus (zona, t2i)                        ⇄ LUG-07 centro de datos (esclusa de entrada) zona → interior
-LUG-02 zona (porche de la casa, granero)         ⇄ LUG-02 casa y granero (plano)              zona → interior
-LUG-02 sótano de la casa (túnel de 300 m)        ⇄ LUG-02 embarcadero del río (en la zona)    Pendiente: ¿el sótano es plano propio?
-LUG-01 trampilla al túnel de carga               →  salida a 200 m, junto a la Terminal 46     Pendiente: sin mapa del otro extremo
-LUG-03 sala / vestíbulo                          ⇄ LUG-03 archivo de la Guardiana (sótano)     Pendiente: SPEC §5 lo da como un solo mapa
-LUG-10 bar (trastienda)                          ⇄ LUG-10 astillero (exterior)                 Pendiente: ¿mismo mapa o dos?
-LUG-04 puerta de hierro                          →  Pioneer Square                             Pendiente: sin mapa de calle
-LUG-16 escalera de servicio en zigzag (exterior) →  fuera del mapa                             Pendiente
+helen (escalera de incendios, descanso del 3.º) ⇄ helen (pie de la escalerilla, callejón)       HECHO, mismo mapa
+helen (escalera común, portal)                  →  Market Street                                 Pendiente: no hay mapa de calle
+helen (rellano de la azotea, puerta cerrada)    →  azotea                                        Pendiente: no hay mapa del techo
+helen (callejón de servicio, sale al sur)       →  Market Street                                 Pendiente: no hay mapa de calle
+hangar (trampilla al túnel de carga)            →  salida junto a la Terminal 46 (200 m)         Pendiente: sin mapa del túnel
+hangar (lancha, muelle oeste, patio)            →  bahía / muelle / patio de contenedores        Pendiente: sin mapas
+granja (vestíbulo, escalera al sótano)          ⇄ granja-sotano (pie de la escalera)             HECHO
+granja (camino de grava, sendero al río)        →  zona del valle del Snohomish (t2i)            Pendiente: mapa de zona
+granja-sotano (túnel de 300 m)                  →  embarcadero del río (zona del valle)          Pendiente: mapa de zona
+galeria (escalera de servicio)                  ⇄ galeria-archivo (pie de la escalera)           HECHO
+galeria (puertas de vidrio, al sur)             →  plaza de Seattle Center                       Pendiente: sin mapa
+subterraneo (escalera desde un sótano)          →  Pioneer Square                                Pendiente: sin mapa de calle
+torre-atico (ascensor privado)                  ⇄ torre-boveda (cabina del ascensor)             HECHO
+torre-atico (escalera de emergencia, 42 pisos)  →  la calle                                      Pendiente
+gale-sentinel (escalera, ascensores A y B)      ⇄ gale-planta3 (escalera, rellano de ascensores) HECHO (los dos ascensores llegan al mismo rellano)
+gale-sentinel (patio de servicio, norte)        ⇄ gale-datos (patio de servicio, sur)            HECHO
+gale-sentinel / gale-datos (estacionamiento)    →  campus (zona t2i, LUG-07)                     Pendiente: mapa de zona
+salitre (carretera, grada, astillero)           →  carretera / exterior del astillero (t2i)      Pendiente
+larchmont-planta (escalera medio derrumbada)    ⇄ larchmont-sotano (pie de la escalera)          HECHO
+larchmont-planta (hueco del piso)               →  larchmont-sotano (caída al pie del hueco)     HECHO (sólo baja)
+larchmont-sotano (desagüe)                      →  el estrecho                                   Pendiente
+northline (ascensores, escalera de emergencia)  →  vestíbulo de la torre / la calle              Pendiente
+terminal-ferry (rampa de pasajeros)             ⇄ ferry (cubierta de popa, llega la pasarela)    HECHO (sólo amarrado)
+terminal-ferry (rampa de vehículos)             ⇄ ferry-coches (popa abierta)                    HECHO (sólo amarrado)
+terminal-ferry (escalera sala ⇄ explanada)      ⇄ terminal-ferry                                 HECHO, mismo mapa
+terminal-ferry (Alaskan Way)                    →  la calle                                      Pendiente
+ferry (escaleras de estribor y babor)           ⇄ ferry-coches (las mismas escaleras)            HECHO
+ferry (escalera central)                        ⇄ ferry-puente (caseta de la escalera)           HECHO
+ferry / ferry-coches (saltar por la popa)       →  el agua                                       Pendiente: lo resuelve el Narrador
+terminal86 (escalera de servicio, silo vecino, compuerta) → patio, interior del silo, bahía      Pendiente
 ```
 
 Un acceso cuyo mapa no existe va como región **sin destino** (`destino: null`) con el campo
@@ -143,9 +173,12 @@ Prioridad (los móviles que los planos ya declaran):
 - **Alineación:** muros, pasillos y vanos sobre múltiplos de 0,5 m cuando se pueda; puertas
   interiores de 0,8–0,9 m y paredes interiores sobre décimos de metro se toleran (un edificio
   de 1910 no está en grilla).
-- **Tamaño:** cada lado entre **12 y 24 m** (1200 a 2400 px). Un lugar más grande se parte en
-  varios planos unidos por regiones. Tope duro: 8192 px de lado. `helen` mide 21 × 20 m.
-- **Escena:** padding 0.25, grid cuadrado de 100 px con `alpha 0` (el piso ya lee la
+- **Tamaño:** hasta **24 m** por lado (2400 px); el lado lo da el lugar, no hay mínimo: la
+  bóveda de la torre mide 11 × 8 m y el archivo de la Galería 13 × 11, y está bien. Un lugar más
+  grande que 24 m se parte en varios planos unidos por regiones (el ferry: salón, coches y
+  puente). Tope duro: 8192 px de lado. `helen` mide 21 × 20 m.
+- **Escena:** padding **0** (como DVV: con padding, Foundry corre el rectángulo de la escena y
+  las coordenadas del plano quedarían desplazadas), grid cuadrado de 100 px con `alpha 0` (el piso ya lee la
   retícula; el Narrador lo sube si quiere), visión de token y niebla de exploración
   activadas, oscuridad según la tabla de §1.
 - **La escena mide exactamente `ancho × alto × 100` px.**
@@ -158,9 +191,14 @@ Prioridad (los móviles que los planos ya declaran):
 ## 5. Estilo visual
 
 **Fuente única de verdad:** el bloque `estilos.battlemap` de `tools/arte.config.json` para lo
-pintado (Pendiente: lo escribe `arte-local`) y las `PALETAS` de
+pintado (`materiales` con su `_breve`, `objetos`, `aclaraciones`, `paletas`) y las `PALETAS` de
 [`tools/planos.mjs`](tools/planos.mjs) para el esquema. No se describe el estilo por mapa; el
-plano sólo describe su sujeto (`exterior`, `desc` de muebles).
+plano sólo describe su sujeto (`exterior`, `sujeto`, nombres de habitación, `desc` de muebles).
+Los prefijos y sufijos llevan marcadores que `pintar-planos` llena con lo de cada plano
+(`{LUGAR}`, `{PISOS}`, `{MATERIALES}`, `{ALREDEDOR}`, `{AFUERA}`, `{MUROS}`, `{TOPES}`, `{ACENTO}`,
+`{MADERA}`, `{TONO_MADERA}`, `{SUELO}`, `{MATERIALES_FUERA}`, `{SIN_AZUL}`, `{PASILLO}`, `{EN_MAPAS}`, `{PAPELES}`) y
+los que dependen del tipo de lugar salen de `estilos.battlemap.paletas.<paleta>` (`{GRANO}`, `{GRANO_DETALLE}`,
+`{DETALLE}`, `{NUMEROS}`; los de apartamento son los de helen y hacen de respaldo).
 
 Canon (doc 15, adaptado por SPEC §4.4):
 
@@ -173,16 +211,34 @@ Canon (doc 15, adaptado por SPEC §4.4):
   **naranja de sodio** (sólo como luz de Foundry, nunca pintado) y **un solo acento
   carmesí** por mapa (en LUG-05, los alfileres rojos de Helen). Desaturada; nunca cálida ni
   dorada, nada de musgo verde.
-- **Paletas del renderer:** `apartamento` (tablas de abeto gastadas, revoque gris pizarra,
-  tinte azul de puerto al 16 %, tono ambiente azul noche al 6 %). Pendiente: `oficina`
-  (LUG-07, LUG-14, LUG-06), `industrial` (LUG-01, LUG-10, LUG-16), `subterraneo` (LUG-04,
-  sótano de LUG-11), `galeria` (LUG-03); se definen con su primer plano.
-- **Métricas** (`magick … -colorspace HSL`): saturación media **≤ 15 %**. Los rangos de
-  luminancia y contraste se fijan con la referencia de estilo (SPEC §4.5): Pendiente.
+- **Paletas del renderer** (`PALETAS` de `tools/planos.mjs`; su texto para el modelo en
+  `estilos.battlemap.paletas`). Todas dentro de la paleta del set: cambian el material de los
+  muros, la cantidad de mugre (`suciedadK`) y los valores, nunca el tono de fondo.
+  - `apartamento`: tablas de abeto, revoque gris pizarra, tinte azul de puerto al 16 %, tono
+    ambiente azul noche al 6 % (helen, Larchmont).
+  - `industrial`: bloque de hormigón y chapa acanalada, grasa y óxido pardo-gris, más mugre
+    (hangar, Salitre, Terminal 86).
+  - `subterraneo`: sillería de ladrillo y piedra húmedos, oscuro, humedad azul-gris (Galerías
+    Selladas, sótanos, archivo, bóveda).
+  - `oficina`: durlock gris pálido, limpio y frío, casi sin mugre (Northline, Torre Halloway,
+    Gale Sentinel).
+  - `galeria`: hormigón carbón y acero negro, pulido, sin mugre (la Galería de Vidrio).
+  - `rural`: tablas oscuras de granero, barro (la granja).
+  - `naval`: mamparos de acero gris pálido remachado, el agua alrededor (el ferry y su terminal).
+  `construir-planos` avisa si un plano pide una paleta, piso, fondo, mueble o preset que no existe.
+- **Grading.** Todo mapa pintado pasa por el grading determinista de `pintar-planos --grading`
+  (`estilos.battlemap.grading`: tabla de color en OKLab): croma de la madera topada (nunca
+  naranja), sin verde musgo, manchas azules del modelo topadas y el azul de puerto puesto como
+  tinte de sombras; los rojos saturados (los alfileres) quedan fuera de los topes.
+- **Métricas del set** (`magick … -colorspace HSL`, media sobre el mapa entero, macizos
+  incluidos): **sat 9–15 %, lum 22–30 %**. Un mapa fuera de rango se revisa antes de entregar
+  (no se corrige a mano: se ajusta el grading o el pintado). La referencia es `helen`.
 
   | Mapa | sat | lum | nota |
   |---|---|---|---|
   | `helen.esquema` | 8.8 | 26.3 | esquema vectorial; la luminancia baja la ponen los departamentos cerrados rayados |
+  | `helen` (klein, sin detalle ni grading) | 6.5 | 27.9 | prueba de SPEC §4.5: casi gris, se descartó |
+  | **`helen`** (klein + detalle + grading) | **9.9** | **26.2** | **referencia del set** (2026-10-30); los macizos (#1b1f23, ~40 % del mapa) pesan en la media |
 
 - **Cenital estricto y a sangre**: ningún canto lateral de muro, sin borde, marco, viñeta ni
   margen.
@@ -200,13 +256,18 @@ content/planos/<archivo>.json          fuente (metros): habitaciones, vanos, mue
    │  node tools/construir-planos.mjs    [--solo <id>] [--depurar <carpeta>]
    ▼
 assets/mapas/<id>.esquema.webp          esquema vectorial, escala exacta (q92)
-   │  repintado local en ComfyUI         Pendiente: pintar-planos se reescribe (SPEC §4.3)
-   │  (Qwen-Image-Edit / Z-Image + ControlNet / FLUX.2 klein 4B, a elegir en §4.5)
+   │  node tools/pintar-planos.mjs --solo <id>   (lo fijado en arte.config.json → mapas.<id>)
+   │  1. repintado del plano entero a ~1,5 MP (helen: FLUX.2 klein 4B, semilla 11)
+   │  2. SeedVR2 7B a 100 px/m + corrección afín contra el esquema
+   │  3. --detalle: pasada por mosaicos a 200 px/m (Z-Image Turbo + ControlNet canny del
+   │     propio mosaico, grano inyectado, prompt por recorte; interior y exterior aparte,
+   │     compuestos con máscaras del plano), baja a 100 px/m y se vuelve a corregir
+   │  4. --grading: tabla de color determinista (estilos.battlemap.grading)
+   │  5. sellado de los bloques `macizo` + métricas (gate: calidad ≥ 0,45, ≥ 90 % de
+   │     muro a ≤ 5 px, anisotropía ≤ 3 %)
    ▼
-   │  corrección afín + SeedVR2
-   ▼
-assets/mapas/<id>.webp                  mapa pintado y corregido (q88)
-   │  build de escenas                   Pendiente: construir-contenido de SBN
+assets/mapas/<id>.webp                  mapa pintado y corregido (q88), 100 px/m
+   │  node tools/construir-contenido.mjs (tools/contenido/escenas.mjs; sin pintado usa el esquema)
    ▼
 packs-src/escenas/*.json                escena + muros + puertas + ventanas + vidrios + barandas + regiones + luces
 ```
@@ -236,29 +297,40 @@ packs-src/escenas/*.json                escena + muros + puertas + ventanas + vi
 |---|---|
 | `id`, `lugar`, `escenas`, `nombre`, `orden` | id estable (archivo y escena), ID del doc (LUG-xx), escenas que pasan ahí, nombre de la escena, orden de navegación |
 | `ancho`, `alto` | lienzo en metros |
-| `paleta`, `fondo` | `apartamento` (otras: Pendiente); `fondo` pisa el exterior de la paleta (`asfalto`, `acera`, `edificio`, `roca`) |
-| `exteriores[]` | `{ nombre, x, y, w, h, fondo }`: zonas de exterior sobre el fondo (callejón, vereda) |
+| `paleta`, `fondo` | `apartamento`, `industrial`, `subterraneo`, `oficina`, `galeria`, `rural`, `naval`; `fondo` pisa el exterior de la paleta: `asfalto`, `acera`, `edificio` (techos vecinos, rayado), `roca` y cualquier piso (`agua`, `grava`, `tierra`, `vacio`, `tablas`…) |
+| `exteriores[]` | `{ nombre, x, y, w, h, fondo }`: zonas de exterior sobre el fondo (callejón, vereda, dársena). Si el nombre dice «planta baja» o «más abajo» y el plano no es la planta baja, el prompt la describe «muy abajo» |
 | `oscuridad`, `luzGlobal` | darkness de la escena; luz global para escenas de día |
-| `exterior` | texto para el modelo (inglés): qué rodea al edificio |
+| `exterior` | texto para el modelo (inglés): qué rodea al edificio. Empieza por el sujeto («a 1962 glass-and-steel exhibition pavilion in Seattle Center seen from directly above…»): de ahí sale el lugar del prompt |
+| `sujeto`, `sobreSuelo` | opcionales: el lugar en inglés para los prefijos (si no, sale de `exterior` o de la paleta) y los metros sobre el suelo de afuera (si no, se deduce de los nombres de `exteriores`) |
+| `curvas[]` | `{ tipo, puntos, cerrada? }`: muros, vidrios o barandas sueltos como polilínea (ver `contorno`) |
 | `nota` | nota del Narrador (markdown; va a los flags de la escena, con la lista de móviles) |
-| `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros? }` — piso: `tablas`, `tablas-alfombra`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `tierra`, `grava`, `rejilla` (escalera de incendios), `macizo` (departamento cerrado, rayado); `vetas`: `h`·`v` (dirección de las tablas); `sinMuros`: sólo piso (p. ej. el linóleo de la cocina dentro del salón) |
-| `vanos[]` | `{ x, y, w, eje, tipo, estado?, sonido?, sonoro?, nombre }` — `abierto`, `puerta`, `secreta`, `puerta-vidrio`, `ventana`, `vidrio`, `baranda`, `arcada`; `estado`: `cerrada`·`abierta`·`trabada`; `sonido`: clave de `CONFIG.Wall.doorSounds` (`woodBasic`, `woodCreaky`, `woodHeavy`, `metal`, `slidingWood`…) |
-| `muebles[]` | `{ tipo, x, y, w, h, desc?, fijo?, luz?, cabecera?, frente?, contra?, tile?, hacia?, material? }` |
-| `luces[]` | `{ x, y, preset, nombre? }` — presets en `tools/iluminacion.mjs`, radios en metros |
+| `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros?, contorno? }` — piso: `tablas`, `tablas-alfombra`, `tablas-quemadas`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `marmol`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `ladrillo`, `chapa` (plancha diamantada), `cubierta` (de barco), `goma` (pasarela), `ascensor` (cabina), `tierra`, `grava`, `agua`, `vacio` (hueco, caída), `rejilla` (escalera de incendios), `macizo` (departamento cerrado, rayado); `vetas`: `h`·`v`; `sinMuros`: sólo piso; `contorno`: polígono que reemplaza al rectángulo (puntos `[x, y]` o `[x, y, tipo]` = tipo del tramo que sale de ese punto, o arcos `{ arco: [cx, cy, r, desde°, hasta°], tipo? }`): el piso se recorta y los muros salen en segmentos rectos para Foundry. El nombre (en español) da el rol en el prompt («Porche», «Cubierta», «Sala de calderas»…) |
+| `vanos[]` | `{ x, y, w, eje, tipo, estado?, sonido?, sonoro?, nombre }` — `abierto`, `puerta`, `secreta`, `puerta-vidrio`, `ventana`, `hueco` (ventana sin vidrio), `vidrio`, `baranda`, `arcada`; `estado`: `cerrada`·`abierta`·`trabada`; `sonido`: clave de `CONFIG.Wall.doorSounds` (`woodBasic`, `woodCreaky`, `woodHeavy`, `metal`, `industrial`, `slidingWood`…; por defecto, el de la paleta) |
+| `muebles[]` | `{ tipo, x, y, w, h, desc?, fijo?, luz?, luzIdeal?, luzApagada?, cabecera?, frente?, contra?, tile?, hacia?, material?, anomaly? }` |
+| `luces[]` | `{ x, y, preset, presetIdeal?, apagada?, nombre? }` — presets en `tools/iluminacion.mjs`, radios en metros; `presetIdeal` se usa si existe (si no, `preset` y `construir-planos` avisa); `apagada: true` crea la luz apagada (`hidden`) |
 | `regiones[]` | `{ id, nombre, x, y, w, h, destino: "<plano>:<región>" \| null, llegada?, pendiente? }` — `llegada: true` sólo recibe; `destino: null` + `pendiente` = acceso a un mapa que todavía no existe |
 
 En Foundry: `puerta` = `door 1`; `secreta` = `door 2` (se ve pared); `puerta-vidrio` y
 `ventana` = `door 1` con `sight 0`, `light 0`, `sound 10` (cerrada se ve a través; abierta se
-cruza); `vidrio` = `move 20`, `sight 0`, `light 0`, `sound 20` (`10` con `sonoro`); `baranda` =
+cruza); `hueco` = `door 1` con `sight 0`, `light 0`, `sound 0` y sin sonido de puerta (todo pasa;
+para cruzar se «abre»: trepar); `vidrio` = `move 20`, `sight 0`, `light 0`, `sound 20` (`10` con `sonoro`); `baranda` =
 `move 20`, `sight 0`, `light 0`, `sound 0` (sólo frena el paso).
 
 Tipos de mueble fijos por defecto: `escritorio` (`monitor: false` sin pantalla, `cable: true`
-con el cable colgando), `cama`, `heladera`, `mesada` (`bacha`/`anafe: false`), `estante`,
-`mapas` (franja de mapas con alfileres rojos, azules y amarillos), `corcho`, `radiador`, `tv`
-(apagada), `timbre` (cámara de timbre sin LED), `contenedor`, `escalera` (`hacia` = hacia
+con el cable colgando), `cama`, `heladera`, `mesada` (`bacha`/`anafe: false`; en el prompt es
+cocina sólo si su `desc` habla de bacha u hornallas), `estante`, `mapas` (franja de mapas con
+alfileres rojos, azules y amarillos), `corcho`, `radiador`, `tv` (apagada), `timbre` (cámara de
+timbre sin LED; con `anomaly: true` es una `camara`), `contenedor`, `escalera` (`hacia` = hacia
 dónde baja; `material: "metal"`), `escalerilla`, `trampilla`, `inodoro` (`contra`), `lavabo`,
-`ducha`, `banera`, `maquina`. Móviles por defecto: `silla`, `sofa`, `mesa`, `lampara`, `carro`,
-`palet`, `camilla`, `tubos`, `portatil`, `cenicero`. `fijo: true/false` lo pisa.
+`ducha`, `banera`, `maquina`; y `videopared` (o `pantallas`), `panel`, `rack`, `camara`, `lector`,
+`banco` (`material: "hormigon"`·`"tapizado"`), `mostrador`, `barra`, `maquina-cafe`,
+`expendedora`, `consola`, `timon`, `balsa`, `generador`, `enfriadora`, `chimenea` (`contra`),
+`banco-trabajo`, `caja-fuerte` (o `cajafuerte`), `caseta`, `picadero`, `carril`, `grua`,
+`tapiado`, `cable`, `carbon`, `escombros`, `canal`, `cinta`, `flores`, `pedestal`
+(`material: "oscuro"`), `jardinera`, `maceta`, `lampara-uv`. Móviles por defecto: `silla`,
+`sofa`, `mesa`, `lampara`, `carro`, `palet`, `camilla`, `tubos`, `portatil`, `cenicero`, `auto`
+(o `coche`), `vehiculo` (o `lancha`), `bandeja`, `carpeta`, `maletin`, `catre`. `fijo: true/false`
+lo pisa. Un tipo desconocido sale como caja genérica y `construir-planos` lo avisa.
 
 ---
 

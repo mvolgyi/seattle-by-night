@@ -1,0 +1,1135 @@
+{
+  "_id": "YItWymxAL9s6gXRx",
+  "_key": "!scenes!YItWymxAL9s6gXRx",
+  "name": "Parte 4 · Colman Dock, la terminal de ferris",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 150,
+  "width": 2400,
+  "height": 1600,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.55,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "1OoZ1eHWQlaP37BD",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/terminal-ferry.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!YItWymxAL9s6gXRx.1OoZ1eHWQlaP37BD"
+    }
+  ],
+  "journal": "IDd94316DhSx3ptV",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "mv1GmVkG9gzFciyE",
+      "c": [
+        950,
+        150,
+        1000,
+        150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.mv1GmVkG9gzFciyE"
+    },
+    {
+      "_id": "kE48WS4UHAcek76N",
+      "c": [
+        1750,
+        150,
+        2350,
+        150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.kE48WS4UHAcek76N"
+    },
+    {
+      "_id": "XI92ll588SF5ceYI",
+      "c": [
+        950,
+        1050,
+        1000,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.XI92ll588SF5ceYI"
+    },
+    {
+      "_id": "wRW2ur0SsShwd4Sz",
+      "c": [
+        2050,
+        1050,
+        2350,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.wRW2ur0SsShwd4Sz"
+    },
+    {
+      "_id": "vwZ5yIHdfgcjhm7U",
+      "c": [
+        950,
+        150,
+        950,
+        170
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.vwZ5yIHdfgcjhm7U"
+    },
+    {
+      "_id": "nv7JhpyZ9xPDuji8",
+      "c": [
+        950,
+        460,
+        950,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.nv7JhpyZ9xPDuji8"
+    },
+    {
+      "_id": "BrQMq15452MRgSXh",
+      "c": [
+        950,
+        680,
+        950,
+        740
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.BrQMq15452MRgSXh"
+    },
+    {
+      "_id": "vreZCCTsifH57EUV",
+      "c": [
+        950,
+        1030,
+        950,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.vreZCCTsifH57EUV"
+    },
+    {
+      "_id": "fAzEayDUS8ZY7pol",
+      "c": [
+        2100,
+        150,
+        2100,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.fAzEayDUS8ZY7pol"
+    },
+    {
+      "_id": "bw54JYKwF570Cf1j",
+      "c": [
+        2100,
+        560,
+        2100,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.bw54JYKwF570Cf1j"
+    },
+    {
+      "_id": "L5Onw79DjvVYLdDg",
+      "c": [
+        2100,
+        600,
+        2350,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.L5Onw79DjvVYLdDg"
+    },
+    {
+      "_id": "JobQVLxO1q8vuLca",
+      "c": [
+        2350,
+        150,
+        2350,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.JobQVLxO1q8vuLca"
+    },
+    {
+      "_id": "YaQvmZH8z64kuFPt",
+      "c": [
+        950,
+        170,
+        950,
+        460
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.YaQvmZH8z64kuFPt"
+    },
+    {
+      "_id": "78UC7FZh3nNWYWky",
+      "c": [
+        950,
+        520,
+        950,
+        680
+      ],
+      "door": 1,
+      "ds": 1,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.78UC7FZh3nNWYWky"
+    },
+    {
+      "_id": "eWLvYShYSdelsBYJ",
+      "c": [
+        950,
+        740,
+        950,
+        1030
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.eWLvYShYSdelsBYJ"
+    },
+    {
+      "_id": "7cDL9gidRspOR78M",
+      "c": [
+        1000,
+        150,
+        1750,
+        150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.7cDL9gidRspOR78M"
+    },
+    {
+      "_id": "LT5tAPXir8lQBHmN",
+      "c": [
+        1000,
+        1050,
+        2050,
+        1050
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.LT5tAPXir8lQBHmN"
+    },
+    {
+      "_id": "fx2BRdP1L8T1Jmue",
+      "c": [
+        100,
+        475,
+        950,
+        475
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.fx2BRdP1L8T1Jmue"
+    },
+    {
+      "_id": "bWaSy1DlRVelABzM",
+      "c": [
+        100,
+        725,
+        950,
+        725
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.bWaSy1DlRVelABzM"
+    },
+    {
+      "_id": "wcLpIo9ZF3KTvW27",
+      "c": [
+        50,
+        1200,
+        900,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.wcLpIo9ZF3KTvW27"
+    },
+    {
+      "_id": "BsQIRMXpf3PO04xh",
+      "c": [
+        50,
+        1500,
+        900,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.BsQIRMXpf3PO04xh"
+    },
+    {
+      "_id": "VtKDlPaH450n2FUd",
+      "c": [
+        900,
+        1100,
+        900,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.VtKDlPaH450n2FUd"
+    },
+    {
+      "_id": "DUi6hNdH8nIYU29m",
+      "c": [
+        900,
+        1500,
+        900,
+        1600
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.DUi6hNdH8nIYU29m"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "LOK4WVqbaiQbbnrL",
+      "name": "Fluorescentes de la sala (norte)",
+      "x": 1250,
+      "y": 430,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.LOK4WVqbaiQbbnrL"
+    },
+    {
+      "_id": "ipnbRl9VRkItNQ7g",
+      "name": "Fluorescentes de la sala (centro)",
+      "x": 1700,
+      "y": 430,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.ipnbRl9VRkItNQ7g"
+    },
+    {
+      "_id": "9rsZ3w1ysDihflCD",
+      "name": "Fluorescente que falla (sur)",
+      "x": 1350,
+      "y": 860,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.9rsZ3w1ysDihflCD"
+    },
+    {
+      "_id": "Of0qQKIRBljKMGrN",
+      "name": "La máquina de café, parpadeando «fuera de servicio»",
+      "x": 1900,
+      "y": 210,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.2,
+        "color": "#c9dcf0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 8,
+          "intensity": 8,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.Of0qQKIRBljKMGrN"
+    },
+    {
+      "_id": "qRX64uuZmOKcnpYs",
+      "name": "El móvil del guardia",
+      "x": 1060,
+      "y": 810,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.qRX64uuZmOKcnpYs"
+    },
+    {
+      "_id": "M2UZXdbf39Chc8v7",
+      "name": "Luz de la pasarela",
+      "x": 500,
+      "y": 600,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.M2UZXdbf39Chc8v7"
+    },
+    {
+      "_id": "5OQPTGdRMRUlsXE4",
+      "name": "Farola de la explanada de vehículos",
+      "x": 1500,
+      "y": 1360,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.5OQPTGdRMRUlsXE4"
+    },
+    {
+      "_id": "eDlwClge89Kb55pj",
+      "name": "Foco de la rampa de vehículos",
+      "x": 500,
+      "y": 1350,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.eDlwClge89Kb55pj"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "vdKYOuWpbAgYXOkt",
+      "name": "Subir al ferry por la rampa de pasajeros",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 100,
+          "y": 475,
+          "width": 120,
+          "height": 250,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "yJy2EbXdJQqRV1o4",
+          "name": "Subir al ferry por la rampa de pasajeros",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.nO6PgIBKh3qBWQVV.Region.NH6AaEoOh6yWjhz5"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.vdKYOuWpbAgYXOkt.yJy2EbXdJQqRV1o4"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "a-la-rampa-del-ferry",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.vdKYOuWpbAgYXOkt"
+    },
+    {
+      "_id": "P37qpCdnMOsDV6r5",
+      "name": "Llegada desde el ferry (rampa de pasajeros)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 240,
+          "y": 475,
+          "width": 120,
+          "height": 250,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-desde-ferry",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.P37qpCdnMOsDV6r5"
+    },
+    {
+      "_id": "rz3vyiwDpayiAQs8",
+      "name": "Subir al ferry por la rampa de vehículos",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 50,
+          "y": 1200,
+          "width": 150,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "1LWG679PStrJFzBa",
+          "name": "Subir al ferry por la rampa de vehículos",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.67ExO7p40rqtAUeC.Region.iKsUsK3yObOwDEEa"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.rz3vyiwDpayiAQs8.1LWG679PStrJFzBa"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "a-rampa-vehiculos",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.rz3vyiwDpayiAQs8"
+    },
+    {
+      "_id": "HTXzwurHRGKB08qB",
+      "name": "Llegada desde la cubierta de coches",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 220,
+          "y": 1200,
+          "width": 150,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-rampa-vehiculos",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.HTXzwurHRGKB08qB"
+    },
+    {
+      "_id": "XB5Tvncjd9yzbsin",
+      "name": "Bajar a la calle y a la explanada de vehículos",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2160,
+          "y": 430,
+          "width": 160,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "776ALELxv5d9qlaE",
+          "name": "Bajar a la calle y a la explanada de vehículos",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YItWymxAL9s6gXRx.Region.X4ocOVrstEL1uZjs"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.XB5Tvncjd9yzbsin.776ALELxv5d9qlaE"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "bajar-a-la-explanada",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.XB5Tvncjd9yzbsin"
+    },
+    {
+      "_id": "MoD7T5LnvKz9QOiA",
+      "name": "Llegada a la sala de espera (desde la calle)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2000,
+          "y": 250,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-sala",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.MoD7T5LnvKz9QOiA"
+    },
+    {
+      "_id": "Zrvg9EujlnznskyA",
+      "name": "Subir a la sala de espera",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2160,
+          "y": 1440,
+          "width": 200,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "QVvg4jkC1EOZeyEt",
+          "name": "Subir a la sala de espera",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YItWymxAL9s6gXRx.Region.MoD7T5LnvKz9QOiA"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.Zrvg9EujlnznskyA.QVvg4jkC1EOZeyEt"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "subir-a-la-sala",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.Zrvg9EujlnznskyA"
+    },
+    {
+      "_id": "X4ocOVrstEL1uZjs",
+      "name": "Llegada a la explanada de vehículos",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1980,
+          "y": 1440,
+          "width": 150,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-explanada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.X4ocOVrstEL1uZjs"
+    },
+    {
+      "_id": "CxkIUQO63BOphTez",
+      "name": "Salir a Alaskan Way",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2200,
+          "y": 1110,
+          "width": 200,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "a-alaskan-way",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la calle (Alaskan Way): el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.CxkIUQO63BOphTez"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "ItUzvfr4M2shr8Po",
+      "entryId": "IDd94316DhSx3ptV",
+      "pageId": null,
+      "x": 1485,
+      "y": 510,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-15",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "terminal-ferry",
+          "id": "LUG-15"
+        }
+      },
+      "_key": "!scenes.notes!YItWymxAL9s6gXRx.ItUzvfr4M2shr8Po"
+    },
+    {
+      "_id": "LFX4hj1xPdn4BhAE",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "tG1m5PTkmBA1pvmc",
+      "x": 1585,
+      "y": 510,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "terminal-ferry",
+          "id": "A4-E03"
+        }
+      },
+      "_key": "!scenes.notes!YItWymxAL9s6gXRx.LFX4hj1xPdn4BhAE"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "terminal-ferry",
+      "id": "LUG-15",
+      "plano": "terminal-ferry",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, 00:55.</strong> «La terminal está casi vacía bajo los fluorescentes. Un guardia mira el móvil, una máquina de café parpadea con un cartel de &quot;fuera de servicio&quot;. Afuera, el último ferry de la noche espera con todas las luces encendidas, como un edificio blanco de cuatro pisos flotando sobre el agua negra. La sirena suena una vez, larga. En la rampa de pasajeros, un anciano de traje oscuro y un maletín de aluminio sube despacio, apoyado en el brazo de un hombre enorme que mira hacia atrás y olfatea el aire.»</p>\n<p><strong>La sala de espera</strong> está en la planta alta. <strong>Bancos</strong> fijos en tres filas dobles; un puñado de pasajeros con cara de sueño (tokens). El <strong>guardia de seguridad</strong> está en su atril junto a la <strong>puerta de embarque</strong> (oeste), mirando el móvil. La <strong>máquina de café rota</strong> está contra la pared norte (en el mapa, apagada; la luz «pantalla» la hace parpadear). El cartel de «fuera de servicio» no está pintado.</p>\n<p><strong>La rampa de pasajeros.</strong> De la puerta de embarque sale la <strong>pasarela elevada</strong>, vidriada a los dos lados, hacia el oeste: al final se apoya en la popa del ferry. Cuando la coterie entra en la sala, <strong>Pell y Dawson están subiendo por la pasarela</strong> (colocalos a mitad de camino): por los vidrios se los ve desde la sala. Al final de la pasarela, la región «Subir al ferry» lleva a la cubierta de popa del salón (<code>ferry</code>). Subir sin que Dawson los vea: Destreza + Sigilo Dif 4 contra su Astucia + Consciencia (6 dados); Ofuscación no engaña su olfato, el viento del estrecho sí (+1 dado por barlovento: el viento entra del oeste, del agua).</p>\n<p><strong>La rampa de vehículos</strong> (abajo, a nivel del muelle, en la franja sur): la explanada de vehículos y la rampa que cruza el agua hasta la cubierta de coches. Quien llega en coche (Destreza + Conducir Dif 3 para llegar antes de las 00:55) aparece en la explanada; la región del extremo de la rampa lleva a la popa de la cubierta de coches (<code>ferry-coches</code>). La escalera del este baja a la calle y a la explanada (regiones gemelas en este mismo mapa) y la explanada sale a Alaskan Way (sin mapa).</p>\n<p>Los aseos (bloque rayado) no se juegan. La sirena suena a las 00:50: cinco minutos.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir a Alaskan Way.</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete",
+          "x": 10.8,
+          "y": 8,
+          "w": 0.5,
+          "h": 0.5
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -19,7 +19,11 @@ Wendell Fry presentó durante nueve años el programa de madrugada de una radio 
 
 ## Noches de Vástago: el oyente
 
-En 1971, una Malkavian que llamaba al programa todas las noches desde una cabina de Fremont lo esperó un día a la salida de la emisora. Le dijo que lo había elegido porque era la única voz de la ciudad que no mentía, y lo Abrazó en el aparcamiento. La sire desapareció a las pocas semanas. Wendell siguió con el programa dos años más, hasta que la emisora cerró.
+En 1971, una Malkavian que llamaba al programa todas las noches desde una cabina de Fremont lo esperó un día a la salida de la emisora. Le dijo que lo había elegido porque era la única voz de la ciudad que no mentía, y lo Abrazó en el aparcamiento. La sire desapareció a las pocas semanas. Wendell siguió con el programa dos años más, hasta que la emisora cerró. Hoy vuelve a tener uno de madrugada, en una radio comunitaria.
+
+:::recuadro Nota de edición
+El doc 06 terminaba su carrera en la radio con el cierre de la emisora; se decidió que hoy tiene un programa nocturno en una radio comunitaria, que es su Máscara.
+:::
 
 Ahora escucha la ciudad de otra forma: radios de policía, pódcasts, mensajes de voz, conversaciones de bar. Cree que Seattle habla en código y que él es el único que lo entiende. A veces tiene razón. Ocupa el asiento Malkavian de la Primogenitura porque nadie más lo quiso, y vota según cosas que nadie entiende. Lleva años llamando al pódcast de Helen con el nombre de «W.».
 
@@ -63,10 +67,10 @@ Un estudio de radio abandonado en el último piso de un edificio de Fremont, lle
 
 ## Máscara y semblante
 
-Para los mortales es un jubilado excéntrico de Fremont (Máscara 1). Aparenta unos treinta y tres años. Es delgado y tiene la barba descuidada, gafas de montura gruesa, chaquetas de pana y una gorra de béisbol de un equipo que ya no existe. Habla con una voz de radio, grave y lenta, que contrasta con su aspecto desaliñado. Siempre lleva auriculares colgados del cuello. A veces se los pone en mitad de una conversación.
+Para los mortales es el locutor nocturno de una radio comunitaria (Máscara 1). Aparenta unos treinta y tres años. Es delgado y tiene la barba descuidada, gafas de montura gruesa, chaquetas de pana y una gorra de béisbol de un equipo que ya no existe. Habla con una voz de radio, grave y lenta, que contrasta con su aspecto desaliñado. Siempre lleva auriculares colgados del cuello. A veces se los pone en mitad de una conversación.
 
 :::recuadro Nota de edición
-El doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió que aparenta la edad que tenía al Abrazo (1971, nacido en 1938): unos treinta y tres, con la barba descuidada pero sin canas.
+El doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió que aparenta la edad que tenía al Abrazo (1971, nacido en 1938): unos treinta y tres, con la barba descuidada pero sin canas. También decía que para los mortales es «un jubilado excéntrico de Fremont»; se decidió que es el locutor nocturno de una radio comunitaria.
 :::
 
 ## Datos de referencia

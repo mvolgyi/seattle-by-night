@@ -1,0 +1,483 @@
+{
+  "_id": "4WNwrNyFjucH1Kkc",
+  "_key": "!scenes!4WNwrNyFjucH1Kkc",
+  "name": "Parte 2 · La Galería de Vidrio: el archivo de la Guardiana",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 31,
+  "width": 1300,
+  "height": 1100,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.9,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "bQJzjZ4ndhKz3mVc",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/galeria-archivo.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!4WNwrNyFjucH1Kkc.bQJzjZ4ndhKz3mVc"
+    }
+  ],
+  "journal": "iyojT7kJHH23BWLd",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "j22eJtUZoGhYCzzN",
+      "c": [
+        100,
+        100,
+        1200,
+        100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.j22eJtUZoGhYCzzN"
+    },
+    {
+      "_id": "fL71sSGcpCXytrMI",
+      "c": [
+        100,
+        500,
+        300,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.fL71sSGcpCXytrMI"
+    },
+    {
+      "_id": "RfMXmYpIZW2SXyJ8",
+      "c": [
+        390,
+        500,
+        500,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.RfMXmYpIZW2SXyJ8"
+    },
+    {
+      "_id": "nyr7oI2k4oeS97jb",
+      "c": [
+        100,
+        100,
+        100,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.nyr7oI2k4oeS97jb"
+    },
+    {
+      "_id": "M9y1mSV3VLewkvzo",
+      "c": [
+        500,
+        100,
+        500,
+        260
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.M9y1mSV3VLewkvzo"
+    },
+    {
+      "_id": "xKuTMaY29nlTD1gY",
+      "c": [
+        500,
+        350,
+        500,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.xKuTMaY29nlTD1gY"
+    },
+    {
+      "_id": "AbxO5CEUyId6q5fy",
+      "c": [
+        500,
+        800,
+        1200,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.AbxO5CEUyId6q5fy"
+    },
+    {
+      "_id": "85SJtrCy7DkRFB9G",
+      "c": [
+        1200,
+        100,
+        1200,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.85SJtrCy7DkRFB9G"
+    },
+    {
+      "_id": "uAmD5XMuIX81tJPj",
+      "c": [
+        100,
+        1000,
+        1200,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.uAmD5XMuIX81tJPj"
+    },
+    {
+      "_id": "tXwrY1rt8pAPZcOq",
+      "c": [
+        500,
+        260,
+        500,
+        350
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.tXwrY1rt8pAPZcOq"
+    },
+    {
+      "_id": "M5zTqkLVgkRTCUmd",
+      "c": [
+        300,
+        500,
+        390,
+        500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!4WNwrNyFjucH1Kkc.M5zTqkLVgkRTCUmd"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "XajwOoCo232tEwQu",
+      "name": "Fluorescente del pie de la escalera",
+      "x": 320,
+      "y": 300,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!4WNwrNyFjucH1Kkc.XajwOoCo232tEwQu"
+    },
+    {
+      "_id": "nJ3m4XzD59zTv4xP",
+      "name": "Lámpara de la mesa de lectura",
+      "x": 750,
+      "y": 660,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!4WNwrNyFjucH1Kkc.nJ3m4XzD59zTv4xP"
+    },
+    {
+      "_id": "jBQ9lC5LiapKBuAP",
+      "name": "Fluorescente del depósito",
+      "x": 300,
+      "y": 750,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!4WNwrNyFjucH1Kkc.jBQ9lC5LiapKBuAP"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "e5c1DXXHEBBVM5t0",
+      "name": "Llegada desde la Galería (pie de la escalera)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 370,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria-archivo",
+          "region": "desde-galeria",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!4WNwrNyFjucH1Kkc.e5c1DXXHEBBVM5t0"
+    },
+    {
+      "_id": "zW3ZIpsJrVy6TIOB",
+      "name": "Subir a la Galería",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 120,
+          "y": 110,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "kzORu9j5XuRrjFbF",
+          "name": "Subir a la Galería",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.oMvohIUjvTdrgCUZ.Region.muOtU8g4fdCYw1IV"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!4WNwrNyFjucH1Kkc.zW3ZIpsJrVy6TIOB.kzORu9j5XuRrjFbF"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria-archivo",
+          "region": "subir-a-la-galeria",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!4WNwrNyFjucH1Kkc.zW3ZIpsJrVy6TIOB"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "63iQ1ScYvwbyQKHS",
+      "entryId": "iyojT7kJHH23BWLd",
+      "pageId": null,
+      "x": 810,
+      "y": 385,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria-archivo",
+          "id": "LUG-03"
+        }
+      },
+      "_key": "!scenes.notes!4WNwrNyFjucH1Kkc.63iQ1ScYvwbyQKHS"
+    },
+    {
+      "_id": "TVo1PyBgzyHZsAUg",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "uL8F2YNogcToiFc6",
+      "x": 910,
+      "y": 385,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria-archivo",
+          "id": "A2-E01"
+        }
+      },
+      "_key": "!scenes.notes!4WNwrNyFjucH1Kkc.TVo1PyBgzyHZsAUg"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "galeria-archivo",
+      "id": "LUG-03",
+      "plano": "galeria-archivo",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</p>\n<p><strong>El archivo de la Guardiana</strong>, en el sótano del bloque de servicio de la Galería. Se baja por la escalera de servicio (llave de Marchetti); la región «Subir a la Galería», arriba del tramo, devuelve al pasillo de servicio.</p>\n<p><strong>El archivo.</strong> Estanterías del suelo al techo con los libros de registro del Elíseo y los papeles de la fundación, una mesa de lectura y una caja fuerte. Marchetti lo registra todo y no interpreta nada: sus libros son «la historia de cada Vástago de Seattle desde 1962» (PNJ-14). El rumor dice que están en una caja fuerte de la Galería; es verdad a medias: <strong>los tres últimos volúmenes</strong> (el XIV incluido, el de DOC-03) están en esta caja fuerte; los once anteriores, en un lugar que sólo conoce ella. La puerta del archivo está trabada: la llave la tiene la Guardiana. Su apartamento (Refugio 2) queda encima, en la planta alta del bloque de servicio; no tiene mapa.</p>\n<p><strong>El depósito.</strong> Cajones con piezas de vidrio de repuesto embaladas en paja: las medusas las sopla Tomás Arriaga (la Piedra de toque de Marchetti), que cree trabajar para una fundación excéntrica.</p>\n<p>Ninguna escena fija pasa aquí: es para quien pida ver el registro fuera de la sala, para un robo o para la crónica.</p>\n",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,867 @@
+{
+  "_id": "eHbz7dP6lDhAiQR6",
+  "_key": "!scenes!eHbz7dP6lDhAiQR6",
+  "name": "FIRSTLIGHT · Northline Cyber Advisory (piso 11)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 140,
+  "width": 2100,
+  "height": 1500,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.8,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "UVSSV3AdHDbZoCim",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/northline.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!eHbz7dP6lDhAiQR6.UVSSV3AdHDbZoCim"
+    }
+  ],
+  "journal": "KioeAEZP78U0Coz5",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "ZGlT1PnuR57ze8wk",
+      "c": [
+        100,
+        900,
+        1150,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.ZGlT1PnuR57ze8wk"
+    },
+    {
+      "_id": "a0kn2qnGw9a7wMQm",
+      "c": [
+        1240,
+        900,
+        1300,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.a0kn2qnGw9a7wMQm"
+    },
+    {
+      "_id": "KgMgQYYLNwlne7lu",
+      "c": [
+        100,
+        900,
+        100,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.KgMgQYYLNwlne7lu"
+    },
+    {
+      "_id": "cYsWaDekkiRvcOqx",
+      "c": [
+        1300,
+        100,
+        1300,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.cYsWaDekkiRvcOqx"
+    },
+    {
+      "_id": "wMJ1cUoO9M5DHsfN",
+      "c": [
+        1300,
+        500,
+        1300,
+        640
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.wMJ1cUoO9M5DHsfN"
+    },
+    {
+      "_id": "7VORfPSN4kGaCLc0",
+      "c": [
+        1300,
+        900,
+        1300,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.7VORfPSN4kGaCLc0"
+    },
+    {
+      "_id": "KgwEvZz0yGj0MBFm",
+      "c": [
+        1300,
+        600,
+        2000,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.KgwEvZz0yGj0MBFm"
+    },
+    {
+      "_id": "jkMt7alMxJkeW0N9",
+      "c": [
+        2000,
+        100,
+        2000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.jkMt7alMxJkeW0N9"
+    },
+    {
+      "_id": "aJ665WTXieEB7VrY",
+      "c": [
+        1700,
+        1100,
+        2000,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.aJ665WTXieEB7VrY"
+    },
+    {
+      "_id": "Pla8UPkAGXKj4Ytc",
+      "c": [
+        100,
+        1400,
+        2000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.Pla8UPkAGXKj4Ytc"
+    },
+    {
+      "_id": "clZ5kefxbOVnMJYk",
+      "c": [
+        1700,
+        1100,
+        1700,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.clZ5kefxbOVnMJYk"
+    },
+    {
+      "_id": "5hHIcmt88HlrWYMB",
+      "c": [
+        1700,
+        1300,
+        1700,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.5hHIcmt88HlrWYMB"
+    },
+    {
+      "_id": "T5xJirtFXSetQWjX",
+      "c": [
+        100,
+        1050,
+        250,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.T5xJirtFXSetQWjX"
+    },
+    {
+      "_id": "Uiwfwy3nMxAGYbVb",
+      "c": [
+        340,
+        1050,
+        730,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.Uiwfwy3nMxAGYbVb"
+    },
+    {
+      "_id": "r3ROwvBppJGVkmzP",
+      "c": [
+        820,
+        1050,
+        1300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.r3ROwvBppJGVkmzP"
+    },
+    {
+      "_id": "bYan8CQra0xIi0uG",
+      "c": [
+        500,
+        1050,
+        500,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.bYan8CQra0xIi0uG"
+    },
+    {
+      "_id": "4XQnwDnHn5bMy7qj",
+      "c": [
+        1050,
+        1050,
+        1050,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.4XQnwDnHn5bMy7qj"
+    },
+    {
+      "_id": "hSfGXYk1QZyIh7u2",
+      "c": [
+        100,
+        100,
+        1300,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.hSfGXYk1QZyIh7u2"
+    },
+    {
+      "_id": "sHEcC4G5hmoiPKzj",
+      "c": [
+        100,
+        100,
+        100,
+        900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.sHEcC4G5hmoiPKzj"
+    },
+    {
+      "_id": "vjUpjN88CP6CiIJ9",
+      "c": [
+        1300,
+        100,
+        2000,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.vjUpjN88CP6CiIJ9"
+    },
+    {
+      "_id": "qSfc6lc85RbQujuM",
+      "c": [
+        1300,
+        400,
+        1300,
+        500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.qSfc6lc85RbQujuM"
+    },
+    {
+      "_id": "Rl2kRAk8PuhfOtaL",
+      "c": [
+        1300,
+        1100,
+        1400,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.Rl2kRAk8PuhfOtaL"
+    },
+    {
+      "_id": "M2qXuXT84CCZ6G32",
+      "c": [
+        1400,
+        1100,
+        1500,
+        1100
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.M2qXuXT84CCZ6G32"
+    },
+    {
+      "_id": "TFY9voppLvFKDZor",
+      "c": [
+        1500,
+        1100,
+        1600,
+        1100
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.TFY9voppLvFKDZor"
+    },
+    {
+      "_id": "tLEjTZM7OC1gTSHK",
+      "c": [
+        1600,
+        1100,
+        1700,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.tLEjTZM7OC1gTSHK"
+    },
+    {
+      "_id": "EffIdCcgU24zCyA2",
+      "c": [
+        1700,
+        1200,
+        1700,
+        1300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.EffIdCcgU24zCyA2"
+    },
+    {
+      "_id": "YuVAWpZZjOqcxddp",
+      "c": [
+        1150,
+        900,
+        1240,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.YuVAWpZZjOqcxddp"
+    },
+    {
+      "_id": "xHCOY97vFhfcdRcS",
+      "c": [
+        250,
+        1050,
+        340,
+        1050
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.xHCOY97vFhfcdRcS"
+    },
+    {
+      "_id": "iVHiS9qngDT7ob5s",
+      "c": [
+        730,
+        1050,
+        820,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.iVHiS9qngDT7ob5s"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "pMgTJPb8Bny7Hk4S",
+      "name": "Panel retroiluminado del logo (1 de las 3 luces)",
+      "x": 1650,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.pMgTJPb8Bny7Hk4S"
+    },
+    {
+      "_id": "qVSWJjXmUWmA4SKz",
+      "name": "Lámpara del puesto de Hale (2 de las 3 luces)",
+      "x": 880,
+      "y": 460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.qVSWJjXmUWmA4SKz"
+    },
+    {
+      "_id": "kXW4mkXFQWcrVJcg",
+      "name": "Sala de reuniones, persianas cerradas (3 de las 3 luces)",
+      "x": 1640,
+      "y": 330,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.kXW4mkXFQWcrVJcg"
+    },
+    {
+      "_id": "UXxiHgHSEpKA90Qi",
+      "name": "Luz nocturna del vestíbulo de ascensores",
+      "x": 1500,
+      "y": 1260,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.UXxiHgHSEpKA90Qi"
+    },
+    {
+      "_id": "a64Ep6jEGkaOUmI9",
+      "name": "Lámparas UV de la sala blanca (oeste), APAGADAS",
+      "x": 560,
+      "y": 1225,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 4.5,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": true,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.a64Ep6jEGkaOUmI9"
+    },
+    {
+      "_id": "l5EyJkSegMOL96cM",
+      "name": "Lámparas UV de la sala blanca (este), APAGADAS",
+      "x": 990,
+      "y": 1225,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 4.5,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": true,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.l5EyJkSegMOL96cM"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "4T6EXSERPQX9SwIO",
+      "name": "Ascensores (planta baja)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1350,
+          "y": 1300,
+          "width": 300,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "northline",
+          "region": "ascensores",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del vestíbulo de la torre: el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!eHbz7dP6lDhAiQR6.4T6EXSERPQX9SwIO"
+    },
+    {
+      "_id": "NQSGgMZYEblVtoJe",
+      "name": "Llegada por la escalera de emergencia",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1860,
+          "y": 1120,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "northline",
+          "region": "escalera-llegada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!eHbz7dP6lDhAiQR6.NQSGgMZYEblVtoJe"
+    },
+    {
+      "_id": "5v4rtOacDn40vxDL",
+      "name": "Bajar por la escalera de emergencia (11 pisos)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1860,
+          "y": 1280,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "northline",
+          "region": "escalera-bajar",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la calle"
+        }
+      },
+      "_key": "!scenes.regions!eHbz7dP6lDhAiQR6.5v4rtOacDn40vxDL"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "N1EepThVStLcAE48",
+      "entryId": "KioeAEZP78U0Coz5",
+      "pageId": null,
+      "x": 710,
+      "y": 510,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-14",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "northline",
+          "id": "LUG-14"
+        }
+      },
+      "_key": "!scenes.notes!eHbz7dP6lDhAiQR6.N1EepThVStLcAE48"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "northline",
+      "id": "LUG-14",
+      "plano": "northline",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</p>\n<p><strong>Northline Cyber Advisory</strong>, la fachada de FIRSTLIGHT. «Moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad» (el panel del logo está en la pared norte de la recepción, retroiluminado y sin una letra en el mapa). «A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas»: las tres son el panel del logo de la recepción, la lámpara del puesto de Hale en las mesas abiertas y el fluorescente de la <strong>sala de reuniones</strong>, cuyas ventanas al norte tienen las persianas bajadas (por fuera se ve la luz, no la sala).</p>\n<p><strong>Sala de reuniones.</strong> La mesa larga y, en la pared este, el <strong>tablero de corcho lleno de fotos</strong>, incluido el pódcast de Helen. La mampara que da a las mesas abiertas es de vidrio con persianas cerradas: en el mapa es muro (no se ve adentro). Aquí se juega el interludio I-2 «SEA-0411» (SPEC §6): Okafor y Hale reciben la entrega de ARQUERO (DOC-07).</p>\n<p><strong>Mesas abiertas</strong> (los analistas): ocho mesas altas en dos islas. La de Hale es la de la lámpara. Okafor «nunca se sienta de espaldas a una puerta».</p>\n<p><strong>Zona restringida.</strong> De las mesas abiertas sale, por una puerta con lector de tarjeta, el pasillo a la <strong>armería cerrada</strong> (taquillas de fusiles cortos, munición incendiaria, linternas UV, chalecos; de noche el equipo táctico MEN-02 está en un almacén del puerto, no aquí, así que hay huecos) y a la <strong>sala blanca de «entrevistas»</strong>: azulejo blanco, una mesa y una silla atornilladas y <strong>lámparas UV de alta intensidad</strong> en las paredes. Apagadas; encendidas, cada Vástago iluminado sufre 1 de daño agravado por turno y −2 dados (linterna UV, arsenal de FIRSTLIGHT). Las luces UV del plano están marcadas como apagadas.</p>\n<p><strong>Accesos.</strong> Ascensores y escalera de emergencia en el vestíbulo común del piso, al sur de la recepción; la puerta de vidrio de Northline está trabada de noche. Ninguno tiene mapa del otro extremo.</p>\n<p><strong>Peligro:</strong> «entrar aquí es la forma más rápida de subir el Termómetro»: si se descubre la intrusión, Termómetro +3. «Es más útil observar que entrar.» No figura en ninguna escena fija: se reserva para la crónica, una coterie muy audaz y los interludios de FIRSTLIGHT (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×5, sofa.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Ascensores (planta baja) · Bajar por la escalera de emergencia (11 pisos).</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete-alto",
+          "x": 8.55,
+          "y": 5.2,
+          "w": 0.5,
+          "h": 0.5
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 15,
+          "y": 1.95,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 16.9,
+          "y": 1.95,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 15,
+          "y": 4,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-oficina",
+          "x": 16.9,
+          "y": 4,
+          "w": 0.55,
+          "h": 0.55
+        },
+        {
+          "tipo": "sofa",
+          "tile": "tile-sofa-espera",
+          "x": 18.85,
+          "y": 8.4,
+          "w": 0.9,
+          "h": 2
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

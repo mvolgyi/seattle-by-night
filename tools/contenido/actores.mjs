@@ -15,20 +15,33 @@
  *     migrar especialidades (system/scripts/migration/migrate-specialties.js).
  *   - Ventajas y defectos: ítems `feature` (featuretype background/merit/flaw).
  *   - Coteries: actores `group` (groupType coterie, chasse/lien/portillon).
+ *   - Cazadores (`tipo: "hunter"`, content/pnjs/cazadores.json): actores
+ *     `hunter` con el Credo (ítem `creed`, con sus campos de Desesperación),
+ *     el Impulso (ítem `drive`, con la redención), las Facultades
+ *     (system.edges.<id>) y sus Beneficios (ítems `perk` con system.edge).
+ *     La Célula (`celula` en el mismo archivo) es un actor `group` con
+ *     groupType cell, Desesperación y Peligro; cada cazador la lleva en
+ *     system.group, de donde wod5e toma la Desesperación (actor/actor.js).
  *
  * Modelo de datos (wod5e 5.3.28, ~/.local/share/FoundryVTT/Data/systems/wod5e):
  *   actor   system/actor/data-models/{base-actor-model,spc-actor-model,group-actor-model}.js
- *           fields/{attribute,skill,vampire,coterie,setting}-fields.js
- *   ítems   system/item/data-models/{base-item-model,vtm/*,shared/*}.js
- *   defs    system/api/def/{disciplines,features,itemtypes,weapons}.js
+ *           fields/{attribute,skill,vampire,coterie,setting,hunter,cell}-fields.js
+ *   ítems   system/item/data-models/{base-item-model,vtm/*,shared/*,htr/*}.js
+ *   defs    system/api/def/{disciplines,edges,features,itemtypes,weapons}.js
  */
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
-import { RAIZ, MODULO, STATS, escribirDoc, Carpetas, leerJson } from "../util.mjs";
+import { RAIZ, MODULO, STATS, escribirDoc, Carpetas, leerJson, slug } from "../util.mjs";
 import { ID, fichas, tieneActor, journals, clavePagina } from "./ids.mjs";
 
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
+
+/** Retrato y token generados en la fase 6 (assets/retratos, assets/tokens), si existen. */
+const RUTA_MODULO = `modules/${MODULO}/`;
+const arteDe = (carpeta, id) => existe(`assets/${carpeta}/${id}.webp`) ? `${RUTA_MODULO}assets/${carpeta}/${id}.webp` : null;
+const retratoDe = id => arteDe("retratos", id) ?? arteDe("tokens", id) ?? ICONO_ACTOR;
+const tokenDe = id => arteDe("tokens", id) ?? ICONO_ACTOR;
 const md2html = md => marked.parse(md ?? "", { async: false }).trim();
 const md2inline = md => marked.parseInline(md ?? "", { async: false });
 
@@ -99,7 +112,37 @@ const RESERVAS_PODER = {
 };
 
 /** Disposición del token: −1 hostil, 0 neutral, 1 amistosa. */
-const HOSTILES = new Set(["PNJ-12", "PNJ-03", "PNJ-19", "PNJ-18", "PNJ-21", "MEN-02", "MEN-11", "MEN-04", "MEN-04-DAWSON"]);
+const HOSTILES = new Set(["PNJ-12", "PNJ-03", "PNJ-19", "PNJ-18", "PNJ-21", "MEN-02", "MEN-11", "MEN-04", "MEN-04-DAWSON",
+  "CAZ-01", "CAZ-02", "CAZ-03"]);
+
+/**
+ * Credos de H5 → [nombre, campos de Desesperación]. Copiado de DVV
+ * (construirPersonajes, CAMPOS_CREDO). El texto va a creed.system.desperationFields
+ * (item/data-models/htr/creed-item-model.js) y a headers.creedfields.
+ */
+export const CAMPOS_CREDO = {
+  underground: ["Clandestinos", "Sigilo y subterfugio en servicio de la Caza."],
+  entrepreneurial: ["Emprendedores", "Construir, inventar, aumentar o reparar durante la Caza."],
+  faithful: ["Fieles", "Cualquier conflicto directo (físico, social o mental) con lo sobrenatural durante la Caza."],
+  inquisitive: ["Inquisitivos", "Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio."],
+  martial: ["Marciales", "Conflicto físico durante la Caza (no necesita ser con la presa ni con lo sobrenatural)."]
+};
+
+/** Facultades (system/api/def/edges.js), con la etiqueta de lang/es/hunter-es.json; las que no la traen (turncoat, experimentalmedicine, cleansetheunnatural, greatdestiny, unnaturalchanges), traducción propia. */
+export const NOMBRE_FACULTAD = {
+  arsenal: "Arsenal", fleet: "Flota", ordnance: "Artillería", library: "Biblioteca",
+  improvisedgear: "Equipamiento improvisado", globalaccess: "Acceso global", dronejockey: "Piloto de drones",
+  beastwhisperer: "Encantador de bestias", sensetheunnatural: "Sentir lo antinatural",
+  repeltheunnatural: "Repeler lo antinatural", thwarttheunnatural: "Frustrar lo antinatural",
+  artifact: "Artefacto", turncoat: "Desertor", experimentalmedicine: "Medicina experimental",
+  cleansetheunnatural: "Purificar lo antinatural", greatdestiny: "Gran destino", unnaturalchanges: "Cambios antinaturales"
+};
+
+/** «Nombre: descripción» de un Beneficio → { nombre, descripcion }. */
+export function parsearBeneficio(texto) {
+  const i = texto.indexOf(":");
+  return i < 0 ? { nombre: texto.trim(), descripcion: "" } : { nombre: texto.slice(0, i).trim(), descripcion: texto.slice(i + 1).trim() };
+}
 const AMISTOSOS = new Set(["PNJ-04", "PNJ-05"]);
 
 /** Ventajas que son Trasfondos de V5; el resto de las ventajas son Méritos. */
@@ -154,6 +197,21 @@ const SISTEMA_ITEM = (extra = {}) => ({
   source: { book: CRONICA, page: "" }, ...extra
 });
 
+/**
+ * Semillas de ítems embebidos por nombre, no por posición (reordenar la lista
+ * en content/ no cambia los _id del mundo). Si dos se llaman igual, el segundo
+ * lleva «:2», el tercero «:3»… en el orden de content/.
+ */
+function semillas() {
+  const vistas = new Map();
+  return (prefijo, nombre) => {
+    const base = `${prefijo}:${slug(String(nombre ?? "")) || "sin-nombre"}`;
+    const n = (vistas.get(base) ?? 0) + 1;
+    vistas.set(base, n);
+    return n === 1 ? base : `${base}:${n}`;
+  };
+}
+
 function embebido(aid, clave, doc) {
   const iid = ID.itemDe(aid, clave);
   return { effects: [], sort: 0, flags: {}, ...doc, _id: iid, _key: `!actors.items!${aid}.${iid}` };
@@ -183,11 +241,12 @@ function partirRasgos(texto) {
 
 function rasgos(aid, lista, tipoDefecto, prefijo, ctx, origen) {
   const out = [];
-  (lista ?? []).forEach((texto, i) => {
-    partirRasgos(texto).forEach(({ t, original }, j) => {
+  const semilla = semillas();
+  (lista ?? []).forEach(texto => {
+    partirRasgos(texto).forEach(({ t, original }) => {
       const { nombre, puntos } = parsearRasgo(t);
       const featuretype = tipoDefecto === "flaw" ? "flaw" : (TRASFONDO.test(t) ? "background" : "merit");
-      out.push(embebido(aid, `${prefijo}:${i}:${j}`, {
+      out.push(embebido(aid, semilla(prefijo, nombre), {
         name: nombre, type: "feature", img: ICONO_RASGO,
         system: SISTEMA_ITEM({
           description: `<p>${inline(original, ctx, origen)}</p>`,
@@ -390,8 +449,14 @@ function biografia(f, ctx, { perfil, coteries }) {
   return partes.join("");
 }
 
-/** Notas del Narrador: notas de edición y datos provisionales del doc 16. */
+/**
+ * Notas del Narrador: notas de edición y datos provisionales del doc 16.
+ * Un PJ no las lleva: las notas privadas las ve el dueño del actor (el
+ * jugador). Van a la página {narrador} «Notas de edición» de su perfil
+ * (journals.mjs, notasDeEdicionPJ).
+ */
 function notasPrivadas(f, ctx) {
+  if (f.pj) return "";
   const partes = [];
   if (f.nota) partes.push(html(f.nota, ctx, f.id));
   if (f.provisional?.length) partes.push(`<h3>Provisional (doc 16)</h3><ul>${f.provisional.map(p => `<li>${inline(p, ctx, f.id)}</li>`).join("")}</ul>`);
@@ -459,10 +524,146 @@ function construirFirstlight(ctx) {
 }
 
 /* -------------------------------------------- */
+/*  Cazadores y Célula (H5)                     */
+/* -------------------------------------------- */
+
+/** La Célula de la ficha: la primera `celula` de content/pnjs/*.json que la lista como miembro. */
+const celulaDe = (f, ctx) => ctx.celulas.find(c => c.miembros.includes(f.id)) ?? null;
+
+/**
+ * Completa `system` e `items` de un actor hunter:
+ *   creed   ítem (item/data-models/htr/creed-item-model.js: edges, drives, desperationFields)
+ *   drive   ítem (htr/drive-item-model.js: redemption)
+ *   perk    ítems (htr/perk-item-model.js: edge, selected), uno por Beneficio
+ *   system.edges.<id> = { value, visible, description, selected } (ObjectField libre,
+ *           actor/data-models/fields/hunter-fields.js; forma de actor/htr/scripts/prepare-data.js)
+ *   system.headers.creedfields / cellname (base-actor-model.js), system.despair (hunter-fields.js)
+ *   system.group = id del actor de la Célula (actor/actor.js lee de ahí la Desesperación)
+ */
+function aplicarCazador(f, ctx, aid, system, items) {
+  const [credoNombre, campos] = CAMPOS_CREDO[f.credo] ?? [f.credo ?? "", ""];
+  if (f.credo && !CAMPOS_CREDO[f.credo]) ctx.avisos.push(`actores: ${f.id}: credo «${f.credo}» desconocido.`);
+  if (f.credo) {
+    items.push(embebido(aid, "credo", {
+      name: credoNombre, type: "creed", img: ICONO_ITEM,
+      system: SISTEMA_ITEM({ edges: "", drives: "", desperationFields: campos }),
+      flags: { [MODULO]: { origen: "actor", credo: f.credo } }
+    }));
+  }
+  if (f.impulso) {
+    items.push(embebido(aid, "impulso", {
+      name: f.impulso.nombre, type: "drive", img: ICONO_ITEM,
+      system: SISTEMA_ITEM({
+        description: f.impulso.texto ? html(f.impulso.texto, ctx, f.id) : "",
+        redemption: f.impulso.redencion ? html(f.impulso.redencion, ctx, f.id) : ""
+      }),
+      flags: { [MODULO]: { origen: "actor", impulso: f.impulso.clave ?? f.impulso.nombre } }
+    }));
+  }
+
+  system.edges = {};
+  const semilla = semillas();
+  for (const [edge, [valor, beneficios = []]] of Object.entries(f.facultades ?? {})) {
+    if (!NOMBRE_FACULTAD[edge]) {
+      ctx.avisos.push(`actores: ${f.id}: Facultad «${edge}» no existe en wod5e (system/api/def/edges.js).`);
+      continue;
+    }
+    system.edges[edge] = {
+      value: valor ?? 0, visible: true, selected: false,
+      description: f.facultadesNotas?.[edge] ? html(f.facultadesNotas[edge], ctx, f.id) : ""
+    };
+    beneficios.forEach((texto, i) => {
+      const { nombre, descripcion } = parsearBeneficio(texto);
+      items.push(embebido(aid, semilla(`beneficio:${edge}`, nombre), {
+        name: nombre, type: "perk", img: ICONO_ITEM, sort: i * 100,
+        system: SISTEMA_ITEM({ description: descripcion ? html(descripcion, ctx, f.id) : "", source: { book: CRONICA, page: f.id }, edge, selected: false }),
+        flags: { [MODULO]: { origen: "actor", beneficio: texto } }
+      }));
+    });
+  }
+
+  const celula = celulaDe(f, ctx);
+  system.group = celula ? ID.actor(celula.id) : "";
+  system.headers.creedfields = campos;
+  system.headers.cellname = celula?.nombre ?? "";
+  system.despair = { value: 0 };
+
+  // Biografía: Credo, Impulso y Facultades a la vista; el pregenerado, enlazado.
+  const filas = [];
+  const fila = (k, v) => v && filas.push(`<tr><th>${k}</th><td>${v}</td></tr>`);
+  fila("Célula", celula && inline(`@ID[${celula.id}|${celula.nombre}]`, ctx, f.id));
+  fila("Credo", credoNombre && `${credoNombre}. <em>Desesperación:</em> ${campos}`);
+  fila("Impulso", f.impulso && `${f.impulso.nombre}${f.impulso.redencion ? `. <em>Redención:</em> ${inline(f.impulso.redencion, ctx, f.id)}` : ""}`);
+  fila("Facultades", Object.entries(f.facultades ?? {}).map(([e, [, b = []]]) =>
+    `${NOMBRE_FACULTAD[e] ?? e}${b.length ? ` (${b.map(t => parsearBeneficio(t).nombre).join(", ")})` : ""}`).join(" · "));
+  const bloque = [`<h3>Cazador</h3><table class="sbn-ficha"><tbody>${filas.join("")}</tbody></table>`];
+  if (f.impulso?.texto) bloque.push(`<p>${inline(f.impulso.texto, ctx, f.id)}</p>`);
+  system.biography += bloque.join("");
+  const pre = f.pregenerado && ctx.reg.get(f.pregenerado);
+  if (f.pregenerado && !pre) ctx.avisos.push(`actores: ${f.id}: pregenerado ${f.pregenerado} no está en el registro.`);
+  if (pre) system.biography += `<p>@UUID[${pre.uuid}]{Pregenerado: ${pre.nombre}}</p>`;
+
+  // Lo inventado para el módulo, a la vista del Narrador (de un PJ, en su perfil: ver notasPrivadas).
+  if (f.propuesto?.length && !f.pj) {
+    system.privatenotes += `<h3>Propuesto (no está en los docs)</h3><ul>${f.propuesto.map(p => `<li>${inline(p, ctx, f.id)}</li>`).join("")}</ul>`;
+  }
+}
+
+/** Actor group/cell (system/actor/data-models/group-actor-model.js + fields/cell-fields.js). */
+function construirCelula(c, ctx, carpetas) {
+  const aid = ID.actor(c.id);
+  const perfil = ["journal", "pagina"].includes(ctx.reg.get(c.id)?.tipo) ? ctx.reg.get(c.id) : null;
+  const enlaces = ids => (ids ?? []).map(id => inline(`@ID[${id}]`, ctx, c.id)).join(", ");
+  const fila = (k, v) => v ? `<tr><th>${k}</th><td>${v}</td></tr>` : "";
+  const partes = [];
+  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{Perfil: ${c.nombre}}</p>`);
+  if (c.lema) partes.push(`<blockquote><p><em>${inline(c.lema, ctx, c.id)}</em></p></blockquote>`);
+  partes.push(`<table class="sbn-ficha"><tbody>${[
+    fila("Concepto", c.concepto && inline(c.concepto, ctx, c.id)),
+    fila("Base", c.lugar && enlaces([c.lugar])),
+    fila("Cazadores", enlaces(c.miembros)),
+    fila("Además", enlaces(c.otros)),
+    fila("Desesperación inicial", String(c.desesperacion ?? 0)),
+    fila("Peligro inicial", `${c.peligro ?? 0} de ${c.peligroMax ?? 5}`)
+  ].join("")}</tbody></table>`);
+  if (c.descripcion) partes.push(`<p>${inline(c.descripcion, ctx, c.id)}</p>`);
+  const privadas = [];
+  if (c.notas) privadas.push(html(c.notas, ctx, c.id));
+  if (c.propuesto?.length) privadas.push(`<h3>Propuesto (no está en los docs)</h3><ul>${c.propuesto.map(p => `<li>${inline(p, ctx, c.id)}</li>`).join("")}</ul>`);
+  for (const m of c.miembros) if (!ctx.actores.has(m)) ctx.avisos.push(`actores: ${c.id}: miembro ${m} no tiene actor.`);
+
+  return {
+    _id: aid,
+    _key: `!actors!${aid}`,
+    name: c.nombre,
+    type: "group",
+    img: ICONO_ACTOR,
+    folder: carpetas.id("Célula Puget", "FIRSTLIGHT"),
+    sort: 0,
+    prototypeToken: { name: c.nombre, actorLink: true, disposition: -1, lockRotation: true, texture: { src: ICONO_ACTOR } },
+    system: {
+      groupType: "cell",
+      members: c.miembros.filter(id => ctx.actores.has(id)).map(id => `Actor.${ID.actor(id)}`),
+      headers: { concept: c.concepto ?? "", chronicle: CRONICA, tenets: c.lema ? `<p>${inline(c.lema, ctx, c.id)}</p>` : "" },
+      desperation: { value: c.desesperacion ?? 0 },
+      danger: { value: c.peligro ?? 0, max: c.peligroMax ?? 5 },
+      biography: partes.join(""),
+      notes: "",
+      privatenotes: privadas.join("")
+    },
+    items: [],
+    effects: [],
+    ownership: { default: 0 },
+    flags: { [MODULO]: { origen: "actor", id: c.id, journal: perfil?.uuid ?? null, lema: c.lema ?? "" } },
+    _stats: STATS
+  };
+}
+
+/* -------------------------------------------- */
 /*  Actores                                     */
 /* -------------------------------------------- */
 
-const SPC = f => f._clase === "menor" || (!f.atributos && !f.habilidades && !f.pj);
+const SPC =f => f._clase === "menor" || (!f.atributos && !f.habilidades && !f.pj);
 
 function carpetaDe(f, journal, carpetas) {
   let ruta;
@@ -486,7 +687,7 @@ function token(f, tipoActor) {
     disposition: disposicion,
     lockRotation: true,
     sight: { enabled: vampiro },
-    texture: { src: ICONO_ACTOR }
+    texture: { src: tokenDe(f.id) }
   };
 }
 
@@ -581,14 +782,19 @@ function construirActor(f, ctx, carpetas) {
     system.skills = habilidades(f.habilidades);
   }
 
+  // Cazadores: Credo, Impulso, Facultades y la Célula. Sólo esta rama; el resto no cambia.
+  const cazador = tipoActor === "hunter";
+  if (cazador) aplicarCazador(f, ctx, aid, system, items);
+
   return {
     _id: aid,
     _key: `!actors!${aid}`,
     name: f.nombre,
     type: tipoActor,
-    img: ICONO_ACTOR,
-    folder: carpetaDe(f, journal, carpetas),
-    sort: Number(journal?.meta.orden ?? 0) || ctx.orden++ * 10,
+    img: retratoDe(f.id),
+    folder: cazador ? carpetas.id("Célula Puget", "FIRSTLIGHT") : carpetaDe(f, journal, carpetas),
+    // Cazadores: por su lugar en la Célula, sin tocar el contador del resto.
+    sort: cazador ? ((celulaDe(f, ctx)?.miembros.indexOf(f.id) ?? 0) + 1) * 10 : Number(journal?.meta.orden ?? 0) || ctx.orden++ * 10,
     prototypeToken: token(f, tipoActor),
     system,
     items,
@@ -662,6 +868,17 @@ function construirCoterie(c, ctx, carpetas) {
 
 /* -------------------------------------------- */
 
+/** Las `celula` de content/pnjs/*.json (hoy, la Célula Puget en cazadores.json). */
+export function celulas() {
+  const dir = path.join(RAIZ, "content/pnjs");
+  return (fs.existsSync(dir) ? fs.readdirSync(dir).sort() : [])
+    .filter(f => f.endsWith(".json") && f !== "combate.json")
+    .flatMap(f => {
+      const c = leerJson(`content/pnjs/${f}`).celula;
+      return c ? [{ ...c, _origen: `pnjs/${f}` }] : [];
+    });
+}
+
 export async function construir(ctx) {
   const local = {
     ...ctx,
@@ -669,7 +886,8 @@ export async function construir(ctx) {
     combate: existe("content/pnjs/combate.json") ? leerJson("content/pnjs/combate.json") : {},
     coteries: existe("content/coteries.json") ? leerJson("content/coteries.json").coteries : [],
     firstlight: existe("content/firstlight.json") ? leerJson("content/firstlight.json").equipo : [],
-    journalPorId: new Map(journals().filter(j => j.rel.startsWith("content/personajes/")).map(j => [j.id, j]))
+    journalPorId: new Map(journals().filter(j => j.rel.startsWith("content/personajes/")).map(j => [j.id, j])),
+    celulas: celulas()
   };
   local.firstlightPorId = new Map(local.firstlight.map(e => [e.id, e]));
 
@@ -690,6 +908,10 @@ export async function construir(ctx) {
     for (const m of c.miembros) if (!ctx.actores.has(m)) ctx.avisos.push(`actores: ${c.id}: miembro ${m} no tiene actor.`);
     escribirDoc("personajes", construirCoterie(c, local, carpetas));
     cuenta.group = (cuenta.group ?? 0) + 1;
+  }
+  for (const c of local.celulas) {
+    escribirDoc("personajes", construirCelula(c, local, carpetas));
+    cuenta["group/cell"] = (cuenta["group/cell"] ?? 0) + 1;
   }
   carpetas.escribir();
   const nItems = construirFirstlight(local);

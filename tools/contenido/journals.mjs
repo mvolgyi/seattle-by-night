@@ -21,7 +21,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { Marked } from "marked";
 import { RAIZ, MODULO, STATS, idEstable, slug, escribirDoc, Carpetas, leerJson } from "../util.mjs";
-import { ID, journals, clavePagina } from "./ids.mjs";
+import { ID, journals, clavePagina, fichas } from "./ids.mjs";
 
 const marked = new Marked({ gfm: true });
 const md2html = texto => marked.parse(texto, { async: false });
@@ -32,6 +32,12 @@ const PISTAS = existe("content/pistas.json") ? leerJson("content/pistas.json").p
 const TRACKERS = existe("content/trackers.json") ? leerJson("content/trackers.json") : null;
 const NOCHES = new Map((TRACKERS?.reloj?.noches ?? []).map(n => [Number(n.n), n]));
 const PISTA = new Map(PISTAS.map(p => [p.id, p]));
+/**
+ * Fichas de PJ (las que un jugador puede poseer): sus notas de edición, datos
+ * provisionales y propuestos no van en las notas privadas del actor (las ve su
+ * dueño) sino en una página {narrador} de su perfil. actores.mjs las omite.
+ */
+const FICHAS_PJ = new Map(fichas().filter(f => f.pj).map(f => [f.id, f]));
 
 const OBSERVADOR = 2;
 const NINGUNO = 0;
@@ -138,6 +144,9 @@ function crearRender(ctx, rel, jid) {
   const avisar = msg => { if (!avisados.has(msg)) { avisados.add(msg); ctx.avisos.push(`${rel}: ${msg}`); } };
   let clave = "intro";
   let nSecreto = 0;
+  let nNota = 0;
+  /** ¿La página que se está renderizando la ve un jugador (ownership ≥ observador)? */
+  let deJugadores = false;
 
   /** @ID[X] / @ID[X|texto] → @UUID[...]{...}; si no existe, texto plano. */
   function enlaceId(id, texto) {
@@ -192,8 +201,12 @@ function crearRender(ctx, rel, jid) {
         out = `<section class="secret" id="secret-${sid}">${html}</section>`;
       } else {
         const t = titulo.trim();
-        const clase = /^nota de edici[oó]n/i.test(t) ? "sbn-recuadro sbn-nota-edicion" : "sbn-recuadro";
+        const nota = /^nota de edici[oó]n/i.test(t);
+        const clase = nota ? "sbn-recuadro sbn-nota-edicion" : "sbn-recuadro";
         out = `<aside class="${clase}">${t ? `<h4>${md2inline(inlineMarcadores(t))}</h4>` : ""}${html}</aside>`;
+        // En una página de jugadores, la nota de edición es del Narrador: secreto nativo
+        // (sólo la ve quien es dueño). Contador propio: los ids de los :::secreto no se mueven.
+        if (nota && deJugadores) out = `<section class="secret" id="secret-${idEstable(`nota:${jid}:${clave}:${nNota++}`)}">${out}</section>`;
       }
       return `\n\n${ficha(out)}\n\n`;
     });
@@ -216,8 +229,11 @@ function crearRender(ctx, rel, jid) {
   }
 
   return {
-    /** Empieza una página nueva: los secretos se numeran por página. */
-    pagina(c) { clave = c; nSecreto = 0; },
+    /**
+     * Empieza una página nueva: los secretos se numeran por página. `jugadores`:
+     * la página la ve un jugador (las notas de edición van como secreto).
+     */
+    pagina(c, { jugadores = false } = {}) { clave = c; nSecreto = 0; nNota = 0; deJugadores = jugadores; },
     html: md => tablas(resolver(bloque(md))),
     inline: md => resolver(md2inline(inlineMarcadores(md))),
     /** Para texto generado: vuelve marcadores los IDs del libro que aparecen sueltos. */
@@ -443,14 +459,13 @@ function maquetarDocumento(soporte, md, render, { imagen } = {}) {
 }
 
 /* -------------------------------------------- */
-/*  Carpetas con ruta                           */
+/*  Carpetas                                    */
 /* -------------------------------------------- */
 
 /**
- * `Carpetas.id(nombre, padre)` de util.mjs resuelve el padre por nombre desde
- * la raíz, así que no llega al tercer nivel («Seattle by Night/Vástagos/Brujah»).
- * Esta subclase arma la ruta completa con la misma clave y la misma semilla
- * de _id que la base (raíz «/X», hijos «X/Y», nietos «X/Y/Z»).
+ * Las rutas de `carpeta:` («Seattle by Night/Vástagos/Brujah») las resuelve
+ * `Carpetas.id` de util.mjs (claves «/X», «X/Y», «X/Y/Z»); acá sólo el orden
+ * y el color de las raíces.
  */
 const ORDEN_CARPETAS = [
   "Seattle by Night", "El Expediente Ward", "Documentos del mundo", "Ayudas de juego",
@@ -462,43 +477,7 @@ const COLOR_RAIZ = {
   "Documentos del mundo": "#2b3036",
   "Ayudas de juego": "#6b4a1f"
 };
-
-class CarpetasRuta extends Carpetas {
-  ruta(ruta) {
-    if (!ruta) return null;
-    const partes = ruta.split("/").map(s => s.trim()).filter(Boolean);
-    let padre = null;
-    let rutaPadre = "";
-    for (const nombre of partes) {
-      const clave = `${rutaPadre}/${nombre}`;
-      if (!this.mapa.has(clave)) {
-        const i = ORDEN_CARPETAS.indexOf(nombre);
-        this.mapa.set(clave, {
-          _id: idEstable(`carpeta:${this.pack}:${clave}`),
-          name: nombre,
-          type: this.tipo,
-          folder: padre,
-          sorting: "m",
-          sort: i >= 0 ? (i + 1) * 10 : 0,
-          // Sólo la raíz lleva color (ver util.mjs).
-          color: padre ? null : (COLOR_RAIZ[nombre] ?? null),
-          flags: { [MODULO]: { origen: "carpeta" } },
-          _stats: STATS
-        });
-      }
-      padre = this.mapa.get(clave)._id;
-      rutaPadre = rutaPadre ? `${rutaPadre}/${nombre}` : nombre;
-    }
-    return padre;
-  }
-
-  escribir() {
-    // Las que no están en ORDEN_CARPETAS (los clanes) van después y por nombre.
-    const sueltas = [...this.mapa.values()].filter(c => !c.sort).sort((a, b) => a.name.localeCompare(b.name, "es"));
-    sueltas.forEach((c, i) => { c.sort = 1000 + i * 10; });
-    super.escribir();
-  }
-}
+const carpetasDe = pack => new Carpetas(pack, "JournalEntry", { orden: ORDEN_CARPETAS, colores: COLOR_RAIZ });
 
 /* -------------------------------------------- */
 /*  Documentos de Foundry                       */
@@ -538,6 +517,15 @@ function docJournal({ id, nombre, folder, orden, nivel, paginas, extra = {} }) {
   };
 }
 
+/** Markdown de la página «Notas de edición» de un PJ (o "" si no hay nada). */
+function notasDeEdicionPJ(f) {
+  const partes = [];
+  if (f.nota) partes.push(f.nota);
+  if (f.provisional?.length) partes.push("### Provisional (doc 16)", f.provisional.map(p => `- ${p}`).join("\n"));
+  if (f.propuesto?.length) partes.push("### Propuesto (no está en los docs)", f.propuesto.map(p => `- ${p}`).join("\n"));
+  return partes.join("\n\n");
+}
+
 const ENTREGA = {
   "sesion-cero": "Sesión cero",
   narrador: "Sólo para el Narrador",
@@ -552,6 +540,9 @@ function construirJournal(ctx, j, carpetas) {
   const render = crearRender(ctx, rel, jid);
   const esDocumento = j.pack === "documentos" && !!meta.soporte;
   const jugadores = meta.jugadores === "si";
+  // `jugadores: paginas`: el journal lo ven los jugadores, pero sólo sus páginas
+  // marcadas {jugadores}; el resto (y la introducción) queda para el Narrador.
+  const porPaginas = meta.jugadores === "paginas";
   const nivelDe = p => {
     if (p.visibilidad === "jugadores") return OBSERVADOR;
     if (p.visibilidad === "narrador") return NINGUNO;
@@ -571,6 +562,13 @@ function construirJournal(ctx, j, carpetas) {
   }
 
   const actor = j.pack === "cronica" && rel.startsWith("content/personajes/") ? ctx.actores?.get(j.id) : null;
+
+  // PJ: lo que en un PNJ va a las notas privadas del actor, acá, sólo para el Narrador.
+  const pj = j.pack === "cronica" && rel.startsWith("content/personajes/") ? FICHAS_PJ.get(j.id) : null;
+  if (pj) {
+    const md = notasDeEdicionPJ(pj);
+    if (md) paginas.push({ titulo: "Notas de edición {narrador}", nombre: "Notas de edición", ancla: null, visibilidad: "narrador", md });
+  }
   const vistas = new Set();
 
   const docs = paginas.map((p, i) => {
@@ -580,7 +578,7 @@ function construirJournal(ctx, j, carpetas) {
       clave = `${clave}:${i}`;
     }
     vistas.add(clave);
-    render.pagina(clave);
+    render.pagina(clave, { jugadores: nivelDe(p) >= OBSERVADOR });
 
     const esIntro = p.titulo === null;
     const paraNarrador = /^para el narrador$/i.test(p.nombre ?? "");
@@ -594,6 +592,10 @@ function construirJournal(ctx, j, carpetas) {
     }
     if (actor && i === 0) {
       html = `<p class="sbn-enlace-actor"><i class="fa-solid fa-user"></i> Ficha: @UUID[${actor.uuid}]{${escapar(plano(actor.nombre))}}</p>\n${html}`;
+    }
+    // Retrato de la fase 6 al principio del perfil (también los de trasfondo sin actor).
+    if (i === 0 && rel.startsWith("content/personajes/") && fs.existsSync(path.join(RAIZ, `assets/retratos/${j.id}.webp`))) {
+      html = `<img class="sbn-retrato" src="modules/${MODULO}/assets/retratos/${j.id}.webp" alt="${escapar(plano(meta.nombre ?? j.id))}">\n${html}`;
     }
     return docPagina(jid, {
       clave,
@@ -614,10 +616,10 @@ function construirJournal(ctx, j, carpetas) {
   return docJournal({
     id: j.id,
     nombre: plano(meta.nombre ?? j.id),
-    folder: carpetas.ruta(meta.carpeta),
+    folder: carpetas.id(meta.carpeta),
     orden: meta.orden,
     // Un documento siempre arranca oculto: el Narrador lo entrega.
-    nivel: esDocumento ? NINGUNO : (jugadores ? OBSERVADOR : NINGUNO),
+    nivel: esDocumento ? NINGUNO : (jugadores || porPaginas ? OBSERVADOR : NINGUNO),
     paginas: docs,
     extra
   });
@@ -695,7 +697,7 @@ function construirPistas(ctx, carpetas) {
   });
 
   return docJournal({
-    id: "PISTAS", nombre: "Pistas", folder: carpetas.ruta("El Expediente Ward"), orden: 900,
+    id: "PISTAS", nombre: "Pistas", folder: carpetas.id("El Expediente Ward"), orden: 900,
     nivel: NINGUNO, paginas, extra: { archivo: "content/pistas.json" }
   });
 }
@@ -823,7 +825,7 @@ function construirTrackers(ctx, carpetas) {
   }
 
   return docJournal({
-    id: "TRACKERS", nombre: "El Termómetro y el Reloj", folder: carpetas.ruta("El Expediente Ward"), orden: 910,
+    id: "TRACKERS", nombre: "El Termómetro y el Reloj", folder: carpetas.id("El Expediente Ward"), orden: 910,
     nivel: NINGUNO, paginas, extra: { archivo: "content/trackers.json" }
   });
 }
@@ -833,7 +835,7 @@ function construirTrackers(ctx, carpetas) {
 /* -------------------------------------------- */
 
 export async function construir(ctx) {
-  const carpetas = { cronica: new CarpetasRuta("cronica", "JournalEntry"), documentos: new CarpetasRuta("documentos", "JournalEntry") };
+  const carpetas = { cronica: carpetasDe("cronica"), documentos: carpetasDe("documentos") };
   const cuenta = { cronica: { j: 0, p: 0 }, documentos: { j: 0, p: 0 } };
   const escribir = (pack, doc) => {
     if (!doc) return;
@@ -844,6 +846,10 @@ export async function construir(ctx) {
   };
 
   for (const j of journals()) escribir(j.pack, construirJournal(ctx, j, carpetas[j.pack]));
+  const perfiles = new Set(journals().filter(j => j.rel.startsWith("content/personajes/")).map(j => j.id));
+  for (const f of FICHAS_PJ.values()) {
+    if (notasDeEdicionPJ(f) && !perfiles.has(f.id)) ctx.avisos.push(`journals: ${f.id} es PJ con notas de edición y no tiene perfil en content/personajes/: las notas no van a ningún lado`);
+  }
   escribir("cronica", construirPistas(ctx, carpetas.cronica));
   escribir("cronica", construirTrackers(ctx, carpetas.cronica));
 

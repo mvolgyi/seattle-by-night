@@ -1,0 +1,2253 @@
+{
+  "_id": "tSyKulSKEmN3zQE3",
+  "_key": "!scenes!tSyKulSKEmN3zQE3",
+  "name": "Parte 1 · La granja del Sheriff",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 20,
+  "width": 2400,
+  "height": 2300,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.85,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "Wd9sfn2ary7atYRz",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/granja.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!tSyKulSKEmN3zQE3.Wd9sfn2ary7atYRz"
+    }
+  ],
+  "journal": "NNzMhIvsavpG0iTQ",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "Ar7KIbCdqtl3P5Po",
+      "c": [
+        100,
+        500,
+        820,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Ar7KIbCdqtl3P5Po"
+    },
+    {
+      "_id": "vZpKQwROWF8A8sZo",
+      "c": [
+        910,
+        500,
+        1000,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.vZpKQwROWF8A8sZo"
+    },
+    {
+      "_id": "ZGOwJ2hm9yLKr1oD",
+      "c": [
+        100,
+        900,
+        540,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.ZGOwJ2hm9yLKr1oD"
+    },
+    {
+      "_id": "RfSnvCYjIhJouwyq",
+      "c": [
+        630,
+        900,
+        840,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.RfSnvCYjIhJouwyq"
+    },
+    {
+      "_id": "syBbrHA6bljHjOdC",
+      "c": [
+        930,
+        900,
+        1000,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.syBbrHA6bljHjOdC"
+    },
+    {
+      "_id": "IxeamDdFNEQdcP83",
+      "c": [
+        1300,
+        900,
+        1750,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.IxeamDdFNEQdcP83"
+    },
+    {
+      "_id": "mA29JkJoC1BbQZAN",
+      "c": [
+        1850,
+        900,
+        2300,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.mA29JkJoC1BbQZAN"
+    },
+    {
+      "_id": "Bz7g0I5Z2b8fvxiG",
+      "c": [
+        100,
+        50,
+        100,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Bz7g0I5Z2b8fvxiG"
+    },
+    {
+      "_id": "K1R2t6MC36mykL4O",
+      "c": [
+        100,
+        500,
+        100,
+        640
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.K1R2t6MC36mykL4O"
+    },
+    {
+      "_id": "D46qMaRt3F5471UT",
+      "c": [
+        100,
+        740,
+        100,
+        960
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.D46qMaRt3F5471UT"
+    },
+    {
+      "_id": "U54Yz0IUNw5gjoPh",
+      "c": [
+        100,
+        1060,
+        100,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.U54Yz0IUNw5gjoPh"
+    },
+    {
+      "_id": "w5om5zDfJoq8kpSn",
+      "c": [
+        400,
+        500,
+        400,
+        505
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.w5om5zDfJoq8kpSn"
+    },
+    {
+      "_id": "1U77Iq4cX0b0e1Ne",
+      "c": [
+        400,
+        585,
+        400,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.1U77Iq4cX0b0e1Ne"
+    },
+    {
+      "_id": "RHzhpBOXPObCfb6F",
+      "c": [
+        650,
+        500,
+        650,
+        680
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.RHzhpBOXPObCfb6F"
+    },
+    {
+      "_id": "HTAaomgX7jXDtmsg",
+      "c": [
+        650,
+        770,
+        650,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HTAaomgX7jXDtmsg"
+    },
+    {
+      "_id": "wEDVjIi1HfHk8Usw",
+      "c": [
+        650,
+        1320,
+        650,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.wEDVjIi1HfHk8Usw"
+    },
+    {
+      "_id": "y28vbwrIXO3FdC26",
+      "c": [
+        1000,
+        500,
+        1000,
+        1080
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.y28vbwrIXO3FdC26"
+    },
+    {
+      "_id": "5RWHtqyI4MJAUQnY",
+      "c": [
+        1000,
+        1200,
+        1000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.5RWHtqyI4MJAUQnY"
+    },
+    {
+      "_id": "SoZlk3nNpStlzkpS",
+      "c": [
+        100,
+        1400,
+        180,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.SoZlk3nNpStlzkpS"
+    },
+    {
+      "_id": "UDZu27O8W34nnprb",
+      "c": [
+        320,
+        1400,
+        430,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.UDZu27O8W34nnprb"
+    },
+    {
+      "_id": "BVGoaKfXvSY72o8q",
+      "c": [
+        530,
+        1400,
+        760,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.BVGoaKfXvSY72o8q"
+    },
+    {
+      "_id": "uMpgGkkwGnUA1KvL",
+      "c": [
+        880,
+        1400,
+        1000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.uMpgGkkwGnUA1KvL"
+    },
+    {
+      "_id": "9JmkDLi7zB11flt3",
+      "c": [
+        100,
+        50,
+        1000,
+        50
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.9JmkDLi7zB11flt3"
+    },
+    {
+      "_id": "lvSmIBTi2jtkOToE",
+      "c": [
+        1300,
+        1200,
+        1550,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lvSmIBTi2jtkOToE"
+    },
+    {
+      "_id": "IxiXlvHqvAUMB2lY",
+      "c": [
+        2050,
+        1200,
+        2300,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.IxiXlvHqvAUMB2lY"
+    },
+    {
+      "_id": "stQGf5Vx1IftqEK9",
+      "c": [
+        1300,
+        900,
+        1300,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.stQGf5Vx1IftqEK9"
+    },
+    {
+      "_id": "xEmGo4i0FK1qiWDA",
+      "c": [
+        1300,
+        1700,
+        1300,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.xEmGo4i0FK1qiWDA"
+    },
+    {
+      "_id": "HqJJWKo5quQIcgcW",
+      "c": [
+        2300,
+        900,
+        2300,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HqJJWKo5quQIcgcW"
+    },
+    {
+      "_id": "sNK542l2Ps03LNIZ",
+      "c": [
+        1300,
+        2100,
+        1850,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.sNK542l2Ps03LNIZ"
+    },
+    {
+      "_id": "a7UQuvUClXo7INkk",
+      "c": [
+        1940,
+        2100,
+        2300,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.a7UQuvUClXo7INkk"
+    },
+    {
+      "_id": "lbGMsems1T1BpvjK",
+      "c": [
+        1330,
+        80,
+        1570,
+        80
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lbGMsems1T1BpvjK"
+    },
+    {
+      "_id": "eLK4vsGoRbmajADH",
+      "c": [
+        1680,
+        80,
+        1920,
+        80
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.eLK4vsGoRbmajADH"
+    },
+    {
+      "_id": "6QziPF5nq7nGRpfB",
+      "c": [
+        2030,
+        80,
+        2270,
+        80
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.6QziPF5nq7nGRpfB"
+    },
+    {
+      "_id": "q0cQ1iY1hUcpVSod",
+      "c": [
+        1330,
+        780,
+        1400,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.q0cQ1iY1hUcpVSod"
+    },
+    {
+      "_id": "27hrCJdgSU3DfNld",
+      "c": [
+        1500,
+        780,
+        1570,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.27hrCJdgSU3DfNld"
+    },
+    {
+      "_id": "mB9Em7bXMTafQbCe",
+      "c": [
+        1680,
+        780,
+        1750,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.mB9Em7bXMTafQbCe"
+    },
+    {
+      "_id": "lzNY3WgaP2P9e3LQ",
+      "c": [
+        1850,
+        780,
+        1920,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lzNY3WgaP2P9e3LQ"
+    },
+    {
+      "_id": "lQqHgUDwn4gt0omc",
+      "c": [
+        2030,
+        780,
+        2100,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lQqHgUDwn4gt0omc"
+    },
+    {
+      "_id": "uIH4poo8rUFGX36C",
+      "c": [
+        2200,
+        780,
+        2270,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.uIH4poo8rUFGX36C"
+    },
+    {
+      "_id": "5jbnslrsakdcdIo0",
+      "c": [
+        1330,
+        80,
+        1330,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.5jbnslrsakdcdIo0"
+    },
+    {
+      "_id": "3IasyrQE2dISvrRA",
+      "c": [
+        1330,
+        620,
+        1330,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.3IasyrQE2dISvrRA"
+    },
+    {
+      "_id": "qfVdnYJPHmRARmbF",
+      "c": [
+        1570,
+        80,
+        1570,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.qfVdnYJPHmRARmbF"
+    },
+    {
+      "_id": "EE02PzUFWZJy8NZy",
+      "c": [
+        1680,
+        80,
+        1680,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.EE02PzUFWZJy8NZy"
+    },
+    {
+      "_id": "G2uDzBw7ANlTz8bC",
+      "c": [
+        1680,
+        620,
+        1680,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.G2uDzBw7ANlTz8bC"
+    },
+    {
+      "_id": "gDfLUSHWI3WIFmME",
+      "c": [
+        1920,
+        80,
+        1920,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.gDfLUSHWI3WIFmME"
+    },
+    {
+      "_id": "KI5mhbU4sboNUFRr",
+      "c": [
+        2030,
+        80,
+        2030,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.KI5mhbU4sboNUFRr"
+    },
+    {
+      "_id": "Gms23UwEgw6pYjUV",
+      "c": [
+        2030,
+        620,
+        2030,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Gms23UwEgw6pYjUV"
+    },
+    {
+      "_id": "fdcezJX8oIQ3Sfsp",
+      "c": [
+        2270,
+        80,
+        2270,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.fdcezJX8oIQ3Sfsp"
+    },
+    {
+      "_id": "GhLFKTYlPab7X8mv",
+      "c": [
+        430,
+        1400,
+        530,
+        1400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.GhLFKTYlPab7X8mv"
+    },
+    {
+      "_id": "5riKBXinzy9Zxstc",
+      "c": [
+        180,
+        1400,
+        320,
+        1400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.5riKBXinzy9Zxstc"
+    },
+    {
+      "_id": "uzGLTZApuw5U2yVK",
+      "c": [
+        760,
+        1400,
+        880,
+        1400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.uzGLTZApuw5U2yVK"
+    },
+    {
+      "_id": "WutjqgvaJJmPmSI6",
+      "c": [
+        100,
+        960,
+        100,
+        1060
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.WutjqgvaJJmPmSI6"
+    },
+    {
+      "_id": "gndym90MsIzpObEl",
+      "c": [
+        1000,
+        1080,
+        1000,
+        1200
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.gndym90MsIzpObEl"
+    },
+    {
+      "_id": "rk736IuAj30nFQ9b",
+      "c": [
+        100,
+        640,
+        100,
+        740
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.rk736IuAj30nFQ9b"
+    },
+    {
+      "_id": "iu3q0uMpTLQgNAiT",
+      "c": [
+        540,
+        900,
+        630,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.iu3q0uMpTLQgNAiT"
+    },
+    {
+      "_id": "TV1SWPRE7dEjXMlH",
+      "c": [
+        400,
+        505,
+        400,
+        585
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.TV1SWPRE7dEjXMlH"
+    },
+    {
+      "_id": "n71nENk1k5x0y7bJ",
+      "c": [
+        650,
+        680,
+        650,
+        770
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.n71nENk1k5x0y7bJ"
+    },
+    {
+      "_id": "P5BE0YZFb7m7U3YY",
+      "c": [
+        840,
+        900,
+        930,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.P5BE0YZFb7m7U3YY"
+    },
+    {
+      "_id": "AfyyAKu47poGEpU2",
+      "c": [
+        820,
+        500,
+        910,
+        500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.AfyyAKu47poGEpU2"
+    },
+    {
+      "_id": "fMjI8ccLRBZ1jbdc",
+      "c": [
+        100,
+        1650,
+        430,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.fMjI8ccLRBZ1jbdc"
+    },
+    {
+      "_id": "pM1pdNlfZkFsK9v0",
+      "c": [
+        570,
+        1650,
+        1000,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.pM1pdNlfZkFsK9v0"
+    },
+    {
+      "_id": "PbHn40kz3IVqOzbn",
+      "c": [
+        100,
+        1400,
+        100,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.PbHn40kz3IVqOzbn"
+    },
+    {
+      "_id": "heEQQms0jzkfSdRa",
+      "c": [
+        1000,
+        1400,
+        1000,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.heEQQms0jzkfSdRa"
+    },
+    {
+      "_id": "DXUkRXNkhZ1ija9e",
+      "c": [
+        1000,
+        50,
+        1000,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.DXUkRXNkhZ1ija9e"
+    },
+    {
+      "_id": "SAJKXS4vPWHKBEfa",
+      "c": [
+        100,
+        400,
+        150,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.SAJKXS4vPWHKBEfa"
+    },
+    {
+      "_id": "0EVdhNkAjfX0Nkwc",
+      "c": [
+        150,
+        400,
+        230,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.0EVdhNkAjfX0Nkwc"
+    },
+    {
+      "_id": "nj7AcSfACZqGqvAG",
+      "c": [
+        230,
+        400,
+        330,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.nj7AcSfACZqGqvAG"
+    },
+    {
+      "_id": "LbS8us0AKeVo8LsJ",
+      "c": [
+        330,
+        400,
+        410,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.LbS8us0AKeVo8LsJ"
+    },
+    {
+      "_id": "BqEQ1MFROpfZ1cOS",
+      "c": [
+        410,
+        400,
+        510,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.BqEQ1MFROpfZ1cOS"
+    },
+    {
+      "_id": "dP6DdMbI7RX7KIyL",
+      "c": [
+        510,
+        400,
+        590,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.dP6DdMbI7RX7KIyL"
+    },
+    {
+      "_id": "zYWB7jlTIf1JaWF5",
+      "c": [
+        590,
+        400,
+        690,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.zYWB7jlTIf1JaWF5"
+    },
+    {
+      "_id": "dIK4vFetZzczV1uc",
+      "c": [
+        690,
+        400,
+        770,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.dIK4vFetZzczV1uc"
+    },
+    {
+      "_id": "zcMkdiXSt3w9mzIY",
+      "c": [
+        770,
+        400,
+        870,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.zcMkdiXSt3w9mzIY"
+    },
+    {
+      "_id": "TZaTv8hzHHzkot6K",
+      "c": [
+        870,
+        400,
+        950,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.TZaTv8hzHHzkot6K"
+    },
+    {
+      "_id": "jH1VLM1fEZORjPUN",
+      "c": [
+        950,
+        400,
+        1000,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.jH1VLM1fEZORjPUN"
+    },
+    {
+      "_id": "n0PVnFlqe8KIO8kc",
+      "c": [
+        280,
+        50,
+        280,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.n0PVnFlqe8KIO8kc"
+    },
+    {
+      "_id": "HwDPCVPyOkuuXw9F",
+      "c": [
+        460,
+        50,
+        460,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HwDPCVPyOkuuXw9F"
+    },
+    {
+      "_id": "ZmhPVfnFzrqztMqw",
+      "c": [
+        640,
+        50,
+        640,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.ZmhPVfnFzrqztMqw"
+    },
+    {
+      "_id": "cRZpkrxhL2RQLd6l",
+      "c": [
+        820,
+        50,
+        820,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.cRZpkrxhL2RQLd6l"
+    },
+    {
+      "_id": "cTn26TetD53lwRXO",
+      "c": [
+        1300,
+        1400,
+        1300,
+        1700
+      ],
+      "door": 1,
+      "ds": 1,
+      "doorSound": "slidingWood",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.cTn26TetD53lwRXO"
+    },
+    {
+      "_id": "HgDPbzaFTYXU3rJG",
+      "c": [
+        1750,
+        900,
+        1850,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HgDPbzaFTYXU3rJG"
+    },
+    {
+      "_id": "7WRoRWF9Irc4nZUA",
+      "c": [
+        1850,
+        2100,
+        1940,
+        2100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.7WRoRWF9Irc4nZUA"
+    },
+    {
+      "_id": "klVQS9TCVh5AikGf",
+      "c": [
+        1550,
+        900,
+        1550,
+        1120
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.klVQS9TCVh5AikGf"
+    },
+    {
+      "_id": "Bd92jGQJBUk12Qtr",
+      "c": [
+        2050,
+        900,
+        2050,
+        1120
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Bd92jGQJBUk12Qtr"
+    },
+    {
+      "_id": "IoDkMLskRNJeUxYo",
+      "c": [
+        1330,
+        540,
+        1330,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.IoDkMLskRNJeUxYo"
+    },
+    {
+      "_id": "Nn1Ivf3B0SOTUbva",
+      "c": [
+        1680,
+        540,
+        1680,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Nn1Ivf3B0SOTUbva"
+    },
+    {
+      "_id": "HeXGHfbsx5Pi04kR",
+      "c": [
+        2030,
+        540,
+        2030,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HeXGHfbsx5Pi04kR"
+    },
+    {
+      "_id": "QHM53Vb1zNbBarLz",
+      "c": [
+        1400,
+        780,
+        1500,
+        780
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.QHM53Vb1zNbBarLz"
+    },
+    {
+      "_id": "eijdR6xqnFNnCDIC",
+      "c": [
+        1750,
+        780,
+        1850,
+        780
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.eijdR6xqnFNnCDIC"
+    },
+    {
+      "_id": "pvxUeRe6a5IK2kHb",
+      "c": [
+        2100,
+        780,
+        2200,
+        780
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.pvxUeRe6a5IK2kHb"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "feMlo9vrYxeWGg4k",
+      "name": "Bombita del porche",
+      "x": 550,
+      "y": 1430,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.feMlo9vrYxeWGg4k"
+    },
+    {
+      "_id": "PDqZwWA9M6actkUg",
+      "name": "Lámpara de la sala",
+      "x": 350,
+      "y": 1280,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.PDqZwWA9M6actkUg"
+    },
+    {
+      "_id": "G89DypMvLoda4M2d",
+      "name": "Luz de la cocina",
+      "x": 820,
+      "y": 1150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.G89DypMvLoda4M2d"
+    },
+    {
+      "_id": "cLEOdrWY6m1UvHHY",
+      "name": "Lámpara del despacho",
+      "x": 250,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.cLEOdrWY6m1UvHHY"
+    },
+    {
+      "_id": "4r0pvLTGXD2nqBUh",
+      "name": "Foco de la puerta trasera (perreras)",
+      "x": 820,
+      "y": 480,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.4r0pvLTGXD2nqBUh"
+    },
+    {
+      "_id": "a6fZ8lJt652OqwOn",
+      "name": "Foco de sodio del granero (patio)",
+      "x": 1280,
+      "y": 1800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.a6fZ8lJt652OqwOn"
+    },
+    {
+      "_id": "IJtCqq3XEvC70hly",
+      "name": "Bombita colgada del granero",
+      "x": 1800,
+      "y": 1350,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.IJtCqq3XEvC70hly"
+    },
+    {
+      "_id": "mjZC6TYWvvpPm7zY",
+      "name": "Bombita colgada del granero",
+      "x": 1800,
+      "y": 1850,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.mjZC6TYWvvpPm7zY"
+    },
+    {
+      "_id": "kMOgcHNlTntXWpO9",
+      "name": "Luz de la caravana 1",
+      "x": 1450,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.kMOgcHNlTntXWpO9"
+    },
+    {
+      "_id": "xMYjWthFZcFMy6BV",
+      "name": "Luz de la caravana 2",
+      "x": 1800,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.xMYjWthFZcFMy6BV"
+    },
+    {
+      "_id": "SIec1WFguj6VzUdS",
+      "name": "Luz de la caravana 3",
+      "x": 2150,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.SIec1WFguj6VzUdS"
+    },
+    {
+      "_id": "fqs0RSCWI5HUvIXf",
+      "x": 390,
+      "y": 1136,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.fqs0RSCWI5HUvIXf"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "OHf3PheTgSNUtpq5",
+      "name": "Llegada desde el sótano (rellano de la escalera)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 415,
+          "y": 505,
+          "width": 100,
+          "height": 80,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "llegada-desde-sotano",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.OHf3PheTgSNUtpq5"
+    },
+    {
+      "_id": "4vIg8cCx7dl5XSjG",
+      "name": "Bajar al sótano",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 415,
+          "y": 790,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "FU75YuA05fEzkcnI",
+          "name": "Bajar al sótano",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.dtv1tCtbE4Jh6UFV.Region.W60g8ukpN4W5145E"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!tSyKulSKEmN3zQE3.4vIg8cCx7dl5XSjG.FU75YuA05fEzkcnI"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "bajar-sotano",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.4vIg8cCx7dl5XSjG"
+    },
+    {
+      "_id": "Xds9cDseaxnWBokF",
+      "name": "Llegada por el camino de grava",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1000,
+          "y": 2060,
+          "width": 300,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "llegada-camino",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.Xds9cDseaxnWBokF"
+    },
+    {
+      "_id": "XECNTCJkXwagURfM",
+      "name": "Salir por el camino de grava al valle",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 900,
+          "y": 2200,
+          "width": 600,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "camino-valle",
+          "estado": "pendiente",
+          "pendiente": "mapa de zona del valle del Snohomish (t2i, sin plano): falta su región gemela del camino"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.XECNTCJkXwagURfM"
+    },
+    {
+      "_id": "8M36fLJm8SZn1CYz",
+      "name": "Sendero al río y al embarcadero",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1000,
+          "y": 0,
+          "width": 300,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "sendero-rio",
+          "estado": "pendiente",
+          "pendiente": "el río y el embarcadero están en el mapa de zona del valle (t2i, sin plano)"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.8M36fLJm8SZn1CYz"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "fR00lLBf0totsqBh",
+      "entryId": "NNzMhIvsavpG0iTQ",
+      "pageId": null,
+      "x": 560,
+      "y": 1485,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "LUG-02"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.fR00lLBf0totsqBh"
+    },
+    {
+      "_id": "1LfeFTGOSpN8jFhg",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "xWx5IoPih8fX83b1",
+      "x": 560,
+      "y": 1585,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "A1-E03"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.1LfeFTGOSpN8jFhg"
+    },
+    {
+      "_id": "jv2TVYUgOZqXxSts",
+      "entryId": "C7cxKf7kcAELzuJ1",
+      "pageId": "aGN9NHO00wmdUzVn",
+      "x": 410,
+      "y": 1285,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A3-E04",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "A3-E04"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.jv2TVYUgOZqXxSts"
+    },
+    {
+      "_id": "mY9xwQf0asclXPGb",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "ogKpm1VYgcVGCw1T",
+      "x": 1810,
+      "y": 1760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "A4-E02"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.mY9xwQf0asclXPGb"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "granja",
+      "id": "LUG-02",
+      "plano": "granja",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>Qué es.</strong> El refugio de Montgomery (Refugio 3, Rebaño 2): casa principal, granero convertido en sala de reuniones de los Lobos, perreras con una docena de perros ghoul y, detrás del granero, las caravanas de los cazarrecompensas (MEN-03). El sótano, con el túnel de 300 m al embarcadero del río, es el plano <strong>granja-sotano</strong> (la escalera del vestíbulo baja ahí).</p>\n<p><strong>A1-E03 · El Sheriff pregunta (en el porche).</strong> «El camino de grava termina en una granja de madera oscura entre campos inundados. Hay perros por todas partes, quietos, que no ladran: miran. En el porche, en una mecedora, hay un hombre corpulento…» Montgomery no se levanta de la <strong>mecedora</strong> (tile); la hoja con la lista está sobre la <strong>baranda del porche</strong>, a su lado. «Cuando el último de ustedes sube los escalones» (los escalones del porche, al centro). No los invita a entrar: lo que se dice en el porche no entra en la casa (Hal lo sabe sin tirada). Los perros: tokens repartidos por el patio y la grava.</p>\n<p><strong>A3-E04 · La jauría duda (adentro).</strong> «Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chimenea apagada, una mesa larga de madera y, en la mesa, una tableta encendida… Los perros se tumban en el porche, de espaldas a la casa… Montgomery está de pie junto a la ventana.» La puerta delantera da directo a la <strong>sala</strong>: chimenea apagada contra el muro oeste, la mesa larga (tile) con la tableta (tile, luz «pantalla») y el sobre con la carta «M.V.», y la ventana del frente, que mira al porche. Abrí la puerta delantera a mano para esta escena.</p>\n<p><strong>Combate (A3-E04, o si la coterie ataca al Sheriff).</strong> Los doce perros salen de las <strong>perreras</strong> (detrás de la casa: cinco corrales de alambre con portones, puertas que dejan ver) y del porche; los seis cazarrecompensas, de las <strong>tres caravanas</strong> de atrás del granero (puerta en el lado oeste de cada una). Montgomery: Potencia de Sangre 5, Fortaleza 4.</p>\n<p><strong>A4-E02 · La redada (si es la granja).</strong> FIRSTLIGHT entra por el <strong>camino de grava</strong> (sur). Escapar: el túnel del sótano al embarcadero del río (bajar por la escalera del vestíbulo; plano granja-sotano); los perros cubren la retirada. Animalismo con los perros de la granja crea caos entre los operadores. Las caravanas y el granero son los otros objetivos de «salvar a los mortales».</p>\n<p><strong>El granero.</strong> Portón corredizo al oeste (abierto), puerta trasera al norte hacia las caravanas y una puerta chica al sur. Adentro, la mesa larga de los Lobos con sus bancos (tiles), la estufa de leña y, al fondo, los boxes viejos convertidos en depósito (tabiques bajos de madera: frenan el paso, no la vista).</p>\n<p><strong>La casa.</strong> Planta baja: sala, cocina, despacho del Sheriff (armero de vidrio), vestíbulo de la escalera al sótano y cuarto de botas con la puerta trasera hacia las perreras.</p>\n<p><strong>Detalle.</strong> Montgomery recibe sentado en el porche aunque llueva. Si invita a alguien a entrar, es que el asunto es grave. Si alguien intenta Dominación o Presencia en A1-E03, se levanta de la mecedora por primera vez: «Vuelve a hacer eso y te entierro en el campo de atrás.»</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×15, palet ×5, mesa ×3, portatil, auto.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir por el camino de grava al valle · Sendero al río y al embarcadero.</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 2.4,
+          "y": 7.55,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-sacos-pienso",
+          "x": 6.7,
+          "y": 7.9,
+          "w": 1,
+          "h": 0.9
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-larga",
+          "x": 2.4,
+          "y": 10.9,
+          "w": 3,
+          "h": 1
+        },
+        {
+          "tipo": "portatil",
+          "tile": "tile-tableta",
+          "x": 3.75,
+          "y": 11.25,
+          "w": 0.3,
+          "h": 0.22
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 2.6,
+          "y": 10.35,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3.7,
+          "y": 10.35,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 4.8,
+          "y": 10.35,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 2.6,
+          "y": 12,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3.7,
+          "y": 12,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 4.8,
+          "y": 12,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 5.6,
+          "y": 11.15,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-cocina",
+          "x": 7.2,
+          "y": 10.3,
+          "w": 1,
+          "h": 0.8
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 7.45,
+          "y": 11.2,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-mecedora",
+          "x": 6.6,
+          "y": 14.6,
+          "w": 0.7,
+          "h": 0.8
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-banco",
+          "x": 7.6,
+          "y": 14.15,
+          "w": 1.8,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 2.1,
+          "y": 15.3,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 3.1,
+          "y": 15.6,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-pickup",
+          "x": 5.6,
+          "y": 19.4,
+          "w": 5.3,
+          "h": 2.1
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-fardos",
+          "x": 15.8,
+          "y": 9.3,
+          "w": 1.2,
+          "h": 1.2
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-fardos",
+          "x": 19.2,
+          "y": 9.3,
+          "w": 1.2,
+          "h": 1.2
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-larga-granero",
+          "x": 15.5,
+          "y": 15.5,
+          "w": 5,
+          "h": 1.1
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-banco-largo",
+          "x": 15.5,
+          "y": 14.85,
+          "w": 5,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-banco-largo",
+          "x": 15.5,
+          "y": 16.75,
+          "w": 5,
+          "h": 0.45
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-fardos",
+          "x": 21.6,
+          "y": 19.5,
+          "w": 1.2,
+          "h": 1.2
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-fardos",
+          "x": 13.3,
+          "y": 19.6,
+          "w": 1.2,
+          "h": 1.2
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

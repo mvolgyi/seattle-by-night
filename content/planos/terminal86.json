@@ -1,0 +1,71 @@
+{
+  "_comentario": "LUG-16, el elevador de grano de la Terminal 86: la galería de cintas en lo alto de la hilera de silos. Todo en METROS (1 m = 100 px = 1 casilla). Oeste a la izquierda: la escalera de servicio exterior sube en zigzag por fuera del silo del extremo hasta la puerta de chapa de la galería. Este a la derecha: la compuerta de carga abierta sobre la bahía, con la silla delante. La galería mide 18,5 × 4 m: cinta transportadora detenida por el medio, pasillos de 1,4 m a cada lado, ventanales de vidrio sucio en los dos muros largos y una boca de carga en el piso sobre cada silo (la del silo vecino es un acceso). El largo real de la galería está comprimido: el mapa toma el tramo que la escena usa, de la escalera a la compuerta. Una planta por mapa: lo que se ve fuera (el techo de los silos, el patio a 40 m, el agua a 30 m) es exterior pintado y se llega sólo por regiones.",
+  "planos": [
+    {
+      "id": "terminal86",
+      "lugar": "LUG-16",
+      "escenas": ["A3-E03"],
+      "nombre": "Parte 3 · Los silos de la Terminal 86",
+      "orden": 160,
+      "ancho": 24,
+      "alto": 12,
+      "paleta": "industrial",
+      "fondo": "agua",
+      "sujeto": "the enclosed conveyor gallery on top of the grain silos of an old grain elevator on the Seattle waterfront",
+      "oscuridad": 0.85,
+      "exteriores": [
+        { "nombre": "Patio de la terminal, 40 m más abajo (visto por la rejilla)", "x": 0, "y": 0, "w": 3.5, "h": 12, "fondo": "asfalto" },
+        { "nombre": "Techo de la hilera de silos", "x": 3.5, "y": 0, "w": 17.5, "h": 12, "fondo": "hormigon" },
+        { "nombre": "La bahía, 30 m más abajo (tras el último silo)", "x": 21, "y": 0, "w": 3, "h": 12, "fondo": "agua" }
+      ],
+      "exterior": "the flat, rain-wet concrete roof deck of a row of tall grain silos seen from directly above, with round silo caps and small hatches, filling most of the image; along the left edge, far below through the steel grating, a dark wet asphalt yard; along the right edge, beyond the last silo, the black open water of the bay far below with small whitecaps — flat, continuous, with no extra walls or structures",
+      "nota": "**Llegada (A3-E03, Noche 7, medianoche).** «La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería larga y estrecha, de chapa y vidrio sucio. Dentro, una cinta transportadora detenida corre de punta a punta.» David entra por la **puerta de chapa** del oeste. Al fondo, al este, la **compuerta de carga abierta** sobre la bahía (puerta abierta: el Narrador la puede cerrar) y delante, la **silla** con el rehén (tile `tile-silla-madera`; Krell la empuja hacia el borde si ve a la coterie entera). Krell espera sentado sobre la cinta. Escena con **clima de lluvia y viento**: entran por la compuerta.\n\n**Alturas (una planta por mapa).** La galería está a **40 m** sobre el patio de la terminal (la altura de los silos). La compuerta del extremo da sobre el agua, a **30 m** (A3-E03). Lo que se ve por los ventanales y por la rejilla de la escalera es exterior pintado: no se camina, se llega por regiones.\n\n**Los tres accesos** (Destreza + Sigilo Dif 4 contra Astucia + Consciencia de Krell, 7 dados):\n- **La escalera exterior** (la que usa David): región «Bajar por la escalera de servicio» en el tramo que sigue bajando; la llegada es el descanso de arriba, ante la puerta.\n- **El interior del silo vecino** (Atletismo Dif 3 para trepar): sale por la boca de carga del piso marcada en el pasillo sur, a unos 8 m de la silla. Un PJ escondido ahí llega a la silla con Destreza + Sigilo Dif 4.\n- **El agua** (lancha bajo la compuerta): región delante de la compuerta, del lado de afuera.\n\n**La compuerta.** Quien cae por ella sufre 4 de daño contundente al llegar al agua, a treinta metros. En combate, Krell intenta tirar a sus rivales por ahí (Fuerza + Pelea contra Destreza + Atletismo); si cae a la mitad de su Salud, se tira él y desaparece. La región de afuera de la compuerta es la caída.\n\n**Fuera del mapa.** El dron de Gale graba desde 200 m, sin sonido: no está en el mapa.",
+      "habitaciones": [
+        { "nombre": "Galería de cintas", "x": 3.5, "y": 4, "w": 18.5, "h": 4, "piso": "chapa" },
+        { "nombre": "Escalera de servicio exterior (en zigzag)", "x": 0.6, "y": 3.4, "w": 2.9, "h": 8.2, "piso": "rejilla" }
+      ],
+      "vanos": [
+        { "x": 3.5, "y": 5.4, "w": 1, "eje": "v", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Puerta de chapa de la galería (arriba de la escalera de servicio)" },
+        { "x": 22, "y": 4.8, "w": 2.4, "eje": "v", "tipo": "puerta", "estado": "abierta", "sonido": "slidingMetalHeavy", "nombre": "Compuerta de carga (abierta sobre la bahía, a 30 m del agua)" },
+        { "x": 4.6, "y": 4, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (norte)" },
+        { "x": 7.8, "y": 4, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (norte)" },
+        { "x": 11, "y": 4, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (norte)" },
+        { "x": 14.2, "y": 4, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (norte)" },
+        { "x": 17.4, "y": 4, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (norte)" },
+        { "x": 20.2, "y": 4, "w": 1.4, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (norte)" },
+        { "x": 4.6, "y": 8, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (sur)" },
+        { "x": 7.8, "y": 8, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (sur)" },
+        { "x": 11, "y": 8, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (sur)" },
+        { "x": 14.2, "y": 8, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (sur)" },
+        { "x": 17.4, "y": 8, "w": 2.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (sur)" },
+        { "x": 20.2, "y": 8, "w": 1.4, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventanal de vidrio sucio (sur)" },
+        { "x": 0.6, "y": 3.4, "w": 2.9, "eje": "h", "tipo": "baranda", "nombre": "Baranda norte del descanso superior" },
+        { "x": 0.6, "y": 3.4, "w": 8.2, "eje": "v", "tipo": "baranda", "nombre": "Baranda oeste de la escalera de servicio" },
+        { "x": 0.6, "y": 11.6, "w": 2.9, "eje": "h", "tipo": "baranda", "nombre": "Baranda sur del descanso intermedio" },
+        { "x": 2.05, "y": 7.8, "w": 3, "eje": "v", "tipo": "baranda", "nombre": "Baranda entre los dos tramos del zigzag" },
+        { "x": 2.05, "y": 7.8, "w": 1.45, "eje": "h", "tipo": "baranda", "nombre": "Baranda del descanso superior sobre el tramo que sigue bajando" }
+      ],
+      "muebles": [
+        { "tipo": "escalera", "x": 0.8, "y": 7.8, "w": 1.1, "h": 3, "hacia": "s", "material": "metal", "desc": "a steel service-stair flight going down" },
+        { "tipo": "escalera", "x": 2.2, "y": 7.8, "w": 1.1, "h": 3, "hacia": "n", "material": "metal", "desc": "a steel service-stair flight going further down" },
+        { "tipo": "cinta", "x": 4.4, "y": 5.4, "w": 16.4, "h": 1.2, "desc": "a long stopped conveyor belt on steel rollers and a steel frame, its rubber belt worn grey, running down the middle" },
+        { "tipo": "maquina", "x": 3.75, "y": 5.45, "w": 0.6, "h": 1.1, "desc": "the cold electric drive motor of the conveyor" },
+        { "tipo": "trampilla", "x": 5.6, "y": 4.3, "w": 0.8, "h": 0.8, "desc": "the square steel loading hatch of a silo, set in the floor" },
+        { "tipo": "trampilla", "x": 9.6, "y": 6.9, "w": 0.8, "h": 0.8, "desc": "the square steel loading hatch of a silo, set in the floor" },
+        { "tipo": "trampilla", "x": 13.1, "y": 6.9, "w": 0.8, "h": 0.8, "desc": "the square steel loading hatch of a silo, set in the floor, open" },
+        { "tipo": "trampilla", "x": 17.6, "y": 4.3, "w": 0.8, "h": 0.8, "desc": "the square steel loading hatch of a silo, set in the floor" },
+        { "tipo": "silla", "x": 21, "y": 5.75, "w": 0.5, "h": 0.5, "tile": "tile-silla-madera", "hacia": "o", "desc": "la silla del rehén, delante de la compuerta" }
+      ],
+      "luces": [
+        { "x": 23.5, "y": 6, "preset": "farola", "nombre": "Reflector de sodio del muelle (abajo, entra por la compuerta)" },
+        { "x": 2.9, "y": 4.4, "preset": "farola-pared", "nombre": "Aplique de servicio sobre la puerta de la galería" }
+      ],
+      "regiones": [
+        { "id": "escalera-llegada", "nombre": "Llegada por la escalera de servicio (descanso superior)", "x": 0.8, "y": 5.2, "w": 2.5, "h": 1.4, "llegada": true },
+        { "id": "escalera-bajar", "nombre": "Bajar por la escalera de servicio (40 m hasta el patio)", "x": 2.2, "y": 7.9, "w": 1.1, "h": 1, "destino": null, "pendiente": "no hay mapa del pie de los silos (patio de la Terminal 86)" },
+        { "id": "silo-vecino", "nombre": "Boca del silo vecino (se trepa por dentro: Atletismo Dif 3)", "x": 13.1, "y": 6.9, "w": 0.8, "h": 0.8, "destino": null, "pendiente": "no hay mapa del interior del silo: quien trepa aparece acá" },
+        { "id": "compuerta", "nombre": "Fuera de la compuerta: caída al agua, 30 m (4 contundente) / llegada desde la lancha", "x": 22.15, "y": 4.8, "w": 1.85, "h": 2.4, "destino": null, "pendiente": "no hay mapa de la bahía: la caída y la lancha las resuelve el Narrador" }
+      ]
+    }
+  ]
+}

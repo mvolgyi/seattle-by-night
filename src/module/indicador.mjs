@@ -1,5 +1,7 @@
 import { SBN } from "./constantes.mjs";
 import { Estado } from "./estado.mjs";
+import { Datos } from "./datos.mjs";
+import { Panel } from "./panel.mjs";
 import { t, esc } from "./util.mjs";
 
 const { ApplicationV2 } = foundry.applications.api;
@@ -7,7 +9,8 @@ const { ApplicationV2 } = foundry.applications.api;
 /**
  * Indicador del Narrador: una barrita sobre la hotbar con el Termómetro y la
  * noche del Reloj, con +/−. Plegable a una píldora. No es el Panel del
- * Narrador (fase 4): sólo lo justo para no tener que abrir nada en mesa.
+ * Narrador: sólo lo justo para no tener que abrir nada en mesa, y un botón
+ * (o clic en el número) que abre el panel.
  *
  * Sin plantilla: el HTML se arma acá (es poco) y vive en #ui-bottom.
  */
@@ -21,7 +24,8 @@ export class Indicador extends ApplicationV2 {
       plegar: Indicador.#onPlegar,
       termometro: Indicador.#onTermometro,
       congelar: Indicador.#onCongelar,
-      noche: Indicador.#onNoche
+      noche: Indicador.#onNoche,
+      panel: Indicador.#onPanel
     }
   };
 
@@ -80,14 +84,17 @@ export class Indicador extends ApplicationV2 {
     const icono = c.umbral ? Estado.textoUmbral(c.umbral.valor, "icono") : "";
 
     // Tooltip del Termómetro: umbral alcanzado y último movimiento.
-    const lineas = [t("indicador.termometroValor", { valor: tm.valor, max: SBN.TERMOMETRO.MAX })];
+    const lineas = [t("indicador.termometroValor", { valor: tm.valor, max: Datos.termometro.max })];
     if (c.umbral) lineas.push(`${icono} ${Estado.textoUmbral(c.umbral.valor)}`);
-    const proximo = SBN.TERMOMETRO.UMBRALES.find(u => u.valor > tm.valor);
+    const proximo = Datos.umbrales.find(u => u.valor > tm.valor);
     if (proximo) lineas.push(t("indicador.proximo", { valor: proximo.valor, texto: Estado.textoUmbral(proximo.valor) }));
     if (tm.congelado) lineas.push(t("indicador.congelado"));
     if (c.ultimo) lineas.push(t("indicador.ultimo", { cambio: c.ultimo.cambio, motivo: c.ultimo.motivo || "—" }));
     const ttTermo = esc(lineas.join("\n"));
     const ttNoche = esc(`${t("reloj.tooltip", { n: noche, dia: Estado.textoNoche(noche, "dia") })}\n${Estado.textoNoche(noche, "evento")}`);
+
+    const panel = `<button type="button" class="sbn-ind-panel" data-action="panel"
+      data-tooltip-text="${t("indicador.abrirPanel")}" aria-label="${t("indicador.abrirPanel")}"><i class="fa-solid fa-book-skull"></i></button>`;
 
     const plegar = `<button type="button" class="sbn-ind-plegar" data-action="plegar"
       data-tooltip-text="${t(plegado ? "indicador.desplegar" : "indicador.plegar")}" aria-label="${t(plegado ? "indicador.desplegar" : "indicador.plegar")}">
@@ -98,17 +105,19 @@ export class Indicador extends ApplicationV2 {
         ${plegar}
         <span class="sbn-ind-resumen" data-tooltip-text="${ttTermo}"><i class="fa-solid fa-temperature-half"></i> ${tm.valor}</span>
         <span class="sbn-ind-resumen" data-tooltip-text="${ttNoche}"><i class="fa-solid fa-moon"></i> ${noche}</span>
+        ${panel}
       </div>`;
     }
 
-    const umbrales = new Set(SBN.TERMOMETRO.UMBRALES.map(u => u.valor));
+    const { min, max } = Datos.termometro;
+    const umbrales = new Set(Datos.umbrales.map(u => u.valor));
     let escala = "";
-    for (let i = 1; i <= SBN.TERMOMETRO.MAX; i++) {
+    for (let i = 1; i <= max; i++) {
       const cls = ["sbn-seg", i <= tm.valor ? "sbn-on" : "", umbrales.has(i) ? "sbn-umbral" : ""].filter(Boolean).join(" ");
       escala += `<span class="${cls}"></span>`;
     }
-    const bajar = tm.congelado || tm.valor <= SBN.TERMOMETRO.MIN ? "disabled" : "";
-    const subir = tm.congelado || tm.valor >= SBN.TERMOMETRO.MAX ? "disabled" : "";
+    const bajar = tm.congelado || tm.valor <= min ? "disabled" : "";
+    const subir = tm.congelado || tm.valor >= max ? "disabled" : "";
 
     return `<div data-tooltip-class="sbn-tooltip" class="sbn-ind-barra${tm.congelado ? " sbn-congelado" : ""}">
       ${plegar}
@@ -131,11 +140,12 @@ export class Indicador extends ApplicationV2 {
           <span class="sbn-ind-numero">${noche}</span>
           <span class="sbn-ind-dia">${esc(Estado.textoNoche(noche, "dia"))}</span>
         </span>
-        <button type="button" class="sbn-ind-boton" data-action="noche" data-delta="+1" ${noche >= SBN.RELOJ.NOCHES ? "disabled" : ""} aria-label="${t("indicador.nocheSiguiente")}"><i class="fa-solid fa-plus"></i></button>
+        <button type="button" class="sbn-ind-boton" data-action="noche" data-delta="+1" ${noche >= Datos.totalNoches ? "disabled" : ""} aria-label="${t("indicador.nocheSiguiente")}"><i class="fa-solid fa-plus"></i></button>
       </div>
       <div class="sbn-ind-grupo sbn-ind-pistas" data-tooltip-text="${esc(t("indicador.pistasTooltip"))}">
-        <i class="fa-solid fa-magnifying-glass"></i> ${c.pistasN}/${SBN.PISTAS.length}
+        <i class="fa-solid fa-magnifying-glass"></i> ${c.pistasN}/${Datos.pistas.length}
       </div>
+      ${panel}
     </div>`;
   }
 
@@ -170,5 +180,9 @@ export class Indicador extends ApplicationV2 {
 
   static async #onNoche(_event, target) {
     await Estado.noche(Estado.nocheActual + Number(target.dataset.delta));
+  }
+
+  static #onPanel() {
+    Panel.abrir();
   }
 }

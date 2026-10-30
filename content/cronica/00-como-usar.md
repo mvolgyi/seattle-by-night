@@ -3,7 +3,7 @@ id: COMO-USAR
 nombre: "Cómo usar este módulo"
 carpeta: "Seattle by Night"
 orden: 10
-jugadores: no
+jugadores: paginas
 origen: "00"
 ---
 
@@ -95,3 +95,13 @@ Dentro de cada escena, el texto se separa siempre en tres tipos de bloque, que e
 | 🩸 **Estadísticas** | Reservas de dados, Atributos, Disciplinas | Actor |
 
 Las tiradas se escriben siempre igual: **Astucia + Consciencia (Dificultad 3)**, seguidas de lo que revela un éxito.
+
+## Aviso legal {jugadores} {#AVISO-LEGAL}
+
+*Seattle by Night — El Expediente Ward* es material **no oficial** de World of Darkness, publicado bajo el [Dark Pack](https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement).
+
+Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en [worldofdarkness.com](https://www.worldofdarkness.com).
+
+Es **gratuito**: no se vende. Se aceptan donaciones.
+
+Todo el arte (mapas, retratos, tokens) es original, generado en local con modelos de licencia abierta que permiten uso comercial. No contiene arte ni logos oficiales de Paradox o White Wolf.

@@ -1,0 +1,113 @@
+{
+  "_comentario": "LUG-11, el edificio Larchmont (Tacoma): dos planos, uno por nivel, con el MISMO marco de coordenadas para el edificio (x 3–18, y 0,5–10,5; la fachada a la calle es y = 10,5, al sur). Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba. Planta baja: el vestíbulo, el pasillo que termina en el derrumbe, el 1A quemado y la caja de escalera, donde el tramo que bajaba al sótano quedó medio derrumbado junto al hueco abierto por el que cae la lluvia desde el techo; delante, el solar y la valla de obra sobre la vereda; al oeste, el callejón. Sótano: la sala de calderas con la losa nueva sobre la cisterna en el centro, el pie de la escalera bajo el hueco (los escombros mojados) y el canal que lleva el agua hasta la boca del desagüe grande, que sale al oeste hacia el estrecho. La escalera y el hueco ocupan el mismo sitio en los dos planos; se cruza por regiones gemelas.",
+  "planos": [
+    {
+      "id": "larchmont-planta",
+      "lugar": "LUG-11",
+      "escenas": ["A2-E05"],
+      "nombre": "Parte 2 · El Larchmont: planta baja",
+      "orden": 110,
+      "ancho": 19,
+      "alto": 14,
+      "paleta": "apartamento",
+      "fondo": "edificio",
+      "sujeto": "the burned-out ground floor of an old brick apartment building in Tacoma",
+      "oscuridad": 0.85,
+      "exteriores": [
+        { "nombre": "Callejón lateral", "x": 0, "y": 0, "w": 3, "h": 12, "fondo": "asfalto" },
+        { "nombre": "Solar delantero y vereda", "x": 0, "y": 10.5, "w": 19, "h": 3.5, "fondo": "acera" }
+      ],
+      "exterior": "a burned-out brick apartment building in Tacoma seen from directly above in November rain: a narrow wet asphalt side alley along the left edge, a cracked concrete forecourt and the rain-slick sidewalk along the bottom edge, and the dark wet tar-and-gravel roofs of the neighbouring buildings elsewhere — flat, continuous, with no extra walls, kerbs or structures",
+      "nota": "**Llegada (A2-E05, escena opcional).** «Cuatro pisos de ladrillo ennegrecido, ventanas sin cristal, una valla de obra con un cartel de demolición que nadie cumplió.» La valla corre por la vereda (barandas: se ve a través, no se pasa) y tiene un panel suelto por donde se entra. El cartel no está pintado (tiene texto): lo describe el Narrador. **Las flores:** siete de plástico descoloridas atadas con alambre y una octava, nueva, de verdad, todavía con gotas: tile `tile-flores-valla` sobre la valla.\n\n**Adentro.** Todo quemado: las puertas ya no existen (huecos), las ventanas no tienen vidrio (huecos en el muro). El pasillo termina en el derrumbe de los pisos de arriba; el 1B y el 1C están derrumbados (macizo). Escena con **clima de lluvia**: el techo no existe y la lluvia «entra por el techo y baja por el hueco de la escalera hasta el sótano, donde se oye agua corriendo».\n\n**La escalera.** En la caja de escalera, el tramo que bajaba al sótano está **medio derrumbado** y al lado se abre el hueco hasta el sótano (macizo negro: no tiene piso). **Bajar al sótano:** Destreza + Atletismo Dif 2 — la región «Bajar» está en el extremo bajo del tramo y lleva al pie de la escalera del sótano; fallar puede ser la caída por el hueco. La región del hueco lleva a los escombros del sótano (una caída de un piso, unos 3 m). Desde el sótano, la región «Subir» trae de vuelta al rellano de arriba del tramo.\n\n**Fuera del mapa.** El resto del edificio (pisos 2 a 4, quemados y sin techo) no se juega.",
+      "habitaciones": [
+        { "nombre": "1C (derrumbado)", "x": 3, "y": 0.5, "w": 6.5, "h": 3.5, "piso": "macizo" },
+        { "nombre": "Derrumbe del fondo del pasillo", "x": 9.5, "y": 0.5, "w": 2, "h": 1.5, "piso": "macizo" },
+        { "nombre": "1B (derrumbado)", "x": 11.5, "y": 0.5, "w": 6.5, "h": 4.5, "piso": "macizo" },
+        { "nombre": "Portería (derrumbada)", "x": 11.5, "y": 5, "w": 1.5, "h": 1.5, "piso": "macizo" },
+        { "nombre": "1A (quemado)", "x": 3, "y": 4, "w": 6.5, "h": 6.5, "piso": "tablas-quemadas", "vetas": "h" },
+        { "nombre": "Pasillo de la planta baja", "x": 9.5, "y": 2, "w": 2, "h": 4.5, "piso": "tablas-quemadas" },
+        { "nombre": "Vestíbulo", "x": 9.5, "y": 6.5, "w": 3.5, "h": 4, "piso": "terrazo" },
+        { "nombre": "Caja de escalera", "x": 13, "y": 5, "w": 5, "h": 5.5, "piso": "terrazo" },
+        { "nombre": "Hueco de la escalera (vacío hasta el sótano)", "x": 14.6, "y": 5.2, "w": 3.2, "h": 3.2, "piso": "vacio", "sinMuros": true }
+      ],
+      "vanos": [
+        { "x": 10.5, "y": 10.5, "w": 1.5, "eje": "h", "tipo": "abierto", "nombre": "Portal (la puerta se quemó; queda el hueco)" },
+        { "x": 9.5, "y": 6.5, "w": 2, "eje": "h", "tipo": "abierto", "nombre": "Vestíbulo → pasillo" },
+        { "x": 9.5, "y": 7.6, "w": 0.9, "eje": "v", "tipo": "abierto", "nombre": "Puerta del 1A (quemada)" },
+        { "x": 13, "y": 8.6, "w": 1.6, "eje": "v", "tipo": "abierto", "nombre": "Vestíbulo → caja de escalera" },
+        { "x": 4, "y": 10.5, "w": 1.2, "eje": "h", "tipo": "hueco", "nombre": "Ventana sin vidrio del 1A (calle)" },
+        { "x": 7, "y": 10.5, "w": 1.2, "eje": "h", "tipo": "hueco", "nombre": "Ventana sin vidrio del 1A (calle)" },
+        { "x": 3, "y": 5.2, "w": 1.2, "eje": "v", "tipo": "hueco", "nombre": "Ventana sin vidrio del 1A (callejón)" },
+        { "x": 3, "y": 8.2, "w": 1.2, "eje": "v", "tipo": "hueco", "nombre": "Ventana sin vidrio del 1A (callejón)" },
+        { "x": 15.2, "y": 10.5, "w": 1.2, "eje": "h", "tipo": "hueco", "nombre": "Ventana sin vidrio de la caja de escalera" },
+        { "x": 0, "y": 12, "w": 6.4, "eje": "h", "tipo": "baranda", "nombre": "Valla de obra (oeste)" },
+        { "x": 7.6, "y": 12, "w": 11.4, "eje": "h", "tipo": "baranda", "nombre": "Valla de obra con el cartel de demolición (el panel suelto queda al oeste)" }
+      ],
+      "muebles": [
+        { "tipo": "cama", "x": 3.3, "y": 4.3, "w": 2, "h": 0.95, "cabecera": "o", "desc": "the charred iron frame of a bed, springs exposed, no mattress" },
+        { "tipo": "heladera", "x": 8.6, "y": 4.3, "w": 0.7, "h": 0.7, "desc": "the scorched, blistered shell of an old refrigerator" },
+        { "tipo": "escombros", "x": 5.6, "y": 6.2, "w": 2.6, "h": 1, "desc": "fallen charred ceiling joists and broken plaster from the floor above" },
+        { "tipo": "radiador", "x": 6.9, "y": 10.1, "w": 1.4, "h": 0.18, "desc": "a soot-blackened cast-iron radiator under the empty window" },
+        { "tipo": "escombros", "x": 9.6, "y": 2.1, "w": 1.8, "h": 1.1, "desc": "a slope of fallen bricks, charred beams and plaster blocking the end of the corridor" },
+        { "tipo": "estante", "x": 9.62, "y": 8.9, "w": 0.22, "h": 1.4, "desc": "a row of fire-blackened tin mailboxes on the wall" },
+        { "tipo": "escalera", "x": 13.2, "y": 5.2, "w": 1.2, "h": 3.2, "hacia": "n", "desc": "the remains of a narrow wooden stair going down to the basement, half collapsed, treads missing and charred" },
+        { "tipo": "escombros", "x": 15, "y": 8.7, "w": 2.8, "h": 1.5, "desc": "a heap of charred beams and broken stair treads fallen from the upper floors" },
+        { "tipo": "flores", "fijo": false, "x": 8.2, "y": 11.86, "w": 1, "h": 0.28, "tile": "tile-flores-valla", "desc": "siete flores de plástico descoloridas atadas a la valla con alambre, y una octava, nueva, de verdad" }
+      ],
+      "luces": [
+        { "x": 14.5, "y": 13.7, "preset": "farola", "nombre": "Farola de la calle" }
+      ],
+      "regiones": [
+        { "id": "bajar-sotano", "nombre": "Bajar al sótano por la escalera medio derrumbada (Destreza + Atletismo Dif 2)", "x": 13.2, "y": 5.2, "w": 1.2, "h": 1, "destino": "larchmont-sotano:desde-planta" },
+        { "id": "hueco", "nombre": "Saltar o caer por el hueco al sótano (un piso)", "x": 14.8, "y": 5.4, "w": 2.8, "h": 2.8, "destino": "larchmont-sotano:caida-hueco" },
+        { "id": "desde-sotano", "nombre": "Llegada desde el sótano (arriba del tramo)", "x": 13.2, "y": 8.5, "w": 1.2, "h": 1, "llegada": true }
+      ]
+    },
+    {
+      "id": "larchmont-sotano",
+      "lugar": "LUG-11",
+      "escenas": ["A2-E05"],
+      "nombre": "Parte 2 · El Larchmont: sala de calderas",
+      "orden": 111,
+      "ancho": 19,
+      "alto": 11,
+      "paleta": "subterraneo",
+      "fondo": "roca",
+      "sujeto": "the old boiler room in the basement of a burned-out brick apartment building in Tacoma",
+      "oscuridad": 1,
+      "exterior": "solid packed earth and old brick foundations everywhere outside the walls — flat and continuous, with no extra walls or structures",
+      "nota": "**El sótano (A2-E05).** Se llega por la escalera medio derrumbada (al pie, bajo el hueco, un montón de escombros mojados donde cae la lluvia) o cayendo por el hueco. Oscuridad total: no hay luz. Se oye agua corriendo: un **canal** abierto en el piso lleva el agua desde los escombros hasta la **boca del desagüe grande** del muro oeste, que sale al estrecho.\n\n**La cisterna sellada.** En el centro de la sala de calderas, **una losa de hormigón nuevo, más claro que el resto del suelo** (Astucia + Investigación Dif 3; automático para David). Debajo están los siete inquilinos, Danny Ruiz (REF-02) entre ellos. **No se pinta abierta:** si la coterie la levanta (Fuerza + Atletismo Dif 4, o automático con Potencia 2), el Narrador pone encima el tile `tile-cisterna-abierta` (Pendiente) y aplica Termómetro +2 y la tirada de Remordimiento de David. **Auspex 4** sobre la losa: siete presencias, frío, agua, «Helen va a venir».\n\n**La flor nueva.** Astucia + Consciencia Dif 4: junto a la losa, huellas recientes de pies descalzos y un olor muy débil a Vitae rancia (MEN-08). **No están pintadas ni tienen tile**: son la recompensa de la tirada, como el repetidor de LUG-05.\n\n**El superviviente (MEN-08, GAN-09).** Si el Narrador quiere adelantar GAN-09, está escondido en el desagüe (Ofuscación 3) y huye hacia el agua al ver a la coterie: la región del desagüe no tiene mapa todavía.\n\n**Calderas.** Dos calderas de hierro remachado y un tanque de fueloil contra el muro norte, frías y oxidadas: dan cobertura.",
+      "habitaciones": [
+        { "nombre": "Tierra (noroeste)", "x": 0, "y": 0.5, "w": 3, "h": 2.1, "piso": "macizo" },
+        { "nombre": "Tierra (suroeste)", "x": 0, "y": 4.2, "w": 3, "h": 6.3, "piso": "macizo" },
+        { "nombre": "Carbonera derrumbada", "x": 13, "y": 0.5, "w": 5, "h": 2.5, "piso": "macizo" },
+        { "nombre": "Boca del desagüe (sale al estrecho)", "x": 0, "y": 2.6, "w": 3, "h": 1.6, "piso": "hormigon" },
+        { "nombre": "Sala de calderas", "x": 3, "y": 0.5, "w": 10, "h": 10, "piso": "piedra" },
+        { "nombre": "Losa nueva sobre la cisterna", "x": 6.25, "y": 4, "w": 3.5, "h": 3, "piso": "hormigon", "sinMuros": true, "limpio": true },
+        { "nombre": "Pie de la escalera", "x": 13, "y": 3, "w": 5, "h": 7.5, "piso": "hormigon" }
+      ],
+      "vanos": [
+        { "x": 3, "y": 2.6, "w": 1.6, "eje": "v", "tipo": "abierto", "nombre": "Boca del desagüe grande" },
+        { "x": 13, "y": 3.15, "w": 1.8, "eje": "v", "tipo": "abierto", "nombre": "Pie de la escalera → sala de calderas" }
+      ],
+      "muebles": [
+        { "tipo": "escalera", "x": 13.2, "y": 5.2, "w": 1.2, "h": 3.2, "hacia": "n", "desc": "the bottom flight of a half-collapsed wooden stair, treads missing" },
+        { "tipo": "escombros", "x": 14.6, "y": 5.2, "w": 3.2, "h": 3.2, "desc": "a wet heap of charred beams, bricks and broken treads that fell down the open stairwell" },
+        { "tipo": "canal", "x": 15.3, "y": 3.3, "w": 0.28, "h": 1.9, "desc": "an open stone drainage channel in the floor with water running in it" },
+        { "tipo": "canal", "x": 0.2, "y": 3.3, "w": 15.38, "h": 0.28, "desc": "an open stone drainage channel in the floor with water running in it" },
+        { "tipo": "maquina", "x": 3.6, "y": 0.85, "w": 2, "h": 1.7, "desc": "a huge old riveted cast-iron boiler, cold and rusted" },
+        { "tipo": "maquina", "x": 6.2, "y": 0.85, "w": 2, "h": 1.7, "desc": "a huge old riveted cast-iron boiler, cold and rusted" },
+        { "tipo": "maquina", "x": 10, "y": 0.85, "w": 2.6, "h": 1.2, "desc": "a squat rusted fuel-oil tank" },
+        { "tipo": "estante", "x": 3.25, "y": 6, "w": 0.35, "h": 3.6, "desc": "charred, sagging wooden shelving" },
+        { "tipo": "banco-trabajo", "x": 10.4, "y": 9.55, "w": 2.2, "h": 0.7, "desc": "an old scarred workbench" }
+      ],
+      "luces": [],
+      "regiones": [
+        { "id": "desde-planta", "nombre": "Llegada desde la planta baja (pie de la escalera)", "x": 13.2, "y": 4.1, "w": 1.2, "h": 1, "llegada": true },
+        { "id": "subir-planta", "nombre": "Subir a la planta baja por la escalera medio derrumbada (Destreza + Atletismo Dif 2)", "x": 13.2, "y": 7.4, "w": 1.2, "h": 1, "destino": "larchmont-planta:desde-sotano" },
+        { "id": "caida-hueco", "nombre": "Caída desde el hueco (escombros)", "x": 15.6, "y": 6.2, "w": 1.2, "h": 1.2, "llegada": true },
+        { "id": "desague", "nombre": "Desagüe al estrecho", "x": 0, "y": 2.6, "w": 1.2, "h": 1.6, "destino": null, "pendiente": "no hay mapa del desagüe ni del estrecho (GAN-09, MEN-08)" }
+      ]
+    }
+  ]
+}

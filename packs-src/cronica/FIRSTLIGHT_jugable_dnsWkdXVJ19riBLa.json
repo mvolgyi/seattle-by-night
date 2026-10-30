@@ -1,0 +1,167 @@
+{
+  "_id": "dnsWkdXVJ19riBLa",
+  "_key": "!journal!dnsWkdXVJ19riBLa",
+  "name": "FIRSTLIGHT jugable",
+  "folder": "U14g3yo4N4JwXcQT",
+  "sort": 110,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "FIRSTLIGHT-JUGABLE",
+      "archivo": "content/cronica/firstlight/00-firstlight-jugable.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "8QAk1ptBtEkfxbXj",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.8QAk1ptBtEkfxbXj",
+      "name": "FIRSTLIGHT jugable",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El Termómetro (@UUID[JournalEntry.b13NIR35K7HpthZv]{El Termómetro de FIRSTLIGHT}) es un número. Este capítulo le pone cara. Tres veces durante @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}, la mesa deja a sus vampiros y toma a los cazadores de la Célula Puget: una furgoneta frente a la casa de Helen, una sala de reuniones en South Lake Union con una entrega que nadie pidió, un almacén del puerto la noche de la redada. Son los interludios «Del otro lado» (@UUID[JournalEntry.I3XsZ233TNTuehzS]{Del otro lado · Interludios de FIRSTLIGHT}).</p>\n<p>Todo lo que hay en esta carpeta es contenido nuevo, escrito para el módulo. Los hechos de los docs (Okafor, Hale, el equipo táctico, Ransom, el arsenal, Northline, la redada) no cambian. Lo que se inventó para que se pueda jugar va marcado como <strong>Propuesto</strong>: el Narrador decide si lo usa.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Journal</th>\n<th>Qué hay</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Este</td>\n<td>Cómo usar los interludios, Cazador en una página, la Célula Puget (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{La Célula Puget}) y lo que cada interludio le deja a la redada (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.8DXPPUEUUp5bHka5]{INT-00 · Ventajas y fisuras para la redada})</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS]{Del otro lado · Interludios de FIRSTLIGHT}</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca} · La furgoneta blanca · @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411} · SEA-0411 · @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial} · Luz de día artificial</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.LfywH6qtS3GxDxJx]{La Célula Puget · Pregenerados}</td>\n<td>Una página por cazador, para entregar al jugador</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.jiea701LDJdMoHoY]{Marea roja · Continuación tras FIN-D}</td>\n<td>La continuación tras @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Marea roja}: premisa, ganchos y el cruce opcional con <em>Del Velo a la Vigilia</em></td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2zsBufwPxP1rRUtF",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.2zsBufwPxP1rRUtF",
+      "name": "Cómo usar los interludios",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h3>Qué son</h3>\n<p>Escenas cortas, de 30 a 45 minutos, en las que los jugadores llevan a los cazadores de FIRSTLIGHT. No cambian la trama de la coterie: nadie descubre allí quién es ARQUERO ni dónde está el disco. Lo que hacen es mostrar, desde el otro lado, lo que el Termómetro mide. Lo que decidan los cazadores mueve el Termómetro o le da a FIRSTLIGHT una ventaja en la redada (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}). A veces, una fisura.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Interludio</th>\n<th>Cuándo</th>\n<th>Dónde</th>\n<th>Qué se juega</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca} · La furgoneta blanca</td>\n<td>Al cruzar el umbral 3</td>\n<td>Market Street, Ballard (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward})</td>\n<td>Vigilancia pasiva de Helen. Los jugadores ven, desde afuera, la escena que sus vampiros acaban de jugar</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411} · SEA-0411</td>\n<td><span class=\"sbn-reloj\" data-sbn-reloj=\"5\" title=\"Noche 5 · lunes 16 nov. (madrugada del 16/11/2026)\">Noche 5</span>, a las 20:00</td>\n<td>Northline (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory})</td>\n<td>La segunda entrega de ARQUERO. Okafor y Hale deciden cuánto confiar en la fuente</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial} · Luz de día artificial</td>\n<td>Umbral 9, <span class=\"sbn-reloj\" data-sbn-reloj=\"8\" title=\"Noche 8 · jueves 19 nov. (madrugada del 19/11/2026)\">Noche 8</span>, antes de @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</td>\n<td>Un almacén del puerto y el objetivo</td>\n<td>El briefing y la entrada de la redada, hasta que la escena pasa a jugarse con la coterie</td>\n</tr>\n</tbody></table>\n<h3>Cuándo cortar</h3>\n<p>Un interludio interrumpe la crónica, así que conviene meterlo donde la crónica ya respira:</p>\n<ul>\n<li><strong>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca}</strong> se juega justo después de la escena que llevó el Termómetro a 3. Lo normal es @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} (la cámara del 3B) o la primera entrega de ARQUERO en la Noche 2. Si el umbral llega más tarde, también sirve: la furgoneta llega tarde, como llegan las furgonetas.</li>\n<li><strong>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</strong> se juega como <em>flashback</em> al final de la Noche 5, cuando la coterie ya decidió qué hace con Lonnie (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · El que se guardó una}). Si se juega antes, los jugadores sabrán que Okafor los espera en el Denny&#39;s. No es grave, pero se pierde la sorpresa.</li>\n<li><strong>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</strong> se juega al empezar la sesión de la Noche 8, antes de @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}. Los jugadores saben lo que viene. Sus vampiros, no. Esa es la gracia.</li>\n</ul>\n<h3>Quién juega a quién</h3>\n<p>Seis pregenerados (@UUID[JournalEntry.LfywH6qtS3GxDxJx]{La Célula Puget · Pregenerados}). No hacen falta todos en cada interludio:</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th></th>\n<th>Okafor</th>\n<th>Hale</th>\n<th>Ransom</th>\n<th>Navarro</th>\n<th>Pak</th>\n<th>Sorensen</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca}</td>\n<td>por radio</td>\n<td>en la furgoneta</td>\n<td>al volante</td>\n<td>en la furgoneta</td>\n<td>el dron</td>\n<td>opcional</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</td>\n<td>sí</td>\n<td>sí</td>\n<td>escolta</td>\n<td>opcional</td>\n<td>opcional</td>\n<td>—</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>sí</td>\n<td>sí</td>\n<td>sí</td>\n<td>sí</td>\n<td>sí</td>\n<td>sí</td>\n</tr>\n</tbody></table>\n<p>Que cada jugador elija un cazador la primera vez y lo conserve. Si alguien se queda sin cazador en un interludio, que lleve a un operador de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT} con la ficha simplificada, o que haga de ARQUERO, de la radio, de la lluvia.</p>\n<h3>Lo que saben los jugadores y lo que saben los cazadores</h3>\n<p>Los jugadores saben quién es ARQUERO. Los cazadores, no. La regla es una sola: <strong>jugá lo que sabe tu cazador.</strong> El Narrador puede preguntar «¿cómo lo sabe Hale?» y, si la respuesta es «porque yo lo leí en la Parte 3», no vale.</p>\n<p>Va a pasar que algún jugador quiera que su cazador falle para proteger a su vampiro. Está permitido, y no sale gratis. Cada interludio tiene una opción que deja a la Célula con las manos vacías: si se elige, la <strong>Desesperación de la Célula sube 1</strong> (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{La Célula Puget}). Una célula desesperada no se retira: entra a la redada con el generador encendido y sin avisar. Fallar a propósito baja el riesgo de hoy y sube el de la Noche 8.</p>\n<h3>Cómo se cierra un interludio</h3>\n<p>Al terminar, el Narrador anota tres cosas:</p>\n<ol>\n<li><strong>El Termómetro.</strong> Con los botones de cada interludio. Ningún interludio lo mueve más de lo que dice su tabla.</li>\n<li><strong>Ventajas y fisuras para la redada.</strong> En la tabla de @UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.8DXPPUEUUp5bHka5]{INT-00 · Ventajas y fisuras para la redada}. Conviene apuntarlas en las notas del actor de la Célula Puget para tenerlas a mano en la Noche 8.</li>\n<li><strong>Desesperación y Peligro de la Célula.</strong> En la hoja del actor de la Célula (grupo, tipo célula).</li>\n</ol>\n<h3>Si no se juegan</h3>\n<p>Los interludios son opcionales. Si no se juegan, pasa lo que dicen los docs: en la Noche 5 Hale escribe @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411} y Okafor usa la entrega sin creérsela; la redada ocurre como está escrita. No hay ventajas ni fisuras.</p>\n<h3>Con un solo jugador</h3>\n<p>El jugador lleva a Okafor en @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411} y a Ransom en @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca} e @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}. El Narrador hace de los demás por radio. Los interludios quedan en 20 minutos.</p>\n<h3>Seguridad</h3>\n<p>Los interludios ponen a los jugadores del lado de quien caza a sus personajes. Repasá las Líneas y los Velos de la mesa (@UUID[JournalEntry.BPqr3MwJXyy5lXZz]{Herramientas de seguridad}) antes del primero. La sala blanca de Northline, con sus lámparas, es un lugar de interrogatorio: si la mesa la vetó, la sala existe, pero nadie la usa en escena.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "8oCsq7kqbIYWaNX6",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.8oCsq7kqbIYWaNX6",
+      "name": "Cazador en una página",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Lo mínimo de <em>Cazador: La Venganza</em> (5ª ed.) para jugar los interludios. Si tenés el manual, manda el manual. Las Facultades y los Beneficios de los pregenerados están escritos con palabras nuestras, pensados para Seattle: si el manual trae uno que se parece, usá el del libro.</p>\n<p><strong>Credo.</strong> Lo que el cazador hace mejor durante la Caza. Cada Credo tiene un campo de Desesperación: el tipo de acción en la que el cazador puede sumar dados de Desesperación.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Credo</th>\n<th>Campo de Desesperación</th>\n<th>En la Célula</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Inquisitivos</td>\n<td>Obtener información: documentación, allanamiento, interrogatorio</td>\n<td>Okafor, Hale</td>\n</tr>\n<tr>\n<td>Marciales</td>\n<td>Conflicto físico, con lo sobrenatural o no</td>\n<td>Ransom</td>\n</tr>\n<tr>\n<td>Fieles</td>\n<td>Conflicto directo con lo sobrenatural (físico, social o mental)</td>\n<td>Navarro</td>\n</tr>\n<tr>\n<td>Clandestinos</td>\n<td>Sigilo y subterfugio</td>\n<td>Pak</td>\n</tr>\n<tr>\n<td>Emprendedores</td>\n<td>Construir, inventar, aumentar o reparar</td>\n<td>Sorensen</td>\n</tr>\n</tbody></table>\n<p><strong>Impulso y Redención.</strong> Por qué caza. Cada Impulso dice cuándo el cazador se redime: cuando cumple esa condición, sale de la Desesperanza (ver abajo). En la ficha de wod5e el Impulso aparece como <em>Motivación</em>.</p>\n<p><strong>Desesperación.</strong> Es de la Célula, no de cada cazador: un número de 0 a 5. Cuando un cazador tira algo que entra en el campo de su Credo, puede sumar tantos dados de Desesperación como marque la Célula. Si alguno de esos dados sale 1, el jugador elige:</p>\n<ul>\n<li><strong>Extralimitación:</strong> la tirada sale como salió, y el Peligro de la Célula sube 1. La presa se entera de algo.</li>\n<li><strong>Desesperanza:</strong> la tirada falla, y el cazador queda en Desesperanza. No puede volver a sumar dados de Desesperación hasta redimirse por su Impulso.</li>\n</ul>\n<p>Si la tirada ya había fallado, no hay elección: Desesperanza. El diálogo de tirada de wod5e ofrece los dados de Desesperación a los actores de tipo cazador y marca el resultado.</p>\n<p><strong>Peligro.</strong> De 0 a 5, también de la Célula. Mide cuánto sabe la presa de los cazadores. Es el espejo del Termómetro: el Termómetro mide lo que FIRSTLIGHT sabe de la coterie; el Peligro, lo que la coterie (o la ciudad) sabe de FIRSTLIGHT.</p>\n<p><strong>Facultades y Beneficios.</strong> Lo que el cazador trae a la Caza que otro no tiene: acceso, equipo, un don que no entiende. Cada Facultad puede tener Beneficios que la afinan. Están en la pestaña de Facultades de la ficha.</p>\n<p><strong>Son mortales.</strong> Salud y Fuerza de Voluntad como cualquier mortal de V5. Las Disciplinas funcionan sobre ellos, salvo la Fe de Okafor y de Hale, que resta dados. El daño de un Vástago es superficial o agravado según el ataque; las armas del arsenal de FIRSTLIGHT, ver @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT} y la Pantalla del Narrador.</p>\n<p><strong>Las tiradas</strong> se escriben como en el resto del módulo, Atributo + Habilidad y Dificultad. Si la tirada entra en el campo del Credo, el texto lo dice: <em>(Desesperación: Inquisitivos)</em>.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "O8yPSIYLlTrKHm8G",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.O8yPSIYLlTrKHm8G",
+      "name": "La Célula Puget",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«No tocarla hasta poder arrancarla de raíz.»</em></p>\n<p>Una célula pequeña de FIRSTLIGHT, con presupuesto ajustado, abierta en Seattle en 2024. La dirige la agente especial @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor} desde @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}, piso 11 de una torre de South Lake Union. Tiene a la analista @UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}, dos analistas más, seis operadores contratados como «unidad antiterrorista especial» (@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}) y un enlace con la oficina del FBI de Seattle. El equipo táctico duerme en un almacén del puerto, no en Northline.</p>\n<p><strong>Los cazadores</strong> (actores de tipo cazador, con la Célula como grupo): Okafor, Hale, @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} y tres operadores con nombre: @UUID[Actor.cacjzuu13Bv7mJH5]{Teresa «Tess» Navarro}, @UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak} y @UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen}. Los otros dos operadores siguen siendo la ficha simplificada de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}.</p>\n<h3>Desesperación y Peligro</h3>\n<p><em>Propuesto.</em> La Célula empieza con <strong>Desesperación 1</strong> (una sola célula, un presupuesto que no alcanza y una fuente en la que nadie confía) y <strong>Peligro 0</strong> (la presa no sabe que existe). Se mueven así durante la aventura, se jueguen o no los interludios:</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Desesperación</th>\n<th>Cuándo</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>+1</td>\n<td>La presa les gana una carrera: la coterie se lleva la USB de Pike antes de la cadena de custodia (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}) o le saca a Lonnie delante de las narices en @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · El que se guardó una}</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>Un operador queda herido de gravedad o muere</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>La coterie corta el acceso de Northline a ANOMALY o borra la base de sujetos fríos (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos})</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>En un interludio, los jugadores eligen la opción que deja a la Célula con las manos vacías</td>\n</tr>\n<tr>\n<td>−1</td>\n<td>La Célula consigue algo sólido: un sujeto frío identificado, Lonnie y la USB 3, un objetivo de ARQUERO confirmado</td>\n</tr>\n</tbody></table>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Peligro</th>\n<th>Cuándo</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>+1</td>\n<td>Cada Extralimitación (ver Cazador en una página)</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>La coterie identifica a un miembro de la Célula: los agentes del Denny&#39;s, la furgoneta, la cara de Hale</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>La coterie, o @UUID[JournalEntry.yaAsxCkCLf8CANL5]{Voight}, lee @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}</td>\n</tr>\n<tr>\n<td>+2</td>\n<td>Alguien entra en Northline (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}), lo descubran o no</td>\n</tr>\n</tbody></table>\n<p><strong>El Peligro en los interludios.</strong> Con Peligro 3 o más, la Dificultad de cualquier tirada de los cazadores para pasar desapercibidos sube 1: la presa ya sabe qué buscar.</p>\n<p><strong>La Desesperación en la redada.</strong> Cuando empieza @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}:</p>\n<ul>\n<li><strong>Desesperación 3 o más:</strong> el generador de luz solar ya está encendido cuando entran (ventaja V4 de @UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.8DXPPUEUUp5bHka5]{INT-00 · Ventajas y fisuras para la redada}, gratis).</li>\n<li><strong>Desesperación 4 o más:</strong> no hay megáfono. Okafor no avisa. La primera frase de la guía de diálogo llega después de la luz (ventaja V5, gratis).</li>\n<li><strong>Desesperación 5:</strong> Okafor deja el coche y entra detrás del equipo, con su Glock y la mano mala en el bolsillo. Su Fe va con ella.</li>\n</ul>\n<h3>En Foundry</h3>\n<p>La Célula es un actor de grupo de tipo célula, en la carpeta FIRSTLIGHT/Célula Puget del compendio de personajes. Los seis cazadores son sus miembros: su hoja toma de ahí la Desesperación. El Peligro se marca en la hoja de la Célula. Si <em>Del Velo a la Vigilia</em> está activo, su panel también la encuentra: es la única célula del mundo (ver @UUID[JournalEntry.jiea701LDJdMoHoY]{Marea roja · Continuación tras FIN-D}).</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "CEL-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "8DXPPUEUUp5bHka5",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.8DXPPUEUUp5bHka5",
+      "name": "INT-00 · Ventajas y fisuras para la redada",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Lo que cada interludio le deja a @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}. Las <strong>ventajas</strong> son de FIRSTLIGHT; las <strong>fisuras</strong>, de la coterie. Se aplican sólo si la redada ocurre. Ninguna cambia quién gana: cambian con qué llega cada bando a la puerta.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th></th>\n<th>Nombre</th>\n<th>Sale de</th>\n<th>Efecto en @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>V1</strong></td>\n<td>Rostro en el expediente</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca}</td>\n<td>FIRSTLIGHT tiene un fotograma de un PJ. Si ese PJ está en el objetivo, la primera tirada de los operadores contra él tiene +2 dados: saben a quién buscar</td>\n</tr>\n<tr>\n<td><strong>V2</strong></td>\n<td>La matrícula</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca}</td>\n<td>El vehículo de la coterie (la camioneta de Bear u otro) está fichado. Escapar en él sin derribar antes el dron es imposible: el dron lo sigue</td>\n</tr>\n<tr>\n<td><strong>V3</strong></td>\n<td>Reconocimiento previo</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</td>\n<td>La Célula estudió ese objetivo antes. Las rutas de escape conocidas (el túnel de carga del hangar, el embarcadero de la granja) tienen Dificultad +1</td>\n</tr>\n<tr>\n<td><strong>V4</strong></td>\n<td>Generador en posición</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>El generador de luz solar se enciende el primer turno, no tarda dos</td>\n</tr>\n<tr>\n<td><strong>V5</strong></td>\n<td>Silencio de radio</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>Sin aviso por megáfono. Detectar la redada pasa a Dificultad 5</td>\n</tr>\n<tr>\n<td><strong>V6</strong></td>\n<td>Cerco</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>Dos operadores cubren la salida por agua. La lancha del muelle cubierto ya no es una opción: está vigilada</td>\n</tr>\n<tr>\n<td><strong>F1</strong></td>\n<td>La duda de Ransom</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca} o @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>Ransom sabe quién es Bear y no lo dijo. La tirada de Bear para ganar un minuto en la puerta baja a Dificultad 2, y ese medio segundo de duda es suyo</td>\n</tr>\n<tr>\n<td><strong>F2</strong></td>\n<td>La furgoneta conocida</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · La furgoneta blanca}</td>\n<td>La coterie vio la furgoneta blanca en Market Street. En la redada la reconoce: Detectar la redada baja 1 de Dificultad</td>\n</tr>\n<tr>\n<td><strong>F3</strong></td>\n<td>Okafor duda de ARQUERO</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</td>\n<td>Si alguien le dice por radio quién es su fuente, Okafor no lo cree, pero ordena esperar un turno antes de entrar. Hablar con ella por radio deja de ser imposible</td>\n</tr>\n<tr>\n<td><strong>F4</strong></td>\n<td>Ruido en la entrada</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>La aproximación hizo ruido. La coterie detecta la redada sin tirar y tiene tres minutos, no dos</td>\n</tr>\n<tr>\n<td><strong>F5</strong></td>\n<td>Sin dron</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>El dron no despegó o tuvo que aterrizar. El equipo pierde el +2 a Consciencia y la mitad de su coordinación desde el primer turno</td>\n</tr>\n<tr>\n<td><strong>F6</strong></td>\n<td>Cámara tapada</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Luz de día artificial}</td>\n<td>Un operador lleva la cámara corporal tapada. Lo que pase delante de él no sube el Termómetro</td>\n</tr>\n</tbody></table>\n<p>Si una ventaja y una fisura se pisan (V5 y F4), gana la fisura: el ruido ya se hizo.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "INT-00"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

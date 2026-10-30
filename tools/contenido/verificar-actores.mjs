@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { RAIZ, MODULO, leerJson } from "../util.mjs";
 import { ID, fichas, tieneActor, registro, journals } from "./ids.mjs";
+import { CAMPOS_CREDO, NOMBRE_FACULTAD, parsearBeneficio, celulas } from "./actores.mjs";
 
 const { reg } = registro();
 const errores = [];
@@ -60,13 +61,22 @@ const CONOCIDOS = new Set([
   "disciplinas", "salud", "voluntad", "convicciones", "piedrasDeToque", "ventajas", "defectos", "equipo",
   "cita", "semblante", "provisional", "nota", "origen", "edad", "depredador", "resonancia", "spcType",
   "cantidad", "estandar", "excepcionales", "reservas", "notas", "foco", "brillaEn", "secreto", "alternativa",
-  "_origen", "_clase"
+  "_origen", "_clase",
+  // Cazadores (content/pnjs/cazadores.json): se chequean en chequearCazador.
+  "credo", "impulso", "facultades", "facultadesNotas", "pregenerado", "propuesto", "reemplaza"
 ]);
 
 const combate = leerJson("content/pnjs/combate.json");
 const firstlight = leerJson("content/firstlight.json").equipo;
 const flPorId = new Map(firstlight.map(e => [e.id, e]));
 const perfiles = new Map(journals().map(j => [j.id, j]));
+const journalsCronica = leerPack("cronica");
+/** HTML de la página «Notas de edición» ({narrador}, ownership 0) del perfil de un PJ (journals.mjs). */
+function notasDelPerfil(id) {
+  const j = journalsCronica.get(ID.journal(id));
+  const p = j?.pages?.find(x => x.name === "Notas de edición");
+  return p && p.ownership?.default === 0 ? p.text?.content ?? "" : null;
+}
 
 let nFichas = 0, nSinActor = 0;
 for (const f of fichas()) {
@@ -183,8 +193,19 @@ for (const f of fichas()) {
   texto("edad", f.edad != null ? String(f.edad) : null, s.bio?.age?.trueage);
   texto("brilla en", f.brillaEn, s.biography);
   texto("notas", f.notas, s.biography);
-  texto("nota de edición", f.nota, s.privatenotes);
-  for (const p of f.provisional ?? []) texto("provisional", p, s.privatenotes);
+  if (f.pj) {
+    // Un PJ lo puede poseer un jugador, que ve las notas privadas: van al perfil, página {narrador}.
+    const notas = notasDelPerfil(f.id);
+    const enPerfil = [f.nota, ...(f.provisional ?? []), ...(f.propuesto ?? [])].filter(Boolean);
+    if (enPerfil.length && notas === null) mal(f.id, "es PJ con notas de edición y su perfil no tiene la página «Notas de edición» del Narrador.");
+    for (const t of enPerfil) {
+      if (notas !== null && !contiene(notas, t)) mal(f.id, `«${String(t).slice(0, 40)}…» no está en la página «Notas de edición» del perfil.`);
+      if (contiene(s.privatenotes, t)) mal(f.id, "una nota de edición quedó en las notas privadas del actor: la vería el jugador.");
+    }
+  } else {
+    texto("nota de edición", f.nota, s.privatenotes);
+    for (const p of f.provisional ?? []) texto("provisional", p, s.privatenotes);
+  }
   if (f.sire) texto("sire", reg.get(f.sire)?.nombre ?? f.sire, s.headers?.sire);
   for (const e of f.foco ?? []) texto(`foco ${e}`, reg.get(e)?.nombre ?? e, s.biography);
   if (f.cantidad > 1) texto("cantidad", String(f.cantidad), s.biography);
@@ -200,6 +221,8 @@ for (const f of fichas()) {
     if (contiene(s.biography + s.privatenotes, f.secreto)) mal(f.id, "el secreto quedó en el actor: lo vería el jugador.");
   }
 
+  if (f.tipo === "hunter") chequearCazador(f, a);
+
   // Token.
   const t = a.prototypeToken;
   if (t?.name !== f.nombre) mal(f.id, "el token no lleva el nombre.");
@@ -209,6 +232,77 @@ for (const f of fichas()) {
 
   // _key de los embebidos.
   for (const i of its) if (i._key !== `!actors.items!${a._id}.${i._id}`) mal(f.id, `ítem ${i.name}: _key incorrecta.`);
+}
+
+/* Cazadores */
+function chequearCazador(f, a) {
+  const s = a.system, its = a.items ?? [];
+  // Credo: ítem creed con los campos de Desesperación (htr/creed-item-model.js).
+  const [credo, campos] = CAMPOS_CREDO[f.credo] ?? [];
+  if (!credo) mal(f.id, `credo «${f.credo}» desconocido.`);
+  const ic = its.filter(i => i.type === "creed");
+  if (ic.length !== 1) mal(f.id, `${ic.length} ítems creed (se esperaba 1).`);
+  else if (ic[0].name !== credo || ic[0].system.desperationFields !== campos) mal(f.id, "el creed no coincide con el credo de content/.");
+  if (s.headers?.creedfields !== campos) mal(f.id, "headers.creedfields no coincide con el credo.");
+  // Impulso: ítem drive con la redención (htr/drive-item-model.js).
+  const id = its.filter(i => i.type === "drive");
+  if (f.impulso) {
+    if (id.length !== 1 || id[0].name !== f.impulso.nombre) mal(f.id, `falta el drive «${f.impulso.nombre}».`);
+    else {
+      if (f.impulso.redencion && !contiene(id[0].system.redemption, f.impulso.redencion)) mal(f.id, "la redención del Impulso no está en el drive.");
+      if (f.impulso.texto && !contiene(id[0].system.description, f.impulso.texto)) mal(f.id, "el texto del Impulso no está en el drive.");
+    }
+  }
+  // Facultades (system.edges) y Beneficios (ítems perk con system.edge).
+  const fac = f.facultades ?? {};
+  for (const [edge, [valor, beneficios = []]] of Object.entries(fac)) {
+    const e = s.edges?.[edge];
+    if (!NOMBRE_FACULTAD[edge]) { mal(f.id, `Facultad «${edge}» no existe en wod5e.`); continue; }
+    if (!e) { mal(f.id, `falta la Facultad ${edge}.`); continue; }
+    if (e.value !== (valor ?? 0) || e.visible !== true) mal(f.id, `edges.${edge}: value ${e.value}, visible ${e.visible}.`);
+    if (f.facultadesNotas?.[edge] && !contiene(e.description, f.facultadesNotas[edge])) mal(f.id, `edges.${edge}: falta la descripción.`);
+    for (const b of beneficios) {
+      const it = its.find(i => i.type === "perk" && i.flags?.[MODULO]?.beneficio === b);
+      const { nombre, descripcion } = parsearBeneficio(b);
+      if (!it) mal(f.id, `falta el Beneficio «${nombre}» (${edge}).`);
+      else if (it.system.edge !== edge || it.name !== nombre || (descripcion && !contiene(it.system.description, descripcion))) mal(f.id, `el Beneficio «${nombre}» no coincide.`);
+    }
+  }
+  for (const k of Object.keys(s.edges ?? {})) if (!(k in fac)) mal(f.id, `edges.${k} que no está en content/.`);
+  const nPerks = Object.values(fac).reduce((n, [, b = []]) => n + b.length, 0);
+  if (its.filter(i => i.type === "perk").length !== nPerks) mal(f.id, "cantidad de perks distinta de los Beneficios de content/.");
+  // Célula, pregenerado, propuesto.
+  const c = celulas().find(x => x.miembros.includes(f.id));
+  if (c) {
+    if (s.group !== ID.actor(c.id)) mal(f.id, `system.group ${s.group} ≠ la Célula ${c.id}.`);
+    if (s.headers?.cellname !== c.nombre) mal(f.id, "headers.cellname ≠ nombre de la Célula.");
+  }
+  if (f.pregenerado) {
+    const pre = reg.get(f.pregenerado);
+    if (!pre) mal(f.id, `el pregenerado ${f.pregenerado} no existe.`);
+    else if (!s.biography?.includes(`@UUID[${pre.uuid}]`)) mal(f.id, "la biografía no enlaza al pregenerado.");
+  }
+  if (!f.pj) for (const p of f.propuesto ?? []) if (!contiene(s.privatenotes, p)) mal(f.id, "falta un «propuesto» en las notas privadas.");
+}
+
+/* Células */
+const listaCelulas = celulas();
+for (const c of listaCelulas) {
+  const a = actores.get(ID.actor(c.id));
+  if (!a) { mal(c.id, "no tiene actor group."); continue; }
+  if (a.type !== "group" || a.system.groupType !== "cell") mal(c.id, "no es group/cell.");
+  const esperado = c.miembros.map(m => `Actor.${ID.actor(m)}`);
+  if (JSON.stringify(a.system.members) !== JSON.stringify(esperado)) mal(c.id, "miembros distintos de content/.");
+  for (const m of c.miembros) {
+    const h = actores.get(ID.actor(m));
+    if (h?.type !== "hunter") mal(c.id, `miembro ${m} no es un actor hunter.`);
+  }
+  if (a.system.desperation?.value !== (c.desesperacion ?? 0)) mal(c.id, `desperation ${a.system.desperation?.value} ≠ ${c.desesperacion}.`);
+  if (a.system.danger?.value !== (c.peligro ?? 0) || a.system.danger?.max !== (c.peligroMax ?? 5)) mal(c.id, "danger distinto de content/.");
+  for (const [k, donde] of [["lema", a.system.biography], ["descripcion", a.system.biography], ["concepto", a.system.biography], ["notas", a.system.privatenotes]]) {
+    if (c[k] && !contiene(donde, c[k])) mal(c.id, `${k} no aparece.`);
+  }
+  for (const p of c.propuesto ?? []) if (!contiene(a.system.privatenotes, p)) mal(c.id, "falta un «propuesto» en las notas privadas.");
 }
 
 /* Coteries */
@@ -251,4 +345,4 @@ if (errores.length) {
   for (const e of errores) console.error(`  ${e}`);
   process.exit(1);
 }
-console.log(`✓ actores: ${nFichas} fichas con actor (${nSinActor} sin estadísticas, sólo perfil), ${coteries.length} coteries y ${firstlight.length} ítems de FIRSTLIGHT coinciden con content/.`);
+console.log(`✓ actores: ${nFichas} fichas con actor (${nSinActor} sin estadísticas, sólo perfil), ${coteries.length} coteries, ${listaCelulas.length} célula(s) y ${firstlight.length} ítems de FIRSTLIGHT coinciden con content/.`);

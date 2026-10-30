@@ -68,24 +68,51 @@ export async function construir(ctx) {
   });
   const vistos = new Map();
   const faltan = [];
+  // Una carpeta raíz de un pack que se llama como la raíz de la Aventura
+  // («Seattle by Night» de cronica) no se anida dentro de ella: se funde. Si no,
+  // «Seattle by Night/Seattle by Night/Vástagos/Brujah» se come un nivel de los
+  // cuatro que permite Foundry (CONST.FOLDER_MAX_DEPTH, common/constants.mjs).
+  const fundidas = new Map();
+  const padreDe = (folder, tipo) => (folder ? fundidas.get(folder) ?? folder : raiz(tipo)._id);
 
   for (const { pack, campo, tipo } of FUENTES) {
     const docs = leerPack(pack);
     if (!docs?.length) { faltan.push(pack); continue; }
     const esCarpeta = d => d._key?.startsWith("!folders!");
-    for (const c of docs.filter(esCarpeta)) {
+    const carpetas = docs.filter(esCarpeta);
+    for (const c of carpetas) {
+      if (!c.folder && c.name === RAIZ_CARPETAS && c.type === tipo) fundidas.set(c._id, raiz(tipo)._id);
+    }
+    for (const c of carpetas) {
       if (c.type !== tipo) ctx.avisos.push(`aventura: carpeta «${c.name}» de ${pack} es de tipo ${c.type}, no ${tipo}`);
-      folders.push(sinClaves({ ...c, folder: c.folder ?? raiz(tipo)._id }));
+      if (fundidas.has(c._id)) continue;
+      folders.push(sinClaves({ ...c, folder: padreDe(c.folder, tipo) }));
     }
     for (const d of docs.filter(d => !esCarpeta(d))) {
       const clave = `${tipo}.${d._id}`;
       if (vistos.has(clave)) { ctx.avisos.push(`aventura: _id repetido ${clave} (${pack} y ${vistos.get(clave)}); se queda el primero`); continue; }
       vistos.set(clave, pack);
-      contenido[campo].push(sinClaves({ ...d, folder: d.folder ?? raiz(tipo)._id }));
+      contenido[campo].push(sinClaves({ ...d, folder: padreDe(d.folder, tipo) }));
     }
   }
   if (faltan.length) ctx.avisos.push(`aventura: todavía no hay nada en packs-src/{${faltan.join(",")}}; se saltea (volvé a correr el build cuando estén)`);
   folders.unshift(...Object.values(raices));
+
+  // Carpetas hermanas con el mismo nombre (dos packs que traen «Lugares» en la raíz):
+  // se avisa; fundirlas cambiaría lo que el Narrador ve en el compendio.
+  const hermanas = new Map();
+  for (const f of folders) {
+    const k = `${f.type}|${f.folder ?? ""}|${f.name}`;
+    if (hermanas.has(k)) ctx.avisos.push(`aventura: dos carpetas «${f.name}» (${f.type}) en el mismo nivel`);
+    hermanas.set(k, f._id);
+  }
+  // Profundidad: Foundry no deja crear más de CONST.FOLDER_MAX_DEPTH (4) niveles.
+  const porId = new Map(folders.map(f => [f._id, f]));
+  for (const f of folders) {
+    let n = 1;
+    for (let p = f.folder; p && porId.has(p); p = porId.get(p).folder) n++;
+    if (n > 4) ctx.avisos.push(`aventura: la carpeta «${f.name}» queda a ${n} niveles (máximo 4)`);
+  }
 
   // Carpetas colgando de una que no está (un pack que escribió hijos sin padre).
   const idsCarpeta = new Set(folders.map(f => f._id));

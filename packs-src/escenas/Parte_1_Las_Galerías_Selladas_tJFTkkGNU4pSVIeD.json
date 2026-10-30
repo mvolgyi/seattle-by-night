@@ -1,0 +1,959 @@
+{
+  "_id": "tJFTkkGNU4pSVIeD",
+  "_key": "!scenes!tJFTkkGNU4pSVIeD",
+  "name": "Parte 1 · Las Galerías Selladas",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 40,
+  "width": 2400,
+  "height": 1400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.9,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "54mErQY2DeqhQfwI",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/subterraneo.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!tJFTkkGNU4pSVIeD.54mErQY2DeqhQfwI"
+    }
+  ],
+  "journal": "jg1zpvYlDFMJRY8Q",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "Ctf0kReWEwTrj0C0",
+      "c": [
+        0,
+        0,
+        2400,
+        0
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.Ctf0kReWEwTrj0C0"
+    },
+    {
+      "_id": "fjhTjDgNCXrCYNv8",
+      "c": [
+        0,
+        650,
+        735,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.fjhTjDgNCXrCYNv8"
+    },
+    {
+      "_id": "CDyuL4yCOGrc9rnr",
+      "c": [
+        855,
+        650,
+        885,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.CDyuL4yCOGrc9rnr"
+    },
+    {
+      "_id": "wVJoh8lRQ0yGA3o1",
+      "c": [
+        1005,
+        650,
+        1035,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.wVJoh8lRQ0yGA3o1"
+    },
+    {
+      "_id": "mbZhATZlqvCDQJfT",
+      "c": [
+        1155,
+        650,
+        1185,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.mbZhATZlqvCDQJfT"
+    },
+    {
+      "_id": "vUTn2jBx5S2V6TEi",
+      "c": [
+        1305,
+        650,
+        1335,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.vUTn2jBx5S2V6TEi"
+    },
+    {
+      "_id": "zA1GrHixCrwYjXwn",
+      "c": [
+        1455,
+        650,
+        1850,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.zA1GrHixCrwYjXwn"
+    },
+    {
+      "_id": "9PIP5EfnVerTob3T",
+      "c": [
+        1940,
+        650,
+        2010,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.9PIP5EfnVerTob3T"
+    },
+    {
+      "_id": "EVQNBrAzIuprZv3g",
+      "c": [
+        2290,
+        650,
+        2400,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.EVQNBrAzIuprZv3g"
+    },
+    {
+      "_id": "ZPRtvdhobCpb7IVB",
+      "c": [
+        0,
+        0,
+        0,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.ZPRtvdhobCpb7IVB"
+    },
+    {
+      "_id": "zmCzG8T9IB9mgKxB",
+      "c": [
+        300,
+        0,
+        300,
+        740
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.zmCzG8T9IB9mgKxB"
+    },
+    {
+      "_id": "bN5LFCNS8eLpTK3O",
+      "c": [
+        300,
+        860,
+        300,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.bN5LFCNS8eLpTK3O"
+    },
+    {
+      "_id": "mD23DeJGSGG1RUZY",
+      "c": [
+        0,
+        950,
+        850,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.mD23DeJGSGG1RUZY"
+    },
+    {
+      "_id": "t28PDfc4LzSadnVd",
+      "c": [
+        950,
+        950,
+        1820,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.t28PDfc4LzSadnVd"
+    },
+    {
+      "_id": "NW9uIgRUJ8wiOMin",
+      "c": [
+        1910,
+        950,
+        2400,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.NW9uIgRUJ8wiOMin"
+    },
+    {
+      "_id": "wZEDc0QIsEUVH24G",
+      "c": [
+        0,
+        1400,
+        2400,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.wZEDc0QIsEUVH24G"
+    },
+    {
+      "_id": "0tSXW8VwPl3Zrq3P",
+      "c": [
+        600,
+        950,
+        600,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.0tSXW8VwPl3Zrq3P"
+    },
+    {
+      "_id": "myUVhOZGtcwJmIlv",
+      "c": [
+        2400,
+        0,
+        2400,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.myUVhOZGtcwJmIlv"
+    },
+    {
+      "_id": "1IbJIgkhSVyjVZ9y",
+      "c": [
+        700,
+        0,
+        700,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.1IbJIgkhSVyjVZ9y"
+    },
+    {
+      "_id": "HZiFl3vdtESehjRp",
+      "c": [
+        1500,
+        0,
+        1500,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.HZiFl3vdtESehjRp"
+    },
+    {
+      "_id": "7y8zI1UZxat2k7RG",
+      "c": [
+        1800,
+        0,
+        1800,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.7y8zI1UZxat2k7RG"
+    },
+    {
+      "_id": "AyxSkr82XTwCUALv",
+      "c": [
+        1300,
+        950,
+        1300,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.AyxSkr82XTwCUALv"
+    },
+    {
+      "_id": "18SW60rzx8JeCVzv",
+      "c": [
+        1750,
+        950,
+        1750,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.18SW60rzx8JeCVzv"
+    },
+    {
+      "_id": "8ozswDywqLfq5NIk",
+      "c": [
+        300,
+        740,
+        300,
+        860
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.8ozswDywqLfq5NIk"
+    },
+    {
+      "_id": "nFiEjGd2f8nxCMHM",
+      "c": [
+        1850,
+        650,
+        1940,
+        650
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.nFiEjGd2f8nxCMHM"
+    },
+    {
+      "_id": "RRKbp8VBDfxZGwwg",
+      "c": [
+        2010,
+        650,
+        2290,
+        650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.RRKbp8VBDfxZGwwg"
+    },
+    {
+      "_id": "hdf8HqDcZX4s16vx",
+      "c": [
+        850,
+        950,
+        950,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.hdf8HqDcZX4s16vx"
+    },
+    {
+      "_id": "IbDEesPbI145hji3",
+      "c": [
+        1820,
+        950,
+        1910,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.IbDEesPbI145hji3"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "xBPDnP7yh1sJta3I",
+      "name": "Claraboya de vidrio violeta (luz sucia de la calle)",
+      "x": 550,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.xBPDnP7yh1sJta3I"
+    },
+    {
+      "_id": "LwzKH1rV6vxtUAWZ",
+      "name": "Claraboya de vidrio violeta",
+      "x": 1050,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.LwzKH1rV6vxtUAWZ"
+    },
+    {
+      "_id": "4Qx3G0DypxZYc2bG",
+      "name": "Claraboya de vidrio violeta",
+      "x": 1550,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.4Qx3G0DypxZYc2bG"
+    },
+    {
+      "_id": "daMk8pAKSgwrCTvd",
+      "name": "Claraboya de vidrio violeta",
+      "x": 2050,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.daMk8pAKSgwrCTvd"
+    },
+    {
+      "_id": "xo33LZozQhwJ6JEE",
+      "name": "Farol de un puesto del Mercado",
+      "x": 880,
+      "y": 150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.xo33LZozQhwJ6JEE"
+    },
+    {
+      "_id": "TqmUVOkiuIKYfYgy",
+      "name": "Farol de un puesto del Mercado",
+      "x": 1240,
+      "y": 410,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.TqmUVOkiuIKYfYgy"
+    },
+    {
+      "_id": "iZHhvWIGh0td64x6",
+      "name": "Velas del refugio de los sangre débil",
+      "x": 1060,
+      "y": 1160,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.7,
+        "color": "#ffc547",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 4,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.iZHhvWIGh0td64x6"
+    },
+    {
+      "_id": "qeOWusU7Dg63BOlW",
+      "x": 2205,
+      "y": 55,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 2,
+        "dim": 5,
+        "color": "#f1f3ec",
+        "coloration": 1,
+        "attenuation": 0.25,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.qeOWusU7Dg63BOlW"
+    },
+    {
+      "_id": "dbFOv7500qjkCTED",
+      "x": 2340,
+      "y": 1160,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.8,
+        "color": "#3fd6a8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 6,
+          "intensity": 3,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.dbFOv7500qjkCTED"
+    },
+    {
+      "_id": "UU8oUHjpnrkAlyFn",
+      "x": 2050,
+      "y": 1340,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.UU8oUHjpnrkAlyFn"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "cvazZTnsTBdgjXbj",
+      "name": "Subir a Pioneer Square",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 15,
+          "y": 710,
+          "width": 100,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "subterraneo",
+          "region": "subir-pioneer",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la calle (Pioneer Square): el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!tJFTkkGNU4pSVIeD.cvazZTnsTBdgjXbj"
+    },
+    {
+      "_id": "2pb2m6oCwOgZNR1t",
+      "name": "Llegada desde Pioneer Square (ante la puerta de hierro)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 205,
+          "y": 710,
+          "width": 90,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "subterraneo",
+          "region": "desde-pioneer",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!tJFTkkGNU4pSVIeD.2pb2m6oCwOgZNR1t"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "kutIReO8M0idLnql",
+      "entryId": "jg1zpvYlDFMJRY8Q",
+      "pageId": null,
+      "x": 1360,
+      "y": 760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-04",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "subterraneo",
+          "id": "LUG-04"
+        }
+      },
+      "_key": "!scenes.notes!tJFTkkGNU4pSVIeD.kutIReO8M0idLnql"
+    },
+    {
+      "_id": "7vjs2LZv9hcrgQcQ",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "lM1EiE1FoXMkf3Uo",
+      "x": 1360,
+      "y": 860,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E04",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "subterraneo",
+          "id": "A1-E04"
+        }
+      },
+      "_key": "!scenes.notes!tJFTkkGNU4pSVIeD.7vjs2LZv9hcrgQcQ"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "subterraneo",
+      "id": "LUG-04",
+      "plano": "subterraneo",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</p>\n<p><strong>Llegada (A1-E04, Noches 2 a 4).</strong> Se baja por una escalera desde un sótano de Pioneer Square (oeste) hasta la <strong>puerta de hierro</strong> que no figura en ningún plano. Detrás, la acera de ladrillo de 1889 corre hacia el este bajo la ciudad: escaparates tapiados a los dos lados de la puerta del Mercado, <strong>claraboyas de vidrio violeta</strong> en el techo (luces de Foundry sobre la acera, nada pintado) y un <strong>cable de red</strong> que corre por lo alto del muro sur hasta la puerta de Ezra. Huele a moho, a humedad y, cada tanto, a ozono de servidores.</p>\n<p><strong>El Mercado de Abajo.</strong> La tienda grande del medio, abierta a la acera por sus columnas de hierro fundido. Puestos de información y favores (fijos, pintados) y dos faroles de puesto. <strong>Normas de Abajo:</strong> no se pelea en el Mercado, todo tiene precio y nadie pregunta por la cara de nadie. Pelear acá pone a Thornquist y a una docena de recaderos en contra de la coterie y veta LOR-02.</p>\n<p><strong>La barbería (oficina de Thornquist).</strong> Al fondo de la acera, al este, «hay una lámpara de carburo encendida»: se ve desde lejos por el escaparate, que es el único que conserva el vidrio. Thornquist recibe sentado en el <strong>sillón del barbero</strong> (fijo, atornillado al piso) «como si fuera un trono». La lámpara de carburo es un tile con luz (<code>tile-lampara-carburo</code>) sobre el mostrador. En el rincón del fondo, la <strong>caja fuerte</strong> con los duplicados de las USB 1 y 2 (AVE-01-AJUSTE; Krell no sabe que existen). Tiradas: Manipulación + Persuasión Dif 4 (Ezra +2), Astucia + Perspicacia Dif 3.</p>\n<p><strong>El nido de Ezra (PJ-03, Refugio 2).</strong> Bajo la calle, enfrente de la barbería: racks de servidores reciclados, el escritorio con sus monitores (luz «pantalla») y el catre. El cable de red de la acera entra por su puerta; los cables «bajan por agujeros del siglo XIX» del techo.</p>\n<p><strong>El refugio de los sangre débil.</strong> Una vieja carbonera bajo la calle: colchones, mantas, velas y el montón de carbón que nadie sacó. Jun Takeda (PNJ-20) no volvió desde lo del muelle 46: si la buscan acá, no está (duerme en un trastero del SoDo).</p>\n<p><strong>LOR-02.</strong> Los escaparates tapiados son macizo; si un PJ tiene «Refugio sellado» (•••), el Narrador puede abrir uno con una puerta secreta.</p>\n<p><strong>Fuera del mapa.</strong> La escalera sube a Pioneer Square (sin mapa de calle). La acera sigue al este detrás de un tabique de ladrillo.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): lampara, palet, silla.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Subir a Pioneer Square.</p>",
+      "moviles": [
+        {
+          "tipo": "lampara",
+          "tile": "tile-lampara-carburo",
+          "x": 21.9,
+          "y": 0.4,
+          "w": 0.3,
+          "h": 0.3
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-palet",
+          "x": 9.6,
+          "y": 11.1,
+          "w": 1,
+          "h": 0.8
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-escritorio",
+          "x": 20.25,
+          "y": 12.4,
+          "w": 0.5,
+          "h": 0.5
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

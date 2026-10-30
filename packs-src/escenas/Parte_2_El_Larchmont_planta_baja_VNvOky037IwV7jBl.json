@@ -1,0 +1,655 @@
+{
+  "_id": "VNvOky037IwV7jBl",
+  "_key": "!scenes!VNvOky037IwV7jBl",
+  "name": "Parte 2 · El Larchmont: planta baja",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 110,
+  "width": 1900,
+  "height": 1400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.85,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "oyvbuivB0v0KNYbI",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/larchmont-planta.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!VNvOky037IwV7jBl.oyvbuivB0v0KNYbI"
+    }
+  ],
+  "journal": "Oiln4o98kvxKbOvS",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "myLjURwjN1eaA1Fp",
+      "c": [
+        300,
+        50,
+        1800,
+        50
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.myLjURwjN1eaA1Fp"
+    },
+    {
+      "_id": "JklqB6AOQzniHwLk",
+      "c": [
+        300,
+        400,
+        950,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.JklqB6AOQzniHwLk"
+    },
+    {
+      "_id": "KqRwnYuCHaWzB62g",
+      "c": [
+        300,
+        50,
+        300,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.KqRwnYuCHaWzB62g"
+    },
+    {
+      "_id": "RyMqGgznv2ryYmoO",
+      "c": [
+        300,
+        640,
+        300,
+        820
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.RyMqGgznv2ryYmoO"
+    },
+    {
+      "_id": "5xQ7AtX2HHQki79d",
+      "c": [
+        300,
+        940,
+        300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.5xQ7AtX2HHQki79d"
+    },
+    {
+      "_id": "iJLjVBQHFR4lbGGy",
+      "c": [
+        950,
+        50,
+        950,
+        760
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.iJLjVBQHFR4lbGGy"
+    },
+    {
+      "_id": "V8HjyzLG3o8Ei7fX",
+      "c": [
+        950,
+        850,
+        950,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.V8HjyzLG3o8Ei7fX"
+    },
+    {
+      "_id": "uveB8AjVDxtlNR2Q",
+      "c": [
+        950,
+        200,
+        1150,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.uveB8AjVDxtlNR2Q"
+    },
+    {
+      "_id": "wYzlq3QzD9S33Z1X",
+      "c": [
+        1150,
+        50,
+        1150,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.wYzlq3QzD9S33Z1X"
+    },
+    {
+      "_id": "f6yXgQjkkRuPQMdI",
+      "c": [
+        1150,
+        500,
+        1800,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.f6yXgQjkkRuPQMdI"
+    },
+    {
+      "_id": "rWV4lwFtbTGPi4kz",
+      "c": [
+        1800,
+        50,
+        1800,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.rWV4lwFtbTGPi4kz"
+    },
+    {
+      "_id": "D3fCr44hWH4Lhh17",
+      "c": [
+        1150,
+        650,
+        1300,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.D3fCr44hWH4Lhh17"
+    },
+    {
+      "_id": "OrqmGieGvN7LDudX",
+      "c": [
+        1300,
+        500,
+        1300,
+        860
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.OrqmGieGvN7LDudX"
+    },
+    {
+      "_id": "izozfD3xnisQAuBd",
+      "c": [
+        1300,
+        1020,
+        1300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.izozfD3xnisQAuBd"
+    },
+    {
+      "_id": "IMDk4XrknoXvC3nH",
+      "c": [
+        300,
+        1050,
+        400,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.IMDk4XrknoXvC3nH"
+    },
+    {
+      "_id": "stl0FXefIqkyhdVv",
+      "c": [
+        520,
+        1050,
+        700,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.stl0FXefIqkyhdVv"
+    },
+    {
+      "_id": "nZ10b2OcyDsm6wTG",
+      "c": [
+        820,
+        1050,
+        1050,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.nZ10b2OcyDsm6wTG"
+    },
+    {
+      "_id": "QUIGkFTz5Z5ouL8C",
+      "c": [
+        1200,
+        1050,
+        1520,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.QUIGkFTz5Z5ouL8C"
+    },
+    {
+      "_id": "Y8U2bbzBSs2yGdbJ",
+      "c": [
+        1640,
+        1050,
+        1800,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.Y8U2bbzBSs2yGdbJ"
+    },
+    {
+      "_id": "X0dVPBFv83BcAQJH",
+      "c": [
+        400,
+        1050,
+        520,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.X0dVPBFv83BcAQJH"
+    },
+    {
+      "_id": "IVh1gnG8sSdvXh8M",
+      "c": [
+        700,
+        1050,
+        820,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.IVh1gnG8sSdvXh8M"
+    },
+    {
+      "_id": "C5yuulMhC9fGnVSn",
+      "c": [
+        300,
+        520,
+        300,
+        640
+      ],
+      "door": 1,
+      "ds": 0,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.C5yuulMhC9fGnVSn"
+    },
+    {
+      "_id": "prHunmsXVfsb2DzF",
+      "c": [
+        300,
+        820,
+        300,
+        940
+      ],
+      "door": 1,
+      "ds": 0,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.prHunmsXVfsb2DzF"
+    },
+    {
+      "_id": "q6BT4b8y0unpjEUB",
+      "c": [
+        1520,
+        1050,
+        1640,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.q6BT4b8y0unpjEUB"
+    },
+    {
+      "_id": "MKpRTu06jEQaFhsn",
+      "c": [
+        0,
+        1200,
+        640,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.MKpRTu06jEQaFhsn"
+    },
+    {
+      "_id": "1zKYmHSpbRDqlmoj",
+      "c": [
+        760,
+        1200,
+        1900,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!VNvOky037IwV7jBl.1zKYmHSpbRDqlmoj"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "J5SWSAsxzq0zY6oM",
+      "name": "Farola de la calle",
+      "x": 1450,
+      "y": 1370,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!VNvOky037IwV7jBl.J5SWSAsxzq0zY6oM"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "aXYKsxooAJPbYkcx",
+      "name": "Bajar al sótano por la escalera medio derrumbada (Destreza + Atletismo Dif 2)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1320,
+          "y": 520,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "ZnVwhby0ZEyZ56VX",
+          "name": "Bajar al sótano por la escalera medio derrumbada (Destreza + Atletismo Dif 2)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.sJciq5am1WxfcRbZ.Region.RbwEzf55eazk7Q3m"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!VNvOky037IwV7jBl.aXYKsxooAJPbYkcx.ZnVwhby0ZEyZ56VX"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-planta",
+          "region": "bajar-sotano",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!VNvOky037IwV7jBl.aXYKsxooAJPbYkcx"
+    },
+    {
+      "_id": "AeuBp3YMP5R86te7",
+      "name": "Saltar o caer por el hueco al sótano (un piso)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1480,
+          "y": 540,
+          "width": 280,
+          "height": 280,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "ETkmKGDB1MgkHh0u",
+          "name": "Saltar o caer por el hueco al sótano (un piso)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.sJciq5am1WxfcRbZ.Region.GitBw0m5DScFoHz8"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!VNvOky037IwV7jBl.AeuBp3YMP5R86te7.ETkmKGDB1MgkHh0u"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-planta",
+          "region": "hueco",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!VNvOky037IwV7jBl.AeuBp3YMP5R86te7"
+    },
+    {
+      "_id": "VKGdFwN8HDaFd7Hz",
+      "name": "Llegada desde el sótano (arriba del tramo)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1320,
+          "y": 850,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-planta",
+          "region": "desde-sotano",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!VNvOky037IwV7jBl.VKGdFwN8HDaFd7Hz"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "eUL4RjpT6fCPDfks",
+      "entryId": "Oiln4o98kvxKbOvS",
+      "pageId": null,
+      "x": 585,
+      "y": 760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-11",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "larchmont-planta",
+          "id": "LUG-11"
+        }
+      },
+      "_key": "!scenes.notes!VNvOky037IwV7jBl.eUL4RjpT6fCPDfks"
+    },
+    {
+      "_id": "mJWgA1Keh0rwJfdt",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "9fTKL8Oeq36BCfU9",
+      "x": 685,
+      "y": 760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E05",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "larchmont-planta",
+          "id": "A2-E05"
+        }
+      },
+      "_key": "!scenes.notes!VNvOky037IwV7jBl.mJWgA1Keh0rwJfdt"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "larchmont-planta",
+      "id": "LUG-11",
+      "plano": "larchmont-planta",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}</p>\n<p><strong>Llegada (A2-E05, escena opcional).</strong> «Cuatro pisos de ladrillo ennegrecido, ventanas sin cristal, una valla de obra con un cartel de demolición que nadie cumplió.» La valla corre por la vereda (barandas: se ve a través, no se pasa) y tiene un panel suelto por donde se entra. El cartel no está pintado (tiene texto): lo describe el Narrador. <strong>Las flores:</strong> siete de plástico descoloridas atadas con alambre y una octava, nueva, de verdad, todavía con gotas: tile <code>tile-flores-valla</code> sobre la valla.</p>\n<p><strong>Adentro.</strong> Todo quemado: las puertas ya no existen (huecos), las ventanas no tienen vidrio (huecos en el muro). El pasillo termina en el derrumbe de los pisos de arriba; el 1B y el 1C están derrumbados (macizo). Escena con <strong>clima de lluvia</strong>: el techo no existe y la lluvia «entra por el techo y baja por el hueco de la escalera hasta el sótano, donde se oye agua corriendo».</p>\n<p><strong>La escalera.</strong> En la caja de escalera, el tramo que bajaba al sótano está <strong>medio derrumbado</strong> y al lado se abre el hueco hasta el sótano (macizo negro: no tiene piso). <strong>Bajar al sótano:</strong> Destreza + Atletismo Dif 2 — la región «Bajar» está en el extremo bajo del tramo y lleva al pie de la escalera del sótano; fallar puede ser la caída por el hueco. La región del hueco lleva a los escombros del sótano (una caída de un piso, unos 3 m). Desde el sótano, la región «Subir» trae de vuelta al rellano de arriba del tramo.</p>\n<p><strong>Fuera del mapa.</strong> El resto del edificio (pisos 2 a 4, quemados y sin techo) no se juega.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): flores.</p>",
+      "moviles": [
+        {
+          "tipo": "flores",
+          "tile": "tile-flores-valla",
+          "x": 8.2,
+          "y": 11.86,
+          "w": 1,
+          "h": 0.28
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

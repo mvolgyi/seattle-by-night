@@ -1,0 +1,1002 @@
+{
+  "_id": "67ExO7p40rqtAUeC",
+  "_key": "!scenes!67ExO7p40rqtAUeC",
+  "name": "Parte 4 · El último ferry: cubierta de coches",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 152,
+  "width": 2400,
+  "height": 2400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.65,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "sHfAu91WLTAnuNaU",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/ferry-coches.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!67ExO7p40rqtAUeC.sHfAu91WLTAnuNaU"
+    }
+  ],
+  "journal": "IDd94316DhSx3ptV",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "GRBdY5ZlPqo4xH3D",
+      "c": [
+        0,
+        100,
+        2300,
+        100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.GRBdY5ZlPqo4xH3D"
+    },
+    {
+      "_id": "2Ifxpl45l1pFHlgd",
+      "c": [
+        0,
+        2300,
+        2300,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.2Ifxpl45l1pFHlgd"
+    },
+    {
+      "_id": "K9vP9jO7S1KGkD5L",
+      "c": [
+        0,
+        100,
+        0,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.K9vP9jO7S1KGkD5L"
+    },
+    {
+      "_id": "pdRCSN4toSC5gIuZ",
+      "c": [
+        150,
+        100,
+        150,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.pdRCSN4toSC5gIuZ"
+    },
+    {
+      "_id": "72lVQRDq36lzON51",
+      "c": [
+        150,
+        350,
+        1660,
+        350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.72lVQRDq36lzON51"
+    },
+    {
+      "_id": "PAN1wRdbcKGoRmuY",
+      "c": [
+        1760,
+        350,
+        1900,
+        350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.PAN1wRdbcKGoRmuY"
+    },
+    {
+      "_id": "PoOSSYhQt92VmM1p",
+      "c": [
+        1550,
+        100,
+        1550,
+        350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.PoOSSYhQt92VmM1p"
+    },
+    {
+      "_id": "A591Hh4mUGY2O6Sy",
+      "c": [
+        1550,
+        2050,
+        1550,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.A591Hh4mUGY2O6Sy"
+    },
+    {
+      "_id": "HkaQAsKjdUrBWVnl",
+      "c": [
+        1900,
+        100,
+        1900,
+        350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.HkaQAsKjdUrBWVnl"
+    },
+    {
+      "_id": "WdQnZ1ptOBR6GjUm",
+      "c": [
+        1900,
+        2050,
+        1900,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.WdQnZ1ptOBR6GjUm"
+    },
+    {
+      "_id": "jARyjdnt73oNmTct",
+      "c": [
+        150,
+        2050,
+        1660,
+        2050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.jARyjdnt73oNmTct"
+    },
+    {
+      "_id": "bW3ZMQOzsDrs2RIl",
+      "c": [
+        1760,
+        2050,
+        1900,
+        2050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.bW3ZMQOzsDrs2RIl"
+    },
+    {
+      "_id": "d2gwFDaEI6GIG2nn",
+      "c": [
+        2300,
+        100,
+        2300,
+        350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.d2gwFDaEI6GIG2nn"
+    },
+    {
+      "_id": "GWiF6GP9u00q3khL",
+      "c": [
+        2300,
+        2050,
+        2300,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.GWiF6GP9u00q3khL"
+    },
+    {
+      "_id": "TSJu0RwQ601VmWQl",
+      "c": [
+        1660,
+        350,
+        1760,
+        350
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.TSJu0RwQ601VmWQl"
+    },
+    {
+      "_id": "tdKqqStFMhU7R16f",
+      "c": [
+        1660,
+        2050,
+        1760,
+        2050
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.tdKqqStFMhU7R16f"
+    },
+    {
+      "_id": "eow3McmV0PV2Dmqc",
+      "c": [
+        2300,
+        350,
+        2300,
+        1050
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.eow3McmV0PV2Dmqc"
+    },
+    {
+      "_id": "lAcdDBuZe8652uoE",
+      "c": [
+        2300,
+        1050,
+        2300,
+        1350
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jailHeavy",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.lAcdDBuZe8652uoE"
+    },
+    {
+      "_id": "a5atIfQvRQFxPyAT",
+      "c": [
+        2300,
+        1350,
+        2300,
+        2050
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.a5atIfQvRQFxPyAT"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "iAWYkaMXy5jqJM9s",
+      "name": "Fluorescentes de la cubierta (estribor, proa)",
+      "x": 500,
+      "y": 700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.iAWYkaMXy5jqJM9s"
+    },
+    {
+      "_id": "k7Ghq8OUwcHVdAbX",
+      "name": "Fluorescentes de la cubierta (estribor)",
+      "x": 1250,
+      "y": 700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.k7Ghq8OUwcHVdAbX"
+    },
+    {
+      "_id": "2TZS66OfvPCpABKY",
+      "name": "Fluorescentes de la cubierta (babor, proa)",
+      "x": 500,
+      "y": 1700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.2TZS66OfvPCpABKY"
+    },
+    {
+      "_id": "wnZj1xjkpMcbBuWw",
+      "name": "Fluorescente que falla (babor)",
+      "x": 1250,
+      "y": 1700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.wnZj1xjkpMcbBuWw"
+    },
+    {
+      "_id": "v3RwwLPFCnWZ0pab",
+      "name": "Fluorescentes de la cubierta (centro)",
+      "x": 1750,
+      "y": 1200,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.v3RwwLPFCnWZ0pab"
+    },
+    {
+      "_id": "bsJXyAIW1aj3BmSQ",
+      "name": "Foco de la popa abierta",
+      "x": 2200,
+      "y": 1200,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.bsJXyAIW1aj3BmSQ"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "iKsUsK3yObOwDEEa",
+      "name": "Llegada por la rampa de vehículos",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1950,
+          "y": 1050,
+          "width": 200,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "llegada-rampa-vehiculos",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.iKsUsK3yObOwDEEa"
+    },
+    {
+      "_id": "AdmoZb9AU9hqRWjU",
+      "name": "Bajar por la rampa de vehículos a la terminal (sólo amarrado)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2300,
+          "y": 1050,
+          "width": 100,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "oXkztT3DwdUNB55D",
+          "name": "Bajar por la rampa de vehículos a la terminal (sólo amarrado)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YItWymxAL9s6gXRx.Region.HTXzwurHRGKB08qB"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!67ExO7p40rqtAUeC.AdmoZb9AU9hqRWjU.oXkztT3DwdUNB55D"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "a-rampa-vehiculos",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.AdmoZb9AU9hqRWjU"
+    },
+    {
+      "_id": "7YdPLHVoIPzxcuUl",
+      "name": "Subir al salón (estribor)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1600,
+          "y": 115,
+          "width": 260,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "NiIqP28y72kEBnoc",
+          "name": "Subir al salón (estribor)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.nO6PgIBKh3qBWQVV.Region.17st5XyhphjRkWrA"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!67ExO7p40rqtAUeC.7YdPLHVoIPzxcuUl.NiIqP28y72kEBnoc"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "subir-salon-estribor",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.7YdPLHVoIPzxcuUl"
+    },
+    {
+      "_id": "hJrGeYNDI236NuFV",
+      "name": "Llegada por la escalera de estribor",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1660,
+          "y": 355,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "llegada-escalera-estribor",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.hJrGeYNDI236NuFV"
+    },
+    {
+      "_id": "58YTXMkMyC7rAFsd",
+      "name": "Subir al salón (babor)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1600,
+          "y": 2185,
+          "width": 260,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "rqQ8cbalDjen3MS0",
+          "name": "Subir al salón (babor)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.nO6PgIBKh3qBWQVV.Region.EiNdAnbpHUY0Gny3"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!67ExO7p40rqtAUeC.58YTXMkMyC7rAFsd.rqQ8cbalDjen3MS0"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "subir-salon-babor",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.58YTXMkMyC7rAFsd"
+    },
+    {
+      "_id": "NzT2LN43MGkHtDuS",
+      "name": "Llegada por la escalera de babor",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1660,
+          "y": 1945,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "llegada-escalera-babor",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.NzT2LN43MGkHtDuS"
+    },
+    {
+      "_id": "AfQvCAZF8w3l7Yg4",
+      "name": "Saltar al agua por la popa abierta",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2300,
+          "y": 1400,
+          "width": 100,
+          "height": 800,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-coches",
+          "region": "saltar-al-agua",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del agua: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre"
+        }
+      },
+      "_key": "!scenes.regions!67ExO7p40rqtAUeC.AfQvCAZF8w3l7Yg4"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "o1Jtr3FAq2U7KT7W",
+      "entryId": "IDd94316DhSx3ptV",
+      "pageId": null,
+      "x": 985,
+      "y": 1335,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-15",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "ferry-coches",
+          "id": "LUG-15"
+        }
+      },
+      "_key": "!scenes.notes!67ExO7p40rqtAUeC.o1Jtr3FAq2U7KT7W"
+    },
+    {
+      "_id": "k25s29hp4u59udbv",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "tG1m5PTkmBA1pvmc",
+      "x": 1085,
+      "y": 1335,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "ferry-coches",
+          "id": "A4-E03"
+        }
+      },
+      "_key": "!scenes.notes!67ExO7p40rqtAUeC.k25s29hp4u59udbv"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "ferry-coches",
+      "id": "LUG-15",
+      "plano": "ferry-coches",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, la cubierta de coches.</strong> «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. <strong>Krell</strong>, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.</p>\n<p>Recorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa, franja rayada). A los lados, los <strong>casings</strong> (ventilación y máquinas, macizos) con las <strong>escaleras</strong> de estribor y babor que suben al salón (<code>ferry</code>). Los <strong>autos</strong> son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.</p>\n<p><strong>La popa abierta.</strong> La cubierta termina en la <strong>cadena de popa</strong>; el paso del centro se suelta al amarrar y por ahí entra la <strong>rampa de vehículos</strong> de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): auto ×13.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua por la popa abierta.</p>",
+      "moviles": [
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 2,
+          "y": 4.55,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-suv",
+          "x": 7.2,
+          "y": 4.5,
+          "w": 4.8,
+          "h": 2
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 12.6,
+          "y": 4.55,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-furgoneta",
+          "x": 3,
+          "y": 7.7,
+          "w": 5.4,
+          "h": 2.1
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 9.6,
+          "y": 7.8,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 2,
+          "y": 11.05,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 7,
+          "y": 11.05,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-pickup",
+          "x": 12.2,
+          "y": 11,
+          "w": 5.6,
+          "h": 2
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-suv",
+          "x": 4.5,
+          "y": 14.25,
+          "w": 4.8,
+          "h": 2
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 10,
+          "y": 14.3,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-suv",
+          "x": 2,
+          "y": 17.5,
+          "w": 4.8,
+          "h": 2
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 7.5,
+          "y": 17.55,
+          "w": 4.6,
+          "h": 1.9
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-auto-sedan",
+          "x": 12.6,
+          "y": 17.55,
+          "w": 4.6,
+          "h": 1.9
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

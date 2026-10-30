@@ -1,0 +1,1284 @@
+{
+  "_id": "m5dDyWpyeFid5p6p",
+  "_key": "!scenes!m5dDyWpyeFid5p6p",
+  "name": "El hangar de Harbor Island",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 12,
+  "width": 2400,
+  "height": 2300,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.8,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "CxiUd3A3NSuvZF7A",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/hangar.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!m5dDyWpyeFid5p6p.CxiUd3A3NSuvZF7A"
+    }
+  ],
+  "journal": "104UV0anmZHNCTrD",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "IH5sAKslY1dGhvKY",
+      "c": [
+        300,
+        300,
+        1450,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.IH5sAKslY1dGhvKY"
+    },
+    {
+      "_id": "UKUvfP4mxGTww5Be",
+      "c": [
+        1540,
+        300,
+        1600,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.UKUvfP4mxGTww5Be"
+    },
+    {
+      "_id": "UlgVq4ApsxWKNe6A",
+      "c": [
+        2000,
+        300,
+        2200,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.UlgVq4ApsxWKNe6A"
+    },
+    {
+      "_id": "8ylj7kEo9xjJSScQ",
+      "c": [
+        300,
+        1900,
+        900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.8ylj7kEo9xjJSScQ"
+    },
+    {
+      "_id": "nd87zhYiRSy550N2",
+      "c": [
+        990,
+        1900,
+        1600,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.nd87zhYiRSy550N2"
+    },
+    {
+      "_id": "VIlUnFQcx3ZiuX9c",
+      "c": [
+        2100,
+        1900,
+        2200,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.VIlUnFQcx3ZiuX9c"
+    },
+    {
+      "_id": "Zv3ikqlHjOZgeyLJ",
+      "c": [
+        300,
+        300,
+        300,
+        1790
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.Zv3ikqlHjOZgeyLJ"
+    },
+    {
+      "_id": "k8DBMKFVjFDoW26B",
+      "c": [
+        300,
+        1880,
+        300,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.k8DBMKFVjFDoW26B"
+    },
+    {
+      "_id": "VHVUq9bXDaYrnPtl",
+      "c": [
+        1400,
+        300,
+        1400,
+        850
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.VHVUq9bXDaYrnPtl"
+    },
+    {
+      "_id": "j2OMr0Ty42fxx8kk",
+      "c": [
+        1400,
+        940,
+        1400,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.j2OMr0Ty42fxx8kk"
+    },
+    {
+      "_id": "UKK3WyGu0EjEdIKK",
+      "c": [
+        300,
+        700,
+        700,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.UKK3WyGu0EjEdIKK"
+    },
+    {
+      "_id": "BTI1gbqnovup4JME",
+      "c": [
+        700,
+        300,
+        700,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.BTI1gbqnovup4JME"
+    },
+    {
+      "_id": "EV3PpfExu8ehX8iq",
+      "c": [
+        700,
+        610,
+        700,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.EV3PpfExu8ehX8iq"
+    },
+    {
+      "_id": "TbwZMUx9ku3BNe0k",
+      "c": [
+        700,
+        1040,
+        700,
+        1295
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.TbwZMUx9ku3BNe0k"
+    },
+    {
+      "_id": "I7PY87FoDSzaHohH",
+      "c": [
+        700,
+        1375,
+        700,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.I7PY87FoDSzaHohH"
+    },
+    {
+      "_id": "b9e41Xk8XNsofSVA",
+      "c": [
+        300,
+        1150,
+        700,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.b9e41Xk8XNsofSVA"
+    },
+    {
+      "_id": "JIpkqG37wKFRuzv0",
+      "c": [
+        300,
+        1400,
+        700,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.JIpkqG37wKFRuzv0"
+    },
+    {
+      "_id": "TNgRl3r1AD80woAE",
+      "c": [
+        1400,
+        1100,
+        1650,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.TNgRl3r1AD80woAE"
+    },
+    {
+      "_id": "fkISPLWlf2bFNOiD",
+      "c": [
+        1950,
+        1100,
+        2200,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.fkISPLWlf2bFNOiD"
+    },
+    {
+      "_id": "EDY2jvWXNZShUhl5",
+      "c": [
+        2200,
+        300,
+        2200,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.EDY2jvWXNZShUhl5"
+    },
+    {
+      "_id": "5JtpP7VbXwD2aMbg",
+      "c": [
+        1600,
+        300,
+        2000,
+        300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.5JtpP7VbXwD2aMbg"
+    },
+    {
+      "_id": "vX2xu2hWCjdMwgym",
+      "c": [
+        1450,
+        300,
+        1540,
+        300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.vX2xu2hWCjdMwgym"
+    },
+    {
+      "_id": "pTXYGWgXYSkrPzko",
+      "c": [
+        1400,
+        850,
+        1400,
+        940
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.pTXYGWgXYSkrPzko"
+    },
+    {
+      "_id": "lAjsjIFLeNAsKiLJ",
+      "c": [
+        1650,
+        1100,
+        1950,
+        1100
+      ],
+      "door": 1,
+      "ds": 1,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.lAjsjIFLeNAsKiLJ"
+    },
+    {
+      "_id": "mrAbufKFmhyUcU0H",
+      "c": [
+        1600,
+        1900,
+        2100,
+        1900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.mrAbufKFmhyUcU0H"
+    },
+    {
+      "_id": "u7xzyM9fLIByociR",
+      "c": [
+        900,
+        1900,
+        990,
+        1900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.u7xzyM9fLIByociR"
+    },
+    {
+      "_id": "U5nhakUQI4yaZSTi",
+      "c": [
+        300,
+        1790,
+        300,
+        1880
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.U5nhakUQI4yaZSTi"
+    },
+    {
+      "_id": "hgKxY7DT587xdhsJ",
+      "c": [
+        700,
+        520,
+        700,
+        610
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.hgKxY7DT587xdhsJ"
+    },
+    {
+      "_id": "sshNBqWYb4w5qwLf",
+      "c": [
+        700,
+        950,
+        700,
+        1040
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.sshNBqWYb4w5qwLf"
+    },
+    {
+      "_id": "ZUGepTrQkrYz10i8",
+      "c": [
+        700,
+        1295,
+        700,
+        1375
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.ZUGepTrQkrYz10i8"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "ZlCR3Ow54FormclS",
+      "name": "Luz de obra colgada (arsenal)",
+      "x": 1050,
+      "y": 550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.ZlCR3Ow54FormclS"
+    },
+    {
+      "_id": "yOSRwWSc0TzYp5zR",
+      "name": "Luz de obra colgada (mesa)",
+      "x": 1050,
+      "y": 1250,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.yOSRwWSc0TzYp5zR"
+    },
+    {
+      "_id": "Yx7xak9WzhoubmrG",
+      "name": "Luz de obra colgada (nave este)",
+      "x": 1800,
+      "y": 1550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.Yx7xak9WzhoubmrG"
+    },
+    {
+      "_id": "Z1sodbWOwxecJyF9",
+      "name": "Bombita del muelle cubierto",
+      "x": 1500,
+      "y": 700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.Z1sodbWOwxecJyF9"
+    },
+    {
+      "_id": "bxQK7G0HksS9haFo",
+      "name": "Bombita del cuarto blindado",
+      "x": 500,
+      "y": 500,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.bxQK7G0HksS9haFo"
+    },
+    {
+      "_id": "WuxPUUatQHdT3uCB",
+      "name": "Lámpara de Bear",
+      "x": 520,
+      "y": 920,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.WuxPUUatQHdT3uCB"
+    },
+    {
+      "_id": "DcDahtDrjekilj2z",
+      "name": "Tubo del aseo",
+      "x": 500,
+      "y": 1280,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.DcDahtDrjekilj2z"
+    },
+    {
+      "_id": "LHH2I3xsF0vgV8WL",
+      "name": "Bombita del rincón del café",
+      "x": 500,
+      "y": 1630,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.LHH2I3xsF0vgV8WL"
+    },
+    {
+      "_id": "B9M3PixqhGPaRKUH",
+      "name": "Aplique de sodio del muelle trasero",
+      "x": 800,
+      "y": 285,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.B9M3PixqhGPaRKUH"
+    },
+    {
+      "_id": "ei6d2TFDxE1tQvZV",
+      "name": "Torre de luz del patio de contenedores",
+      "x": 1250,
+      "y": 2250,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.ei6d2TFDxE1tQvZV"
+    },
+    {
+      "_id": "29c0B9oohswkJ9er",
+      "name": "Reflector de luz solar de la furgoneta de FIRSTLIGHT (A4-E02: entra por debajo de la persiana), APAGADO",
+      "x": 1850,
+      "y": 2000,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": true,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.29c0B9oohswkJ9er"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "CqMkrJNFpAWE7fVe",
+      "name": "Bajar al túnel de carga (sale junto a la Terminal 46)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 810,
+          "y": 1570,
+          "width": 130,
+          "height": 130,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "tunel-carga",
+          "estado": "pendiente",
+          "pendiente": "el túnel de carga sale a 200 m, junto a la Terminal 46 (A4-E02): no hay mapa del túnel ni de la salida; el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.CqMkrJNFpAWE7fVe"
+    },
+    {
+      "_id": "fXYZh6GWdK8g1xYN",
+      "name": "Salir en lancha a Elliott Bay",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1600,
+          "y": 0,
+          "width": 400,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "lancha-bahia",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la bahía; en A4-E02 el dron ve la lancha"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.fXYZh6GWdK8g1xYN"
+    },
+    {
+      "_id": "KkzA4kkF0l13c5yM",
+      "name": "El muelle trasero sigue hacia el oeste",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 120,
+          "width": 100,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "muelle-oeste",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del muelle: por acá llegan los dos operadores del muelle (A4-E02)"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.KkzA4kkF0l13c5yM"
+    },
+    {
+      "_id": "zDsRu51Fj1uOMhJ7",
+      "name": "Salir al patio de contenedores de Harbor Island",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 800,
+          "y": 2200,
+          "width": 800,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "patio-contenedores",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del patio de contenedores (la Terminal 46 de A1-E02 es exterior por texto)"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.zDsRu51Fj1uOMhJ7"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "K1RHEb327snJF7tj",
+      "entryId": "104UV0anmZHNCTrD",
+      "pageId": null,
+      "x": 810,
+      "y": 960,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "LUG-01"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.K1RHEb327snJF7tj"
+    },
+    {
+      "_id": "KS5WP9fGT4QIlb7H",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "ogKpm1VYgcVGCw1T",
+      "x": 810,
+      "y": 1060,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "A4-E02"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.KS5WP9fGT4QIlb7H"
+    },
+    {
+      "_id": "iSYI3GfLNdnOV1ze",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "T8gJWjZpOnL4OisP",
+      "x": 810,
+      "y": 1160,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "A1-E01"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.iSYI3GfLNdnOV1ze"
+    },
+    {
+      "_id": "N5GlSmYFbV6d5SHE",
+      "entryId": "asQ9jeLO1qmdEJrG",
+      "pageId": null,
+      "x": 810,
+      "y": 1260,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "AVE-01-EPI",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "AVE-01-EPI"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.N5GlSmYFbV6d5SHE"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "hangar",
+      "id": "LUG-01",
+      "plano": "hangar",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.asQ9jeLO1qmdEJrG]{Epílogo · Lo que el agua no se lleva}</p>\n<p><strong>Qué es.</strong> El refugio de David (Refugio 3, con Acceso marítimo y Arsenal) y la base de la coterie. Por fuera, un hangar de chapa ondulada entre contenedores apilados, con el logo descolorido de una logística que ya no existe. Por dentro huele a aceite de armas, sal y café recalentado; las luces son de obra, colgadas de cables (luces «lampara»). Dentro del hangar no se discute de clanes ni de sires (COT-00).</p>\n<p><strong>Nave principal.</strong> Contra el muro norte, el arsenal: el armero de fusiles (cuatro AR/M4, uno con rayas de pintura blanca; el fusil de cerrojo arriba; la escopeta de corredera), el panel de armas blancas (machetes, cuchillos largos, dos espadas, la katana con saya, tres bates) y, en la esquina, las estanterías de <strong>cajas de munición ordenadas por calibre</strong>. En el muro oeste, el panel de pistolas y revólveres con los cargadores al lado (la de cinta roja en la empuñadura, el revólver con el cilindro marcado). En el medio, el <strong>banco de trabajo de Bear</strong>: ahí limpia la pistola en A4-E02 y en la Coda 3. La mesa plegable de operaciones y las sillas son móviles.</p>\n<p><strong>La trampilla del túnel de carga.</strong> En el piso de la nave, al sudoeste, <strong>debajo de un palé de cajas</strong> (tile): una trampilla de acero de un túnel de carga antiguo que sale a <strong>200 m, junto a la Terminal 46</strong>. Bear lo conoce. Escapar por ahí en A4-E02: Destreza + Sigilo Dif 3 para todo el grupo. La región «Bajar al túnel» no tiene destino: no hay mapa del túnel.</p>\n<p><strong>Cuarto blindado.</strong> Sin ventanas, puerta de acero. Ahí duerme David (el catre militar es móvil). Es el sitio más seguro contra la luz UV de la redada.</p>\n<p><strong>Habitación de Bear.</strong> Cama, taquilla, una mesita y la <strong>caja fuerte</strong> (DOC-12: la nota doblada en cuatro, debajo de una pistola). En la Coda 3 Bear la sacó y la tiene sobre el banco de trabajo.</p>\n<p><strong>Rincón del café.</strong> Mesada con pileta y la cafetera; en la <strong>lata de café</strong>, la llave del camión (DOC-12). El catre de ese rincón es el de las noches de Bear «mirando al techo del hangar». La silla plegable es la de David.</p>\n<p><strong>Muelle cubierto.</strong> La dársena se mete en el edificio desde la bahía; la cierra una persiana de chapa sobre el agua. Pasarelas de madera a los dos lados y al fondo. <strong>La lancha</strong> (tile) es la otra vía de escape de A4-E02, pero el dron con cámara térmica la ve: escapan, el Termómetro no baja. La región «Salir en lancha» queda sin destino (no hay mapa de la bahía).</p>\n<p><strong>La redada (A4-E02, 21:40).</strong> Las luces de obra parpadean y se apagan (apagalas a mano); el dron zumba sobre el techo de chapa. «Seis. Dos por el muelle, cuatro por la puerta»: dos operadores llegan por el <strong>muelle trasero</strong> (puerta del muelle y persiana de la dársena) y cuatro por el <strong>patio</strong> (la puerta grande y la puerta de servicio del sur); la furgoneta con el generador de luz solar artificial se para frente a la puerta grande y la luz blanca entra por debajo. Okafor dirige desde un coche a una manzana (fuera del mapa). Destruir pruebas (el arsenal, los teléfonos, la USB, los papeles de Helen): Destreza + Artesanía o Inteligencia + Tecnología Dif 2, un turno cada una. Ratas del hangar: Animalismo.</p>\n<p><strong>A1-E01 en el hangar.</strong> Si la coterie trae a Helen enseguida, ella ve por primera vez el arsenal de Bear y el catre de David (GAN-02).</p>\n<p><strong>Accesos.</strong> Puerta grande (persiana de 5 m) y puerta de servicio al sur, puerta lateral al callejón de contenedores al oeste, puerta del muelle al norte y la persiana de la dársena sobre el agua.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×6, mesa, palet ×5, catre ×2, auto, vehiculo.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al túnel de carga (sale junto a la Terminal 46) · Salir en lancha a Elliott Bay · El muelle trasero sigue hacia el oeste · Salir al patio de contenedores de Harbor Island.</p>",
+      "moviles": [
+        {
+          "tipo": "silla",
+          "tile": "tile-taburete",
+          "x": 9.9,
+          "y": 8.4,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-plegable",
+          "x": 8.5,
+          "y": 11.2,
+          "w": 2.2,
+          "h": 1
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-plegable",
+          "x": 8.75,
+          "y": 10.6,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-plegable",
+          "x": 9.85,
+          "y": 10.6,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-plegable",
+          "x": 8.75,
+          "y": 12.3,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-plegable",
+          "x": 9.85,
+          "y": 12.3,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-palet-cajas",
+          "x": 7.9,
+          "y": 15.5,
+          "w": 1.7,
+          "h": 1.7
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-cajas-municion",
+          "x": 11.8,
+          "y": 14.5,
+          "w": 1.2,
+          "h": 1
+        },
+        {
+          "tipo": "catre",
+          "tile": "tile-catre",
+          "x": 3.2,
+          "y": 3.25,
+          "w": 0.75,
+          "h": 1.95
+        },
+        {
+          "tipo": "catre",
+          "tile": "tile-catre",
+          "x": 4.5,
+          "y": 18.1,
+          "w": 2,
+          "h": 0.75
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-plegable",
+          "x": 5.2,
+          "y": 15.5,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "auto",
+          "tile": "tile-camioneta",
+          "x": 15,
+          "y": 12.9,
+          "w": 2.1,
+          "h": 5.3
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-palet-cajas",
+          "x": 19.4,
+          "y": 12.2,
+          "w": 1.2,
+          "h": 1.2
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-palet-cajas",
+          "x": 19.4,
+          "y": 13.6,
+          "w": 1.2,
+          "h": 1.2
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-bidones",
+          "x": 12.4,
+          "y": 17.2,
+          "w": 1.2,
+          "h": 1.2
+        },
+        {
+          "tipo": "vehiculo",
+          "tile": "tile-lancha",
+          "x": 17,
+          "y": 3.8,
+          "w": 2,
+          "h": 5.4
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

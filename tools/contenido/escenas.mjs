@@ -370,7 +370,9 @@ function portada(ctx) {
   const PINES = [
     { clave: "COMO-USAR", icono: "icons/svg/book.svg" },
     { clave: "AVE-01", icono: "icons/svg/city.svg" },
-    { clave: "PANTALLA", icono: "icons/svg/eye.svg" }
+    { clave: "PANTALLA", icono: "icons/svg/eye.svg" },
+    // Dark Pack: el aviso legal también desde la portada.
+    { clave: "AVISO-LEGAL", icono: "icons/svg/padlock.svg" }
   ].filter(p => {
     const ok = idsDeUuid(ctx.reg.get(p.clave)?.uuid);
     if (!ok) ctx.avisos.push(`portada: «${p.clave}» no está en el registro; sin pin`);

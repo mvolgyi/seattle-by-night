@@ -1,0 +1,122 @@
+{
+  "_comentario": "LUG-06, la Torre Halloway, Downtown. Dos planos en este archivo, uno por nivel (una planta por mapa, MAPS_SPEC §4): el ático del piso 42 (torre-atico) y la bóveda del nivel −3 (torre-boveda), unidos por el ascensor privado con regiones gemelas: la mitad del fondo de la cabina lleva al otro nivel y la mitad de la puerta recibe. Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba; Elliott Bay al oeste (izquierda). El ático: la sala del Consejo ocupa todo el lado oeste, con la pared oeste entera de vidrio; al este, el despacho de Halloway (noreste, con vidrio al norte y al este), la cabina del ascensor privado (que se abre directamente a la sala), el vestíbulo de seguridad y la escalera de emergencia. La franja de 1 m alrededor es el vacío de 42 pisos (macizo, se sella al pintar).",
+  "planos": [
+    {
+      "id": "torre-atico",
+      "lugar": "LUG-06",
+      "escenas": ["A4-E01"],
+      "nombre": "Parte 4 · Torre Halloway, el ático (piso 42)",
+      "orden": 60,
+      "ancho": 21,
+      "alto": 13,
+      "paleta": "oficina",
+      "fondo": "vacio",
+      "sujeto": "the forty-second-floor penthouse of an office tower in downtown Seattle",
+      "oscuridad": 0.7,
+      "exterior": "the empty night air forty-two floors above downtown Seattle: a flat, featureless, near-black surround with no ground, roofs or structures visible",
+      "nota": "**Consejo de Primogenitura (A4-E01, Noche 8, 22:30).** «El ascensor privado sube cuarenta y dos pisos sin hacer ruido. Se abre a una sala enorme con una sola pared de cristal sobre Elliott Bay»: la cabina se abre directamente a la **sala del Consejo**, por su pared este. La pared oeste es entera de vidrio (la bahía, las grúas, los ferris, la isla del Sabueso: fuera del mapa). «En el centro hay una mesa larga de madera oscura con siete sillas»: la mesa corre de este a oeste, con la **cabecera contra la pared de cristal**; Halloway, de pie en la cabecera, de espaldas a la bahía y de cara al ascensor por el que entra el Príncipe. Seis sillas a los lados (Whitmore, Marchetti, Voight, Thornquist, Fry y el Sheriff). Delante de cada silla, una carpeta cerrada con un nombre (tiles sin texto; el contenido es AYU-08). Celeste (o su sustituto) y el señor Pell, de pie detrás de Halloway, entre la cabecera y el vidrio. La coterie, de pie. Los muebles de la sala «parecen no haber sido usados nunca».\n\n**El vestíbulo.** Detrás de la doble puerta del este esperan la seguridad ghoul (MEN-04, del piso 40) y los perros de Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».\n\n**El despacho de Halloway**, en la esquina noreste, con vidrio al norte y al este. Para **negociar con Halloway antes del Consejo**, en privado.\n\n**Salir (Escapar).** O por el **ascensor privado**, que necesita la llave de Halloway o la de Pell (la puerta de la cabina está cerrada: la abre la llave), o por la **escalera de emergencia** del vestíbulo: cuarenta y dos pisos (Resistencia + Atletismo Dif 3 para no llegar abajo con el Hambre a 5); la región del pie del tramo marca la bajada, sin mapa del resto de la escalera.\n\n**El ascensor privado** va de la calle al ático y del ático a la bóveda del nivel −3, y es el único acceso a la bóveda. En la cabina, la mitad de la puerta recibe y la mitad del fondo baja a la bóveda (plano «torre-boveda»). La parada de la calle no tiene mapa: el Narrador mueve los tokens a mano.\n\n**Si Halloway huye** (exposición total o derrota): «Y se va hacia el ascensor», baja al nivel −3, saca el maletín de la bóveda y se lo da a Pell. **Si gana**, a las 00:30 sale Pell con el maletín por el mismo ascensor.\n\n**Combate:** atacar a Halloway aquí, delante de la Primogenitura, da la votación por ganada a su favor. Halloway no pelea: Mirada aterradora y al ascensor.",
+      "habitaciones": [
+        { "nombre": "Sala del Consejo", "x": 1, "y": 1, "w": 12, "h": 11, "piso": "parquet", "limpio": true },
+        { "nombre": "Despacho de Halloway", "x": 13, "y": 1, "w": 7, "h": 4, "piso": "parquet", "limpio": true },
+        { "nombre": "Ascensor privado (cabina)", "x": 13, "y": 5, "w": 2, "h": 2, "piso": "ascensor", "limpio": true },
+        { "nombre": "Núcleo de la torre (cerrado)", "x": 15, "y": 5, "w": 5, "h": 2, "piso": "macizo" },
+        { "nombre": "Vestíbulo de seguridad", "x": 13, "y": 7, "w": 4, "h": 5, "piso": "marmol", "limpio": true },
+        { "nombre": "Escalera de emergencia", "x": 17, "y": 7, "w": 3, "h": 5, "piso": "hormigon" }
+      ],
+      "vanos": [
+        { "x": 1, "y": 1, "w": 11, "eje": "v", "tipo": "vidrio", "nombre": "La pared oeste: cristal sobre Elliott Bay" },
+        { "x": 13, "y": 1, "w": 7, "eje": "h", "tipo": "vidrio", "nombre": "Ventanal norte del despacho" },
+        { "x": 20, "y": 1, "w": 4, "eje": "v", "tipo": "vidrio", "nombre": "Ventanal este del despacho" },
+        { "x": 13, "y": 1.8, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "woodHeavy", "nombre": "Puerta del despacho de Halloway" },
+        { "x": 13, "y": 5.4, "w": 1.2, "eje": "v", "tipo": "puerta", "estado": "cerrada", "sonido": "slidingMetal", "nombre": "Puerta del ascensor privado (llave de Halloway o de Pell)" },
+        { "x": 13, "y": 8.5, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "woodHeavy", "nombre": "Doble puerta del vestíbulo (hoja norte)" },
+        { "x": 13, "y": 9.5, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "woodHeavy", "nombre": "Doble puerta del vestíbulo (hoja sur)" },
+        { "x": 17, "y": 7.6, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "metal", "nombre": "Puerta cortafuegos de la escalera de emergencia" }
+      ],
+      "muebles": [
+        { "tipo": "mesa", "fijo": true, "x": 3.6, "y": 5.8, "w": 6, "h": 1.4, "desc": "a long dark hardwood council table, polished and bare" },
+        { "tipo": "silla", "x": 2.75, "y": 6.2, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "e", "desc": "la cabecera (Halloway, de pie)" },
+        { "tipo": "silla", "x": 4.6, "y": 5.05, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "s" },
+        { "tipo": "silla", "x": 6.4, "y": 5.05, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "s" },
+        { "tipo": "silla", "x": 8.2, "y": 5.05, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "s" },
+        { "tipo": "silla", "x": 4.6, "y": 7.35, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "n" },
+        { "tipo": "silla", "x": 6.4, "y": 7.35, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "n" },
+        { "tipo": "silla", "x": 8.2, "y": 7.35, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "n" },
+        { "tipo": "carpeta", "fijo": false, "x": 3.7, "y": 6.38, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada", "desc": "carpeta cerrada (cabecera)" },
+        { "tipo": "carpeta", "fijo": false, "x": 4.75, "y": 5.9, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada" },
+        { "tipo": "carpeta", "fijo": false, "x": 6.55, "y": 5.9, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada" },
+        { "tipo": "carpeta", "fijo": false, "x": 8.35, "y": 5.9, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada" },
+        { "tipo": "carpeta", "fijo": false, "x": 4.75, "y": 6.86, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada" },
+        { "tipo": "carpeta", "fijo": false, "x": 6.55, "y": 6.86, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada" },
+        { "tipo": "carpeta", "fijo": false, "x": 8.35, "y": 6.86, "w": 0.3, "h": 0.24, "tile": "tile-carpeta-cerrada", "desc": "la de «C. Arden», entre ellas" },
+        { "tipo": "estante", "x": 5, "y": 1.15, "w": 4, "h": 0.45, "desc": "a long low dark credenza, empty on top" },
+        { "tipo": "sofa", "x": 9.4, "y": 10.85, "w": 2.2, "h": 0.9, "tile": "tile-sofa-cuero", "hacia": "n" },
+        { "tipo": "silla", "x": 8.4, "y": 9.6, "w": 0.75, "h": 0.75, "tile": "tile-sillon", "hacia": "e" },
+        { "tipo": "silla", "x": 11.9, "y": 9.6, "w": 0.75, "h": 0.75, "tile": "tile-sillon", "hacia": "o" },
+        { "tipo": "mesa", "x": 9.8, "y": 9.65, "w": 1.4, "h": 0.7, "tile": "tile-mesa-baja" },
+        { "tipo": "escritorio", "x": 17.9, "y": 1.9, "w": 0.85, "h": 1.9, "frente": "e", "monitor": false, "desc": "a large dark executive desk with a leather blotter and nothing else on it" },
+        { "tipo": "silla", "x": 18.9, "y": 2.55, "w": 0.65, "h": 0.65, "tile": "tile-silla-despacho", "hacia": "o" },
+        { "tipo": "silla", "x": 16.6, "y": 2, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "e" },
+        { "tipo": "silla", "x": 16.6, "y": 3, "w": 0.6, "h": 0.6, "tile": "tile-silla-consejo", "hacia": "e" },
+        { "tipo": "estante", "x": 13.6, "y": 4.5, "w": 3.6, "h": 0.4, "desc": "a low bookcase of leather-bound ledgers" },
+        { "tipo": "banco", "x": 15.4, "y": 11.4, "w": 1.4, "h": 0.45, "desc": "a low leather bench against the wall", "material": "tapizado" },
+        { "tipo": "escalera", "x": 18.6, "y": 7.3, "w": 1.2, "h": 4.4, "hacia": "s", "desc": "a concrete emergency stair going down" }
+      ],
+      "luces": [
+        { "x": 5.2, "y": 6.5, "preset": "lampara", "nombre": "Colgante sobre la mesa (oeste)" },
+        { "x": 8.2, "y": 6.5, "preset": "lampara", "nombre": "Colgante sobre la mesa (este)" },
+        { "x": 18.3, "y": 1.7, "preset": "lampara-tenue", "nombre": "Lámpara del escritorio de Halloway" },
+        { "x": 14, "y": 6, "preset": "pasillo", "nombre": "Luz de la cabina del ascensor" },
+        { "x": 15, "y": 9.5, "preset": "pasillo", "nombre": "Plafón del vestíbulo" },
+        { "x": 17.8, "y": 10.5, "preset": "fluorescente", "nombre": "Fluorescente de la escalera de emergencia" }
+      ],
+      "regiones": [
+        { "id": "ascensor-llegada", "nombre": "Ascensor privado (llega al ático)", "x": 13, "y": 5, "w": 1, "h": 2, "llegada": true },
+        { "id": "ascensor-a-la-boveda", "nombre": "Ascensor privado: bajar a la bóveda (nivel −3)", "x": 14, "y": 5, "w": 1, "h": 2, "destino": "torre-boveda:ascensor-llegada" },
+        { "id": "escalera-llegada", "nombre": "Llegada por la escalera de emergencia", "x": 18.6, "y": 7.3, "w": 1.2, "h": 1, "llegada": true },
+        { "id": "escalera-bajar", "nombre": "Bajar 42 pisos por la escalera de emergencia", "x": 18.6, "y": 10.7, "w": 1.2, "h": 1, "destino": null, "pendiente": "no hay mapa de la calle ni del piso 40: Resistencia + Atletismo Dif 3 y el Narrador mueve los tokens" }
+      ]
+    },
+    {
+      "id": "torre-boveda",
+      "lugar": "LUG-06",
+      "escenas": ["A4-E01"],
+      "nombre": "Parte 4 · Torre Halloway, la bóveda (nivel −3)",
+      "orden": 61,
+      "ancho": 11,
+      "alto": 8,
+      "paleta": "subterraneo",
+      "fondo": "roca",
+      "sujeto": "a deep underground vault beneath an office tower in downtown Seattle",
+      "oscuridad": 0.9,
+      "exterior": "solid bedrock and poured concrete around a deep underground vault, a flat featureless dark mass",
+      "nota": "**La bóveda del nivel −3**, «accesible solo con el ascensor privado» (LUG-06). La cabina se abre a una antecámara de hormigón con una sola puerta de acero, cerrada con combinación (la sabe el señor Pell; con 3 o más éxitos en el ferry, A4-E03, la entrega junto con la llave del ascensor). En la cabina, la mitad de la puerta recibe y la del fondo sube al ático (plano «torre-atico»).\n\n**Qué guarda** (LUG-06): el **original de los diarios de Vance** (comprados en 1986), la **copia 1 de 3** mecanografiada por Pell y, desde la Noche 6, el **disco original del Expediente** (y la USB 3 si Lonnie murió esa noche). Los diarios y la copia, en las estanterías; el disco, en la caja fuerte. La noche del Consejo, el **maletín de aluminio** espera sobre la mesa de acero.\n\n**A4-E01 → A4-E03.** Si Halloway huye, «baja en el ascensor privado hasta el nivel −3, saca el maletín de la bóveda y se lo da a Pell». Una infiltración antes del clímax también termina aquí, si la coterie la planea.",
+      "habitaciones": [
+        { "nombre": "Ascensor privado (cabina)", "x": 1, "y": 3, "w": 2, "h": 2, "piso": "ascensor", "limpio": true },
+        { "nombre": "Antecámara", "x": 3, "y": 2, "w": 2.5, "h": 4, "piso": "hormigon", "limpio": true },
+        { "nombre": "Bóveda", "x": 5.5, "y": 1, "w": 4.5, "h": 6, "piso": "hormigon", "limpio": true }
+      ],
+      "vanos": [
+        { "x": 3, "y": 3.4, "w": 1.2, "eje": "v", "tipo": "puerta", "estado": "cerrada", "sonido": "slidingMetal", "nombre": "Puerta del ascensor privado" },
+        { "x": 5.5, "y": 3.5, "w": 1, "eje": "v", "tipo": "puerta", "estado": "trabada", "sonido": "industrial", "nombre": "La única puerta de acero de la bóveda (combinación: la sabe Pell)" }
+      ],
+      "muebles": [
+        { "tipo": "lector", "x": 5.3, "y": 4.65, "w": 0.14, "h": 0.2, "desc": "a small black combination keypad beside the steel door" },
+        { "tipo": "estante", "x": 6, "y": 1.15, "w": 3.6, "h": 0.5, "desc": "grey steel archive shelving with document boxes and old bound journals" },
+        { "tipo": "estante", "x": 6, "y": 6.35, "w": 3.6, "h": 0.5, "desc": "grey steel archive shelving with document boxes and typed manuscripts in binders" },
+        { "tipo": "caja-fuerte", "fijo": true, "x": 9.25, "y": 3.4, "w": 0.6, "h": 1.2, "desc": "a large steel safe set into the concrete wall" },
+        { "tipo": "mesa", "fijo": true, "x": 6.7, "y": 3.6, "w": 1.4, "h": 0.8, "desc": "a bare brushed-steel table" },
+        { "tipo": "maletin", "fijo": false, "x": 7.1, "y": 3.82, "w": 0.5, "h": 0.36, "tile": "tile-maletin-aluminio", "desc": "el maletín de aluminio (la noche del Consejo)" }
+      ],
+      "luces": [
+        { "x": 7.75, "y": 4, "preset": "fluorescente", "nombre": "Fluorescente de la bóveda" },
+        { "x": 4.25, "y": 4, "preset": "pasillo", "nombre": "Plafón de la antecámara" },
+        { "x": 2, "y": 4, "preset": "pasillo", "nombre": "Luz de la cabina del ascensor" }
+      ],
+      "regiones": [
+        { "id": "ascensor-llegada", "nombre": "Ascensor privado (llega a la bóveda)", "x": 2, "y": 3, "w": 1, "h": 2, "llegada": true },
+        { "id": "ascensor-al-atico", "nombre": "Ascensor privado: subir al ático (piso 42)", "x": 1, "y": 3, "w": 1, "h": 2, "destino": "torre-atico:ascensor-llegada" }
+      ]
+    }
+  ]
+}

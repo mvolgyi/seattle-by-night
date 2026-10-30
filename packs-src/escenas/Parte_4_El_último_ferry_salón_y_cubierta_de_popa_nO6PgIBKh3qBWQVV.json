@@ -1,0 +1,1611 @@
+{
+  "_id": "nO6PgIBKh3qBWQVV",
+  "_key": "!scenes!nO6PgIBKh3qBWQVV",
+  "name": "Parte 4 · El último ferry: salón y cubierta de popa",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 151,
+  "width": 2400,
+  "height": 2400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.6,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "U6wpwA49JF5P7hD6",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/ferry.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!nO6PgIBKh3qBWQVV.U6wpwA49JF5P7hD6"
+    }
+  ],
+  "journal": "IDd94316DhSx3ptV",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "m02XNpghFww21olg",
+      "c": [
+        0,
+        100,
+        150,
+        100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.m02XNpghFww21olg"
+    },
+    {
+      "_id": "LkoivHHRcgHj0hBo",
+      "c": [
+        0,
+        2300,
+        150,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.LkoivHHRcgHj0hBo"
+    },
+    {
+      "_id": "ogMaq0GuwX7tBc0V",
+      "c": [
+        0,
+        100,
+        0,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.ogMaq0GuwX7tBc0V"
+    },
+    {
+      "_id": "VHQjfhoMoU7sZT3i",
+      "c": [
+        150,
+        100,
+        150,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.VHQjfhoMoU7sZT3i"
+    },
+    {
+      "_id": "cTRWMfhkSr5ZzM3V",
+      "c": [
+        150,
+        250,
+        195,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.cTRWMfhkSr5ZzM3V"
+    },
+    {
+      "_id": "pKrPSjqgWUcsLZpx",
+      "c": [
+        395,
+        250,
+        425,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.pKrPSjqgWUcsLZpx"
+    },
+    {
+      "_id": "jgjWFxmclnw15ZHt",
+      "c": [
+        625,
+        250,
+        655,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.jgjWFxmclnw15ZHt"
+    },
+    {
+      "_id": "3oa91TzLvP2QxWF8",
+      "c": [
+        855,
+        250,
+        885,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.3oa91TzLvP2QxWF8"
+    },
+    {
+      "_id": "IxtPTP8XAgrSJLfw",
+      "c": [
+        1085,
+        250,
+        1115,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.IxtPTP8XAgrSJLfw"
+    },
+    {
+      "_id": "kgU2Nsewm6GY59WW",
+      "c": [
+        1315,
+        250,
+        1345,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.kgU2Nsewm6GY59WW"
+    },
+    {
+      "_id": "YEZXUGo7cKmPiPDm",
+      "c": [
+        1545,
+        250,
+        1900,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.YEZXUGo7cKmPiPDm"
+    },
+    {
+      "_id": "rmKUQuTuwSElzPPI",
+      "c": [
+        1900,
+        250,
+        1900,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.rmKUQuTuwSElzPPI"
+    },
+    {
+      "_id": "cUcRe4HKX83kN8Kz",
+      "c": [
+        1900,
+        700,
+        1900,
+        740
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.cUcRe4HKX83kN8Kz"
+    },
+    {
+      "_id": "wvpKPhK3ZtKpMgd2",
+      "c": [
+        1900,
+        1090,
+        1900,
+        1125
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.wvpKPhK3ZtKpMgd2"
+    },
+    {
+      "_id": "FDRaEV7AzJIvuNai",
+      "c": [
+        1900,
+        1275,
+        1900,
+        1310
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.FDRaEV7AzJIvuNai"
+    },
+    {
+      "_id": "eefGb9rFIqOA5IdB",
+      "c": [
+        1900,
+        1660,
+        1900,
+        1700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.eefGb9rFIqOA5IdB"
+    },
+    {
+      "_id": "N52jGh6l9LIq5Xv5",
+      "c": [
+        1900,
+        1800,
+        1900,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.N52jGh6l9LIq5Xv5"
+    },
+    {
+      "_id": "f3wzKUWEvfQ2XLdL",
+      "c": [
+        150,
+        2150,
+        195,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.f3wzKUWEvfQ2XLdL"
+    },
+    {
+      "_id": "dVWgtgM6kNVr3fG7",
+      "c": [
+        395,
+        2150,
+        425,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.dVWgtgM6kNVr3fG7"
+    },
+    {
+      "_id": "H5kZM77N2zx8M7BQ",
+      "c": [
+        625,
+        2150,
+        655,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.H5kZM77N2zx8M7BQ"
+    },
+    {
+      "_id": "EfnSwbajUcTVIm1z",
+      "c": [
+        855,
+        2150,
+        885,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.EfnSwbajUcTVIm1z"
+    },
+    {
+      "_id": "uKiBSVPwuBuwUcZS",
+      "c": [
+        1085,
+        2150,
+        1115,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.uKiBSVPwuBuwUcZS"
+    },
+    {
+      "_id": "dNimPXHQ4OCjr6U8",
+      "c": [
+        1315,
+        2150,
+        1345,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.dNimPXHQ4OCjr6U8"
+    },
+    {
+      "_id": "rRlX5qBOgX855TKh",
+      "c": [
+        1545,
+        2150,
+        1900,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.rRlX5qBOgX855TKh"
+    },
+    {
+      "_id": "B8cAcWdXy8x360S9",
+      "c": [
+        1550,
+        250,
+        1550,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.B8cAcWdXy8x360S9"
+    },
+    {
+      "_id": "tpKkFF1yQz4IbjJf",
+      "c": [
+        1550,
+        1900,
+        1550,
+        2150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.tpKkFF1yQz4IbjJf"
+    },
+    {
+      "_id": "o7uvxliCQhV2U9xz",
+      "c": [
+        1550,
+        500,
+        1660,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.o7uvxliCQhV2U9xz"
+    },
+    {
+      "_id": "IPPHP2qRs23NNZI0",
+      "c": [
+        1760,
+        500,
+        1900,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.IPPHP2qRs23NNZI0"
+    },
+    {
+      "_id": "iMgcEViwKxzockla",
+      "c": [
+        1550,
+        1900,
+        1660,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.iMgcEViwKxzockla"
+    },
+    {
+      "_id": "w74oTYmCQNLMI9Fo",
+      "c": [
+        1760,
+        1900,
+        1900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.w74oTYmCQNLMI9Fo"
+    },
+    {
+      "_id": "qlB3DTjsGLjlEMDH",
+      "c": [
+        300,
+        1050,
+        600,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.qlB3DTjsGLjlEMDH"
+    },
+    {
+      "_id": "gjxlCrWskimHgcnK",
+      "c": [
+        300,
+        1350,
+        600,
+        1350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.gjxlCrWskimHgcnK"
+    },
+    {
+      "_id": "MtNodclSLNtThThp",
+      "c": [
+        300,
+        1050,
+        300,
+        1350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.MtNodclSLNtThThp"
+    },
+    {
+      "_id": "eTQ212hel7o8byqM",
+      "c": [
+        600,
+        1050,
+        600,
+        1125
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.eTQ212hel7o8byqM"
+    },
+    {
+      "_id": "zCPjrBk7Xzwb41xv",
+      "c": [
+        600,
+        1275,
+        600,
+        1350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.zCPjrBk7Xzwb41xv"
+    },
+    {
+      "_id": "dCcqhO0qRDdj3c9a",
+      "c": [
+        150,
+        100,
+        2300,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.dCcqhO0qRDdj3c9a"
+    },
+    {
+      "_id": "IkkNBfA4u0m3qIPS",
+      "c": [
+        150,
+        2300,
+        2300,
+        2300
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.IkkNBfA4u0m3qIPS"
+    },
+    {
+      "_id": "rRkcgnpeLWwsGGXa",
+      "c": [
+        2300,
+        100,
+        2300,
+        1075
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.rRkcgnpeLWwsGGXa"
+    },
+    {
+      "_id": "QjBeqXvQ5u8fIsjk",
+      "c": [
+        2300,
+        1075,
+        2300,
+        1325
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.QjBeqXvQ5u8fIsjk"
+    },
+    {
+      "_id": "HNGwXzDTpcfA0XgS",
+      "c": [
+        2300,
+        1325,
+        2300,
+        2300
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.HNGwXzDTpcfA0XgS"
+    },
+    {
+      "_id": "okKXmiHBuiSNEvSG",
+      "c": [
+        195,
+        250,
+        395,
+        250
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.okKXmiHBuiSNEvSG"
+    },
+    {
+      "_id": "LJjebhgjrxAJh2rB",
+      "c": [
+        425,
+        250,
+        625,
+        250
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.LJjebhgjrxAJh2rB"
+    },
+    {
+      "_id": "sYDkuzVhz9Gw01Hv",
+      "c": [
+        655,
+        250,
+        855,
+        250
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.sYDkuzVhz9Gw01Hv"
+    },
+    {
+      "_id": "CkRQQz2JuNL2sdY0",
+      "c": [
+        885,
+        250,
+        1085,
+        250
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.CkRQQz2JuNL2sdY0"
+    },
+    {
+      "_id": "pFVEjwDbG3uVPSAa",
+      "c": [
+        1115,
+        250,
+        1315,
+        250
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.pFVEjwDbG3uVPSAa"
+    },
+    {
+      "_id": "vwww6cN8qbYnzUZX",
+      "c": [
+        1345,
+        250,
+        1545,
+        250
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.vwww6cN8qbYnzUZX"
+    },
+    {
+      "_id": "aI2W9fne5lgSopau",
+      "c": [
+        195,
+        2150,
+        395,
+        2150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.aI2W9fne5lgSopau"
+    },
+    {
+      "_id": "9SapgXmouZ6G18Et",
+      "c": [
+        425,
+        2150,
+        625,
+        2150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.9SapgXmouZ6G18Et"
+    },
+    {
+      "_id": "QG4GOgZXvJEmc7GF",
+      "c": [
+        655,
+        2150,
+        855,
+        2150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.QG4GOgZXvJEmc7GF"
+    },
+    {
+      "_id": "UaZwxbYty6ux9Oav",
+      "c": [
+        885,
+        2150,
+        1085,
+        2150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.UaZwxbYty6ux9Oav"
+    },
+    {
+      "_id": "zzqD4CW64jDWjbAM",
+      "c": [
+        1115,
+        2150,
+        1315,
+        2150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.zzqD4CW64jDWjbAM"
+    },
+    {
+      "_id": "NmYMM77h2QXrptVR",
+      "c": [
+        1345,
+        2150,
+        1545,
+        2150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.NmYMM77h2QXrptVR"
+    },
+    {
+      "_id": "Nu9d6QeNxshKorl3",
+      "c": [
+        1660,
+        500,
+        1760,
+        500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.Nu9d6QeNxshKorl3"
+    },
+    {
+      "_id": "cFF8bfDc8ptvX0zK",
+      "c": [
+        1660,
+        1900,
+        1760,
+        1900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.cFF8bfDc8ptvX0zK"
+    },
+    {
+      "_id": "PbmjVNVBX440KOEv",
+      "c": [
+        1900,
+        600,
+        1900,
+        700
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.PbmjVNVBX440KOEv"
+    },
+    {
+      "_id": "BJf0EZABRijYE3ZZ",
+      "c": [
+        1900,
+        740,
+        1900,
+        1090
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.BJf0EZABRijYE3ZZ"
+    },
+    {
+      "_id": "DiYqVJ5k9XBo3OXT",
+      "c": [
+        1900,
+        1125,
+        1900,
+        1275
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.DiYqVJ5k9XBo3OXT"
+    },
+    {
+      "_id": "6cxTXiQ9SX357uyS",
+      "c": [
+        1900,
+        1310,
+        1900,
+        1660
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.6cxTXiQ9SX357uyS"
+    },
+    {
+      "_id": "9nN744t9za1goht1",
+      "c": [
+        1900,
+        1700,
+        1900,
+        1800
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!nO6PgIBKh3qBWQVV.9nN744t9za1goht1"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "899AFQFJKckkWpC0",
+      "name": "Fluorescentes del salón (estribor, proa)",
+      "x": 500,
+      "y": 500,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.899AFQFJKckkWpC0"
+    },
+    {
+      "_id": "07gzEb3P43VdKuix",
+      "name": "Fluorescentes del salón (estribor)",
+      "x": 1150,
+      "y": 500,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.07gzEb3P43VdKuix"
+    },
+    {
+      "_id": "gb8XPkFVHWFWKOaY",
+      "name": "Fluorescentes del salón (babor, proa)",
+      "x": 500,
+      "y": 1880,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.gb8XPkFVHWFWKOaY"
+    },
+    {
+      "_id": "2t9ITRZmncmPTTpY",
+      "name": "Fluorescentes del salón (babor)",
+      "x": 1150,
+      "y": 1880,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.2t9ITRZmncmPTTpY"
+    },
+    {
+      "_id": "kyzhH8156Df0Zxit",
+      "name": "Fluorescentes del salón (popa)",
+      "x": 1720,
+      "y": 1200,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.kyzhH8156Df0Zxit"
+    },
+    {
+      "_id": "kxdPmSTjz04eXRWu",
+      "name": "Luz de la cafetería",
+      "x": 1050,
+      "y": 1190,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.kxdPmSTjz04eXRWu"
+    },
+    {
+      "_id": "oTnVyOJFh6ghvqcS",
+      "name": "Foco de la cubierta de popa (norte)",
+      "x": 1940,
+      "y": 900,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.oTnVyOJFh6ghvqcS"
+    },
+    {
+      "_id": "PYvi6FAuTOOJPDRC",
+      "name": "Foco de la cubierta de popa (sur)",
+      "x": 1940,
+      "y": 1500,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!nO6PgIBKh3qBWQVV.PYvi6FAuTOOJPDRC"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "NH6AaEoOh6yWjhz5",
+      "name": "Llegada desde la rampa de pasajeros",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2060,
+          "y": 1100,
+          "width": 150,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "llegada-desde-rampa",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.NH6AaEoOh6yWjhz5"
+    },
+    {
+      "_id": "3TgFUooQy32pJ9QL",
+      "name": "Bajar por la rampa a la terminal (sólo amarrado)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2300,
+          "y": 1075,
+          "width": 100,
+          "height": 250,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "DOcU2EpCjA9RCsJs",
+          "name": "Bajar por la rampa a la terminal (sólo amarrado)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YItWymxAL9s6gXRx.Region.P37qpCdnMOsDV6r5"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!nO6PgIBKh3qBWQVV.3TgFUooQy32pJ9QL.DOcU2EpCjA9RCsJs"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "a-la-terminal",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.3TgFUooQy32pJ9QL"
+    },
+    {
+      "_id": "upZJN62yjtmJg8xs",
+      "name": "Bajar a la cubierta de coches (estribor)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1660,
+          "y": 265,
+          "width": 220,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "MSW0AWZAcCbKm2hN",
+          "name": "Bajar a la cubierta de coches (estribor)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.67ExO7p40rqtAUeC.Region.hJrGeYNDI236NuFV"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!nO6PgIBKh3qBWQVV.upZJN62yjtmJg8xs.MSW0AWZAcCbKm2hN"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "bajar-coches-estribor",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.upZJN62yjtmJg8xs"
+    },
+    {
+      "_id": "17st5XyhphjRkWrA",
+      "name": "Llegada por la escalera de estribor",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1660,
+          "y": 505,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "llegada-escalera-estribor",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.17st5XyhphjRkWrA"
+    },
+    {
+      "_id": "KQDRYAxT2RlFe8Rd",
+      "name": "Bajar a la cubierta de coches (babor)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1660,
+          "y": 2035,
+          "width": 220,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "muDVHSOhUZgHS6WR",
+          "name": "Bajar a la cubierta de coches (babor)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.67ExO7p40rqtAUeC.Region.NzT2LN43MGkHtDuS"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!nO6PgIBKh3qBWQVV.KQDRYAxT2RlFe8Rd.muDVHSOhUZgHS6WR"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "bajar-coches-babor",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.KQDRYAxT2RlFe8Rd"
+    },
+    {
+      "_id": "EiNdAnbpHUY0Gny3",
+      "name": "Llegada por la escalera de babor",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1660,
+          "y": 1795,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "llegada-escalera-babor",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.EiNdAnbpHUY0Gny3"
+    },
+    {
+      "_id": "Im032pEq0xhTkOfz",
+      "name": "Subir al puente",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 315,
+          "y": 1065,
+          "width": 130,
+          "height": 270,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "O0jPvQd6GY9GZpLz",
+          "name": "Subir al puente",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.cpPIgqv25ByovRVE.Region.1BqxEtpdjwCU4Wbh"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!nO6PgIBKh3qBWQVV.Im032pEq0xhTkOfz.O0jPvQd6GY9GZpLz"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "subir-al-puente",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.Im032pEq0xhTkOfz"
+    },
+    {
+      "_id": "hReBTzn9lz5Oa0wO",
+      "name": "Llegada desde el puente",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 610,
+          "y": 1125,
+          "width": 100,
+          "height": 150,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "llegada-desde-puente",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.hReBTzn9lz5Oa0wO"
+    },
+    {
+      "_id": "lQgckLtDCO3WoVtF",
+      "name": "Saltar al agua desde la popa (6 m)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2300,
+          "y": 100,
+          "width": 100,
+          "height": 900,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "saltar-al-agua",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del agua: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.lQgckLtDCO3WoVtF"
+    },
+    {
+      "_id": "uS9AuZk7KDXEPUI9",
+      "name": "Saltar al agua desde la popa (6 m)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2300,
+          "y": 1400,
+          "width": 100,
+          "height": 900,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry",
+          "region": "saltar-al-agua-sur",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del agua: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre"
+        }
+      },
+      "_key": "!scenes.regions!nO6PgIBKh3qBWQVV.uS9AuZk7KDXEPUI9"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "E6Jk5S0G9yp9CkEo",
+      "entryId": "IDd94316DhSx3ptV",
+      "pageId": null,
+      "x": 860,
+      "y": 1160,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-15",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "ferry",
+          "id": "LUG-15"
+        }
+      },
+      "_key": "!scenes.notes!nO6PgIBKh3qBWQVV.E6Jk5S0G9yp9CkEo"
+    },
+    {
+      "_id": "JPyKl6wthWz3GtG7",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "tG1m5PTkmBA1pvmc",
+      "x": 860,
+      "y": 1260,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "ferry",
+          "id": "A4-E03"
+        }
+      },
+      "_key": "!scenes.notes!nO6PgIBKh3qBWQVV.JPyKl6wthWz3GtG7"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "ferry",
+      "id": "LUG-15",
+      "plano": "ferry",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, a bordo.</strong> El último ferry a Bainbridge: 35 minutos de travesía, unos <strong>cuarenta pasajeros</strong> mortales, seis tripulantes y <strong>cámaras de seguridad en los salones</strong> (tres objetos «CCTV» en el mapa; no son ANOMALY). Este plano es la <strong>cubierta de pasajeros</strong> (segundo piso del barco) recortada a la popa: el salón sigue hacia proa (franja rayada) y no se juega.</p>\n<p><strong>Pell</strong> «está en el salón de pasajeros del segundo piso, junto a una ventana, con el maletín esposado a la muñeca» (Astucia + Investigación Dif 3 para encontrarlo): ponelo en el <strong>reservado de babor</strong> marcado, junto a la ventana, con Dawson y los ghouls cerca. Si votó con la coterie, <strong>Fry</strong> está en otro reservado con los auriculares puestos («El último barco de la noche. Te lo dije»). En el salón, cuarenta testigos: cualquier acción sobrenatural visible es <strong>Termómetro +2</strong>. Presencia (Pavor) para que los pasajeros se queden en el salón: Carisma + Intimidación Dif 3. Potencia para romper la esposa del maletín sin cortarle la mano a Pell: Fuerza + Latrocinio Dif 3.</p>\n<p><strong>Cubierta exterior de popa.</strong> Al zarpar, la pasarela se retira: el <strong>portón</strong> de la borda queda cerrado y la región «Bajar por la rampa» sólo funciona amarrado (desactivala al zarpar, a las 00:55). Acá se negocia con Halloway si va a bordo («Ofrece todo: dinero, dominio, el puesto de Sheriff»). <strong>Saltar al agua desde la popa: 6 metros</strong>; el agua está a 9 grados y la corriente es fuerte: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre, que sigue al ferry y puede abordar por popa. Si se salta con el maletín, el disco se pierde. Tirar el maletín al agua es la forma más rápida de destruirlo.</p>\n<p><strong>Transiciones.</strong> Escaleras de estribor y babor (junto a la popa del salón) bajan a la <strong>cubierta de coches</strong> (<code>ferry-coches</code>). La <strong>escalera al puente</strong>, en el centro del salón, sube a la cubierta superior y al <strong>puente</strong> (<code>ferry-puente</code>): es hacia donde huye Halloway («usa Mirada aterradora y huye hacia el puente para tomar el control del barco»).</p>\n<p><strong>Cafetería</strong> en el centro del salón (mostradores fijos). Los bancos y mesas de los reservados están atornillados al piso (son fijos; no hay muebles móviles en este plano).</p>\n\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua desde la popa (6 m) · Saltar al agua desde la popa (6 m).</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

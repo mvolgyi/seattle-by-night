@@ -1,0 +1,26 @@
+<header class="sbn-panel-resumen{{#if resumen.congelado}} sbn-congelado{{/if}}">
+  {{#unless cargado}}<p class="sbn-panel-aviso"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "SBN.panel.sinDatos"}}</p>{{/unless}}
+  <div class="sbn-res-item" data-tooltip-text="{{resumen.umbral}}">
+    <span class="sbn-res-etiqueta">{{localize "SBN.termometro.nombre"}}</span>
+    <span class="sbn-res-valor">{{resumen.termometro}}<small>/{{resumen.max}}</small></span>
+    {{#if resumen.icono}}<span class="sbn-res-icono">{{resumen.icono}}</span>{{/if}}
+    {{#if resumen.congelado}}<i class="fa-solid fa-snowflake sbn-res-hielo" data-tooltip-text="{{localize 'SBN.indicador.congelado'}}"></i>{{/if}}
+  </div>
+  <div class="sbn-res-item">
+    <span class="sbn-res-etiqueta">{{localize "SBN.indicador.noche"}}</span>
+    <span class="sbn-res-valor">{{resumen.noche}}</span>
+    <span class="sbn-res-dia">{{resumen.dia}}</span>
+  </div>
+  <div class="sbn-res-item">
+    <span class="sbn-res-etiqueta">{{localize "SBN.panel.tabs.pistas"}}</span>
+    <span class="sbn-res-valor">{{resumen.pistas}}<small>/{{resumen.totalPistas}}</small></span>
+  </div>
+  {{#if resumen.celula}}
+    <div class="sbn-res-item sbn-res-celula">
+      <a data-action="abrirActor" data-actor="{{resumen.celula.id}}" class="sbn-res-etiqueta" data-tooltip-text="{{localize 'SBN.panel.celula'}}">
+        <i class="fa-solid fa-users-viewfinder"></i> {{resumen.celula.nombre}}</a>
+      <span data-tooltip-text="{{localize 'SBN.panel.desesperacion'}}"><i class="fa-solid fa-heart-crack"></i> {{resumen.celula.desesperacion}}</span>
+      <span data-tooltip-text="{{localize 'SBN.panel.peligro'}}"><i class="fa-solid fa-skull-crossbones"></i> {{resumen.celula.peligro}}/{{resumen.celula.peligroMax}}</span>
+    </div>
+  {{/if}}
+</header>

@@ -1,0 +1,481 @@
+{
+  "_id": "dtv1tCtbE4Jh6UFV",
+  "_key": "!scenes!dtv1tCtbE4Jh6UFV",
+  "name": "Parte 1 · La granja del Sheriff: el sótano y el túnel",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 21,
+  "width": 1200,
+  "height": 1400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 1,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "aD2N6zE1YZePj2Tv",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/granja-sotano.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!dtv1tCtbE4Jh6UFV.aD2N6zE1YZePj2Tv"
+    }
+  ],
+  "journal": "NNzMhIvsavpG0iTQ",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "FhIMmwWAy0Kdbcon",
+      "c": [
+        150,
+        400,
+        765,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.FhIMmwWAy0Kdbcon"
+    },
+    {
+      "_id": "jJ3DoB5RR6JpPzvc",
+      "c": [
+        885,
+        400,
+        1050,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.jJ3DoB5RR6JpPzvc"
+    },
+    {
+      "_id": "7b7NjL8njy4WaHxS",
+      "c": [
+        150,
+        1300,
+        1050,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.7b7NjL8njy4WaHxS"
+    },
+    {
+      "_id": "tOA41M7HG7pFkGai",
+      "c": [
+        150,
+        400,
+        150,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.tOA41M7HG7pFkGai"
+    },
+    {
+      "_id": "XhxPjNqSzWCiQkeX",
+      "c": [
+        1050,
+        400,
+        1050,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.XhxPjNqSzWCiQkeX"
+    },
+    {
+      "_id": "KslkHpiOL7OrMURN",
+      "c": [
+        150,
+        800,
+        280,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.KslkHpiOL7OrMURN"
+    },
+    {
+      "_id": "dG4YAOl1bvI9xp0e",
+      "c": [
+        370,
+        800,
+        450,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.dG4YAOl1bvI9xp0e"
+    },
+    {
+      "_id": "QxcRe1ZcRlE6pvoh",
+      "c": [
+        450,
+        400,
+        450,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.QxcRe1ZcRlE6pvoh"
+    },
+    {
+      "_id": "ndWAWDTA5PcGfgDn",
+      "c": [
+        750,
+        0,
+        750,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.ndWAWDTA5PcGfgDn"
+    },
+    {
+      "_id": "TE2n1pyO0WY2GlVG",
+      "c": [
+        900,
+        0,
+        900,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.TE2n1pyO0WY2GlVG"
+    },
+    {
+      "_id": "x1ngfVumDPrPWghP",
+      "c": [
+        280,
+        800,
+        370,
+        800
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.x1ngfVumDPrPWghP"
+    },
+    {
+      "_id": "gCqPZkEtHeAIyyFl",
+      "c": [
+        565,
+        490,
+        565,
+        790
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.gCqPZkEtHeAIyyFl"
+    },
+    {
+      "_id": "Gsmfqm3JWVAOiKL7",
+      "c": [
+        765,
+        400,
+        885,
+        400
+      ],
+      "door": 2,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!dtv1tCtbE4Jh6UFV.Gsmfqm3JWVAOiKL7"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "KCsss4nzHAVH7Bl3",
+      "name": "Bombita del sótano",
+      "x": 700,
+      "y": 850,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!dtv1tCtbE4Jh6UFV.KCsss4nzHAVH7Bl3"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "W60g8ukpN4W5145E",
+      "name": "Llegada al pie de la escalera",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 465,
+          "y": 795,
+          "width": 100,
+          "height": 90,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja-sotano",
+          "region": "llegada-escalera",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!dtv1tCtbE4Jh6UFV.W60g8ukpN4W5145E"
+    },
+    {
+      "_id": "k3JhlGNSlCmWI3oT",
+      "name": "Subir a la casa",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 465,
+          "y": 490,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "DbHvBTVAhczFeT8B",
+          "name": "Subir a la casa",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.tSyKulSKEmN3zQE3.Region.OHf3PheTgSNUtpq5"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!dtv1tCtbE4Jh6UFV.k3JhlGNSlCmWI3oT.DbHvBTVAhczFeT8B"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja-sotano",
+          "region": "subir-casa",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!dtv1tCtbE4Jh6UFV.k3JhlGNSlCmWI3oT"
+    },
+    {
+      "_id": "Db7utEeFism0PXbm",
+      "name": "Túnel al embarcadero del río (300 m)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 750,
+          "y": 0,
+          "width": 150,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja-sotano",
+          "region": "tunel-embarcadero",
+          "estado": "pendiente",
+          "pendiente": "el túnel sigue 300 m hasta el embarcadero privado del río Snohomish, que está en el mapa de zona del valle (t2i, sin plano): falta la región gemela"
+        }
+      },
+      "_key": "!scenes.regions!dtv1tCtbE4Jh6UFV.Db7utEeFism0PXbm"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "RJ6H9PlgnH81CBvW",
+      "entryId": "NNzMhIvsavpG0iTQ",
+      "pageId": null,
+      "x": 610,
+      "y": 810,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja-sotano",
+          "id": "LUG-02"
+        }
+      },
+      "_key": "!scenes.notes!dtv1tCtbE4Jh6UFV.RJ6H9PlgnH81CBvW"
+    },
+    {
+      "_id": "mXismXoEaz9Mtp5e",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "ogKpm1VYgcVGCw1T",
+      "x": 610,
+      "y": 910,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja-sotano",
+          "id": "A4-E02"
+        }
+      },
+      "_key": "!scenes.notes!dtv1tCtbE4Jh6UFV.mXismXoEaz9Mtp5e"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "granja-sotano",
+      "id": "LUG-02",
+      "plano": "granja-sotano",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>El sótano de la granja.</strong> Bajo la casa (misma huella que la planta baja, corrida +0,5 m en x y −1 m en y). Piso de lajas viejas, estanterías de conservas, la caldera, un arcón congelador y el armero de acero. Se baja por la escalera del vestíbulo (región «Subir a la casa» / «Llegada»).</p>\n<p><strong>La cámara del Sheriff.</strong> Piso de tierra, un catre de hierro: ahí duerme Montgomery de día. Puerta pesada.</p>\n<p><strong>El túnel al embarcadero.</strong> Detrás de la <strong>estantería de conservas</strong> del muro norte (tile: se corre como una puerta) hay una <strong>puerta oculta</strong> (muro con door=2: se ve pared) al túnel de unos <strong>300 m</strong> que sale al embarcadero privado del río Snohomish. En A4-E02, «por la granja: el túnel al embarcadero del río. Los perros cubren la retirada». Montgomery y Hal lo conocen; el resto, si alguien se lo muestra. La región del túnel queda sin destino: el embarcadero está en el mapa de zona (t2i).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): estante, palet.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Túnel al embarcadero del río (300 m).</p>",
+      "moviles": [
+        {
+          "tipo": "estante",
+          "tile": "tile-estanteria-conservas",
+          "x": 7.5,
+          "y": 4.1,
+          "w": 1.5,
+          "h": 0.4
+        },
+        {
+          "tipo": "palet",
+          "tile": "tile-cajas",
+          "x": 7.4,
+          "y": 10.6,
+          "w": 1.2,
+          "h": 1
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

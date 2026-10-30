@@ -1,0 +1,424 @@
+{
+  "_id": "sJciq5am1WxfcRbZ",
+  "_key": "!scenes!sJciq5am1WxfcRbZ",
+  "name": "Parte 2 · El Larchmont: sala de calderas",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 111,
+  "width": 1900,
+  "height": 1100,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 1,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "ge0MQ0dCyCEIvJOw",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/larchmont-sotano.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!sJciq5am1WxfcRbZ.ge0MQ0dCyCEIvJOw"
+    }
+  ],
+  "journal": "Oiln4o98kvxKbOvS",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "DsVydESCpQV3Sd63",
+      "c": [
+        0,
+        50,
+        1800,
+        50
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.DsVydESCpQV3Sd63"
+    },
+    {
+      "_id": "QLNytCEuaF7Wv60r",
+      "c": [
+        0,
+        260,
+        300,
+        260
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.QLNytCEuaF7Wv60r"
+    },
+    {
+      "_id": "gtBTbinjwnjWetA4",
+      "c": [
+        0,
+        50,
+        0,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.gtBTbinjwnjWetA4"
+    },
+    {
+      "_id": "GN9lTTleFnNsRdnb",
+      "c": [
+        300,
+        50,
+        300,
+        260
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.GN9lTTleFnNsRdnb"
+    },
+    {
+      "_id": "qeNt16072AMOKctk",
+      "c": [
+        300,
+        420,
+        300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.qeNt16072AMOKctk"
+    },
+    {
+      "_id": "4T5HOfHHLY8XTCSR",
+      "c": [
+        0,
+        420,
+        300,
+        420
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.4T5HOfHHLY8XTCSR"
+    },
+    {
+      "_id": "uElLupGiX7IoYHT7",
+      "c": [
+        0,
+        1050,
+        1800,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.uElLupGiX7IoYHT7"
+    },
+    {
+      "_id": "acTLsf3ZRAbiYSmv",
+      "c": [
+        1300,
+        300,
+        1800,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.acTLsf3ZRAbiYSmv"
+    },
+    {
+      "_id": "sAvG3E7rHI2UQ2y8",
+      "c": [
+        1300,
+        50,
+        1300,
+        315
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.sAvG3E7rHI2UQ2y8"
+    },
+    {
+      "_id": "XXUstMxfuqPY86nF",
+      "c": [
+        1300,
+        495,
+        1300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.XXUstMxfuqPY86nF"
+    },
+    {
+      "_id": "fxsQmgGQNUGimiTP",
+      "c": [
+        1800,
+        50,
+        1800,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.fxsQmgGQNUGimiTP"
+    }
+  ],
+  "lights": [],
+  "regions": [
+    {
+      "_id": "RbwEzf55eazk7Q3m",
+      "name": "Llegada desde la planta baja (pie de la escalera)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1320,
+          "y": 410,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "desde-planta",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.RbwEzf55eazk7Q3m"
+    },
+    {
+      "_id": "DtU4MZFcoXI6w9gY",
+      "name": "Subir a la planta baja por la escalera medio derrumbada (Destreza + Atletismo Dif 2)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1320,
+          "y": 740,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "yoE6yGoDksuslDpb",
+          "name": "Subir a la planta baja por la escalera medio derrumbada (Destreza + Atletismo Dif 2)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.VNvOky037IwV7jBl.Region.VKGdFwN8HDaFd7Hz"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!sJciq5am1WxfcRbZ.DtU4MZFcoXI6w9gY.yoE6yGoDksuslDpb"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "subir-planta",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.DtU4MZFcoXI6w9gY"
+    },
+    {
+      "_id": "GitBw0m5DScFoHz8",
+      "name": "Caída desde el hueco (escombros)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1560,
+          "y": 620,
+          "width": 120,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "caida-hueco",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.GitBw0m5DScFoHz8"
+    },
+    {
+      "_id": "2frEgYgW9NsZQwmF",
+      "name": "Desagüe al estrecho",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 260,
+          "width": 120,
+          "height": 160,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "desague",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del desagüe ni del estrecho (GAN-09, MEN-08)"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.2frEgYgW9NsZQwmF"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "VOT7dvYkXpn5likP",
+      "entryId": "Oiln4o98kvxKbOvS",
+      "pageId": null,
+      "x": 810,
+      "y": 510,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-11",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "larchmont-sotano",
+          "id": "LUG-11"
+        }
+      },
+      "_key": "!scenes.notes!sJciq5am1WxfcRbZ.VOT7dvYkXpn5likP"
+    },
+    {
+      "_id": "4iRBheH70FsFr8vI",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "9fTKL8Oeq36BCfU9",
+      "x": 810,
+      "y": 610,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E05",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "larchmont-sotano",
+          "id": "A2-E05"
+        }
+      },
+      "_key": "!scenes.notes!sJciq5am1WxfcRbZ.4iRBheH70FsFr8vI"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "larchmont-sotano",
+      "id": "LUG-11",
+      "plano": "larchmont-sotano",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}</p>\n<p><strong>El sótano (A2-E05).</strong> Se llega por la escalera medio derrumbada (al pie, bajo el hueco, un montón de escombros mojados donde cae la lluvia) o cayendo por el hueco. Oscuridad total: no hay luz. Se oye agua corriendo: un <strong>canal</strong> abierto en el piso lleva el agua desde los escombros hasta la <strong>boca del desagüe grande</strong> del muro oeste, que sale al estrecho.</p>\n<p><strong>La cisterna sellada.</strong> En el centro de la sala de calderas, <strong>una losa de hormigón nuevo, más claro que el resto del suelo</strong> (Astucia + Investigación Dif 3; automático para David). Debajo están los siete inquilinos, Danny Ruiz (REF-02) entre ellos. <strong>No se pinta abierta:</strong> si la coterie la levanta (Fuerza + Atletismo Dif 4, o automático con Potencia 2), el Narrador pone encima el tile <code>tile-cisterna-abierta</code> (Pendiente) y aplica Termómetro +2 y la tirada de Remordimiento de David. <strong>Auspex 4</strong> sobre la losa: siete presencias, frío, agua, «Helen va a venir».</p>\n<p><strong>La flor nueva.</strong> Astucia + Consciencia Dif 4: junto a la losa, huellas recientes de pies descalzos y un olor muy débil a Vitae rancia (MEN-08). <strong>No están pintadas ni tienen tile</strong>: son la recompensa de la tirada, como el repetidor de LUG-05.</p>\n<p><strong>El superviviente (MEN-08, GAN-09).</strong> Si el Narrador quiere adelantar GAN-09, está escondido en el desagüe (Ofuscación 3) y huye hacia el agua al ver a la coterie: la región del desagüe no tiene mapa todavía.</p>\n<p><strong>Calderas.</strong> Dos calderas de hierro remachado y un tanque de fueloil contra el muro norte, frías y oxidadas: dan cobertura.</p>\n\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Desagüe al estrecho.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

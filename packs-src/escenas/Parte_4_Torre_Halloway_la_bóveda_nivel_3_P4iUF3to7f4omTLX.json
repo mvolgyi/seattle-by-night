@@ -1,0 +1,525 @@
+{
+  "_id": "P4iUF3to7f4omTLX",
+  "_key": "!scenes!P4iUF3to7f4omTLX",
+  "name": "Parte 4 · Torre Halloway, la bóveda (nivel −3)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 61,
+  "width": 1100,
+  "height": 800,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.9,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "OvPpFDOeMapobGfh",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/torre-boveda.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!P4iUF3to7f4omTLX.OvPpFDOeMapobGfh"
+    }
+  ],
+  "journal": "L6Fl1S0tjkWno2we",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "5tE1Yz7QjuRQxyZa",
+      "c": [
+        100,
+        300,
+        300,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.5tE1Yz7QjuRQxyZa"
+    },
+    {
+      "_id": "YHONeioH8ExWtb95",
+      "c": [
+        100,
+        500,
+        300,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.YHONeioH8ExWtb95"
+    },
+    {
+      "_id": "k8KYp81rb4uPhj9S",
+      "c": [
+        100,
+        300,
+        100,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.k8KYp81rb4uPhj9S"
+    },
+    {
+      "_id": "LMsYbgOVYppX0BUG",
+      "c": [
+        300,
+        200,
+        300,
+        340
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.LMsYbgOVYppX0BUG"
+    },
+    {
+      "_id": "4E8DLqjSsYOD43rR",
+      "c": [
+        300,
+        460,
+        300,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.4E8DLqjSsYOD43rR"
+    },
+    {
+      "_id": "zqMRl6ZPvzJhrt8x",
+      "c": [
+        300,
+        200,
+        550,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.zqMRl6ZPvzJhrt8x"
+    },
+    {
+      "_id": "jmxDvvSHpeVuQDBY",
+      "c": [
+        300,
+        600,
+        550,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.jmxDvvSHpeVuQDBY"
+    },
+    {
+      "_id": "c8nKQZeu5LXVKU7k",
+      "c": [
+        550,
+        100,
+        550,
+        350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.c8nKQZeu5LXVKU7k"
+    },
+    {
+      "_id": "4vMOBaWCNkYj4RTA",
+      "c": [
+        550,
+        450,
+        550,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.4vMOBaWCNkYj4RTA"
+    },
+    {
+      "_id": "KCKRyV9bpte15lcw",
+      "c": [
+        550,
+        100,
+        1000,
+        100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.KCKRyV9bpte15lcw"
+    },
+    {
+      "_id": "TgKfzEbMMfYhL4jk",
+      "c": [
+        550,
+        700,
+        1000,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.TgKfzEbMMfYhL4jk"
+    },
+    {
+      "_id": "lAC3WN4E3Nw7BTJi",
+      "c": [
+        1000,
+        100,
+        1000,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.lAC3WN4E3Nw7BTJi"
+    },
+    {
+      "_id": "21t96Ml0541QqVoA",
+      "c": [
+        300,
+        340,
+        300,
+        460
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.21t96Ml0541QqVoA"
+    },
+    {
+      "_id": "Sp4bVe27TbGNCxxj",
+      "c": [
+        550,
+        350,
+        550,
+        450
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!P4iUF3to7f4omTLX.Sp4bVe27TbGNCxxj"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "VeIohcDENvztcNem",
+      "name": "Fluorescente de la bóveda",
+      "x": 775,
+      "y": 400,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!P4iUF3to7f4omTLX.VeIohcDENvztcNem"
+    },
+    {
+      "_id": "0m19mL7EqGmcCk9m",
+      "name": "Plafón de la antecámara",
+      "x": 425,
+      "y": 400,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!P4iUF3to7f4omTLX.0m19mL7EqGmcCk9m"
+    },
+    {
+      "_id": "I6blYywkG3Q2dg6L",
+      "name": "Luz de la cabina del ascensor",
+      "x": 200,
+      "y": 400,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!P4iUF3to7f4omTLX.I6blYywkG3Q2dg6L"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "OqEOxe3ORbyksLTx",
+      "name": "Ascensor privado (llega a la bóveda)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 200,
+          "y": 300,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "torre-boveda",
+          "region": "ascensor-llegada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!P4iUF3to7f4omTLX.OqEOxe3ORbyksLTx"
+    },
+    {
+      "_id": "O9uvkdICnvwwa2He",
+      "name": "Ascensor privado: subir al ático (piso 42)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 100,
+          "y": 300,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "mYRRkvD5JZZSZ87G",
+          "name": "Ascensor privado: subir al ático (piso 42)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.bD0nEA1FjbvkG5Vt.Region.FXrlaDujQAUzw1zW"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!P4iUF3to7f4omTLX.O9uvkdICnvwwa2He.mYRRkvD5JZZSZ87G"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "torre-boveda",
+          "region": "ascensor-al-atico",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!P4iUF3to7f4omTLX.O9uvkdICnvwwa2He"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "nrckzYvx7xlq8OkS",
+      "entryId": "L6Fl1S0tjkWno2we",
+      "pageId": null,
+      "x": 860,
+      "y": 360,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-06",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "torre-boveda",
+          "id": "LUG-06"
+        }
+      },
+      "_key": "!scenes.notes!P4iUF3to7f4omTLX.nrckzYvx7xlq8OkS"
+    },
+    {
+      "_id": "qWJ4TUtxdrucm6Es",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "snrsN5RkdAklRIDn",
+      "x": 860,
+      "y": 460,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "torre-boveda",
+          "id": "A4-E01"
+        }
+      },
+      "_key": "!scenes.notes!P4iUF3to7f4omTLX.qWJ4TUtxdrucm6Es"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "torre-boveda",
+      "id": "LUG-06",
+      "plano": "torre-boveda",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>La bóveda del nivel −3</strong>, «accesible solo con el ascensor privado» (LUG-06). La cabina se abre a una antecámara de hormigón con una sola puerta de acero, cerrada con combinación (la sabe el señor Pell; con 3 o más éxitos en el ferry, A4-E03, la entrega junto con la llave del ascensor). En la cabina, la mitad de la puerta recibe y la del fondo sube al ático (plano «torre-atico»).</p>\n<p><strong>Qué guarda</strong> (LUG-06): el <strong>original de los diarios de Vance</strong> (comprados en 1986), la <strong>copia 1 de 3</strong> mecanografiada por Pell y, desde la Noche 6, el <strong>disco original del Expediente</strong> (y la USB 3 si Lonnie murió esa noche). Los diarios y la copia, en las estanterías; el disco, en la caja fuerte. La noche del Consejo, el <strong>maletín de aluminio</strong> espera sobre la mesa de acero.</p>\n<p><strong>A4-E01 → A4-E03.</strong> Si Halloway huye, «baja en el ascensor privado hasta el nivel −3, saca el maletín de la bóveda y se lo da a Pell». Una infiltración antes del clímax también termina aquí, si la coterie la planea.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): maletin.</p>",
+      "moviles": [
+        {
+          "tipo": "maletin",
+          "tile": "tile-maletin-aluminio",
+          "x": 7.1,
+          "y": 3.82,
+          "w": 0.5,
+          "h": 0.36
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

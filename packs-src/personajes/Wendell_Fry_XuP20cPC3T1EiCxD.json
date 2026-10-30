@@ -3,7 +3,7 @@
   "_key": "!actors!XuP20cPC3T1EiCxD",
   "name": "Wendell Fry",
   "type": "vampire",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-16.webp",
   "folder": "u4acwxkmRyzs1UQV",
   "sort": 10,
   "prototypeToken": {
@@ -15,7 +15,7 @@
       "enabled": true
     },
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp"
     }
   },
   "system": {
@@ -44,7 +44,7 @@
     "appearance": "<p>Unos treinta y tres años aparentes. Delgado, barba descuidada, gafas de montura gruesa, pana y gorra de un equipo que ya no existe; auriculares al cuello y voz de radio.</p>",
     "equipment": "",
     "notes": "",
-    "privatenotes": "<p>Nota de edición: el doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió la edad al Abrazo (unos 33, barba sin canas).</p>",
+    "privatenotes": "<p>Nota de edición: el doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió la edad al Abrazo (unos 33, barba sin canas). El doc 06 le daba «Máscara 1 (jubilado excéntrico de Fremont)»; se decidió que su Máscara es la de locutor nocturno de una radio comunitaria.</p>",
     "health": {
       "max": 5,
       "value": 5,
@@ -503,8 +503,8 @@
         "points": 2,
         "featuretype": "background"
       },
-      "_id": "dEwSXBnfM1HGTx2u",
-      "_key": "!actors.items!XuP20cPC3T1EiCxD.dEwSXBnfM1HGTx2u"
+      "_id": "FtwzJxbsSD3VIt54",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.FtwzJxbsSD3VIt54"
     },
     {
       "effects": [],
@@ -535,8 +535,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "IwaCSLDRFyCar9LM",
-      "_key": "!actors.items!XuP20cPC3T1EiCxD.IwaCSLDRFyCar9LM"
+      "_id": "AMBC3evYTdfA8KZc",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.AMBC3evYTdfA8KZc"
     },
     {
       "effects": [],
@@ -567,8 +567,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "nsMLo7oa4dpgEBaw",
-      "_key": "!actors.items!XuP20cPC3T1EiCxD.nsMLo7oa4dpgEBaw"
+      "_id": "QivZBuyzZFRC3AFZ",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.QivZBuyzZFRC3AFZ"
     },
     {
       "effects": [],
@@ -599,8 +599,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "CvZh4IrTBjkUJrMy",
-      "_key": "!actors.items!XuP20cPC3T1EiCxD.CvZh4IrTBjkUJrMy"
+      "_id": "Nt5Rv2HyhYJKVTwx",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.Nt5Rv2HyhYJKVTwx"
     },
     {
       "effects": [],
@@ -608,14 +608,14 @@
       "flags": {
         "seattle-by-night": {
           "origen": "actor",
-          "rasgo": "Máscara 1 (jubilado excéntrico de Fremont)"
+          "rasgo": "Máscara 1 (locutor nocturno de una radio comunitaria)"
         }
       },
       "name": "Máscara",
       "type": "feature",
       "img": "systems/wod5e/assets/icons/items/feature.svg",
       "system": {
-        "description": "<p>Máscara 1 (jubilado excéntrico de Fremont)</p>",
+        "description": "<p>Máscara 1 (locutor nocturno de una radio comunitaria)</p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -631,8 +631,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "DnXpYvreq5m2GDTe",
-      "_key": "!actors.items!XuP20cPC3T1EiCxD.DnXpYvreq5m2GDTe"
+      "_id": "lTiuHAibUXLK60oA",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.lTiuHAibUXLK60oA"
     },
     {
       "effects": [],
@@ -663,8 +663,8 @@
         "points": 0,
         "featuretype": "flaw"
       },
-      "_id": "QAH8Nok17IPnbBOl",
-      "_key": "!actors.items!XuP20cPC3T1EiCxD.QAH8Nok17IPnbBOl"
+      "_id": "4n7fSLEhVYtMyjzH",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.4n7fSLEhVYtMyjzH"
     }
   ],
   "effects": [],

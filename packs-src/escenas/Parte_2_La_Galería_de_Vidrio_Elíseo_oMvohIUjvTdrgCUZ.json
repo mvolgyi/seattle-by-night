@@ -1,0 +1,1959 @@
+{
+  "_id": "oMvohIUjvTdrgCUZ",
+  "_key": "!scenes!oMvohIUjvTdrgCUZ",
+  "name": "Parte 2 · La Galería de Vidrio (Elíseo)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 30,
+  "width": 2400,
+  "height": 1700,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.6,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "PqjgjsZgSFct8blf",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/galeria.esquema.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!oMvohIUjvTdrgCUZ.PqjgjsZgSFct8blf"
+    }
+  ],
+  "journal": "iyojT7kJHH23BWLd",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "0zfzmuumL0qiFrpv",
+      "c": [
+        1800,
+        400,
+        2300,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.0zfzmuumL0qiFrpv"
+    },
+    {
+      "_id": "P3cjBFdPy5o2X4Y6",
+      "c": [
+        600,
+        400,
+        600,
+        760
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.P3cjBFdPy5o2X4Y6"
+    },
+    {
+      "_id": "jpPy4cn1U4dE7fDZ",
+      "c": [
+        600,
+        860,
+        600,
+        990
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.jpPy4cn1U4dE7fDZ"
+    },
+    {
+      "_id": "giyzjzSdCfmW90yk",
+      "c": [
+        600,
+        1110,
+        600,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.giyzjzSdCfmW90yk"
+    },
+    {
+      "_id": "EybTRaGLDpmPUrKc",
+      "c": [
+        100,
+        900,
+        600,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.EybTRaGLDpmPUrKc"
+    },
+    {
+      "_id": "qEiIbym4lq09Ao5s",
+      "c": [
+        400,
+        1200,
+        600,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.qEiIbym4lq09Ao5s"
+    },
+    {
+      "_id": "6ZD1IIYuMJg8Uih5",
+      "c": [
+        2000,
+        1200,
+        2300,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.6ZD1IIYuMJg8Uih5"
+    },
+    {
+      "_id": "kSJGLLHOlMird6jO",
+      "c": [
+        1800,
+        400,
+        1800,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.kSJGLLHOlMird6jO"
+    },
+    {
+      "_id": "rscKyLXwmBdpV3Te",
+      "c": [
+        1800,
+        620,
+        1800,
+        920
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.rscKyLXwmBdpV3Te"
+    },
+    {
+      "_id": "FEDEFmcQ5NLw6Hn2",
+      "c": [
+        1800,
+        1020,
+        1800,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.FEDEFmcQ5NLw6Hn2"
+    },
+    {
+      "_id": "9AEwJNaeKsjNhwn7",
+      "c": [
+        680,
+        970,
+        695,
+        970
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9AEwJNaeKsjNhwn7"
+    },
+    {
+      "_id": "ind2mZeVLccD3eQl",
+      "c": [
+        680,
+        1130,
+        695,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ind2mZeVLccD3eQl"
+    },
+    {
+      "_id": "7MS5uSh9vdby8QTi",
+      "c": [
+        680,
+        970,
+        680,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.7MS5uSh9vdby8QTi"
+    },
+    {
+      "_id": "W6zIlS74QPDrvmlf",
+      "c": [
+        695,
+        970,
+        695,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.W6zIlS74QPDrvmlf"
+    },
+    {
+      "_id": "2XclhFrGB0Ik2sqI",
+      "c": [
+        1800,
+        1500,
+        1860,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.2XclhFrGB0Ik2sqI"
+    },
+    {
+      "_id": "ofVl7ooQ39jaEVxa",
+      "c": [
+        1950,
+        1500,
+        2300,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ofVl7ooQ39jaEVxa"
+    },
+    {
+      "_id": "dEE5zmhEOy1NHhr3",
+      "c": [
+        1800,
+        800,
+        1850,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.dEE5zmhEOy1NHhr3"
+    },
+    {
+      "_id": "0PCSr1gx0AaYWqvc",
+      "c": [
+        1940,
+        800,
+        2300,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.0PCSr1gx0AaYWqvc"
+    },
+    {
+      "_id": "PiNc4cMHVrWJ34Hf",
+      "c": [
+        2300,
+        400,
+        2300,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.PiNc4cMHVrWJ34Hf"
+    },
+    {
+      "_id": "YxzCnKlAL2PYijTR",
+      "c": [
+        2000,
+        800,
+        2000,
+        860
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.YxzCnKlAL2PYijTR"
+    },
+    {
+      "_id": "fuc8Wh2y591xWLHU",
+      "c": [
+        2000,
+        950,
+        2000,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.fuc8Wh2y591xWLHU"
+    },
+    {
+      "_id": "9i3oObnrPXRAXN7f",
+      "c": [
+        100,
+        900,
+        67,
+        820
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9i3oObnrPXRAXN7f"
+    },
+    {
+      "_id": "nt6sGpIR1CY1GbG1",
+      "c": [
+        67,
+        820,
+        47,
+        736
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.nt6sGpIR1CY1GbG1"
+    },
+    {
+      "_id": "m7YORIVBGHNJvhw9",
+      "c": [
+        47,
+        736,
+        40,
+        650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.m7YORIVBGHNJvhw9"
+    },
+    {
+      "_id": "TaB3C05sPqgVIJBC",
+      "c": [
+        40,
+        650,
+        47,
+        564
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.TaB3C05sPqgVIJBC"
+    },
+    {
+      "_id": "wxuEHXHhx4y7wYJx",
+      "c": [
+        47,
+        564,
+        67,
+        480
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.wxuEHXHhx4y7wYJx"
+    },
+    {
+      "_id": "XAgUl3oBkbW0L2Rn",
+      "c": [
+        67,
+        480,
+        100,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.XAgUl3oBkbW0L2Rn"
+    },
+    {
+      "_id": "cv0AYLJTc2LdtXVj",
+      "c": [
+        400,
+        1200,
+        348,
+        1195
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.cv0AYLJTc2LdtXVj"
+    },
+    {
+      "_id": "vT6KJxGmJ7eSrvgt",
+      "c": [
+        348,
+        1195,
+        297,
+        1182
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.vT6KJxGmJ7eSrvgt"
+    },
+    {
+      "_id": "NtU1N83nbinRUKon",
+      "c": [
+        297,
+        1182,
+        250,
+        1160
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.NtU1N83nbinRUKon"
+    },
+    {
+      "_id": "406dshzF4sbTuvIK",
+      "c": [
+        250,
+        1160,
+        207,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.406dshzF4sbTuvIK"
+    },
+    {
+      "_id": "9TYk9KiUukqVi0WH",
+      "c": [
+        207,
+        1130,
+        170,
+        1093
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9TYk9KiUukqVi0WH"
+    },
+    {
+      "_id": "i8YQA3jXGimOCfdx",
+      "c": [
+        170,
+        1093,
+        140,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.i8YQA3jXGimOCfdx"
+    },
+    {
+      "_id": "l4BHPJCpgliQC87O",
+      "c": [
+        140,
+        1050,
+        118,
+        1003
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.l4BHPJCpgliQC87O"
+    },
+    {
+      "_id": "Jbq2SHYb3WqknOp9",
+      "c": [
+        118,
+        1003,
+        105,
+        952
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.Jbq2SHYb3WqknOp9"
+    },
+    {
+      "_id": "EhUjtopvLQUoAKTT",
+      "c": [
+        105,
+        952,
+        100,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.EhUjtopvLQUoAKTT"
+    },
+    {
+      "_id": "C3esXXN81cuMLMmC",
+      "c": [
+        600,
+        400,
+        700,
+        372
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.C3esXXN81cuMLMmC"
+    },
+    {
+      "_id": "2EJlfoWctktUK8IE",
+      "c": [
+        700,
+        372,
+        800,
+        350
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.2EJlfoWctktUK8IE"
+    },
+    {
+      "_id": "jvPUquVBcPuEl5Jb",
+      "c": [
+        800,
+        350,
+        960,
+        324
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.jvPUquVBcPuEl5Jb"
+    },
+    {
+      "_id": "XIqM83zO1CmK5uJn",
+      "c": [
+        960,
+        324,
+        1080,
+        314
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.XIqM83zO1CmK5uJn"
+    },
+    {
+      "_id": "MTJYasL0CWpJ177L",
+      "c": [
+        1080,
+        314,
+        1200,
+        310
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.MTJYasL0CWpJ177L"
+    },
+    {
+      "_id": "lf9N9fl3f2NEB8jQ",
+      "c": [
+        1200,
+        310,
+        1320,
+        314
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.lf9N9fl3f2NEB8jQ"
+    },
+    {
+      "_id": "xzAxQrhY1zccNDXy",
+      "c": [
+        1320,
+        314,
+        1400,
+        320
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.xzAxQrhY1zccNDXy"
+    },
+    {
+      "_id": "duYh1Xphidk2mk3H",
+      "c": [
+        1400,
+        320,
+        1560,
+        342
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.duYh1Xphidk2mk3H"
+    },
+    {
+      "_id": "QD7KyWEMwoF0c0s9",
+      "c": [
+        1560,
+        342,
+        1680,
+        367
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.QD7KyWEMwoF0c0s9"
+    },
+    {
+      "_id": "L0juymxc4VKpHHcP",
+      "c": [
+        1680,
+        367,
+        1800,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.L0juymxc4VKpHHcP"
+    },
+    {
+      "_id": "66j9R6aSfAz81JAn",
+      "c": [
+        1800,
+        1200,
+        1756,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.66j9R6aSfAz81JAn"
+    },
+    {
+      "_id": "QzGabm9BlIxHDfcw",
+      "c": [
+        1756,
+        1233,
+        1705,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.QzGabm9BlIxHDfcw"
+    },
+    {
+      "_id": "7sBne6XAV2qtyuwQ",
+      "c": [
+        1705,
+        1253,
+        1650,
+        1260
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.7sBne6XAV2qtyuwQ"
+    },
+    {
+      "_id": "IyCqKU8343YNCYiK",
+      "c": [
+        1650,
+        1260,
+        1595,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IyCqKU8343YNCYiK"
+    },
+    {
+      "_id": "gTu3nKkv1noWMGFi",
+      "c": [
+        1595,
+        1253,
+        1544,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.gTu3nKkv1noWMGFi"
+    },
+    {
+      "_id": "ppSftR2SSpsZhD2E",
+      "c": [
+        1544,
+        1233,
+        1500,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ppSftR2SSpsZhD2E"
+    },
+    {
+      "_id": "eppIAYae7T823oXD",
+      "c": [
+        900,
+        1200,
+        856,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.eppIAYae7T823oXD"
+    },
+    {
+      "_id": "yQHc2fyIQdGduDTq",
+      "c": [
+        856,
+        1233,
+        805,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.yQHc2fyIQdGduDTq"
+    },
+    {
+      "_id": "IqrUb98R3advycGl",
+      "c": [
+        805,
+        1253,
+        750,
+        1260
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IqrUb98R3advycGl"
+    },
+    {
+      "_id": "94rrC58smVufYtjU",
+      "c": [
+        750,
+        1260,
+        695,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.94rrC58smVufYtjU"
+    },
+    {
+      "_id": "NxXmMGOHcY6ZbzJi",
+      "c": [
+        695,
+        1253,
+        644,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.NxXmMGOHcY6ZbzJi"
+    },
+    {
+      "_id": "G1lhthWAGz30n5qA",
+      "c": [
+        644,
+        1233,
+        600,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.G1lhthWAGz30n5qA"
+    },
+    {
+      "_id": "ITYiFq6ZDpNHCQfx",
+      "c": [
+        100,
+        100,
+        1800,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ITYiFq6ZDpNHCQfx"
+    },
+    {
+      "_id": "2hoYekzBn37grHwW",
+      "c": [
+        100,
+        100,
+        100,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.2hoYekzBn37grHwW"
+    },
+    {
+      "_id": "7pm81chTYkNuxi0i",
+      "c": [
+        1800,
+        100,
+        1800,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.7pm81chTYkNuxi0i"
+    },
+    {
+      "_id": "DWJ5Iou1xVSEX2wq",
+      "c": [
+        100,
+        400,
+        600,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.DWJ5Iou1xVSEX2wq"
+    },
+    {
+      "_id": "IVzm9ttnccPAvs2s",
+      "c": [
+        600,
+        760,
+        600,
+        860
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IVzm9ttnccPAvs2s"
+    },
+    {
+      "_id": "mGvnH4rqAXRLioTU",
+      "c": [
+        1800,
+        520,
+        1800,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.mGvnH4rqAXRLioTU"
+    },
+    {
+      "_id": "q5UMflXKe39DChNx",
+      "c": [
+        1800,
+        920,
+        1800,
+        1020
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.q5UMflXKe39DChNx"
+    },
+    {
+      "_id": "Gb1CxkBp9x2ofwIW",
+      "c": [
+        900,
+        1200,
+        1100,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.Gb1CxkBp9x2ofwIW"
+    },
+    {
+      "_id": "jDgYNfWtA6xAV2dy",
+      "c": [
+        1300,
+        1200,
+        1500,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.jDgYNfWtA6xAV2dy"
+    },
+    {
+      "_id": "WmxOAS67kof3byUV",
+      "c": [
+        900,
+        1200,
+        900,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.WmxOAS67kof3byUV"
+    },
+    {
+      "_id": "Q7SqoeIQmUbITjny",
+      "c": [
+        1500,
+        1200,
+        1500,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.Q7SqoeIQmUbITjny"
+    },
+    {
+      "_id": "9bxR68hnKtaB6Kbk",
+      "c": [
+        900,
+        1500,
+        1060,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9bxR68hnKtaB6Kbk"
+    },
+    {
+      "_id": "eImMzIjbvXcvikNN",
+      "c": [
+        1060,
+        1500,
+        1200,
+        1500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.eImMzIjbvXcvikNN"
+    },
+    {
+      "_id": "0ROmq13mQE4ICmB9",
+      "c": [
+        1200,
+        1500,
+        1340,
+        1500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.0ROmq13mQE4ICmB9"
+    },
+    {
+      "_id": "CNOepMWbBq6zCME0",
+      "c": [
+        1340,
+        1500,
+        1500,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.CNOepMWbBq6zCME0"
+    },
+    {
+      "_id": "AYDYio72BW8pkBjx",
+      "c": [
+        1850,
+        800,
+        1940,
+        800
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.AYDYio72BW8pkBjx"
+    },
+    {
+      "_id": "lxjpVK5jJZT6Jkq5",
+      "c": [
+        2000,
+        860,
+        2000,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.lxjpVK5jJZT6Jkq5"
+    },
+    {
+      "_id": "XmzCryl3FQqLvPtK",
+      "c": [
+        1860,
+        1500,
+        1950,
+        1500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.XmzCryl3FQqLvPtK"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "uEbnE0y0tkOst9ae",
+      "name": "Medusas rojas (noroeste)",
+      "x": 860,
+      "y": 660,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#c4303a",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.uEbnE0y0tkOst9ae"
+    },
+    {
+      "_id": "hLeWIpAofC9S1h0A",
+      "name": "Medusas ámbar (norte)",
+      "x": 1160,
+      "y": 560,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.hLeWIpAofC9S1h0A"
+    },
+    {
+      "_id": "x7FEYLSN2nwNysE7",
+      "name": "Medusas rojas (noreste)",
+      "x": 1460,
+      "y": 620,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#c4303a",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.x7FEYLSN2nwNysE7"
+    },
+    {
+      "_id": "gMF2rTQTX3cA32ab",
+      "name": "Medusas ámbar (este)",
+      "x": 1660,
+      "y": 880,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.gMF2rTQTX3cA32ab"
+    },
+    {
+      "_id": "tXzIWH6dDoSbR6oQ",
+      "name": "Medusas ámbar (oeste)",
+      "x": 920,
+      "y": 960,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.tXzIWH6dDoSbR6oQ"
+    },
+    {
+      "_id": "LthoXs63jjMgyUxb",
+      "name": "Medusas rojas (centro)",
+      "x": 1240,
+      "y": 980,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#c4303a",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.LthoXs63jjMgyUxb"
+    },
+    {
+      "_id": "cvCHa7BOD8cIA6D3",
+      "name": "Medusas ámbar (sudeste)",
+      "x": 1520,
+      "y": 1080,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.cvCHa7BOD8cIA6D3"
+    },
+    {
+      "_id": "xkBswvhVpHMMFaga",
+      "name": "Lámpara del mostrador de la Guardiana",
+      "x": 965,
+      "y": 1300,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.xkBswvhVpHMMFaga"
+    },
+    {
+      "_id": "yjDEQygwPVvUiGiq",
+      "name": "Lámpara del salón privado",
+      "x": 220,
+      "y": 830,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.yjDEQygwPVvUiGiq"
+    },
+    {
+      "_id": "gXngO0S2ozYpTFo0",
+      "name": "Luz de atril del cuarteto",
+      "x": 300,
+      "y": 1050,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.7,
+        "color": "#ffc547",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 4,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.gXngO0S2ozYpTFo0"
+    },
+    {
+      "_id": "SywJOFcMAMjSwI9t",
+      "name": "Fluorescente del office",
+      "x": 2050,
+      "y": 580,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.SywJOFcMAMjSwI9t"
+    },
+    {
+      "_id": "SK8WW0F4arxAzDiV",
+      "name": "Plafón del pasillo de servicio",
+      "x": 1900,
+      "y": 1150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.SK8WW0F4arxAzDiV"
+    },
+    {
+      "_id": "Kok40XUiFDTxJw8K",
+      "name": "Plafón de la escalera",
+      "x": 2100,
+      "y": 1000,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.Kok40XUiFDTxJw8K"
+    },
+    {
+      "_id": "B9lRDwJPDi1Zudvi",
+      "name": "Farola de la plaza",
+      "x": 650,
+      "y": 1630,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.B9lRDwJPDi1Zudvi"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "HVXiKhCcsUxh0CpQ",
+      "name": "Plaza de Seattle Center (entrada y salida)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1000,
+          "y": 1530,
+          "width": 400,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria",
+          "region": "plaza",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de Seattle Center: el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!oMvohIUjvTdrgCUZ.HVXiKhCcsUxh0CpQ"
+    },
+    {
+      "_id": "muOtU8g4fdCYw1IV",
+      "name": "Llegada desde el archivo (arriba de la escalera)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2170,
+          "y": 820,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria",
+          "region": "desde-archivo",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!oMvohIUjvTdrgCUZ.muOtU8g4fdCYw1IV"
+    },
+    {
+      "_id": "uWunoVN1ivAZ5CjX",
+      "name": "Bajar al archivo de la Guardiana",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2170,
+          "y": 1080,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "tK2jPFEbKlFuGJx5",
+          "name": "Bajar al archivo de la Guardiana",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.4WNwrNyFjucH1Kkc.Region.e5c1DXXHEBBVM5t0"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!oMvohIUjvTdrgCUZ.uWunoVN1ivAZ5CjX.tK2jPFEbKlFuGJx5"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria",
+          "region": "bajar-al-archivo",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!oMvohIUjvTdrgCUZ.uWunoVN1ivAZ5CjX"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "OrvdwHW4sxQ9qNPW",
+      "entryId": "iyojT7kJHH23BWLd",
+      "pageId": null,
+      "x": 1210,
+      "y": 695,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria",
+          "id": "LUG-03"
+        }
+      },
+      "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.OrvdwHW4sxQ9qNPW"
+    },
+    {
+      "_id": "TKAV2YhXy8LWmluv",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "uL8F2YNogcToiFc6",
+      "x": 1210,
+      "y": 795,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria",
+          "id": "A2-E01"
+        }
+      },
+      "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.TKAV2YhXy8LWmluv"
+    },
+    {
+      "_id": "LIW2q6w7M5PaJZgN",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "snrsN5RkdAklRIDn",
+      "x": 1210,
+      "y": 895,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria",
+          "id": "A4-E01"
+        }
+      },
+      "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.LIW2q6w7M5PaJZgN"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "galeria",
+      "id": "LUG-03",
+      "plano": "galeria",
+      "provisional": true,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Noche de Elíseo (A2-E01, Noche 3).</strong> Se entra por la plaza, al sur, por las puertas de vidrio del <strong>vestíbulo</strong>. Ahí espera Solène Marchetti, la Guardiana (PNJ-14), en su mostrador con el libro de registro abierto (DOC-03), y en el <strong>umbral</strong> que separa el vestíbulo de la gran sala está la <strong>bandeja de terciopelo</strong> sobre su pedestal: «Sus teléfonos, por favor». La cuarta costumbre del Elíseo es literal: <em>«Ningún dispositivo conectado cruza el umbral»</em> (CIUDAD-LEYES); el umbral es el hueco de 2 m entre el vestíbulo y la sala, y los aparatos apagados se guardan en el casillero de la pared este del vestíbulo. <em>Para un solo jugador</em>, Bear se queda en el banco del vestíbulo con los teléfonos.</p>\n<p><strong>La gran sala de las medusas.</strong> «Cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa.» Las piezas cuelgan a varios metros sobre las cabezas: no se pintan ni estorban el paso; sus charcos de color son las luces de Foundry de la sala (rojas y ámbar, con un temblor leve). En el suelo de terrazo sólo hay dos bancos bajos y tres pedestales con piezas sueltas. Con todas las paredes de cristal, desde casi cualquier punto se ve casi todo lo demás: <em>«las paredes de cristal hacen imposible saber quién escucha desde fuera»</em> (LUG-03).</p>\n<p><strong>El cuarteto que nadie ve.</strong> «Suena un cuarteto de cuerdas que nadie ve»: los músicos tocan en el <strong>nicho</strong> del oeste, que se abre a la sala por un hueco tapado con una mampara de vidrio esmerilado (bloquea la vista, no el paso).</p>\n<p><strong>Quién está dónde (Leer la sala, Astucia + Etiqueta Dif 3).</strong> Whitmore, «al fondo, junto a la terraza», junto a las puertas de vidrio del norte. Halloway se mueve por la sala como un anfitrión. Voight, sola, en la <strong>terraza</strong>, mirando el reloj: «prefiere la terraza porque desde ahí ve quién entra» (desde la terraza se ve, a través de la sala de cristal, todo el vestíbulo). Thornquist, en el rincón sudeste de la sala, junto al vidrio de la plaza, donde nadie se le acerca. Fry, donde quiera.</p>\n<p><strong>La terraza.</strong> Losas de piedra, barandas al norte, oeste y este, sin luz propia: la torre de la Feria se ve al norte, fuera del mapa. <em>Escuchar sin ser vistos</em> (Astucia + Consciencia Dif 4): en la terraza, Halloway le dice a un Vástago menor «El Sheriff está viejo…». La terraza se comunica con la sala por dos puertas de vidrio.</p>\n<p><strong>El salón privado del Príncipe.</strong> Esquina noroeste: se entra desde la gran sala por una puerta de madera; su pared norte es un paño de vidrio fijo sobre la terraza y la oeste, otro sobre la plaza. El vidrio no deja pasar el sonido, pero sí la vista: el sillón de Whitmore mira al norte, hacia la terraza y la torre, así que <strong>desde la terraza se le ven los labios</strong>. Es el detalle de LUG-03: con Astucia + Consciencia Dif 4 se nota que alguien con un teleobjetivo, desde la terraza, podría leer los labios del salón. Aquí se concede la audiencia privada con el Príncipe.</p>\n<p><strong>El personal</strong> (ghouls, intocables por la tercera costumbre) sale del <strong>office</strong> del bloque de servicio, al este, con las copas que nadie bebe. Del pasillo de servicio sale una puerta a la plaza y la <strong>escalera al archivo de la Guardiana</strong>, en el sótano (plano «galeria-archivo»): bajando por la escalera, la región «Bajar al archivo» lleva al pie de la escalera del sótano. El apartamento de Marchetti (Refugio 2) está «sobre el archivo», en la planta alta del bloque de servicio: no tiene mapa.</p>\n<p><strong>Las paredes curvas</strong> del pabellón de 1962: el vidrio norte se abomba hacia la terraza, los paños de la plaza a los lados del vestíbulo se abomban hacia afuera y el salón privado tiene un mirador de vidrio curvo al oeste. En Foundry cada curva son tramos rectos de vidrio; las dos puertas a la terraza son dos de esos tramos.</p>\n<p><strong>Si el Consejo de A4-E01 se traslada aquí</strong> (el Príncipe recuperó la iniciativa; Halloway pierde 2 dados), se juega en la gran sala con una mesa larga traída por el personal (tile de la torre) o en el salón privado si son pocos.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): bandeja, silla ×7, mesa, carro.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Plaza de Seattle Center (entrada y salida).</p>",
+      "moviles": [
+        {
+          "tipo": "bandeja",
+          "tile": "tile-bandeja-terciopelo",
+          "x": 10.4,
+          "y": 12.25,
+          "w": 0.5,
+          "h": 0.32
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-sillon-principe",
+          "x": 3,
+          "y": 7,
+          "w": 0.8,
+          "h": 0.8
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-baja",
+          "x": 2.8,
+          "y": 5.9,
+          "w": 1.2,
+          "h": 0.7
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-sillon",
+          "x": 1.8,
+          "y": 4.6,
+          "w": 0.7,
+          "h": 0.7
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-sillon",
+          "x": 4.2,
+          "y": 4.6,
+          "w": 0.7,
+          "h": 0.7
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-musico",
+          "x": 2,
+          "y": 9.6,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-musico",
+          "x": 2.3,
+          "y": 10.7,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-musico",
+          "x": 3.3,
+          "y": 9.4,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-musico",
+          "x": 3.3,
+          "y": 11.1,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "carro",
+          "tile": "tile-carro-servicio",
+          "x": 20.5,
+          "y": 6.6,
+          "w": 0.9,
+          "h": 0.5
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

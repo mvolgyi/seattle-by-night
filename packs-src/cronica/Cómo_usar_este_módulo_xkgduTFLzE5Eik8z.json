@@ -5,7 +5,7 @@
   "folder": "6HgCsgxtaVxFMM6U",
   "sort": 10,
   "ownership": {
-    "default": 0
+    "default": 2
   },
   "flags": {
     "seattle-by-night": {
@@ -259,6 +259,35 @@
       "flags": {
         "seattle-by-night": {
           "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CZ9mpQsEnZtklV4h",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.CZ9mpQsEnZtklV4h",
+      "name": "Aviso legal",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Seattle by Night — El Expediente Ward</em> es material <strong>no oficial</strong> de World of Darkness, publicado bajo el <a href=\"https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement\">Dark Pack</a>.</p>\n<p>Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en <a href=\"https://www.worldofdarkness.com\">worldofdarkness.com</a>.</p>\n<p>Es <strong>gratuito</strong>: no se vende. Se aceptan donaciones.</p>\n<p>Todo el arte (mapas, retratos, tokens) es original, generado en local con modelos de licencia abierta que permiten uso comercial. No contiene arte ni logos oficiales de Paradox o White Wolf.</p>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "AVISO-LEGAL"
         }
       },
       "_stats": {

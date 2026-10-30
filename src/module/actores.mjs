@@ -1,7 +1,7 @@
 import { t, esc } from "./util.mjs";
 
 /** Tipos de actor de wod5e que tiran dados (system.json → documentTypes.Actor, sin `group`). */
-const TIPOS_QUE_TIRAN = new Set(["vampire", "ghoul", "hunter", "mortal", "werewolf", "spc"]);
+export const TIPOS_QUE_TIRAN = new Set(["vampire", "ghoul", "hunter", "mortal", "werewolf", "spc"]);
 
 /**
  * Con qué actor se tira un botón de journal.

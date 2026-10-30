@@ -1,0 +1,143 @@
+{
+ "$generado": "tools/contenido/datos.mjs (subconjunto para jugadores de data/cronica.json). No editar a mano: npm run contenido.",
+ "modulo": "seattle-by-night",
+ "publico": true,
+ "termometro": {
+  "inicio": 2,
+  "min": 0,
+  "max": 10,
+  "umbrales": [
+   {
+    "valor": 3,
+    "icono": "👁",
+    "jugadores": "Alguien mira a la periodista."
+   },
+   {
+    "valor": 5,
+    "icono": "☎",
+    "jugadores": "Alguien llama a la periodista."
+   },
+   {
+    "valor": 7,
+    "icono": "🔍",
+    "jugadores": "Alguien tira del hilo de uno de los nuestros."
+   },
+   {
+    "valor": 9,
+    "icono": "🚨",
+    "jugadores": "Llaman a la puerta."
+   },
+   {
+    "valor": 10,
+    "icono": "🔥",
+    "jugadores": "Ya no hay puerta."
+   }
+  ]
+ },
+ "reloj": {
+  "noches": [
+   {
+    "n": 1,
+    "fecha": "2026-11-12",
+    "dia": "jueves 12 nov."
+   },
+   {
+    "n": 2,
+    "fecha": "2026-11-13",
+    "dia": "viernes 13 nov."
+   },
+   {
+    "n": 3,
+    "fecha": "2026-11-14",
+    "dia": "sábado 14 nov."
+   },
+   {
+    "n": 4,
+    "fecha": "2026-11-15",
+    "dia": "domingo 15 nov."
+   },
+   {
+    "n": 5,
+    "fecha": "2026-11-16",
+    "dia": "lunes 16 nov."
+   },
+   {
+    "n": 6,
+    "fecha": "2026-11-17",
+    "dia": "martes 17 nov."
+   },
+   {
+    "n": 7,
+    "fecha": "2026-11-18",
+    "dia": "miércoles 18 nov."
+   },
+   {
+    "n": 8,
+    "fecha": "2026-11-19",
+    "dia": "jueves 19 nov."
+   }
+  ]
+ },
+ "pistas": [
+  {
+   "id": "P-01",
+   "nombre": "Ladrones profesionales mortales; cámaras en bucle"
+  },
+  {
+   "id": "P-02",
+   "nombre": "Vitae de ghoul en el picaporte"
+  },
+  {
+   "id": "P-03",
+   "nombre": "La técnica de la Furia Controlada"
+  },
+  {
+   "id": "P-04",
+   "nombre": "Copia parcial del Expediente en un USB"
+  },
+  {
+   "id": "P-05",
+   "nombre": "Jun, la mensajera sangre débil"
+  },
+  {
+   "id": "P-06",
+   "nombre": "Pedido de datos de Gale Sentinel sin registrar"
+  },
+  {
+   "id": "P-07",
+   "nombre": "Halloway sabe lo del agua fría"
+  },
+  {
+   "id": "P-08",
+   "nombre": "La guardia invertida"
+  },
+  {
+   "id": "P-09",
+   "nombre": "Los diarios comprados en 1986"
+  },
+  {
+   "id": "P-10",
+   "nombre": "Envíos SEA-0411 / DOC-07"
+  },
+  {
+   "id": "P-11",
+   "nombre": "Firma de Gale"
+  },
+  {
+   "id": "P-12",
+   "nombre": "El testimonio de Krell"
+  },
+  {
+   "id": "P-13",
+   "nombre": "El libro de cuentas de Sal"
+  },
+  {
+   "id": "P-14",
+   "nombre": "El pago desde Cascade Holdings"
+  },
+  {
+   "id": "P-15",
+   "nombre": "Los folios del alemán"
+  }
+ ]
+}

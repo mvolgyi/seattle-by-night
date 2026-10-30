@@ -1,0 +1,87 @@
+{
+  "_comentario": "LUG-15, la terminal de ferris de Colman Dock (planta alta: la sala de espera). Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba; el agua y el ferry al oeste (izquierda), Alaskan Way al este. La rampa de pasajeros es una pasarela elevada que sale de la sala hacia el oeste y se apoya en la popa del ferry (región gemela en content/planos/ferry.json, plano «ferry»). Abajo, a nivel del muelle, la explanada y la rampa de vehículos (se pintan y se llega por regiones: la rampa de vehículos lleva a la cubierta de coches, plano «ferry-coches»). En Colman Dock la pasarela va por encima de la rampa de vehículos; acá están corridas en el eje norte-sur para que las dos se vean en un mismo mapa de una planta.",
+  "planos": [
+    {
+      "id": "terminal-ferry",
+      "lugar": "LUG-15",
+      "escenas": ["A4-E03"],
+      "nombre": "Parte 4 · Colman Dock, la terminal de ferris",
+      "orden": 150,
+      "ancho": 24,
+      "alto": 16,
+      "paleta": "naval",
+      "fondo": "agua",
+      "sujeto": "the upper waiting hall of a ferry terminal on a pier on the Seattle waterfront",
+      "oscuridad": 0.55,
+      "exteriores": [
+        { "nombre": "Muelle (norte, planta baja)", "x": 9, "y": 0, "w": 15, "h": 1.5, "fondo": "acera" },
+        { "nombre": "Vereda de Alaskan Way", "x": 23.5, "y": 1.5, "w": 0.5, "h": 9.5, "fondo": "acera" },
+        { "nombre": "Explanada de vehículos (planta baja)", "x": 9, "y": 10.5, "w": 15, "h": 5.5, "fondo": "asfalto" },
+        { "nombre": "Rampa de vehículos (planta baja, sobre el agua)", "x": 0.5, "y": 12, "w": 8.5, "h": 3, "fondo": "chapa" }
+      ],
+      "exterior": "a ferry terminal on a pier on the Seattle waterfront seen from directly above at night in November rain: the dark, flat, slightly rippled black water of Elliott Bay along the left side and the top-left corner, a strip of wet concrete pier along the top edge, wet asphalt vehicle holding lanes with faded white lane lines along the bottom, and a long steel-decked vehicle ramp bridge running from the holding lanes out over the black water to the left edge — flat, continuous, with no boats, no extra buildings and no structures",
+      "habitaciones": [
+        { "nombre": "Sala de espera", "x": 9.5, "y": 1.5, "w": 11.5, "h": 9, "piso": "terrazo" },
+        { "nombre": "Escalera a la calle y a la explanada", "x": 21, "y": 1.5, "w": 2.5, "h": 4.5, "piso": "terrazo" },
+        { "nombre": "Aseos (cerrados, no se juegan)", "x": 21, "y": 6, "w": 2.5, "h": 4.5, "piso": "macizo" },
+        { "nombre": "Rampa de pasajeros (pasarela elevada)", "x": 1, "y": 4.75, "w": 8.5, "h": 2.5, "piso": "goma" }
+      ],
+      "vanos": [
+        { "x": 9.5, "y": 1.7, "w": 2.9, "eje": "v", "tipo": "vidrio", "nombre": "Ventanal oeste (al agua y al ferry)" },
+        { "x": 9.5, "y": 5.2, "w": 1.6, "eje": "v", "tipo": "puerta-vidrio", "estado": "abierta", "sonido": "slidingModern", "nombre": "Puerta de embarque a la rampa de pasajeros" },
+        { "x": 9.5, "y": 7.4, "w": 2.9, "eje": "v", "tipo": "vidrio", "nombre": "Ventanal oeste (sur)" },
+        { "x": 10, "y": 1.5, "w": 7.5, "eje": "h", "tipo": "vidrio", "nombre": "Ventanal norte (al muelle)" },
+        { "x": 10, "y": 10.5, "w": 10.5, "eje": "h", "tipo": "vidrio", "nombre": "Ventanal sur (a la explanada de vehículos)" },
+        { "x": 21, "y": 2, "w": 3.6, "eje": "v", "tipo": "abierto", "nombre": "Sala ↔ escalera" },
+        { "x": 1, "y": 4.75, "w": 8.5, "eje": "h", "tipo": "vidrio", "nombre": "Pasarela: vidrio norte" },
+        { "x": 1, "y": 7.25, "w": 8.5, "eje": "h", "tipo": "vidrio", "nombre": "Pasarela: vidrio sur" },
+        { "x": 1, "y": 4.75, "w": 2.5, "eje": "v", "tipo": "abierto", "nombre": "Extremo de la pasarela (se apoya en la popa del ferry)" },
+        { "x": 0.5, "y": 12, "w": 8.5, "eje": "h", "tipo": "baranda", "nombre": "Baranda norte de la rampa de vehículos" },
+        { "x": 0.5, "y": 15, "w": 8.5, "eje": "h", "tipo": "baranda", "nombre": "Baranda sur de la rampa de vehículos" },
+        { "x": 9, "y": 11, "w": 1, "eje": "v", "tipo": "baranda", "nombre": "Borde del muelle (norte de la rampa)" },
+        { "x": 9, "y": 15, "w": 1, "eje": "v", "tipo": "baranda", "nombre": "Borde del muelle (sur de la rampa)" }
+      ],
+      "muebles": [
+        { "tipo": "banco", "x": 12.3, "y": 2.9, "w": 4, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 12.3, "y": 3.45, "w": 4, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 12.3, "y": 5.5, "w": 4, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 12.3, "y": 6.05, "w": 4, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 12.3, "y": 8.1, "w": 4, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 12.3, "y": 8.65, "w": 4, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 16.9, "y": 2.9, "w": 3, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 16.9, "y": 3.45, "w": 3, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 16.9, "y": 5.5, "w": 3, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 16.9, "y": 6.05, "w": 3, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 16.9, "y": 8.1, "w": 3, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "banco", "x": 16.9, "y": 8.65, "w": 3, "h": 0.55, "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor" },
+        { "tipo": "maquina-cafe", "x": 18.6, "y": 1.65, "w": 0.8, "h": 0.6, "nombre": "La máquina de café rota", "desc": "a tall coffee vending machine, its screen dark" },
+        { "tipo": "expendedora", "x": 19.6, "y": 1.65, "w": 0.95, "h": 0.65, "desc": "a snack vending machine, unlit" },
+        { "tipo": "mostrador", "x": 10.1, "y": 7.6, "w": 0.6, "h": 1.3, "desc": "a small security podium beside the boarding doors" },
+        { "tipo": "silla", "x": 10.8, "y": 8, "w": 0.5, "h": 0.5, "tile": "tile-taburete", "hacia": "o", "desc": "el taburete del guardia de seguridad" },
+        { "tipo": "escalera", "x": 21.5, "y": 1.7, "w": 1.8, "h": 3.6, "hacia": "s", "desc": "a wide concrete staircase going down to the street" }
+      ],
+      "luces": [
+        { "x": 12.5, "y": 4.3, "preset": "fluorescente", "nombre": "Fluorescentes de la sala (norte)" },
+        { "x": 17, "y": 4.3, "preset": "fluorescente", "nombre": "Fluorescentes de la sala (centro)" },
+        { "x": 13.5, "y": 8.6, "preset": "fluorescente-viejo", "nombre": "Fluorescente que falla (sur)" },
+        { "x": 19, "y": 2.1, "preset": "pantalla", "presetIdeal": "parpadeo", "nombre": "La máquina de café, parpadeando «fuera de servicio»" },
+        { "x": 10.6, "y": 8.1, "preset": "pantalla", "nombre": "El móvil del guardia" },
+        { "x": 5, "y": 6, "preset": "fluorescente", "nombre": "Luz de la pasarela" },
+        { "x": 15, "y": 13.6, "preset": "farola", "nombre": "Farola de la explanada de vehículos" },
+        { "x": 5, "y": 13.5, "preset": "farola-pared", "nombre": "Foco de la rampa de vehículos" }
+      ],
+      "regiones": [
+        { "id": "a-la-rampa-del-ferry", "nombre": "Subir al ferry por la rampa de pasajeros", "x": 1, "y": 4.75, "w": 1.2, "h": 2.5, "destino": "ferry:llegada-desde-rampa" },
+        { "id": "llegada-desde-ferry", "nombre": "Llegada desde el ferry (rampa de pasajeros)", "x": 2.4, "y": 4.75, "w": 1.2, "h": 2.5, "llegada": true },
+        { "id": "a-rampa-vehiculos", "nombre": "Subir al ferry por la rampa de vehículos", "x": 0.5, "y": 12, "w": 1.5, "h": 3, "destino": "ferry-coches:llegada-rampa-vehiculos" },
+        { "id": "llegada-rampa-vehiculos", "nombre": "Llegada desde la cubierta de coches", "x": 2.2, "y": 12, "w": 1.5, "h": 3, "llegada": true },
+        { "id": "bajar-a-la-explanada", "nombre": "Bajar a la calle y a la explanada de vehículos", "x": 21.6, "y": 4.3, "w": 1.6, "h": 1, "destino": "terminal-ferry:llegada-explanada" },
+        { "id": "llegada-sala", "nombre": "Llegada a la sala de espera (desde la calle)", "x": 20, "y": 2.5, "w": 1, "h": 2, "llegada": true },
+        { "id": "subir-a-la-sala", "nombre": "Subir a la sala de espera", "x": 21.6, "y": 14.4, "w": 2, "h": 1.4, "destino": "terminal-ferry:llegada-sala" },
+        { "id": "llegada-explanada", "nombre": "Llegada a la explanada de vehículos", "x": 19.8, "y": 14.4, "w": 1.5, "h": 1.4, "llegada": true },
+        { "id": "a-alaskan-way", "nombre": "Salir a Alaskan Way", "x": 22, "y": 11.1, "w": 2, "h": 1.2, "destino": null, "pendiente": "no hay mapa de la calle (Alaskan Way): el Narrador mueve los tokens a mano" }
+      ],
+      "nota": "**A4-E03, 00:55.** «La terminal está casi vacía bajo los fluorescentes. Un guardia mira el móvil, una máquina de café parpadea con un cartel de \"fuera de servicio\". Afuera, el último ferry de la noche espera con todas las luces encendidas, como un edificio blanco de cuatro pisos flotando sobre el agua negra. La sirena suena una vez, larga. En la rampa de pasajeros, un anciano de traje oscuro y un maletín de aluminio sube despacio, apoyado en el brazo de un hombre enorme que mira hacia atrás y olfatea el aire.»\n\n**La sala de espera** está en la planta alta. **Bancos** fijos en tres filas dobles; un puñado de pasajeros con cara de sueño (tokens). El **guardia de seguridad** está en su atril junto a la **puerta de embarque** (oeste), mirando el móvil. La **máquina de café rota** está contra la pared norte (en el mapa, apagada; la luz «pantalla» la hace parpadear). El cartel de «fuera de servicio» no está pintado.\n\n**La rampa de pasajeros.** De la puerta de embarque sale la **pasarela elevada**, vidriada a los dos lados, hacia el oeste: al final se apoya en la popa del ferry. Cuando la coterie entra en la sala, **Pell y Dawson están subiendo por la pasarela** (colocalos a mitad de camino): por los vidrios se los ve desde la sala. Al final de la pasarela, la región «Subir al ferry» lleva a la cubierta de popa del salón (`ferry`). Subir sin que Dawson los vea: Destreza + Sigilo Dif 4 contra su Astucia + Consciencia (6 dados); Ofuscación no engaña su olfato, el viento del estrecho sí (+1 dado por barlovento: el viento entra del oeste, del agua).\n\n**La rampa de vehículos** (abajo, a nivel del muelle, en la franja sur): la explanada de vehículos y la rampa que cruza el agua hasta la cubierta de coches. Quien llega en coche (Destreza + Conducir Dif 3 para llegar antes de las 00:55) aparece en la explanada; la región del extremo de la rampa lleva a la popa de la cubierta de coches (`ferry-coches`). La escalera del este baja a la calle y a la explanada (regiones gemelas en este mismo mapa) y la explanada sale a Alaskan Way (sin mapa).\n\nLos aseos (bloque rayado) no se juegan. La sirena suena a las 00:50: cinco minutos."
+    }
+  ]
+}

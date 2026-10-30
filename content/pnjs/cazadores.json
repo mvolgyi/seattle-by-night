@@ -1,0 +1,715 @@
+{
+  "pnjs": [
+    {
+      "id": "PNJ-18",
+      "reemplaza": true,
+      "nombre": "Dana Okafor",
+      "apodo": "La que no regala nada",
+      "pj": false,
+      "tipo": "hunter",
+      "concepto": "FIRSTLIGHT, jefa de la Célula Puget; antagonista latente",
+      "nacimiento": "1981",
+      "credo": "inquisitive",
+      "impulso": {
+        "clave": "atonement",
+        "nombre": "Expiación",
+        "texto": "Chicago, 2017. Encontró el patrón de las desapariciones del South Side y encontró el sótano donde terminaba. Lo que bajó a buscar ya no estaba vivo. La mano es lo de menos: lo que paga desde entonces son los nombres que no alcanzó a tachar a tiempo.",
+        "redencion": "Se redime cuando la Célula saca con vida a alguien que la presa ya había marcado, antes de que sea un nombre más en una carpeta."
+      },
+      "facultades": {
+        "thwarttheunnatural": [
+          1,
+          []
+        ],
+        "globalaccess": [
+          1,
+          [
+            "Enlace federal: una vez por historia, Okafor consigue en una hora un registro que a cualquier otro le costaría una orden judicial (llamadas, cámaras municipales, registros de propiedad, listas de pasajeros). No necesita tirada; sí deja rastro en Washington."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "thwarttheunnatural": "Es su Fe inquebrantable (doc 14): la Dominación y la Presencia tienen −2 dados contra ella; si fallan, ella lo nota. No lo explica ni lo entiende. Lo usa.",
+        "globalaccess": "Contactos 3 (FBI, Seguridad Nacional, policía de Seattle), el enlace con la oficina del FBI de Seattle y el acceso a ANOMALY a través del piloto con Gale Sentinel."
+      },
+      "atributos": {
+        "strength": 2,
+        "dexterity": 3,
+        "stamina": 3,
+        "charisma": 3,
+        "manipulation": 3,
+        "composure": 4,
+        "intelligence": 4,
+        "wits": 4,
+        "resolve": 5
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          "Pistola"
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "drive": [
+          2,
+          null
+        ],
+        "awareness": [
+          4,
+          "Emboscadas"
+        ],
+        "intimidation": [
+          3,
+          "Interrogatorios"
+        ],
+        "investigation": [
+          5,
+          "Patrones"
+        ],
+        "leadership": [
+          3,
+          null
+        ],
+        "occult": [
+          2,
+          "Vástagos"
+        ],
+        "insight": [
+          4,
+          "Mentiras"
+        ],
+        "persuasion": [
+          2,
+          null
+        ],
+        "brawl": [
+          2,
+          null
+        ],
+        "politics": [
+          2,
+          "Agencias"
+        ],
+        "technology": [
+          2,
+          null
+        ]
+      },
+      "salud": 6,
+      "voluntad": 9,
+      "ventajas": [
+        "Fe inquebrantable (la Dominación y la Presencia tienen −2 dados contra ella; si fallan, ella lo nota)",
+        "Contactos 3 (FBI, Seguridad Nacional, policía de Seattle)",
+        "Recursos 3 (presupuesto federal)"
+      ],
+      "equipo": [
+        "Pistola Glock 19 con munición incendiaria (daño agravado contra Vástagos)",
+        "Linterna UV de bolsillo",
+        "Chaleco antibalas ligero (blindaje 2)",
+        "Teléfono cifrado"
+      ],
+      "ambicion": "Que la sede nacional le mande refuerzos y arrancar de raíz la estructura de Seattle.",
+      "deseo": "Saber qué quiere ARQUERO antes de la próxima entrega.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Su madre",
+          "descripcion": "Su madre, la maestra de Luisiana, ya jubilada. La llama los domingos y le dice que el trabajo es aburrido."
+        }
+      ],
+      "cita": "«Toda fuente quiere algo. Hasta saber qué quiere, es un cebo.»",
+      "semblante": "Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.",
+      "pregenerado": "PRE-01",
+      "origen": "14",
+      "propuesto": [
+        "Credo Inquisitiva: Investigación 5 (Patrones), Intimidación 3 (Interrogatorios) y Perspicacia 4 (Mentiras) son las de una investigadora; la Célula vive de obtener información.",
+        "Impulso Expiación: el doc dice que encontró el patrón y el sótano; que llegó tarde para los desaparecidos es propuesto.",
+        "Facultades: la Fe inquebrantable del doc se modela como Frustrar lo antinatural (el efecto es el del doc, no el del manual); Contactos 3 y ANOMALY, como Acceso global. El Beneficio «Enlace federal» es propuesto.",
+        "Ambición, deseo y piedra de toque (la madre, maestra de Luisiana, sale del doc; la llamada de los domingos es propuesta)."
+      ]
+    },
+    {
+      "id": "PNJ-21",
+      "reemplaza": true,
+      "nombre": "Sasha Hale",
+      "apodo": "Analista S. Hale",
+      "pj": false,
+      "tipo": "hunter",
+      "concepto": "Ex analista de inteligencia de señales, treinta y dos años",
+      "credo": "inquisitive",
+      "impulso": {
+        "clave": "curiosity",
+        "nombre": "Curiosidad",
+        "texto": "Escuchó el episodio 112 tres veces. Hay un dibujo en esta ciudad y alguien se lo está regalando a la Célula por entregas. Quiere saber quién y por qué, aunque la respuesta no le guste a nadie.",
+        "redencion": "Se redime cuando descubre algo que alguien quería ocultarle a la Célula y lo pone por escrito, con su firma."
+      },
+      "facultades": {
+        "library": [
+          1,
+          [
+            "Escucha atenta: +2 dados cuando cruza un hecho nuevo con el archivo de la Célula (el pódcast de Helen Ward, los informes de «R. A.», los registros de sujetos fríos de ANOMALY)."
+          ]
+        ],
+        "thwarttheunnatural": [
+          1,
+          []
+        ]
+      },
+      "facultadesNotas": {
+        "library": "El archivo de la Célula Puget en Northline: el tablero de corcho, las transcripciones del pódcast, la anomalía estadística «R. A.» y lo que ANOMALY manda cada noche desde septiembre de 2026.",
+        "thwarttheunnatural": "Es su Fe (doc 14): −1 dado a las Disciplinas mentales contra ella."
+      },
+      "atributos": {
+        "strength": 1,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 2,
+        "manipulation": 2,
+        "composure": 3,
+        "intelligence": 4,
+        "wits": 3,
+        "resolve": 3
+      },
+      "habilidades": {
+        "investigation": [
+          4,
+          null
+        ],
+        "technology": [
+          3,
+          null
+        ],
+        "academics": [
+          1,
+          null
+        ],
+        "occult": [
+          1,
+          "Vástagos"
+        ],
+        "insight": [
+          2,
+          null
+        ],
+        "persuasion": [
+          1,
+          null
+        ],
+        "subterfuge": [
+          1,
+          null
+        ],
+        "awareness": [
+          1,
+          null
+        ]
+      },
+      "reservas": {
+        "Física": 2,
+        "Social": 3,
+        "Mental": 7,
+        "Investigación": 8,
+        "Tecnología": 7,
+        "Academicismo": 5,
+        "Ocultismo (Vástagos)": 4
+      },
+      "salud": 5,
+      "voluntad": 6,
+      "ventajas": [
+        "Fe (−1 dado a Disciplinas mentales contra ella)"
+      ],
+      "equipo": [
+        "Teléfono cifrado",
+        "Portátil con acceso al canal de ANOMALY",
+        "Credencial de «consultoría» de Northline"
+      ],
+      "ambicion": "Que su informe sobre ARQUERO sea el que se lea en la sede nacional.",
+      "deseo": "Una noche entera sin auriculares.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Su hermano menor",
+          "descripcion": "Su hermano menor, que estudia en Spokane y cree que ella audita bancos."
+        }
+      ],
+      "semblante": "Treinta y dos años, ex analista de inteligencia de señales. Auriculares al cuello, la mirada en otra pantalla.",
+      "pregenerado": "PRE-02",
+      "origen": "14",
+      "propuesto": [
+        "Atributos y Habilidades: el doc da reservas de PNJ (Física 2, Social 3, Mental 7; Investigación 8, Tecnología 7, Academicismo 5, Ocultismo 4 (Vástagos); Salud 5, Fuerza de Voluntad 6). Conversión: Inteligencia 4 + Investigación 4, Inteligencia 4 + Tecnología 3, Inteligencia 4 + Academicismo 1, Astucia 3 + Ocultismo 1; Salud = Resistencia 2 + 3; Voluntad = Compostura 3 + Resolución 3. Las habilidades sociales y de Consciencia son propuestas.",
+        "Credo Inquisitiva (su trabajo es sacar información: el pódcast, ANOMALY, la cadena de custodia) e Impulso Curiosidad (DOC-07, punto 6: «¿por qué nos lo da?»).",
+        "Facultades: Biblioteca (el archivo de la Célula) y Frustrar lo antinatural para su Fe del doc. El Beneficio «Escucha atenta» es propuesto.",
+        "Equipo, semblante (salvo la edad y el oficio, que son del doc), ambición, deseo y piedra de toque."
+      ]
+    },
+    {
+      "id": "MEN-11",
+      "reemplaza": true,
+      "nombre": "Cole Ransom",
+      "pj": false,
+      "tipo": "hunter",
+      "concepto": "Operador de MEN-02, ex compañero SEAL de Bear",
+      "edad": 49,
+      "cantidad": 1,
+      "credo": "martial",
+      "impulso": {
+        "clave": "oath",
+        "nombre": "Juramento",
+        "texto": "Un juramento viejo, de cuando llevaba el tridente en el pecho: nadie se queda atrás. Lo cumplió en sitios que no salen en los mapas. No sabe cumplirlo de otra manera.",
+        "redencion": "Se redime cuando arriesga algo suyo (el puesto, la pensión, el pellejo) para sacar a un compañero de armas, sea del equipo que sea."
+      },
+      "facultades": {
+        "arsenal": [
+          1,
+          [
+            "Revisado dos veces: una vez por escena, cuando un arma del equipo se encasquilla o se queda sin munición en el peor momento, Ransom tiene la de repuesto en la mano."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "arsenal": "Lleva la armería del almacén del puerto donde duerme el equipo táctico: los fusiles cortos, la munición incendiaria, las linternas UV."
+      },
+      "atributos": {
+        "strength": 3,
+        "dexterity": 3,
+        "stamina": 4,
+        "charisma": 1,
+        "manipulation": 1,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 2
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          null
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "brawl": [
+          2,
+          null
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "insight": [
+          3,
+          null
+        ],
+        "survival": [
+          2,
+          null
+        ],
+        "stealth": [
+          1,
+          null
+        ],
+        "medicine": [
+          1,
+          null
+        ]
+      },
+      "reservas": {
+        "Física": 6,
+        "Social": 2,
+        "Mental": 4,
+        "Armas de fuego": 7,
+        "Atletismo": 5,
+        "Consciencia": 5,
+        "Pelea": 5,
+        "Perspicacia": 6
+      },
+      "salud": 7,
+      "voluntad": 5,
+      "equipo": [
+        "fusil-corto-incendiario",
+        "linterna-uv",
+        "armadura-ligera",
+        "camaras-corporales",
+        "gafas-termicas",
+        "municion-incendiaria"
+      ],
+      "ambicion": "Llegar a los cincuenta y cinco con las dos rodillas y la pensión entera.",
+      "deseo": "Que alguien le explique de una vez qué cazan de verdad.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Su hija",
+          "descripcion": "Su hija Kayla, enfermera en San Diego, que le manda fotos del nieto y no pregunta por el trabajo."
+        }
+      ],
+      "semblante": "Cuarenta y nueve años, bigote, rodillas destrozadas. Cree que trabaja para Seguridad Nacional.",
+      "notas": "Cuarenta y nueve años, bigote, rodillas destrozadas como las de Bear. Cree que trabaja para Seguridad Nacional. Lealtad absoluta a sus compañeros, y Bear fue uno de ellos.\n\nUsa las estadísticas de @ID[MEN-02], con **Perspicacia 6** para notar que Bear ya no cojea. (Ver @ID[GAN-04].)",
+      "pregenerado": "PRE-03",
+      "origen": "14",
+      "propuesto": [
+        "Conversión de las reservas de @ID[MEN-02] (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Ransom suma Astucia 3 + Perspicacia 3 = 6 (doc). Supervivencia, Sigilo y Medicina son propuestas (ex SEAL).",
+        "Credo Marcial, Impulso Juramento («nadie se queda atrás», el de los SEAL) y la Facultad Arsenal (la armería del almacén del puerto).",
+        "La munición incendiaria se le suma porque su fusil corto la usa (doc 14).",
+        "Ambición, deseo y piedra de toque (la hija en San Diego)."
+      ]
+    },
+    {
+      "id": "CAZ-01",
+      "nombre": "Teresa «Tess» Navarro",
+      "pj": false,
+      "tipo": "hunter",
+      "concepto": "Operadora del equipo táctico de FIRSTLIGHT, ex agente de la ATF: la que ya lo vio",
+      "edad": 38,
+      "credo": "faithful",
+      "impulso": {
+        "clave": "vengeance",
+        "nombre": "Venganza",
+        "texto": "Tucson, 2021. Un registro en un almacén. Su compañero, Ortiz, entró primero. Lo que salió de la oscuridad no era una persona, y se lo llevó. Nadie le creyó, salvo un hombre del Departamento de Seguridad Nacional que la esperaba a la salida del hospital.",
+        "redencion": "Se redime cuando la Célula destruye a una criatura que mató a un inocente, y ella está ahí para verlo."
+      },
+      "facultades": {
+        "repeltheunnatural": [
+          1,
+          [
+            "Un paso atrás: cuando una criatura retrocede ante la medalla, Navarro y quien vaya pegado a su espalda ganan un turno sin ser atacados por ella."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "repeltheunnatural": "La medalla de San Miguel de Ortiz, en la mano izquierda, debajo de la linterna. Mientras la sostenga en alto y no ataque, la criatura que quiera acercarse a menos de dos metros tiene que ganarle una tirada enfrentada de Fuerza de Voluntad (Resolución + Compostura contra la suya). No sabe por qué funciona. Funciona."
+      },
+      "atributos": {
+        "strength": 3,
+        "dexterity": 3,
+        "stamina": 4,
+        "charisma": 1,
+        "manipulation": 1,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 2
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          "Fusil"
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "brawl": [
+          2,
+          null
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "investigation": [
+          1,
+          null
+        ],
+        "occult": [
+          1,
+          null
+        ],
+        "intimidation": [
+          2,
+          null
+        ],
+        "drive": [
+          1,
+          null
+        ]
+      },
+      "reservas": {
+        "Física": 6,
+        "Social": 2,
+        "Mental": 4,
+        "Armas de fuego": 7,
+        "Atletismo": 5,
+        "Consciencia": 5,
+        "Pelea": 5
+      },
+      "salud": 7,
+      "voluntad": 5,
+      "ventajas": [
+        "Contactos 1 (ATF, oficina de Phoenix)"
+      ],
+      "equipo": [
+        "fusil-corto-incendiario",
+        "linterna-uv",
+        "armadura-ligera",
+        "camaras-corporales",
+        "gafas-termicas",
+        "municion-incendiaria"
+      ],
+      "ambicion": "Encontrar lo que se llevó a Ortiz.",
+      "deseo": "Que alguien más del equipo vea lo que ella vio y no se quiebre.",
+      "piedrasDeToque": [
+        {
+          "nombre": "La viuda de Ortiz",
+          "descripcion": "La viuda de Ortiz, en Tucson. Navarro le manda dinero cada mes sin decirle por qué."
+        }
+      ],
+      "semblante": "Treinta y ocho años, morena, el pelo en una trenza corta. Lleva una medalla de San Miguel que no es suya. Va siempre en punta, con la linterna.",
+      "notas": "Una de los seis operadores de @ID[MEN-02]. Es la única del equipo que ya vio a una criatura de cerca, y los demás lo saben aunque no pregunten.",
+      "pregenerado": "PRE-04",
+      "origen": "propuesto",
+      "propuesto": [
+        "Todo el personaje es propuesto (SPEC §6.2: tres operadores con nombre del equipo táctico). Conversión de las reservas de @ID[MEN-02] (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Investigación, Ocultismo, Intimidación y Conducir son propias.",
+        "Credo Fiel, Impulso Venganza, Facultad Repeler lo antinatural (la medalla) con el Beneficio «Un paso atrás».",
+        "El doc dice que la mayoría del equipo no lo vio nunca: Navarro es la excepción."
+      ]
+    },
+    {
+      "id": "CAZ-02",
+      "nombre": "Owen Pak",
+      "pj": false,
+      "tipo": "hunter",
+      "concepto": "Operador de drones del equipo táctico de FIRSTLIGHT, ex piloto de drones de la Fuerza Aérea",
+      "edad": 31,
+      "credo": "underground",
+      "impulso": {
+        "clave": "pride",
+        "nombre": "Orgullo",
+        "texto": "Fue el mejor de su promoción en la base de Creech y nadie se lo dijo nunca en voz alta. En FIRSTLIGHT no hay nadie en la costa oeste que vuele como él. Lo sabe, y necesita que lo sepan.",
+        "redencion": "Se redime cuando su trabajo, y el de nadie más, salva una operación de la Célula, y Okafor lo dice por radio."
+      },
+      "facultades": {
+        "dronejockey": [
+          1,
+          [
+            "Vuelo bajo: mete el dron en interiores (un hangar, una escalera, un pasillo) sin perder la señal. Destreza + Tecnología (Dificultad 3) por cada obstáculo serio."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "dronejockey": "El dron con cámara térmica de la Célula es suyo: lo pilota desde la furgoneta o desde una tablet reforzada a doscientos metros. Ve lo que el dron ve."
+      },
+      "atributos": {
+        "strength": 3,
+        "dexterity": 3,
+        "stamina": 4,
+        "charisma": 1,
+        "manipulation": 1,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 2
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          null
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "brawl": [
+          2,
+          null
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "technology": [
+          3,
+          "Drones"
+        ],
+        "drive": [
+          2,
+          null
+        ],
+        "stealth": [
+          1,
+          null
+        ],
+        "investigation": [
+          1,
+          null
+        ]
+      },
+      "reservas": {
+        "Física": 6,
+        "Social": 2,
+        "Mental": 4,
+        "Armas de fuego": 7,
+        "Atletismo": 5,
+        "Consciencia": 5,
+        "Pelea": 5
+      },
+      "salud": 7,
+      "voluntad": 5,
+      "equipo": [
+        "fusil-corto-incendiario",
+        "linterna-uv",
+        "armadura-ligera",
+        "camaras-corporales",
+        "gafas-termicas",
+        "municion-incendiaria",
+        "dron-termico"
+      ],
+      "ambicion": "Que FIRSTLIGHT le dé una flota propia.",
+      "deseo": "Que Okafor diga su nombre por radio, no el indicativo.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Su abuela",
+          "descripcion": "Su abuela, en el International District, que le cocina los domingos y le pregunta por qué tiene ojeras."
+        }
+      ],
+      "semblante": "Treinta y un años, delgado, gorra hacia atrás, una tablet reforzada atada al antebrazo. Habla con el dron como con un perro.",
+      "notas": "Uno de los seis operadores de @ID[MEN-02]. Pasa más horas en la furgoneta que en el almacén del puerto.",
+      "pregenerado": "PRE-05",
+      "origen": "propuesto",
+      "propuesto": [
+        "Todo el personaje es propuesto. Conversión de las reservas de @ID[MEN-02] (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Tecnología (Drones), Conducir, Sigilo e Investigación son propias.",
+        "Credo Clandestino, Impulso Orgullo, Facultad Piloto de drones con el Beneficio «Vuelo bajo». El dron es el del arsenal del doc 14."
+      ]
+    },
+    {
+      "id": "CAZ-03",
+      "nombre": "Lena Sorensen",
+      "pj": false,
+      "tipo": "hunter",
+      "concepto": "Operadora de brecha del equipo táctico de FIRSTLIGHT, ex ingeniera de combate del Ejército",
+      "edad": 41,
+      "credo": "entrepreneurial",
+      "impulso": {
+        "clave": "greed",
+        "nombre": "Codicia",
+        "texto": "Creció en Ballard, hija de pescadores. Debe la casa de su madre y otra deuda que no cuenta. FIRSTLIGHT paga el riesgo a precio federal y ella lo cobra por horas. Lo que se lleva de cada operación lo tiene contado.",
+        "redencion": "Se redime cuando la Caza le deja algo que vale (dinero, un objeto, un favor que se pueda cobrar) y lo usa para cerrar una deuda."
+      },
+      "facultades": {
+        "ordnance": [
+          1,
+          [
+            "Hecho a mano: en una noche fabrica con lo que hay en la armería dos cargas de brecha o tres granadas aturdidoras. Una puerta, una pared fina o una persiana metálica caen en un turno."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "ordnance": "Cargas de brecha, granadas aturdidoras y el generador de luz solar artificial de la furgoneta: lo arma, lo enciende y lo apaga ella."
+      },
+      "atributos": {
+        "strength": 3,
+        "dexterity": 3,
+        "stamina": 4,
+        "charisma": 1,
+        "manipulation": 1,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 2
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          null
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "brawl": [
+          2,
+          null
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "craft": [
+          3,
+          "Explosivos"
+        ],
+        "science": [
+          1,
+          null
+        ],
+        "drive": [
+          1,
+          null
+        ],
+        "medicine": [
+          1,
+          null
+        ]
+      },
+      "reservas": {
+        "Física": 6,
+        "Social": 2,
+        "Mental": 4,
+        "Armas de fuego": 7,
+        "Atletismo": 5,
+        "Consciencia": 5,
+        "Pelea": 5
+      },
+      "salud": 7,
+      "voluntad": 5,
+      "ventajas": [
+        "Recursos 1 (sueldo de contratista, todo comprometido)"
+      ],
+      "defectos": [
+        "Deuda 1 (alguien en el puerto sabe dónde vive su madre)"
+      ],
+      "equipo": [
+        "fusil-corto-incendiario",
+        "linterna-uv",
+        "armadura-ligera",
+        "camaras-corporales",
+        "gafas-termicas",
+        "municion-incendiaria",
+        "generador-luz-solar"
+      ],
+      "ambicion": "Retirarse con la casa pagada antes de los cuarenta y cinco.",
+      "deseo": "Una noche de trabajo sin que nadie diga «sujeto».",
+      "piedrasDeToque": [
+        {
+          "nombre": "Su madre",
+          "descripcion": "Su madre, en la casa de Ballard, a cuatro calles de Market Street."
+        }
+      ],
+      "semblante": "Cuarenta y un años, rubia, ancha de hombros, las manos llenas de cicatrices pequeñas. Masca chicle de nicotina. Cuenta en voz baja antes de cada puerta.",
+      "notas": "Una de los seis operadores de @ID[MEN-02]. El generador de la furgoneta tarda dos turnos en encenderse; ella dice que en sus manos tarda uno y medio.",
+      "pregenerado": "PRE-06",
+      "origen": "propuesto",
+      "propuesto": [
+        "Todo el personaje es propuesto. Conversión de las reservas de @ID[MEN-02] (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Artesanía (Explosivos), Ciencias, Conducir y Medicina son propias.",
+        "Credo Emprendedora (arma cargas, arregla el generador, improvisa), Impulso Codicia, Facultad Artillería con el Beneficio «Hecho a mano». El generador es el del arsenal del doc 14; que lo maneje ella es propuesto.",
+        "Ventaja Recursos 1 y Defecto Deuda 1."
+      ]
+    }
+  ],
+  "celula": {
+    "id": "CEL-01",
+    "nombre": "Célula Puget",
+    "lema": "No tocarla hasta poder arrancarla de raíz.",
+    "concepto": "Célula de FIRSTLIGHT en Seattle (2024), con fachada en Northline Cyber Advisory",
+    "lugar": "LUG-14",
+    "miembros": [
+      "PNJ-18",
+      "PNJ-21",
+      "MEN-11",
+      "CAZ-01",
+      "CAZ-02",
+      "CAZ-03"
+    ],
+    "otros": [
+      "MEN-02"
+    ],
+    "desesperacion": 1,
+    "peligro": 0,
+    "peligroMax": 5,
+    "descripcion": "Una célula pequeña, con presupuesto ajustado y una orden clara: confirmar si Seattle tiene «una estructura organizada» y, si la tiene, no tocarla hasta poder arrancarla de raíz. La dirige la agente especial Dana Okafor desde un piso 11 de South Lake Union. Tiene una analista que no duerme, dos analistas más, seis operadores contratados como unidad antiterrorista y un enlace con la oficina del FBI de Seattle.",
+    "notas": "**Desesperación inicial 1:** una sola célula, un presupuesto que no alcanza y una fuente en la que nadie confía. **Peligro inicial 0:** la presa no sabe que la Célula existe. Ver @ID[CEL-01|La Célula Puget] para cómo suben y bajan durante la aventura.",
+    "propuesto": [
+      "Desesperación inicial 1 y Peligro inicial 0 (máximo 5), y las reglas para moverlos durante la aventura (página CEL-01).",
+      "El lema resume la orden que el doc 14 le da a Okafor."
+    ]
+  }
+}

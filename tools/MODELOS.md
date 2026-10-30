@@ -31,6 +31,7 @@ Los valores que cambian por asset son strings con la forma `"{{NOMBRE}}"`:
 | `{{LORA}}`, `{{PASOS}}`, `{{CFG}}` | número | Lightning sí/no: `1`/`4`/`1`; sin Lightning: `0`/`20`/`4` | `plano-qwen` (`PASOS` también en `plano-klein`, `plano-zimage`) |
 | `{{DENOISE}}` | número | `1` = desde ruido; `< 1` = parte del latente del esquema (img2img) | `plano-qwen`, `plano-zimage` |
 | `{{FUERZA}}`, `{{FIN_CONTROL}}` | número | `strength` y `end_percent` del ControlNet | `plano-zimage` |
+| `{{DENOISE}}` (klein) | número | fracción final de los `PASOS` que se corren (`SplitSigmasDenoise`) | `detalle-klein` |
 
 `tools/comfy.mjs` reemplaza cualquier marcador «solo» por el valor con el tipo que se le pase:
 un número de JS queda número en el JSON.
@@ -51,7 +52,8 @@ y se convierte a WebP del lado de `comfy.mjs`. `plano-controlnet` guarda tambié
 | `recortar-birefnet.json` | BiRefNet (nativo) | — | Sale RGBA (JoinImageWithAlpha con la máscara invertida, como el blueprint oficial). |
 | `plano-qwen.json` | Qwen-Image-Edit-2511 Q5_K_M (+ Lightning opcional) | shift 3.1, CFGNorm, `euler`/`simple` | Para `pintar-planos`. El esquema entra por `ReferenceLatent` al tamaño EXACTO de salida (el `TextEncodeQwenImageEditPlus` va sin VAE: sólo visión), porque el nodo de texto escala la referencia a 1 MP y la salida es de ~1,5 MP: así referencia y salida tienen el mismo tamaño (deriva medida en helen: 0–1 px). El mismo latente es el punto de partida (`DENOISE`). La referencia de estilo la agrega `pintar-planos` en código. |
 | `plano-klein.json` | FLUX.2 [klein] 4B | 4 pasos, Flux2Scheduler | Para `pintar-planos`: una sola referencia (el esquema, al tamaño de salida). |
-| `plano-zimage.json` | Z-Image Turbo + Fun ControlNet Union 2.1 | 8 pasos, cfg 1 | Para `pintar-planos`: control YA preprocesado (sin nodo Canny: `pintar-planos` arma líneas desde el plano, Canny o gris con ImageMagick) y latente inicial del esquema con `DENOISE`. |
+| `plano-zimage.json` | Z-Image Turbo + Fun ControlNet Union 2.1 | 8 pasos, cfg 1 | Para `pintar-planos`: control YA preprocesado (sin nodo Canny: `pintar-planos` arma líneas desde el plano, Canny o gris con ImageMagick) y latente inicial del esquema con `DENOISE`. **También es el workflow de la pasada de detalle** (`pintar-planos --detalle`): img2img por mosaico con `IMAGEN` = el mosaico con grano inyectado, `CONTROL` = Canny del mosaico sin grano (`magick -canny 0x1.5+10%+25%`), `DENOISE` 0,6 interior / 0,4 exterior, `FUERZA` 0,75, `FIN_CONTROL` 1. Sin ControlNet, `pintar-planos` borra los nodos 4–7 y conecta el modelo directo. |
+| `detalle-klein.json` | FLUX.2 [klein] 4B | `Flux2Scheduler` (`PASOS`, 8 recomendado) + `SplitSigmasDenoise` (`DENOISE`) + `SamplerCustomAdvanced` sobre el latente del mosaico | img2img con denoise parcial. El mismo latente entra como `ReferenceLatent` (modo edición); para img2img puro, `pintar-planos` conecta el guía al prompt sin referencia (`referencia: false`). Probado en helen y **descartado** para la pasada de detalle: con referencia copia el mosaico casi idéntico aun a denoise 0,75 (RMSE 2 %) y a 1,0 inventa objetos; sin referencia, a 0,5 sólo suma veta y a 0,7 rompe muros. |
 
 ## Modelos
 
@@ -128,3 +130,8 @@ después de `POST /free` (modelos fuera de VRAM, pero en caché de disco/RAM).
 | `escalar-seedvr2` 3B fp16 | 1024×768 → 2048×1536 / → 4096×3072 | 3,5 s / 10,0 s | — | 11,0 / 13,3 GB |
 | `escalar-seedvr2` 7B fp8 | → 2048×1536 / → 4096×3072 | 4,5 s / 12,0 s | — | 12,1 / 14,8 GB |
 | `recortar-birefnet` | 768×1024 | 1,5 s | — | 5,1 GB |
+| `generar-arte` retrato (`t2i-zimage`, 8 pasos) | 832×1248 | 12 s | 8 s por imagen (≈8 min por 60 imágenes con la descarga y el WebP) | 12,4 GB; RAM disponible baja a ≈15 GB con Z-Image + qwen_3_4b cargados |
+| `generar-arte` token (`editar-qwen` Q5_K_M + Lightning, 1 referencia, + BiRefNet + `tokens.mjs`) | 1024×1024 | 38 s | 16–28 s por token | GPU 43–54 °C en lotes de 45; RAM disponible ≈33 GB |
+| `plano-zimage` como pasada de detalle (canny, 8 pasos) | mosaico 1152×1152 | — | 8–16 s por mosaico | ≈15 GB |
+| `detalle-klein` (8 pasos, denoise 0,4–0,75) | mosaico 1152×1152 | — | 4–12 s por mosaico | ≈15 GB |
+| `pintar-planos --solo helen` completo (klein + SeedVR2 7B + detalle 16+12 mosaicos + grading) | 21×20 m | — | ≈400 s (16 + 8 + ≈300 s de detalle) | — |

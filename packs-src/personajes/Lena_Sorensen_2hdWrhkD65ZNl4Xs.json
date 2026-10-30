@@ -1,0 +1,583 @@
+{
+  "_id": "2hdWrhkD65ZNl4Xs",
+  "_key": "!actors!2hdWrhkD65ZNl4Xs",
+  "name": "Lena Sorensen",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/CAZ-03.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 60,
+  "prototypeToken": {
+    "name": "Lena Sorensen",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "Operadora de brecha del equipo táctico de FIRSTLIGHT, ex ingeniera de combate del Ejército",
+      "chronicle": "Seattle by Night",
+      "ambition": "Retirarse con la casa pagada antes de los cuarenta y cinco.",
+      "desire": "Una noche de trabajo sin que nadie diga «sujeto».",
+      "touchstones": "<h3>Piedras de toque</h3><ul><li>Su madre, en la casa de Ballard, a cuatro calles de Market Street.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Construir, inventar, aumentar o reparar durante la Caza.",
+      "cellname": "Célula Puget"
+    },
+    "bio": {
+      "age": {
+        "trueage": "41",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Operadora de brecha del equipo táctico de FIRSTLIGHT, ex ingeniera de combate del Ejército</td></tr><tr><th>Edad</th><td>41</td></tr><tr><th>Ambición</th><td>Retirarse con la casa pagada antes de los cuarenta y cinco.</td></tr><tr><th>Deseo</th><td>Una noche de trabajo sin que nadie diga «sujeto».</td></tr><tr><th>Reservas</th><td>Física 6 · Social 2 · Mental 4 · Armas de fuego 7 · Atletismo 5 · Consciencia 5 · Pelea 5</td></tr></tbody></table><h3>Semblante</h3><p>Cuarenta y un años, rubia, ancha de hombros, las manos llenas de cicatrices pequeñas. Masca chicle de nicotina. Cuenta en voz baja antes de cada puerta.</p><p>Una de los seis operadores de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}. El generador de la furgoneta tarda dos turnos en encenderse; ella dice que en sus manos tarda uno y medio.</p><h3>Cazador</h3><table class=\"sbn-ficha\"><tbody><tr><th>Célula</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Célula Puget}</td></tr><tr><th>Credo</th><td>Emprendedores. <em>Desesperación:</em> Construir, inventar, aumentar o reparar durante la Caza.</td></tr><tr><th>Impulso</th><td>Codicia. <em>Redención:</em> Se redime cuando la Caza le deja algo que vale (dinero, un objeto, un favor que se pueda cobrar) y lo usa para cerrar una deuda.</td></tr><tr><th>Facultades</th><td>Artillería (Hecho a mano)</td></tr></tbody></table><p>Creció en Ballard, hija de pescadores. Debe la casa de su madre y otra deuda que no cuenta. FIRSTLIGHT paga el riesgo a precio federal y ella lo cobra por horas. Lo que se lleva de cada operación lo tiene contado.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.hKlrjorCoIiKhIi8]{Pregenerado: Lena Sorensen · Brecha}</p>",
+    "appearance": "<p>Cuarenta y un años, rubia, ancha de hombros, las manos llenas de cicatrices pequeñas. Masca chicle de nicotina. Cuenta en voz baja antes de cada puerta.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Propuesto (no está en los docs)</h3><ul><li>Todo el personaje es propuesto. Conversión de las reservas de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT} (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Artesanía (Explosivos), Ciencias, Conducir y Medicina son propias.</li><li>Credo Emprendedora (arma cargas, arregla el generador, improvisa), Impulso Codicia, Facultad Artillería con el Beneficio «Hecho a mano». El generador es el del arsenal del doc 14; que lo maneje ella es propuesto.</li><li>Ventaja Recursos 1 y Defecto Deuda 1.</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "craft": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Explosivos",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "science": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "medicine": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "ordnance": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Cargas de brecha, granadas aturdidoras y el generador de luz solar artificial de la furgoneta: lo arma, lo enciende y lo apaga ella.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 1 (sueldo de contratista, todo comprometido)"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 1 (sueldo de contratista, todo comprometido)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "XdkPeX8ToHEWCLOP",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.XdkPeX8ToHEWCLOP"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Deuda 1 (alguien en el puerto sabe dónde vive su madre)"
+        }
+      },
+      "name": "Deuda",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Deuda 1 (alguien en el puerto sabe dónde vive su madre)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "flaw"
+      },
+      "_id": "kkuB5slJEf3gccqt",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.kkuB5slJEf3gccqt"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Fusil corto con munición incendiaria",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Agravado contra Vástagos (munición incendiaria). Lleva una linterna UV montada en el arma.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "2DZJOtyLdkpYJrVg",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.2DZJOtyLdkpYJrVg"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "Linterna UV de alta intensidad",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>1 agravado</td></tr></tbody></table><p>Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.</p><p>Estado: @UUID[Item.CbbejNJnKXKf8gbq]{Iluminado por la linterna UV}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "1ZcI9tZ8eHWzRb0N",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.1ZcI9tZ8eHWzRb0N"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Armadura ligera",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Blindaje</th><td>3</td></tr></tbody></table><p>Blindaje 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "dtj1RYUvebwIpaf2",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.dtj1RYUvebwIpaf2"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Cámaras corporales",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"acción sobrenatural visible delante de una cámara corporal\"><i class=\"fa-solid fa-temperature-half\"></i> Termómetro +1</button> (máximo +2 por escena)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "deaelmGOsOEqKZ8z",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.deaelmGOsOEqKZ8z"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Gafas térmicas",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "xfPmcosJe7iLO59w",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.xfPmcosJe7iLO59w"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Munición incendiaria",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "sn0nIs36Chxw7xgD",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.sn0nIs36Chxw7xgD"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "generador-luz-solar",
+          "agravado": true
+        }
+      },
+      "name": "Generador de luz solar artificial",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>2 agravado</td></tr></tbody></table><p>En la furgoneta. Ilumina una zona de 20 metros. Dentro: 2 de daño agravado por turno y Terror Rojo automático (Dificultad 3) al entrar. Tarda dos turnos en encenderse.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "u8AOxydDIONMLbFc",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.u8AOxydDIONMLbFc"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "entrepreneurial"
+        }
+      },
+      "name": "Emprendedores",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Construir, inventar, aumentar o reparar durante la Caza."
+      },
+      "_id": "vhJFHVLV7BVDI1Px",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.vhJFHVLV7BVDI1Px"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "greed"
+        }
+      },
+      "name": "Codicia",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Creció en Ballard, hija de pescadores. Debe la casa de su madre y otra deuda que no cuenta. FIRSTLIGHT paga el riesgo a precio federal y ella lo cobra por horas. Lo que se lleva de cada operación lo tiene contado.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "redemption": "<p>Se redime cuando la Caza le deja algo que vale (dinero, un objeto, un favor que se pueda cobrar) y lo usa para cerrar una deuda.</p>"
+      },
+      "_id": "YZvKO8czW9v3Ujq1",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.YZvKO8czW9v3Ujq1"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Hecho a mano: en una noche fabrica con lo que hay en la armería dos cargas de brecha o tres granadas aturdidoras. Una puerta, una pared fina o una persiana metálica caen en un turno."
+        }
+      },
+      "name": "Hecho a mano",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>en una noche fabrica con lo que hay en la armería dos cargas de brecha o tres granadas aturdidoras. Una puerta, una pared fina o una persiana metálica caen en un turno.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "CAZ-03"
+        },
+        "edge": "ordnance",
+        "selected": false
+      },
+      "_id": "FJMJvPxw44IBEUoo",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.FJMJvPxw44IBEUoo"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CAZ-03",
+      "journal": null,
+      "doc": "propuesto",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

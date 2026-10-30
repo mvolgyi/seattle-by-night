@@ -246,3 +246,307 @@ button.sbn-pista.sbn-obtenida::before {
 /* Tooltips multilínea del indicador. */
 #tooltip.sbn-tooltip,
 .locked-tooltip.sbn-tooltip { white-space: pre-line; text-align: left; }
+
+/* -------------------------------------------- */
+/*  Panel del Narrador (#sbn-panel)             */
+/* -------------------------------------------- */
+
+#sbn-panel .window-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#sbn-panel .sheet-tabs {
+  flex: 0 0 auto;
+  margin: 0 8px;
+}
+#sbn-panel .sbn-panel-tab {
+  display: none;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 6px 10px 12px;
+  container-type: inline-size;
+}
+#sbn-panel .sbn-panel-tab.active { display: block; }
+#sbn-panel h3 {
+  margin: 12px 0 4px;
+  font-size: var(--font-size-16, 16px);
+  border-bottom: 1px solid color-mix(in srgb, var(--sbn-sodio) 60%, transparent);
+}
+#sbn-panel h4 { margin: 8px 0 4px; font-size: var(--font-size-14, 14px); }
+#sbn-panel .sbn-nota { font-size: 0.9em; opacity: 0.8; margin: 2px 0; }
+#sbn-panel .sbn-vacio { font-style: italic; opacity: 0.7; }
+#sbn-panel .sbn-panel-aviso {
+  margin: 4px 0;
+  padding: 4px 8px;
+  border-left: 3px solid var(--sbn-carmesi);
+  background: color-mix(in srgb, var(--sbn-carmesi) 14%, transparent);
+}
+#sbn-panel .sbn-cuenta {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0 0.35em;
+  margin-left: 0.3em;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--sbn-pizarra) 35%, transparent);
+}
+#sbn-panel .sbn-etiqueta,
+#sbn-panel .sbn-chip {
+  display: inline-block;
+  margin: 1px 2px;
+  padding: 0 0.45em;
+  font-size: 0.8em;
+  line-height: 1.5;
+  white-space: nowrap;
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--sbn-puerto) 70%, transparent);
+  background: color-mix(in srgb, var(--sbn-puerto) 18%, transparent);
+}
+#sbn-panel .sbn-chip-menos { border-color: var(--sbn-carmesi); background: color-mix(in srgb, var(--sbn-carmesi) 22%, transparent); }
+#sbn-panel .sbn-chip-si { border-color: var(--sbn-sodio); background: color-mix(in srgb, var(--sbn-sodio) 30%, transparent); }
+#sbn-panel .sbn-etiqueta-actual { border-color: var(--sbn-sodio); background: var(--sbn-sodio); color: var(--sbn-negro); }
+#sbn-panel .sbn-id { font-family: var(--font-monospace, monospace); font-size: 0.85em; opacity: 0.85; }
+#sbn-panel a.content-link {
+  margin-right: 2px;
+  color: inherit;
+  background: color-mix(in srgb, var(--sbn-puerto) 28%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sbn-puerto) 75%, transparent);
+  white-space: nowrap;
+}
+#sbn-panel a.content-link:hover { border-color: var(--sbn-sodio); }
+#sbn-panel a.content-link i { color: var(--sbn-sodio); }
+#sbn-panel .sbn-sin-enlace { opacity: 0.75; border-bottom: 1px dotted currentColor; }
+#sbn-panel .sbn-lista { margin: 4px 0; padding-left: 1.2em; }
+#sbn-panel .sbn-lista li { margin: 2px 0; }
+
+/* Tablas */
+#sbn-panel .sbn-tabla {
+  width: 100%;
+  margin: 4px 0;
+  border-collapse: collapse;
+  font-size: var(--font-size-13, 13px);
+  background: none;
+  border: none;
+}
+#sbn-panel .sbn-tabla th,
+#sbn-panel .sbn-tabla td {
+  padding: 3px 5px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+}
+#sbn-panel .sbn-tabla thead th { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.75; }
+#sbn-panel .sbn-tabla tr.sbn-obtenida,
+#sbn-panel .sbn-tabla tr.sbn-on { background: color-mix(in srgb, var(--sbn-puerto) 16%, transparent); }
+#sbn-panel .sbn-tabla tr.sbn-actual { background: color-mix(in srgb, var(--sbn-sodio) 22%, transparent); }
+
+/* Casillas (pistas, pruebas) */
+#sbn-panel button.sbn-casilla {
+  width: 24px;
+  height: 24px;
+  min-height: 0;
+  padding: 0;
+  margin: 0 1px;
+  line-height: 1;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  opacity: 0.7;
+}
+#sbn-panel button.sbn-casilla.sbn-on { color: var(--sbn-sodio); opacity: 1; }
+#sbn-panel button.sbn-casilla:hover { opacity: 1; }
+
+/* Resumen de arriba */
+#sbn-panel .sbn-panel-resumen {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+  padding: 6px 12px;
+  color: var(--sbn-papel);
+  background: linear-gradient(90deg, var(--sbn-negro), var(--sbn-puerto));
+  border-bottom: 2px solid var(--sbn-sodio);
+}
+#sbn-panel .sbn-panel-resumen.sbn-congelado { border-bottom-color: #7fb4d9; }
+#sbn-panel .sbn-panel-resumen .sbn-panel-aviso { flex-basis: 100%; }
+#sbn-panel .sbn-res-item { display: flex; align-items: baseline; gap: 6px; }
+#sbn-panel .sbn-res-etiqueta { text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.06em; opacity: 0.75; color: inherit; }
+#sbn-panel .sbn-res-valor { font-size: 1.5em; font-weight: bold; color: var(--sbn-sodio); }
+#sbn-panel .sbn-res-valor small { font-size: 0.55em; opacity: 0.7; color: var(--sbn-papel); }
+#sbn-panel .sbn-res-icono { font-size: 1.2em; }
+#sbn-panel .sbn-res-hielo { color: #7fb4d9; }
+#sbn-panel .sbn-res-celula { margin-left: auto; gap: 10px; }
+#sbn-panel .sbn-res-celula i { color: var(--sbn-sodio); }
+
+/* Termómetro */
+#sbn-panel .sbn-tm-cabecera {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "numero escala" "numero controles" "motivo motivo";
+  gap: 6px 12px;
+  align-items: center;
+  margin: 4px 0 8px;
+}
+#sbn-panel .sbn-tm-numero {
+  grid-area: numero;
+  min-width: 2ch;
+  font-size: 3.2em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: var(--sbn-carmesi);
+}
+#sbn-panel .sbn-tm-cabecera.sbn-congelado .sbn-tm-numero { color: #7fb4d9; }
+#sbn-panel .sbn-tm-escala { grid-area: escala; display: flex; gap: 3px; }
+#sbn-panel .sbn-tm-seg {
+  flex: 1 1 0;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  border-radius: 2px;
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+#sbn-panel .sbn-tm-seg.sbn-umbral { box-shadow: inset 0 -3px 0 var(--sbn-sodio); font-weight: bold; }
+#sbn-panel .sbn-tm-seg.sbn-on { background: var(--sbn-carmesi); color: var(--sbn-papel); }
+#sbn-panel .sbn-tm-controles { grid-area: controles; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+#sbn-panel .sbn-tm-controles button { flex: 0 0 auto; width: auto; padding: 0 8px; }
+#sbn-panel .sbn-tm-controles input[type=number] { width: 4em; flex: 0 0 auto; }
+#sbn-panel .sbn-tm-controles .sbn-btn-congelar.sbn-activo { background: #7fb4d9; color: var(--sbn-negro); }
+#sbn-panel .sbn-tm-motivo { grid-area: motivo; width: 100%; }
+#sbn-panel .sbn-tm-umbrales .sbn-tm-umbral-valor { white-space: nowrap; font-weight: bold; width: 3.5em; }
+#sbn-panel .sbn-tm-umbrales tr:not(.sbn-alcanzado) { opacity: 0.7; }
+#sbn-panel .sbn-tm-umbrales tr.sbn-alcanzado .sbn-tm-umbral-valor { color: var(--sbn-carmesi); }
+#sbn-panel .sbn-tm-jugadores { font-style: italic; width: 30%; }
+#sbn-panel .sbn-tm-grupo { margin: 4px 0; }
+#sbn-panel .sbn-tm-grupo > summary { cursor: pointer; font-weight: bold; padding: 2px 0; }
+#sbn-panel .sbn-tm-movimientos { list-style: none; margin: 2px 0 6px; padding: 0; }
+#sbn-panel .sbn-tm-movimientos li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 2px 0;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
+}
+#sbn-panel button.sbn-mov {
+  flex: 0 0 4.2em;
+  width: 4.2em;
+  height: 24px;
+  min-height: 0;
+  padding: 0;
+  font-weight: bold;
+  color: var(--sbn-papel);
+  border: 1px solid transparent;
+}
+#sbn-panel button.sbn-mov.sbn-mov-sube { background: color-mix(in srgb, var(--sbn-carmesi) 85%, var(--sbn-negro)); border-color: var(--sbn-carmesi); }
+#sbn-panel button.sbn-mov.sbn-mov-baja { background: var(--sbn-puerto); border-color: color-mix(in srgb, var(--sbn-puerto) 60%, white); }
+#sbn-panel button.sbn-mov.sbn-mov-congelar { background: #4d7a99; font-size: 0.75em; }
+#sbn-panel button.sbn-mov:disabled { opacity: 0.4; filter: saturate(0.3); }
+#sbn-panel .sbn-mov-texto { flex: 1 1 auto; }
+#sbn-panel .sbn-tm-historial .sbn-fecha { white-space: nowrap; font-size: 0.9em; opacity: 0.8; }
+#sbn-panel .sbn-tm-historial .sbn-tm-cambio { white-space: nowrap; }
+#sbn-panel .sbn-tm-historial tr.sbn-sube .sbn-tm-cambio strong { color: var(--sbn-carmesi); }
+#sbn-panel .sbn-tm-historial tr.sbn-baja .sbn-tm-cambio strong { color: #4d7a99; }
+
+/* Reloj */
+#sbn-panel .sbn-reloj-controles { display: flex; align-items: center; gap: 8px; margin: 4px 0 8px; }
+#sbn-panel .sbn-reloj-controles button { flex: 0 0 auto; width: auto; padding: 0 10px; }
+#sbn-panel .sbn-reloj-actual { flex: 1; text-align: center; font-weight: bold; color: var(--sbn-sodio); }
+#sbn-panel .sbn-noches { list-style: none; margin: 0; padding: 0; }
+#sbn-panel .sbn-noche {
+  margin: 0 0 6px;
+  padding: 6px 8px;
+  border-left: 3px solid color-mix(in srgb, var(--sbn-pizarra) 60%, transparent);
+  background: color-mix(in srgb, var(--sbn-pizarra) 10%, transparent);
+}
+#sbn-panel .sbn-noche.sbn-actual { border-left-color: var(--sbn-sodio); background: color-mix(in srgb, var(--sbn-sodio) 16%, transparent); }
+#sbn-panel .sbn-noche.sbn-pasada { opacity: 0.6; }
+#sbn-panel .sbn-noche-cabecera { display: flex; align-items: center; gap: 8px; }
+#sbn-panel .sbn-noche-n {
+  display: grid;
+  place-items: center;
+  width: 1.8em;
+  height: 1.8em;
+  font-weight: bold;
+  border-radius: 50%;
+  color: var(--sbn-papel);
+  background: var(--sbn-puerto);
+}
+#sbn-panel .sbn-noche.sbn-actual .sbn-noche-n { background: var(--sbn-sodio); color: var(--sbn-negro); }
+#sbn-panel .sbn-noche-fecha { font-variant: small-caps; font-weight: bold; flex: 1; }
+#sbn-panel button.sbn-noche-fijar { flex: 0 0 auto; width: auto; height: 22px; min-height: 0; padding: 0 8px; font-size: 0.85em; }
+#sbn-panel .sbn-noche-evento { margin: 4px 0; }
+#sbn-panel .sbn-noche-movs { margin: 2px 0; padding-left: 1.2em; font-size: 0.9em; }
+#sbn-panel .sbn-noche-horas ul { margin: 2px 0; padding-left: 1.2em; font-size: 0.9em; }
+#sbn-panel .sbn-hora { font-family: var(--font-monospace, monospace); font-size: 0.9em; opacity: 0.85; margin-right: 4px; }
+
+/* Tiradas clave */
+#sbn-panel .sbn-tirada-clave {
+  margin: 6px 0 14px;
+  padding: 6px 10px 10px;
+  border: 1px solid color-mix(in srgb, var(--sbn-sodio) 45%, transparent);
+  border-radius: 4px;
+}
+#sbn-panel .sbn-tirada-clave > header h3 { margin-top: 2px; }
+#sbn-panel .sbn-tc-fila { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 6px 0; }
+#sbn-panel .sbn-tc-fila label { display: flex; align-items: center; gap: 6px; }
+#sbn-panel .sbn-tc-fila select { min-width: 12em; }
+#sbn-panel .sbn-tc-ruta { opacity: 0.85; }
+#sbn-panel .sbn-tc-cuerpo { display: grid; grid-template-columns: 1fr 15em; gap: 12px; align-items: start; }
+#sbn-panel .sbn-tc-casillas { list-style: none; margin: 0; padding: 0; }
+#sbn-panel .sbn-tc-casillas li { display: flex; align-items: center; gap: 4px; padding: 1px 0; }
+#sbn-panel .sbn-tc-casillas li.sbn-on { font-weight: bold; }
+#sbn-panel .sbn-tc-reserva {
+  position: sticky;
+  top: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--sbn-papel);
+  background: color-mix(in srgb, var(--sbn-negro) 88%, var(--sbn-puerto));
+}
+#sbn-panel .sbn-tc-total { text-align: center; }
+#sbn-panel .sbn-tc-numero { font-size: 2.6em; font-weight: bold; color: var(--sbn-sodio); line-height: 1; }
+#sbn-panel .sbn-tc-numero-oponente { font-size: 1.8em; color: var(--sbn-carmesi); }
+#sbn-panel .sbn-tc-desglose { list-style: none; margin: 6px 0; padding: 0; font-size: 0.9em; }
+#sbn-panel .sbn-tc-desglose li { display: flex; justify-content: space-between; gap: 6px; border-bottom: 1px dotted color-mix(in srgb, var(--sbn-papel) 25%, transparent); }
+#sbn-panel .sbn-tc-desglose li.sbn-base { opacity: 0.85; }
+#sbn-panel button.sbn-tc-tirar { width: 100%; margin-top: 4px; color: var(--sbn-negro); background: var(--sbn-sodio); border-color: var(--sbn-sodio); font-weight: bold; }
+#sbn-panel button.sbn-tc-tirar:disabled { opacity: 0.5; }
+#sbn-panel .sbn-tc-oponente { margin-top: 10px; padding-top: 8px; text-align: center; border-top: 1px solid color-mix(in srgb, var(--sbn-papel) 25%, transparent); }
+#sbn-panel .sbn-tc-oponente button { width: 100%; margin-top: 4px; }
+#sbn-panel .sbn-tc-margen { margin-top: 10px; display: grid; gap: 4px; font-size: 0.9em; }
+#sbn-panel .sbn-tc-margen label { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+#sbn-panel .sbn-tc-margen input { width: 4em; flex: 0 0 auto; }
+#sbn-panel .sbn-tc-margen-valor { text-align: center; font-size: 1.1em; }
+#sbn-panel .sbn-tc-valores .sbn-tc-marcas { width: 1%; white-space: nowrap; }
+#sbn-panel .sbn-tc-valores .sbn-tc-cantidad { width: 1%; white-space: nowrap; font-weight: bold; text-align: right; }
+#sbn-panel .sbn-votacion .sbn-voto { white-space: nowrap; }
+#sbn-panel .sbn-votacion .sbn-voto select { width: auto; }
+#sbn-panel .sbn-votacion .sbn-voto button { width: 26px; height: 26px; min-height: 0; padding: 0; }
+#sbn-panel .sbn-votacion tr.sbn-voto-si td:last-child { box-shadow: inset 3px 0 0 var(--sbn-carmesi); }
+#sbn-panel .sbn-votacion tr.sbn-voto-no td:last-child { box-shadow: inset 3px 0 0 var(--sbn-sodio); }
+#sbn-panel .sbn-cambiaria { color: var(--sbn-sodio); opacity: 1; }
+#sbn-panel .sbn-votacion-cuenta { padding: 4px 8px; border-radius: 3px; background: color-mix(in srgb, var(--sbn-pizarra) 18%, transparent); }
+#sbn-panel .sbn-veredicto-aprobada { border-left: 3px solid var(--sbn-carmesi); }
+#sbn-panel .sbn-veredicto-rechazada { border-left: 3px solid var(--sbn-sodio); }
+#sbn-panel .sbn-veredicto-pendiente { border-left: 3px solid #7fb4d9; }
+
+@container (max-width: 640px) {
+  #sbn-panel .sbn-tc-cuerpo { grid-template-columns: 1fr; }
+}
+
+/* Enlaces a documentos que el jugador no puede abrir: texto plano, sin aspecto de enlace. */
+.sbn-sin-permiso {
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+  opacity: 0.85;
+}

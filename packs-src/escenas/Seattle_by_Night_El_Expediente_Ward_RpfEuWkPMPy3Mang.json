@@ -54,7 +54,7 @@
       "_id": "L40GCJMVBVfm7iEy",
       "entryId": "xkgduTFLzE5Eik8z",
       "pageId": null,
-      "x": 700,
+      "x": 570,
       "y": 670,
       "elevation": 0,
       "sort": 0,
@@ -92,7 +92,7 @@
       "_id": "282A6FPZSrou63sd",
       "entryId": "ll97TEj4MRjtM595",
       "pageId": null,
-      "x": 960,
+      "x": 830,
       "y": 670,
       "elevation": 0,
       "sort": 0,
@@ -130,7 +130,7 @@
       "_id": "Wz7Y4tuQqqpdbj5C",
       "entryId": "LkbsP03WDYiTwRRX",
       "pageId": null,
-      "x": 1220,
+      "x": 1090,
       "y": 670,
       "elevation": 0,
       "sort": 0,
@@ -163,6 +163,44 @@
         }
       },
       "_key": "!scenes.notes!RpfEuWkPMPy3Mang.Wz7Y4tuQqqpdbj5C"
+    },
+    {
+      "_id": "pzMqH6IO4rb5bLEc",
+      "entryId": "xkgduTFLzE5Eik8z",
+      "pageId": "CZ9mpQsEnZtklV4h",
+      "x": 1350,
+      "y": 670,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/padlock.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 64,
+      "text": "Aviso legal",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "portada",
+          "id": "AVISO-LEGAL"
+        }
+      },
+      "_key": "!scenes.notes!RpfEuWkPMPy3Mang.pzMqH6IO4rb5bLEc"
     }
   ],
   "tiles": [],
