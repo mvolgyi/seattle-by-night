@@ -1,0 +1,53 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": { "title": "SeedVR2 (3B fp16; alternativa: seedvr2_7b_fp8_e4m3fn.safetensors)" },
+    "inputs": { "unet_name": "seedvr2_3b_fp16.safetensors", "weight_dtype": "default" }
+  },
+  "2": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "seedvr2_ema_vae_fp16.safetensors" }
+  },
+  "3": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "Imagen a escalar" },
+    "inputs": { "image": "{{IMAGEN}}" }
+  },
+  "4": {
+    "class_type": "ImageScale",
+    "_meta": { "title": "Tamaño final (lanczos; SeedVR2 restaura el detalle a este tamaño)" },
+    "inputs": { "image": ["3", 0], "upscale_method": "lanczos", "width": "{{ANCHO}}", "height": "{{ALTO}}", "crop": "disabled" }
+  },
+  "5": {
+    "class_type": "SeedVR2Preprocess",
+    "inputs": { "resized_images": ["4", 0] }
+  },
+  "6": {
+    "class_type": "VAEEncodeTiled",
+    "inputs": { "pixels": ["5", 0], "vae": ["2", 0], "tile_size": 512, "overlap": 128, "temporal_size": 64, "temporal_overlap": 8 }
+  },
+  "7": {
+    "class_type": "SeedVR2Conditioning",
+    "inputs": { "model": ["1", 0], "vae_conditioning": ["6", 0] }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["1", 0], "positive": ["7", 0], "negative": ["7", 1], "latent_image": ["6", 0],
+      "seed": "{{SEMILLA}}", "steps": 1, "cfg": 1, "sampler_name": "euler", "scheduler": "simple", "denoise": 1
+    }
+  },
+  "9": {
+    "class_type": "VAEDecodeTiled",
+    "inputs": { "samples": ["8", 0], "vae": ["2", 0], "tile_size": 512, "overlap": 128, "temporal_size": 64, "temporal_overlap": 8 }
+  },
+  "10": {
+    "class_type": "SeedVR2PostProcessing",
+    "inputs": { "images": ["9", 0], "original_resized_images": ["4", 0], "color_correction_method": "lab" }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "_meta": { "title": "Salida" },
+    "inputs": { "images": ["10", 0], "filename_prefix": "{{PREFIJO}}" }
+  }
+}

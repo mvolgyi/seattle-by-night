@@ -1,0 +1,78 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": { "title": "Z-Image Turbo bf16" },
+    "inputs": { "unet_name": "z_image_turbo_bf16.safetensors", "weight_dtype": "default" }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": { "clip_name": "qwen_3_4b.safetensors", "type": "lumina2", "device": "default" }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "z_image_ae.safetensors" }
+  },
+  "4": {
+    "class_type": "ModelPatchLoader",
+    "_meta": { "title": "Fun ControlNet Union 2.1 (2602, 8 pasos)" },
+    "inputs": { "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-2602-8steps.safetensors" }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "Imagen de control (esquema del plano)" },
+    "inputs": { "image": "{{CONTROL}}" }
+  },
+  "6": {
+    "class_type": "ImageScale",
+    "inputs": { "image": ["5", 0], "upscale_method": "lanczos", "width": "{{ANCHO}}", "height": "{{ALTO}}", "crop": "disabled" }
+  },
+  "7": {
+    "class_type": "Canny",
+    "_meta": { "title": "Preproceso Canny (saltear para entradas ya preprocesadas: MLSD, HED, depth, gris)" },
+    "inputs": { "image": ["6", 0], "low_threshold": 0.4, "high_threshold": 0.8 }
+  },
+  "8": {
+    "class_type": "ZImageFunControlnet",
+    "_meta": { "title": "Aplicar ControlNet (strength = control_context_scale, 0.65-1.0)" },
+    "inputs": { "model": ["1", 0], "model_patch": ["4", 0], "vae": ["3", 0], "image": ["7", 0], "strength": 0.9, "start_percent": 0, "end_percent": 1 }
+  },
+  "9": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": { "model": ["8", 0], "shift": 3 }
+  },
+  "10": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Prompt" },
+    "inputs": { "clip": ["2", 0], "text": "{{PROMPT}}" }
+  },
+  "11": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": { "conditioning": ["10", 0] }
+  },
+  "12": {
+    "class_type": "EmptySD3LatentImage",
+    "_meta": { "title": "Tamaño" },
+    "inputs": { "width": "{{ANCHO}}", "height": "{{ALTO}}", "batch_size": 1 }
+  },
+  "13": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["9", 0], "positive": ["10", 0], "negative": ["11", 0], "latent_image": ["12", 0],
+      "seed": "{{SEMILLA}}", "steps": 8, "cfg": 1, "sampler_name": "res_multistep", "scheduler": "simple", "denoise": 1
+    }
+  },
+  "14": {
+    "class_type": "VAEDecode",
+    "inputs": { "samples": ["13", 0], "vae": ["3", 0] }
+  },
+  "15": {
+    "class_type": "SaveImage",
+    "_meta": { "title": "Salida" },
+    "inputs": { "images": ["14", 0], "filename_prefix": "{{PREFIJO}}" }
+  },
+  "16": {
+    "class_type": "SaveImage",
+    "_meta": { "title": "Control usado (para revisar)" },
+    "inputs": { "images": ["7", 0], "filename_prefix": "{{PREFIJO}}-control" }
+  }
+}
