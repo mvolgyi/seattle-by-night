@@ -6,9 +6,14 @@
   "type": "module",
   "scripts": {
     "verificar": "node tools/verificar.mjs",
+    "docx": "python3 tools/importar-docx.py",
+    "planos": "node tools/construir-planos.mjs",
     "pack": "npm run verificar",
     "release": "node tools/release.mjs",
-    "e2e": "node tools/e2e/prueba.mjs"
+    "e2e": "node tools/e2e/prueba.mjs",
+    "verificar:contenido": "python3 tools/verificar-contenido.py .",
+    "comfy": "node tools/comfy.mjs",
+    "pintar": "node tools/pintar-planos.mjs"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.4",

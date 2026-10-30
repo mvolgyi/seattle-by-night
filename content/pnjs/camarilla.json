@@ -1,0 +1,845 @@
+{
+  "pnjs": [
+    {
+      "id": "PNJ-01",
+      "nombre": "Ethan Montgomery",
+      "apodo": "El Centinela de Puget Sound",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "gangrel",
+      "concepto": "Sheriff de Seattle",
+      "secta": "Camarilla (por lealtad personal al Príncipe)",
+      "sire": "Elijah Kane (PNJ-09)",
+      "nacimiento": "1845",
+      "abrazado": "1885",
+      "ambicion": "Que Seattle sobreviva a su Príncipe.",
+      "generacion": 8,
+      "potenciaSangre": 5,
+      "humanidad": 5,
+      "atributos": {
+        "strength": 4,
+        "dexterity": 4,
+        "stamina": 5,
+        "charisma": 2,
+        "manipulation": 3,
+        "composure": 5,
+        "intelligence": 3,
+        "wits": 4,
+        "resolve": 3
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          "Francotirador"
+        ],
+        "athletics": [
+          3,
+          null
+        ],
+        "awareness": [
+          4,
+          "Rastreo sobrenatural"
+        ],
+        "streetwise": [
+          2,
+          null
+        ],
+        "intimidation": [
+          3,
+          null
+        ],
+        "leadership": [
+          3,
+          "Autoridad por respeto"
+        ],
+        "occult": [
+          2,
+          "Límites de la Bestia"
+        ],
+        "brawl": [
+          4,
+          "Combate salvaje"
+        ],
+        "stealth": [
+          3,
+          null
+        ],
+        "survival": [
+          5,
+          "Rastreo"
+        ],
+        "animalken": [
+          4,
+          "Perros"
+        ]
+      },
+      "disciplinas": {
+        "animalism": [
+          3,
+          [
+            "Bond Famulus",
+            "Feral Whispers",
+            "Quell the Beast"
+          ]
+        ],
+        "fortitude": [
+          4,
+          [
+            "Resilience",
+            "Unswayable Mind",
+            "Toughness",
+            "Defy Bane"
+          ]
+        ],
+        "protean": [
+          3,
+          [
+            "Eyes of the Beast",
+            "Feral Weapons",
+            "Earth Meld"
+          ]
+        ]
+      },
+      "salud": 8,
+      "voluntad": 8,
+      "convicciones": [
+        "La Bestia no gobierna: se la domina",
+        "Ningún monstruo sin ley merece el don de la noche"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Dra. Lucy Harlan",
+          "descripcion": "Veterinaria de Snohomish, que atiende a sus perros y le prepara café que él nunca bebe."
+        }
+      ],
+      "ventajas": [
+        "Estatus 4 (Camarilla): respetado Sheriff del dominio (fuente previa, doc 22)",
+        "Refugio 3 (granja en el valle del Snohomish, con túnel hasta un embarcadero; LUG-02)",
+        "Rebaño 2 (los cazarrecompensas, MEN-03)",
+        "Contactos 3 (policía estatal, puerto y empresas de seguridad)",
+        "Aliado 3 (David Smith, PJ-01)",
+        "Máscara 2 (consultor de seguridad privada jubilado y criador de perros de trabajo)"
+      ],
+      "defectos": [
+        "Cicatrices de metamorfosis (ojos ámbar bajo estrés)",
+        "Instinto depredador (tirada de frenesí al oler sangre humana fresca, Dificultad 2)",
+        "Desconfianza hacia neonatos (−1 dado en tiradas Sociales con Vástagos de menos de 50 años)"
+      ],
+      "cita": "«Soy el guardián entre la Bestia y la ciudad. Si uno despierta, el otro cae.»",
+      "semblante": "Corpulento, piel curtida, barba entrecana corta y manos enormes; franela, chaqueta encerada, botas; ojos ámbar bajo tensión.",
+      "provisional": [
+        "David llegó a Seattle en los años 80 (lo dice el susurro «Montgomery y el Sabueso son amantes desde los setenta»)"
+      ]
+    },
+    {
+      "id": "PNJ-16",
+      "nombre": "Wendell Fry",
+      "apodo": "La voz de las tres de la mañana",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "malkavian",
+      "concepto": "Primogénito Malkavian (por costumbre)",
+      "secta": "Camarilla",
+      "sire": "Una Malkavian sin nombre que llamaba desde Fremont",
+      "nacimiento": "1938",
+      "abrazado": "1971",
+      "ambicion": "Descifrar lo que la ciudad intenta decirle.",
+      "generacion": 10,
+      "potenciaSangre": 2,
+      "humanidad": 7,
+      "atributos": {
+        "strength": 1,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 3,
+        "manipulation": 2,
+        "composure": 3,
+        "intelligence": 3,
+        "wits": 4,
+        "resolve": 2
+      },
+      "habilidades": {
+        "academics": [
+          2,
+          "Música"
+        ],
+        "awareness": [
+          4,
+          "Lo que no se dice"
+        ],
+        "etiquette": [
+          1,
+          null
+        ],
+        "performance": [
+          4,
+          "Radio"
+        ],
+        "occult": [
+          3,
+          "Profecía"
+        ],
+        "insight": [
+          5,
+          "Voces"
+        ],
+        "persuasion": [
+          2,
+          null
+        ],
+        "stealth": [
+          2,
+          null
+        ],
+        "technology": [
+          2,
+          "Radio analógica"
+        ]
+      },
+      "disciplinas": {
+        "auspex": [
+          3,
+          [
+            "Heightened Senses",
+            "Premonition",
+            "Scry the Soul"
+          ]
+        ],
+        "dominate": [
+          1,
+          [
+            "Cloud Memory"
+          ]
+        ],
+        "obfuscate": [
+          2,
+          [
+            "Cloak of Shadows",
+            "Unseen Passage"
+          ]
+        ]
+      },
+      "salud": 5,
+      "voluntad": 5,
+      "convicciones": [
+        "Nunca interrumpir a alguien que dice la verdad"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Helen Ward (PNJ-04)",
+          "descripcion": "Aunque ella no lo sabe."
+        }
+      ],
+      "ventajas": [
+        "Refugio 2 (estudio de radio abandonado en el último piso de un edificio de Fremont)",
+        "Rebaño 1 (los oyentes: una docena de insomnes)",
+        "Recursos 1 (escáneres de policía, puerto y emergencias)",
+        "Fama 1 (los viejos oyentes de la radio todavía reconocen su voz)",
+        "Máscara 1 (jubilado excéntrico de Fremont)"
+      ],
+      "defectos": [
+        "Perturbación (Malkavian): no puede dejar una frase sin terminar. Si alguien lo interrumpe, repite lo que estaba diciendo desde el principio."
+      ],
+      "cita": "«No estás loca, Helen. Y la lluvia tiene oídos.»",
+      "semblante": "Unos treinta y tres años aparentes. Delgado, barba descuidada, gafas de montura gruesa, pana y gorra de un equipo que ya no existe; auriculares al cuello y voz de radio.",
+      "nota": "Nota de edición: el doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió la edad al Abrazo (unos 33, barba sin canas)."
+    },
+    {
+      "id": "PNJ-13",
+      "nombre": "Abel Thornquist",
+      "apodo": "El dueño de abajo",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "nosferatu",
+      "concepto": "Primogénito Nosferatu",
+      "secta": "Camarilla",
+      "sire": "«La Madre de Abajo»",
+      "nacimiento": "1863",
+      "abrazado": "1890",
+      "ambicion": "Que nadie pueda gobernar Seattle sin pasar por abajo.",
+      "generacion": 9,
+      "potenciaSangre": 4,
+      "humanidad": 6,
+      "atributos": {
+        "strength": 4,
+        "dexterity": 2,
+        "stamina": 4,
+        "charisma": 2,
+        "manipulation": 4,
+        "composure": 4,
+        "intelligence": 3,
+        "wits": 4,
+        "resolve": 3
+      },
+      "habilidades": {
+        "craft": [
+          3,
+          "Carpintería"
+        ],
+        "streetwise": [
+          4,
+          "Mercado negro"
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "finance": [
+          3,
+          "Favores"
+        ],
+        "intimidation": [
+          3,
+          null
+        ],
+        "investigation": [
+          3,
+          null
+        ],
+        "brawl": [
+          3,
+          null
+        ],
+        "insight": [
+          4,
+          "Mentiras"
+        ],
+        "persuasion": [
+          3,
+          "Regateo"
+        ],
+        "stealth": [
+          4,
+          "Túneles"
+        ],
+        "subterfuge": [
+          3,
+          null
+        ]
+      },
+      "disciplinas": {
+        "animalism": [
+          2,
+          [
+            "Sense the Beast",
+            "Feral Whispers"
+          ]
+        ],
+        "obfuscate": [
+          4,
+          [
+            "Cloak of Shadows",
+            "Unseen Passage",
+            "Mask of a Thousand Faces",
+            "Vanish"
+          ]
+        ],
+        "potence": [
+          2,
+          [
+            "Lethal Body",
+            "Prowess"
+          ]
+        ]
+      },
+      "salud": 7,
+      "voluntad": 7,
+      "convicciones": [
+        "Un trato es un trato",
+        "Lo que se entierra no se pierde"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Dee Watkins",
+          "descripcion": "Trabajadora de un albergue de Pioneer Square, que deja la puerta trasera abierta para «los de abajo» y nunca hace preguntas."
+        }
+      ],
+      "ventajas": [
+        "Refugio 4 (las Galerías Selladas, bajo Pioneer Square; LUG-04)",
+        "Influencia 3 (el subterráneo: el Mercado de Abajo)",
+        "Aliados 2 (los sangre débil: una docena de jóvenes que recogen información en la superficie)",
+        "Contactos 4 (policías, porteros, empleados de limpieza nocturna y técnicos de mantenimiento de toda la ciudad)",
+        "Máscara 0 (no tiene Máscara mortal)"
+      ],
+      "cita": "«Todo se vende abajo. Lo único que cambia es quién paga.»",
+      "semblante": "Enorme y encorvado, piel de madera mojada gris y agrietada, mandíbula torcida y dedos como raíces; traje de tres piezas remendado y lámpara de carburo."
+    },
+    {
+      "id": "PNJ-14",
+      "nombre": "Solène Marchetti",
+      "apodo": "La que anota",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "toreador",
+      "concepto": "Guardiana del Elíseo y Primogénita Toreador",
+      "secta": "Camarilla",
+      "sire": "Un Toreador de Montreal, ya destruido",
+      "nacimiento": "1884",
+      "abrazado": "1912",
+      "ambicion": "Que el registro de Seattle llegue entero al siglo XXII.",
+      "generacion": 9,
+      "potenciaSangre": 3,
+      "humanidad": 7,
+      "atributos": {
+        "strength": 1,
+        "dexterity": 3,
+        "stamina": 2,
+        "charisma": 3,
+        "manipulation": 3,
+        "composure": 4,
+        "intelligence": 4,
+        "wits": 3,
+        "resolve": 3
+      },
+      "habilidades": {
+        "academics": [
+          4,
+          "Historia de la Camarilla"
+        ],
+        "craft": [
+          3,
+          "Caligrafía"
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "etiquette": [
+          4,
+          "Protocolo del Elíseo"
+        ],
+        "investigation": [
+          3,
+          "Archivos"
+        ],
+        "insight": [
+          3,
+          null
+        ],
+        "persuasion": [
+          2,
+          null
+        ],
+        "politics": [
+          4,
+          "Seattle"
+        ],
+        "subterfuge": [
+          2,
+          null
+        ]
+      },
+      "disciplinas": {
+        "auspex": [
+          3,
+          [
+            "Heightened Senses",
+            "Premonition",
+            "Scry the Soul"
+          ]
+        ],
+        "celerity": [
+          1,
+          [
+            "Cat's Grace"
+          ]
+        ],
+        "presence": [
+          2,
+          [
+            "Daunt",
+            "Lingering Kiss"
+          ]
+        ]
+      },
+      "salud": 5,
+      "voluntad": 7,
+      "convicciones": [
+        "Lo escrito no se borra"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Tomás Arriaga",
+          "descripcion": "Soplador de vidrio que hace las medusas de la Galería y que cree trabajar para una fundación excéntrica."
+        }
+      ],
+      "ventajas": [
+        "Refugio 2 (apartamento sobre el archivo de la Galería de Vidrio)",
+        "Aliados 2 (el personal de la Galería: cinco ghouls que sirven el Elíseo)",
+        "Estatus 3 (Camarilla)",
+        "Máscara 2 (directora del archivo de la fundación de la Galería)"
+      ],
+      "cita": "«No juzgo. Registro. El juicio lo hace el tiempo, y el tiempo siempre lee mis libros.»",
+      "semblante": "Unos veintiocho años aparentes. Alta, pelo oscuro en moño bajo, vestidos de corte antiguo en grises y gafas con cadena; escribe con pluma estilográfica.",
+      "nota": "Nota de edición: el doc 06 decía «aparenta unos cuarenta años»; se decidió la edad al Abrazo (unos 28)."
+    },
+    {
+      "id": "PNJ-02",
+      "nombre": "Marcus Whitmore",
+      "apodo": "El Príncipe de cristal",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "toreador",
+      "concepto": "Príncipe de Seattle",
+      "secta": "Camarilla",
+      "sire": "Clémence Aubert, soprano de la ópera de San Francisco",
+      "nacimiento": "1838",
+      "abrazado": "1871",
+      "ambicion": "Que su reinado se recuerde como una época dorada.",
+      "generacion": 8,
+      "potenciaSangre": 4,
+      "humanidad": 6,
+      "atributos": {
+        "strength": 2,
+        "dexterity": 3,
+        "stamina": 3,
+        "charisma": 5,
+        "manipulation": 4,
+        "composure": 3,
+        "intelligence": 3,
+        "wits": 3,
+        "resolve": 2
+      },
+      "habilidades": {
+        "academics": [
+          3,
+          "Historia del arte"
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "etiquette": [
+          5,
+          "Cortes"
+        ],
+        "finance": [
+          3,
+          null
+        ],
+        "performance": [
+          4,
+          "Teatro"
+        ],
+        "leadership": [
+          3,
+          null
+        ],
+        "insight": [
+          3,
+          null
+        ],
+        "persuasion": [
+          4,
+          "Seducción"
+        ],
+        "politics": [
+          4,
+          "Camarilla"
+        ],
+        "subterfuge": [
+          4,
+          null
+        ]
+      },
+      "disciplinas": {
+        "auspex": [
+          2,
+          [
+            "Heightened Senses",
+            "Premonition"
+          ]
+        ],
+        "celerity": [
+          2,
+          [
+            "Cat's Grace",
+            "Fleetness"
+          ]
+        ],
+        "presence": [
+          5,
+          [
+            "Awe",
+            "Lingering Kiss",
+            "Entrancement",
+            "Irresistible Voice",
+            "Majesty"
+          ]
+        ]
+      },
+      "salud": 6,
+      "voluntad": 5,
+      "convicciones": [
+        "La belleza justifica casi todo"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Ruby Kessler",
+          "descripcion": "81 años, antigua bailarina a la que becó en los sesenta y que hoy vive en una residencia. Todavía le manda flores."
+        }
+      ],
+      "ventajas": [
+        "Refugio 4 (ático en Capitol Hill a nombre de su fundación cultural)",
+        "Recursos 4 (la fundación cultural)",
+        "Influencia 3 (arte y cultura)",
+        "Estatus 5 (Camarilla)",
+        "Rebaño 2 (el público fiel del Club Ceniza)",
+        "Máscara 3 (Marcus Whitmore III, filántropo, con un linaje familiar ficticio que se renueva cada cuarenta años)"
+      ],
+      "cita": "«Un Príncipe no gobierna. Elige quién gobierna en su nombre, y aplaude.»",
+      "semblante": "Unos treinta y tres años aparentes. Alto, pelo peinado hacia atrás sin canas, ojos grises muy claros; traje impecable sin corbata y un anillo con piedra negra.",
+      "nota": "Nota de edición: el doc 06 decía «aparenta unos cuarenta y cinco años» y «pelo plateado»; se decidió la edad al Abrazo (unos 33, sin canas). El doc 06 le daba seis poderes con Presencia 5; se quitó Daunt (uno por punto)."
+    },
+    {
+      "id": "PNJ-15",
+      "nombre": "Dra. Anneliese Voight",
+      "apodo": "La que mira la red",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "tremere",
+      "concepto": "Regente de la Capilla del Observatorio y Primogénita Tremere",
+      "secta": "Camarilla",
+      "sire": "Regente Friedrich Ahlers de Viena (destruido en 1945)",
+      "nacimiento": "1891",
+      "abrazado": "1924",
+      "ambicion": "Que la Camarilla de Seattle sobreviva a la era de los datos.",
+      "generacion": 9,
+      "potenciaSangre": 4,
+      "humanidad": 6,
+      "atributos": {
+        "strength": 1,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 2,
+        "manipulation": 3,
+        "composure": 4,
+        "intelligence": 5,
+        "wits": 4,
+        "resolve": 4
+      },
+      "habilidades": {
+        "academics": [
+          4,
+          "Epidemiología"
+        ],
+        "science": [
+          4,
+          "Estadística"
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "etiquette": [
+          2,
+          null
+        ],
+        "investigation": [
+          4,
+          "Patrones"
+        ],
+        "medicine": [
+          3,
+          null
+        ],
+        "occult": [
+          4,
+          "Taumaturgia"
+        ],
+        "politics": [
+          2,
+          null
+        ],
+        "technology": [
+          4,
+          "Redes"
+        ]
+      },
+      "disciplinas": {
+        "auspex": [
+          3,
+          [
+            "Heightened Senses",
+            "Premonition",
+            "Share the Senses"
+          ]
+        ],
+        "dominate": [
+          2,
+          [
+            "Compel",
+            "Mesmerize"
+          ]
+        ],
+        "sorcery": [
+          4,
+          [
+            "Corrosive Vitae",
+            "Extinguish Vitae",
+            "Blood of Potency",
+            "Theft of Vitae"
+          ]
+        ],
+        "rituals": [
+          null,
+          [
+            "Ward against Ghouls",
+            "Communicate with Kindred Sire",
+            "Blood Walk"
+          ]
+        ]
+      },
+      "salud": 5,
+      "voluntad": 8,
+      "convicciones": [
+        "Nunca ignorar un patrón",
+        "El conocimiento sin acción es complicidad"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Mateo Ruiz-Okoye",
+          "descripcion": "Doctorando de epidemiología, a quien dirige la tesis por correo sin que sepa quién es."
+        }
+      ],
+      "ventajas": [
+        "Refugio 3 (la Capilla del Observatorio en Queen Anne, con salvaguardas de hechicería de sangre; LUG-13)",
+        "Recursos 3 (los servidores de la cúpula)",
+        "Contactos 2 (tecnología)",
+        "Influencia 2 (la universidad, a través del laboratorio de investigación)",
+        "Máscara 2 (Dra. A. Voight, directora de un laboratorio privado de epidemiología computacional)"
+      ],
+      "cita": "«La epidemia nunca empieza con el primer muerto. Empieza con el primer dato que nadie quiso mirar.»",
+      "semblante": "Unos treinta y tres años aparentes. Menuda, pelo muy corto de su color natural, gafas sin montura, jersey negro de cuello alto y bata de laboratorio; acento vienés.",
+      "nota": "Nota de edición: el doc 06 decía «aparenta unos cincuenta años» y «pelo blanco»; se decidió la edad al Abrazo (unos 33, pelo de su color natural)."
+    },
+    {
+      "id": "PNJ-03",
+      "nombre": "Charles Halloway",
+      "apodo": "El rey sin corona",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "ventrue",
+      "concepto": "Primogénito Ventrue",
+      "secta": "Camarilla",
+      "sire": "Adelaide Grange (PNJ-22)",
+      "nacimiento": "1921",
+      "abrazado": "1958",
+      "ambicion": "La corona de Seattle.",
+      "generacion": 9,
+      "potenciaSangre": 3,
+      "humanidad": 5,
+      "hambre": 1,
+      "atributos": {
+        "strength": 2,
+        "dexterity": 2,
+        "stamina": 3,
+        "charisma": 3,
+        "manipulation": 5,
+        "composure": 4,
+        "intelligence": 4,
+        "wits": 4,
+        "resolve": 4
+      },
+      "habilidades": {
+        "academics": [
+          2,
+          null
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "etiquette": [
+          4,
+          "Camarilla"
+        ],
+        "finance": [
+          5,
+          "Sociedades pantalla"
+        ],
+        "intimidation": [
+          3,
+          "Silencios"
+        ],
+        "investigation": [
+          3,
+          null
+        ],
+        "leadership": [
+          3,
+          null
+        ],
+        "insight": [
+          4,
+          null
+        ],
+        "persuasion": [
+          4,
+          "Negociación"
+        ],
+        "politics": [
+          5,
+          "Golpes de mano"
+        ],
+        "subterfuge": [
+          5,
+          "Mentir sin mentir"
+        ],
+        "technology": [
+          1,
+          null
+        ]
+      },
+      "disciplinas": {
+        "dominate": [
+          4,
+          [
+            "Compel",
+            "Mesmerize",
+            "Forgetful Mind",
+            "Rationalize"
+          ]
+        ],
+        "fortitude": [
+          2,
+          [
+            "Unswayable Mind",
+            "Toughness"
+          ]
+        ],
+        "presence": [
+          3,
+          [
+            "Awe",
+            "Daunt",
+            "Dread Gaze"
+          ]
+        ]
+      },
+      "salud": 6,
+      "voluntad": 8,
+      "convicciones": [
+        "El orden es un servicio, no un privilegio",
+        "Nunca dejar que te vean mancharte"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Margaret Halloway",
+          "descripcion": "Su sobrina nieta de 22 años, estudiante de periodismo, que cree que su tío abuelo es un benefactor anónimo de su beca."
+        }
+      ],
+      "ventajas": [
+        "Refugio 4 (la Torre Halloway, con ático y bóveda; LUG-06)",
+        "Aliado 3 (Preston Gale, PNJ-19)",
+        "Recursos 5 (Halloway Meridian Capital)",
+        "Influencia 4 (finanzas y medios)",
+        "Contactos 3 (prensa, ayuntamiento y la oficina de un senador estatal)",
+        "Máscara 3 (Charles Halloway Jr., presidente recluso de un fondo de inversión)"
+      ],
+      "cita": "«Esta ciudad no necesita un Príncipe que mire. Necesita uno que vea.»",
+      "semblante": "Delgado, estatura media, pelo negro con raya al lado y ojos castaños cansados; traje oscuro clásico, camisa blanca y corbata fina.",
+      "nota": "Nota de edición: el doc 06 le daba cinco poderes con Dominación 4 y tres con Fortaleza 2; se quitaron Cloud Memory (la cubre Forgetful Mind) y Resilience (su Salud 6 no la incluye), uno por punto."
+    }
+  ]
+}

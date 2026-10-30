@@ -1,0 +1,960 @@
+{
+  "pnjs": [
+    {
+      "id": "PNJ-12",
+      "nombre": "August Krell",
+      "apodo": "El otro hijo",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "brujah",
+      "secta": "ninguna",
+      "sire": "Marcus «Ironjaw» Vance (PNJ-06)",
+      "abrazado": "1972",
+      "nacimiento": "1944",
+      "ambicion": "Que alguien reconozca que él también fue hijo de Vance.",
+      "generacion": 9,
+      "potenciaSangre": 3,
+      "humanidad": 4,
+      "hambre": 2,
+      "atributos": {
+        "strength": 5,
+        "dexterity": 4,
+        "stamina": 4,
+        "charisma": 2,
+        "manipulation": 2,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 4,
+        "resolve": 3
+      },
+      "habilidades": {
+        "firearms": [
+          3,
+          null
+        ],
+        "athletics": [
+          4,
+          null
+        ],
+        "streetwise": [
+          2,
+          "Puertos"
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "intimidation": [
+          4,
+          "Silencio"
+        ],
+        "brawl": [
+          5,
+          "Furia Controlada incompleta"
+        ],
+        "melee": [
+          3,
+          "Barras y cuchillos"
+        ],
+        "stealth": [
+          4,
+          null
+        ],
+        "survival": [
+          2,
+          null
+        ]
+      },
+      "disciplinas": {
+        "potence": [
+          4,
+          [
+            "Lethal Body",
+            "Soaring Leap",
+            "Prowess",
+            "Spark of Rage",
+            "Draught of Might"
+          ]
+        ],
+        "celerity": [
+          3,
+          [
+            "Cat's Grace",
+            "Rapid Reflexes",
+            "Fleetness",
+            "Blink"
+          ]
+        ],
+        "presence": [
+          2,
+          [
+            "Daunt",
+            "Lingering Kiss"
+          ]
+        ]
+      },
+      "salud": 7,
+      "voluntad": 6,
+      "convicciones": [
+        "Un trabajo se termina",
+        "Nunca pegarle a quien no puede devolver el golpe"
+      ],
+      "piedrasDeToque": [],
+      "ventajas": [
+        "Recursos 1 (lo que le paga Halloway)",
+        "Refugio 1 (barcaza en dique seco en Georgetown)",
+        "Máscara 0 (documentos falsos de un pasaporte portugués)"
+      ],
+      "equipo": [
+        "El abrigo de Vance: abrigo largo de lana gris, hecho a medida para un hombre más ancho de hombros (DOC-06, DOC-10)",
+        "La copia 2 de 3 de los diarios de Vance (DOC-04), con sus notas a lápiz",
+        "Apoyo de Halloway: un coche eléctrico sin matrícula registrada, y dos ghouls de seguridad (MEN-04) si los pide"
+      ],
+      "cita": "«Él te enseñó a parar el golpe. A mí me enseñó a recibirlo.»",
+      "semblante": "Cabeza rapada, cicatriz de cuchillo en la ceja izquierda, nariz rota mal soldada; ropa de trabajo oscura bajo el abrigo de Vance. Es zurdo.",
+      "provisional": [
+        "Krell es chiquillo de Vance (hermano de sangre de David)."
+      ],
+      "origen": "07",
+      "concepto": "Antagonista; el falso Vance"
+    },
+    {
+      "id": "PNJ-17",
+      "nombre": "Liam O'Connor",
+      "apodo": "El Sheriff que fue",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "brujah",
+      "secta": "independiente",
+      "sire": "Un Brujah sindicalista, destruido en 1934",
+      "abrazado": "1899",
+      "nacimiento": "1868",
+      "ambicion": "Que conste la verdad sobre 1978.",
+      "generacion": 9,
+      "potenciaSangre": 3,
+      "humanidad": 6,
+      "atributos": {
+        "strength": 5,
+        "dexterity": 3,
+        "stamina": 4,
+        "charisma": 4,
+        "manipulation": 2,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 4
+      },
+      "habilidades": {
+        "athletics": [
+          3,
+          null
+        ],
+        "streetwise": [
+          4,
+          "Puertos"
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "intimidation": [
+          3,
+          null
+        ],
+        "leadership": [
+          4,
+          "Sindicatos"
+        ],
+        "medicine": [
+          1,
+          "Cortes"
+        ],
+        "brawl": [
+          5,
+          "Boxeo"
+        ],
+        "insight": [
+          3,
+          null
+        ],
+        "persuasion": [
+          3,
+          null
+        ],
+        "politics": [
+          3,
+          "Camarilla de 1931 a 1978"
+        ]
+      },
+      "disciplinas": {
+        "potence": [
+          3,
+          [
+            "Lethal Body",
+            "Prowess",
+            "Uncanny Grip"
+          ]
+        ],
+        "presence": [
+          3,
+          [
+            "Awe",
+            "Daunt",
+            "Entrancement"
+          ]
+        ],
+        "celerity": [
+          1,
+          [
+            "Rapid Reflexes"
+          ]
+        ]
+      },
+      "salud": 7,
+      "voluntad": 7,
+      "convicciones": [
+        "Nadie se queda solo en el callejón",
+        "Una placa es una promesa, no un permiso"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Dani Okeke",
+          "descripcion": "Su mejor boxeadora, de 19 años, a la que está preparando para su primer combate profesional."
+        }
+      ],
+      "ventajas": [
+        "Rebaño 1 y Aliados 1 (los chicos del gimnasio: boxeadores jóvenes que lo creen un viejo entrenador con insomnio)",
+        "Contactos 2 (el puerto de Tacoma y viejos estibadores jubilados)",
+        "Refugio 2 (el gimnasio Shamrock, puerto de Tacoma)",
+        "Máscara 2"
+      ],
+      "equipo": [
+        "DOC-08: la carta original, guardada en un sobre de plástico debajo del ring"
+      ],
+      "cita": "«Llevaba esta placa antes de que hubiera puerto. Me la quitaron con tres fotos.»",
+      "semblante": "Enorme y de hombros caídos, pelo rojo encanecido y barba corta, nariz rota y orejas de coliflor; camiseta interior, tirantes y gorra de lana.",
+      "origen": "07",
+      "concepto": "Testigo e informante (A2-E04)"
+    },
+    {
+      "id": "PNJ-11",
+      "nombre": "Rosa Iturbe",
+      "apodo": "Salitre",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "brujah",
+      "secta": "Anarquistas",
+      "sire": "Un Anarquista del astillero, desaparecido en 1999",
+      "abrazado": "1991",
+      "nacimiento": "1961",
+      "ambicion": "Que Everett sea un dominio libre reconocido por todos.",
+      "generacion": 11,
+      "potenciaSangre": 2,
+      "humanidad": 7,
+      "atributos": {
+        "strength": 3,
+        "dexterity": 3,
+        "stamina": 3,
+        "charisma": 4,
+        "manipulation": 2,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 4
+      },
+      "habilidades": {
+        "craft": [
+          4,
+          "Soldadura"
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "streetwise": [
+          3,
+          null
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "intimidation": [
+          2,
+          null
+        ],
+        "leadership": [
+          4,
+          "Asambleas"
+        ],
+        "brawl": [
+          3,
+          null
+        ],
+        "melee": [
+          2,
+          "Herramientas"
+        ],
+        "insight": [
+          3,
+          null
+        ],
+        "persuasion": [
+          3,
+          null
+        ],
+        "politics": [
+          2,
+          "Anarquistas"
+        ]
+      },
+      "disciplinas": {
+        "celerity": [
+          1,
+          [
+            "Rapid Reflexes"
+          ]
+        ],
+        "potence": [
+          2,
+          [
+            "Lethal Body",
+            "Prowess"
+          ]
+        ],
+        "presence": [
+          2,
+          [
+            "Awe",
+            "Lingering Kiss"
+          ]
+        ]
+      },
+      "salud": 6,
+      "voluntad": 7,
+      "convicciones": [
+        "Nadie usa a un menor como rebaño",
+        "Las decisiones se votan"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Joe Barrientos",
+          "descripcion": "El soldador más viejo del astillero, que le guarda el turno de noche desde 1989."
+        }
+      ],
+      "ventajas": [
+        "Aliados 3 y Rebaño 2 (el sindicato: estibadores y soldadores leales)",
+        "Influencia 2 (el puerto de Everett y la base naval)",
+        "Refugio 2 (un casco de barco en dique seco, astillero viejo de Everett, LUG-10)",
+        "Máscara 2",
+        "Los Anarquistas de Salitre (COT-03; MEN-05): unos quince Vástagos"
+      ],
+      "cita": "«Acá nadie besa anillos. Acá se suelda.»",
+      "semblante": "Baja y compacta, pelo negro corto, quemaduras de soldadura en los antebrazos; mono de trabajo azul con el nombre bordado y botas con puntera de acero.",
+      "origen": "07",
+      "concepto": "Baronesa de Everett"
+    },
+    {
+      "id": "PNJ-20",
+      "nombre": "Jun Takeda",
+      "apodo": "La que no sabe lo que lleva",
+      "pj": false,
+      "tipo": "vampire",
+      "clan": "thinblood",
+      "secta": "ninguna (protegida de Thornquist)",
+      "sire": "Desconocido",
+      "abrazado": "2025",
+      "nacimiento": "2004",
+      "ambicion": "No morir en un portal.",
+      "generacion": 15,
+      "potenciaSangre": 0,
+      "humanidad": 8,
+      "atributos": {
+        "strength": 2,
+        "dexterity": 4,
+        "stamina": 2,
+        "charisma": 3,
+        "manipulation": 2,
+        "composure": 2,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 2
+      },
+      "habilidades": {
+        "athletics": [
+          4,
+          "Bicicleta"
+        ],
+        "streetwise": [
+          3,
+          "Atajos"
+        ],
+        "drive": [
+          2,
+          null
+        ],
+        "awareness": [
+          2,
+          null
+        ],
+        "persuasion": [
+          1,
+          null
+        ],
+        "stealth": [
+          3,
+          null
+        ],
+        "subterfuge": [
+          2,
+          null
+        ],
+        "technology": [
+          1,
+          null
+        ]
+      },
+      "disciplinas": {
+        "alchemy": [
+          1,
+          [
+            "Far Reach"
+          ]
+        ]
+      },
+      "salud": 5,
+      "voluntad": 4,
+      "convicciones": [
+        "No abrir los paquetes"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Haruko Takeda",
+          "descripcion": "Su abuela, que tiene una floristería en el International District y le lee la fortuna en las hojas de té."
+        }
+      ],
+      "ventajas": [
+        "Day Drinker (Caminante diurno), mérito de sangre débil",
+        "Contactos 2 (repartidores de media ciudad)",
+        "Refugio 0",
+        "Máscara 3 (tiene vida legal, cuentas y familia)"
+      ],
+      "equipo": [
+        "La bici: eléctrica, modificada, la más rápida del subterráneo",
+        "La memoria USB: una copia parcial del Expediente, con las carpetas de 2019 a 2022"
+      ],
+      "cita": "«Yo solo reparto. No abro los paquetes. Es la regla número uno.»",
+      "semblante": "Menuda y fibrosa, pelo teñido de azul desteñido, piercings; chaqueta impermeable amarilla de reparto, mochila térmica y casco con pegatinas.",
+      "origen": "07",
+      "concepto": "Mensajera, víctima posible y pista (P-05)"
+    },
+    {
+      "id": "PNJ-18",
+      "nombre": "Dana Okafor",
+      "apodo": "La que no regala nada",
+      "pj": false,
+      "tipo": "mortal",
+      "nacimiento": "1981",
+      "atributos": {
+        "strength": 2,
+        "dexterity": 3,
+        "stamina": 3,
+        "charisma": 3,
+        "manipulation": 3,
+        "composure": 4,
+        "intelligence": 4,
+        "wits": 4,
+        "resolve": 5
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          "Pistola"
+        ],
+        "athletics": [
+          2,
+          null
+        ],
+        "drive": [
+          2,
+          null
+        ],
+        "awareness": [
+          4,
+          "Emboscadas"
+        ],
+        "intimidation": [
+          3,
+          "Interrogatorios"
+        ],
+        "investigation": [
+          5,
+          "Patrones"
+        ],
+        "leadership": [
+          3,
+          null
+        ],
+        "occult": [
+          2,
+          "Vástagos"
+        ],
+        "insight": [
+          4,
+          "Mentiras"
+        ],
+        "persuasion": [
+          2,
+          null
+        ],
+        "brawl": [
+          2,
+          null
+        ],
+        "politics": [
+          2,
+          "Agencias"
+        ],
+        "technology": [
+          2,
+          null
+        ]
+      },
+      "salud": 6,
+      "voluntad": 9,
+      "ventajas": [
+        "Fe inquebrantable (la Dominación y la Presencia tienen −2 dados contra ella; si fallan, ella lo nota)",
+        "Contactos 3 (FBI, Seguridad Nacional, policía de Seattle)",
+        "Recursos 3 (presupuesto federal)"
+      ],
+      "equipo": [
+        "Pistola Glock 19 con munición incendiaria (daño agravado contra Vástagos)",
+        "Linterna UV de bolsillo",
+        "Chaleco antibalas ligero (blindaje 2)",
+        "Teléfono cifrado"
+      ],
+      "cita": "«Toda fuente quiere algo. Hasta saber qué quiere, es un cebo.»",
+      "semblante": "Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.",
+      "origen": "14",
+      "concepto": "FIRSTLIGHT, jefa de la Célula Puget; antagonista latente"
+    },
+    {
+      "id": "PNJ-21",
+      "nombre": "Sasha Hale",
+      "apodo": "Analista S. Hale",
+      "pj": false,
+      "tipo": "mortal",
+      "concepto": "Ex analista de inteligencia de señales, treinta y dos años",
+      "estandar": {
+        "physical": 2,
+        "social": 3,
+        "mental": 7
+      },
+      "excepcionales": {
+        "investigation": 8,
+        "technology": 7,
+        "academics": 5,
+        "occult": [
+          4,
+          "Vástagos"
+        ]
+      },
+      "salud": 5,
+      "voluntad": 6,
+      "ventajas": [
+        "Fe (−1 dado a Disciplinas mentales contra ella)"
+      ],
+      "origen": "14"
+    },
+    {
+      "id": "PNJ-19",
+      "nombre": "Preston Gale",
+      "pj": false,
+      "tipo": "ghoul",
+      "concepto": "Ghoul de Halloway, consejero delegado de Gale Sentinel",
+      "estandar": {
+        "physical": 3,
+        "social": 5,
+        "mental": 5
+      },
+      "excepcionales": {
+        "technology": 7,
+        "finance": 6,
+        "persuasion": 6,
+        "subterfuge": 5
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "disciplinas": {
+        "dominate": [
+          1,
+          [
+            "Cloud Memory"
+          ]
+        ]
+      },
+      "defectos": [
+        "Le toca su dosis de Vitae desde hace tres días: −1 dado a todo mientras no la reciba."
+      ],
+      "semblante": "Cincuenta y pocos, sonrisa de presentación de inversores, habla en eslóganes.",
+      "origen": "14"
+    },
+    {
+      "id": "PJ-01",
+      "nombre": "David Smith",
+      "apodo": "El Sabueso de la Mascarada",
+      "pj": true,
+      "tipo": "vampire",
+      "clan": "brujah",
+      "secta": "independiente, aliado operativo de la Camarilla",
+      "concepto": "Ex comando de la Marina Abrazado en Haití en 1960 por Marcus Vance, convertido en el ejecutor externo del Sheriff de Seattle.",
+      "sire": "Marcus «Ironjaw» Vance (PNJ-06)",
+      "abrazado": "8 de julio de 1960, Haití",
+      "generacion": 9,
+      "potenciaSangre": 4,
+      "humanidad": 6,
+      "voluntad": 7,
+      "piedrasDeToque": [
+        {
+          "nombre": "Helen Ward",
+          "descripcion": "Viva (PNJ-04). Periodista humana, fuente de datos sobre sucesos sobrenaturales."
+        },
+        {
+          "nombre": "Emily Smith",
+          "descripcion": "Perdida, 1996 (REF-01). Su hija; Ancla perdida: ocasionales tiradas de Remordimiento y pesadillas."
+        },
+        {
+          "nombre": "Tom «Bear» Whitman",
+          "descripcion": "Ex-SEAL ghoul (PNJ-05); fiel, pero dependiente de su Vitae. La hoja lo lista como Piedra de toque; los docs 00–16 lo tratan como ancla, aunque es ghoul."
+        }
+      ],
+      "nacimiento": "15 de marzo de 1935, Boston",
+      "ambicion": "Mantener el equilibrio entre los Vástagos y la Mascarada.",
+      "deseo": "Erradicar a los que rompen el velo, aunque sean antiguos aliados.",
+      "depredador": "Cazador Silencioso (personalizado: Gato Callejero + Sanguijuela)",
+      "resonancia": "Colérica",
+      "atributos": {
+        "strength": 5,
+        "dexterity": 4,
+        "stamina": 5,
+        "charisma": 3,
+        "manipulation": 2,
+        "composure": 4,
+        "intelligence": 3,
+        "wits": 4,
+        "resolve": 4
+      },
+      "habilidades": {
+        "athletics": [
+          4,
+          "Combate prolongado"
+        ],
+        "brawl": [
+          5,
+          "Vástagos"
+        ],
+        "drive": [
+          2,
+          "Seguimiento"
+        ],
+        "firearms": [
+          4,
+          "Combate táctico"
+        ],
+        "larceny": [
+          1,
+          "Alarmas"
+        ],
+        "melee": [
+          4,
+          "Golpes de desarme"
+        ],
+        "stealth": [
+          3,
+          "Seguimiento"
+        ],
+        "survival": [
+          3,
+          "Rastreo"
+        ],
+        "animalken": [
+          1,
+          "Perros"
+        ],
+        "insight": [
+          3,
+          "Detectar mentiras"
+        ],
+        "intimidation": [
+          4,
+          "Miradas intimidatorias"
+        ],
+        "leadership": [
+          1,
+          "Inspiración"
+        ],
+        "performance": [
+          4,
+          null
+        ],
+        "streetwise": [
+          3,
+          "Reputación personal"
+        ],
+        "awareness": [
+          4,
+          "Emboscadas"
+        ],
+        "investigation": [
+          3,
+          "Deducción"
+        ],
+        "medicine": [
+          1,
+          null
+        ],
+        "occult": [
+          3,
+          "Simbología cainita"
+        ],
+        "politics": [
+          1,
+          "Camarilla"
+        ],
+        "technology": [
+          2,
+          "Sistemas de vigilancia"
+        ]
+      },
+      "disciplinas": {
+        "celerity": [
+          4,
+          [
+            "Rapid Reflexes",
+            "Lightning Strike",
+            "Ráfaga Temporal (homebrew)",
+            "Ímpetu Borroso (homebrew)"
+          ]
+        ],
+        "potence": [
+          4,
+          [
+            "Lethal Body",
+            "Prowess",
+            "Golpe Destructor (homebrew)",
+            "Bala Cinética (homebrew, amalgama Celeridad 2)"
+          ]
+        ],
+        "presence": [
+          3,
+          [
+            "Daunt",
+            "Autoridad Instintiva (homebrew)",
+            "Majestad de Guerra / Encender Emociones (homebrew)"
+          ]
+        ],
+        "fortitude": [
+          4,
+          [
+            "Resilience",
+            "Negar el Dolor (homebrew)",
+            "Defy Bane",
+            "Último Bastión de la Mascarada (homebrew)"
+          ]
+        ],
+        "auspex": [
+          2,
+          [
+            "Heightened Senses",
+            "Premonition"
+          ]
+        ]
+      },
+      "salud": 8,
+      "convicciones": [
+        "La Mascarada es el último escudo entre el orden y el caos.",
+        "Solo el monstruo que se conoce puede ser controlado.",
+        "No cazo por odio, sino por equilibrio."
+      ],
+      "ventajas": [
+        "Aliado 4 (Sheriff de Seattle): confianza y colaboración directa",
+        "Refugio 3 (hangar de Harbor Island, LUG-01; con Acceso marítimo y Arsenal). La hoja previa da Refugio Seguro 4: blindado, acceso a túneles",
+        "Contactos 3 (Policía / Ghouls exmilitares): red de información",
+        "Recursos 3 (contrabando militar): armas, vehículos, tecnología táctica",
+        "Fama oculta 3 («El Perro Negro de la Mascarada»)",
+        "Voluntad de hierro 3: repite una tirada de Voluntad por escena"
+      ],
+      "defectos": [
+        "Ira contenida 2: +2 dificultad para resistir Compulsiones Brujah en combate",
+        "Cicatrices de guerra 2: apariencia inhumana bajo luz directa",
+        "Intransigente moral 1: se niega a cooperar con quienes usan la Bestia como excusa",
+        "Sueños de guerra (trauma del Abrazo) 2: −1 en la primera tirada de Resolución o Compostura tras despertar si falló su autocontrol",
+        "Relación dependiente (Tom «Bear» Whitman) 1: si el ghoul es capturado o herido, pierde compostura o incurre en Riesgo de Frenesí",
+        "Desconfianza de la magia / Tremere: rechaza trabajar con hechicería o rituales de Sangre",
+        "Ancla perdida (Piedra de toque muerta): su hija murió y siente culpa"
+      ],
+      "equipo": [
+        "Chaqueta táctica negra con insignias borradas",
+        "Navaja militar antigua (recuerdo mortal; la llevaba el día de su Abrazo)"
+      ],
+      "semblante": "Mandíbula cuadrada y tensa, cicatriz del pómulo derecho al labio, pelo corto oscuro con canas en las sienes, ojos gris oscuro casi negros; chaqueta táctica negra sin insignias; huele a pólvora, óxido y sangre seca.",
+      "cita": "«Algunos deben arder para que los demás vean la luz.»",
+      "provisional": [
+        "David llegó a Seattle en los años 80.",
+        "David tiene LOR-01 a nivel 4."
+      ],
+      "origen": "07"
+    },
+    {
+      "id": "PNJ-04",
+      "nombre": "Helen Ward",
+      "apodo": "La que mira donde no se debe",
+      "pj": false,
+      "tipo": "mortal",
+      "concepto": "Periodista de investigación y presentadora de «Lo que la ciudad olvida»",
+      "atributos": {
+        "strength": 2,
+        "dexterity": 2,
+        "stamina": 2,
+        "charisma": 3,
+        "manipulation": 3,
+        "composure": 3,
+        "intelligence": 4,
+        "wits": 4,
+        "resolve": 3
+      },
+      "habilidades": {
+        "academics": [
+          2,
+          null
+        ],
+        "streetwise": [
+          3,
+          null
+        ],
+        "drive": [
+          2,
+          null
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "investigation": [
+          4,
+          "Casos fríos"
+        ],
+        "insight": [
+          4,
+          "Contradicciones"
+        ],
+        "persuasion": [
+          3,
+          "Entrevistas"
+        ],
+        "subterfuge": [
+          2,
+          null
+        ],
+        "technology": [
+          2,
+          null
+        ]
+      },
+      "salud": 5,
+      "voluntad": 6,
+      "edad": 34,
+      "ventajas": [
+        "Contactos: tres en la policía (fuente previa, sin nivel)"
+      ],
+      "equipo": [
+        "Grabadora",
+        "Bloc de notas",
+        "Móvil de tapa con un único número: SAFE (DOC-05)"
+      ],
+      "semblante": "Irónica, sarcástica, fuma demasiado, duerme poco; usa gafas cuando está agotada, pero no lo admite. Habla rápido y escucha mejor.",
+      "cita": "«No puedes simplemente hacer desaparecer a la gente.»",
+      "origen": "07"
+    },
+    {
+      "id": "PNJ-05",
+      "nombre": "Tom Whitman",
+      "apodo": "Bear",
+      "pj": false,
+      "tipo": "ghoul",
+      "concepto": "Ghoul de David; ex SEAL y armero del hangar",
+      "atributos": {
+        "strength": 4,
+        "dexterity": 3,
+        "stamina": 4,
+        "charisma": 2,
+        "manipulation": 2,
+        "composure": 3,
+        "intelligence": 2,
+        "wits": 3,
+        "resolve": 3
+      },
+      "habilidades": {
+        "firearms": [
+          4,
+          "Armas largas"
+        ],
+        "craft": [
+          3,
+          "Armería"
+        ],
+        "athletics": [
+          3,
+          null
+        ],
+        "drive": [
+          3,
+          null
+        ],
+        "awareness": [
+          3,
+          null
+        ],
+        "intimidation": [
+          3,
+          null
+        ],
+        "brawl": [
+          3,
+          null
+        ],
+        "melee": [
+          2,
+          null
+        ],
+        "survival": [
+          2,
+          null
+        ]
+      },
+      "disciplinas": {
+        "potence": [
+          1,
+          [
+            "Lethal Body"
+          ]
+        ]
+      },
+      "salud": 7,
+      "voluntad": 6,
+      "edad": 48,
+      "convicciones": [
+        "No niños, nunca.",
+        "No víctimas claras.",
+        "No matar por deporte."
+      ],
+      "equipo": [
+        "Cantimplora metálica negra con Vitae, siempre en la mochila",
+        "Un arma en su caja fuerte personal del hangar (con la nota DOC-12)"
+      ],
+      "semblante": "Enorme, cuarenta y pico largos; habla poco, humor seco de cuartel; rodilla destrozada que ya casi no le duele.",
+      "cita": "«No niños. No gente que no hizo nada. No matar porque sí.»",
+      "origen": "07"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "lugares": [
+    {
+      "id": "LUG-01",
+      "nombre": "El hangar de Harbor Island",
+      "zona": "Elliott Bay",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [
+        "A1-E02",
+        "A4-E02"
+      ],
+      "pnjs": [
+        "PJ-01",
+        "PNJ-05"
+      ]
+    },
+    {
+      "id": "LUG-02",
+      "nombre": "La granja del Sheriff y su embarcadero",
+      "zona": "Valle del Snohomish, 40 minutos al norte",
+      "mapa": true,
+      "niveles": [
+        "zona",
+        "combate"
+      ],
+      "escenas": [
+        "A1-E03",
+        "A3-E04",
+        "A4-E02"
+      ],
+      "pnjs": [
+        "PNJ-01",
+        "MEN-03"
+      ]
+    },
+    {
+      "id": "LUG-03",
+      "nombre": "La Galería de Vidrio (Elíseo)",
+      "zona": "Seattle Center",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [
+        "A2-E01"
+      ],
+      "pnjs": [
+        "PNJ-14",
+        "PNJ-02",
+        "PNJ-03",
+        "PNJ-15",
+        "PNJ-16"
+      ]
+    },
+    {
+      "id": "LUG-04",
+      "nombre": "Las Galerías Selladas (Seattle subterráneo)",
+      "zona": "Pioneer Square",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [
+        "A1-E04"
+      ],
+      "pnjs": [
+        "PNJ-13",
+        "PJ-03",
+        "PNJ-20"
+      ]
+    },
+    {
+      "id": "LUG-05",
+      "nombre": "El apartamento de Helen Ward",
+      "zona": "Ballard, Market Street",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [
+        "A0-E01",
+        "A1-E01"
+      ],
+      "pnjs": [
+        "PNJ-04"
+      ]
+    },
+    {
+      "id": "LUG-06",
+      "nombre": "Torre Halloway",
+      "zona": "Downtown",
+      "mapa": true,
+      "niveles": [
+        "ático",
+        "bóveda"
+      ],
+      "escenas": [
+        "A4-E01"
+      ],
+      "pnjs": [
+        "PNJ-03",
+        "MEN-04"
+      ]
+    },
+    {
+      "id": "LUG-07",
+      "nombre": "Gale Sentinel, campus y centro de datos",
+      "zona": "Bellevue, Eastside",
+      "mapa": true,
+      "niveles": [
+        "zona",
+        "combate"
+      ],
+      "escenas": [
+        "A1-E05",
+        "A3-E02"
+      ],
+      "pnjs": [
+        "PNJ-19",
+        "MEN-04"
+      ]
+    },
+    {
+      "id": "LUG-08",
+      "nombre": "El mercado de Pike Place de noche",
+      "zona": "Downtown",
+      "mapa": false,
+      "niveles": [],
+      "escenas": [],
+      "pnjs": [
+        "PNJ-11",
+        "PNJ-13",
+        "PNJ-17"
+      ]
+    },
+    {
+      "id": "LUG-09",
+      "nombre": "Club Ceniza",
+      "zona": "Capitol Hill",
+      "mapa": false,
+      "niveles": [],
+      "escenas": [],
+      "pnjs": [
+        "PJ-04",
+        "PNJ-16"
+      ]
+    },
+    {
+      "id": "LUG-10",
+      "nombre": "Bar Salitre y el astillero viejo",
+      "zona": "Everett",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [
+        "A2-E03"
+      ],
+      "pnjs": [
+        "PNJ-11",
+        "MEN-05"
+      ]
+    },
+    {
+      "id": "LUG-11",
+      "nombre": "El edificio Larchmont",
+      "zona": "Tacoma",
+      "mapa": true,
+      "niveles": [
+        "planta baja",
+        "sala de calderas"
+      ],
+      "escenas": [
+        "A2-E05"
+      ],
+      "pnjs": [
+        "MEN-08"
+      ]
+    },
+    {
+      "id": "LUG-12",
+      "nombre": "La tumba de Emily Smith",
+      "zona": "Cementerio al norte de la ciudad",
+      "mapa": false,
+      "niveles": [],
+      "escenas": [],
+      "pnjs": []
+    },
+    {
+      "id": "LUG-13",
+      "nombre": "La Capilla del Observatorio",
+      "zona": "Queen Anne",
+      "mapa": false,
+      "niveles": [],
+      "escenas": [],
+      "pnjs": [
+        "PNJ-15",
+        "PJ-06"
+      ]
+    },
+    {
+      "id": "LUG-14",
+      "nombre": "Northline Cyber Advisory",
+      "zona": "South Lake Union, torre de oficinas, piso 11",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [],
+      "pnjs": [
+        "PNJ-18",
+        "PNJ-21",
+        "MEN-02"
+      ]
+    },
+    {
+      "id": "LUG-15",
+      "nombre": "La terminal de ferris y el último ferry",
+      "zona": "Colman Dock y el estrecho de Puget",
+      "mapa": true,
+      "niveles": [
+        "terminal",
+        "cubierta del ferry"
+      ],
+      "escenas": [
+        "A4-E03"
+      ],
+      "pnjs": [
+        "PNJ-03",
+        "PNJ-19"
+      ]
+    },
+    {
+      "id": "LUG-16",
+      "nombre": "El elevador de grano de la Terminal 86",
+      "zona": "Al norte del centro",
+      "mapa": true,
+      "niveles": [
+        "combate"
+      ],
+      "escenas": [
+        "A3-E03"
+      ],
+      "pnjs": [
+        "PNJ-12"
+      ]
+    }
+  ]
+}

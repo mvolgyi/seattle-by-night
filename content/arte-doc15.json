@@ -1,0 +1,185 @@
+{
+  "origen": "15",
+  "notas": {
+    "intro": "Todos los prompts están en inglés para usarlos directamente en un generador de imágenes. Los retratos comparten una plantilla para que la galería quede coherente. Los mapas siguen la jerarquía de tres niveles: mapa regional, mapa de zona y mapa de combate con vista cenital, y se entregan limpios, sin puertas, luces ni niebla, que se ponen a mano en Foundry.",
+    "retrato": "Cada retrato añade al final: [SUJETO] + [ROPA Y OBJETO] + [ESCENARIO] + [ACENTO CARMESÍ].",
+    "mapa": "Plantilla para los mapas de combate."
+  },
+  "plantillas": {
+    "retrato": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features. No text, no logos.",
+    "mapa": "Top-down orthographic battlemap for a virtual tabletop, 1 inch grid-ready at 70 px per square, no grid drawn, no text, no tokens, no characters, no doors highlighted, no lighting effects. Realistic painted style, night lighting baked in softly, wet surfaces. Present-day Seattle."
+  },
+  "retratos": [
+    {
+      "id": "PNJ-01",
+      "nombre": "Montgomery",
+      "prompt": "A broad, weathered man who looks about forty, short salt-and-pepper beard, eyes faintly amber like an animal's, sitting in a rocking chair on a dark wooden farmhouse porch. Waxed canvas jacket, flannel shirt, enormous scarred hands resting on his knees. Silhouettes of working dogs lying in the rain behind him. Crimson accent: a single drop of blood on the porch railing."
+    },
+    {
+      "id": "PNJ-02",
+      "nombre": "Whitmore",
+      "prompt": "A tall elegant man who looks about thirty-three, hair swept back with no grey in it, very pale grey eyes, warm practiced smile. Impeccable dark suit, no tie, one ring with a black stone. Standing beneath suspended glass sculptures like frozen jellyfish in red, amber and black. Crimson accent: the red glass pieces glowing above him.",
+      "nota": "Nota de edición: el doc 15 decía «looks forty-five, silver hair swept back»; se ajustó a la edad al Abrazo (unos 33, sin canas)."
+    },
+    {
+      "id": "PNJ-03",
+      "nombre": "Halloway",
+      "prompt": "A slim man who looks forty, black hair with a side part, tired brown eyes, perfectly still hands clasped behind his back. Dark classic suit, white shirt, thin tie. Standing before a floor-to-ceiling window high above a night harbor with cranes and ferries, the city small below him. Crimson accent: the reflection of a red aircraft warning light on the glass, over his heart."
+    },
+    {
+      "id": "PNJ-04",
+      "nombre": "Helen Ward",
+      "prompt": "A woman in her mid-thirties, tired sharp eyes, dark hair escaping a hood, cigarette between her fingers, sitting on the floor against a wall covered in printed city maps with red, blue and yellow pins. Grey hoodie, glasses pushed up on her head, an old flip phone in her hand. Crimson accent: the red pins on the map."
+    },
+    {
+      "id": "PNJ-05",
+      "nombre": "Bear Whitman",
+      "prompt": "A huge man in his late forties, buzz cut, thick neck, calm watchful eyes, cleaning a disassembled pistol at a workbench inside a corrugated metal hangar lit by hanging work lights. Tactical cargo pants, grey t-shirt, black metal canteen beside him. Crimson accent: a faded red tag on the canteen."
+    },
+    {
+      "id": "PNJ-11",
+      "nombre": "Rosa Iturbe",
+      "prompt": "A short compact woman who looks thirty, short black hair, small welding burns on her forearms, grease-stained hands resting on a bar made from the split hull of a boat. Blue work overalls with an embroidered name, steel-toed boots. Old black-and-white strike photos on the wall behind her. Crimson accent: a red neon sign with one letter missing."
+    },
+    {
+      "id": "PNJ-12",
+      "nombre": "Krell",
+      "prompt": "A man who looks thirty-five but moves like someone older, shaved head, old knife scar through the left eyebrow, badly healed broken nose, knuckles of a fighter. A long grey wool coat clearly cut for broader shoulders, hanging too big on him. Left hand forward in a guard stance. Standing on a wet concrete dock between shipping containers. Crimson accent: a red shipping container behind him."
+    },
+    {
+      "id": "PNJ-13",
+      "nombre": "Thornquist",
+      "prompt": "An enormous hunched figure with skin like wet grey wood, cracked and gnarled, a twisted jaw, long root-like fingers, wearing a mended 1920s three-piece suit and holding a carbide lamp. Seated in an old barber's chair inside an underground street from 1889, boarded-up shopfronts, violet glass skylights above. Crimson accent: the flame of the carbide lamp."
+    },
+    {
+      "id": "PNJ-14",
+      "nombre": "Marchetti",
+      "prompt": "A tall woman who looks about twenty-eight, dark hair in a low bun, glasses on a chain, grey vintage-cut dress, writing with a fountain pen in a large leather-bound register at a reception desk. Behind her, glass sculptures hanging in a dark pavilion. Crimson accent: the ink in her pen.",
+      "nota": "Nota de edición: el doc 15 decía «looks forty»; se ajustó a la edad al Abrazo (unos 28)."
+    },
+    {
+      "id": "PNJ-15",
+      "nombre": "Voight",
+      "prompt": "A small woman who looks about thirty-three, very short hair in its natural colour with no grey, rimless glasses, black turtleneck under an open lab coat, standing in a Victorian observatory dome filled with server racks and screens showing network graphs. Crimson accent: a single red alert on one screen.",
+      "nota": "Nota de edición: el doc 15 decía «looks fifty, very short white hair»; se ajustó a la edad al Abrazo (unos 33, pelo de su color natural)."
+    },
+    {
+      "id": "PNJ-16",
+      "nombre": "Fry",
+      "prompt": "A thin man who looks about thirty-three, untidy beard with no grey, thick-framed glasses, corduroy jacket, faded baseball cap of a team that no longer exists, headphones around his neck, writing on a paper napkin at the bar of a basement club with red lights. Crimson accent: a wine stain on the napkin.",
+      "nota": "Nota de edición: el doc 15 decía «looks fifty-five, untidy white beard»; se ajustó a la edad al Abrazo (unos 33, barba sin canas)."
+    },
+    {
+      "id": "PNJ-17",
+      "nombre": "O'Connor",
+      "prompt": "A huge man who looks fifty, red hair going grey, short beard, nose broken many times, cauliflower ears, undershirt and suspenders, wool cap, holding boxing pads at the edge of a ring in an old brick gym. Crimson accent: red boxing gloves hanging on the ropes."
+    },
+    {
+      "id": "PNJ-18",
+      "nombre": "Okafor",
+      "prompt": "A tall woman in her mid-forties, very short greying hair, plain grey blazer, her left hand in her pocket, holding a paper cup of black coffee, standing in a dim open-plan office at night with a corkboard covered in photographs behind her. She never sits with her back to the door. Crimson accent: a red string connecting photos on the board."
+    },
+    {
+      "id": "PNJ-19",
+      "nombre": "Gale",
+      "prompt": "A tanned man in his early fifties with a too-bright investor smile and sweat at his temples, standing in a corporate lobby beneath a giant wall screen showing a mosaic of thousands of live doorbell camera feeds. Crimson accent: some of the tiny numbers on the feeds glowing red."
+    },
+    {
+      "id": "PNJ-20",
+      "nombre": "Jun Takeda",
+      "prompt": "A small wiry young woman of twenty-two, faded blue dyed hair, ear piercings, yellow delivery rain jacket, insulated delivery backpack, bike helmet with stickers, standing beside an electric bike in a rainy alley. She looks scared and trying not to show it. Crimson accent: the rear light of the bike."
+    },
+    {
+      "id": "MEN-09",
+      "nombre": "Pell",
+      "prompt": "An old man who looks sixty but carries himself like someone much older, impeccable dark suit of another era, an aluminum briefcase handcuffed to his wrist, standing on the passenger deck of a night ferry. Crimson accent: a red life ring on the wall."
+    }
+  ],
+  "mapas": [
+    {
+      "id": "MAP-00",
+      "ayuda": "AYU-01",
+      "nivel": "Regional",
+      "prompt": "Illustrated regional map of Seattle and Puget Sound at night, top-down, painterly cartographic style with subtle gothic ornamentation, dark navy water, land in charcoal and slate, city lights as tiny gold dots. Clearly show Elliott Bay, Harbor Island, Lake Washington, Bellevue to the east, Everett far north, Tacoma far south, Bainbridge Island to the west, the Snohomish valley to the northeast. Leave empty space for a legend. No text."
+    },
+    {
+      "id": "LUG-01",
+      "nivel": "Combate",
+      "prompt": "Interior of a large corrugated metal hangar on an industrial pier: open work area with a long workbench and gun racks, ammunition crates sorted in rows, a windowless reinforced room with a military cot, a small bedroom with a floor safe, a covered water dock with a small motorboat at one end, and a trapdoor to an old cargo tunnel. Shipping containers stacked outside on two sides."
+    },
+    {
+      "id": "LUG-02",
+      "nivel": "Zona y combate",
+      "prompt": "A dark wooden farmhouse with a wide front porch, a converted barn with a long table inside, dog kennels, three trailers behind the barn, a gravel road, flooded fields, and a forest path leading to a private wooden dock on a river. Night, rain."
+    },
+    {
+      "id": "LUG-03",
+      "nivel": "Combate",
+      "prompt": "Interior of a 1962 curved glass and steel exhibition pavilion: entrance vestibule with a reception desk, a large main hall with dozens of hanging glass sculptures casting colored light pools on the floor, a terrace overlooking a needle-shaped tower, a private lounge, and a stair down to a basement archive."
+    },
+    {
+      "id": "LUG-04",
+      "nivel": "Combate",
+      "prompt": "Underground buried city street from 1889: brick sidewalks, boarded shopfronts with hand-painted signs, violet glass prism skylights in the ceiling, an old barbershop used as an office, a makeshift market with stalls, a coal storage room, network cables running along the ceiling, an iron door at one end."
+    },
+    {
+      "id": "LUG-05",
+      "nivel": "Combate",
+      "prompt": "Third floor of an old apartment building above a hardware store: a corridor with four apartment doors, a small two-room apartment with walls covered in pinned maps, a living-kitchen space, a study with a desk and a closet, a bathroom, and a fire escape to an alley."
+    },
+    {
+      "id": "LUG-06",
+      "nivel": "Combate (2 niveles)",
+      "prompt": "Level 1: a 42nd-floor penthouse with a long council table and seven chairs before a floor-to-ceiling window over a harbor, a private office, a private elevator. Level 2: a concrete underground vault with archive shelves, a safe, and a single steel door."
+    },
+    {
+      "id": "LUG-07",
+      "nivel": "Zona y combate",
+      "prompt": "A suburban tech campus: an office building lobby with a giant video wall, a third-floor executive office, a parking lot, and behind it a windowless data center with an airlock entrance, a control room, rows of server racks, a training room with a wall of faces on screens, and an isolated archive room."
+    },
+    {
+      "id": "LUG-10",
+      "nivel": "Combate",
+      "prompt": "A waterfront bar next to a closed shipyard: a bar room with a counter made from a split boat hull, a back room with a meeting table, and outside, three ship hulls in dry dock used as shelters, a slipway down to the water, rusted cranes, a single access road."
+    },
+    {
+      "id": "LUG-11",
+      "nivel": "Combate (2 niveles)",
+      "prompt": "Level 1: the ground floor of a burned-out four-story brick apartment building, collapsed stairwell, rain falling through. Level 2: the basement boiler room with a newer pale concrete slab sealing a cistern in the center, water running along a drain channel to a large storm drain."
+    },
+    {
+      "id": "LUG-14",
+      "nivel": "Combate",
+      "prompt": "The 11th floor of a modern office tower: reception with a corporate logo wall, open-plan desks, a meeting room with a corkboard wall, a locked armory room, and a stark white interrogation room lined with high-intensity lamps."
+    },
+    {
+      "id": "LUG-15",
+      "nivel": "Combate (2 niveles)",
+      "prompt": "Level 1: a ferry terminal waiting hall with benches, a broken coffee machine, a passenger ramp to the water. Level 2: a large car ferry: vehicle deck with parked cars, a passenger lounge with window seats, the bridge, and an open stern deck at night over black water."
+    },
+    {
+      "id": "LUG-16",
+      "nivel": "Combate",
+      "prompt": "A narrow enclosed conveyor gallery atop a row of concrete grain silos: a long stopped conveyor belt down the middle, grimy windows on both sides, an exterior zigzag service stair at one end, and at the other end an open cargo hatch over the bay with a chair placed in front of it. Night, wind, rain."
+    }
+  ],
+  "ayudas": [
+    {
+      "id": "AYU-06-IMG",
+      "para": "AYU-06",
+      "prompt": "Police forensic photograph, flash-lit, slightly overexposed: a pile of grey ash on wet concrete beside the base of a red shipping container, an intact black nylon jacket lying on top of the ash, three vertical dents in the container wall at chest height, a yellow forensic scale ruler on the ground, a numbered evidence marker \"3\". Night, industrial port. No people."
+    },
+    {
+      "id": "AYU-09-PJ-01-IMG",
+      "nombre": "Foto del Larchmont (carpeta de David)",
+      "para": "AYU-09-PJ-01",
+      "prompt": "Grainy amateur night photo taken from a neighbor's window: a four-story brick apartment building engulfed in flames, and in the foreground, a man in a dark coat standing with his back to the fire, looking directly at the camera. His face is partly in shadow, a scar visible on his right cheek. Heavy smoke, orange light, cold blue night around."
+    },
+    {
+      "id": "AYU-09-PJ-03-IMG",
+      "nombre": "Captura térmica (carpeta de Ezra)",
+      "para": "AYU-09-PJ-03",
+      "prompt": "Thermal camera still frame, false-color palette of yellows, oranges and reds: a city street at night with warm cars and a warm manhole cover, and a human figure lifting the manhole cover who appears entirely dark blue, colder than everything around. Timestamp overlay in the corner. No readable text other than numbers."
+    }
+  ]
+}
