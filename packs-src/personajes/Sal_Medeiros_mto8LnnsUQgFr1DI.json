@@ -1,0 +1,150 @@
+{
+  "_id": "mto8LnnsUQgFr1DI",
+  "_key": "!actors!mto8LnnsUQgFr1DI",
+  "name": "Sal Medeiros",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 140,
+  "prototypeToken": {
+    "name": "Sal Medeiros",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Perista del SoDo (muere en la Noche 4 si nadie interviene)",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Perista del SoDo (muere en la Noche 4 si nadie interviene)</td></tr></tbody></table><p>Setenta años, antiguo anticuario. Compra y vende a clientes que solo salen de noche y no pregunta por qué. <em>Muere en la <span class=\"sbn-reloj\" data-sbn-reloj=\"4\">Noche 4</span> si nadie interviene.</em></p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 1
+      },
+      "social": {
+        "value": 5
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "finance": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "regateo",
+            "value": 1,
+            "paths": [
+              "skills.finance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "academics": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "antigüedades",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-13",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

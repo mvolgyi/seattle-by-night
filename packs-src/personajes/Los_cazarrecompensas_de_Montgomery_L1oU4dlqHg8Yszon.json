@@ -1,0 +1,133 @@
+{
+  "_id": "L1oU4dlqHg8Yszon",
+  "_key": "!actors!L1oU4dlqHg8Yszon",
+  "name": "Los cazarrecompensas de Montgomery",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 40,
+  "prototypeToken": {
+    "name": "Los cazarrecompensas de Montgomery",
+    "actorLink": false,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "ojNU0zDY0OsVIFDp",
+    "headers": {
+      "concept": "Seis mortales",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Seis mortales</td></tr><tr><th>Cantidad</th><td>6</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{Los Lobos de Whitmore}</td></tr></tbody></table><p>Ex militares y ex policías que viven en caravanas detrás del granero. Conocen a Montgomery como «El Patrón». No hacen preguntas.</p>\n<p><strong>Equipo:</strong> escopetas, rifles de caza, camionetas.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>MEN-03 es el grupo de los seis cazarrecompensas (doc 14, registro más nuevo). El doc 08 lo asignaba a Dutch Lindqvist solo; manda el doc 14, que da a Dutch reservas propias dentro de MEN-03.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-03",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 6,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

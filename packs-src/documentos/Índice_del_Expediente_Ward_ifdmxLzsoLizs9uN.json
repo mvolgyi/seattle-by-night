@@ -1,0 +1,85 @@
+{
+  "_id": "ifdmxLzsoLizs9uN",
+  "_key": "!journal!ifdmxLzsoLizs9uN",
+  "name": "Índice del Expediente Ward",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-02",
+      "archivo": "content/documentos/AYU-02.md",
+      "soporte": "libreta",
+      "entrega": [
+        "A1-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "CsdVRvXjoOV8raxP",
+      "_key": "!journal.pages!ifdmxLzsoLizs9uN.CsdVRvXjoOV8raxP",
+      "name": "Índice del Expediente Ward",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-libreta\"><p class=\"sbn-doc-titulo\">LO QUE HABÍA EN EL SÓTANO</p>\n<p><em>(de memoria, 12/11, 4:20 a. m. — seguro que me olvido de algo)</em></p>\n<p><strong>Estructura:</strong> doce años, 2014–2026. Una carpeta por año. Dentro, una subcarpeta por caso. 214 casos en total, creo. Más la carpeta sin nombre. Más los mapas.</p>\n<p><strong>Los casos que más pesan</strong> (los que tienen más material):</p>\n<ul>\n<li><strong>2014 · LARCHMONT.</strong> Siete «no localizados». Danny. Cuarenta y una fotos del incendio, el informe de bomberos que no cuadra, la declaración del portero que después retiró. LA FOTO.</li>\n<li><strong>2015 · FUNDICIÓN DE GEORGETOWN.</strong> Dos vigilantes nocturnos «desaparecidos». Uno volvió tres semanas después sin recordar nada.</li>\n<li><strong>2016–2018 · HARBOR ISLAND.</strong> Agresiones «animales» en el puerto. Cuerpos sin casi sangre. El caso en el que lo conocí a él.</li>\n<li><strong>2017 · APARCAMIENTO DE BELLEVUE.</strong> Un «suicidio». Una mujer joven, muy bien vestida, agachada junto al cuerpo. No es la que se tiró.</li>\n<li><strong>2018 · PIONEER SQUARE.</strong> Captura térmica de una figura entrando en una alcantarilla. La figura no tiene temperatura.</li>\n<li><strong>2019–2022 · LAS DOSIS DE RAINIER.</strong> Muertes por «sobredosis» en un patrón de tres kilómetros. Nadie con historial.</li>\n<li><strong>2021 · LOS INFORMES IMPOSIBLES.</strong> Quince informes forenses del condado con detalles que no encajan. Todos con la misma firma: R. A.</li>\n<li><strong>2023 · EL HOMBRE QUE CORRE.</strong> Vídeo de móvil, Ballard: un tipo corre detrás de un coche más rápido que el coche.</li>\n<li><strong>2024–2026 · CROWN HILL.</strong> Los tres chicos. Kyle Brandt. La madre de Lake City.</li>\n<li><strong>Varios años · N.</strong> Mi propia productora. Nunca sale en las fotos de grupo. ¿Casualidad? <span class=\"sbn-acotacion\">[Tachado. Al lado:]</span> No seas paranoica, Helen.</li>\n</ul>\n<p><strong>La carpeta sin nombre:</strong> catorce fotos. 2014–2025. El mismo hombre. La misma cicatriz. <span class=\"sbn-acotacion\">[Subrayado dos veces.]</span></p>\n<p><strong>Los mapas:</strong> un mapa por año con alfileres digitales. Si los superponés, se ve el dibujo: zonas donde nunca pasa nada y zonas donde pasa todo. Bordes. Como territorios.</p>\n<p><strong>Grabaciones:</strong> 300 y pico entrevistas. Las notas de voz (llevo 7 de este caso). Los mensajes de W.</p>\n<p class=\"sbn-acotacion\">[Al pie de la última hoja, más pequeño, con otra presión del bolígrafo:]</p>\n<p>Si alguien tiene esto completo puede encontrarlos a todos. A todos los que sean lo que sean. Y yo lo hice. Yo.</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KaJDPWOVL08ZQjDA",
+      "_key": "!journal.pages!ifdmxLzsoLizs9uN.KaJDPWOVL08ZQjDA",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Libreta manuscrita. <strong>Entrega:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}.</p>\n<p><em>Narrador: tres hojas de libreta escritas a mano por Helen en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}, de memoria, con tachones. Las carpetas de los PJ no tienen nombre: Helen no los conoce. Cada jugador debería reconocer la suya.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

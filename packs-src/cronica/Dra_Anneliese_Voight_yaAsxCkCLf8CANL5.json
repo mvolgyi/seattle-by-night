@@ -1,0 +1,334 @@
+{
+  "_id": "yaAsxCkCLf8CANL5",
+  "_key": "!journal!yaAsxCkCLf8CANL5",
+  "name": "Dra. Anneliese Voight",
+  "folder": "c2du20lgw47pDomh",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-15",
+      "archivo": "content/personajes/PNJ-15.md",
+      "actor": "Actor.75UbIo5Kl9zVsd0V"
+    }
+  },
+  "pages": [
+    {
+      "_id": "3oPCGs7495Yr0G8j",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.3oPCGs7495Yr0G8j",
+      "name": "Dra. Anneliese Voight",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.75UbIo5Kl9zVsd0V]{Dra. Anneliese Voight}</p>\n<p><em>«La epidemia nunca empieza con el primer muerto. Empieza con el primer dato que nadie quiso mirar.»</em></p>\n<p><strong>Clan:</strong> Tremere · <strong>Cargos:</strong> Regente de la Capilla del Observatorio y Primogénita · <strong>Secta:</strong> Camarilla</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qNm7vAkemavpSBMk",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.qNm7vAkemavpSBMk",
+      "name": "Días mortales: la estadística de Viena",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Anneliese Voight se doctoró en estadística médica en la Universidad de Viena en 1919, cuando a las mujeres casi no las dejaban entrar en las aulas. Pasó la pandemia de gripe contando muertos en mapas de la ciudad y fue una de las primeras en ver que los contagios seguían las líneas del tranvía. Nadie le hizo caso a tiempo. Desde entonces no soporta que alguien ignore un patrón.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "HrsV8eXXwVyQdPZT",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.HrsV8eXXwVyQdPZT",
+      "name": "Noches de Vástago: la Regente de la cúpula",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Un Regente de la Capilla de Viena la Abrazó en 1924 para que aplicara sus métodos a algo más importante que la gripe. En 1964 la mandaron a Seattle a dirigir una Capilla pequeña que la Pirámide consideraba irrelevante. Cuando la Pirámide cayó, Voight se quedó con la Capilla, con sus libros y con su independencia, y no se unió a ninguna de las casas que surgieron.</p>\n<p>Desde 2019 ha convertido el viejo observatorio de Queen Anne (@UUID[JournalEntry.OSMVQHNXfk9zRyLM]{La Capilla del Observatorio}) en un centro de vigilancia de redes. Fue la primera en detectar a FIRSTLIGHT en la ciudad y la que impuso en 2024 la ley de los dispositivos en el Elíseo. Le escribió al Príncipe un informe detallado que él tardó dos noches en abrir. Está empezando a pensar que la Camarilla de Seattle no va a sobrevivir a su Príncipe.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "XLQa94jeNTBuiFNR",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.XLQa94jeNTBuiFNR",
+      "name": "Planes y maquinaciones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Vigilar a Northline.</strong> Intercepta parte del tráfico de la Célula Puget. Sabe que existe una fuente interna, pero no sabe quién es ARQUERO. Daría mucho por saberlo.</p>\n<p><strong>Proteger a Ruth.</strong> Sabe que FIRSTLIGHT tiene marcada a su chiquilla (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}) o a la forense PNJ que ocupe su lugar. Está preparando un plan de evacuación.</p>\n<p><strong>Un Príncipe que escuche.</strong> No quiere que gane Halloway, pero tampoco quiere que siga Whitmore. Si la coterie demuestra que sabe leer patrones, puede convertirse en su candidata en la sombra.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Pce4SG4DbDDiTfv9",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.Pce4SG4DbDDiTfv9",
+      "name": "Dominio y refugio",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La Capilla del Observatorio en Queen Anne (@UUID[JournalEntry.OSMVQHNXfk9zRyLM]{La Capilla del Observatorio}; Refugio 3, con salvaguardas de hechicería de sangre). Se alimenta de sangre de bancos de sangre que la Capilla compra a través de un laboratorio de investigación, y en ocasiones de investigadores que trabajan hasta tarde en el campus de la universidad.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UpfguaEAi9fVFg9y",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.UpfguaEAi9fVFg9y",
+      "name": "Siervos y herramientas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>La Capilla</strong>: tres aprendices Tremere y Ruth Abernathy, si se juega.</p>\n<p><strong>Los servidores de la cúpula</strong> (Recursos 3, Contactos 2 en tecnología).</p>\n<p><strong>Laboratorio de investigación</strong> (Influencia 2 en la universidad).</p>\n<p><strong>Rituales</strong>: salvaguarda contra ghouls, comunión de sangre, rastreo por Vitae.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pHlQxe0LQNtfljw6",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.pHlQxe0LQNtfljw6",
+      "name": "Relaciones con Vástagos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</strong> (frustración). Le dio los datos. Él prefirió no mirarlos.</p>\n<p><strong>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</strong> (sospecha). Le parece demasiado tranquilo para alguien que tiene tanto que perder.</p>\n<p><strong>@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Ruth Abernathy}</strong> (responsabilidad). La convirtió en un arma y se siente obligada a protegerla.</p>\n<p><strong>@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra Lund}</strong> (interés). Le gustaría trabajar con él. Thornquist no la deja acercarse.</p>\n<p><strong>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</strong> (respeto mutuo). Dos profesionales en una corte de aficionados.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "IAZzheVsK7j8qyhb",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.IAZzheVsK7j8qyhb",
+      "name": "Susurros",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>«Voight puede leer los correos de cualquiera en la ciudad.» <em>(Falso: solo los de Northline, y no todos.)</em></li>\n<li>«La Capilla del Observatorio ya no responde a nadie fuera de Seattle.» <em>(Verdad.)</em></li>\n<li>«Voight quiere ser Príncipe.» <em>(Falso. Quiere un Príncipe que la escuche.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iHeXsUu0HduJCn1G",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.iHeXsUu0HduJCn1G",
+      "name": "Máscara y semblante",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Para los mortales es la Dra. A. Voight, directora de un laboratorio privado de epidemiología computacional asociado a la universidad (Máscara 2). Aparenta unos treinta y tres años. Es menuda, de pelo muy corto y de su color natural, y lleva gafas sin montura, jerséis de cuello alto negros y una bata de laboratorio que olvida quitarse. Habla un inglés perfecto con acento vienés. Tiene la costumbre de responder a las preguntas con un porcentaje.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición</h4><p>El doc 06 decía «aparenta unos cincuenta años» y «pelo blanco»; se decidió que aparenta la edad que tenía al Abrazo (1924, nacida en 1891): unos treinta y tres, con el pelo de su color natural.</p>\n</aside>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "emKsjGr8Rrg5pLLK",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.emKsjGr8Rrg5pLLK",
+      "name": "Datos de referencia",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> Regente Friedrich Ahlers de Viena (destruido en 1945)</li>\n<li><strong>Abrazada:</strong> 1924 (nacida en 1891)</li>\n<li><strong>Ambición:</strong> que la Camarilla de Seattle sobreviva a la era de los datos.</li>\n<li><strong>Convicciones:</strong> «Nunca ignorar un patrón» · «El conocimiento sin acción es complicidad».</li>\n<li><strong>Piedra de toque:</strong> Mateo Ruiz-Okoye, doctorando de epidemiología, a quien dirige la tesis por correo sin que sepa quién es.</li>\n<li><strong>Humanidad:</strong> 6</li>\n<li><strong>Generación:</strong> 9.ª</li>\n<li><strong>Potencia de Sangre:</strong> 4</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "8zoUgoPfjs4t8y2o",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.8zoUgoPfjs4t8y2o",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Atributos:</strong> Fuerza 1, Destreza 2, Resistencia 2 · Carisma 2, Manipulación 3, Compostura 4 · Inteligencia 5, Astucia 4, Resolución 4</p>\n<p><strong>Atributos secundarios:</strong> Salud 5 · Fuerza de Voluntad 8</p>\n<p><strong>Habilidades:</strong> Academicismo 4 (Epidemiología), Ciencias 4 (Estadística), Consciencia 3, Etiqueta 2, Investigación 4 (Patrones), Medicina 3, Ocultismo 4 (Taumaturgia), Política 2, Tecnología 4 (Redes)</p>\n<p><strong>Disciplinas:</strong></p>\n<ul>\n<li>Auspex 3: Sentidos agudizados (<em>Heightened Senses</em>), Premonición (<em>Premonition</em>), Compartir los sentidos (<em>Share the Senses</em>)</li>\n<li>Dominación 2: Obligar (<em>Compel</em>), Hipnotizar (<em>Mesmerize</em>)</li>\n<li>Hechicería de sangre 4: Vitae corrosiva (<em>Corrosive Vitae</em>), Extinguir la Vitae (<em>Extinguish Vitae</em>), Sangre de potencia (<em>Blood of Potency</em>), Robo de Vitae (<em>Theft of Vitae</em>)</li>\n</ul>\n<p><strong>Rituales:</strong> Salvaguarda contra ghouls (<em>Ward against Ghouls</em>), Comunión con Caín (<em>Communicate with Kindred Sire</em>), Probar la sangre (<em>Blood Walk</em>)</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

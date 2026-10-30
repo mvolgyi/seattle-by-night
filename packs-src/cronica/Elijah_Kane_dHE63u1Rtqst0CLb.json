@@ -1,0 +1,109 @@
+{
+  "_id": "dHE63u1Rtqst0CLb",
+  "_key": "!journal!dHE63u1Rtqst0CLb",
+  "name": "Elijah Kane",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-09",
+      "archivo": "content/personajes/PNJ-09.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "tr9TuprUhtcDeNXL",
+      "_key": "!journal.pages!dHE63u1Rtqst0CLb.tr9TuprUhtcDeNXL",
+      "name": "Elijah Kane",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Gangrel nómada · sire de @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}.</p>\n<p><em>Esta página reúne lo que dicen de Kane los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan ficha, generación ni paradero actual.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "anE3rElxek1YMwQO",
+      "_key": "!journal.pages!dHE63u1Rtqst0CLb.anE3rElxek1YMwQO",
+      "name": "Lo que se sabe",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>El número PNJ-09 quedó reservado para «Elijah Kane, sire de Montgomery» (doc 01, nota al registro de IDs v2) y se fijó como «PNJ-09 · Elijah Kane, sire de Montgomery (trasfondo)» (doc 06, registro de IDs).</li>\n<li>Era un Gangrel nómada. En 1885, Montgomery, rastreador de la frontera, persiguió durante tres semanas a un asesino de viajeros cerca de Eureka y descubrió que su presa no era un hombre. Kane «le perdonó la vida porque le pareció interesante y lo Abrazó porque le pareció útil» (doc 06, ficha de Montgomery).</li>\n<li>Montgomery pasó dieciocho años recorriendo la costa con él. En 1903, después del terremoto de San Francisco, Montgomery entró al servicio de la Camarilla y no lo dejó nunca (doc 06). La cronología de la ciudad fecha ese paso en 1903, en San Francisco (doc 05).</li>\n<li>Ficha de Montgomery: «<strong>Sire:</strong> Elijah Kane · <strong>Abrazado:</strong> 1885 (nacido en 1845)» (doc 06).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "eq546nLwb6x3qfjH",
+      "_key": "!journal.pages!dHE63u1Rtqst0CLb.eq546nLwb6x3qfjH",
+      "name": "Para usarlo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ningún doc lo hace aparecer en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward} ni en los ganchos. Sirve para explicar de dónde le vienen a Montgomery el rastreo y la costumbre de seguir un rastro hasta el final.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

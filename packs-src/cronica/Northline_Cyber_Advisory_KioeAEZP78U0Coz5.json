@@ -1,0 +1,109 @@
+{
+  "_id": "KioeAEZP78U0Coz5",
+  "_key": "!journal!KioeAEZP78U0Coz5",
+  "name": "Northline Cyber Advisory",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 140,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-14",
+      "archivo": "content/ciudad/LUG-14.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "HMdl7lSUYzV0hFbh",
+      "_key": "!journal.pages!KioeAEZP78U0Coz5.HMdl7lSUYzV0hFbh",
+      "name": "Northline Cyber Advisory",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>South Lake Union, torre de oficinas, piso 11 · Fachada de FIRSTLIGHT · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "VWCt5iDLvLGJ3bCi",
+      "_key": "!journal.pages!KioeAEZP78U0Coz5.VWCt5iDLvLGJ3bCi",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Una oficina como cualquier otra de South Lake Union: moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad. A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1kPXVToInZey741R",
+      "_key": "!journal.pages!KioeAEZP78U0Coz5.1kPXVToInZey741R",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> recepción, mesas abiertas (los analistas), sala de reuniones con un tablero de corcho lleno de fotos (incluido el pódcast de Helen), armería cerrada y una sala blanca con lámparas UV de alta intensidad, una &quot;sala de entrevistas&quot;.</p>\n<p><strong>Ocupantes:</strong> Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}), S. Hale (@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}) y el equipo táctico @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}, que de noche está en un almacén del puerto, no aquí.</p>\n<p><strong>Peligro:</strong> entrar aquí es la forma más rápida de subir el Termómetro (+3 si se descubre la intrusión: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+3\" data-motivo=\"Intrusión descubierta en Northline\"><span class=\"sbn-termometro-cambio\">+3</span> <span class=\"sbn-termometro-motivo\">Intrusión descubierta en Northline</span></button>). Es más útil observar que entrar.</p>\n<p>No figura en ninguna escena fija. Se reserva para la crónica o para una coterie muy audaz.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

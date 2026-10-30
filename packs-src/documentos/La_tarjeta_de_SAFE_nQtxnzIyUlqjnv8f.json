@@ -1,0 +1,85 @@
+{
+  "_id": "nQtxnzIyUlqjnv8f",
+  "_key": "!journal!nQtxnzIyUlqjnv8f",
+  "name": "La tarjeta de SAFE",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-05",
+      "archivo": "content/documentos/AYU-05.md",
+      "soporte": "tarjeta",
+      "entrega": [
+        "A0-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "1v983F0rPqek87ud",
+      "_key": "!journal.pages!nQtxnzIyUlqjnv8f.1v983F0rPqek87ud",
+      "name": "La tarjeta de SAFE",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-tarjeta\"><div class=\"sbn-pantalla\"><p class=\"sbn-acotacion\">[ PANTALLA ]</p>\n<p>AGENDA</p>\n<hr class=\"sbn-pantalla-raya\">\n<p>▶ SAFE</p>\n<hr class=\"sbn-pantalla-raya\">\n<p>1 contacto</p>\n\n<p class=\"sbn-pantalla-estado\">[Batería: ▮▮▮▯ · Cargado por última vez: domingo]</p>\n</div><aside class=\"sbn-manuscrito sbn-manuscrito-cinta\"><p class=\"sbn-acotacion\">[Al darle la vuelta al teléfono, en la tapa, un trozo de cinta de pintor:]</p>\n<p>NO ES PARA LA POLICÍA.</p>\n<p>NO ES PARA EL PÓDCAST.</p></aside></div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "y0DmykzMjoB9znlQ",
+      "_key": "!journal.pages!nQtxnzIyUlqjnv8f.y0DmykzMjoB9znlQ",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Teléfono de tapa. <strong>Entrega:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}.</p>\n<p><em>Narrador: el teléfono de tapa de Helen. Si lo usás en mesa, una tarjeta impresa con la pantalla funciona bien. @UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{SAFE: mensajes guardados} contiene los mensajes.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

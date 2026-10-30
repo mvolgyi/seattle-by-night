@@ -1,0 +1,191 @@
+{
+  "_id": "RpfEuWkPMPy3Mang",
+  "_key": "!scenes!RpfEuWkPMPy3Mang",
+  "name": "Seattle by Night — El Expediente Ward",
+  "folder": null,
+  "navigation": true,
+  "navOrder": -10,
+  "width": 1920,
+  "height": 1080,
+  "padding": 0,
+  "grid": {
+    "type": 0,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": false,
+  "fog": {
+    "mode": 0
+  },
+  "environment": {
+    "darknessLevel": 0,
+    "globalLight": {
+      "enabled": true
+    }
+  },
+  "levels": [
+    {
+      "_id": "E28T1bFQNPhYUWni",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": null,
+        "color": "#1c2a36"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!RpfEuWkPMPy3Mang.E28T1bFQNPhYUWni"
+    }
+  ],
+  "journal": null,
+  "journalEntryPage": null,
+  "walls": [],
+  "lights": [],
+  "regions": [],
+  "notes": [
+    {
+      "_id": "L40GCJMVBVfm7iEy",
+      "entryId": "xkgduTFLzE5Eik8z",
+      "pageId": null,
+      "x": 700,
+      "y": 670,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 64,
+      "text": "Cómo usar este módulo",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "portada",
+          "id": "COMO-USAR"
+        }
+      },
+      "_key": "!scenes.notes!RpfEuWkPMPy3Mang.L40GCJMVBVfm7iEy"
+    },
+    {
+      "_id": "282A6FPZSrou63sd",
+      "entryId": "ll97TEj4MRjtM595",
+      "pageId": null,
+      "x": 960,
+      "y": 670,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/city.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 64,
+      "text": "Capítulo 7 · El Expediente Ward",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "portada",
+          "id": "AVE-01"
+        }
+      },
+      "_key": "!scenes.notes!RpfEuWkPMPy3Mang.282A6FPZSrou63sd"
+    },
+    {
+      "_id": "Wz7Y4tuQqqpdbj5C",
+      "entryId": "LkbsP03WDYiTwRRX",
+      "pageId": null,
+      "x": 1220,
+      "y": 670,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/eye.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 64,
+      "text": "Pantalla del Narrador",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "portada",
+          "id": "PANTALLA"
+        }
+      },
+      "_key": "!scenes.notes!RpfEuWkPMPy3Mang.Wz7Y4tuQqqpdbj5C"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "portada",
+      "landing": true,
+      "provisional": true,
+      "nota": "<p>Portada de la crónica. Los pines abren cómo usar el módulo, la aventura y la Pantalla del Narrador.</p>"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

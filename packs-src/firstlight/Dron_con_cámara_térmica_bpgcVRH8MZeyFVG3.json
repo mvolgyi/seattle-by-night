@@ -1,0 +1,56 @@
+{
+  "_id": "bpgcVRH8MZeyFVG3",
+  "_key": "!items!bpgcVRH8MZeyFVG3",
+  "name": "Dron con cámara térmica",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<p>Ve a toda la zona y coordina al equipo: +2 dados a sus tiradas de Consciencia y emboscada. Derribarlo: Fuerza + Atletismo (Dificultad 4) con un objeto lanzado, o un disparo con Destreza + Armas de fuego (Dificultad 4).</p><p><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.strength skills.athletics\" data-dificultad=\"4\" data-label=\"Derribar el dron con un objeto lanzado: Fuerza + Atletismo (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Derribar el dron con un objeto lanzado: Fuerza + Atletismo (Dificultad 4)</a></p><p><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.dexterity skills.firearms\" data-dificultad=\"4\" data-label=\"Derribar el dron de un disparo: Destreza + Armas de fuego (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Derribar el dron de un disparo: Destreza + Armas de fuego (Dificultad 4)</a></p>",
+    "macroid": "",
+    "bonuses": [
+      {
+        "source": "Dron con cámara térmica",
+        "value": 2,
+        "paths": [
+          "skills.awareness"
+        ],
+        "displayWhenInactive": true,
+        "activeWhen": {
+          "check": "always",
+          "path": "",
+          "value": ""
+        }
+      }
+    ],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "dron-termico",
+      "agravado": false
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 50,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

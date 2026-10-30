@@ -1,0 +1,109 @@
+{
+  "_id": "L6Fl1S0tjkWno2we",
+  "_key": "!journal!L6Fl1S0tjkWno2we",
+  "name": "Torre Halloway",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 60,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-06",
+      "archivo": "content/ciudad/LUG-06.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "ojSIQTmGaP4KFsM2",
+      "_key": "!journal.pages!L6Fl1S0tjkWno2we.ojSIQTmGaP4KFsM2",
+      "name": "Torre Halloway",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Downtown · Refugio de Charles Halloway · Mapa: sí (ático y bóveda)</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "JhrUgexJe92KZmkU",
+      "_key": "!journal.pages!L6Fl1S0tjkWno2we.JhrUgexJe92KZmkU",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Cuarenta y dos pisos de cristal oscuro en el centro financiero. El ascensor privado sube sin ruido y se abre a un ático de techos altísimos y muebles que parecen no haber sido usados nunca. Toda la pared oeste es una ventana sobre Elliott Bay: las grúas del puerto, los ferris, la isla donde vive el Sabueso. Desde aquí arriba, la ciudad parece un tablero.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "uSlgqElknZgbswKr",
+      "_key": "!journal.pages!L6Fl1S0tjkWno2we.uSlgqElknZgbswKr",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> pisos 1 a 38 de oficinas de Halloway Meridian Capital (Influencia y Recursos); piso 40 con seguridad ghoul (@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}); ático con sala del Consejo y despacho; bóveda subterránea en el nivel −3, accesible solo con el ascensor privado.</p>\n<p><strong>La bóveda</strong> guarda el original de los diarios de Vance, la copia 1 de 3 y, a partir de la Noche 6 (<span class=\"sbn-reloj\" data-sbn-reloj=\"6\" title=\"Noche 6 · martes 17 nov. (madrugada del 17/11/2026)\">Noche 6</span>), el disco original del Expediente.</p>\n<p><strong>Trasfondos:</strong> Refugio 4, Recursos 5, Influencia 4.</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}. Una posible infiltración antes del clímax, si la coterie la planea.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

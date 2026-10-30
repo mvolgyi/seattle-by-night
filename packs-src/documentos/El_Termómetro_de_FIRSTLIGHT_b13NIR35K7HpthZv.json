@@ -1,0 +1,85 @@
+{
+  "_id": "b13NIR35K7HpthZv",
+  "_key": "!journal!b13NIR35K7HpthZv",
+  "name": "El Termómetro de FIRSTLIGHT",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-03",
+      "archivo": "content/documentos/AYU-03.md",
+      "soporte": "marcador",
+      "entrega": [
+        "narrador"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "QIgsYhhjisOfzz32",
+      "_key": "!journal.pages!b13NIR35K7HpthZv.QIgsYhhjisOfzz32",
+      "name": "El Termómetro de FIRSTLIGHT",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-marcador\"><p class=\"sbn-doc-titulo\">LOS OJOS DE LA CIUDAD</p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-marcador-tabla\">\n<thead>\n<tr>\n<th>0</th>\n<th>1</th>\n<th><strong>2</strong><br><em>inicio</em></th>\n<th><strong>3</strong><br>👁</th>\n<th>4</th>\n<th><strong>5</strong><br>☎</th>\n<th>6</th>\n<th><strong>7</strong><br>🔍</th>\n<th>8</th>\n<th><strong>9</strong><br>🚨</th>\n<th><strong>10</strong><br>🔥</th>\n</tr>\n</thead>\n</table>\n<p>👁 <strong>3</strong> · Alguien mira a la periodista.</p>\n<p>☎ <strong>5</strong> · Alguien llama a la periodista.</p>\n<p>🔍 <strong>7</strong> · Alguien tira del hilo de uno de los nuestros.</p>\n<p>🚨 <strong>9</strong> · Llaman a la puerta.</p>\n<p>🔥 <strong>10</strong> · Ya no hay puerta.</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4q0rKmYzfI8ZJ2zF",
+      "_key": "!journal.pages!b13NIR35K7HpthZv.4q0rKmYzfI8ZJ2zF",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Marcador recortable. <strong>Entrega:</strong> Solo para el Narrador (o a la vista, sin número).</p>\n<p><em>Narrador: imprimilo y usá un clip o una ficha como marcador. En Foundry, un medidor en la escena o un token en una pista. Los jugadores pueden verlo; el número exacto, mejor que no.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "oIF9UlwtOCvcz9Sf",
+  "_key": "!journal!oIF9UlwtOCvcz9Sf",
+  "name": "Mapa de Seattle con los dominios",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-01",
+      "archivo": "content/documentos/AYU-01.md",
+      "soporte": "mapa",
+      "entrega": [
+        "sesion-cero",
+        "A1-E03"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "rVjUu57CNaaYF00F",
+      "_key": "!journal.pages!oIF9UlwtOCvcz9Sf.rVjUu57CNaaYF00F",
+      "name": "Mapa de Seattle con los dominios",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-mapa\"><p class=\"sbn-doc-titulo\">SEATTLE · NOVIEMBRE DE 2026</p>\n<p><em>Dominios de la noche</em></p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-mapa-tabla\">\n<thead>\n<tr>\n<th>Color</th>\n<th>Zona</th>\n<th>Quién manda</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Dorado</td>\n<td>Downtown, Capitol Hill, Seattle Center</td>\n<td>El Príncipe Whitmore</td>\n</tr>\n<tr>\n<td>Gris piedra</td>\n<td>Bajo Pioneer Square</td>\n<td>Los Topos (Thornquist)</td>\n</tr>\n<tr>\n<td>Verde oscuro</td>\n<td>Valle del Snohomish</td>\n<td>El Sheriff Montgomery</td>\n</tr>\n<tr>\n<td>Azul acero</td>\n<td>Harbor Island y Elliott Bay</td>\n<td>El Sabueso (cedido por el Sheriff)</td>\n</tr>\n<tr>\n<td>Verde esmeralda</td>\n<td>Bellevue y el Eastside</td>\n<td>Halloway</td>\n</tr>\n<tr>\n<td>Rojo óxido</td>\n<td>Everett</td>\n<td>Salitre (Anarquistas)</td>\n</tr>\n<tr>\n<td>Sin color, rayado</td>\n<td>Ballard, South Lake Union, Tacoma</td>\n<td>Nadie, o todos</td>\n</tr>\n</tbody></table>\n<p><strong>Lugares marcados:</strong> ① El hangar · ② La granja · ③ La Galería de Vidrio · ④ Las Galerías Selladas · ⑤ Market Street, Ballard · ⑥ Torre Halloway · ⑦ Gale Sentinel · ⑧ Pike Place · ⑨ Club Ceniza · ⑩ Bar Salitre · ⑪ El Larchmont · ⑫ El cementerio de los cedros · ⑬ El Observatorio · ⑭ Northline · ⑮ Colman Dock · ⑯ Terminal 86</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">En una esquina, a lápiz, con la letra de Hal:</span> «South Lake Union: no cazar. Cámaras en todas partes.»</p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oQewOGrG0TaIkSrE",
+      "_key": "!journal.pages!oIF9UlwtOCvcz9Sf.oQewOGrG0TaIkSrE",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Mapa ilustrado. <strong>Entrega:</strong> Sesión cero o @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta}.</p>\n<p><em>Narrador: mapa regional ilustrado. Se genera con el prompt @UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Mapa de Seattle con los dominios}. La leyenda va impresa aparte o superpuesta en Foundry.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

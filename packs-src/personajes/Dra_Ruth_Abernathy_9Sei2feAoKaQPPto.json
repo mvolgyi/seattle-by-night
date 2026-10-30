@@ -1,0 +1,227 @@
+{
+  "_id": "9Sei2feAoKaQPPto",
+  "_key": "!actors!9Sei2feAoKaQPPto",
+  "name": "Dra. Ruth Abernathy",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 60,
+  "prototypeToken": {
+    "name": "Dra. Ruth Abernathy",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "patóloga del turno de noche de la oficina forense del condado y miembro de la capilla de Voight.",
+      "chronicle": "Seattle by Night",
+      "ambition": "encontrar el cuerpo que desapareció en 2004",
+      "desire": "una noche sin cadáveres",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Los muertos merecen la verdad, aunque los vivos no</li></ul><h3>Piedras de toque</h3><ul><li>su exmarido, detective de homicidios jubilado, que todavía la llama cuando no puede dormir</li></ul>",
+      "sire": "Dra. Anneliese Voight",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Perfil: Dra. Ruth Abernathy}</p><blockquote><p><em>La forense de guardia</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>patóloga del turno de noche de la oficina forense del condado y miembro de la capilla de Voight.</td></tr><tr><th>Clan</th><td>Tremere</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}</td></tr><tr><th>Ambición</th><td>encontrar el cuerpo que desapareció en 2004</td></tr><tr><th>Deseo</th><td>una noche sin cadáveres</td></tr><tr><th>Plantilla</th><td>alternativa</td></tr><tr><th>Foco</th><td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</td></tr><tr><th>Brilla en</th><td>A1-E02, A2-E02 (análisis forense de la <em>Furia Controlada</em>) y A4-E02.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "tremere"
+        }
+      },
+      "name": "Tremere",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "R1UsSPgaZGYw1NLZ",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.R1UsSPgaZGYw1NLZ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia (oficina forense) 2"
+        }
+      },
+      "name": "Influencia (oficina forense)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia (oficina forense) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "1PS3eATpXgi7XLHi",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.1PS3eATpXgi7XLHi"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos (policía) 2"
+        }
+      },
+      "name": "Contactos (policía)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos (policía) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "89SHa5IUr0b9f4sL",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.89SHa5IUr0b9f4sL"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 2"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "6KgiXilkkGuaQnap",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.6KgiXilkkGuaQnap"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Voight) 1"
+        }
+      },
+      "name": "Mawla (Voight)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Voight) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "ioTlDnKI04NyF9yP",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.ioTlDnKI04NyF9yP"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-06",
+      "journal": "JournalEntry.gRfqeOIXEHOcLemr",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

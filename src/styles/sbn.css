@@ -8,4 +8,791 @@
   --sbn-negro: #0d0f12;
   --sbn-carmesi: #8f1d24;
   --sbn-papel: #e8e2d6;
+
+  /* Derivados: papeles, tintas y pantallas de los documentos del mundo. */
+  --sbn-papel-claro: color-mix(in srgb, var(--sbn-papel) 55%, white);
+  --sbn-papel-viejo: color-mix(in srgb, var(--sbn-papel) 78%, #c9a85a);
+  --sbn-tinta: #1c1a17;
+  --sbn-tinta-azul: #1e3a78;
+  --sbn-tinta-sepia: #5a3b1c;
+  --sbn-grafito: #55565a;
+  --sbn-pantalla-lcd: #b7c4a4;
+  --sbn-pantalla-tinta: #1d2a1a;
+  --sbn-sombra: 0 2px 8px color-mix(in srgb, var(--sbn-negro) 35%, transparent);
+
+  /* Pilas de fuentes. Sin fuentes externas: Foundry trae Signika y Amiri; el resto, del sistema. */
+  --sbn-fuente-manuscrita: "Segoe Print", "Bradley Hand", "Kalam", "Patrick Hand", "Caveat",
+    "Chalkboard SE", "Comic Neue", "Comic Sans MS", cursive;
+  --sbn-fuente-maquina: "Courier Prime", "Courier New", Courier, "Nimbus Mono PS", "Liberation Mono", monospace;
+  --sbn-fuente-pantalla: "DejaVu Sans Mono", "Menlo", "Consolas", "Lucida Console", monospace;
+  --sbn-fuente-prensa: "Times New Roman", Times, "Liberation Serif", "Nimbus Roman", var(--font-serif, serif), serif;
+  --sbn-fuente-caligrafia: "Palatino Linotype", Palatino, "URW Palladio L", "P052", "Book Antiqua",
+    var(--font-serif, serif), serif;
+  --sbn-fuente-sans: var(--font-sans, "Signika", ui-sans-serif, sans-serif);
+}
+
+/* ========================================================================== */
+/*  Journals: elementos del libro                                             */
+/* ========================================================================== */
+
+/* --- Leer en voz alta ----------------------------------------------------- */
+
+.sbn-leer {
+  position: relative;
+  margin: 1em 0;
+  padding: 1.6em 1em 0.7em 1.1em;
+  border-left: 4px solid var(--sbn-sodio);
+  border-radius: 0 4px 4px 0;
+  background: color-mix(in srgb, var(--sbn-sodio) 9%, transparent);
+  font-family: var(--font-serif, serif);
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+.sbn-leer::before {
+  content: "\1F4E2\FE0E  Leer en voz alta";
+  position: absolute;
+  top: 0.35em;
+  left: 1.1em;
+  font-family: var(--sbn-fuente-sans);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sbn-sodio);
+}
+.sbn-leer p:last-child { margin-bottom: 0; }
+
+/* --- Recuadros del libro -------------------------------------------------- */
+
+.sbn-recuadro {
+  margin: 1em 0;
+  padding: 0.6em 0.9em 0.4em;
+  border: 1px solid color-mix(in srgb, var(--sbn-puerto) 55%, transparent);
+  border-top: 3px solid var(--sbn-puerto);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--sbn-puerto) 8%, transparent);
+  font-size: 0.95em;
+}
+.sbn-recuadro > h4 {
+  margin: 0 0 0.4em;
+  padding: 0;
+  border: none;
+  font-size: 0.95em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: inherit;
+}
+.sbn-recuadro > :last-child { margin-bottom: 0.2em; }
+
+/* Notas de edición: decisiones del editor entre docs que se contradicen. */
+.sbn-recuadro.sbn-nota-edicion {
+  border: 1px dashed color-mix(in srgb, var(--sbn-pizarra) 55%, transparent);
+  border-left: 4px solid var(--sbn-pizarra);
+  background: color-mix(in srgb, var(--sbn-pizarra) 7%, transparent);
+  font-size: 0.88em;
+  opacity: 0.92;
+}
+.sbn-recuadro.sbn-nota-edicion > h4 {
+  font-size: 0.85em;
+  color: color-mix(in srgb, currentColor 75%, transparent);
+}
+.sbn-recuadro.sbn-nota-edicion > h4::before { content: "\270E\FE0E  "; }
+
+/* --- Enlaces y datos sueltos ---------------------------------------------- */
+
+.sbn-enlace-actor {
+  display: inline-block;
+  margin: 0 0 0.6em;
+  padding: 0.15em 0.6em;
+  border: 1px solid color-mix(in srgb, var(--sbn-puerto) 50%, transparent);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--sbn-puerto) 10%, transparent);
+  font-size: 0.9em;
+}
+.sbn-enlace-actor i { margin-right: 0.25em; opacity: 0.8; }
+
+.sbn-para-narrador {
+  padding: 0.2em 0.8em;
+  border-left: 3px solid var(--sbn-carmesi);
+}
+
+.sbn-origen {
+  display: inline-block;
+  margin-left: 0.3em;
+  padding: 0 0.35em;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--sbn-pizarra) 12%, transparent);
+  font-size: 0.75em;
+  line-height: 1.5;
+  white-space: nowrap;
+  opacity: 0.75;
+}
+p.sbn-origen { display: block; margin: 0.8em 0 0; background: none; }
+
+.sbn-nota { font-size: 0.9em; font-style: italic; opacity: 0.85; }
+
+.sbn-dados {
+  display: inline-block;
+  min-width: 1.8em;
+  padding: 0 0.3em;
+  border-radius: 3px;
+  background: var(--sbn-pizarra);
+  color: var(--sbn-papel);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Partes internas de los botones (el botón lo viste sbn-ui.css). */
+.sbn-termometro-cambio { font-weight: 700; white-space: nowrap; }
+.sbn-termometro-motivo { font-weight: normal; }
+.sbn-pista-id { font-weight: 700; font-size: 0.85em; letter-spacing: 0.03em; }
+
+.sbn-pista-cabecera { margin: 0 0 0.6em; }
+.sbn-noche-fecha { font-size: 0.95em; opacity: 0.85; }
+.sbn-lista-obtencion li,
+.sbn-lista-dados li { margin-bottom: 0.35em; }
+.sbn-lista-variantes { font-size: 0.88em; opacity: 0.9; }
+
+/* --- Tablas --------------------------------------------------------------- */
+
+table.sbn-tabla {
+  width: 100%;
+  margin: 0.6em 0 1em;
+  border-collapse: collapse;
+  border: 1px solid color-mix(in srgb, var(--sbn-pizarra) 35%, transparent);
+  font-size: 0.93em;
+}
+table.sbn-tabla th,
+table.sbn-tabla td {
+  padding: 0.35em 0.55em;
+  border: 1px solid color-mix(in srgb, var(--sbn-pizarra) 22%, transparent);
+  text-align: left;
+  vertical-align: top;
+}
+table.sbn-tabla thead th {
+  background: var(--sbn-puerto);
+  color: var(--sbn-papel);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+table.sbn-tabla tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--sbn-pizarra) 6%, transparent);
+}
+
+/* «Escapar | …», «Manipular | …»: la primera columna es la clave. */
+table.sbn-tabla-claves td:first-child {
+  width: 9em;
+  background: color-mix(in srgb, var(--sbn-puerto) 12%, transparent);
+  white-space: nowrap;
+}
+
+table.sbn-tabla-movimientos td:first-child,
+table.sbn-tabla-umbrales td:first-child,
+table.sbn-tabla-reloj td:first-child,
+table.sbn-tabla-horas td:first-child { width: 1%; white-space: nowrap; }
+.sbn-umbral-valor { font-size: 1.1em; }
+.sbn-hora { font-family: var(--sbn-fuente-pantalla); font-size: 0.9em; }
+
+/* ========================================================================== */
+/*  Documentos del mundo y ayudas de juego                                    */
+/* ========================================================================== */
+
+/* El documento tiene su propio papel: no depende del tema claro u oscuro. */
+.sbn-doc {
+  --sbn-doc-fondo: var(--sbn-papel-claro);
+  position: relative;
+  max-width: 40rem;
+  margin: 0.8em auto 1.4em;
+  padding: 1.6em 1.8em;
+  color: var(--sbn-tinta);
+  background: var(--sbn-doc-fondo);
+  border-radius: 2px;
+  box-shadow: var(--sbn-sombra);
+  font-family: var(--font-serif, serif);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-shadow: none;
+}
+.sbn-doc p { margin: 0 0 0.75em; }
+.sbn-doc h3, .sbn-doc h4 { border: none; color: inherit; }
+.sbn-doc a.content-link { color: var(--sbn-tinta); }
+
+/* --- Piezas comunes ------------------------------------------------------- */
+
+.sbn-doc .sbn-doc-titulo {
+  margin-bottom: 0.4em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Acotación del editor: «[lluvia.]», «[Al pie, con otra tinta:]». No es parte del objeto. */
+.sbn-doc .sbn-acotacion {
+  font-family: var(--sbn-fuente-sans);
+  font-size: 0.8em;
+  font-style: italic;
+  color: color-mix(in srgb, var(--sbn-tinta) 55%, transparent);
+}
+.sbn-doc p.sbn-acotacion { margin: 0.4em 0; }
+
+.sbn-doc .sbn-firma {
+  margin-top: 1em;
+  text-align: right;
+  font-family: var(--sbn-fuente-manuscrita);
+  font-size: 1.15em;
+}
+
+.sbn-doc .sbn-membrete {
+  margin: -0.4em -0.4em 1.2em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px double color-mix(in srgb, var(--sbn-tinta) 50%, transparent);
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+}
+
+.sbn-doc .sbn-sello { margin: 0 0 1em; text-align: right; }
+.sbn-doc .sbn-sello-texto {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border: 3px double #6b3fa0;
+  border-radius: 4px;
+  color: #6b3fa0;
+  font-family: var(--sbn-fuente-sans);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  transform: rotate(-4deg);
+  opacity: 0.8;
+}
+
+.sbn-doc-imagen {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1em;
+  border: none;
+}
+
+/* Tabla dentro de un documento: tinta sobre papel, sin el azul del libro. */
+.sbn-doc table.sbn-doc-tabla { border-color: color-mix(in srgb, var(--sbn-tinta) 40%, transparent); }
+.sbn-doc table.sbn-doc-tabla th,
+.sbn-doc table.sbn-doc-tabla td { border-color: color-mix(in srgb, var(--sbn-tinta) 25%, transparent); }
+.sbn-doc table.sbn-doc-tabla thead th {
+  background: color-mix(in srgb, var(--sbn-tinta) 10%, transparent);
+  color: var(--sbn-tinta);
+}
+
+/* --- Anotaciones manuscritas --------------------------------------------- */
+
+.sbn-manuscrito {
+  margin: 1.1em 0 0.6em 1.5em;
+  padding: 0.3em 0.6em;
+  color: var(--sbn-tinta-azul);
+  font-family: var(--sbn-fuente-manuscrita);
+  font-size: 1.12em;
+  line-height: 1.35;
+  transform: rotate(-1.2deg);
+}
+.sbn-manuscrito em { font-style: normal; }
+.sbn-manuscrito p { margin: 0 0 0.3em; }
+.sbn-manuscrito .sbn-acotacion { display: block; transform: rotate(1.2deg); }
+
+.sbn-manuscrito-lapiz { color: var(--sbn-grafito); opacity: 0.85; }
+.sbn-manuscrito-tinta { color: #20263a; }
+.sbn-manuscrito-boligrafo { color: var(--sbn-tinta-azul); }
+
+.sbn-manuscrito-postit {
+  max-width: 18em;
+  margin-left: auto;
+  padding: 0.8em 0.9em;
+  color: #2a2a2a;
+  background: linear-gradient(#fff59a, #f6e56b);
+  box-shadow: 2px 3px 6px color-mix(in srgb, var(--sbn-negro) 30%, transparent);
+  transform: rotate(2deg);
+}
+.sbn-manuscrito-postit .sbn-acotacion { transform: rotate(-2deg); }
+
+.sbn-manuscrito-cinta {
+  max-width: 16em;
+  margin: 1.2em auto 0.4em;
+  padding: 0.5em 1em;
+  color: #1a1a1a;
+  background: color-mix(in srgb, #e9dcb4 90%, transparent);
+  font-family: var(--sbn-fuente-manuscrita);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  clip-path: polygon(2% 0, 98% 4%, 100% 50%, 97% 100%, 3% 96%, 0 50%);
+  transform: rotate(-2deg);
+}
+
+/* --- Transcripción de audio (DOC-01) ------------------------------------- */
+
+.sbn-doc-transcripcion {
+  --sbn-doc-fondo: #f4f4f1;
+  font-family: var(--sbn-fuente-sans);
+}
+.sbn-doc-transcripcion .sbn-doc-titulo {
+  margin: -1.6em -1.8em 1em;
+  padding: 0.6em 1.8em;
+  background: var(--sbn-pizarra);
+  color: var(--sbn-papel);
+  font-family: var(--sbn-fuente-pantalla);
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+}
+.sbn-doc-transcripcion .sbn-doc-titulo::before { content: "\25B6\FE0E  "; color: var(--sbn-sodio); }
+
+/* --- Guion de pódcast (DOC-02) ------------------------------------------- */
+
+.sbn-doc-guion {
+  --sbn-doc-fondo: #fbfaf6;
+  font-family: var(--sbn-fuente-maquina);
+  font-size: 0.95rem;
+}
+.sbn-guion-linea { display: grid; grid-template-columns: 7.5em 1fr; gap: 0 1em; }
+.sbn-guion-personaje { font-weight: 700; text-align: right; }
+.sbn-doc-guion .sbn-guion-direccion {
+  font-family: var(--sbn-fuente-maquina);
+  font-style: normal;
+  font-size: 0.85em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* La productora anota a mano, en rojo, en el margen. */
+.sbn-doc-guion .sbn-nota-margen {
+  margin-left: 55%;
+  color: #b0272d;
+  font-family: var(--sbn-fuente-manuscrita);
+  font-size: 1em;
+  font-style: normal;
+  transform: rotate(-2deg);
+}
+
+/* --- Libro de registro del Elíseo (DOC-03) ------------------------------- */
+
+.sbn-doc-libro-registro {
+  --sbn-doc-fondo: var(--sbn-papel-viejo);
+  color: var(--sbn-tinta-sepia);
+  font-family: var(--sbn-fuente-caligrafia);
+  font-style: italic;
+  background-image: repeating-linear-gradient(transparent 0 1.45em, color-mix(in srgb, var(--sbn-tinta-sepia) 18%, transparent) 1.45em 1.5em);
+}
+.sbn-doc-libro-registro .sbn-doc-titulo { font-style: normal; text-align: center; letter-spacing: 0.2em; }
+.sbn-registro-entrada { text-indent: -1.5em; padding-left: 1.5em; }
+.sbn-registro-fecha { font-style: normal; font-variant: small-caps; font-weight: 700; }
+
+/* --- Copia mecanografiada (DOC-04) --------------------------------------- */
+
+.sbn-doc-mecanografiado {
+  --sbn-doc-fondo: color-mix(in srgb, var(--sbn-papel) 70%, #e2c97f);
+  font-family: var(--sbn-fuente-maquina);
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 0.6px color-mix(in srgb, var(--sbn-tinta) 70%, transparent);
+}
+.sbn-doc-mecanografiado .sbn-manuscrito { margin-left: 0; max-width: 20em; }
+
+/* --- SMS y tarjeta: el móvil de tapa de Helen (DOC-05, AYU-05) ----------- */
+
+.sbn-doc-sms,
+.sbn-doc-tarjeta {
+  max-width: 19rem;
+  padding: 1.6em 1.1em 2.6em;
+  background: linear-gradient(160deg, #3a3f46, #16181c);
+  border-radius: 22px 22px 30px 30px;
+  box-shadow: var(--sbn-sombra), inset 0 0 0 2px #50565e;
+}
+.sbn-doc-sms::after,
+.sbn-doc-tarjeta::after {
+  content: "";
+  position: absolute;
+  bottom: 0.9em;
+  left: 50%;
+  width: 3.2em;
+  height: 0.8em;
+  transform: translateX(-50%);
+  border-radius: 0.4em;
+  background: #2a2e34;
+  box-shadow: inset 0 1px 2px #000;
+}
+.sbn-pantalla {
+  padding: 0.7em 0.8em;
+  border: 3px solid #0d0f12;
+  border-radius: 6px;
+  color: var(--sbn-pantalla-tinta);
+  background: var(--sbn-pantalla-lcd);
+  box-shadow: inset 0 0 12px color-mix(in srgb, var(--sbn-negro) 35%, transparent);
+  font-family: var(--sbn-fuente-pantalla);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+.sbn-pantalla p { margin: 0 0 0.35em; }
+.sbn-pantalla .sbn-acotacion,
+.sbn-pantalla .sbn-doc-titulo { color: var(--sbn-pantalla-tinta); font-family: inherit; }
+
+.sbn-sms-cabecera {
+  margin: -0.7em -0.8em 0.6em;
+  padding: 0.35em 0.8em;
+  background: var(--sbn-pantalla-tinta);
+  color: var(--sbn-pantalla-lcd);
+}
+.sbn-sms-cabecera p { margin: 0; }
+.sbn-sms-cabecera .sbn-doc-titulo { font-size: 0.8em; letter-spacing: 0.15em; color: inherit; }
+.sbn-sms-contacto { font-weight: 700; font-size: 1.1em; }
+.sbn-sms-contador { font-size: 0.8em; opacity: 0.8; }
+
+.sbn-sms-hilo { display: flex; flex-direction: column; gap: 0.55em; }
+.sbn-sms-mensaje {
+  max-width: 88%;
+  padding: 0.35em 0.55em;
+  border: 1px solid color-mix(in srgb, var(--sbn-pantalla-tinta) 60%, transparent);
+  border-radius: 6px 6px 6px 0;
+}
+.sbn-sms-mensaje p { margin: 0; }
+.sbn-sms-texto { font-size: 1.05em; }
+.sbn-sms-meta { font-size: 0.72em; opacity: 0.75; }
+.sbn-sms-remitente { font-weight: 700; }
+
+/* La tarjeta: la agenda y, fuera de la pantalla, la cinta de la tapa. */
+.sbn-doc-tarjeta .sbn-pantalla { text-align: center; }
+.sbn-doc-tarjeta .sbn-pantalla > .sbn-acotacion:first-child { display: none; }
+.sbn-pantalla-raya { margin: 0.3em 0; border: none; border-top: 1px solid var(--sbn-pantalla-tinta); }
+.sbn-pantalla-estado { font-size: 0.75em; text-align: right; opacity: 0.8; }
+.sbn-doc-tarjeta .sbn-manuscrito .sbn-acotacion { color: color-mix(in srgb, var(--sbn-papel) 70%, transparent); text-transform: none; }
+
+/* --- Foro (DOC-06) ------------------------------------------------------- */
+
+.sbn-doc-foro {
+  --sbn-doc-fondo: #f6f7f8;
+  max-width: 42rem;
+  padding: 1em 1.2em;
+  border-radius: 6px;
+  color: #1a1a1b;
+  font-family: var(--sbn-fuente-sans);
+  font-size: 0.95rem;
+}
+.sbn-foro-post {
+  padding: 0.7em 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+.sbn-foro-meta { font-size: 0.8em; color: #787c7e; }
+.sbn-foro-meta strong { color: #1a1a1b; }
+.sbn-doc-foro .sbn-foro-titulo { margin: 0.3em 0 0.5em; font-family: inherit; font-size: 1.2em; font-weight: 700; }
+.sbn-foro-imagen {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  min-height: 6em;
+  padding: 1em;
+  border-radius: 4px;
+  color: #c8c8c8;
+  background: radial-gradient(ellipse at 40% 55%, #4a4f55, #121417);
+  font-size: 0.85em;
+  font-style: italic;
+  filter: blur(0.2px);
+}
+.sbn-foro-imagen i { font-size: 1.6em; opacity: 0.6; }
+.sbn-foro-comentarios { margin-top: 0.8em; }
+.sbn-foro-comentario {
+  margin: 0 0 0.6em 0.4em;
+  padding: 0.1em 0 0.1em 0.8em;
+  border-left: 2px solid #d5d7d9;
+}
+.sbn-foro-autor { font-size: 0.8em; }
+.sbn-foro-usuario { font-weight: 700; color: #1c1c1c; }
+.sbn-foro-puntos { color: #787c7e; }
+.sbn-foro-puntos::before { content: "\25B2\FE0E "; color: #ff4500; }
+.sbn-foro-op .sbn-foro-usuario { color: #0079d3; }
+.sbn-foro-op .sbn-foro-usuario::after {
+  content: "OP";
+  margin-left: 0.4em;
+  padding: 0 0.3em;
+  border-radius: 2px;
+  background: #0079d3;
+  color: #fff;
+  font-size: 0.8em;
+}
+.sbn-foro-eliminado { opacity: 0.55; }
+.sbn-foro-texto p { margin: 0.2em 0 0.4em; }
+
+/* --- Correo / nota interna (DOC-07) -------------------------------------- */
+
+.sbn-doc-correo {
+  --sbn-doc-fondo: #fdfdfc;
+  padding: 0;
+  font-family: var(--sbn-fuente-sans);
+  font-size: 0.95rem;
+  overflow: hidden;
+}
+.sbn-correo-cabecera {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.15em 1em;
+  margin: 0;
+  padding: 0.9em 1.4em;
+  border-bottom: 1px solid #c9ccd1;
+  background: #e9ecf0;
+  font-size: 0.9em;
+}
+.sbn-correo-cabecera dt { font-weight: 700; color: #5a6270; }
+.sbn-correo-cabecera dd { margin: 0; }
+.sbn-correo-clasificacion {
+  justify-self: start;
+  padding: 0 0.5em;
+  border: 2px solid var(--sbn-carmesi);
+  color: var(--sbn-carmesi);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.sbn-correo-cuerpo { padding: 1em 1.4em 0.6em; }
+.sbn-correo-cuerpo ol { padding-left: 1.4em; }
+
+/* --- Carta (DOC-08) ------------------------------------------------------ */
+
+.sbn-doc-carta {
+  --sbn-doc-fondo: color-mix(in srgb, var(--sbn-papel) 85%, #f3e5c0);
+  padding: 2em 2.4em;
+  font-family: var(--sbn-fuente-caligrafia);
+  font-size: 1.02rem;
+}
+.sbn-doc-carta .sbn-firma { font-size: 1.4em; }
+
+/* --- Informe forense (DOC-09) -------------------------------------------- */
+
+.sbn-doc-informe {
+  --sbn-doc-fondo: #ffffff;
+  font-family: var(--sbn-fuente-sans);
+  font-size: 0.92rem;
+  border-top: 8px solid var(--sbn-puerto);
+}
+.sbn-doc-informe .sbn-doc-titulo {
+  margin-bottom: 0.1em;
+  color: var(--sbn-puerto);
+  font-size: 1.05em;
+}
+.sbn-doc-informe table.sbn-informe-tabla { font-size: 0.95em; }
+.sbn-doc-informe table.sbn-informe-tabla th,
+.sbn-doc-informe table.sbn-informe-tabla td:first-child {
+  width: 35%;
+  background: #eef1f4;
+  font-weight: normal;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+.sbn-doc-informe table.sbn-informe-tabla tbody tr:nth-child(even) { background: none; }
+.sbn-firma-manuscrita { font-family: var(--sbn-fuente-manuscrita); font-size: 1.2em; color: var(--sbn-tinta-azul); }
+
+/* --- Poema en servilleta (DOC-10) ---------------------------------------- */
+
+.sbn-doc-poema {
+  --sbn-doc-fondo: #faf8f3;
+  max-width: 24rem;
+  padding: 2.2em 2em;
+  color: #23305c;
+  font-family: var(--sbn-fuente-manuscrita);
+  font-size: 1.1rem;
+  line-height: 1.25;
+  text-align: center;
+  background-image:
+    radial-gradient(circle at 50% 50%, transparent 60%, color-mix(in srgb, #c9c3b5 25%, transparent)),
+    repeating-linear-gradient(45deg, transparent 0 6px, color-mix(in srgb, #d8d2c4 22%, transparent) 6px 7px);
+  outline: 2px dotted color-mix(in srgb, #b8b0a0 70%, transparent);
+  outline-offset: -0.8em;
+  transform: rotate(-0.6deg);
+}
+.sbn-doc-poema p { margin: 0 0 0.15em; }
+.sbn-doc-poema em { font-style: normal; }
+.sbn-doc-poema .sbn-firma { text-align: right; }
+
+/* --- Presentación filtrada (DOC-11) -------------------------------------- */
+
+.sbn-doc-presentacion {
+  --sbn-doc-fondo: transparent;
+  max-width: 44rem;
+  padding: 0;
+  box-shadow: none;
+  font-family: var(--sbn-fuente-sans);
+}
+.sbn-diapositiva {
+  margin: 0 0 1em;
+  padding: 1.2em 1.5em;
+  min-height: 11em;
+  border-radius: 4px;
+  color: #e7ecf2;
+  background: linear-gradient(135deg, var(--sbn-puerto), var(--sbn-negro));
+  box-shadow: var(--sbn-sombra);
+}
+.sbn-diapositiva-portada { min-height: 0; background: var(--sbn-negro); }
+.sbn-diapositiva-portada .sbn-doc-titulo { color: var(--sbn-sodio); font-size: 1.2em; }
+.sbn-diapositiva-portada em { color: #9aa6b3; }
+.sbn-doc-presentacion .sbn-diapositiva h3 {
+  margin: 0 0 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--sbn-sodio);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.2em;
+}
+.sbn-diapositiva strong { color: var(--sbn-sodio); }
+.sbn-diapositiva-pie { margin-top: 1em; font-size: 0.8em; font-style: italic; color: #9aa6b3; text-align: right; }
+
+/* --- Nota en papel (DOC-12) ---------------------------------------------- */
+
+.sbn-doc-nota {
+  --sbn-doc-fondo: #f2efe6;
+  max-width: 30rem;
+  font-family: var(--sbn-fuente-manuscrita);
+  font-size: 1.08rem;
+  line-height: 1.4;
+  clip-path: polygon(0 1%, 8% 0, 20% 1.5%, 35% 0.3%, 52% 1.2%, 68% 0, 84% 1.4%, 100% 0.4%, 100% 100%, 0 100%);
+  transform: rotate(0.5deg);
+}
+
+/* --- Libreta: hojas de Helen (AYU-02, AYU-09) ---------------------------- */
+
+.sbn-doc-libreta {
+  --sbn-doc-fondo: #fcfbf7;
+  padding: 1.5em 1.5em 1.2em 3.6em;
+  color: #22346b;
+  font-family: var(--sbn-fuente-manuscrita);
+  font-size: 1.02rem;
+  line-height: 1.6em;
+  background-image:
+    linear-gradient(90deg, transparent 2.8em, color-mix(in srgb, #d9534f 55%, transparent) 2.8em 2.9em, transparent 2.9em),
+    repeating-linear-gradient(transparent 0 calc(1.6em - 1px), color-mix(in srgb, #7aa3d6 45%, transparent) calc(1.6em - 1px) 1.6em);
+  background-position: 0 1.2em;
+}
+.sbn-doc-libreta p { margin: 0 0 0.4em; }
+.sbn-doc-libreta ul { margin: 0 0 0.5em; padding-left: 1.1em; }
+.sbn-doc-libreta .sbn-doc-titulo { text-decoration: underline; letter-spacing: 0.02em; }
+.sbn-doc-libreta em { font-style: normal; color: #8d2222; }
+.sbn-doc-libreta .sbn-acotacion { font-size: 0.7em; }
+
+/* --- Marcador del Termómetro (AYU-03) ------------------------------------ */
+
+.sbn-doc-marcador {
+  --sbn-doc-fondo: var(--sbn-negro);
+  color: var(--sbn-papel);
+  font-family: var(--sbn-fuente-sans);
+}
+.sbn-doc-marcador .sbn-doc-titulo { color: var(--sbn-sodio); text-align: center; letter-spacing: 0.25em; }
+.sbn-doc-marcador table.sbn-marcador-tabla { table-layout: fixed; border: none; }
+.sbn-doc-marcador table.sbn-marcador-tabla thead th {
+  padding: 0.5em 0.1em;
+  border: 2px solid var(--sbn-negro);
+  color: var(--sbn-papel);
+  background: linear-gradient(var(--sbn-pizarra), color-mix(in srgb, var(--sbn-carmesi) 30%, var(--sbn-pizarra)));
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+}
+.sbn-doc-marcador table.sbn-marcador-tabla thead th:nth-child(n+8) { background: color-mix(in srgb, var(--sbn-carmesi) 80%, var(--sbn-negro)); }
+.sbn-doc-marcador table.sbn-marcador-tabla thead th:last-child { background: var(--sbn-sodio); color: var(--sbn-negro); }
+.sbn-doc-marcador table.sbn-marcador-tabla thead th em { font-size: 0.7em; }
+
+/* --- Recorte de periódico (AYU-04) --------------------------------------- */
+
+.sbn-doc-recorte {
+  --sbn-doc-fondo: color-mix(in srgb, var(--sbn-papel) 72%, #d8c48c);
+  max-width: 26rem;
+  padding: 1.2em 1.4em;
+  font-family: var(--sbn-fuente-prensa);
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-align: justify;
+  hyphens: auto;
+  clip-path: polygon(0 0, 100% 0.6%, 99.4% 100%, 0.5% 99.2%);
+}
+.sbn-doc-recorte > p:first-child {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--sbn-tinta);
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sbn-doc-recorte .sbn-doc-titulo { margin: 0.4em 0 0; font-size: 1.35em; text-align: center; letter-spacing: 0.04em; }
+.sbn-doc-recorte .sbn-doc-titulo + p { text-align: center; font-style: italic; font-size: 0.9em; }
+
+/* --- Fotografía forense (AYU-06) ----------------------------------------- */
+
+.sbn-doc-foto {
+  --sbn-doc-fondo: #fafafa;
+  max-width: 30rem;
+  padding: 1em 1em 1.4em;
+  font-family: var(--sbn-fuente-sans);
+  transform: rotate(-0.8deg);
+}
+.sbn-foto-imagen {
+  padding: 1.2em;
+  min-height: 9em;
+  color: #cfd3d6;
+  background: radial-gradient(ellipse at 45% 60%, #6a6f72 0%, #2b2f33 55%, #0f1113 100%);
+}
+.sbn-foto-imagen .sbn-doc-imagen { margin: -1.2em -1.2em 0.8em; max-width: calc(100% + 2.4em); }
+.sbn-foto-descripcion { font-size: 0.85em; font-style: italic; }
+.sbn-foto-imagen .sbn-acotacion { color: #9aa0a6; }
+.sbn-doc-foto .sbn-foto-pie {
+  margin: 0.6em 0 0;
+  font-family: var(--sbn-fuente-pantalla);
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+/* --- Diagrama del linaje (AYU-07) ---------------------------------------- */
+
+.sbn-doc-diagrama {
+  --sbn-doc-fondo: var(--sbn-papel-viejo);
+  text-align: center;
+  font-family: var(--sbn-fuente-caligrafia);
+}
+.sbn-doc-diagrama p { margin: 0 0 0.2em; }
+.sbn-diagrama-conector { line-height: 1; opacity: 0.6; }
+.sbn-doc-diagrama table.sbn-diagrama-tabla { border: none; table-layout: fixed; }
+.sbn-doc-diagrama table.sbn-diagrama-tabla thead th {
+  padding: 0;
+  border: none;
+  background: none;
+  color: color-mix(in srgb, var(--sbn-tinta) 55%, transparent);
+  text-align: center;
+  letter-spacing: -0.1em;
+}
+.sbn-doc-diagrama table.sbn-diagrama-tabla td {
+  border: 1px solid color-mix(in srgb, var(--sbn-tinta) 35%, transparent);
+  background: color-mix(in srgb, white 30%, transparent);
+  text-align: center;
+}
+.sbn-doc-diagrama table.sbn-diagrama-tabla tbody tr:nth-child(even) { background: none; }
+
+/* --- Orden del día (AYU-08) ---------------------------------------------- */
+
+.sbn-doc-orden-del-dia {
+  --sbn-doc-fondo: #fbf9f4;
+  padding: 2em 2.4em;
+  border: 1px solid #d8d2c4;
+  font-family: var(--sbn-fuente-caligrafia);
+}
+.sbn-doc-orden-del-dia .sbn-membrete { border-bottom-color: #2f5a3c; }
+.sbn-doc-orden-del-dia .sbn-doc-titulo { text-align: center; font-size: 1.05em; }
+.sbn-doc-orden-del-dia ol { padding-left: 1.6em; }
+
+/* --- Mapa con los dominios (AYU-01) -------------------------------------- */
+
+.sbn-doc-mapa {
+  --sbn-doc-fondo: color-mix(in srgb, var(--sbn-papel) 80%, #b9c7c9);
+  font-family: var(--sbn-fuente-sans);
+}
+.sbn-doc-mapa .sbn-doc-titulo { text-align: center; letter-spacing: 0.2em; }
+.sbn-doc-mapa .sbn-doc-titulo + p { text-align: center; font-style: italic; }
+
+/* --- Pantallas chicas ----------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .sbn-doc { padding: 1.1em 1em; }
+  .sbn-guion-linea { grid-template-columns: 1fr; }
+  .sbn-guion-personaje { text-align: left; }
 }

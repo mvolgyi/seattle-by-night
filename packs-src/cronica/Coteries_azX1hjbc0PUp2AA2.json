@@ -1,0 +1,226 @@
+{
+  "_id": "azX1hjbc0PUp2AA2",
+  "_key": "!journal!azX1hjbc0PUp2AA2",
+  "name": "Coteries",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 60,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-COTERIES",
+      "archivo": "content/ciudad/coteries.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "JP7Ie6uKLXl2uc3u",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.JP7Ie6uKLXl2uc3u",
+      "name": "Coteries",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En Seattle nadie sobrevive solo mucho tiempo. Ni siquiera el Sabueso. Este capítulo presenta las cinco coteries que mueven la ciudad durante <em>El Expediente Ward</em>: la de los jugadores y cuatro de PNJs. Al final hay tres Loresheets nuevas (@UUID[JournalEntry.x7rVnQfKbb3HdbG5]{Loresheets}).</p>\n<p>Cada coterie sigue el mismo formato: nombre y apodo, miembros y agendas, costumbres, tipo, dominio (Caza, Lien y Portillon) y Trasfondos compartidos. Los tipos de coterie que no tienen nombre oficial en español llevan el original en cursiva.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kiaygGF4KgylB6fb",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.kiaygGF4KgylB6fb",
+      "name": "COT-00 · Los del Archivo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Los que estaban en el disco.»</em> · Una coterie nacida de una amenaza compartida: todos aparecen en el Expediente Ward, y o lo recuperan juntos o caen juntos.</p>\n<h3>La idea</h3>\n<p><em>Del doc 02.</em> Todos los personajes aparecen en el Expediente Ward. Helen nunca supo qué eran, pero cada uno tiene su carpeta: una foto borrosa, una fecha que no cuadra, un patrón. Cuando roban el disco, todos quedan expuestos a la vez. En @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta}, Montgomery los reúne en su granja y lo dice sin rodeos: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos».</p>\n<p><em>Alternativas, si preferís otro vínculo:</em> B) es una coterie que ya existía y Montgomery usa como fuerza de choque; C) son desconocidos que coinciden en el apartamento de Helen (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}) la noche del robo.</p>\n<h3>Miembros y agendas</h3>\n<p><em>Según qué personajes se jueguen. Cada agenda incluye el secreto que solo conoce el Narrador.</em></p>\n<p><strong>David Smith</strong> (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}, Brujah). <em>Agenda:</em> recuperar el Expediente sin que Helen pague el precio.</p>\n<section class=\"secret\" id=\"secret-krdaf13L0QAxCNXs\"><p><em>Lo que no sabe:</em> que tiene un hermano de sangre en la ciudad.</p>\n</section>\n<p><strong>Celeste Arden</strong> (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}, Ventrue). <em>Agenda:</em> demostrar que vale más que su sire.</p>\n<section class=\"secret\" id=\"secret-nhDYYb1c3Fzn16UU\"><p><em>Lo que no sabe:</em> que su sire ya la eligió como chivo expiatorio.</p>\n</section>\n<p><strong>Ezra «Estática» Lund</strong> (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}, Nosferatu). <em>Agenda:</em> sacar a la luz a quien controla las cámaras.</p>\n<section class=\"secret\" id=\"secret-7jouRX65J7QjDWhX\"><p><em>Lo que no sabe:</em> que la puerta trasera es su propio código.</p>\n</section>\n<p><strong>Nadia Ferro</strong> (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}, Toreador). <em>Agenda:</em> proteger el trabajo de Helen.</p>\n<section class=\"secret\" id=\"secret-2K1xaYgBfhMd3UFa\"><p><em>Lo que no sabe:</em> que su calendario en la nube llevó a los ladrones hasta la puerta.</p>\n</section>\n<p><strong>Hal Brekke</strong> (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard «Hal» Brekke}, Gangrel). <em>Agenda:</em> ganarse el respeto de su sire.</p>\n<section class=\"secret\" id=\"secret-0DQqIF7PZSG6ySqL\"><p><em>Lo que esconde:</em> lleva años informando sobre David.</p>\n</section>\n<p><strong>Dra. Ruth Abernathy</strong> (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}, Tremere, alternativa). <em>Agenda:</em> que los muertos de la ciudad sigan siendo invisibles.</p>\n<section class=\"secret\" id=\"secret-0nXYe3KmHpWminoU\"><p><em>Lo que no sabe:</em> que FIRSTLIGHT la tiene en el número uno de su lista.</p>\n</section>\n<h3>Costumbres sugeridas</h3>\n<p><em>Los jugadores pueden cambiarlas en la sesión cero. Son un punto de partida.</em></p>\n<ul>\n<li><strong>La carpeta propia.</strong> Cada uno leyó lo que Helen sabía de él (@UUID[JournalEntry.vtenvgNlXVPd99Rc]{«Tu carpeta en el Expediente»}). Nadie lee la carpeta de otro sin permiso.</li>\n<li><strong>El hangar es neutral.</strong> Dentro de @UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island} no se discute de clanes ni de sires.</li>\n<li><strong>Nadie va solo.</strong> Desde lo del muelle 46, ningún miembro sale a cazar sin avisar al menos a otro.</li>\n<li><strong>El teléfono de tapa.</strong> Para comunicarse usan teléfonos sin conexión de datos que les consigue Bear.</li>\n</ul>\n<h3>Tipo</h3>\n<p>Comando (<em>Commando</em>): una unidad reunida para una misión. Si sobrevive a @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}, puede convertirse en otro tipo según el desenlace: Cerbero (<em>Cerberus</em>) si se queda guardando el puerto, Regencia (<em>Regency</em>) si alguno de sus miembros toma un cargo.</p>\n<p><em>Doc 02:</em> <em>Comando</em>. Es una unidad reunida para una misión que se volvió permanente.</p>\n<h3>Dominio</h3>\n<p>Los muelles de Harbor Island.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Rasgo</th>\n<th>Valor</th>\n<th>Qué significa</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Caza</td>\n<td>2</td>\n<td>Trabajadores del turno de noche. Caza posible, pero hay que tener cuidado.</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>1</td>\n<td>La coterie apenas tiene influencia sobre los mortales del puerto. Bear conoce a algunos.</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>2</td>\n<td>Muchos accesos, contenedores y agua. Fácil de entrar y de salir. También para los enemigos.</td>\n</tr>\n</tbody></table>\n<p><em>Doc 02 (dominio sugerido):</em> los muelles de Harbor Island, alrededor del hangar de David (Caza 2, Lien 1, Portillon 1).</p>\n<h3>Trasfondos compartidos sugeridos</h3>\n<ul>\n<li><strong>Refugio 3</strong> (el hangar, aportado por David): con Acceso marítimo y Arsenal.</li>\n<li><strong>Contactos 1</strong> (puerto): a través de Bear.</li>\n<li><strong>Aliado</strong>: Tom «Bear» Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}), compartido con David.</li>\n</ul>\n<p>Cada jugador puede aportar 1 punto de sus Trasfondos al fondo común.</p>\n<p><em>Doc 02 (trasfondos compartidos sugeridos):</em> Refugio (el hangar, aportado por David), Contactos (puerto) 1.</p>\n<h3>Ayuda de juego</h3>\n<p>@UUID[JournalEntry.vtenvgNlXVPd99Rc]{«Tu carpeta en el Expediente»}, «Tu carpeta en el Expediente». Cada jugador recibe una página con lo que Helen sabía de su personaje, escrita con la voz de ella.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-00"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "bxduXJhh2oXcM6Uy",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.bxduXJhh2oXcM6Uy",
+      "name": "COT-01 · Los Lobos de Whitmore",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«La jauría del Sheriff.»</em> · Los que limpian la ciudad mientras el Príncipe brinda en la Galería.</p>\n<h3>Miembros y agendas</h3>\n<ul>\n<li><strong>Ethan Montgomery</strong> (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}, Gangrel), el alfa. <em>Agenda:</em> recuperar el Expediente y saber si Vance está en la ciudad.</li>\n<li><strong>Hal Brekke</strong> (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard «Hal» Brekke} o PNJ con el mismo trasfondo), el rastreador. <em>Agenda:</em> que su sire le diga una vez que lo hizo bien.</li>\n<li><strong>Los cazarrecompensas</strong> (@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery}): seis mortales ex militares y ex policías. <em>Agenda:</em> cobrar y no hacer preguntas. Uno de ellos, Dutch Lindqvist, empieza a hacerlas.</li>\n<li><strong>Los perros</strong>: doce ghouls caninos. Sienten la voluntad de Montgomery y reaccionan ante la Bestia de cualquier Vástago.</li>\n<li><strong>David Smith</strong> (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), aliado externo. No es miembro, pero los Lobos lo tratan como uno de ellos.</li>\n</ul>\n<h3>Costumbres</h3>\n<ul>\n<li><strong>El informe mensual.</strong> Cada miembro le entrega a Montgomery un informe el primer domingo de cada mes, en persona y de palabra. Nadie lo pone por escrito.</li>\n<li><strong>No se caza donde se patrulla.</strong> Ningún Lobo se alimenta dentro de los límites de Seattle.</li>\n<li><strong>El porche.</strong> Montgomery recibe en el porche. Si te invita a entrar, el asunto es grave.</li>\n<li><strong>La lista.</strong> Todos saben que existe. Nadie sabe los once nombres, salvo el alfa.</li>\n</ul>\n<h3>Tipo</h3>\n<p><em>Sbirri</em>: ejecutores al servicio de un cargo de la Camarilla.</p>\n<h3>Dominio</h3>\n<p>La granja y el valle del Snohomish (@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Rasgo</th>\n<th>Valor</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Caza</td>\n<td>3 (camioneros, cazadores, áreas de descanso)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>2 (el pueblo los ve como una familia rara de criadores de perros)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>4 (campos abiertos, perros, un solo camino de grava y el túnel al río)</td>\n</tr>\n</tbody></table>\n<h3>Trasfondos</h3>\n<p>Refugio 3 · Rebaño 2 · Contactos 3 (policía estatal, puerto, seguridad privada) · Estatus 4 (de Montgomery) · Aliado 3 (David)</p>\n<h3>En AVE-01</h3>\n<p>Los Lobos son el apoyo natural de la coterie hasta @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}. A partir de ahí, si Montgomery duda de David, los cazarrecompensas pueden pasar a ser perseguidores. Dutch Lindqvist es una posible grieta: si la coterie lo convence, avisa de la orden antes de que llegue.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "zWDnUlWxPHfXyIA2",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.zWDnUlWxPHfXyIA2",
+      "name": "COT-02 · El Consejo de Cristal",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Los que miran desde arriba.»</em> · Un Primogénito, su chiquilla, dos ghouls y un fondo de inversión. Ninguno de ellos usa la palabra «conspiración».</p>\n<h3>Miembros y agendas</h3>\n<ul>\n<li><strong>Charles Halloway</strong> (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}, Ventrue). <em>Agenda:</em> la corona de Seattle.</li>\n<li><strong>Celeste Arden</strong> (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}) o su sustituto PNJ (@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby}). <em>Agenda:</em> que su nombre valga más que el de su sire. Cree que el Consejo es una reunión de negocios. No sabe que es la cabeza de turco.</li>\n<li><strong>Preston Gale</strong> (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}, ghoul). <em>Agenda:</em> que Gale Sentinel valga mil millones, y la siguiente dosis de Vitae.</li>\n<li><strong>El señor Pell</strong> (@UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell}, ghoul). <em>Agenda:</em> servir. Tiene 96 años y miedo a lo que pasará si su amo deja de alimentarlo.</li>\n<li><strong>Tres inversores mortales</strong> (sin ID): creen que forman parte de un fondo exclusivo con un presidente enfermo y genial.</li>\n</ul>\n<h3>Costumbres</h3>\n<ul>\n<li><strong>Cámaras apagadas.</strong> Las reuniones son por videollamada. Halloway nunca enciende la suya.</li>\n<li><strong>Todo con contrato.</strong> Nadie trabaja para el Consejo sin firmar un acuerdo de confidencialidad. Halloway solo se alimenta de quien ha firmado.</li>\n<li><strong>Nada por escrito con su nombre.</strong> Las órdenes llegan a través de Pell o de Celeste.</li>\n<li><strong>Sonreír al perder.</strong> Halloway lo hace siempre. Los demás han aprendido a temer esa sonrisa.</li>\n</ul>\n<h3>Tipo</h3>\n<p>Regencia (<em>Regency</em>): una coterie que se prepara para gobernar.</p>\n<h3>Dominio</h3>\n<p>La Torre Halloway (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}) y el Eastside.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Rasgo</th>\n<th>Valor</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Caza</td>\n<td>2 (solo empleados y socios con contrato)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>4 (medio Bellevue trabaja para alguien que trabaja para Halloway)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>5 (ascensores privados, seguridad ghoul, cámaras ANOMALY)</td>\n</tr>\n</tbody></table>\n<h3>Trasfondos</h3>\n<p>Recursos 5 · Influencia 4 (finanzas, medios) · Contactos 3 · Aliado 3 (Gale Sentinel) · Refugio 4 · Rebaño 1</p>\n<h3>En AVE-01</h3>\n<p>El Consejo es el antagonista oculto. La coterie no debería saber que existe hasta @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}, cuando encuentra la firma de Gale (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-11\"><span class=\"sbn-pista-id\">P-11</span> <span class=\"sbn-pista-nombre\">Firma de Gale</span></button>). Si Celeste se juega, el Consejo está dentro de la coterie desde la primera escena.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SSDCSJFv8Esl6Ki5",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.SSDCSJFv8Esl6Ki5",
+      "name": "COT-03 · Salitre",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Los que no se arrodillan.»</em> · Los Anarquistas del astillero de Everett: votan, sueldan y no le deben nada a ningún Príncipe.</p>\n<h3>Miembros y agendas</h3>\n<ul>\n<li><strong>Rosa «Salitre» Iturbe</strong> (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa «Salitre» Iturbe}, Brujah), baronesa. <em>Agenda:</em> limpiar el nombre de Everett y saldar la deuda de 1996.</li>\n<li><strong>Bas Okonjo</strong> (@UUID[Actor.k2TLqQkkzzjSLzkp]{Anarquistas de Salitre}, Gangrel). Dejó la Camarilla en 2019 y fue uno de los Lobos de Montgomery. <em>Agenda:</em> que Montgomery no le cobre la deserción.</li>\n<li><strong>Tavi Mercer</strong> (@UUID[Actor.k2TLqQkkzzjSLzkp]{Anarquistas de Salitre}, Brujah). Joven, impaciente, quiere atacar el Elíseo «antes de que ellos nos ataquen». <em>Agenda:</em> la guerra. Halloway la está alimentando con rumores a través de Thornquist.</li>\n<li><strong>Una docena de Anarquistas más</strong> (@UUID[Actor.k2TLqQkkzzjSLzkp]{Anarquistas de Salitre}): estibadores, mecánicos, una enfermera, dos sangre débil.</li>\n</ul>\n<h3>Costumbres</h3>\n<ul>\n<li><strong>Las decisiones se votan.</strong> Asamblea cada viernes en la trastienda del bar. Rosa tiene un voto, como todos.</li>\n<li><strong>Nadie usa a un menor como rebaño.</strong> La única regla que Rosa nunca ha sometido a votación.</li>\n<li><strong>La cuota.</strong> Cada miembro aporta algo a la caja común: dinero, sangre embolsada o trabajo.</li>\n<li><strong>La puerta abierta.</strong> Cualquier Vástago puede pedir refugio una noche. A la segunda noche, tiene que presentarse ante la asamblea.</li>\n</ul>\n<h3>Tipo</h3>\n<p>Cerbero (<em>Cerberus</em>): una coterie que guarda un territorio.</p>\n<h3>Dominio</h3>\n<p>El astillero viejo y el puerto de Everett (@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo}).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Rasgo</th>\n<th>Valor</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Caza</td>\n<td>3 (soldadores y estibadores, algunos voluntarios)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>3 (el sindicato es suyo)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>2 (una sola carretera, pero el agua no tiene puertas)</td>\n</tr>\n</tbody></table>\n<h3>Trasfondos</h3>\n<p>Refugio 2 · Rebaño 2 · Aliados 3 (el sindicato) · Influencia 2 (puerto de Everett) · Contactos 1 (base naval)</p>\n<h3>En AVE-01</h3>\n<p>Salitre puede ser aliado o enemigo (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}). Si la coterie se gana a Rosa, los Anarquistas pueden aparecer en el clímax (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}) como apoyo. Si no, Tavi Mercer puede atacar el Elíseo por su cuenta durante la Parte 4, lo que le da a Halloway la excusa perfecta para su moción.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Dy9L39SvdB7rns0t",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.Dy9L39SvdB7rns0t",
+      "name": "COT-04 · Los Topos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Todo se vende abajo.»</em> · Los corredores del Seattle subterráneo: la piedra de 1889 y los cables de 2026.</p>\n<h3>Miembros y agendas</h3>\n<ul>\n<li><strong>Abel Thornquist</strong> (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}, Nosferatu), el dueño. <em>Agenda:</em> vender el Expediente al mejor postor y cobrar su voto en el Consejo.</li>\n<li><strong>Ezra Lund</strong> (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund} o PNJ con el mismo trasfondo), el técnico. <em>Agenda:</em> sacar a la luz quién controla las cámaras.</li>\n<li><strong>Los sangre débil de los muelles</strong> (sin ID; Jun Takeda, @UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}, es una de ellos): recaderos y mensajeros. <em>Agenda:</em> sobrevivir.</li>\n<li><strong>La Madre de Abajo</strong>: la sire de Thornquist, en letargo en un rincón de las Galerías. No tiene agenda. Todavía.</li>\n</ul>\n<h3>Costumbres</h3>\n<ul>\n<li><strong>Todo tiene precio.</strong> Nadie da nada gratis en el Mercado de Abajo, ni siquiera un consejo.</li>\n<li><strong>Nadie pregunta por la cara de nadie.</strong> En las Galerías no se comenta el aspecto de otro Vástago.</li>\n<li><strong>No se pelea en el Mercado.</strong> Quien rompe esta regla no vuelve a bajar.</li>\n<li><strong>No se abren los paquetes.</strong> Los recaderos llevan sin mirar. Jun lo cumple al pie de la letra.</li>\n</ul>\n<h3>Tipo</h3>\n<p>Corredores: un tipo propio de este libro. Usa las reglas de <em>Mercenary Company</em> para cerrar tratos y las de <em>Questari</em> para conseguir información.</p>\n<h3>Dominio</h3>\n<p>Las Galerías Selladas (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Rasgo</th>\n<th>Valor</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Caza</td>\n<td>2 (personas sin hogar, a cambio de refugio)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>3 (porteros, limpiadores, técnicos de toda la ciudad)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>5 (nadie entra en las Galerías sin que Thornquist lo sepa)</td>\n</tr>\n</tbody></table>\n<h3>Trasfondos</h3>\n<p>Refugio 4 · Contactos 4 · Influencia 3 (el subterráneo) · Aliados 2 (los sangre débil) · Recursos 2</p>\n<h3>En AVE-01</h3>\n<p>Los Topos venden información a todos. En @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}, Thornquist confirma que hay copias en el mercado. Si la coterie le paga bien, también le vende la ubicación de la barcaza de Krell, aunque eso le cuesta un favor mayor.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-04"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "h0Rk6eLTVPdKSdeh",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.h0Rk6eLTVPdKSdeh",
+      "name": "Registro de IDs (añadidos)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>COT-00 a COT-04</strong> · Coteries completas</li>\n<li><strong>LOR-01 a LOR-03</strong> · Loresheets completas</li>\n<li><strong>MEN-03</strong> · Dutch Lindqvist, cazarrecompensas de los Lobos que empieza a hacer preguntas</li>\n<li><strong>MEN-05</strong> · Bas Okonjo (Gangrel, ex Lobo) y Tavi Mercer (Brujah, impaciente) como miembros con nombre de Salitre</li>\n<li><strong>Sin ID</strong> · La Madre de Abajo, sire de Thornquist, en letargo</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición · MEN-01, MEN-03, MEN-04 y MEN-05</h4><p>Manda el registro más nuevo, el del capítulo 8 (doc 14): <strong>@UUID[Actor.9rv5Jdb3y6bZZ1fj]{Lonnie Barras}</strong> es Lonnie Barras, el ladrón que se guardó una (no el equipo entero de ladrones); <strong>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery}</strong> son los cazarrecompensas de Montgomery, con Dutch Lindqvist como miembro con reservas propias; <strong>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}</strong> es «Dawson y los ghouls de seguridad» (Dawson, el jefe, con reservas propias); <strong>@UUID[Actor.k2TLqQkkzzjSLzkp]{Anarquistas de Salitre}</strong> son los Anarquistas de Salitre, con Bas Okonjo y Tavi Mercer como miembros con reservas propias.</p>\n</aside>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

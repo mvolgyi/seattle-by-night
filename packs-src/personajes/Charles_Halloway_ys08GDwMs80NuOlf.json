@@ -1,0 +1,828 @@
+{
+  "_id": "ys08GDwMs80NuOlf",
+  "_key": "!actors!ys08GDwMs80NuOlf",
+  "name": "Charles Halloway",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "ivqsdeJKQ4xuUZkN",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Charles Halloway",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "YrFSWeqhbymzT7q4",
+    "headers": {
+      "concept": "Primogénito Ventrue",
+      "chronicle": "Seattle by Night",
+      "ambition": "La corona de Seattle.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>El orden es un servicio, no un privilegio</li><li>Nunca dejar que te vean mancharte</li></ul><h3>Piedras de toque</h3><ul><li><strong>Margaret Halloway</strong>: Su sobrina nieta de 22 años, estudiante de periodismo, que cree que su tío abuelo es un benefactor anónimo de su beca.</li></ul>",
+      "sire": "Adelaide Grange (PNJ-22)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1921",
+        "death": "1958"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Perfil: Charles Halloway}</p><blockquote><p><em>«Esta ciudad no necesita un Príncipe que mire. Necesita uno que vea.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>El rey sin corona</td></tr><tr><th>Concepto</th><td>Primogénito Ventrue</td></tr><tr><th>Clan</th><td>Ventrue</td></tr><tr><th>Secta</th><td>Camarilla</td></tr><tr><th>Sire</th><td>Adelaide Grange (PNJ-22)</td></tr><tr><th>Nacimiento</th><td>1921</td></tr><tr><th>Abrazo</th><td>1958</td></tr><tr><th>Ambición</th><td>La corona de Seattle.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{El Consejo de Cristal}</td></tr></tbody></table><h3>Semblante</h3><p>Delgado, estatura media, pelo negro con raya al lado y ojos castaños cansados; traje oscuro clásico, camisa blanca y corbata fina.</p><section class=\"sbn-combate\"><h3>Charles Halloway · Versión de combate</h3>\n<p><em>Ficha completa en el capítulo 4.</em></p>\n<p><strong>Salud</strong> 6 · <strong>Fuerza de Voluntad</strong> 8 · <strong>Hambre habitual</strong> 1 · <strong>Potencia de Sangre</strong> 3</p>\n<p><strong>Halloway no pelea.</strong> Su reserva de defensa es 6 (Destreza + Astucia) y no ataca nunca en persona.</p>\n<p><strong>Mirada aterradora</strong> (Presencia 3): Carisma + Intimidación (6 dados) contra Compostura + Resolución. Quien falla, huye o se queda paralizado una escena.</p>\n<p><strong>Dominación:</strong> Manipulación + Dominación (9 dados). Usa Obligar («Para», «Suelta eso») y Mente olvidadiza sobre testigos mortales.</p>\n<p><strong>Fortaleza 2:</strong> reduce en 2 el daño superficial recibido.</p>\n<p><strong>Táctica:</strong> rodearse de ghouls (Dawson y @UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}), usar Mirada aterradora sobre el más peligroso y huir. En el ferry, hacia el puente. En la torre, hacia el ascensor privado. Si lo acorralan sin salida, negocia: lo ofrece todo.</p></section>",
+    "appearance": "<p>Delgado, estatura media, pelo negro con raya al lado y ojos castaños cansados; traje oscuro clásico, camisa blanca y corbata fina.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Nota de edición: el doc 06 le daba cinco poderes con Dominación 4 y tres con Fortaleza 2; se quitaron Cloud Memory (la cubre Forgetful Mind) y Resilience (su Salud 6 no la incluye), uno por punto.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 5,
+      "stains": 0
+    },
+    "hunger": {
+      "value": 1,
+      "max": 5
+    },
+    "disciplines": {
+      "dominate": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 3,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 5,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Camarilla",
+            "value": 1,
+            "paths": [
+              "skills.etiquette"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "finance": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Sociedades pantalla",
+            "value": 1,
+            "paths": [
+              "skills.finance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Silencios",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "leadership": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Negociación",
+            "value": 1,
+            "paths": [
+              "skills.persuasion"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "politics": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Golpes de mano",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "subterfuge": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Mentir sin mentir",
+            "value": 1,
+            "paths": [
+              "skills.subterfuge"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "ventrue"
+        }
+      },
+      "name": "Ventrue",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "Q9CijMsU9koWpeQU",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Q9CijMsU9koWpeQU"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Compel",
+          "homebrew": false
+        }
+      },
+      "name": "Compel",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.manipulation"
+          },
+          "d2": {
+            "path": "disciplines.dominate"
+          }
+        },
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "Ds1FxX6u1V6ehHDg",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Ds1FxX6u1V6ehHDg"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Mesmerize",
+          "homebrew": false
+        }
+      },
+      "name": "Mesmerize",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "QqBTbJ6t17DcAOdu",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.QqBTbJ6t17DcAOdu"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Forgetful Mind",
+          "homebrew": false
+        }
+      },
+      "name": "Forgetful Mind",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.manipulation"
+          },
+          "d2": {
+            "path": "disciplines.dominate"
+          }
+        },
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "It3JPrfGKarqzFUA",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.It3JPrfGKarqzFUA"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rationalize",
+          "homebrew": false
+        }
+      },
+      "name": "Rationalize",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 4. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "Qd2nec2UjUptRfOf",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Qd2nec2UjUptRfOf"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unswayable Mind",
+          "homebrew": false
+        }
+      },
+      "name": "Unswayable Mind",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortaleza 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "ixebWPVXK6ysH4Ja",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.ixebWPVXK6ysH4Ja"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Toughness",
+          "homebrew": false
+        }
+      },
+      "name": "Toughness",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortaleza 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "dsJNICIgoenE6Ey8",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.dsJNICIgoenE6Ey8"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Awe",
+          "homebrew": false
+        }
+      },
+      "name": "Awe",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "03WN1fPqN8YvTeHA",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.03WN1fPqN8YvTeHA"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "WxXSlqf23QTIF0ts",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.WxXSlqf23QTIF0ts"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Dread Gaze",
+          "homebrew": false
+        }
+      },
+      "name": "Dread Gaze",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-03"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.charisma"
+          },
+          "d2": {
+            "path": "skills.intimidation"
+          }
+        },
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "Bcri4iguYWbpHfMI",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Bcri4iguYWbpHfMI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 4 (la Torre Halloway, con ático y bóveda; LUG-06)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 4 (la Torre Halloway, con ático y bóveda; LUG-06)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "w4463nOBByEqesXv",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.w4463nOBByEqesXv"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliado 3 (Preston Gale, PNJ-19)"
+        }
+      },
+      "name": "Aliado",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliado 3 (Preston Gale, PNJ-19)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "FFBMnn7O6o1i9oo6",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.FFBMnn7O6o1i9oo6"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 5 (Halloway Meridian Capital)"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 5 (Halloway Meridian Capital)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 5,
+        "featuretype": "background"
+      },
+      "_id": "CbMmiG9wo9gdHCv1",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.CbMmiG9wo9gdHCv1"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 4 (finanzas y medios)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 4 (finanzas y medios)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "8oVryHS2MW8MgCt7",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.8oVryHS2MW8MgCt7"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 3 (prensa, ayuntamiento y la oficina de un senador estatal)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 3 (prensa, ayuntamiento y la oficina de un senador estatal)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "zofRzAFtmrehYUZr",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.zofRzAFtmrehYUZr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 3 (Charles Halloway Jr., presidente recluso de un fondo de inversión)"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 3 (Charles Halloway Jr., presidente recluso de un fondo de inversión)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "xxp5Gd8BI78yoOhd",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.xxp5Gd8BI78yoOhd"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-03",
+      "journal": "JournalEntry.uDNdrVnGBbAh18Tt",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

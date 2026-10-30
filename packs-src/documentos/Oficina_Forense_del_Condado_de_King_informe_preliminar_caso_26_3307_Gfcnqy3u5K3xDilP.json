@@ -1,0 +1,86 @@
+{
+  "_id": "Gfcnqy3u5K3xDilP",
+  "_key": "!journal!Gfcnqy3u5K3xDilP",
+  "name": "Oficina Forense del Condado de King, informe preliminar, caso 26-3307",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-09",
+      "archivo": "content/documentos/DOC-09.md",
+      "soporte": "informe",
+      "entrega": [
+        "A1-E02",
+        "A2-E02"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "3qSYBlucB3yLhrQH",
+      "_key": "!journal.pages!Gfcnqy3u5K3xDilP.3qSYBlucB3yLhrQH",
+      "name": "Oficina Forense del Condado de King, informe preliminar, caso 26-3307",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-informe\"><p class=\"sbn-doc-titulo\">OFICINA DEL MÉDICO FORENSE · CONDADO DE KING, WASHINGTON</p>\n<p>INFORME PRELIMINAR DE EXAMEN · USO INTERNO</p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-informe-tabla\">\n<thead>\n<tr>\n<th><strong>N.º de caso</strong></th>\n<th>26-3307</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Fecha de recepción</strong></td>\n<td>13/11/2026, 06:52</td>\n</tr>\n<tr>\n<td><strong>Lugar del hallazgo</strong></td>\n<td>Terminal 46, Harbor Island, junto a contenedor MSKU-4471192</td>\n</tr>\n<tr>\n<td><strong>Identidad</strong></td>\n<td>No identificado (Desconocido n.º 41-26)</td>\n</tr>\n<tr>\n<td><strong>Patólogo</strong></td>\n<td>Dr. M. Kowalski (suplente). Patóloga titular de turno de noche: de baja.</td>\n</tr>\n</tbody></table>\n<p><strong>Hallazgos.</strong> Se recibe material particulado de color gris, aproximadamente 4,1 kg, recogido de una superficie de hormigón de unos 2 m². Contiene fragmentos óseos calcinados (falanges, una porción de mandíbula con tres piezas dentales compatibles con un adulto), restos de tejido textil sintético sin quemar y un dispositivo USB intacto (enviado a la policía como prueba, cadena de custodia 26-3307-A).</p>\n<p><strong>Observaciones.</strong> El grado de calcinación es compatible con una exposición prolongada a temperaturas superiores a 1.000 °C. No se ha encontrado en el lugar ninguna fuente de ignición, residuo de acelerante ni marca de calor en el hormigón ni en el contenedor adyacente. El tejido textil presente entre las cenizas no muestra signos de combustión.</p>\n<p>Estos hallazgos son incompatibles con los mecanismos de combustión conocidos. Se recomienda una revisión externa.</p>\n<p class=\"sbn-informe-firma\">Firma: <span class=\"sbn-firma-manuscrita\">M. Kowalski, MD</span></p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-postit\"><p class=\"sbn-acotacion\">[Nota adhesiva amarilla, a mano:]</p>\n<p><em>Marek: NO enviar a revisión hasta que vuelva Ruth. Ella lleva estas cosas. — J.</em></p>\n<p><span class=\"sbn-acotacion\">[Debajo, otra letra:]</span> <em>Ya lo mandé. Perdón. Me lo pidió un tal Hale, de consultoría. Tenía autorización. — M.</em></p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CDAuo6EO2VQpPUam",
+      "_key": "!journal.pages!Gfcnqy3u5K3xDilP.CDAuo6EO2VQpPUam",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> formulario oficial impreso, con sello y una nota adhesiva. <strong>Cuándo:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46} o @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}. Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}) lo encuentra en su bandeja al volver de su baja; otros personajes lo consiguen con Influencia o Contactos (policía) 2.</p>\n<p><strong>Presagia:</strong> la grieta en la Mascarada por la que entra FIRSTLIGHT.</p>\n<p><strong>Verdad:</strong> son los restos del Nosferatu destruido en el muelle 46. El patólogo suplente hizo bien su trabajo, y ese es el problema. El informe ya se copió a una dirección externa (Northline). Si la coterie lo intercepta antes de la Noche 3, Termómetro −1: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-1\" data-motivo=\"Informe forense interceptado antes de la Noche 3\"><span class=\"sbn-termometro-cambio\">−1</span> <span class=\"sbn-termometro-motivo\">Informe forense interceptado antes de la Noche 3</span></button>.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

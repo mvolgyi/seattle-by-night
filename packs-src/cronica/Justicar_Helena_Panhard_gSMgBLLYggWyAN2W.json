@@ -1,0 +1,193 @@
+{
+  "_id": "gSMgBLLYggWyAN2W",
+  "_key": "!journal!gSMgBLLYggWyAN2W",
+  "name": "Justicar Helena Panhard",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-08",
+      "archivo": "content/personajes/PNJ-08.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "xhInWhdoCl2jT9jw",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.xhInWhdoCl2jT9jw",
+      "name": "Justicar Helena Panhard",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Justicar de la Camarilla · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> la autoridad a la que @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} quiere enviar el acta de la regencia; con su reconocimiento, «la regencia se convierte en corona».</p>\n<p><em>Esta página reúne lo que dicen de Panhard los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan clan explícito, edad ni estadísticas; la orden del día del Consejo habla de «la Justicar del clan Ventrue» (doc 15, @UUID[JournalEntry.8EZofopivOgpo5tE]{Orden del día del Consejo de Primogenitura}).</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "n4i0AXRXXJ9oJlww",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.n4i0AXRXXJ9oJlww",
+      "name": "Quién es",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Figura de trasfondo junto al Arconte @UUID[JournalEntry.CRdeqlwyfpxGPyzT]{Duval} y @UUID[JournalEntry.WIihWwv4LCOX68B1]{Vance} (doc 01, índice de PNJs; registro de IDs v2: «PNJ-08 · Justicar Helena Panhard (trasfondo)»).</li>\n<li>Duval actúa como su enviado (doc 13).</li>\n<li>Tiene la copia 3 de los diarios de Vance que mecanografió el señor Pell: Halloway se la envió en 2025 «como regalo de buena voluntad» (doc 09, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama}; registro de IDs: «La copia 3 de 3 de los diarios de Vance, en poder de la Justicar Panhard»).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "V0FlGYHtVYXl3TYE",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.V0FlGYHtVYXl3TYE",
+      "name": "Panhard y Halloway",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Rumor 4</strong> de la ciudad, «Halloway tiene el apoyo de la Justicar Panhard»: a medias. «Le escribe desde hace un año. Ella no le contesta, pero tampoco le dice que no» (doc 05).</li>\n<li>Halloway empezó a escribirle hace un año; para él es su «esperanza»: «Si ella reconoce su regencia, nadie en Seattle podrá oponerse» (doc 06, ficha de Halloway).</li>\n<li>Susurro: «Halloway tiene a la Justicar en el bolsillo». <em>(Falso. Ella no le ha contestado)</em> (doc 06).</li>\n<li>Halloway le habló de @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste}: si David rechaza a Duval en GAN-07, Celeste recibe una invitación paralela de la Justicar (doc 09).</li>\n<li>En el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}), si la mayoría de la Primogenitura vota la «regencia de emergencia», Halloway «puede enviar el acta a la Justicar Panhard, que le escribe desde hace un año. Con la bendición de una Justicar, la regencia se convierte en corona» (doc 13). La moción pide remitir el acta «a la Justicar del clan Ventrue para su conocimiento y confirmación» (doc 15, AYU-08).</li>\n<li>El original del Expediente «es la prueba que Panhard le pidió para reconocer la regencia» (doc 13, Notas de A4-E01).</li>\n</ul>\n<aside class=\"sbn-recuadro\"><h4>Dos versiones de la correspondencia</h4><p>Los docs 05 y 06 dicen que Panhard no le contesta a Halloway. El doc 13 dice que le pidió el Expediente como prueba y, en una frase ambigua, que «le escribe desde hace un año». Si para tu mesa importa, decidí si la Justicar ya respondió o si Halloway solo cree que lo hará.</p>\n</aside>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "nyPBOIqNuvLt18YU",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.nyPBOIqNuvLt18YU",
+      "name": "Panhard en los desenlaces",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · El Sabueso cambia de amo}:</strong> Halloway es Regente «con el reconocimiento de la Justicar Panhard si el Expediente llegó a Duval» (doc 13).</li>\n<li><strong>FIN-B parcial:</strong> si Halloway gana el Consejo pero la coterie se queda el Expediente, «Halloway no tiene su prueba ante la Justicar: su regencia es débil» (doc 13, tabla de desenlaces).</li>\n<li><strong>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Fuego purificador}:</strong> si Halloway ganó el Consejo y el Expediente se destruye, «su regencia no tiene la prueba que pedía la Justicar: Panhard no la reconoce». Seattle queda en un limbo político (doc 13).</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "fKWrOmVVkhCOnohy",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.fKWrOmVVkhCOnohy",
+      "name": "Rumores",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>«Whitmore tiene un acuerdo secreto con la Justicar para retirarse a Europa.» <em>(Falso)</em> (doc 06, ficha de Whitmore; no dice qué Justicar).</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xzsSqbI2YbtcGqj5",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.xzsSqbI2YbtcGqj5",
+      "name": "Ganchos de crónica",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama} · El Arconte llama:</strong> si el desenlace fue FIN-B, Panhard manda a Duval a Seattle a investigar (doc 09).</li>\n<li><strong>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Cartas desde Cluj} · Cartas desde Cluj:</strong> una de las tres opciones para la autora de la carta de «M. V.»: «Es la Justicar. Panhard leyó la copia 3 de los diarios (GAN-07) y quiere saber qué hace el Sabueso cuando cree que su sire lo llama» (doc 09).</li>\n</ul>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

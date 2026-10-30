@@ -1,0 +1,334 @@
+{
+  "_id": "BRQMU0Tf8VSNaZ5o",
+  "_key": "!journal!BRQMU0Tf8VSNaZ5o",
+  "name": "Jun Takeda",
+  "folder": "bVvs72eunC8Wlxo4",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-20",
+      "archivo": "content/personajes/PNJ-20.md",
+      "actor": "Actor.l3z7Cp6AX0CmtLI6"
+    }
+  },
+  "pages": [
+    {
+      "_id": "SzuZThtVNiCmiWmV",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.SzuZThtVNiCmiWmV",
+      "name": "Jun Takeda",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.l3z7Cp6AX0CmtLI6]{Jun Takeda}</p>\n<p><em>«Yo solo reparto. No abro los paquetes. Es la regla número uno.»</em></p>\n<p><strong>Clan:</strong> sangre débil · <strong>Secta:</strong> ninguna (protegida de Thornquist) · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> mensajera, víctima posible y pista (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wZxrfXenQd62yVtT]{Jun, la mensajera sangre débil})</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oBgOZ4LUUmHogyVz",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.oBgOZ4LUUmHogyVz",
+      "name": "Días mortales: la repartidora de Beacon Hill",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Jun Takeda tiene 22 años. Creció en Beacon Hill, entre la floristería de su abuela en el International District y las cuestas que subía en bicicleta para ir a clase. Dejó la universidad para pagar el alquiler de su madre y empezó a repartir para varias aplicaciones a la vez: comida de día, paquetes de noche. Conocía la ciudad mejor que cualquier mapa. En la primavera de 2025, a las cuatro de la mañana, entregó un pedido en un edificio de Georgetown y el cliente le abrió la puerta con la boca manchada.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "zznjx56uRhAQjgxz",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.zznjx56uRhAQjgxz",
+      "name": "Noches de Vástago: la mensajera de abajo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>No sabe quién la Abrazó. Se despertó en el portal a la noche siguiente con hambre y sin pulso, aunque a veces, cuando come algo, le vuelve un poco. Vagó dos semanas hasta que un sangre débil de los muelles la llevó al subterráneo. Thornquist le ofreció lo que mejor sabe hacer: repartir. Desde entonces lleva paquetes entre Vástagos sin preguntar qué hay dentro.</p>\n<p>En la Noche 1, Thornquist le encargó llevar dos memorias USB a dos compradores distintos. Una era para el Nosferatu destruido en el muelle 46. La otra, para un comprador que no llegó a la cita. Jun todavía tiene esa segunda memoria en el bolsillo de su chaqueta. Krell lo sabe.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "YlYYKPz8AmIo6Awf",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.YlYYKPz8AmIo6Awf",
+      "name": "Planes y maquinaciones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Sobrevivir.</strong> Desde que se enteró de lo del muelle 46, duerme cada día en un sitio distinto. No ha vuelto al subterráneo.</p>\n<p><strong>Entregar o tirar.</strong> No sabe qué hacer con la memoria USB. Si se la da a Thornquist, cree que la va a vender igual. Si la tira, no tendrá con qué negociar. Si la coterie la encuentra antes que Krell, puede dársela a cambio de protección.</p>\n<p><strong>Aprender.</strong> Si sobrevive, quiere aprender a cazar de verdad (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cjmyT3bfPbka0X6O]{GAN-11 · El ayuno de Jun}).</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0p0Os02srWtzKjcl",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.0p0Os02srWtzKjcl",
+      "name": "Dominio y refugio",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ninguno fijo. Duerme en trasteros de alquiler, en el cuarto de atrás de la floristería de su abuela o en la bici-taller de un amigo (Refugio 0). Como sangre débil, puede comer algo de comida y aguantar la luz del sol un rato, pero necesita sangre. Compra bolsas caducadas a un auxiliar de hospital y, cuando no tiene dinero, muerde con cuidado a otros repartidores dormidos en la parada del autobús.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KOvHoBZp6bOmmMvq",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.KOvHoBZp6bOmmMvq",
+      "name": "Siervos y herramientas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>La bici</strong>: eléctrica, modificada, la más rápida del subterráneo.</p>\n<p><strong>Contactos 2</strong>: repartidores de media ciudad.</p>\n<p><strong>La memoria USB</strong>: una copia parcial del Expediente, con las carpetas de 2019 a 2022.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ljWImLJlNwxpB4hY",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.ljWImLJlNwxpB4hY",
+      "name": "Relaciones con Vástagos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Abel Thornquist</strong> (dependencia). Le debe todo y no confía en él.</p>\n<p><strong>Rosa Iturbe</strong> (admiración). La vio una vez discutir con el Sheriff y no bajar la mirada.</p>\n<p><strong>Ezra Lund</strong> (complicidad). El único Nosferatu que le habla como a una persona.</p>\n<p><strong>August Krell</strong> (terror). Lo vio una vez, de lejos, con el abrigo. No sabe su nombre.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Bf2neDsXEPcM4cV8",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.Bf2neDsXEPcM4cV8",
+      "name": "Susurros",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>«Hay una sangre débil que vende secretos en el subterráneo.» <em>(Verdad a medias: los reparte, no los vende.)</em></li>\n<li>«Jun puede caminar de día.» <em>(Verdad, durante un rato y con mucho dolor.)</em></li>\n<li>«Jun sabe quién la Abrazó.» <em>(Falso.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "FSTVdCg5Pu8rCOp9",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.FSTVdCg5Pu8rCOp9",
+      "name": "Máscara y semblante",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Para los mortales es Jun Takeda, repartidora (Máscara 3: tiene vida legal, cuentas y familia). Aparenta su edad. Es menuda y fibrosa, con el pelo teñido de azul desteñido, piercings en las orejas, chaqueta impermeable amarilla de reparto, mochila térmica y casco con pegatinas. Habla rápido, hace chistes cuando tiene miedo y nunca se queda quieta.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "RACU04Mo2VYLHKTE",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.RACU04Mo2VYLHKTE",
+      "name": "Datos de referencia",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> desconocido</li>\n<li><strong>Abrazada:</strong> 2025 (nacida en 2004)</li>\n<li><strong>Ambición:</strong> no morir en un portal.</li>\n<li><strong>Convicción:</strong> «No abrir los paquetes».</li>\n<li><strong>Piedra de toque:</strong> su abuela Haruko, que tiene una floristería en el International District y le lee la fortuna en las hojas de té.</li>\n<li><strong>Humanidad:</strong> 8</li>\n<li><strong>Generación:</strong> 15.ª</li>\n<li><strong>Potencia de Sangre:</strong> 0</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9b29sY1ElsvKV4J8",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.9b29sY1ElsvKV4J8",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Atributos:</strong> Fuerza 2, Destreza 4, Resistencia 2 · Carisma 3, Manipulación 2, Compostura 2 · Inteligencia 2, Astucia 3, Resolución 2</p>\n<p><strong>Atributos secundarios:</strong> Salud 5 · Fuerza de Voluntad 4</p>\n<p><strong>Habilidades:</strong> Atletismo 4 (Bicicleta), Callejeo 3 (Atajos), Conducir 2, Consciencia 2, Persuasión 1, Sigilo 3, Subterfugio 2, Tecnología 1</p>\n<p><strong>Alquimia de sangre débil 1:</strong> Ojo lejano (<em>Far Reach</em>). <strong>Méritos de sangre débil:</strong> Caminante diurno (<em>Day Drinker</em>).</p>\n<p><strong>Reservas rápidas:</strong> Huir en bici 8 · Esconderse en la ciudad 6 · Pelear 3</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "9Tq7oWBXB1DVc3Jq",
+  "_key": "!macros!9Tq7oWBXB1DVc3Jq",
+  "name": "Termómetro +1",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/upgrade.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"Seattle by Night: el módulo no está activo en este mundo.\");\nawait api.termometro(+1, \"Macro «Termómetro +1»\");",
+  "folder": null,
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "termometro-mas"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

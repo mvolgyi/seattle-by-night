@@ -1,0 +1,336 @@
+{
+  "_id": "abaWg7NwNQvM0sDc",
+  "_key": "!actors!abaWg7NwNQvM0sDc",
+  "name": "Equipo táctico de FIRSTLIGHT",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "Equipo táctico de FIRSTLIGHT",
+    "actorLink": false,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Seis operadores",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Seis operadores</td></tr><tr><th>Cantidad</th><td>6</td></tr></tbody></table><p>Ex militares y ex agentes federales. Contratados como «unidad antiterrorista especial». Creen saber lo que cazan. La mayoría no lo ha visto nunca.</p>\n<p><strong>Equipo:</strong> fusil corto con munición incendiaria (agravado contra Vástagos), linterna UV montada en el arma, armadura ligera (blindaje 3), cámara corporal, radio, gafas de visión térmica (anulan Ofuscación nivel 1 y 2).</p>\n<p><strong>Táctica:</strong> nunca entran solos. Siempre en parejas, siempre con un dron arriba y una fuente de luz detrás. Si pierden a dos operadores, se retiran y esperan al amanecer.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 6
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Fusil corto con munición incendiaria",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Agravado contra Vástagos (munición incendiaria). Lleva una linterna UV montada en el arma.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "Yn8Dy1JUK4XEQ6DE",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.Yn8Dy1JUK4XEQ6DE"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "Linterna UV de alta intensidad",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>1 agravado</td></tr></tbody></table><p>Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.</p><p>Estado: @UUID[Item.CbbejNJnKXKf8gbq]{Iluminado por la linterna UV}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "dCzDoiXpfGMAl70w",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.dCzDoiXpfGMAl70w"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Armadura ligera",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Blindaje</th><td>3</td></tr></tbody></table><p>Blindaje 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "y851LFR8coy5plpi",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.y851LFR8coy5plpi"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Cámaras corporales",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"acción sobrenatural visible delante de una cámara corporal\"><i class=\"fa-solid fa-temperature-half\"></i> Termómetro +1</button> (máximo +2 por escena)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "3uoEFx1eqkzAlPqv",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.3uoEFx1eqkzAlPqv"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Gafas térmicas",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "bm6OrjA9smsNzeMX",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.bm6OrjA9smsNzeMX"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Munición incendiaria",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "ioTW4Ndf0c65NRdB",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.ioTW4Ndf0c65NRdB"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-02",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 6,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

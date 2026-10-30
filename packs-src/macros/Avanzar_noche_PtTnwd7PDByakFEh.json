@@ -1,0 +1,25 @@
+{
+  "_id": "PtTnwd7PDByakFEh",
+  "_key": "!macros!PtTnwd7PDByakFEh",
+  "name": "Avanzar noche",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/clockwork.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"Seattle by Night: el módulo no está activo en este mundo.\");\nconst NOCHES = 8;\nconst actual = Number((await api.estado())?.noche) || 0;\nif (actual >= NOCHES) return ui.notifications.warn(\"El Reloj de Halloway ya está en la última noche (\" + NOCHES + \").\");\nawait api.noche(actual + 1);",
+  "folder": null,
+  "sort": 400,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "noche"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

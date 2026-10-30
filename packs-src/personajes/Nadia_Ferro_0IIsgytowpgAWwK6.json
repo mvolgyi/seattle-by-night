@@ -1,0 +1,259 @@
+{
+  "_id": "0IIsgytowpgAWwK6",
+  "_key": "!actors!0IIsgytowpgAWwK6",
+  "name": "Nadia Ferro",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 40,
+  "prototypeToken": {
+    "name": "Nadia Ferro",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "productora de sonido del pódcast de Helen y chiquilla del Príncipe Whitmore.",
+      "chronicle": "Seattle by Night",
+      "ambition": "grabar algo que sobreviva a la Mascarada",
+      "desire": "que Helen termine su gran historia",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Nunca silenciar a quien dice la verdad</li></ul><h3>Piedras de toque</h3><ul><li>Theo, su antiguo compañero de banda, que todavía toca los jueves en un bar de mala muerte de Capitol Hill</li></ul>",
+      "sire": "Marcus Whitmore",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Perfil: Nadia Ferro}</p><blockquote><p><em>La voz detrás del micrófono</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>productora de sonido del pódcast de Helen y chiquilla del Príncipe Whitmore.</td></tr><tr><th>Clan</th><td>Toreador</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</td></tr><tr><th>Ambición</th><td>grabar algo que sobreviva a la Mascarada</td></tr><tr><th>Deseo</th><td>que Helen termine su gran historia</td></tr><tr><th>Foco</th><td>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</td></tr><tr><th>Brilla en</th><td>A0-E01 (conoce el apartamento), A2-E01 y A4-E01.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "toreador"
+        }
+      },
+      "name": "Toreador",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "pVGccDolBVH9JHSb",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.pVGccDolBVH9JHSb"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Fama 1 (escena musical)"
+        }
+      },
+      "name": "Fama",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Fama 1 (escena musical)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "NUIDWTAgB6U2dWcW",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.NUIDWTAgB6U2dWcW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos (medios) 2"
+        }
+      },
+      "name": "Contactos (medios)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos (medios) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "69EeWG8KiVR5kkvo",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.69EeWG8KiVR5kkvo"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Estatus (Camarilla) 1"
+        }
+      },
+      "name": "Estatus (Camarilla)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Estatus (Camarilla) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "QrX8p9Sa2ce2f3mG",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.QrX8p9Sa2ce2f3mG"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Whitmore) 2"
+        }
+      },
+      "name": "Mawla (Whitmore)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Whitmore) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "QtYgAL7h4kz3D3p8",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.QtYgAL7h4kz3D3p8"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Rebaño 1"
+        }
+      },
+      "name": "Rebaño",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Rebaño 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "KOaOwN1BOZKGG03K",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.KOaOwN1BOZKGG03K"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-04",
+      "journal": "JournalEntry.rg50DlMYSzgbZeBv",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

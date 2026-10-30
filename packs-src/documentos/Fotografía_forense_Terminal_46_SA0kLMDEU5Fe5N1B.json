@@ -1,0 +1,85 @@
+{
+  "_id": "SA0kLMDEU5Fe5N1B",
+  "_key": "!journal!SA0kLMDEU5Fe5N1B",
+  "name": "Fotografía forense, Terminal 46",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 60,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-06",
+      "archivo": "content/documentos/AYU-06.md",
+      "soporte": "foto",
+      "entrega": [
+        "A1-E02"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "vhGqpIP5JD4B1vo7",
+      "_key": "!journal.pages!SA0kLMDEU5Fe5N1B.vhGqpIP5JD4B1vo7",
+      "name": "Fotografía forense, Terminal 46",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-foto\"><div class=\"sbn-foto-imagen\"><p class=\"sbn-foto-descripcion\"><span class=\"sbn-acotacion\">[foto]</span> Un montón de ceniza gris sobre hormigón mojado, junto a la base de un contenedor rojo. Encima de la ceniza, una chaqueta de nailon negra intacta. En el lateral del contenedor, a la altura del pecho de un hombre, tres abolladuras en vertical, una debajo de la otra. Una regla de escala amarilla en el suelo. Un cartel numerado: 3.</p></div>\n<p class=\"sbn-foto-pie\">PUERTO DE SEATTLE · POLICÍA PORTUARIA · CASO 26-3307 · FOTO 3 DE 14 · 13/11/2026 · 05:06</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">[Detrás de la foto, a lápiz:]</span> <em>¿Qué arde y no quema la chaqueta?</em></p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "7ktqauYubCxMoeXa",
+      "_key": "!journal.pages!SA0kLMDEU5Fe5N1B.7ktqauYubCxMoeXa",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Foto policial. <strong>Entrega:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}.</p>\n<p><em>Narrador: foto policial con regla de escala y número de caso. Se genera con el prompt AYU-06-IMG. Si alguien la estudia con @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada}, se ven las abolladuras en el contenedor en la secuencia de la Furia Controlada.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

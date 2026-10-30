@@ -1,0 +1,42 @@
+{
+  "_id": "NvxpBGHfeI40UIAd",
+  "_key": "!items!NvxpBGHfeI40UIAd",
+  "name": "Cámaras corporales",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<p>Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"acción sobrenatural visible delante de una cámara corporal\"><i class=\"fa-solid fa-temperature-half\"></i> Termómetro +1</button> (máximo +2 por escena)</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "camaras-corporales",
+      "agravado": false
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 60,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

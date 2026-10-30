@@ -1,0 +1,81 @@
+{
+  "_id": "ZUud4rgap2FTsiKB",
+  "_key": "!journal!ZUud4rgap2FTsiKB",
+  "name": "La ciudad · Las leyes del Elíseo de Seattle",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 40,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-LEYES",
+      "archivo": "content/ciudad/03-leyes-del-eliseo.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "hcTLJY8naU8zazB0",
+      "_key": "!journal.pages!ZUud4rgap2FTsiKB.hcTLJY8naU8zazB0",
+      "name": "La ciudad · Las leyes del Elíseo de Seattle",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La Galería de Vidrio (@UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}) aplica las Tradiciones de la Camarilla y cinco costumbres propias. Solène Marchetti hace cumplir las cinco y anota cada infracción en su registro (@UUID[JournalEntry.lcO0CdwUlZHg2wAX]{Registro del Guardián del Elíseo, folio de noviembre}).</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hsNI959HVuqpsE5W",
+      "_key": "!journal.pages!ZUud4rgap2FTsiKB.hsNI959HVuqpsE5W",
+      "name": "Las cinco costumbres",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>La paz del cristal.</strong> Ninguna violencia ni Disciplina hostil dentro de la Galería. <em>Infracción:</em> expulsión inmediata, pérdida de 1 punto de Estatus y, si hay daño, un juicio ante el Príncipe.</li>\n<li><strong>La presentación.</strong> Todo Vástago que llega a la ciudad se presenta ante la Guardiana antes de su tercera noche. <em>Infracción:</em> se le considera intruso y el Sheriff puede cazarlo.</li>\n<li><strong>Los que sirven.</strong> Los mortales y ghouls del personal de la Galería son intocables, aunque sean apetitosos. <em>Infracción:</em> deuda mayor con el Príncipe.</li>\n<li><strong>Ningún dispositivo conectado cruza el umbral.</strong> Teléfonos, relojes inteligentes, auriculares: todo se apaga y se entrega en la entrada. Esta costumbre la impuso Voight en 2024. <em>Infracción:</em> confiscación y una nota en el registro. A la segunda, pérdida de 1 punto de Estatus.</li>\n<li><strong>Lo dicho entre cristales.</strong> Nada de lo que se dice en la Galería se repite fuera sin permiso de la Guardiana. <em>Infracción:</em> Marchetti deja de recibir al infractor hasta nueva orden, lo que en la práctica lo saca de la vida política de la ciudad.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

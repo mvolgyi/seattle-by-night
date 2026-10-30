@@ -1,0 +1,165 @@
+{
+  "_id": "nuyiQmnE32yq4wOG",
+  "_key": "!journal!nuyiQmnE32yq4wOG",
+  "name": "Ajuste a la Parte 1 · La cadena de las copias",
+  "folder": "FKeYwpEhGbx72MA5",
+  "sort": 130,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AVE-01-AJUSTE",
+      "archivo": "content/cronica/aventura/13-ajuste-de-las-copias.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "SrX2axhCJVSVJs38",
+      "_key": "!journal.pages!nuyiQmnE32yq4wOG.SrX2axhCJVSVJs38",
+      "name": "Ajuste a la Parte 1 · La cadena de las copias",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Capítulo 7 · El Expediente Ward. Entrega 2: ajuste de la cadena de copias y Parte 2.</em></p>\n<p><em>Este apartado sustituye a lo que dicen la entrega 1 y la ficha de Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{PNJ-13}) sobre el origen de las copias. Donde haya contradicción, manda este texto.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KePhHhpuh55CAeKT",
+      "_key": "!journal.pages!nuyiQmnE32yq4wOG.KePhHhpuh55CAeKT",
+      "name": "Lo que pasó de verdad",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} quería el Expediente entero y para él solo. Pero el equipo que contrató @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Gale} (@UUID[Actor.9rv5Jdb3y6bZZ1fj]{MEN-01}) no era tan leal como su cheque. Uno de los ladrones, <strong>@UUID[Actor.9rv5Jdb3y6bZZ1fj]{Lonnie Barras}</strong>, sabía que un disco que alguien paga tan caro vale más en pedazos. Durante el trayecto en coche, mientras su compañero conducía, conectó el disco a un portátil y copió tres bloques de carpetas en tres memorias USB. Después entregó el disco original a @UUID[Actor.BzNGxOAK3F6Uo56T]{Dawson}, el ghoul jefe de seguridad de Gale (MEN-04), como si nada.</p>\n<p>A la noche siguiente, Lonnie le vendió dos de las USB a <strong>@UUID[Actor.mto8LnnsUQgFr1DI]{Sal Medeiros}</strong> (MEN-13), un perista del SoDo que compra y vende «cosas raras» a clientes que solo salen de noche. Se quedó la tercera como seguro. Sal, a su vez, le ofreció las dos USB a @UUID[JournalEntry.dj4gIszHHTN1QRKk]{Thornquist}, que las compró, hizo una copia de cada una para su propia bóveda (es su costumbre: duplica todo lo que vende) y encargó a @UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda} entregarlas a dos compradores.</p>\n<p>En la Noche 2, Gale descubrió en los registros del disco que alguien había abierto las carpetas a las 3:40, en pleno trayecto. Se lo dijo a Halloway. Halloway le dio a @UUID[JournalEntry.OmK2qlPVNl758u6h]{Krell} una lista: recuperar o destruir todas las copias, y a todo Vástago que las haya tocado. Así empieza la cacería.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "aXlUiNcMLl2LffMz",
+      "_key": "!journal.pages!nuyiQmnE32yq4wOG.aXlUiNcMLl2LffMz",
+      "name": "La cadena, de un vistazo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Copia</th>\n<th>Contenido</th>\n<th>Recorrido</th>\n<th>Dónde está al empezar la Parte 2</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Original</strong></td>\n<td>Todo el Expediente, 2016–2026</td>\n<td>Ladrones → Dawson → Gale</td>\n<td>Centro de datos de Gale Sentinel (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{LUG-07}). Pasa a la bóveda de Halloway (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{LUG-06}) en la Noche 6.</td>\n</tr>\n<tr>\n<td><strong>USB 1</strong></td>\n<td>Carpetas 2014–2018 (incluye el Larchmont)</td>\n<td>Lonnie → Sal → Thornquist → Jun → Pike</td>\n<td>En manos de la coterie si la recuperaron en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}; si no, en la cadena de custodia policial y copiada por FIRSTLIGHT.</td>\n</tr>\n<tr>\n<td><strong>USB 2</strong></td>\n<td>Carpetas 2019–2022</td>\n<td>Lonnie → Sal → Thornquist → Jun</td>\n<td>En el bolsillo de Jun, o en manos de la coterie (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}).</td>\n</tr>\n<tr>\n<td><strong>USB 3</strong></td>\n<td>Carpetas 2023–2026 (las más recientes; incluye las carpetas de los PJ más activos y el episodio 112)</td>\n<td>Lonnie</td>\n<td>Con Lonnie, escondido en un motel de Aurora Avenue (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · El que se guardó una}).</td>\n</tr>\n<tr>\n<td><strong>Duplicados de Thornquist</strong></td>\n<td>Copias de las USB 1 y 2</td>\n<td>Thornquist</td>\n<td>En una caja fuerte de las Galerías Selladas. Krell no sabe que existen.</td>\n</tr>\n</tbody></table>\n<p><em>Nota: Helen empezó a documentar en 2014. Corrijo así la referencia a «diez años»: el archivo cubre doce años, aunque ella sigue diciendo «diez» porque es lo que repite desde hace tiempo.</em></p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "adymc1jW2i45SgXX",
+      "_key": "!journal.pages!nuyiQmnE32yq4wOG.adymc1jW2i45SgXX",
+      "name": "Erratas en la entrega 1",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}, guía de diálogo de Thornquist:</strong> a «¿De dónde los sacó?» responde ahora: «De un perista del SoDo que compra lo que nadie más quiere tocar. Él lo sacó de un mortal que se quedó con algo que no era suyo. Saber el nombre del perista vale un favor menor. Saber el nombre del mortal, no lo sé, y eso me molesta.» (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-13\"><span class=\"sbn-pista-id\">P-13</span> <span class=\"sbn-pista-nombre\">El libro de cuentas de Sal</span></button>, a medias.)</li>\n<li><strong>A1-E04, Notas del Narrador:</strong> si la coterie no actúa, la subasta de la Noche 5 vende los duplicados de Thornquist. Krell no los persigue porque no sabe que existen. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"La subasta de la Noche 5 vende los duplicados de Thornquist (uno de los compradores es Hale)\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">La subasta de la Noche 5 vende los duplicados de Thornquist (uno de los compradores es Hale)</span></button> igualmente, porque uno de los compradores es @UUID[JournalEntry.D611Mcr17F6HHEUw]{Hale}.</li>\n<li><strong>Reloj de Halloway, actualizado:</strong></li>\n</ul>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Noche</th>\n<th>Evento si nadie interviene</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>2</td>\n<td>Krell destruye a @UUID[Actor.IdLdXpR0cpQaUeFd]{Pike} en el muelle 46 (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}). Gale descubre que el disco fue copiado. Primera entrega de ARQUERO.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Noche de Elíseo (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}). Krell vigila el almacén de Sal.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Krell asalta el almacén del perista: destruye a su protector @UUID[Actor.Q2t6M2IxrRHCJCnC]{Corwin}, mata a Sal y, si sigue sin protección, a Jun, que había ido a cobrar (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}).</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Lonnie, aterrado, se cita a las 23:00 con <em>nrthln_research</em> para venderle la USB 3 (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · El que se guardó una}). Si lo logra: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"Lonnie le vende la USB 3 a nrthln_research (Noche 5)\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">Lonnie le vende la USB 3 a nrthln_research (Noche 5)</span></button>. Segunda entrega de ARQUERO (<button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Segunda entrega de ARQUERO (Noche 5)\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Segunda entrega de ARQUERO (Noche 5)</span></button>). @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Okafor} contacta a Helen.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Krell encuentra a Lonnie, si FIRSTLIGHT no lo tiene ya. Krell va a por una Piedra de toque de la coterie (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}). El original pasa a la bóveda de Halloway.</td>\n</tr>\n<tr>\n<td>7 y 8</td>\n<td>Sin cambios.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "VHUBN7Q2LliCXEnn",
+      "_key": "!journal.pages!nuyiQmnE32yq4wOG.VHUBN7Q2LliCXEnn",
+      "name": "Nuevos IDs del ajuste",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>MEN-01</strong> · Lonnie Barras, el ladrón que se guardó una</li>\n<li><strong>MEN-04</strong> · Dawson, ghoul jefe de seguridad de Gale (el que olfateó la escalera)</li>\n<li><strong>MEN-13</strong> · Sal Medeiros, perista del SoDo</li>\n<li><strong>MEN-14</strong> · Corwin, Caitiff protector de Sal</li>\n<li><strong>P-13</strong> · El libro de cuentas de Sal: «L.B. — 3 llaves, 2 vendidas, 1 pendiente»</li>\n<li><strong>P-14</strong> · El pago a Lonnie, hecho desde Cascade Holdings LLC, una sociedad de Halloway Meridian (la que firmó Celeste en su preludio)</li>\n<li><strong>A2-E06</strong> · Escena nueva: «El que se guardó una»</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición · MEN-01, MEN-03, MEN-04 y MEN-05</h4><p>Manda el registro más nuevo, el del capítulo 8 (doc 14): <strong>@UUID[Actor.9rv5Jdb3y6bZZ1fj]{Lonnie Barras}</strong> es Lonnie Barras, el ladrón que se guardó una (no el equipo entero de ladrones); <strong>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery}</strong> son los cazarrecompensas de Montgomery, con Dutch Lindqvist como miembro con reservas propias; <strong>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}</strong> es «Dawson y los ghouls de seguridad» (Dawson, el jefe, con reservas propias); <strong>@UUID[Actor.k2TLqQkkzzjSLzkp]{Anarquistas de Salitre}</strong> son los Anarquistas de Salitre, con Bas Okonjo y Tavi Mercer como miembros con reservas propias.</p>\n</aside>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

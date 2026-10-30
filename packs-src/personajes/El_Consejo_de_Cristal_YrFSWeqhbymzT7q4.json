@@ -1,0 +1,255 @@
+{
+  "_id": "YrFSWeqhbymzT7q4",
+  "_key": "!actors!YrFSWeqhbymzT7q4",
+  "name": "El Consejo de Cristal",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 230,
+  "prototypeToken": {
+    "name": "El Consejo de Cristal",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.ys08GDwMs80NuOlf",
+      "Actor.zFbC97X8iaeScDzY",
+      "Actor.OE0huDRYvrhnxa9O",
+      "Actor.eRE6FTNdGO76lzPK"
+    ],
+    "headers": {
+      "concept": "Regencia (Regency)",
+      "chronicle": "Seattle by Night",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 2
+    },
+    "lien": {
+      "value": 4
+    },
+    "portillon": {
+      "value": 5
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{Perfil: El Consejo de Cristal}</p><blockquote><p><em>Los que miran desde arriba.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Tipo</th><td>Regencia (Regency)</td></tr><tr><th>Dominio</th><td>La Torre Halloway y el Eastside</td></tr><tr><th>Lugar</th><td>@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}</td></tr><tr><th>Miembros</th><td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}, @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}, @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}, @UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell}</td></tr><tr><th>Sustitutos</th><td>@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby} si nadie juega @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}</td></tr></tbody></table><p>Un Primogénito, su chiquilla, dos ghouls y un fondo de inversión. Ninguno de ellos usa la palabra «conspiración».</p><h3>Dominio</h3><ul><li><strong>Caza (Chasse) 2:</strong> solo empleados y socios con contrato</li><li><strong>Lien 4:</strong> medio Bellevue trabaja para alguien que trabaja para Halloway</li><li><strong>Portillon 5:</strong> ascensores privados, seguridad ghoul, cámaras ANOMALY</li></ul>",
+    "notes": "",
+    "privatenotes": ""
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 5"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 5</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 5,
+        "featuretype": "background"
+      },
+      "_id": "o1cT7E7wFNFbjecE",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.o1cT7E7wFNFbjecE"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 4 (finanzas, medios)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 4 (finanzas, medios)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "qr7L0S2RMubAClXw",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.qr7L0S2RMubAClXw"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 3"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 3</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "z1WvH1o200BdDDnL",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.z1WvH1o200BdDDnL"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliado 3 (Gale Sentinel)"
+        }
+      },
+      "name": "Aliado",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliado 3 (Gale Sentinel)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "idMLGrnAmLONY4Zx",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.idMLGrnAmLONY4Zx"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 4"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 4</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "9cHIgcow8MUyC6G0",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.9cHIgcow8MUyC6G0"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Rebaño 1"
+        }
+      },
+      "name": "Rebaño",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Rebaño 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "Si6e0xciLwoQIYVa",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.Si6e0xciLwoQIYVa"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-02",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2",
+      "lema": "Los que miran desde arriba."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

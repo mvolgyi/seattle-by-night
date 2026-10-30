@@ -1,0 +1,109 @@
+{
+  "_id": "UKmzxKTWeIUOMpYn",
+  "_key": "!journal!UKmzxKTWeIUOMpYn",
+  "name": "La ciudad · Distritos y lugares clave",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-DISTRITOS",
+      "archivo": "content/ciudad/04-distritos.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "XqRcgHuRlvxIe61J",
+      "_key": "!journal.pages!UKmzxKTWeIUOMpYn.XqRcgHuRlvxIe61J",
+      "name": "Mapa de dominios",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Zona</th>\n<th>Controla</th>\n<th>Caza</th>\n<th>Notas</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Downtown y Pioneer Square</td>\n<td>Príncipe (superficie) / Nosferatu (subsuelo)</td>\n<td>Dificultad 3</td>\n<td>Turistas y personas sin hogar. Caza vigilada.</td>\n</tr>\n<tr>\n<td>Capitol Hill</td>\n<td>Toreador</td>\n<td>Dificultad 2</td>\n<td>Vida nocturna; el <em>rack</em> de la ciudad.</td>\n</tr>\n<tr>\n<td>Ballard y el norte</td>\n<td>Sin reclamar</td>\n<td>Dificultad 4</td>\n<td>Barrio residencial. Allí mataron a los tres chicos de @UUID[JournalEntry.zNhdOMSnEHdvMIGE]{Notas de voz de Helen Ward #7}.</td>\n</tr>\n<tr>\n<td>Harbor Island y Elliott Bay</td>\n<td>Sheriff, cedido a David</td>\n<td>Dificultad 3</td>\n<td>Trabajadores del turno de noche.</td>\n</tr>\n<tr>\n<td>South Lake Union</td>\n<td>Sin reclamar</td>\n<td>Dificultad 5</td>\n<td>Cámaras por todas partes. Zona de FIRSTLIGHT.</td>\n</tr>\n<tr>\n<td>Eastside (Bellevue)</td>\n<td>Halloway</td>\n<td>Dificultad 4</td>\n<td>Dinero, seguridad privada, Gale Sentinel.</td>\n</tr>\n<tr>\n<td>Everett</td>\n<td>Anarquistas</td>\n<td>Dificultad 3</td>\n<td>Astilleros y bases navales.</td>\n</tr>\n<tr>\n<td>Tacoma</td>\n<td>Nadie y todos</td>\n<td>Dificultad 3</td>\n<td>Exiliados, restos del Sabbat, la funeraria Hecata.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "EzyYyUzGVByBaBew",
+      "_key": "!journal.pages!UKmzxKTWeIUOMpYn.EzyYyUzGVByBaBew",
+      "name": "Lugares",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>@UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island} · El hangar de Harbor Island</li>\n<li>@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero} · La granja del Sheriff y su embarcadero</li>\n<li>@UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)} · La Galería de Vidrio (Elíseo)</li>\n<li>@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)} · Las Galerías Selladas (Seattle subterráneo)</li>\n<li>@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward} · El apartamento de Helen Ward</li>\n<li>@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway} · Torre Halloway</li>\n<li>@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos} · Gale Sentinel, campus y centro de datos</li>\n<li>@UUID[JournalEntry.YCxHPFDwwk4QiaET]{El mercado de Pike Place de noche} · El mercado de Pike Place de noche</li>\n<li>@UUID[JournalEntry.ciIKIq7hoVokkr0J]{Club Ceniza} · Club Ceniza</li>\n<li>@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo} · Bar Salitre y el astillero viejo</li>\n<li>@UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont} · El edificio Larchmont</li>\n<li>@UUID[JournalEntry.uhtM1iF2WrHHlcd8]{La tumba de Emily Smith} · La tumba de Emily Smith</li>\n<li>@UUID[JournalEntry.OSMVQHNXfk9zRyLM]{La Capilla del Observatorio} · La Capilla del Observatorio</li>\n<li>@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory} · Northline Cyber Advisory</li>\n<li>@UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry} · La terminal de ferris y el último ferry</li>\n<li>@UUID[JournalEntry.lIohEQe1KFTOCQ0U]{El elevador de grano de la Terminal 86} · El elevador de grano de la Terminal 86</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TdtGhTcUw5EvXTLV",
+      "_key": "!journal.pages!UKmzxKTWeIUOMpYn.TdtGhTcUw5EvXTLV",
+      "name": "Registro de IDs (añadidos)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>PNJ-22</strong> · Adelaide Grange, antigua Príncipe Ventrue, desaparecida en 1962 (trasfondo)</li>\n<li><strong>MEN-08</strong> · El superviviente del Larchmont, Vástago del Sabbat (gancho para @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · El superviviente del Larchmont})</li>\n<li><strong>REF-01</strong> · Emily Rose Smith, 1958–1996</li>\n<li><strong>REF-02</strong> · Danny Ruiz, en la cisterna del Larchmont</li>\n<li>Fijados: muerte de Emily en <strong>1996</strong> e incendio del Larchmont en <strong>marzo de 2014</strong>.</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

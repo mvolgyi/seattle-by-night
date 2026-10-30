@@ -1,0 +1,250 @@
+{
+  "_id": "gRfqeOIXEHOcLemr",
+  "_key": "!journal!gRfqeOIXEHOcLemr",
+  "name": "Dra. Ruth Abernathy",
+  "folder": "eP0C1qeFsQtuqlDN",
+  "sort": 60,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PJ-06",
+      "archivo": "content/personajes/PJ-06.md",
+      "actor": "Actor.9Sei2feAoKaQPPto"
+    }
+  },
+  "pages": [
+    {
+      "_id": "8DnSFCNwiGCegFjK",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.8DnSFCNwiGCegFjK",
+      "name": "Dra. Ruth Abernathy",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.9Sei2feAoKaQPPto]{Dra. Ruth Abernathy}</p>\n<p><strong>Concepto:</strong> patóloga del turno de noche de la oficina forense del condado y miembro de la capilla de Voight.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "d9H1XYaZN2RC3VqL",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.d9H1XYaZN2RC3VqL",
+      "name": "Días mortales",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ruth hizo autopsias durante doce años. Era meticulosa, seca y sin paciencia para la gente viva. En 2004 firmó el informe de un cuerpo sin sangre y sin heridas visibles. Al día siguiente el cuerpo había desaparecido de la cámara frigorífica y su jefe le pidió que &quot;revisara&quot; el informe.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pAxQHkWxPX6KBSyP",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.pAxQHkWxPX6KBSyP",
+      "name": "Noches de Vástago",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La Dra. Anneliese Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}) la Abrazó en 2005: una forense que hace preguntas es un peligro, pero una forense que responde a la capilla es un arma. Desde entonces Ruth es la razón por la que las muertes Vástagas de Seattle acaban como &quot;sobredosis&quot;, &quot;incendio accidental&quot; o &quot;ataque animal&quot;. La noche en que se redactó el informe @UUID[JournalEntry.Gfcnqy3u5K3xDilP]{Oficina Forense del Condado de King, informe preliminar, caso 26-3307} ella estaba de baja. Lo firmó otra persona, y por esa grieta entró FIRSTLIGHT. Se alimenta en hospitales, de pacientes sedados.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "BEbpaZn17NogiwCi",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.BEbpaZn17NogiwCi",
+      "name": "Conexión con la coterie",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El Expediente tiene una tabla de Helen con quince informes forenses &quot;imposibles&quot;. Todos llevan la firma de Ruth.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9sAvV20wWVFykVwf",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.9sAvV20wWVFykVwf",
+      "name": "Ambición, deseo y Piedra de toque",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Ambición:</strong> encontrar el cuerpo que desapareció en 2004. <strong>Deseo:</strong> una noche sin cadáveres. <strong>Convicción sugerida:</strong> «Los muertos merecen la verdad, aunque los vivos no». <strong>Piedra de toque:</strong> su exmarido, detective de homicidios jubilado, que todavía la llama cuando no puede dormir.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1hGjQDWbyeEg6FWn",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.1hGjQDWbyeEg6FWn",
+      "name": "Trasfondos sugeridos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Influencia (oficina forense) 2, Contactos (policía) 2, Recursos 2, Mawla (Voight) 1.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2k2APbh7FRd0dNDb",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.2k2APbh7FRd0dNDb",
+      "name": "Brilla en",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»} (análisis forense de la <em>Furia Controlada</em>) y @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sw7UPaoOvgyqqHBG",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.sw7UPaoOvgyqqHBG",
+      "name": "Secreto",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La agente Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}) ya tiene un expediente sobre ella. FIRSTLIGHT la considera &quot;anomalía estadística número uno&quot;. Es la primera persona a la que van a ir a buscar.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

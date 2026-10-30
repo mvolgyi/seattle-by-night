@@ -1,0 +1,109 @@
+{
+  "_id": "j4MhqWVhWECuqaA3",
+  "_key": "!journal!j4MhqWVhWECuqaA3",
+  "name": "La ciudad · Verdades y mentiras",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-RUMORES",
+      "archivo": "content/ciudad/02-verdades-y-mentiras.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "PO6OqgPVI6nXxEJx",
+      "_key": "!journal.pages!j4MhqWVhWECuqaA3.PO6OqgPVI6nXxEJx",
+      "name": "La ciudad · Verdades y mentiras",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Estos rumores circulan por el Elíseo, el subterráneo y los bares del puerto. El Narrador puede soltarlos en cualquier escena social. Cada uno indica si es <strong>V</strong> (verdad), <strong>F</strong> (falso) o <strong>A</strong> (a medias), con la explicación para el Narrador.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LkYcEY0cWstoSnHP",
+      "_key": "!journal.pages!j4MhqWVhWECuqaA3.LkYcEY0cWstoSnHP",
+      "name": "Los rumores y su verdad",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Rumor</th>\n<th>V/F/A</th>\n<th>Para el Narrador</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>«Vance, el sire del Sabueso, volvió a la ciudad.»</td>\n<td>F</td>\n<td>Lo hace circular Halloway a través de Krell. Vance no está en Seattle.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>«El Príncipe no abrió el sobre de Voight porque ya sabe lo que dice.»</td>\n<td>A</td>\n<td>Lo abrió dos noches después, lo leyó y no hizo nada.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>«Halloway hizo caer a O&#39;Connor en el 78.»</td>\n<td>V</td>\n<td>Es cierto, pero no hay pruebas salvo @UUID[JournalEntry.4858IAb89fTokFfV]{Carta del Sheriff O'Connor al Príncipe Whitmore, 1978} y la memoria de O&#39;Connor.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>«Halloway tiene el apoyo de la Justicar Panhard.»</td>\n<td>A</td>\n<td>Le escribe desde hace un año. Ella no le contesta, pero tampoco le dice que no.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>«Montgomery tiene una lista de Vástagos que destruirá si cae el Príncipe.»</td>\n<td>V</td>\n<td>Tiene once nombres. El primero es Halloway.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>«Los Nosferatu pueden ver por cualquier cámara de la ciudad.»</td>\n<td>A</td>\n<td>Pueden ver muchas. Ezra (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}) podría ver las de Gale Sentinel si comprobara su propio código.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>«La Segunda Inquisición tiene una oficina en South Lake Union.»</td>\n<td>V</td>\n<td>Northline Cyber Advisory, piso 11 (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}).</td>\n</tr>\n<tr>\n<td>8</td>\n<td>«Las cámaras de timbre nuevas no graban a los Vástagos.»</td>\n<td>F</td>\n<td>Los graban. Y el modelo ANOMALY los marca como «sujetos fríos» (@UUID[JournalEntry.YhmNvLugMfCZezEH]{Gale Sentinel: hoja de ruta del producto 2027, confidencial}).</td>\n</tr>\n<tr>\n<td>9</td>\n<td>«Lo que queda del Sabbat en Tacoma son tres chiquillos asustados.»</td>\n<td>F</td>\n<td>Hay uno viejo y paciente que sobrevivió al Larchmont (@UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont}, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · El superviviente del Larchmont}).</td>\n</tr>\n<tr>\n<td>10</td>\n<td>«El Sabueso destruyó a su propio sire para quedarse con su puesto.»</td>\n<td>F</td>\n<td>Un rumor viejo que Halloway reaviva en @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}.</td>\n</tr>\n<tr>\n<td>11</td>\n<td>«Rosa Iturbe le dio refugio al Anarquista que mató a la hija del Sabueso.»</td>\n<td>V</td>\n<td>Fue en 1996, una semana antes de la muerte de Emily. Rosa no sabía lo que iba a hacer. Nunca se lo perdonó.</td>\n</tr>\n<tr>\n<td>12</td>\n<td>«Una sangre débil vende secretos en el subterráneo.»</td>\n<td>V</td>\n<td>Jun Takeda (@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}). Lleva copias del Expediente sin saber qué son.</td>\n</tr>\n<tr>\n<td>13</td>\n<td>«El Club Ceniza es del Príncipe.»</td>\n<td>V</td>\n<td>A través de una fundación cultural, la misma que figura en @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3pBGpfsV1AkxLh9H",
+      "_key": "!journal.pages!j4MhqWVhWECuqaA3.3pBGpfsV1AkxLh9H",
+      "name": "Lo que se dice en la ciudad",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Rumores del Elíseo, del subterráneo y de los bares del puerto. Nadie sabe cuáles son ciertos.</em></p>\n<ol>\n<li>«Vance, el sire del Sabueso, volvió a la ciudad.»</li>\n<li>«El Príncipe no abrió el sobre de Voight porque ya sabe lo que dice.»</li>\n<li>«Halloway hizo caer a O&#39;Connor en el 78.»</li>\n<li>«Halloway tiene el apoyo de la Justicar Panhard.»</li>\n<li>«Montgomery tiene una lista de Vástagos que destruirá si cae el Príncipe.»</li>\n<li>«Los Nosferatu pueden ver por cualquier cámara de la ciudad.»</li>\n<li>«La Segunda Inquisición tiene una oficina en South Lake Union.»</li>\n<li>«Las cámaras de timbre nuevas no graban a los Vástagos.»</li>\n<li>«Lo que queda del Sabbat en Tacoma son tres chiquillos asustados.»</li>\n<li>«El Sabueso destruyó a su propio sire para quedarse con su puesto.»</li>\n<li>«Rosa Iturbe le dio refugio al Anarquista que mató a la hija del Sabueso.»</li>\n<li>«Una sangre débil vende secretos en el subterráneo.»</li>\n<li>«El Club Ceniza es del Príncipe.»</li>\n</ol>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

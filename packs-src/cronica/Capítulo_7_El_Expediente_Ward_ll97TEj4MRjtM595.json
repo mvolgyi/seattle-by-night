@@ -1,0 +1,137 @@
+{
+  "_id": "ll97TEj4MRjtM595",
+  "_key": "!journal!ll97TEj4MRjtM595",
+  "name": "Capítulo 7 · El Expediente Ward",
+  "folder": "FKeYwpEhGbx72MA5",
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AVE-01",
+      "archivo": "content/cronica/aventura/10-introduccion.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "ZUwiVjq9zHPa2Wnx",
+      "_key": "!journal.pages!ll97TEj4MRjtM595.ZUwiVjq9zHPa2Wnx",
+      "name": "Capítulo 7 · El Expediente Ward",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Aventura para una coterie de 4 o 5 personajes, incluido @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}. Duración estimada: 6–8 sesiones. ID: AVE-01.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "BZyrOC1zH6dcZo7F",
+      "_key": "!journal.pages!ll97TEj4MRjtM595.BZyrOC1zH6dcZo7F",
+      "name": "Introducción",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Una periodista de Seattle pasó diez años documentando muertes que no cuadraban. Sin saberlo, construyó el mapa más completo que existe de los Vástagos de la ciudad: dónde cazan, dónde fallan, quiénes no envejecen. La madrugada del jueves 12 de noviembre de 2026, alguien se lo robó.</p>\n<p>A partir de esa noche, los personajes tienen que recuperar el Expediente antes de que llegue a manos de la Segunda Inquisición o de alguien de la corte que quiera usarlo como arma. Por el camino descubrirán que en los muelles hay alguien destruyendo Vástagos con la técnica del sire de David, que el Primogénito Ventrue lleva sesenta años preparando un golpe de Estado y que la ciudad entera los está mirando a través de 412.000 timbres.</p>\n<aside class=\"sbn-recuadro\"><h4>Ajuste de la entrega 2 · Diez o doce años</h4><p>Helen empezó a documentar en 2014. El archivo cubre doce años, aunque ella sigue diciendo «diez» porque es lo que repite desde hace tiempo. Ver @UUID[JournalEntry.nuyiQmnE32yq4wOG]{Ajuste a la Parte 1 · La cadena de las copias}.</p>\n</aside>\n<h3>La verdad, en un párrafo</h3>\n<p>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway} quiere la corona. Su ghoul @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale} localizó el archivo de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward} con los datos de las cámaras de su empresa, y un equipo de mortales (@UUID[Actor.9rv5Jdb3y6bZZ1fj]{MEN-01}) lo robó. @UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}, chiquillo descartado de @UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus Vance}, destruye a quienes compran copias usando la doctrina de Vance, para que David persiga a un fantasma y @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Montgomery} deje de confiar en él. Mientras tanto, Halloway entrega fragmentos del archivo a FIRSTLIGHT como la fuente ARQUERO. Cuando la Inquisición golpee los activos del Príncipe y del Sheriff, Halloway pedirá la regencia ante la Primogenitura.</p>\n<h3>Estructura</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Parte</th>\n<th>Título</th>\n<th>Escenas</th>\n<th>Sesiones aprox.</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Prólogo</td>\n<td>Lluvia sobre Ballard</td>\n<td>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</td>\n<td>media</td>\n</tr>\n<tr>\n<td>1</td>\n<td>Rastro de agua</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} a @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad}</td>\n<td>1–2</td>\n</tr>\n<tr>\n<td>2</td>\n<td>El fantasma de Marsella</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} a @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}</td>\n<td>2</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Las dos manos</td>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo} a @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}</td>\n<td>1–2</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Marea alta</td>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura} a @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</td>\n<td>1–2</td>\n</tr>\n</tbody></table>\n<p>Las Partes 1 y 2 no tienen un orden fijo: la coterie puede seguir las pistas en el orden que quiera. Las Partes 3 y 4 se desencadenan por el Reloj de Halloway o por las acciones de los personajes.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TMlsOSAudm6MCcZ6",
+      "_key": "!journal.pages!ll97TEj4MRjtM595.TMlsOSAudm6MCcZ6",
+      "name": "Las dos herramientas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>El Reloj de Halloway.</strong> La ciudad se mueve aunque la coterie no actúe. Cada noche que pasa, ocurre el evento de la tabla. Si la coterie interviene antes, el evento cambia o desaparece.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Noche</th>\n<th>Fecha (madrugada del)</th>\n<th>Evento si nadie interviene</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>jueves 12 nov.</td>\n<td>El robo (Prólogo).</td>\n</tr>\n<tr>\n<td>2</td>\n<td>viernes 13 nov.</td>\n<td>@UUID[JournalEntry.OmK2qlPVNl758u6h]{Krell} destruye al primer comprador en el muelle 46 (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}). @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} hace su primera entrega como ARQUERO.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>sábado 14 nov.</td>\n<td>Noche de Elíseo. Halloway siembra dudas sobre el Sheriff (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}).</td>\n</tr>\n<tr>\n<td>4</td>\n<td>domingo 15 nov.</td>\n<td>Krell destruye a @UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda} y a un segundo Vástago (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}).</td>\n</tr>\n<tr>\n<td>5</td>\n<td>lunes 16 nov.</td>\n<td>Segunda entrega a FIRSTLIGHT (<button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Segunda entrega de ARQUERO (Noche 5)\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Segunda entrega de ARQUERO (Noche 5)</span></button>). @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Okafor} contacta a @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen}.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>martes 17 nov.</td>\n<td>Krell va a por una Piedra de toque de la coterie (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}). El original del Expediente pasa a la bóveda de Halloway.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>miércoles 18 nov.</td>\n<td>Halloway le entrega a @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Montgomery} «pruebas» contra David (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}).</td>\n</tr>\n<tr>\n<td>8</td>\n<td>jueves 19 nov.</td>\n<td>Consejo de Primogenitura (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}). Si el Termómetro está en 9 o más, la redada (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}).</td>\n</tr>\n</tbody></table>\n<aside class=\"sbn-recuadro\"><h4>Ajuste de la entrega 2 · Reloj actualizado</h4><p>Las Noches 2 a 6 de esta tabla cambian con la cadena de las copias (Sal Medeiros, Corwin y Lonnie Barras). Donde haya contradicción, manda el Reloj actualizado de @UUID[JournalEntry.nuyiQmnE32yq4wOG]{Ajuste a la Parte 1 · La cadena de las copias}.</p>\n</aside>\n<p><strong>El Termómetro de FIRSTLIGHT</strong> (@UUID[JournalEntry.b13NIR35K7HpthZv]{AYU-03}). Mide cuánto sabe la Segunda Inquisición. Empieza en 2. Las escenas indican cuándo sube y cuándo baja.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Valor</th>\n<th>Efecto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>3</td>\n<td>Vigilancia pasiva sobre Helen: una furgoneta frente a su edificio, drones ocasionales.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Okafor contacta a Helen. Le ofrece protección a cambio del archivo.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Investigación activa sobre un activo de la coterie: la sociedad del hangar, la oficina forense, el calendario de Nadia.</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Redada (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}).</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Purga: cae al menos un refugio de la Camarilla. La crónica sigue en modo supervivencia.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KNEkW3tzW46ADvxU",
+      "_key": "!journal.pages!ll97TEj4MRjtM595.KNEkW3tzW46ADvxU",
+      "name": "Consejos de personaje",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La aventura está escrita para «Los del Archivo» (@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{COT-00}): David y 3 o 4 personajes nuevos que aparecen en el Expediente. Los conceptos @UUID[JournalEntry.zQMt8VMfKPoL6INq]{PJ-02} a @UUID[JournalEntry.gRfqeOIXEHOcLemr]{PJ-06} encajan directamente. Si los jugadores crean sus propios personajes, tené en cuenta esto:</p>\n<ul>\n<li><strong>Clanes que funcionan mejor:</strong> Ventrue (acceso al círculo de @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}), Nosferatu (información y vigilancia), Toreador (la corte y el entorno de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen}), Gangrel (la jauría del Sheriff), Tremere (forense y hechicería de sangre). Malkavian y Banu Haqim también encajan. Conviene evitar más Brujah: la ciudad ya tiene cuatro.</li>\n<li><strong>Trasfondos útiles:</strong> Contactos (policía, prensa, puerto, tecnología), Influencia, Rebaño, Estatus en la Camarilla y cualquier Mawla en la corte. Una Máscara sólida (2 o más) ayuda: en esta aventura, la vigilancia es el peligro principal.</li>\n<li><strong>Habilidades clave:</strong> Investigación, Tecnología, Perspicacia, Sigilo, Persuasión, Política y Pelea. Al menos un personaje con Tecnología 2 o más facilita mucho las cosas.</li>\n<li><strong>Motivaciones:</strong> todos los personajes tienen algo en el Expediente. Antes de empezar, que cada jugador decida qué contiene su carpeta (@UUID[JournalEntry.vtenvgNlXVPd99Rc]{AYU-09}) y una Piedra de toque que podría estar en peligro en la Parte 3.</li>\n<li><strong>Para el jugador de @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}:</strong> conviene acordar en privado, antes de la sesión 1, dos cosas que su personaje sabe y los demás no: el mensaje del 9 de noviembre (@UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{DOC-05}) y lo que pasó realmente en el Larchmont (@UUID[JournalEntry.Oiln4o98kvxKbOvS]{LUG-11}).</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

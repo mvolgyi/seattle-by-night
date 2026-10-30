@@ -1,0 +1,109 @@
+{
+  "_id": "Oiln4o98kvxKbOvS",
+  "_key": "!journal!Oiln4o98kvxKbOvS",
+  "name": "El edificio Larchmont",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 110,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-11",
+      "archivo": "content/ciudad/LUG-11.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "xtAzFL03vQDfwucm",
+      "_key": "!journal.pages!Oiln4o98kvxKbOvS.xtAzFL03vQDfwucm",
+      "name": "El edificio Larchmont",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Tacoma · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0atnaEpSLykrc3kl",
+      "_key": "!journal.pages!Oiln4o98kvxKbOvS.0atnaEpSLykrc3kl",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Doce años después, el Larchmont sigue en pie como una caja negra vaciada por dentro: cuatro pisos de ladrillo ennegrecido, ventanas sin cristales, una valla de obra con un cartel de demolición que nadie cumplió. La lluvia entra por el techo y cae por el hueco de la escalera hasta el sótano, donde se oye correr agua. En la valla, alguien dejó siete flores de plástico atadas con alambre.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oVbKABRYH90z2fkF",
+      "_key": "!journal.pages!Oiln4o98kvxKbOvS.oVbKABRYH90z2fkF",
+      "name": "Notas del Narrador · Lo que pasó en 2014",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Una manada de tres Vástagos del Sabbat que no se fueron con la Gehena usaba el sótano del Larchmont como granja: tenían a siete inquilinos encerrados en la antigua cisterna y se alimentaban de ellos durante semanas.</p>\n<p>Un contacto de Montgomery dio el aviso. El Sheriff mandó a David. David llegó cuando la manada, alertada, ya había incendiado el edificio para borrar el rastro. Los siete inquilinos ya estaban muertos. Destruyó a dos de los tres. El tercero escapó por el desagüe al estrecho (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · El superviviente del Larchmont}).</p>\n<p>Montgomery ordenó sellar la cisterna sin sacar los cuerpos: siete cadáveres sin sangre eran una brecha de Mascarada. Danny Ruiz (@UUID[JournalEntry.5xUDUgkyHXGD8IPY]{Danny Ruiz}) sigue ahí abajo.</p>\n<p>La foto de David de espaldas al fuego, en el Expediente, es de esa noche.</p>\n<p><strong>Escena:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont} (opcional). Si la coterie abre la cisterna, Termómetro +2 (<button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"Abrir la cisterna del Larchmont\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">Abrir la cisterna del Larchmont</span></button>) y tirada de Remordimiento para David. Si @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} llega a saberlo, la relación de Piedra de toque cambia para siempre.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

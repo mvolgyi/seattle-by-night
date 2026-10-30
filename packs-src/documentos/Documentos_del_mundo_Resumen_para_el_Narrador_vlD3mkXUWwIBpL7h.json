@@ -1,0 +1,165 @@
+{
+  "_id": "vlD3mkXUWwIBpL7h",
+  "_key": "!journal!vlD3mkXUWwIBpL7h",
+  "name": "Documentos del mundo · Resumen para el Narrador",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOCUMENTOS-RESUMEN",
+      "archivo": "content/documentos/00-resumen.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "8wqnts5au6Jx5Rwl",
+      "_key": "!journal.pages!vlD3mkXUWwIBpL7h.8wqnts5au6Jx5Rwl",
+      "name": "Documentos del mundo · Resumen para el Narrador",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Seattle deja rastros. Los doce fragmentos de este capítulo son algunos de ellos: notas de voz, mensajes guardados en un teléfono viejo, un registro manuscrito, un correo que nadie debía leer. Cada uno está escrito como el objeto en sí y se puede imprimir o subir a Foundry tal cual para entregarlo en la mesa.</p>\n<p>Antes de cada documento hay un recuadro para el Narrador: cuándo entregarlo, qué presagia y qué hay de verdad en él. Ese recuadro no se muestra a los jugadores.</p>\n<p><em>Fechas de referencia:</em> la Noche 1 de la aventura (el robo) es el jueves 12 de noviembre de 2026.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TIToKHuvwxnk3YRW",
+      "_key": "!journal.pages!vlD3mkXUWwIBpL7h.TIToKHuvwxnk3YRW",
+      "name": "Resumen para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>ID</th>\n<th>Soporte</th>\n<th>Escena de entrega</th>\n<th>Pistas o vínculos</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.zNhdOMSnEHdvMIGE]{Notas de voz de Helen Ward #7}</td>\n<td>Transcripción de audio</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</td>\n<td>@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.NIaBWn52GOUI61A5]{Ladrones profesionales mortales; cámaras en bucle} · Expediente</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.kY9btWylMLztTB1j]{«Lo que la ciudad olvida», episodio 112: «Los que no envejecen»}</td>\n<td>Guion de pódcast</td>\n<td>Sesión cero / @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</td>\n<td>@UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411} · @UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro} · @UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.lcO0CdwUlZHg2wAX]{Registro del Guardián del Elíseo, folio de noviembre}</td>\n<td>Registro manuscrito</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</td>\n<td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway} · @UUID[JournalEntry.bB0eDKVFcxQW4C2d]{Solène Marchetti} · @UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: «Canción para el hijo del puño»}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.kzeWNRBY6tgLP37S]{Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)}</td>\n<td>Copia mecanografiada</td>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell} (o @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»} sin nota)</td>\n<td>@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{La guardia invertida} · @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada} · @UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{SAFE: mensajes guardados}</td>\n<td>Historial de SMS</td>\n<td>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} / @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</td>\n<td>@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.6YVCnLlyxpVum6JX]{Pedido de datos de Gale Sentinel sin registrar} · @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.BxMkvzNl7Yt8OyTI]{r/SeattleNocturna: «¿Alguien más vio esto en Harbor Island?»}</td>\n<td>Captura de foro</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</td>\n<td>@UUID[Actor.nbeFly9wEhWkesoF]{Teo Vásquez} · @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}</td>\n<td>Correo cifrado</td>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos} / @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</td>\n<td>@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wRvr7GFOMQsgTJ2z]{Envíos SEA-0411 / DOC-07} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada} · @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.4858IAb89fTokFfV]{Carta del Sheriff O'Connor al Príncipe Whitmore, 1978}</td>\n<td>Carta manuscrita</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · El Sheriff que fue}</td>\n<td>@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.TOvLdg2zhgDzjOAG]{Los diarios comprados en 1986} · @UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor} · @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.Gfcnqy3u5K3xDilP]{Oficina Forense del Condado de King, informe preliminar, caso 26-3307}</td>\n<td>Formulario oficial</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46} / @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}</td>\n<td>@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy} · @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: «Canción para el hijo del puño»}</td>\n<td>Poema en servilleta</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</td>\n<td>@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.YhmNvLugMfCZezEH]{Gale Sentinel: hoja de ruta del producto 2027, confidencial}</td>\n<td>Presentación filtrada</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} / @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</td>\n<td>@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.6YVCnLlyxpVum6JX]{Pedido de datos de Gale Sentinel sin registrar} · @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden} · @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.qA75WygzgVjOeJvT]{LOR-03 · Los ojos de la ciudad}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.5mQIPoGa4I0tQtbR]{Nota guardada en la caja fuerte de Bear}</td>\n<td>Nota en papel</td>\n<td>Fuera de la aventura</td>\n<td>@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman} · @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ]{GAN-04 · El viejo compañero}</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Hwg7VTDqhv8UKchp",
+      "_key": "!journal.pages!vlD3mkXUWwIBpL7h.Hwg7VTDqhv8UKchp",
+      "name": "Registro de IDs (añadidos)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}</strong> · Analista S. Hale, de FIRSTLIGHT (autor de @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}, contacto en @UUID[JournalEntry.Gfcnqy3u5K3xDilP]{Oficina Forense del Condado de King, informe preliminar, caso 26-3307})</li>\n<li><strong>@UUID[Actor.QmuwU5oe2fg1GIoX]{Dr. Marek Kowalski}</strong> · Dr. Marek Kowalski, patólogo suplente</li>\n<li><strong>@UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith}</strong> · Emily Smith: cumpleaños el 14 de febrero</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SzZvtYMlSioJXQxC",
+      "_key": "!journal.pages!vlD3mkXUWwIBpL7h.SzZvtYMlSioJXQxC",
+      "name": "9A · Ayudas de juego",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Las ayudas de juego están escritas como el objeto en sí, listas para imprimir o subir a Foundry. Antes de cada una hay una línea para el Narrador con el soporte y el momento de entrega. Las que dependen de una imagen llevan su prompt al final del capítulo.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>ID</th>\n<th>Ayuda</th>\n<th>Soporte</th>\n<th>Entrega</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Mapa de Seattle con los dominios}</td>\n<td>Mapa de Seattle con los dominios</td>\n<td>Mapa ilustrado</td>\n<td>Sesión cero o @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.ifdmxLzsoLizs9uN]{Índice del Expediente Ward}</td>\n<td>Índice del Expediente Ward</td>\n<td>Libreta manuscrita</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.b13NIR35K7HpthZv]{El Termómetro de FIRSTLIGHT}</td>\n<td>El Termómetro de FIRSTLIGHT</td>\n<td>Marcador recortable</td>\n<td>Solo para el Narrador (o a la vista, sin número)</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.woF61Oy8f19xxrkA]{Esquela de Emily Smith}</td>\n<td>Esquela de Emily Smith</td>\n<td>Recorte de periódico</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre} o Epílogo</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.nQtxnzIyUlqjnv8f]{La tarjeta de SAFE}</td>\n<td>La tarjeta de SAFE</td>\n<td>Teléfono de tapa</td>\n<td>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.SA0kLMDEU5Fe5N1B]{Fotografía forense, Terminal 46}</td>\n<td>Fotografía forense de la Terminal 46</td>\n<td>Foto policial</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.9zcPuCCutNfUtYJ0]{Árbol de linaje de Vance}</td>\n<td>Árbol de linaje de Vance</td>\n<td>Diagrama</td>\n<td>Tras @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.8EZofopivOgpo5tE]{Orden del día del Consejo de Primogenitura}</td>\n<td>Orden del día del Consejo</td>\n<td>Documento formal</td>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.vtenvgNlXVPd99Rc]{«Tu carpeta en el Expediente»}</td>\n<td>«Tu carpeta en el Expediente»</td>\n<td>Una hoja por PJ</td>\n<td>Sesión cero o @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "f0OQ2rqW2M61llEy",
+      "_key": "!journal.pages!vlD3mkXUWwIBpL7h.f0OQ2rqW2M61llEy",
+      "name": "Registro de IDs del 9A (añadidos y fijados)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Mapa de Seattle con los dominios} a @UUID[JournalEntry.vtenvgNlXVPd99Rc]{«Tu carpeta en el Expediente»}</strong> · Redactadas</li>\n<li><strong>@UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Mapa de Seattle con los dominios}</strong> · Mapa regional (@UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Mapa de Seattle con los dominios})</li>\n<li><strong>Nuevos datos de canon:</strong> Anne Smith, madre de Emily (fallecida en 1989); muerte de Emily el 21 de octubre de 1996; Emily nació en San Diego. <em>Pendientes de confirmar.</em></li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

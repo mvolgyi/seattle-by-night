@@ -1,0 +1,496 @@
+{
+  "_id": "15UcuyhvNvNqkCOf",
+  "_key": "!actors!15UcuyhvNvNqkCOf",
+  "name": "Dana Okafor",
+  "type": "mortal",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "Dns9UX98EXKSFsMv",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Dana Okafor",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "FIRSTLIGHT, jefa de la Célula Puget; antagonista latente",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1981",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Perfil: Dana Okafor}</p><blockquote><p><em>«Toda fuente quiere algo. Hasta saber qué quiere, es un cebo.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La que no regala nada</td></tr><tr><th>Concepto</th><td>FIRSTLIGHT, jefa de la Célula Puget; antagonista latente</td></tr><tr><th>Nacimiento</th><td>1981</td></tr></tbody></table><h3>Semblante</h3><p>Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.</p>",
+    "appearance": "<p>Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.</p>",
+    "equipment": "<ul><li>Pistola Glock 19 con munición incendiaria (daño agravado contra Vástagos)</li><li>Linterna UV de bolsillo</li><li>Chaleco antibalas ligero (blindaje 2)</li><li>Teléfono cifrado</li></ul>",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 9,
+      "value": 9,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 3,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 5,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Pistola",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Emboscadas",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Interrogatorios",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Patrones",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "leadership": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Vástagos",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Mentiras",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "politics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Agencias",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Fe inquebrantable (la Dominación y la Presencia tienen −2 dados contra ella; si fallan, ella lo nota)"
+        }
+      },
+      "name": "Fe inquebrantable",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Fe inquebrantable (la Dominación y la Presencia tienen −2 dados contra ella; si fallan, ella lo nota)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "LTWI2XVarFgrxvoS",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.LTWI2XVarFgrxvoS"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 3 (FBI, Seguridad Nacional, policía de Seattle)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 3 (FBI, Seguridad Nacional, policía de Seattle)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "NHstfsEkpMbOfgXi",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.NHstfsEkpMbOfgXi"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 3 (presupuesto federal)"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 3 (presupuesto federal)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "Utn6wtGxlzGsPHnC",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.Utn6wtGxlzGsPHnC"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Munición incendiaria",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "J4KQNneG1PMOCruh",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.J4KQNneG1PMOCruh"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "glock-19-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Pistola Glock 19 con munición incendiaria",
+      "type": "weapon",
+      "img": "icons/weapons/guns/gun-pistol-brass.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Daño agravado contra Vástagos (munición incendiaria).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "neQAte77jiwOaM1t",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.neQAte77jiwOaM1t"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "chaleco-ligero",
+          "agravado": false
+        }
+      },
+      "name": "Chaleco antibalas ligero",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Blindaje</th><td>2</td></tr></tbody></table><p>Blindaje 2.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 2,
+        "quantity": 1
+      },
+      "_id": "3qCbsfcUtjw7Ntae",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.3qCbsfcUtjw7Ntae"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-18",
+      "journal": "JournalEntry.bJA2iRyDgbm2TcuK",
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

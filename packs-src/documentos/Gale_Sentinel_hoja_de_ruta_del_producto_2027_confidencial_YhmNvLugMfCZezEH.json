@@ -1,0 +1,86 @@
+{
+  "_id": "YhmNvLugMfCZezEH",
+  "_key": "!journal!YhmNvLugMfCZezEH",
+  "name": "Gale Sentinel: hoja de ruta del producto 2027, confidencial",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 110,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-11",
+      "archivo": "content/documentos/DOC-11.md",
+      "soporte": "presentacion",
+      "entrega": [
+        "A1-E05",
+        "A3-E02"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "vV2hxzhEMU5ISavu",
+      "_key": "!journal.pages!YhmNvLugMfCZezEH.vV2hxzhEMU5ISavu",
+      "name": "Gale Sentinel: hoja de ruta del producto 2027, confidencial",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-presentacion\"><header class=\"sbn-diapositiva sbn-diapositiva-portada\"><p class=\"sbn-doc-titulo\">GALE SENTINEL · HOJA DE RUTA 2027 · CONFIDENCIAL</p>\n<p><em>Distribución: P. Gale (CEO) · Comité de producto · C. Arden (Halloway Meridian Capital, accionista)</em></p>\n</header><section class=\"sbn-diapositiva\"><h3>Diapositiva 4 · NIGHTWATCH</h3><p>Reconocimiento facial en condiciones de baja luz (0,1 lux). Precisión objetivo: 94 %. Integración con los 412.000 timbres instalados en el área metropolitana de Seattle. Lanzamiento: T2 2027.</p>\n</section><section class=\"sbn-diapositiva\"><h3>Diapositiva 7 · ANOMALY</h3><p>Detección automática de &quot;firmas térmicas inconsistentes&quot;: personas captadas en vídeo cuya temperatura corporal es anormalmente baja o no se registra. Caso de uso: &quot;detección de intrusos con ropa térmica&quot;. Etiqueta interna del modelo: <em>COLD_SUBJECT</em>.</p>\n</section><section class=\"sbn-diapositiva\"><h3>Diapositiva 9 · ALIANZAS</h3><p>Piloto de acceso a datos para socios de seguridad.</p>\n<ul>\n<li>Policía de Seattle (en negociación)</li>\n<li>Puerto de Seattle (firmado)</li>\n<li><strong>Northline Cyber Advisory</strong> (piloto activo desde 09/2026, acceso completo a ANOMALY)</li>\n</ul>\n<footer class=\"sbn-diapositiva-pie\">«Vemos lo que la ciudad no ve.»</footer>\n</section></div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LtPjlnw42GKkgdCu",
+      "_key": "!journal.pages!YhmNvLugMfCZezEH.LtPjlnw42GKkgdCu",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> presentación filtrada (tres diapositivas impresas). <strong>Cuándo:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} (Ezra la encuentra en un servidor de pruebas mal protegido) o @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}.</p>\n<p><strong>Presagia:</strong> la amenaza tecnológica a toda la Camarilla. El piloto con Northline significa que la herramienta de Halloway ya está en manos de los cazadores.</p>\n<p><strong>Verdad:</strong> es real. Preston Gale vende tecnología a Northline sin saber qué es Northline. Halloway lo sabe y le parece un riesgo aceptable. Celeste Arden (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}) figura en la lista de distribución porque su sociedad pantalla es el principal accionista.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

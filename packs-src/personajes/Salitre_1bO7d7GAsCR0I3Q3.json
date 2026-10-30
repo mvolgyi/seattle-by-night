@@ -1,0 +1,221 @@
+{
+  "_id": "1bO7d7GAsCR0I3Q3",
+  "_key": "!actors!1bO7d7GAsCR0I3Q3",
+  "name": "Salitre",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 240,
+  "prototypeToken": {
+    "name": "Salitre",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.JtFCjV4kHyARORQl",
+      "Actor.k2TLqQkkzzjSLzkp"
+    ],
+    "headers": {
+      "concept": "Cerbero (Cerberus)",
+      "chronicle": "Seattle by Night",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 3
+    },
+    "lien": {
+      "value": 3
+    },
+    "portillon": {
+      "value": 2
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{Perfil: Salitre}</p><blockquote><p><em>Los que no se arrodillan.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Tipo</th><td>Cerbero (Cerberus)</td></tr><tr><th>Dominio</th><td>El astillero viejo y el puerto de Everett</td></tr><tr><th>Lugar</th><td>@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo}</td></tr><tr><th>Miembros</th><td>@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa «Salitre» Iturbe}, @UUID[Actor.k2TLqQkkzzjSLzkp]{Anarquistas de Salitre}</td></tr></tbody></table><p>Los Anarquistas del astillero de Everett: votan, sueldan y no le deben nada a ningún Príncipe.</p><h3>Dominio</h3><ul><li><strong>Caza (Chasse) 3:</strong> soldadores y estibadores, algunos voluntarios</li><li><strong>Lien 3:</strong> el sindicato es suyo</li><li><strong>Portillon 2:</strong> una sola carretera, pero el agua no tiene puertas</li></ul>",
+    "notes": "",
+    "privatenotes": ""
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 2"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "0SwrcEKM1IMwVDoH",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.0SwrcEKM1IMwVDoH"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Rebaño 2"
+        }
+      },
+      "name": "Rebaño",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Rebaño 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "XhPJ84wiwwxGOCU8",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.XhPJ84wiwwxGOCU8"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados 3 (el sindicato)"
+        }
+      },
+      "name": "Aliados",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados 3 (el sindicato)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "OWsIeUCLhvWpUYDm",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.OWsIeUCLhvWpUYDm"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 2 (puerto de Everett)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 2 (puerto de Everett)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "9yMtuaJNUL5tfjRD",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.9yMtuaJNUL5tfjRD"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 1 (base naval)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 1 (base naval)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "dC8fmNLAWMxGxK9u",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.dC8fmNLAWMxGxK9u"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-03",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5",
+      "lema": "Los que no se arrodillan."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

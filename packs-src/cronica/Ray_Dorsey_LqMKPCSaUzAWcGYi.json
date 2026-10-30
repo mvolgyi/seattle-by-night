@@ -1,0 +1,137 @@
+{
+  "_id": "LqMKPCSaUzAWcGYi",
+  "_key": "!journal!LqMKPCSaUzAWcGYi",
+  "name": "Ray Dorsey",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 230,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "REF-03",
+      "archivo": "content/personajes/REF-03.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "dBUHAAVW5NbD96sC",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.dBUHAAVW5NbD96sC",
+      "name": "Ray Dorsey",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Referencia</strong> (Vástago destruido en 1996, sin actor) · Anarquista de Seattle · mató a @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith} y lo destruyó @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}.</p>\n<p><em>Esta página reúne lo que dicen de Dorsey los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan clan, sire ni estadísticas.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hdE6i0URDxKceYKh",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.hdE6i0URDxKceYKh",
+      "name": "Lo que se sabe",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Registro de IDs: «REF-03 · Ray Dorsey, el Anarquista que mató a Emily en 1996 (destruido por David)» (doc 07).</li>\n<li>Usaba a adolescentes de Rainier Valley como rebaño (doc 05, historia: «La noche de Emily (1996)»).</li>\n<li>En el otoño de 1996 pidió refugio una semana a @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa Iturbe} en Everett: «decía que lo perseguía el Sheriff» (doc 07, ficha de Rosa). Rosa le dio una cama en el astillero (doc 11, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}).</li>\n<li>Una semana después mató a Emily Smith, trabajadora social, en un piso medio abandonado de Rainier Valley (doc 05; doc 07; doc 11). La esquela fecha la muerte el 21 de octubre de 1996 (doc 15, @UUID[JournalEntry.woF61Oy8f19xxrkA]{Esquela de Emily Smith}; dato provisional según el doc 16).</li>\n<li>David llegó minutos tarde y lo destruyó de un disparo (doc 05; doc 07: «el Sabueso lo destruyó de un disparo»).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LDY2x5w2759T7vK5",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.LDY2x5w2759T7vK5",
+      "name": "La noche de Emily",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>El refuerzo que llegó después y limpió la escena mientras David seguía en el suelo fue @UUID[JournalEntry.B4nqUk8dojvCw97H]{Hal Brekke}, un Gangrel de dos años de no-vida (doc 05; doc 02: «fue él quien limpió la escena mientras David seguía de rodillas»).</li>\n<li>Para la ciudad fue un ajuste de cuentas entre pandillas. Para Montgomery, el motivo por el que empezó a vigilar a su Sabueso (doc 05). La esquela dice que la policía lo investiga «como un enfrentamiento entre bandas» y que «uno de los menores resultó ileso» (doc 15, AYU-04).</li>\n<li>Ese menor era @UUID[Actor.rOqsigq4dAfIYQMh]{Marcos Delgado}, de quince años, el único chico que sobrevivió. Antes de desmayarse vio a un hombre con una cicatriz en la cara disparar a Dorsey y arrodillarse junto a la trabajadora social (doc 09, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · El chico que sobrevivió}).</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KlnwJTFo2mk4jeiR",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.KlnwJTFo2mk4jeiR",
+      "name": "Lo que dejó detrás",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Rosa.</strong> No sabía lo que Dorsey iba a hacer. Nunca se lo perdonó. Desde entonces tiene una regla en Everett: nadie que use a menores como rebaño (doc 07). Su agenda en Salitre es «saldar la deuda de 1996» (doc 08, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{COT-03 · Salitre}).</li>\n<li><strong>Rumor 11:</strong> «Rosa Iturbe le dio refugio al Anarquista que mató a la hija del Sabueso.» <em>(Verdad. Fue en 1996, una semana antes de la muerte de Emily. Rosa no sabía lo que iba a hacer. Nunca se lo perdonó)</em> (doc 05).</li>\n<li><strong>La confesión</strong> (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}, doc 11): «Hay algo que tengo que decirte. Hace treinta años. Un tipo llamado Ray Dorsey me pidió refugio una semana. Dijo que el Sheriff lo perseguía. Le di una cama en el astillero. Una semana después mató a una trabajadora social en Rainier Valley. Tú sabes cuál.» El doc 01 lo resumía así: «Rosa conoció al Anarquista que mató a Emily».</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

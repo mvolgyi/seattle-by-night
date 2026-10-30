@@ -1,0 +1,205 @@
+{
+  "_id": "wop4zqE8KwywxhTL",
+  "_key": "!actors!wop4zqE8KwywxhTL",
+  "name": "El superviviente del Larchmont",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 190,
+  "prototypeToken": {
+    "name": "El superviviente del Larchmont",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Antiguo Vástago del Sabbat",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Antiguo Vástago del Sabbat</td></tr></tbody></table><p>Antiguo Vástago del Sabbat (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · El superviviente del Larchmont}). Nadie conoce su nombre. Lleva doce años en los desagües de Tacoma, alimentándose con cuidado. Viejo, paciente, deformado por el fuego de 2014. Visita la cisterna del Larchmont descalzo.</p>\n<p><strong>Disciplinas:</strong> Ofuscación 3, Protean 2 (Garras), Fortaleza 2.</p>\n<p><strong>Táctica:</strong> nunca pelea en terreno abierto. Huye hacia el agua y espera.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": ""
+    },
+    "humanity": {
+      "value": 3,
+      "stains": 0
+    },
+    "disciplines": {
+      "obfuscate": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "protean": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 6
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 5
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 8,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "alcantarillas",
+            "value": 1,
+            "paths": [
+              "skills.survival"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "occult": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Feral Weapons",
+          "homebrew": false
+        }
+      },
+      "name": "Feral Weapons",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Protean 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "MEN-08"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "protean",
+        "selected": false
+      },
+      "_id": "c2Rq2IaWf7SLZKPA",
+      "_key": "!actors.items!wop4zqE8KwywxhTL.c2Rq2IaWf7SLZKPA"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-08",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_id": "OSMVQHNXfk9zRyLM",
+  "_key": "!journal!OSMVQHNXfk9zRyLM",
+  "name": "La Capilla del Observatorio",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 130,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-13",
+      "archivo": "content/ciudad/LUG-13.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "dTYHrbOb8OyQXFQ9",
+      "_key": "!journal.pages!OSMVQHNXfk9zRyLM.dTYHrbOb8OyQXFQ9",
+      "name": "La Capilla del Observatorio",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Queen Anne · Sede Tremere · Mapa: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "wIHnBJ2rJOy55OvS",
+      "_key": "!journal.pages!OSMVQHNXfk9zRyLM.wIHnBJ2rJOy55OvS",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>En lo alto de la colina hay una casa victoriana con una cúpula de cobre verde que en su día fue un observatorio privado. La cúpula sigue abriéndose. Lo que asoma por la ranura no es un telescopio, sino una antena. Dentro, las paredes de madera tallada conviven con racks de servidores y pantallas que muestran gráficos de tráfico de red.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "yvTHgSaty73PFVWg",
+      "_key": "!journal.pages!OSMVQHNXfk9zRyLM.yvTHgSaty73PFVWg",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Desde aquí, Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}) vigila las comunicaciones de Northline. Sabe que la Célula Puget existe, pero no sabe lo de ARQUERO.</p>\n<p>Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}) tiene un laboratorio en el sótano.</p>\n<p>Si la coterie se alía con Voight, puede conseguir aquí @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411} antes de @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "_id": "eRE6FTNdGO76lzPK",
+  "_key": "!actors!eRE6FTNdGO76lzPK",
+  "name": "El señor Pell",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "YWm2LWWrpHgOUZLn",
+  "sort": 90,
+  "prototypeToken": {
+    "name": "El señor Pell",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "YrFSWeqhbymzT7q4",
+    "headers": {
+      "concept": "Archivista ghoul de Halloway desde 1958",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Archivista ghoul de Halloway desde 1958</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{El Consejo de Cristal}</td></tr></tbody></table><p>Noventa y seis años, aparenta sesenta. Educado, triste, minucioso. Mecanografió los diarios de Vance y sabe dónde está cada papel de su amo.</p>\n<p><strong>Vínculo de sangre</strong> con Halloway, nivel 3 (+3 dados para resistir Disciplinas de otros).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Nota de edición: el doc 14 decía «desde 1950», antes del Abrazo de Halloway (1958); se decidió 1958. Los 96 años y el aspecto de 60 se mantienen (lo hicieron ghoul a los 28).</p>",
+    "health": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {},
+    "spcType": "ghoul",
+    "standarddicepools": {
+      "physical": {
+        "value": 2
+      },
+      "social": {
+        "value": 4
+      },
+      "mental": {
+        "value": 6
+      }
+    },
+    "exceptionaldicepools": {
+      "academics": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-09",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

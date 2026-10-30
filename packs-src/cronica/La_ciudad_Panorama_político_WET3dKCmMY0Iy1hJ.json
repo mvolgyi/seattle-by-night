@@ -1,0 +1,193 @@
+{
+  "_id": "WET3dKCmMY0Iy1hJ",
+  "_key": "!journal!WET3dKCmMY0Iy1hJ",
+  "name": "La ciudad · Panorama político",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-POLITICA",
+      "archivo": "content/ciudad/01-panorama-politico.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "JLmx24qposTv4yeM",
+      "_key": "!journal.pages!WET3dKCmMY0Iy1hJ.JLmx24qposTv4yeM",
+      "name": "El Príncipe y su corte",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Marcus Whitmore</strong> (Toreador, @UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}) gobierna desde 1962. Es elegante, prudente y vago. Prefiere que los problemas se arreglen solos y suele tener razón, porque tiene a Montgomery. No es un buen Príncipe en tiempos de guerra y lo sabe. Su mayor virtud es saber elegir a quién deja hacer el trabajo; su mayor defecto, no saber cuándo ese trabajo lo está haciendo otro.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "VFYcOVWP9oyyghg2",
+      "_key": "!journal.pages!WET3dKCmMY0Iy1hJ.VFYcOVWP9oyyghg2",
+      "name": "El Sheriff",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Ethan Montgomery</strong> (Gangrel, @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}) es la ley de Seattle. Su jauría, los Lobos de Whitmore (@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{COT-01 · Los Lobos de Whitmore}), incluye cazarrecompensas mortales, a su chiquillo Hal y, como aliado externo, a David. Es leal al Príncipe, pero no lo respeta, y la Primogenitura lo sabe.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ReXeKhwe9ylatUuk",
+      "_key": "!journal.pages!WET3dKCmMY0Iy1hJ.ReXeKhwe9ylatUuk",
+      "name": "La Primogenitura",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Clan</th>\n<th>Primogénito</th>\n<th>Postura</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Ventrue</td>\n<td>Charles Halloway (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway})</td>\n<td>Quiere la corona. Habla de &quot;modernizar la Mascarada&quot;.</td>\n</tr>\n<tr>\n<td>Toreador</td>\n<td>Solène Marchetti (@UUID[JournalEntry.bB0eDKVFcxQW4C2d]{Solène Marchetti}), también Guardiana del Elíseo</td>\n<td>Leal al Príncipe por costumbre. Neutral por oficio.</td>\n</tr>\n<tr>\n<td>Tremere</td>\n<td>Dra. Anneliese Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}), Regente de la Capilla</td>\n<td>Preocupada por FIRSTLIGHT. No confía en Halloway ni en Whitmore.</td>\n</tr>\n<tr>\n<td>Nosferatu</td>\n<td>Abel Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist})</td>\n<td>Vende a todos. Su voto es el más caro de la ciudad.</td>\n</tr>\n<tr>\n<td>Malkavian</td>\n<td>Wendell Fry (@UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry})</td>\n<td>Ocupa el asiento &quot;por costumbre&quot;. Nadie sabe cómo votará, ni siquiera él.</td>\n</tr>\n</tbody></table>\n<p><em>Los asientos Brujah y Gangrel están vacíos desde la ruptura de sus clanes con la Camarilla.</em></p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "WRfvVtmyjFn5IJrI",
+      "_key": "!journal.pages!WET3dKCmMY0Iy1hJ.WRfvVtmyjFn5IJrI",
+      "name": "Fuera de la Camarilla",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Los Anarquistas de Everett</strong> (@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{COT-03 · Salitre}), liderados por Rosa Iturbe (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa «Salitre» Iturbe}). Unos quince Vástagos. Montgomery los vigila desde 2025 y Halloway los usa como cabeza de turco.</li>\n<li><strong>Los restos del Sabbat en Tacoma.</strong> Pocos, viejos y escondidos. Ver @UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont} y @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · El superviviente del Larchmont}.</li>\n<li><strong>Los sangre débil de los muelles.</strong> Una docena, protegidos a cambio de favores por Thornquist. Jun Takeda (@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}) es una de ellos.</li>\n<li><strong>Los independientes.</strong> David (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) es el más conocido. En Tacoma también hay una familia Hecata con una funeraria que no se mete con nadie y entierra a quien le paguen.</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "wRjLew1Mwr1ISVjb",
+      "_key": "!journal.pages!WET3dKCmMY0Iy1hJ.wRjLew1Mwr1ISVjb",
+      "name": "Fuera de la sangre",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>FIRSTLIGHT, Célula Puget</strong> (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}). Agente Especial Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}) y analista S. Hale (@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}), con un equipo táctico de seis personas (@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}).</li>\n<li><strong>Gale Sentinel</strong> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}). Empresa de seguridad doméstica de Preston Gale (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}), ghoul de Halloway.</li>\n<li><strong>Helen Ward</strong> (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}) y su pódcast. Más de cuarenta mil oyentes por episodio y un archivo que nadie debería tener.</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "m2hIsEzUxIIL3xxB",
+      "_key": "!journal.pages!WET3dKCmMY0Iy1hJ.m2hIsEzUxIIL3xxB",
+      "name": "¿Qué piensa cada facción de la coterie?",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Facción</th>\n<th>Quiere</th>\n<th>Ve a la coterie como</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Whitmore</td>\n<td>Que nada cambie</td>\n<td>Una herramienta útil mientras no haga ruido</td>\n</tr>\n<tr>\n<td>Montgomery</td>\n<td>Recuperar el Expediente y saber si Vance está vivo</td>\n<td>Su jauría de emergencia, en la que no confía del todo</td>\n</tr>\n<tr>\n<td>Halloway</td>\n<td>La corona</td>\n<td>Un obstáculo que puede desviar o romper</td>\n</tr>\n<tr>\n<td>Voight</td>\n<td>Que FIRSTLIGHT no encuentre la Capilla</td>\n<td>Posibles aliados contra la Inquisición</td>\n</tr>\n<tr>\n<td>Thornquist</td>\n<td>Comprar barato y vender caro</td>\n<td>Clientes</td>\n</tr>\n<tr>\n<td>Rosa Iturbe</td>\n<td>Que dejen de culpar a Everett</td>\n<td>Perros del Sheriff, hasta que demuestren lo contrario</td>\n</tr>\n<tr>\n<td>FIRSTLIGHT</td>\n<td>El índice completo del Expediente</td>\n<td>No sabe que existe. Todavía.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "HCx4szH0aCe9bd7u",
+  "_key": "!items!HCx4szH0aCe9bd7u",
+  "name": "Generador de luz solar artificial",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>2 agravado</td></tr></tbody></table><p>En la furgoneta. Ilumina una zona de 20 metros. Dentro: 2 de daño agravado por turno y Terror Rojo automático (Dificultad 3) al entrar. Tarda dos turnos en encenderse.</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "generador-luz-solar",
+      "agravado": true
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 30,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

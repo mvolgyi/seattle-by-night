@@ -1,0 +1,137 @@
+{
+  "_id": "CRdeqlwyfpxGPyzT",
+  "_key": "!journal!CRdeqlwyfpxGPyzT",
+  "name": "Arconte Duval",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-07",
+      "archivo": "content/personajes/PNJ-07.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "h20POKos3NDy08B5",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.h20POKos3NDy08B5",
+      "name": "Arconte Duval",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Arconte de la Camarilla al servicio de la Justicar @UUID[JournalEntry.gSMgBLLYggWyAN2W]{Helena Panhard} · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> espera en Bainbridge el maletín del Expediente si @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} gana el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}); protagonista de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama}.</p>\n<p><em>Esta página reúne lo que dicen de Duval los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan nombre de pila, clan ni estadísticas.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oMuTbb0vn1wjJum8",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.oMuTbb0vn1wjJum8",
+      "name": "Quién es",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Aparece como figura de trasfondo, igual que la Justicar Panhard y @UUID[JournalEntry.WIihWwv4LCOX68B1]{Vance} (doc 01, índice de PNJs; registro de IDs v2: «PNJ-07 · Arconte Duval (trasfondo)»).</li>\n<li>Conoció a Vance (doc 09, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama}).</li>\n<li>Sirve como enviado de la Justicar Panhard (doc 13, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry} y registro de IDs: «El Arconte Duval aparece en Bainbridge como enviado de la Justicar»).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "uxlM5ZfJDWsLrQwu",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.uxlM5ZfJDWsLrQwu",
+      "name": "En la aventura",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>La noche 8.</strong> Si Halloway gana el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}), a las 00:30 el señor Pell (@UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell}) sale de la Torre Halloway con el maletín para entregarle el original del Expediente «a un enviado de la Justicar en Bainbridge»: es la prueba que Panhard le pidió para reconocer la regencia (doc 13, Notas del Narrador de A4-E01). Pell viaja con Dawson y dos ghouls (@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}) y quiere «entregarlo al Arconte Duval, que espera en Bainbridge como enviado de la Justicar, como prueba de la &quot;crisis&quot; que justifica la regencia» (doc 13, A4-E03).</li>\n<li><strong>Los desenlaces.</strong> Si el Expediente llega a Duval y Halloway perdió o fue expuesto: @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · La verdad ante el trono} («Duval lo devuelve»). Si Halloway ganó: @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · El Sabueso cambia de amo}. Si Halloway ganó pero la coterie se quedó el Expediente: FIN-B parcial, porque Halloway no tiene su prueba ante la Justicar (doc 13, tabla de desenlaces). Perder el maletín «en manos de Duval» es uno de los cuatro finales posibles (doc 13, Notas de A4-E03).</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "7WR0SL8SigPUEK5l",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.7WR0SL8SigPUEK5l",
+      "name": "Gancho de crónica: GAN-07 · El Arconte llama",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Doc 01:</strong> «Duval pide un favor que obliga a David a salir de la ciudad.»</li>\n<li><strong>Doc 09:</strong> el señor Pell mecanografió tres copias de los diarios de Vance. La copia 3 la envió Halloway a la Justicar Panhard en 2025, como regalo de buena voluntad. Duval, que conoció a Vance, la ha leído y quiere hablar con @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}. Le pide que viaje a Marsella. No es una orden. Todavía.<ul>\n<li><strong>David viaja:</strong> Duval le enseña la copia 3, que tiene folios que no están en las otras dos, incluidos los que hablan de Krell. David gana el favor de un Arconte (Mawla 2 temporal), pero se ausenta de Seattle durante una historia.</li>\n<li><strong>David se niega:</strong> Duval no insiste, pero toma nota. La próxima vez será una orden.</li>\n<li><strong>Panhard se interesa por Seattle:</strong> si el desenlace fue FIN-B, la Justicar manda a Duval a la ciudad a investigar. Llega con una pregunta: ¿quién es el Príncipe ahora?</li>\n</ul>\n</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

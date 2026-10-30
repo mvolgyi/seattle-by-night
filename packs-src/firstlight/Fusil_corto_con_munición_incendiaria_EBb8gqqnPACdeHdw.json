@@ -1,0 +1,51 @@
+{
+  "_id": "EBb8gqqnPACdeHdw",
+  "_key": "!items!EBb8gqqnPACdeHdw",
+  "name": "Fusil corto con munición incendiaria",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Agravado contra Vástagos (munición incendiaria). Lleva una linterna UV montada en el arma.</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "weaponType": "ranged",
+    "weaponvalue": 0,
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {
+      "d1": {
+        "path": "attributes.dexterity"
+      },
+      "d2": {
+        "path": "skills.firearms"
+      }
+    }
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "fusil-corto-incendiario",
+      "agravado": true
+    }
+  },
+  "folder": "V3bFRrOpZyD6Pr1m",
+  "sort": 80,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

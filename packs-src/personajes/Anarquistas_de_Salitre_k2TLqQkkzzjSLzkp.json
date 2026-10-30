@@ -1,0 +1,131 @@
+{
+  "_id": "k2TLqQkkzzjSLzkp",
+  "_key": "!actors!k2TLqQkkzzjSLzkp",
+  "name": "Anarquistas de Salitre",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 110,
+  "prototypeToken": {
+    "name": "Anarquistas de Salitre",
+    "actorLink": false,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "1bO7d7GAsCR0I3Q3",
+    "headers": {
+      "concept": "Unos quince Vástagos: estibadores, mecánicos, una enfermera, dos sangre débil",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Unos quince Vástagos: estibadores, mecánicos, una enfermera, dos sangre débil</td></tr><tr><th>Cantidad</th><td>15</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{Salitre}</td></tr></tbody></table><p>Estibadores, mecánicos, una enfermera, dos sangre débil. Votan cada viernes. Usá estas reservas para cualquiera sin nombre.</p>\n<p><strong>Disciplinas:</strong> Potencia 1 o Celeridad 1 (una u otra, a elección del Narrador).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>MEN-05 es el grupo de los Anarquistas de Salitre (doc 14, registro más nuevo). El doc 08 lo usaba para Bas Okonjo y Tavi Mercer como miembros con nombre; manda el doc 14, que les da reservas propias dentro de MEN-05.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 1,
+      "generation": ""
+    },
+    "disciplines": {},
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "craft": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-05",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 15,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

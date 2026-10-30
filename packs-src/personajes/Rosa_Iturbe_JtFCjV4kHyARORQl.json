@@ -1,0 +1,648 @@
+{
+  "_id": "JtFCjV4kHyARORQl",
+  "_key": "!actors!JtFCjV4kHyARORQl",
+  "name": "Rosa Iturbe",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "aMxEpfQ4AWpWbYKv",
+  "sort": 30,
+  "prototypeToken": {
+    "name": "Rosa Iturbe",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "1bO7d7GAsCR0I3Q3",
+    "headers": {
+      "concept": "Baronesa de Everett",
+      "chronicle": "Seattle by Night",
+      "ambition": "Que Everett sea un dominio libre reconocido por todos.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Nadie usa a un menor como rebaño</li><li>Las decisiones se votan</li></ul><h3>Piedras de toque</h3><ul><li><strong>Joe Barrientos</strong>: El soldador más viejo del astillero, que le guarda el turno de noche desde 1989.</li></ul>",
+      "sire": "Un Anarquista del astillero, desaparecido en 1999",
+      "generation": "11"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1961",
+        "death": "1991"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Perfil: Rosa «Salitre» Iturbe}</p><blockquote><p><em>«Acá nadie besa anillos. Acá se suelda.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>Salitre</td></tr><tr><th>Concepto</th><td>Baronesa de Everett</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Secta</th><td>Anarquistas</td></tr><tr><th>Sire</th><td>Un Anarquista del astillero, desaparecido en 1999</td></tr><tr><th>Nacimiento</th><td>1961</td></tr><tr><th>Abrazo</th><td>1991</td></tr><tr><th>Ambición</th><td>Que Everett sea un dominio libre reconocido por todos.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{Salitre}</td></tr></tbody></table><h3>Semblante</h3><p>Baja y compacta, pelo negro corto, quemaduras de soldadura en los antebrazos; mono de trabajo azul con el nombre bordado y botas con puntera de acero.</p>",
+    "appearance": "<p>Baja y compacta, pelo negro corto, quemaduras de soldadura en los antebrazos; mono de trabajo azul con el nombre bordado y botas con puntera de acero.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 2,
+      "generation": "11"
+    },
+    "humanity": {
+      "value": 7,
+      "stains": 0
+    },
+    "disciplines": {
+      "celerity": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 3,
+        "active": false
+      },
+      "charisma": {
+        "value": 4,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "craft": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Soldadura",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "leadership": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Asambleas",
+            "value": 1,
+            "paths": [
+              "skills.leadership"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "melee": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Herramientas",
+            "value": 1,
+            "paths": [
+              "skills.melee"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "politics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Anarquistas",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "brujah"
+        }
+      },
+      "name": "Brujah",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "gPzPdNbfeF2LQwqz",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.gPzPdNbfeF2LQwqz"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rapid Reflexes",
+          "homebrew": false
+        }
+      },
+      "name": "Rapid Reflexes",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celeridad 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-11"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "IIJryTooOvoDLoI3",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.IIJryTooOvoDLoI3"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-11"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "hKx9b2N1y80Wr2by",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.hKx9b2N1y80Wr2by"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potencia 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-11"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "8nrkjt6zMxIOj12I",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.8nrkjt6zMxIOj12I"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Awe",
+          "homebrew": false
+        }
+      },
+      "name": "Awe",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-11"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "HGiQAFkp26uUJDi0",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.HGiQAFkp26uUJDi0"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lingering Kiss",
+          "homebrew": false
+        }
+      },
+      "name": "Lingering Kiss",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-11"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "FqjKEswQaxJuWOCx",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.FqjKEswQaxJuWOCx"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados 3 y Rebaño 2 (el sindicato: estibadores y soldadores leales)"
+        }
+      },
+      "name": "Aliados",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados 3 y Rebaño 2 (el sindicato: estibadores y soldadores leales)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "XqaRktHCKasYqOQg",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.XqaRktHCKasYqOQg"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados 3 y Rebaño 2 (el sindicato: estibadores y soldadores leales)"
+        }
+      },
+      "name": "Rebaño",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados 3 y Rebaño 2 (el sindicato: estibadores y soldadores leales)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "P4ku3hXiZmALkvrf",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.P4ku3hXiZmALkvrf"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 2 (el puerto de Everett y la base naval)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 2 (el puerto de Everett y la base naval)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "lqKFMzwywiEVQI34",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.lqKFMzwywiEVQI34"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 2 (un casco de barco en dique seco, astillero viejo de Everett, LUG-10)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 2 (un casco de barco en dique seco, astillero viejo de Everett, LUG-10)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "mgKLaCQkwnfSsk8P",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.mgKLaCQkwnfSsk8P"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 2"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "gPBLTTQwdABACLIC",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.gPBLTTQwdABACLIC"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Los Anarquistas de Salitre (COT-03; MEN-05): unos quince Vástagos"
+        }
+      },
+      "name": "Los Anarquistas de Salitre",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Los Anarquistas de Salitre (COT-03; MEN-05): unos quince Vástagos</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "LoDvwMHT3bVqIzjs",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.LoDvwMHT3bVqIzjs"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-11",
+      "journal": "JournalEntry.WHkwE8CYfaKW5WyO",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

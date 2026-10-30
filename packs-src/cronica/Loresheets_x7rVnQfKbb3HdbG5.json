@@ -1,0 +1,140 @@
+{
+  "_id": "x7rVnQfKbb3HdbG5",
+  "_key": "!journal!x7rVnQfKbb3HdbG5",
+  "name": "Loresheets",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-LORESHEETS",
+      "archivo": "content/ciudad/loresheets.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "hf0l5o8u4dQ5fJPt",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.hf0l5o8u4dQ5fJPt",
+      "name": "Loresheets",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Estas tres Loresheets están ligadas a Seattle y a la aventura. Se compran con puntos de experiencia como cualquier Trasfondo. Un personaje solo puede tener una Loresheet a nivel 4 o 5, salvo que el Narrador diga otra cosa.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oGnroV6R68YdMQyD",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.oGnroV6R68YdMQyD",
+      "name": "LOR-01 · La Doctrina de la Furia Controlada",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Localiza. Evalúa. Ejecuta. Todo lo que viene después del primer golpe es la Bestia pidiendo permiso.»</em></p>\n<p>En los años cincuenta, el Brujah Marcus «Ironjaw» Vance (@UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus «Ironjaw» Vance}) desarrolló un método de combate y disciplina para cazar Vástagos sin perder el control de la propia Bestia. Lo enseñó a muy pocos, en sesiones brutales con agua fría y huesos rotos. Hoy la doctrina sobrevive en un puñado de ejecutores de la Camarilla en tres continentes. En Seattle la conocen dos: el que terminó la lección y el que no.</p>\n<p><strong>Requisito:</strong> haber sido entrenado por Vance o por alguien que tenga esta Loresheet a nivel 4 o más.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Nivel</th>\n<th>Nombre</th>\n<th>Efecto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>•</td>\n<td><strong>Localiza</strong></td>\n<td>Cuando persigues a un objetivo concreto (un Vástago al que te enviaron a buscar), ganas +1 dado en las tiradas de Consciencia e Investigación para encontrarlo.</td>\n</tr>\n<tr>\n<td>••</td>\n<td><strong>Evalúa</strong></td>\n<td>Una vez por escena, tras observar a un Vástago durante un turno, haz una tirada de Astucia + Perspicacia contra su Compostura + Subterfugio. Con un éxito, el Narrador te dice su nivel de Hambre y si intentará huir, pelear o negociar.</td>\n</tr>\n<tr>\n<td>•••</td>\n<td><strong>Ejecuta</strong></td>\n<td>Contra un objetivo al que hayas evaluado (nivel 2) en esta escena, tu primer ataque gana +2 dados. Si ese primer ataque falla, no puedes volver a usar este efecto en la escena.</td>\n</tr>\n<tr>\n<td>••••</td>\n<td><strong>La guardia completa</strong></td>\n<td>Reconoces la doctrina en cuanto la ves (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-03\"><span class=\"sbn-pista-id\">P-03</span> <span class=\"sbn-pista-nombre\">La técnica de la <em>Furia Controlada</em></span></button>, <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-08\"><span class=\"sbn-pista-id\">P-08</span> <span class=\"sbn-pista-nombre\">La guardia invertida</span></button>). Un rival que use la guardia invertida pierde 2 dados en sus reservas de defensa cuerpo a cuerpo contra ti. Además, ganas +1 dado para resistir el frenesí de furia durante un combate.</td>\n</tr>\n<tr>\n<td>•••••</td>\n<td><strong>Heredero del puño</strong></td>\n<td>Puedes enseñar la doctrina hasta el nivel 3. Una vez por historia, gasta 1 punto de Fuerza de Voluntad para superar automáticamente una tirada para resistir el frenesí en combate. Los Arcontes de la Camarilla conocen tu nombre, para bien y para mal.</td>\n</tr>\n</tbody></table>\n<p><strong>Tiradas:</strong> Evalúa: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.insight\" data-dificultad=\"0\" data-label=\"Astucia + Perspicacia (contra Compostura + Subterfugio)\"><i class=\"fa-solid fa-dice-d10\"></i> Astucia + Perspicacia (contra Compostura + Subterfugio)</a> · el objetivo resiste con <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.composure skills.subterfuge\" data-dificultad=\"0\" data-label=\"Compostura + Subterfugio\"><i class=\"fa-solid fa-dice-d10\"></i> Compostura + Subterfugio</a>.</p>\n<p><em>Nota: David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) tiene esta Loresheet a nivel 4 si el jugador está de acuerdo. Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}) tiene el nivel 2 y la guardia invertida, sin el nivel 4.</em></p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "LOR-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2fax8pORxdPqKspO",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.2fax8pORxdPqKspO",
+      "name": "LOR-02 · El Seattle subterráneo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«La ciudad de arriba es la que se ve. La de abajo es la que se acuerda.»</em></p>\n<p>Desde 1889, debajo de Pioneer Square hay calles, escaparates y aceras enterradas. Los turistas ven tres manzanas. Los Nosferatu ven el resto: túneles que conectan sótanos, cloacas, viejos conductos de vapor y galerías tapiadas que llegan hasta el puerto. Quien conoce el subterráneo conoce una ciudad que no aparece en ningún mapa.</p>\n<p><strong>Requisito:</strong> ninguno, aunque los niveles 4 y 5 requieren el permiso de Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}) o de su sucesor.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Nivel</th>\n<th>Nombre</th>\n<th>Efecto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>•</td>\n<td><strong>Atajos</strong></td>\n<td>En el centro y Pioneer Square, ganas +2 dados en las tiradas para escapar de una persecución o llegar antes a un sitio por debajo de las calles.</td>\n</tr>\n<tr>\n<td>••</td>\n<td><strong>El Mercado de Abajo</strong></td>\n<td>Tienes acceso al Mercado. Una vez por historia, puedes comprar una información concreta a cambio de un favor menor a los Topos (@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{COT-04 · Los Topos}).</td>\n</tr>\n<tr>\n<td>•••</td>\n<td><strong>Refugio sellado</strong></td>\n<td>Conoces una galería tapiada que solo tú sabes abrir. Funciona como un Refugio 1 adicional, con la ventaja Oculto, y está a menos de diez minutos de cualquier punto del centro.</td>\n</tr>\n<tr>\n<td>••••</td>\n<td><strong>La Madre</strong></td>\n<td>Sabes dónde duerme la Madre de Abajo. Una vez por crónica, puedes despertarla un momento para hacerle una pregunta. Ella sabe cosas de antes de 1889. El precio lo pone ella.</td>\n</tr>\n<tr>\n<td>•••••</td>\n<td><strong>Arquitecto de abajo</strong></td>\n<td>Puedes abrir y cerrar secciones de las Galerías. Una vez por historia, puedes crear un Portillon nuevo para tu coterie (+1 Portillon en un dominio del centro). Los Nosferatu de Seattle te tratan como si fueras del clan.</td>\n</tr>\n</tbody></table>\n<p><em>Lugar: las Galerías Selladas (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}).</em></p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "LOR-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qA75WygzgVjOeJvT",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.qA75WygzgVjOeJvT",
+      "name": "LOR-03 · Los ojos de la ciudad",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Vemos lo que la ciudad no ve.» (Lema de Gale Sentinel)</em></p>\n<p>Seattle tiene más cámaras que farolas: timbres, tráfico, transporte público, tiendas, drones de reparto. Casi todas están conectadas. Los Vástagos que entienden esta red pueden usarla a su favor. Los que no la entienden terminan en un expediente.</p>\n<p><strong>Requisito:</strong> Tecnología 2 o más, o un contacto que la tenga.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Nivel</th>\n<th>Nombre</th>\n<th>Efecto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>•</td>\n<td><strong>Puntos ciegos</strong></td>\n<td>Sabes qué zonas de la ciudad tienen menos cámaras y a qué horas fallan. Ganas +1 dado en Sigilo contra vigilancia electrónica.</td>\n</tr>\n<tr>\n<td>••</td>\n<td><strong>Acceso</strong></td>\n<td>Una vez por sesión, haz una tirada de Inteligencia + Tecnología (Dificultad 3) para ver las grabaciones de timbres y cámaras de tráfico de un lugar concreto de las últimas 72 horas.</td>\n</tr>\n<tr>\n<td>•••</td>\n<td><strong>Borrar</strong></td>\n<td>Sabes hacerte desaparecer de las grabaciones. Una vez por historia, cuando el Termómetro de FIRSTLIGHT fuera a subir por culpa de una cámara, no sube.</td>\n</tr>\n<tr>\n<td>••••</td>\n<td><strong>Sujeto frío</strong></td>\n<td>Conoces el modelo ANOMALY de Gale Sentinel y sabes engañarlo con ropa térmica, calor o interferencias. Las cámaras ANOMALY no registran a los miembros de tu coterie si os preparáis antes (una tirada de Inteligencia + Tecnología, Dificultad 4, por escena).</td>\n</tr>\n<tr>\n<td>•••••</td>\n<td><strong>El ojo dentro</strong></td>\n<td>Tienes un contacto de confianza dentro de Gale Sentinel o de Northline. Una vez por historia, puedes saber el valor actual del Termómetro y cuál es el próximo objetivo de FIRSTLIGHT.</td>\n</tr>\n</tbody></table>\n<p><strong>Tiradas:</strong> Acceso: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"3\" data-label=\"Inteligencia + Tecnología (Dificultad 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Inteligencia + Tecnología (Dificultad 3)</a> · Sujeto frío: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"4\" data-label=\"Inteligencia + Tecnología (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Inteligencia + Tecnología (Dificultad 4)</a>.</p>\n<p><em>Nota: Ezra Lund (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}) es el candidato natural a esta Loresheet. Si descubre que el firmware de Gale es suyo (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} o @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}), puede comprar el nivel 4 sin necesidad de entrenamiento.</em></p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "LOR-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

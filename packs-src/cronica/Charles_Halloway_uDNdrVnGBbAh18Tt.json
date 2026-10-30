@@ -1,0 +1,334 @@
+{
+  "_id": "uDNdrVnGBbAh18Tt",
+  "_key": "!journal!uDNdrVnGBbAh18Tt",
+  "name": "Charles Halloway",
+  "folder": "4VxyQrs1CgnTxs3c",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-03",
+      "archivo": "content/personajes/PNJ-03.md",
+      "actor": "Actor.ys08GDwMs80NuOlf"
+    }
+  },
+  "pages": [
+    {
+      "_id": "vFtM2oLh7tK2E5rb",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.vFtM2oLh7tK2E5rb",
+      "name": "Charles Halloway",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway}</p>\n<p><em>«Esta ciudad no necesita un Príncipe que mire. Necesita uno que vea.»</em></p>\n<p><strong>Clan:</strong> Ventrue · <strong>Cargo:</strong> Primogénito Ventrue · <strong>Secta:</strong> Camarilla · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> antagonista principal</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3Ewx6XyfUyb7958a",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.3Ewx6XyfUyb7958a",
+      "name": "Días mortales: el heredero de los periódicos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Charles Halloway nació en 1921 en una familia de Seattle que había hecho fortuna con la madera y la había multiplicado con la prensa. A los treinta años dirigía tres periódicos y una emisora de radio. Era frío, metódico y muy paciente. Su padre le había enseñado que una noticia no se publica cuando ocurre, sino cuando conviene. Él aprendió además que una noticia que no se publica puede valer todavía más.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ylkZRUKsJ7v1U90G",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.ylkZRUKsJ7v1U90G",
+      "name": "Noches de Vástago: el que aprendió mirando",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La Príncipe Adelaide Grange lo Abrazó en 1958 por sus contactos en la prensa. Cuatro años después, Whitmore la echó de la ciudad con un chantaje de fotos y documentos, y Halloway entendió dos cosas. La primera, que su sire había sido derrotada sin una gota de sangre. La segunda, que el método funcionaba.</p>\n<p>En 1978 lo usó contra O&#39;Connor. En 1986 compró los diarios de Vance pensando que algún día le servirían contra el Sabueso del Sheriff. Desde entonces ha esperado. Ha acumulado dinero (Halloway Meridian Capital), información (Thornquist) y paciencia. Hace un año empezó a escribir a la Justicar Panhard. En 2026, con la ciudad llena de cámaras y la Segunda Inquisición en la puerta, decidió que ya había esperado suficiente.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "XKh4AAK9aIwkHnq9",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.XKh4AAK9aIwkHnq9",
+      "name": "Planes y maquinaciones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>El Expediente.</strong> Su ghoul Preston Gale encontró el archivo de Helen usando los datos de los timbres de su empresa. El equipo @UUID[Actor.9rv5Jdb3y6bZZ1fj]{Lonnie Barras} lo robó la Noche 1. Halloway lo guarda en su bóveda (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}) a partir de la Noche 6.</p>\n<p><strong>El fantasma.</strong> Contrató a August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}) con la promesa de &quot;darle lo que Vance le negó&quot;: un nombre, un lugar, un reconocimiento. Krell destruye a los compradores de copias imitando la Furia Controlada.</p>\n<p><strong>ARQUERO.</strong> A través de Gale, entrega a FIRSTLIGHT fragmentos del Expediente que solo apuntan a los activos del Príncipe y del Sheriff (@UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}). Cuando llegue la redada, pedirá una regencia &quot;para proteger la Mascarada&quot;.</p>\n<p><strong>La chiquilla sacrificable.</strong> Si las cosas salen mal, las cuentas de la filtración llevan a Celeste Arden (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}) o a su sustituto PNJ (@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby}). La ofrecerá como traidora en el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}) sin pestañear.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ApzvqtfNC9y9int2",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.ApzvqtfNC9y9int2",
+      "name": "Dominio y refugio",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La Torre Halloway en el centro, con ático y bóveda (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}; Refugio 4). También controla el Eastside. Se alimenta solo de mortales que han firmado un contrato con él (restricción Ventrue): empleados, socios, deudores. Cree que una firma es una forma de consentimiento y nunca ha pensado si la gente sabía lo que firmaba.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "rRR0pfpClFxyo4q5",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.rRR0pfpClFxyo4q5",
+      "name": "Siervos y herramientas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Preston Gale</strong> (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}; Aliado 3): ghoul, consejero delegado de Gale Sentinel.</p>\n<p><strong>@UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell}</strong>: su archivista ghoul desde 1958. Un anciano de 96 años que aparenta 60, que mecanografió las tres copias de los diarios de Vance y que sabe dónde está todo.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición</h4><p>El doc 06 decía que Pell es su ghoul «desde 1950», antes del Abrazo de Halloway (1958); se decidió «desde 1958». Los 96 años y el aspecto de 60 se mantienen: lo hicieron ghoul a los 28 y envejeció en las épocas en que Halloway lo tuvo sin Vitae.</p>\n</aside>\n<p><strong>Halloway Meridian Capital</strong> (Recursos 5, Influencia 4 en finanzas y medios).</p>\n<p><strong>Seguridad</strong> (@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}): ghouls armados en la torre y en Gale Sentinel.</p>\n<p><strong>Contactos 3</strong>: prensa, ayuntamiento y la oficina de un senador estatal.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "D76mFPj2H9qxXHUe",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.D76mFPj2H9qxXHUe",
+      "name": "Relaciones con Vástagos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</strong> (desprecio). Le arrebató a su sire con un truco. Halloway lleva sesenta años preparando el mismo truco.</p>\n<p><strong>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</strong> (temor). Es el único que podría destruirlo sin juicio. Por eso hay que hacer que dude de su Sabueso.</p>\n<p><strong>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}</strong> (cálculo). Una pieza que hay que sacar del tablero, no destruir. Destruirlo levantaría sospechas.</p>\n<p><strong>@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}</strong> (desdén). Un perro herido al que le prometió un hueso.</p>\n<p><strong>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}</strong> (posesión). La creó. Es suya. Puede gastarla.</p>\n<p><strong>La Justicar Panhard</strong> (esperanza). Si ella reconoce su regencia, nadie en Seattle podrá oponerse.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UTUvbcyc8qFRNtly",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.UTUvbcyc8qFRNtly",
+      "name": "Susurros",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>«Halloway hizo caer a O&#39;Connor.» <em>(Verdad.)</em></li>\n<li>«Halloway es el chiquillo de la antigua Príncipe Grange.» <em>(Verdad. Poca gente lo recuerda.)</em></li>\n<li>«Halloway tiene a la Justicar en el bolsillo.» <em>(Falso. Ella no le ha contestado.)</em></li>\n<li>«Halloway sabe dónde está Grange.» <em>(Falso. Lo daría todo por saberlo.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "v4qhpVeBCwVQEHos",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.v4qhpVeBCwVQEHos",
+      "name": "Máscara y semblante",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Para el mundo mortal es Charles Halloway Jr., nieto del fundador y presidente recluso de un fondo de inversión, que no aparece en público por una enfermedad crónica y solo atiende reuniones por videollamada, con la cámara apagada (Máscara 3). Aparenta unos cuarenta años. Es delgado y de estatura media, de pelo negro con raya al lado, y tiene unos ojos castaños que parecen cansados. Viste trajes oscuros de corte clásico, camisa blanca y corbata fina. Sus manos no se mueven cuando habla. Nunca interrumpe. Sonríe cuando pierde.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "mAIghRsYWfKbGRkk",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.mAIghRsYWfKbGRkk",
+      "name": "Datos de referencia",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> Adelaide Grange (@UUID[JournalEntry.FOgT9FF3NF7ZHdCa]{Adelaide Grange})</li>\n<li><strong>Abrazado:</strong> 1958 (nacido en 1921)</li>\n<li><strong>Ambición:</strong> la corona de Seattle.</li>\n<li><strong>Convicciones:</strong> «El orden es un servicio, no un privilegio» · «Nunca dejar que te vean mancharte».</li>\n<li><strong>Piedra de toque:</strong> Margaret Halloway, su sobrina nieta de 22 años, estudiante de periodismo, que cree que su tío abuelo es un benefactor anónimo de su beca.</li>\n<li><strong>Humanidad:</strong> 5</li>\n<li><strong>Generación:</strong> 9.ª</li>\n<li><strong>Potencia de Sangre:</strong> 3</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sn0labSTvnE1xegJ",
+      "_key": "!journal.pages!uDNdrVnGBbAh18Tt.sn0labSTvnE1xegJ",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Atributos:</strong> Fuerza 2, Destreza 2, Resistencia 3 · Carisma 3, Manipulación 5, Compostura 4 · Inteligencia 4, Astucia 4, Resolución 4</p>\n<p><strong>Atributos secundarios:</strong> Salud 6 · Fuerza de Voluntad 8</p>\n<p><strong>Habilidades:</strong> Academicismo 2, Consciencia 3, Etiqueta 4 (Camarilla), Finanzas 5 (Sociedades pantalla), Intimidación 3 (Silencios), Investigación 3, Liderazgo 3, Perspicacia 4, Persuasión 4 (Negociación), Política 5 (Golpes de mano), Subterfugio 5 (Mentir sin mentir), Tecnología 1</p>\n<p><strong>Disciplinas:</strong></p>\n<ul>\n<li>Dominación 4: Obligar (<em>Compel</em>), Hipnotizar (<em>Mesmerize</em>), Mente olvidadiza (<em>Forgetful Mind</em>), Racionalizar (<em>Rationalize</em>)</li>\n<li>Fortaleza 2: Mente inquebrantable (<em>Unswayable Mind</em>), Dureza (<em>Toughness</em>)</li>\n<li>Presencia 3: Asombro (<em>Awe</em>), Pavor (<em>Daunt</em>), Mirada aterradora (<em>Dread Gaze</em>)</li>\n</ul>\n<p><strong>En combate:</strong> Halloway no pelea. Si se ve acorralado, usa Mirada aterradora y huye con el ascensor privado. Su reserva defensiva es Destreza + Astucia (6).</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición</h4><p>El doc 06 le daba cinco poderes de Dominación con 4 puntos y tres de Fortaleza con 2; en V5 hay uno por punto. Se quitaron Nublar la memoria (<em>Cloud Memory</em>), que Mente olvidadiza ya cubre, y Resiliencia (<em>Resilience</em>), que su Salud 6 no incluye.</p>\n</aside>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

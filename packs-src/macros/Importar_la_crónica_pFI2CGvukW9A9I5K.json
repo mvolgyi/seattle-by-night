@@ -1,0 +1,25 @@
+{
+  "_id": "pFI2CGvukW9A9I5K",
+  "_key": "!macros!pFI2CGvukW9A9I5K",
+  "name": "Importar la crónica",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/down.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"Seattle by Night: el módulo no está activo en este mundo.\");\nawait api.importarCronica();",
+  "folder": null,
+  "sort": 500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "importar"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

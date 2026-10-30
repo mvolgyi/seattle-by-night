@@ -1,0 +1,42 @@
+{
+  "_id": "6gE4GPSjqnkeViZJ",
+  "_key": "!items!6gE4GPSjqnkeViZJ",
+  "name": "Gafas térmicas",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<p>Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "gafas-termicas",
+      "agravado": false
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 40,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "_id": "doLuya2qqzFb2wqn",
+  "_key": "!actors!doLuya2qqzFb2wqn",
+  "name": "Halvard Brekke",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 50,
+  "prototypeToken": {
+    "name": "Halvard Brekke",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "ex pescador de cangrejo, chiquillo del Sheriff Montgomery y miembro de su jauría.",
+      "chronicle": "Seattle by Night",
+      "ambition": "ganarse su propio dominio",
+      "desire": "que Montgomery le diga una vez que lo hizo bien",
+      "touchstones": "<h3>Convicciones</h3><ul><li>No dejar a nadie en el agua</li></ul><h3>Piedras de toque</h3><ul><li>su sobrina Ingrid, que hoy capitanea el barco familiar y le guarda un sitio en la mesa de Navidad aunque nunca va</li></ul>",
+      "sire": "Ethan Montgomery",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.B4nqUk8dojvCw97H]{Perfil: Halvard «Hal» Brekke}</p><blockquote><p><em>El lobo de Ballard</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>Hal</td></tr><tr><th>Concepto</th><td>ex pescador de cangrejo, chiquillo del Sheriff Montgomery y miembro de su jauría.</td></tr><tr><th>Clan</th><td>Gangrel</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</td></tr><tr><th>Depredador</th><td>Alleycat</td></tr><tr><th>Ambición</th><td>ganarse su propio dominio</td></tr><tr><th>Deseo</th><td>que Montgomery le diga una vez que lo hizo bien</td></tr><tr><th>Foco</th><td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</td></tr><tr><th>Brilla en</th><td>A1-E02 (rastreo), A3-E01, A3-E04 y A4-E02.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{Los Lobos de Whitmore}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "gangrel"
+        }
+      },
+      "name": "Gangrel",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "miPiUxKnN0yhQJQs",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.miPiUxKnN0yhQJQs"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Alleycat",
+      "type": "predatorType",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "dicepool": {}
+      },
+      "_id": "OcW9cBiTT58tu9wd",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.OcW9cBiTT58tu9wd"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados (estibadores) 2"
+        }
+      },
+      "name": "Aliados (estibadores)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados (estibadores) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "GuqFnC7XC1FOWzCC",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.GuqFnC7XC1FOWzCC"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos (policía portuaria) 1"
+        }
+      },
+      "name": "Contactos (policía portuaria)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos (policía portuaria) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "9d68SqmwPf8SF8rY",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.9d68SqmwPf8SF8rY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Montgomery) 2"
+        }
+      },
+      "name": "Mawla (Montgomery)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Montgomery) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "53gqomrHWI6gWyac",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.53gqomrHWI6gWyac"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 1 (un barco amarrado en Salmon Bay)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 1 (un barco amarrado en Salmon Bay)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "SGPumSkw0E0VPnPM",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.SGPumSkw0E0VPnPM"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-05",
+      "journal": "JournalEntry.B4nqUk8dojvCw97H",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

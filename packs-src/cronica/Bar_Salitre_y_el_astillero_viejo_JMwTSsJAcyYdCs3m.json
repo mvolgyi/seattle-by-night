@@ -1,0 +1,109 @@
+{
+  "_id": "JMwTSsJAcyYdCs3m",
+  "_key": "!journal!JMwTSsJAcyYdCs3m",
+  "name": "Bar Salitre y el astillero viejo",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-10",
+      "archivo": "content/ciudad/LUG-10.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "kHKmS1cPIXdSTWXF",
+      "_key": "!journal.pages!JMwTSsJAcyYdCs3m.kHKmS1cPIXdSTWXF",
+      "name": "Bar Salitre y el astillero viejo",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Everett · Dominio Anarquista · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pMDUdoywotLTx8f3",
+      "_key": "!journal.pages!JMwTSsJAcyYdCs3m.pMDUdoywotLTx8f3",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>El bar está junto a un astillero cerrado, con grúas oxidadas que se recortan contra el cielo. Por dentro hay mesas de madera marcada, una barra hecha con un casco de barco partido y fotos de huelgas antiguas en las paredes. La gente deja de hablar cuando entran. Una mujer de pelo corto, con las manos manchadas de grasa, apoya los codos en la barra y los mira como quien mide una herida.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "imtJxgzvANBmOMOo",
+      "_key": "!journal.pages!JMwTSsJAcyYdCs3m.imtJxgzvANBmOMOo",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> el bar (abierto al público mortal hasta las dos), la trastienda (reuniones), el astillero (refugios dentro de tres cascos de barco en dique seco) y la grada de botadura, desde donde se ve venir cualquier coche por la única carretera.</p>\n<p><strong>Trasfondos de @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{COT-03 · Salitre}:</strong> Refugio 2, Rebaño 2 (estibadores sindicalistas), Aliados 2.</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}. Es también el escenario de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.0e8h94hwnGDTnixI]{GAN-06 · Caza de Sangre en Everett}.</p>\n<p><strong>Tensión:</strong> si David entra, @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa} sabe quién es y qué pasó en 1996. Y él no sabe lo que ella hizo (@UUID[JournalEntry.j4MhqWVhWECuqaA3]{rumor 11}).</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

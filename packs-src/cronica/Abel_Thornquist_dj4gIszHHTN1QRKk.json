@@ -1,0 +1,334 @@
+{
+  "_id": "dj4gIszHHTN1QRKk",
+  "_key": "!journal!dj4gIszHHTN1QRKk",
+  "name": "Abel Thornquist",
+  "folder": "TKRk3O4Lga1UAX2a",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-13",
+      "archivo": "content/personajes/PNJ-13.md",
+      "actor": "Actor.NDI68PA4J59Be6ts"
+    }
+  },
+  "pages": [
+    {
+      "_id": "S3Ox2IsYC1v8eqkZ",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.S3Ox2IsYC1v8eqkZ",
+      "name": "Abel Thornquist",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.NDI68PA4J59Be6ts]{Abel Thornquist}</p>\n<p><em>«Todo se vende abajo. Lo único que cambia es quién paga.»</em></p>\n<p><strong>Clan:</strong> Nosferatu · <strong>Cargo:</strong> Primogénito · <strong>Secta:</strong> Camarilla</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "YKuPifGuRSZNGCuc",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.YKuPifGuRSZNGCuc",
+      "name": "Días mortales: el carpintero de la ciudad nueva",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Abel Thornquist llegó de Suecia en 1887 con una caja de herramientas y nada más. Dos años después ardió la ciudad, y en la reconstrucción hubo trabajo para todos. Él construía las estructuras de madera que sostenían las calles nuevas sobre las viejas. Fue de los primeros en bajar a los sótanos que quedaban debajo. En el invierno de 1890 se derrumbó un tramo en Pioneer Square y quedó atrapado tres días en la oscuridad, con una pierna rota y el agua subiendo.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "fA7QjhmVpK8ppljw",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.fA7QjhmVpK8ppljw",
+      "name": "Noches de Vástago: el corredor",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Lo encontró una Nosferatu que vivía allí desde antes del incendio, una vieja a la que en el subterráneo todavía llaman «la Madre». Le dio a elegir entre morir ahogado o quedarse. Él eligió quedarse, y se quedó más de un siglo. Cuando la Madre entró en letargo en los años cuarenta, Thornquist heredó las Galerías Selladas y todo lo que se movía por ellas: secretos, favores, contrabando, personas.</p>\n<p>No es cruel, pero tampoco es amable. Es comerciante. Ha vendido información a todos los Príncipes de la ciudad y a sus enemigos. Protege a los sangre débil de los muelles porque le traen noticias de la superficie y cobra esa protección en favores. Abrazó a Ezra Lund (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}) en 2019 porque entendió antes que nadie que el subterráneo del siglo XXI está hecho de cables, no de piedra.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hNX7hdDkzMEjR8N7",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.hNX7hdDkzMEjR8N7",
+      "name": "Planes y maquinaciones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>La subasta del Expediente.</strong> Thornquist ya tiene dos copias parciales del Expediente, compradas a Jun Takeda sin que ella supiera qué llevaba. Está organizando discretamente una subasta en el Mercado de Abajo. No sabe que Krell está destruyendo a los compradores.</p>\n<p><strong>El voto más caro.</strong> Sabe que Halloway va a presentar una moción contra el Príncipe. Está esperando ofertas de los dos lados.</p>\n<p><strong>El firmware.</strong> Sospecha que Ezra escribió el código de Gale Sentinel. No se lo ha dicho. Está esperando a que valga más.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KGXIfApxr6akRhjw",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.KGXIfApxr6akRhjw",
+      "name": "Dominio y refugio",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Las Galerías Selladas, bajo Pioneer Square (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}; Refugio 4). Se alimenta de personas sin hogar que duermen en los accesos más bajos del subterráneo. A cambio les ofrece un lugar seco, mantas y la seguridad de que nadie más los molesta. La mayoría no recuerda la parte de la alimentación. Los que la recuerdan siguen volviendo.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2uTfdvTexpN0K0b0",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.2uTfdvTexpN0K0b0",
+      "name": "Siervos y herramientas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>El Mercado de Abajo</strong> (Influencia 3 en el subterráneo): una red de vendedores, recaderos y mirones.</p>\n<p><strong>Los sangre débil</strong> (Aliados 2): una docena de jóvenes que recogen información en la superficie.</p>\n<p><strong>Contactos 4</strong>: policías, porteros, empleados de limpieza nocturna y técnicos de mantenimiento de toda la ciudad.</p>\n<p><strong>Ezra Lund</strong>: su chiquillo y su mejor inversión.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "bwdBoCqJcyBvEBS6",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.bwdBoCqJcyBvEBS6",
+      "name": "Relaciones con Vástagos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra Lund}</strong> (orgullo). Es el único Vástago al que no le cobra. Ezra todavía no lo sabe.</p>\n<p><strong>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</strong> (cálculo). Buen cliente, mal socio. Le ha vendido información durante cuarenta años.</p>\n<p><strong>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</strong> (respeto). El único que nunca intentó regatearle.</p>\n<p><strong>@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}</strong> (culpa). Le encargó entregas sin decirle qué llevaba. Si Krell la mata, será en parte culpa suya.</p>\n<p><strong>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}</strong> (cautela). Le vende información sobre Vástagos fuera de control. Sabe que, si alguna vez el Sabueso decide que el problema es él, no habrá túnel suficiente.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "zmQnUkwX88DRADKL",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.zmQnUkwX88DRADKL",
+      "name": "Susurros",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>«La Madre de Abajo sigue viva en algún rincón de las Galerías y Thornquist la alimenta.» <em>(Verdad: está en letargo y él le lleva sangre una vez al año.)</em></li>\n<li>«Thornquist tiene una copia del Expediente.» <em>(Verdad: dos copias parciales.)</em></li>\n<li>«Thornquist puede ver por cualquier cámara de la ciudad.» <em>(Falso: el que podría es Ezra.)</em></li>\n<li>«Thornquist vendió a O&#39;Connor en el 78.» <em>(Falso, aunque le vendió a Halloway el nombre del fotógrafo.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "dkSlX1r8K9xL12CY",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.dkSlX1r8K9xL12CY",
+      "name": "Máscara y semblante",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>No tiene Máscara mortal (Máscara 0). Es enorme y encorvado. La piel parece madera mojada, gris y agrietada, y tiene la mandíbula torcida por la caída de 1890 y los dedos largos como raíces. Viste un traje de tres piezas de los años veinte, remendado mil veces, y un reloj de bolsillo que no funciona. Habla con acento sueco, en voz baja, como si cada palabra costara dinero. Lleva siempre una lámpara de carburo, aunque no le hace falta.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "F3b37dbRcZTthFuc",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.F3b37dbRcZTthFuc",
+      "name": "Datos de referencia",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> «la Madre de Abajo»</li>\n<li><strong>Abrazado:</strong> 1890 (nacido en 1863)</li>\n<li><strong>Ambición:</strong> que nadie pueda gobernar Seattle sin pasar por abajo.</li>\n<li><strong>Convicciones:</strong> «Un trato es un trato» · «Lo que se entierra no se pierde».</li>\n<li><strong>Piedra de toque:</strong> Dee Watkins, trabajadora de un albergue de Pioneer Square, que deja la puerta trasera abierta para «los de abajo» y nunca hace preguntas.</li>\n<li><strong>Humanidad:</strong> 6</li>\n<li><strong>Generación:</strong> 9.ª</li>\n<li><strong>Potencia de Sangre:</strong> 4</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "nbbmuMAw1LQekWJK",
+      "_key": "!journal.pages!dj4gIszHHTN1QRKk.nbbmuMAw1LQekWJK",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Atributos:</strong> Fuerza 4, Destreza 2, Resistencia 4 · Carisma 2, Manipulación 4, Compostura 4 · Inteligencia 3, Astucia 4, Resolución 3</p>\n<p><strong>Atributos secundarios:</strong> Salud 7 · Fuerza de Voluntad 7</p>\n<p><strong>Habilidades:</strong> Artesanía 3 (Carpintería), Callejeo 4 (Mercado negro), Consciencia 3, Finanzas 3 (Favores), Intimidación 3, Investigación 3, Pelea 3, Perspicacia 4 (Mentiras), Persuasión 3 (Regateo), Sigilo 4 (Túneles), Subterfugio 3</p>\n<p><strong>Disciplinas:</strong></p>\n<ul>\n<li>Animalismo 2: Sentir a la Bestia (<em>Sense the Beast</em>), Susurros salvajes (<em>Feral Whispers</em>; ratas)</li>\n<li>Ofuscación 4: Manto de sombras (<em>Cloak of Shadows</em>), Paso invisible (<em>Unseen Passage</em>), Máscara de mil caras (<em>Mask of a Thousand Faces</em>), Desvanecerse (<em>Vanish</em>)</li>\n<li>Potencia 2: Cuerpo letal (<em>Lethal Body</em>), Proeza (<em>Prowess</em>)</li>\n</ul>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

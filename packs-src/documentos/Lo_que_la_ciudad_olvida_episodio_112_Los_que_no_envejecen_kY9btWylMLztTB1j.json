@@ -1,0 +1,86 @@
+{
+  "_id": "kY9btWylMLztTB1j",
+  "_key": "!journal!kY9btWylMLztTB1j",
+  "name": "«Lo que la ciudad olvida», episodio 112: «Los que no envejecen»",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-02",
+      "archivo": "content/documentos/DOC-02.md",
+      "soporte": "guion",
+      "entrega": [
+        "sesion-cero",
+        "A1-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "7k0vBu3GS4lKk5eQ",
+      "_key": "!journal.pages!kY9btWylMLztTB1j.7k0vBu3GS4lKk5eQ",
+      "name": "«Lo que la ciudad olvida», episodio 112: «Los que no envejecen»",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-guion\"><p class=\"sbn-doc-titulo\">LO QUE LA CIUDAD OLVIDA</p>\n<p>Episodio 112 — «Los que no envejecen»</p>\n<p>Emitido el 03/10/2026 · Guion de grabación v4 · Producción: N. Ferro</p>\n<p class=\"sbn-acotacion sbn-guion-direccion\">[SINTONÍA. 12 s. Baja bajo la voz.]</p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">HELEN</span> <span class=\"sbn-guion-texto\">Hay una foto que no voy a enseñarles. No porque no la tenga. La tengo. La tengo desde hace once años y la miro más de lo que debería. Es una foto de un incendio en Tacoma, y en la foto hay un hombre de espaldas al fuego. Y hay otra foto, del año pasado, en los muelles. Y es el mismo hombre.</span></p>\n<p class=\"sbn-acotacion sbn-nota-margen\">[Nota de N.F. en margen: pausa de 2 s acá. Dejala respirar.]</p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">HELEN</span> <span class=\"sbn-guion-texto\">No el mismo tipo de hombre. El mismo. La misma cicatriz, la misma forma de pararse. Once años y no envejeció un día. Ustedes van a decir que es un hermano, un hijo, un doble. Yo también lo dije. Después encontré a otros.</span></p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">HELEN</span> <span class=\"sbn-guion-texto\">Una fuente que no puedo nombrar, y que me escribe siempre a la misma hora, me mandó la semana pasada un mapa. En el mapa había puntos donde, según esta fuente, la ciudad &quot;pierde la memoria&quot;. Edificios donde las cámaras fallan siempre en la misma franja horaria. Bares donde nadie recuerda haber visto a ciertos clientes. Un trozo del puerto donde los informes de incidentes desaparecen solos.</span></p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">HELEN</span> <span class=\"sbn-guion-texto\">No sé qué es esto. Sé lo que no es. No es casualidad.</span></p>\n<p class=\"sbn-acotacion sbn-guion-direccion\">[CORTE A LLAMADA DE OYENTE. Voz masculina, mayor. Identificado en pantalla como «W.».]</p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">OYENTE (W.)</span> <span class=\"sbn-guion-texto\">Hola, Helen. Te escucho desde el principio. Quería decirte que no estás loca. Y que tengas cuidado, porque los que no envejecen tampoco olvidan. Y que la lluvia tiene oídos. Eso es todo. Ah, y que me gusta la música nueva.</span></p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">HELEN</span> <span class=\"sbn-guion-texto\">Gracias, W. Siempre llamás vos.</span></p>\n<p class=\"sbn-acotacion sbn-nota-margen\">[Nota de N.F.: dejamos la llamada. Es perfecta.]</p>\n<p class=\"sbn-guion-linea\"><span class=\"sbn-guion-personaje\">HELEN</span> <span class=\"sbn-guion-texto\">La semana que viene: tres muertes en Crown Hill que el condado llama sobredosis. Y una madre que dice que su hijo les tenía miedo a las agujas.</span></p>\n<p class=\"sbn-acotacion sbn-guion-direccion\">[SINTONÍA. Fin.]</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "HQhyxCxILrvYuWbX",
+      "_key": "!journal.pages!kY9btWylMLztTB1j.HQhyxCxILrvYuWbX",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> guion de pódcast con anotaciones de producción. <strong>Cuándo:</strong> en la sesión cero, para que los jugadores sepan qué emite Helen, o en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}.</p>\n<p><strong>Presagia:</strong> este episodio es el que pone a FIRSTLIGHT en alerta (@UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}). Las &quot;fuentes anónimas&quot; son Nadia (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}).</p>\n<p><strong>Verdad:</strong> Helen no publicó las fotos de David, pero describió el patrón. Una analista de Northline escuchó el episodio tres veces.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

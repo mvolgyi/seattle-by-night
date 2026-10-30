@@ -1,0 +1,305 @@
+{
+  "_id": "kyikdMQEZahzOnLJ",
+  "_key": "!journal!kyikdMQEZahzOnLJ",
+  "name": "La ciudad · Historia reciente",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-HISTORIA",
+      "archivo": "content/ciudad/00-historia.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "Z7JdwQg0MV6yALY9",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.Z7JdwQg0MV6yALY9",
+      "name": "La ciudad · Historia reciente",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Seattle se construyó dos veces. La primera ciudad ardió en 1889 y la segunda se levantó encima, un piso más arriba, dejando las calles viejas enterradas debajo de las nuevas. Los Vástagos que la gobiernan nunca olvidaron la lección: lo que se entierra no desaparece, solo cambia de dueño.</p>\n<p>Este capítulo describe la Seattle Vástaga de noviembre de 2026: cómo llegó hasta aquí, quién manda, qué se dice en el Elíseo y dónde ocurren las cosas.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "70qOmOX0Eje3U9l5",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.70qOmOX0Eje3U9l5",
+      "name": "La ciudad enterrada (1889–1931)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El Gran Incendio de 1889 destruyó el centro de madera de Seattle. Cuando la ciudad se reconstruyó, las calles se elevaron hasta un piso por encima del nivel original y los primeros pisos de los edificios quedaron convertidos en sótanos, pasillos y galerías olvidadas. Los Nosferatu los reclamaron antes de que se secara el barro. Desde entonces, lo que pasa debajo de Pioneer Square es asunto de ellos.</p>\n<p>La primera Camarilla de la ciudad fue pequeña y portuaria: un puñado de Vástagos que vivían del comercio con Alaska, de la fiebre del oro y de los marineros que nadie echaba de menos. La Príncipe @UUID[JournalEntry.FOgT9FF3NF7ZHdCa]{Adelaide Grange}, una Ventrue de Boston, gobernó desde 1897 con mano de contable. En 1931 nombró Sheriff a un Brujah irlandés de los muelles, Liam O&#39;Connor (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}), porque nadie conocía el puerto mejor que él.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ZGhw2vu1b8sCG9jF",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.ZGhw2vu1b8sCG9jF",
+      "name": "La Feria y el Príncipe de cristal (1962–1978)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En 1962, Seattle celebró la Feria Mundial y se presentó al país como la ciudad del futuro. Esa misma primavera, Grange dejó la ciudad &quot;por motivos de salud&quot; y no volvió a ser vista. Marcus Whitmore (@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}), un Toreador que había llegado de San Francisco diez años antes, ocupó el trono con el apoyo de la mitad de la Primogenitura y el silencio de la otra mitad. Su primer acto como Príncipe fue fundar la Galería de Vidrio (@UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}) en los terrenos de la Feria y declararla Elíseo.</p>\n<p>Whitmore entendió algo que Grange nunca vio: en una ciudad que mira hacia delante, el poder no se impone, se exhibe. Su corte se volvió famosa por su elegancia y por su tolerancia. Mientras nadie rompiera la Mascarada, al Príncipe no le importaba lo que hicieran sus súbditos.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "yx6uSQCvcyIik1ru",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.yx6uSQCvcyIik1ru",
+      "name": "La caída de O'Connor (1978)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En la primavera de 1978, durante una huelga de estibadores, un Brujah perdió el control delante de los trabajadores. O&#39;Connor lo contuvo y limpió la escena antes del amanecer. Tres días después aparecieron fotos en la redacción de un periódico local. Nadie sabe quién las tomó. La prensa no las publicó, pero la Primogenitura sí las vio, y Charles Halloway (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}), entonces un Ventrue joven con amigos en los medios, exigió la cabeza del Sheriff &quot;por el bien de la Mascarada&quot;.</p>\n<p>Whitmore destituyó a O&#39;Connor y nombró en su lugar a Ethan Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}), un Gangrel callado que había servido a la Camarilla en la costa oeste desde 1903. Fue una buena elección. Montgomery lleva casi cincuenta años limpiando la ciudad sin pedir nada. O&#39;Connor se fue a Tacoma con una carta (@UUID[JournalEntry.4858IAb89fTokFfV]{Carta del Sheriff O'Connor al Príncipe Whitmore, 1978}) que nadie quiso leer.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "vlgz9c3rvDn3OyEr",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.vlgz9c3rvDn3OyEr",
+      "name": "Los diarios de Marsella (1986)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En 1986, un año después de la desaparición de Marcus Vance (@UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus «Ironjaw» Vance}) en los Cárpatos, un intermediario de Lyon vendió en subasta privada los diarios del Brujah. Vance había pedido que quemaran sus refugios. Alguien no lo hizo. El comprador fue Halloway, que mandó mecanografiar tres copias y guardó el original en su bóveda (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}). Nadie en Seattle lo sabe, salvo O&#39;Connor, que se enteró por un viejo contacto del puerto y no se lo dijo a nadie porque nadie le preguntó.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pvCNV3trImUQmDD5",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.pvCNV3trImUQmDD5",
+      "name": "La noche de Emily (1996)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En el otoño de 1996, un Anarquista que usaba a adolescentes de Rainier Valley como rebaño mató a Emily Smith (@UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith}), trabajadora social, en un piso medio abandonado. David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) llegó minutos tarde y destruyó al Anarquista de un disparo. El refuerzo que llegó después, y que limpió la escena mientras David seguía en el suelo, fue un Gangrel de dos años de no-vida: Hal Brekke (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard «Hal» Brekke}). Para la ciudad fue un ajuste de cuentas entre pandillas. Para Montgomery, el motivo por el que empezó a vigilar a su Sabueso.</p>\n<p><em>Nota: la fecha de 1996 encaja con el Abrazo de Hal en 1994. Emily tenía 38 años.</em></p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "AbvX9kYJgAsKvBRH",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.AbvX9kYJgAsKvBRH",
+      "name": "El incendio del Larchmont (2014)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En 2014, un edificio de apartamentos de Tacoma, el Larchmont (@UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont}), ardió una madrugada de marzo. Siete inquilinos &quot;no fueron localizados&quot;. Uno de ellos era Danny Ruiz (@UUID[JournalEntry.5xUDUgkyHXGD8IPY]{Danny Ruiz}), amigo de universidad de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}. La versión oficial habló de un cortocircuito. La versión que conoce el Sheriff es otra, y está en la ficha del lugar.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qVhPjbHETgzXPtrr",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.qVhPjbHETgzXPtrr",
+      "name": "La Gehena y el vacío (2015–2023)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Cuando estalló la Guerra de la Gehena, el Sabbat se vació hacia el este y la costa oeste se quedó sin su enemigo de siempre. Los Brujah y los Gangrel rompieron con la Camarilla a escala global. En Seattle, los dos casos más visibles fueron excepciones: Montgomery se quedó por lealtad personal a Whitmore y David siguió trabajando para el Sheriff como independiente. Los Brujah que sí se fueron cruzaron el puente hacia el norte, a Everett, donde Rosa Iturbe (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa «Salitre» Iturbe}) los organizó en algo parecido a un barón Anarquista.</p>\n<p>Lo que quedó del Sabbat en Tacoma son restos: Vástagos que no se fueron porque no tenían adónde ir, o porque tenían algo que esconder.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "s4LY2fTic7mKeAWz",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.s4LY2fTic7mKeAWz",
+      "name": "La ciudad que mira (2018–2026)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El enemigo nuevo llegó sin colmillos. Las agencias de inteligencia descubrieron a los Vástagos y crearon la Segunda Inquisición. Su rama estadounidense, FIRSTLIGHT, abrió en 2024 una célula pequeña en el estrecho de Puget, la Célula Puget, bajo la fachada de una consultora de ciberseguridad de South Lake Union (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}). Al mismo tiempo, Seattle se llenó de cámaras. En la primavera de 2026, Gale Sentinel (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}) instaló gratis 412.000 timbres inteligentes en el área metropolitana.</p>\n<p>La Camarilla de Whitmore no ha sufrido todavía ningún golpe de la Inquisición. Halloway cree que eso es suerte. Montgomery cree que es mérito suyo. La Regente Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}) cree que es cuestión de tiempo, y en noviembre le entregó al Príncipe un sobre sellado que todavía no ha abierto (@UUID[JournalEntry.lcO0CdwUlZHg2wAX]{Registro del Guardián del Elíseo, folio de noviembre}).</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "DhimdqVjMS0tbvGv",
+      "_key": "!journal.pages!kyikdMQEZahzOnLJ.DhimdqVjMS0tbvGv",
+      "name": "Cronología rápida",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Año</th>\n<th>Suceso</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1889</td>\n<td>Gran Incendio. Nace el Seattle subterráneo.</td>\n</tr>\n<tr>\n<td>1897</td>\n<td>Adelaide Grange (Ventrue), Príncipe.</td>\n</tr>\n<tr>\n<td>1903</td>\n<td>Montgomery entra en la Camarilla (San Francisco).</td>\n</tr>\n<tr>\n<td>1931</td>\n<td>O&#39;Connor, Sheriff.</td>\n</tr>\n<tr>\n<td>1960</td>\n<td>Vance Abraza a David en Haití.</td>\n</tr>\n<tr>\n<td>1962</td>\n<td>Feria Mundial. Grange desaparece. Whitmore, Príncipe. Se funda la Galería de Vidrio.</td>\n</tr>\n<tr>\n<td>Años 70</td>\n<td>Vance entrena y abandona a August Krell.</td>\n</tr>\n<tr>\n<td>1978</td>\n<td>Cae O&#39;Connor. Montgomery, Sheriff.</td>\n</tr>\n<tr>\n<td>1985</td>\n<td>Vance desaparece en Rumanía.</td>\n</tr>\n<tr>\n<td>1986</td>\n<td>Halloway compra los diarios de Vance.</td>\n</tr>\n<tr>\n<td>1994</td>\n<td>Montgomery Abraza a Hal Brekke.</td>\n</tr>\n<tr>\n<td>1996</td>\n<td>Muerte de Emily Smith.</td>\n</tr>\n<tr>\n<td>2005</td>\n<td>Voight Abraza a Ruth Abernathy.</td>\n</tr>\n<tr>\n<td>2011</td>\n<td>Halloway Abraza a Celeste Arden.</td>\n</tr>\n<tr>\n<td>2014</td>\n<td>Incendio del Larchmont. Desaparece Danny Ruiz.</td>\n</tr>\n<tr>\n<td>2016</td>\n<td>Whitmore Abraza a Nadia Ferro.</td>\n</tr>\n<tr>\n<td>2019</td>\n<td>Thornquist Abraza a Ezra Lund.</td>\n</tr>\n<tr>\n<td>2023</td>\n<td>Rosa Iturbe consolida a los Anarquistas en Everett.</td>\n</tr>\n<tr>\n<td>2024</td>\n<td>FIRSTLIGHT abre la Célula Puget.</td>\n</tr>\n<tr>\n<td>2026</td>\n<td>Gale Sentinel instala sus timbres. Episodio 112 (3 de octubre). El robo (12 de noviembre).</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "_id": "9zcPuCCutNfUtYJ0",
+  "_key": "!journal!9zcPuCCutNfUtYJ0",
+  "name": "Árbol de linaje de Vance",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-07",
+      "archivo": "content/documentos/AYU-07.md",
+      "soporte": "diagrama",
+      "entrega": [
+        "A3-E03"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "puedwqkVFAkL0E9b",
+      "_key": "!journal.pages!9zcPuCCutNfUtYJ0.puedwqkVFAkL0E9b",
+      "name": "Árbol de linaje de Vance",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-diagrama\"><p class=\"sbn-doc-titulo\">LINAJE DE MARCUS «IRONJAW» VANCE</p>\n<p><em>Brujah · Camarilla · Doctrina de la Furia Controlada</em></p>\n<p>Brujah veterano anónimo</p>\n<p class=\"sbn-diagrama-conector\">│</p>\n<p><em>Berlín, 1945</em></p>\n<p class=\"sbn-diagrama-conector\">│</p>\n<p class=\"sbn-doc-titulo\">MARCUS VANCE</p>\n<p><em>8.ª generación · desaparecido en 1985, cerca de Cluj-Napoca</em></p>\n<p class=\"sbn-diagrama-conector\">│</p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-diagrama-tabla\">\n<thead>\n<tr>\n<th>┌───────────</th>\n<th>───────────┐</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><em>Haití, 1960</em><br><strong>DAVID SMITH</strong><br>9.ª generación<br>«El americano»<br>Terminó la lección<br>Guardia completa</td>\n<td><em>Marsella, 1972</em><br><strong>AUGUST KRELL</strong><br>9.ª generación<br>«El alemán»<br>Abandonado en 1976<br>Guardia invertida</td>\n</tr>\n</tbody></table>\n<p><em>«Si alguna vez el americano y el alemán se encuentran, que el americano le enseñe la otra guardia.»</em></p>\n<p class=\"sbn-firma\">— Diario de M. V., folio 42</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3aUcnUiZD1SyY46b",
+      "_key": "!journal.pages!9zcPuCCutNfUtYJ0.3aUcnUiZD1SyY46b",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Diagrama. <strong>Entrega:</strong> Tras @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}.</p>\n<p><em>Narrador: diagrama para entregar después de @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}, cuando la coterie ya sabe que Krell es chiquillo de Vance. Antes, no.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

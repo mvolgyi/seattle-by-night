@@ -1,0 +1,403 @@
+{
+  "_id": "l3z7Cp6AX0CmtLI6",
+  "_key": "!actors!l3z7Cp6AX0CmtLI6",
+  "name": "Jun Takeda",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "9e23qS6GIuBDHuQb",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Jun Takeda",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "BZHKi8od2TMxi33B",
+    "headers": {
+      "concept": "Mensajera, víctima posible y pista (P-05)",
+      "chronicle": "Seattle by Night",
+      "ambition": "No morir en un portal.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>No abrir los paquetes</li></ul><h3>Piedras de toque</h3><ul><li><strong>Haruko Takeda</strong>: Su abuela, que tiene una floristería en el International District y le lee la fortuna en las hojas de té.</li></ul>",
+      "sire": "Desconocido",
+      "generation": "15"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "2004",
+        "death": "2025"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Perfil: Jun Takeda}</p><blockquote><p><em>«Yo solo reparto. No abro los paquetes. Es la regla número uno.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La que no sabe lo que lleva</td></tr><tr><th>Concepto</th><td>Mensajera, víctima posible y pista (P-05)</td></tr><tr><th>Clan</th><td>Sangre débil</td></tr><tr><th>Secta</th><td>ninguna (protegida de Thornquist)</td></tr><tr><th>Sire</th><td>Desconocido</td></tr><tr><th>Nacimiento</th><td>2004</td></tr><tr><th>Abrazo</th><td>2025</td></tr><tr><th>Ambición</th><td>No morir en un portal.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{Los Topos}</td></tr></tbody></table><h3>Semblante</h3><p>Menuda y fibrosa, pelo teñido de azul desteñido, piercings; chaqueta impermeable amarilla de reparto, mochila térmica y casco con pegatinas.</p>",
+    "appearance": "<p>Menuda y fibrosa, pelo teñido de azul desteñido, piercings; chaqueta impermeable amarilla de reparto, mochila térmica y casco con pegatinas.</p>",
+    "equipment": "<ul><li>La bici: eléctrica, modificada, la más rápida del subterráneo</li><li>La memoria USB: una copia parcial del Expediente, con las carpetas de 2019 a 2022</li></ul>",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 0,
+      "generation": "15"
+    },
+    "humanity": {
+      "value": 8,
+      "stains": 0
+    },
+    "disciplines": {
+      "alchemy": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 4,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 2,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "athletics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Bicicleta",
+            "value": 1,
+            "paths": [
+              "skills.athletics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Atajos",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "thinblood"
+        }
+      },
+      "name": "Sangre débil",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "KZRegBWaJNXC2KGq",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.KZRegBWaJNXC2KGq"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Far Reach",
+          "homebrew": false
+        }
+      },
+      "name": "Far Reach",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Alquimia de sangre débil 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-20"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "alchemy",
+        "selected": false
+      },
+      "_id": "sO0n6sropGizCEfj",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.sO0n6sropGizCEfj"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Day Drinker (Caminante diurno), mérito de sangre débil"
+        }
+      },
+      "name": "Day Drinker",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Day Drinker (Caminante diurno), mérito de sangre débil</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "EG6OOgUMYsvhMob8",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.EG6OOgUMYsvhMob8"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 2 (repartidores de media ciudad)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 2 (repartidores de media ciudad)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "dtKalpqJu9mC3Kuo",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.dtKalpqJu9mC3Kuo"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 0"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 0</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "taz7zuQzpamdlR6i",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.taz7zuQzpamdlR6i"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 3 (tiene vida legal, cuentas y familia)"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 3 (tiene vida legal, cuentas y familia)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "yltEGjJ5aLbF8osq",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.yltEGjJ5aLbF8osq"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-20",
+      "journal": "JournalEntry.BRQMU0Tf8VSNaZ5o",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}
