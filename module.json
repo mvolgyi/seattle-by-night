@@ -1,0 +1,70 @@
+{
+  "id": "seattle-by-night",
+  "title": "Seattle by Night — El Expediente Ward",
+  "description": "<p><strong>Seattle by Night</strong> es un módulo de contenido fan para <em>Vampiro: La Mascarada 5ª edición</em> sobre el sistema wod5e: la ciudad de Seattle en noviembre de 2026, sus Vástagos y la aventura <strong>El Expediente Ward</strong>, con la Segunda Inquisición (FIRSTLIGHT) jugable con reglas de <em>Cazador: La Venganza</em>.</p><p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.</p>",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "mvolgyi",
+      "url": "https://github.com/mvolgyi"
+    }
+  ],
+  "url": "https://github.com/mvolgyi/seattle-by-night",
+  "readme": "https://github.com/mvolgyi/seattle-by-night#readme",
+  "bugs": "https://github.com/mvolgyi/seattle-by-night/issues",
+  "license": "LICENSE",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.365"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "wod5e",
+        "type": "system",
+        "manifest": "https://github.com/WoD5E-Developers/wod5e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "5.3.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "del-velo-a-la-vigilia",
+        "type": "module",
+        "manifest": "https://github.com/mvolgyi/del_velo_a_la_vigilia/releases/latest/download/module.json",
+        "reason": "Opcional: los Tres Caminos para los cazadores de FIRSTLIGHT."
+      }
+    ]
+  },
+  "esmodules": [
+    "src/module/main.mjs"
+  ],
+  "styles": [
+    "src/styles/sbn.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    }
+  ],
+  "packs": [],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "src/styles",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "manifest": "https://github.com/mvolgyi/seattle-by-night/releases/latest/download/module.json",
+  "download": "https://github.com/mvolgyi/seattle-by-night/releases/download/v0.0.1/module.zip"
+}

@@ -1,0 +1,30 @@
+# Secretos
+.env
+.env.*
+!.env.example
+*.key
+
+# Packs compilados (LevelDB, binario). La fuente versionable vive en packs-src/.
+packs/
+
+# Foundry crea esto al bloquear el paquete durante el desarrollo.
+*.lock
+
+node_modules/
+.DS_Store
+
+# Artefactos de release
+dist/
+*.zip
+
+# Datos crudos descargados (OpenStreetMap, etc.)
+cache/
+
+# Material local: nunca al repo ni al release
+scratch/
+
+# Arte crudo antes de procesar (se regenera desde tools/arte.config.json)
+assets/*-crudo/
+
+# Capturas de las pruebas e2e
+tools/e2e/capturas/
