@@ -1,0 +1,129 @@
+{
+  "equipo": [
+    {
+      "id": "municion-incendiaria",
+      "nombre": "Munición incendiaria",
+      "tipo": "gear",
+      "efecto": "El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).",
+      "dano": null,
+      "agravado": true,
+      "bonos": [],
+      "usadoPor": ["PNJ-18", "MEN-02"],
+      "origen": "14"
+    },
+    {
+      "id": "linterna-uv",
+      "nombre": "Linterna UV de alta intensidad",
+      "tipo": "gear",
+      "efecto": "Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.",
+      "dano": 1,
+      "agravado": true,
+      "bonos": [],
+      "estado": "iluminado-uv",
+      "usadoPor": ["MEN-02"],
+      "origen": "14"
+    },
+    {
+      "id": "iluminado-uv",
+      "nombre": "Iluminado por la linterna UV",
+      "tipo": "condition",
+      "efecto": "Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.",
+      "dano": 1,
+      "agravado": true,
+      "bonos": [
+        { "valor": -2, "a": "todas las acciones", "condicion": "iluminado por la linterna UV", "selectores": ["all"] }
+      ],
+      "origen": "14"
+    },
+    {
+      "id": "generador-luz-solar",
+      "nombre": "Generador de luz solar artificial",
+      "tipo": "gear",
+      "efecto": "En la furgoneta. Ilumina una zona de 20 metros. Dentro: 2 de daño agravado por turno y Terror Rojo automático (Dificultad 3) al entrar. Tarda dos turnos en encenderse.",
+      "dano": 2,
+      "agravado": true,
+      "bonos": [],
+      "origen": "14"
+    },
+    {
+      "id": "gafas-termicas",
+      "nombre": "Gafas térmicas",
+      "tipo": "gear",
+      "efecto": "Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.",
+      "dano": null,
+      "bonos": [],
+      "usadoPor": ["MEN-02"],
+      "origen": "14"
+    },
+    {
+      "id": "dron-termico",
+      "nombre": "Dron con cámara térmica",
+      "tipo": "gear",
+      "efecto": "Ve a toda la zona y coordina al equipo: +2 dados a sus tiradas de Consciencia y emboscada. Derribarlo: Fuerza + Atletismo (Dificultad 4) con un objeto lanzado, o un disparo con Destreza + Armas de fuego (Dificultad 4).",
+      "dano": null,
+      "bonos": [
+        { "valor": 2, "a": "Consciencia y emboscada", "condicion": "el equipo coordinado por el dron", "selectores": ["skills.awareness"] }
+      ],
+      "tiradas": [
+        "@tirada{attributes.strength+skills.athletics|4|Derribar el dron con un objeto lanzado: Fuerza + Atletismo (Dificultad 4)}",
+        "@tirada{attributes.dexterity+skills.firearms|4|Derribar el dron de un disparo: Destreza + Armas de fuego (Dificultad 4)}"
+      ],
+      "origen": "14"
+    },
+    {
+      "id": "camaras-corporales",
+      "nombre": "Cámaras corporales",
+      "tipo": "gear",
+      "efecto": "Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).",
+      "dano": null,
+      "bonos": [],
+      "termometro": { "cantidad": 1, "maximoPorEscena": 2, "motivo": "acción sobrenatural visible delante de una cámara corporal" },
+      "usadoPor": ["MEN-02"],
+      "origen": "14"
+    },
+    {
+      "id": "glock-19-incendiaria",
+      "nombre": "Pistola Glock 19 con munición incendiaria",
+      "tipo": "weapon",
+      "efecto": "Daño agravado contra Vástagos (munición incendiaria).",
+      "dano": null,
+      "agravado": true,
+      "bonos": [],
+      "usadoPor": ["PNJ-18"],
+      "origen": "14"
+    },
+    {
+      "id": "fusil-corto-incendiario",
+      "nombre": "Fusil corto con munición incendiaria",
+      "tipo": "weapon",
+      "efecto": "Agravado contra Vástagos (munición incendiaria). Lleva una linterna UV montada en el arma.",
+      "dano": null,
+      "agravado": true,
+      "bonos": [],
+      "usadoPor": ["MEN-02"],
+      "origen": "14"
+    },
+    {
+      "id": "chaleco-ligero",
+      "nombre": "Chaleco antibalas ligero",
+      "tipo": "gear",
+      "efecto": "Blindaje 2.",
+      "blindaje": 2,
+      "dano": null,
+      "bonos": [],
+      "usadoPor": ["PNJ-18"],
+      "origen": "14"
+    },
+    {
+      "id": "armadura-ligera",
+      "nombre": "Armadura ligera",
+      "tipo": "gear",
+      "efecto": "Blindaje 3.",
+      "blindaje": 3,
+      "dano": null,
+      "bonos": [],
+      "usadoPor": ["MEN-02"],
+      "origen": "14"
+    }
+  ]
+}

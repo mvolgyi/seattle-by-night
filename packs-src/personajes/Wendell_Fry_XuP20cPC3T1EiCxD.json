@@ -1,0 +1,689 @@
+{
+  "_id": "XuP20cPC3T1EiCxD",
+  "_key": "!actors!XuP20cPC3T1EiCxD",
+  "name": "Wendell Fry",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "u4acwxkmRyzs1UQV",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Wendell Fry",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Primogénito Malkavian (por costumbre)",
+      "chronicle": "Seattle by Night",
+      "ambition": "Descifrar lo que la ciudad intenta decirle.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Nunca interrumpir a alguien que dice la verdad</li></ul><h3>Piedras de toque</h3><ul><li><strong>Helen Ward (PNJ-04)</strong>: Aunque ella no lo sabe.</li></ul>",
+      "sire": "Una Malkavian sin nombre que llamaba desde Fremont",
+      "generation": "10"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1938",
+        "death": "1971"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Perfil: Wendell Fry}</p><blockquote><p><em>«No estás loca, Helen. Y la lluvia tiene oídos.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La voz de las tres de la mañana</td></tr><tr><th>Concepto</th><td>Primogénito Malkavian (por costumbre)</td></tr><tr><th>Clan</th><td>Malkavian</td></tr><tr><th>Secta</th><td>Camarilla</td></tr><tr><th>Sire</th><td>Una Malkavian sin nombre que llamaba desde Fremont</td></tr><tr><th>Nacimiento</th><td>1938</td></tr><tr><th>Abrazo</th><td>1971</td></tr><tr><th>Ambición</th><td>Descifrar lo que la ciudad intenta decirle.</td></tr></tbody></table><h3>Semblante</h3><p>Unos treinta y tres años aparentes. Delgado, barba descuidada, gafas de montura gruesa, pana y gorra de un equipo que ya no existe; auriculares al cuello y voz de radio.</p>",
+    "appearance": "<p>Unos treinta y tres años aparentes. Delgado, barba descuidada, gafas de montura gruesa, pana y gorra de un equipo que ya no existe; auriculares al cuello y voz de radio.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Nota de edición: el doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió la edad al Abrazo (unos 33, barba sin canas).</p>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 2,
+      "generation": "10"
+    },
+    "humanity": {
+      "value": 7,
+      "stains": 0
+    },
+    "disciplines": {
+      "auspex": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "dominate": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "obfuscate": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Música",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Lo que no se dice",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "etiquette": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "performance": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Radio",
+            "value": 1,
+            "paths": [
+              "skills.performance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "occult": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Profecía",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Voces",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Radio analógica",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "malkavian"
+        }
+      },
+      "name": "Malkavian",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "JqTs7hg0ScPVd6Ca",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.JqTs7hg0ScPVd6Ca"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-16"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "mwmMs9jfn67wSxTD",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.mwmMs9jfn67wSxTD"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-16"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "1i8iBL7BrVYyriNU",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.1i8iBL7BrVYyriNU"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Scry the Soul",
+          "homebrew": false
+        }
+      },
+      "name": "Scry the Soul",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-16"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "BfWfHQclHUVnYT0K",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.BfWfHQclHUVnYT0K"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloud Memory",
+          "homebrew": false
+        }
+      },
+      "name": "Cloud Memory",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-16"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "VuuxIN3lMowpgGOl",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.VuuxIN3lMowpgGOl"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloak of Shadows",
+          "homebrew": false
+        }
+      },
+      "name": "Cloak of Shadows",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Ofuscación 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-16"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "rzGqzB2fVoivxcEN",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.rzGqzB2fVoivxcEN"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unseen Passage",
+          "homebrew": false
+        }
+      },
+      "name": "Unseen Passage",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Ofuscación 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-16"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "X1bXbUnjYxFJRgBW",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.X1bXbUnjYxFJRgBW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 2 (estudio de radio abandonado en el último piso de un edificio de Fremont)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 2 (estudio de radio abandonado en el último piso de un edificio de Fremont)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "dEwSXBnfM1HGTx2u",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.dEwSXBnfM1HGTx2u"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Rebaño 1 (los oyentes: una docena de insomnes)"
+        }
+      },
+      "name": "Rebaño",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Rebaño 1 (los oyentes: una docena de insomnes)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "IwaCSLDRFyCar9LM",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.IwaCSLDRFyCar9LM"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 1 (escáneres de policía, puerto y emergencias)"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 1 (escáneres de policía, puerto y emergencias)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "nsMLo7oa4dpgEBaw",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.nsMLo7oa4dpgEBaw"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Fama 1 (los viejos oyentes de la radio todavía reconocen su voz)"
+        }
+      },
+      "name": "Fama",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Fama 1 (los viejos oyentes de la radio todavía reconocen su voz)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "CvZh4IrTBjkUJrMy",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.CvZh4IrTBjkUJrMy"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 1 (jubilado excéntrico de Fremont)"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 1 (jubilado excéntrico de Fremont)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "DnXpYvreq5m2GDTe",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.DnXpYvreq5m2GDTe"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Perturbación (Malkavian): no puede dejar una frase sin terminar. Si alguien lo interrumpe, repite lo que estaba diciendo desde el principio."
+        }
+      },
+      "name": "Perturbación",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Perturbación (Malkavian): no puede dejar una frase sin terminar. Si alguien lo interrumpe, repite lo que estaba diciendo desde el principio.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "QAH8Nok17IPnbBOl",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.QAH8Nok17IPnbBOl"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-16",
+      "journal": "JournalEntry.AeAhHuCNHL9KWVnT",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

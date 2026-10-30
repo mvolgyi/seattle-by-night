@@ -1,0 +1,25 @@
+{
+  "_id": "ryBwZhzsZroePayN",
+  "_key": "!macros!ryBwZhzsZroePayN",
+  "name": "Marcar pista…",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/eye.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"Seattle by Night: el módulo no está activo en este mundo.\");\nconst PISTAS = [{\"id\":\"P-01\",\"nombre\":\"Ladrones profesionales mortales; cámaras en bucle\"},{\"id\":\"P-02\",\"nombre\":\"Vitae de ghoul en el picaporte\"},{\"id\":\"P-03\",\"nombre\":\"La técnica de la Furia Controlada\"},{\"id\":\"P-04\",\"nombre\":\"Copia parcial del Expediente en un USB\"},{\"id\":\"P-05\",\"nombre\":\"Jun, la mensajera sangre débil\"},{\"id\":\"P-06\",\"nombre\":\"Pedido de datos de Gale Sentinel sin registrar\"},{\"id\":\"P-07\",\"nombre\":\"Halloway sabe lo del agua fría\"},{\"id\":\"P-08\",\"nombre\":\"La guardia invertida\"},{\"id\":\"P-09\",\"nombre\":\"Los diarios comprados en 1986\"},{\"id\":\"P-10\",\"nombre\":\"Envíos SEA-0411 / DOC-07\"},{\"id\":\"P-11\",\"nombre\":\"Firma de Gale\"},{\"id\":\"P-12\",\"nombre\":\"El testimonio de Krell\"},{\"id\":\"P-13\",\"nombre\":\"El libro de cuentas de Sal\"},{\"id\":\"P-14\",\"nombre\":\"El pago desde Cascade Holdings\"},{\"id\":\"P-15\",\"nombre\":\"Los folios del alemán\"}];\nconst estado = (await api.estado())?.pistas ?? {};\nconst marcada = v => (v && typeof v === \"object\") ? Boolean(v.obtenida ?? v.marcada ?? v.valor) : Boolean(v);\nconst esc = foundry.utils.escapeHTML ?? (s => s);\nconst filas = PISTAS.map(p => `<label class=\"sbn-macro-pista\" style=\"display:flex;gap:.5em;align-items:baseline;margin:.15em 0\">\n  <input type=\"checkbox\" name=\"${p.id}\" ${marcada(estado[p.id]) ? \"checked\" : \"\"}>\n  <span><strong>${p.id}</strong> · ${esc(p.nombre)}</span></label>`).join(\"\");\nconst datos = await foundry.applications.api.DialogV2.input({\n  window: { title: \"Marcar pista…\", icon: \"fa-solid fa-magnifying-glass\" },\n  position: { width: 520 },\n  content: `<p>Marcá las pistas que la coterie ya obtuvo; desmarcá para quitarla.</p><div class=\"sbn-macro-pistas\">${filas}</div>`,\n  ok: { label: \"Guardar\", icon: \"fa-solid fa-check\" }\n});\nif (!datos) return;\nfor (const p of PISTAS) {\n  const nueva = Boolean(datos[p.id]);\n  if (nueva !== marcada(estado[p.id])) await api.pista(p.id, nueva);\n}",
+  "folder": null,
+  "sort": 300,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "pista"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

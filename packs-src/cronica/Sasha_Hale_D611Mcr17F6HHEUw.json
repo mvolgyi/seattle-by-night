@@ -1,0 +1,82 @@
+{
+  "_id": "D611Mcr17F6HHEUw",
+  "_key": "!journal!D611Mcr17F6HHEUw",
+  "name": "Sasha Hale",
+  "folder": "U14g3yo4N4JwXcQT",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-21",
+      "archivo": "content/personajes/PNJ-21.md",
+      "actor": "Actor.sEdBfHzj0JBxHNAa"
+    }
+  },
+  "pages": [
+    {
+      "_id": "PcYYfoym6chIIDVO",
+      "_key": "!journal.pages!D611Mcr17F6HHEUw.PcYYfoym6chIIDVO",
+      "name": "Sasha Hale",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale}</p>\n<p>Analista de la Célula Puget</p>\n<p>Sasha Hale, treinta y dos años, ex analista de inteligencia de señales. Escuchó el episodio 112 tres veces. Cree en los patrones y desconfía de los regalos.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "DaOZEZkAJqLRVRhQ",
+      "_key": "!journal.pages!D611Mcr17F6HHEUw.DaOZEZkAJqLRVRhQ",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Generales:</strong> Física 2 · Social 3 · Mental 7</p>\n<p><strong>Excepcionales:</strong> Investigación 8, Tecnología 7, Academicismo 5, Ocultismo 4 (Vástagos)</p>\n<p><strong>Salud</strong> 5 · <strong>Fuerza de Voluntad</strong> 6 · <strong>Ventaja:</strong> Fe (−1 dado a Disciplinas mentales contra ella)</p>\n<p><strong>Nota:</strong> si la coterie corta el acceso de Northline a ANOMALY con el código de Ezra (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}), Hale reconoce el estilo del código más adelante. Gancho de crónica.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

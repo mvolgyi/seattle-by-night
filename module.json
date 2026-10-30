@@ -1,0 +1,189 @@
+{
+  "id": "seattle-by-night",
+  "title": "Seattle by Night — El Expediente Ward",
+  "description": "<p><strong>Seattle by Night</strong> es un módulo de contenido fan para <em>Vampiro: La Mascarada 5ª edición</em> sobre el sistema wod5e: la ciudad de Seattle en noviembre de 2026, sus Vástagos y la aventura <strong>El Expediente Ward</strong>, con la Segunda Inquisición (FIRSTLIGHT) jugable con reglas de <em>Cazador: La Venganza</em>.</p><p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.</p>",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "mvolgyi",
+      "url": "https://github.com/mvolgyi"
+    }
+  ],
+  "url": "https://github.com/mvolgyi/seattle-by-night",
+  "readme": "https://github.com/mvolgyi/seattle-by-night#readme",
+  "bugs": "https://github.com/mvolgyi/seattle-by-night/issues",
+  "license": "LICENSE",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.365"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "wod5e",
+        "type": "system",
+        "manifest": "https://github.com/WoD5E-Developers/wod5e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "5.3.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "del-velo-a-la-vigilia",
+        "type": "module",
+        "manifest": "https://github.com/mvolgyi/del_velo_a_la_vigilia/releases/latest/download/module.json",
+        "reason": "Opcional: los Tres Caminos para los cazadores de FIRSTLIGHT."
+      }
+    ]
+  },
+  "esmodules": [
+    "src/module/main.mjs"
+  ],
+  "styles": [
+    "src/styles/sbn.css",
+    "src/styles/sbn-ui.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "en",
+      "name": "English (textos en español)",
+      "path": "lang/es.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "aventura",
+      "label": "Seattle by Night — Importar la crónica",
+      "path": "packs/aventura",
+      "type": "Adventure",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "cronica",
+      "label": "Seattle by Night — Crónica y ciudad",
+      "path": "packs/cronica",
+      "type": "JournalEntry",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "documentos",
+      "label": "Seattle by Night — Documentos y ayudas",
+      "path": "packs/documentos",
+      "type": "JournalEntry",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "personajes",
+      "label": "Seattle by Night — Personajes",
+      "path": "packs/personajes",
+      "type": "Actor",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "escenas",
+      "label": "Seattle by Night — Escenas",
+      "path": "packs/escenas",
+      "type": "Scene",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "firstlight",
+      "label": "FIRSTLIGHT — Arsenal",
+      "path": "packs/firstlight",
+      "type": "Item",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Seattle by Night — Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "wod5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "src/styles",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "manifest": "https://github.com/mvolgyi/seattle-by-night/releases/latest/download/module.json",
+  "download": "https://github.com/mvolgyi/seattle-by-night/releases/download/v0.0.1/module.zip",
+  "packFolders": [
+    {
+      "name": "Seattle by Night",
+      "sorting": "m",
+      "color": "#1f3a4d",
+      "packs": [
+        "aventura",
+        "macros",
+        "firstlight"
+      ],
+      "folders": [
+        {
+          "name": "El Expediente Ward",
+          "sorting": "m",
+          "packs": [
+            "cronica",
+            "documentos",
+            "personajes",
+            "escenas"
+          ]
+        }
+      ]
+    }
+  ],
+  "quickstart": {
+    "adventures": {
+      "wod5e": {
+        "uuid": "Compendium.seattle-by-night.aventura.Adventure.CzCFXoeyiVk3DRsr"
+      }
+    },
+    "postImport": false,
+    "world": {
+      "description": "<p>Vampiro: La Mascarada 5ª edición — Seattle by Night y la aventura El Expediente Ward, con FIRSTLIGHT jugable con reglas de Cazador: La Venganza. Material no oficial publicado bajo el Dark Pack.</p>"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_id": "NNzMhIvsavpG0iTQ",
+  "_key": "!journal!NNzMhIvsavpG0iTQ",
+  "name": "La granja del Sheriff y su embarcadero",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-02",
+      "archivo": "content/ciudad/LUG-02.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "1lXdPG8lQHM7RAfV",
+      "_key": "!journal.pages!NNzMhIvsavpG0iTQ.1lXdPG8lQHM7RAfV",
+      "name": "La granja del Sheriff y su embarcadero",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Valle del Snohomish, 40 minutos al norte · Refugio de Ethan Montgomery · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "5MMvM2eIxnCgrLun",
+      "_key": "!journal.pages!NNzMhIvsavpG0iTQ.5MMvM2eIxnCgrLun",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>El camino de grava termina en una granja de madera oscura rodeada de campos inundados por la lluvia. Hay perros, muchos, que no ladran: miran. Detrás de la casa, entre los árboles, se ve el brillo del río. El hombre que los espera en el porche no se levanta de la mecedora. Tiene los ojos de un color que no termina de ser humano.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "uoeAt9PqL4u5aB3h",
+      "_key": "!journal.pages!NNzMhIvsavpG0iTQ.uoeAt9PqL4u5aB3h",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> casa principal, granero convertido en sala de reuniones de los Lobos, sótano con túnel de unos 300 metros hasta un embarcadero privado en el río Snohomish, y perreras con una docena de perros ghoul.</p>\n<p><strong>Trasfondos:</strong> Refugio 3 y Rebaño 2 (los cazarrecompensas @UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery}, que viven en caravanas detrás del granero).</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} (formación de la coterie) y @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda} (la jauría duda). Es uno de los posibles objetivos de @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}.</p>\n<p><strong>Detalle:</strong> Montgomery recibe sentado en el porche aunque llueva. Si invita a alguien a entrar, es que el asunto es grave.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

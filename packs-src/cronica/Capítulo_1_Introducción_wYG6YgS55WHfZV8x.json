@@ -1,0 +1,109 @@
+{
+  "_id": "wYG6YgS55WHfZV8x",
+  "_key": "!journal!wYG6YgS55WHfZV8x",
+  "name": "Capítulo 1 · Introducción",
+  "folder": "6HgCsgxtaVxFMM6U",
+  "sort": 60,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CAP-01",
+      "archivo": "content/cronica/05-introduccion.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "9Gtt2JPs9B9Ebl1n",
+      "_key": "!journal.pages!wYG6YgS55WHfZV8x.9Gtt2JPs9B9Ebl1n",
+      "name": "De qué va este libro",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Seattle es una ciudad que se mira a sí misma todo el tiempo. Tiene cámaras en los timbres, teléfonos en todos los bolsillos, aplicaciones que saben a qué hora sale cada vecino, empresas que convierten esa información en dinero y agencias que la convierten en expedientes. Durante décadas, la Camarilla de Seattle sobrevivió gracias a tres cosas: la lluvia, que vuelve a la gente indiferente; un Príncipe Toreador que prefiere las apariencias a la guerra; y un Sheriff Gangrel que borra lo que sobra sin preguntar demasiado.</p>\n<p><em>Seattle by Night</em> describe esa ciudad en el momento en que deja de funcionar. Presenta a los Vástagos que la gobiernan y a los que quieren gobernarla, los lugares donde se caza y se negocia, los rumores que circulan por el Elíseo y una aventura completa, <em>El Expediente Ward</em> (@UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}), en la que los personajes descubren que su existencia está registrada en el disco duro de una periodista mortal, y que alguien lo robó para usarlo.</p>\n<p>El libro está pensado para una coterie de 3 a 4 personajes nuevos junto a David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), el ejecutor Brujah del Sheriff. También funciona para un solo jugador con Bear (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}) como compañero, y en los recuadros se explica cómo adaptar cada parte.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CnAqkasrXy5rc0b2",
+      "_key": "!journal.pages!wYG6YgS55WHfZV8x.CnAqkasrXy5rc0b2",
+      "name": "Temas y ambiente",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h3>La Mascarada como deuda</h3>\n<p>Cada secreto que los Vástagos guardan lo paga un mortal: la madre que nunca sabrá de qué murió su hijo, la periodista a la que le cerraron el artículo, la forense que firma informes falsos. En esta crónica, proteger la Mascarada tiene un precio y alguien lo cobra. Cuando los personajes tomen una decisión &quot;por la Mascarada&quot;, preguntate quién la paga y mostralo.</p>\n<h3>Padres e hijos en la Sangre</h3>\n<p>Vance y David. David y Bear. Halloway y su chiquilla, Montgomery y el suyo, el Príncipe y la suya. Y Emily, la hija de David, muerta en los noventa. La aventura gira alrededor de lo que se hereda: las técnicas, las lealtades, las culpas.</p>\n<section class=\"secret\" id=\"secret-vwY8dWx0oefY0Fox\"><p>August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}) existe para que David vea lo que podría haber sido si Vance no lo hubiera elegido.</p>\n</section>\n<h3>La ciudad que todo lo registra</h3>\n<p>En esta Seattle, el depredador también es presa. No de cazadores con estacas, al menos no al principio, sino de los datos: una luz que se apaga en un timbre, una factura pagada con tarjeta, un vídeo de once segundos. La Segunda Inquisición (FIRSTLIGHT) está presente en toda la aventura, pero casi nunca a la vista. Se mide con el Termómetro (@UUID[JournalEntry.b13NIR35K7HpthZv]{El Termómetro de FIRSTLIGHT}), que sube con cada error. Usalo para que los jugadores sientan que el aire se cierra sin que nadie haya disparado un tiro.</p>\n<h3>El orden contra la conciencia</h3>\n<p>Los personajes trabajan, de una forma u otra, para la ley de la Camarilla. La aventura les pregunta qué hacen cuando la ley se usa para algo que su código no acepta. No hay una respuesta correcta y los desenlaces (@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · La verdad ante el trono} a @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Marea roja}) lo reflejan.</p>\n<h3>Seattle en tres sentidos</h3>\n<p>Para describir la ciudad sin repetirte, tené a mano estas imágenes:</p>\n<ul>\n<li><strong>Vista:</strong> asfalto brillante, grúas con luces rojas sobre el puerto, ventanas de oficinas encendidas a las tres de la mañana, la lucecita azul de una cámara de timbre.</li>\n<li><strong>Oído:</strong> la lluvia sobre una chapa, el zumbido de un coche eléctrico, las sirenas de niebla del estrecho, el silencio de un autobús vacío.</li>\n<li><strong>Olfato:</strong> sal y gasoil en los muelles, lana mojada, café quemado, el olor a monedas de la Vitae.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "6XHcpQEXb0UASJ5n",
+      "_key": "!journal.pages!wYG6YgS55WHfZV8x.6XHcpQEXb0UASJ5n",
+      "name": "Glosario rápido de Seattle",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Término</th>\n<th>Qué es</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Ballard</td>\n<td>Barrio del noroeste, antiguo pueblo de pescadores escandinavos. Bares, astilleros, apartamentos nuevos sobre tiendas viejas. Ahí vive Helen.</td>\n</tr>\n<tr>\n<td>Harbor Island</td>\n<td>Isla artificial e industrial en Elliott Bay. Contenedores, grúas y el hangar de David.</td>\n</tr>\n<tr>\n<td>Pioneer Square</td>\n<td>El barrio más antiguo. Debajo están las calles enterradas del siglo XIX: el Seattle subterráneo.</td>\n</tr>\n<tr>\n<td>Capitol Hill</td>\n<td>La vida nocturna, la música, los clubes. El <em>rack</em> de los Toreador.</td>\n</tr>\n<tr>\n<td>South Lake Union</td>\n<td>Torres de cristal de las empresas tecnológicas. De noche, oficinas vacías con la luz encendida.</td>\n</tr>\n<tr>\n<td>El Eastside</td>\n<td>Bellevue y Redmond, al otro lado del lago Washington. Dinero nuevo y centros de datos.</td>\n</tr>\n<tr>\n<td>El estrecho</td>\n<td>Puget Sound, el brazo de mar que rodea la ciudad. Ferris, niebla y aguas frías.</td>\n</tr>\n<tr>\n<td>Everett / Tacoma</td>\n<td>Las ciudades del norte y del sur. Una para los Anarquistas, otra para los exiliados y lo que queda del Sabbat.</td>\n</tr>\n<tr>\n<td>FIRSTLIGHT</td>\n<td>La rama estadounidense de la Segunda Inquisición. En Seattle opera bajo la fachada de Northline Cyber Advisory (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}).</td>\n</tr>\n<tr>\n<td>El Expediente</td>\n<td>El archivo de Helen Ward. Diez años de muertes que no cuadran.</td>\n</tr>\n<tr>\n<td>SAFE</td>\n<td>El único número del teléfono de tapa de Helen.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

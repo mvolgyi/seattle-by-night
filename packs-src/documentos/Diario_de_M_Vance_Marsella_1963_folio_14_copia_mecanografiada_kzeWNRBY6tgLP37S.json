@@ -1,0 +1,86 @@
+{
+  "_id": "kzeWNRBY6tgLP37S",
+  "_key": "!journal!kzeWNRBY6tgLP37S",
+  "name": "Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 40,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-04",
+      "archivo": "content/documentos/DOC-04.md",
+      "soporte": "mecanografiado",
+      "entrega": [
+        "A3-E03",
+        "A2-E02"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "EcYnOsHq6PA4rs9W",
+      "_key": "!journal.pages!kzeWNRBY6tgLP37S.EcYnOsHq6PA4rs9W",
+      "name": "Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-mecanografiado\"><p class=\"sbn-sello\"><span class=\"sbn-acotacion\">[sello de goma, tinta violeta:]</span> <span class=\"sbn-sello-texto\">COPIA 2 DE 3</span></p>\n<p><strong>Folio 14 — Marsella, marzo de 1963</strong></p>\n<p>El americano aprende rápido, pero aprende con rabia, y la rabia es un mal maestro. Hoy le rompí la mano izquierda tres veces. Las tres veces volvió a levantar la guardia sin que se lo pidiera. No se quejó. Me miró como miran los perros que todavía no decidieron si te van a morder.</p>\n<p>Le expliqué la doctrina por cuarta vez. Localiza: nadie ataca lo que no ha visto entero. Evalúa: cuánto pesa, cuánto teme, cuánto le queda de hombre. Ejecuta: un golpe, el correcto, y nada más. Todo lo que viene después del primer golpe es la Bestia pidiendo permiso.</p>\n<p>No todos los que entreno llegan al final. A los que no terminan les enseño la guardia invertida, la de la mano débil adelante. Sirve para defenderse de cualquiera, menos de quien conoce la doctrina completa. Es un regalo y es una cerradura. Así, si alguno de ellos se pierde, el que sí terminó sabrá siempre cómo pararlo.</p>\n<p>El americano va a terminar. Lo sé desde Haití. Tiene una hija al otro lado del mar y no habla de ella, y eso es lo que lo sostiene. Hay que tener algo que no se dice para aguantar esto.</p>\n<p>Mañana, el agua fría.</p>\n<p class=\"sbn-firma\">— M. V.</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p class=\"sbn-acotacion\">[En el margen izquierdo, a lápiz, letra apretada e inclinada:]</p>\n<p><em>A mí me enseñaste esta. Nunca me enseñaste la otra.</em></p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "rpCeriKQTIPvbVm8",
+      "_key": "!journal.pages!kzeWNRBY6tgLP37S.rpCeriKQTIPvbVm8",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> copia mecanografiada en papel amarillento, con una anotación a lápiz en el margen. <strong>Cuándo:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}, en el refugio de Krell o sobre su cuerpo. Si se quiere sembrar antes, se puede encontrar una fotocopia sin la nota en @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}.</p>\n<p><strong>Presagia:</strong> la doctrina de la <em>Furia Controlada</em> (@UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada}) y la guardia invertida, que delata a Krell (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{La guardia invertida}).</p>\n<p><strong>Verdad:</strong> el texto es de Vance. La copia la hizo el archivero de Halloway en 1986 y la nota a lápiz es de Krell. La frase sobre los que no terminan es la herida de Krell.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

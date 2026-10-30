@@ -1,0 +1,85 @@
+{
+  "_id": "5mQIPoGa4I0tQtbR",
+  "_key": "!journal!5mQIPoGa4I0tQtbR",
+  "name": "Nota guardada en la caja fuerte de Bear",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 120,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-12",
+      "archivo": "content/documentos/DOC-12.md",
+      "soporte": "nota",
+      "entrega": [
+        "fuera"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "eSLUMjyTfyaK1mop",
+      "_key": "!journal.pages!5mQIPoGa4I0tQtbR.eSLUMjyTfyaK1mop",
+      "name": "Nota guardada en la caja fuerte de Bear",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-nota\"><p>Si estás leyendo esto, o estoy muerto o tuve que hacerlo.</p>\n<p>Si estoy muerto: la llave del camión está en la lata de café. Las armas que no son de él van al fondo del canal, no las vendas. A mi hermana en Filadelfia le mandás el sobre azul y no le contás nada. Nada.</p>\n<p>Si tuve que hacerlo, entonces esto es para vos, David, aunque no lo vas a leer porque no vas a estar.</p>\n<p>Me prometí tres cosas cuando bebí la primera vez. No niños. No gente que no hizo nada. No matar porque sí. Vos me dijiste que tu código era parecido al mío. Te creí. Te sigo creyendo. Pero escribo esto porque una noche dejé de estar seguro, y me prometí que si alguna vez lo cruzabas del todo, el que te iba a parar iba a ser yo. No otro vampiro. No una orden de nadie. Yo. Porque te lo debo.</p>\n<p>Si lo hice, perdoname. Si no lo hice y estás leyendo esto porque me morí, entonces nunca hizo falta, y eso es lo mejor que me pasó en esta vida rara.</p>\n<p>Cubrí la puerta, Sabueso. Yo ya no puedo.</p>\n<p class=\"sbn-firma\">— T. W.</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "cxoRVVNXngUy1MYS",
+      "_key": "!journal.pages!5mQIPoGa4I0tQtbR.cxoRVVNXngUy1MYS",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> hoja de libreta arrancada, doblada en cuatro, guardada debajo de una pistola en la caja fuerte personal de Tom Whitman en el hangar (@UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}). <strong>Cuándo:</strong> no se entrega en la aventura. Úsala si Bear muere, si FIRSTLIGHT asalta el hangar (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}) o como cierre de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ]{GAN-04 · El viejo compañero}. También se la podés dar en privado al jugador de David, si lo acuerdan, como horror personal.</p>\n<p><strong>Presagia:</strong> el límite moral de Bear y lo que haría si David lo cruza.</p>\n<p><strong>Verdad:</strong> Bear lo escribió hace dos años, después de una noche que no cuenta. No la ha vuelto a leer.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

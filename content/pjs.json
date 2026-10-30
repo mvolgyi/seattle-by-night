@@ -1,0 +1,186 @@
+{
+  "pjs": [
+    {
+      "id": "PJ-02",
+      "nombre": "Celeste Arden",
+      "pj": true,
+      "tipo": "vampire",
+      "clan": "ventrue",
+      "sire": "PNJ-03",
+      "concepto": "analista de inversiones y chiquilla de Charles Halloway, el antagonista.",
+      "cita": "La heredera del cristal",
+      "ambicion": "que su nombre valga más que el de su sire",
+      "deseo": "que Halloway la reconozca como su igual",
+      "convicciones": [
+        "Nunca dejar que alguien caiga solo"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "su madre",
+          "descripcion": "su madre, que vive en una residencia con demencia y todavía la llama por su nombre"
+        }
+      ],
+      "ventajas": [
+        "Recursos 3",
+        "Contactos (finanzas) 2",
+        "Influencia (Eastside) 1",
+        "Mawla (Halloway) 2"
+      ],
+      "defectos": [
+        "Vínculo de sangre de nivel 2 con Halloway"
+      ],
+      "foco": [
+        "A2-E01",
+        "A3-E02",
+        "A4-E01"
+      ],
+      "brillaEn": "A2-E01, A3-E02 y A4-E01.",
+      "secreto": "Halloway la eligió como chivo expiatorio. Los fragmentos filtrados a FIRSTLIGHT salen por cuentas a nombre de sus sociedades. En el Consejo (A4-E01), él la ofrecerá como la traidora. Celeste tendrá que elegir entre su sire, la coterie y la verdad."
+    },
+    {
+      "id": "PJ-03",
+      "nombre": "Ezra Lund",
+      "apodo": "Estática",
+      "pj": true,
+      "tipo": "vampire",
+      "clan": "nosferatu",
+      "sire": "PNJ-13",
+      "concepto": "ingeniero de seguridad de redes, Abrazado por el corredor de información del subterráneo.",
+      "cita": "El fantasma en la red",
+      "depredador": "Bagger",
+      "ambicion": "sacar a la luz a quien controla las cámaras de la ciudad",
+      "deseo": "que alguien vea su cara y no aparte la mirada",
+      "convicciones": [
+        "La información pertenece a quien la necesita, no a quien la paga"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "su hermana Maja",
+          "descripcion": "su hermana Maja, enfermera del turno de noche, que le deja comida en la puerta aunque sabe que no la come"
+        }
+      ],
+      "ventajas": [
+        "Contactos (hackers) 2",
+        "Rebaño 1",
+        "Refugio 2 (en el subterráneo)",
+        "Mawla (Thornquist) 1",
+        "Alimentarse de bolsas sin sufrir penalizador"
+      ],
+      "foco": [
+        "A1-E04",
+        "A1-E05",
+        "A3-E02"
+      ],
+      "brillaEn": "A1-E04, A1-E05 y A3-E02. Es el especialista natural de LOR-03 *Los ojos de la ciudad*.",
+      "secreto": "En 2017, como contratista, Ezra escribió el firmware de las cámaras de Gale Sentinel. La puerta trasera que usa Preston Gale es su código. Ezra lo sospecha, pero nunca lo comprobó."
+    },
+    {
+      "id": "PJ-04",
+      "nombre": "Nadia Ferro",
+      "pj": true,
+      "tipo": "vampire",
+      "clan": "toreador",
+      "sire": "PNJ-02",
+      "concepto": "productora de sonido del pódcast de Helen y chiquilla del Príncipe Whitmore.",
+      "cita": "La voz detrás del micrófono",
+      "ambicion": "grabar algo que sobreviva a la Mascarada",
+      "deseo": "que Helen termine su gran historia",
+      "convicciones": [
+        "Nunca silenciar a quien dice la verdad"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Theo",
+          "descripcion": "Theo, su antiguo compañero de banda, que todavía toca los jueves en un bar de mala muerte de Capitol Hill"
+        }
+      ],
+      "ventajas": [
+        "Fama 1 (escena musical)",
+        "Contactos (medios) 2",
+        "Estatus (Camarilla) 1",
+        "Mawla (Whitmore) 2",
+        "Rebaño 1"
+      ],
+      "foco": [
+        "A0-E01",
+        "A2-E01",
+        "A2-E05",
+        "A4-E01"
+      ],
+      "brillaEn": "A0-E01 (conoce el apartamento), A2-E01 y A4-E01.",
+      "secreto": "El episodio 112 (DOC-02), el que despertó a FIRSTLIGHT, se construyó con material que Nadia le filtró a Helen. Y los ladrones sacaron el horario de Helen del calendario de producción que Nadia sincroniza en la nube."
+    },
+    {
+      "id": "PJ-05",
+      "nombre": "Halvard Brekke",
+      "apodo": "Hal",
+      "pj": true,
+      "tipo": "vampire",
+      "clan": "gangrel",
+      "sire": "PNJ-01",
+      "concepto": "ex pescador de cangrejo, chiquillo del Sheriff Montgomery y miembro de su jauría.",
+      "cita": "El lobo de Ballard",
+      "depredador": "Alleycat",
+      "ambicion": "ganarse su propio dominio",
+      "deseo": "que Montgomery le diga una vez que lo hizo bien",
+      "convicciones": [
+        "No dejar a nadie en el agua"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "su sobrina Ingrid",
+          "descripcion": "su sobrina Ingrid, que hoy capitanea el barco familiar y le guarda un sitio en la mesa de Navidad aunque nunca va"
+        }
+      ],
+      "ventajas": [
+        "Aliados (estibadores) 2",
+        "Contactos (policía portuaria) 1",
+        "Mawla (Montgomery) 2",
+        "Refugio 1 (un barco amarrado en Salmon Bay)"
+      ],
+      "foco": [
+        "A1-E02",
+        "A3-E01",
+        "A3-E04",
+        "A4-E02"
+      ],
+      "brillaEn": "A1-E02 (rastreo), A3-E01, A3-E04 y A4-E02.",
+      "secreto": "Montgomery le ordenó hace años vigilar a David e informar. Hal lo ha hecho cada mes. En A3-E04, cuando el Sheriff dude, le va a pedir sus informes. Hal tiene que decidir qué le cuenta."
+    },
+    {
+      "id": "PJ-06",
+      "nombre": "Dra. Ruth Abernathy",
+      "pj": true,
+      "tipo": "vampire",
+      "clan": "tremere",
+      "sire": "PNJ-15",
+      "concepto": "patóloga del turno de noche de la oficina forense del condado y miembro de la capilla de Voight.",
+      "cita": "La forense de guardia",
+      "alternativa": true,
+      "ambicion": "encontrar el cuerpo que desapareció en 2004",
+      "deseo": "una noche sin cadáveres",
+      "convicciones": [
+        "Los muertos merecen la verdad, aunque los vivos no"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "su exmarido",
+          "descripcion": "su exmarido, detective de homicidios jubilado, que todavía la llama cuando no puede dormir"
+        }
+      ],
+      "ventajas": [
+        "Influencia (oficina forense) 2",
+        "Contactos (policía) 2",
+        "Recursos 2",
+        "Mawla (Voight) 1"
+      ],
+      "foco": [
+        "A1-E02",
+        "A2-E02",
+        "A4-E02"
+      ],
+      "brillaEn": "A1-E02, A2-E02 (análisis forense de la *Furia Controlada*) y A4-E02.",
+      "secreto": "La agente Dana Okafor (PNJ-18) ya tiene un expediente sobre ella. FIRSTLIGHT la considera \"anomalía estadística número uno\". Es la primera persona a la que van a ir a buscar."
+    }
+  ]
+}

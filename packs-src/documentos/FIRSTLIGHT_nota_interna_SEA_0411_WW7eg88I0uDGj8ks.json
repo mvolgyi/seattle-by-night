@@ -1,0 +1,86 @@
+{
+  "_id": "WW7eg88I0uDGj8ks",
+  "_key": "!journal!WW7eg88I0uDGj8ks",
+  "name": "FIRSTLIGHT, nota interna SEA-0411",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-07",
+      "archivo": "content/documentos/DOC-07.md",
+      "soporte": "correo",
+      "entrega": [
+        "A3-E02",
+        "A2-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "2nuDaPVyJq2EOMhb",
+      "_key": "!journal.pages!WW7eg88I0uDGj8ks.2nuDaPVyJq2EOMhb",
+      "name": "FIRSTLIGHT, nota interna SEA-0411",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-correo\"><dl class=\"sbn-correo-cabecera\"><dt>DE</dt><dd>Analista S. Hale, Célula Puget</dd><dt>PARA</dt><dd>Agente Especial D. Okafor</dd><dt>FECHA</dt><dd>10/11/2026</dd><dt>REF.</dt><dd>SEA-0411</dd><dt>CLASIFICACIÓN</dt><dd class=\"sbn-correo-clasificacion\">FIRSTLIGHT / CONFIDENCIAL / NO REMITIR</dd><dt>ASUNTO</dt><dd>Fuente ARQUERO, segunda entrega</dd></dl><div class=\"sbn-correo-cuerpo\"><ol>\n<li><p>La fuente anónima designada ARQUERO ha entregado una segunda muestra por el canal acordado. Fiabilidad provisional: B-2 (normalmente fiable; información probablemente cierta). La fuente afirma tener acceso &quot;a la estructura local&quot; y conocer su jerarquía.</p>\n</li>\n<li><p>La muestra incluye tres ubicaciones de interés:</p>\n<p>a) Propiedad rural en el valle del Snohomish, con embarcadero privado.</p>\n<p>b) Hangar industrial en Harbor Island, a nombre de una sociedad de logística inactiva.</p>\n<p>c) Ático en un edificio residencial de Capitol Hill, a nombre de una fundación cultural.</p>\n</li>\n<li><p>Las tres coinciden con zonas marcadas por el episodio 112 del pódcast «Lo que la ciudad olvida» (WARD, Helen). Se recomienda aumentar la vigilancia pasiva sobre WARD. No se recomienda contacto directo todavía.</p>\n</li>\n<li><p>La fuente afirma que podrá entregar en los próximos días &quot;el índice completo&quot; de un archivo privado que documenta diez años de incidentes en el área. Si es así, sería el mayor hallazgo de la célula desde su creación.</p>\n</li>\n<li><p>Por separado: se mantiene la vigilancia sobre la anomalía estadística n.º 1 (firma forense «R. A.», oficina del condado de King, 15 informes con patrón incompatible).</p>\n</li>\n<li><p>Pregunta abierta: ¿por qué nos lo da? Toda fuente quiere algo. Hasta saber qué quiere ARQUERO, propongo tratar sus entregas como un cebo posible.</p>\n</li>\n</ol>\n<p class=\"sbn-firma\">— S. H.</p>\n</div></div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "w5RXUy5SkHFmZfLD",
+      "_key": "!journal.pages!WW7eg88I0uDGj8ks.w5RXUy5SkHFmZfLD",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> correo cifrado, impreso. <strong>Cuándo:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}, en los servidores de Gale Sentinel (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wRvr7GFOMQsgTJ2z]{Envíos SEA-0411 / DOC-07}), o en @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} si Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}) confía en la coterie.</p>\n<p><strong>Presagia:</strong> la existencia del topo de Halloway y la lista de objetivos de la redada (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}).</p>\n<p><strong>Verdad:</strong> la fuente <em>ARQUERO</em> es Halloway, a través de Preston Gale. Todas las direcciones apuntan a activos de Whitmore, de Montgomery o de David. Ninguna apunta a Halloway. Si se juega a Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}), la &quot;anomalía&quot; es ella; si no, es una forense PNJ.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

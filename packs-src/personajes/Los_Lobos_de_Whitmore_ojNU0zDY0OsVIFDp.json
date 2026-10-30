@@ -1,0 +1,222 @@
+{
+  "_id": "ojNU0zDY0OsVIFDp",
+  "_key": "!actors!ojNU0zDY0OsVIFDp",
+  "name": "Los Lobos de Whitmore",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 220,
+  "prototypeToken": {
+    "name": "Los Lobos de Whitmore",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.dd9CRIHVGO38YUhN",
+      "Actor.doLuya2qqzFb2wqn",
+      "Actor.L1oU4dlqHg8Yszon"
+    ],
+    "headers": {
+      "concept": "Sbirri",
+      "chronicle": "Seattle by Night",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 3
+    },
+    "lien": {
+      "value": 2
+    },
+    "portillon": {
+      "value": 4
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{Perfil: Los Lobos de Whitmore}</p><blockquote><p><em>La jauría del Sheriff.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Tipo</th><td>Sbirri</td></tr><tr><th>Dominio</th><td>La granja y el valle del Snohomish</td></tr><tr><th>Lugar</th><td>@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}</td></tr><tr><th>Miembros</th><td>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}, @UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard «Hal» Brekke}, @UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery}</td></tr><tr><th>Aliados</th><td>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}</td></tr></tbody></table><p>Los que limpian la ciudad mientras el Príncipe brinda en la Galería.</p><h3>Dominio</h3><ul><li><strong>Caza (Chasse) 3:</strong> camioneros, cazadores, áreas de descanso</li><li><strong>Lien 2:</strong> el pueblo los ve como una familia rara de criadores de perros</li><li><strong>Portillon 4:</strong> campos abiertos, perros, un solo camino de grava y el túnel al río</li></ul>",
+    "notes": "",
+    "privatenotes": ""
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 3"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 3</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "Ie277wnCBBv26EzG",
+      "_key": "!actors.items!ojNU0zDY0OsVIFDp.Ie277wnCBBv26EzG"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Rebaño 2"
+        }
+      },
+      "name": "Rebaño",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Rebaño 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "ab0PQqbxa8S2450i",
+      "_key": "!actors.items!ojNU0zDY0OsVIFDp.ab0PQqbxa8S2450i"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 3 (policía estatal, puerto, seguridad privada)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 3 (policía estatal, puerto, seguridad privada)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "gHFJxrG2rHdxEc8e",
+      "_key": "!actors.items!ojNU0zDY0OsVIFDp.gHFJxrG2rHdxEc8e"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Estatus 4 (de Montgomery)"
+        }
+      },
+      "name": "Estatus",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Estatus 4 (de Montgomery)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "4Rp0X2Eunvsks89a",
+      "_key": "!actors.items!ojNU0zDY0OsVIFDp.4Rp0X2Eunvsks89a"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliado 3 (David)"
+        }
+      },
+      "name": "Aliado",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliado 3 (David)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "B0zWKZUJwISK4gQV",
+      "_key": "!actors.items!ojNU0zDY0OsVIFDp.B0zWKZUJwISK4gQV"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-01",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy",
+      "lema": "La jauría del Sheriff."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

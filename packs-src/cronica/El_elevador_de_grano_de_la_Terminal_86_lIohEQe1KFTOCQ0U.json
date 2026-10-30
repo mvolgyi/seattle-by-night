@@ -1,0 +1,109 @@
+{
+  "_id": "lIohEQe1KFTOCQ0U",
+  "_key": "!journal!lIohEQe1KFTOCQ0U",
+  "name": "El elevador de grano de la Terminal 86",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 160,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-16",
+      "archivo": "content/ciudad/LUG-16.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "u1faFKEb4kGZepXI",
+      "_key": "!journal.pages!lIohEQe1KFTOCQ0U.u1faFKEb4kGZepXI",
+      "name": "El elevador de grano de la Terminal 86",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Al norte del centro · Silos y galería de cintas · Mapa: sí</em></p>\n<p><em>El capítulo 3 no describe este lugar. Lo que sigue sale de @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell} y del registro de IDs de la Parte 3 (doc 12); en el mapa de dominios (@UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Mapa de Seattle con los dominios}) es el punto ⑯ «Terminal 86».</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oz0b5rE7SLheWEMQ",
+      "_key": "!journal.pages!lIohEQe1KFTOCQ0U.oz0b5rE7SLheWEMQ",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Es el recuadro de llegada de @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}.</em></p>\n<section class=\"sbn-leer\"><p>La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería larga y estrecha, de chapa y vidrio sucio. Dentro, una cinta transportadora detenida corre de punta a punta. Huele a grano viejo y a mar. Al fondo hay una compuerta abierta sobre la bahía, por donde entran el viento y la lluvia, y frente a ella una silla con alguien atado. Sentado sobre la cinta, con los codos en las rodillas y el abrigo gris abierto, un hombre de cabeza rapada los mira llegar. No se levanta. «Ven», le dice a David. «Siéntate. Hace cincuenta años que quiero preguntarte algo.»</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "dPvZnPOgd75Qf8ff",
+      "_key": "!journal.pages!lIohEQe1KFTOCQ0U.dPvZnPOgd75Qf8ff",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El lugar es el elevador de grano de la Terminal 86, al norte del centro: una hilera de silos de hormigón de cuarenta metros junto al agua, con una galería de cintas transportadoras en lo alto que une los silos con el muelle. @UUID[JournalEntry.OmK2qlPVNl758u6h]{Krell} espera en la galería. El rehén, si hay, está atado en una silla junto a una compuerta de carga abierta sobre la bahía, a treinta metros del agua.</p>\n<p><strong>Accesos:</strong> hay tres: la escalera exterior (la que usa David), el interior del silo vecino (Atletismo, Dificultad 3, para trepar) y el agua (llegar en lancha bajo la compuerta).</p>\n<p><strong>La compuerta:</strong> quien cae por ella sufre 4 de daño contundente al llegar al agua, a treinta metros.</p>\n<p><strong>Escena:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell} (Noche 7, <span class=\"sbn-reloj\" data-sbn-reloj=\"7\" title=\"Noche 7 · miércoles 18 nov. (madrugada del 18/11/2026)\">Noche 7</span>, miércoles 18 de noviembre, medianoche).</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

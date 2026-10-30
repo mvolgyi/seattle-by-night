@@ -1,0 +1,109 @@
+{
+  "_id": "uhtM1iF2WrHHlcd8",
+  "_key": "!journal!uhtM1iF2WrHHlcd8",
+  "name": "La tumba de Emily Smith",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 120,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-12",
+      "archivo": "content/ciudad/LUG-12.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "Ik08KZ7LwQVNbwmQ",
+      "_key": "!journal.pages!uhtM1iF2WrHHlcd8.Ik08KZ7LwQVNbwmQ",
+      "name": "La tumba de Emily Smith",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Cementerio al norte de la ciudad · Mapa: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sFVHTJhgg1DU3Yhx",
+      "_key": "!journal.pages!uhtM1iF2WrHHlcd8.sFVHTJhgg1DU3Yhx",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Una lápida sencilla de granito gris, en una ladera con cedros. EMILY ROSE SMITH · 1958–1996 · «Se quedó con los que nadie quería». La hierba está cortada. Al pie de la lápida hay un ramo de flores frescas, envuelto en papel de periódico, todavía con gotas de lluvia.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "QcFB2Q8ZU08qZ14T",
+      "_key": "!journal.pages!uhtM1iF2WrHHlcd8.QcFB2Q8ZU08qZ14T",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Las flores frescas son el núcleo de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cGEW4b4hCJlaDeSK]{GAN-12 · La tumba visitada}. Quién las deja queda abierto para la crónica (Marcos de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · El chico que sobrevivió}, alguien de Salitre o alguien que firma «M.V.»).</p>\n<p>Aparece en el Epílogo de @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward} como una de las tres codas posibles.</p>\n<p>Uso de Piedra de toque perdida: una visita permite a David hacer una tirada de Remordimiento con un dado extra, pero también hacerse una pregunta que no quiere hacerse.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

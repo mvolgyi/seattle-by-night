@@ -1,0 +1,1525 @@
+{
+  "_id": "YbfYS93oKtH7vbMN",
+  "_key": "!scenes!YbfYS93oKtH7vbMN",
+  "name": "Prólogo · El apartamento de Helen Ward",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 10,
+  "width": 2100,
+  "height": 2000,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.75,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "pXj0ZJVQR7zoch40",
+      "name": "Suelo",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/helen.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!YbfYS93oKtH7vbMN.pXj0ZJVQR7zoch40"
+    }
+  ],
+  "journal": "YD0Td8Y9aJyIpGSl",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "bxIwxJ6bYj1XfA8h",
+      "c": [
+        500,
+        200,
+        1150,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.bxIwxJ6bYj1XfA8h"
+    },
+    {
+      "_id": "dhaO8PvPj1m3pikb",
+      "c": [
+        1250,
+        200,
+        1900,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.dhaO8PvPj1m3pikb"
+    },
+    {
+      "_id": "CdjkIi8S5yLiFVX6",
+      "c": [
+        1100,
+        200,
+        1100,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.CdjkIi8S5yLiFVX6"
+    },
+    {
+      "_id": "tXaa6EDzdg3fS154",
+      "c": [
+        1100,
+        590,
+        1100,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.tXaa6EDzdg3fS154"
+    },
+    {
+      "_id": "7ZzE9XUVV9wWhjm9",
+      "c": [
+        1100,
+        1360,
+        1100,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.7ZzE9XUVV9wWhjm9"
+    },
+    {
+      "_id": "zVG2avDct5UIDgL5",
+      "c": [
+        1300,
+        200,
+        1300,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.zVG2avDct5UIDgL5"
+    },
+    {
+      "_id": "BOsVFx0Jp31vRB0K",
+      "c": [
+        1300,
+        590,
+        1300,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.BOsVFx0Jp31vRB0K"
+    },
+    {
+      "_id": "K7ut9JWQlZbHgwqg",
+      "c": [
+        1300,
+        1360,
+        1300,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.K7ut9JWQlZbHgwqg"
+    },
+    {
+      "_id": "m3cFyogLLh0XQTnm",
+      "c": [
+        500,
+        1900,
+        580,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.m3cFyogLLh0XQTnm"
+    },
+    {
+      "_id": "fLP21ePU5pyi6Ul7",
+      "c": [
+        700,
+        1900,
+        840,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.fLP21ePU5pyi6Ul7"
+    },
+    {
+      "_id": "d7V9e2pdtjFW0kAU",
+      "c": [
+        960,
+        1900,
+        1900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.d7V9e2pdtjFW0kAU"
+    },
+    {
+      "_id": "PQKxqOzXvCAy0utH",
+      "c": [
+        850,
+        1200,
+        960,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.PQKxqOzXvCAy0utH"
+    },
+    {
+      "_id": "UuZ2cAfDKpu1Kpl5",
+      "c": [
+        1040,
+        1200,
+        1100,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.UuZ2cAfDKpu1Kpl5"
+    },
+    {
+      "_id": "T6wCKRnKJIqWuWMF",
+      "c": [
+        500,
+        1400,
+        880,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.T6wCKRnKJIqWuWMF"
+    },
+    {
+      "_id": "fLlGhpj50TrQG5E3",
+      "c": [
+        1080,
+        1400,
+        1100,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.fLlGhpj50TrQG5E3"
+    },
+    {
+      "_id": "W7Q1rogVC2Fp0L0X",
+      "c": [
+        850,
+        1000,
+        850,
+        1060
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.W7Q1rogVC2Fp0L0X"
+    },
+    {
+      "_id": "wb5meYKxGdg2J02Y",
+      "c": [
+        850,
+        1140,
+        850,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.wb5meYKxGdg2J02Y"
+    },
+    {
+      "_id": "b2KScMw7UHDN5DLr",
+      "c": [
+        850,
+        1350,
+        850,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.b2KScMw7UHDN5DLr"
+    },
+    {
+      "_id": "bfn64FGOzg1675gK",
+      "c": [
+        500,
+        1000,
+        1100,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.bfn64FGOzg1675gK"
+    },
+    {
+      "_id": "AEhQ4dAn52lehM5U",
+      "c": [
+        1300,
+        1000,
+        1900,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.AEhQ4dAn52lehM5U"
+    },
+    {
+      "_id": "u3zzA6wrLuLpqFih",
+      "c": [
+        930,
+        1000,
+        930,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.u3zzA6wrLuLpqFih"
+    },
+    {
+      "_id": "rKYWGwpliW1wFOGT",
+      "c": [
+        500,
+        200,
+        500,
+        1120
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rKYWGwpliW1wFOGT"
+    },
+    {
+      "_id": "rFN5fW3ZXY0IWTC6",
+      "c": [
+        500,
+        1240,
+        500,
+        1620
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rFN5fW3ZXY0IWTC6"
+    },
+    {
+      "_id": "5jdngq6n5biPWEV3",
+      "c": [
+        500,
+        1720,
+        500,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.5jdngq6n5biPWEV3"
+    },
+    {
+      "_id": "TSJhDQLci0HcKSZe",
+      "c": [
+        1900,
+        200,
+        1900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.TSJhDQLci0HcKSZe"
+    },
+    {
+      "_id": "OdgH5yB8j3m9B33M",
+      "c": [
+        1100,
+        1270,
+        1100,
+        1360
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.OdgH5yB8j3m9B33M"
+    },
+    {
+      "_id": "tAhRsaG0p6mToJXQ",
+      "c": [
+        1300,
+        1270,
+        1300,
+        1360
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.tAhRsaG0p6mToJXQ"
+    },
+    {
+      "_id": "GfmAo37dmbg3dlKC",
+      "c": [
+        1100,
+        500,
+        1100,
+        590
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.GfmAo37dmbg3dlKC"
+    },
+    {
+      "_id": "3VKRQaoMWarCU7wu",
+      "c": [
+        1300,
+        500,
+        1300,
+        590
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.3VKRQaoMWarCU7wu"
+    },
+    {
+      "_id": "vEsRFArCuBUy3URi",
+      "c": [
+        1200,
+        1450,
+        1200,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.vEsRFArCuBUy3URi"
+    },
+    {
+      "_id": "H7ifFfYFwUNFSjKS",
+      "c": [
+        1150,
+        200,
+        1250,
+        200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.H7ifFfYFwUNFSjKS"
+    },
+    {
+      "_id": "jxtiEcSWPp34J9HY",
+      "c": [
+        960,
+        1200,
+        1040,
+        1200
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.jxtiEcSWPp34J9HY"
+    },
+    {
+      "_id": "y1gTE3tEfndRUDzk",
+      "c": [
+        850,
+        1270,
+        850,
+        1350
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.y1gTE3tEfndRUDzk"
+    },
+    {
+      "_id": "7IBsFhjMyLk9ag6X",
+      "c": [
+        850,
+        1060,
+        850,
+        1140
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.7IBsFhjMyLk9ag6X"
+    },
+    {
+      "_id": "ufwHvRpLfTq3aSjU",
+      "c": [
+        500,
+        1120,
+        500,
+        1240
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.ufwHvRpLfTq3aSjU"
+    },
+    {
+      "_id": "qMXXcHvVfeEDJmpH",
+      "c": [
+        500,
+        1620,
+        500,
+        1720
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.qMXXcHvVfeEDJmpH"
+    },
+    {
+      "_id": "PzNj5wZORMog6bv4",
+      "c": [
+        580,
+        1900,
+        700,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.PzNj5wZORMog6bv4"
+    },
+    {
+      "_id": "pbvTLyqXoYPpKILx",
+      "c": [
+        840,
+        1900,
+        960,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.pbvTLyqXoYPpKILx"
+    },
+    {
+      "_id": "Dxb8C2xqWYOi1EhQ",
+      "c": [
+        380,
+        1000,
+        500,
+        1000
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.Dxb8C2xqWYOi1EhQ"
+    },
+    {
+      "_id": "GuZRRceKEWlYJoqr",
+      "c": [
+        380,
+        1000,
+        380,
+        1450
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.GuZRRceKEWlYJoqr"
+    },
+    {
+      "_id": "rSUlryftrCL5HPGk",
+      "c": [
+        380,
+        1450,
+        500,
+        1450
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rSUlryftrCL5HPGk"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "RMI6FllihQLZ44Ri",
+      "name": "Plafón del pasillo (norte)",
+      "x": 1200,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.RMI6FllihQLZ44Ri"
+    },
+    {
+      "_id": "y9MUmCoEuq9wpkGp",
+      "name": "Plafón del pasillo (frente al 3A)",
+      "x": 1200,
+      "y": 1150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.y9MUmCoEuq9wpkGp"
+    },
+    {
+      "_id": "EljmOKgTDNlyx6yJ",
+      "name": "Cámara del 3B: transmite en directo",
+      "x": 1278,
+      "y": 1372,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.3,
+        "color": "#3fe07a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 3,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.EljmOKgTDNlyx6yJ"
+    },
+    {
+      "_id": "JZh1TPps7MMQQuPC",
+      "name": "Aplique de sodio del callejón",
+      "x": 470,
+      "y": 1540,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.JZh1TPps7MMQQuPC"
+    },
+    {
+      "_id": "8knjBgUsV6O0pRLm",
+      "name": "Farola de Market Street",
+      "x": 800,
+      "y": 1980,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.8knjBgUsV6O0pRLm"
+    },
+    {
+      "_id": "KzwsncKvnWDfXW1f",
+      "x": 1122,
+      "y": 1252,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.KzwsncKvnWDfXW1f"
+    },
+    {
+      "_id": "o5Xtws6rGv9mkB2u",
+      "x": 1278,
+      "y": 1372,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.o5Xtws6rGv9mkB2u"
+    },
+    {
+      "_id": "76x0OO4GTjO3UFyZ",
+      "x": 1122,
+      "y": 482,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.76x0OO4GTjO3UFyZ"
+    },
+    {
+      "_id": "G8uvt4b6ZbKFZkk3",
+      "x": 1278,
+      "y": 602,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.G8uvt4b6ZbKFZkk3"
+    },
+    {
+      "_id": "KKNQR8bYGlgB7oM3",
+      "x": 595,
+      "y": 1040,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.KKNQR8bYGlgB7oM3"
+    },
+    {
+      "_id": "2dPilJbLqwyOMTJY",
+      "x": 825,
+      "y": 1835,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.2dPilJbLqwyOMTJY"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "FvEN8PCleBZEKaOU",
+      "name": "Llegada desde el portal de Market Street",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 1450,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "desde-portal",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.FvEN8PCleBZEKaOU"
+    },
+    {
+      "_id": "MJzszCfPoPHgqOoy",
+      "name": "Bajar al portal de Market Street",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 1800,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "bajar-al-portal",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la calle (Market Street) en SPEC §5: el Narrador mueve los tokens a mano"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.MJzszCfPoPHgqOoy"
+    },
+    {
+      "_id": "R7lhMQ60ppBxuaQf",
+      "name": "Rellano de la azotea (puerta cerrada)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1200,
+          "y": 1760,
+          "width": 100,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "rellano-azotea",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa del techo"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.R7lhMQ60ppBxuaQf"
+    },
+    {
+      "_id": "zs5TC9H32Cu3uW7S",
+      "name": "Llegada al descanso de la escalera de incendios",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1230,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-llegada-descanso",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.zs5TC9H32Cu3uW7S"
+    },
+    {
+      "_id": "8C8Nl0ZNbIE2h4Vk",
+      "name": "Bajar por la escalera de incendios al callejón",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1340,
+          "width": 120,
+          "height": 110,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "bJfdpL553QyVyZLG",
+          "name": "Bajar por la escalera de incendios al callejón",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YbfYS93oKtH7vbMN.Region.QmZcw03mVMCNQSgO"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YbfYS93oKtH7vbMN.8C8Nl0ZNbIE2h4Vk.bJfdpL553QyVyZLG"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-bajar",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.8C8Nl0ZNbIE2h4Vk"
+    },
+    {
+      "_id": "jZ9KkEkQPhvz7QDy",
+      "name": "Subir por la escalerilla de la escalera de incendios",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1480,
+          "width": 110,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "60hHF6CIQ3zWeM30",
+          "name": "Subir por la escalerilla de la escalera de incendios",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YbfYS93oKtH7vbMN.Region.zs5TC9H32Cu3uW7S"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YbfYS93oKtH7vbMN.jZ9KkEkQPhvz7QDy.60hHF6CIQ3zWeM30"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-subir",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.jZ9KkEkQPhvz7QDy"
+    },
+    {
+      "_id": "QmZcw03mVMCNQSgO",
+      "name": "Pie de la escalera de incendios (callejón)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1590,
+          "width": 110,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-llegada-callejon",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.QmZcw03mVMCNQSgO"
+    },
+    {
+      "_id": "SNNVRqeWVF19hdfn",
+      "name": "Salida del callejón a Market Street",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 100,
+          "y": 1900,
+          "width": 400,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "callejon-a-market",
+          "estado": "pendiente",
+          "pendiente": "no hay mapa de la calle (Market Street)"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.SNNVRqeWVF19hdfn"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "bksG04311rktHbD6",
+      "entryId": "YD0Td8Y9aJyIpGSl",
+      "pageId": null,
+      "x": 760,
+      "y": 1535,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-05",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "LUG-05"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.bksG04311rktHbD6"
+    },
+    {
+      "_id": "OOD4bamNHYxqod7L",
+      "entryId": "w9xeQJg6psfiMjFU",
+      "pageId": "yyXMKcpDOIhGuZIB",
+      "x": 760,
+      "y": 1635,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A0-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "A0-E01"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.OOD4bamNHYxqod7L"
+    },
+    {
+      "_id": "vukDtbSHPF4KTHhn",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "T8gJWjZpOnL4OisP",
+      "x": 760,
+      "y": 1735,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "A1-E01"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.vukDtbSHPF4KTHhn"
+    },
+    {
+      "_id": "RnuQA3WdT7Rj387q",
+      "entryId": "C7cxKf7kcAELzuJ1",
+      "pageId": "7brn5AgmWggUl420",
+      "x": 760,
+      "y": 1835,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A3-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "A3-E01"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.RnuQA3WdT7Rj387q"
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": null,
+  "playlistSound": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "helen",
+      "id": "LUG-05",
+      "plano": "helen",
+      "provisional": false,
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}<br><strong>Escenas:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}</p>\n<p><strong>Llegada (A0-E01, 3:34).</strong> El portal de Market Street está abierto; la escalera común sube por el frente del edificio y desemboca en el pasillo del tercer piso, justo al lado de la puerta del 3A. Huele a humedad, a lana mojada y a monedas (Vitae aguada de ghoul, <strong>P-02</strong>: Resolución + Consciencia Dif 2, o Auspex 1). Helen está sentada en el suelo del <strong>recibidor</strong>, con la capucha puesta, de cara a la puerta, contando en voz baja.</p>\n<p><strong>Las cámaras (P-01).</strong> Las cuatro puertas del pasillo tienen timbre con cámara Gale Sentinel y su lucecita azul (luces «led-timbre»). La del <strong>3B</strong>, enfrente de la de Helen, es la única que apunta a su puerta y tiene además una lucecita verde intermitente: transmite en directo (Astucia + Consciencia Dif 3). La de Helen guarda el registro de desconexión de 2:52 a 3:03 (Inteligencia + Tecnología Dif 3). Romper la del 3B a golpes: Termómetro +1; abrirla y desconectarla: Destreza + Latrocinio Dif 3. Salir por el pasillo sin ocuparse de ella: ANOMALY marca a cada Vástago como «sujeto frío» (Termómetro +1).</p>\n<p><strong>La puerta del 3A.</strong> No está forzada: la abrieron con una ganzúa electrónica y la volvieron a cerrar con una sola vuelta (el picaporte quedó recto, no caído). El picaporte exterior tiene la Vitae del ghoul (P-02; Auspex 4, Toque espiritual). Con 3 o más éxitos en Inteligencia + Investigación (A1-E01) se encuentra en el marco un adhesivo negro minúsculo: el repetidor que desconectó las cámaras. <strong>No está pintado ni tiene tile</strong>: es la recompensa de la tirada.</p>\n<p><strong>Estudio.</strong> Paredes cubiertas de mapas con alfileres rojos (muertes), azules (desapariciones) y amarillos. En el escritorio, contra la pared norte, el portátil abierto con el audio en pausa (tile; Inteligencia + Tecnología Dif 4: la nube se borró desde una IP de un centro de datos del Eastside, P-06 a medias) y el cable pelado que cuelga enchufado a nada: ahí estaba el disco. En el <strong>cajón de la derecha</strong>, el teléfono de tapa con un solo número, SAFE (DOC-05). En la pared este, el <strong>armario empotrado</strong> cuya puerta se atasca a mitad de camino y chirría (puerta con sonido «woodCreaky»): al fondo estaba la caja de zapatos con la segunda copia; ya no está. Sólo abrieron el armario y el escritorio. La <strong>ventana de guillotina</strong> de la pared oeste da a la escalera de incendios; el cenicero de Helen está afuera, en la rejilla.</p>\n<p><strong>Salón-cocina.</strong> La tele sigue en su mueble y el frasco con billetes, en la mesada: no se llevaron nada que valiera dinero. La mesa de la cocina es la de A3-E01 si Krell llega tarde: silla volcada, un teléfono con la pantalla rota en el suelo y, sobre la mesa, el papel sujeto con un casquillo. La de Market Street es la única ventana iluminada del tercer piso (lámpara de pie).</p>\n<p><strong>Escapar sin la cámara del 3B.</strong> Por la ventana del estudio a la escalera de incendios y de ahí al callejón de servicio (Destreza + Sigilo Dif 2 para que nadie del edificio los vea bajar). En la escalera de incendios, la región «Bajar» lleva al pie de la escalerilla en el callejón y la de «Subir» trae de vuelta; la escalerilla de caída hay que bajarla desde arriba o alcanzarla de un salto desde el callejón. El callejón sale a Market Street por el sur.</p>\n<p><strong>El rellano de la azotea.</strong> Al lado del tramo que baja, otro tramo sube a un rellano con la puerta de la azotea (cerrada; no hay mapa del techo). Ahí se escondió Helen, detrás de la baranda, donde la luz del pasillo no llega; desde el pasillo el ghoul levantó la cabeza hacia ahí y olfateó.</p>\n<p><strong>Fuera del mapa.</strong> Bear espera en la camioneta en Market Street; a media manzana hay un coche eléctrico gris con alguien adentro (MEN-04, se va a las 4:10 si nadie hace nada). En A3-E01, Krell espera en la vereda de enfrente.</p>\n<p>Los departamentos 3B, 3C y 3D están cerrados (sus puertas, trabadas) y no se detallan.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): portatil, silla ×3, mesa, sofa, lampara, cenicero.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al portal de Market Street · Rellano de la azotea (puerta cerrada) · Salida del callejón a Market Street.</p>",
+      "moviles": [
+        {
+          "tipo": "portatil",
+          "tile": "tile-portatil",
+          "x": 5.75,
+          "y": 10.25,
+          "w": 0.4,
+          "h": 0.3
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-escritorio",
+          "x": 5.75,
+          "y": 10.95,
+          "w": 0.5,
+          "h": 0.5
+        },
+        {
+          "tipo": "mesa",
+          "tile": "tile-mesa-cocina",
+          "x": 5.6,
+          "y": 15.6,
+          "w": 1.1,
+          "h": 0.9
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 6.75,
+          "y": 15.8,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "silla",
+          "tile": "tile-silla-madera",
+          "x": 5.9,
+          "y": 16.55,
+          "w": 0.45,
+          "h": 0.45
+        },
+        {
+          "tipo": "sofa",
+          "tile": "tile-sofa-gastado",
+          "x": 8,
+          "y": 15.9,
+          "w": 0.9,
+          "h": 2
+        },
+        {
+          "tipo": "lampara",
+          "tile": "tile-lampara-pie",
+          "x": 8.05,
+          "y": 18.15,
+          "w": 0.4,
+          "h": 0.4
+        },
+        {
+          "tipo": "cenicero",
+          "tile": "tile-cenicero",
+          "x": 4.55,
+          "y": 11.55,
+          "w": 0.18,
+          "h": 0.18
+        }
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

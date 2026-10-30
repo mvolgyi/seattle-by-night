@@ -1,0 +1,82 @@
+{
+  "_id": "y8Ao3xEHH3W11EJe",
+  "_key": "!journal!y8Ao3xEHH3W11EJe",
+  "name": "Preston Gale",
+  "folder": "TDRainDNFr8zoPD6",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-19",
+      "archivo": "content/personajes/PNJ-19.md",
+      "actor": "Actor.OE0huDRYvrhnxa9O"
+    }
+  },
+  "pages": [
+    {
+      "_id": "gogzWrW0qbJ1VTwj",
+      "_key": "!journal.pages!y8Ao3xEHH3W11EJe.gogzWrW0qbJ1VTwj",
+      "name": "Preston Gale",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.OE0huDRYvrhnxa9O]{Preston Gale}</p>\n<p>Ghoul de Halloway, consejero delegado de Gale Sentinel</p>\n<p>Cincuenta y pocos, sonrisa de presentación de inversores, habla en eslóganes. Lleva veintiséis años bebiendo de Halloway y otros tantos encontrando lo que le piden.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "7bufauGi2zrLC5Rp",
+      "_key": "!journal.pages!y8Ao3xEHH3W11EJe.7bufauGi2zrLC5Rp",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Generales:</strong> Física 3 · Social 5 · Mental 5</p>\n<p><strong>Excepcionales:</strong> Tecnología 7, Finanzas 6, Persuasión 6, Subterfugio 5</p>\n<p><strong>Salud</strong> 6 · <strong>Fuerza de Voluntad</strong> 4 · <strong>Disciplina:</strong> Dominación 1 (Nublar la memoria), por la sangre de Halloway</p>\n<p><strong>Debilidad:</strong> le toca su dosis de Vitae desde hace tres días. −1 dado a todo mientras no la reciba.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

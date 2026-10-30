@@ -1,0 +1,85 @@
+{
+  "_id": "lcO0CdwUlZHg2wAX",
+  "_key": "!journal!lcO0CdwUlZHg2wAX",
+  "name": "Registro del Guardián del Elíseo, folio de noviembre",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-03",
+      "archivo": "content/documentos/DOC-03.md",
+      "soporte": "libro-registro",
+      "entrega": [
+        "A2-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "N6jeNJAg9i5bWH24",
+      "_key": "!journal.pages!lcO0CdwUlZHg2wAX.N6jeNJAg9i5bWH24",
+      "name": "Registro del Guardián del Elíseo, folio de noviembre",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-libro-registro\"><p class=\"sbn-doc-titulo\">REGISTRO DEL ELÍSEO DE SEATTLE</p>\n<p><em>Galería de Vidrio · Libro XIV · Folio 211</em></p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Noche del 22 de octubre.</span> Reunión ordinaria. Asisten S. A. el Príncipe Whitmore, la Primogenitura completa y el Sheriff. Sin incidentes. El Primogénito Halloway solicita audiencia privada con S. A. Denegada por agenda.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Noche del 29 de octubre.</span> El Sheriff Montgomery se retira antes de la medianoche sin despedirse de S. A. Nadie lo comenta en voz alta.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Noche del 5 de noviembre.</span> La Regente Voight entrega a S. A. un sobre sellado con lacre negro. S. A. no lo abre en la sala. El Primogénito Halloway vuelve a solicitar audiencia privada. Denegada. Esta Guardiana anota que el Primogénito sonrió al recibir la respuesta.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Noche del 5 de noviembre (cont.).</span> Se retira a un invitado un teléfono que llevaba encendido en el bolsillo interior. Se le recuerda la cuarta tradición de este Elíseo: <em>ningún dispositivo conectado cruza el umbral</em>. Se disculpa. Se le devuelve el aparato a la salida, apagado.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Noche del 5 de noviembre (cont.).</span> El Sr. Wendell Fry, del clan Malkavian, pide que conste en acta lo siguiente: «El puño tiene dos hijos y ninguno lo sabe». Consta.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Noche del 12 de noviembre.</span> <span class=\"sbn-acotacion\">[Entrada en blanco. Solo la fecha.]</span></p>\n<p><em>S. M., Guardiana</em></p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "aYXnJsracYEXMInc",
+      "_key": "!journal.pages!lcO0CdwUlZHg2wAX.aYXnJsracYEXMInc",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> libro de registro manuscrito, tinta sepia, caligrafía cuidada. <strong>Cuándo:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}, si un PJ con Estatus 2 o más pide ver el registro a Solène Marchetti (@UUID[JournalEntry.bB0eDKVFcxQW4C2d]{Solène Marchetti}), o si Nadia lo consulta en la corte.</p>\n<p><strong>Presagia:</strong> la frustración de Halloway, la tensión entre el Sheriff y el Príncipe y la profecía de Fry (@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: «Canción para el hijo del puño»}).</p>\n<p><strong>Verdad:</strong> todo es exacto. Marchetti registra lo que ve, no lo que piensa. El sobre de Voight contiene su primer informe sobre FIRSTLIGHT.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

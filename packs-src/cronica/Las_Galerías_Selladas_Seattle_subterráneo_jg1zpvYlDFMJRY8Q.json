@@ -1,0 +1,109 @@
+{
+  "_id": "jg1zpvYlDFMJRY8Q",
+  "_key": "!journal!jg1zpvYlDFMJRY8Q",
+  "name": "Las Galerías Selladas (Seattle subterráneo)",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 40,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-04",
+      "archivo": "content/ciudad/LUG-04.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "9t7L1cTiRMv5caLF",
+      "_key": "!journal.pages!jg1zpvYlDFMJRY8Q.9t7L1cTiRMv5caLF",
+      "name": "Las Galerías Selladas (Seattle subterráneo)",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Pioneer Square · Dominio de Abel Thornquist · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "mvxLc0BpuyE4e2B9",
+      "_key": "!journal.pages!jg1zpvYlDFMJRY8Q.mvxLc0BpuyE4e2B9",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Las visitas turísticas recorren tres manzanas del Seattle subterráneo. Esto no es eso. Pasada una puerta de hierro que no figura en ningún plano, las aceras de 1889 siguen bajo el suelo, con los escaparates tapiados, letreros pintados a mano y claraboyas de cristal violeta que dejan pasar una luz sucia desde la calle de arriba. Huele a moho, a humedad y, cada tanto, a ozono de servidores. Un cable de red recorre el techo como una enredadera.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4xzei9plqTGJqrua",
+      "_key": "!journal.pages!jg1zpvYlDFMJRY8Q.4xzei9plqTGJqrua",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> el Mercado de Abajo (puestos de información y favores), la oficina de Thornquist en una antigua barbería, el nido de servidores de Ezra (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}) y el refugio de los sangre débil en un viejo almacén de carbón.</p>\n<p><strong>Trasfondos:</strong> Refugio 4 (Thornquist), Refugio 2 (Ezra).</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}. Es también el lugar natural para @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.2fax8pORxdPqKspO]{LOR-02 · El Seattle subterráneo}.</p>\n<p><strong>Normas de Abajo:</strong> no se pelea en el Mercado, todo tiene precio y nadie pregunta por la cara de nadie.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

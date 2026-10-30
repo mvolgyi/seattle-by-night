@@ -1,0 +1,109 @@
+{
+  "_id": "zSkwEUUtkNGhfXun",
+  "_key": "!journal!zSkwEUUtkNGhfXun",
+  "name": "Gale Sentinel, campus y centro de datos",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-07",
+      "archivo": "content/ciudad/LUG-07.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "BxfZwDeir6T3tVdD",
+      "_key": "!journal.pages!zSkwEUUtkNGhfXun.BxfZwDeir6T3tVdD",
+      "name": "Gale Sentinel, campus y centro de datos",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Bellevue, Eastside · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "BQPpOLqqyVa9mhVI",
+      "_key": "!journal.pages!zSkwEUUtkNGhfXun.BQPpOLqqyVa9mhVI",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>El campus es un parque de oficinas con césped artificial y bancos que nadie usa. En el vestíbulo, una pantalla gigante muestra un mosaico de miles de imágenes de timbres en tiempo real: porches, pasillos, lluvia. Debajo, el lema de la empresa: «Vemos lo que la ciudad no ve.» El edificio de atrás no tiene ventanas. Zumba.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "R6nugsNhCADdUeYd",
+      "_key": "!journal.pages!zSkwEUUtkNGhfXun.R6nugsNhCADdUeYd",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> edificio de oficinas (despacho de @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale} en la planta 3), centro de datos sin ventanas con tres niveles de seguridad, y sala de pruebas donde se entrena el modelo ANOMALY.</p>\n<p><strong>Seguridad:</strong> guardias mortales; de noche, cuatro ghouls de Gale (@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway}). Hay cámaras ANOMALY en los accesos, así que cualquier Vástago que entre por la puerta principal queda registrado como «sujeto frío» (Termómetro +1: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Vástago registrado como «sujeto frío» en Gale Sentinel\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Vástago registrado como «sujeto frío» en Gale Sentinel</span></button>), salvo que @UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra} o alguien con Tecnología 3 desactive el módulo antes.</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} y @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}.</p>\n<p><strong>Pistas:</strong> <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-06\"><span class=\"sbn-pista-id\">P-06</span> <span class=\"sbn-pista-nombre\">Pedido de datos de Gale Sentinel sin registrar</span></button>, <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-10\"><span class=\"sbn-pista-id\">P-10</span> <span class=\"sbn-pista-nombre\">Envíos SEA-0411 / DOC-07</span></button>, <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-11\"><span class=\"sbn-pista-id\">P-11</span> <span class=\"sbn-pista-nombre\">Firma de Gale</span></button>, @UUID[JournalEntry.YhmNvLugMfCZezEH]{Gale Sentinel: hoja de ruta del producto 2027, confidencial}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

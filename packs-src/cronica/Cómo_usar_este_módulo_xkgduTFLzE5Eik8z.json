@@ -1,0 +1,277 @@
+{
+  "_id": "xkgduTFLzE5Eik8z",
+  "_key": "!journal!xkgduTFLzE5Eik8z",
+  "name": "Cómo usar este módulo",
+  "folder": "6HgCsgxtaVxFMM6U",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "COMO-USAR",
+      "archivo": "content/cronica/00-como-usar.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "loFKdckD8BgU35Tt",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.loFKdckD8BgU35Tt",
+      "name": "Cómo usar este módulo",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Aventura central:</strong> <em>El Expediente Ward</em> (@UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward})</p>\n<p><strong>Sistema:</strong> Vampiro: La Mascarada 5ª edición. La Segunda Inquisición (FIRSTLIGHT) está presente en la trama de forma latente.</p>\n<p><strong>Ciudad:</strong> Seattle y el estrecho de Puget, noviembre de 2026. Zonas principales: Elliott Bay y Harbor Island, Pioneer Square y el Seattle subterráneo, Capitol Hill, Ballard, el Eastside, Tacoma y Everett.</p>\n<p><strong>Formato de juego:</strong> crónica para un solo jugador (David Smith, @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), con Tom &quot;Bear&quot; Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}) como compañero.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "lsxSvcyp77FOh6q8",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.lsxSvcyp77FOh6q8",
+      "name": "Premisa",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Seattle es la ciudad que más sabe de sus habitantes: cada teléfono, cada cámara de timbre y cada algoritmo de reparto deja un rastro. La Camarilla del Príncipe Marcus Whitmore sobrevive gracias a la lluvia, a la indiferencia y a que el Sheriff Montgomery y su Sabueso, David Smith, borran todo lo que sobra. Una noche roban de un apartamento de Ballard el disco duro de Helen Ward: diez años de notas, fotos borrosas y patrones geográficos. Es, sin que nadie lo haya querido así, el mapa más completo que existe de los cotos de caza y de los fallos de Mascarada de la ciudad. Al mismo tiempo, en los muelles empiezan a aparecer Vástagos destruidos con la técnica de la <em>Furia Controlada</em>, la doctrina que a David le enseñó un sire al que dan por muerto desde 1985. Si el Expediente Ward llega a la Segunda Inquisición, la ciudad arde. Si llega a la Primogenitura, alguien gana un arma para derribar al Príncipe. Y si David lo recupera, tendrá que leer lo que dice el archivo.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xnFXuFgIpsaWOBOw",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.xnFXuFgIpsaWOBOw",
+      "name": "Temas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>La Mascarada como deuda:</strong> cada secreto que se protege lo paga un mortal.</li>\n<li><strong>Padres e hijos en la Sangre:</strong> Vance y David, David y Tom, David y Emily.</li>\n<li><strong>La vigilancia:</strong> en la ciudad de la tecnología, el depredador también es la presa de los datos.</li>\n<li><strong>El orden contra la conciencia:</strong> ¿el ejecutor sirve a la ley o a su código?</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xriVPQwrexgLAblk",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.xriVPQwrexgLAblk",
+      "name": "Tono",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Noir</em> lluvioso y táctico, con horror personal. Pocas palabras, silencios largos y violencia breve que tiene consecuencias. La amenaza es fría y procedimental: drones, informes y bases de datos.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SGjVBT09pzPlKLm6",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.SGjVBT09pzPlKLm6",
+      "name": "Duración estimada",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Aventura central: 6–8 sesiones. Ganchos de crónica: 12 adicionales, para llevar la campaña a 15–25 sesiones.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "w1Ru1BVoqOufRFbm",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.w1Ru1BVoqOufRFbm",
+      "name": "Decisiones tomadas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Pregunta</th>\n<th>Decisión</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>¿Quién mueve los hilos?</td>\n<td><strong>Charles Halloway</strong>, Primogénito Ventrue (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}). Las señales de Vance son una pista falsa que planta él. Vance no está en la ciudad.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>El Sheriff O&#39;Connor</td>\n<td>Fue el <strong>Sheriff anterior</strong>, hasta 1978. Ahora es una pieza de trasfondo (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}).</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Muerte de Emily</td>\n<td>En los <strong>años 90</strong>. Ella tenía unos 35 años.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Jugadores</td>\n<td><strong>David solo</strong>. Bear lo acompaña como PNJ.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>¿El incendio de Helen fue obra de David?</td>\n<td><em>Pendiente.</em></td>\n</tr>\n<tr>\n<td>—</td>\n<td>Segunda Inquisición</td>\n<td>Latente durante toda la aventura. Se mide con el Termómetro de FIRSTLIGHT.</td>\n</tr>\n<tr>\n<td>—</td>\n<td>Gancho de racionar la Vitae de Bear</td>\n<td>Excluido, como pide su ficha.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "yo8IuXmGHjfHmM04",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.yo8IuXmGHjfHmM04",
+      "name": "Decisiones actualizadas (doc 02)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Pregunta</th>\n<th>Decisión</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>¿Quién mueve los hilos?</td>\n<td>Charles Halloway (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}). Las señales de Vance son falsas; las deja August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}).</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Sheriff O&#39;Connor</td>\n<td>Fue el Sheriff anterior, hasta 1978 (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}).</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Muerte de Emily</td>\n<td>En los años 90.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Jugadores</td>\n<td><strong>4–5 jugadores.</strong> David y 3–4 personajes nuevos. Bear es PNJ.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Incendio del Larchmont</td>\n<td><strong>David no llegó a tiempo.</strong></td>\n</tr>\n<tr>\n<td>6</td>\n<td>Clan del Príncipe Whitmore</td>\n<td><strong>Toreador.</strong></td>\n</tr>\n<tr>\n<td>7</td>\n<td>Ficción de apertura</td>\n<td>Desde el punto de vista de <strong>Helen Ward</strong>.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "p18xdlV9rRUVcziP",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.p18xdlV9rRUVcziP",
+      "name": "Cómo usar este libro",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Cada capítulo cumple una función distinta y se puede leer por separado.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Capítulo</th>\n<th>Contenido</th>\n<th>Para quién</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>0 · Ficción de apertura</td>\n<td>El relato de Helen la noche del robo</td>\n<td>Narrador y jugadores</td>\n</tr>\n<tr>\n<td>1 · Introducción</td>\n<td>Este capítulo</td>\n<td>Narrador y jugadores</td>\n</tr>\n<tr>\n<td>2 · Documentos del mundo</td>\n<td>Doce fragmentos (@UUID[JournalEntry.zNhdOMSnEHdvMIGE]{Notas de voz de Helen Ward #7} a @UUID[JournalEntry.5mQIPoGa4I0tQtbR]{Nota guardada en la caja fuerte de Bear}) que se entregan como ayudas de juego</td>\n<td>Jugadores, cuando el Narrador lo indique</td>\n</tr>\n<tr>\n<td>3 · La ciudad</td>\n<td>Historia, política, rumores, leyes del Elíseo y lugares (LUG-xx)</td>\n<td>Narrador; algunas partes se pueden compartir</td>\n</tr>\n<tr>\n<td>4 · Vástagos de la ciudad</td>\n<td>Fichas completas de los PNJs (PNJ-xx), agrupadas por clan</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>5 · Coteries</td>\n<td>Las coteries de PNJs (COT-xx) y tres Loresheets nuevas</td>\n<td>Narrador y jugadores</td>\n</tr>\n<tr>\n<td>6 · Ganchos de crónica</td>\n<td>Doce ganchos (GAN-xx) para seguir después de la aventura</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>7 · La aventura</td>\n<td><em>El Expediente Ward</em>, escena por escena</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>8 · Estadísticas</td>\n<td>Antagonistas y PNJs menores</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>9 · Apéndice</td>\n<td>Ayudas de juego (AYU-xx), prompts de imagen y manifiesto para Foundry VTT</td>\n<td>Narrador</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "GIX1R3gaibyqbvwQ",
+      "_key": "!journal.pages!xkgduTFLzE5Eik8z.GIX1R3gaibyqbvwQ",
+      "name": "Convenciones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Todas las referencias cruzadas usan identificadores estables, que no cambian entre versiones del libro y que se convierten en enlaces en Foundry VTT:</p>\n<ul>\n<li><strong>PJ-xx</strong> personajes jugadores · <strong>PNJ-xx</strong> personajes no jugadores · <strong>MEN-xx</strong> PNJs menores</li>\n<li><strong>LUG-xx</strong> lugares · <strong>COT-xx</strong> coteries · <strong>LOR-xx</strong> Loresheets · <strong>GAN-xx</strong> ganchos</li>\n<li><strong>DOC-xx</strong> documentos del mundo · <strong>AYU-xx</strong> ayudas de juego</li>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta}</strong> escena 3 de la parte 1 · <strong>P-xx</strong> pistas · <strong>FIN-x</strong> desenlaces</li>\n</ul>\n<p>Dentro de cada escena, el texto se separa siempre en tres tipos de bloque, que en Foundry pasan a ser elementos distintos:</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Bloque</th>\n<th>Qué es</th>\n<th>En Foundry</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>📢 <strong>Leer en voz alta</strong></td>\n<td>Texto breve para leer o parafrasear a los jugadores</td>\n<td>Página de diario visible para jugadores</td>\n</tr>\n<tr>\n<td>🕯️ <strong>Notas del Narrador</strong></td>\n<td>Contexto, secretos, tiradas, opciones y consecuencias</td>\n<td>Página de diario privada del Narrador</td>\n</tr>\n<tr>\n<td>🩸 <strong>Estadísticas</strong></td>\n<td>Reservas de dados, Atributos, Disciplinas</td>\n<td>Actor</td>\n</tr>\n</tbody></table>\n<p>Las tiradas se escriben siempre igual: <strong>Astucia + Consciencia (Dificultad 3)</strong>, seguidas de lo que revela un éxito.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

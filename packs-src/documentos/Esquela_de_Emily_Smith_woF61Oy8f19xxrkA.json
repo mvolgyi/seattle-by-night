@@ -1,0 +1,86 @@
+{
+  "_id": "woF61Oy8f19xxrkA",
+  "_key": "!journal!woF61Oy8f19xxrkA",
+  "name": "Esquela de Emily Smith",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 40,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-04",
+      "archivo": "content/documentos/AYU-04.md",
+      "soporte": "recorte",
+      "entrega": [
+        "A2-E03",
+        "epilogo"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "9keb4PHNul4quuj1",
+      "_key": "!journal.pages!woF61Oy8f19xxrkA.9keb4PHNul4quuj1",
+      "name": "Esquela de Emily Smith",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-recorte\"><p><strong>THE PUGET COURIER</strong> · Necrológicas · Jueves, 24 de octubre de 1996</p>\n<p class=\"sbn-doc-titulo\">EMILY ROSE SMITH</p>\n<p>14 de febrero de 1958 – 21 de octubre de 1996</p>\n<p>Emily Smith, trabajadora social del Departamento de Servicios para Jóvenes del condado de King, falleció el lunes en Rainier Valley mientras atendía a menores a su cargo. Tenía 38 años.</p>\n<p>Nació en San Diego y se crió en Seattle con su madre, Anne Smith, que falleció en 1989. Su padre, el sargento de la Marina David Smith, murió en servicio en 1960, cuando Emily tenía dos años.</p>\n<p>Se licenció en Trabajo Social por la Universidad de Washington en 1981 y dedicó quince años a jóvenes en riesgo en el sur de la ciudad. Sus compañeros la recuerdan como «la que nunca colgaba el teléfono» y «la que se quedaba con los casos que nadie quería».</p>\n<p>La policía investiga el suceso como un enfrentamiento entre bandas. Uno de los menores resultó ileso.</p>\n<p>No le sobreviven familiares directos. Se celebrará una ceremonia íntima el sábado en el cementerio de los cedros. La familia pide que, en lugar de flores, se hagan donaciones al Centro Juvenil de Rainier Valley.</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-boligrafo\"><p><span class=\"sbn-acotacion\">[A mano, con bolígrafo azul, junto a «No le sobreviven familiares directos»:]</span> <em>Sí.</em></p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "QwbORWryz373EStV",
+      "_key": "!journal.pages!woF61Oy8f19xxrkA.QwbORWryz373EStV",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Recorte de periódico. <strong>Entrega:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre} o Epílogo.</p>\n<p><em>Narrador: recorte de un periódico local de 1996, amarillento. David lo guarda en el hangar. Rosa tiene otro igual en la trastienda de Salitre. Si sale en @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}, que sea ella quien lo saque.</em></p>\n<p><em>Nota: la madre de Emily (Anne Smith) y la fecha exacta de la muerte (21 de octubre de 1996) son detalles nuevos. Si contradicen la ficha de David, cambialos.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "IdLdXpR0cpQaUeFd",
+  "_key": "!actors!IdLdXpR0cpQaUeFd",
+  "name": "Pike",
+  "type": "spc",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 200,
+  "prototypeToken": {
+    "name": "Pike",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Recadero Nosferatu de los Topos, destruido en la Noche 2",
+      "chronicle": "Seattle by Night",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Recadero Nosferatu de los Topos, destruido en la Noche 2</td></tr></tbody></table><p>Nosferatu menor, recadero de los Topos. Acababa de recibir de Jun Takeda una copia parcial del Expediente para un comprador cuando Krell lo destruyó junto a un contenedor rojo de la Terminal 46, en la <span class=\"sbn-reloj\" data-sbn-reloj=\"2\">Noche 2</span>, entre las 2:00 y las 3:00 (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 0
+      },
+      "social": {
+        "value": 0
+      },
+      "mental": {
+        "value": 0
+      }
+    },
+    "exceptionaldicepools": {},
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-12",
+      "journal": null,
+      "doc": "10",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

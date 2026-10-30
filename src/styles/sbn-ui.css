@@ -1,0 +1,248 @@
+/* Seattle by Night — interfaz: botones de los journals, mensajes de chat e indicador del Narrador.
+   Todo prefijado con `sbn-`. La paleta (variables --sbn-*) está en sbn.css. */
+
+/* -------------------------------------------- */
+/*  Botones embebidos en journals y chat        */
+/* -------------------------------------------- */
+
+.sbn-tirada,
+button.sbn-termometro,
+button.sbn-pista,
+.sbn-reloj {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  width: auto;
+  height: auto;
+  min-height: 0;
+  margin: 0 0.1em;
+  padding: 0.05em 0.55em;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95em;
+  line-height: 1.5;
+  vertical-align: baseline;
+  white-space: normal;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, opacity 0.15s;
+}
+
+/* Tirada: pizarra con filo de sodio. */
+.sbn-tirada {
+  color: var(--sbn-papel);
+  background: var(--sbn-pizarra);
+  border: 1px solid var(--sbn-sodio);
+  text-decoration: none;
+}
+.sbn-tirada:hover {
+  color: var(--sbn-negro);
+  background: var(--sbn-sodio);
+  text-shadow: none;
+}
+.sbn-tirada i { font-size: 0.9em; }
+
+/* Termómetro: carmesí. */
+button.sbn-termometro {
+  color: var(--sbn-papel);
+  background: color-mix(in srgb, var(--sbn-carmesi) 85%, var(--sbn-negro));
+  border: 1px solid var(--sbn-carmesi);
+}
+button.sbn-termometro::before {
+  content: "\f2c9"; /* fa-temperature-half */
+  font-family: var(--font-awesome, "Font Awesome 7 Pro");
+  font-weight: 900;
+  font-size: 0.9em;
+}
+/* Si el build ya puso su <i>, el ícono de respaldo sobra. */
+button.sbn-termometro:has(> i)::before { content: none; }
+button.sbn-termometro:hover { background: var(--sbn-carmesi); }
+button.sbn-termometro.sbn-usado { opacity: 0.65; }
+button.sbn-termometro.sbn-bloqueado {
+  opacity: 0.45;
+  cursor: not-allowed;
+  filter: saturate(0.3);
+}
+
+/* Pista: azul de puerto punteado; obtenida, lleno y con tilde. */
+button.sbn-pista {
+  color: inherit;
+  background: color-mix(in srgb, var(--sbn-puerto) 12%, transparent);
+  border: 1px dashed var(--sbn-puerto);
+}
+button.sbn-pista:not(:has(> i))::before {
+  content: "\25CB";
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+button.sbn-pista:hover { background: color-mix(in srgb, var(--sbn-puerto) 25%, transparent); }
+button.sbn-pista.sbn-obtenida {
+  color: var(--sbn-papel);
+  background: var(--sbn-puerto);
+  border-style: solid;
+}
+/* Obtenida: la lupa del build se cambia por un tilde. */
+button.sbn-pista.sbn-obtenida > i { display: none; }
+button.sbn-pista.sbn-obtenida::before {
+  content: "\2713";
+  opacity: 1;
+  color: var(--sbn-sodio);
+  font-weight: bold;
+}
+
+/* Reloj: insignia de la noche; la actual en sodio, las pasadas apagadas. */
+.sbn-reloj {
+  color: inherit;
+  background: color-mix(in srgb, var(--sbn-pizarra) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sbn-pizarra) 60%, transparent);
+  font-variant: small-caps;
+  cursor: help;
+}
+.sbn-reloj:not(:has(> i))::before {
+  content: "\263E";
+  font-size: 0.9em;
+}
+.sbn-reloj.sbn-actual {
+  color: var(--sbn-negro);
+  background: var(--sbn-sodio);
+  border-color: var(--sbn-sodio);
+  font-weight: bold;
+}
+.sbn-reloj.sbn-pasada { opacity: 0.55; }
+
+/* -------------------------------------------- */
+/*  Mensajes de chat (susurros al Narrador)     */
+/* -------------------------------------------- */
+
+.sbn-chat h4 {
+  margin: 0 0 0.3em;
+  font-size: var(--font-size-14, 14px);
+  border-bottom: 1px solid var(--sbn-sodio);
+}
+.sbn-chat p { margin: 0.25em 0; }
+.sbn-chat .sbn-chat-motivo { font-style: italic; opacity: 0.85; }
+.sbn-chat .sbn-chat-jugadores { font-size: 0.9em; opacity: 0.8; }
+.sbn-chat.sbn-chat-umbral h4 { color: var(--sbn-carmesi); border-bottom-color: var(--sbn-carmesi); }
+.sbn-chat.sbn-chat-umbral.sbn-chat-baja h4 { color: inherit; border-bottom-color: var(--sbn-puerto); }
+
+/* Escala de diez segmentos (chat e indicador). */
+.sbn-escala,
+.sbn-chat-escala {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+}
+.sbn-chat-escala { display: flex; margin: 0.3em 0; }
+.sbn-seg {
+  flex: 1 1 0;
+  min-width: 6px;
+  height: 8px;
+  border-radius: 1px;
+  background: color-mix(in srgb, currentColor 22%, transparent);
+}
+.sbn-seg.sbn-umbral { box-shadow: inset 0 -2px 0 var(--sbn-sodio); }
+.sbn-seg.sbn-on { background: var(--sbn-carmesi); }
+.sbn-seg.sbn-on.sbn-umbral { background: color-mix(in srgb, var(--sbn-carmesi) 70%, var(--sbn-sodio)); }
+
+/* -------------------------------------------- */
+/*  Indicador del Narrador (#ui-bottom)         */
+/* -------------------------------------------- */
+
+#sbn-indicador {
+  align-self: center;
+  pointer-events: none;
+  margin-bottom: 4px;
+}
+#sbn-indicador .sbn-ind-barra {
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 8px 3px 4px;
+  color: var(--sbn-papel);
+  background: color-mix(in srgb, var(--sbn-negro) 82%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sbn-sodio) 45%, transparent);
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgb(0 0 0 / 0.5);
+  font-size: var(--font-size-12, 12px);
+  line-height: 1;
+  user-select: none;
+}
+#sbn-indicador .sbn-ind-barra.sbn-congelado { border-color: #7fb4d9; }
+#sbn-indicador .sbn-ind-grupo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#sbn-indicador .sbn-ind-grupo + .sbn-ind-grupo {
+  padding-left: 10px;
+  border-left: 1px solid color-mix(in srgb, var(--sbn-papel) 20%, transparent);
+}
+#sbn-indicador .sbn-ind-etiqueta {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+#sbn-indicador .sbn-ind-valor {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: help;
+}
+#sbn-indicador .sbn-ind-numero {
+  min-width: 1.2em;
+  text-align: center;
+  font-size: 1.35em;
+  font-weight: bold;
+  color: var(--sbn-sodio);
+}
+#sbn-indicador .sbn-ind-termometro .sbn-escala { width: 90px; }
+#sbn-indicador .sbn-ind-dia { opacity: 0.85; white-space: nowrap; }
+#sbn-indicador .sbn-ind-pistas { opacity: 0.85; white-space: nowrap; cursor: help; }
+#sbn-indicador button {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  line-height: 1;
+  color: var(--sbn-papel);
+  background: color-mix(in srgb, var(--sbn-pizarra) 80%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sbn-papel) 25%, transparent);
+  border-radius: 3px;
+  box-shadow: none;
+}
+#sbn-indicador button:hover:not(:disabled) {
+  color: var(--sbn-negro);
+  background: var(--sbn-sodio);
+  border-color: var(--sbn-sodio);
+}
+#sbn-indicador button:disabled { opacity: 0.35; cursor: default; }
+#sbn-indicador button.sbn-ind-plegar {
+  background: transparent;
+  border-color: transparent;
+}
+#sbn-indicador button.sbn-ind-congelar.sbn-activo {
+  color: var(--sbn-negro);
+  background: #7fb4d9;
+  border-color: #7fb4d9;
+}
+#sbn-indicador .sbn-ind-plegado { gap: 8px; }
+#sbn-indicador .sbn-ind-resumen {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+  cursor: help;
+}
+#sbn-indicador .sbn-ind-resumen i { color: var(--sbn-sodio); font-size: 0.95em; }
+
+/* Tooltips multilínea del indicador. */
+#tooltip.sbn-tooltip,
+.locked-tooltip.sbn-tooltip { white-space: pre-line; text-align: left; }

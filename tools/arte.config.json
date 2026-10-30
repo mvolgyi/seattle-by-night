@@ -1,0 +1,93 @@
+{
+  "_comentario": "Contrato de estilo de Seattle by Night (SPEC.md §4.4, MAPS_SPEC.md §5). Fuente única de verdad del look: los mapas pintados (tools/pintar-planos.mjs) y el resto del arte pasan por estos bloques. El prompt de cada asset describe SOLO su sujeto; el estilo vive acá. Cambiar el look = editar estos bloques y regenerar. Modelos locales (ComfyUI): con prompts cortos dan basura, así que el bloque battlemap es largo a propósito y nombra cada cosa prohibida con el objeto concreto que el modelo tiende a pintar.",
+  "referencia": "helen",
+  "estilos": {
+    "battlemap": {
+      "_comentario": "Para pintar un plano. `prefijo` es para los modelos de edición (Qwen-Edit, klein: «Picture 1» = el esquema); `prefijo_control` es para texto a imagen con ControlNet (Z-Image), que no ve el esquema como imagen sino como bordes. El cuerpo del medio (habitación por habitación) lo arma pintar-planos.mjs desde el plano. `negativo` sólo pesa con CFG > 1 (Qwen sin Lightning). La palabra «night» no aparece: hace que los modelos enciendan lámparas y farolas.",
+      "prefijo": "STYLE TRANSFER. Picture 1 is a flat, simple vector schematic of a floor plan, drawn exactly to scale (1 metre = 1 square): the third floor of an old 1910 brick apartment building in Ballard, Seattle, seen strictly from directly above with the roof removed. Re-render it completely as a richly textured, hand-painted, realistic top-down map in the style of a professionally published modern-horror map pack. Change the RENDERING of every surface — every flat fill becomes real painted material with grain, wear, dirt and soft shading (wood grain on every board, grout on every tile, iron grating, wet asphalt, fabric, enamel, cast iron) — so that the flat vector look of Picture 1 disappears completely. Change NOTHING of the LAYOUT: it is a surveyor's drawing to be rendered, not an inspiration.\n\nKEEP THE LAYOUT EXACTLY: the position, length and thickness of every wall; every gap in the walls (doorways stay empty openings); the outline and size of every room; the position and footprint of every piece of furniture; the image framing and dimensions. Do not shift, zoom, crop, rotate or re-frame anything. Do not add or remove rooms, walls, partitions, steps, kerbs, low walls or counters, and do not subdivide any room.\n\n",
+      "prefijo_control": "A strictly top-down orthographic map, seen from directly above like a drone photograph straight down with the roof removed, of the third floor of an old 1910 brick apartment building in Ballard, Seattle, on a cold wet November evening. Realistic hand-painted floor plan in the style of a professionally published modern-horror map pack. The walls, rooms and furniture follow the control drawing exactly; every gap in a wall is an empty doorway opening.\n\n",
+      "sufijo": "\n\nSTYLE: illustrated photorealism like a professionally published modern-horror map pack: crisp, confident dark ink outlines on every wall and every object, filled with realistic painted materials. The walls are thick, solid, matte slate-grey plaster seen only as their flat top edge, with a dark ink outline on both sides. Palette of rainy Seattle in November: wet slate grey, cold harbour blue, deep black; old floorboards in a muted grey-brown (never orange, honey or golden wood, but still recognisably wood); the only saturated colour is a single small crimson accent (the red pins on the wall maps). The map is in COLOUR, not black-and-white: muted, low saturation overall (about 10 to 15 percent), cool, never warm, never golden, never sepia, no green moss.\n\nFLOORS: real materials drawn board by board and tile by tile — long, wide, weathered grey-brown floorboards with dark seams, small white bathroom tiles with grimy grout, scuffed grey linoleum in the kitchen strip, a worn dark runner carpet down the middle of the corridor, steel grating on the fire escape. Seams and joints follow the pattern already drawn in the schematic, so the floor itself reads the 1-metre grid. NEVER draw grid lines, ruled lines or dashed lines over anything.\n\nDETAIL: lived-in and neglected, restrained and legible at table distance: scuffs along the walking paths, grime along the skirting, water stains, a few paper scraps. Outdoors everything is wet from the rain: dark wet asphalt with shallow puddles, rain-darkened concrete, wet tar-and-gravel roofs; but NO falling rain, no raindrops in the air, no rain streaks.\n\nLIGHT AND SHADOW: one flat, even, dim, cold blue-grey ambient light over the whole map, like an overcast sky, the same brightness everywhere: no room is brighter or warmer than another, and the corridor is as dim as the rest. Soft short drop shadows down and to the right under raised objects, and ambient occlusion where walls meet the floor. NEVER paint a light source or its effect: no lit lamps, no glowing screens, no glowing windows, no ceiling lights, no light fixtures, no glowing LEDs, no street lamp, no light pools, no halos, no glow, no lens flare, no bright spots, no beams, no orange light on the ground. Every light is added later by the virtual tabletop.\n\nCOMPOSITION: full bleed to all four edges: no border, no frame, no vignette, no paper margin, no white space. Strictly top-down orthographic: walls seen only as their top edge, no wall faces, no ceilings, no perspective, no isometric tilt.\n\nABSOLUTELY EMPTY OF INHABITANTS: no people, no figures, no figurines, no miniatures, no game pieces, no tokens, no silhouettes, no bodies, no animals, no cars.\n\nDOORWAYS: every doorway is an empty gap in the wall with at most a faint threshold strip on the floor. NEVER draw a door leaf, a door panel, a hinged door, a sliding door or a shutter in any opening, open or closed.\n\nNO MOVABLE FURNITURE: do not add chairs, stools, sofas, tables, floor lamps, rugs, plants, boxes, bags or loose objects that are not in the schematic; they are placed later as separate pieces.\n\nABSOLUTELY NO TEXT: no letters, numbers, digits, symbols, labels, room names, apartment numbers, signs, logos, writing on the maps pinned to the walls, writing on papers or screens; no compass, no scale bar, no legend.",
+      "negativo": "door leaf, closed door, open door, hinged door, glowing lamp, lit lamp, light pool, glowing screen, glowing window, street lamp glow, LED glow, halo, lens flare, god rays, orange light, warm golden light, text, letters, numbers, labels, signage, logo, watermark, people, person, figure, figurine, miniature, game piece, token, silhouette, body, animal, car, chair, sofa, table, rug, grid lines, ruled lines, perspective, isometric, wall faces, ceiling, roof over rooms, border, frame, vignette, paper margin, falling rain, rain streaks, blurry, low detail, flat vector, cartoon",
+      "materiales": {
+        "tablas": "long, wide, weathered floorboards from 1910 in a muted, desaturated grey-brown like old driftwood, dark seams between the boards, scuffed along the walking paths (never orange, honey or golden, and never plain grey either)",
+        "tablas-alfombra": "weathered grey-brown floorboards with a long, worn, dark charcoal runner carpet down the middle, plain with no pattern, its edges frayed, bare boards showing on both sides",
+        "parquet": "worn, dull wooden parquet strips, scratched along the walking paths",
+        "linoleo": "scuffed pale grey linoleum tiles, slightly lifted at the seams",
+        "baldosa": "pale porcelain floor tiles with grey grout",
+        "azulejo": "small square white bathroom tiles with grimy grey grout",
+        "terrazo": "old speckled terrazzo floor tiles, cracked and dull",
+        "moqueta": "dark grey office carpet tiles laid in alternating directions",
+        "tecnico": "raised data-centre floor panels, some perforated for ventilation",
+        "hormigon": "stained concrete slab with expansion joints and oil stains",
+        "piedra": "old cut stone flagstones with mortar joints",
+        "tierra": "packed wet earth",
+        "grava": "loose wet gravel",
+        "rejilla": "an open steel fire-escape landing of black-painted iron grating with thin railings, the wet alley visible far below through the grating",
+        "macizo": "SEALED BLOCK",
+        "asfalto": "dark wet asphalt with shallow puddles, oil stains and cracks",
+        "acera": "a rain-darkened concrete sidewalk of large square slabs with a granite kerb",
+        "edificio": "the dark, wet tar-and-gravel flat roof of a neighbouring building"
+      },
+      "objetos": {
+        "escritorio": "an old wooden desk",
+        "cama": "a narrow single bed with rumpled grey sheets (empty)",
+        "heladera": "an old white refrigerator",
+        "mesada": "a worn kitchen counter with a steel sink and a four-burner gas hob",
+        "estante": "a shelf",
+        "mapas": "printed city street maps pinned to the wall with red, blue and yellow pins (no writing at all on the maps)",
+        "corcho": "a cork board with pinned photos and red thread (no writing)",
+        "radiador": "an old cast-iron radiator",
+        "tv": "a low wooden TV cabinet with a switched-off black flat television",
+        "timbre": "a tiny black doorbell camera beside the door frame, dark and switched off",
+        "contenedor": "a dented metal dumpster with its lid closed",
+        "escalera": "a narrow flight of old wooden stairs, each tread drawn",
+        "escalerilla": "the folded steel drop ladder of the fire escape",
+        "trampilla": "the outline of a closed hatch in the floor",
+        "inodoro": "a white toilet",
+        "lavabo": "a small white pedestal washbasin",
+        "ducha": "a shower tray",
+        "banera": "an old white enamel clawfoot bathtub",
+        "maquina": "heavy building machinery (boiler or electrical board)"
+      },
+      "carpeta": "assets/mapas"
+    },
+    "retrato": {
+      "_comentario": "Plantilla del doc 15 (content/arte-doc15.json, plantillas.retrato), adoptada tal cual para retratos (SPEC §4.4). Cada retrato agrega SUJETO + ROPA Y OBJETO + ESCENARIO + ACENTO CARMESÍ. Z-Image Turbo (t2i-zimage), 832×1248.",
+      "flujo": "t2i-zimage",
+      "prefijo": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: ",
+      "sufijo": "\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption.",
+      "ancho": 832,
+      "alto": 1248,
+      "carpeta": "assets/retratos"
+    },
+    "token": {
+      "_comentario": "Retrato → token cenital del MISMO personaje con Qwen-Edit (editar-qwen; Picture 1 = el retrato), después BiRefNet (recortar-birefnet) y el marco circular. Fondo liso claro para que BiRefNet recorte limpio.",
+      "flujo": "editar-qwen",
+      "prefijo": "Picture 1 is a painted portrait of a character. Paint the SAME person — same face colouring, hair, build, clothes and the object they carry — as a token for a virtual tabletop, seen from DIRECTLY ABOVE: a strict bird's-eye view as if photographed from the ceiling, showing the top of the head and hair, the shoulders and the arms, the face NOT visible from the front, no three-quarter angle. One single figure, centred, filling about 80% of the frame.\n\nSUBJECT: ",
+      "sufijo": "\n\nSTYLE: dark painterly realism with confident ink outlines under painted colour, cold desaturated Seattle palette (wet slate grey, harbour blue, deep black, one crimson accent), matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no texture, no gradient, no shadow on the ground, no vignette.\n\nNo text, no letters, no frame, no border, no ring, no circle, no token base, no second figure, no glow.",
+      "ancho": 1024,
+      "alto": 1024,
+      "carpeta": "assets/tokens"
+    },
+    "tile": {
+      "_comentario": "Muebles móviles (MAPS_SPEC §3): Z-Image Turbo (t2i-zimage) → BiRefNet (recortar-birefnet) → assets/tiles/tile-<nombre>.webp, a 100 px por metro. Sin verde: el recorte es por BiRefNet, no por croma.",
+      "flujo": "t2i-zimage",
+      "prefijo": "Top-down tile artwork of ONE single loose piece of furniture or prop for a virtual tabletop battlemap set in an old apartment building in present-day Seattle, seen from DIRECTLY ABOVE: a strict orthographic bird's-eye view as if photographed from the ceiling, no perspective, no isometric tilt, no visible side faces, only the top surfaces. The object is centred and fills about 85% of the frame. Elongated objects lie with their LONG AXIS HORIZONTAL (left to right). Seats and sofas have their backrest along the TOP edge and the seat facing DOWN.\n\nSUBJECT: ",
+      "sufijo": "\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), worn, dusty and lived-in, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
+      "ancho": 1024,
+      "alto": 1024,
+      "carpeta": "assets/tiles"
+    }
+  },
+  "mapas": {
+    "_comentario": "Cómo se pintó cada mapa (lo lee pintar-planos.mjs sin --camino): camino, semilla y ajustes. helen salió de la prueba de SPEC §4.5 (2026-10-30) y es la referencia de estilo del set.",
+    "helen": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b"
+    }
+  },
+  "assets": []
+}

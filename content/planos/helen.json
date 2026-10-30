@@ -1,0 +1,115 @@
+{
+  "_comentario": "LUG-05, el apartamento de Helen Ward (3A), tercer piso de un edificio de ladrillo de 1910 sobre una ferretería de Market Street, Ballard. Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba; Market Street al sur (borde de abajo), el callejón de servicio al oeste (izquierda) y el callejón trasero al norte. El edificio mide 14 × 17 m: pasillo central de 2 m con cuatro puertas (3A Helen y 3C al oeste, 3B y 3D al este) y la escalera común al frente, con el tramo que baja al portal y, al lado, el tramo que sube al rellano de la azotea. La escalera de incendios cuelga de la fachada oeste, frente a la ventana del estudio; el callejón de abajo está en el mismo mapa (es planta baja: se llega por las regiones de la escalera de incendios, no caminando).",
+  "planos": [
+    {
+      "id": "helen",
+      "lugar": "LUG-05",
+      "escenas": ["A0-E01", "A1-E01", "A3-E01"],
+      "nombre": "Prólogo · El apartamento de Helen Ward",
+      "orden": 10,
+      "ancho": 21,
+      "alto": 20,
+      "paleta": "apartamento",
+      "fondo": "edificio",
+      "oscuridad": 0.75,
+      "exteriores": [
+        { "nombre": "Callejón de servicio (planta baja)", "x": 1, "y": 0, "w": 4, "h": 20, "fondo": "asfalto" },
+        { "nombre": "Callejón trasero (planta baja)", "x": 5, "y": 0, "w": 16, "h": 2, "fondo": "asfalto" },
+        { "nombre": "Vereda de Market Street (planta baja)", "x": 5, "y": 19, "w": 16, "h": 1, "fondo": "acera" }
+      ],
+      "exterior": "an old 1910 brick building in Ballard, Seattle, seen from directly above at night in November rain: a narrow wet asphalt service alley along the left edge with puddles and a dumpster, a strip of wet asphalt rear alley along the top edge, the rain-slick concrete sidewalk of Market Street along the bottom edge, and the dark tar-and-gravel roofs of the neighbouring buildings everywhere else — flat, continuous, with no extra walls, kerbs or structures",
+      "nota": "**Llegada (A0-E01, 3:34).** El portal de Market Street está abierto; la escalera común sube por el frente del edificio y desemboca en el pasillo del tercer piso, justo al lado de la puerta del 3A. Huele a humedad, a lana mojada y a monedas (Vitae aguada de ghoul, **P-02**: Resolución + Consciencia Dif 2, o Auspex 1). Helen está sentada en el suelo del **recibidor**, con la capucha puesta, de cara a la puerta, contando en voz baja.\n\n**Las cámaras (P-01).** Las cuatro puertas del pasillo tienen timbre con cámara Gale Sentinel y su lucecita azul (luces «led-timbre»). La del **3B**, enfrente de la de Helen, es la única que apunta a su puerta y tiene además una lucecita verde intermitente: transmite en directo (Astucia + Consciencia Dif 3). La de Helen guarda el registro de desconexión de 2:52 a 3:03 (Inteligencia + Tecnología Dif 3). Romper la del 3B a golpes: Termómetro +1; abrirla y desconectarla: Destreza + Latrocinio Dif 3. Salir por el pasillo sin ocuparse de ella: ANOMALY marca a cada Vástago como «sujeto frío» (Termómetro +1).\n\n**La puerta del 3A.** No está forzada: la abrieron con una ganzúa electrónica y la volvieron a cerrar con una sola vuelta (el picaporte quedó recto, no caído). El picaporte exterior tiene la Vitae del ghoul (P-02; Auspex 4, Toque espiritual). Con 3 o más éxitos en Inteligencia + Investigación (A1-E01) se encuentra en el marco un adhesivo negro minúsculo: el repetidor que desconectó las cámaras. **No está pintado ni tiene tile**: es la recompensa de la tirada.\n\n**Estudio.** Paredes cubiertas de mapas con alfileres rojos (muertes), azules (desapariciones) y amarillos. En el escritorio, contra la pared norte, el portátil abierto con el audio en pausa (tile; Inteligencia + Tecnología Dif 4: la nube se borró desde una IP de un centro de datos del Eastside, P-06 a medias) y el cable pelado que cuelga enchufado a nada: ahí estaba el disco. En el **cajón de la derecha**, el teléfono de tapa con un solo número, SAFE (DOC-05). En la pared este, el **armario empotrado** cuya puerta se atasca a mitad de camino y chirría (puerta con sonido «woodCreaky»): al fondo estaba la caja de zapatos con la segunda copia; ya no está. Sólo abrieron el armario y el escritorio. La **ventana de guillotina** de la pared oeste da a la escalera de incendios; el cenicero de Helen está afuera, en la rejilla.\n\n**Salón-cocina.** La tele sigue en su mueble y el frasco con billetes, en la mesada: no se llevaron nada que valiera dinero. La mesa de la cocina es la de A3-E01 si Krell llega tarde: silla volcada, un teléfono con la pantalla rota en el suelo y, sobre la mesa, el papel sujeto con un casquillo. La de Market Street es la única ventana iluminada del tercer piso (lámpara de pie).\n\n**Escapar sin la cámara del 3B.** Por la ventana del estudio a la escalera de incendios y de ahí al callejón de servicio (Destreza + Sigilo Dif 2 para que nadie del edificio los vea bajar). En la escalera de incendios, la región «Bajar» lleva al pie de la escalerilla en el callejón y la de «Subir» trae de vuelta; la escalerilla de caída hay que bajarla desde arriba o alcanzarla de un salto desde el callejón. El callejón sale a Market Street por el sur.\n\n**El rellano de la azotea.** Al lado del tramo que baja, otro tramo sube a un rellano con la puerta de la azotea (cerrada; no hay mapa del techo). Ahí se escondió Helen, detrás de la baranda, donde la luz del pasillo no llega; desde el pasillo el ghoul levantó la cabeza hacia ahí y olfateó.\n\n**Fuera del mapa.** Bear espera en la camioneta en Market Street; a media manzana hay un coche eléctrico gris con alguien adentro (MEN-04, se va a las 4:10 si nadie hace nada). En A3-E01, Krell espera en la vereda de enfrente.\n\nLos departamentos 3B, 3C y 3D están cerrados (sus puertas, trabadas) y no se detallan.",
+      "habitaciones": [
+        { "nombre": "Pasillo del tercer piso", "x": 11, "y": 2, "w": 2, "h": 12.5, "piso": "tablas-alfombra" },
+        { "nombre": "Escalera común (baja al portal)", "x": 11, "y": 14.5, "w": 1, "h": 4.5, "piso": "tablas" },
+        { "nombre": "Escalera a la azotea y su rellano", "x": 12, "y": 14.5, "w": 1, "h": 4.5, "piso": "tablas" },
+        { "nombre": "3A · Recibidor", "x": 8.5, "y": 12, "w": 2.5, "h": 2, "piso": "tablas", "vetas": "v" },
+        { "nombre": "3A · Baño", "x": 9.3, "y": 10, "w": 1.7, "h": 2, "piso": "azulejo", "limpio": true },
+        { "nombre": "3A · Armario del estudio", "x": 8.5, "y": 10, "w": 0.8, "h": 2, "piso": "tablas", "limpio": true },
+        { "nombre": "3A · Estudio", "x": 5, "y": 10, "w": 3.5, "h": 4, "piso": "tablas" },
+        { "nombre": "3A · Salón-cocina", "x": 5, "y": 14, "w": 6, "h": 5, "piso": "tablas" },
+        { "nombre": "3A · Cocina (linóleo)", "x": 5, "y": 14, "w": 3.5, "h": 1.3, "piso": "linoleo", "sinMuros": true },
+        { "nombre": "3B (cerrado)", "x": 13, "y": 10, "w": 6, "h": 9, "piso": "macizo" },
+        { "nombre": "3C (cerrado)", "x": 5, "y": 2, "w": 6, "h": 8, "piso": "macizo" },
+        { "nombre": "3D (cerrado)", "x": 13, "y": 2, "w": 6, "h": 8, "piso": "macizo" },
+        { "nombre": "Escalera de incendios · descanso del tercer piso", "x": 3.8, "y": 10, "w": 1.2, "h": 4.5, "piso": "rejilla" }
+      ],
+      "vanos": [
+        { "x": 11, "y": 12.7, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "cerrada", "nombre": "Puerta del 3A (Helen): picaporte con Vitae (P-02), repetidor en el marco" },
+        { "x": 13, "y": 12.7, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "nombre": "Puerta del 3B (su cámara transmite)" },
+        { "x": 11, "y": 5, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "nombre": "Puerta del 3C" },
+        { "x": 13, "y": 5, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "nombre": "Puerta del 3D" },
+        { "x": 11, "y": 14.5, "w": 2, "eje": "h", "tipo": "abierto", "nombre": "Pasillo → escaleras" },
+        { "x": 12, "y": 14.5, "w": 4.5, "eje": "v", "tipo": "baranda", "nombre": "Baranda entre el tramo que baja y el que sube a la azotea" },
+        { "x": 11.5, "y": 2, "w": 1, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventana del fondo del pasillo (callejón trasero)" },
+        { "x": 8.8, "y": 14, "w": 2, "eje": "h", "tipo": "abierto", "nombre": "Recibidor → salón-cocina" },
+        { "x": 9.6, "y": 12, "w": 0.8, "eje": "h", "tipo": "puerta", "nombre": "Baño" },
+        { "x": 8.5, "y": 12.7, "w": 0.8, "eje": "v", "tipo": "puerta", "nombre": "Estudio" },
+        { "x": 8.5, "y": 10.6, "w": 0.8, "eje": "v", "tipo": "puerta", "sonido": "woodCreaky", "nombre": "Armario del estudio (se atasca a mitad de camino y chirría)" },
+        { "x": 5, "y": 11.2, "w": 1.2, "eje": "v", "tipo": "ventana", "estado": "cerrada", "nombre": "Ventana de guillotina del estudio → escalera de incendios" },
+        { "x": 5, "y": 16.2, "w": 1, "eje": "v", "tipo": "vidrio", "sonoro": true, "nombre": "Ventana del salón al callejón" },
+        { "x": 5.8, "y": 19, "w": 1.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventana del salón a Market Street (la iluminada)" },
+        { "x": 8.4, "y": 19, "w": 1.2, "eje": "h", "tipo": "vidrio", "sonoro": true, "nombre": "Ventana del salón a Market Street" },
+        { "x": 3.8, "y": 10, "w": 1.2, "eje": "h", "tipo": "baranda", "nombre": "Baranda norte de la escalera de incendios" },
+        { "x": 3.8, "y": 10, "w": 4.5, "eje": "v", "tipo": "baranda", "nombre": "Baranda oeste de la escalera de incendios" },
+        { "x": 3.8, "y": 14.5, "w": 1.2, "eje": "h", "tipo": "baranda", "nombre": "Baranda sur de la escalera de incendios" }
+      ],
+      "muebles": [
+        { "tipo": "timbre", "x": 11.16, "y": 12.46, "w": 0.12, "h": 0.12, "luz": "led-timbre", "desc": "a small black doorbell camera beside the door frame" },
+        { "tipo": "timbre", "x": 12.72, "y": 13.66, "w": 0.12, "h": 0.12, "luz": "led-timbre", "desc": "a small black doorbell camera beside the door frame" },
+        { "tipo": "timbre", "x": 11.16, "y": 4.76, "w": 0.12, "h": 0.12, "luz": "led-timbre", "desc": "a small black doorbell camera beside the door frame" },
+        { "tipo": "timbre", "x": 12.72, "y": 5.96, "w": 0.12, "h": 0.12, "luz": "led-timbre", "desc": "a small black doorbell camera beside the door frame" },
+        { "tipo": "escalera", "x": 11, "y": 14.5, "w": 1, "h": 4.5, "hacia": "s", "desc": "a narrow old wooden staircase going down to the street door" },
+        { "tipo": "escalera", "x": 12, "y": 14.5, "w": 1, "h": 3, "hacia": "n", "desc": "a narrow old wooden staircase going up to the roof landing" },
+
+        { "tipo": "mapas", "x": 5.15, "y": 10.14, "w": 3.2, "h": 0.16, "desc": "printed city maps pinned edge to edge along the wall with red, blue and yellow pins" },
+        { "tipo": "mapas", "x": 5.14, "y": 10.3, "w": 0.16, "h": 0.8, "desc": "printed city maps pinned to the wall" },
+        { "tipo": "mapas", "x": 5.14, "y": 12.5, "w": 0.16, "h": 0.45, "desc": "printed city maps pinned to the wall" },
+        { "tipo": "mapas", "x": 8.2, "y": 11.5, "w": 0.16, "h": 1.1, "desc": "printed city maps pinned to the wall" },
+        { "tipo": "mapas", "x": 7.3, "y": 13.7, "w": 1.05, "h": 0.16, "desc": "printed city maps pinned to the wall" },
+        { "tipo": "escritorio", "x": 5.2, "y": 10.15, "w": 1.6, "h": 0.7, "frente": "s", "monitor": false, "cable": true, "desc": "an old wooden desk cluttered with papers and cold coffee mugs, a frayed cable hanging off its edge plugged into nothing" },
+        { "tipo": "portatil", "x": 5.75, "y": 10.25, "w": 0.4, "h": 0.3, "luz": "pantalla", "tile": "tile-portatil", "desc": "el portátil de Helen, abierto, con el audio en pausa" },
+        { "tipo": "silla", "x": 5.75, "y": 10.95, "w": 0.5, "h": 0.5, "tile": "tile-silla-escritorio", "hacia": "n" },
+        { "tipo": "cama", "x": 5.15, "y": 13.0, "w": 2.0, "h": 0.86, "cabecera": "o", "desc": "a narrow unmade single bed against the wall" },
+        { "tipo": "estante", "x": 8.95, "y": 10.18, "w": 0.25, "h": 1.64, "desc": "clothes hanging on a rail at the back of a shallow built-in closet" },
+
+        { "tipo": "banera", "x": 9.43, "y": 10.14, "w": 1.44, "h": 0.7, "desc": "an old enamel clawfoot bathtub" },
+        { "tipo": "inodoro", "x": 10.18, "y": 11.18, "w": 0.68, "h": 0.42, "contra": "e" },
+        { "tipo": "lavabo", "x": 9.44, "y": 11.1, "w": 0.45, "h": 0.5 },
+
+        { "tipo": "heladera", "x": 5.14, "y": 14.14, "w": 0.7, "h": 0.7, "desc": "an old humming refrigerator" },
+        { "tipo": "mesada", "x": 5.84, "y": 14.14, "w": 2.52, "h": 0.62, "desc": "a worn kitchen counter with a sink and a gas hob" },
+        { "tipo": "mesa", "x": 5.6, "y": 15.6, "w": 1.1, "h": 0.9, "tile": "tile-mesa-cocina" },
+        { "tipo": "silla", "x": 6.75, "y": 15.8, "w": 0.45, "h": 0.45, "tile": "tile-silla-madera", "hacia": "o" },
+        { "tipo": "silla", "x": 5.9, "y": 16.55, "w": 0.45, "h": 0.45, "tile": "tile-silla-madera", "hacia": "n" },
+        { "tipo": "sofa", "x": 8.0, "y": 15.9, "w": 0.9, "h": 2.0, "tile": "tile-sofa-gastado", "hacia": "e" },
+        { "tipo": "lampara", "x": 8.05, "y": 18.15, "w": 0.4, "h": 0.4, "luz": "lampara", "tile": "tile-lampara-pie" },
+        { "tipo": "tv", "x": 10.5, "y": 16.1, "w": 0.36, "h": 1.6, "frente": "o", "desc": "a low wooden TV cabinet with a switched-off flat television on it" },
+        { "tipo": "radiador", "x": 5.95, "y": 18.68, "w": 0.9, "h": 0.18, "desc": "an old cast-iron radiator under the window" },
+
+        { "tipo": "cenicero", "x": 4.55, "y": 11.55, "w": 0.18, "h": 0.18, "tile": "tile-cenicero", "desc": "el cenicero de Helen, en la rejilla junto a la ventana" },
+        { "tipo": "escalera", "x": 3.86, "y": 13.3, "w": 0.64, "h": 1.14, "hacia": "s", "material": "metal", "desc": "a steel fire-escape stair going down" },
+        { "tipo": "escalerilla", "x": 3.95, "y": 14.62, "w": 0.6, "h": 0.16, "desc": "the folded drop ladder of the fire escape" },
+        { "tipo": "contenedor", "x": 1.3, "y": 6.0, "w": 1.7, "h": 1.2, "desc": "a dented commercial dumpster" },
+        { "tipo": "contenedor", "x": 1.3, "y": 7.5, "w": 0.7, "h": 0.7, "desc": "a wheelie bin" }
+      ],
+      "luces": [
+        { "x": 12, "y": 6.5, "preset": "pasillo", "nombre": "Plafón del pasillo (norte)" },
+        { "x": 12, "y": 11.5, "preset": "pasillo", "nombre": "Plafón del pasillo (frente al 3A)" },
+        { "x": 12.78, "y": 13.72, "preset": "led-transmision", "nombre": "Cámara del 3B: transmite en directo" },
+        { "x": 4.7, "y": 15.4, "preset": "farola-pared", "nombre": "Aplique de sodio del callejón" },
+        { "x": 8, "y": 19.8, "preset": "farola", "nombre": "Farola de Market Street" }
+      ],
+      "regiones": [
+        { "id": "desde-portal", "nombre": "Llegada desde el portal de Market Street", "x": 11, "y": 14.5, "w": 1, "h": 1, "llegada": true },
+        { "id": "bajar-al-portal", "nombre": "Bajar al portal de Market Street", "x": 11, "y": 18, "w": 1, "h": 1, "destino": null, "pendiente": "no hay mapa de la calle (Market Street) en SPEC §5: el Narrador mueve los tokens a mano" },
+        { "id": "rellano-azotea", "nombre": "Rellano de la azotea (puerta cerrada)", "x": 12, "y": 17.6, "w": 1, "h": 1.4, "destino": null, "pendiente": "no hay mapa del techo" },
+        { "id": "incendios-llegada-descanso", "nombre": "Llegada al descanso de la escalera de incendios", "x": 3.8, "y": 12.3, "w": 1.2, "h": 1, "llegada": true },
+        { "id": "incendios-bajar", "nombre": "Bajar por la escalera de incendios al callejón", "x": 3.8, "y": 13.4, "w": 1.2, "h": 1.1, "destino": "helen:incendios-llegada-callejon" },
+        { "id": "incendios-subir", "nombre": "Subir por la escalerilla de la escalera de incendios", "x": 3.8, "y": 14.8, "w": 1.1, "h": 1, "destino": "helen:incendios-llegada-descanso" },
+        { "id": "incendios-llegada-callejon", "nombre": "Pie de la escalera de incendios (callejón)", "x": 3.8, "y": 15.9, "w": 1.1, "h": 1, "llegada": true },
+        { "id": "callejon-a-market", "nombre": "Salida del callejón a Market Street", "x": 1, "y": 19, "w": 4, "h": 1, "destino": null, "pendiente": "no hay mapa de la calle (Market Street)" }
+      ]
+    }
+  ]
+}

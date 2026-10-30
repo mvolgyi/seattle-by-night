@@ -1,0 +1,733 @@
+{
+  "_id": "NDI68PA4J59Be6ts",
+  "_key": "!actors!NDI68PA4J59Be6ts",
+  "name": "Abel Thornquist",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "yFd3Qhc0Q4y8Svax",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Abel Thornquist",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "BZHKi8od2TMxi33B",
+    "headers": {
+      "concept": "Primogénito Nosferatu",
+      "chronicle": "Seattle by Night",
+      "ambition": "Que nadie pueda gobernar Seattle sin pasar por abajo.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Un trato es un trato</li><li>Lo que se entierra no se pierde</li></ul><h3>Piedras de toque</h3><ul><li><strong>Dee Watkins</strong>: Trabajadora de un albergue de Pioneer Square, que deja la puerta trasera abierta para «los de abajo» y nunca hace preguntas.</li></ul>",
+      "sire": "«La Madre de Abajo»",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1863",
+        "death": "1890"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Perfil: Abel Thornquist}</p><blockquote><p><em>«Todo se vende abajo. Lo único que cambia es quién paga.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>El dueño de abajo</td></tr><tr><th>Concepto</th><td>Primogénito Nosferatu</td></tr><tr><th>Clan</th><td>Nosferatu</td></tr><tr><th>Secta</th><td>Camarilla</td></tr><tr><th>Sire</th><td>«La Madre de Abajo»</td></tr><tr><th>Nacimiento</th><td>1863</td></tr><tr><th>Abrazo</th><td>1890</td></tr><tr><th>Ambición</th><td>Que nadie pueda gobernar Seattle sin pasar por abajo.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{Los Topos}</td></tr></tbody></table><h3>Semblante</h3><p>Enorme y encorvado, piel de madera mojada gris y agrietada, mandíbula torcida y dedos como raíces; traje de tres piezas remendado y lámpara de carburo.</p>",
+    "appearance": "<p>Enorme y encorvado, piel de madera mojada gris y agrietada, mandíbula torcida y dedos como raíces; traje de tres piezas remendado y lámpara de carburo.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 4,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "animalism": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "obfuscate": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 4,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 4,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "craft": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Carpintería",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Mercado negro",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "finance": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Favores",
+            "value": 1,
+            "paths": [
+              "skills.finance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Mentiras",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Regateo",
+            "value": 1,
+            "paths": [
+              "skills.persuasion"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "stealth": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Túneles",
+            "value": 1,
+            "paths": [
+              "skills.stealth"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "subterfuge": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "nosferatu"
+        }
+      },
+      "name": "Nosferatu",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "NbtpofhPxkaitnbZ",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.NbtpofhPxkaitnbZ"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Sense the Beast",
+          "homebrew": false
+        }
+      },
+      "name": "Sense the Beast",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalismo 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "6f4JZPvlXkpW9svU",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.6f4JZPvlXkpW9svU"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Feral Whispers",
+          "homebrew": false
+        }
+      },
+      "name": "Feral Whispers",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalismo 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "lkA5mbRrhhsSl5xh",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.lkA5mbRrhhsSl5xh"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloak of Shadows",
+          "homebrew": false
+        }
+      },
+      "name": "Cloak of Shadows",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Ofuscación 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "ak2xLXpqC1boPnB7",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.ak2xLXpqC1boPnB7"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unseen Passage",
+          "homebrew": false
+        }
+      },
+      "name": "Unseen Passage",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Ofuscación 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "3eQJn26DfE9pO9qD",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.3eQJn26DfE9pO9qD"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Mask of a Thousand Faces",
+          "homebrew": false
+        }
+      },
+      "name": "Mask of a Thousand Faces",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Ofuscación 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "QehG89R89bP7cNpS",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.QehG89R89bP7cNpS"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Vanish",
+          "homebrew": false
+        }
+      },
+      "name": "Vanish",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Ofuscación 4. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "IkY2OVCf5bIjVsdE",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.IkY2OVCf5bIjVsdE"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "o8y16ie7TRav9aV9",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.o8y16ie7TRav9aV9"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potencia 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-13"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "jCz5IeJbMueQ4bST",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.jCz5IeJbMueQ4bST"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 4 (las Galerías Selladas, bajo Pioneer Square; LUG-04)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 4 (las Galerías Selladas, bajo Pioneer Square; LUG-04)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "yHZED0cmAmR7lphK",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.yHZED0cmAmR7lphK"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 3 (el subterráneo: el Mercado de Abajo)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 3 (el subterráneo: el Mercado de Abajo)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "Ml46Wt62zAcG8r7V",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.Ml46Wt62zAcG8r7V"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados 2 (los sangre débil: una docena de jóvenes que recogen información en la superficie)"
+        }
+      },
+      "name": "Aliados",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados 2 (los sangre débil: una docena de jóvenes que recogen información en la superficie)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "i0E21GGLVVXjcKWZ",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.i0E21GGLVVXjcKWZ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 4 (policías, porteros, empleados de limpieza nocturna y técnicos de mantenimiento de toda la ciudad)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 4 (policías, porteros, empleados de limpieza nocturna y técnicos de mantenimiento de toda la ciudad)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "DXjOMSb5PUQtiqIn",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.DXjOMSb5PUQtiqIn"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 0 (no tiene Máscara mortal)"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 0 (no tiene Máscara mortal)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "1kJXjr3Ao5RKHsAm",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.1kJXjr3Ao5RKHsAm"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-13",
+      "journal": "JournalEntry.dj4gIszHHTN1QRKk",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

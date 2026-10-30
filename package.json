@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "seattle-by-night",
+  "version": "0.0.1",
+  "description": "Módulo de Foundry VTT para Vampiro: La Mascarada 5e (wod5e): Seattle by Night y la aventura El Expediente Ward, con FIRSTLIGHT jugable",
+  "type": "module",
+  "scripts": {
+    "verificar": "node tools/verificar.mjs",
+    "docx": "python3 tools/importar-docx.py",
+    "planos": "node tools/construir-planos.mjs",
+    "pack": "npm run contenido && npm run verificar && npm run verificar:contenido && npm run verificar:actores && npm run pack:cronica && npm run pack:documentos && npm run pack:personajes && npm run pack:escenas && npm run pack:firstlight && npm run pack:macros && npm run pack:aventura",
+    "release": "node tools/release.mjs",
+    "e2e": "node tools/e2e/prueba.mjs",
+    "verificar:contenido": "python3 tools/verificar-contenido.py .",
+    "comfy": "node tools/comfy.mjs",
+    "pintar": "node tools/pintar-planos.mjs",
+    "pack:aventura": "fvtt package pack aventura --id seattle-by-night --type Module --in packs-src/aventura --out packs",
+    "pack:cronica": "fvtt package pack cronica --id seattle-by-night --type Module --in packs-src/cronica --out packs",
+    "pack:documentos": "fvtt package pack documentos --id seattle-by-night --type Module --in packs-src/documentos --out packs",
+    "pack:personajes": "fvtt package pack personajes --id seattle-by-night --type Module --in packs-src/personajes --out packs",
+    "pack:escenas": "fvtt package pack escenas --id seattle-by-night --type Module --in packs-src/escenas --out packs",
+    "pack:firstlight": "fvtt package pack firstlight --id seattle-by-night --type Module --in packs-src/firstlight --out packs",
+    "pack:macros": "fvtt package pack macros --id seattle-by-night --type Module --in packs-src/macros --out packs",
+    "contenido": "node tools/construir-contenido.mjs",
+    "verificar:actores": "node tools/contenido/verificar-actores.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.4",
+    "marked": "^18.0.7",
+    "playwright-core": "^1.64.0"
+  }
+}

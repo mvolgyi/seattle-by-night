@@ -1,0 +1,109 @@
+{
+  "_id": "YD0Td8Y9aJyIpGSl",
+  "_key": "!journal!YD0Td8Y9aJyIpGSl",
+  "name": "El apartamento de Helen Ward",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-05",
+      "archivo": "content/ciudad/LUG-05.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "Ilx1OHcSNPHIpHrz",
+      "_key": "!journal.pages!YD0Td8Y9aJyIpGSl.Ilx1OHcSNPHIpHrz",
+      "name": "El apartamento de Helen Ward",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Ballard, Market Street · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LRWrQGB7yKGrrY0h",
+      "_key": "!journal.pages!YD0Td8Y9aJyIpGSl.LRWrQGB7yKGrrY0h",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Tercer piso, sobre una ferretería cerrada. Un apartamento de dos ambientes que alguien convirtió en una sala de investigación: paredes cubiertas de mapas con alfileres rojos, azules y amarillos, tazas de café frío, un cenicero en la ventana de la escalera de incendios. En el escritorio, un cable pelado cuelga enchufado a nada. La mujer sentada en el suelo, con la capucha puesta, levanta la vista hacia la puerta y no parece sorprendida.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3meYT7d2lxqu22X0",
+      "_key": "!journal.pages!YD0Td8Y9aJyIpGSl.3meYT7d2lxqu22X0",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> pasillo del tercer piso (timbres Gale Sentinel en todas las puertas), salón-cocina, estudio con los mapas y el armario que chirría, baño y escalera de incendios con salida al callejón.</p>\n<p><strong>Pistas:</strong> <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-01\"><span class=\"sbn-pista-id\">P-01</span> <span class=\"sbn-pista-nombre\">Ladrones profesionales mortales; cámaras en bucle</span></button> (las luces de las cámaras), <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-02\"><span class=\"sbn-pista-id\">P-02</span> <span class=\"sbn-pista-nombre\">Vitae de ghoul en el picaporte</span></button> (Vitae de ghoul en el picaporte; se detecta con <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.awareness\" data-dificultad=\"3\" data-label=\"Astucia + Consciencia (Dificultad 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Astucia + Consciencia (Dificultad 3)</a>, o con Auspex). En el pasillo, la cámara del 3B sigue transmitiendo.</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} y @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}.</p>\n<p><strong>Cuidado:</strong> cualquier uso visible de Disciplinas delante de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} mueve @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.j1wUSqY1dsP0iFfp]{GAN-02 · La noche en que contempla a la Bestia}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

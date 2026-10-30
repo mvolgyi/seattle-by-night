@@ -1,0 +1,179 @@
+{
+  "coteries": [
+    {
+      "id": "COT-00",
+      "nombre": "Los del Archivo",
+      "lema": "Los que estaban en el disco.",
+      "tipo": "Comando (Commando)",
+      "dominio": "Los muelles de Harbor Island, alrededor del hangar de David",
+      "miembros": [
+        "PJ-01",
+        "PJ-02",
+        "PJ-03",
+        "PJ-04",
+        "PJ-05",
+        "PJ-06"
+      ],
+      "aliados": [
+        "PNJ-05"
+      ],
+      "descripcion": "Una coterie nacida de una amenaza compartida: todos aparecen en el Expediente Ward, y o lo recuperan juntos o caen juntos.",
+      "trasfondos": [
+        "Refugio 3 (el hangar, aportado por David): con Acceso marítimo y Arsenal",
+        "Contactos 1 (puerto): a través de Bear",
+        "Aliado: Tom «Bear» Whitman (PNJ-05), compartido con David"
+      ],
+      "lugar": "LUG-01",
+      "ayuda": "AYU-09",
+      "tipoNota": "Comando: una unidad reunida para una misión que se volvió permanente (doc 02). Si sobrevive a AVE-01, puede pasar a Cerbero (Cerberus) o Regencia (Regency) según el desenlace (doc 08).",
+      "trasfondosDoc02": [
+        "Refugio (el hangar, aportado por David)",
+        "Contactos (puerto) 1"
+      ],
+      "alternativas": [
+        "B) es una coterie que ya existía y Montgomery usa como fuerza de choque",
+        "C) son desconocidos que coinciden en el apartamento de Helen la noche del robo"
+      ],
+      "origen": [
+        "02",
+        "08"
+      ],
+      "dominioDoc02": {
+        "caza": 2,
+        "lien": 1,
+        "portillon": 1
+      },
+      "caza": 2,
+      "lien": 1,
+      "portillon": 2,
+      "dominioNotas": {
+        "caza": "Trabajadores del turno de noche. Caza posible, pero hay que tener cuidado.",
+        "lien": "La coterie apenas tiene influencia sobre los mortales del puerto. Bear conoce a algunos.",
+        "portillon": "Muchos accesos, contenedores y agua. Fácil de entrar y de salir. También para los enemigos."
+      }
+    },
+    {
+      "id": "COT-01",
+      "nombre": "Los Lobos de Whitmore",
+      "lema": "La jauría del Sheriff.",
+      "tipo": "Sbirri",
+      "dominio": "La granja y el valle del Snohomish",
+      "miembros": [
+        "PNJ-01",
+        "PJ-05",
+        "MEN-03"
+      ],
+      "aliados": [
+        "PJ-01"
+      ],
+      "descripcion": "Los que limpian la ciudad mientras el Príncipe brinda en la Galería.",
+      "trasfondos": [
+        "Refugio 3",
+        "Rebaño 2",
+        "Contactos 3 (policía estatal, puerto, seguridad privada)",
+        "Estatus 4 (de Montgomery)",
+        "Aliado 3 (David)"
+      ],
+      "lugar": "LUG-02",
+      "caza": 3,
+      "lien": 2,
+      "portillon": 4,
+      "dominioNotas": {
+        "caza": "camioneros, cazadores, áreas de descanso",
+        "lien": "el pueblo los ve como una familia rara de criadores de perros",
+        "portillon": "campos abiertos, perros, un solo camino de grava y el túnel al río"
+      }
+    },
+    {
+      "id": "COT-02",
+      "nombre": "El Consejo de Cristal",
+      "lema": "Los que miran desde arriba.",
+      "tipo": "Regencia (Regency)",
+      "dominio": "La Torre Halloway y el Eastside",
+      "miembros": [
+        "PNJ-03",
+        "PJ-02",
+        "PNJ-19",
+        "MEN-09"
+      ],
+      "sustitutos": {
+        "PJ-02": "PNJ-10"
+      },
+      "descripcion": "Un Primogénito, su chiquilla, dos ghouls y un fondo de inversión. Ninguno de ellos usa la palabra «conspiración».",
+      "trasfondos": [
+        "Recursos 5",
+        "Influencia 4 (finanzas, medios)",
+        "Contactos 3",
+        "Aliado 3 (Gale Sentinel)",
+        "Refugio 4",
+        "Rebaño 1"
+      ],
+      "lugar": "LUG-06",
+      "caza": 2,
+      "lien": 4,
+      "portillon": 5,
+      "dominioNotas": {
+        "caza": "solo empleados y socios con contrato",
+        "lien": "medio Bellevue trabaja para alguien que trabaja para Halloway",
+        "portillon": "ascensores privados, seguridad ghoul, cámaras ANOMALY"
+      }
+    },
+    {
+      "id": "COT-03",
+      "nombre": "Salitre",
+      "lema": "Los que no se arrodillan.",
+      "tipo": "Cerbero (Cerberus)",
+      "dominio": "El astillero viejo y el puerto de Everett",
+      "miembros": [
+        "PNJ-11",
+        "MEN-05"
+      ],
+      "descripcion": "Los Anarquistas del astillero de Everett: votan, sueldan y no le deben nada a ningún Príncipe.",
+      "trasfondos": [
+        "Refugio 2",
+        "Rebaño 2",
+        "Aliados 3 (el sindicato)",
+        "Influencia 2 (puerto de Everett)",
+        "Contactos 1 (base naval)"
+      ],
+      "lugar": "LUG-10",
+      "caza": 3,
+      "lien": 3,
+      "portillon": 2,
+      "dominioNotas": {
+        "caza": "soldadores y estibadores, algunos voluntarios",
+        "lien": "el sindicato es suyo",
+        "portillon": "una sola carretera, pero el agua no tiene puertas"
+      }
+    },
+    {
+      "id": "COT-04",
+      "nombre": "Los Topos",
+      "lema": "Todo se vende abajo.",
+      "tipo": "Corredores",
+      "dominio": "Las Galerías Selladas",
+      "miembros": [
+        "PNJ-13",
+        "PJ-03",
+        "PNJ-20"
+      ],
+      "descripcion": "Los corredores del Seattle subterráneo: la piedra de 1889 y los cables de 2026.",
+      "trasfondos": [
+        "Refugio 4",
+        "Contactos 4",
+        "Influencia 3 (el subterráneo)",
+        "Aliados 2 (los sangre débil)",
+        "Recursos 2"
+      ],
+      "lugar": "LUG-04",
+      "caza": 2,
+      "lien": 3,
+      "portillon": 5,
+      "dominioNotas": {
+        "caza": "personas sin hogar, a cambio de refugio",
+        "lien": "porteros, limpiadores, técnicos de toda la ciudad",
+        "portillon": "nadie entra en las Galerías sin que Thornquist lo sepa"
+      }
+    }
+  ]
+}

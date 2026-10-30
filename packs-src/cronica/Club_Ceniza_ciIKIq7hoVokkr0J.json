@@ -1,0 +1,109 @@
+{
+  "_id": "ciIKIq7hoVokkr0J",
+  "_key": "!journal!ciIKIq7hoVokkr0J",
+  "name": "Club Ceniza",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-09",
+      "archivo": "content/ciudad/LUG-09.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "YnjocwCRT9rAVhK8",
+      "_key": "!journal.pages!ciIKIq7hoVokkr0J.YnjocwCRT9rAVhK8",
+      "name": "Club Ceniza",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Capitol Hill · El rack de los Toreador · Mapa: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "tSCe3zZnVyKF3RS5",
+      "_key": "!journal.pages!ciIKIq7hoVokkr0J.tSCe3zZnVyKF3RS5",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Una puerta negra sin letrero en una calle de bares. Dentro, un sótano de ladrillo visto con un escenario pequeño y un público que baila con los ojos cerrados. La música es lenta, grave, con un bajo que se te mete en el pecho. Todo el mundo parece un poco más pálido de lo normal bajo las luces rojas. Hay alguien en la barra escribiendo en una servilleta.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iqpLuEWIqwzcNkFX",
+      "_key": "!journal.pages!ciIKIq7hoVokkr0J.iqpLuEWIqwzcNkFX",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Es propiedad de la fundación del Príncipe. Nadia (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}) se alimenta aquí. @UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry} viene casi todas las noches y escribe en servilletas (@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: «Canción para el hijo del puño»}).</p>\n<p>La caza aquí es fácil (Dificultad 2), pero el Club pertenece al Príncipe: se pide permiso o se paga.</p>\n<p>Es un buen lugar para una escena social improvisada o para buscar a Fry fuera del Elíseo.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

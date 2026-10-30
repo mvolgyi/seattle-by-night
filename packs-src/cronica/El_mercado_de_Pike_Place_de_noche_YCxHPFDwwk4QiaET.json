@@ -1,0 +1,109 @@
+{
+  "_id": "YCxHPFDwwk4QiaET",
+  "_key": "!journal!YCxHPFDwwk4QiaET",
+  "name": "El mercado de Pike Place de noche",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-08",
+      "archivo": "content/ciudad/LUG-08.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "JVw2NX6LSMx2xslj",
+      "_key": "!journal.pages!YCxHPFDwwk4QiaET.JVw2NX6LSMx2xslj",
+      "name": "El mercado de Pike Place de noche",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Downtown · Terreno neutral · Mapa: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ZOFBO9tYbSMLeUqk",
+      "_key": "!journal.pages!YCxHPFDwwk4QiaET.ZOFBO9tYbSMLeUqk",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>De día huele a pescado y a flores y hay turistas sacándole fotos a todo. De noche, el mercado es otro. Los puestos están cubiertos con lonas, las persianas bajadas, el letrero de neón rojo zumba sobre una calle vacía. Abajo, en los niveles inferiores, entre pasillos de tiendas de cómics cerradas y escaleras que bajan hacia la bahía, alguien enciende una vela.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1U7HISACpDa1HeKR",
+      "_key": "!journal.pages!YCxHPFDwwk4QiaET.1U7HISACpDa1HeKR",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Por costumbre, los niveles inferiores son terreno neutral fuera del Elíseo: el lugar donde se cobran y pagan favores sin testigos de la corte.</p>\n<p>Es útil para encuentros con @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa Iturbe}, con @UUID[JournalEntry.dj4gIszHHTN1QRKk]{Thornquist} fuera de su dominio o con @UUID[JournalEntry.oQ2AhEeDkwdPRv71]{O'Connor} si viene a la ciudad.</p>\n<p>No figura en ninguna escena fija; es un comodín para el Narrador.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

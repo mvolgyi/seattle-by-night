@@ -1,0 +1,1016 @@
+{
+  "termometro": {
+    "inicio": 2,
+    "min": 0,
+    "max": 10,
+    "descripcion": "Marcador de 0 a 10 que mide cuánto sabe la Segunda Inquisición. Sube con las brechas de Mascarada, con la violencia pública, con el contacto entre Helen y FIRSTLIGHT y con los fragmentos que Halloway filtra cada noche que la trama avanza sin respuesta. Baja cuando la coterie limpia rastros, recupera copias del Expediente o neutraliza al topo.",
+    "visibilidad": "Los jugadores pueden verlo; el número exacto, mejor que no (AYU-03, doc 15). Conviene que sepan que existe (doc 03).",
+    "ayuda": "AYU-03",
+    "umbrales": [
+      {
+        "valor": 2,
+        "texto": "Inicio.",
+        "jugadores": "inicio",
+        "icono": null,
+        "origen": "01, 10, 14, 15"
+      },
+      {
+        "valor": 3,
+        "icono": "👁",
+        "texto": "Vigilancia pasiva sobre Helen.",
+        "ciudad": "Vigilancia pasiva sobre Helen: una furgoneta frente a su edificio, drones ocasionales.",
+        "jugadores": "Alguien mira a la periodista.",
+        "variantes": {
+          "01": "FIRSTLIGHT pone a Helen bajo vigilancia: furgonetas, drones y una analista que escucha su pódcast con atención.",
+          "10": "Vigilancia pasiva sobre Helen: una furgoneta frente a su edificio, drones ocasionales.",
+          "14": "Vigilancia pasiva sobre Helen.",
+          "15": "👁 3 · Alguien mira a la periodista."
+        },
+        "origen": "01, 10, 14, 15"
+      },
+      {
+        "valor": 5,
+        "icono": "☎",
+        "texto": "Okafor contacta a Helen.",
+        "ciudad": "Okafor contacta a Helen. Le ofrece protección a cambio del archivo.",
+        "jugadores": "Alguien llama a la periodista.",
+        "pnj": "PNJ-18",
+        "variantes": {
+          "01": "La agente Dana Okafor (PNJ-18) contacta a Helen y le ofrece protección a cambio del archivo.",
+          "10": "Okafor contacta a Helen. Le ofrece protección a cambio del archivo.",
+          "14": "Okafor contacta a Helen.",
+          "14-PNJ-18": "Al Termómetro 5 la contacta. Le ofrece protección y un sueldo. Cree de verdad que Helen está en peligro, y tiene razón.",
+          "15": "☎ 5 · Alguien llama a la periodista."
+        },
+        "nota": "El Reloj (docs 10 y 11) también hace que Okafor contacte a Helen en la Noche 5, aunque el Termómetro no haya llegado a 5.",
+        "origen": "01, 10, 11, 14, 15"
+      },
+      {
+        "valor": 7,
+        "icono": "🔍",
+        "texto": "Investigación activa de un activo de la coterie. Visita a la forense «R. A.».",
+        "ciudad": "Investigación activa sobre un activo de la coterie: la sociedad del hangar, la oficina forense, el calendario de Nadia.",
+        "jugadores": "Alguien tira del hilo de uno de los nuestros.",
+        "efectos": [
+          {
+            "texto": "FIRSTLIGHT investiga la sociedad propietaria del hangar.",
+            "lugar": "LUG-01",
+            "origen": "05"
+          },
+          {
+            "texto": "Okafor hace la visita que lleva meses preparando a la forense de los quince informes imposibles («R. A.», PJ-06).",
+            "pnj": "PNJ-18",
+            "origen": "14"
+          }
+        ],
+        "variantes": {
+          "01": "Investigan a un activo mortal de David (los contactos de Bear o la cobertura del hangar). Recursos o Refugio en riesgo.",
+          "10": "Investigación activa sobre un activo de la coterie: la sociedad del hangar, la oficina forense, el calendario de Nadia.",
+          "14": "Investigación activa de un activo de la coterie. Visita a la forense «R. A.».",
+          "15": "🔍 7 · Alguien tira del hilo de uno de los nuestros."
+        },
+        "nota": "Manda el doc 14 (el más nuevo) para el texto corto; el doc 10 detalla los activos. El doc 01 hablaba de «un activo mortal de David» porque estaba escrito para un solo jugador.",
+        "origen": "01, 05, 10, 14, 15"
+      },
+      {
+        "valor": 9,
+        "icono": "🚨",
+        "escena": "A4-E02",
+        "texto": "Redada (A4-E02).",
+        "ciudad": "Redada (A4-E02).",
+        "jugadores": "Llaman a la puerta.",
+        "efectos": [
+          {
+            "texto": "El hangar puede ser el objetivo de la redada.",
+            "lugar": "LUG-01",
+            "origen": "05"
+          }
+        ],
+        "variantes": {
+          "01": "Se activa la redada A4-E02.",
+          "10": "Redada (A4-E02).",
+          "14": "Redada (A4-E02).",
+          "15": "🚨 9 · Llaman a la puerta."
+        },
+        "origen": "01, 05, 10, 13, 14, 15"
+      },
+      {
+        "valor": 10,
+        "icono": "🔥",
+        "escena": "FIN-D",
+        "texto": "Purga (FIN-D).",
+        "ciudad": "Purga: cae al menos un refugio de la Camarilla. La crónica sigue en modo supervivencia.",
+        "jugadores": "Ya no hay puerta.",
+        "variantes": {
+          "01": "Purga. Cae al menos un refugio de la Camarilla y la ciudad entra en crisis de Mascarada durante toda la crónica.",
+          "10": "Purga: cae al menos un refugio de la Camarilla. La crónica sigue en modo supervivencia.",
+          "13": "Termómetro 10. Purga. En la primera semana cae al menos un refugio de la Camarilla (el Narrador elige; si la coterie no se mueve, el suyo).",
+          "14": "Purga (FIN-D).",
+          "15": "🔥 10 · Ya no hay puerta."
+        },
+        "origen": "01, 10, 13, 14, 15"
+      }
+    ],
+    "sube": [
+      {
+        "motivo": "Cada entrega de ARQUERO (Noches 2 y 5)",
+        "cantidad": 1,
+        "noches": [
+          2,
+          5
+        ],
+        "variantes": {
+          "01": "La ciudad avanza sola: cada noche sin respuesta, Halloway filtra un fragmento (Termómetro +1). Reloj del doc 01: «Primer fragmento filtrado a FIRSTLIGHT» en la Noche 5."
+        },
+        "nota": "Manda el doc 10 (corregido por el 11 y confirmado por el 14): dos entregas, en las Noches 2 y 5.",
+        "origen": "10, 11, 14"
+      },
+      {
+        "motivo": "Halloway acelera la filtración porque la coterie se llevó el original de Gale Sentinel",
+        "cantidad": 1,
+        "escena": "A3-E02",
+        "noche": 7,
+        "origen": "12"
+      },
+      {
+        "motivo": "Un Vástago registrado por ANOMALY (por escena)",
+        "cantidad": 1,
+        "por": "escena",
+        "origen": "14"
+      },
+      {
+        "motivo": "Salir del apartamento de Helen por el pasillo sin ocuparse de la cámara del 3B: ANOMALY registra a cada Vástago como «sujeto frío»",
+        "cantidad": 1,
+        "escena": "A0-E01",
+        "lugar": "LUG-05",
+        "origen": "10"
+      },
+      {
+        "motivo": "Romper a golpes la cámara del 3B: la última imagen es una mano que se mueve más rápido de lo normal",
+        "cantidad": 1,
+        "escena": "A0-E01",
+        "lugar": "LUG-05",
+        "origen": "10"
+      },
+      {
+        "motivo": "Salir corriendo a velocidad sobrenatural de la Terminal 46: las cámaras, que ya volvieron a funcionar, los registran",
+        "cantidad": 1,
+        "escena": "A1-E02",
+        "origen": "10"
+      },
+      {
+        "motivo": "Intento de intrusión fallido en el servidor de pruebas de Gale Sentinel (se aplica la noche siguiente: Gale comparte esos registros con Northline)",
+        "cantidad": 1,
+        "escena": "A1-E05",
+        "noche": "siguiente",
+        "origen": "10"
+      },
+      {
+        "motivo": "Dominación sobre un técnico de guardia en el campus de Gale, delante de las cámaras ANOMALY, si no se desactivaron antes",
+        "cantidad": 1,
+        "escena": "A1-E05",
+        "lugar": "LUG-07",
+        "origen": "10"
+      },
+      {
+        "motivo": "Entrar en Gale Sentinel sin desactivar ANOMALY: cada Vástago queda registrado como «sujeto frío» (+1 en total)",
+        "cantidad": 1,
+        "escena": "A3-E02",
+        "lugar": "LUG-07",
+        "nota": "El doc 05 (LUG-07) lo da para la puerta principal; el doc 12 (capa 1) precisa que es +1 en total.",
+        "origen": "05, 12"
+      },
+      {
+        "motivo": "Salir corriendo por el campus de Gale Sentinel delante de las cámaras",
+        "cantidad": 1,
+        "escena": "A3-E02",
+        "lugar": "LUG-07",
+        "origen": "12"
+      },
+      {
+        "motivo": "Cámaras corporales de FIRSTLIGHT: cada acción sobrenatural visible delante de una cámara (máximo +2 por escena)",
+        "cantidad": 1,
+        "por": "acción",
+        "maximo": 2,
+        "origen": "14"
+      },
+      {
+        "motivo": "Fallo al sacar a Lonnie delante de las cámaras corporales de FIRSTLIGHT",
+        "cantidad": 1,
+        "escena": "A2-E06",
+        "noche": 5,
+        "origen": "11"
+      },
+      {
+        "motivo": "La USB de Pike queda en la cadena de custodia: Hale la copia en la Noche 3 con su «autorización de consultoría» (DOC-09)",
+        "cantidad": 1,
+        "escena": "A1-E02",
+        "noche": 3,
+        "documento": "DOC-09",
+        "origen": "10, 14"
+      },
+      {
+        "motivo": "Teo Vásquez contesta a nrthln_research (si nadie se ocupa de él antes de la Noche 4)",
+        "cantidad": 1,
+        "escena": "A1-E02",
+        "noche": 4,
+        "documento": "DOC-06",
+        "pnj": "MEN-06",
+        "origen": "04, 10, 14"
+      },
+      {
+        "motivo": "La subasta de Thornquist se celebra (Noche 5)",
+        "cantidad": 2,
+        "escena": "A1-E04",
+        "noche": 5,
+        "lugar": "LUG-04",
+        "nota": "Doc 11: la subasta vende los duplicados de Thornquist; Termómetro +2 igualmente, porque uno de los compradores es Hale.",
+        "origen": "10, 11, 14"
+      },
+      {
+        "motivo": "Escena del almacén de Sal sin limpiar: la policía encuentra la frase escrita con sangre",
+        "cantidad": 1,
+        "escena": "A2-E02",
+        "noche": 4,
+        "origen": "11, 14"
+      },
+      {
+        "motivo": "Ruth firma la autopsia de Sal: la anomalía «R. A.» de FIRSTLIGHT suma un informe",
+        "cantidad": 1,
+        "escena": "A2-E02",
+        "pj": "PJ-06",
+        "origen": "11"
+      },
+      {
+        "motivo": "Cada informe falso más firmado por «R. A.»",
+        "cantidad": 1,
+        "gancho": "GAN-09",
+        "pj": "PJ-06",
+        "origen": "09, 14"
+      },
+      {
+        "motivo": "Abrir la cisterna del Larchmont",
+        "cantidad": 2,
+        "escena": "A2-E05",
+        "lugar": "LUG-11",
+        "origen": "05, 11, 14"
+      },
+      {
+        "motivo": "FIRSTLIGHT se queda con Lonnie y la USB 3 (Lonnie le vende la USB 3 a nrthln_research, o la coterie llega después de las 23:00)",
+        "cantidad": 2,
+        "escena": "A2-E06",
+        "noche": 5,
+        "pnj": "MEN-01",
+        "origen": "11, 14"
+      },
+      {
+        "motivo": "Combate en el aparcamiento del Denny's",
+        "cantidad": 3,
+        "escena": "A2-E06",
+        "noche": 5,
+        "nota": "Doc 14: «Brecha visible en el ferry o en el Denny's: +2 o +3». El +3 es el del Denny's (doc 11).",
+        "origen": "11, 14"
+      },
+      {
+        "motivo": "Asalto ruidoso a Gale Sentinel (Gale avisa a Halloway, que traslada el original esa misma noche si no se lo llevan)",
+        "cantidad": 2,
+        "escena": "A3-E02",
+        "lugar": "LUG-07",
+        "origen": "01, 12, 14"
+      },
+      {
+        "motivo": "Acción sobrenatural visible en el salón de pasajeros del ferry (cuarenta testigos)",
+        "cantidad": 2,
+        "escena": "A4-E03",
+        "lugar": "LUG-15",
+        "noche": 8,
+        "nota": "Doc 14: «Brecha visible en el ferry o en el Denny's: +2 o +3». El +2 es el del ferry (doc 13).",
+        "origen": "13, 14"
+      },
+      {
+        "motivo": "Intrusión descubierta en Northline",
+        "cantidad": 3,
+        "lugar": "LUG-14",
+        "origen": "05"
+      },
+      {
+        "motivo": "Masacre de operadores de FIRSTLIGHT en la redada: FIRSTLIGHT se queda con la prueba definitiva (Purga)",
+        "cantidad": "=10",
+        "escena": "A4-E02",
+        "noche": 8,
+        "origen": "13"
+      },
+      {
+        "motivo": "FIRSTLIGHT captura a un Vástago en la redada: Purga; la aventura termina en FIN-D aunque el Consejo salga bien",
+        "cantidad": "=10",
+        "escena": "A4-E02",
+        "noche": 8,
+        "desenlace": "FIN-D",
+        "origen": "13"
+      },
+      {
+        "motivo": "El Expediente llega a manos de Okafor (FIN-D · Marea roja)",
+        "cantidad": "=10",
+        "desenlace": "FIN-D",
+        "origen": "13"
+      },
+      {
+        "motivo": "GAN-01: la analista Hale llega primero a Marcos Delgado (y tiene un retrato robot de David)",
+        "cantidad": 2,
+        "gancho": "GAN-01",
+        "origen": "09"
+      },
+      {
+        "motivo": "GAN-03: un PJ que bebió de la sangre marcada es visto bajo luz UV (por escena)",
+        "cantidad": 1,
+        "gancho": "GAN-03",
+        "por": "escena",
+        "origen": "09"
+      },
+      {
+        "motivo": "GAN-04: Ransom le cuenta a Okafor lo de Bear",
+        "cantidad": 2,
+        "gancho": "GAN-04",
+        "origen": "09"
+      },
+      {
+        "motivo": "GAN-08: Helen habla del vídeo viral en el pódcast sin haber hablado antes con los PJ",
+        "cantidad": 2,
+        "gancho": "GAN-08",
+        "origen": "09"
+      },
+      {
+        "motivo": "GAN-11: Jun comete un error en público durante la primera historia",
+        "cantidad": 1,
+        "gancho": "GAN-11",
+        "origen": "09"
+      }
+    ],
+    "baja": [
+      {
+        "motivo": "Interceptar el informe forense DOC-09 antes de la Noche 3",
+        "cantidad": -1,
+        "escena": "A1-E02",
+        "noche": 3,
+        "documento": "DOC-09",
+        "origen": "04, 14"
+      },
+      {
+        "motivo": "Retirar la sangre marcada (GAN-03); la coterie gana además un favor de Thornquist",
+        "cantidad": -1,
+        "gancho": "GAN-03",
+        "origen": "09, 14"
+      },
+      {
+        "motivo": "Destruir pruebas en la redada: la coterie escapa con todo destruido (Refugio −2 para el dueño)",
+        "cantidad": -1,
+        "escena": "A4-E02",
+        "noche": 8,
+        "origen": "13, 14"
+      },
+      {
+        "motivo": "Borrar la base de datos de sujetos fríos (Inteligencia + Tecnología, Dificultad 4); Gale lo detecta al día siguiente",
+        "cantidad": -2,
+        "escena": "A3-E02",
+        "lugar": "LUG-07",
+        "origen": "12, 14"
+      },
+      {
+        "motivo": "Halloway cae como ARQUERO (FIN-A · La verdad ante el trono): FIRSTLIGHT pierde a su fuente",
+        "cantidad": -2,
+        "desenlace": "FIN-A",
+        "origen": "01, 13, 14"
+      },
+      {
+        "motivo": "El Expediente se destruye (FIN-C · Fuego purificador)",
+        "cantidad": -3,
+        "desenlace": "FIN-C",
+        "origen": "13, 14"
+      }
+    ],
+    "otros": [
+      {
+        "motivo": "FIN-B · El Sabueso cambia de amo: sin cambios, pero no vuelve a subir mientras Halloway reine",
+        "cantidad": "congelar",
+        "desenlace": "FIN-B",
+        "origen": "13"
+      },
+      {
+        "motivo": "Cortar el acceso de Northline a ANOMALY (Inteligencia + Tecnología, Dificultad 3): el Termómetro deja de subir por las cámaras durante el resto de la aventura",
+        "cantidad": "congelar",
+        "escena": "A3-E02",
+        "lugar": "LUG-07",
+        "alcance": "cámaras",
+        "origen": "12"
+      },
+      {
+        "motivo": "La coterie escapa de la redada pero deja pruebas",
+        "cantidad": 0,
+        "escena": "A4-E02",
+        "noche": 8,
+        "origen": "13"
+      },
+      {
+        "motivo": "Huir de la redada en la lancha del muelle cubierto: el dron la ve; escapan, pero el Termómetro no baja",
+        "cantidad": 0,
+        "escena": "A4-E02",
+        "lugar": "LUG-01",
+        "noche": 8,
+        "origen": "13"
+      }
+    ],
+    "evitar": [
+      {
+        "motivo": "Sacar a Helen por la escalera de incendios evita la cámara del 3B; abrir la cámara con cuidado y desconectarla (Destreza + Latrocinio, Dificultad 3) no sube; Ofuscación (Manto de sombras) evita que registre a quien la usa, pero no a los demás",
+        "escena": "A0-E01",
+        "origen": "10"
+      },
+      {
+        "motivo": "Convencer a los agentes de la Terminal 46 de que es «un vertido de cenizas de una empresa funeraria»: el caso se archiva, DOC-09 no existe y el Termómetro no sube en la Noche 3",
+        "escena": "A1-E02",
+        "noche": 3,
+        "origen": "10"
+      },
+      {
+        "motivo": "Ocuparse de Teo antes de la Noche 4: comprarlo, convencerlo o borrarle la memoria (esto último, 1 Mancha a quien no tenga una buena razón)",
+        "escena": "A1-E02",
+        "noche": 4,
+        "origen": "10"
+      },
+      {
+        "motivo": "Arreglar la escena del almacén de Sal: montarlo como un robo (Inteligencia + Subterfugio, Dificultad 3) o llamar a Montgomery",
+        "escena": "A2-E02",
+        "origen": "11"
+      },
+      {
+        "motivo": "Desactivar ANOMALY desde fuera (Inteligencia + Tecnología, Dificultad 4; Ezra +2 dados si descubrió que el firmware es suyo; automático con LOR-03 a nivel 4)",
+        "escena": "A3-E02",
+        "origen": "12"
+      },
+      {
+        "motivo": "Engañar a ANOMALY: LOR-03 a nivel 4, ropa térmica preparada (Inteligencia + Tecnología, Dificultad 4, por escena) o desactivar el módulo localmente (Inteligencia + Tecnología, Dificultad 4). Ofuscación no lo engaña",
+        "origen": "14"
+      },
+      {
+        "motivo": "LOR-03 nivel 3 «Borrar»: una vez por historia, cuando el Termómetro fuera a subir por culpa de una cámara, no sube",
+        "lor": "LOR-03",
+        "origen": "08"
+      },
+      {
+        "motivo": "GAN-08: hundir el vídeo viral en 48 horas (Inteligencia + Tecnología, Dificultad 5): el Termómetro no sube",
+        "gancho": "GAN-08",
+        "origen": "09"
+      }
+    ],
+    "condiciones": [
+      {
+        "valor": "4 o más",
+        "efecto": "Montgomery recibe a la coterie de mal humor y los primeros dos minutos los pasa reprochándoles cada error.",
+        "escena": "A1-E03",
+        "origen": "01, 10"
+      },
+      {
+        "valor": "9 o más al terminar A3-E04",
+        "efecto": "Se activa la redada (A4-E02): ocurre a las 21:40 de la Noche 8, antes del Consejo.",
+        "escena": "A4-E02",
+        "escenas": [
+          "A3-E04",
+          "A4-E02"
+        ],
+        "noche": 8,
+        "origen": "10, 12, 13",
+        "variantes": {
+          "12": "La redada (A4-E02) ocurre esa misma madrugada, antes del Consejo."
+        },
+        "nota": "Nota de edición: el doc 12 ponía la redada «esa misma madrugada» al terminar A3-E04 y el doc 13 a las 21:40 de la Noche 8; se decidió una sola versión: si el Termómetro está en 9 o más al terminar A3-E04, la redada ocurre a las 21:40 de la Noche 8."
+      },
+      {
+        "valor": "4 o menos al terminar la aventura",
+        "efecto": "+1 punto de experiencia a toda la coterie.",
+        "origen": "13"
+      },
+      {
+        "valor": "cualquiera",
+        "efecto": "LOR-03 nivel 5 «El ojo dentro»: una vez por historia, el personaje puede saber el valor actual del Termómetro y cuál es el próximo objetivo de FIRSTLIGHT.",
+        "lor": "LOR-03",
+        "origen": "08"
+      }
+    ],
+    "origen": "01, 03, 04, 05, 08, 09, 10, 11, 12, 13, 14, 15"
+  },
+  "reloj": {
+    "descripcion": "La ciudad se mueve aunque la coterie no actúe. Cada noche que pasa, ocurre el evento de la tabla. Si la coterie interviene antes, el evento cambia o desaparece. La fecha es la de la madrugada de cada noche.",
+    "convencionFechas": "La fecha de cada noche es la de su madrugada (doc 10: «Fecha (madrugada del)»). Los docs 11 a 13 fechan con ese mismo día las horas de la tarde de la noche (Denny's, lunes 16 a las 23:00; Consejo, jueves 19 a las 22:30). Cuando una hora lleva su propio campo «dia», es el que da el doc.",
+    "noches": [
+      {
+        "n": 1,
+        "fecha": "2026-11-12",
+        "dia": "jueves 12 nov.",
+        "evento": "El robo (Prólogo).",
+        "escena": "A0-E01",
+        "escenas": [
+          "A0-E01",
+          "A1-E01"
+        ],
+        "horas": [
+          {
+            "hora": "2:52–3:03",
+            "evento": "Se apagan las cámaras Gale Sentinel del edificio de Helen (once minutos). Ezra lo ve en sus monitores (P-01).",
+            "origen": "10"
+          },
+          {
+            "hora": "3:01",
+            "evento": "Alguien borra la nube de Helen con las credenciales correctas.",
+            "origen": "03, 10"
+          },
+          {
+            "hora": "3:04",
+            "evento": "El robo.",
+            "origen": "10"
+          },
+          {
+            "hora": "3:19",
+            "evento": "Suena el teléfono de tapa de David: la llamada de SAFE (A0-E01). David y Bear llegan quince minutos después.",
+            "variantes": {
+              "01": "Son las 3:12 de la mañana. Helen llama al único número de su móvil de tapa."
+            },
+            "nota": "Manda el doc 10 (3:19).",
+            "origen": "10"
+          },
+          {
+            "hora": "3:20",
+            "evento": "Nadia recibe un mensaje de voz de Helen: cuatro segundos de respiración.",
+            "origen": "10"
+          },
+          {
+            "hora": "3:21",
+            "evento": "Hal ve a David y Bear salir del hangar en la camioneta.",
+            "origen": "10"
+          },
+          {
+            "hora": "3:30",
+            "evento": "El señor Pell le pide a Celeste que autorice «un pago urgente a un proveedor de seguridad».",
+            "origen": "10"
+          },
+          {
+            "hora": "3:40",
+            "evento": "El exmarido de Ruth la llama por un aviso raro en Ballard.",
+            "origen": "10"
+          },
+          {
+            "hora": "3:40",
+            "evento": "Lonnie Barras abre las carpetas del disco en el coche y copia tres bloques en tres USB.",
+            "origen": "11"
+          },
+          {
+            "hora": "4:10",
+            "evento": "El vigilante ghoul del coche eléctrico gris se va, si la coterie no hace nada.",
+            "origen": "10"
+          },
+          {
+            "hora": "4:20",
+            "evento": "Helen escribe de memoria la lista de lo que había en el sótano (AYU-02).",
+            "origen": "15"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "fecha": "2026-11-13",
+        "dia": "viernes 13 nov.",
+        "evento": "Krell destruye a Pike en el muelle 46 (A1-E02). Gale descubre que el disco fue copiado. Primera entrega de ARQUERO.",
+        "escena": "A1-E02",
+        "escenas": [
+          "A1-E02",
+          "A1-E03",
+          "A1-E04"
+        ],
+        "termometro": 1,
+        "movimientos": [
+          {
+            "cantidad": 1,
+            "motivo": "Primera entrega de ARQUERO",
+            "origen": "10, 11, 14"
+          }
+        ],
+        "horas": [
+          {
+            "hora": "2:00–3:00 (2:30)",
+            "evento": "Krell destruye a Pike junto a un contenedor rojo de la Terminal 46. Teo Vásquez lo ve desde la grúa (DOC-06).",
+            "origen": "04, 10"
+          },
+          {
+            "hora": "4:30",
+            "evento": "El jefe de turno llama a la policía portuaria.",
+            "origen": "10"
+          },
+          {
+            "hora": "4:45",
+            "evento": "Cordón policial. La coterie puede llegar entre las 4:45 y las 6:00.",
+            "origen": "10"
+          },
+          {
+            "hora": "6:52",
+            "evento": "Los restos llegan a la oficina forense (DOC-09).",
+            "origen": "04, 10"
+          },
+          {
+            "hora": "7:12",
+            "evento": "Amanecer.",
+            "origen": "10"
+          },
+          {
+            "hora": "final de la noche",
+            "evento": "Montgomery convoca a la coterie en la granja (A1-E03), o al comienzo de la Noche 3.",
+            "origen": "10"
+          }
+        ],
+        "variantes": {
+          "10": "Krell destruye al primer comprador en el muelle 46 (A1-E02). Halloway hace su primera entrega como ARQUERO.",
+          "01": "Krell destruye al primer comprador de una copia (A1-E02)."
+        }
+      },
+      {
+        "n": 3,
+        "fecha": "2026-11-14",
+        "dia": "sábado 14 nov.",
+        "evento": "Noche de Elíseo (A2-E01). Krell vigila el almacén de Sal.",
+        "escena": "A2-E01",
+        "escenas": [
+          "A2-E01"
+        ],
+        "termometro": 0,
+        "movimientos": [
+          {
+            "cantidad": 1,
+            "motivo": "Hale copia la USB de Pike si quedó en la cadena de custodia (DOC-09)",
+            "condicional": true,
+            "origen": "10"
+          }
+        ],
+        "horas": [],
+        "variantes": {
+          "10": "Noche de Elíseo. Halloway siembra dudas sobre el Sheriff (A2-E01).",
+          "01": "Halloway siembra dudas sobre Montgomery en el Elíseo (A2-E01)."
+        }
+      },
+      {
+        "n": 4,
+        "fecha": "2026-11-15",
+        "dia": "domingo 15 nov.",
+        "evento": "Krell asalta el almacén del perista: destruye a su protector Corwin, mata a Sal y, si sigue sin protección, a Jun, que había ido a cobrar (A2-E02).",
+        "escena": "A2-E02",
+        "escenas": [
+          "A2-E02",
+          "A2-E06"
+        ],
+        "termometro": 0,
+        "movimientos": [
+          {
+            "cantidad": 1,
+            "motivo": "Teo contesta a nrthln_research si nadie se ocupó de él",
+            "condicional": true,
+            "origen": "04, 10"
+          }
+        ],
+        "horas": [
+          {
+            "hora": "1:50–2:10",
+            "evento": "Si la coterie llega en este intervalo, encuentra a Krell en plena faena.",
+            "origen": "11"
+          },
+          {
+            "hora": "1:55",
+            "evento": "Si la coterie prepara una emboscada, Krell entra por la puerta trasera.",
+            "origen": "11"
+          },
+          {
+            "hora": "2:00",
+            "evento": "Krell asalta el almacén de Sal en el SoDo.",
+            "origen": "11"
+          },
+          {
+            "hora": "3:15",
+            "evento": "Llega la policía.",
+            "origen": "11"
+          },
+          {
+            "hora": "3:22",
+            "evento": "Pasa un tren de mercancías junto al almacén.",
+            "origen": "11"
+          }
+        ],
+        "variantes": {
+          "10": "Krell destruye a Jun Takeda y a un segundo Vástago (A2-E02).",
+          "01": "Segunda víctima, con la firma de Vance (A2-E02)."
+        }
+      },
+      {
+        "n": 5,
+        "fecha": "2026-11-16",
+        "dia": "lunes 16 nov.",
+        "evento": "Lonnie, aterrado, se cita a las 23:00 con nrthln_research para venderle la USB 3 (A2-E06). Si lo logra: Termómetro +2. Segunda entrega de ARQUERO (+1). Okafor contacta a Helen.",
+        "escena": "A2-E06",
+        "escenas": [
+          "A2-E06"
+        ],
+        "termometro": 1,
+        "movimientos": [
+          {
+            "cantidad": 1,
+            "motivo": "Segunda entrega de ARQUERO",
+            "origen": "10, 11, 14"
+          },
+          {
+            "cantidad": 2,
+            "motivo": "Lonnie le vende la USB 3 a FIRSTLIGHT",
+            "condicional": true,
+            "origen": "11"
+          },
+          {
+            "cantidad": 2,
+            "motivo": "La subasta de Thornquist se celebra",
+            "condicional": true,
+            "origen": "10, 11"
+          }
+        ],
+        "horas": [
+          {
+            "hora": "antes de las 22:00",
+            "evento": "La coterie encuentra a Lonnie en la habitación 214 del Starlite (también vale en la Noche 4).",
+            "origen": "11"
+          },
+          {
+            "hora": "22:00–23:00",
+            "evento": "Lonnie va hacia el Denny's: hay que interceptarlo por el camino o en el aparcamiento.",
+            "origen": "11"
+          },
+          {
+            "hora": "23:00",
+            "evento": "Cita en el Denny's con nrthln_research (Okafor y dos agentes de MEN-02).",
+            "dia": "lunes 16 nov.",
+            "origen": "11"
+          }
+        ],
+        "variantes": {
+          "10": "Segunda entrega a FIRSTLIGHT (Termómetro +1). Okafor contacta a Helen.",
+          "01": "Primer fragmento filtrado a FIRSTLIGHT. Okafor contacta a Helen."
+        }
+      },
+      {
+        "n": 6,
+        "fecha": "2026-11-17",
+        "dia": "martes 17 nov.",
+        "evento": "Krell encuentra a Lonnie, si FIRSTLIGHT no lo tiene ya. Krell va a por una Piedra de toque de la coterie (A3-E01). El original pasa a la bóveda de Halloway.",
+        "escena": "A3-E01",
+        "escenas": [
+          "A3-E01"
+        ],
+        "horas": [
+          {
+            "hora": "poco después de medianoche",
+            "evento": "Krell va a por la persona más expuesta del entorno de la coterie (A3-E01).",
+            "origen": "12"
+          },
+          {
+            "hora": "durante la noche",
+            "evento": "Gale traslada el disco original del centro de datos (LUG-07) a la bóveda de la Torre Halloway (LUG-06).",
+            "origen": "11, 12"
+          }
+        ],
+        "variantes": {
+          "10": "Krell va a por una Piedra de toque de la coterie (A3-E01). El original del Expediente pasa a la bóveda de Halloway.",
+          "01": "Krell va a por Bear o a por Helen (A3-E01)."
+        }
+      },
+      {
+        "n": 7,
+        "fecha": "2026-11-18",
+        "dia": "miércoles 18 nov.",
+        "evento": "Halloway le entrega a Montgomery «pruebas» contra David (A3-E04).",
+        "escena": "A3-E04",
+        "escenas": [
+          "A3-E03",
+          "A3-E04"
+        ],
+        "horas": [
+          {
+            "hora": "medianoche",
+            "evento": "Cita de Krell en la Terminal 86 (A3-E03). El dron de Gale graba desde fuera.",
+            "origen": "12"
+          },
+          {
+            "hora": "al final de la noche",
+            "evento": "A3-E04 · La jauría duda (o al comienzo de la Noche 8).",
+            "origen": "12"
+          }
+        ],
+        "variantes": {
+          "01": "Montgomery recibe \"pruebas\" contra David (A3-E04)."
+        }
+      },
+      {
+        "n": 8,
+        "fecha": "2026-11-19",
+        "dia": "jueves 19 nov.",
+        "evento": "Consejo de Primogenitura (A4-E01). Si el Termómetro está en 9 o más, la redada (A4-E02).",
+        "escena": "A4-E01",
+        "escenas": [
+          "A4-E02",
+          "A4-E01",
+          "A4-E03"
+        ],
+        "horas": [
+          {
+            "hora": "21:40",
+            "evento": "Si el Termómetro está en 9 o más al terminar A3-E04: FIRSTLIGHT llega al objetivo de la redada (A4-E02), antes del Consejo.",
+            "variantes": {
+              "12": "Si el Termómetro está en 9 o más al terminar A3-E04, la redada ocurre «esa misma madrugada, antes del Consejo»."
+            },
+            "nota": "Nota de edición: el doc 12 ponía la redada «esa misma madrugada» al terminar A3-E04; se decidió la hora del doc 13: 21:40 de la Noche 8.",
+            "origen": "13"
+          },
+          {
+            "hora": "22:30",
+            "evento": "Consejo de Primogenitura en la Torre Halloway (A4-E01).",
+            "dia": "jueves 19 nov.",
+            "origen": "13"
+          },
+          {
+            "hora": "00:30",
+            "evento": "El señor Pell sale de la torre con el maletín (A4-E03).",
+            "origen": "13"
+          },
+          {
+            "hora": "00:55",
+            "evento": "Último ferry a Bainbridge desde Colman Dock (A4-E03). La travesía dura 35 minutos.",
+            "origen": "13"
+          },
+          {
+            "hora": "01:30",
+            "evento": "El ferry llega a la otra orilla: desenlaces.",
+            "origen": "13"
+          }
+        ],
+        "variantes": {
+          "01": "Redada de FIRSTLIGHT y Consejo de Primogenitura (A4)."
+        }
+      }
+    ],
+    "variantes": [
+      {
+        "si": "En A1-E03 la coterie pide más de tres noches y lo logra (Manipulación + Persuasión, Dificultad 4)",
+        "entonces": "Montgomery da cinco noches y A3-E04 ocurre en la Noche 8 en lugar de la Noche 7.",
+        "escena": "A1-E03",
+        "origen": "10"
+      },
+      {
+        "si": "Montgomery da su plazo en A1-E03",
+        "entonces": "Tres noches. Después, si no tiene el disco ni un nombre, lo busca él a su manera.",
+        "escena": "A1-E03",
+        "origen": "10"
+      },
+      {
+        "si": "Jun huye en la bicicleta y gana la persecución (A1-E04)",
+        "entonces": "Desaparece hasta la Noche 4.",
+        "escena": "A1-E04",
+        "origen": "10"
+      },
+      {
+        "si": "La coterie no rescata a Jun antes de la Noche 4",
+        "entonces": "Jun es la segunda víctima, en el almacén de Sal (A2-E02).",
+        "escena": "A2-E02",
+        "noche": 4,
+        "origen": "10, 11"
+      },
+      {
+        "si": "La coterie convence a los agentes de la Terminal 46 (A1-E02)",
+        "entonces": "DOC-09 no existe y el Termómetro no sube en la Noche 3.",
+        "noche": 3,
+        "origen": "10"
+      },
+      {
+        "si": "La coterie entra al servidor de Gale (A1-E05) en las Noches 1 a 3",
+        "entonces": "Encuentra también la grabación de la cámara del 3B de la madrugada del robo.",
+        "escena": "A1-E05",
+        "origen": "10"
+      },
+      {
+        "si": "La coterie llega a Gale Sentinel (A3-E02) en la Noche 6 o antes",
+        "entonces": "El original todavía está en el centro de datos. Después, en la bóveda de la Torre Halloway.",
+        "escena": "A3-E02",
+        "noche": 6,
+        "origen": "11, 12"
+      },
+      {
+        "si": "La coterie asalta Gale Sentinel a la fuerza",
+        "entonces": "Gale avisa a Halloway, que traslada el original esa misma noche si no se lo llevan.",
+        "escena": "A3-E02",
+        "origen": "12"
+      },
+      {
+        "si": "La coterie se lleva el original de Gale Sentinel",
+        "entonces": "Halloway lo sabe en la Noche 7, ya no puede usarlo contra el Príncipe en A4-E01 y acelera la filtración: Termómetro +1 en la Noche 7.",
+        "noche": 7,
+        "origen": "12"
+      },
+      {
+        "si": "Lonnie queda bajo protección de la coterie tras A2-E06",
+        "entonces": "En la Noche 6 Krell puede ir a por él en lugar de a por una Piedra de toque.",
+        "escena": "A3-E01",
+        "noche": 6,
+        "origen": "11, 12"
+      },
+      {
+        "si": "Krell se queda con Lonnie en la Noche 6",
+        "entonces": "Lonnie muere. La USB 3 va a la bóveda de Halloway junto con el original.",
+        "noche": 6,
+        "origen": "11"
+      },
+      {
+        "si": "En A3-E01 el rehén se le escapa a Krell",
+        "entonces": "Krell retrocede y vuelve a intentarlo en la Noche 7 con otro objetivo.",
+        "escena": "A3-E01",
+        "noche": 7,
+        "origen": "12"
+      },
+      {
+        "si": "Krell no tomó rehén en A3-E01",
+        "entonces": "La cita de la Terminal 86 llega igual: un papel en la puerta del hangar con la misma letra.",
+        "escena": "A3-E03",
+        "noche": 7,
+        "origen": "12"
+      },
+      {
+        "si": "La coterie sigue el rastro de Krell la misma Noche 6",
+        "entonces": "Llega a la Terminal 86 antes de lo previsto (A3-E03, «Si la coterie llega antes»).",
+        "escena": "A3-E01",
+        "noche": 6,
+        "origen": "12"
+      },
+      {
+        "si": "La coterie ya le contó a Montgomery lo de Krell y le enseñó P-15 o el correo de C.H.",
+        "entonces": "A3-E04 salta la primera mitad y se convierte en una planificación del clímax.",
+        "escena": "A3-E04",
+        "origen": "12"
+      },
+      {
+        "si": "El Príncipe recupera la iniciativa (por ejemplo, avisado antes con pruebas)",
+        "entonces": "El Consejo se traslada a la Galería de Vidrio y Halloway pierde 2 dados en todas sus tiradas de la escena.",
+        "escena": "A4-E01",
+        "noche": 8,
+        "origen": "13"
+      },
+      {
+        "si": "La coterie sale de la Torre Halloway después de las 00:30",
+        "entonces": "Destreza + Conducir (Dificultad 3) para llegar a Colman Dock antes de las 00:55; si falla, hay que alcanzar el ferry en lancha.",
+        "escena": "A4-E03",
+        "noche": 8,
+        "origen": "13"
+      },
+      {
+        "si": "Alguien tiene LOR-03 a nivel 5",
+        "entonces": "Sabe el objetivo y la hora de la redada desde la Noche 7.",
+        "escena": "A4-E02",
+        "noche": 7,
+        "origen": "13"
+      }
+    ],
+    "versionDoc01": [
+      {
+        "n": 1,
+        "evento": "El robo (Prólogo)."
+      },
+      {
+        "n": 2,
+        "evento": "Krell destruye al primer comprador de una copia (A1-E02)."
+      },
+      {
+        "n": 3,
+        "evento": "Halloway siembra dudas sobre Montgomery en el Elíseo (A2-E01)."
+      },
+      {
+        "n": 4,
+        "evento": "Segunda víctima, con la firma de Vance (A2-E02)."
+      },
+      {
+        "n": 5,
+        "evento": "Primer fragmento filtrado a FIRSTLIGHT. Okafor contacta a Helen."
+      },
+      {
+        "n": 6,
+        "evento": "Krell va a por Bear o a por Helen (A3-E01)."
+      },
+      {
+        "n": 7,
+        "evento": "Montgomery recibe \"pruebas\" contra David (A3-E04)."
+      },
+      {
+        "n": 8,
+        "evento": "Redada de FIRSTLIGHT y Consejo de Primogenitura (A4)."
+      }
+    ],
+    "nota": "Manda el Reloj del doc 10 corregido por el doc 11 para las Noches 2 a 6 («Reloj de Halloway, actualizado»). La versión del doc 01 queda en versionDoc01.",
+    "origen": "01, 10, 11, 12, 13"
+  }
+}

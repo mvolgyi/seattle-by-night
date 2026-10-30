@@ -1,0 +1,39 @@
+{
+  "1": {
+    "class_type": "LoadBackgroundRemovalModel",
+    "_meta": { "title": "BiRefNet (nativo)" },
+    "inputs": { "bg_removal_name": "birefnet.safetensors" }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "Imagen a recortar" },
+    "inputs": { "image": "{{IMAGEN}}" }
+  },
+  "3": {
+    "class_type": "RemoveBackground",
+    "inputs": { "bg_removal_model": ["1", 0], "image": ["2", 0] }
+  },
+  "4": {
+    "class_type": "InvertMask",
+    "_meta": { "title": "JoinImageWithAlpha espera la máscara invertida" },
+    "inputs": { "mask": ["3", 0] }
+  },
+  "5": {
+    "class_type": "JoinImageWithAlpha",
+    "inputs": { "image": ["2", 0], "alpha": ["4", 0] }
+  },
+  "6": {
+    "class_type": "SaveImage",
+    "_meta": { "title": "Salida RGBA" },
+    "inputs": { "images": ["5", 0], "filename_prefix": "{{PREFIJO}}" }
+  },
+  "7": {
+    "class_type": "MaskToImage",
+    "inputs": { "mask": ["3", 0] }
+  },
+  "8": {
+    "class_type": "SaveImage",
+    "_meta": { "title": "Máscara (para revisar)" },
+    "inputs": { "images": ["7", 0], "filename_prefix": "{{PREFIJO}}-mascara" }
+  }
+}

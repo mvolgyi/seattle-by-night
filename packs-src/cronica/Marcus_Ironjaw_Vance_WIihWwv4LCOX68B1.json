@@ -1,0 +1,249 @@
+{
+  "_id": "WIihWwv4LCOX68B1",
+  "_key": "!journal!WIihWwv4LCOX68B1",
+  "name": "Marcus «Ironjaw» Vance",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 60,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-06",
+      "archivo": "content/personajes/PNJ-06.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "5A1LnuZFIUEPyPy3",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.5A1LnuZFIUEPyPy3",
+      "name": "Marcus «Ironjaw» Vance",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«La violencia no es caos, es juicio.»</em></p>\n<p><strong>Clan:</strong> Brujah · <strong>Generación:</strong> 8.ª · <strong>Secta:</strong> Camarilla · <strong>Sire de:</strong> @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith} (Haití, 1960) y @UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell} (Marsella, 1972)</p>\n<p>Personaje de trasfondo: no aparece en la aventura y no tiene ficha de juego. Fuente principal: doc 23, «🩸 Sire de David Smith: Marcus &quot;Ironjaw&quot; Vance» (fuente previa), completado con los docs 00–16.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "z4fmE8dbHb755i6o",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.z4fmE8dbHb755i6o",
+      "name": "En la aventura",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Vance no está en Seattle.</strong> Toda señal suya es falsa. Lo que sí es real es Krell, el otro hijo, el que no fue elegido (doc 01).</p>\n<ul>\n<li><strong>Los diarios.</strong> En 1986, un año después de su desaparición en los Cárpatos, un intermediario de Lyon vendió en subasta privada los diarios del Brujah. Vance había pedido que quemaran sus refugios. Alguien no lo hizo. El comprador fue @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}, que mandó mecanografiar tres copias (al señor Pell, @UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell}) y guardó el original en su bóveda (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}). La copia 1 está en la bóveda, la copia 2 la tiene Krell y la copia 3 se la envió Halloway a la Justicar Panhard en 2025. Nadie en Seattle lo sabe, salvo O&#39;Connor (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}).</li>\n<li><strong>El fantasma.</strong> Con los diarios, Halloway contrata a Krell, un Brujah que Vance entrenó y abandonó en los 70, y que destruye a Vástagos imitando la <em>Furia Controlada</em>: que David persiga a un muerto y que Montgomery desconfíe de él. El rumor «Vance, el sire del Sabueso, volvió a la ciudad» lo hace circular Halloway a través de Krell.</li>\n<li><strong>El abrigo de Vance</strong> llegó a Halloway en el mismo lote que los diarios; Krell lo lleva puesto en @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}.</li>\n<li><strong>Pistas y documentos:</strong> @UUID[JournalEntry.kzeWNRBY6tgLP37S]{Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)} (folio 14, Marsella 1963), @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.xQqepYpthm1bxP8u]{Halloway sabe lo del agua fría} (Halloway cita una frase de Vance que solo está en los diarios), @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{La guardia invertida} (la guardia invertida), @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.TOvLdg2zhgDzjOAG]{Los diarios comprados en 1986} (los diarios comprados en 1986), @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{Los folios del alemán} (folios 41 y 42 sobre «el alemán»), @UUID[JournalEntry.9zcPuCCutNfUtYJ0]{Árbol de linaje de Vance} (árbol de linaje).</li>\n<li><strong>La carta falsa.</strong> Halloway le da a Montgomery una carta firmada «M.V.» dirigida a David. Tiene la letra de Vance casi perfecta, pero está en inglés: Vance escribía sus diarios en francés (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}).</li>\n<li><strong>Montgomery</strong> conoció a Vance de oídas y le teme de verdad (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}).</li>\n<li><strong>Krell</strong> lo buscó en Cluj en el 87: «No había nada. Ni ceniza.»</li>\n<li><strong>La doctrina</strong> de la Furia Controlada es @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada}: «Localiza. Evalúa. Ejecuta.»</li>\n<li><strong>Ganchos:</strong> @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Cartas desde Cluj} (cartas desde Cluj firmadas «M. V.») y @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama} (el Arconte Duval, que conoció a Vance, leyó la copia 3).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Mvk8U0XqkSGVy1HK",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.Mvk8U0XqkSGVy1HK",
+      "name": "Historia y motivación",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Marcus Vance fue un veterano de la Segunda Guerra Mundial, un <strong>comandante de artillería y estratega militar</strong> que, tras su Abrazo en los años 40 por un Brujah europeo exiliado, se convirtió en una figura de orden y disciplina dentro del clan — una rareza entre los suyos.</p>\n<p>A diferencia de los Brujah caóticos o idealistas, Marcus creía que <strong>la revolución debía tener estructura, y la violencia, propósito</strong>. En su visión, la Mascarada era el muro que mantenía el equilibrio entre la anarquía cainita y la extinción total.</p>\n<p>Durante la Guerra Fría, operó como ejecutor itinerante de la Camarilla, cazando a Vástagos que amenazaban la estabilidad política. Su apodo, <em>Ironjaw</em>, provenía tanto de su férrea mandíbula como de su inquebrantable determinación: nunca retrocedía, ni ante humanos ni ante Antiguos.</p>\n<p><strong>Apodos:</strong> <em>Ironjaw</em>, <em>El Comandante Rojo</em>, <em>El Martillo del Orden</em> · <strong>Época de actividad:</strong> 1940–1985 · <strong>Lugar de origen:</strong> Nueva York, EE. UU. · <strong>Última localización conocida:</strong> Puerto Príncipe, Haití — 1960 · <strong>Destino:</strong> Presunto destruido por el Sabbat durante los 80, aunque no hay confirmación. · <strong>Secta:</strong> Camarilla (desaparecido, posiblemente cazado por la Inquisición).</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0c51Y10sMrmgvNwJ",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.0c51Y10sMrmgvNwJ",
+      "name": "El Abrazo de David Smith",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Fecha:</strong> 8 de julio de 1960 · <strong>Lugar:</strong> Haití, durante una misión SEAL encubierta.</p>\n<p>David, entonces un <strong>comando estadounidense</strong>, lideraba una operación de infiltración en la costa haitiana, investigando una serie de desapariciones vinculadas a cultos de sangre. Su escuadrón fue emboscado — no por rebeldes, sino por una manada Sabbat que había convertido el lugar en un campo de experimentación.</p>\n<p>Marcus Vance estaba en la zona, cazando al mismo grupo por orden de la Camarilla. Llegó demasiado tarde para salvar al pelotón de Smith… pero lo suficiente como para <strong>presenciar cómo el joven soldado, gravemente herido, se negaba a morir</strong>, arrastrándose con una navaja en mano para eliminar al último enemigo, aun desangrándose.</p>\n<blockquote>\n<p>«Vi en él algo que no veía desde hacía décadas — no miedo, ni furia. Vi <em>voluntad</em>. Y pensé: esa clase de hombres no deben morir. Deben ser usados.»\n— <em>Extracto de las memorias de Marcus Vance, recuperadas de su refugio en Marsella.</em></p>\n</blockquote>\n<p>Marcus lo Abrazó no por compasión, sino por <strong>principio estratégico</strong>: David representaba el soldado ideal, un ser con disciplina, conciencia y un código moral inquebrantable. Lo moldeó durante una década, enseñándole el equilibrio entre la violencia de la Bestia y la estructura del deber. Así nació <strong>«el Sabueso de la Mascarada»</strong>, un ejecutor más letal y preciso que cualquier Arconte.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "6mrk6r7aEzpNprWv",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.6mrk6r7aEzpNprWv",
+      "name": "Destino del Sire",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En 1985, Marcus Vance desapareció en Europa del Este, mientras investigaba un brote Sabbat en Rumania. Los rumores entre los Vástagos dicen que fue destruido durante un combate directo con un <strong>Tzimisce Antiguo</strong>, aunque algunos informes lo vinculan con la Mano Negra.</p>\n<p>David nunca confirmó su muerte. Pero aún guarda la <strong>navaja militar que llevaba el día de su Abrazo</strong>, reliquia del momento en que murió como humano y nació como cazador.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ewuqNxPiGBaNe6DE",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.ewuqNxPiGBaNe6DE",
+      "name": "Relación con David Smith",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Vínculo emocional:</strong> respeto absoluto, sin sentimentalismo.</li>\n<li><strong>Vínculo de Sangre:</strong> disuelto hace décadas, pero la lealtad filosófica persiste.</li>\n<li><strong>Influencia:</strong> la voz de Marcus aún resuena en la mente de David cuando enfrenta decisiones morales difíciles.</li>\n<li><strong>Legado:</strong> «La violencia no es caos, es juicio.»</li>\n</ul>\n<p><em>El doc 23 incluye un retrato de Vance (imagen no exportada).</em></p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hrWyljPacG19JonP",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.hrWyljPacG19JonP",
+      "name": "Archivo confidencial: Camarilla / Clan Brujah",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>📜 <strong>ARCHIVO CONFIDENCIAL — CAMARILLA / CLAN BRUJAH</strong></p>\n<p><strong>Clasificación:</strong> SECRETO — Solo para Justicar y Arcontes en activo</p>\n<p><strong>Referencia:</strong> Dossier V-8A-BRUJAH / VANCE.M</p>\n<p><strong>Estado:</strong> Desaparecido — Presunto destruido (1985)</p>\n<p><strong>Fecha de última verificación:</strong> 22 de agosto de 1985, Rumania</p>\n<h3>🩸 Identificación vástaga</h3>\n<p><strong>Nombre:</strong> Marcus Vance</p>\n<p><strong>Alias conocidos:</strong> <em>Ironjaw</em>, <em>El Comandante Rojo</em>, <em>El Martillo del Orden</em></p>\n<p><strong>Clan:</strong> Brujah</p>\n<p><strong>Generación:</strong> 8ª</p>\n<p><strong>Secta:</strong> Camarilla</p>\n<p><strong>Posición:</strong> Ejecutor itinerante bajo mandato del Justicar Helena Panhard (1950–1979) (@UUID[JournalEntry.gSMgBLLYggWyAN2W]{Justicar Helena Panhard})</p>\n<p><strong>Residencias conocidas:</strong> Marsella, Viena, Berlín, Puerto Príncipe (operativo temporal)</p>\n<p><strong>Estado actual:</strong> Desaparecido. Última transmisión confirmada: sector de Transilvania, Rumania.</p>\n<h3>⚰️ Datos cronológicos</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Evento</th>\n<th>Fecha</th>\n<th>Detalle</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Nacimiento mortal</strong></td>\n<td>1911</td>\n<td>Nueva York, EE. UU. — familia de origen irlandés.</td>\n</tr>\n<tr>\n<td><strong>Servicio mortal</strong></td>\n<td>1931–1945</td>\n<td>Ejército de los EE. UU., Comandante de Artillería. Participación confirmada en el Desembarco de Normandía.</td>\n</tr>\n<tr>\n<td><strong>Abrazo</strong></td>\n<td>1945 (Berlín)</td>\n<td>Abrazado por un Brujah veterano anónimo tras liberar un campo de concentración — acto simbólico de redención.</td>\n</tr>\n<tr>\n<td><strong>Edad al morir</strong></td>\n<td>34 años</td>\n<td>Condición física óptima, historial de disciplina excepcional.</td>\n</tr>\n<tr>\n<td><strong>Edad verdadera (último registro)</strong></td>\n<td>74 años</td>\n<td>Apariencia inalterable desde su Abrazo.</td>\n</tr>\n<tr>\n<td><strong>Última misión registrada</strong></td>\n<td>1985</td>\n<td>Operación encubierta contra la Mano Negra en los Cárpatos. Sin retorno.</td>\n</tr>\n</tbody></table>\n<h3>⚔️ Perfil de sangre</h3>\n<ul>\n<li><strong>Potencia de Sangre:</strong> 5</li>\n<li><strong>Resonancia dominante:</strong> Colérica pura — agresión canalizada en control y disciplina.</li>\n<li><strong>Humanidad estimada:</strong> 5 (fuerte inclinación hacia el deber, pero progresivo desapego emocional).</li>\n<li><strong>Predador:</strong> <em>Guardián del Orden</em> (versión clásica de «Cazador de Cazadores»).</li>\n<li><strong>Voluntad registrada:</strong> 8 (determinación casi inquebrantable).</li>\n</ul>\n<h3>💀 Trayectoria y relevancia histórica</h3>\n<p>Marcus «Ironjaw» Vance se destacó entre los Brujah por su inusual fidelidad a la <strong>Camarilla</strong> y su devoción a la <strong>Mascarada</strong> como principio de supervivencia. Mientras otros de su clan defendían la revolución, Marcus defendía el <strong>orden</strong>. Era un soldado de la vieja escuela: creía en la jerarquía, la disciplina y la fuerza como lenguaje de justicia.</p>\n<blockquote>\n<p>«Donde otros ven rebelión, yo veo indisciplina. La Bestia no necesita ser libre. Necesita ser domada.»\n— <em>Marcus Vance, Marsella, 1973.</em></p>\n</blockquote>\n<p>Durante la Guerra Fría, actuó como agente itinerante de la Camarilla, eliminando células Sabbat, herejías anarquistas y vampiros descontrolados en zonas de conflicto. Su modus operandi era directo y quirúrgico: <strong>«Localiza. Evalúa. Ejecuta.»</strong></p>\n<p>Vance fue mentor y, para algunos, verdugo. Su reputación era la de un ejecutor incorruptible, temido incluso por los Ventrue a los que servía.</p>\n<h3>🩸 El Abrazo de David Smith</h3>\n<p>En 1960, durante una operación conjunta con agentes del Sheriff de Nueva Orleans, Vance interceptó una manada Sabbat en Haití. Allí encontró a un joven comando moribundo: <strong>David Smith</strong>, único superviviente de un pelotón devorado por los Cainitas enemigos.</p>\n<p>Según informes recuperados de su diario hermético (Marsella, 1963):</p>\n<blockquote>\n<p>«No todos los hombres merecen morir. Algunos sólo necesitan una guerra distinta. Smith no pidió ser salvado. Pero tampoco se rindió. Eso basta.»</p>\n</blockquote>\n<p>Abrazó a Smith para forjar un <strong>arma viva contra la indisciplina vampírica</strong>. Durante casi una década lo entrenó bajo un código marcial: obediencia, precisión y contención de la Bestia. Los Arcontes de París describen su relación como «padre e hijo en la muerte».</p>\n<h3>⚠️ Evaluación interna</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Rasgo</th>\n<th>Valoración</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Lealtad a la Camarilla</strong></td>\n<td>Absoluta (nunca cuestionada)</td>\n</tr>\n<tr>\n<td><strong>Nivel de amenaza</strong></td>\n<td>Letal solo si se opone la autoridad directa de un Justicar</td>\n</tr>\n<tr>\n<td><strong>Autonomía</strong></td>\n<td>Alta; evitaba refugios fijos y estructuras de clan</td>\n</tr>\n<tr>\n<td><strong>Psicología</strong></td>\n<td>Fría, analítica; perfil obsesivo con la disciplina y el control emocional</td>\n</tr>\n<tr>\n<td><strong>Debilidad conocida</strong></td>\n<td>Incapacidad para delegar. Creencia extrema en «el deber antes de la emoción»</td>\n</tr>\n</tbody></table>\n<h3>🕯️ Destino y legado</h3>\n<p>La última comunicación registrada de Vance se remonta a 1985, en un mensaje cifrado dirigido al Arconte Duval (@UUID[JournalEntry.CRdeqlwyfpxGPyzT]{Arconte Duval}):</p>\n<blockquote>\n<p>«Si no regreso, quemen mis refugios. Lo que quede de mí ya no servirá al orden.»</p>\n</blockquote>\n<p>Ningún resto físico fue hallado. Se presume destruido durante un enfrentamiento con un <strong>Tzimisce Antiguo</strong> cerca de Cluj-Napoca, Rumania. Los archivos de la Mano Negra confirmaron actividad en la zona 48 horas después.</p>\n<h3>🔖 Legado documentado</h3>\n<ul>\n<li>Fundador de la doctrina <em>«Furia Controlada»</em> empleada por cazadores Brujah de la Camarilla.</li>\n<li>Mentor de David Smith, ejecutor actual del Sheriff de Seattle.</li>\n<li>Precursor del modelo de entrenamiento táctico para Vástagos operativos (1958–1978).</li>\n</ul>\n<blockquote>\n<p>«No buscaba soldados. Buscaba monstruos con conciencia.»\n— <em>David Smith, comentario privado en 2004.</em></p>\n</blockquote>\n<h3>📎 Anexo — Nota del Arconte Duval (2021)</h3>\n<blockquote>\n<p>«Si Vance vive, lo hace en silencio absoluto. Si murió, su eco sigue resonando en cada cazador que no mata por placer. En ambos casos, la Camarilla le debe la noche.»</p>\n</blockquote>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "vbPYYQSlh55XlTAb",
+      "_key": "!journal.pages!WIihWwv4LCOX68B1.vbPYYQSlh55XlTAb",
+      "name": "Diferencias con los docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Destino.</strong> La cabecera del doc 23 dice «presunto destruido por el Sabbat durante los 80»; el dossier y los docs 00–16 lo fijan en 1985, cerca de Cluj-Napoca. Coinciden en lo esencial.</li>\n<li><strong>Diarios.</strong> El doc 23 cita «memorias recuperadas de su refugio en Marsella» y un «diario hermético (Marsella, 1963)» como si estuvieran en archivos de la Camarilla. En los docs 00–16 los diarios no se quemaron, se vendieron en 1986 y los tiene Halloway; la Camarilla solo tiene la copia 3 desde 2025 (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama}). Las citas del doc 23 no son el folio 14 de @UUID[JournalEntry.kzeWNRBY6tgLP37S]{Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)}.</li>\n<li><strong>Entrenamiento de David.</strong> El doc 23 dice «durante una década» (casi una década en el dossier); los docs 00–16 no dan duración. Vance entrenó a Krell en Marsella de 1972 a 1976 (@UUID[JournalEntry.9zcPuCCutNfUtYJ0]{Árbol de linaje de Vance}), lo que el doc 23 no menciona.</li>\n<li><strong>Furia Controlada.</strong> El doc 23 la nombra como doctrina de Vance, igual que @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada} (que la sitúa en los años cincuenta).</li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

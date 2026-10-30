@@ -1,0 +1,85 @@
+{
+  "_id": "8EZofopivOgpo5tE",
+  "_key": "!journal!8EZofopivOgpo5tE",
+  "name": "Orden del día del Consejo de Primogenitura",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-08",
+      "archivo": "content/documentos/AYU-08.md",
+      "soporte": "orden-del-dia",
+      "entrega": [
+        "A4-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "QtnmA6llg7pIo5ME",
+      "_key": "!journal.pages!8EZofopivOgpo5tE.QtnmA6llg7pIo5ME",
+      "name": "Orden del día del Consejo de Primogenitura",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-orden-del-dia\"><p class=\"sbn-membrete\"><span class=\"sbn-acotacion\">[Membrete]</span> una H estilizada en relieve, sin color</p>\n<p class=\"sbn-doc-titulo\">CONSEJO EXTRAORDINARIO DE LA PRIMOGENITURA DEL DOMINIO DE SEATTLE</p>\n<p>Convocado a petición del Primogénito del clan Ventrue</p>\n<p>Noche del 19 de noviembre de 2026 · 22:30 · Torre Halloway, piso 42</p>\n<p><strong>Asistentes convocados:</strong></p>\n<p>S. A. el Príncipe Marcus Whitmore · Primogénito Charles Halloway (Ventrue) · Primogénita y Guardiana Solène Marchetti (Toreador) · Primogénita y Regente Anneliese Voight (Tremere) · Primogénito Abel Thornquist (Nosferatu) · Primogénito Wendell Fry (Malkavian) · Sheriff Ethan Montgomery, en calidad de testigo</p>\n<p class=\"sbn-doc-titulo\">ORDEN DEL DÍA</p>\n<ol>\n<li>Exposición sobre la presencia en el dominio de una célula de la Segunda Inquisición y sobre la existencia de una fuente que le suministra información desde el interior de esta corte.</li>\n<li>Exposición sobre los incidentes de la Terminal 46 y del SoDo, y sobre la posible implicación de un agente vinculado al Sheriff.</li>\n<li>Identificación de la fuente de la Segunda Inquisición. <em>(Documentación adjunta en carpeta separada.)</em></li>\n<li>Propuesta de regencia de emergencia.</li>\n</ol>\n<p><strong>TEXTO DE LA PROPUESTA (punto 4)</strong></p>\n<p>Considerando que la seguridad de la Mascarada en el dominio se ha visto comprometida de forma grave y continuada;</p>\n<p>Considerando que S. A. el Príncipe fue advertido de esta amenaza por la Regente de la Capilla el 5 de noviembre y que no se adoptó medida alguna;</p>\n<p>Considerando que la estructura de seguridad del dominio, a cargo del Sheriff y de sus agentes, se encuentra bajo sospecha;</p>\n<p>La Primogenitura <strong>SOLICITA</strong> que S. A. el Príncipe delegue temporalmente sus funciones en un Regente de emergencia, elegido entre los Primogénitos, hasta que la amenaza haya sido neutralizada, y que el acta de esta sesión se remita a la Justicar del clan Ventrue para su conocimiento y confirmación.</p>\n<p>Se propone como Regente de emergencia al Primogénito Charles Halloway.</p>\n<p><em>Votos necesarios: mayoría simple de los Primogénitos presentes.</em></p>\n<section class=\"secret\" id=\"secret-ua6Ji6vpX89tHeIB\"><p class=\"sbn-acotacion\">[Abajo, en la copia de la coterie, si alguien la mira con atención: el papel tiene una marca de agua casi invisible. «Cascade Holdings LLC».]</p>\n</section>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "HpCf99Zfrq32wV6B",
+      "_key": "!journal.pages!8EZofopivOgpo5tE.HpCf99Zfrq32wV6B",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> Documento formal. <strong>Entrega:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}.</p>\n<p><em>Narrador: el documento que Halloway reparte en carpetas, una por asistente, en @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}. Papel grueso con membrete de la Torre Halloway.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

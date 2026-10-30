@@ -1,0 +1,51 @@
+{
+  "_id": "mXXOLNVU373O6nNL",
+  "_key": "!items!mXXOLNVU373O6nNL",
+  "name": "Pistola Glock 19 con munición incendiaria",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-pistol-brass.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Daño agravado contra Vástagos (munición incendiaria).</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "weaponType": "ranged",
+    "weaponvalue": 0,
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {
+      "d1": {
+        "path": "attributes.dexterity"
+      },
+      "d2": {
+        "path": "skills.firearms"
+      }
+    }
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "glock-19-incendiaria",
+      "agravado": true
+    }
+  },
+  "folder": "V3bFRrOpZyD6Pr1m",
+  "sort": 70,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

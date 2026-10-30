@@ -1,0 +1,85 @@
+{
+  "_id": "FVBnf3yE87K4BOhh",
+  "_key": "!journal!FVBnf3yE87K4BOhh",
+  "name": "Wendell Fry: «Canción para el hijo del puño»",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-10",
+      "archivo": "content/documentos/DOC-10.md",
+      "soporte": "poema",
+      "entrega": [
+        "A2-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "1wxq90uAdFvsiLGe",
+      "_key": "!journal.pages!FVBnf3yE87K4BOhh.1wxq90uAdFvsiLGe",
+      "name": "Wendell Fry: «Canción para el hijo del puño»",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-poema\"><p><em>Canción para el hijo del puño</em></p>\n<p>Hay un padre que no está</p>\n<p>y dos hijos que lo esperan,</p>\n<p>uno en el agua, otro en la lluvia,</p>\n<p>los dos con la misma guardia de piedra.</p>\n<p>Uno terminó la lección.</p>\n<p>El otro aprendió la mitad,</p>\n<p>y la mitad, cuando se pudre,</p>\n<p>pesa más que la verdad.</p>\n<p>No busques al padre en el muelle.</p>\n<p>El abrigo no es de quien lo lleva.</p>\n<p>Buscá al que firma con la izquierda,</p>\n<p>al que pide que lo vean.</p>\n<p>La ciudad tiene ojos azules</p>\n<p>que nunca parpadean.</p>\n<p>El rey de cristal sonríe.</p>\n<p>La reina de la lluvia anota.</p>\n<p>Y el último barco de la noche</p>\n<p>se lleva lo que nadie quiso leer.</p>\n<p>Si llegás tarde, Sabueso,</p>\n<p>llegá esta vez.</p>\n<p class=\"sbn-firma\">— W.</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "emXXne5BZkKamm4X",
+      "_key": "!journal.pages!FVBnf3yE87K4BOhh.emXXne5BZkKamm4X",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> poema escrito con bolígrafo en una servilleta de papel del Club Ceniza, con una mancha de vino. <strong>Cuándo:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}. Fry (@UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry}) se la deja a David o al PJ que más le haya hecho caso.</p>\n<p><strong>Presagia:</strong> a Krell y a David, los dos hijos de Vance; la ausencia de Vance; y el último ferry (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}).</p>\n<p><strong>Verdad:</strong> Fry no sabe lo que sabe. Todo lo que dice es cierto, pero ordenado según la lógica de su clan. «El que firma con la izquierda» es Krell y su guardia invertida.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "nyZOLm6yU57EtblV",
+  "_key": "!journal!nyZOLm6yU57EtblV",
+  "name": "Personajes jugadores y coterie",
+  "folder": "6HgCsgxtaVxFMM6U",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PJS-COTERIE",
+      "archivo": "content/cronica/06-personajes-y-coterie.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "FrWfHm1B0r6Bjay7",
+      "_key": "!journal.pages!nyZOLm6yU57EtblV.FrWfHm1B0r6Bjay7",
+      "name": "Personajes jugadores y coterie",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Para 4–5 jugadores: David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) y 3 o 4 personajes nuevos. Bear (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}) sigue siendo PNJ. Estos son conceptos con trasfondo; los jugadores construyen la ficha mecánica con el manual básico. Las secciones marcadas «Secreto» son solo para el Narrador.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pDLA481BDC67gxis",
+      "_key": "!journal.pages!nyZOLm6yU57EtblV.pDLA481BDC67gxis",
+      "name": "Qué clanes recomiendo y por qué",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>David ya es el Brujah del grupo, y en la ciudad hay tres Brujah PNJ más (Rosa, Krell y O&#39;Connor), así que conviene no repetir clan. Cada clan de abajo da acceso a un frente distinto de la trama, para que todos tengan su momento.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Clan</th>\n<th>Frente de la trama</th>\n<th>Por qué funciona</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Ventrue</strong></td>\n<td>Política e infiltración en el círculo de Halloway</td>\n<td>Pone a la coterie dentro de la casa del antagonista. Genera el dilema de lealtad más fuerte de la aventura.</td>\n</tr>\n<tr>\n<td><strong>Nosferatu</strong></td>\n<td>Información, el subterráneo y la red de vigilancia</td>\n<td>Seattle es la ciudad de los datos, y un Nosferatu informático es el contrapeso natural de Gale Sentinel y de FIRSTLIGHT.</td>\n</tr>\n<tr>\n<td><strong>Toreador</strong></td>\n<td>La corte del Príncipe y el entorno de Helen</td>\n<td>Con el Príncipe Toreador, este personaje vive en el centro del golpe de Estado. Además puede estar ligado al pódcast.</td>\n</tr>\n<tr>\n<td><strong>Gangrel</strong></td>\n<td>La jauría del Sheriff, rastreo y combate</td>\n<td>Conecta con Montgomery y con el pasado de David. Le da peso a la escena en que el Sheriff duda (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}).</td>\n</tr>\n<tr>\n<td><strong>Tremere</strong> <em>(alternativa)</em></td>\n<td>Forense, hechicería de sangre y la grieta en la Mascarada</td>\n<td>Es la quinta opción si hay cinco jugadores, o la sustituta de cualquiera de los anteriores.</td>\n</tr>\n</tbody></table>\n<p><strong>Recomendación para 4 jugadores:</strong> David, Ventrue, Nosferatu y Toreador. <strong>Para 5:</strong> añadí el Gangrel. El Tremere queda como recambio.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ja8G975aSEQFvOzR",
+      "_key": "!journal.pages!nyZOLm6yU57EtblV.ja8G975aSEQFvOzR",
+      "name": "La coterie: «Los del Archivo» (COT-00)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Todos los personajes aparecen en el Expediente Ward. Cuando roban el disco, todos quedan expuestos a la vez, y en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} Montgomery los reúne en su granja: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos». Es una coterie de tipo <em>Comando</em>, con dominio en los muelles de Harbor Island, alrededor del hangar de David, y cada jugador recibe su carpeta (@UUID[JournalEntry.vtenvgNlXVPd99Rc]{«Tu carpeta en el Expediente»}).</p>\n<p>La página completa de la coterie (idea, alternativas, miembros y agendas, costumbres, tipo, dominio y Trasfondos compartidos, con lo que dice el doc 02 y lo que fija el doc 08) está en @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "knDaSf9DL1m01o3q",
+      "_key": "!journal.pages!nyZOLm6yU57EtblV.knDaSf9DL1m01o3q",
+      "name": "Ajustes del esquema para una coterie",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}:</strong> Helen llama a SAFE; David convoca a la coterie. Nadia, si está, llega por su cuenta: conoce el apartamento.</li>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta}:</strong> pasa a ser la escena de formación de la coterie. Montgomery los reúne a todos en su granja.</li>\n<li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}:</strong> Krell va a por la Piedra de toque más expuesta de cualquier personaje (Helen, Bear, Maja, Theo, Ingrid…), no solo a por Bear o Helen.</li>\n<li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}:</strong> si Hal está en juego, la escena se vuelve contra él: Montgomery le pide los informes delante de todos.</li>\n<li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}:</strong> si Celeste está en juego, Halloway la ofrece como traidora. Si Nadia está en juego, Whitmore la usa como su voz ante el Consejo.</li>\n<li><strong>Escala de las tiradas:</strong> las dificultades del esquema se mantienen; los enemigos se escalan añadiendo un PNJ menor por cada jugador por encima de dos.</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "AmseyvhBPpoRWnIn",
+      "_key": "!journal.pages!nyZOLm6yU57EtblV.AmseyvhBPpoRWnIn",
+      "name": "Foco por personaje",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Escena</th>\n<th>David</th>\n<th>Celeste</th>\n<th>Ezra</th>\n<th>Nadia</th>\n<th>Hal</th>\n<th>Ruth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>●</td>\n<td>●</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad}</td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</td>\n<td></td>\n<td>●</td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>●</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · El Sheriff que fue}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</td>\n<td></td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</td>\n<td></td>\n<td>●</td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>●</td>\n<td>●</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

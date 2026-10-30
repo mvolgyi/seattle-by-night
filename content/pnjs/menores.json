@@ -1,0 +1,575 @@
+{
+  "menores": [
+    {
+      "id": "MEN-01",
+      "nombre": "Lonnie Barras",
+      "spcType": "mortal",
+      "concepto": "El ladrón que se guardó una",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 2,
+        "social": 3,
+        "mental": 4
+      },
+      "excepcionales": {
+        "larceny": [
+          7,
+          "cerraduras electrónicas"
+        ],
+        "technology": 6,
+        "subterfuge": 4
+      },
+      "salud": 5,
+      "voluntad": 2,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Cuarenta y tantos, ex técnico de alarmas. Fuma sin parar. Abrió la puerta de Helen y copió el disco en el coche.",
+      "origen": "14",
+      "nota": "MEN-01 es Lonnie Barras según los registros de los docs 11 y 14 (el más nuevo). El doc 01 (y los docs 03, 06 y 10, que hablan de «el equipo MEN-01») lo usaban para todo el equipo de ladrones; manda el doc 14."
+    },
+    {
+      "id": "MEN-02",
+      "nombre": "Equipo táctico de FIRSTLIGHT",
+      "spcType": "mortal",
+      "concepto": "Seis operadores",
+      "cantidad": 6,
+      "estandar": {
+        "physical": 6,
+        "social": 2,
+        "mental": 4
+      },
+      "excepcionales": {
+        "firearms": 7,
+        "athletics": 5,
+        "awareness": 5,
+        "brawl": 5
+      },
+      "salud": 7,
+      "voluntad": 5,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "equipo": [
+        "fusil-corto-incendiario",
+        "linterna-uv",
+        "armadura-ligera",
+        "camaras-corporales",
+        "gafas-termicas"
+      ],
+      "notas": "Ex militares y ex agentes federales. Contratados como «unidad antiterrorista especial». Creen saber lo que cazan. La mayoría no lo ha visto nunca.\n\n**Equipo:** fusil corto con munición incendiaria (agravado contra Vástagos), linterna UV montada en el arma, armadura ligera (blindaje 3), cámara corporal, radio, gafas de visión térmica (anulan Ofuscación nivel 1 y 2).\n\n**Táctica:** nunca entran solos. Siempre en parejas, siempre con un dron arriba y una fuente de luz detrás. Si pierden a dos operadores, se retiran y esperan al amanecer.",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-11",
+      "nombre": "Cole Ransom",
+      "spcType": "mortal",
+      "concepto": "Operador de MEN-02, ex compañero SEAL de Bear",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 6,
+        "social": 2,
+        "mental": 4
+      },
+      "excepcionales": {
+        "firearms": 7,
+        "athletics": 5,
+        "awareness": 5,
+        "brawl": 5,
+        "insight": 6
+      },
+      "salud": 7,
+      "voluntad": 5,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "equipo": [
+        "fusil-corto-incendiario",
+        "linterna-uv",
+        "armadura-ligera",
+        "camaras-corporales",
+        "gafas-termicas"
+      ],
+      "notas": "Cuarenta y nueve años, bigote, rodillas destrozadas como las de Bear. Cree que trabaja para Seguridad Nacional. Lealtad absoluta a sus compañeros, y Bear fue uno de ellos.\n\nUsa las estadísticas de @ID[MEN-02], con **Perspicacia 6** para notar que Bear ya no cojea. (Ver @ID[GAN-04].)",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-03",
+      "nombre": "Los cazarrecompensas de Montgomery",
+      "spcType": "mortal",
+      "concepto": "Seis mortales",
+      "cantidad": 6,
+      "estandar": {
+        "physical": 5,
+        "social": 3,
+        "mental": 3
+      },
+      "excepcionales": {
+        "firearms": 6,
+        "drive": 5,
+        "survival": 5,
+        "awareness": 4
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Ex militares y ex policías que viven en caravanas detrás del granero. Conocen a Montgomery como «El Patrón». No hacen preguntas.\n\n**Equipo:** escopetas, rifles de caza, camionetas.",
+      "origen": "14",
+      "nota": "MEN-03 es el grupo de los seis cazarrecompensas (doc 14, registro más nuevo). El doc 08 lo asignaba a Dutch Lindqvist solo; manda el doc 14, que da a Dutch reservas propias dentro de MEN-03."
+    },
+    {
+      "id": "MEN-03-DUTCH",
+      "nombre": "Dutch Lindqvist",
+      "spcType": "mortal",
+      "concepto": "El mayor de los cazarrecompensas de Montgomery",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 5,
+        "social": 3,
+        "mental": 3
+      },
+      "excepcionales": {
+        "firearms": 6,
+        "drive": 5,
+        "survival": 5,
+        "awareness": 4,
+        "insight": 5
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "El mayor, sesenta años. Lleva veinte con Montgomery y empieza a preguntarse qué es exactamente su jefe. Usa las mismas estadísticas que @ID[MEN-03] con **Perspicacia 5**. Si la coterie se lo gana (@tirada{attributes.charisma+skills.persuasion|3|Carisma + Persuasión (Dificultad 3)}), los avisa cuando Montgomery dé la orden de buscarlos (@ID[A3-E04]).",
+      "origen": "14",
+      "nota": "Sin ID propio en los docs: el doc 14 lo da dentro de MEN-03 «con reservas propias» (el doc 08 le asignaba MEN-03). ID derivado para el actor."
+    },
+    {
+      "id": "PERROS-MONTGOMERY",
+      "nombre": "Los perros de Montgomery",
+      "spcType": "ghoul",
+      "concepto": "Doce perros de trabajo ghoul",
+      "cantidad": 12,
+      "estandar": {},
+      "excepcionales": {
+        "brawl": [
+          6,
+          "mordisco"
+        ],
+        "survival": [
+          8,
+          "rastreo"
+        ]
+      },
+      "reservas": {
+        "ataque": 6,
+        "defensa": 5,
+        "rastreo": 8
+      },
+      "salud": 5,
+      "voluntad": null,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Pastores y cruces de lobo. Sienten la voluntad de Montgomery y la Bestia de cualquier Vástago a cincuenta metros.\n\n**Ataque** 6 (mordisco, +1 de daño) · **Defensa** 5 · **Rastreo** 8 · **Salud** 5 · Actúan en jauría: cada perro adicional suma +1 dado al ataque del primero, hasta +3.",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-04",
+      "nombre": "Ghouls de seguridad de Halloway",
+      "spcType": "ghoul",
+      "concepto": "Cuatro en total; dos acompañan a Dawson",
+      "cantidad": 4,
+      "estandar": {
+        "physical": 5,
+        "social": 2,
+        "mental": 3
+      },
+      "excepcionales": {
+        "firearms": 6,
+        "brawl": 5,
+        "awareness": 4
+      },
+      "salud": 7,
+      "voluntad": 3,
+      "potenciaSangre": null,
+      "disciplinas": {
+        "potence": [
+          1,
+          []
+        ]
+      },
+      "notas": "**Equipo:** pistolas, porras extensibles, chalecos (blindaje 2), radios.",
+      "origen": "14",
+      "nota": "MEN-04 es la entrada «Dawson y los ghouls de seguridad» del doc 14 (registro más nuevo). El doc 11 lo asignaba a Dawson solo y el doc 01 a los ghouls de seguridad de Gale; manda el doc 14. Este actor lleva las reservas de los cuatro ghouls; Dawson va en MEN-04-DAWSON."
+    },
+    {
+      "id": "MEN-04-DAWSON",
+      "nombre": "Dawson",
+      "spcType": "ghoul",
+      "concepto": "Jefe de los ghouls de seguridad de Halloway",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 6,
+        "social": 3,
+        "mental": 4
+      },
+      "excepcionales": {
+        "firearms": 7,
+        "brawl": 6,
+        "awareness": [
+          6,
+          "olfato"
+        ],
+        "intimidation": 5
+      },
+      "salud": 8,
+      "voluntad": 5,
+      "potenciaSangre": null,
+      "disciplinas": {
+        "potence": [
+          1,
+          [
+            "Lethal Body"
+          ]
+        ],
+        "auspex": [
+          1,
+          [
+            "Heightened Senses"
+          ]
+        ]
+      },
+      "notas": "El jefe. Ex marine, cuello de toro, olfato sobrenatural. Fue el que olfateó la escalera de Helen y recibió el disco de manos de Lonnie.\n\n**Consciencia 6 (olfato):** detecta Vástagos a 20 metros, ignora Ofuscación salvo con viento en contra.\n\n**Disciplinas:** Potencia 1 (Cuerpo letal), Auspex 1 (Sentidos agudizados) · **Vínculo de sangre** con Halloway, nivel 2 (+2 dados para resistir).\n\n**Equipo:** pistolas, porras extensibles, chalecos (blindaje 2), radios.",
+      "origen": "14",
+      "nota": "Sin ID propio en el doc 14: es el jefe dentro de MEN-04, con reservas propias (el doc 11 le asignaba MEN-04). ID derivado para el actor."
+    },
+    {
+      "id": "MEN-09",
+      "nombre": "El señor Pell",
+      "spcType": "ghoul",
+      "concepto": "Archivista ghoul de Halloway desde 1958",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 2,
+        "social": 4,
+        "mental": 6
+      },
+      "excepcionales": {
+        "academics": 7,
+        "investigation": 6,
+        "etiquette": 5
+      },
+      "salud": 4,
+      "voluntad": 5,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Noventa y seis años, aparenta sesenta. Educado, triste, minucioso. Mecanografió los diarios de Vance y sabe dónde está cada papel de su amo.\n\n**Vínculo de sangre** con Halloway, nivel 3 (+3 dados para resistir Disciplinas de otros).",
+      "origen": "14",
+      "nota": "Nota de edición: el doc 14 decía «desde 1950», antes del Abrazo de Halloway (1958); se decidió 1958. Los 96 años y el aspecto de 60 se mantienen (lo hicieron ghoul a los 28)."
+    },
+    {
+      "id": "PNJ-10",
+      "nombre": "Julian Ashby",
+      "spcType": "vampire",
+      "concepto": "Chiquillo de Halloway (solo si nadie juega a Celeste Arden)",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 3,
+        "social": 6,
+        "mental": 5
+      },
+      "excepcionales": {
+        "finance": 7,
+        "persuasion": 6,
+        "etiquette": 6,
+        "subterfuge": 5
+      },
+      "salud": 5,
+      "voluntad": 5,
+      "potenciaSangre": 1,
+      "disciplinas": {
+        "dominate": [
+          2,
+          []
+        ],
+        "presence": [
+          2,
+          []
+        ]
+      },
+      "notas": "Treinta y tantos aparentes, abogado corporativo Abrazado en 2009. Ocupa el papel de Celeste (@ID[PJ-02]): firma las cuentas de Cascade Holdings y es el chivo expiatorio del Consejo. Sabe menos de lo que cree.\n\n**Si lo acusan en el Consejo:** se derrumba. Una tirada de @tirada{attributes.charisma+skills.persuasion|2|Carisma + Persuasión (Dificultad 2)} lo convence de declarar contra Halloway (+2 dados al caso).",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-05",
+      "nombre": "Anarquistas de Salitre",
+      "spcType": "vampire",
+      "concepto": "Unos quince Vástagos: estibadores, mecánicos, una enfermera, dos sangre débil",
+      "cantidad": 15,
+      "estandar": {
+        "physical": 5,
+        "social": 3,
+        "mental": 3
+      },
+      "excepcionales": {
+        "brawl": 6,
+        "craft": 5,
+        "streetwise": 5
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "potenciaSangre": 1,
+      "disciplinas": {},
+      "notas": "Estibadores, mecánicos, una enfermera, dos sangre débil. Votan cada viernes. Usá estas reservas para cualquiera sin nombre.\n\n**Disciplinas:** Potencia 1 o Celeridad 1 (una u otra, a elección del Narrador).",
+      "origen": "14",
+      "nota": "MEN-05 es el grupo de los Anarquistas de Salitre (doc 14, registro más nuevo). El doc 08 lo usaba para Bas Okonjo y Tavi Mercer como miembros con nombre; manda el doc 14, que les da reservas propias dentro de MEN-05."
+    },
+    {
+      "id": "MEN-05-BAS",
+      "nombre": "Bas Okonjo",
+      "spcType": "vampire",
+      "concepto": "Gangrel, ex Lobo; Anarquista de Salitre",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 6,
+        "social": 3,
+        "mental": 4
+      },
+      "excepcionales": {
+        "survival": 7,
+        "brawl": 6
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "potenciaSangre": 1,
+      "disciplinas": {
+        "fortitude": [
+          2,
+          []
+        ],
+        "protean": [
+          1,
+          []
+        ]
+      },
+      "notas": "Teme a Montgomery más que a nada.",
+      "origen": "14",
+      "nota": "Sin ID propio en el doc 14: miembro de MEN-05 con reservas propias (el doc 08 lo ponía bajo MEN-05). ID derivado para el actor."
+    },
+    {
+      "id": "MEN-05-TAVI",
+      "nombre": "Tavi Mercer",
+      "spcType": "vampire",
+      "concepto": "Brujah, impaciente; Anarquista de Salitre",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 6,
+        "social": 4,
+        "mental": 2
+      },
+      "excepcionales": {
+        "brawl": 7,
+        "intimidation": 5
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "potenciaSangre": 1,
+      "disciplinas": {
+        "potence": [
+          2,
+          []
+        ],
+        "celerity": [
+          1,
+          []
+        ]
+      },
+      "notas": "Si ataca el Elíseo, lo hace con tres compañeros y cócteles molotov.",
+      "origen": "14",
+      "nota": "Sin ID propio en el doc 14: miembro de MEN-05 con reservas propias (el doc 08 lo ponía bajo MEN-05). ID derivado para el actor."
+    },
+    {
+      "id": "MEN-13",
+      "nombre": "Sal Medeiros",
+      "spcType": "mortal",
+      "concepto": "Perista del SoDo (muere en la Noche 4 si nadie interviene)",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 1,
+        "social": 5,
+        "mental": 4
+      },
+      "excepcionales": {
+        "finance": [
+          6,
+          "regateo"
+        ],
+        "streetwise": 6,
+        "academics": [
+          4,
+          "antigüedades"
+        ]
+      },
+      "salud": 4,
+      "voluntad": 4,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Setenta años, antiguo anticuario. Compra y vende a clientes que solo salen de noche y no pregunta por qué. *Muere en la @reloj{4} si nadie interviene.*",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-14",
+      "nombre": "Corwin",
+      "spcType": "vampire",
+      "concepto": "Caitiff, protector de Sal (destruido en la Noche 4 si nadie interviene)",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 5,
+        "social": 2,
+        "mental": 2
+      },
+      "excepcionales": {
+        "brawl": 6,
+        "intimidation": 5
+      },
+      "salud": 7,
+      "voluntad": 3,
+      "potenciaSangre": 1,
+      "disciplinas": {
+        "fortitude": [
+          1,
+          []
+        ],
+        "potence": [
+          1,
+          []
+        ]
+      },
+      "notas": "Ex portero de discoteca Abrazado en 2011. Cuida del almacén a cambio de sangre embolsada y un rincón donde dormir. *Destruido en la @reloj{4} si nadie interviene.*",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-06",
+      "nombre": "Teo Vásquez",
+      "spcType": "mortal",
+      "concepto": "Operador de grúa de la Terminal 46",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 4,
+        "social": 2,
+        "mental": 3
+      },
+      "excepcionales": {
+        "drive": [
+          5,
+          "grúas y vehículos pesados"
+        ],
+        "awareness": 4
+      },
+      "salud": 6,
+      "voluntad": 4,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Cuarenta años, tres hijos. Vio a Krell destruir a Pike (@ID[MEN-12]) desde la cabina. Está seguro de lo que vio.",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-07",
+      "nombre": "Dr. Marek Kowalski",
+      "spcType": "mortal",
+      "concepto": "Patólogo suplente de la oficina forense",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 2,
+        "social": 3,
+        "mental": 6
+      },
+      "excepcionales": {
+        "medicine": 7,
+        "science": 6,
+        "investigation": 5
+      },
+      "salud": 5,
+      "voluntad": 5,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Treinta y ocho años, recién llegado, muy concienzudo. Hizo bien su trabajo con el caso 26-3307 y eso es el problema.",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-10",
+      "nombre": "Marcos Delgado",
+      "spcType": "mortal",
+      "concepto": "Superviviente de la noche de Emily (1996), consejero de jóvenes",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 3,
+        "social": 5,
+        "mental": 4
+      },
+      "excepcionales": {
+        "persuasion": 6,
+        "insight": 6,
+        "streetwise": [
+          5,
+          "Rainier Valley"
+        ]
+      },
+      "salud": 5,
+      "voluntad": 6,
+      "potenciaSangre": null,
+      "disciplinas": {},
+      "notas": "Superviviente de la noche de Emily (1996), consejero de jóvenes (@ID[GAN-01]).",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-08",
+      "nombre": "El superviviente del Larchmont",
+      "spcType": "vampire",
+      "concepto": "Antiguo Vástago del Sabbat",
+      "cantidad": 1,
+      "estandar": {
+        "physical": 6,
+        "social": 2,
+        "mental": 5
+      },
+      "excepcionales": {
+        "brawl": 7,
+        "stealth": 8,
+        "survival": [
+          6,
+          "alcantarillas"
+        ],
+        "occult": 5
+      },
+      "salud": 8,
+      "voluntad": 6,
+      "potenciaSangre": 3,
+      "humanidad": 3,
+      "disciplinas": {
+        "obfuscate": [
+          3,
+          []
+        ],
+        "protean": [
+          2,
+          [
+            "Feral Weapons"
+          ]
+        ],
+        "fortitude": [
+          2,
+          []
+        ]
+      },
+      "notas": "Antiguo Vástago del Sabbat (@ID[GAN-09]). Nadie conoce su nombre. Lleva doce años en los desagües de Tacoma, alimentándose con cuidado. Viejo, paciente, deformado por el fuego de 2014. Visita la cisterna del Larchmont descalzo.\n\n**Disciplinas:** Ofuscación 3, Protean 2 (Garras), Fortaleza 2.\n\n**Táctica:** nunca pelea en terreno abierto. Huye hacia el agua y espera.",
+      "origen": "14"
+    },
+    {
+      "id": "MEN-12",
+      "nombre": "Pike",
+      "spcType": "vampire",
+      "concepto": "Recadero Nosferatu de los Topos, destruido en la Noche 2",
+      "cantidad": 1,
+      "notas": "Nosferatu menor, recadero de los Topos. Acababa de recibir de Jun Takeda una copia parcial del Expediente para un comprador cuando Krell lo destruyó junto a un contenedor rojo de la Terminal 46, en la @reloj{2}, entre las 2:00 y las 3:00 (@ID[A1-E02]).",
+      "origen": "10"
+    }
+  ]
+}

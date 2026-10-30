@@ -1,0 +1,51 @@
+{
+  "_id": "CbbejNJnKXKf8gbq",
+  "_key": "!items!CbbejNJnKXKf8gbq",
+  "name": "Iluminado por la linterna UV",
+  "type": "condition",
+  "img": "systems/wod5e/assets/icons/items/item-default.svg",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>1 agravado</td></tr></tbody></table><p>Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.</p>",
+    "macroid": "",
+    "bonuses": [
+      {
+        "source": "Iluminado por la linterna UV",
+        "value": -2,
+        "paths": [
+          "all"
+        ],
+        "displayWhenInactive": true,
+        "activeWhen": {
+          "check": "always",
+          "path": "",
+          "value": ""
+        }
+      }
+    ],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "suppressed": false,
+    "effects": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "iluminado-uv",
+      "agravado": true
+    }
+  },
+  "folder": "CZQ6R0WCbgmmjs93",
+  "sort": 20,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

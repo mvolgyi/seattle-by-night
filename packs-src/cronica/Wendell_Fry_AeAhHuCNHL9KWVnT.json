@@ -1,0 +1,334 @@
+{
+  "_id": "AeAhHuCNHL9KWVnT",
+  "_key": "!journal!AeAhHuCNHL9KWVnT",
+  "name": "Wendell Fry",
+  "folder": "TyiHjoWtr5JBbz73",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-16",
+      "archivo": "content/personajes/PNJ-16.md",
+      "actor": "Actor.XuP20cPC3T1EiCxD"
+    }
+  },
+  "pages": [
+    {
+      "_id": "XD0I4NyFgPJvPWO9",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.XD0I4NyFgPJvPWO9",
+      "name": "Wendell Fry",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Ficha: @UUID[Actor.XuP20cPC3T1EiCxD]{Wendell Fry}</p>\n<p><em>«No estás loca, Helen. Y la lluvia tiene oídos.»</em></p>\n<p><strong>Clan:</strong> Malkavian · <strong>Cargo:</strong> Primogénito (por costumbre) · <strong>Secta:</strong> Camarilla</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SWWfZoYvaKfKzZl6",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.SWWfZoYvaKfKzZl6",
+      "name": "Días mortales: el locutor del turno muerto",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Wendell Fry presentó durante nueve años el programa de madrugada de una radio AM de Seattle, de la una a las cinco, la franja que nadie quería. Ponía jazz, blues y discos raros, y atendía llamadas de insomnes, camioneros, enfermeras y borrachos. Lo que hacía famoso al programa era que Wendell escuchaba. Dejaba hablar a la gente diez, quince minutos, y después decía una frase que se les quedaba grabada toda la vida. Los oyentes decían que adivinaba cosas. Él decía que solo prestaba atención.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Emec7IMUIGE9SwA6",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.Emec7IMUIGE9SwA6",
+      "name": "Noches de Vástago: el oyente",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>En 1971, una Malkavian que llamaba al programa todas las noches desde una cabina de Fremont lo esperó un día a la salida de la emisora. Le dijo que lo había elegido porque era la única voz de la ciudad que no mentía, y lo Abrazó en el aparcamiento. La sire desapareció a las pocas semanas. Wendell siguió con el programa dos años más, hasta que la emisora cerró.</p>\n<p>Ahora escucha la ciudad de otra forma: radios de policía, pódcasts, mensajes de voz, conversaciones de bar. Cree que Seattle habla en código y que él es el único que lo entiende. A veces tiene razón. Ocupa el asiento Malkavian de la Primogenitura porque nadie más lo quiso, y vota según cosas que nadie entiende. Lleva años llamando al pódcast de Helen con el nombre de «W.».</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kyOTJOVTImDChuk0",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.kyOTJOVTImDChuk0",
+      "name": "Planes y maquinaciones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>La profecía del puño.</strong> Lleva un mes oyendo, en la estática de la radio del puerto, que «el puño tiene dos hijos». No sabe qué significa, pero lo hizo constar en el registro del Elíseo (@UUID[JournalEntry.lcO0CdwUlZHg2wAX]{Registro del Guardián del Elíseo, folio de noviembre}) y lo escribió en una servilleta (@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: «Canción para el hijo del puño»}).</p>\n<p><strong>Proteger a la profeta.</strong> Cree que Helen Ward es una sibila, alguien que oye la verdad de la ciudad sin saber que la oye. Si sabe que ella está en peligro, va a intentar ayudarla a su manera, que puede no ser la mejor.</p>\n<p><strong>El voto decisivo.</strong> En el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}) su voto puede inclinar la balanza. Votará por quien le haya dicho algo verdadero en voz alta.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sMZOhJ2NmzYg4vK8",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.sMZOhJ2NmzYg4vK8",
+      "name": "Dominio y refugio",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Un estudio de radio abandonado en el último piso de un edificio de Fremont, lleno de equipos viejos encendidos (Refugio 2). Se alimenta de insomnes: personas que no pueden dormir y salen a caminar a las tres de la mañana. Les da conversación primero. Algunos vuelven a buscarlo.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LDr66ZLXGppfPQF8",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.LDr66ZLXGppfPQF8",
+      "name": "Siervos y herramientas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Los oyentes</strong> (Rebaño 1): una docena de insomnes que se cruzan con él en las mismas calles y creen que es un vecino raro.</p>\n<p><strong>Escáneres</strong> (Recursos 1): radios de policía, del puerto y de emergencias, todas encendidas a la vez.</p>\n<p><strong>Fama 1</strong>: los viejos oyentes de la radio todavía reconocen su voz.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "M5SBEwai0TLRKTaa",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.M5SBEwai0TLRKTaa",
+      "name": "Relaciones con Vástagos",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}</strong> (ternura). Lo llama «el hijo del puño» sin saber exactamente por qué.</p>\n<p><strong>@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}</strong> (lástima). Nunca lo ha visto, pero lo oye en la estática: «el que aprendió la mitad».</p>\n<p><strong>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</strong> (diversión). Lo considera un actor que olvidó que estaba en una obra.</p>\n<p><strong>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</strong> (inquietud). Dice que su voz «no tiene fondo».</p>\n<p><strong>@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}</strong> (complicidad). Conoce su trabajo en el pódcast. Le gusta la mezcla.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "bDdoOlbthArRFpAZ",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.bDdoOlbthArRFpAZ",
+      "name": "Susurros",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>«Fry oye el futuro en las radios.» <em>(A medias: oye el presente con una claridad que parece el futuro.)</em></li>\n<li>«Fry es el oyente &quot;W.&quot; del pódcast de Helen Ward.» <em>(Verdad.)</em></li>\n<li>«Fry votará siempre con el Príncipe.» <em>(Falso.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "N4sfabWBAwT5ZvYt",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.N4sfabWBAwT5ZvYt",
+      "name": "Máscara y semblante",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Para los mortales es un jubilado excéntrico de Fremont (Máscara 1). Aparenta unos treinta y tres años. Es delgado y tiene la barba descuidada, gafas de montura gruesa, chaquetas de pana y una gorra de béisbol de un equipo que ya no existe. Habla con una voz de radio, grave y lenta, que contrasta con su aspecto desaliñado. Siempre lleva auriculares colgados del cuello. A veces se los pone en mitad de una conversación.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición</h4><p>El doc 06 decía «aparenta unos cincuenta y cinco años» y «barba blanca»; se decidió que aparenta la edad que tenía al Abrazo (1971, nacido en 1938): unos treinta y tres, con la barba descuidada pero sin canas.</p>\n</aside>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "EqB0n8zeebFFM4hz",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.EqB0n8zeebFFM4hz",
+      "name": "Datos de referencia",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> una Malkavian sin nombre que llamaba desde Fremont</li>\n<li><strong>Abrazado:</strong> 1971 (nacido en 1938)</li>\n<li><strong>Ambición:</strong> descifrar lo que la ciudad intenta decirle.</li>\n<li><strong>Convicción:</strong> «Nunca interrumpir a alguien que dice la verdad».</li>\n<li><strong>Piedra de toque:</strong> Helen Ward (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}), aunque ella no lo sabe.</li>\n<li><strong>Humanidad:</strong> 7</li>\n<li><strong>Generación:</strong> 10.ª</li>\n<li><strong>Potencia de Sangre:</strong> 2</li>\n</ul>\n<p><strong>Perturbación (Malkavian):</strong> no puede dejar una frase sin terminar. Si alguien lo interrumpe, repite lo que estaba diciendo desde el principio.</p>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hsSVWVqkoTrGSjeE",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.hsSVWVqkoTrGSjeE",
+      "name": "Estadísticas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Atributos:</strong> Fuerza 1, Destreza 2, Resistencia 2 · Carisma 3, Manipulación 2, Compostura 3 · Inteligencia 3, Astucia 4, Resolución 2</p>\n<p><strong>Atributos secundarios:</strong> Salud 5 · Fuerza de Voluntad 5</p>\n<p><strong>Habilidades:</strong> Academicismo 2 (Música), Consciencia 4 (Lo que no se dice), Etiqueta 1, Interpretación 4 (Radio), Ocultismo 3 (Profecía), Perspicacia 5 (Voces), Persuasión 2, Sigilo 2, Tecnología 2 (Radio analógica)</p>\n<p><strong>Disciplinas:</strong></p>\n<ul>\n<li>Auspex 3: Sentidos agudizados (<em>Heightened Senses</em>), Premonición (<em>Premonition</em>), Escrutar el alma (<em>Scry the Soul</em>)</li>\n<li>Dominación 1: Nublar la memoria (<em>Cloud Memory</em>)</li>\n<li>Ofuscación 2: Manto de sombras (<em>Cloak of Shadows</em>), Paso invisible (<em>Unseen Passage</em>)</li>\n</ul>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

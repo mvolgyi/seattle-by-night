@@ -1,0 +1,613 @@
+{
+  "_id": "Zs7rGAyl8O4vOx0u",
+  "_key": "!actors!Zs7rGAyl8O4vOx0u",
+  "name": "Solène Marchetti",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "GXJTFNaMnmBB6mfg",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Solène Marchetti",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Guardiana del Elíseo y Primogénita Toreador",
+      "chronicle": "Seattle by Night",
+      "ambition": "Que el registro de Seattle llegue entero al siglo XXII.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Lo escrito no se borra</li></ul><h3>Piedras de toque</h3><ul><li><strong>Tomás Arriaga</strong>: Soplador de vidrio que hace las medusas de la Galería y que cree trabajar para una fundación excéntrica.</li></ul>",
+      "sire": "Un Toreador de Montreal, ya destruido",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1884",
+        "death": "1912"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.bB0eDKVFcxQW4C2d]{Perfil: Solène Marchetti}</p><blockquote><p><em>«No juzgo. Registro. El juicio lo hace el tiempo, y el tiempo siempre lee mis libros.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La que anota</td></tr><tr><th>Concepto</th><td>Guardiana del Elíseo y Primogénita Toreador</td></tr><tr><th>Clan</th><td>Toreador</td></tr><tr><th>Secta</th><td>Camarilla</td></tr><tr><th>Sire</th><td>Un Toreador de Montreal, ya destruido</td></tr><tr><th>Nacimiento</th><td>1884</td></tr><tr><th>Abrazo</th><td>1912</td></tr><tr><th>Ambición</th><td>Que el registro de Seattle llegue entero al siglo XXII.</td></tr></tbody></table><h3>Semblante</h3><p>Unos veintiocho años aparentes. Alta, pelo oscuro en moño bajo, vestidos de corte antiguo en grises y gafas con cadena; escribe con pluma estilográfica.</p>",
+    "appearance": "<p>Unos veintiocho años aparentes. Alta, pelo oscuro en moño bajo, vestidos de corte antiguo en grises y gafas con cadena; escribe con pluma estilográfica.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Nota de edición: el doc 06 decía «aparenta unos cuarenta años»; se decidió la edad al Abrazo (unos 28).</p>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 7,
+      "stains": 0
+    },
+    "disciplines": {
+      "auspex": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "celerity": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Historia de la Camarilla",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "craft": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Caligrafía",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Protocolo del Elíseo",
+            "value": 1,
+            "paths": [
+              "skills.etiquette"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Archivos",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "politics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Seattle",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "subterfuge": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "toreador"
+        }
+      },
+      "name": "Toreador",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "l3pHgCcFMvlaaz4t",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.l3pHgCcFMvlaaz4t"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-14"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "VxqUqsaH182By4Sk",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.VxqUqsaH182By4Sk"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-14"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "L89Q1AvPdGpaVtz6",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.L89Q1AvPdGpaVtz6"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Scry the Soul",
+          "homebrew": false
+        }
+      },
+      "name": "Scry the Soul",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-14"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "bF9WjvwsCzXReTvz",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.bF9WjvwsCzXReTvz"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cat's Grace",
+          "homebrew": false
+        }
+      },
+      "name": "Cat's Grace",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celeridad 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-14"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "m9p1uvkQ8Kh9hosZ",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.m9p1uvkQ8Kh9hosZ"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-14"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "qLZkCdytSzsKKK1x",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.qLZkCdytSzsKKK1x"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lingering Kiss",
+          "homebrew": false
+        }
+      },
+      "name": "Lingering Kiss",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presencia 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-14"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "gkLO025Ods6UyPwI",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.gkLO025Ods6UyPwI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 2 (apartamento sobre el archivo de la Galería de Vidrio)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 2 (apartamento sobre el archivo de la Galería de Vidrio)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "IuS7RlBqGEr0DQ59",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.IuS7RlBqGEr0DQ59"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados 2 (el personal de la Galería: cinco ghouls que sirven el Elíseo)"
+        }
+      },
+      "name": "Aliados",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados 2 (el personal de la Galería: cinco ghouls que sirven el Elíseo)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "hNb4ZYFngiD7npff",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.hNb4ZYFngiD7npff"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Estatus 3 (Camarilla)"
+        }
+      },
+      "name": "Estatus",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Estatus 3 (Camarilla)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "iECfdcu0YfnicLjC",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.iECfdcu0YfnicLjC"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 2 (directora del archivo de la fundación de la Galería)"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 2 (directora del archivo de la fundación de la Galería)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "xGF4oXpKZBRFSosP",
+      "_key": "!actors.items!Zs7rGAyl8O4vOx0u.xGF4oXpKZBRFSosP"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-14",
+      "journal": "JournalEntry.bB0eDKVFcxQW4C2d",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

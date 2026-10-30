@@ -1,0 +1,76 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "_meta": { "title": "Z-Image Turbo bf16" },
+    "inputs": { "unet_name": "z_image_turbo_bf16.safetensors", "weight_dtype": "default" }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": { "clip_name": "qwen_3_4b.safetensors", "type": "lumina2", "device": "default" }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "z_image_ae.safetensors" }
+  },
+  "4": {
+    "class_type": "ModelPatchLoader",
+    "_meta": { "title": "Fun ControlNet Union 2.1 (2602, 8 pasos)" },
+    "inputs": { "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-2602-8steps.safetensors" }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "Control YA preprocesado (bordes blancos sobre negro, o gris)" },
+    "inputs": { "image": "{{CONTROL}}" }
+  },
+  "6": {
+    "class_type": "ImageScale",
+    "inputs": { "image": ["5", 0], "upscale_method": "lanczos", "width": "{{ANCHO}}", "height": "{{ALTO}}", "crop": "disabled" }
+  },
+  "7": {
+    "class_type": "ZImageFunControlnet",
+    "_meta": { "title": "Aplicar ControlNet (FUERZA = control_context_scale, 0.65-1.0)" },
+    "inputs": { "model": ["1", 0], "model_patch": ["4", 0], "vae": ["3", 0], "image": ["6", 0], "strength": "{{FUERZA}}", "start_percent": 0, "end_percent": "{{FIN_CONTROL}}" }
+  },
+  "8": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": { "model": ["7", 0], "shift": 3 }
+  },
+  "9": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Prompt" },
+    "inputs": { "clip": ["2", 0], "text": "{{PROMPT}}" }
+  },
+  "10": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": { "conditioning": ["9", 0] }
+  },
+  "11": {
+    "class_type": "LoadImage",
+    "_meta": { "title": "Esquema: punto de partida del latente (DENOISE 1 = texto a imagen puro)" },
+    "inputs": { "image": "{{IMAGEN}}" }
+  },
+  "12": {
+    "class_type": "ImageScale",
+    "inputs": { "image": ["11", 0], "upscale_method": "lanczos", "width": "{{ANCHO}}", "height": "{{ALTO}}", "crop": "disabled" }
+  },
+  "13": {
+    "class_type": "VAEEncode",
+    "inputs": { "pixels": ["12", 0], "vae": ["3", 0] }
+  },
+  "14": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["8", 0], "positive": ["9", 0], "negative": ["10", 0], "latent_image": ["13", 0],
+      "seed": "{{SEMILLA}}", "steps": "{{PASOS}}", "cfg": 1, "sampler_name": "res_multistep", "scheduler": "simple", "denoise": "{{DENOISE}}"
+    }
+  },
+  "15": {
+    "class_type": "VAEDecode",
+    "inputs": { "samples": ["14", 0], "vae": ["3", 0] }
+  },
+  "16": {
+    "class_type": "SaveImage",
+    "_meta": { "title": "Salida" },
+    "inputs": { "images": ["15", 0], "filename_prefix": "{{PREFIJO}}" }
+  }
+}

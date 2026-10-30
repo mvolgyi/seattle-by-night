@@ -1,0 +1,161 @@
+{
+  "_id": "OcrZOcFhKk0qDrF5",
+  "_key": "!actors!OcrZOcFhKk0qDrF5",
+  "name": "Los del Archivo",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 210,
+  "prototypeToken": {
+    "name": "Los del Archivo",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.g4XbpMuCHwxVhzeC",
+      "Actor.zFbC97X8iaeScDzY",
+      "Actor.zGqiDTb68QRTrlLv",
+      "Actor.0IIsgytowpgAWwK6",
+      "Actor.doLuya2qqzFb2wqn",
+      "Actor.9Sei2feAoKaQPPto"
+    ],
+    "headers": {
+      "concept": "Comando (Commando)",
+      "chronicle": "Seattle by Night",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 2
+    },
+    "lien": {
+      "value": 1
+    },
+    "portillon": {
+      "value": 2
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Perfil: Los del Archivo}</p><blockquote><p><em>Los que estaban en el disco.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Tipo</th><td>Comando (Commando)</td></tr><tr><th>Dominio</th><td>Los muelles de Harbor Island, alrededor del hangar de David</td></tr><tr><th>Lugar</th><td>@UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}</td></tr><tr><th>Miembros</th><td>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}, @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}, @UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}, @UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}, @UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard «Hal» Brekke}, @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}</td></tr><tr><th>Aliados</th><td>@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}</td></tr><tr><th>Ayuda</th><td>@UUID[JournalEntry.vtenvgNlXVPd99Rc]{«Tu carpeta en el Expediente»}</td></tr></tbody></table><p>Una coterie nacida de una amenaza compartida: todos aparecen en el Expediente Ward, y o lo recuperan juntos o caen juntos.</p><p>Comando: una unidad reunida para una misión que se volvió permanente (doc 02). Si sobrevive a AVE-01, puede pasar a Cerbero (Cerberus) o Regencia (Regency) según el desenlace (doc 08).</p><h3>Dominio</h3><ul><li><strong>Caza (Chasse) 2:</strong> Trabajadores del turno de noche. Caza posible, pero hay que tener cuidado.</li><li><strong>Lien 1:</strong> La coterie apenas tiene influencia sobre los mortales del puerto. Bear conoce a algunos.</li><li><strong>Portillon 2:</strong> Muchos accesos, contenedores y agua. Fácil de entrar y de salir. También para los enemigos.</li></ul>",
+    "notes": "",
+    "privatenotes": "<p><strong>Dominio según el doc 02:</strong> caza 2 · lien 1 · portillon 1</p><p><strong>Trasfondos según el doc 02:</strong></p><ul><li>Refugio (el hangar, aportado por David)</li><li>Contactos (puerto) 1</li></ul><p><strong>Alternativas:</strong></p><ul><li>B) es una coterie que ya existía y Montgomery usa como fuerza de choque</li><li>C) son desconocidos que coinciden en el apartamento de Helen la noche del robo</li></ul>"
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 3 (el hangar, aportado por David): con Acceso marítimo y Arsenal"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 3 (el hangar, aportado por David): con Acceso marítimo y Arsenal</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "Rgn0osDxJOic3bVI",
+      "_key": "!actors.items!OcrZOcFhKk0qDrF5.Rgn0osDxJOic3bVI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 1 (puerto): a través de Bear"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 1 (puerto): a través de Bear</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "rv46tuwMEGiWsWiH",
+      "_key": "!actors.items!OcrZOcFhKk0qDrF5.rv46tuwMEGiWsWiH"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliado: Tom «Bear» Whitman (PNJ-05), compartido con David"
+        }
+      },
+      "name": "Aliado",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliado: Tom «Bear» Whitman (PNJ-05), compartido con David</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "gn44lQ0Yd7b8TEZq",
+      "_key": "!actors.items!OcrZOcFhKk0qDrF5.gn44lQ0Yd7b8TEZq"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-00",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb",
+      "lema": "Los que estaban en el disco."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

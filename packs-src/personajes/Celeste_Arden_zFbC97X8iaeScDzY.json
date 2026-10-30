@@ -1,0 +1,259 @@
+{
+  "_id": "zFbC97X8iaeScDzY",
+  "_key": "!actors!zFbC97X8iaeScDzY",
+  "name": "Celeste Arden",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "Celeste Arden",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "analista de inversiones y chiquilla de Charles Halloway, el antagonista.",
+      "chronicle": "Seattle by Night",
+      "ambition": "que su nombre valga más que el de su sire",
+      "desire": "que Halloway la reconozca como su igual",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Nunca dejar que alguien caiga solo</li></ul><h3>Piedras de toque</h3><ul><li>su madre, que vive en una residencia con demencia y todavía la llama por su nombre</li></ul>",
+      "sire": "Charles Halloway",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Perfil: Celeste Arden}</p><blockquote><p><em>La heredera del cristal</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>analista de inversiones y chiquilla de Charles Halloway, el antagonista.</td></tr><tr><th>Clan</th><td>Ventrue</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</td></tr><tr><th>Ambición</th><td>que su nombre valga más que el de su sire</td></tr><tr><th>Deseo</th><td>que Halloway la reconozca como su igual</td></tr><tr><th>Foco</th><td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</td></tr><tr><th>Brilla en</th><td>A2-E01, A3-E02 y A4-E01.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{El Consejo de Cristal}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "ventrue"
+        }
+      },
+      "name": "Ventrue",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "l59LPyQHlx8TgtI4",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.l59LPyQHlx8TgtI4"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 3"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 3</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "MpIj0zkNfSVdBW0c",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.MpIj0zkNfSVdBW0c"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos (finanzas) 2"
+        }
+      },
+      "name": "Contactos (finanzas)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos (finanzas) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "z2o4DvzEYL3jMumT",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.z2o4DvzEYL3jMumT"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia (Eastside) 1"
+        }
+      },
+      "name": "Influencia (Eastside)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia (Eastside) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "uk3doe7prCccPYCx",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.uk3doe7prCccPYCx"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Halloway) 2"
+        }
+      },
+      "name": "Mawla (Halloway)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Halloway) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "Lcvy5RkJBXTuzLl8",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.Lcvy5RkJBXTuzLl8"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Vínculo de sangre de nivel 2 con Halloway"
+        }
+      },
+      "name": "Vínculo de sangre de nivel 2 con Halloway",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Vínculo de sangre de nivel 2 con Halloway</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "9Kc3Vzyzj3WQA4Aj",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.9Kc3Vzyzj3WQA4Aj"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-02",
+      "journal": "JournalEntry.zQMt8VMfKPoL6INq",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

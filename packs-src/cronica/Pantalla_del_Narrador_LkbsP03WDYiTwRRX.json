@@ -1,0 +1,221 @@
+{
+  "_id": "LkbsP03WDYiTwRRX",
+  "_key": "!journal!LkbsP03WDYiTwRRX",
+  "name": "Pantalla del Narrador",
+  "folder": "6HgCsgxtaVxFMM6U",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PANTALLA",
+      "archivo": "content/cronica/90-pantalla-del-narrador.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "gSpr7fA31Ip1ht3J",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.gSpr7fA31Ip1ht3J",
+      "name": "Pantalla del Narrador",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Este capítulo reúne todo lo que el Narrador necesita tener a mano en combate o en una tirada enfrentada: los antagonistas principales listos para la mesa, los PNJs menores con reservas simplificadas, el equipo de la Segunda Inquisición y una hoja de referencia rápida del Termómetro y de ANOMALY.</p>\n<p>Las fichas completas de los Vástagos (Krell, Halloway y el resto de la ciudad) están en el capítulo 4. Aquí aparecen solo en versión de combate, con su táctica.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2aVliLpgluJn3Zji",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.2aVliLpgluJn3Zji",
+      "name": "El Termómetro de FIRSTLIGHT",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Empieza en 2. Máximo 10.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Sube</th>\n<th>Cuánto</th>\n<th>Baja</th>\n<th>Cuánto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Cada entrega de ARQUERO (Noches 2 y 5)</td>\n<td>+1</td>\n<td>Interceptar el informe forense @UUID[JournalEntry.Gfcnqy3u5K3xDilP]{Oficina Forense del Condado de King, informe preliminar, caso 26-3307} antes de la Noche 3</td>\n<td>−1</td>\n</tr>\n<tr>\n<td>Un Vástago registrado por ANOMALY (por escena)</td>\n<td>+1</td>\n<td>Retirar la sangre marcada (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.c5BCc8zELaNV3QV3]{GAN-03 · Sangre marcada})</td>\n<td>−1</td>\n</tr>\n<tr>\n<td>Teo contesta a <em>nrthln_research</em> (<span class=\"sbn-reloj\" data-sbn-reloj=\"4\" title=\"Noche 4 · domingo 15 nov. (madrugada del 15/11/2026)\">Noche 4</span>)</td>\n<td>+1</td>\n<td>Destruir pruebas en la redada</td>\n<td>−1</td>\n</tr>\n<tr>\n<td>La USB de Pike queda en la cadena de custodia</td>\n<td>+1</td>\n<td>Borrar la base de datos de sujetos fríos (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos})</td>\n<td>−2</td>\n</tr>\n<tr>\n<td>La subasta de Thornquist se celebra</td>\n<td>+2</td>\n<td>Halloway cae como ARQUERO (@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · La verdad ante el trono})</td>\n<td>−2</td>\n</tr>\n<tr>\n<td>FIRSTLIGHT se queda con Lonnie y la USB 3</td>\n<td>+2</td>\n<td>El Expediente se destruye (@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Fuego purificador})</td>\n<td>−3</td>\n</tr>\n<tr>\n<td>Asalto ruidoso a Gale Sentinel</td>\n<td>+2</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Abrir la cisterna del Larchmont</td>\n<td>+2</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Brecha visible en el ferry o en el Denny&#39;s</td>\n<td>+2 o +3</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Escena del almacén de Sal sin limpiar</td>\n<td>+1</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Cada informe falso más firmado por «R. A.»</td>\n<td>+1</td>\n<td></td>\n<td></td>\n</tr>\n</tbody></table>\n<p><strong>Botones para mover el Termómetro:</strong></p>\n<ul>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Entrega de ARQUERO\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Entrega de ARQUERO</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-1\" data-motivo=\"Interceptar el informe forense DOC-09\"><span class=\"sbn-termometro-cambio\">−1</span> <span class=\"sbn-termometro-motivo\">Interceptar el informe forense DOC-09</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Vástago registrado por ANOMALY\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Vástago registrado por ANOMALY</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-1\" data-motivo=\"Retirar la sangre marcada\"><span class=\"sbn-termometro-cambio\">−1</span> <span class=\"sbn-termometro-motivo\">Retirar la sangre marcada</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Teo contesta a nrthln_research\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Teo contesta a nrthln_research</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-1\" data-motivo=\"Destruir pruebas en la redada\"><span class=\"sbn-termometro-cambio\">−1</span> <span class=\"sbn-termometro-motivo\">Destruir pruebas en la redada</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"La USB de Pike en la cadena de custodia\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">La USB de Pike en la cadena de custodia</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-2\" data-motivo=\"Borrar la base de datos de sujetos fríos\"><span class=\"sbn-termometro-cambio\">−2</span> <span class=\"sbn-termometro-motivo\">Borrar la base de datos de sujetos fríos</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"La subasta de Thornquist\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">La subasta de Thornquist</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-2\" data-motivo=\"Halloway cae como ARQUERO\"><span class=\"sbn-termometro-cambio\">−2</span> <span class=\"sbn-termometro-motivo\">Halloway cae como ARQUERO</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"FIRSTLIGHT se queda con Lonnie y la USB 3\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">FIRSTLIGHT se queda con Lonnie y la USB 3</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-3\" data-motivo=\"El Expediente se destruye\"><span class=\"sbn-termometro-cambio\">−3</span> <span class=\"sbn-termometro-motivo\">El Expediente se destruye</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"Asalto ruidoso a Gale Sentinel\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">Asalto ruidoso a Gale Sentinel</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"Abrir la cisterna del Larchmont\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">Abrir la cisterna del Larchmont</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"Brecha visible en el ferry o en el Denny's\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">Brecha visible en el ferry o en el Denny&#39;s</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+3\" data-motivo=\"Brecha visible en el ferry o en el Denny's\"><span class=\"sbn-termometro-cambio\">+3</span> <span class=\"sbn-termometro-motivo\">Brecha visible en el ferry o en el Denny&#39;s</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Escena del almacén de Sal sin limpiar\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Escena del almacén de Sal sin limpiar</span></button></li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Informe falso firmado por «R. A.»\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Informe falso firmado por «R. A.»</span></button></li>\n</ul>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Umbral</th>\n<th>Efecto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>3</td>\n<td>Vigilancia pasiva sobre Helen.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Okafor contacta a Helen.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Investigación activa de un activo de la coterie. Visita a la forense «R. A.».</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Redada (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}).</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Purga (@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Marea roja}).</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qhhsw6y7Mb23Pqt7",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.qhhsw6y7Mb23Pqt7",
+      "name": "ANOMALY, en una caja",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<aside class=\"sbn-recuadro\"><h4>ANOMALY</h4><ul>\n<li>Está activo en los 412.000 timbres Gale Sentinel del área metropolitana y en los accesos del campus de Gale.</li>\n<li>Marca como COLD_SUBJECT a cualquier figura con temperatura corporal anormalmente baja. Ofuscación no lo engaña, porque no mira a la persona: mira el calor.</li>\n<li>Se engaña con @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.qA75WygzgVjOeJvT]{LOR-03 · Los ojos de la ciudad} a nivel 4, con ropa térmica preparada (<a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"4\" data-label=\"Inteligencia + Tecnología (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Inteligencia + Tecnología (Dificultad 4)</a>, por escena), o desactivando el módulo localmente (<a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"4\" data-label=\"Inteligencia + Tecnología (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Inteligencia + Tecnología (Dificultad 4)</a>).</li>\n<li>Northline recibe todos los registros en tiempo real desde septiembre de 2026.</li>\n</ul>\n</aside>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4Tk4aZs98GOUare2",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.4Tk4aZs98GOUare2",
+      "name": "Reservas de los PNJs principales, de un vistazo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>ID</th>\n<th>Nombre</th>\n<th>Salud</th>\n<th>FdV</th>\n<th>Ataque</th>\n<th>Defensa</th>\n<th>Social clave</th>\n<th>Mental clave</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</td>\n<td>Montgomery</td>\n<td>8</td>\n<td>8</td>\n<td>8 (Pelea) / 8 (Fuego)</td>\n<td>7</td>\n<td>Intimidación 6</td>\n<td>Rastreo 9</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</td>\n<td>Whitmore</td>\n<td>6</td>\n<td>5</td>\n<td>—</td>\n<td>6</td>\n<td>Persuasión 9</td>\n<td>Política 7</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</td>\n<td>Halloway</td>\n<td>6</td>\n<td>8</td>\n<td>—</td>\n<td>6</td>\n<td>Política 10</td>\n<td>Perspicacia 8</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa «Salitre» Iturbe}</td>\n<td>Rosa Iturbe</td>\n<td>6</td>\n<td>7</td>\n<td>6</td>\n<td>5</td>\n<td>Liderazgo 8</td>\n<td>Perspicacia 6</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}</td>\n<td>Krell</td>\n<td>7</td>\n<td>6</td>\n<td>10</td>\n<td>8</td>\n<td>Intimidación 6</td>\n<td>Consciencia 7</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}</td>\n<td>Thornquist</td>\n<td>7</td>\n<td>7</td>\n<td>7</td>\n<td>5</td>\n<td>Persuasión 7</td>\n<td>Perspicacia 8</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.bB0eDKVFcxQW4C2d]{Solène Marchetti}</td>\n<td>Marchetti</td>\n<td>5</td>\n<td>7</td>\n<td>—</td>\n<td>5</td>\n<td>Etiqueta 7</td>\n<td>Investigación 7</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dra. Anneliese Voight}</td>\n<td>Voight</td>\n<td>5</td>\n<td>8</td>\n<td>—</td>\n<td>5</td>\n<td>—</td>\n<td>Investigación 9</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry}</td>\n<td>Fry</td>\n<td>5</td>\n<td>5</td>\n<td>—</td>\n<td>4</td>\n<td>Interpretación 7</td>\n<td>Perspicacia 9</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}</td>\n<td>O&#39;Connor</td>\n<td>7</td>\n<td>7</td>\n<td>10</td>\n<td>6</td>\n<td>Liderazgo 8</td>\n<td>Perspicacia 5</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}</td>\n<td>Okafor</td>\n<td>6</td>\n<td>9</td>\n<td>7 (Fuego)</td>\n<td>5</td>\n<td>Intimidación 6</td>\n<td>Investigación 9</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}</td>\n<td>Jun Takeda</td>\n<td>5</td>\n<td>4</td>\n<td>3</td>\n<td>8</td>\n<td>—</td>\n<td>Callejeo 6</td>\n</tr>\n</tbody></table>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota de edición</h4><p>Defensa recalculada como Destreza + Atletismo desde las fichas: Krell 8 (el doc 14 decía 7) y Jun 8 (decía 6).</p>\n</aside>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "DaBpEVo16j8iiDIT",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.DaBpEVo16j8iiDIT",
+      "name": "Cómo leer las reservas simplificadas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Siguiendo el formato de V5 para PNJs menores, cada uno tiene tres <strong>reservas generales</strong> (Física, Social, Mental) para cualquier acción sin especialidad, y una lista de <strong>reservas excepcionales</strong> para lo que sabe hacer bien. Si una acción no encaja en ninguna, usá la reserva general menos 1.</p>\n<p>Los antagonistas en versión de combate: @UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell} y @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}. Los PNJs menores, por grupo:</p>\n<ul>\n<li><strong>Del círculo de Halloway:</strong> @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}, @UUID[Actor.eRE6FTNdGO76lzPK]{el señor Pell}, @UUID[Actor.BzNGxOAK3F6Uo56T]{Dawson y los ghouls de seguridad}, @UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby} <em>(solo si nadie juega a Celeste Arden)</em>.</li>\n<li><strong>De FIRSTLIGHT:</strong> @UUID[JournalEntry.D611Mcr17F6HHEUw]{la analista S. Hale}, @UUID[Actor.abaWg7NwNQvM0sDc]{el equipo táctico}, @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom}.</li>\n<li><strong>De los Lobos de Whitmore:</strong> @UUID[Actor.L1oU4dlqHg8Yszon]{los cazarrecompensas de Montgomery} (y Dutch Lindqvist), los perros de Montgomery.</li>\n<li><strong>De Salitre:</strong> @UUID[Actor.k2TLqQkkzzjSLzkp]{los Anarquistas de Salitre} (Bas Okonjo, Tavi Mercer).</li>\n<li><strong>De la calle y el puerto:</strong> @UUID[Actor.9rv5Jdb3y6bZZ1fj]{Lonnie Barras}, @UUID[Actor.mto8LnnsUQgFr1DI]{Sal Medeiros}, @UUID[Actor.Q2t6M2IxrRHCJCnC]{Corwin}, @UUID[Actor.nbeFly9wEhWkesoF]{Teo Vásquez}, @UUID[Actor.QmuwU5oe2fg1GIoX]{el Dr. Marek Kowalski}, @UUID[Actor.rOqsigq4dAfIYQMh]{Marcos Delgado}.</li>\n<li><strong>De Tacoma:</strong> @UUID[Actor.wop4zqE8KwywxhTL]{el superviviente del Larchmont}.</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ahXCgSPTpFdnXVfn",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.ahXCgSPTpFdnXVfn",
+      "name": "El arsenal de FIRSTLIGHT",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Reglas para el equipo que la Célula Puget usa contra los Vástagos.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Equipo</th>\n<th>Efecto</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Munición incendiaria</strong></td>\n<td>El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).</td>\n</tr>\n<tr>\n<td><strong>Linterna UV de alta intensidad</strong></td>\n<td>Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.</td>\n</tr>\n<tr>\n<td><strong>Generador de luz solar artificial</strong> (en la furgoneta)</td>\n<td>Ilumina una zona de 20 metros. Dentro: 2 de daño agravado por turno y Terror Rojo automático (Dificultad 3) al entrar. Tarda dos turnos en encenderse.</td>\n</tr>\n<tr>\n<td><strong>Gafas térmicas</strong></td>\n<td>Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.</td>\n</tr>\n<tr>\n<td><strong>Dron con cámara térmica</strong></td>\n<td>Ve a toda la zona y coordina al equipo: +2 dados a sus tiradas de Consciencia y emboscada. Derribarlo: Fuerza + Atletismo (Dificultad 4) con un objeto lanzado, o un disparo con Destreza + Armas de fuego (Dificultad 4).</td>\n</tr>\n<tr>\n<td><strong>Cámaras corporales</strong></td>\n<td>Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "r4NXApY7gDMbGF1f",
+      "_key": "!journal.pages!LkbsP03WDYiTwRRX.r4NXApY7gDMbGF1f",
+      "name": "Registro de IDs de los capítulos 4 (parte 2) y 8",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Capítulo 4, parte 2: los de fuera.</strong> No todos los Vástagos de Seattle se sientan en la Galería de Vidrio. Estos cuatro viven en los márgenes: un hermano que nadie conocía, una baronesa con una deuda vieja, un Sheriff caído y una mensajera que no sabe lo que lleva. Al final del capítulo hay recuadros resumen de David, Helen y Bear, que ya tienen documentos propios.</p>\n<ul>\n<li><strong>@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}</strong> · August Krell: <strong>chiquillo de Vance desde 1972</strong>, hermano de sangre de David.</li>\n<li><strong>@UUID[JournalEntry.LqMKPCSaUzAWcGYi]{Ray Dorsey}</strong> · Ray Dorsey, el Anarquista que mató a Emily en 1996 (destruido por David).</li>\n<li><strong>Piedras de toque PNJ:</strong> Dani Okeke (O&#39;Connor), Joe Barrientos (Rosa), Haruko Takeda (Jun).</li>\n<li><strong>Objeto:</strong> el abrigo de Vance, que llegó a Halloway en el mismo lote que los diarios.</li>\n<li><strong>Objeto:</strong> la memoria USB de Jun, con la copia parcial del Expediente de 2019 a 2022.</li>\n</ul>\n<p><strong>Capítulo 8: estadísticas.</strong></p>\n<ul>\n<li><strong>@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby}</strong> · Julian Ashby, chiquillo de Halloway (sustituto de Celeste si no se juega)</li>\n<li><strong>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}</strong> · Dana Okafor: ficha completa</li>\n<li><strong>@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}</strong> · Sasha Hale: nombre completo fijado</li>\n<li><strong>MEN-01 a MEN-14</strong> · Todas las reservas simplificadas</li>\n<li>Los perros de Montgomery, Dutch Lindqvist, Bas Okonjo y Tavi Mercer, con reservas propias</li>\n</ul>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_id": "IDd94316DhSx3ptV",
+  "_key": "!journal!IDd94316DhSx3ptV",
+  "name": "La terminal de ferris y el último ferry",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 150,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-15",
+      "archivo": "content/ciudad/LUG-15.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "KEbfKrjXUcuK1N2t",
+      "_key": "!journal.pages!IDd94316DhSx3ptV.KEbfKrjXUcuK1N2t",
+      "name": "La terminal de ferris y el último ferry",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Colman Dock y el estrecho de Puget · Mapa: sí (terminal y cubierta del ferry)</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "XweO0SZKwcHv5wqG",
+      "_key": "!journal.pages!IDd94316DhSx3ptV.XweO0SZKwcHv5wqG",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>La terminal está casi vacía. Bajo los fluorescentes hay un puñado de pasajeros con cara de sueño, un guardia de seguridad que mira el móvil y una máquina de café estropeada. Afuera, el último ferry de la noche espera con las luces encendidas y los motores en marcha, como un edificio blanco flotando sobre el agua negra. La sirena suena una vez, larga. Cinco minutos.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "w5CTptVFfisPYSuA",
+      "_key": "!journal.pages!IDd94316DhSx3ptV.w5CTptVFfisPYSuA",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> la sala de espera de la terminal, la rampa de vehículos y el ferry: cubierta de coches, salón de pasajeros, puente y cubierta exterior de popa.</p>\n<p>La travesía hasta la otra orilla dura 35 minutos. Cualquier conflicto a bordo tiene testigos mortales encerrados con los personajes (riesgo de Mascarada en cada tirada llamativa).</p>\n<p><strong>Escena:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}, el clímax. @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}, @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Gale} o un mensajero intentan sacar el original del Expediente de la ciudad.</p>\n<p>Es el «último barco de la noche» de @UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: «Canción para el hijo del puño»}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

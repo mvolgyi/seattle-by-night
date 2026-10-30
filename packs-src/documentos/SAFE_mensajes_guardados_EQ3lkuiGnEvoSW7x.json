@@ -1,0 +1,86 @@
+{
+  "_id": "EQ3lkuiGnEvoSW7x",
+  "_key": "!journal!EQ3lkuiGnEvoSW7x",
+  "name": "SAFE: mensajes guardados",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-05",
+      "archivo": "content/documentos/DOC-05.md",
+      "soporte": "sms",
+      "entrega": [
+        "A0-E01",
+        "A1-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "14h0hTYRu1ktbQOo",
+      "_key": "!journal.pages!EQ3lkuiGnEvoSW7x.14h0hTYRu1ktbQOo",
+      "name": "SAFE: mensajes guardados",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-sms\"><div class=\"sbn-pantalla\"><header class=\"sbn-sms-cabecera\"><p class=\"sbn-doc-titulo\">MENSAJES</p>\n<p class=\"sbn-sms-contacto\">SAFE</p>\n<p class=\"sbn-sms-contador\">(6 mensajes recibidos · 0 enviados)</p>\n</header><div class=\"sbn-sms-hilo\"><div class=\"sbn-sms-mensaje sbn-sms-recibido\"><p class=\"sbn-sms-texto\">Funciona. No hace falta que contestes.</p><p class=\"sbn-sms-meta\"><span class=\"sbn-sms-remitente\">SAFE</span> · <time class=\"sbn-sms-fecha\">14/02/2023</time> <time class=\"sbn-sms-hora\">23:58</time></p></div>\n<div class=\"sbn-sms-mensaje sbn-sms-recibido\"><p class=\"sbn-sms-texto\">El artículo sobre la fundición estaba bien. Demasiado bien. No vuelvas a ese barrio de noche.</p><p class=\"sbn-sms-meta\"><span class=\"sbn-sms-remitente\">SAFE</span> · <time class=\"sbn-sms-fecha\">30/09/2023</time> <time class=\"sbn-sms-hora\">02:11</time></p></div>\n<div class=\"sbn-sms-mensaje sbn-sms-recibido\"><p class=\"sbn-sms-texto\">Seguís mirando. Bien.</p><p class=\"sbn-sms-meta\"><span class=\"sbn-sms-remitente\">SAFE</span> · <time class=\"sbn-sms-fecha\">14/02/2024</time> <time class=\"sbn-sms-hora\">23:59</time></p></div>\n<div class=\"sbn-sms-mensaje sbn-sms-recibido\"><p class=\"sbn-sms-texto\">Seguís mirando.</p><p class=\"sbn-sms-meta\"><span class=\"sbn-sms-remitente\">SAFE</span> · <time class=\"sbn-sms-fecha\">14/02/2025</time> <time class=\"sbn-sms-hora\">23:57</time></p></div>\n<div class=\"sbn-sms-mensaje sbn-sms-recibido\"><p class=\"sbn-sms-texto\">.</p><p class=\"sbn-sms-meta\"><span class=\"sbn-sms-remitente\">SAFE</span> · <time class=\"sbn-sms-fecha\">14/02/2026</time> <time class=\"sbn-sms-hora\">23:58</time></p></div>\n<div class=\"sbn-sms-mensaje sbn-sms-recibido\"><p class=\"sbn-sms-texto\">Cambiá la cerradura. Mañana. No preguntes.</p><p class=\"sbn-sms-meta\"><span class=\"sbn-sms-remitente\">SAFE</span> · <time class=\"sbn-sms-fecha\">09/11/2026</time> <time class=\"sbn-sms-hora\">04:40</time></p></div>\n</div></div></div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1WTHzPhgm0TlK7ZN",
+      "_key": "!journal.pages!EQ3lkuiGnEvoSW7x.1WTHzPhgm0TlK7ZN",
+      "name": "Para el Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Soporte:</strong> captura del historial de SMS del teléfono de tapa de Helen. <strong>Cuándo:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} o @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}, cuando Helen enseña el teléfono.</p>\n<p><strong>Presagia:</strong> la relación entre David y Helen y la culpa de David. El último mensaje plantea una pregunta: ¿cómo sabía David que algo iba a pasar?</p>\n<p><strong>Verdad:</strong> Helen nunca contestó. El 9 de noviembre, un contacto de Montgomery en el puerto avisó de que alguien había pedido datos de vigilancia del edificio de Helen. David mandó el mensaje y no fue a comprobarlo. Fue Gale Sentinel (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.6YVCnLlyxpVum6JX]{Pedido de datos de Gale Sentinel sin registrar}). Si el jugador de David no conocía este mensaje, el Narrador debe acordarlo con él en privado antes de la sesión 1.</p>\n<p><em>Nota para el Narrador: el 14 de febrero es el cumpleaños de Emily Smith (@UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith}). Helen no lo sabe. El jugador de David puede saberlo o descubrirlo.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

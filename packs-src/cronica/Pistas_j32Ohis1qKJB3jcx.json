@@ -1,0 +1,460 @@
+{
+  "_id": "j32Ohis1qKJB3jcx",
+  "_key": "!journal!j32Ohis1qKJB3jcx",
+  "name": "Pistas",
+  "folder": "FKeYwpEhGbx72MA5",
+  "sort": 900,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PISTAS",
+      "archivo": "content/pistas.json"
+    }
+  },
+  "pages": [
+    {
+      "_id": "NIaBWn52GOUI61A5",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.NIaBWn52GOUI61A5",
+      "name": "P-01 · Ladrones profesionales mortales; cámaras en bucle",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-01\"><span class=\"sbn-pista-id\">P-01</span> <span class=\"sbn-pista-nombre\">Ladrones profesionales mortales; cámaras en bucle</span></button></p>\n<p>Los ladrones eran profesionales mortales y las cámaras del edificio entraron en bucle. (Doc 10: las cámaras desconectadas de 2:52 a 3:03.)</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · <strong>También en:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</strong> · <em>Preludio</em> (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}): Preludio de Ezra: a las 2:52 ve apagarse un bloque de cámaras Gale Sentinel en Ballard durante once minutos. <span class=\"sbn-origen\">doc 10</span></li><li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</strong> · <em>Principal</em> (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}): Inteligencia + Tecnología (Dificultad 3): la cámara de Helen tiene un registro de desconexión de 2:52 a 3:03. <span class=\"sbn-origen\">doc 10</span></li><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</strong> · <em>Principal</em> (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}): Los ladrones eran profesionales mortales y las cámaras entraron en bucle. Inteligencia + Investigación (Dificultad 3) al registrar el apartamento: abrieron con ganzúa electrónica y sabían dónde mirar (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.NIaBWn52GOUI61A5]{P-01}, reforzado); con 3 o más éxitos, el repetidor adhesivo en el marco de la puerta. <span class=\"sbn-origen\">doc 01, 10</span></li><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</strong> · <em>Documento</em> (@UUID[JournalEntry.zNhdOMSnEHdvMIGE]{Notas de voz de Helen Ward #7}): @UUID[JournalEntry.zNhdOMSnEHdvMIGE]{DOC-01}: las cámaras que «no grabaron nada» son la primera señal de Gale Sentinel. <span class=\"sbn-origen\">doc 04</span></li><li><strong>@UUID[JournalEntry.CeLqLZCfHQEtHYlk]{Capítulo 0 · Lo que el agua no se lleva}</strong> · <em>Relato</em>: Las luces apagadas de las cámaras Gale Sentinel son @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.NIaBWn52GOUI61A5]{P-01} y llevan a @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05}. <span class=\"sbn-origen\">doc 03</span></li></ul>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Sv7fUQ7md0daHTzy",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.Sv7fUQ7md0daHTzy",
+      "name": "P-02 · Vitae de ghoul en el picaporte",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-02\"><span class=\"sbn-pista-id\">P-02</span> <span class=\"sbn-pista-nombre\">Vitae de ghoul en el picaporte</span></button></p>\n<p>Hay un olor a Vitae ajena en el picaporte: es de un ghoul. (Doc 10: Vitae de ghoul en el picaporte y en el pasillo.)</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · <strong>También en:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</strong> · <em>Principal</em> (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}): Resolución + Consciencia (Dificultad 2), o automático con Auspex 1: el olor a monedas del pasillo es Vitae aguada, sin Bestia detrás. Auspex 4 (Toque espiritual) sobre el picaporte: la marca de un ghoul que espera su próxima dosis. <span class=\"sbn-origen\">doc 10</span></li><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</strong> · <em>Principal</em> (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}): Olor a Vitae ajena en el picaporte: es de un ghoul (si no se encontró antes). <span class=\"sbn-origen\">doc 01, 10</span></li><li><strong>@UUID[JournalEntry.CeLqLZCfHQEtHYlk]{Capítulo 0 · Lo que el agua no se lleva}</strong> · <em>Relato</em>: El que olfatea la escalera es un ghoul de Gale (@UUID[Actor.BzNGxOAK3F6Uo56T]{MEN-04}). Su Vitae es el rastro @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Sv7fUQ7md0daHTzy]{P-02}. <span class=\"sbn-origen\">doc 03</span></li></ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota</h4><p>Si la coterie se lleva a Helen enseguida, @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01} ocurre en el hangar y se pierde @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Sv7fUQ7md0daHTzy]{P-02} si no se detectó (doc 10).</p></aside>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hBCw4YOXRWH4DQhg",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.hBCw4YOXRWH4DQhg",
+      "name": "P-03 · La técnica de la Furia Controlada",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-03\"><span class=\"sbn-pista-id\">P-03</span> <span class=\"sbn-pista-nombre\">La técnica de la <em>Furia Controlada</em></span></button></p>\n<p>Los golpes que destruyeron al Nosferatu menor del muelle 46 siguen la doctrina de la <em>Furia Controlada</em>.</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</strong> · <em>Principal</em>: Inteligencia + Pelea (Dificultad 4): abolladuras a la altura del pecho, siempre en la misma secuencia (costillas, esternón, garganta). David, con @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} a nivel 4, lo reconoce sin tirar. <span class=\"sbn-origen\">doc 01, 10</span></li><li><strong>@UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada}</strong> · <em>Loresheet</em>: @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} nivel 4 «La guardia completa»: reconocés la doctrina en cuanto la ves. <span class=\"sbn-origen\">doc 08</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</strong>: Votación: Thornquist cambia a «no» si la coterie le demuestra que Krell, el hombre de Halloway, destruyó a Pike (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.hBCw4YOXRWH4DQhg]{P-03} más @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jXff6tMXQQbmJg0m]{P-12} o el testimonio de Krell). <span class=\"sbn-origen\">doc 13</span></li></ul>"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iqkRrhCpp04lKugB",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.iqkRrhCpp04lKugB",
+      "name": "P-04 · Copia parcial del Expediente en un USB",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-04\"><span class=\"sbn-pista-id\">P-04</span> <span class=\"sbn-pista-nombre\">Copia parcial del Expediente en un USB</span></button></p>\n<p>En el cadáver hay un USB con una copia parcial del Expediente.</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</strong> · <em>Principal</em>: Astucia + Consciencia (Dificultad 3): la memoria USB está en el bolsillo interior de la chaqueta, entre las cenizas. Cogerla sin que los agentes lo vean: Destreza + Latrocinio (Dificultad 3). <span class=\"sbn-origen\">doc 01, 10</span></li></ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota</h4><p>Es la USB 1 (carpetas 2014–2018, incluye el Larchmont). Si la coterie no la consigue, entra en la cadena de custodia y Hale la copia en la Noche 3 (Termómetro +1). Montgomery la confisca en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03} si se la enseñan, salvo Manipulación + Persuasión (Dificultad 3) (docs 10 y 11).</p></aside>"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-04"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "wZxrfXenQd62yVtT",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.wZxrfXenQd62yVtT",
+      "name": "P-05 · Jun, la mensajera sangre débil",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-05\"><span class=\"sbn-pista-id\">P-05</span> <span class=\"sbn-pista-nombre\">Jun, la mensajera sangre débil</span></button></p>\n<p>Thornquist confirma que hay copias del Expediente en el mercado y que la mensajera es una sangre débil, Jun.</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</strong> · <em>Principal</em> (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}): Manipulación + Persuasión (Dificultad 4) con Thornquist: con un éxito confirma que hay copias a la venta; con 3 o más, revela que se las trajo Jun y dónde duerme. Ezra tiene +2 dados. <span class=\"sbn-origen\">doc 01, 10</span></li></ul>"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-05"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "6YVCnLlyxpVum6JX",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.6YVCnLlyxpVum6JX",
+      "name": "P-06 · Pedido de datos de Gale Sentinel sin registrar",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-06\"><span class=\"sbn-pista-id\">P-06</span> <span class=\"sbn-pista-nombre\">Pedido de datos de Gale Sentinel sin registrar</span></button></p>\n<p>Las cámaras de timbre del edificio de Helen son todas Gale Sentinel. La empresa recibió un pedido de datos que no figura en ningún registro. (Doc 10: autorizado por &quot;P.G.&quot;; a medias en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01}, la IP del Eastside.)</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · <strong>También en:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}, @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron}</strong> · <em>Parcial</em>: Inteligencia + Tecnología (Dificultad 4) sobre el portátil de Helen: la nube se borró desde una IP de un centro de datos del Eastside (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.6YVCnLlyxpVum6JX]{P-06}, a medias). <span class=\"sbn-origen\">doc 10</span></li><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad}</strong> · <em>Principal</em> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}): Inteligencia + Investigación (Dificultad 3): pedido del 9 de noviembre, a las 4:12, de acceso a la red del edificio de Market Street, sin contrato, autorizado por «P.G.». <span class=\"sbn-origen\">doc 01, 10</span></li><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</strong> · <em>Alternativa</em> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}): Si se salta @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05}, la misma información aparece en @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02}. <span class=\"sbn-origen\">doc 10</span></li><li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</strong> · <em>Documento</em> (@UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{SAFE: mensajes guardados}): @UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{DOC-05}: el mensaje del 9 de noviembre («Cambiá la cerradura»). Fue Gale Sentinel (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.6YVCnLlyxpVum6JX]{P-06}). <span class=\"sbn-origen\">doc 04</span></li></ul>"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-06"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xQqepYpthm1bxP8u",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.xQqepYpthm1bxP8u",
+      "name": "P-07 · Halloway sabe lo del agua fría",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-07\"><span class=\"sbn-pista-id\">P-07</span> <span class=\"sbn-pista-nombre\">Halloway sabe lo del agua fría</span></button></p>\n<p>Halloway menciona a Vance con un detalle que no debería conocer. (Doc 11: Halloway sabe lo del agua fría.)</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</strong> · <em>Principal</em> (@UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}): Inteligencia + Academicismo (Dificultad 3), o automático para David: Halloway cita «el agua fría por las mañanas», que solo está en los diarios privados de Vance. Astucia + Perspicacia (Dificultad 4) para notar que miente al explicarlo. <span class=\"sbn-origen\">doc 01, 11</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}</strong>: Ganarse a la asamblea de Salitre: la Dificultad baja 1 por cada pista que traiga la coterie (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{P-08} o @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.xQqepYpthm1bxP8u]{P-07}). <span class=\"sbn-origen\">doc 11</span></li></ul>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 11</span> «Halloway sabe lo del agua fría»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.xQqepYpthm1bxP8u]{P-07} · Halloway sabe lo del agua fría»</li><li><span class=\"sbn-origen\">doc 01</span> «Halloway sabe demasiado sobre Vance»</li></ul>"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-07"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "HYE4rNbNf1sEbYGe",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.HYE4rNbNf1sEbYGe",
+      "name": "P-08 · La guardia invertida",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-08\"><span class=\"sbn-pista-id\">P-08</span> <span class=\"sbn-pista-nombre\">La guardia invertida</span></button></p>\n<p>Una tirada de Inteligencia + Pelea (Dificultad 4) revela que la técnica está mal: Krell golpea con la guardia invertida, como Vance enseñaba a los alumnos que no terminaban el entrenamiento. (Doc 10: indicio en @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02}.)</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»} · <strong>También en:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ceniza en el muelle 46}</strong> · <em>Indicio</em>: Con 4 o más éxitos en Inteligencia + Pelea, o @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} a nivel 4 y un éxito en Astucia + Pelea (Dificultad 3): el último golpe entró desde la izquierda, como si el atacante tuviera la guardia cambiada. Teo: «pegaba con la izquierda delante, como los zurdos en el boxeo». <span class=\"sbn-origen\">doc 10</span></li><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}</strong> · <em>Principal</em>: Inteligencia + Pelea (Dificultad 4) sobre las cenizas de Corwin: la Furia Controlada con la guardia invertida, la mano débil adelante. David, con @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} a nivel 4: automático. <span class=\"sbn-origen\">doc 01, 11</span></li><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}</strong> · <em>Refuerzo</em>: Si la coterie llega a tiempo, David reconoce la guardia invertida automáticamente con @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} a nivel 4. <span class=\"sbn-origen\">doc 12</span></li><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</strong> · <em>Documento</em> (@UUID[JournalEntry.kzeWNRBY6tgLP37S]{Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)}): @UUID[JournalEntry.kzeWNRBY6tgLP37S]{DOC-04}: la doctrina de la Furia Controlada y la guardia invertida, que delata a Krell (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{P-08}). <span class=\"sbn-origen\">doc 04</span></li><li><strong>@UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · La Doctrina de la Furia Controlada}</strong> · <em>Loresheet</em>: @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} nivel 4 «La guardia completa»: reconocés la doctrina en cuanto la ves (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.hBCw4YOXRWH4DQhg]{P-03}, @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{P-08}). <span class=\"sbn-origen\">doc 08</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}</strong>: Ganarse a la asamblea de Salitre: la Dificultad baja 1 por cada pista que traiga la coterie (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{P-08} o @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.xQqepYpthm1bxP8u]{P-07}). <span class=\"sbn-origen\">doc 11</span></li></ul>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 11</span> «La guardia invertida»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe]{P-08} · La guardia invertida»</li><li><span class=\"sbn-origen\">doc 01</span> «La guardia invertida de Krell»</li></ul>"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-08"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TOvLdg2zhgDzjOAG",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.TOvLdg2zhgDzjOAG",
+      "name": "P-09 · Los diarios comprados en 1986",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-09\"><span class=\"sbn-pista-id\">P-09</span> <span class=\"sbn-pista-nombre\">Los diarios comprados en 1986</span></button></p>\n<p>O&#39;Connor cuenta que los diarios de Vance no se quemaron: en 1986 se los vendieron a «un Ventrue de Seattle con paciencia».</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · El Sheriff que fue}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · El Sheriff que fue}</strong> · <em>Principal</em>: Después de los tres asaltos en el ring, O&#39;Connor cuenta el envío de 1986 desde Lyon, a nombre de una sociedad de Halloway: diarios a mano con «M.V.» en la tapa. <span class=\"sbn-origen\">doc 01, 07, 11</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 11</span> «Los diarios comprados en 1986»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.TOvLdg2zhgDzjOAG]{P-09} · Los diarios comprados en 1986»</li><li><span class=\"sbn-origen\">doc 01</span> «Los diarios vendidos en 1986»</li></ul>"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-09"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "wRvr7GFOMQsgTJ2z",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.wRvr7GFOMQsgTJ2z",
+      "name": "P-10 · Envíos SEA-0411 / DOC-07",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-10\"><span class=\"sbn-pista-id\">P-10</span> <span class=\"sbn-pista-nombre\">Envíos SEA-0411 / DOC-07</span></button></p>\n<p>El registro de envíos a «SEA-0411» en el centro de datos de Gale Sentinel.</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos} · <strong>También en:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</strong> · <em>Principal</em> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}): Capa 3, almacenamiento: los registros de envío del canal ARQUERO, con la referencia SEA-0411, y @UUID[JournalEntry.WW7eg88I0uDGj8ks]{DOC-07} completo. <span class=\"sbn-origen\">doc 01, 12</span></li><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</strong> · <em>Documento</em> (@UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, nota interna SEA-0411}): @UUID[JournalEntry.WW7eg88I0uDGj8ks]{DOC-07} puede llegar antes si Voight confía en la coterie. <span class=\"sbn-origen\">doc 04</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+2</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +2 dados a la tirada del caso en el Consejo (prueba que Halloway es ARQUERO) <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</strong>: Votación: Voight cambia a «no» si la coterie le demuestra que ARQUERO es Halloway (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wRvr7GFOMQsgTJ2z]{P-10}, el correo de C.H. o el testimonio de Gale o Dawson). <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 12</span> «Los envíos SEA-0411»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wRvr7GFOMQsgTJ2z]{P-10} · Envíos SEA-0411 / @UUID[JournalEntry.WW7eg88I0uDGj8ks]{DOC-07}»</li><li><span class=\"sbn-origen\">doc 01</span> «Envíos a «SEA-0411»»</li></ul>"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-10"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Pvm4xZpxzhCtg4rf",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.Pvm4xZpxzhCtg4rf",
+      "name": "P-11 · Firma de Gale",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-11\"><span class=\"sbn-pista-id\">P-11</span> <span class=\"sbn-pista-nombre\">Firma de Gale</span></button></p>\n<p>La firma digital de Preston Gale, ghoul de Halloway.</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</strong> · <em>Principal</em> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}): Capa 2, despacho de Gale: Inteligencia + Investigación (Dificultad 3); un éxito: la firma digital de Preston Gale en las autorizaciones de acceso a Market Street. <span class=\"sbn-origen\">doc 01, 12</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo <span class=\"sbn-origen\">doc 13</span></li></ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota</h4><p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{COT-02} · El Consejo de Cristal: la coterie no debería saber que existe hasta @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02}, cuando encuentra la firma de Gale (doc 08).</p></aside>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 12</span> «La firma de Gale»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Pvm4xZpxzhCtg4rf]{P-11} · Firma de Gale»</li><li><span class=\"sbn-origen\">doc 01</span> «Firma digital de Preston Gale»</li><li><span class=\"sbn-origen\">doc 10</span> El preludio de Celeste (@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01}) llamaba «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Pvm4xZpxzhCtg4rf]{P-11} adelantada» al pago al equipo de ladrones. El doc 11 asigna ese pago a @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} («la que firmó Celeste en su preludio»); manda el doc 11.</li></ul>"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-11"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "jXff6tMXQQbmJg0m",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.jXff6tMXQQbmJg0m",
+      "name": "P-12 · El testimonio de Krell",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-12\"><span class=\"sbn-pista-id\">P-12</span> <span class=\"sbn-pista-nombre\">El testimonio de Krell</span></button></p>\n<p>El testimonio de Krell, si acepta ser testigo contra Halloway.</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</strong> · <em>Principal</em> (@UUID[JournalEntry.lIohEQe1KFTOCQ0U]{El elevador de grano de la Terminal 86}): Con Krell a 3 «pasos», la oferta «Testigo»: Manipulación + Persuasión (Dificultad 3); Krell acepta si David le promete que nadie lo va a destruir después. La oferta «La otra guardia» (@UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} a nivel 4 y @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{P-15}, o el folio 42) también lo convierte en testigo, sin tirada. <span class=\"sbn-origen\">doc 01, 12</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+3</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +3 dados a la tirada del caso en el Consejo (Krell como testigo) <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}</strong>: Krell presente como testigo: +2 dados más a la tirada central. <span class=\"sbn-origen\">doc 12</span></li><li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</strong>: Votación: Thornquist cambia a «no» con @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.hBCw4YOXRWH4DQhg]{P-03} más @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jXff6tMXQQbmJg0m]{P-12} o el testimonio de Krell. Si Krell testifica, Halloway pierde la compostura por primera vez. <span class=\"sbn-origen\">doc 13</span></li></ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota</h4><p>Doc 07 (@UUID[JournalEntry.OmK2qlPVNl758u6h]{PNJ-12}): si la coterie le enseña los folios que Halloway le prometió, Krell cambia de bando (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jXff6tMXQQbmJg0m]{P-12}).</p></aside>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 01</span> «El testimonio de Krell»</li></ul>"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-12"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "c6hzsNRnUCcABsCZ",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.c6hzsNRnUCcABsCZ",
+      "name": "P-13 · El libro de cuentas de Sal",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-13\"><span class=\"sbn-pista-id\">P-13</span> <span class=\"sbn-pista-nombre\">El libro de cuentas de Sal</span></button></p>\n<p>«L.B. — 3 llaves, 2 vendidas, 1 pendiente»</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»} · <strong>También en:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</strong> · <em>Parcial</em> (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}): Errata del doc 11: Thornquist dice que las copias vienen de un perista del SoDo; el nombre del perista vale un favor menor (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.c6hzsNRnUCcABsCZ]{P-13}, a medias). <span class=\"sbn-origen\">doc 11</span></li><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · «Localiza. Evalúa. Ejecuta.»}</strong> · <em>Principal</em>: Astucia + Investigación (Dificultad 3): el libro de cuentas está debajo del escritorio. Entrada del 13 de noviembre: «L.B. — 3 llaves, 2 vendidas (T.), 1 pendiente. Motel?». <span class=\"sbn-origen\">doc 11</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo, junto con @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} (las dos cuentan un solo dado) <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 11</span> «El libro de cuentas de Sal»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.c6hzsNRnUCcABsCZ]{P-13} y @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} · Cuentas de Sal y pago de Cascade»</li></ul>"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-13"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9WkqebVXUF2scLLC",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.9WkqebVXUF2scLLC",
+      "name": "P-14 · El pago desde Cascade Holdings",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-14\"><span class=\"sbn-pista-id\">P-14</span> <span class=\"sbn-pista-nombre\">El pago desde Cascade Holdings</span></button></p>\n<p>El pago a Lonnie, hecho desde Cascade Holdings LLC, una sociedad de Halloway Meridian (la que firmó Celeste en su preludio).</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · El que se guardó una} · <strong>También en:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE}</strong> · <em>Adelantada</em> (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}): Preludio de Celeste: a las 3:30 autoriza «un pago urgente a un proveedor de seguridad» desde una sociedad de Halloway Meridian. Si más adelante revisa la transferencia, es una pista adelantada. <span class=\"sbn-nota\">El doc 10 la llamaba «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Pvm4xZpxzhCtg4rf]{P-11} adelantada»; el doc 11 define @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} como el pago «desde Cascade Holdings LLC… la que firmó Celeste en su preludio», y el doc 13 habla de «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} y la nota del preludio». Manda el doc más nuevo.</span> <span class=\"sbn-origen\">doc 10, 11, 13</span></li><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}</strong> · <em>Adelantada</em> (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}): Si Celeste revisa las cuentas de Cascade esa misma semana (la trampa de Halloway), encuentra @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} antes. <span class=\"sbn-origen\">doc 11</span></li><li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · El que se guardó una}</strong> · <em>Principal</em>: Lonnie: «El dinero llegó de una empresa. Cascade Holdings. Tengo el comprobante.» <span class=\"sbn-origen\">doc 11</span></li><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</strong> · <em>Alternativa</em> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}): Capa 2, despacho de Gale: los registros de pago a Lonnie desde Cascade Holdings, si no los tienen ya. <span class=\"sbn-origen\">doc 12</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo, junto con @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.c6hzsNRnUCcABsCZ]{P-13} (las dos cuentan un solo dado) <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</strong>: Celeste se defiende con la verdad: si encontró @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} y la nota del preludio, demuestra que solo firmó lo que Pell le pasaba: +2 dados a la tirada del caso. (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}) <span class=\"sbn-origen\">doc 13</span></li></ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota</h4><p>Si la coterie usa Dominación sobre Lonnie para que olvide, @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} se pierde salvo que lo interroguen antes (doc 11).</p></aside>\n<h3>En los docs</h3><ul class=\"sbn-lista-variantes\"><li><span class=\"sbn-origen\">doc 11</span> «El pago a Lonnie, hecho desde Cascade Holdings LLC / Pago desde Cascade Holdings»</li><li><span class=\"sbn-origen\">doc 13</span> «@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.c6hzsNRnUCcABsCZ]{P-13} y @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{P-14} · Cuentas de Sal y pago de Cascade»</li></ul>"
+      },
+      "sort": 1400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-14"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "jqTQDyJH3ogdAuWO",
+      "_key": "!journal.pages!j32Ohis1qKJB3jcx.jqTQDyJH3ogdAuWO",
+      "name": "P-15 · Los folios del alemán",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p class=\"sbn-pista-cabecera\"><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-15\"><span class=\"sbn-pista-id\">P-15</span> <span class=\"sbn-pista-nombre\">Los folios del alemán</span></button></p>\n<p>Los folios 41 y 42 del diario de Vance sobre «el alemán», con la nota de Pell y la respuesta de Halloway («No. — C.H.»).</p>\n<h3>Dónde se obtiene</h3>\n<p><strong>Escena principal:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<ul class=\"sbn-lista-obtencion\"><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</strong> · <em>Principal</em> (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}): Capa 3, archivo privado (servidor sin red): copiar los archivos con Inteligencia + Tecnología (Dificultad 3); encontrar los folios entre miles de imágenes con Inteligencia + Investigación (Dificultad 4), o automático buscando la palabra «allemand». <span class=\"sbn-origen\">doc 12</span></li></ul>\n<h3>Dados que aporta</h3><ul class=\"sbn-lista-dados\"><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}: +1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery <span class=\"sbn-origen\">doc 12</span></li><li><span class=\"sbn-dados\">+1</span> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}: +1 dado a la tirada del caso en el Consejo (y la nota «No. — C.H.») <span class=\"sbn-origen\">doc 13</span></li></ul>\n<h3>Efectos</h3><ul><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</strong>: Enseñarle @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{P-15} a Krell suma 3 «pasos» de golpe. La oferta «La otra guardia» necesita @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01} a nivel 4 y @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{P-15} (o que David conozca el folio 42). <span class=\"sbn-origen\">doc 12</span></li><li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda}</strong>: Detectar la falsificación de la carta «M.V.» es automático con @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{P-15} o @UUID[JournalEntry.kzeWNRBY6tgLP37S]{DOC-04}. Si la coterie ya le enseñó @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{P-15} o el correo de C.H. a Montgomery, la escena salta la primera mitad. <span class=\"sbn-origen\">doc 12</span></li></ul>\n<h3>Ayuda de juego</h3><p>Se entrega como ayuda de juego: dos folios del diario de Vance (Marsella, 1976), en francés, con la traducción mecanografiada de Pell (doc 12).</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Nota</h4><p>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07}: la copia 3 de los diarios, en poder de la Justicar, tiene folios que no están en las otras dos, incluidos los que hablan de Krell (doc 09).</p></aside>"
+      },
+      "sort": 1500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "P-15"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

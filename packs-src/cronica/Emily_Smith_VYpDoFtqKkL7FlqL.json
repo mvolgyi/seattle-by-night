@@ -1,0 +1,249 @@
+{
+  "_id": "VYpDoFtqKkL7FlqL",
+  "_key": "!journal!VYpDoFtqKkL7FlqL",
+  "name": "Emily Smith",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 210,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "REF-01",
+      "archivo": "content/personajes/REF-01.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "xvtVH4dD1PLZCIjx",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.xvtVH4dD1PLZCIjx",
+      "name": "Emily Smith",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>«Se quedó con los que nadie quería.»</em> (su lápida, @UUID[JournalEntry.uhtM1iF2WrHHlcd8]{La tumba de Emily Smith})</p>\n<p>Hija de @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}. Personaje de trasfondo, sin actor. Fuente principal: doc 24, «Emily Smith» (Piedras de toque, fuente previa), completado con los docs 00–16.</p>\n<p>Su hija es la razón por la que David se toma tan en serio la Mascarada. Y también la razón por la que, algunas noches, preferiría no despertar.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UBop4IcqtPgEOys7",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.UBop4IcqtPgEOys7",
+      "name": "Lo que fijan los docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Nacimiento:</strong> 14 de febrero de 1958 (@UUID[JournalEntry.woF61Oy8f19xxrkA]{Esquela de Emily Smith}). El 14 de febrero es la fecha de los mensajes de SAFE a Helen (@UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{SAFE: mensajes guardados}); Helen no lo sabe.</li>\n<li><strong>Muerte:</strong> otoño de 1996, en Rainier Valley. Tenía 38 años. La fecha exacta, 21 de octubre de 1996, es provisional (doc 16).</li>\n<li><strong>Esquela</strong> (@UUID[JournalEntry.woF61Oy8f19xxrkA]{Esquela de Emily Smith}, <em>The Puget Courier</em>, 24/10/1996): trabajadora social del Departamento de Servicios para Jóvenes del condado de King; licenciada en Trabajo Social por la Universidad de Washington en 1981; quince años con jóvenes en riesgo en el sur de la ciudad; «la que nunca colgaba el teléfono» y «la que se quedaba con los casos que nadie quería». Nació en San Diego y se crió en Seattle con su madre, Anne Smith, que falleció en 1989 (<em>San Diego y Anne Smith: provisionales, doc 16</em>). Su padre, «el sargento de la Marina David Smith», murió en servicio en 1960, cuando ella tenía dos años. Junto a «No le sobreviven familiares directos», David escribió a mano: <em>Sí.</em></li>\n<li><strong>El asesino:</strong> Ray Dorsey (@UUID[JournalEntry.LqMKPCSaUzAWcGYi]{Ray Dorsey}), un Anarquista que usaba a adolescentes de Rainier Valley como rebaño. Una semana antes, @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa Iturbe} le había dado refugio en el astillero de Everett sin saber lo que iba a hacer. Nunca se lo perdonó.</li>\n<li><strong>La noche:</strong> David llegó minutos tarde y destruyó al Anarquista de un disparo. El refuerzo que limpió la escena mientras David seguía de rodillas fue @UUID[JournalEntry.B4nqUk8dojvCw97H]{Hal Brekke}, con dos años de no-vida. Para la ciudad fue un ajuste de cuentas entre pandillas. Para Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}), el motivo por el que empezó a vigilar a su Sabueso.</li>\n<li><strong>El superviviente:</strong> Marcos Delgado (@UUID[Actor.rOqsigq4dAfIYQMh]{Marcos Delgado}), entonces de quince años, el único chico que sobrevivió. Antes de desmayarse vio a un hombre con una cicatriz en la cara disparar a Dorsey y arrodillarse junto a la trabajadora social. Hoy es consejero de jóvenes en el mismo barrio (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · El chico que sobrevivió}).</li>\n<li><strong>La tumba:</strong> @UUID[JournalEntry.uhtM1iF2WrHHlcd8]{La tumba de Emily Smith}, en un cementerio al norte de la ciudad. Alguien deja flores frescas cada domingo (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cGEW4b4hCJlaDeSK]{GAN-12 · La tumba visitada}).</li>\n<li><strong>En la aventura:</strong> la noche de Emily es una de las dos llegadas tarde de David (la otra, el Larchmont). Se narra solo en recuerdos, nunca en detalle (herramientas de seguridad). Vance la menciona en su diario: «Tiene una hija al otro lado del mar y no habla de ella» (@UUID[JournalEntry.kzeWNRBY6tgLP37S]{Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)}). Con Krell, «Porque yo tenía una hija» suma un paso (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}). Las cartas de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Cartas desde Cluj} llegan cada 14 de febrero.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kgHeDpr12OoJ5Otu",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.kgHeDpr12OoJ5Otu",
+      "name": "Quién era ella",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Nombre:</strong> Emily Smith</li>\n<li><strong>Año de nacimiento:</strong> 1958</li>\n<li><strong>Vínculo con David:</strong> Hija biológica, única.</li>\n<li><strong>Profesión:</strong> Trabajadora social en Seattle, especializada en jóvenes en riesgo, adicciones y violencia doméstica.</li>\n</ul>\n<p>David la conoció viva sólo unos años.</p>\n<p>Cuando la niña tenía 2, él fue abrazado en Haití (1960). Volvió a EE. UU. como <strong>un muerto con nueva cara</strong>, y la versión oficial fue sencilla:</p>\n<blockquote>\n<p>«Tu padre murió en una operación clasificada. Héroe. No hay cuerpo.»</p>\n</blockquote>\n<p>Emily creció con la imagen del héroe ausente, la foto en blanco y negro en el salón, la bandera doblada. David, mientras tanto, la vigilaba desde lejos cuando podía:</p>\n<ul>\n<li>Viéndola salir del colegio desde el coche.</li>\n<li>Siguiendo sus expedientes académicos gracias a contactos.</li>\n<li>Asegurándose de que nunca faltara dinero del todo, mediante «pagos anónimos» o ayudas que siempre aparecían en el momento justo.</li>\n</ul>\n<p>Cuando ella creció:</p>\n<ul>\n<li>Se hizo trabajadora social porque <strong>odiaba ver chavales rotos por la pobreza y la violencia</strong>.</li>\n<li>Tenía el mismo gesto en la mandíbula que él cuando algo le parecía injusto.</li>\n</ul>\n<p>Para David, Emily era:</p>\n<ul>\n<li>Su <strong>Piedra de Toque principal</strong>: prueba viviente de que aún existía algo digno de protección.</li>\n<li>El recordatorio de que <em>alguna vez fue humano de verdad</em>.</li>\n</ul>\n<p>Nunca se reveló. Siempre la vio de lejos. Nunca quiso contaminar su vida con lo que él era.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hQ9GIscYDtGhMjnF",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.hQ9GIscYDtGhMjnF",
+      "name": "La noche que lo rompió todo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>La tragedia empezó como muchas cosas en el Mundo de Tinieblas: con <strong>algo pequeño que nadie tomó en serio</strong>.</p>\n<ul>\n<li>Emily trabajaba con adolescentes de barrios complicados.</li>\n<li>Uno de ellos, un chaval llamado Marcos, empezó a hablar de un tipo que:<ul>\n<li>les daba drogas sin cobrar,</li>\n<li>les pedía «favores raros» de vez en cuando,</li>\n<li>les hacía beber de una botella compartida y luego las noches se volvían borrosas.</li>\n</ul>\n</li>\n</ul>\n<p>Emily, siendo ella, no lo dejó pasar.</p>\n<p>Lo que no sabía es que ese «tipo» era un <strong>vástago Anarquista</strong> descontrolado que usaba a los chicos como <strong>rebaño personal</strong>, y a veces, como mensajeros en asuntos que rozaban la Mascarada.</p>\n<p>Ella hizo lo que sabía hacer:</p>\n<ul>\n<li>Tomó notas,</li>\n<li>habló con otros chavales,</li>\n<li>cruzó nombres,</li>\n<li>empezó a armar un expediente para denunciarlo —a su manera, legal, humana.</li>\n</ul>\n<p>Uno de esos informes, demasiado detallado, terminó en el escritorio equivocado. O mejor dicho: en <strong>la pantalla equivocada</strong>, con cámaras y micrófonos que la Camarilla también vigilaba.</p>\n<h3>El fallo de David</h3>\n<p>David recibió un aviso indirecto:</p>\n<ul>\n<li>«Trabajadora social humana preguntando demasiado por un activo problemático. Anarquista. Posible exposición. Vigila o limpia.»</li>\n</ul>\n<p>Su idea inicial:</p>\n<ul>\n<li>Intervenir rápido,</li>\n<li>sacar al Anarquista del tablero,</li>\n<li>desviar a Emily sin tener que tocarla.</li>\n</ul>\n<p>Pero subestimó dos cosas:</p>\n<ol>\n<li><strong>La paranoia del propio Anarquista</strong>, que se dio cuenta de que alguien lo estaba atando a sus crímenes.</li>\n<li>La rapidez con la que los asuntos humanos pueden empeorar sin necesidad de colmillos.</li>\n</ol>\n<p>La noche clave:</p>\n<ul>\n<li>Emily fue a ver al chaval Marcos a un piso en un bloque medio abandonado.</li>\n<li>El Anarquista decidió <strong>cortar cabos</strong> y convertir la escena en un «ajuste de cuentas de pandillas».</li>\n<li>La policía lo registraría como pelea entre bandas.</li>\n<li>El Anarquista no sabía que David estaba ya en la zona, por orden del Sheriff.</li>\n</ul>\n<p>David llegó tarde por minutos.</p>\n<ul>\n<li>Cuando irrumpió en el piso:<ul>\n<li>el olor a pólvora y sangre ya estaba en el aire,</li>\n<li>las luces del pasillo parpadeaban,</li>\n<li>los cuerpos de dos chavales yacían en el suelo,</li>\n<li>Emily estaba contra la pared, intentando presionar una herida ajena, con las manos llenas de sangre que no era suya.</li>\n</ul>\n</li>\n</ul>\n<p>El Anarquista la tomó de rehén, riéndose a carcajadas, con los colmillos parcialmente desplegados, la Bestia a medio camino.</p>\n<p>David tuvo que elegir:</p>\n<ul>\n<li>Un disparo limpio a la cabeza del Anarquista,</li>\n<li>o intentar acercarse y negociar.</li>\n</ul>\n<p>Eligió el disparo.</p>\n<p>El Anarquista cayó.</p>\n<p>Pero antes, apretó el gatillo con la mano que sostenía la pistola junto al cuello de Emily.</p>\n<p>No fue una muerte dramática. Fue rápida, sucia, sin discurso. Eso es lo que más le duele a David.</p>\n<p>Cuando llegó a ella, ya estaba en el suelo.</p>\n<p>Emily, moribunda, lo miró. Y en ese segundo, con el oído llenándosele de ruido y el mundo estrechándose, <strong>lo reconoció</strong>:</p>\n<p>No como «vampiro», ni como «monstruo».</p>\n<p>Lo reconoció como <strong>su padre</strong>.</p>\n<p>La frase que le salió, con la voz rota, no fue épica. Fue simple:</p>\n<blockquote>\n<p>«Al final sí… viniste…»</p>\n</blockquote>\n<p>Y se apagó.</p>\n<p>David, en teoría, tenía otra opción: podría haberla <strong>abrazado</strong>.</p>\n<p>No lo hizo.</p>\n<p>Sabía que eso no sería salvarla, sino condenarla al mismo infierno que él.</p>\n<p>Y eso es lo que lo persigue de verdad: que decidió que era mejor dejarla morir que arrastrarla a su mundo.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "QYF29riovXGG3DsN",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.QYF29riovXGG3DsN",
+      "name": "Por qué es un Ancla perdida",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Desde entonces:</p>\n<ul>\n<li>Emily ya no está viva.</li>\n<li>Ya no puede llamarla, no puede visitarla, no puede espiar su vida y consolarse pensando <em>«al menos ella sigue ahí»</em>.</li>\n<li>Lo único que queda es:<ul>\n<li>la tumba,</li>\n<li>el dossier del caso,</li>\n<li>los recuerdos de cuando la veía de niña, jugando con juguetes que él pagó anónimamente.</li>\n</ul>\n</li>\n</ul>\n<p>Mecánicamente, como <strong>Ancla perdida / Piedra de Toque muerta</strong>:</p>\n<ul>\n<li><p>Cada vez que la crónica toca temas de:</p>\n<ul>\n<li><strong>hijas</strong>,</li>\n<li>familias rotas,</li>\n<li>gente que muere por estar demasiado cerca de la verdad,</li>\n</ul>\n<p>David puede sufrir:</p>\n<ul>\n<li><strong>tiradas de Remordimiento</strong> (el Narrador puede imponerlas como reacción emocional fuerte),</li>\n<li><strong>Manchas extra (máculas)</strong> si una situación le recuerda demasiado a Emily y responde con una dureza desproporcionada o, al contrario, con una compasión que rompa su código.</li>\n</ul>\n</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CM6YZnSbRXIhfrLI",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.CM6YZnSbRXIhfrLI",
+      "name": "Pesadillas",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Las pesadillas no son sutiles. Son variaciones del mismo infierno:</p>\n<ol>\n<li><strong>La pesadilla del pasillo</strong><ul>\n<li>Está en el mismo bloque de pisos.</li>\n<li>Oye disparos, pasos, voces jóvenes.</li>\n<li>Siempre llega tarde por unos segundos.</li>\n<li>A veces ve a Emily de pie, a veces ya en el suelo, pero lo peor es cuando ella le da la espalda y sale por una puerta que David nunca alcanza.</li>\n</ul>\n</li>\n<li><strong>La pesadilla del Abrazo que no fue</strong><ul>\n<li>Emily está moribunda y él la alimenta con su sangre.</li>\n<li>Ella abre los ojos, se levanta…</li>\n<li>pero no es su hija: es una Brujah desatada que lo odia por haberla convertido.</li>\n<li>Lo acusa: «No me salvaste. Me robaste la muerte.»</li>\n<li>Se despierta con Ansia alta, las manos clavadas en el colchón.</li>\n</ul>\n</li>\n<li><strong>La pesadilla del reemplazo</strong><ul>\n<li>Ve a Helen, o a cualquier otro humano joven, en el lugar de Emily.</li>\n<li>Vuelve a repetir la escena del piso.</li>\n<li>A veces falla el disparo, a veces mata al inocente, a veces mueren todos.</li>\n<li>La sensación al despertar es siempre la misma: <em>«Voy a volver a hacerlo. Voy a repetir el patrón.»</em></li>\n</ul>\n</li>\n</ol>\n<p>El Narrador puede usar estas pesadillas para:</p>\n<ul>\n<li>justificar <strong>penalizadores puntuales a la primera tirada de Resolución/Compostura</strong> al despertar,</li>\n<li>forzar tiradas de <strong>Remordimiento</strong> cuando su acción presente recuerde demasiado a esa noche.</li>\n</ul>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "d6XexpXY8cCkdBCw",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.d6XexpXY8cCkdBCw",
+      "name": "Cómo afecta a David en mesa",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Siente una mezcla de <strong>odio y necesidad</strong> hacia su rol de ejecutor:<ul>\n<li>sabe que esa vida mató a su hija indirectamente,</li>\n<li>pero también cree que, si hubiera sido más rápido, más brutal, más inflexible… quizá la habría salvado.</li>\n</ul>\n</li>\n<li>Con humanas jóvenes que le recuerdan a Emily:<ul>\n<li>tiende a ser <strong>sobreprotector</strong>,</li>\n<li>o brutalmente frío, para no repetir el apego.</li>\n</ul>\n</li>\n<li>Cuando alguien le sugiere «usar» a mortales como cebo, como rehenes, como herramientas:<ul>\n<li>puedes marcar una <strong>tirada para resistir Frenesí o Remordimiento</strong>,</li>\n<li>o hacer que su ira Brujah se encienda contra quien trate a los mortales como desechables.</li>\n</ul>\n</li>\n</ul>\n<p>Emily, como Ancla perdida, ya no está disponible para «subirle la Humanidad». Lo que hace es lo contrario:</p>\n<ul>\n<li>Recordarle que <strong>puede perderlo todo incluso cuando hace «lo correcto»</strong>.</li>\n<li>Volver más punzante la pregunta: «¿De verdad vale la pena la Mascarada, si el coste son vidas como la de ella?»</li>\n</ul>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "nXxzalpApPVWf62p",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.nXxzalpApPVWf62p",
+      "name": "Diferencias con los docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Seattle y la infancia.</strong> El doc 24 dice que David la veía salir del colegio desde el coche y la vigilaba de cerca durante su crecimiento (años 60 y 70). La cronología del doc 17 lo pone fuera de EE. UU. de 1970 a 2010, el folio 14 de @UUID[JournalEntry.kzeWNRBY6tgLP37S]{Diario de M. Vance, Marsella, 1963, folio 14 (copia mecanografiada)} lo sitúa en Marsella en 1963 con «una hija al otro lado del mar», y el doc 16 da como provisional que llegó a Seattle en los años 80.</li>\n<li><strong>La madre.</strong> El doc 24 no nombra a la madre ni dice dónde nació Emily; Anne Smith y San Diego vienen de @UUID[JournalEntry.woF61Oy8f19xxrkA]{Esquela de Emily Smith} y son provisionales (doc 16).</li>\n<li><strong>El padre en la esquela.</strong> @UUID[JournalEntry.woF61Oy8f19xxrkA]{Esquela de Emily Smith} lo llama «sargento de la Marina»; las fuentes previas, comando SEAL.</li>\n<li><strong>El Anarquista.</strong> El doc 24 no le da nombre; los docs 00–16 lo llaman Ray Dorsey (@UUID[JournalEntry.LqMKPCSaUzAWcGYi]{Ray Dorsey}) y añaden a Rosa y a Hal.</li>\n<li><strong>El chico.</strong> El doc 24 habla de «dos chavales» muertos en el suelo y de Marcos; en los docs 00–16 Marcos Delgado es el único chico que sobrevivió (coincide).</li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

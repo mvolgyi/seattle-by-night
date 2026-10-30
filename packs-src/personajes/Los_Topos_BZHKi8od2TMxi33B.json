@@ -1,0 +1,222 @@
+{
+  "_id": "BZHKi8od2TMxi33B",
+  "_key": "!actors!BZHKi8od2TMxi33B",
+  "name": "Los Topos",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 250,
+  "prototypeToken": {
+    "name": "Los Topos",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.NDI68PA4J59Be6ts",
+      "Actor.zGqiDTb68QRTrlLv",
+      "Actor.l3z7Cp6AX0CmtLI6"
+    ],
+    "headers": {
+      "concept": "Corredores",
+      "chronicle": "Seattle by Night",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 2
+    },
+    "lien": {
+      "value": 3
+    },
+    "portillon": {
+      "value": 5
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{Perfil: Los Topos}</p><blockquote><p><em>Todo se vende abajo.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Tipo</th><td>Corredores</td></tr><tr><th>Dominio</th><td>Las Galerías Selladas</td></tr><tr><th>Lugar</th><td>@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}</td></tr><tr><th>Miembros</th><td>@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}, @UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra «Estática» Lund}, @UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}</td></tr></tbody></table><p>Los corredores del Seattle subterráneo: la piedra de 1889 y los cables de 2026.</p><h3>Dominio</h3><ul><li><strong>Caza (Chasse) 2:</strong> personas sin hogar, a cambio de refugio</li><li><strong>Lien 3:</strong> porteros, limpiadores, técnicos de toda la ciudad</li><li><strong>Portillon 5:</strong> nadie entra en las Galerías sin que Thornquist lo sepa</li></ul>",
+    "notes": "",
+    "privatenotes": ""
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 4"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 4</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "oqjiybDBRh3g0dJs",
+      "_key": "!actors.items!BZHKi8od2TMxi33B.oqjiybDBRh3g0dJs"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 4"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 4</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "OTjygjgBn8goUCdK",
+      "_key": "!actors.items!BZHKi8od2TMxi33B.OTjygjgBn8goUCdK"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 3 (el subterráneo)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 3 (el subterráneo)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "M9BhB5wrADN8arxQ",
+      "_key": "!actors.items!BZHKi8od2TMxi33B.M9BhB5wrADN8arxQ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliados 2 (los sangre débil)"
+        }
+      },
+      "name": "Aliados",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliados 2 (los sangre débil)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "XsmfWGdLHvrcyFHr",
+      "_key": "!actors.items!BZHKi8od2TMxi33B.XsmfWGdLHvrcyFHr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 2"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "JZLa1Az5J05ImNow",
+      "_key": "!actors.items!BZHKi8od2TMxi33B.JZLa1Az5J05ImNow"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-04",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t",
+      "lema": "Todo se vende abajo."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

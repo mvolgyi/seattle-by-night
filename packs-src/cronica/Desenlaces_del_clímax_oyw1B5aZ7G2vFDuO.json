@@ -1,0 +1,169 @@
+{
+  "_id": "oyw1B5aZ7G2vFDuO",
+  "_key": "!journal!oyw1B5aZ7G2vFDuO",
+  "name": "Desenlaces del clímax",
+  "folder": "FKeYwpEhGbx72MA5",
+  "sort": 220,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AVE-01-FIN",
+      "archivo": "content/cronica/aventura/22-desenlaces.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "tvJYdIffSSdoY8AN",
+      "_key": "!journal.pages!oyw1B5aZ7G2vFDuO.tvJYdIffSSdoY8AN",
+      "name": "Desenlaces del clímax",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El final depende de dos cosas: cómo terminó el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}) y qué pasó con el Expediente (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}). El Narrador cruza las dos en esta tabla.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th></th>\n<th>La coterie se queda el Expediente</th>\n<th>La coterie destruye el Expediente</th>\n<th>El Expediente llega a Duval</th>\n<th>El Expediente llega a FIRSTLIGHT</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Halloway pierde o es expuesto</strong></td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · La verdad ante el trono}</td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · La verdad ante el trono} + @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Fuego purificador}</td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · La verdad ante el trono} (Duval lo devuelve)</td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Marea roja}</td>\n</tr>\n<tr>\n<td><strong>Halloway gana</strong></td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · El Sabueso cambia de amo} parcial (Halloway no tiene su prueba ante la Justicar: su regencia es débil)</td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Fuego purificador}</td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · El Sabueso cambia de amo}</td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Marea roja}</td>\n</tr>\n<tr>\n<td><strong>La coterie pactó con Halloway</strong></td>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · El Sabueso cambia de amo}</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UnOqmjERvnxNb7gL",
+      "_key": "!journal.pages!oyw1B5aZ7G2vFDuO.UnOqmjERvnxNb7gL",
+      "name": "FIN-A · La verdad ante el trono",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} cae. El Príncipe @UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Whitmore} lo declara traidor ante la Primogenitura y le da a elegir entre el exilio o la Caza de Sangre. Si la coterie lo capturó, el Sheriff lo destruye esa misma noche en la granja (@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}), sin testigos. Si huyó, se convierte en un enemigo fuera de la ciudad con recursos, paciencia y rencor.</p>\n<p><strong>Consecuencias:</strong></p>\n<ul>\n<li>Cada miembro de la coterie gana Estatus (Camarilla) +1. @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}, +2 si fue él quien presentó el caso.</li>\n<li>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Montgomery} le debe un favor mayor a la coterie. Tacha el primer nombre de la lista.</li>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-2\" data-motivo=\"Halloway cae como ARQUERO (FIN-A)\"><span class=\"sbn-termometro-cambio\">−2</span> <span class=\"sbn-termometro-motivo\">Halloway cae como ARQUERO (FIN-A)</span></button> (FIRSTLIGHT pierde a su fuente).</li>\n<li>@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Voight} propone a la coterie una alianza estable contra la Inquisición: Contactos 1 o Mawla (Voight) 1 para quien lo acepte.</li>\n<li>Halloway Meridian Capital queda descabezada. @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste}, si sobrevivió y se puso del lado de la coterie, puede quedarse con una parte: Recursos +2. Su Vínculo con Halloway se rompe.</li>\n<li>Whitmore sigue en el trono, pero todos saben que lo salvó otro. Su Estatus baja y la ciudad empieza a hablar de sucesión.</li>\n<li><strong>Si además se destruyó el Expediente</strong> (FIN-A + FIN-C): se aplican también las consecuencias de @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Fuego purificador} para Helen.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "FIN-A"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "RqeQkW5KfFjPYFhg",
+      "_key": "!journal.pages!oyw1B5aZ7G2vFDuO.RqeQkW5KfFjPYFhg",
+      "name": "FIN-B · El Sabueso cambia de amo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} se convierte en Regente de Seattle, con el reconocimiento de la Justicar @UUID[JournalEntry.gSMgBLLYggWyAN2W]{Panhard} si el Expediente llegó a @UUID[JournalEntry.CRdeqlwyfpxGPyzT]{Duval}. @UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Whitmore} abdica «por motivos de salud», como @UUID[JournalEntry.FOgT9FF3NF7ZHdCa]{Grange} en 1962, y desaparece de la ciudad. Si la coterie pactó con Halloway, @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David} es nombrado Sheriff y la coterie recibe el dominio de Harbor Island.</p>\n<p><strong>Consecuencias:</strong></p>\n<ul>\n<li>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Montgomery} se convierte en enemigo declarado. Esa misma noche empieza a cumplir su lista. La crónica pasa a ser una guerra fría entre la nueva corte y el viejo Sheriff y sus Lobos (@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{COT-01 · Los Lobos de Whitmore}).</li>\n<li>Si David pactó: Estatus +2, pero 2 Manchas por traicionar a quien lo protegió. Tirada de Remordimiento al final de la sesión. @UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Bear} le pide una conversación esa noche, en el hangar.</li>\n<li>FIRSTLIGHT sigue teniendo a ARQUERO dentro de la corte, ahora como Príncipe. La Inquisición y la Camarilla de Seattle están, sin saberlo, del mismo lado. Termómetro sin cambios, pero no vuelve a subir mientras Halloway reine.</li>\n<li>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste}, si fue entregada como traidora y sobrevivió, queda bajo custodia de la nueva Sheriff... que es la coterie.</li>\n<li>@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} sigue viva, pero el nuevo Príncipe sabe quién es. La crónica tiene un problema permanente.</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "FIN-B"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xgVY2zlstK7IN1Rp",
+      "_key": "!journal.pages!oyw1B5aZ7G2vFDuO.xgVY2zlstK7IN1Rp",
+      "name": "FIN-C · Fuego purificador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El Expediente desaparece: tirado al estrecho, quemado o borrado. La coterie también se ocupa de las USB, los duplicados de @UUID[JournalEntry.dj4gIszHHTN1QRKk]{Thornquist} y la base de datos de sujetos fríos. Nadie puede usarlo ya: ni @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}, ni la Inquisición, ni la Justicar.</p>\n<p><strong>Consecuencias:</strong></p>\n<ul>\n<li><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-3\" data-motivo=\"El Expediente se destruye (FIN-C)\"><span class=\"sbn-termometro-cambio\">−3</span> <span class=\"sbn-termometro-motivo\">El Expediente se destruye (FIN-C)</span></button>. La Mascarada de Seattle está más segura que nunca.</li>\n<li>Doce años de trabajo de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} desaparecen. Las madres de Lake City, Danny Ruiz, todos los casos que nadie más miró. Si se lo cuentan, Helen tiene que decidir qué hacer con lo que queda: su memoria. Tirada de Remordimiento para @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}, y para @UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia} si se juega. La relación de Piedra de toque queda dañada: el Narrador y el jugador de David deciden si se puede reparar.</li>\n<li>Si Halloway ganó el Consejo, su regencia no tiene la prueba que pedía la Justicar: @UUID[JournalEntry.gSMgBLLYggWyAN2W]{Panhard} no la reconoce. Seattle queda en un limbo político, con dos Vástagos que dicen ser la autoridad. Gancho de crónica.</li>\n<li>La coterie gana +1 Humanidad si alguien de ella se ofrece a contárselo a Helen en persona, sin Disciplinas.</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "FIN-C"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "on9MlxGjJpFF8yf2",
+      "_key": "!journal.pages!oyw1B5aZ7G2vFDuO.on9MlxGjJpFF8yf2",
+      "name": "FIN-D · Marea roja",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>El Expediente, o una parte suficiente de él, llega a manos de @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}. FIRSTLIGHT tiene ahora doce años de pruebas, mapas de caza, fotos y nombres. La Célula Puget pide refuerzos a la sede nacional. En dos semanas hay tres células en la ciudad.</p>\n<p><strong>Consecuencias:</strong></p>\n<ul>\n<li>Termómetro 10. Purga. En la primera semana cae al menos un refugio de la Camarilla (el Narrador elige; si la coterie no se mueve, el suyo).</li>\n<li>Todos los PJ que aparecen en el Expediente pierden Máscara −1 y Refugio −1 hasta que se reubiquen.</li>\n<li>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Whitmore}, si sigue siendo Príncipe, cierra el Elíseo. La corte se dispersa. @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}, si sobrevivió, ya no tiene nada que ganar: desaparece de la ciudad.</li>\n<li>@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} recibe una visita de Okafor. Le ofrecen trabajar para ellos. Lo que decida es el primer gancho de la nueva crónica.</li>\n</ul>\n<aside class=\"sbn-recuadro\"><h4>Cruce con Cazador</h4><p><strong>La crónica cambia de tono:</strong> supervivencia. Si querés cruzarla con <em>Cazador: La Venganza</em> (H5), es el momento: la coterie pasa a ser la presa, y los cazadores de tu suplemento, los perseguidores.</p>\n</aside>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "FIN-D"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

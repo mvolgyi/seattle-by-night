@@ -1,0 +1,109 @@
+{
+  "_id": "iyojT7kJHH23BWLd",
+  "_key": "!journal!iyojT7kJHH23BWLd",
+  "name": "La Galería de Vidrio (Elíseo)",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-03",
+      "archivo": "content/ciudad/LUG-03.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "ID6yF177fokZpSmj",
+      "_key": "!journal.pages!iyojT7kJHH23BWLd.ID6yF177fokZpSmj",
+      "name": "La Galería de Vidrio (Elíseo)",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Seattle Center · Mapa: sí</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ii9kr82A0rahb18r",
+      "_key": "!journal.pages!iyojT7kJHH23BWLd.ii9kr82A0rahb18r",
+      "name": "Leer en voz alta",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>La Galería es un pabellón de 1962 de cristal y acero, con paredes curvas que de noche reflejan la ciudad. Dentro, cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas: rojas, ámbar, negras. La luz las atraviesa y pinta el suelo de colores que se mueven cuando alguien pasa. Hay música de cuerdas en algún lugar. En la entrada, una mujer elegante con un libro de registro abierto les tiende una bandeja de terciopelo: «Sus teléfonos, por favor».</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CQIIAtnT4aSKCsHf",
+      "_key": "!journal.pages!iyojT7kJHH23BWLd.CQIIAtnT4aSKCsHf",
+      "name": "Notas del Narrador",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Estructura:</strong> vestíbulo (la Guardiana y la bandeja de dispositivos), gran sala de las medusas, terraza con vistas a la torre de la Feria, salón privado del Príncipe y archivo de la Guardiana en el sótano.</p>\n<p><strong>Dueño:</strong> una fundación cultural del Príncipe. El personal mortal está formado por ghouls (@UUID[JournalEntry.ZUud4rgap2FTsiKB]{Ley 3}).</p>\n<p><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} (Noche de Elíseo). Si el Consejo de @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura} se traslada aquí en lugar de a la Torre Halloway, es señal de que el Príncipe recuperó la iniciativa.</p>\n<p><strong>Detalle:</strong> las paredes de cristal hacen imposible saber quién escucha desde fuera. Una tirada de <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.awareness\" data-dificultad=\"4\" data-label=\"Astucia + Consciencia (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Astucia + Consciencia (Dificultad 4)</a> permite notar que, desde la terraza, alguien con un teleobjetivo podría leer los labios del salón privado.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

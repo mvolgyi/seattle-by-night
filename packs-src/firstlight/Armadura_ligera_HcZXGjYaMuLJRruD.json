@@ -1,0 +1,37 @@
+{
+  "_id": "HcZXGjYaMuLJRruD",
+  "_key": "!items!HcZXGjYaMuLJRruD",
+  "name": "Armadura ligera",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Blindaje</th><td>3</td></tr></tbody></table><p>Blindaje 3.</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "Seattle by Night",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "armorvalue": 3,
+    "quantity": 1
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "armadura-ligera",
+      "agravado": false
+    }
+  },
+  "folder": "8f5Z7aX8xIgBfFha",
+  "sort": 100,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

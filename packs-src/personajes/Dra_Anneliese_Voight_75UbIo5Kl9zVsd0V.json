@@ -1,0 +1,837 @@
+{
+  "_id": "75UbIo5Kl9zVsd0V",
+  "_key": "!actors!75UbIo5Kl9zVsd0V",
+  "name": "Dra. Anneliese Voight",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "yszv6jhJ4tmh4rx0",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Dra. Anneliese Voight",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Regente de la Capilla del Observatorio y Primogénita Tremere",
+      "chronicle": "Seattle by Night",
+      "ambition": "Que la Camarilla de Seattle sobreviva a la era de los datos.",
+      "desire": "",
+      "touchstones": "<h3>Convicciones</h3><ul><li>Nunca ignorar un patrón</li><li>El conocimiento sin acción es complicidad</li></ul><h3>Piedras de toque</h3><ul><li><strong>Mateo Ruiz-Okoye</strong>: Doctorando de epidemiología, a quien dirige la tesis por correo sin que sepa quién es.</li></ul>",
+      "sire": "Regente Friedrich Ahlers de Viena (destruido en 1945)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1891",
+        "death": "1924"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Perfil: Dra. Anneliese Voight}</p><blockquote><p><em>«La epidemia nunca empieza con el primer muerto. Empieza con el primer dato que nadie quiso mirar.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La que mira la red</td></tr><tr><th>Concepto</th><td>Regente de la Capilla del Observatorio y Primogénita Tremere</td></tr><tr><th>Clan</th><td>Tremere</td></tr><tr><th>Secta</th><td>Camarilla</td></tr><tr><th>Sire</th><td>Regente Friedrich Ahlers de Viena (destruido en 1945)</td></tr><tr><th>Nacimiento</th><td>1891</td></tr><tr><th>Abrazo</th><td>1924</td></tr><tr><th>Ambición</th><td>Que la Camarilla de Seattle sobreviva a la era de los datos.</td></tr></tbody></table><h3>Semblante</h3><p>Unos treinta y tres años aparentes. Menuda, pelo muy corto de su color natural, gafas sin montura, jersey negro de cuello alto y bata de laboratorio; acento vienés.</p>",
+    "appearance": "<p>Unos treinta y tres años aparentes. Menuda, pelo muy corto de su color natural, gafas sin montura, jersey negro de cuello alto y bata de laboratorio; acento vienés.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Nota de edición: el doc 06 decía «aparenta unos cincuenta años» y «pelo blanco»; se decidió la edad al Abrazo (unos 33, pelo de su color natural).</p>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 4,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "auspex": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "dominate": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "sorcery": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "rituals": {
+        "value": 0,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 5,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Epidemiología",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "science": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Estadística",
+            "value": 1,
+            "paths": [
+              "skills.science"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Patrones",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "medicine": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Taumaturgia",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "politics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Redes",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "tremere"
+        }
+      },
+      "name": "Tremere",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "ArqEsV9sRWmSAIRT",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.ArqEsV9sRWmSAIRT"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "dD8D4HA8tDCg5OL5",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.dD8D4HA8tDCg5OL5"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "Z7009lj2I6rKKibY",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Z7009lj2I6rKKibY"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Share the Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Share the Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "Z9IpkqjZlmMzni3f",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Z9IpkqjZlmMzni3f"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Compel",
+          "homebrew": false
+        }
+      },
+      "name": "Compel",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "qQqELb2ddDjTsAr9",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.qQqELb2ddDjTsAr9"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Mesmerize",
+          "homebrew": false
+        }
+      },
+      "name": "Mesmerize",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominación 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "NJmKEFTZ7vlxNhlq",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.NJmKEFTZ7vlxNhlq"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Corrosive Vitae",
+          "homebrew": false
+        }
+      },
+      "name": "Corrosive Vitae",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Hechicería de sangre 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "c2t46zU74KDu9TDm",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.c2t46zU74KDu9TDm"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Extinguish Vitae",
+          "homebrew": false
+        }
+      },
+      "name": "Extinguish Vitae",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Hechicería de sangre 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "IFYBvBS5gF0H605O",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.IFYBvBS5gF0H605O"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Blood of Potency",
+          "homebrew": false
+        }
+      },
+      "name": "Blood of Potency",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Hechicería de sangre 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "r72u3oRBxG8ChLlc",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.r72u3oRBxG8ChLlc"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Theft of Vitae",
+          "homebrew": false
+        }
+      },
+      "name": "Theft of Vitae",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Hechicería de sangre 4. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "fBobBvBZpjWElmND",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.fBobBvBZpjWElmND"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Ward against Ghouls",
+          "homebrew": false
+        }
+      },
+      "name": "Ward against Ghouls",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Rituales 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "rituals",
+        "selected": false
+      },
+      "_id": "Q90Tik3z0h3iYXOV",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Q90Tik3z0h3iYXOV"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Communicate with Kindred Sire",
+          "homebrew": false
+        }
+      },
+      "name": "Communicate with Kindred Sire",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Rituales 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "rituals",
+        "selected": false
+      },
+      "_id": "JIIz7zqEAhM7LQfw",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.JIIz7zqEAhM7LQfw"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Blood Walk",
+          "homebrew": false
+        }
+      },
+      "name": "Blood Walk",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Rituales 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "rituals",
+        "selected": false
+      },
+      "_id": "3Qt4mv4PmaaixBRR",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.3Qt4mv4PmaaixBRR"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 3 (la Capilla del Observatorio en Queen Anne, con salvaguardas de hechicería de sangre; LUG-13)"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 3 (la Capilla del Observatorio en Queen Anne, con salvaguardas de hechicería de sangre; LUG-13)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "xZpGtx5QqwRr0Yks",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.xZpGtx5QqwRr0Yks"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 3 (los servidores de la cúpula)"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 3 (los servidores de la cúpula)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "QV1MgCr4DU9EvxuW",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.QV1MgCr4DU9EvxuW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 2 (tecnología)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 2 (tecnología)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "e0CdUwBEIhrzjClH",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.e0CdUwBEIhrzjClH"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influencia 2 (la universidad, a través del laboratorio de investigación)"
+        }
+      },
+      "name": "Influencia",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influencia 2 (la universidad, a través del laboratorio de investigación)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "THYPWoxFXpk5D3bG",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.THYPWoxFXpk5D3bG"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Máscara 2 (Dra. A. Voight, directora de un laboratorio privado de epidemiología computacional)"
+        }
+      },
+      "name": "Máscara",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Máscara 2 (Dra. A. Voight, directora de un laboratorio privado de epidemiología computacional)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "9ztaiSjzKilbIhJA",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.9ztaiSjzKilbIhJA"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-15",
+      "journal": "JournalEntry.yaAsxCkCLf8CANL5",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

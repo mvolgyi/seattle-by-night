@@ -1,0 +1,1106 @@
+{
+  "pistas": [
+    {
+      "id": "P-01",
+      "nombre": "Ladrones profesionales mortales; cámaras en bucle",
+      "escena": "A1-E01",
+      "texto": "Los ladrones eran profesionales mortales y las cámaras del edificio entraron en bucle. (Doc 10: las cámaras desconectadas de 2:52 a 3:03.)",
+      "otrasEscenas": [
+        "A0-E01"
+      ],
+      "obtencion": [
+        {
+          "escena": "A0-E01",
+          "tipo": "preludio",
+          "como": "Preludio de Ezra: a las 2:52 ve apagarse un bloque de cámaras Gale Sentinel en Ballard durante once minutos.",
+          "pj": "PJ-03",
+          "origen": "10"
+        },
+        {
+          "escena": "A0-E01",
+          "tipo": "principal",
+          "como": "Inteligencia + Tecnología (Dificultad 3): la cámara de Helen tiene un registro de desconexión de 2:52 a 3:03.",
+          "lugar": "LUG-05",
+          "origen": "10"
+        },
+        {
+          "escena": "A1-E01",
+          "tipo": "principal",
+          "como": "Los ladrones eran profesionales mortales y las cámaras entraron en bucle. Inteligencia + Investigación (Dificultad 3) al registrar el apartamento: abrieron con ganzúa electrónica y sabían dónde mirar (P-01, reforzado); con 3 o más éxitos, el repetidor adhesivo en el marco de la puerta.",
+          "lugar": "LUG-05",
+          "origen": "01, 10"
+        },
+        {
+          "escena": "A1-E01",
+          "tipo": "documento",
+          "como": "DOC-01: las cámaras que «no grabaron nada» son la primera señal de Gale Sentinel.",
+          "documento": "DOC-01",
+          "origen": "04"
+        },
+        {
+          "escena": "CAP-00",
+          "tipo": "relato",
+          "como": "Las luces apagadas de las cámaras Gale Sentinel son P-01 y llevan a A1-E05.",
+          "origen": "03"
+        }
+      ]
+    },
+    {
+      "id": "P-02",
+      "nombre": "Vitae de ghoul en el picaporte",
+      "escena": "A1-E01",
+      "texto": "Hay un olor a Vitae ajena en el picaporte: es de un ghoul. (Doc 10: Vitae de ghoul en el picaporte y en el pasillo.)",
+      "otrasEscenas": [
+        "A0-E01"
+      ],
+      "obtencion": [
+        {
+          "escena": "A0-E01",
+          "tipo": "principal",
+          "como": "Resolución + Consciencia (Dificultad 2), o automático con Auspex 1: el olor a monedas del pasillo es Vitae aguada, sin Bestia detrás. Auspex 4 (Toque espiritual) sobre el picaporte: la marca de un ghoul que espera su próxima dosis.",
+          "lugar": "LUG-05",
+          "origen": "10"
+        },
+        {
+          "escena": "A1-E01",
+          "tipo": "principal",
+          "como": "Olor a Vitae ajena en el picaporte: es de un ghoul (si no se encontró antes).",
+          "lugar": "LUG-05",
+          "origen": "01, 10"
+        },
+        {
+          "escena": "CAP-00",
+          "tipo": "relato",
+          "como": "El que olfatea la escalera es un ghoul de Gale (MEN-04). Su Vitae es el rastro P-02.",
+          "origen": "03"
+        }
+      ],
+      "nota": "Si la coterie se lleva a Helen enseguida, A1-E01 ocurre en el hangar y se pierde P-02 si no se detectó (doc 10)."
+    },
+    {
+      "id": "P-03",
+      "nombre": "La técnica de la *Furia Controlada*",
+      "escena": "A1-E02",
+      "texto": "Los golpes que destruyeron al Nosferatu menor del muelle 46 siguen la doctrina de la *Furia Controlada*.",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A1-E02",
+          "tipo": "principal",
+          "como": "Inteligencia + Pelea (Dificultad 4): abolladuras a la altura del pecho, siempre en la misma secuencia (costillas, esternón, garganta). David, con LOR-01 a nivel 4, lo reconoce sin tirar.",
+          "origen": "01, 10"
+        },
+        {
+          "escena": "LOR-01",
+          "tipo": "loresheet",
+          "como": "LOR-01 nivel 4 «La guardia completa»: reconocés la doctrina en cuanto la ves.",
+          "origen": "08"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Thornquist cambia a «no» si la coterie le demuestra que Krell, el hombre de Halloway, destruyó a Pike (P-03 más P-12 o el testimonio de Krell).",
+          "origen": "13"
+        }
+      ]
+    },
+    {
+      "id": "P-04",
+      "nombre": "Copia parcial del Expediente en un USB",
+      "escena": "A1-E02",
+      "texto": "En el cadáver hay un USB con una copia parcial del Expediente.",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A1-E02",
+          "tipo": "principal",
+          "como": "Astucia + Consciencia (Dificultad 3): la memoria USB está en el bolsillo interior de la chaqueta, entre las cenizas. Cogerla sin que los agentes lo vean: Destreza + Latrocinio (Dificultad 3).",
+          "origen": "01, 10"
+        }
+      ],
+      "nota": "Es la USB 1 (carpetas 2014–2018, incluye el Larchmont). Si la coterie no la consigue, entra en la cadena de custodia y Hale la copia en la Noche 3 (Termómetro +1). Montgomery la confisca en A1-E03 si se la enseñan, salvo Manipulación + Persuasión (Dificultad 3) (docs 10 y 11)."
+    },
+    {
+      "id": "P-05",
+      "nombre": "Jun, la mensajera sangre débil",
+      "escena": "A1-E04",
+      "texto": "Thornquist confirma que hay copias del Expediente en el mercado y que la mensajera es una sangre débil, Jun.",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A1-E04",
+          "tipo": "principal",
+          "como": "Manipulación + Persuasión (Dificultad 4) con Thornquist: con un éxito confirma que hay copias a la venta; con 3 o más, revela que se las trajo Jun y dónde duerme. Ezra tiene +2 dados.",
+          "lugar": "LUG-04",
+          "origen": "01, 10"
+        }
+      ]
+    },
+    {
+      "id": "P-06",
+      "nombre": "Pedido de datos de Gale Sentinel sin registrar",
+      "escena": "A1-E05",
+      "texto": "Las cámaras de timbre del edificio de Helen son todas Gale Sentinel. La empresa recibió un pedido de datos que no figura en ningún registro. (Doc 10: autorizado por \"P.G.\"; a medias en A1-E01, la IP del Eastside.)",
+      "otrasEscenas": [
+        "A1-E01",
+        "A3-E02",
+        "A0-E01"
+      ],
+      "obtencion": [
+        {
+          "escena": "A1-E01",
+          "tipo": "parcial",
+          "como": "Inteligencia + Tecnología (Dificultad 4) sobre el portátil de Helen: la nube se borró desde una IP de un centro de datos del Eastside (P-06, a medias).",
+          "origen": "10"
+        },
+        {
+          "escena": "A1-E05",
+          "tipo": "principal",
+          "como": "Inteligencia + Investigación (Dificultad 3): pedido del 9 de noviembre, a las 4:12, de acceso a la red del edificio de Market Street, sin contrato, autorizado por «P.G.».",
+          "lugar": "LUG-07",
+          "origen": "01, 10"
+        },
+        {
+          "escena": "A3-E02",
+          "tipo": "alternativa",
+          "como": "Si se salta A1-E05, la misma información aparece en A3-E02.",
+          "lugar": "LUG-07",
+          "origen": "10"
+        },
+        {
+          "escena": "A0-E01",
+          "tipo": "documento",
+          "como": "DOC-05: el mensaje del 9 de noviembre («Cambiá la cerradura»). Fue Gale Sentinel (P-06).",
+          "documento": "DOC-05",
+          "origen": "04"
+        }
+      ]
+    },
+    {
+      "id": "P-07",
+      "nombre": "Halloway sabe lo del agua fría",
+      "escena": "A2-E01",
+      "texto": "Halloway menciona a Vance con un detalle que no debería conocer. (Doc 11: Halloway sabe lo del agua fría.)",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A2-E01",
+          "tipo": "principal",
+          "como": "Inteligencia + Academicismo (Dificultad 3), o automático para David: Halloway cita «el agua fría por las mañanas», que solo está en los diarios privados de Vance. Astucia + Perspicacia (Dificultad 4) para notar que miente al explicarlo.",
+          "lugar": "LUG-03",
+          "origen": "01, 11"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo",
+          "origen": "13"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A2-E03",
+          "efecto": "Ganarse a la asamblea de Salitre: la Dificultad baja 1 por cada pista que traiga la coterie (P-08 o P-07).",
+          "origen": "11"
+        }
+      ],
+      "nombres": {
+        "01": "Halloway sabe demasiado sobre Vance",
+        "11": "Halloway sabe lo del agua fría",
+        "13": "P-07 · Halloway sabe lo del agua fría"
+      }
+    },
+    {
+      "id": "P-08",
+      "nombre": "La guardia invertida",
+      "escena": "A2-E02",
+      "texto": "Una tirada de Inteligencia + Pelea (Dificultad 4) revela que la técnica está mal: Krell golpea con la guardia invertida, como Vance enseñaba a los alumnos que no terminaban el entrenamiento. (Doc 10: indicio en A1-E02.)",
+      "otrasEscenas": [
+        "A1-E02",
+        "A3-E01",
+        "A3-E03"
+      ],
+      "obtencion": [
+        {
+          "escena": "A1-E02",
+          "tipo": "indicio",
+          "como": "Con 4 o más éxitos en Inteligencia + Pelea, o LOR-01 a nivel 4 y un éxito en Astucia + Pelea (Dificultad 3): el último golpe entró desde la izquierda, como si el atacante tuviera la guardia cambiada. Teo: «pegaba con la izquierda delante, como los zurdos en el boxeo».",
+          "origen": "10"
+        },
+        {
+          "escena": "A2-E02",
+          "tipo": "principal",
+          "como": "Inteligencia + Pelea (Dificultad 4) sobre las cenizas de Corwin: la Furia Controlada con la guardia invertida, la mano débil adelante. David, con LOR-01 a nivel 4: automático.",
+          "origen": "01, 11"
+        },
+        {
+          "escena": "A3-E01",
+          "tipo": "refuerzo",
+          "como": "Si la coterie llega a tiempo, David reconoce la guardia invertida automáticamente con LOR-01 a nivel 4.",
+          "origen": "12"
+        },
+        {
+          "escena": "A3-E03",
+          "tipo": "documento",
+          "como": "DOC-04: la doctrina de la Furia Controlada y la guardia invertida, que delata a Krell (P-08).",
+          "documento": "DOC-04",
+          "origen": "04"
+        },
+        {
+          "escena": "LOR-01",
+          "tipo": "loresheet",
+          "como": "LOR-01 nivel 4 «La guardia completa»: reconocés la doctrina en cuanto la ves (P-03, P-08).",
+          "origen": "08"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo",
+          "origen": "13"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A2-E03",
+          "efecto": "Ganarse a la asamblea de Salitre: la Dificultad baja 1 por cada pista que traiga la coterie (P-08 o P-07).",
+          "origen": "11"
+        }
+      ],
+      "nombres": {
+        "01": "La guardia invertida de Krell",
+        "11": "La guardia invertida",
+        "13": "P-08 · La guardia invertida"
+      }
+    },
+    {
+      "id": "P-09",
+      "nombre": "Los diarios comprados en 1986",
+      "escena": "A2-E04",
+      "texto": "O'Connor cuenta que los diarios de Vance no se quemaron: en 1986 se los vendieron a «un Ventrue de Seattle con paciencia».",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A2-E04",
+          "tipo": "principal",
+          "como": "Después de los tres asaltos en el ring, O'Connor cuenta el envío de 1986 desde Lyon, a nombre de una sociedad de Halloway: diarios a mano con «M.V.» en la tapa.",
+          "origen": "01, 07, 11"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo",
+          "origen": "13"
+        }
+      ],
+      "nombres": {
+        "01": "Los diarios vendidos en 1986",
+        "11": "Los diarios comprados en 1986",
+        "13": "P-09 · Los diarios comprados en 1986"
+      }
+    },
+    {
+      "id": "P-10",
+      "nombre": "Envíos SEA-0411 / DOC-07",
+      "escena": "A3-E02",
+      "texto": "El registro de envíos a «SEA-0411» en el centro de datos de Gale Sentinel.",
+      "otrasEscenas": [
+        "A2-E01"
+      ],
+      "obtencion": [
+        {
+          "escena": "A3-E02",
+          "tipo": "principal",
+          "como": "Capa 3, almacenamiento: los registros de envío del canal ARQUERO, con la referencia SEA-0411, y DOC-07 completo.",
+          "lugar": "LUG-07",
+          "origen": "01, 12"
+        },
+        {
+          "escena": "A2-E01",
+          "tipo": "documento",
+          "como": "DOC-07 puede llegar antes si Voight confía en la coterie.",
+          "documento": "DOC-07",
+          "origen": "04"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso en el Consejo (prueba que Halloway es ARQUERO)",
+          "origen": "13"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Voight cambia a «no» si la coterie le demuestra que ARQUERO es Halloway (P-10, el correo de C.H. o el testimonio de Gale o Dawson).",
+          "origen": "13"
+        }
+      ],
+      "nombres": {
+        "01": "Envíos a «SEA-0411»",
+        "12": "Los envíos SEA-0411",
+        "13": "P-10 · Envíos SEA-0411 / DOC-07"
+      }
+    },
+    {
+      "id": "P-11",
+      "nombre": "Firma de Gale",
+      "escena": "A3-E02",
+      "texto": "La firma digital de Preston Gale, ghoul de Halloway.",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A3-E02",
+          "tipo": "principal",
+          "como": "Capa 2, despacho de Gale: Inteligencia + Investigación (Dificultad 3); un éxito: la firma digital de Preston Gale en las autorizaciones de acceso a Market Street.",
+          "lugar": "LUG-07",
+          "origen": "01, 12"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo",
+          "origen": "13"
+        }
+      ],
+      "nombres": {
+        "01": "Firma digital de Preston Gale",
+        "12": "La firma de Gale",
+        "13": "P-11 · Firma de Gale"
+      },
+      "variantes": {
+        "10": "El preludio de Celeste (A0-E01) llamaba «P-11 adelantada» al pago al equipo de ladrones. El doc 11 asigna ese pago a P-14 («la que firmó Celeste en su preludio»); manda el doc 11."
+      },
+      "nota": "COT-02 · El Consejo de Cristal: la coterie no debería saber que existe hasta A3-E02, cuando encuentra la firma de Gale (doc 08)."
+    },
+    {
+      "id": "P-12",
+      "nombre": "El testimonio de Krell",
+      "escena": "A3-E03",
+      "texto": "El testimonio de Krell, si acepta ser testigo contra Halloway.",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A3-E03",
+          "tipo": "principal",
+          "como": "Con Krell a 3 «pasos», la oferta «Testigo»: Manipulación + Persuasión (Dificultad 3); Krell acepta si David le promete que nadie lo va a destruir después. La oferta «La otra guardia» (LOR-01 a nivel 4 y P-15, o el folio 42) también lo convierte en testigo, sin tirada.",
+          "lugar": "LUG-16",
+          "origen": "01, 12"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 3,
+          "texto": "+3 dados a la tirada del caso en el Consejo (Krell como testigo)",
+          "origen": "13"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A3-E04",
+          "efecto": "Krell presente como testigo: +2 dados más a la tirada central.",
+          "origen": "12"
+        },
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Thornquist cambia a «no» con P-03 más P-12 o el testimonio de Krell. Si Krell testifica, Halloway pierde la compostura por primera vez.",
+          "origen": "13"
+        }
+      ],
+      "nota": "Doc 07 (PNJ-12): si la coterie le enseña los folios que Halloway le prometió, Krell cambia de bando (P-12).",
+      "nombres": {
+        "01": "El testimonio de Krell"
+      }
+    },
+    {
+      "id": "P-13",
+      "nombre": "El libro de cuentas de Sal",
+      "escena": "A2-E02",
+      "texto": "«L.B. — 3 llaves, 2 vendidas, 1 pendiente»",
+      "otrasEscenas": [
+        "A1-E04"
+      ],
+      "obtencion": [
+        {
+          "escena": "A1-E04",
+          "tipo": "parcial",
+          "como": "Errata del doc 11: Thornquist dice que las copias vienen de un perista del SoDo; el nombre del perista vale un favor menor (P-13, a medias).",
+          "lugar": "LUG-04",
+          "origen": "11"
+        },
+        {
+          "escena": "A2-E02",
+          "tipo": "principal",
+          "como": "Astucia + Investigación (Dificultad 3): el libro de cuentas está debajo del escritorio. Entrada del 13 de noviembre: «L.B. — 3 llaves, 2 vendidas (T.), 1 pendiente. Motel?».",
+          "origen": "11"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo, junto con P-14 (las dos cuentan un solo dado)",
+          "origen": "13"
+        }
+      ],
+      "nombres": {
+        "11": "El libro de cuentas de Sal",
+        "13": "P-13 y P-14 · Cuentas de Sal y pago de Cascade"
+      }
+    },
+    {
+      "id": "P-14",
+      "nombre": "El pago desde Cascade Holdings",
+      "escena": "A2-E06",
+      "texto": "El pago a Lonnie, hecho desde Cascade Holdings LLC, una sociedad de Halloway Meridian (la que firmó Celeste en su preludio).",
+      "otrasEscenas": [
+        "A0-E01",
+        "A2-E01",
+        "A3-E02"
+      ],
+      "obtencion": [
+        {
+          "escena": "A0-E01",
+          "tipo": "adelantada",
+          "como": "Preludio de Celeste: a las 3:30 autoriza «un pago urgente a un proveedor de seguridad» desde una sociedad de Halloway Meridian. Si más adelante revisa la transferencia, es una pista adelantada.",
+          "pj": "PJ-02",
+          "nota": "El doc 10 la llamaba «P-11 adelantada»; el doc 11 define P-14 como el pago «desde Cascade Holdings LLC… la que firmó Celeste en su preludio», y el doc 13 habla de «P-14 y la nota del preludio». Manda el doc más nuevo.",
+          "origen": "10, 11, 13"
+        },
+        {
+          "escena": "A2-E01",
+          "tipo": "adelantada",
+          "como": "Si Celeste revisa las cuentas de Cascade esa misma semana (la trampa de Halloway), encuentra P-14 antes.",
+          "pj": "PJ-02",
+          "origen": "11"
+        },
+        {
+          "escena": "A2-E06",
+          "tipo": "principal",
+          "como": "Lonnie: «El dinero llegó de una empresa. Cascade Holdings. Tengo el comprobante.»",
+          "origen": "11"
+        },
+        {
+          "escena": "A3-E02",
+          "tipo": "alternativa",
+          "como": "Capa 2, despacho de Gale: los registros de pago a Lonnie desde Cascade Holdings, si no los tienen ya.",
+          "lugar": "LUG-07",
+          "origen": "12"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo, junto con P-13 (las dos cuentan un solo dado)",
+          "origen": "13"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Celeste se defiende con la verdad: si encontró P-14 y la nota del preludio, demuestra que solo firmó lo que Pell le pasaba: +2 dados a la tirada del caso.",
+          "pj": "PJ-02",
+          "origen": "13"
+        }
+      ],
+      "nombres": {
+        "11": "El pago a Lonnie, hecho desde Cascade Holdings LLC / Pago desde Cascade Holdings",
+        "13": "P-13 y P-14 · Cuentas de Sal y pago de Cascade"
+      },
+      "nota": "Si la coterie usa Dominación sobre Lonnie para que olvide, P-14 se pierde salvo que lo interroguen antes (doc 11)."
+    },
+    {
+      "id": "P-15",
+      "nombre": "Los folios del alemán",
+      "escena": "A3-E02",
+      "texto": "Los folios 41 y 42 del diario de Vance sobre «el alemán», con la nota de Pell y la respuesta de Halloway («No. — C.H.»).",
+      "otrasEscenas": [],
+      "obtencion": [
+        {
+          "escena": "A3-E02",
+          "tipo": "principal",
+          "como": "Capa 3, archivo privado (servidor sin red): copiar los archivos con Inteligencia + Tecnología (Dificultad 3); encontrar los folios entre miles de imágenes con Inteligencia + Investigación (Dificultad 4), o automático buscando la palabra «allemand».",
+          "lugar": "LUG-07",
+          "origen": "12"
+        }
+      ],
+      "dados": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central de Manipulación + Persuasión (Dificultad 4) para convencer a Montgomery",
+          "origen": "12"
+        },
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso en el Consejo (y la nota «No. — C.H.»)",
+          "origen": "13"
+        }
+      ],
+      "efectos": [
+        {
+          "escena": "A3-E03",
+          "efecto": "Enseñarle P-15 a Krell suma 3 «pasos» de golpe. La oferta «La otra guardia» necesita LOR-01 a nivel 4 y P-15 (o que David conozca el folio 42).",
+          "origen": "12"
+        },
+        {
+          "escena": "A3-E04",
+          "efecto": "Detectar la falsificación de la carta «M.V.» es automático con P-15 o DOC-04. Si la coterie ya le enseñó P-15 o el correo de C.H. a Montgomery, la escena salta la primera mitad.",
+          "origen": "12"
+        }
+      ],
+      "ayuda": "Se entrega como ayuda de juego: dos folios del diario de Vance (Marsella, 1976), en francés, con la traducción mecanografiada de Pell (doc 12).",
+      "nota": "GAN-07: la copia 3 de los diarios, en poder de la Justicar, tiene folios que no están en las otras dos, incluidos los que hablan de Krell (doc 09)."
+    }
+  ],
+  "pruebas": [
+    {
+      "id": "PRUEBA-CORREO-CH",
+      "nombre": "Correo «C.H.» a Gale",
+      "escena": "A3-E02",
+      "como": "Capa 2, despacho de Gale: tres o más éxitos en Inteligencia + Investigación (Dificultad 3). «Recuperar todas las copias. Prioridad máxima. — C.H.», del 13 de noviembre.",
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Voight cambia a «no».",
+          "origen": "13"
+        },
+        {
+          "escena": "A3-E04",
+          "efecto": "Si ya se lo enseñaron a Montgomery, la escena salta la primera mitad.",
+          "origen": "12"
+        }
+      ],
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso",
+          "origen": "13"
+        }
+      ],
+      "origen": "12, 13"
+    },
+    {
+      "id": "PRUEBA-DOC-08",
+      "nombre": "DOC-08 · Carta de O'Connor",
+      "escena": "A2-E04",
+      "documento": "DOC-08",
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Marchetti cambia a «no» si ve DOC-08, con la nota de Whitmore («C.H. — vigilar»). Cumplir la promesa a O'Connor lo convierte en Aliado 2.",
+          "origen": "13"
+        }
+      ],
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada del caso",
+          "origen": "13"
+        }
+      ],
+      "origen": "11, 13"
+    },
+    {
+      "id": "PRUEBA-DOC-03",
+      "nombre": "DOC-03 · Registro de Marchetti de la Noche 3",
+      "escena": "A2-E01",
+      "documento": "DOC-03",
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Marchetti cambia a «no» si la coterie cita su registro de la Noche 3: el registro es lo que más respeta.",
+          "origen": "13"
+        }
+      ],
+      "valores": [],
+      "origen": "11, 13"
+    },
+    {
+      "id": "PRUEBA-TESTIGO-LONNIE",
+      "nombre": "Testigo: Lonnie Barras",
+      "escena": "A2-E06",
+      "pnj": "MEN-01",
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso",
+          "origen": "13"
+        }
+      ],
+      "origen": "13"
+    },
+    {
+      "id": "PRUEBA-TESTIGO-GALE",
+      "nombre": "Testigo: Dawson o Gale",
+      "escena": "A3-E02",
+      "como": "Dawson vivo y capturado es un testigo: ghoul de Gale, olió la escalera de Helen y recibió el disco de manos de Lonnie (doc 12).",
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Votación: Voight cambia a «no» con el testimonio de Gale o Dawson.",
+          "origen": "13"
+        }
+      ],
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso",
+          "origen": "13"
+        }
+      ],
+      "origen": "12, 13"
+    },
+    {
+      "id": "PRUEBA-MONTGOMERY",
+      "nombre": "Montgomery a favor",
+      "escena": "A3-E04",
+      "como": "Éxito con 3 o más éxitos en la tirada central de A3-E04: Montgomery entra al Consejo junto a David.",
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso",
+          "origen": "13"
+        }
+      ],
+      "origen": "12, 13"
+    },
+    {
+      "id": "PRUEBA-DISCO-ORIGINAL",
+      "nombre": "El disco original en manos de la coterie",
+      "escena": "A3-E02",
+      "como": "Solo está en el centro de datos de Gale hasta la Noche 6.",
+      "efectos": [
+        {
+          "escena": "A4-E01",
+          "efecto": "Halloway no puede usarlo como prueba contra el Príncipe.",
+          "origen": "13"
+        },
+        {
+          "escena": "A3-E02",
+          "efecto": "Halloway lo sabe en la Noche 7 y acelera la filtración a FIRSTLIGHT: Termómetro +1.",
+          "origen": "12"
+        }
+      ],
+      "valores": [],
+      "origen": "12, 13"
+    },
+    {
+      "id": "PRUEBA-KRELL-PRESENTE",
+      "nombre": "Krell presente como testigo",
+      "escena": "A3-E03",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "12"
+    },
+    {
+      "id": "PRUEBA-FAVOR-MONTGOMERY",
+      "nombre": "Montgomery le debe un favor a la coterie (Krell entregado al Sheriff en A3-E03)",
+      "escena": "A3-E03",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "12"
+    },
+    {
+      "id": "PRUEBA-MENTIRA-A1-E03",
+      "nombre": "La coterie le mintió a Montgomery en A1-E03 y él lo anotó",
+      "escena": "A1-E03",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": -2,
+          "texto": "−2 dados a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "10, 12"
+    },
+    {
+      "id": "PRUEBA-HONESTIDAD-DAVID",
+      "nombre": "David admite algo que le cuesta (lo que sabe de Krell, lo que sintió en los silos, lo del Larchmont)",
+      "escena": "A3-E04",
+      "pj": "PJ-01",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "12"
+    },
+    {
+      "id": "PRUEBA-HERMANO-DE-SANGRE",
+      "nombre": "«Es mi hermano de sangre» (si David lo sabe y lo dice)",
+      "escena": "A3-E04",
+      "pj": "PJ-01",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 1,
+          "texto": "+1 dado a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "12"
+    },
+    {
+      "id": "PRUEBA-FALSIFICACION",
+      "nombre": "Demostrar que la carta «M.V.» es falsa",
+      "escena": "A3-E04",
+      "como": "Inteligencia + Academicismo (Dificultad 3), o automático con DOC-04 o P-15: está en inglés (Vance escribía en francés) y tiene restos de tóner.",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "12"
+    },
+    {
+      "id": "PRUEBA-INFORMES-HAL",
+      "nombre": "Hal cuenta que en treinta años de informes nunca encontró nada que hiciera dudar de David",
+      "escena": "A3-E04",
+      "pj": "PJ-05",
+      "valores": [
+        {
+          "tirada": "A3-E04",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada central",
+          "origen": "12"
+        }
+      ],
+      "origen": "12"
+    },
+    {
+      "id": "PRUEBA-CELESTE-VERDAD",
+      "nombre": "Celeste se defiende con la verdad (P-14 y la nota del preludio)",
+      "escena": "A4-E01",
+      "pj": "PJ-02",
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso",
+          "origen": "13"
+        }
+      ],
+      "origen": "13"
+    },
+    {
+      "id": "PRUEBA-NADIA-PRINCIPE",
+      "nombre": "Nadia habla en nombre del Príncipe (Carisma + Interpretación en lugar de Política)",
+      "escena": "A4-E01",
+      "pj": "PJ-04",
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados a la tirada del caso si sale bien",
+          "origen": "13"
+        }
+      ],
+      "origen": "13"
+    },
+    {
+      "id": "PRUEBA-ASHBY",
+      "nombre": "Julian Ashby declara contra Halloway (Carisma + Persuasión, Dificultad 2, si lo acusan en el Consejo)",
+      "escena": "A4-E01",
+      "pnj": "PNJ-10",
+      "valores": [
+        {
+          "tirada": "A4-E01",
+          "cantidad": 2,
+          "texto": "+2 dados al caso",
+          "origen": "14"
+        }
+      ],
+      "origen": "14"
+    },
+    {
+      "id": "PRUEBA-OKAFOR-LONNIE",
+      "nombre": "FIRSTLIGHT tiene a Lonnie: Okafor tiene un testigo que habla de Cascade Holdings",
+      "escena": "A2-E06",
+      "como": "«Si la coterie se entera de esto más adelante, puede usarlo en A4-E01.» El doc no fija su valor.",
+      "valores": [],
+      "origen": "11"
+    }
+  ],
+  "tiradas": {
+    "A3-E04": {
+      "nombre": "La jauría duda: la tirada central",
+      "tirada": "Manipulación + Persuasión (Dificultad 4), la hace quien hable por la coterie",
+      "paths": "attributes.manipulation+skills.persuasion",
+      "dificultad": 4,
+      "pistas": [
+        "P-07",
+        "P-08",
+        "P-09",
+        "P-10",
+        "P-11",
+        "P-12",
+        "P-13",
+        "P-14",
+        "P-15"
+      ],
+      "porPista": 1,
+      "pruebas": [
+        "PRUEBA-KRELL-PRESENTE",
+        "PRUEBA-FAVOR-MONTGOMERY",
+        "PRUEBA-MENTIRA-A1-E03",
+        "PRUEBA-HONESTIDAD-DAVID",
+        "PRUEBA-HERMANO-DE-SANGRE",
+        "PRUEBA-FALSIFICACION",
+        "PRUEBA-INFORMES-HAL"
+      ],
+      "automatico": "Si alguien intenta Dominación o Presencia sobre Montgomery (Fortaleza 4, Mente inquebrantable), lo nota y la tirada central falla automáticamente.",
+      "resultados": [
+        {
+          "resultado": "Éxito con 3 o más éxitos",
+          "efecto": "Los Lobos (COT-01) están con la coterie: Montgomery entra al Consejo junto a David; en la redada, los cazarrecompensas ayudan a evacuar; en A4-E03, Montgomery espera en el muelle."
+        },
+        {
+          "resultado": "Éxito simple",
+          "efecto": "Montgomery no se pone en contra, pero tampoco ayuda abiertamente: «Demostrámelo mañana delante de todos»."
+        },
+        {
+          "resultado": "Fallo",
+          "efecto": "La coterie es fugitiva. Los cazarrecompensas buscan a David. En A4-E01, David necesita entrar al Consejo sin que lo detengan en la puerta."
+        }
+      ],
+      "variantes": {
+        "01": "Manipulación + Persuasión, Dificultad 4, +1 dado por cada pista P-07 a P-12."
+      },
+      "nota": "Manda el doc 12: +1 dado por cada pista de P-07 a P-15.",
+      "origen": "01, 12"
+    },
+    "A4-E01": {
+      "nombre": "Consejo de Primogenitura: la tirada del caso",
+      "tirada": "Manipulación o Carisma + Política (Dificultad 4), enfrentada con Halloway (Manipulación + Política: 10 dados)",
+      "paths": [
+        "attributes.manipulation+skills.politics",
+        "attributes.charisma+skills.politics"
+      ],
+      "dificultad": 4,
+      "oponente": {
+        "pnj": "PNJ-03",
+        "reserva": 10,
+        "texto": "Manipulación + Política"
+      },
+      "valores": [
+        {
+          "pista": "P-07",
+          "cantidad": 1
+        },
+        {
+          "pista": "P-08",
+          "cantidad": 1
+        },
+        {
+          "pista": "P-09",
+          "cantidad": 1
+        },
+        {
+          "pista": "P-10",
+          "cantidad": 2
+        },
+        {
+          "pista": "P-11",
+          "cantidad": 1
+        },
+        {
+          "prueba": "PRUEBA-CORREO-CH",
+          "cantidad": 2
+        },
+        {
+          "pistas": [
+            "P-13",
+            "P-14"
+          ],
+          "cantidad": 1
+        },
+        {
+          "pista": "P-15",
+          "cantidad": 1
+        },
+        {
+          "prueba": "PRUEBA-DOC-08",
+          "cantidad": 1
+        },
+        {
+          "pista": "P-12",
+          "cantidad": 3
+        },
+        {
+          "prueba": "PRUEBA-TESTIGO-LONNIE",
+          "cantidad": 2
+        },
+        {
+          "prueba": "PRUEBA-TESTIGO-GALE",
+          "cantidad": 2
+        },
+        {
+          "prueba": "PRUEBA-MONTGOMERY",
+          "cantidad": 2
+        },
+        {
+          "prueba": "PRUEBA-DISCO-ORIGINAL",
+          "cantidad": 0,
+          "efecto": "Halloway no puede usarlo como prueba contra el Príncipe"
+        }
+      ],
+      "otros": [
+        {
+          "prueba": "PRUEBA-CELESTE-VERDAD",
+          "cantidad": 2
+        },
+        {
+          "prueba": "PRUEBA-NADIA-PRINCIPE",
+          "cantidad": 2
+        },
+        {
+          "prueba": "PRUEBA-ASHBY",
+          "cantidad": 2
+        },
+        {
+          "motivo": "El Consejo se traslada a la Galería de Vidrio (el Príncipe recuperó la iniciativa)",
+          "cantidad": -2,
+          "a": "Halloway",
+          "origen": "13"
+        }
+      ],
+      "resultados": [
+        {
+          "margen": "Halloway gana",
+          "efecto": "La sala le cree a él. Celeste es entregada. Los votos se inclinan a favor de la regencia."
+        },
+        {
+          "margen": "Empate o 1–2 éxitos",
+          "efecto": "Duda. La votación decide."
+        },
+        {
+          "margen": "3–4 éxitos",
+          "efecto": "Halloway queda en evidencia. La votación se vuelve contra él casi seguro."
+        },
+        {
+          "margen": "5 o más",
+          "efecto": "Exposición total. El Príncipe ordena al Sheriff detener a Halloway allí mismo. Halloway huye (A4-E03)."
+        }
+      ],
+      "votacion": {
+        "necesita": "3 votos a favor de 5",
+        "primogenitos": [
+          {
+            "pnj": "PNJ-03",
+            "defecto": "Sí",
+            "cambia": "Nunca."
+          },
+          {
+            "pnj": "PNJ-15",
+            "defecto": "Sí. Cree que Whitmore falló.",
+            "cambia": "La coterie le demuestra que ARQUERO es Halloway (P-10, el correo de C.H., o el testimonio de Gale o Dawson)."
+          },
+          {
+            "pnj": "PNJ-13",
+            "defecto": "Sí. Halloway le pagó.",
+            "cambia": "La coterie le demuestra que Krell destruyó a Pike (P-03 más P-12 o el testimonio de Krell), o le ofrece un favor mayor de toda la coterie."
+          },
+          {
+            "pnj": "PNJ-14",
+            "defecto": "Abstención.",
+            "cambia": "Ve DOC-08, con la nota de Whitmore («C.H. — vigilar»), o la coterie cita su registro de la Noche 3 (DOC-03). Entonces vota «no»."
+          },
+          {
+            "pnj": "PNJ-16",
+            "defecto": "Imprevisible: tira 1 dado; par, sí; impar, no.",
+            "cambia": "Alguien dice una verdad difícil en voz alta durante el debate: Fry vota con quien la dijo."
+          }
+        ],
+        "porDefecto": "Si la coterie no hace nada, Halloway gana 3 a 0, con dos abstenciones o un voto de Fry en contra.",
+        "automatico": "Atacar a Halloway en su torre: la votación sale «sí» automáticamente. Usar Dominación sobre un Primogénito y que se descubra (Astucia + Consciencia de Voight: 7 dados): su voto cambia en contra de quien lo intentó."
+      },
+      "origen": "13, 14"
+    }
+  }
+}

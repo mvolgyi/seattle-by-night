@@ -1,0 +1,1538 @@
+{
+  "_id": "g4XbpMuCHwxVhzeC",
+  "_key": "!actors!g4XbpMuCHwxVhzeC",
+  "name": "David Smith",
+  "type": "vampire",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "David Smith",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "Ex comando de la Marina Abrazado en Haití en 1960 por Marcus Vance, convertido en el ejecutor externo del Sheriff de Seattle.",
+      "chronicle": "Seattle by Night",
+      "ambition": "Mantener el equilibrio entre los Vástagos y la Mascarada.",
+      "desire": "Erradicar a los que rompen el velo, aunque sean antiguos aliados.",
+      "touchstones": "<h3>Convicciones</h3><ul><li>La Mascarada es el último escudo entre el orden y el caos.</li><li>Solo el monstruo que se conoce puede ser controlado.</li><li>No cazo por odio, sino por equilibrio.</li></ul><h3>Piedras de toque</h3><ul><li><strong>Helen Ward</strong>: Viva (PNJ-04). Periodista humana, fuente de datos sobre sucesos sobrenaturales.</li><li><strong>Emily Smith</strong>: Perdida, 1996 (REF-01). Su hija; Ancla perdida: ocasionales tiradas de Remordimiento y pesadillas.</li><li><strong>Tom «Bear» Whitman</strong>: Ex-SEAL ghoul (PNJ-05); fiel, pero dependiente de su Vitae. La hoja lo lista como Piedra de toque; los docs 00–16 lo tratan como ancla, aunque es ghoul.</li></ul>",
+      "sire": "Marcus «Ironjaw» Vance (PNJ-06)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "15 de marzo de 1935, Boston",
+        "death": "8 de julio de 1960, Haití"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{Perfil: David Smith}</p><blockquote><p><em>«Algunos deben arder para que los demás vean la luz.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>El Sabueso de la Mascarada</td></tr><tr><th>Concepto</th><td>Ex comando de la Marina Abrazado en Haití en 1960 por Marcus Vance, convertido en el ejecutor externo del Sheriff de Seattle.</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Secta</th><td>independiente, aliado operativo de la Camarilla</td></tr><tr><th>Sire</th><td>Marcus «Ironjaw» Vance (PNJ-06)</td></tr><tr><th>Nacimiento</th><td>15 de marzo de 1935, Boston</td></tr><tr><th>Abrazo</th><td>8 de julio de 1960, Haití</td></tr><tr><th>Depredador</th><td>Cazador Silencioso (personalizado: Gato Callejero + Sanguijuela)</td></tr><tr><th>Resonancia</th><td>Colérica</td></tr><tr><th>Ambición</th><td>Mantener el equilibrio entre los Vástagos y la Mascarada.</td></tr><tr><th>Deseo</th><td>Erradicar a los que rompen el velo, aunque sean antiguos aliados.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}</td></tr></tbody></table><h3>Semblante</h3><p>Mandíbula cuadrada y tensa, cicatriz del pómulo derecho al labio, pelo corto oscuro con canas en las sienes, ojos gris oscuro casi negros; chaqueta táctica negra sin insignias; huele a pólvora, óxido y sangre seca.</p>",
+    "appearance": "<p>Mandíbula cuadrada y tensa, cicatriz del pómulo derecho al labio, pelo corto oscuro con canas en las sienes, ojos gris oscuro casi negros; chaqueta táctica negra sin insignias; huele a pólvora, óxido y sangre seca.</p>",
+    "equipment": "<ul><li>Chaqueta táctica negra con insignias borradas</li><li>Navaja militar antigua (recuerdo mortal; la llevaba el día de su Abrazo)</li></ul>",
+    "notes": "",
+    "privatenotes": "<h3>Provisional (doc 16)</h3><ul><li>David llegó a Seattle en los años 80.</li><li>David tiene LOR-01 a nivel 4.</li></ul>",
+    "health": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 4,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "celerity": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "auspex": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 5,
+        "active": false
+      },
+      "dexterity": {
+        "value": 4,
+        "active": false
+      },
+      "stamina": {
+        "value": 5,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "athletics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Combate prolongado",
+            "value": 1,
+            "paths": [
+              "skills.athletics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Vástagos",
+            "value": 1,
+            "paths": [
+              "skills.brawl"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Seguimiento",
+            "value": 1,
+            "paths": [
+              "skills.drive"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Combate táctico",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "larceny": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Alarmas",
+            "value": 1,
+            "paths": [
+              "skills.larceny"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "melee": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Golpes de desarme",
+            "value": 1,
+            "paths": [
+              "skills.melee"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "stealth": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Seguimiento",
+            "value": 1,
+            "paths": [
+              "skills.stealth"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "survival": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Rastreo",
+            "value": 1,
+            "paths": [
+              "skills.survival"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "animalken": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Perros",
+            "value": 1,
+            "paths": [
+              "skills.animalken"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Detectar mentiras",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Miradas intimidatorias",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "leadership": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Inspiración",
+            "value": 1,
+            "paths": [
+              "skills.leadership"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "performance": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Reputación personal",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Emboscadas",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Deducción",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "medicine": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Simbología cainita",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "politics": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Camarilla",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Sistemas de vigilancia",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "brujah"
+        }
+      },
+      "name": "Brujah",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "Ukur6S4MZRL8tXpe",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.Ukur6S4MZRL8tXpe"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Cazador Silencioso (personalizado: Gato Callejero + Sanguijuela)",
+      "type": "predatorType",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "dicepool": {}
+      },
+      "_id": "8RlxIxozw33OI4eZ",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.8RlxIxozw33OI4eZ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Colérica",
+      "type": "resonance",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        }
+      },
+      "_id": "EM1dou3PPQ5q51WE",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.EM1dou3PPQ5q51WE"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rapid Reflexes",
+          "homebrew": false
+        }
+      },
+      "name": "Rapid Reflexes · Reflejos Felinos",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Aumenta tu defensa y reacción frente a disparos y emboscadas.</p><p><em>Celeridad 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "5yIv3o6UVLZqkIyR",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.5yIv3o6UVLZqkIyR"
+    },
+    {
+      "effects": [],
+      "sort": 500,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lightning Strike",
+          "homebrew": false
+        }
+      },
+      "name": "Lightning Strike",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celeridad 5. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 5,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "LYFu3OIgjJBs0yyn",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.LYFu3OIgjJBs0yyn"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Ráfaga Temporal (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Ráfaga Temporal",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Detienes el mundo por un instante; actúas fuera del tiempo un parpadeo. Perfecto para detener un disparo o ejecutar una acción quirúrgica.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "1FCrUJ1sZKTTrC9u",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.1FCrUJ1sZKTTrC9u"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Ímpetu Borroso (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Ímpetu Borroso",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>El libro no lo describe.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 0,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "EFreT9oRjRRg9Rzm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.EFreT9oRjRRg9Rzm"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body · Puño de Hierro",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Tus golpes son equivalentes al impacto de un martillo neumático. Daño superficial convertido en letal.</p><p><em>Potencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "nXtvavwgysb2DggR",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.nXtvavwgysb2DggR"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess · Bravura",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Permite realizar proezas imposibles de fuerza o levantar hasta una tonelada. Perfecto para irrumpir, rescatar o abrir accesos blindados.</p><p><em>Potencia 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "c4kMnSwVHY5uNZqj",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.c4kMnSwVHY5uNZqj"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Golpe Destructor (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Golpe Destructor",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Un solo impacto concentrado capaz de derribar muros o incapacitar de un golpe. Ideal como ejecución final.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "h3j9iFkkjtYRbfBo",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.h3j9iFkkjtYRbfBo"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Bala Cinética (homebrew, amalgama Celeridad 2)",
+          "homebrew": true
+        }
+      },
+      "name": "Bala Cinética",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew (amalgama Celeridad 2).</em></p><ul>\n<li><strong>Coste:</strong> 1 Enardecimiento para activar. Dura una escena. Permite hasta Potencia (4) disparos sin coste extra; más disparos requieren nuevos Enardecimientos (1 por disparo adicional).</li>\n<li><strong>Efecto:</strong> David puede lanzar cualquier objeto pequeño/mediano (canica, piedra, tuerca, estaca pequeña, etc.) como si fuera un disparo de pistola pesada.</li>\n<li><strong>Alcance:</strong> hasta Potencia × 10 m (40 m); sin penalizador en la mitad de esa distancia.</li>\n<li><strong>Ataque:</strong> Destreza + Atletismo + Potencia (o Fuerza + Atletismo, a elección de la mesa); el objetivo usa defensa normal.</li>\n<li><strong>Daño:</strong> como .45 → daño base 3 + éxitos netos; letal contra mortales/ghouls, y contra vástagos sin Fortaleza.</li>\n<li>1/escena puedes hacer un «Tiro de Ejecución»: +1 Dif; con 3+ éxitos netos, mortal/ghoul queda muerto o inconsciente; vástago sufre penalizador fuerte (-2) en parte del cuerpo impactada.</li>\n<li>Con estacas / pernos y +2 Dif, con 4+ éxitos netos puedes estacar o inmovilizar el pecho del vástago (ruling de Narrador).</li>\n<li>También sirve para romper cámaras, luces, armas en manos de mortales, etc., sin armas de fuego visibles ni casquillos.</li>\n</ul>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 4,
+        "cost": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.athletics"
+          },
+          "d3": {
+            "path": "disciplines.potence"
+          }
+        },
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "bPRNqOPPT03AZ7qm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.bPRNqOPPT03AZ7qm"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt · Atemorizar",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Infunde miedo sobrenatural. Ideal para interrogatorios o controlar una multitud.</p><p><em>Presencia 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "Z96ssAXfqaIpmF84",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.Z96ssAXfqaIpmF84"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Autoridad Instintiva (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Autoridad Instintiva",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Tu sola voz impone obediencia y respeto. Perfecto para coordinar a otros cainitas.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "QgP53BI28RiAsqcg",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.QgP53BI28RiAsqcg"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Majestad de Guerra / Encender Emociones (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Majestad de Guerra / Encender Emociones",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Tu presencia domina la habitación; mortales y neonatos quedan rendidos o atemorizados.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "rPbBZyd9X4Az6iC0",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.rPbBZyd9X4Az6iC0"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Resilience",
+          "homebrew": false
+        }
+      },
+      "name": "Resilience · Resiliencia",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Suma tu Fortaleza a tu Salud.</p><p><em>Fortaleza 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "wfixC09wl8Zn1GuG",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.wfixC09wl8Zn1GuG"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Negar el Dolor (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Negar el Dolor",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Ignoras penalizadores por heridas; ideal para seguir peleando tras recibir daño.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "wM1eKHMVP7FnVBYM",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.wM1eKHMVP7FnVBYM"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Defy Bane",
+          "homebrew": false
+        }
+      },
+      "name": "Defy Bane · Desafiar Prohibición",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Permite resistir daño agravado, fuego y sol.</p><p><em>Fortaleza 3. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "UlyTWinxy1o4UZds",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.UlyTWinxy1o4UZds"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Último Bastión de la Mascarada (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Último Bastión de la Mascarada",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>ver la página siguiente.</p><p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr.JournalEntryPage.nyaVnQSG4rVgzoFI]{Último Bastión de la Mascarada}</p><p><em>Fuente: doc 17. Último Bastión de la Mascarada (Fortaleza ••••). Homebrew – Amalgama opcional con Presencia o Auspex, si quieres afinarlo más.</em></p>\n<p><em>«No caigo hasta que el trabajo está hecho.»</em></p>\n<p><strong>Tema / ficción.</strong> Cuando David marca a alguien como enemigo de la Mascarada, su cuerpo y su voluntad se niegan a caer. Huesos rotos, balas, fuego… todo se sostiene a base de pura negativa. No es furia ciega Brujah: es la calma brutal del verdugo que no se permite morir hasta rematar al condenado.</p>\n<h3>Versión mecánica (V5-friendly)</h3>\n<p><strong>Requisitos</strong></p>\n<ul>\n<li>Fortaleza 4</li>\n<li>Humanidad 6+ (o al menos 1 Convicción ligada a «proteger la Mascarada / el equilibrio»)</li>\n<li>Opcional como Amalgama: Presencia 2 o Auspex 2 (Presencia si lo quieres más «imponente», Auspex si lo ves como foco casi místico en su misión).</li>\n</ul>\n<p><strong>Coste</strong></p>\n<ul>\n<li>1 tirada de Enardecimiento al activarlo.</li>\n<li>Solo se puede usar una vez por escena y una vez por noche en su efecto gordo.</li>\n</ul>\n<p><strong>Activación.</strong> Debes declarar a un objetivo como «ruptor del Velo»:</p>\n<ul>\n<li>Debe ser alguien que, a juicio de David (y del Narrador), esté poniendo activamente en peligro la Mascarada:<ul>\n<li>un vástago usando Disciplinas delante de mortales,</li>\n<li>un Sabbat haciendo carnicerías,</li>\n<li>un cainita que vaya a delatar la existencia de los vampiros, etc.</li>\n</ul>\n</li>\n<li>Acción rápida: David fija la mirada / pronuncia la «sentencia» (un susurro, una frase lapidaria, lo que te mole) y activa el poder.</li>\n</ul>\n<p>Mientras este objetivo sentenciado siga presente en la escena (o David lo esté persiguiendo directamente), el poder está activo.</p>\n<h3>Efectos</h3>\n<p><strong>1. No caeré todavía.</strong> Mientras el objetivo sentenciado siga en escena o en persecución directa:</p>\n<ul>\n<li>Si David quedaría Incapacitado por daño (superficial o agravado) en una tirada de daño:<ul>\n<li>En lugar de caer, se queda en 1 nivel de Salud superficial.</li>\n<li>Gana automáticamente la condición de Aturdido / Tambaleante (el Narrador puede imponer -2 a acciones físicas complejas, no puede hacer múltiples acciones, etc.).</li>\n<li>Este efecto solo puede ocurrir una vez por escena y por noche.</li>\n</ul>\n</li>\n</ul>\n<p>En resumen: 👉 Primera vez que alguien «lo tumbaría» mientras ejecuta a un enemigo de la Mascarada… no cae. Sigue de pie a 1 de Salud.</p>\n<p><strong>2. Carne del Verdugo.</strong> Mientras el objetivo sentenciado siga presente:</p>\n<ul>\n<li>David obtiene +Fortaleza (4) dados a las tiradas para:<ul>\n<li>Resistir Frenesí por daño o provocación del objetivo.</li>\n<li>Resistir Dominación / Presencia / Auspex del objetivo (o de sus aliados directos en la escena, a discreción del Narrador).</li>\n</ul>\n</li>\n<li>Además, ignora los penalizadores por heridas (como si Negar el Dolor estuviera «potenciado») contra ese objetivo concreto.</li>\n<li>Fuera de esa caza, Negar el Dolor funciona normal.</li>\n</ul>\n<p>Efecto narrativo: 👉 Mientras esté cazando a un peligro real para la Mascarada, no se rompe, no huye, no se doblega mentalmente a manos de ese enemigo.</p>\n<p><strong>3. Límite moral.</strong> Porque si no, se va de madre:</p>\n<ul>\n<li>Si el Narrador considera que David lo ha activado contra alguien que no es realmente una amenaza a la Mascarada, o por puro rencor personal:<ul>\n<li>El poder funciona igual, pero al final de la noche David debe hacer una tirada de Remordimiento con +1 dado de dificultad.</li>\n<li>Si falla, gana al menos 1 Mancha adicional: ha retorcido su Convicción, usando «la Mascarada» como excusa para matar.</li>\n</ul>\n</li>\n</ul>\n<p>Esto lo clava al concepto de ejecutor con código, no de matón justificándose.</p>\n<h3>¿Está roto o es razonable?</h3>\n<p>Si lo comparas con los poderes oficiales de Fortaleza 4:</p>\n<ul>\n<li>Sorbo de Aguante: da Fortaleza y poderes a otro vástago por una noche.</li>\n<li>Escamas de Gorgona: da defensas brutales, pero muy situacionales y ligadas a la Resonancia.</li>\n</ul>\n<p>Último Bastión de la Mascarada:</p>\n<ul>\n<li>Es muy fuerte, pero:<ul>\n<li>Sólo funciona en escenas donde hay una amenaza real a la Mascarada.</li>\n<li>El «no caigo» es una vez por noche, y te deja hecho polvo.</li>\n<li>No aumenta daño, no da súper ataques, solo mantiene a David de pie para terminar el trabajo.</li>\n<li>Tiene coste moral si se abusa.</li>\n</ul>\n</li>\n</ul>\n<p>A nivel de mesa es un poder que:</p>\n<ul>\n<li>Refuerza su papel de «Perro Negro de la Mascarada».</li>\n<li>Da un momento muy cinematográfico: el golpe que debería tirarlo al suelo… y se levanta a 1 de Salud con la mandíbula rota y la mirada fija.</li>\n<li>No desequilibra tanto como un buff constante de reducción de daño a lo bruto frente a todo y todos.</li>\n</ul>\n<h3>Versión más simple / rápida</h3>\n<p>Si prefieres algo aún más sencillo de usar, el mismo concepto se puede reducir a:</p>\n<p><strong>Versión Lite:</strong></p>\n<ul>\n<li><strong>Coste:</strong> 1 Enardecimiento.</li>\n<li><strong>Efecto:</strong> Una vez por noche, cuando recibas daño que te dejaría Incapacitado mientras luchas contra alguien que está poniendo en peligro la Mascarada, te quedas a 1 de Salud en lugar de caer.</li>\n<li><strong>Extra:</strong> +2 dados para resistir Frenesí y disciplinas mentales de ese enemigo hasta final de la escena.</li>\n</ul>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 4,
+        "cost": 1,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "F8EfuyT9OJNKAnU2",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.F8EfuyT9OJNKAnU2"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses · Sentidos Agudizados",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Escucha respiraciones, pasos, pulsos de vitae.</p><p><em>Auspex 1. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "R4ux4fryCovCQYHs",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.R4ux4fryCovCQYHs"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition · Premonición",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Breves visiones del peligro inmediato; ideal para anticipar ataques o emboscadas.</p><p><em>Auspex 2. Poder del manual básico de V5.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "yt8ZOUgnvlE6dZnz",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.yt8ZOUgnvlE6dZnz"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Aliado 4 (Sheriff de Seattle): confianza y colaboración directa"
+        }
+      },
+      "name": "Aliado",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Aliado 4 (Sheriff de Seattle): confianza y colaboración directa</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "4gxG3lzobowVAlu9",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.4gxG3lzobowVAlu9"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Refugio 3 (hangar de Harbor Island, LUG-01; con Acceso marítimo y Arsenal). La hoja previa da Refugio Seguro 4: blindado, acceso a túneles"
+        }
+      },
+      "name": "Refugio",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Refugio 3 (hangar de Harbor Island, LUG-01; con Acceso marítimo y Arsenal). La hoja previa da Refugio Seguro 4: blindado, acceso a túneles</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "bw57sDQqWovGJ0R5",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.bw57sDQqWovGJ0R5"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 3 (Policía / Ghouls exmilitares): red de información"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 3 (Policía / Ghouls exmilitares): red de información</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "m8Rk0eq0JfK0irh0",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.m8Rk0eq0JfK0irh0"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Recursos 3 (contrabando militar): armas, vehículos, tecnología táctica"
+        }
+      },
+      "name": "Recursos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Recursos 3 (contrabando militar): armas, vehículos, tecnología táctica</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "rkTl4tE5i4Z3wH29",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.rkTl4tE5i4Z3wH29"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Fama oculta 3 («El Perro Negro de la Mascarada»)"
+        }
+      },
+      "name": "Fama oculta",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Fama oculta 3 («El Perro Negro de la Mascarada»)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "ppSLyGE4t6BeDJ4D",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.ppSLyGE4t6BeDJ4D"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Voluntad de hierro 3: repite una tirada de Voluntad por escena"
+        }
+      },
+      "name": "Voluntad de hierro",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Voluntad de hierro 3: repite una tirada de Voluntad por escena</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "merit"
+      },
+      "_id": "0MdT5chIkl0qzrRy",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.0MdT5chIkl0qzrRy"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ira contenida 2: +2 dificultad para resistir Compulsiones Brujah en combate"
+        }
+      },
+      "name": "Ira contenida",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ira contenida 2: +2 dificultad para resistir Compulsiones Brujah en combate</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "flaw"
+      },
+      "_id": "aIUIPV8JRacpaVg4",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.aIUIPV8JRacpaVg4"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Cicatrices de guerra 2: apariencia inhumana bajo luz directa"
+        }
+      },
+      "name": "Cicatrices de guerra",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Cicatrices de guerra 2: apariencia inhumana bajo luz directa</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "flaw"
+      },
+      "_id": "hzuJi76HZD2nIrRG",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.hzuJi76HZD2nIrRG"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Intransigente moral 1: se niega a cooperar con quienes usan la Bestia como excusa"
+        }
+      },
+      "name": "Intransigente moral",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Intransigente moral 1: se niega a cooperar con quienes usan la Bestia como excusa</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "flaw"
+      },
+      "_id": "9thaa5T5GTajvXAm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.9thaa5T5GTajvXAm"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Sueños de guerra (trauma del Abrazo) 2: −1 en la primera tirada de Resolución o Compostura tras despertar si falló su autocontrol"
+        }
+      },
+      "name": "Sueños de guerra (trauma del Abrazo)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Sueños de guerra (trauma del Abrazo) 2: −1 en la primera tirada de Resolución o Compostura tras despertar si falló su autocontrol</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "flaw"
+      },
+      "_id": "4ZnCy0SaS7AmlU6t",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.4ZnCy0SaS7AmlU6t"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Relación dependiente (Tom «Bear» Whitman) 1: si el ghoul es capturado o herido, pierde compostura o incurre en Riesgo de Frenesí"
+        }
+      },
+      "name": "Relación dependiente (Tom «Bear» Whitman)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Relación dependiente (Tom «Bear» Whitman) 1: si el ghoul es capturado o herido, pierde compostura o incurre en Riesgo de Frenesí</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "flaw"
+      },
+      "_id": "UH27yb35hLsNa76p",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.UH27yb35hLsNa76p"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Desconfianza de la magia / Tremere: rechaza trabajar con hechicería o rituales de Sangre"
+        }
+      },
+      "name": "Desconfianza de la magia / Tremere",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Desconfianza de la magia / Tremere: rechaza trabajar con hechicería o rituales de Sangre</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "YHkLaJlHA5gMfcPH",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.YHkLaJlHA5gMfcPH"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ancla perdida (Piedra de toque muerta): su hija murió y siente culpa"
+        }
+      },
+      "name": "Ancla perdida",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ancla perdida (Piedra de toque muerta): su hija murió y siente culpa</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "vFTIjrOQgFqirDvn",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.vFTIjrOQgFqirDvn"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-01",
+      "journal": "JournalEntry.3zcQLj7aEAxHT0Yr",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}
