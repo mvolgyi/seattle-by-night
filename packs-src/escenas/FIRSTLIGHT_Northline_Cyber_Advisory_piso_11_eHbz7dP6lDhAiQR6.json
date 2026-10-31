@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/northline.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/northline.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -805,7 +805,7 @@
       "escena": "northline",
       "id": "LUG-14",
       "plano": "northline",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</p>\n<p><strong>Northline Cyber Advisory</strong>, la fachada de FIRSTLIGHT. «Moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad» (el panel del logo está en la pared norte de la recepción, retroiluminado y sin una letra en el mapa). «A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas»: las tres son el panel del logo de la recepción, la lámpara del puesto de Hale en las mesas abiertas y el fluorescente de la <strong>sala de reuniones</strong>, cuyas ventanas al norte tienen las persianas bajadas (por fuera se ve la luz, no la sala).</p>\n<p><strong>Sala de reuniones.</strong> La mesa larga y, en la pared este, el <strong>tablero de corcho lleno de fotos</strong>, incluido el pódcast de Helen. La mampara que da a las mesas abiertas es de vidrio con persianas cerradas: en el mapa es muro (no se ve adentro). Aquí se juega el interludio I-2 «SEA-0411» (SPEC §6): Okafor y Hale reciben la entrega de ARQUERO (DOC-07).</p>\n<p><strong>Mesas abiertas</strong> (los analistas): ocho mesas altas en dos islas. La de Hale es la de la lámpara. Okafor «nunca se sienta de espaldas a una puerta».</p>\n<p><strong>Zona restringida.</strong> De las mesas abiertas sale, por una puerta con lector de tarjeta, el pasillo a la <strong>armería cerrada</strong> (taquillas de fusiles cortos, munición incendiaria, linternas UV, chalecos; de noche el equipo táctico MEN-02 está en un almacén del puerto, no aquí, así que hay huecos) y a la <strong>sala blanca de «entrevistas»</strong>: azulejo blanco, una mesa y una silla atornilladas y <strong>lámparas UV de alta intensidad</strong> en las paredes. Apagadas; encendidas, cada Vástago iluminado sufre 1 de daño agravado por turno y −2 dados (linterna UV, arsenal de FIRSTLIGHT). Las luces UV del plano están marcadas como apagadas.</p>\n<p><strong>Accesos.</strong> Ascensores y escalera de emergencia en el vestíbulo común del piso, al sur de la recepción; la puerta de vidrio de Northline está trabada de noche. Ninguno tiene mapa del otro extremo.</p>\n<p><strong>Peligro:</strong> «entrar aquí es la forma más rápida de subir el Termómetro»: si se descubre la intrusión, Termómetro +3. «Es más útil observar que entrar.» No figura en ninguna escena fija: se reserva para la crónica, una coterie muy audaz y los interludios de FIRSTLIGHT (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×5, sofa.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Ascensores (planta baja) · Bajar por la escalera de emergencia (11 pisos).</p>",
       "moviles": [
         {

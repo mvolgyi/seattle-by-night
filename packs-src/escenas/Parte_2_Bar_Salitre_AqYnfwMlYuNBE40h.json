@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/salitre.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/salitre.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -1063,7 +1063,7 @@
       "escena": "salitre",
       "id": "LUG-10",
       "plano": "salitre",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}</p>\n<p><strong>A2-E03 · Salitre.</strong> «La carretera muere en un astillero cerrado, con grúas oxidadas recortadas contra un cielo color pizarra. Junto a la verja hay un bar con un letrero de neón al que le falta una letra: SAL TRE. Dentro hay mesas de madera marcada, una barra hecha con el casco partido de un barco y fotos de huelgas en blanco y negro.» El letrero es una luz «neon» en la fachada (no se pinta: no hay texto en el mapa). Rosa espera con los codos en la <strong>barra</strong> y un soldador encima (tile o token).</p>\n<p><strong>La sala del bar.</strong> Abierta al público mortal hasta las dos. La <strong>barra</strong> es media cáscara de casco de barco, con el estante de botellas detrás; las <strong>fotos de huelgas</strong> cuelgan en los muros norte y sur. Mesas, sillas y taburetes son móviles (tiles): una docena de Anarquistas los usan de cobertura si la cosa se rompe (Combate: Rosa lo para a la segunda ronda, «Acá no»). Tavi Mercer (MEN-05) no les quita los ojos de encima.</p>\n<p><strong>La trastienda.</strong> Mesa de reuniones (la asamblea vota si ayuda a la coterie) y un corcho con recortes: ahí guarda Rosa su recorte de 1996 (AYU-04: «si sale en A2-E03, que sea ella quien lo saque»). Es el sitio para la confesión a David «a solas». La puerta da a la sala, del lado del público; otra puerta pasa al almacén.</p>\n<p><strong>La parte de atrás.</strong> Bas Okonjo se esconde en el <strong>almacén</strong> (barriles, la cámara de los barriles) para que Hal no lo vea; la <strong>puerta trasera</strong> sale al patio del astillero. Hal puede hablarle a solas ahí.</p>\n<p><strong>El astillero.</strong> La verja corrediza cierra la carretera; el bar queda afuera, pegado a ella. Adentro, la <strong>cabecera de la grada de botadura</strong>: está alineada con la carretera y desde ahí se ve venir cualquier coche por la única carretera (vigía de los Anarquistas). La grada sigue hacia el agua, al norte, fuera del mapa; los <strong>tres cascos en dique seco</strong> (los refugios de Salitre, el de Rosa entre ellos; ahí durmió Ray Dorsey en 1996) son el exterior del astillero (t2i): regiones sin destino.</p>\n<p><strong>Escapar.</strong> Nadie los retiene: la puerta del bar da a la carretera.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×16, mesa ×6, palet, auto ×2.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Irse por la única carretera · La grada baja hacia el agua · Al astillero: los tres cascos en dique seco.</p>",
       "moviles": [
         {
@@ -1180,7 +1180,7 @@
         },
         {
           "tipo": "mesa",
-          "tile": "tile-mesa-reuniones",
+          "tile": "tile-mesa-asamblea",
           "x": 1.9,
           "y": 9.7,
           "w": 2.6,

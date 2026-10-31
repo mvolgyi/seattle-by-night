@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/gale-planta3.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/gale-planta3.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -1192,7 +1192,7 @@
       "escena": "gale-planta3",
       "id": "LUG-07",
       "plano": "gale-planta3",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 2 de A3-E02: las oficinas.</strong> «Planta 3: despacho de Preston Gale. Sala de servidores de oficina.» Todas las puertas que salen del rellano y las del despacho y la sala de servidores tienen <strong>cerradura electrónica</strong>: Destreza + Latrocinio Dif 3, o Inteligencia + Tecnología Dif 3.</p>\n<p><strong>La ronda.</strong> Dawson y dos ghouls de seguridad (MEN-04) pasan cada 40 minutos: suben por la escalera o el ascensor, recorren el pasillo norte, cruzan la planta abierta y vuelven al rellano. Esquivarlos: Astucia + Sigilo Dif 3 para todo el grupo (Auspex, Sentidos agudizados: +2 dados, se los oye venir desde el rellano). Escondites: detrás de los puestos de la planta abierta, la office, la sala de reuniones (pero tiene mamparas de vidrio). Dawson huele a los Vástagos a veinte metros: desde el rellano llega a cualquier punto de la planta.</p>\n<p><strong>Despacho de Gale</strong> (esquina suroeste, con ventanal al estacionamiento). En el <strong>escritorio</strong>, el ordenador de Gale: Inteligencia + Investigación Dif 3. Un éxito: <strong>la firma digital de Preston Gale en las autorizaciones de acceso a Market Street (P-11)</strong>. Tres o más: también <strong>el correo de «C.H.»</strong>: «Recuperar todas las copias. Prioridad máxima. — C.H.», del 13 de noviembre. Ahí están además los registros de pago a Lonnie desde Cascade Holdings (P-14), si no los tienen ya. Si Celeste vino como accionista y Gale la recibe, es acá: el sillón detrás del escritorio, el sofá frente a la puerta.</p>\n<p><strong>Sala de servidores de oficina</strong> (noroeste). El rack del fondo es el <strong>servidor de pruebas mal protegido</strong> de A1-E05 (si la coterie entra en persona en vez de hacerlo en remoto): Inteligencia + Tecnología Dif 4 para entrar; Inteligencia + Investigación Dif 3 para el pedido del 9 de noviembre autorizado por «P.G.» (P-06); DOC-11 está en la carpeta «Q1_board_deck_DRAFT» (automático). Si fallan, Gale registra el intento (Termómetro +1 la noche siguiente).</p>\n<p><strong>Ventanal norte.</strong> Desde el pasillo se ve el patio de servicio y la mole sin ventanas del centro de datos, que zumba.</p>\n<p>Escalera y ascensores bajan al vestíbulo (<code>gale-sentinel</code>). Sillas de la planta abierta y de la sala de reuniones: tiles opcionales, no listados uno por uno.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla, sofa, mesa ×2.</p>",
       "moviles": [
         {

@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/ferry-puente.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/ferry-puente.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -842,7 +842,7 @@
       "escena": "ferry-puente",
       "id": "LUG-15",
       "plano": "ferry-puente",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación (roja a babor, verde a estribor) no están: falta el preset.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla.</p>",
       "moviles": [
         {

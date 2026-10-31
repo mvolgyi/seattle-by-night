@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/torre-boveda.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/torre-boveda.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -503,7 +503,7 @@
       "escena": "torre-boveda",
       "id": "LUG-06",
       "plano": "torre-boveda",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>La bóveda del nivel −3</strong>, «accesible solo con el ascensor privado» (LUG-06). La cabina se abre a una antecámara de hormigón con una sola puerta de acero, cerrada con combinación (la sabe el señor Pell; con 3 o más éxitos en el ferry, A4-E03, la entrega junto con la llave del ascensor). En la cabina, la mitad de la puerta recibe y la del fondo sube al ático (plano «torre-atico»).</p>\n<p><strong>Qué guarda</strong> (LUG-06): el <strong>original de los diarios de Vance</strong> (comprados en 1986), la <strong>copia 1 de 3</strong> mecanografiada por Pell y, desde la Noche 6, el <strong>disco original del Expediente</strong> (y la USB 3 si Lonnie murió esa noche). Los diarios y la copia, en las estanterías; el disco, en la caja fuerte. La noche del Consejo, el <strong>maletín de aluminio</strong> espera sobre la mesa de acero.</p>\n<p><strong>A4-E01 → A4-E03.</strong> Si Halloway huye, «baja en el ascensor privado hasta el nivel −3, saca el maletín de la bóveda y se lo da a Pell». Una infiltración antes del clímax también termina aquí, si la coterie la planea.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): maletin.</p>",
       "moviles": [
         {

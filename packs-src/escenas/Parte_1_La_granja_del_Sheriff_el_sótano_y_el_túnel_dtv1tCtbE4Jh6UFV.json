@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/granja-sotano.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/granja-sotano.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -451,7 +451,7 @@
       "escena": "granja-sotano",
       "id": "LUG-02",
       "plano": "granja-sotano",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>El sótano de la granja.</strong> Bajo la casa (misma huella que la planta baja, corrida +0,5 m en x y −1 m en y). Piso de lajas viejas, estanterías de conservas, la caldera, un arcón congelador y el armero de acero. Se baja por la escalera del vestíbulo (región «Subir a la casa» / «Llegada»).</p>\n<p><strong>La cámara del Sheriff.</strong> Piso de tierra, un catre de hierro: ahí duerme Montgomery de día. Puerta pesada.</p>\n<p><strong>El túnel al embarcadero.</strong> Detrás de la <strong>estantería de conservas</strong> del muro norte (tile: se corre como una puerta) hay una <strong>puerta oculta</strong> (muro con door=2: se ve pared) al túnel de unos <strong>300 m</strong> que sale al embarcadero privado del río Snohomish. En A4-E02, «por la granja: el túnel al embarcadero del río. Los perros cubren la retirada». Montgomery y Hal lo conocen; el resto, si alguien se lo muestra. La región del túnel queda sin destino: el embarcadero está en el mapa de zona (t2i).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): estante, palet.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Túnel al embarcadero del río (300 m).</p>",
       "moviles": [
         {

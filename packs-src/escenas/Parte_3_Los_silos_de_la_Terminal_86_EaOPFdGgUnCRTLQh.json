@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/terminal86.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/terminal86.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -835,7 +835,7 @@
       "escena": "terminal86",
       "id": "LUG-16",
       "plano": "terminal86",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.lIohEQe1KFTOCQ0U]{El elevador de grano de la Terminal 86}<br><strong>Escenas:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Cara a cara con Krell}</p>\n<p><strong>Llegada (A3-E03, Noche 7, medianoche).</strong> «La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería larga y estrecha, de chapa y vidrio sucio. Dentro, una cinta transportadora detenida corre de punta a punta.» David entra por la <strong>puerta de chapa</strong> del oeste. Al fondo, al este, la <strong>compuerta de carga abierta</strong> sobre la bahía (puerta abierta: el Narrador la puede cerrar) y delante, la <strong>silla</strong> con el rehén (tile <code>tile-silla-madera</code>; Krell la empuja hacia el borde si ve a la coterie entera). Krell espera sentado sobre la cinta. Escena con <strong>clima de lluvia y viento</strong>: entran por la compuerta.</p>\n<p><strong>Alturas (una planta por mapa).</strong> La galería está a <strong>40 m</strong> sobre el patio de la terminal (la altura de los silos). La compuerta del extremo da sobre el agua, a <strong>30 m</strong> (A3-E03). Lo que se ve por los ventanales y por la rejilla de la escalera es exterior pintado: no se camina, se llega por regiones.</p>\n<p><strong>Los tres accesos</strong> (Destreza + Sigilo Dif 4 contra Astucia + Consciencia de Krell, 7 dados):</p>\n<ul>\n<li><strong>La escalera exterior</strong> (la que usa David): región «Bajar por la escalera de servicio» en el tramo que sigue bajando; la llegada es el descanso de arriba, ante la puerta.</li>\n<li><strong>El interior del silo vecino</strong> (Atletismo Dif 3 para trepar): sale por la boca de carga del piso marcada en el pasillo sur, a unos 8 m de la silla. Un PJ escondido ahí llega a la silla con Destreza + Sigilo Dif 4.</li>\n<li><strong>El agua</strong> (lancha bajo la compuerta): región delante de la compuerta, del lado de afuera.</li>\n</ul>\n<p><strong>La compuerta.</strong> Quien cae por ella sufre 4 de daño contundente al llegar al agua, a treinta metros. En combate, Krell intenta tirar a sus rivales por ahí (Fuerza + Pelea contra Destreza + Atletismo); si cae a la mitad de su Salud, se tira él y desaparece. La región de afuera de la compuerta es la caída.</p>\n<p><strong>Fuera del mapa.</strong> El dron de Gale graba desde 200 m, sin sonido: no está en el mapa.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar por la escalera de servicio (40 m hasta el patio) · Boca del silo vecino (se trepa por dentro: Atletismo Dif 3) · Fuera de la compuerta: caída al agua, 30 m (4 contundente) / llegada desde la lancha.</p>",
       "moviles": [
         {

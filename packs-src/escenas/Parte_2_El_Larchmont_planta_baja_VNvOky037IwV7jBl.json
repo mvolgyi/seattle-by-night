@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/larchmont-planta.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/larchmont-planta.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -633,7 +633,7 @@
       "escena": "larchmont-planta",
       "id": "LUG-11",
       "plano": "larchmont-planta",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}</p>\n<p><strong>Llegada (A2-E05, escena opcional).</strong> «Cuatro pisos de ladrillo ennegrecido, ventanas sin cristal, una valla de obra con un cartel de demolición que nadie cumplió.» La valla corre por la vereda (barandas: se ve a través, no se pasa) y tiene un panel suelto por donde se entra. El cartel no está pintado (tiene texto): lo describe el Narrador. <strong>Las flores:</strong> siete de plástico descoloridas atadas con alambre y una octava, nueva, de verdad, todavía con gotas: tile <code>tile-flores-valla</code> sobre la valla.</p>\n<p><strong>Adentro.</strong> Todo quemado: las puertas ya no existen (huecos), las ventanas no tienen vidrio (huecos en el muro). El pasillo termina en el derrumbe de los pisos de arriba; el 1B y el 1C están derrumbados (macizo). Escena con <strong>clima de lluvia</strong>: el techo no existe y la lluvia «entra por el techo y baja por el hueco de la escalera hasta el sótano, donde se oye agua corriendo».</p>\n<p><strong>La escalera.</strong> En la caja de escalera, el tramo que bajaba al sótano está <strong>medio derrumbado</strong> y al lado se abre el hueco hasta el sótano (macizo negro: no tiene piso). <strong>Bajar al sótano:</strong> Destreza + Atletismo Dif 2 — la región «Bajar» está en el extremo bajo del tramo y lleva al pie de la escalera del sótano; fallar puede ser la caída por el hueco. La región del hueco lleva a los escombros del sótano (una caída de un piso, unos 3 m). Desde el sótano, la región «Subir» trae de vuelta al rellano de arriba del tramo.</p>\n<p><strong>Fuera del mapa.</strong> El resto del edificio (pisos 2 a 4, quemados y sin techo) no se juega.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): flores.</p>",
       "moviles": [
         {

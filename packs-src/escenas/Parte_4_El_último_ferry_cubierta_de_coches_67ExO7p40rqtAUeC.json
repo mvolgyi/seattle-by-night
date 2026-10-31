@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/ferry-coches.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/ferry-coches.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -884,7 +884,7 @@
       "escena": "ferry-coches",
       "id": "LUG-15",
       "plano": "ferry-coches",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, la cubierta de coches.</strong> «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. <strong>Krell</strong>, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.</p>\n<p>Recorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa, franja rayada). A los lados, los <strong>casings</strong> (ventilación y máquinas, macizos) con las <strong>escaleras</strong> de estribor y babor que suben al salón (<code>ferry</code>). Los <strong>autos</strong> son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.</p>\n<p><strong>La popa abierta.</strong> La cubierta termina en la <strong>cadena de popa</strong>; el paso del centro se suelta al amarrar y por ahí entra la <strong>rampa de vehículos</strong> de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): auto ×13.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua por la popa abierta.</p>",
       "moviles": [
         {

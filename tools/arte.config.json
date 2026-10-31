@@ -144,7 +144,8 @@
         "lampara-uv": "the tubes pale grey and unlit, no glow",
         "camara": "a tiny dark object, no lit LED",
         "banco-trabajo": "its top holds only the vice and a few dark hand tools on bare scarred wood",
-        "flores": "dull, faded colours"
+        "flores": "dull, faded colours",
+        "corcho": "a thin strip hung flat against the wall, exactly as thin as drawn and never spreading onto the floor; every clipping, poster and print in it is a blank yellowed sheet with soft grey smudges where print would be"
       },
       "carpeta": "assets/mapas",
       "sufijo_detalle": "\n\nStrictly top-down orthographic: no perspective, no wall faces. Full bleed: no border, no frame, no vignette. No text, letters or numbers anywhere, not even on {PAPELES}. No people, figures or animals. No lit lamps, glowing screens, light pools or bright spots. Every doorway is an empty gap, never a door leaf. Do not add furniture, rooms or walls that are not described; outdoor areas stay open ground.",
@@ -213,10 +214,10 @@
         },
         "subterraneo": {
           "lugar": "a dark underground space beneath Seattle",
-          "muros": "thick, solid walls of old soot-dark brick and rough stone blocks",
-          "topes": "flat tops of old brick and rough stone blocks, each block outlined",
+          "muros": "thick, solid walls of rough, dark grey dressed stone blocks, each block outlined",
+          "topes": "flat tops of rough dark grey stone blocks, each block outlined",
           "marco": "a rusted iron frame set in the stone",
-          "grano": "mortar between every brick, chisel marks on every stone, damp stains, rust, rotting timber",
+          "grano": "grime in every joint, chisel marks on every stone, damp stains, rust, rotting timber",
           "granoDetalle": "individual old bricks with crumbling mortar, rough stone blocks with chisel marks, damp patches and mineral streaks, rusted iron, rotten timber, grime in every joint",
           "detalle": "damp, old and neglected, restrained and legible at table distance: damp stains and mineral streaks along the walls, grime in the joints, scuffs along the walking paths, a little loose grit",
           "numeros": "door numbers"
@@ -286,7 +287,7 @@
     "tile": {
       "_comentario": "Muebles móviles (MAPS_SPEC §3): Z-Image Turbo (t2i-zimage) → BiRefNet (recortar-birefnet) → assets/tiles/tile-<nombre>.webp, a 100 px por metro. Sin verde: el recorte es por BiRefNet, no por croma.",
       "flujo": "t2i-zimage",
-      "prefijo": "Top-down tile artwork of ONE single loose piece of furniture or prop for a virtual tabletop battlemap set in an old apartment building in present-day Seattle, seen from DIRECTLY ABOVE: a strict orthographic bird's-eye view as if photographed from the ceiling, no perspective, no isometric tilt, no visible side faces, only the top surfaces. The object is centred and fills about 85% of the frame. Elongated objects lie with their LONG AXIS HORIZONTAL (left to right). Seats and sofas have their backrest along the TOP edge and the seat facing DOWN.\n\nSUBJECT: ",
+      "prefijo": "Flat-lay overhead shot, camera pointing STRAIGHT DOWN at the floor from directly above, like a satellite or a floor-plan view: we see ONLY the top of the object, as a flat 2D shape; legs, castors and side faces are hidden underneath it and NOT visible. Top-down tile artwork of ONE single loose piece of furniture or prop for a virtual tabletop battlemap set in an old apartment building in present-day Seattle. The object is centred and fills about 85% of the frame. If the object is elongated, its long axis runs horizontally from left to right; if it has a backrest, the backrest runs along the top edge. Only the object described below, nothing else.\n\nSUBJECT: ",
       "sufijo": "\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), worn, dusty and lived-in, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
       "ancho": 1024,
       "alto": 1024,
@@ -326,6 +327,747 @@
         }
       },
       "grading": true
+    },
+    "torre-boveda": {
+      "camino": "klein",
+      "semilla": 22,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.6,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": true
+    },
+    "galeria-archivo": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.6,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "semilla": 1111,
+        "destellos": {
+          "dentro": {
+            "disco": 16,
+            "umbral": "12%"
+          }
+        }
+      },
+      "grading": true
+    },
+    "gale-planta3": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.45,
+          "ruido": 0.3,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "semilla": 3333
+      },
+      "grading": {
+        "gamma": 1.15,
+        "blanco": 1.05,
+        "croma": 1.0
+      }
+    },
+    "subterraneo": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.6,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "carmesi": {
+          "hasta": 34,
+          "minimo": 0.5,
+          "ganancia": 1
+        },
+        "topes": [
+          {
+            "desde": 0,
+            "hasta": 95,
+            "max": 0.045
+          },
+          {
+            "desde": 110,
+            "hasta": 175,
+            "max": 0.015
+          },
+          {
+            "desde": 215,
+            "hasta": 290,
+            "max": 0.03
+          }
+        ]
+      }
+    },
+    "larchmont-sotano": {
+      "camino": "klein",
+      "semilla": 22,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.6,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.08
+      }
+    },
+    "granja-sotano": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "semilla": 1111
+      },
+      "grading": true
+    },
+    "larchmont-planta": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.6,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.08
+      }
+    },
+    "northline": {
+      "camino": "klein",
+      "semilla": 33,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.35,
+          "ruido": 0.3,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "semilla": 3333,
+        "destellos": {
+          "dentro": {
+            "disco": 12,
+            "umbral": "12%"
+          }
+        }
+      },
+      "grading": {
+        "gamma": 1.25,
+        "blanco": 1.12,
+        "croma": 1.1
+      }
+    },
+    "torre-atico": {
+      "camino": "klein",
+      "semilla": 88,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "semilla": 8888,
+        "destellos": {
+          "dentro": {
+            "disco": 14,
+            "umbral": "12%"
+          }
+        }
+      },
+      "grading": {
+        "gamma": 1.1,
+        "croma": 1.2
+      }
+    },
+    "galeria": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "edificio": "habitaciones"
+      },
+      "grading": {
+        "gamma": 1.3,
+        "blanco": 1.1,
+        "croma": 1.4
+      }
+    },
+    "gale-datos": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.3,
+        "blanco": 1.1,
+        "croma": 1.3
+      }
+    },
+    "hangar": {
+      "camino": "klein",
+      "semilla": 55,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.25,
+        "blanco": 1.1,
+        "croma": 0.95
+      }
+    },
+    "salitre": {
+      "camino": "klein",
+      "semilla": 177,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.15,
+        "blanco": 1.08,
+        "croma": 0.85
+      },
+      "aclaraciones": {
+        "corcho": "seen from directly above only as the thin top edge of a row of small black picture frames hanging flat on the wall, 15 cm deep, plain dark wood, with bare floorboards right up to the wall in front of them"
+      }
+    },
+    "gale-sentinel": {
+      "camino": "klein",
+      "semilla": 66,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.35,
+        "blanco": 1.15,
+        "croma": 0.85
+      }
+    },
+    "terminal86": {
+      "camino": "klein",
+      "semilla": 33,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.35,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.3,
+        "blanco": 1.12,
+        "croma": 0.6,
+        "sombras": {
+          "a": -0.006,
+          "b": -0.02,
+          "fuerza": 0.2,
+          "pie": 0.35
+        },
+        "luces": {
+          "a": 0,
+          "b": 0,
+          "fuerza": 0
+        }
+      }
+    },
+    "terminal-ferry": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.35,
+          "ruido": 0.25,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "edificio": "habitaciones"
+      },
+      "grading": {
+        "gamma": 1.1,
+        "croma": 0.8,
+        "sombras": {
+          "a": -0.006,
+          "b": -0.02,
+          "fuerza": 0.2,
+          "pie": 0.35
+        },
+        "luces": {
+          "a": 0,
+          "b": 0,
+          "fuerza": 0
+        }
+      }
+    },
+    "ferry": {
+      "camino": "klein",
+      "semilla": 22,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.35,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.4,
+        "blanco": 1.18,
+        "croma": 0.65,
+        "sombras": {
+          "a": -0.006,
+          "b": -0.02,
+          "fuerza": 0.2,
+          "pie": 0.35
+        },
+        "luces": {
+          "a": 0,
+          "b": 0,
+          "fuerza": 0
+        }
+      }
+    },
+    "ferry-coches": {
+      "camino": "klein",
+      "semilla": 11,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.35,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.4,
+        "blanco": 1.18,
+        "croma": 0.65,
+        "sombras": {
+          "a": -0.006,
+          "b": -0.02,
+          "fuerza": 0.2,
+          "pie": 0.35
+        },
+        "luces": {
+          "a": 0,
+          "b": 0,
+          "fuerza": 0
+        }
+      }
+    },
+    "ferry-puente": {
+      "camino": "klein",
+      "semilla": 22,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.35,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        }
+      },
+      "grading": {
+        "gamma": 1.35,
+        "blanco": 1.15,
+        "croma": 0.45,
+        "sombras": {
+          "a": -0.006,
+          "b": -0.02,
+          "fuerza": 0.1,
+          "pie": 0.35
+        },
+        "luces": {
+          "a": 0,
+          "b": 0,
+          "fuerza": 0
+        }
+      }
+    },
+    "granja": {
+      "camino": "klein",
+      "semilla": 44,
+      "macizo": "plano",
+      "escalar": true,
+      "escalador": "7b",
+      "detalle": {
+        "densidad": 200,
+        "mosaico": 1152,
+        "solape": 128,
+        "colorAlfombra": "#3a3d44",
+        "interior": {
+          "motor": "zimage",
+          "denoise": 0.5,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "exterior": {
+          "motor": "zimage",
+          "denoise": 0.4,
+          "ruido": 0.35,
+          "control": "canny",
+          "fuerza": 0.75,
+          "fin": 1,
+          "pasos": 8
+        },
+        "edificio": "habitaciones"
+      },
+      "grading": {
+        "gamma": 1.35,
+        "blanco": 1.12
+      }
     }
   },
   "assets": [
@@ -428,32 +1170,28 @@
     {
       "id": "PNJ-03",
       "estilo": "retrato",
-      "fuente": "doc15",
-      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
-      "semilla": 6806,
+      "prompt": "Charles Halloway, a slim Ventrue vampire of medium height who looks about FORTY years old, clearly middle-aged and not young: a mature, composed, unsmiling face with fine lines across the forehead and at the corners of the eyes, faint creases from nose to mouth, slightly hollow cheeks, very pale skin. Black hair with a neat old-fashioned side part, combed flat, a hairline slightly receding at the temples. Tired brown eyes. He stands perfectly still with both hands clasped behind his back, out of sight. A dark classic charcoal suit of conservative cut, a white shirt and a thin dark tie. He stands before a floor-to-ceiling window high above a night harbour with cranes and ferries, the wet city small far below him. Crimson accent: the reflection of a red aircraft warning light on the glass, over his heart.",
+      "semilla": 6814,
       "candidatas": [
-        6801,
-        6802,
-        6803,
-        6804,
-        6805,
-        6806
-      ]
+        6811,
+        6812,
+        6813,
+        6814
+      ],
+      "nota": "Charles Halloway, Abrazado en 1958 a los 37 (nació en 1921); la ficha dice «aparenta unos cuarenta». Defecto: parecía de treinta. Se pide la edad explícita con marcas de la edad, y las manos detrás de la espalda como dice el doc 15 (en la versión anterior las tenía adelante). Elegida en la tanda 2."
     },
     {
       "id": "PNJ-04",
       "estilo": "retrato",
-      "fuente": "doc15",
-      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
-      "semilla": 6902,
+      "prompt": "Helen Ward, a 34-year-old woman with a tired, sharp, intelligent face, faint shadows under her eyes, no make-up, dark wavy hair escaping a grey hood. A worn grey hoodie, plain clear reading glasses pushed up on top of her head. She sits indoors on the bare wooden floor of her small cluttered apartment, her back against a wall covered edge to edge in printed city street maps stuck with red, blue and yellow push pins; the maps are only abstract street grids, rivers and coastlines, with no labels, no street names, no legend boxes and no words at all. Her right hand holds a lit cigarette near her lips, with exactly five fingers. Her left hand rests on her knee holding a small, old, black plastic clamshell flip phone, FOLDED SHUT: a closed folding phone with a visible hinge and no screen showing; definitely NOT a smartphone, NOT a touchscreen, nothing glowing in her hands. A rain-streaked window beside her lets in the orange glow of a streetlight. Crimson accent: the red pins on the maps.",
+      "semilla": 6913,
       "candidatas": [
-        6901,
-        6902,
-        6903,
-        6904,
-        6905,
-        6906
-      ]
+        6911,
+        6912,
+        6913,
+        6914
+      ],
+      "nota": "Helen Ward, 34 (content/pnjs/fuera.json: edad 34). Defecto: tenía un smartphone con la pantalla encendida y estaba en la calle; el doc 15 y la ficha piden el viejo móvil DE TAPA que le dio David (SAFE, DOC-05), en el piso de su departamento. Se pide la tapa cerrada sobre la rodilla (la mano no tiene que agarrarlo), adentro, y mapas sin rótulos. Elegida en la tanda 2."
     },
     {
       "id": "PNJ-05",
@@ -470,26 +1208,28 @@
     {
       "id": "PNJ-11",
       "estilo": "retrato",
-      "fuente": "doc15",
-      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
-      "semilla": 7103,
+      "prompt": "Rosa Iturbe, a short, compact Basque woman who looks about thirty, with a square, stubborn jaw and a direct stare. Short black hair, cut practically. Small pale healed burn scars dotting her forearms from years of welding: old scars, not wounds, no blood. Grease-stained hands resting flat on a bar counter made from the split wooden hull of an old boat. Faded blue work overalls with the sleeves rolled up and a plain chest pocket, steel-toed boots. Indoors, in a dim dockside bar at night. On the wall behind her hang old black-and-white photographs of crowds of shipyard workers on strike, with no banners and no signs. The only sign in the bar is a red neon tube bent into the simple outline of a ship's anchor: there are NO letters, NO words and NO numbers anywhere in the image. Crimson accent: the red neon anchor.",
+      "semilla": 7112,
       "candidatas": [
-        7101,
-        7102,
-        7103
-      ]
+        7111,
+        7112,
+        7113,
+        7114
+      ],
+      "nota": "Rosa Iturbe, aparenta unos 30 (Abrazada en 1991, nacida en 1961; PNJ-11.md). Defecto: el neón de atrás tenía letras («OT»). El doc 15 pedía «a red neon sign with one letter missing», que es texto por definición: se cambia por un neón rojo con forma de ancla, sin letras. También se quita el nombre bordado del mono (texto) y las quemaduras se piden como cicatrices viejas (en la anterior parecían heridas con sangre). Elegida en la tanda 2."
     },
     {
       "id": "PNJ-12",
       "estilo": "retrato",
-      "fuente": "doc15",
-      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
-      "semilla": 7202,
+      "prompt": "August Krell, a lean, hard man who looks about twenty-eight years old but holds himself like someone much older: a shaved head, an old knife scar running through his left eyebrow, a badly healed broken nose, a still, watchful stare. A long grey wool coat clearly cut for broader shoulders, hanging too big on him, over dark work clothes. He stands in a fighter's guard, side-on: his LEFT forearm is raised in front of his chest and his left hand is a single tight fist at chin height, seen from the side, drawn with correct anatomy: four fingers curled tightly into the palm, the thumb folded OUTSIDE across the middle of the fingers, scarred swollen knuckles, a normal wrist. His right arm hangs down relaxed at his side, the right hand hidden inside the long coat sleeve. He stands on a wet concrete dock between shipping containers at night. Crimson accent: a red shipping container behind him.",
+      "semilla": 7212,
       "candidatas": [
-        7201,
-        7202,
-        7203
-      ]
+        7211,
+        7212,
+        7213,
+        7214
+      ],
+      "nota": "August Krell, aparenta 28 (Abrazado en 1972, nacido en 1944; PNJ-12.md). Zurdo. Defecto: la mano de la guardia salió deforme. Se describe UN solo puño con la anatomía explícita (cuatro dedos cerrados, el pulgar por fuera sobre los dedos), de perfil a tres cuartos, y la otra mano escondida en la manga del abrigo. Elegida en la tanda 2."
     },
     {
       "id": "PNJ-13",
@@ -566,17 +1306,15 @@
     {
       "id": "PNJ-19",
       "estilo": "retrato",
-      "fuente": "doc15",
-      "nota": "retrato (prompt del doc 15, content/arte-doc15.json)",
-      "semilla": 7906,
+      "prompt": "Preston Gale, a 53-year-old tech CEO, visibly in his fifties: a receding hairline, short hair greying at the temples and slicked back, deep crow's feet, heavy nasolabial folds, slightly loose skin under the jaw, a thickening middle-aged neck and waist. Deeply tanned, with a too-bright investor smile showing very white teeth and a sheen of sweat at his temples. An expensive navy suit with an open-collared white shirt and no tie. He stands indoors, dry, in a cold corporate lobby of glass and grey stone beneath a giant wall screen showing a mosaic of hundreds of small live doorbell-camera feeds: grainy night views of porches, front doors and driveways, with no text, no numbers, no timestamps and no interface on them. Crimson accent: a few of the small feeds tinted deep red.",
+      "semilla": 7914,
       "candidatas": [
-        7901,
-        7902,
-        7903,
-        7904,
-        7905,
-        7906
-      ]
+        7911,
+        7912,
+        7913,
+        7914
+      ],
+      "nota": "Preston Gale, «cincuenta y pocos» (PNJ-19.md, fuera.json). Defecto: parecía de cuarenta. Se pide 53 con canas, entradas, patas de gallo y papada; adentro y seco (estaba bajo la lluvia), y el acento carmesí sin números (el doc 15 pedía «tiny numbers glowing red»: pseudo-texto). Elegida en la tanda 2."
     },
     {
       "id": "PNJ-20",
@@ -901,17 +1639,17 @@
       "id": "PNJ-03",
       "estilo": "token",
       "retrato": "PNJ-03",
-      "prompt": "Charles Halloway: black hair with a side part, a dark classic suit, hands clasped behind his back.",
+      "prompt": "Charles Halloway: black hair with a neat side part, a dark classic charcoal suit, both hands clasped behind his back.",
       "semilla": 6851,
-      "nota": "token desde el retrato"
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
     },
     {
       "id": "PNJ-04",
       "estilo": "token",
       "retrato": "PNJ-04",
-      "prompt": "Helen Ward: dark hair escaping a grey hoodie, glasses pushed up on her head, a cigarette in one hand and an old flip phone in the other.",
+      "prompt": "Helen Ward: dark hair escaping a grey hoodie, clear glasses pushed up on her head, a cigarette in one hand and a small closed black flip phone in the other.",
       "semilla": 6951,
-      "nota": "token desde el retrato"
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
     },
     {
       "id": "PNJ-05",
@@ -925,17 +1663,17 @@
       "id": "PNJ-11",
       "estilo": "token",
       "retrato": "PNJ-11",
-      "prompt": "Rosa Iturbe: short black hair, blue work overalls, steel-toed boots, grease-stained hands.",
+      "prompt": "Rosa Iturbe: short black hair, faded blue work overalls with rolled sleeves, steel-toed boots, grease-stained hands.",
       "semilla": 7151,
-      "nota": "token desde el retrato"
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
     },
     {
       "id": "PNJ-12",
       "estilo": "token",
       "retrato": "PNJ-12",
-      "prompt": "August Krell: a shaved head, a long grey wool coat clearly too big at the shoulders over dark work clothes, his fists clenched.",
+      "prompt": "August Krell: a shaved head, a long grey wool coat clearly too big at the shoulders over dark work clothes, his left fist raised in front of him.",
       "semilla": 7251,
-      "nota": "token desde el retrato"
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
     },
     {
       "id": "PNJ-13",
@@ -989,9 +1727,9 @@
       "id": "PNJ-19",
       "estilo": "token",
       "retrato": "PNJ-19",
-      "prompt": "Preston Gale: a tanned man in an expensive suit with an open collar, slicked hair.",
+      "prompt": "Preston Gale: a tanned man in his fifties with thinning, greying slicked-back hair, an expensive navy suit and an open-collared white shirt.",
       "semilla": 7951,
-      "nota": "token desde el retrato"
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
     },
     {
       "id": "PNJ-20",

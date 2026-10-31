@@ -19,6 +19,21 @@
  *   --salida <dir>   escribe ahí en vez de en assets/ (pruebas). La procedencia
  *                    va a <dir>/PROCEDENCIA.json, no a la del módulo.
  *   --sin-vigilar    no mira temperatura de GPU ni RAM entre trabajos.
+ *   --gpu <lim>,<reanuda>  umbrales de temperatura en °C (por defecto 80,70).
+ *   --ram <lim>,<reanuda>  umbrales de RAM disponible en GB (por defecto 8,12).
+ *   --config <archivo>     tanda extra encima de arte.config.json sin tocarlo
+ *       (p. ej. tools/arte.tanda2.json): `estilos` NUEVOS y `assets`; un asset con
+ *       el mismo id y estilo que uno del config reemplaza al de base.
+ *   --referencia <archivo> (tokens, sólo con --salida) usa esa imagen como retrato
+ *       de referencia en vez de assets/retratos/<id>.webp, y nombra la salida como
+ *       la referencia: así cada retrato candidato tiene su token al lado.
+ *   --reanudar       con --salida, saltea las candidatas que ya existen.
+ *   --simular        no llama a ComfyUI ni mira la placa: lista qué generaría
+ *       (flujo, tamaño, semilla, destino, referencia y prompt completo).
+ *   --px-por-m <n>   tiles con `metros`: escala final (por defecto 100, MAPS_SPEC §4).
+ *
+ * Un estilo puede declarar `tipo` (retrato, token o tile): así un estilo nuevo
+ * (tile-vehiculo, portada…) reutiliza el camino de uno existente.
  *
  * Assets (arte.config.json → assets[]):
  *   { id, estilo, semilla, prompt | fuente: "doc15", nota,
@@ -36,7 +51,12 @@
  *          assets/tokens-crudo/fondo/<id>.webp (sobre gris liso) → BiRefNet →
  *          assets/tokens-crudo/<id>.png (alfa) → tools/tokens.mjs →
  *          assets/tokens/<id>.webp (círculo con anillo).
- * Tile:    t2i-zimage → BiRefNet → assets/tiles/<id>.webp (con alfa).
+ * Tile:    t2i-zimage → BiRefNet → assets/tiles/<id>.webp (con alfa). Si el
+ *          asset trae `metros: [ancho, alto]` (el rectángulo SIN rotar del tile,
+ *          como lo arma tools/contenido/escenas.mjs), se recorta al contenido y
+ *          se lleva a ancho×alto × 100 px, centrado sobre transparente.
+ *
+ * El camino retrato (sin recorte) sirve también para la portada (`tipo: retrato`).
  *
  * Cada imagen final queda registrada en assets/PROCEDENCIA.json (modelo,
  * licencia, workflow, semilla, prompt).
@@ -55,6 +75,24 @@ const RAIZ = path.resolve(import.meta.dirname, "..");
 const CONFIG = JSON.parse(fs.readFileSync(path.join(RAIZ, "tools/arte.config.json"), "utf8"));
 const DOC15 = JSON.parse(fs.readFileSync(path.join(RAIZ, "content/arte-doc15.json"), "utf8"));
 const CALIDAD_WEBP = 90;
+
+// --config <archivo>: estilos nuevos y assets encima de arte.config.json. Los
+// estilos de base no se pisan (son el contrato del set); los assets con el mismo
+// id+estilo sí: así se prueban prompts corregidos sin tocar los publicados.
+{
+  const i = process.argv.indexOf("--config");
+  if (i >= 0) {
+    const archivo = path.resolve(process.argv[i + 1] ?? "");
+    const extra = JSON.parse(fs.readFileSync(archivo, "utf8"));
+    for (const [k, v] of Object.entries(extra.estilos ?? {})) {
+      if (CONFIG.estilos[k]) throw new Error(`${path.basename(archivo)}: el estilo «${k}» ya existe en arte.config.json; usá otro nombre`);
+      CONFIG.estilos[k] = v;
+    }
+    const clave = a => `${a.id}|${a.estilo}`;
+    const nuevos = new Map((extra.assets ?? []).map(a => [clave(a), a]));
+    CONFIG.assets = [...(CONFIG.assets ?? []).filter(a => !nuevos.has(clave(a))), ...nuevos.values()];
+  }
+}
 
 /* --- modelos por workflow (tools/MODELOS.md) -------------------------------- */
 
@@ -80,7 +118,15 @@ const usarCandidatas = tiene("--candidatas");
 const semillasDe = a => semillasCli ?? (usarCandidatas ? (a.candidatas ?? [a.semilla]) : [a.semilla]);
 const modoCandidatas = !!semillasCli || usarCandidatas;
 const salidaCli = valor("--salida") ? path.resolve(valor("--salida")) : null;
-const vigilar = !tiene("--sin-vigilar");
+const simular = tiene("--simular");
+const vigilar = !tiene("--sin-vigilar") && !simular;
+const reanudar = tiene("--reanudar");
+const referenciaCli = valor("--referencia") ? path.resolve(valor("--referencia")) : null;
+const pxPorM = Number(valor("--px-por-m") ?? 100);
+if (referenciaCli && !salidaCli) {
+  console.error("--referencia va con --salida: no se escribe en assets/ un token de un retrato que no está publicado.");
+  process.exit(1);
+}
 
 /* --- rutas y prompts -------------------------------------------------------- */
 
@@ -89,6 +135,8 @@ const estiloDe = a => {
   if (!e) throw new Error(`${a.id}: estilo desconocido «${a.estilo}»`);
   return e;
 };
+/** Camino de generación: retrato (t2i tal cual), token o tile. Un estilo nuevo lo declara con `tipo`. */
+const tipoDe = a => estiloDe(a).tipo ?? a.estilo;
 const flujoDe = a => a.flujo ?? estiloDe(a).flujo;
 const carpetaDe = a => path.join(RAIZ, a.carpeta ?? estiloDe(a).carpeta);
 const rutaDe = a => path.join(carpetaDe(a), `${a.id}.webp`);
@@ -107,7 +155,7 @@ function sujetoDe(a) {
 /** Prefijo + sujeto + sufijo. Un token generado sin retrato (t2i) usa `prefijo_t2i`. */
 function promptDe(a) {
   const e = estiloDe(a);
-  const prefijo = a.prefijo ?? (a.estilo === "token" && flujoDe(a) === "t2i-zimage" ? (e.prefijo_t2i ?? e.prefijo) : e.prefijo);
+  const prefijo = a.prefijo ?? (tipoDe(a) === "token" && flujoDe(a) === "t2i-zimage" ? (e.prefijo_t2i ?? e.prefijo) : e.prefijo);
   return prefijo + sujetoDe(a) + e.sufijo;
 }
 
@@ -119,9 +167,10 @@ function promptDe(a) {
  * salen del mismo camino retrato → Qwen-Edit y comparten estilo.
  */
 const FIGURAS = path.join(RAIZ, "assets/tokens-crudo/figura");
-const rutaReferencia = a => a.figura
-  ? path.join(FIGURAS, `${a.id}-s${a.semilla_figura}.webp`)
-  : path.join(RAIZ, CONFIG.estilos.retrato.carpeta, `${a.retrato ?? a.id}.webp`);
+const rutaReferencia = a => referenciaCli && tipoDe(a) === "token" ? referenciaCli
+  : a.figura
+    ? path.join(FIGURAS, `${a.id}-s${a.semilla_figura}.webp`)
+    : path.join(RAIZ, CONFIG.estilos.retrato.carpeta, `${a.retrato ?? a.id}.webp`);
 
 async function asegurarFigura(a) {
   const ruta = rutaReferencia(a);
@@ -135,8 +184,14 @@ async function asegurarFigura(a) {
 
 /* --- vigilancia de la placa (condición del usuario) ------------------------- */
 
-const LIMITE_GPU = 80, REANUDA_GPU = 70;      // °C
-const LIMITE_RAM = 8, REANUDA_RAM = 12;       // GB disponibles
+const umbrales = (flag, def) => {
+  const v = valor(flag)?.split(",").map(Number);
+  if (!v) return def;
+  if (v.length !== 2 || v.some(n => !Number.isFinite(n))) { console.error(`${flag} espera <límite>,<reanuda>`); process.exit(1); }
+  return v;
+};
+const [LIMITE_GPU, REANUDA_GPU] = umbrales("--gpu", [80, 70]);   // °C: pausa por encima, sigue por debajo
+const [LIMITE_RAM, REANUDA_RAM] = umbrales("--ram", [8, 12]);    // GB disponibles: pausa por debajo, sigue por encima
 const pausas = [];
 
 function estadoHardware() {
@@ -226,11 +281,34 @@ async function recortar(png, etiqueta) {
  * Genera un asset con una semilla. `dir` = carpeta de salida (null = assets/).
  * Devuelve la ruta final.
  */
+/** Nombre y ruta de salida de una pasada (con --referencia, el nombre del retrato candidato). */
+function salidaDe(a, semilla, dir) {
+  const base = referenciaCli && tipoDe(a) === "token" ? path.basename(referenciaCli, path.extname(referenciaCli)) : a.id;
+  const nombre = `${base}${dir && modoCandidatas ? `-s${semilla}` : ""}`;
+  return { nombre, destino: dir ? path.join(dir, `${nombre}.webp`) : rutaDe(a) };
+}
+
+/**
+ * Tile a escala: recorta al contenido (limpiando el velo de alfa de BiRefNet,
+ * como tools/tokens.mjs) y lo lleva a ancho×alto metros × pxPorM, sin deformar,
+ * centrado sobre transparente. Devuelve el tamaño y cuánto llena el objeto.
+ */
+function escalarTile(pngAlfa, destino, metros) {
+  const [w, h] = metros.map(m => Math.max(8, Math.round(m * pxPorM)));
+  const recortado = path.join(tmpDir, `escala-${path.basename(destino, ".webp")}.png`);
+  execFileSync("magick", [pngAlfa, "-channel", "A", "-level", "8%,100%", "+channel",
+    "-background", "none", "-alpha", "background", "-fuzz", "1%", "-trim", "+repage", recortado]);
+  const [rw, rh] = execFileSync("magick", ["identify", "-format", "%w %h", recortado]).toString().trim().split(" ").map(Number);
+  const k = Math.min(w / rw, h / rh);
+  fs.mkdirSync(path.dirname(destino), { recursive: true });
+  execFileSync("magick", [recortado, "-filter", "Lanczos", "-resize", `${w}x${h}`, "-background", "none",
+    "-gravity", "center", "-extent", `${w}x${h}`, "-quality", String(CALIDAD_WEBP), destino]);
+  return { px: [w, h], llena: [Math.round((rw * k / w) * 100), Math.round((rh * k / h) * 100)] };
+}
+
 async function generar(a, semilla, dir) {
-  const flujo = flujoDe(a);
-  const sufijo = dir && modoCandidatas ? `-s${semilla}` : "";
-  const nombre = `${a.id}${sufijo}`;
-  const destino = dir ? path.join(dir, `${nombre}.webp`) : rutaDe(a);
+  const flujo = flujoDe(a), tipo = tipoDe(a);
+  const { nombre, destino } = salidaDe(a, semilla, dir);
   const { png, segundos, valores } = await pasada(a, semilla);
   let workflow = `tools/workflows/${flujo}.json`;
   const modelos = [...MODELOS[flujo].modelos];
@@ -238,18 +316,18 @@ async function generar(a, semilla, dir) {
   const extra = {};
   let total = segundos;
 
-  if (a.estilo === "retrato") {
+  if (tipo === "retrato") {
     guardar(png, destino, CALIDAD_WEBP);
-  } else if (a.estilo === "token" || a.estilo === "tile") {
+  } else if (tipo === "token" || tipo === "tile") {
     // Crudo (sobre gris liso), recorte con alfa y, si es token, el círculo.
     const crudo = dir ? path.join(dir, "fondo", `${nombre}.webp`) : path.join(CRUDO_TOKENS, "fondo", `${a.id}.webp`);
-    if (a.estilo === "token") guardar(png, crudo, CALIDAD_WEBP);
+    if (tipo === "token" || dir) guardar(png, crudo, CALIDAD_WEBP);
     const cut = await recortar(png, `${a.estilo}-${nombre}`);
     total += cut.segundos;
     workflow += " + tools/workflows/recortar-birefnet.json";
     modelos.push(...MODELOS["recortar-birefnet"].modelos);
     licencias.add(MODELOS["recortar-birefnet"].licencia);
-    if (a.estilo === "token") {
+    if (tipo === "token") {
       const alfa = dir ? path.join(dir, "alfa", `${nombre}.png`) : path.join(CRUDO_TOKENS, `${a.id}.png`);
       fs.mkdirSync(path.dirname(alfa), { recursive: true });
       fs.writeFileSync(alfa, cut.png);
@@ -263,10 +341,21 @@ async function generar(a, semilla, dir) {
         modelos.push(...MODELOS["t2i-zimage"].modelos);
         workflow = "tools/workflows/t2i-zimage.json (figura de referencia) + " + workflow;
       }
+    } else if (a.metros) {
+      // El alfa a resolución de generación queda al lado (con --salida) por si
+      // hay que reexportar a otra escala sin volver a pintar.
+      const alfa = path.join(dir ?? tmpDir, "alfa", `${nombre}.png`);
+      fs.mkdirSync(path.dirname(alfa), { recursive: true });
+      fs.writeFileSync(alfa, cut.png);
+      const esc = escalarTile(alfa, destino, a.metros);
+      workflow += ` + magick (recorte y escala a ${pxPorM} px/m)`;
+      extra.metros = a.metros;
+      extra.escala = { px_por_m: pxPorM, px: esc.px, llena_pct: esc.llena };
+      if (dir) { extra.crudo = path.relative(RAIZ, crudo); extra.alfa = path.relative(RAIZ, alfa); }
     } else {
       guardar(cut.png, destino, CALIDAD_WEBP);
     }
-  } else throw new Error(`${a.id}: estilo «${a.estilo}» no soportado por generar-arte`);
+  } else throw new Error(`${a.id}: tipo «${tipo}» no soportado por generar-arte`);
 
   registrarProcedencia(destino, {
     id: a.id, estilo: a.estilo, modelos, licencia: [...licencias].join(" + "), workflow,
@@ -300,10 +389,33 @@ if (!forzar && !salidaCli) cola = cola.filter(a => !fs.existsSync(rutaDe(a)));
 // Los retratos primero: los tokens los usan de referencia. Agrupado por flujo
 // para no recargar modelos (un modelo grande por vez).
 const ORDEN = { retrato: 0, tile: 1, token: 2 };
-cola = [...cola].sort((x, y) => (ORDEN[x.estilo] - ORDEN[y.estilo]) || flujoDe(x).localeCompare(flujoDe(y)));
+cola = [...cola].sort((x, y) => (ORDEN[tipoDe(x)] - ORDEN[tipoDe(y)]) || flujoDe(x).localeCompare(flujoDe(y)));
 
 if (!cola.length) {
   console.log("Nada que generar. Usá --forzar para regenerar, o --listar para ver el estado.");
+  process.exit(0);
+}
+
+// --simular: lo que se mandaría, sin ComfyUI ni vigilancia de la placa.
+if (simular) {
+  let n = 0;
+  for (const a of cola) {
+    const e = estiloDe(a), flujo = flujoDe(a);
+    for (const semilla of semillasDe(a)) {
+      n++;
+      const { destino } = salidaDe(a, semilla, salidaCli);
+      const ya = reanudar && salidaCli && fs.existsSync(destino) ? "  (ya existe: se saltea)" : "";
+      console.log(`[${n}] ${a.estilo} ${a.id} s${semilla}  ${flujo}  ${a.ancho ?? e.ancho}×${a.alto ?? e.alto}` +
+        `${a.metros ? `  → ${a.metros.join("×")} m = ${a.metros.map(m => Math.max(8, Math.round(m * pxPorM))).join("×")} px` : ""}${ya}`);
+      console.log(`    destino: ${path.relative(RAIZ, destino)}`);
+      if (flujo.startsWith("editar-")) {
+        const ref = rutaReferencia(a);
+        console.log(`    referencia: ${path.relative(RAIZ, ref)}${fs.existsSync(ref) ? "" : "  (todavía no existe)"}`);
+      }
+      console.log(`    prompt: ${promptDe(a).replace(/\n+/g, " ¶ ")}`);
+    }
+  }
+  console.log(`\nSimulación: ${n} imagen(es); no se mandó nada a ComfyUI.`);
   process.exit(0);
 }
 
@@ -330,6 +442,11 @@ for (const a of cola) {
   for (const semilla of semillasDe(a)) {
     i++;
     const etiqueta = `[${i}/${n}] ${a.estilo} ${a.id} s${semilla}`;
+    if (reanudar && salidaCli && fs.existsSync(salidaDe(a, semilla, salidaCli).destino)) {
+      console.log(`${etiqueta.padEnd(40)} = ya está (--reanudar)`);
+      ok++;
+      continue;
+    }
     try {
       if (!Number.isInteger(semilla)) throw new Error("el asset no tiene `semilla` fija");
       await cuidarPlaca(etiqueta);

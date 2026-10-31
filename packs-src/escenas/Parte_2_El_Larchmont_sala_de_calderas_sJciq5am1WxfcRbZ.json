@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/larchmont-sotano.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/larchmont-sotano.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -411,7 +411,7 @@
       "escena": "larchmont-sotano",
       "id": "LUG-11",
       "plano": "larchmont-sotano",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{El edificio Larchmont}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · Las cenizas del Larchmont}</p>\n<p><strong>El sótano (A2-E05).</strong> Se llega por la escalera medio derrumbada (al pie, bajo el hueco, un montón de escombros mojados donde cae la lluvia) o cayendo por el hueco. Oscuridad total: no hay luz. Se oye agua corriendo: un <strong>canal</strong> abierto en el piso lleva el agua desde los escombros hasta la <strong>boca del desagüe grande</strong> del muro oeste, que sale al estrecho.</p>\n<p><strong>La cisterna sellada.</strong> En el centro de la sala de calderas, <strong>una losa de hormigón nuevo, más claro que el resto del suelo</strong> (Astucia + Investigación Dif 3; automático para David). Debajo están los siete inquilinos, Danny Ruiz (REF-02) entre ellos. <strong>No se pinta abierta:</strong> si la coterie la levanta (Fuerza + Atletismo Dif 4, o automático con Potencia 2), el Narrador pone encima el tile <code>tile-cisterna-abierta</code> (Pendiente) y aplica Termómetro +2 y la tirada de Remordimiento de David. <strong>Auspex 4</strong> sobre la losa: siete presencias, frío, agua, «Helen va a venir».</p>\n<p><strong>La flor nueva.</strong> Astucia + Consciencia Dif 4: junto a la losa, huellas recientes de pies descalzos y un olor muy débil a Vitae rancia (MEN-08). <strong>No están pintadas ni tienen tile</strong>: son la recompensa de la tirada, como el repetidor de LUG-05.</p>\n<p><strong>El superviviente (MEN-08, GAN-09).</strong> Si el Narrador quiere adelantar GAN-09, está escondido en el desagüe (Ofuscación 3) y huye hacia el agua al ver a la coterie: la región del desagüe no tiene mapa todavía.</p>\n<p><strong>Calderas.</strong> Dos calderas de hierro remachado y un tanque de fueloil contra el muro norte, frías y oxidadas: dan cobertura.</p>\n\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Desagüe al estrecho.</p>",
       "moviles": []
     }

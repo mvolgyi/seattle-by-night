@@ -55,6 +55,12 @@
  *   --entrada esquema|lineas         qwen/klein: el esquema pintado o un dibujo de líneas desde el plano
  *   --no-sellar                      no tapa los bloques cerrados con el macizo liso (retoque determinista)
  *   --reusar-crudo                   no regenera si ya existe el crudo de esa salida
+ *   --cache <carpeta>                guarda cada pasada de detalle (clave: base + parámetros + prompts)
+ *                                    y la reusa si se repite igual (pruebas de exterior, reproducción)
+ *
+ * Vigilancia (SBN_LOG_TERMICA=<archivo.jsonl> para el registro): antes de cada
+ * mapa, de SeedVR2 y cada 5 mosaicos mira la GPU y la RAM; > 80 °C o < 4 GB
+ * disponibles (4 GB; ver VIGILANCIA) = pausa hasta < 70 °C / > 6 GB (POST /free si es por RAM).
  *   --forzar                         pisa assets/mapas/<id>.webp
  *   --ver-prompt                     imprime el prompt y sale
  */
@@ -80,6 +86,58 @@ const LIMITE_ANISOTROPIA = 3;     // % de deriva tolerable tras corregir
 const CALIDAD_MINIMA = 0.45;
 const DERIVA_MINIMA = 90;         // % de longitud de muro que cae a ≤ TOLERANCIA_PX
 const TOLERANCIA_PX = 5;          // MAPS_SPEC §7: el muro pintado cae a ≤ 5 px del plano
+
+/* -------------------------------------------- */
+/*  Vigilancia de temperatura y RAM              */
+/* -------------------------------------------- */
+
+/**
+ * Condición del usuario para los lotes largos: antes de cada mapa y cada ~5
+ * mosaicos se mira la GPU y la RAM. Si la GPU pasa de 80 °C o la RAM
+ * disponible baja de 8 GB, se pausa (con POST /free si es por RAM) hasta
+ * < 70 °C / > 12 GB. Todo queda en el registro (`SBN_LOG_TERMICA`, jsonl).
+ */
+// RAM: 4/6 GB (no 8/12): con 8 GB cada pausa hacía POST /free, la recarga de Z-Image + codificador +
+// ControlNet (~27 GB) volvía a bajar la RAM a ~6 GB y se entraba en un bucle (pedido del coordinador, 2026-10-31).
+const VIGILANCIA = { tempMax: 80, tempSigue: 70, ramMin: 4, ramSigue: 6, espera: 15000 };
+const COMFY = process.env.COMFY_URL ?? "http://127.0.0.1:8188";
+function leerSistema() {
+  let temp = null, vram = null, ram = null;
+  try {
+    const [t, m] = execFileSync("nvidia-smi", ["--query-gpu=temperature.gpu,memory.used", "--format=csv,noheader,nounits"], { encoding: "utf8" })
+      .trim().split("\n")[0].split(",").map(s => Number(s.trim()));
+    temp = t; vram = m;
+  } catch { /* sin nvidia-smi: no se vigila la GPU */ }
+  try {
+    const libre = execFileSync("free", ["-g"], { encoding: "utf8" }).split("\n").find(l => l.startsWith("Mem:")).trim().split(/\s+/);
+    ram = Number(libre[6]);
+  } catch { /* sin free */ }
+  return { temp, vram, ram };
+}
+function registrar(evento) {
+  const linea = JSON.stringify({ t: new Date().toISOString(), ...evento });
+  if (process.env.SBN_LOG_TERMICA) fs.appendFileSync(process.env.SBN_LOG_TERMICA, linea + "\n");
+  if (evento.tipo !== "control") process.stderr.write(`\n  [vigilancia] ${linea}\n`);
+}
+export async function vigilar(motivo) {
+  const V = VIGILANCIA;
+  let s = leerSistema();
+  registrar({ tipo: "control", motivo, ...s });
+  const caliente = s.temp !== null && s.temp > V.tempMax, sinRam = s.ram !== null && s.ram < V.ramMin;
+  if (!caliente && !sinRam) return;
+  registrar({ tipo: "pausa", motivo, causa: [caliente && "temperatura", sinRam && "ram"].filter(Boolean).join("+"), ...s });
+  const t0 = Date.now();
+  if (sinRam) {
+    try { await fetch(`${COMFY}/free`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ unload_models: true, free_memory: true }) }); } catch { /* sigue esperando */ }
+  }
+  for (;;) {
+    await new Promise(r => setTimeout(r, V.espera));
+    s = leerSistema();
+    const okT = !caliente || s.temp === null || s.temp < V.tempSigue, okR = !sinRam || s.ram === null || s.ram > V.ramSigue;
+    if (okT && okR) break;
+  }
+  registrar({ tipo: "reanuda", motivo, segundos: Math.round((Date.now() - t0) / 1000), ...s });
+}
 
 /* -------------------------------------------- */
 /*  Caminos                                     */
@@ -369,9 +427,11 @@ function rol(h, muebles) {
   return "a room";
 }
 
+/** Aclaraciones vigentes: las de estilos.battlemap más las de mapas.<id>.aclaraciones (las pisa pintar()). */
+let ACLARACIONES = E.aclaraciones ?? {};
 function textoMueble(m) {
   const tipo = tipoMueble(m);
-  const a = E.aclaraciones?.[tipo];
+  const a = ACLARACIONES[tipo];
   return (m.desc ?? OBJ[tipo] ?? tipo) + (a ? ` (${a})` : "");
 }
 
@@ -876,20 +936,31 @@ export function vanosAbiertos(finalPath, esquemaPath, plano) {
  * juego y su aspecto es «macizo», taparla no cambia nada jugable y saca los
  * muros inventados. Devuelve cuántos bloques selló.
  */
-export function sellarMacizos(destino, plano) {
-  const W = plano.ancho * PX_POR_M, H = plano.alto * PX_POR_M, m = 17;
-  const bloques = normalizar(plano).habitaciones.filter(h => h.piso === "macizo");
-  if (!bloques.length) return 0;
+export function sellarMacizos(destino, plano, { fondo = false } = {}) {
+  const W = plano.ancho * PX_POR_M, H = plano.alto * PX_POR_M, m = 17, e = 16;
+  const habs = normalizar(plano).habitaciones;
+  // Los huecos (`vacio`: el hueco de la escalera de Larchmont) también: el material pide un
+  // relleno casi negro liso y la pasada de detalle pinta escombros y escaleras adentro.
+  const bloques = habs.filter(h => h.piso === "macizo" || h.piso === "vacio");
+  if (!bloques.length && !fondo) return 0;
+  // Con `fondo` (planos de fondo `roca` o `vacio`): todo lo que queda fuera de las
+  // habitaciones (más medio muro) también es macizo: la roca alrededor de un
+  // sótano (o el vacío fuera de las ventanas de una torre) no se pisa, y los modelos
+  // la pintan como una losa clara de hormigón.
+  const fuera = fondo
+    ? ["-fill", "black", ...habs.filter(h => h.piso !== "macizo" && h.piso !== "vacio").flatMap(h => ["-draw",
+      `rectangle ${h.x * PX_POR_M - e},${h.y * PX_POR_M - e} ${(h.x + h.w) * PX_POR_M + e - 1},${(h.y + h.h) * PX_POR_M + e - 1}`])]
+    : [];
   const dibujo = bloques.flatMap(h => ["-draw",
     `rectangle ${h.x * PX_POR_M + m},${h.y * PX_POR_M + m} ${(h.x + h.w) * PX_POR_M - m},${(h.y + h.h) * PX_POR_M - m}`]);
   const tmp = `${destino}.sellado.png`;
   magick([destino,
     "(", "-size", `${W}x${H}`, `xc:${COLOR_MACIZO}`, "-seed", "1", "-attenuate", "0.25", "+noise", "Gaussian", "-blur", "0x0.7", ")",
-    "(", "-size", `${W}x${H}`, "xc:black", "-fill", "white", ...dibujo, "-blur", "0x1.5", "-alpha", "off", ")",
+    "(", "-size", `${W}x${H}`, fondo ? "xc:white" : "xc:black", ...fuera, "-fill", "white", ...dibujo, "-blur", "0x1.5", "-alpha", "off", ")",
     "-compose", "over", "-composite", tmp]);
   magick([tmp, "-quality", "88", destino]);
   fs.rmSync(tmp, { force: true });
-  return bloques.length;
+  return bloques.length + (fondo ? 1 : 0);
 }
 
 export function satLum(ruta) {
@@ -1030,14 +1101,20 @@ function crudoRgb(ruta) {
 }
 
 /** Rectángulos (m) de las zonas del plano para componer las pasadas. */
-function zonasDetalle(plano) {
+function zonasDetalle(plano, modo = "caja") {
   const pl = normalizar(plano);
   const dentroEdificio = pl.habitaciones.filter(h => h.piso !== "rejilla");
   const g = 0.15;   // medio muro exterior
   const x0 = Math.min(...dentroEdificio.map(h => h.x)) - g, y0 = Math.min(...dentroEdificio.map(h => h.y)) - g;
   const x1 = Math.max(...dentroEdificio.map(h => h.x + h.w)) + g, y1 = Math.max(...dentroEdificio.map(h => h.y + h.h)) + g;
   return {
-    edificio: [{ x: x0, y: y0, w: x1 - x0, h: y1 - y0 }],
+    // «caja»: el rectángulo que envuelve todas las habitaciones (un edificio).
+    // «habitaciones» (mapas.<id>.detalle.edificio): cada habitación con medio
+    // muro, para los planos de varios edificios sueltos (la granja): así el
+    // patio de grava entre ellos lo pinta la pasada de exterior, no la de interior.
+    edificio: modo === "habitaciones"
+      ? dentroEdificio.map(h => ({ x: h.x - g, y: h.y - g, w: h.w + 2 * g, h: h.h + 2 * g }))
+      : [{ x: x0, y: y0, w: x1 - x0, h: y1 - y0 }],
     // La rejilla de la escalera de incendios (y sus barandas) queda de la base:
     // repintada se llena de objetos de colores entre los barrotes.
     base: [...pl.habitaciones.filter(h => h.piso === "rejilla"), ...(pl.muebles ?? []).filter(m => DE_BASE.has(m.tipo))]
@@ -1100,6 +1177,7 @@ async function pasadaGpu(grande, plano, destino, zona, modo, p, ctx) {
     magick([grande, "-crop", `${T}x${T}+${x0}+${y0}`, "+repage", tile]);
     let salida = tile;
     if (zona.some(z => recortar(z, r))) {
+      if (prompts.length % 5 === 0) await vigilar(`${plano.id} ${modo} mosaico ${i}`);
       const texto = promptMosaico(plano, r, p.motor, modo);
       prompts.push({ modo, i, x0, y0, prompt: texto });
       // Grano: sin textura de partida el img2img devuelve rellenos lisos.
@@ -1156,10 +1234,10 @@ async function pasadaGpu(grande, plano, destino, zona, modo, p, ctx) {
  * uno chico y nunca sobre muebles fijos, ventanas ni pisos de azulejo/linóleo
  * (que son claros a propósito).
  */
-function quitarDestellos(actual, plano, ctx) {
+function quitarDestellos(actual, plano, ctx, ajustes = {}) {
   const { D, W, H, tmp } = ctx;
   const pl = normalizar(plano);
-  const z = zonasDetalle(plano);
+  const z = zonasDetalle(plano, ctx.edificio);
   const r = (o, g) => ({ x: o.x - g, y: o.y - g, w: o.w + 2 * g, h: o.h + 2 * g });
   const protegidos = [
     ...(pl.muebles ?? []).filter(m => !esMovil(m)).map(m => r(m, 0.1)),
@@ -1168,9 +1246,11 @@ function quitarDestellos(actual, plano, ctx) {
       .map(v => r(v.eje === "h" ? { x: v.x, y: v.y, w: v.w, h: 0 } : { x: v.x, y: v.y, w: 0, h: v.w }, 0.2))
   ];
   const k = D / 200;
+  // `ajustes` (mapas.<id>.detalle.destellos): { fuera: { disco, umbral }, dentro: { disco, umbral } },
+  // disco en px a 200 px/m. Un disco más grande borra también los «focos» con halo.
   const pasadas = [
-    { disco: Math.round(20 * k), umbral: "12%", zona: "fuera" },
-    { disco: Math.round(7 * k), umbral: "15%", zona: "dentro" }
+    { disco: Math.round((ajustes.fuera?.disco ?? 20) * k), umbral: ajustes.fuera?.umbral ?? "12%", zona: "fuera" },
+    { disco: Math.round((ajustes.dentro?.disco ?? 7) * k), umbral: ajustes.dentro?.umbral ?? "15%", zona: "dentro" }
   ];
   for (const [i, p] of pasadas.entries()) {
     const abierta = path.join(tmp, `abierta${i}.png`), puntos = path.join(tmp, `puntos${i}.png`), donde = path.join(tmp, `donde${i}.png`);
@@ -1204,7 +1284,7 @@ export async function detallarMosaicos(base, plano, destino, op) {
   const D = op.densidad ?? 200, T = op.mosaico ?? 1152, S = op.solape ?? 128;
   const W = plano.ancho * D, H = plano.alto * D;
   const tmp = fs.mkdtempSync(path.join(op.tmp, "mosaicos-"));
-  const ctx = { D, T, S, W, H, tmp, semilla: op.semilla ?? 1, cache: op.cache };
+  const ctx = { D, T, S, W, H, tmp, semilla: op.semilla ?? 1, cache: op.cache, edificio: op.edificio };
   const grande = path.join(tmp, "base.png");
   magick([base, "-filter", "Lanczos", "-resize", `${W}x${H}!`, grande]);
   // Guía determinista desde el plano: el camino de alfombra de los pisos
@@ -1222,7 +1302,7 @@ export async function detallarMosaicos(base, plano, destino, op) {
     componer(grande, capa, m, path.join(tmp, "base-guia.png"));
     fs.renameSync(path.join(tmp, "base-guia.png"), grande);
   }
-  const zonas = zonasDetalle(plano);
+  const zonas = zonasDetalle(plano, op.edificio);
   const libres = normalizar(plano).habitaciones.filter(h => h.piso !== "macizo" && h.piso !== "rejilla");
   let segundos = 0;
   const prompts = [];
@@ -1231,8 +1311,9 @@ export async function detallarMosaicos(base, plano, destino, op) {
     // Exterior: todo menos el edificio; los mosaicos enteros dentro del edificio no se tocan.
     const exterior = path.join(tmp, "exterior.png");
     const e = zonas.edificio[0], A = plano.ancho, B = plano.alto;
-    const fuera = [{ x: 0, y: 0, w: e.x, h: B }, { x: e.x + e.w, y: 0, w: A - e.x - e.w, h: B },
-      { x: 0, y: 0, w: A, h: e.y }, { x: 0, y: e.y + e.h, w: A, h: B - e.y - e.h }].filter(z => z.w > 0.05 && z.h > 0.05);
+    const fuera = op.edificio === "habitaciones" ? [{ x: 0, y: 0, w: A, h: B }]
+      : [{ x: 0, y: 0, w: e.x, h: B }, { x: e.x + e.w, y: 0, w: A - e.x - e.w, h: B },
+        { x: 0, y: 0, w: A, h: e.y }, { x: 0, y: e.y + e.h, w: A, h: B - e.y - e.h }].filter(z => z.w > 0.05 && z.h > 0.05);
     const r = await pasada(grande, plano, exterior, fuera, "exterior", op.exterior, ctx);
     segundos += r.segundos; prompts.push(...r.prompts);
     const mFuera = path.join(tmp, "m-fuera.png");
@@ -1247,7 +1328,7 @@ export async function detallarMosaicos(base, plano, destino, op) {
     const comp = componer(actual, interior, mascara(zonas.edificio, W, H, D, path.join(tmp, "m-edif.png"), 2), path.join(tmp, "comp-int.png"));
     actual = comp;
   }
-  if (op.destellos !== false) actual = quitarDestellos(actual, plano, ctx);
+  if (op.destellos !== false) actual = quitarDestellos(actual, plano, ctx, typeof op.destellos === "object" ? op.destellos : {});
   if (zonas.base.length) {
     const comp = componer(actual, grande, mascara(zonas.base, W, H, D, path.join(tmp, "m-base.png"), 2), path.join(tmp, "comp-base.png"));
     actual = comp;
@@ -1355,6 +1436,9 @@ async function escalar(crudo, marco, semilla, destino, plano, variante = "3b") {
 
 export async function pintar(plano, op) {
   const camino = op.camino;
+  // Aclaraciones por mapa (mapas.<id>.aclaraciones): pisan las del estilo sólo en este plano
+  // (salitre: las tiras de fotos enmarcadas del bar crecían como cajas y pseudo-texto).
+  ACLARACIONES = { ...(E.aclaraciones ?? {}), ...(op.aclaraciones ?? {}) };
   const def = CAMINOS[camino];
   if (!def) throw new Error(`camino desconocido «${camino}» (qwen|klein|controlnet)`);
   const marco = lienzo(plano, op.mp);
@@ -1404,6 +1488,7 @@ export async function pintar(plano, op) {
   if (op.reusarCrudo && fs.existsSync(crudo)) {
     segundos = null;
   } else {
+    await vigilar(`${plano.id} base s${op.semilla}`);
     const r = await ejecutar(wf, valores);
     fs.writeFileSync(crudo, r.salidas.find(s => s.titulo === "Salida")?.buffer ?? r.salidas[0].buffer);
     segundos = r.segundos;
@@ -1412,6 +1497,7 @@ export async function pintar(plano, op) {
   let paraCorregir = crudo, escalado = null;
   if (op.escalar) {
     const esc = path.join(tmp, "escalado.png");
+    await vigilar(`${plano.id} SeedVR2`);
     escalado = await escalar(crudo, marco, op.semilla, esc, plano, op.escalador);
     paraCorregir = esc;
   }
@@ -1425,9 +1511,9 @@ export async function pintar(plano, op) {
     // plano), a `densidad` px/m; se baja a 100 px/m y se vuelve a corregir.
     // Los bloques cerrados se sellan ANTES de la pasada: si no, la pasada
     // repinta con lujo los departamentos que el modelo de base inventó adentro.
-    if (op.sellar !== false) sellarMacizos(destino, plano);
+    if (op.sellar !== false) sellarMacizos(destino, plano, { fondo: op.sellarFondo });
     const grande = path.join(tmp, "detalle.png"), chico = path.join(tmp, "detalle-100.png");
-    const d = await detallarMosaicos(destino, plano, grande, { semilla: op.semilla, tmp, ...op.detalle });
+    const d = await detallarMosaicos(destino, plano, grande, { semilla: op.semilla, tmp, cache: op.cache, ...op.detalle });
     const W = plano.ancho * PX_POR_M, H = plano.alto * PX_POR_M;
     magick([grande, "-filter", "Lanczos", "-resize", `${W}x${H}!`, chico]);
     const corr1 = corr;
@@ -1439,11 +1525,16 @@ export async function pintar(plano, op) {
     if (prueba) fs.copyFileSync(grande, path.join(carpeta, `${base}.detalle.png`));
   }
   if (op.grading) {
+    // Pruebas: el mapa antes del grading, para ajustar el grading por mapa sin repintar.
+    if (prueba) fs.copyFileSync(destino, path.join(carpeta, `${base}.pregrading.webp`));
     const g = { ...E.grading, ...(typeof op.grading === "object" ? op.grading : {}) };
     gradingColor(destino, destino, g, { tmp });
     retoques.push("grading de color determinista (estilos.battlemap.grading)");
   }
-  if (op.sellar !== false) { const n = sellarMacizos(destino, plano); if (n) retoques.push(`${n} macizos sellados (relleno liso con grano)`); }
+  if (op.sellar !== false) {
+    const n = sellarMacizos(destino, plano, { fondo: op.sellarFondo });
+    if (n) retoques.push(`${n} macizos sellados (relleno liso con grano)${op.sellarFondo ? ", con la roca de fuera de las habitaciones" : ""}`);
+  }
   const deriva = derivaMuros(destino, esquema, plano);
   const vanos = vanosAbiertos(destino, esquema, plano);
   const estiloMet = satLum(destino);
@@ -1508,8 +1599,13 @@ async function main() {
         fuerza: num("--fuerza") ?? fijado.fuerza, fin: num("--fin") ?? fijado.fin,
         referencia: opcion("--referencia"), macizo: opcion("--macizo") ?? fijado.macizo ?? "plano",
         entrada: opcion("--entrada") ?? fijado.entrada ?? "esquema", sellar: !argv.includes("--no-sellar"),
+        // La roca de fuera de un sótano y el vacío de fuera de una torre se sellan como los macizos
+        // (mapas.<id>.sellarFondo pisa el default).
+        sellarFondo: fijado.sellarFondo ?? ["roca", "vacio"].includes(plano.fondo),
         escalador: opcion("--escalador") ?? fijado.escalador ?? "3b", reusarCrudo: argv.includes("--reusar-crudo"),
         forzar: argv.includes("--forzar"), verPrompt: argv.includes("--ver-prompt"), tmp,
+        cache: opcion("--cache") ? path.resolve(opcion("--cache")) : undefined,
+        aclaraciones: fijado.aclaraciones,
         // Como `escalar`: lo fijado en arte.config.json vale cuando no se pide otro camino.
         detalle: argv.includes("--sin-detalle") ? null
           : argv.includes("--detalle") || (fijado.detalle && !opcion("--camino")) ? (fijado.detalle ?? DETALLE_DEFECTO) : null,

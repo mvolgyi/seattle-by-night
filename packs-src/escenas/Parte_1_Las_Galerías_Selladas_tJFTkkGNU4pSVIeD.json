@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/subterraneo.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/subterraneo.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -921,7 +921,7 @@
       "escena": "subterraneo",
       "id": "LUG-04",
       "plano": "subterraneo",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{Las Galerías Selladas (Seattle subterráneo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Todo se vende abajo}</p>\n<p><strong>Llegada (A1-E04, Noches 2 a 4).</strong> Se baja por una escalera desde un sótano de Pioneer Square (oeste) hasta la <strong>puerta de hierro</strong> que no figura en ningún plano. Detrás, la acera de ladrillo de 1889 corre hacia el este bajo la ciudad: escaparates tapiados a los dos lados de la puerta del Mercado, <strong>claraboyas de vidrio violeta</strong> en el techo (luces de Foundry sobre la acera, nada pintado) y un <strong>cable de red</strong> que corre por lo alto del muro sur hasta la puerta de Ezra. Huele a moho, a humedad y, cada tanto, a ozono de servidores.</p>\n<p><strong>El Mercado de Abajo.</strong> La tienda grande del medio, abierta a la acera por sus columnas de hierro fundido. Puestos de información y favores (fijos, pintados) y dos faroles de puesto. <strong>Normas de Abajo:</strong> no se pelea en el Mercado, todo tiene precio y nadie pregunta por la cara de nadie. Pelear acá pone a Thornquist y a una docena de recaderos en contra de la coterie y veta LOR-02.</p>\n<p><strong>La barbería (oficina de Thornquist).</strong> Al fondo de la acera, al este, «hay una lámpara de carburo encendida»: se ve desde lejos por el escaparate, que es el único que conserva el vidrio. Thornquist recibe sentado en el <strong>sillón del barbero</strong> (fijo, atornillado al piso) «como si fuera un trono». La lámpara de carburo es un tile con luz (<code>tile-lampara-carburo</code>) sobre el mostrador. En el rincón del fondo, la <strong>caja fuerte</strong> con los duplicados de las USB 1 y 2 (AVE-01-AJUSTE; Krell no sabe que existen). Tiradas: Manipulación + Persuasión Dif 4 (Ezra +2), Astucia + Perspicacia Dif 3.</p>\n<p><strong>El nido de Ezra (PJ-03, Refugio 2).</strong> Bajo la calle, enfrente de la barbería: racks de servidores reciclados, el escritorio con sus monitores (luz «pantalla») y el catre. El cable de red de la acera entra por su puerta; los cables «bajan por agujeros del siglo XIX» del techo.</p>\n<p><strong>El refugio de los sangre débil.</strong> Una vieja carbonera bajo la calle: colchones, mantas, velas y el montón de carbón que nadie sacó. Jun Takeda (PNJ-20) no volvió desde lo del muelle 46: si la buscan acá, no está (duerme en un trastero del SoDo).</p>\n<p><strong>LOR-02.</strong> Los escaparates tapiados son macizo; si un PJ tiene «Refugio sellado» (•••), el Narrador puede abrir uno con una puerta secreta.</p>\n<p><strong>Fuera del mapa.</strong> La escalera sube a Pioneer Square (sin mapa de calle). La acera sigue al este detrás de un tabique de ladrillo.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): lampara, palet, silla.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Subir a Pioneer Square.</p>",
       "moviles": [
         {

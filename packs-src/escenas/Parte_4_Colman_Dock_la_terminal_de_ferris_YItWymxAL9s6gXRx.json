@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/terminal-ferry.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/terminal-ferry.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -1113,7 +1113,7 @@
       "escena": "terminal-ferry",
       "id": "LUG-15",
       "plano": "terminal-ferry",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, 00:55.</strong> «La terminal está casi vacía bajo los fluorescentes. Un guardia mira el móvil, una máquina de café parpadea con un cartel de &quot;fuera de servicio&quot;. Afuera, el último ferry de la noche espera con todas las luces encendidas, como un edificio blanco de cuatro pisos flotando sobre el agua negra. La sirena suena una vez, larga. En la rampa de pasajeros, un anciano de traje oscuro y un maletín de aluminio sube despacio, apoyado en el brazo de un hombre enorme que mira hacia atrás y olfatea el aire.»</p>\n<p><strong>La sala de espera</strong> está en la planta alta. <strong>Bancos</strong> fijos en tres filas dobles; un puñado de pasajeros con cara de sueño (tokens). El <strong>guardia de seguridad</strong> está en su atril junto a la <strong>puerta de embarque</strong> (oeste), mirando el móvil. La <strong>máquina de café rota</strong> está contra la pared norte (en el mapa, apagada; la luz «pantalla» la hace parpadear). El cartel de «fuera de servicio» no está pintado.</p>\n<p><strong>La rampa de pasajeros.</strong> De la puerta de embarque sale la <strong>pasarela elevada</strong>, vidriada a los dos lados, hacia el oeste: al final se apoya en la popa del ferry. Cuando la coterie entra en la sala, <strong>Pell y Dawson están subiendo por la pasarela</strong> (colocalos a mitad de camino): por los vidrios se los ve desde la sala. Al final de la pasarela, la región «Subir al ferry» lleva a la cubierta de popa del salón (<code>ferry</code>). Subir sin que Dawson los vea: Destreza + Sigilo Dif 4 contra su Astucia + Consciencia (6 dados); Ofuscación no engaña su olfato, el viento del estrecho sí (+1 dado por barlovento: el viento entra del oeste, del agua).</p>\n<p><strong>La rampa de vehículos</strong> (abajo, a nivel del muelle, en la franja sur): la explanada de vehículos y la rampa que cruza el agua hasta la cubierta de coches. Quien llega en coche (Destreza + Conducir Dif 3 para llegar antes de las 00:55) aparece en la explanada; la región del extremo de la rampa lleva a la popa de la cubierta de coches (<code>ferry-coches</code>). La escalera del este baja a la calle y a la explanada (regiones gemelas en este mismo mapa) y la explanada sale a Alaskan Way (sin mapa).</p>\n<p>Los aseos (bloque rayado) no se juegan. La sirena suena a las 00:50: cinco minutos.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir a Alaskan Way.</p>",
       "moviles": [
         {

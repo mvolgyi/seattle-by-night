@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/gale-sentinel.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/gale-sentinel.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -1407,7 +1407,7 @@
       "escena": "gale-sentinel",
       "id": "LUG-07",
       "plano": "gale-sentinel",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 1 de A3-E02: el perímetro.</strong> «Dos de la madrugada. El vestíbulo de Gale Sentinel está vacío salvo por un guardia que mira el móvil detrás del mostrador. La pantalla de la pared sigue encendida: un mosaico de miles de imágenes en directo, porches, pasillos, lluvia.» La <strong>videopared</strong> ocupa la pared norte del vestíbulo, frente a la puerta principal; en el mapa está apagada y la encienden tres luces «neon». Debajo va el lema «Vemos lo que la ciudad no ve.» (no está pintado: ningún texto en el mapa). El guardia (uno de los <strong>dos guardias mortales</strong>) está en la silla detrás del <strong>mostrador</strong>; el otro, en la <strong>oficina de seguridad</strong> del ala oeste, con los monitores de las cámaras.</p>\n<p><strong>Cámaras ANOMALY (en todos los accesos)</strong>, marcadas como objetos <code>anomaly</code> sin luz: ① sobre la puerta principal, por fuera; ② en la esquina sureste del vestíbulo, apuntando a la puerta; ③ sobre la salida de servicio al patio, por fuera; ④ en el hall de ascensores, apuntando a los molinetes. Cada Vástago que pase delante con el módulo activo queda registrado como «sujeto frío»: Termómetro +1 en total (A3-E02, capa 1). Desactivarlo desde fuera: Inteligencia + Tecnología Dif 4 (Ezra +2 dados si ya sabe que el firmware es suyo; LOR-03 a nivel 4, automático). Ofuscación no lo engaña.</p>\n<p><strong>Accesos.</strong> La puerta principal (corredera de vidrio) da a la plaza y al estacionamiento: la región «Al estacionamiento» lleva al mapa de zona del campus (pendiente, t2i). La <strong>salida de servicio</strong> del pasillo norte da al patio de servicio, y del patio se cruza al <strong>centro de datos</strong> (región → <code>gale-datos</code>). Los <strong>molinetes</strong> (dos pasos con tarjeta, puertas de vidrio entre barandas) separan el vestíbulo del hall de ascensores; el pasillo de servicio también llega al hall por una puerta con cerradura electrónica. Escalera y ascensores suben a la <strong>planta 3</strong> (<code>gale-planta3</code>).</p>\n<p><strong>A1-E05 (acceso físico).</strong> Si la coterie usa Dominación sobre un técnico de guardia para entrar, entra por acá y pasa por las cámaras ① o ③: Termómetro +1 salvo que se desactiven antes.</p>\n<p><strong>Salir corriendo</strong> por el vestíbulo y la plaza delante de las cámaras: Termómetro +1. Si salta la alarma, la policía de Bellevue tarda doce minutos.</p>\n<p>La cafetería y los aseos de la planta baja (bloque rayado al sureste) están cerrados y no se juegan.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×2, sofa ×2, mesa.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus.</p>",
       "moviles": [
         {
@@ -1436,7 +1436,7 @@
         },
         {
           "tipo": "mesa",
-          "tile": "tile-mesa-baja",
+          "tile": "tile-mesa-baja-cuadrada",
           "x": 2.1,
           "y": 8.4,
           "w": 0.8,

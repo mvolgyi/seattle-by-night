@@ -37,7 +37,7 @@
         "top": 20
       },
       "background": {
-        "src": "modules/seattle-by-night/assets/mapas/ferry.esquema.webp",
+        "src": "modules/seattle-by-night/assets/mapas/ferry.webp",
         "color": "#000000"
       },
       "sort": 0,
@@ -1598,7 +1598,7 @@
       "escena": "ferry",
       "id": "LUG-15",
       "plano": "ferry",
-      "provisional": true,
+      "provisional": false,
       "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, a bordo.</strong> El último ferry a Bainbridge: 35 minutos de travesía, unos <strong>cuarenta pasajeros</strong> mortales, seis tripulantes y <strong>cámaras de seguridad en los salones</strong> (tres objetos «CCTV» en el mapa; no son ANOMALY). Este plano es la <strong>cubierta de pasajeros</strong> (segundo piso del barco) recortada a la popa: el salón sigue hacia proa (franja rayada) y no se juega.</p>\n<p><strong>Pell</strong> «está en el salón de pasajeros del segundo piso, junto a una ventana, con el maletín esposado a la muñeca» (Astucia + Investigación Dif 3 para encontrarlo): ponelo en el <strong>reservado de babor</strong> marcado, junto a la ventana, con Dawson y los ghouls cerca. Si votó con la coterie, <strong>Fry</strong> está en otro reservado con los auriculares puestos («El último barco de la noche. Te lo dije»). En el salón, cuarenta testigos: cualquier acción sobrenatural visible es <strong>Termómetro +2</strong>. Presencia (Pavor) para que los pasajeros se queden en el salón: Carisma + Intimidación Dif 3. Potencia para romper la esposa del maletín sin cortarle la mano a Pell: Fuerza + Latrocinio Dif 3.</p>\n<p><strong>Cubierta exterior de popa.</strong> Al zarpar, la pasarela se retira: el <strong>portón</strong> de la borda queda cerrado y la región «Bajar por la rampa» sólo funciona amarrado (desactivala al zarpar, a las 00:55). Acá se negocia con Halloway si va a bordo («Ofrece todo: dinero, dominio, el puesto de Sheriff»). <strong>Saltar al agua desde la popa: 6 metros</strong>; el agua está a 9 grados y la corriente es fuerte: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre, que sigue al ferry y puede abordar por popa. Si se salta con el maletín, el disco se pierde. Tirar el maletín al agua es la forma más rápida de destruirlo.</p>\n<p><strong>Transiciones.</strong> Escaleras de estribor y babor (junto a la popa del salón) bajan a la <strong>cubierta de coches</strong> (<code>ferry-coches</code>). La <strong>escalera al puente</strong>, en el centro del salón, sube a la cubierta superior y al <strong>puente</strong> (<code>ferry-puente</code>): es hacia donde huye Halloway («usa Mirada aterradora y huye hacia el puente para tomar el control del barco»).</p>\n<p><strong>Cafetería</strong> en el centro del salón (mostradores fijos). Los bancos y mesas de los reservados están atornillados al piso (son fijos; no hay muebles móviles en este plano).</p>\n\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua desde la popa (6 m) · Saltar al agua desde la popa (6 m).</p>",
       "moviles": []
     }

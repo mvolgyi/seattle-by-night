@@ -1,0 +1,1279 @@
+{
+  "_comentario": "Tanda 2 de arte (2026-10-31): retratos a rehacer tras la revisión humana, sus tokens, los tiles de muebles móviles de los planos (MAPS_SPEC §3) y la portada. Se usa ENCIMA de arte.config.json con `node tools/generar-arte.mjs --config tools/arte.tanda2.json …` (lo lanza tanda2.sh). Los assets con el mismo id+estilo que uno de arte.config.json lo reemplazan sólo mientras se usa --config. Elegidas las semillas, pasar los retratos y tokens a arte.config.json (prompt en vez de fuente doc15, `semilla` = la elegida) y los tiles/portada como assets nuevos. Generado por un script: los tamaños de generación salen de `metros` (~1 MP, múltiplos de 16, a lo sumo 3:1).",
+  "estilos": {
+    "tile-nuevo": {
+      "_comentario": "Como `tile`, pero para muebles de lugares limpios y caros (la Galería, la Torre Halloway, Gale Sentinel, Northline): sin el «worn, dusty and lived-in» del sufijo de base. Mismo flujo y recorte.",
+      "tipo": "tile",
+      "flujo": "t2i-zimage",
+      "prefijo": "Flat-lay overhead shot, camera pointing STRAIGHT DOWN at the floor from directly above, like a satellite or a floor-plan view: we see ONLY the top of the object, as a flat 2D shape; legs, castors and side faces are hidden underneath it and NOT visible. Top-down tile artwork of ONE single loose piece of furniture or prop for a virtual tabletop battlemap set in a modern, expensive building in present-day Seattle. The object is centred and fills about 85% of the frame. If the object is elongated, its long axis runs horizontally from left to right; if it has a backrest, the backrest runs along the top edge. Only the object described below, nothing else.\n\nSUBJECT: ",
+      "sufijo": "\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), clean, well kept and expensive-looking, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
+      "ancho": 1024,
+      "alto": 1024,
+      "carpeta": "assets/tiles"
+    },
+    "tile-vehiculo": {
+      "_comentario": "Vehículos como tile (autos del ferry, camionetas, lancha): cenital de dron, mojados, sin texto ni chapas legibles. La orientación (frente a la derecha o abajo) va en el sujeto, porque los planos no la usan igual (ver nota de cada asset).",
+      "tipo": "tile",
+      "flujo": "t2i-zimage",
+      "prefijo": "Top-down tile artwork of ONE single vehicle for a virtual tabletop battlemap set in present-day Seattle, seen from DIRECTLY ABOVE as if photographed from a drone: a strictly orthographic top view like a satellite photo, only the roof, the bonnet, the windscreen and the boot or cargo bed are visible; no side panels, no wheels sticking out, no perspective, no isometric tilt. The vehicle is centred and fills about 90% of the frame along its length.\n\nSUBJECT: ",
+      "sufijo": "\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), matching the battlemaps of the same chronicle. The bodywork is wet with rain: beads of water and cold reflections on the roof and bonnet.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no road, no ground, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. Headlights and tail lights OFF: no glow, no halo, no light beams.\n\nABSOLUTELY NO TEXT: blank licence plates, no letters, no numbers, no logos, no brand emblems, no model badges. Nobody inside, no people, no frame, no border, no second vehicle.",
+      "ancho": 1024,
+      "alto": 1024,
+      "carpeta": "assets/tiles"
+    },
+    "portada": {
+      "_comentario": "Portada de la crónica (escena landing de tools/contenido/escenas.mjs: assets/portadas/portada.webp, 1920×1080, pines a la altura del 62 % y centrados). La plantilla de retrato del doc 15 llevada a un plano general 16:9. Sin texto: el título lo pone la escena. Sale a 1920×1088 y tanda2.sh la recorta a 1920×1080.",
+      "tipo": "retrato",
+      "flujo": "t2i-zimage",
+      "prefijo": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: ",
+      "sufijo": "\n\nCOMPOSITION: the lower middle band of the image (between half and three quarters of its height, across the centre) is calm, dark and simple, only black water with soft broken reflections, because round interface buttons will be placed over it. The painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no title, no logo, no signature, no watermark, no caption, no famous landmark tower.",
+      "ancho": 1920,
+      "alto": 1088,
+      "carpeta": "assets/portadas"
+    }
+  },
+  "assets": [
+    {
+      "id": "PNJ-04",
+      "estilo": "retrato",
+      "prompt": "Helen Ward, a 34-year-old woman with a tired, sharp, intelligent face, faint shadows under her eyes, no make-up, dark wavy hair escaping a grey hood. A worn grey hoodie, plain clear reading glasses pushed up on top of her head. She sits indoors on the bare wooden floor of her small cluttered apartment, her back against a wall covered edge to edge in printed city street maps stuck with red, blue and yellow push pins; the maps are only abstract street grids, rivers and coastlines, with no labels, no street names, no legend boxes and no words at all. Her right hand holds a lit cigarette near her lips, with exactly five fingers. Her left hand rests on her knee holding a small, old, black plastic clamshell flip phone, FOLDED SHUT: a closed folding phone with a visible hinge and no screen showing; definitely NOT a smartphone, NOT a touchscreen, nothing glowing in her hands. A rain-streaked window beside her lets in the orange glow of a streetlight. Crimson accent: the red pins on the maps.",
+      "semilla": 6911,
+      "candidatas": [
+        6911,
+        6912,
+        6913,
+        6914
+      ],
+      "nota": "Helen Ward, 34 (content/pnjs/fuera.json: edad 34). Defecto: tenía un smartphone con la pantalla encendida y estaba en la calle; el doc 15 y la ficha piden el viejo móvil DE TAPA que le dio David (SAFE, DOC-05), en el piso de su departamento. Se pide la tapa cerrada sobre la rodilla (la mano no tiene que agarrarlo), adentro, y mapas sin rótulos."
+    },
+    {
+      "id": "PNJ-03",
+      "estilo": "retrato",
+      "prompt": "Charles Halloway, a slim Ventrue vampire of medium height who looks about FORTY years old, clearly middle-aged and not young: a mature, composed, unsmiling face with fine lines across the forehead and at the corners of the eyes, faint creases from nose to mouth, slightly hollow cheeks, very pale skin. Black hair with a neat old-fashioned side part, combed flat, a hairline slightly receding at the temples. Tired brown eyes. He stands perfectly still with both hands clasped behind his back, out of sight. A dark classic charcoal suit of conservative cut, a white shirt and a thin dark tie. He stands before a floor-to-ceiling window high above a night harbour with cranes and ferries, the wet city small far below him. Crimson accent: the reflection of a red aircraft warning light on the glass, over his heart.",
+      "semilla": 6811,
+      "candidatas": [
+        6811,
+        6812,
+        6813,
+        6814
+      ],
+      "nota": "Charles Halloway, Abrazado en 1958 a los 37 (nació en 1921); la ficha dice «aparenta unos cuarenta». Defecto: parecía de treinta. Se pide la edad explícita con marcas de la edad, y las manos detrás de la espalda como dice el doc 15 (en la versión anterior las tenía adelante)."
+    },
+    {
+      "id": "PNJ-19",
+      "estilo": "retrato",
+      "prompt": "Preston Gale, a 53-year-old tech CEO, visibly in his fifties: a receding hairline, short hair greying at the temples and slicked back, deep crow's feet, heavy nasolabial folds, slightly loose skin under the jaw, a thickening middle-aged neck and waist. Deeply tanned, with a too-bright investor smile showing very white teeth and a sheen of sweat at his temples. An expensive navy suit with an open-collared white shirt and no tie. He stands indoors, dry, in a cold corporate lobby of glass and grey stone beneath a giant wall screen showing a mosaic of hundreds of small live doorbell-camera feeds: grainy night views of porches, front doors and driveways, with no text, no numbers, no timestamps and no interface on them. Crimson accent: a few of the small feeds tinted deep red.",
+      "semilla": 7911,
+      "candidatas": [
+        7911,
+        7912,
+        7913,
+        7914
+      ],
+      "nota": "Preston Gale, «cincuenta y pocos» (PNJ-19.md, fuera.json). Defecto: parecía de cuarenta. Se pide 53 con canas, entradas, patas de gallo y papada; adentro y seco (estaba bajo la lluvia), y el acento carmesí sin números (el doc 15 pedía «tiny numbers glowing red»: pseudo-texto)."
+    },
+    {
+      "id": "PNJ-12",
+      "estilo": "retrato",
+      "prompt": "August Krell, a lean, hard man who looks about twenty-eight years old but holds himself like someone much older: a shaved head, an old knife scar running through his left eyebrow, a badly healed broken nose, a still, watchful stare. A long grey wool coat clearly cut for broader shoulders, hanging too big on him, over dark work clothes. He stands in a fighter's guard, side-on: his LEFT forearm is raised in front of his chest and his left hand is a single tight fist at chin height, seen from the side, drawn with correct anatomy: four fingers curled tightly into the palm, the thumb folded OUTSIDE across the middle of the fingers, scarred swollen knuckles, a normal wrist. His right arm hangs down relaxed at his side, the right hand hidden inside the long coat sleeve. He stands on a wet concrete dock between shipping containers at night. Crimson accent: a red shipping container behind him.",
+      "semilla": 7211,
+      "candidatas": [
+        7211,
+        7212,
+        7213,
+        7214
+      ],
+      "nota": "August Krell, aparenta 28 (Abrazado en 1972, nacido en 1944; PNJ-12.md). Zurdo. Defecto: la mano de la guardia salió deforme. Se describe UN solo puño con la anatomía explícita (cuatro dedos cerrados, el pulgar por fuera sobre los dedos), de perfil a tres cuartos, y la otra mano escondida en la manga del abrigo."
+    },
+    {
+      "id": "PNJ-11",
+      "estilo": "retrato",
+      "prompt": "Rosa Iturbe, a short, compact Basque woman who looks about thirty, with a square, stubborn jaw and a direct stare. Short black hair, cut practically. Small pale healed burn scars dotting her forearms from years of welding: old scars, not wounds, no blood. Grease-stained hands resting flat on a bar counter made from the split wooden hull of an old boat. Faded blue work overalls with the sleeves rolled up and a plain chest pocket, steel-toed boots. Indoors, in a dim dockside bar at night. On the wall behind her hang old black-and-white photographs of crowds of shipyard workers on strike, with no banners and no signs. The only sign in the bar is a red neon tube bent into the simple outline of a ship's anchor: there are NO letters, NO words and NO numbers anywhere in the image. Crimson accent: the red neon anchor.",
+      "semilla": 7111,
+      "candidatas": [
+        7111,
+        7112,
+        7113,
+        7114
+      ],
+      "nota": "Rosa Iturbe, aparenta unos 30 (Abrazada en 1991, nacida en 1961; PNJ-11.md). Defecto: el neón de atrás tenía letras («OT»). El doc 15 pedía «a red neon sign with one letter missing», que es texto por definición: se cambia por un neón rojo con forma de ancla, sin letras. También se quita el nombre bordado del mono (texto) y las quemaduras se piden como cicatrices viejas (en la anterior parecían heridas con sangre)."
+    },
+    {
+      "id": "PNJ-04",
+      "estilo": "token",
+      "retrato": "PNJ-04",
+      "prompt": "Helen Ward: dark hair escaping a grey hoodie, clear glasses pushed up on her head, a cigarette in one hand and a small closed black flip phone in the other.",
+      "semilla": 6951,
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
+    },
+    {
+      "id": "PNJ-03",
+      "estilo": "token",
+      "retrato": "PNJ-03",
+      "prompt": "Charles Halloway: black hair with a neat side part, a dark classic charcoal suit, both hands clasped behind his back.",
+      "semilla": 6851,
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
+    },
+    {
+      "id": "PNJ-19",
+      "estilo": "token",
+      "retrato": "PNJ-19",
+      "prompt": "Preston Gale: a tanned man in his fifties with thinning, greying slicked-back hair, an expensive navy suit and an open-collared white shirt.",
+      "semilla": 7951,
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
+    },
+    {
+      "id": "PNJ-12",
+      "estilo": "token",
+      "retrato": "PNJ-12",
+      "prompt": "August Krell: a shaved head, a long grey wool coat clearly too big at the shoulders over dark work clothes, his left fist raised in front of him.",
+      "semilla": 7251,
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
+    },
+    {
+      "id": "PNJ-11",
+      "estilo": "token",
+      "retrato": "PNJ-11",
+      "prompt": "Rosa Iturbe: short black hair, faded blue work overalls with rolled sleeves, steel-toed boots, grease-stained hands.",
+      "semilla": 7151,
+      "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
+    },
+    {
+      "id": "portada",
+      "estilo": "portada",
+      "semilla": 9911,
+      "candidatas": [
+        9911,
+        9912,
+        9913,
+        9914,
+        9915,
+        9916
+      ],
+      "nota": "Portada (escena landing). 1920×1088 → tanda2.sh recorta a 1920×1080 en el centro. Tanda 2b: las 9901–9906 pintaban el Space Needle (marca registrada); se describe el skyline como bloques rectangulares.",
+      "prompt": "The Seattle waterfront seen at night from the end of a rain-soaked wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across the black water of Elliott Bay towards the downtown skyline: plain rectangular dark glass office towers with flat roofs, half lost in low cloud and mist, countless small cold windows. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. High up in the tallest rectangular office tower, a single lit window on the top floor, as if someone up there is watching. Crimson accent: the small red aircraft warning light on the flat roof of that same rectangular office tower and its long red reflection trembling on the water. Every building in the skyline is a plain rectangular block: there is NO needle-shaped tower, NO saucer-topped observation tower, NO tower standing on a thin stem or tripod, nothing that looks like a famous landmark."
+    },
+    {
+      "id": "tile-portatil",
+      "estilo": "tile",
+      "prompt": "an old silver laptop lying open with its lid folded far back so that both the keyboard and the screen face up; the screen is switched OFF, plain black with a faint grey reflection; the keys are blank with no legible letters; a frayed charging cable trails from one side.",
+      "semilla": 8001,
+      "candidatas": [
+        8001,
+        8002
+      ],
+      "ancho": 1184,
+      "alto": 880,
+      "metros": [
+        0.4,
+        0.3
+      ],
+      "nota": "tile 0.4×0.3 m; planos: helen 0.4×0.3"
+    },
+    {
+      "id": "tile-silla-escritorio",
+      "estilo": "tile",
+      "prompt": "a cheap black office swivel chair with a worn, split fabric seat and a low backrest, the tips of a five-star base with castors showing around the seat.",
+      "semilla": 8011,
+      "candidatas": [
+        8011,
+        8012
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.5,
+        0.5
+      ],
+      "nota": "tile 0.5×0.5 m; planos: helen 0.5×0.5 hacia n, subterraneo 0.5×0.5 hacia s"
+    },
+    {
+      "id": "tile-mesa-cocina",
+      "estilo": "tile",
+      "prompt": "a small rectangular kitchen table with a worn cream formica top and chrome edging, a chipped mug and a small pile of unopened envelopes with nothing written on them.",
+      "semilla": 8021,
+      "candidatas": [
+        8021,
+        8022
+      ],
+      "ancho": 1136,
+      "alto": 928,
+      "metros": [
+        1.1,
+        0.9
+      ],
+      "nota": "tile 1.1×0.9 m; planos: granja 1×0.8, helen 1.1×0.9"
+    },
+    {
+      "id": "tile-silla-madera",
+      "estilo": "tile",
+      "prompt": "a plain old wooden chair with a scuffed dark seat and a simple slatted backrest, the varnish worn pale on the edges.",
+      "semilla": 8031,
+      "candidatas": [
+        8031,
+        8032
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.45,
+        0.45
+      ],
+      "nota": "tile 0.45×0.45 m; planos: granja 0.45×0.45 hacia s, granja 0.45×0.45 hacia n, granja 0.45×0.45 hacia o, granja 0.45×0.45 hacia e, helen 0.45×0.45 hacia o, helen 0.45×0.45 hacia n, salitre 0.45×0.45 hacia o, salitre 0.45×0.45 hacia s, salitre 0.45×0.45 hacia n, salitre 0.45×0.45 hacia e, terminal86 0.5×0.5 hacia o"
+    },
+    {
+      "id": "tile-sofa-gastado",
+      "estilo": "tile",
+      "prompt": "an old, sagging three-seat sofa upholstered in faded grey fabric, stained and worn shiny on the arms, a crumpled wool blanket on one cushion.",
+      "semilla": 8041,
+      "candidatas": [
+        8041,
+        8042
+      ],
+      "ancho": 1520,
+      "alto": 688,
+      "metros": [
+        2,
+        0.9
+      ],
+      "nota": "tile 2×0.9 m; planos: helen 0.9×2 hacia e"
+    },
+    {
+      "id": "tile-lampara-pie",
+      "estilo": "tile",
+      "prompt": "a standing floor lamp photographed from directly above the ceiling: all you see is a perfect CIRCLE, the round top opening of a pleated beige fabric lampshade seen as a ring, with the dark dusty inside of the shade and the unlit bulb fitting in the middle, and a thin sliver of a round metal base peeking out around it. Not a side view: no stem, no cone silhouette, no profile. The lamp is switched OFF: no glow, no light.",
+      "semilla": 8051,
+      "candidatas": [
+        8051,
+        8052
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.4,
+        0.4
+      ],
+      "nota": "tile 0.4×0.4 m; planos: helen 0.4×0.4"
+    },
+    {
+      "id": "tile-cenicero",
+      "estilo": "tile",
+      "prompt": "a heavy round glass ashtray overflowing with crushed cigarette butts and grey ash.",
+      "semilla": 8061,
+      "candidatas": [
+        8061,
+        8062
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.18,
+        0.18
+      ],
+      "nota": "tile 0.18×0.18 m; planos: helen 0.18×0.18"
+    },
+    {
+      "id": "tile-sacos-pienso",
+      "estilo": "tile",
+      "prompt": "three plain brown paper sacks of dog food stacked together, one torn open with dry kibble pellets spilling onto the floor; no print, no logos.",
+      "semilla": 8071,
+      "candidatas": [
+        8071,
+        8072
+      ],
+      "ancho": 1072,
+      "alto": 976,
+      "metros": [
+        1,
+        0.9
+      ],
+      "nota": "tile 1×0.9 m; planos: granja 1×0.9"
+    },
+    {
+      "id": "tile-mesa-larga",
+      "estilo": "tile",
+      "prompt": "a long rustic farmhouse table of heavy dark planks, scarred and waxed, completely bare.",
+      "semilla": 8081,
+      "candidatas": [
+        8081,
+        8082
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        3,
+        1
+      ],
+      "nota": "tile 3×1 m; planos: granja 3×1"
+    },
+    {
+      "id": "tile-tableta",
+      "estilo": "tile",
+      "prompt": "a black tablet computer in a rugged rubber case lying flat; the screen is switched OFF, plain black with a faint reflection.",
+      "semilla": 8091,
+      "candidatas": [
+        8091,
+        8092
+      ],
+      "ancho": 1200,
+      "alto": 880,
+      "metros": [
+        0.3,
+        0.22
+      ],
+      "nota": "tile 0.3×0.22 m; planos: granja 0.3×0.22"
+    },
+    {
+      "id": "tile-mecedora",
+      "estilo": "tile",
+      "prompt": "an old wooden rocking chair with a slatted backrest along the top edge and a worn cushion on the seat; the two long curved rockers run from top to bottom on the left and right sides.",
+      "semilla": 8101,
+      "candidatas": [
+        8101,
+        8102
+      ],
+      "ancho": 960,
+      "alto": 1088,
+      "metros": [
+        0.7,
+        0.8
+      ],
+      "nota": "tile 0.7×0.8 m; planos: granja 0.7×0.8 hacia s"
+    },
+    {
+      "id": "tile-banco",
+      "estilo": "tile",
+      "prompt": "a long weathered porch bench of grey wooden planks with a low backrest along the top edge.",
+      "semilla": 8111,
+      "candidatas": [
+        8111,
+        8112
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        1.8,
+        0.45
+      ],
+      "nota": "tile 1.8×0.45 m; planos: granja 1.8×0.45 hacia s"
+    },
+    {
+      "id": "tile-fardos",
+      "estilo": "tile",
+      "prompt": "a square stack of four rectangular hay bales tied with twine, loose straw scattered around them.",
+      "semilla": 8121,
+      "candidatas": [
+        8121,
+        8122
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        1.2,
+        1.2
+      ],
+      "nota": "tile 1.2×1.2 m; planos: granja 1.2×1.2"
+    },
+    {
+      "id": "tile-mesa-larga-granero",
+      "estilo": "tile",
+      "prompt": "a very long trestle table made of rough old barn planks laid on sawhorses, knife scratches and dark stains, completely bare.",
+      "semilla": 8131,
+      "candidatas": [
+        8131,
+        8132
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        5,
+        1.1
+      ],
+      "nota": "tile 5×1.1 m; planos: granja 5×1.1"
+    },
+    {
+      "id": "tile-banco-largo",
+      "estilo": "tile",
+      "prompt": "a very long backless bench made of a single rough wooden plank on simple square legs.",
+      "semilla": 8141,
+      "candidatas": [
+        8141,
+        8142
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        5,
+        0.45
+      ],
+      "nota": "tile 5×0.45 m; planos: granja 5×0.45 hacia s, granja 5×0.45 hacia n"
+    },
+    {
+      "id": "tile-estanteria-conservas",
+      "estilo": "tile",
+      "prompt": "a freestanding wooden shelving unit seen from directly above: its top board and, along it, a row of glass preserve jars with dark fruit and pickles, round metal lids visible from above; the jars have no labels.",
+      "semilla": 8151,
+      "candidatas": [
+        8151,
+        8152
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        1.5,
+        0.4
+      ],
+      "nota": "tile 1.5×0.4 m; planos: granja-sotano 1.5×0.4"
+    },
+    {
+      "id": "tile-cajas",
+      "estilo": "tile",
+      "prompt": "a cluster of old cardboard boxes with the flaps folded shut and two dull blue plastic drums with screw caps.",
+      "semilla": 8161,
+      "candidatas": [
+        8161,
+        8162
+      ],
+      "ancho": 1120,
+      "alto": 928,
+      "metros": [
+        1.2,
+        1
+      ],
+      "nota": "tile 1.2×1 m; planos: granja-sotano 1.2×1"
+    },
+    {
+      "id": "tile-taburete",
+      "estilo": "tile",
+      "prompt": "a round bar stool seen from above: a worn dark vinyl seat cushion on a steel ring, the ring footrest showing around it.",
+      "semilla": 8171,
+      "candidatas": [
+        8171,
+        8172
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.45,
+        0.45
+      ],
+      "nota": "tile 0.45×0.45 m; planos: hangar 0.45×0.45 hacia n, salitre 0.4×0.4 hacia o, terminal-ferry 0.5×0.5 hacia o"
+    },
+    {
+      "id": "tile-mesa-plegable",
+      "estilo": "tile",
+      "prompt": "a long folding table with a grey plastic top on a steel frame, covered in operation clutter: two phones lying face down, scattered papers and photographs with no legible writing, a folded city map with no labels, a paper coffee cup.",
+      "semilla": 8181,
+      "candidatas": [
+        8181,
+        8182
+      ],
+      "ancho": 1520,
+      "alto": 688,
+      "metros": [
+        2.2,
+        1
+      ],
+      "nota": "tile 2.2×1 m; planos: hangar 2.2×1"
+    },
+    {
+      "id": "tile-silla-plegable",
+      "estilo": "tile",
+      "prompt": "a grey steel folding chair with a slatted metal seat and backrest, chipped paint.",
+      "semilla": 8191,
+      "candidatas": [
+        8191,
+        8192
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.45,
+        0.45
+      ],
+      "nota": "tile 0.45×0.45 m; planos: hangar 0.45×0.45 hacia s, hangar 0.45×0.45 hacia n, hangar 0.45×0.45 hacia o"
+    },
+    {
+      "id": "tile-palet-cajas",
+      "estilo": "tile",
+      "prompt": "a wooden shipping pallet loaded with stacked plain brown cardboard boxes wrapped in clear shrink-wrap film, with blank white shipping stickers and plastic strapping.",
+      "semilla": 8201,
+      "candidatas": [
+        8201,
+        8202
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        1.2,
+        1.2
+      ],
+      "nota": "tile 1.2×1.2 m; planos: hangar 1.7×1.7, hangar 1.2×1.2"
+    },
+    {
+      "id": "tile-cajas-municion",
+      "estilo": "tile",
+      "prompt": "a stack of olive-drab steel ammunition cans and wooden crates with rope handles, with no stencils and no markings.",
+      "semilla": 8211,
+      "candidatas": [
+        8211,
+        8212
+      ],
+      "ancho": 1120,
+      "alto": 928,
+      "metros": [
+        1.2,
+        1
+      ],
+      "nota": "tile 1.2×1 m; planos: hangar 1.2×1"
+    },
+    {
+      "id": "tile-catre",
+      "estilo": "tile",
+      "prompt": "a military folding cot with olive-drab canvas stretched on a steel-and-wood frame, a rolled grey wool blanket at one end.",
+      "semilla": 8221,
+      "candidatas": [
+        8221,
+        8222
+      ],
+      "ancho": 1680,
+      "alto": 624,
+      "metros": [
+        2,
+        0.75
+      ],
+      "nota": "tile 2×0.75 m; planos: hangar 0.75×1.95, hangar 2×0.75"
+    },
+    {
+      "id": "tile-bidones",
+      "estilo": "tile",
+      "prompt": "four steel oil drums standing together on a wooden pallet, seen from above as four round lids, dented, with rusty rims and oily stains.",
+      "semilla": 8231,
+      "candidatas": [
+        8231,
+        8232
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        1.2,
+        1.2
+      ],
+      "nota": "tile 1.2×1.2 m; planos: hangar 1.2×1.2"
+    },
+    {
+      "id": "tile-camioneta",
+      "estilo": "tile-vehiculo",
+      "prompt": "Bear Whitman's beat-up 1990s full-size pickup truck, faded off-white paint with rust spots, a dented tailgate, a toolbox and a tarp in the open cargo bed. The truck lies HORIZONTALLY with its FRONT pointing to the RIGHT.",
+      "semilla": 8241,
+      "candidatas": [
+        8241,
+        8242
+      ],
+      "ancho": 1632,
+      "alto": 640,
+      "metros": [
+        5.3,
+        2.1
+      ],
+      "nota": "tile 5.3×2.1 m; planos: hangar 2.1×5.3 hacia e. Horizontal, frente a la derecha (hangar: 2,1×5,3 hacia e → textura 5,3×2,1)."
+    },
+    {
+      "id": "tile-lancha",
+      "estilo": "tile-vehiculo",
+      "prompt": "a small open aluminium motorboat with a grey outboard engine at the stern, two bench seats, a coiled rope and a fuel can inside. The boat lies HORIZONTALLY with its BOW pointing to the RIGHT.",
+      "semilla": 8251,
+      "candidatas": [
+        8251,
+        8252
+      ],
+      "ancho": 1680,
+      "alto": 624,
+      "metros": [
+        5.4,
+        2
+      ],
+      "nota": "tile 5.4×2 m; planos: hangar 2×5.4 hacia e. Horizontal, proa a la derecha."
+    },
+    {
+      "id": "tile-mesa-bar",
+      "estilo": "tile",
+      "prompt": "a square old bar table of thick dark wood, covered in knife scratches and ring stains.",
+      "semilla": 8261,
+      "candidatas": [
+        8261,
+        8262
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.9,
+        0.9
+      ],
+      "nota": "tile 0.9×0.9 m; planos: salitre 0.9×0.9"
+    },
+    {
+      "id": "tile-mesa-asamblea",
+      "estilo": "tile",
+      "prompt": "a long heavy table made of old shipyard planks on a steel frame welded by hand, scarred, with ring stains and two steel ashtrays.",
+      "semilla": 8271,
+      "candidatas": [
+        8271,
+        8272
+      ],
+      "ancho": 1504,
+      "alto": 688,
+      "metros": [
+        2.6,
+        1.2
+      ],
+      "nota": "tile 2.6×1.2 m; no está en ningún plano todavía. VARIANTE NUEVA: salitre usa hoy tile-mesa-reuniones (2,6×1,2), el mismo nombre que la mesa de directorio de Gale (3,4×1,1). Hay que renombrar el mueble en content/planos/salitre.json."
+    },
+    {
+      "id": "tile-barriles",
+      "estilo": "tile",
+      "prompt": "two steel beer kegs and one old wooden barrel standing side by side, seen from above as round tops.",
+      "semilla": 8281,
+      "candidatas": [
+        8281,
+        8282
+      ],
+      "ancho": 1360,
+      "alto": 768,
+      "metros": [
+        1.6,
+        0.9
+      ],
+      "nota": "tile 1.6×0.9 m; planos: salitre 1.6×0.9"
+    },
+    {
+      "id": "tile-coche",
+      "estilo": "tile-vehiculo",
+      "prompt": "an ordinary old dark grey four-door sedan, dull paint, a dent on the rear door. The car lies HORIZONTALLY with its FRONT pointing to the RIGHT.",
+      "semilla": 8291,
+      "candidatas": [
+        8291,
+        8292
+      ],
+      "ancho": 1552,
+      "alto": 672,
+      "metros": [
+        4.6,
+        2
+      ],
+      "nota": "tile 4.6×2 m; planos: salitre 2×4.6 hacia e. Horizontal, frente a la derecha."
+    },
+    {
+      "id": "tile-pickup",
+      "estilo": "tile-vehiculo",
+      "prompt": "a battered old full-size pickup truck in dark grey-blue paint with mud splashed along the sides and an empty cargo bed. The truck lies HORIZONTALLY with its FRONT pointing to the RIGHT.",
+      "semilla": 8301,
+      "candidatas": [
+        8301,
+        8302
+      ],
+      "ancho": 1632,
+      "alto": 640,
+      "metros": [
+        5.3,
+        2.1
+      ],
+      "nota": "tile 5.3×2.1 m; planos: granja 5.3×2.1 hacia s, salitre 2×4.6 hacia e. Lo usan granja (5,3×2,1) y salitre (4,6×2): misma proporción."
+    },
+    {
+      "id": "tile-lampara-carburo",
+      "estilo": "tile",
+      "prompt": "an old brass miner's carbide lamp standing on its round base, seen from above, UNLIT: no flame, no glow, no light.",
+      "semilla": 8311,
+      "candidatas": [
+        8311,
+        8312
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.3,
+        0.3
+      ],
+      "nota": "tile 0.3×0.3 m; planos: subterraneo 0.3×0.3"
+    },
+    {
+      "id": "tile-palet",
+      "estilo": "tile",
+      "prompt": "an old wooden pallet with a few unlit candle stubs, dented food cans and a worn grey backpack on it.",
+      "semilla": 8321,
+      "candidatas": [
+        8321,
+        8322
+      ],
+      "ancho": 1152,
+      "alto": 912,
+      "metros": [
+        1,
+        0.8
+      ],
+      "nota": "tile 1×0.8 m; planos: subterraneo 1×0.8"
+    },
+    {
+      "id": "tile-flores-valla",
+      "estilo": "tile",
+      "prompt": "seven faded, sun-bleached plastic flowers tied together with rusty wire in a loose horizontal row, and among them one fresh, real deep-red rose.",
+      "semilla": 8331,
+      "candidatas": [
+        8331,
+        8332
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        1,
+        0.28
+      ],
+      "nota": "tile 1×0.28 m; planos: larchmont-planta 1×0.28"
+    },
+    {
+      "id": "tile-taburete-alto",
+      "estilo": "tile-nuevo",
+      "prompt": "a tall black metal drafting stool seen from above: a round black seat with a ring footrest showing around it.",
+      "semilla": 8341,
+      "candidatas": [
+        8341,
+        8342
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.5,
+        0.5
+      ],
+      "nota": "tile 0.5×0.5 m; planos: northline 0.5×0.5 hacia n"
+    },
+    {
+      "id": "tile-sofa-espera",
+      "estilo": "tile-nuevo",
+      "prompt": "a long three-seat waiting-room sofa upholstered in dark grey vinyl on a steel frame, a dent where people sat.",
+      "semilla": 8351,
+      "candidatas": [
+        8351,
+        8352
+      ],
+      "ancho": 1520,
+      "alto": 688,
+      "metros": [
+        2,
+        0.9
+      ],
+      "nota": "tile 2×0.9 m; planos: northline 0.9×2 hacia o"
+    },
+    {
+      "id": "tile-silla-oficina",
+      "estilo": "tile-nuevo",
+      "prompt": "a black mesh swivel office chair with armrests, the tips of a five-star wheeled base showing around the seat.",
+      "semilla": 8361,
+      "candidatas": [
+        8361,
+        8362
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.55,
+        0.55
+      ],
+      "nota": "tile 0.55×0.55 m; planos: gale-sentinel 0.55×0.55 hacia s, gale-sentinel 0.55×0.55 hacia n, gale-datos 0.55×0.55 hacia n, gale-datos 0.55×0.55 hacia e, northline 0.55×0.55 hacia s, northline 0.55×0.55 hacia n"
+    },
+    {
+      "id": "tile-sofa-moderno",
+      "estilo": "tile-nuevo",
+      "prompt": "a sleek modern three-seat lobby sofa in pale grey wool with a low backrest and thin steel legs.",
+      "semilla": 8371,
+      "candidatas": [
+        8371,
+        8372
+      ],
+      "ancho": 1568,
+      "alto": 672,
+      "metros": [
+        2,
+        0.85
+      ],
+      "nota": "tile 2×0.85 m; planos: gale-sentinel 0.85×2 hacia e, gale-sentinel 0.85×1.8 hacia e, gale-planta3 0.85×2 hacia o"
+    },
+    {
+      "id": "tile-silla-ejecutiva",
+      "estilo": "tile-nuevo",
+      "prompt": "an expensive ergonomic executive chair in dark brown leather and polished aluminium, a tall backrest along the top edge.",
+      "semilla": 8381,
+      "candidatas": [
+        8381,
+        8382
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.6,
+        0.6
+      ],
+      "nota": "tile 0.6×0.6 m; planos: gale-planta3 0.6×0.6 hacia e"
+    },
+    {
+      "id": "tile-mesa-reuniones",
+      "estilo": "tile-nuevo",
+      "prompt": "a long boardroom table with a dark walnut veneer top on a black steel base, completely bare except for a few glasses of water.",
+      "semilla": 8391,
+      "candidatas": [
+        8391,
+        8392
+      ],
+      "ancho": 1776,
+      "alto": 592,
+      "metros": [
+        3.4,
+        1.1
+      ],
+      "nota": "tile 3.4×1.1 m; planos: gale-planta3 3.4×1.1, salitre 2.6×1.2. Sólo gale-planta3 (3,4×1,1). Salitre pasa a tile-mesa-asamblea."
+    },
+    {
+      "id": "tile-mesa-baja",
+      "estilo": "tile-nuevo",
+      "prompt": "a low rectangular coffee table with a black glass top on a dark steel frame, clean and bare.",
+      "semilla": 8401,
+      "candidatas": [
+        8401,
+        8402
+      ],
+      "ancho": 1392,
+      "alto": 752,
+      "metros": [
+        1.4,
+        0.75
+      ],
+      "nota": "tile 1.4×0.75 m; planos: gale-sentinel 0.8×0.8, gale-planta3 1.4×0.8, galeria 1.2×0.7, torre-atico 1.4×0.7. gale-planta3 1,4×0,8, galeria 1,2×0,7, torre-atico 1,4×0,7. gale-sentinel la usa a 0,8×0,8: ver tile-mesa-baja-cuadrada."
+    },
+    {
+      "id": "tile-mesa-baja-cuadrada",
+      "estilo": "tile-nuevo",
+      "prompt": "a low square coffee table with a black glass top on a dark steel frame, clean and bare.",
+      "semilla": 8411,
+      "candidatas": [
+        8411,
+        8412
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.8,
+        0.8
+      ],
+      "nota": "tile 0.8×0.8 m; no está en ningún plano todavía. VARIANTE NUEVA para gale-sentinel (0,8×0,8): la rectangular estirada a cuadrado se deforma. Hay que cambiar el `tile` en content/planos/gale-sentinel.json."
+    },
+    {
+      "id": "tile-bandeja-terciopelo",
+      "estilo": "tile-nuevo",
+      "prompt": "a shallow rectangular tray lined with black velvet, holding four smartphones placed face down.",
+      "semilla": 8421,
+      "candidatas": [
+        8421,
+        8422
+      ],
+      "ancho": 1280,
+      "alto": 816,
+      "metros": [
+        0.5,
+        0.32
+      ],
+      "nota": "tile 0.5×0.32 m; planos: galeria 0.5×0.32"
+    },
+    {
+      "id": "tile-sillon-principe",
+      "estilo": "tile-nuevo",
+      "prompt": "a stately antique armchair upholstered in dark charcoal velvet with carved black wooden arms and a tall backrest along the top edge.",
+      "semilla": 8431,
+      "candidatas": [
+        8431,
+        8432
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.8,
+        0.8
+      ],
+      "nota": "tile 0.8×0.8 m; planos: galeria 0.8×0.8 hacia n"
+    },
+    {
+      "id": "tile-sillon",
+      "estilo": "tile-nuevo",
+      "prompt": "a modern lounge armchair upholstered in dark grey leather with low square arms and a backrest along the top edge.",
+      "semilla": 8441,
+      "candidatas": [
+        8441,
+        8442
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.75,
+        0.75
+      ],
+      "nota": "tile 0.75×0.75 m; planos: galeria 0.7×0.7 hacia s, torre-atico 0.75×0.75 hacia e, torre-atico 0.75×0.75 hacia o"
+    },
+    {
+      "id": "tile-silla-musico",
+      "estilo": "tile-nuevo",
+      "prompt": "a plain black lacquered armless chair with a small round seat.",
+      "semilla": 8451,
+      "candidatas": [
+        8451,
+        8452
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.45,
+        0.45
+      ],
+      "nota": "tile 0.45×0.45 m; planos: galeria 0.45×0.45 hacia e, galeria 0.45×0.45 hacia s, galeria 0.45×0.45 hacia n"
+    },
+    {
+      "id": "tile-carro-servicio",
+      "estilo": "tile-nuevo",
+      "prompt": "a polished steel and black-wood serving cart, its top tray holding crystal wine glasses and a decanter of dark wine.",
+      "semilla": 8461,
+      "candidatas": [
+        8461,
+        8462
+      ],
+      "ancho": 1376,
+      "alto": 768,
+      "metros": [
+        0.9,
+        0.5
+      ],
+      "nota": "tile 0.9×0.5 m; planos: galeria 0.9×0.5"
+    },
+    {
+      "id": "tile-silla-consejo",
+      "estilo": "tile-nuevo",
+      "prompt": "a high-backed black leather boardroom chair on a chrome base, the backrest along the top edge.",
+      "semilla": 8471,
+      "candidatas": [
+        8471,
+        8472
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.6,
+        0.6
+      ],
+      "nota": "tile 0.6×0.6 m; planos: torre-atico 0.6×0.6 hacia e, torre-atico 0.6×0.6 hacia s, torre-atico 0.6×0.6 hacia n"
+    },
+    {
+      "id": "tile-carpeta-cerrada",
+      "estilo": "tile-nuevo",
+      "prompt": "a closed plain dark-grey cardboard document folder with a black elastic strap, with nothing written on it.",
+      "semilla": 8481,
+      "candidatas": [
+        8481,
+        8482
+      ],
+      "ancho": 1152,
+      "alto": 912,
+      "metros": [
+        0.3,
+        0.24
+      ],
+      "nota": "tile 0.3×0.24 m; planos: torre-atico 0.3×0.24"
+    },
+    {
+      "id": "tile-sofa-cuero",
+      "estilo": "tile-nuevo",
+      "prompt": "a long, low tufted sofa in black leather with rolled arms, the backrest along the top edge.",
+      "semilla": 8491,
+      "candidatas": [
+        8491,
+        8492
+      ],
+      "ancho": 1600,
+      "alto": 656,
+      "metros": [
+        2.2,
+        0.9
+      ],
+      "nota": "tile 2.2×0.9 m; planos: torre-atico 2.2×0.9 hacia n"
+    },
+    {
+      "id": "tile-silla-despacho",
+      "estilo": "tile-nuevo",
+      "prompt": "a large executive desk chair in black leather with a tall backrest along the top edge and wide padded arms.",
+      "semilla": 8501,
+      "candidatas": [
+        8501,
+        8502
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.65,
+        0.65
+      ],
+      "nota": "tile 0.65×0.65 m; planos: torre-atico 0.65×0.65 hacia o"
+    },
+    {
+      "id": "tile-maletin-aluminio",
+      "estilo": "tile-nuevo",
+      "prompt": "a closed brushed-aluminium briefcase with black corner guards and a small combination lock, lying flat.",
+      "semilla": 8511,
+      "candidatas": [
+        8511,
+        8512
+      ],
+      "ancho": 1200,
+      "alto": 864,
+      "metros": [
+        0.5,
+        0.36
+      ],
+      "nota": "tile 0.5×0.36 m; planos: torre-boveda 0.5×0.36"
+    },
+    {
+      "id": "tile-silla-puente",
+      "estilo": "tile",
+      "prompt": "a ship captain's helm chair: a high swivel seat in black vinyl with armrests on a steel pedestal, the backrest along the top edge.",
+      "semilla": 8521,
+      "candidatas": [
+        8521,
+        8522
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.6,
+        0.6
+      ],
+      "nota": "tile 0.6×0.6 m; planos: ferry-puente 0.6×0.6 hacia o"
+    },
+    {
+      "id": "tile-auto-sedan",
+      "estilo": "tile-vehiculo",
+      "prompt": "an ordinary mid-size four-door sedan in dull silver-grey. The car stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
+      "semilla": 8531,
+      "candidatas": [
+        8531,
+        8532
+      ],
+      "ancho": 656,
+      "alto": 1600,
+      "metros": [
+        1.9,
+        4.6
+      ],
+      "nota": "tile 1.9×4.6 m; planos: ferry-coches 4.6×1.9 hacia o. VERTICAL, frente abajo: ferry-coches pone hacia «o» sobre una huella horizontal y la textura queda 1,9×4,6 (ver reporte)."
+    },
+    {
+      "id": "tile-auto-suv",
+      "estilo": "tile-vehiculo",
+      "prompt": "a dark blue-grey mid-size SUV with roof rails. The car stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
+      "semilla": 8541,
+      "candidatas": [
+        8541,
+        8542
+      ],
+      "ancho": 656,
+      "alto": 1584,
+      "metros": [
+        2,
+        4.8
+      ],
+      "nota": "tile 2×4.8 m; planos: ferry-coches 4.8×2 hacia o. VERTICAL, frente abajo (ferry-coches)."
+    },
+    {
+      "id": "tile-auto-furgoneta",
+      "estilo": "tile-vehiculo",
+      "prompt": "a plain white panel van with no windows in the back and no markings. The van stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
+      "semilla": 8551,
+      "candidatas": [
+        8551,
+        8552
+      ],
+      "ancho": 640,
+      "alto": 1648,
+      "metros": [
+        2.1,
+        5.4
+      ],
+      "nota": "tile 2.1×5.4 m; planos: ferry-coches 5.4×2.1 hacia o. VERTICAL, frente abajo (ferry-coches)."
+    },
+    {
+      "id": "tile-auto-pickup",
+      "estilo": "tile-vehiculo",
+      "prompt": "a black full-size pickup truck with an empty cargo bed. The truck stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
+      "semilla": 8561,
+      "candidatas": [
+        8561,
+        8562
+      ],
+      "ancho": 608,
+      "alto": 1712,
+      "metros": [
+        2,
+        5.6
+      ],
+      "nota": "tile 2×5.6 m; planos: ferry-coches 5.6×2 hacia o. VERTICAL, frente abajo (ferry-coches)."
+    },
+    {
+      "id": "tile-telefono-tapa",
+      "estilo": "tile",
+      "prompt": "an old black plastic clamshell flip phone lying closed, a scrap of beige painter's masking tape stuck on its lid with nothing written on it.",
+      "semilla": 8571,
+      "candidatas": [
+        8571,
+        8572
+      ],
+      "ancho": 1456,
+      "alto": 720,
+      "metros": [
+        0.1,
+        0.05
+      ],
+      "nota": "tile 0.1×0.05 m; no está en ningún plano todavía. Trama: el móvil de SAFE (DOC-05, AYU-05). Sin texto en la cinta: la nota va en el handout."
+    },
+    {
+      "id": "tile-disco-duro",
+      "estilo": "tile",
+      "prompt": "a matte black external hard drive the size of a paperback book, a strip of beige painter's masking tape across its top with nothing written on it, a short frayed USB cable.",
+      "semilla": 8581,
+      "candidatas": [
+        8581,
+        8582
+      ],
+      "ancho": 1248,
+      "alto": 832,
+      "metros": [
+        0.18,
+        0.12
+      ],
+      "nota": "tile 0.18×0.12 m; no está en ningún plano todavía. Trama: el disco del Expediente (04-ficcion-de-apertura). «NO TOCAR» no se pinta."
+    },
+    {
+      "id": "tile-silla-volcada",
+      "estilo": "tile",
+      "prompt": "a plain old wooden chair knocked over and lying on its side on the floor: the backrest flat, the seat seen edge-on, the four legs pointing sideways.",
+      "semilla": 8591,
+      "candidatas": [
+        8591,
+        8592
+      ],
+      "ancho": 1376,
+      "alto": 768,
+      "metros": [
+        0.9,
+        0.5
+      ],
+      "nota": "tile 0.9×0.5 m; no está en ningún plano todavía. Trama: A3-E01 (20-parte-3)."
+    },
+    {
+      "id": "tile-telefono-roto",
+      "estilo": "tile",
+      "prompt": "a modern black smartphone lying face up with its screen shattered in a spider-web pattern; the screen is OFF and black.",
+      "semilla": 8601,
+      "candidatas": [
+        8601,
+        8602
+      ],
+      "ancho": 1456,
+      "alto": 720,
+      "metros": [
+        0.15,
+        0.075
+      ],
+      "nota": "tile 0.15×0.075 m; no está en ningún plano todavía. Trama: A3-E01."
+    },
+    {
+      "id": "tile-papel-casquillo",
+      "estilo": "tile",
+      "prompt": "a sheet of white paper folded in half, held down by a single brass pistol bullet casing standing upright on it; the outside of the paper is blank.",
+      "semilla": 8611,
+      "candidatas": [
+        8611,
+        8612
+      ],
+      "ancho": 1248,
+      "alto": 848,
+      "metros": [
+        0.22,
+        0.15
+      ],
+      "nota": "tile 0.22×0.15 m; no está en ningún plano todavía. Trama: A3-E01. La carta va en el handout."
+    },
+    {
+      "id": "tile-bolsa-reparto",
+      "estilo": "tile",
+      "prompt": "a grey insulated food-delivery backpack, the square kind couriers carry, zipped shut and lying flat, scuffed, with no logos and no reflective lettering.",
+      "semilla": 8621,
+      "candidatas": [
+        8621,
+        8622
+      ],
+      "ancho": 1168,
+      "alto": 896,
+      "metros": [
+        0.45,
+        0.35
+      ],
+      "nota": "tile 0.45×0.35 m; no está en ningún plano todavía. Trama: 04-ficcion-de-apertura (el robo del disco)."
+    },
+    {
+      "id": "tile-sangre",
+      "estilo": "tile",
+      "prompt": "a dark pool of fresh blood on the floor with spatters around it and a smeared drag mark leading away, deep crimson and almost black at the centre, glossy.",
+      "semilla": 8631,
+      "candidatas": [
+        8631,
+        8632
+      ],
+      "ancho": 1248,
+      "alto": 832,
+      "metros": [
+        1.5,
+        1
+      ],
+      "nota": "tile 1.5×1 m; no está en ningún plano todavía. Horror."
+    },
+    {
+      "id": "tile-ceniza",
+      "estilo": "tile",
+      "prompt": "a pile of fine dark charcoal-grey ash roughly in the shape of a lying human body, with an intact black nylon jacket lying on top of the ash.",
+      "semilla": 8641,
+      "candidatas": [
+        8641,
+        8642
+      ],
+      "ancho": 1488,
+      "alto": 704,
+      "metros": [
+        1.7,
+        0.8
+      ],
+      "nota": "tile 1.7×0.8 m; no está en ningún plano todavía. Horror: A1-E02 / AYU-06 (Corwin). Ceniza oscura para que BiRefNet la separe del fondo gris claro."
+    },
+    {
+      "id": "tile-vidrio-roto",
+      "estilo": "tile",
+      "prompt": "a scatter of broken window glass on the floor: sharp clear shards with cold blue-grey reflections and a few larger triangular pieces.",
+      "semilla": 8651,
+      "candidatas": [
+        8651,
+        8652
+      ],
+      "ancho": 1152,
+      "alto": 912,
+      "metros": [
+        1,
+        0.8
+      ],
+      "nota": "tile 1×0.8 m; no está en ningún plano todavía. Horror."
+    }
+  ]
+}
