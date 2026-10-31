@@ -2,7 +2,7 @@
   "_id": "CzCFXoeyiVk3DRsr",
   "_key": "!adventures!CzCFXoeyiVk3DRsr",
   "name": "Seattle by Night — El Expediente Ward",
-  "img": "modules/seattle-by-night/assets/mapas/helen.webp",
+  "img": "modules/seattle-by-night/assets/portadas/portada.webp",
   "caption": "<p>Seattle, noviembre de 2026. La crónica completa, lista para dirigir.</p>",
   "description": "<p>Importa al mundo <strong>22 escenas</strong>, <strong>51 actores</strong> (PJs, PNJs y la Célula Puget), <strong>101 journals</strong> (la aventura, la ciudad, los personajes y los documentos para entregar), <strong>11 ítems</strong> de FIRSTLIGHT y <strong>6 macros</strong>, con sus carpetas.</p><p>Reimportar actualiza los documentos existentes sin duplicarlos.</p><p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.</p>",
   "actors": [
@@ -58862,7 +58862,7 @@
             "top": 20
           },
           "background": {
-            "src": null,
+            "src": "modules/seattle-by-night/assets/portadas/portada.webp",
             "color": "#1c2a36"
           },
           "sort": 0
@@ -59037,7 +59037,7 @@
           "origen": "escena",
           "escena": "portada",
           "landing": true,
-          "provisional": true,
+          "provisional": false,
           "nota": "<p>Portada de la crónica. Los pines abren cómo usar el módulo, la aventura y la Pantalla del Narrador.</p>"
         }
       },

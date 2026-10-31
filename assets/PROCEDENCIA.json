@@ -4762,6 +4762,26 @@
       "referencia": "assets/retratos/PNJ-21.webp",
       "segundos": 24,
       "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Sasha Hale: brown hair in a ponytail, a plain grey sweater, headphones around her neck, a paper cup of coffee.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/portadas/portada.webp": {
+      "fecha": "2026-10-31T16:53:45.283Z",
+      "id": "portada",
+      "estilo": "portada",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 9922,
+      "parametros": {
+        "ancho": 1920,
+        "alto": 1088
+      },
+      "segundos": 11.9,
+      "prompt": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: A rain-soaked city waterfront at night, seen from the end of an old wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across black harbour water towards a skyline of plain rectangular dark glass office blocks with flat roofs, half lost in low cloud and mist, countless small cold windows; one block is taller than the rest, and a single window is lit on its top floor, as if someone up there is watching. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. Crimson accent: a single small red navigation buoy light floating on the water in the middle distance, with its long red reflection trembling on the wet surface. Every building is a plain box: no spires, no needle-shaped towers, no observation decks, no saucer tops, no towers on thin stems, no antennas with lights, no recognisable landmark.\n\nCOMPOSITION: the lower middle band of the image (between half and three quarters of its height, across the centre) is calm, dark and simple, only black water with soft broken reflections, because round interface buttons will be placed over it. The painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no title, no logo, no signature, no watermark, no caption, no famous landmark tower.",
+      "recorte": "1920×1088 → 1920×1080 centrado (tanda2.sh)"
     }
   }
 }

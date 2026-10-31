@@ -25,7 +25,7 @@
       "_comentario": "Portada de la crónica (escena landing de tools/contenido/escenas.mjs: assets/portadas/portada.webp, 1920×1080, pines a la altura del 62 % y centrados). La plantilla de retrato del doc 15 llevada a un plano general 16:9. Sin texto: el título lo pone la escena. Sale a 1920×1088 y tanda2.sh la recorta a 1920×1080.",
       "tipo": "retrato",
       "flujo": "t2i-zimage",
-      "prefijo": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: ",
+      "prefijo": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: ",
       "sufijo": "\n\nCOMPOSITION: the lower middle band of the image (between half and three quarters of its height, across the centre) is calm, dark and simple, only black water with soft broken reflections, because round interface buttons will be placed over it. The painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no title, no logo, no signature, no watermark, no caption, no famous landmark tower.",
       "ancho": 1920,
       "alto": 1088,
@@ -141,17 +141,17 @@
     {
       "id": "portada",
       "estilo": "portada",
-      "semilla": 9911,
+      "semilla": 9921,
       "candidatas": [
-        9911,
-        9912,
-        9913,
-        9914,
-        9915,
-        9916
+        9921,
+        9922,
+        9923,
+        9924,
+        9925,
+        9926
       ],
-      "nota": "Portada (escena landing). 1920×1088 → tanda2.sh recorta a 1920×1080 en el centro. Tanda 2b: las 9901–9906 pintaban el Space Needle (marca registrada); se describe el skyline como bloques rectangulares.",
-      "prompt": "The Seattle waterfront seen at night from the end of a rain-soaked wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across the black water of Elliott Bay towards the downtown skyline: plain rectangular dark glass office towers with flat roofs, half lost in low cloud and mist, countless small cold windows. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. High up in the tallest rectangular office tower, a single lit window on the top floor, as if someone up there is watching. Crimson accent: the small red aircraft warning light on the flat roof of that same rectangular office tower and its long red reflection trembling on the water. Every building in the skyline is a plain rectangular block: there is NO needle-shaped tower, NO saucer-topped observation tower, NO tower standing on a thin stem or tripod, nothing that looks like a famous landmark."
+      "nota": "Portada (escena landing). 1920×1088 → tanda2.sh recorta a 1920×1080 en el centro. Tanda 2b: las 9901–9906 pintaban el Space Needle (marca registrada); se describe el skyline como bloques rectangulares. Tanda 2c: sin «Seattle» ni la torre con baliza (seguía saliendo el Space Needle); el acento rojo es una boya.",
+      "prompt": "A rain-soaked city waterfront at night, seen from the end of an old wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across black harbour water towards a skyline of plain rectangular dark glass office blocks with flat roofs, half lost in low cloud and mist, countless small cold windows; one block is taller than the rest, and a single window is lit on its top floor, as if someone up there is watching. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. Crimson accent: a single small red navigation buoy light floating on the water in the middle distance, with its long red reflection trembling on the wet surface. Every building is a plain box: no spires, no needle-shaped towers, no observation decks, no saucer tops, no towers on thin stems, no antennas with lights, no recognisable landmark."
     },
     {
       "id": "tile-portatil",
