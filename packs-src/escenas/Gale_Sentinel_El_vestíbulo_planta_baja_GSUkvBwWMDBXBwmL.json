@@ -1392,7 +1392,263 @@
       "_key": "!scenes.notes!GSUkvBwWMDBXBwmL.K6BzlFFTZrLaANMC"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "qJyJxWqW62JAxN7b",
+      "name": "la silla del guardia, detrás del mostrador",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 793,
+      "y": 643,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.qJyJxWqW62JAxN7b"
+    },
+    {
+      "_id": "oCVpKLAY5Mnshd6d",
+      "name": "sofa moderno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-moderno.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 118,
+      "y": 800,
+      "width": 200,
+      "height": 85,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 1,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.oCVpKLAY5Mnshd6d"
+    },
+    {
+      "_id": "CupVAJoYpiP4GJvd",
+      "name": "sofa moderno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-moderno.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 118,
+      "y": 1020,
+      "width": 180,
+      "height": 85,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 2,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.CupVAJoYpiP4GJvd"
+    },
+    {
+      "_id": "soTDu7vIo3e30cng",
+      "name": "mesa baja cuadrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-baja-cuadrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 250,
+      "y": 880,
+      "width": 80,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.soTDu7vIo3e30cng"
+    },
+    {
+      "_id": "ZLXmKd2aKhps6t8h",
+      "name": "silla oficina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 188,
+      "y": 338,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.ZLXmKd2aKhps6t8h"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -1408,49 +1664,8 @@
       "id": "LUG-07",
       "plano": "gale-sentinel",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 1 de A3-E02: el perímetro.</strong> «Dos de la madrugada. El vestíbulo de Gale Sentinel está vacío salvo por un guardia que mira el móvil detrás del mostrador. La pantalla de la pared sigue encendida: un mosaico de miles de imágenes en directo, porches, pasillos, lluvia.» La <strong>videopared</strong> ocupa la pared norte del vestíbulo, frente a la puerta principal; en el mapa está apagada y la encienden tres luces «neon». Debajo va el lema «Vemos lo que la ciudad no ve.» (no está pintado: ningún texto en el mapa). El guardia (uno de los <strong>dos guardias mortales</strong>) está en la silla detrás del <strong>mostrador</strong>; el otro, en la <strong>oficina de seguridad</strong> del ala oeste, con los monitores de las cámaras.</p>\n<p><strong>Cámaras ANOMALY (en todos los accesos)</strong>, marcadas como objetos <code>anomaly</code> sin luz: ① sobre la puerta principal, por fuera; ② en la esquina sureste del vestíbulo, apuntando a la puerta; ③ sobre la salida de servicio al patio, por fuera; ④ en el hall de ascensores, apuntando a los molinetes. Cada Vástago que pase delante con el módulo activo queda registrado como «sujeto frío»: Termómetro +1 en total (A3-E02, capa 1). Desactivarlo desde fuera: Inteligencia + Tecnología Dif 4 (Ezra +2 dados si ya sabe que el firmware es suyo; LOR-03 a nivel 4, automático). Ofuscación no lo engaña.</p>\n<p><strong>Accesos.</strong> La puerta principal (corredera de vidrio) da a la plaza y al estacionamiento: la región «Al estacionamiento» lleva al mapa de zona del campus (pendiente, t2i). La <strong>salida de servicio</strong> del pasillo norte da al patio de servicio, y del patio se cruza al <strong>centro de datos</strong> (región → <code>gale-datos</code>). Los <strong>molinetes</strong> (dos pasos con tarjeta, puertas de vidrio entre barandas) separan el vestíbulo del hall de ascensores; el pasillo de servicio también llega al hall por una puerta con cerradura electrónica. Escalera y ascensores suben a la <strong>planta 3</strong> (<code>gale-planta3</code>).</p>\n<p><strong>A1-E05 (acceso físico).</strong> Si la coterie usa Dominación sobre un técnico de guardia para entrar, entra por acá y pasa por las cámaras ① o ③: Termómetro +1 salvo que se desactiven antes.</p>\n<p><strong>Salir corriendo</strong> por el vestíbulo y la plaza delante de las cámaras: Termómetro +1. Si salta la alarma, la policía de Bellevue tarda doce minutos.</p>\n<p>La cafetería y los aseos de la planta baja (bloque rayado al sureste) están cerrados y no se juegan.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×2, sofa ×2, mesa.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus.</p>",
-      "moviles": [
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-oficina",
-          "x": 7.65,
-          "y": 6.15,
-          "w": 0.55,
-          "h": 0.55
-        },
-        {
-          "tipo": "sofa",
-          "tile": "tile-sofa-moderno",
-          "x": 0.75,
-          "y": 7,
-          "w": 0.85,
-          "h": 2
-        },
-        {
-          "tipo": "sofa",
-          "tile": "tile-sofa-moderno",
-          "x": 0.75,
-          "y": 9.3,
-          "w": 0.85,
-          "h": 1.8
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-baja-cuadrada",
-          "x": 2.1,
-          "y": 8.4,
-          "w": 0.8,
-          "h": 0.8
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-oficina",
-          "x": 1.6,
-          "y": 3.1,
-          "w": 0.55,
-          "h": 0.55
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 1 de A3-E02: el perímetro.</strong> «Dos de la madrugada. El vestíbulo de Gale Sentinel está vacío salvo por un guardia que mira el móvil detrás del mostrador. La pantalla de la pared sigue encendida: un mosaico de miles de imágenes en directo, porches, pasillos, lluvia.» La <strong>videopared</strong> ocupa la pared norte del vestíbulo, frente a la puerta principal; en el mapa está apagada y la encienden tres luces «neon». Debajo va el lema «Vemos lo que la ciudad no ve.» (no está pintado: ningún texto en el mapa). El guardia (uno de los <strong>dos guardias mortales</strong>) está en la silla detrás del <strong>mostrador</strong>; el otro, en la <strong>oficina de seguridad</strong> del ala oeste, con los monitores de las cámaras.</p>\n<p><strong>Cámaras ANOMALY (en todos los accesos)</strong>, marcadas como objetos <code>anomaly</code> sin luz: ① sobre la puerta principal, por fuera; ② en la esquina sureste del vestíbulo, apuntando a la puerta; ③ sobre la salida de servicio al patio, por fuera; ④ en el hall de ascensores, apuntando a los molinetes. Cada Vástago que pase delante con el módulo activo queda registrado como «sujeto frío»: Termómetro +1 en total (A3-E02, capa 1). Desactivarlo desde fuera: Inteligencia + Tecnología Dif 4 (Ezra +2 dados si ya sabe que el firmware es suyo; LOR-03 a nivel 4, automático). Ofuscación no lo engaña.</p>\n<p><strong>Accesos.</strong> La puerta principal (corredera de vidrio) da a la plaza y al estacionamiento: la región «Al estacionamiento» lleva al mapa de zona del campus (pendiente, t2i). La <strong>salida de servicio</strong> del pasillo norte da al patio de servicio, y del patio se cruza al <strong>centro de datos</strong> (región → <code>gale-datos</code>). Los <strong>molinetes</strong> (dos pasos con tarjeta, puertas de vidrio entre barandas) separan el vestíbulo del hall de ascensores; el pasillo de servicio también llega al hall por una puerta con cerradura electrónica. Escalera y ascensores suben a la <strong>planta 3</strong> (<code>gale-planta3</code>).</p>\n<p><strong>A1-E05 (acceso físico).</strong> Si la coterie usa Dominación sobre un técnico de guardia para entrar, entra por acá y pasa por las cámaras ① o ③: Termómetro +1 salvo que se desactiven antes.</p>\n<p><strong>Salir corriendo</strong> por el vestíbulo y la plaza delante de las cámaras: Termómetro +1. Si salta la alarma, la policía de Bellevue tarda doce minutos.</p>\n<p>La cafetería y los aseos de la planta baja (bloque rayado al sureste) están cerrados y no se juegan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (5) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus.</p>",
+      "moviles": []
     }
   },
   "_stats": {

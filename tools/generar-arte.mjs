@@ -31,6 +31,9 @@
  *   --simular        no llama a ComfyUI ni mira la placa: lista qué generaría
  *       (flujo, tamaño, semilla, destino, referencia y prompt completo).
  *   --px-por-m <n>   tiles con `metros`: escala final (por defecto 100, MAPS_SPEC §4).
+ *   --fuerza X --fin X --denoise X   tiles con `esquema`: pisan strength y
+ *       end_percent del ControlNet y el denoise (pruebas; lo fijo va en el asset).
+ *       Con --simular y --salida, el esquema se dibuja en <salida>/esquema/ sin GPU.
  *
  * Un estilo puede declarar `tipo` (retrato, token o tile): así un estilo nuevo
  * (tile-vehiculo, portada…) reutiliza el camino de uno existente.
@@ -55,6 +58,10 @@
  *          asset trae `metros: [ancho, alto]` (el rectángulo SIN rotar del tile,
  *          como lo arma tools/contenido/escenas.mjs), se recorta al contenido y
  *          se lleva a ancho×alto × 100 px, centrado sobre transparente.
+ *          Con `esquema` (ver «esquemas de tiles» más abajo), en vez de t2i se
+ *          dibuja un esquema cenital y se pinta con Z-Image Turbo + Fun ControlNet
+ *          Union (plano-zimage); el estilo puede traer `prefijo_esquema`. Con
+ *          `girar` (grados) el recorte se gira antes de escalar.
  *
  * El camino retrato (sin recorte) sirve también para la portada (`tipo: retrato`).
  *
@@ -98,6 +105,8 @@ const CALIDAD_WEBP = 90;
 
 const MODELOS = {
   "t2i-zimage": { modelos: ["z_image_turbo_bf16.safetensors", "qwen_3_4b.safetensors", "z_image_ae.safetensors"], licencia: "Apache 2.0" },
+  // Tiles con `esquema`: Z-Image Turbo + Fun ControlNet Union sobre el esquema cenital (el mismo workflow que los planos).
+  "plano-zimage": { modelos: ["z_image_turbo_bf16.safetensors", "qwen_3_4b.safetensors", "z_image_ae.safetensors", "Z-Image-Turbo-Fun-Controlnet-Union-2.1-2602-8steps.safetensors"], licencia: "Apache 2.0" },
   "editar-qwen": { modelos: ["qwen-image-edit-2511-Q5_K_M.gguf", "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors", "qwen_2.5_vl_7b_fp8_scaled.safetensors", "qwen_image_vae.safetensors"], licencia: "Apache 2.0" },
   "editar-klein": { modelos: ["flux-2-klein-4b.safetensors", "qwen_3_4b.safetensors", "flux2-vae.safetensors"], licencia: "Apache 2.0" },
   "recortar-birefnet": { modelos: ["birefnet.safetensors"], licencia: "MIT" }
@@ -137,7 +146,7 @@ const estiloDe = a => {
 };
 /** Camino de generación: retrato (t2i tal cual), token o tile. Un estilo nuevo lo declara con `tipo`. */
 const tipoDe = a => estiloDe(a).tipo ?? a.estilo;
-const flujoDe = a => a.flujo ?? estiloDe(a).flujo;
+const flujoDe = a => a.esquema ? "plano-zimage" : (a.flujo ?? estiloDe(a).flujo);
 const carpetaDe = a => path.join(RAIZ, a.carpeta ?? estiloDe(a).carpeta);
 const rutaDe = a => path.join(carpetaDe(a), `${a.id}.webp`);
 const CRUDO_TOKENS = path.join(RAIZ, "assets/tokens-crudo");
@@ -155,7 +164,9 @@ function sujetoDe(a) {
 /** Prefijo + sujeto + sufijo. Un token generado sin retrato (t2i) usa `prefijo_t2i`. */
 function promptDe(a) {
   const e = estiloDe(a);
-  const prefijo = a.prefijo ?? (tipoDe(a) === "token" && flujoDe(a) === "t2i-zimage" ? (e.prefijo_t2i ?? e.prefijo) : e.prefijo);
+  const prefijo = a.prefijo
+    ?? (a.esquema ? (e.prefijo_esquema ?? e.prefijo)
+      : tipoDe(a) === "token" && flujoDe(a) === "t2i-zimage" ? (e.prefijo_t2i ?? e.prefijo) : e.prefijo);
   return prefijo + sujetoDe(a) + e.sufijo;
 }
 
@@ -254,7 +265,15 @@ async function pasada(a, semilla) {
     PREFIJO: `sbn/${a.estilo}/${a.id}-s${semilla}`
   };
   let wf = flujo;
-  if (flujo.startsWith("editar-")) {
+  if (a.esquema) {
+    if (!a.metros) throw new Error(`${a.id}: un esquema necesita \`metros\``);
+    // El esquema queda al lado de las candidatas (con --salida) para revisar el control.
+    const dirEsq = salidaCli ? path.join(salidaCli, "esquema") : tmpDir;
+    const r = dibujarEsquema(a, valores.ANCHO, valores.ALTO, dirEsq, a.id);
+    const p = parametrosEsquema(a);
+    valores._silueta = r.silueta;
+    Object.assign(valores, { IMAGEN: r.dibujo, CONTROL: r.control, FUERZA: p.fuerza, FIN_CONTROL: p.fin, DENOISE: p.denoise, PASOS: 8 });
+  } else if (flujo.startsWith("editar-")) {
     if (a.figura) await asegurarFigura(a);
     const retrato = rutaReferencia(a);
     if (!fs.existsSync(retrato)) throw new Error(`falta el retrato ${path.relative(RAIZ, retrato)} (generalo antes)`);
@@ -306,6 +325,264 @@ function escalarTile(pngAlfa, destino, metros) {
   return { px: [w, h], llena: [Math.round((rw * k / w) * 100), Math.round((rh * k / h) * 100)] };
 }
 
+/* --- esquemas de tiles (camino controlado, como los planos) ----------------- */
+
+/**
+ * Z-Image t2i no entiende «visto desde arriba» para muebles: pinta mesas de
+ * perfil con patas, sillas de frente y les agrega un sofá o una caja detrás.
+ * Un asset con `esquema` se pinta como los planos: un esquema vectorial cenital
+ * de la pieza (a la escala de `metros`) → Z-Image Turbo + Fun ControlNet Union
+ * (tools/workflows/plano-zimage.json: control = los cantos del esquema en blanco
+ * sobre negro; latente = el esquema relleno, que sólo pesa con denoise < 1) →
+ * BiRefNet → escala, igual que el resto de los tiles.
+ *
+ *   esquema: { tipo, ...parámetros, formas?: [...], fuerza?, fin?, denoise?, llenar? }
+ *
+ * Todo en METROS sobre el rectángulo SIN rotar del tile (0,0 arriba a la
+ * izquierda; respaldo arriba, frente al sur). Tipos (los parámetros tienen
+ * valores por defecto razonables):
+ *   mesa       tablero: tablas (n de juntas a lo largo del eje largo), marco (m: borde
+ *              interior, vidrio o canto cromado), r (radio de las esquinas)
+ *   silla      asiento + listón del respaldo arriba: respaldo (m), brazos (m), listones (n)
+ *   giratoria  silla de oficina: asiento, respaldo arriba, brazos (m), puntas de la estrella
+ *              (estrella: false = sobre un pedestal, sin patas a la vista)
+ *   taburete   asiento redondo + aro apoyapiés (aro: grosor en m = aro macizo, colorAro)
+ *   sofa       respaldo arriba, brazos a los lados, plazas (n almohadones); sillon = 1 plaza
+ *   mecedora   asiento, respaldo arriba y los dos patines finos a los lados
+ *   lampara    pantalla vista desde arriba: aro, boca y pliegues radiales
+ *   banco      tablas a lo largo; respaldo (m) opcional
+ *   rejilla    filas × columnas de piezas iguales (forma circ|rect) sobre una base opcional
+ *              (base: "palet" dibuja las tablas de un palé)
+ *   libre      sólo `formas`
+ * `formas` agrega primitivas a cualquier tipo:
+ *   ["rect", x, y, w, h, {r, color, tablas, dir: "h"|"v"}]   ["circ", cx, cy, r, {color}]
+ *   ["elipse", cx, cy, rx, ry, {color}]   ["linea", x1, y1, x2, y2]   ["poli", [[x, y], …], {color, abierta}]
+ * Opciones de cualquier forma: sinRelleno (sólo el canto), hueco (agujero: fondo
+ * en el dibujo, negro en la silueta).
+ * `color` sólo tiñe el dibujo (latente); el control son sólo los cantos. `ruido`
+ * (0–1) agrega grano al dibujo; pesa sólo con denoise < 1.
+ */
+// Prueba de 2026-10-31 (mesa-cocina, silla-madera, taburete, mecedora): fuerza 0.6
+// pierde el control (pinta una mesita dentro de una bandeja); 0.8–1.0 lo siguen
+// igual. Con 8 pasos, denoise 0.9 es lo mismo que 1 (ComfyUI hace int(8/0.9) = 8
+// pasos y no saltea ninguno) y el modelo tiñe todo del gris pizarra del estilo;
+// 0.85 (9 pasos, saltea 1) conserva el color del dibujo. El grano en el latente
+// (ruido 0.2–0.5) inventa cuadrículas, figuritas y mapas: va en 0.
+const ESQUEMA_DEFECTO = { fuerza: 0.85, fin: 1, denoise: 0.85, llenar: 0.8, ruido: 0 };
+const ESQ_CLI = { fuerza: valor("--fuerza"), fin: valor("--fin"), denoise: valor("--denoise") };
+
+function formasEsquema(es, [W, H]) {
+  const f = [], m = Math.min(W, H);
+  const rect = (x, y, w, h, o = {}) => f.push(["rect", x, y, w, h, o]);
+  const circ = (cx, cy, r, o = {}) => f.push(["circ", cx, cy, r, o]);
+  const linea = (x1, y1, x2, y2) => f.push(["linea", x1, y1, x2, y2]);
+  const c = es.color;
+  switch (es.tipo) {
+    case "mesa": {
+      rect(0, 0, W, H, { r: es.r ?? 0.02, color: c, tablas: es.tablas ?? 0 });
+      if (es.marco) rect(es.marco, es.marco, W - 2 * es.marco, H - 2 * es.marco, { r: es.r ?? 0.02, sinRelleno: true });
+      break;
+    }
+    case "silla": {
+      const rb = es.respaldo ?? 0.07, ab = es.brazos ?? 0;
+      rect(ab ? 0 : 0.02, rb * 0.6, ab ? W : W - 0.04, H - rb * 0.6, { r: 0.03, color: c, tablas: es.tablas ?? 0, dir: "v" });
+      if (ab) { rect(0, rb, ab, H * 0.75 - rb, { r: 0.015, color: c }); rect(W - ab, rb, ab, H * 0.75 - rb, { r: 0.015, color: c }); }
+      rect(0, 0, W, rb, { r: 0.015, color: es.colorRespaldo ?? c });
+      for (let i = 1; i <= (es.listones ?? 0); i++) { const x = W * i / ((es.listones ?? 0) + 1); linea(x, 0, x, rb); }
+      break;
+    }
+    case "giratoria": {
+      const cx = W / 2, cy = H * 0.55, R = m * 0.49;
+      for (let i = 0; i < (es.estrella === false ? 0 : 5); i++) {
+        const t = -Math.PI / 2 + Math.PI / 5 + i * 2 * Math.PI / 5;
+        const px = cx + Math.cos(t) * R * 0.88, py = cy + Math.sin(t) * R * 0.88;
+        f.push(["poli", [[cx + Math.cos(t + 0.5) * R * 0.3, cy + Math.sin(t + 0.5) * R * 0.3], [px, py], [cx + Math.cos(t - 0.5) * R * 0.3, cy + Math.sin(t - 0.5) * R * 0.3]], { color: es.colorBase ?? "#3a3c40" }]);
+        circ(px, py, m * 0.045, { color: "#222" });
+      }
+      const ab = es.brazos ?? 0;
+      rect(W * 0.17, H * 0.28, W * 0.66, H * 0.6, { r: m * 0.1, color: c });
+      if (ab) { rect(W * 0.17 - ab, H * 0.3, ab, H * 0.38, { r: ab / 2, color: es.colorBrazos ?? "#2a2a2a" }); rect(W * 0.83, H * 0.3, ab, H * 0.38, { r: ab / 2, color: es.colorBrazos ?? "#2a2a2a" }); }
+      rect(W * 0.14, H * 0.04, W * 0.72, es.respaldo ?? H * 0.2, { r: m * 0.06, color: es.colorRespaldo ?? c });
+      break;
+    }
+    case "taburete": {
+      const R = m / 2;
+      if (es.aro) {
+        // Aro grueso y macizo (m): uno fino de dos líneas BiRefNet lo pierde.
+        circ(W / 2, H / 2, R * 0.98, { color: es.colorAro ?? "#3a3c40" });
+        circ(W / 2, H / 2, R * 0.98 - es.aro, { hueco: true });
+      } else {
+        circ(W / 2, H / 2, R * 0.98, { sinRelleno: true });
+        circ(W / 2, H / 2, R * 0.9, { sinRelleno: true });
+      }
+      circ(W / 2, H / 2, R * (es.asiento ?? 0.72), { color: c });
+      break;
+    }
+    case "sofa": case "sillon": {
+      const rb = es.respaldo ?? Math.min(0.25, H * 0.26), ab = es.brazos ?? Math.min(0.2, W * 0.12);
+      const n = es.plazas ?? (es.tipo === "sillon" ? 1 : 3), r = es.r ?? 0.05;
+      rect(0, 0, W, H, { r, color: c });
+      rect(0, 0, W, rb, { r, color: c });
+      rect(0, 0, ab, H, { r, color: c });
+      rect(W - ab, 0, ab, H, { r, color: c });
+      const sw = (W - 2 * ab) / n;
+      for (let i = 0; i < n; i++) {
+        rect(ab + i * sw + 0.01, rb + 0.01, sw - 0.02, H - rb - 0.03, { r: 0.04, color: c });
+        if (es.almohadonesRespaldo !== false) rect(ab + i * sw + 0.01, rb * 0.25, sw - 0.02, rb * 0.75, { r: 0.04, color: c });
+      }
+      break;
+    }
+    case "mecedora": {
+      const pw = es.patin ?? 0.035, ab = es.brazos ?? 0.06;
+      // Patines: más largos que la silla, de arriba abajo, finos.
+      rect(0.01, 0, pw, H, { r: pw / 2, color: es.colorPatines ?? c });
+      rect(W - 0.01 - pw, 0, pw, H, { r: pw / 2, color: es.colorPatines ?? c });
+      const x0 = 0.01 + pw + 0.02, x1 = W - 0.01 - pw - 0.02;
+      rect(x0 + ab * 0.6, H * 0.2, x1 - x0 - ab * 1.2, H * 0.55, { r: 0.04, color: es.colorAsiento ?? c });
+      rect(x0, H * 0.16, ab, H * 0.48, { r: 0.02, color: c });
+      rect(x1 - ab, H * 0.16, ab, H * 0.48, { r: 0.02, color: c });
+      rect(x0 + 0.02, H * 0.1, x1 - x0 - 0.04, es.respaldo ?? 0.06, { r: 0.02, color: c });
+      for (let i = 1; i <= (es.listones ?? 4); i++) { const x = x0 + 0.02 + (x1 - x0 - 0.04) * i / ((es.listones ?? 4) + 1); linea(x, H * 0.1, x, H * 0.1 + (es.respaldo ?? 0.06)); }
+      break;
+    }
+    case "lampara": {
+      const R = m / 2 * 0.96, cx = W / 2, cy = H / 2, boca = es.boca ?? 0.55;
+      if (es.base) circ(cx, cy, R, { color: "#3a3a3a" });
+      const Rp = es.base ? R * 0.88 : R;
+      circ(cx, cy, Rp, { color: c });
+      circ(cx, cy, Rp * boca, { color: es.colorInterior ?? "#2b2824" });
+      circ(cx, cy, Rp * 0.14, { color: "#9a9a9a" });
+      const n = es.pliegues ?? 24;
+      for (let i = 0; i < n; i++) {
+        const t = i * 2 * Math.PI / n;
+        linea(cx + Math.cos(t) * Rp * boca, cy + Math.sin(t) * Rp * boca, cx + Math.cos(t) * Rp * 0.99, cy + Math.sin(t) * Rp * 0.99);
+      }
+      break;
+    }
+    case "banco": {
+      const rb = es.respaldo ?? 0, g = rb ? 0.04 : 0;
+      if (rb) rect(0, 0, W, rb, { r: 0.015, color: c, tablas: 1 });
+      rect(0, rb + g, W, H - rb - g, { r: 0.015, color: c, tablas: es.tablas ?? 2 });
+      break;
+    }
+    case "rejilla": {
+      const filas = es.filas ?? 2, cols = es.columnas ?? 2, mg = es.margen ?? 0.04, hueco = es.hueco ?? 0.02;
+      if (es.base === "palet") {
+        rect(0, 0, W, H, { color: es.colorBase ?? "#8a6a45", tablas: es.tablasBase ?? 7, dir: "v" });
+      } else if (es.base) rect(0, 0, W, H, { r: 0.02, color: es.colorBase });
+      const cw = (W - 2 * mg - (cols - 1) * hueco) / cols, ch = (H - 2 * mg - (filas - 1) * hueco) / filas;
+      for (let i = 0; i < filas; i++) for (let j = 0; j < cols; j++) {
+        const x = mg + j * (cw + hueco), y = mg + i * (ch + hueco);
+        if ((es.forma ?? "rect") === "circ") {
+          const r = Math.min(cw, ch) / 2;
+          circ(x + cw / 2, y + ch / 2, r, { color: c });
+          if (es.aro !== false) circ(x + cw / 2, y + ch / 2, r * 0.86, { sinRelleno: true });
+          if (es.tapon) circ(x + cw / 2 + r * 0.45, y + ch / 2 - r * 0.35, r * 0.1, { color: "#333" });
+        } else {
+          rect(x, y, cw, ch, { r: 0.01, color: c, tablas: es.tablas ?? 0, dir: es.dir });
+          if (es.cinta) linea(x + cw / 2, y, x + cw / 2, y + ch);
+        }
+      }
+      break;
+    }
+    case "libre": break;
+    default: throw new Error(`esquema: tipo desconocido «${es.tipo}»`);
+  }
+  f.push(...(es.formas ?? []));
+  return f;
+}
+
+/**
+ * SVG del esquema. modo "dibujo" (relleno gris claro, cantos oscuros), "control"
+ * (cantos blancos sobre negro) o "silueta" (lo macizo en blanco sobre negro; las
+ * formas con `hueco: true` en negro, como el centro del aro de un taburete).
+ */
+function svgEsquema(es, metros, W, H, modo) {
+  const [mw, mh] = metros;
+  const k = Math.min((es.llenar ?? ESQUEMA_DEFECTO.llenar) * W / mw, (es.llenar ?? ESQUEMA_DEFECTO.llenar) * H / mh);
+  const ox = (W - mw * k) / 2, oy = (H - mh * k) / 2;
+  const X = v => (ox + v * k).toFixed(1), Y = v => (oy + v * k).toFixed(1), L = v => (v * k).toFixed(1);
+  const ctl = modo === "control", sil = modo === "silueta";
+  const trazo = sil ? "none" : ctl ? "#fff" : "#1c1c1c", grueso = Math.max(3, Math.round(Math.min(W, H) / 300)), fino = Math.max(2, grueso - 1);
+  // En el control, relleno negro: cada forma tapa los cantos de las que tiene debajo.
+  const pinta = o => o.sinRelleno ? "none" : o.hueco ? (ctl || sil ? "#000" : "#c8c8c8")
+    : sil ? "#fff" : ctl ? "#000" : (o.color ?? "#6e7178");
+  const o = [`<rect width="100%" height="100%" fill="${ctl || sil ? "#000" : "#c8c8c8"}"/>`];
+  for (const [t, ...p] of formasEsquema(es, metros)) {
+    if (t === "rect") {
+      const [x, y, w, h, op = {}] = p;
+      o.push(`<rect x="${X(x)}" y="${Y(y)}" width="${L(w)}" height="${L(h)}" rx="${L(op.r ?? 0)}" fill="${pinta(op)}" stroke="${trazo}" stroke-width="${grueso}"/>`);
+      const n = op.tablas ?? 0;
+      const vertical = op.dir ? op.dir === "v" : h > w;
+      for (let i = 1; i <= n; i++) {
+        if (vertical) { const xx = x + w * i / (n + 1); o.push(`<line x1="${X(xx)}" y1="${Y(y)}" x2="${X(xx)}" y2="${Y(y + h)}" stroke="${trazo}" stroke-width="${fino}"/>`); }
+        else { const yy = y + h * i / (n + 1); o.push(`<line x1="${X(x)}" y1="${Y(yy)}" x2="${X(x + w)}" y2="${Y(yy)}" stroke="${trazo}" stroke-width="${fino}"/>`); }
+      }
+    } else if (t === "circ") {
+      const [cx, cy, r, op = {}] = p;
+      o.push(`<circle cx="${X(cx)}" cy="${Y(cy)}" r="${L(r)}" fill="${pinta(op)}" stroke="${trazo}" stroke-width="${grueso}"/>`);
+    } else if (t === "elipse") {
+      const [cx, cy, rx, ry, op = {}] = p;
+      o.push(`<ellipse cx="${X(cx)}" cy="${Y(cy)}" rx="${L(rx)}" ry="${L(ry)}" fill="${pinta(op)}" stroke="${trazo}" stroke-width="${grueso}"/>`);
+    } else if (t === "linea") {
+      const [x1, y1, x2, y2] = p;
+      if (sil) continue;
+      o.push(`<line x1="${X(x1)}" y1="${Y(y1)}" x2="${X(x2)}" y2="${Y(y2)}" stroke="${trazo}" stroke-width="${fino}"/>`);
+    } else if (t === "poli") {
+      const [pts, op = {}] = p;
+      const d = pts.map(([x, y]) => `${X(x)},${Y(y)}`).join(" ");
+      if (sil && op.abierta) continue;
+      o.push(op.abierta ? `<polyline points="${d}" fill="none" stroke="${trazo}" stroke-width="${fino}"/>`
+        : `<polygon points="${d}" fill="${pinta(op)}" stroke="${trazo}" stroke-width="${grueso}"/>`);
+    } else throw new Error(`esquema: primitiva desconocida «${t}»`);
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">${o.join("")}</svg>`;
+}
+
+/** Dibuja el esquema (dibujo + control) de un asset en `dir`. Devuelve las rutas. */
+function dibujarEsquema(a, W, H, dir, nombre) {
+  fs.mkdirSync(dir, { recursive: true });
+  const rutas = {};
+  for (const modo of ["dibujo", "control", "silueta"]) {
+    const svg = path.join(tmpDir, `${nombre}-${modo}.svg`);
+    fs.writeFileSync(svg, svgEsquema(a.esquema, a.metros, W, H, modo));
+    rutas[modo] = path.join(dir, `${nombre}.${modo}.png`);
+    // Al dibujo (latente con denoise < 1) se le inyecta grano, como a los mosaicos de
+    // pintar-planos: sobre un relleno liso, Z-Image pinta superficies planas sin textura.
+    const ruido = a.esquema.ruido ?? ESQUEMA_DEFECTO.ruido;
+    execFileSync("magick", [svg, ...(modo !== "dibujo" ? ["-colorspace", "gray"]
+      : ruido ? ["-seed", "1", "-attenuate", String(ruido), "+noise", "Gaussian"] : []), rutas[modo]]);
+  }
+  return rutas;
+}
+
+/**
+ * BiRefNet deja semitransparente lo que se parece al fondo gris (un sofá de lana
+ * gris claro, el almohadón de la mecedora) y pierde lo muy fino (el aro de un
+ * taburete). El esquema es la silueta exacta (el ControlNet la sigue), así que
+ * el alfa final es el máximo entre el de BiRefNet y la silueta erosionada un
+ * poco (para no traer el borde del fondo). `macizo: false` lo apaga.
+ */
+function macizar(pngAlfa, silueta) {
+  const [w, h] = execFileSync("magick", ["identify", "-format", "%w %h", pngAlfa]).toString().trim().split(" ").map(Number);
+  const r = Math.max(2, Math.round(Math.min(w, h) / 200));
+  const base = pngAlfa.replace(/\.png$/, "");
+  execFileSync("magick", [pngAlfa, "-alpha", "extract", `${base}-a.png`]);
+  execFileSync("magick", [`${base}-a.png`, "(", silueta, "-resize", `${w}x${h}!`, "-threshold", "50%", "-morphology", "Erode", `Disk:${r}`, ")",
+    "-compose", "Lighten", "-composite", `${base}-a.png`]);
+  execFileSync("magick", [pngAlfa, "-alpha", "off", `${base}-a.png`, "-compose", "CopyOpacity", "-composite", pngAlfa]);
+  fs.rmSync(`${base}-a.png`, { force: true });
+}
+
+const parametrosEsquema = a => {
+  const num = (cli, propio, def) => Number(cli ?? propio ?? def);
+  return {
+    fuerza: num(ESQ_CLI.fuerza, a.esquema.fuerza, ESQUEMA_DEFECTO.fuerza),
+    fin: num(ESQ_CLI.fin, a.esquema.fin, ESQUEMA_DEFECTO.fin),
+    denoise: num(ESQ_CLI.denoise, a.esquema.denoise, ESQUEMA_DEFECTO.denoise)
+  };
+};
+
 async function generar(a, semilla, dir) {
   const flujo = flujoDe(a), tipo = tipoDe(a);
   const { nombre, destino } = salidaDe(a, semilla, dir);
@@ -347,8 +624,17 @@ async function generar(a, semilla, dir) {
       const alfa = path.join(dir ?? tmpDir, "alfa", `${nombre}.png`);
       fs.mkdirSync(path.dirname(alfa), { recursive: true });
       fs.writeFileSync(alfa, cut.png);
+      // `girar` (grados, horario): un vehículo horizontal sale mejor pintado en
+      // vertical (frente abajo) y girado después (-90 → frente a la derecha).
+      if (a.esquema && a.esquema.macizo !== false) macizar(alfa, valores._silueta);
+      if (a.girar) execFileSync("magick", [alfa, "-background", "none", "-rotate", String(a.girar), "+repage", alfa]);
       const esc = escalarTile(alfa, destino, a.metros);
-      workflow += ` + magick (recorte y escala a ${pxPorM} px/m)`;
+      workflow += `${a.girar ? ` + magick (giro ${a.girar}°)` : ""} + magick (recorte y escala a ${pxPorM} px/m)`;
+      if (a.esquema) {
+        extra.esquema = { ...a.esquema, ...parametrosEsquema(a), control: "cantos del esquema vectorial (generar-arte.mjs, svgEsquema)",
+          alfa: a.esquema.macizo === false ? "BiRefNet" : "máx(BiRefNet, silueta del esquema erosionada)" };
+        if (dir) extra.control = path.relative(RAIZ, path.join(dir, "esquema", `${a.id}.control.png`));
+      }
       extra.metros = a.metros;
       extra.escala = { px_por_m: pxPorM, px: esc.px, llena_pct: esc.llena };
       if (dir) { extra.crudo = path.relative(RAIZ, crudo); extra.alfa = path.relative(RAIZ, alfa); }
@@ -408,6 +694,11 @@ if (simular) {
       console.log(`[${n}] ${a.estilo} ${a.id} s${semilla}  ${flujo}  ${a.ancho ?? e.ancho}×${a.alto ?? e.alto}` +
         `${a.metros ? `  → ${a.metros.join("×")} m = ${a.metros.map(m => Math.max(8, Math.round(m * pxPorM))).join("×")} px` : ""}${ya}`);
       console.log(`    destino: ${path.relative(RAIZ, destino)}`);
+      if (a.esquema && salidaCli) {
+        // Sin GPU: el esquema sí se dibuja, para revisarlo antes de pintar.
+        const r = dibujarEsquema(a, a.ancho ?? e.ancho, a.alto ?? e.alto, path.join(salidaCli, "esquema"), a.id);
+        console.log(`    esquema: ${a.esquema.tipo} ${JSON.stringify(parametrosEsquema(a))} → ${path.relative(RAIZ, r.control)}`);
+      }
       if (flujo.startsWith("editar-")) {
         const ref = rutaReferencia(a);
         console.log(`    referencia: ${path.relative(RAIZ, ref)}${fs.existsSync(ref) ? "" : "  (todavía no existe)"}`);

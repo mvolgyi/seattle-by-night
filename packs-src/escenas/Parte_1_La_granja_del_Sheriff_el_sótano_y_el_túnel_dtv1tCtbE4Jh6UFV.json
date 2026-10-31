@@ -436,7 +436,110 @@
       "_key": "!scenes.notes!dtv1tCtbE4Jh6UFV.mXismXoEaz9Mtp5e"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "8ur6SgBP1t5n4Xu4",
+      "name": "estantería de conservas: se corre y tapa la puerta del túnel",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-estanteria-conservas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 825,
+      "y": 430,
+      "width": 150,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "aD2N6zE1YZePj2Tv"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja-sotano",
+          "tipo": "estante"
+        }
+      },
+      "_key": "!scenes.tiles!dtv1tCtbE4Jh6UFV.8ur6SgBP1t5n4Xu4"
+    },
+    {
+      "_id": "RTuJ7O2fUf5Wf6Nh",
+      "name": "cajas y bidones",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 800,
+      "y": 1110,
+      "width": 120,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "aD2N6zE1YZePj2Tv"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja-sotano",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!dtv1tCtbE4Jh6UFV.RTuJ7O2fUf5Wf6Nh"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -452,25 +555,8 @@
       "id": "LUG-02",
       "plano": "granja-sotano",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>El sótano de la granja.</strong> Bajo la casa (misma huella que la planta baja, corrida +0,5 m en x y −1 m en y). Piso de lajas viejas, estanterías de conservas, la caldera, un arcón congelador y el armero de acero. Se baja por la escalera del vestíbulo (región «Subir a la casa» / «Llegada»).</p>\n<p><strong>La cámara del Sheriff.</strong> Piso de tierra, un catre de hierro: ahí duerme Montgomery de día. Puerta pesada.</p>\n<p><strong>El túnel al embarcadero.</strong> Detrás de la <strong>estantería de conservas</strong> del muro norte (tile: se corre como una puerta) hay una <strong>puerta oculta</strong> (muro con door=2: se ve pared) al túnel de unos <strong>300 m</strong> que sale al embarcadero privado del río Snohomish. En A4-E02, «por la granja: el túnel al embarcadero del río. Los perros cubren la retirada». Montgomery y Hal lo conocen; el resto, si alguien se lo muestra. La región del túnel queda sin destino: el embarcadero está en el mapa de zona (t2i).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): estante, palet.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Túnel al embarcadero del río (300 m).</p>",
-      "moviles": [
-        {
-          "tipo": "estante",
-          "tile": "tile-estanteria-conservas",
-          "x": 7.5,
-          "y": 4.1,
-          "w": 1.5,
-          "h": 0.4
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-cajas",
-          "x": 7.4,
-          "y": 10.6,
-          "w": 1.2,
-          "h": 1
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>El sótano de la granja.</strong> Bajo la casa (misma huella que la planta baja, corrida +0,5 m en x y −1 m en y). Piso de lajas viejas, estanterías de conservas, la caldera, un arcón congelador y el armero de acero. Se baja por la escalera del vestíbulo (región «Subir a la casa» / «Llegada»).</p>\n<p><strong>La cámara del Sheriff.</strong> Piso de tierra, un catre de hierro: ahí duerme Montgomery de día. Puerta pesada.</p>\n<p><strong>El túnel al embarcadero.</strong> Detrás de la <strong>estantería de conservas</strong> del muro norte (tile: se corre como una puerta) hay una <strong>puerta oculta</strong> (muro con door=2: se ve pared) al túnel de unos <strong>300 m</strong> que sale al embarcadero privado del río Snohomish. En A4-E02, «por la granja: el túnel al embarcadero del río. Los perros cubren la retirada». Montgomery y Hal lo conocen; el resto, si alguien se lo muestra. La región del túnel queda sin destino: el embarcadero está en el mapa de zona (t2i).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (2) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Túnel al embarcadero del río (300 m).</p>",
+      "moviles": []
     }
   },
   "_stats": {

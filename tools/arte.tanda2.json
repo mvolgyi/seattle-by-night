@@ -2,10 +2,11 @@
   "_comentario": "Tanda 2 de arte (2026-10-31): retratos a rehacer tras la revisión humana, sus tokens, los tiles de muebles móviles de los planos (MAPS_SPEC §3) y la portada. Se usa ENCIMA de arte.config.json con `node tools/generar-arte.mjs --config tools/arte.tanda2.json …` (lo lanza tanda2.sh). Los assets con el mismo id+estilo que uno de arte.config.json lo reemplazan sólo mientras se usa --config. Elegidas las semillas, pasar los retratos y tokens a arte.config.json (prompt en vez de fuente doc15, `semilla` = la elegida) y los tiles/portada como assets nuevos. Generado por un script: los tamaños de generación salen de `metros` (~1 MP, múltiplos de 16, a lo sumo 3:1).",
   "estilos": {
     "tile-nuevo": {
-      "_comentario": "Como `tile`, pero para muebles de lugares limpios y caros (la Galería, la Torre Halloway, Gale Sentinel, Northline): sin el «worn, dusty and lived-in» del sufijo de base. Mismo flujo y recorte.",
+      "_comentario": "Como `tile`, pero para muebles de lugares limpios y caros (la Galería, la Torre Halloway, Gale Sentinel, Northline): sin el «worn, dusty and lived-in» del sufijo de base. Mismo flujo y recorte. Con `esquema`, usa `prefijo_esquema` (ver estilos.tile en arte.config.json).",
       "tipo": "tile",
       "flujo": "t2i-zimage",
       "prefijo": "Flat-lay overhead shot, camera pointing STRAIGHT DOWN at the floor from directly above, like a satellite or a floor-plan view: we see ONLY the top of the object, as a flat 2D shape; legs, castors and side faces are hidden underneath it and NOT visible. Top-down tile artwork of ONE single loose piece of furniture or prop for a virtual tabletop battlemap set in a modern, expensive building in present-day Seattle. The object is centred and fills about 85% of the frame. If the object is elongated, its long axis runs horizontally from left to right; if it has a backrest, the backrest runs along the top edge. Only the object described below, nothing else.\n\nSUBJECT: ",
+      "prefijo_esquema": "Top-down orthographic illustration of ONE single loose object seen from DIRECTLY ABOVE, like a floor plan, painted exactly over the line drawing so that every line of the drawing is an edge or a seam of the object. We only see its upper surfaces: no side faces, no legs, no perspective, no tilt, no horizon. A clean, expensive piece from a modern building in present-day Seattle. Nothing else around it or behind it.\n\nSUBJECT, seen from above: ",
       "sufijo": "\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), clean, well kept and expensive-looking, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
       "ancho": 1024,
       "alto": 1024,
@@ -20,16 +21,6 @@
       "ancho": 1024,
       "alto": 1024,
       "carpeta": "assets/tiles"
-    },
-    "portada": {
-      "_comentario": "Portada de la crónica (escena landing de tools/contenido/escenas.mjs: assets/portadas/portada.webp, 1920×1080, pines a la altura del 62 % y centrados). La plantilla de retrato del doc 15 llevada a un plano general 16:9. Sin texto: el título lo pone la escena. Sale a 1920×1088 y tanda2.sh la recorta a 1920×1080.",
-      "tipo": "retrato",
-      "flujo": "t2i-zimage",
-      "prefijo": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: ",
-      "sufijo": "\n\nCOMPOSITION: the lower middle band of the image (between half and three quarters of its height, across the centre) is calm, dark and simple, only black water with soft broken reflections, because round interface buttons will be placed over it. The painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no title, no logo, no signature, no watermark, no caption, no famous landmark tower.",
-      "ancho": 1920,
-      "alto": 1088,
-      "carpeta": "assets/portadas"
     }
   },
   "assets": [
@@ -139,25 +130,10 @@
       "nota": "token desde el retrato (tanda 2: uno por retrato candidato)"
     },
     {
-      "id": "portada",
-      "estilo": "portada",
-      "semilla": 9921,
-      "candidatas": [
-        9921,
-        9922,
-        9923,
-        9924,
-        9925,
-        9926
-      ],
-      "nota": "Portada (escena landing). 1920×1088 → tanda2.sh recorta a 1920×1080 en el centro. Tanda 2b: las 9901–9906 pintaban el Space Needle (marca registrada); se describe el skyline como bloques rectangulares. Tanda 2c: sin «Seattle» ni la torre con baliza (seguía saliendo el Space Needle); el acento rojo es una boya.",
-      "prompt": "A rain-soaked city waterfront at night, seen from the end of an old wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across black harbour water towards a skyline of plain rectangular dark glass office blocks with flat roofs, half lost in low cloud and mist, countless small cold windows; one block is taller than the rest, and a single window is lit on its top floor, as if someone up there is watching. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. Crimson accent: a single small red navigation buoy light floating on the water in the middle distance, with its long red reflection trembling on the wet surface. Every building is a plain box: no spires, no needle-shaped towers, no observation decks, no saucer tops, no towers on thin stems, no antennas with lights, no recognisable landmark."
-    },
-    {
       "id": "tile-portatil",
       "estilo": "tile",
-      "prompt": "an old silver laptop lying open with its lid folded far back so that both the keyboard and the screen face up; the screen is switched OFF, plain black with a faint grey reflection; the keys are blank with no legible letters; a frayed charging cable trails from one side.",
-      "semilla": 8001,
+      "prompt": "an old silver laptop lying open and folded fully flat, seen from above: the switched-off plain black screen on the top half and the keyboard with blank keys and a touchpad on the bottom half; a frayed charging cable trails from one side.",
+      "semilla": 8002,
       "candidatas": [
         8001,
         8002
@@ -168,13 +144,94 @@
         0.4,
         0.3
       ],
-      "nota": "tile 0.4×0.3 m; planos: helen 0.4×0.3"
+      "nota": "tile 0.4×0.3 m; planos: helen 0.4×0.3. Elegida: s8002 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0.04,
+            0.02,
+            0.32,
+            0.13,
+            {
+              "r": 0.01,
+              "color": "#a8aaae"
+            }
+          ],
+          [
+            "rect",
+            0.055,
+            0.03,
+            0.29,
+            0.11,
+            {
+              "color": "#101114"
+            }
+          ],
+          [
+            "rect",
+            0.04,
+            0.155,
+            0.32,
+            0.13,
+            {
+              "r": 0.01,
+              "color": "#b8babe"
+            }
+          ],
+          [
+            "rect",
+            0.06,
+            0.165,
+            0.28,
+            0.07,
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "rect",
+            0.16,
+            0.24,
+            0.08,
+            0.035,
+            {
+              "color": "#a0a2a6"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.36,
+                0.22
+              ],
+              [
+                0.38,
+                0.23
+              ],
+              [
+                0.39,
+                0.27
+              ],
+              [
+                0.4,
+                0.29
+              ]
+            ],
+            {
+              "abierta": true
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-silla-escritorio",
       "estilo": "tile",
-      "prompt": "a cheap black office swivel chair with a worn, split fabric seat and a low backrest, the tips of a five-star base with castors showing around the seat.",
-      "semilla": 8011,
+      "prompt": "a cheap black office swivel chair seen from above: a worn, split black fabric seat, a low backrest along the top edge, and the tips of the five-star base with castors showing around the seat.",
+      "semilla": 8012,
       "candidatas": [
         8011,
         8012
@@ -185,13 +242,17 @@
         0.5,
         0.5
       ],
-      "nota": "tile 0.5×0.5 m; planos: helen 0.5×0.5 hacia n, subterraneo 0.5×0.5 hacia s"
+      "nota": "tile 0.5×0.5 m; planos: helen 0.5×0.5 hacia n, subterraneo 0.5×0.5 hacia s. Elegida: s8012 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "giratoria",
+        "color": "#2a2b2e"
+      }
     },
     {
       "id": "tile-mesa-cocina",
       "estilo": "tile",
-      "prompt": "a small rectangular kitchen table with a worn cream formica top and chrome edging, a chipped mug and a small pile of unopened envelopes with nothing written on them.",
-      "semilla": 8021,
+      "prompt": "the flat top of a small kitchen table filling the whole outline edge to edge: worn, chipped cream formica with a thin chrome strip along its border; on it a chipped dark mug seen from above as a round ring, and a small pile of blank envelopes. Nothing under or around the tabletop.",
+      "semilla": 8022,
       "candidatas": [
         8021,
         8022
@@ -202,13 +263,38 @@
         1.1,
         0.9
       ],
-      "nota": "tile 1.1×0.9 m; planos: granja 1×0.8, helen 1.1×0.9"
+      "nota": "tile 1.1×0.9 m; planos: granja 1×0.8, helen 1.1×0.9. Elegida: s8022 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "color": "#d8cdb0",
+        "formas": [
+          [
+            "circ",
+            0.3,
+            0.35,
+            0.05,
+            {
+              "color": "#2b2f36"
+            }
+          ],
+          [
+            "rect",
+            0.65,
+            0.45,
+            0.2,
+            0.13,
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-silla-madera",
       "estilo": "tile",
-      "prompt": "a plain old wooden chair with a scuffed dark seat and a simple slatted backrest, the varnish worn pale on the edges.",
-      "semilla": 8031,
+      "prompt": "a plain old wooden chair seen from above: the square scuffed dark wooden seat, and along the top edge the narrow top rail of the backrest; the varnish is worn pale on the edges.",
+      "semilla": 8032,
       "candidatas": [
         8031,
         8032
@@ -219,13 +305,19 @@
         0.45,
         0.45
       ],
-      "nota": "tile 0.45×0.45 m; planos: granja 0.45×0.45 hacia s, granja 0.45×0.45 hacia n, granja 0.45×0.45 hacia o, granja 0.45×0.45 hacia e, helen 0.45×0.45 hacia o, helen 0.45×0.45 hacia n, salitre 0.45×0.45 hacia o, salitre 0.45×0.45 hacia s, salitre 0.45×0.45 hacia n, salitre 0.45×0.45 hacia e, terminal86 0.5×0.5 hacia o"
+      "nota": "tile 0.45×0.45 m; planos: granja 0.45×0.45 hacia s, granja 0.45×0.45 hacia n, granja 0.45×0.45 hacia o, granja 0.45×0.45 hacia e, helen 0.45×0.45 hacia o, helen 0.45×0.45 hacia n, salitre 0.45×0.45 hacia o, salitre 0.45×0.45 hacia s, salitre 0.45×0.45 hacia n, salitre 0.45×0.45 hacia e, terminal86 0.5×0.5 hacia o. Elegida: s8032 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "silla",
+        "respaldo": 0.06,
+        "tablas": 2,
+        "color": "#4a3a2c"
+      }
     },
     {
       "id": "tile-sofa-gastado",
       "estilo": "tile",
-      "prompt": "an old, sagging three-seat sofa upholstered in faded grey fabric, stained and worn shiny on the arms, a crumpled wool blanket on one cushion.",
-      "semilla": 8041,
+      "prompt": "an old, sagging three-seat sofa seen from above: three seat cushions of faded grey fabric, the backrest along the top edge and the two arms on the sides, stained and worn shiny on the arms, and a crumpled beige wool blanket thrown over the right cushion.",
+      "semilla": 8042,
       "candidatas": [
         8041,
         8042
@@ -236,12 +328,46 @@
         2,
         0.9
       ],
-      "nota": "tile 2×0.9 m; planos: helen 0.9×2 hacia e"
+      "nota": "tile 2×0.9 m; planos: helen 0.9×2 hacia e. Elegida: s8042 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "sofa",
+        "color": "#6a6d70",
+        "formas": [
+          [
+            "poli",
+            [
+              [
+                1.32,
+                0.3
+              ],
+              [
+                1.62,
+                0.26
+              ],
+              [
+                1.7,
+                0.55
+              ],
+              [
+                1.55,
+                0.82
+              ],
+              [
+                1.3,
+                0.7
+              ]
+            ],
+            {
+              "color": "#b8ab90"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-lampara-pie",
       "estilo": "tile",
-      "prompt": "a standing floor lamp photographed from directly above the ceiling: all you see is a perfect CIRCLE, the round top opening of a pleated beige fabric lampshade seen as a ring, with the dark dusty inside of the shade and the unlit bulb fitting in the middle, and a thin sliver of a round metal base peeking out around it. Not a side view: no stem, no cone silhouette, no profile. The lamp is switched OFF: no glow, no light.",
+      "prompt": "a standing floor lamp seen from directly above: a round pleated beige fabric lampshade seen as a ring, with the dark dusty inside of the shade and the unlit bulb fitting in the middle. Switched OFF: no glow, no light.",
       "semilla": 8051,
       "candidatas": [
         8051,
@@ -253,7 +379,11 @@
         0.4,
         0.4
       ],
-      "nota": "tile 0.4×0.4 m; planos: helen 0.4×0.4"
+      "nota": "tile 0.4×0.4 m; planos: helen 0.4×0.4. Elegida: s8051 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "lampara",
+        "color": "#cbb894"
+      }
     },
     {
       "id": "tile-cenicero",
@@ -270,12 +400,12 @@
         0.18,
         0.18
       ],
-      "nota": "tile 0.18×0.18 m; planos: helen 0.18×0.18"
+      "nota": "tile 0.18×0.18 m; planos: helen 0.18×0.18. Elegida: s8061 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-sacos-pienso",
       "estilo": "tile",
-      "prompt": "three plain brown paper sacks of dog food stacked together, one torn open with dry kibble pellets spilling onto the floor; no print, no logos.",
+      "prompt": "three plain brown paper sacks of dog food lying flat side by side, seen from above, one torn open at the bottom with dry brown kibble pellets spilling onto the floor; no print, no logos.",
       "semilla": 8071,
       "candidatas": [
         8071,
@@ -287,12 +417,129 @@
         1,
         0.9
       ],
-      "nota": "tile 1×0.9 m; planos: granja 1×0.9"
+      "nota": "tile 1×0.9 m; planos: granja 1×0.9. Elegida: s8071 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0.02,
+            0.02,
+            0.3,
+            0.75,
+            {
+              "r": 0.04,
+              "color": "#a07a50"
+            }
+          ],
+          [
+            "rect",
+            0.35,
+            0,
+            0.3,
+            0.75,
+            {
+              "r": 0.04,
+              "color": "#a88258"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.68,
+                0.05
+              ],
+              [
+                0.98,
+                0.05
+              ],
+              [
+                0.98,
+                0.6
+              ],
+              [
+                0.9,
+                0.66
+              ],
+              [
+                0.82,
+                0.6
+              ],
+              [
+                0.74,
+                0.67
+              ],
+              [
+                0.68,
+                0.6
+              ]
+            ],
+            {
+              "color": "#9a7448"
+            }
+          ],
+          [
+            "circ",
+            0.8,
+            0.75,
+            0.018,
+            {
+              "color": "#5a3a20"
+            }
+          ],
+          [
+            "circ",
+            0.86,
+            0.8,
+            0.018,
+            {
+              "color": "#5a3a20"
+            }
+          ],
+          [
+            "circ",
+            0.76,
+            0.84,
+            0.018,
+            {
+              "color": "#5a3a20"
+            }
+          ],
+          [
+            "circ",
+            0.92,
+            0.74,
+            0.018,
+            {
+              "color": "#5a3a20"
+            }
+          ],
+          [
+            "circ",
+            0.7,
+            0.78,
+            0.018,
+            {
+              "color": "#5a3a20"
+            }
+          ],
+          [
+            "circ",
+            0.84,
+            0.87,
+            0.018,
+            {
+              "color": "#5a3a20"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-mesa-larga",
       "estilo": "tile",
-      "prompt": "a long rustic farmhouse table of heavy dark planks, scarred and waxed, completely bare.",
+      "prompt": "the flat top of a long rustic farmhouse table filling the whole outline edge to edge: heavy dark oak planks running lengthwise, scarred and waxed, completely bare.",
       "semilla": 8081,
       "candidatas": [
         8081,
@@ -304,13 +551,18 @@
         3,
         1
       ],
-      "nota": "tile 3×1 m; planos: granja 3×1"
+      "nota": "tile 3×1 m; planos: granja 3×1. Elegida: s8081 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "tablas": 4,
+        "color": "#4a3a2c"
+      }
     },
     {
       "id": "tile-tableta",
       "estilo": "tile",
       "prompt": "a black tablet computer in a rugged rubber case lying flat; the screen is switched OFF, plain black with a faint reflection.",
-      "semilla": 8091,
+      "semilla": 8092,
       "candidatas": [
         8091,
         8092
@@ -321,13 +573,13 @@
         0.3,
         0.22
       ],
-      "nota": "tile 0.3×0.22 m; planos: granja 0.3×0.22"
+      "nota": "tile 0.3×0.22 m; planos: granja 0.3×0.22. Elegida: s8092 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-mecedora",
       "estilo": "tile",
-      "prompt": "an old wooden rocking chair with a slatted backrest along the top edge and a worn cushion on the seat; the two long curved rockers run from top to bottom on the left and right sides.",
-      "semilla": 8101,
+      "prompt": "an old dark wooden rocking chair seen from above: a worn cushion on the seat, the slatted backrest as a narrow strip along the top edge, two armrests, and the two long thin curved wooden rockers running from top to bottom along the left and right sides.",
+      "semilla": 8102,
       "candidatas": [
         8101,
         8102
@@ -338,13 +590,18 @@
         0.7,
         0.8
       ],
-      "nota": "tile 0.7×0.8 m; planos: granja 0.7×0.8 hacia s"
+      "nota": "tile 0.7×0.8 m; planos: granja 0.7×0.8 hacia s. Elegida: s8102 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mecedora",
+        "color": "#3b3029",
+        "colorAsiento": "#5a5a52"
+      }
     },
     {
       "id": "tile-banco",
       "estilo": "tile",
-      "prompt": "a long weathered porch bench of grey wooden planks with a low backrest along the top edge.",
-      "semilla": 8111,
+      "prompt": "a long weathered porch bench seen from above: grey wooden seat planks running lengthwise and, along the top edge, the low backrest board.",
+      "semilla": 8112,
       "candidatas": [
         8111,
         8112
@@ -355,12 +612,18 @@
         1.8,
         0.45
       ],
-      "nota": "tile 1.8×0.45 m; planos: granja 1.8×0.45 hacia s"
+      "nota": "tile 1.8×0.45 m; planos: granja 1.8×0.45 hacia s. Elegida: s8112 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "banco",
+        "respaldo": 0.1,
+        "tablas": 2,
+        "color": "#7a7d80"
+      }
     },
     {
       "id": "tile-fardos",
       "estilo": "tile",
-      "prompt": "a square stack of four rectangular hay bales tied with twine, loose straw scattered around them.",
+      "prompt": "a square stack of four rectangular hay bales seen from above, each tied with two lines of twine, loose straw scattered around them.",
       "semilla": 8121,
       "candidatas": [
         8121,
@@ -372,13 +635,23 @@
         1.2,
         1.2
       ],
-      "nota": "tile 1.2×1.2 m; planos: granja 1.2×1.2"
+      "nota": "tile 1.2×1.2 m; planos: granja 1.2×1.2. Elegida: s8121 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "rejilla",
+        "filas": 2,
+        "columnas": 2,
+        "hueco": 0.02,
+        "margen": 0.02,
+        "tablas": 2,
+        "dir": "h",
+        "color": "#c8a860"
+      }
     },
     {
       "id": "tile-mesa-larga-granero",
       "estilo": "tile",
-      "prompt": "a very long trestle table made of rough old barn planks laid on sawhorses, knife scratches and dark stains, completely bare.",
-      "semilla": 8131,
+      "prompt": "the flat top of a very long trestle table filling the whole outline edge to edge: rough old grey-brown barn planks running lengthwise, knife scratches and dark stains, completely bare.",
+      "semilla": 8132,
       "candidatas": [
         8131,
         8132
@@ -389,13 +662,18 @@
         5,
         1.1
       ],
-      "nota": "tile 5×1.1 m; planos: granja 5×1.1"
+      "nota": "tile 5×1.1 m; planos: granja 5×1.1. Elegida: s8132 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "tablas": 3,
+        "color": "#5a4c3e"
+      }
     },
     {
       "id": "tile-banco-largo",
       "estilo": "tile",
-      "prompt": "a very long backless bench made of a single rough wooden plank on simple square legs.",
-      "semilla": 8141,
+      "prompt": "the flat top face of one single long, rough brown wooden plank seen from directly above, filling the whole outline edge to edge: a long narrow board with knots, cracks and a worn grain running lengthwise; nothing under it, nothing sticking out of it.",
+      "semilla": 8142,
       "candidatas": [
         8141,
         8142
@@ -406,12 +684,18 @@
         5,
         0.45
       ],
-      "nota": "tile 5×0.45 m; planos: granja 5×0.45 hacia s, granja 5×0.45 hacia n"
+      "nota": "tile 5×0.45 m; planos: granja 5×0.45 hacia s, granja 5×0.45 hacia n. Elegida: s8142 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "r": 0.01,
+        "llenar": 0.95,
+        "color": "#5a4a3a"
+      }
     },
     {
       "id": "tile-estanteria-conservas",
       "estilo": "tile",
-      "prompt": "a freestanding wooden shelving unit seen from directly above: its top board and, along it, a row of glass preserve jars with dark fruit and pickles, round metal lids visible from above; the jars have no labels.",
+      "prompt": "a long open wooden shelf seen from directly above, without a top board: its wooden frame and, inside it, a row of glass preserve jars with dark fruit and pickles, their round metal lids seen from above; the jars have no labels.",
       "semilla": 8151,
       "candidatas": [
         8151,
@@ -423,13 +707,102 @@
         1.5,
         0.4
       ],
-      "nota": "tile 1.5×0.4 m; planos: granja-sotano 1.5×0.4"
+      "nota": "tile 1.5×0.4 m; planos: granja-sotano 1.5×0.4. Elegida: s8151 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0,
+            0,
+            1.5,
+            0.4,
+            {
+              "r": 0.01,
+              "color": "#6a4a30"
+            }
+          ],
+          [
+            "rect",
+            0.04,
+            0.04,
+            1.42,
+            0.32,
+            {
+              "color": "#3a2a1e"
+            }
+          ],
+          [
+            "circ",
+            0.15,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ],
+          [
+            "circ",
+            0.35,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ],
+          [
+            "circ",
+            0.55,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ],
+          [
+            "circ",
+            0.75,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ],
+          [
+            "circ",
+            0.95,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ],
+          [
+            "circ",
+            1.15,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ],
+          [
+            "circ",
+            1.35,
+            0.2,
+            0.075,
+            {
+              "color": "#8a8a80"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-cajas",
       "estilo": "tile",
-      "prompt": "a cluster of old cardboard boxes with the flaps folded shut and two dull blue plastic drums with screw caps.",
-      "semilla": 8161,
+      "prompt": "a cluster of old cardboard boxes with the flaps folded shut, seen from above as brown rectangles with a tape line, and two dull blue plastic drums seen from above as round lids with screw caps.",
+      "semilla": 8162,
       "candidatas": [
         8161,
         8162
@@ -440,13 +813,84 @@
         1.2,
         1
       ],
-      "nota": "tile 1.2×1 m; planos: granja-sotano 1.2×1"
+      "nota": "tile 1.2×1 m; planos: granja-sotano 1.2×1. Elegida: s8162 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0.02,
+            0.03,
+            0.5,
+            0.42,
+            {
+              "r": 0.01,
+              "color": "#a8865a",
+              "tablas": 1,
+              "dir": "v"
+            }
+          ],
+          [
+            "rect",
+            0.55,
+            0,
+            0.42,
+            0.38,
+            {
+              "r": 0.01,
+              "color": "#b08e60",
+              "tablas": 1,
+              "dir": "v"
+            }
+          ],
+          [
+            "rect",
+            0.3,
+            0.5,
+            0.45,
+            0.48,
+            {
+              "r": 0.01,
+              "color": "#a07e52",
+              "tablas": 1,
+              "dir": "v"
+            }
+          ],
+          [
+            "circ",
+            0.15,
+            0.73,
+            0.14,
+            {
+              "color": "#3a5a8a"
+            }
+          ],
+          [
+            "circ",
+            0.98,
+            0.6,
+            0.2,
+            {
+              "color": "#3a5a8a"
+            }
+          ],
+          [
+            "circ",
+            1.05,
+            0.55,
+            0.03,
+            {
+              "color": "#2a3a5a"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-taburete",
       "estilo": "tile",
-      "prompt": "a round bar stool seen from above: a worn dark vinyl seat cushion on a steel ring, the ring footrest showing around it.",
-      "semilla": 8171,
+      "prompt": "a round bar stool seen from above: a round worn dark vinyl seat cushion, and around it the thin steel ring of the footrest.",
+      "semilla": 8172,
       "candidatas": [
         8171,
         8172
@@ -457,12 +901,16 @@
         0.45,
         0.45
       ],
-      "nota": "tile 0.45×0.45 m; planos: hangar 0.45×0.45 hacia n, salitre 0.4×0.4 hacia o, terminal-ferry 0.5×0.5 hacia o"
+      "nota": "tile 0.45×0.45 m; planos: hangar 0.45×0.45 hacia n, salitre 0.4×0.4 hacia o, terminal-ferry 0.5×0.5 hacia o. Elegida: s8172 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "taburete",
+        "color": "#2a2c30"
+      }
     },
     {
       "id": "tile-mesa-plegable",
       "estilo": "tile",
-      "prompt": "a long folding table with a grey plastic top on a steel frame, covered in operation clutter: two phones lying face down, scattered papers and photographs with no legible writing, a folded city map with no labels, a paper coffee cup.",
+      "prompt": "the flat top of a long folding table filling the whole outline edge to edge: a scuffed grey plastic top covered in operation clutter: two black phones lying face down, scattered sheets of paper and photographs with no legible writing, a folded city map with no labels, a paper coffee cup seen from above as a round lid.",
       "semilla": 8181,
       "candidatas": [
         8181,
@@ -474,13 +922,89 @@
         2.2,
         1
       ],
-      "nota": "tile 2.2×1 m; planos: hangar 2.2×1"
+      "nota": "tile 2.2×1 m; planos: hangar 2.2×1. Elegida: s8181 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "r": 0.04,
+        "color": "#8c8e90",
+        "formas": [
+          [
+            "rect",
+            0.25,
+            0.2,
+            0.08,
+            0.15,
+            {
+              "color": "#1e1e20"
+            }
+          ],
+          [
+            "rect",
+            1.7,
+            0.62,
+            0.08,
+            0.15,
+            {
+              "color": "#1e1e20"
+            }
+          ],
+          [
+            "rect",
+            0.45,
+            0.45,
+            0.21,
+            0.3,
+            {
+              "color": "#e8e6e0"
+            }
+          ],
+          [
+            "rect",
+            0.6,
+            0.15,
+            0.15,
+            0.1,
+            {
+              "color": "#d8d4cc"
+            }
+          ],
+          [
+            "rect",
+            1.35,
+            0.2,
+            0.15,
+            0.1,
+            {
+              "color": "#cfcac0"
+            }
+          ],
+          [
+            "rect",
+            0.95,
+            0.3,
+            0.45,
+            0.35,
+            {
+              "color": "#c8c6a8"
+            }
+          ],
+          [
+            "circ",
+            1.85,
+            0.28,
+            0.045,
+            {
+              "color": "#e0dcd0"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-silla-plegable",
       "estilo": "tile",
-      "prompt": "a grey steel folding chair with a slatted metal seat and backrest, chipped paint.",
-      "semilla": 8191,
+      "prompt": "a grey steel folding chair seen from above: the square seat of thin metal slats, and along the top edge the narrow curved steel backrest; chipped grey paint.",
+      "semilla": 8192,
       "candidatas": [
         8191,
         8192
@@ -491,13 +1015,19 @@
         0.45,
         0.45
       ],
-      "nota": "tile 0.45×0.45 m; planos: hangar 0.45×0.45 hacia s, hangar 0.45×0.45 hacia n, hangar 0.45×0.45 hacia o"
+      "nota": "tile 0.45×0.45 m; planos: hangar 0.45×0.45 hacia s, hangar 0.45×0.45 hacia n, hangar 0.45×0.45 hacia o. Elegida: s8192 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "silla",
+        "respaldo": 0.07,
+        "tablas": 4,
+        "color": "#6a6e72"
+      }
     },
     {
       "id": "tile-palet-cajas",
       "estilo": "tile",
-      "prompt": "a wooden shipping pallet loaded with stacked plain brown cardboard boxes wrapped in clear shrink-wrap film, with blank white shipping stickers and plastic strapping.",
-      "semilla": 8201,
+      "prompt": "a wooden shipping pallet loaded with plain brown cardboard boxes, seen from above as a neat grid of box tops with tape lines, all wrapped in clear shrink-wrap film with plastic strapping; the boxes have no print and no labels.",
+      "semilla": 8202,
       "candidatas": [
         8201,
         8202
@@ -508,13 +1038,23 @@
         1.2,
         1.2
       ],
-      "nota": "tile 1.2×1.2 m; planos: hangar 1.7×1.7, hangar 1.2×1.2"
+      "nota": "tile 1.2×1.2 m; planos: hangar 1.7×1.7, hangar 1.2×1.2. Elegida: s8202 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "rejilla",
+        "filas": 3,
+        "columnas": 3,
+        "base": "palet",
+        "hueco": 0.01,
+        "margen": 0.03,
+        "cinta": true,
+        "color": "#b08a5a"
+      }
     },
     {
       "id": "tile-cajas-municion",
       "estilo": "tile",
-      "prompt": "a stack of olive-drab steel ammunition cans and wooden crates with rope handles, with no stencils and no markings.",
-      "semilla": 8211,
+      "prompt": "a stack of olive-drab steel ammunition cans with their lids and carry handles seen from above, and two wooden crates with rope handles; no stencils and no markings.",
+      "semilla": 8212,
       "candidatas": [
         8211,
         8212
@@ -525,12 +1065,96 @@
         1.2,
         1
       ],
-      "nota": "tile 1.2×1 m; planos: hangar 1.2×1"
+      "nota": "tile 1.2×1 m; planos: hangar 1.2×1. Elegida: s8212 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0.02,
+            0.05,
+            0.26,
+            0.34,
+            {
+              "r": 0.015,
+              "color": "#5a5f3a"
+            }
+          ],
+          [
+            "rect",
+            0.3,
+            0.05,
+            0.26,
+            0.34,
+            {
+              "r": 0.015,
+              "color": "#5a5f3a"
+            }
+          ],
+          [
+            "rect",
+            0.02,
+            0.42,
+            0.26,
+            0.34,
+            {
+              "r": 0.015,
+              "color": "#5a5f3a"
+            }
+          ],
+          [
+            "rect",
+            0.3,
+            0.42,
+            0.26,
+            0.34,
+            {
+              "r": 0.015,
+              "color": "#5a5f3a"
+            }
+          ],
+          [
+            "rect",
+            0.62,
+            0.02,
+            0.56,
+            0.44,
+            {
+              "r": 0.01,
+              "color": "#8a6a45",
+              "tablas": 3
+            }
+          ],
+          [
+            "rect",
+            0.62,
+            0.52,
+            0.56,
+            0.44,
+            {
+              "r": 0.01,
+              "color": "#7e6040",
+              "tablas": 3
+            }
+          ],
+          [
+            "rect",
+            0.05,
+            0.8,
+            0.5,
+            0.18,
+            {
+              "r": 0.015,
+              "color": "#555a36"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-catre",
       "estilo": "tile",
-      "prompt": "a military folding cot with olive-drab canvas stretched on a steel-and-wood frame, a rolled grey wool blanket at one end.",
+      "prompt": "a military folding cot seen from above: olive-drab canvas stretched on a thin steel-and-wood frame, and a rolled grey wool blanket lying across its left end.",
       "semilla": 8221,
       "candidatas": [
         8221,
@@ -542,12 +1166,52 @@
         2,
         0.75
       ],
-      "nota": "tile 2×0.75 m; planos: hangar 0.75×1.95, hangar 2×0.75"
+      "nota": "tile 2×0.75 m; planos: hangar 0.75×1.95, hangar 2×0.75. Elegida: s8221 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0,
+            0.02,
+            2,
+            0.71,
+            {
+              "r": 0.03,
+              "color": "#4a4a3a"
+            }
+          ],
+          [
+            "rect",
+            0.05,
+            0.07,
+            1.9,
+            0.61,
+            {
+              "r": 0.02,
+              "color": "#5f6440"
+            }
+          ],
+          [
+            "rect",
+            0.1,
+            0.06,
+            0.24,
+            0.63,
+            {
+              "r": 0.1,
+              "color": "#6e6e6e",
+              "tablas": 2,
+              "dir": "v"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-bidones",
       "estilo": "tile",
-      "prompt": "four steel oil drums standing together on a wooden pallet, seen from above as four round lids, dented, with rusty rims and oily stains.",
+      "prompt": "four dented steel oil drums standing together on a wooden pallet, seen from above as four round lids with rusty rims, bung caps and oily stains.",
       "semilla": 8231,
       "candidatas": [
         8231,
@@ -559,30 +1223,42 @@
         1.2,
         1.2
       ],
-      "nota": "tile 1.2×1.2 m; planos: hangar 1.2×1.2"
+      "nota": "tile 1.2×1.2 m; planos: hangar 1.2×1.2. Elegida: s8231 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "rejilla",
+        "forma": "circ",
+        "filas": 2,
+        "columnas": 2,
+        "base": "palet",
+        "hueco": 0.02,
+        "margen": 0.03,
+        "tapon": true,
+        "color": "#6a6e72"
+      }
     },
     {
       "id": "tile-camioneta",
       "estilo": "tile-vehiculo",
-      "prompt": "Bear Whitman's beat-up 1990s full-size pickup truck, faded off-white paint with rust spots, a dented tailgate, a toolbox and a tarp in the open cargo bed. The truck lies HORIZONTALLY with its FRONT pointing to the RIGHT.",
+      "prompt": "Bear Whitman's beat-up 1990s full-size pickup truck, faded off-white paint with rust spots, a dented tailgate, a toolbox and a tarp in the open cargo bed. The truck stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
       "semilla": 8241,
       "candidatas": [
         8241,
         8242
       ],
-      "ancho": 1632,
-      "alto": 640,
+      "ancho": 656,
+      "alto": 1600,
       "metros": [
         5.3,
         2.1
       ],
-      "nota": "tile 5.3×2.1 m; planos: hangar 2.1×5.3 hacia e. Horizontal, frente a la derecha (hangar: 2,1×5,3 hacia e → textura 5,3×2,1)."
+      "nota": "tile 5.3×2.1 m; planos: hangar 2.1×5.3 hacia e. Horizontal, frente a la derecha (hangar: 2,1×5,3 hacia e → textura 5,3×2,1). Elegida: s8241 (t2i en vertical (frente abajo) girado -90°, revisión 2026-10-31).",
+      "girar": -90
     },
     {
       "id": "tile-lancha",
       "estilo": "tile-vehiculo",
       "prompt": "a small open aluminium motorboat with a grey outboard engine at the stern, two bench seats, a coiled rope and a fuel can inside. The boat lies HORIZONTALLY with its BOW pointing to the RIGHT.",
-      "semilla": 8251,
+      "semilla": 8252,
       "candidatas": [
         8251,
         8252
@@ -593,13 +1269,13 @@
         5.4,
         2
       ],
-      "nota": "tile 5.4×2 m; planos: hangar 2×5.4 hacia e. Horizontal, proa a la derecha."
+      "nota": "tile 5.4×2 m; planos: hangar 2×5.4 hacia e. Horizontal, proa a la derecha. Elegida: s8252 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-mesa-bar",
       "estilo": "tile",
-      "prompt": "a square old bar table of thick dark wood, covered in knife scratches and ring stains.",
-      "semilla": 8261,
+      "prompt": "the flat square top of an old bar table filling the whole outline edge to edge: thick dark wood planks covered in knife scratches and pale ring stains.",
+      "semilla": 8262,
       "candidatas": [
         8261,
         8262
@@ -610,12 +1286,17 @@
         0.9,
         0.9
       ],
-      "nota": "tile 0.9×0.9 m; planos: salitre 0.9×0.9"
+      "nota": "tile 0.9×0.9 m; planos: salitre 0.9×0.9. Elegida: s8262 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "tablas": 3,
+        "color": "#3a2e26"
+      }
     },
     {
       "id": "tile-mesa-asamblea",
       "estilo": "tile",
-      "prompt": "a long heavy table made of old shipyard planks on a steel frame welded by hand, scarred, with ring stains and two steel ashtrays.",
+      "prompt": "the flat top of a long heavy table filling the whole outline edge to edge: old weathered shipyard planks running lengthwise, scarred, with ring stains, and two round steel ashtrays on it.",
       "semilla": 8271,
       "candidatas": [
         8271,
@@ -627,13 +1308,38 @@
         2.6,
         1.2
       ],
-      "nota": "tile 2.6×1.2 m; no está en ningún plano todavía. VARIANTE NUEVA: salitre usa hoy tile-mesa-reuniones (2,6×1,2), el mismo nombre que la mesa de directorio de Gale (3,4×1,1). Hay que renombrar el mueble en content/planos/salitre.json."
+      "nota": "tile 2.6×1.2 m; no está en ningún plano todavía. VARIANTE NUEVA: salitre usa hoy tile-mesa-reuniones (2,6×1,2), el mismo nombre que la mesa de directorio de Gale (3,4×1,1). Hay que renombrar el mueble en content/planos/salitre.json. Elegida: s8271 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "tablas": 4,
+        "color": "#4e4238",
+        "formas": [
+          [
+            "circ",
+            0.6,
+            0.55,
+            0.07,
+            {
+              "color": "#8a8c8e"
+            }
+          ],
+          [
+            "circ",
+            2,
+            0.65,
+            0.07,
+            {
+              "color": "#8a8c8e"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-barriles",
       "estilo": "tile",
-      "prompt": "two steel beer kegs and one old wooden barrel standing side by side, seen from above as round tops.",
-      "semilla": 8281,
+      "prompt": "two steel beer kegs and one old wooden barrel standing side by side, seen from above as three round tops: the kegs with their steel rims and central valves, the barrel with dark wooden staves and an iron hoop.",
+      "semilla": 8282,
       "candidatas": [
         8281,
         8282
@@ -644,46 +1350,125 @@
         1.6,
         0.9
       ],
-      "nota": "tile 1.6×0.9 m; planos: salitre 1.6×0.9"
+      "nota": "tile 1.6×0.9 m; planos: salitre 1.6×0.9. Elegida: s8282 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "circ",
+            0.27,
+            0.45,
+            0.24,
+            {
+              "color": "#9a9ca0"
+            }
+          ],
+          [
+            "circ",
+            0.27,
+            0.45,
+            0.19,
+            {
+              "sinRelleno": true
+            }
+          ],
+          [
+            "circ",
+            0.27,
+            0.45,
+            0.04,
+            {
+              "color": "#555"
+            }
+          ],
+          [
+            "circ",
+            0.77,
+            0.45,
+            0.24,
+            {
+              "color": "#9a9ca0"
+            }
+          ],
+          [
+            "circ",
+            0.77,
+            0.45,
+            0.19,
+            {
+              "sinRelleno": true
+            }
+          ],
+          [
+            "circ",
+            0.77,
+            0.45,
+            0.04,
+            {
+              "color": "#555"
+            }
+          ],
+          [
+            "circ",
+            1.29,
+            0.45,
+            0.3,
+            {
+              "color": "#5a4030"
+            }
+          ],
+          [
+            "circ",
+            1.29,
+            0.45,
+            0.26,
+            {
+              "sinRelleno": true
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-coche",
       "estilo": "tile-vehiculo",
-      "prompt": "an ordinary old dark grey four-door sedan, dull paint, a dent on the rear door. The car lies HORIZONTALLY with its FRONT pointing to the RIGHT.",
-      "semilla": 8291,
+      "prompt": "an ordinary old dark grey four-door sedan, dull paint, a dent on the rear door. The car stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
+      "semilla": 8292,
       "candidatas": [
         8291,
         8292
       ],
-      "ancho": 1552,
-      "alto": 672,
+      "ancho": 656,
+      "alto": 1600,
       "metros": [
         4.6,
         2
       ],
-      "nota": "tile 4.6×2 m; planos: salitre 2×4.6 hacia e. Horizontal, frente a la derecha."
+      "nota": "tile 4.6×2 m; planos: salitre 2×4.6 hacia e. Horizontal, frente a la derecha. Elegida: s8292 (t2i en vertical (frente abajo) girado -90°, revisión 2026-10-31).",
+      "girar": -90
     },
     {
       "id": "tile-pickup",
       "estilo": "tile-vehiculo",
-      "prompt": "a battered old full-size pickup truck in dark grey-blue paint with mud splashed along the sides and an empty cargo bed. The truck lies HORIZONTALLY with its FRONT pointing to the RIGHT.",
+      "prompt": "a battered old full-size pickup truck in dark grey-blue paint with mud splashed along the sides and an empty cargo bed. The truck stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
       "semilla": 8301,
       "candidatas": [
         8301,
         8302
       ],
-      "ancho": 1632,
-      "alto": 640,
+      "ancho": 656,
+      "alto": 1600,
       "metros": [
         5.3,
         2.1
       ],
-      "nota": "tile 5.3×2.1 m; planos: granja 5.3×2.1 hacia s, salitre 2×4.6 hacia e. Lo usan granja (5,3×2,1) y salitre (4,6×2): misma proporción."
+      "nota": "tile 5.3×2.1 m; planos: granja 5.3×2.1 hacia s, salitre 2×4.6 hacia e. Lo usan granja (5,3×2,1) y salitre (4,6×2): misma proporción. Elegida: s8301 (t2i en vertical (frente abajo) girado -90°, revisión 2026-10-31).",
+      "girar": -90
     },
     {
       "id": "tile-lampara-carburo",
       "estilo": "tile",
-      "prompt": "an old brass miner's carbide lamp standing on its round base, seen from above, UNLIT: no flame, no glow, no light.",
+      "prompt": "an old brass miner's carbide lamp standing on its round base, seen from above: the round brass base, the round top of the water chamber with a small valve knob, and the small round polished reflector on one side. UNLIT: no flame, no glow, no light.",
       "semilla": 8311,
       "candidatas": [
         8311,
@@ -695,13 +1480,54 @@
         0.3,
         0.3
       ],
-      "nota": "tile 0.3×0.3 m; planos: subterraneo 0.3×0.3"
+      "nota": "tile 0.3×0.3 m; planos: subterraneo 0.3×0.3. Elegida: s8311 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "circ",
+            0.13,
+            0.15,
+            0.12,
+            {
+              "color": "#8a6a30"
+            }
+          ],
+          [
+            "circ",
+            0.13,
+            0.15,
+            0.08,
+            {
+              "color": "#a8853c"
+            }
+          ],
+          [
+            "circ",
+            0.13,
+            0.15,
+            0.025,
+            {
+              "color": "#6a5228"
+            }
+          ],
+          [
+            "circ",
+            0.25,
+            0.15,
+            0.045,
+            {
+              "color": "#c8b070"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-palet",
       "estilo": "tile",
-      "prompt": "an old wooden pallet with a few unlit candle stubs, dented food cans and a worn grey backpack on it.",
-      "semilla": 8321,
+      "prompt": "an old dark wooden pallet seen from above, with a few unlit candle stubs, two dented food cans seen as round lids and a worn grey backpack lying on it.",
+      "semilla": 8322,
       "candidatas": [
         8321,
         8322
@@ -712,12 +1538,69 @@
         1,
         0.8
       ],
-      "nota": "tile 1×0.8 m; planos: subterraneo 1×0.8"
+      "nota": "tile 1×0.8 m; planos: subterraneo 1×0.8. Elegida: s8322 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "rejilla",
+        "filas": 0,
+        "columnas": 0,
+        "base": "palet",
+        "tablasBase": 6,
+        "colorBase": "#5a4a3a",
+        "formas": [
+          [
+            "circ",
+            0.18,
+            0.2,
+            0.05,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.18,
+            0.55,
+            0.05,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.35,
+            0.4,
+            0.025,
+            {
+              "color": "#e8e0c8"
+            }
+          ],
+          [
+            "circ",
+            0.42,
+            0.3,
+            0.02,
+            {
+              "color": "#e8e0c8"
+            }
+          ],
+          [
+            "rect",
+            0.55,
+            0.15,
+            0.35,
+            0.45,
+            {
+              "r": 0.08,
+              "color": "#4a4c50"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-flores-valla",
       "estilo": "tile",
-      "prompt": "seven faded, sun-bleached plastic flowers tied together with rusty wire in a loose horizontal row, and among them one fresh, real deep-red rose.",
+      "prompt": "seven faded, sun-bleached plastic flowers tied together with rusty wire in a loose horizontal row, seen from above as round flower heads on short stems, and among them one fresh, real deep-red rose.",
       "semilla": 8331,
       "candidatas": [
         8331,
@@ -729,12 +1612,152 @@
         1,
         0.28
       ],
-      "nota": "tile 1×0.28 m; planos: larchmont-planta 1×0.28"
+      "nota": "tile 1×0.28 m; planos: larchmont-planta 1×0.28. Elegida: s8331 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "linea",
+            0.02,
+            0.2,
+            0.98,
+            0.2
+          ],
+          [
+            "linea",
+            0.08,
+            0.2,
+            0.07,
+            0.12
+          ],
+          [
+            "linea",
+            0.2,
+            0.2,
+            0.19,
+            0.12
+          ],
+          [
+            "linea",
+            0.32,
+            0.2,
+            0.31,
+            0.12
+          ],
+          [
+            "linea",
+            0.44,
+            0.2,
+            0.43,
+            0.12
+          ],
+          [
+            "linea",
+            0.56,
+            0.2,
+            0.55,
+            0.12
+          ],
+          [
+            "linea",
+            0.68,
+            0.2,
+            0.67,
+            0.12
+          ],
+          [
+            "linea",
+            0.8,
+            0.2,
+            0.79,
+            0.12
+          ],
+          [
+            "linea",
+            0.92,
+            0.2,
+            0.91,
+            0.12
+          ],
+          [
+            "circ",
+            0.07,
+            0.1,
+            0.05,
+            {
+              "color": "#c8b8b0"
+            }
+          ],
+          [
+            "circ",
+            0.19,
+            0.1,
+            0.05,
+            {
+              "color": "#c0c4b8"
+            }
+          ],
+          [
+            "circ",
+            0.31,
+            0.1,
+            0.05,
+            {
+              "color": "#d0c4a8"
+            }
+          ],
+          [
+            "circ",
+            0.43,
+            0.1,
+            0.05,
+            {
+              "color": "#b8b4c4"
+            }
+          ],
+          [
+            "circ",
+            0.55,
+            0.1,
+            0.05,
+            {
+              "color": "#7a0e1a"
+            }
+          ],
+          [
+            "circ",
+            0.67,
+            0.1,
+            0.05,
+            {
+              "color": "#c0c4b8"
+            }
+          ],
+          [
+            "circ",
+            0.79,
+            0.1,
+            0.05,
+            {
+              "color": "#d0c4a8"
+            }
+          ],
+          [
+            "circ",
+            0.91,
+            0.1,
+            0.05,
+            {
+              "color": "#b8b4c4"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-taburete-alto",
       "estilo": "tile-nuevo",
-      "prompt": "a tall black metal drafting stool seen from above: a round black seat with a ring footrest showing around it.",
+      "prompt": "a tall black metal drafting stool seen from above: a round black seat, and around it the thin black ring of the footrest.",
       "semilla": 8341,
       "candidatas": [
         8341,
@@ -746,13 +1769,20 @@
         0.5,
         0.5
       ],
-      "nota": "tile 0.5×0.5 m; planos: northline 0.5×0.5 hacia n"
+      "nota": "tile 0.5×0.5 m; planos: northline 0.5×0.5 hacia n. Elegida: s8341 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "taburete",
+        "asiento": 0.68,
+        "aro": 0.03,
+        "colorAro": "#2a2a2c",
+        "color": "#1c1c1e"
+      }
     },
     {
       "id": "tile-sofa-espera",
       "estilo": "tile-nuevo",
-      "prompt": "a long three-seat waiting-room sofa upholstered in dark grey vinyl on a steel frame, a dent where people sat.",
-      "semilla": 8351,
+      "prompt": "a long three-seat waiting-room sofa seen from above: three seat cushions of dark grey vinyl, the backrest along the top edge and thin steel arms on the sides, a dent where people sat.",
+      "semilla": 8352,
       "candidatas": [
         8351,
         8352
@@ -763,13 +1793,18 @@
         2,
         0.9
       ],
-      "nota": "tile 2×0.9 m; planos: northline 0.9×2 hacia o"
+      "nota": "tile 2×0.9 m; planos: northline 0.9×2 hacia o. Elegida: s8352 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "sofa",
+        "brazos": 0.08,
+        "color": "#3a3d42"
+      }
     },
     {
       "id": "tile-silla-oficina",
       "estilo": "tile-nuevo",
-      "prompt": "a black mesh swivel office chair with armrests, the tips of a five-star wheeled base showing around the seat.",
-      "semilla": 8361,
+      "prompt": "a black mesh swivel office chair seen from above: a black padded seat, the mesh backrest along the top edge, two black armrests, and the tips of the five-star wheeled base showing around the seat.",
+      "semilla": 8362,
       "candidatas": [
         8361,
         8362
@@ -780,13 +1815,18 @@
         0.55,
         0.55
       ],
-      "nota": "tile 0.55×0.55 m; planos: gale-sentinel 0.55×0.55 hacia s, gale-sentinel 0.55×0.55 hacia n, gale-datos 0.55×0.55 hacia n, gale-datos 0.55×0.55 hacia e, northline 0.55×0.55 hacia s, northline 0.55×0.55 hacia n"
+      "nota": "tile 0.55×0.55 m; planos: gale-sentinel 0.55×0.55 hacia s, gale-sentinel 0.55×0.55 hacia n, gale-datos 0.55×0.55 hacia n, gale-datos 0.55×0.55 hacia e, northline 0.55×0.55 hacia s, northline 0.55×0.55 hacia n. Elegida: s8362 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "giratoria",
+        "brazos": 0.05,
+        "color": "#26272a"
+      }
     },
     {
       "id": "tile-sofa-moderno",
       "estilo": "tile-nuevo",
-      "prompt": "a sleek modern three-seat lobby sofa in pale grey wool with a low backrest and thin steel legs.",
-      "semilla": 8371,
+      "prompt": "a sleek modern three-seat lobby sofa seen from above: three seat cushions of pale grey wool, the low backrest along the top edge and slim square arms on the sides.",
+      "semilla": 8372,
       "candidatas": [
         8371,
         8372
@@ -797,13 +1837,19 @@
         2,
         0.85
       ],
-      "nota": "tile 2×0.85 m; planos: gale-sentinel 0.85×2 hacia e, gale-sentinel 0.85×1.8 hacia e, gale-planta3 0.85×2 hacia o"
+      "nota": "tile 2×0.85 m; planos: gale-sentinel 0.85×2 hacia e, gale-sentinel 0.85×1.8 hacia e, gale-planta3 0.85×2 hacia o. Elegida: s8372 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "sofa",
+        "brazos": 0.12,
+        "respaldo": 0.18,
+        "color": "#a8aaad"
+      }
     },
     {
       "id": "tile-silla-ejecutiva",
       "estilo": "tile-nuevo",
-      "prompt": "an expensive ergonomic executive chair in dark brown leather and polished aluminium, a tall backrest along the top edge.",
-      "semilla": 8381,
+      "prompt": "an expensive ergonomic executive chair seen from above: a dark brown leather seat, the tall dark brown leather backrest along the top edge, polished aluminium armrests, and the tips of the five-star base showing around the seat.",
+      "semilla": 8382,
       "candidatas": [
         8381,
         8382
@@ -814,13 +1860,20 @@
         0.6,
         0.6
       ],
-      "nota": "tile 0.6×0.6 m; planos: gale-planta3 0.6×0.6 hacia e"
+      "nota": "tile 0.6×0.6 m; planos: gale-planta3 0.6×0.6 hacia e. Elegida: s8382 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "giratoria",
+        "brazos": 0.06,
+        "color": "#4a3228",
+        "colorBrazos": "#9a9ca0",
+        "colorBase": "#9a9ca0"
+      }
     },
     {
       "id": "tile-mesa-reuniones",
       "estilo": "tile-nuevo",
-      "prompt": "a long boardroom table with a dark walnut veneer top on a black steel base, completely bare except for a few glasses of water.",
-      "semilla": 8391,
+      "prompt": "the flat top of a long boardroom table filling the whole outline edge to edge: polished dark walnut veneer with a fine lengthwise grain, completely bare except for a few glasses of water seen from above as small clear circles.",
+      "semilla": 8392,
       "candidatas": [
         8391,
         8392
@@ -831,13 +1884,56 @@
         3.4,
         1.1
       ],
-      "nota": "tile 3.4×1.1 m; planos: gale-planta3 3.4×1.1, salitre 2.6×1.2. Sólo gale-planta3 (3,4×1,1). Salitre pasa a tile-mesa-asamblea."
+      "nota": "tile 3.4×1.1 m; planos: gale-planta3 3.4×1.1, salitre 2.6×1.2. Sólo gale-planta3 (3,4×1,1). Salitre pasa a tile-mesa-asamblea. Elegida: s8392 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "r": 0.05,
+        "color": "#4a3226",
+        "formas": [
+          [
+            "circ",
+            0.6,
+            0.25,
+            0.04,
+            {
+              "color": "#b8c8d0"
+            }
+          ],
+          [
+            "circ",
+            1.5,
+            0.85,
+            0.04,
+            {
+              "color": "#b8c8d0"
+            }
+          ],
+          [
+            "circ",
+            2.3,
+            0.25,
+            0.04,
+            {
+              "color": "#b8c8d0"
+            }
+          ],
+          [
+            "circ",
+            2.9,
+            0.82,
+            0.04,
+            {
+              "color": "#b8c8d0"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-mesa-baja",
       "estilo": "tile-nuevo",
-      "prompt": "a low rectangular coffee table with a black glass top on a dark steel frame, clean and bare.",
-      "semilla": 8401,
+      "prompt": "the flat top of a low rectangular coffee table filling the whole outline edge to edge: a single sheet of black smoked glass with soft cold reflections and a thin dark steel rim, clean and bare.",
+      "semilla": 8402,
       "candidatas": [
         8401,
         8402
@@ -848,13 +1944,18 @@
         1.4,
         0.75
       ],
-      "nota": "tile 1.4×0.75 m; planos: gale-sentinel 0.8×0.8, gale-planta3 1.4×0.8, galeria 1.2×0.7, torre-atico 1.4×0.7. gale-planta3 1,4×0,8, galeria 1,2×0,7, torre-atico 1,4×0,7. gale-sentinel la usa a 0,8×0,8: ver tile-mesa-baja-cuadrada."
+      "nota": "tile 1.4×0.75 m; planos: gale-sentinel 0.8×0.8, gale-planta3 1.4×0.8, galeria 1.2×0.7, torre-atico 1.4×0.7. gale-planta3 1,4×0,8, galeria 1,2×0,7, torre-atico 1,4×0,7. gale-sentinel la usa a 0,8×0,8: ver tile-mesa-baja-cuadrada. Elegida: s8402 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "r": 0.01,
+        "color": "#1e2024"
+      }
     },
     {
       "id": "tile-mesa-baja-cuadrada",
       "estilo": "tile-nuevo",
-      "prompt": "a low square coffee table with a black glass top on a dark steel frame, clean and bare.",
-      "semilla": 8411,
+      "prompt": "the flat top of a low square coffee table filling the whole outline edge to edge: a single sheet of black smoked glass with soft cold reflections and a thin dark steel rim, clean and bare.",
+      "semilla": 8412,
       "candidatas": [
         8411,
         8412
@@ -865,13 +1966,18 @@
         0.8,
         0.8
       ],
-      "nota": "tile 0.8×0.8 m; no está en ningún plano todavía. VARIANTE NUEVA para gale-sentinel (0,8×0,8): la rectangular estirada a cuadrado se deforma. Hay que cambiar el `tile` en content/planos/gale-sentinel.json."
+      "nota": "tile 0.8×0.8 m; no está en ningún plano todavía. VARIANTE NUEVA para gale-sentinel (0,8×0,8): la rectangular estirada a cuadrado se deforma. Hay que cambiar el `tile` en content/planos/gale-sentinel.json. Elegida: s8412 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "mesa",
+        "r": 0.01,
+        "color": "#1e2024"
+      }
     },
     {
       "id": "tile-bandeja-terciopelo",
       "estilo": "tile-nuevo",
-      "prompt": "a shallow rectangular tray lined with black velvet, holding four smartphones placed face down.",
-      "semilla": 8421,
+      "prompt": "a shallow rectangular tray lined with black velvet seen from above, holding four smartphones placed face down in a row, their backs plain black.",
+      "semilla": 8422,
       "candidatas": [
         8421,
         8422
@@ -882,13 +1988,84 @@
         0.5,
         0.32
       ],
-      "nota": "tile 0.5×0.32 m; planos: galeria 0.5×0.32"
+      "nota": "tile 0.5×0.32 m; planos: galeria 0.5×0.32. Elegida: s8422 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0,
+            0,
+            0.5,
+            0.32,
+            {
+              "r": 0.015,
+              "color": "#2a2a2c"
+            }
+          ],
+          [
+            "rect",
+            0.02,
+            0.02,
+            0.46,
+            0.28,
+            {
+              "r": 0.01,
+              "color": "#111113"
+            }
+          ],
+          [
+            "rect",
+            0.05,
+            0.08,
+            0.085,
+            0.16,
+            {
+              "r": 0.012,
+              "color": "#2c2d31"
+            }
+          ],
+          [
+            "rect",
+            0.155,
+            0.08,
+            0.085,
+            0.16,
+            {
+              "r": 0.012,
+              "color": "#2c2d31"
+            }
+          ],
+          [
+            "rect",
+            0.26,
+            0.08,
+            0.085,
+            0.16,
+            {
+              "r": 0.012,
+              "color": "#2c2d31"
+            }
+          ],
+          [
+            "rect",
+            0.365,
+            0.08,
+            0.085,
+            0.16,
+            {
+              "r": 0.012,
+              "color": "#2c2d31"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-sillon-principe",
       "estilo": "tile-nuevo",
-      "prompt": "a stately antique armchair upholstered in dark charcoal velvet with carved black wooden arms and a tall backrest along the top edge.",
-      "semilla": 8431,
+      "prompt": "a stately antique armchair seen from above: a dark charcoal velvet seat cushion, the tall velvet backrest with a carved black wooden crest along the top edge, and carved black wooden arms on the sides.",
+      "semilla": 8432,
       "candidatas": [
         8431,
         8432
@@ -899,13 +2076,19 @@
         0.8,
         0.8
       ],
-      "nota": "tile 0.8×0.8 m; planos: galeria 0.8×0.8 hacia n"
+      "nota": "tile 0.8×0.8 m; planos: galeria 0.8×0.8 hacia n. Elegida: s8432 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "sillon",
+        "brazos": 0.12,
+        "respaldo": 0.2,
+        "color": "#2e2e34"
+      }
     },
     {
       "id": "tile-sillon",
       "estilo": "tile-nuevo",
-      "prompt": "a modern lounge armchair upholstered in dark grey leather with low square arms and a backrest along the top edge.",
-      "semilla": 8441,
+      "prompt": "a modern lounge armchair seen from above: one dark grey leather seat cushion, the backrest along the top edge and low square arms on the sides.",
+      "semilla": 8442,
       "candidatas": [
         8441,
         8442
@@ -916,13 +2099,19 @@
         0.75,
         0.75
       ],
-      "nota": "tile 0.75×0.75 m; planos: galeria 0.7×0.7 hacia s, torre-atico 0.75×0.75 hacia e, torre-atico 0.75×0.75 hacia o"
+      "nota": "tile 0.75×0.75 m; planos: galeria 0.7×0.7 hacia s, torre-atico 0.75×0.75 hacia e, torre-atico 0.75×0.75 hacia o. Elegida: s8442 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "sillon",
+        "brazos": 0.13,
+        "respaldo": 0.17,
+        "color": "#3e4044"
+      }
     },
     {
       "id": "tile-silla-musico",
       "estilo": "tile-nuevo",
-      "prompt": "a plain black lacquered armless chair with a small round seat.",
-      "semilla": 8451,
+      "prompt": "a plain black lacquered armless chair seen from above: a small rounded seat and, along the top edge, the narrow curved top of the backrest; glossy black lacquer.",
+      "semilla": 8452,
       "candidatas": [
         8451,
         8452
@@ -933,13 +2122,18 @@
         0.45,
         0.45
       ],
-      "nota": "tile 0.45×0.45 m; planos: galeria 0.45×0.45 hacia e, galeria 0.45×0.45 hacia s, galeria 0.45×0.45 hacia n"
+      "nota": "tile 0.45×0.45 m; planos: galeria 0.45×0.45 hacia e, galeria 0.45×0.45 hacia s, galeria 0.45×0.45 hacia n. Elegida: s8452 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "silla",
+        "respaldo": 0.06,
+        "color": "#1c1c1e"
+      }
     },
     {
       "id": "tile-carro-servicio",
       "estilo": "tile-nuevo",
-      "prompt": "a polished steel and black-wood serving cart, its top tray holding crystal wine glasses and a decanter of dark wine.",
-      "semilla": 8461,
+      "prompt": "a polished steel and black-wood serving cart seen from above: its black wooden top tray inside a polished steel frame with a handle bar at each short end, holding crystal wine glasses seen from above as clear circles and a decanter of dark wine.",
+      "semilla": 8462,
       "candidatas": [
         8461,
         8462
@@ -950,13 +2144,97 @@
         0.9,
         0.5
       ],
-      "nota": "tile 0.9×0.5 m; planos: galeria 0.9×0.5"
+      "nota": "tile 0.9×0.5 m; planos: galeria 0.9×0.5. Elegida: s8462 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0.06,
+            0.02,
+            0.78,
+            0.46,
+            {
+              "r": 0.02,
+              "color": "#a8aaae"
+            }
+          ],
+          [
+            "rect",
+            0.09,
+            0.05,
+            0.72,
+            0.4,
+            {
+              "color": "#1e1c1c"
+            }
+          ],
+          [
+            "rect",
+            0,
+            0.08,
+            0.04,
+            0.34,
+            {
+              "r": 0.02,
+              "color": "#a8aaae"
+            }
+          ],
+          [
+            "rect",
+            0.86,
+            0.08,
+            0.04,
+            0.34,
+            {
+              "r": 0.02,
+              "color": "#a8aaae"
+            }
+          ],
+          [
+            "circ",
+            0.25,
+            0.17,
+            0.04,
+            {
+              "color": "#c8d0d8"
+            }
+          ],
+          [
+            "circ",
+            0.25,
+            0.32,
+            0.04,
+            {
+              "color": "#c8d0d8"
+            }
+          ],
+          [
+            "circ",
+            0.38,
+            0.17,
+            0.04,
+            {
+              "color": "#c8d0d8"
+            }
+          ],
+          [
+            "circ",
+            0.6,
+            0.25,
+            0.07,
+            {
+              "color": "#4a1018"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-silla-consejo",
       "estilo": "tile-nuevo",
-      "prompt": "a high-backed black leather boardroom chair on a chrome base, the backrest along the top edge.",
-      "semilla": 8471,
+      "prompt": "a high-backed black leather boardroom chair seen from above: a black leather seat, the black leather backrest along the top edge, chrome armrests, and the tips of the chrome five-star base showing around the seat.",
+      "semilla": 8472,
       "candidatas": [
         8471,
         8472
@@ -967,7 +2245,14 @@
         0.6,
         0.6
       ],
-      "nota": "tile 0.6×0.6 m; planos: torre-atico 0.6×0.6 hacia e, torre-atico 0.6×0.6 hacia s, torre-atico 0.6×0.6 hacia n"
+      "nota": "tile 0.6×0.6 m; planos: torre-atico 0.6×0.6 hacia e, torre-atico 0.6×0.6 hacia s, torre-atico 0.6×0.6 hacia n. Elegida: s8472 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "giratoria",
+        "brazos": 0.05,
+        "color": "#1e1e20",
+        "colorBrazos": "#a0a2a6",
+        "colorBase": "#a0a2a6"
+      }
     },
     {
       "id": "tile-carpeta-cerrada",
@@ -984,13 +2269,13 @@
         0.3,
         0.24
       ],
-      "nota": "tile 0.3×0.24 m; planos: torre-atico 0.3×0.24"
+      "nota": "tile 0.3×0.24 m; planos: torre-atico 0.3×0.24. Elegida: s8481 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-sofa-cuero",
       "estilo": "tile-nuevo",
-      "prompt": "a long, low tufted sofa in black leather with rolled arms, the backrest along the top edge.",
-      "semilla": 8491,
+      "prompt": "a long, low tufted black leather sofa seen from above: three tufted seat cushions, the tufted backrest along the top edge and the two rolled arms on the sides.",
+      "semilla": 8492,
       "candidatas": [
         8491,
         8492
@@ -1001,12 +2286,16 @@
         2.2,
         0.9
       ],
-      "nota": "tile 2.2×0.9 m; planos: torre-atico 2.2×0.9 hacia n"
+      "nota": "tile 2.2×0.9 m; planos: torre-atico 2.2×0.9 hacia n. Elegida: s8492 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "sofa",
+        "color": "#1e1e20"
+      }
     },
     {
       "id": "tile-silla-despacho",
       "estilo": "tile-nuevo",
-      "prompt": "a large executive desk chair in black leather with a tall backrest along the top edge and wide padded arms.",
+      "prompt": "a large executive desk chair seen from above: a black leather seat, the tall black leather backrest along the top edge, wide padded black armrests, and the tips of the five-star base showing around the seat.",
       "semilla": 8501,
       "candidatas": [
         8501,
@@ -1018,13 +2307,18 @@
         0.65,
         0.65
       ],
-      "nota": "tile 0.65×0.65 m; planos: torre-atico 0.65×0.65 hacia o"
+      "nota": "tile 0.65×0.65 m; planos: torre-atico 0.65×0.65 hacia o. Elegida: s8501 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "giratoria",
+        "brazos": 0.07,
+        "color": "#1e1e20"
+      }
     },
     {
       "id": "tile-maletin-aluminio",
       "estilo": "tile-nuevo",
       "prompt": "a closed brushed-aluminium briefcase with black corner guards and a small combination lock, lying flat.",
-      "semilla": 8511,
+      "semilla": 8512,
       "candidatas": [
         8511,
         8512
@@ -1035,13 +2329,13 @@
         0.5,
         0.36
       ],
-      "nota": "tile 0.5×0.36 m; planos: torre-boveda 0.5×0.36"
+      "nota": "tile 0.5×0.36 m; planos: torre-boveda 0.5×0.36. Elegida: s8512 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-silla-puente",
       "estilo": "tile",
-      "prompt": "a ship captain's helm chair: a high swivel seat in black vinyl with armrests on a steel pedestal, the backrest along the top edge.",
-      "semilla": 8521,
+      "prompt": "a ship captain's helm chair seen from above: a black vinyl swivel seat, the black vinyl backrest along the top edge and two black armrests; it stands on a single pedestal hidden under the seat.",
+      "semilla": 8522,
       "candidatas": [
         8521,
         8522
@@ -1052,13 +2346,19 @@
         0.6,
         0.6
       ],
-      "nota": "tile 0.6×0.6 m; planos: ferry-puente 0.6×0.6 hacia o"
+      "nota": "tile 0.6×0.6 m; planos: ferry-puente 0.6×0.6 hacia o. Elegida: s8522 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "giratoria",
+        "brazos": 0.06,
+        "estrella": false,
+        "color": "#202124"
+      }
     },
     {
       "id": "tile-auto-sedan",
       "estilo": "tile-vehiculo",
       "prompt": "an ordinary mid-size four-door sedan in dull silver-grey. The car stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
-      "semilla": 8531,
+      "semilla": 8532,
       "candidatas": [
         8531,
         8532
@@ -1069,13 +2369,13 @@
         1.9,
         4.6
       ],
-      "nota": "tile 1.9×4.6 m; planos: ferry-coches 4.6×1.9 hacia o. VERTICAL, frente abajo: ferry-coches pone hacia «o» sobre una huella horizontal y la textura queda 1,9×4,6 (ver reporte)."
+      "nota": "tile 1.9×4.6 m; planos: ferry-coches 4.6×1.9 hacia o. VERTICAL, frente abajo: ferry-coches pone hacia «o» sobre una huella horizontal y la textura queda 1,9×4,6 (ver reporte). Elegida: s8532 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-auto-suv",
       "estilo": "tile-vehiculo",
       "prompt": "a dark blue-grey mid-size SUV with roof rails. The car stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
-      "semilla": 8541,
+      "semilla": 8542,
       "candidatas": [
         8541,
         8542
@@ -1086,13 +2386,13 @@
         2,
         4.8
       ],
-      "nota": "tile 2×4.8 m; planos: ferry-coches 4.8×2 hacia o. VERTICAL, frente abajo (ferry-coches)."
+      "nota": "tile 2×4.8 m; planos: ferry-coches 4.8×2 hacia o. VERTICAL, frente abajo (ferry-coches). Elegida: s8542 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-auto-furgoneta",
       "estilo": "tile-vehiculo",
       "prompt": "a plain white panel van with no windows in the back and no markings. The van stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
-      "semilla": 8551,
+      "semilla": 8552,
       "candidatas": [
         8551,
         8552
@@ -1103,13 +2403,13 @@
         2.1,
         5.4
       ],
-      "nota": "tile 2.1×5.4 m; planos: ferry-coches 5.4×2.1 hacia o. VERTICAL, frente abajo (ferry-coches)."
+      "nota": "tile 2.1×5.4 m; planos: ferry-coches 5.4×2.1 hacia o. VERTICAL, frente abajo (ferry-coches). Elegida: s8552 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-auto-pickup",
       "estilo": "tile-vehiculo",
       "prompt": "a black full-size pickup truck with an empty cargo bed. The truck stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
-      "semilla": 8561,
+      "semilla": 8562,
       "candidatas": [
         8561,
         8562
@@ -1120,13 +2420,13 @@
         2,
         5.6
       ],
-      "nota": "tile 2×5.6 m; planos: ferry-coches 5.6×2 hacia o. VERTICAL, frente abajo (ferry-coches)."
+      "nota": "tile 2×5.6 m; planos: ferry-coches 5.6×2 hacia o. VERTICAL, frente abajo (ferry-coches). Elegida: s8562 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-telefono-tapa",
       "estilo": "tile",
-      "prompt": "an old black plastic clamshell flip phone lying closed, a scrap of beige painter's masking tape stuck on its lid with nothing written on it.",
-      "semilla": 8571,
+      "prompt": "an old black plastic clamshell flip phone lying closed, seen from above: its plain black rounded lid, with a scrap of beige painter's masking tape stuck across it with nothing written on it.",
+      "semilla": 8572,
       "candidatas": [
         8571,
         8572
@@ -1137,13 +2437,39 @@
         0.1,
         0.05
       ],
-      "nota": "tile 0.1×0.05 m; no está en ningún plano todavía. Trama: el móvil de SAFE (DOC-05, AYU-05). Sin texto en la cinta: la nota va en el handout."
+      "nota": "tile 0.1×0.05 m; no está en ningún plano todavía. Trama: el móvil de SAFE (DOC-05, AYU-05). Sin texto en la cinta: la nota va en el handout. Elegida: s8572 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0,
+            0.002,
+            0.1,
+            0.046,
+            {
+              "r": 0.012,
+              "color": "#1c1c1e"
+            }
+          ],
+          [
+            "rect",
+            0.03,
+            0,
+            0.03,
+            0.05,
+            {
+              "color": "#d0c090"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-disco-duro",
       "estilo": "tile",
       "prompt": "a matte black external hard drive the size of a paperback book, a strip of beige painter's masking tape across its top with nothing written on it, a short frayed USB cable.",
-      "semilla": 8581,
+      "semilla": 8582,
       "candidatas": [
         8581,
         8582
@@ -1154,13 +2480,13 @@
         0.18,
         0.12
       ],
-      "nota": "tile 0.18×0.12 m; no está en ningún plano todavía. Trama: el disco del Expediente (04-ficcion-de-apertura). «NO TOCAR» no se pinta."
+      "nota": "tile 0.18×0.12 m; no está en ningún plano todavía. Trama: el disco del Expediente (04-ficcion-de-apertura). «NO TOCAR» no se pinta. Elegida: s8582 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-silla-volcada",
       "estilo": "tile",
       "prompt": "a plain old wooden chair knocked over and lying on its side on the floor: the backrest flat, the seat seen edge-on, the four legs pointing sideways.",
-      "semilla": 8591,
+      "semilla": 8592,
       "candidatas": [
         8591,
         8592
@@ -1171,13 +2497,13 @@
         0.9,
         0.5
       ],
-      "nota": "tile 0.9×0.5 m; no está en ningún plano todavía. Trama: A3-E01 (20-parte-3)."
+      "nota": "tile 0.9×0.5 m; no está en ningún plano todavía. Trama: A3-E01 (20-parte-3). Elegida: s8592 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-telefono-roto",
       "estilo": "tile",
       "prompt": "a modern black smartphone lying face up with its screen shattered in a spider-web pattern; the screen is OFF and black.",
-      "semilla": 8601,
+      "semilla": 8602,
       "candidatas": [
         8601,
         8602
@@ -1188,13 +2514,13 @@
         0.15,
         0.075
       ],
-      "nota": "tile 0.15×0.075 m; no está en ningún plano todavía. Trama: A3-E01."
+      "nota": "tile 0.15×0.075 m; no está en ningún plano todavía. Trama: A3-E01. Elegida: s8602 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-papel-casquillo",
       "estilo": "tile",
-      "prompt": "a sheet of white paper folded in half, held down by a single brass pistol bullet casing standing upright on it; the outside of the paper is blank.",
-      "semilla": 8611,
+      "prompt": "a sheet of white paper folded in half lying flat, seen from above, with the fold line across the middle, and a single brass pistol bullet casing standing upright on it, seen from above as a small brass ring.",
+      "semilla": 8612,
       "candidatas": [
         8611,
         8612
@@ -1205,13 +2531,44 @@
         0.22,
         0.15
       ],
-      "nota": "tile 0.22×0.15 m; no está en ningún plano todavía. Trama: A3-E01. La carta va en el handout."
+      "nota": "tile 0.22×0.15 m; no está en ningún plano todavía. Trama: A3-E01. La carta va en el handout. Elegida: s8612 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "rect",
+            0.005,
+            0.005,
+            0.21,
+            0.14,
+            {
+              "color": "#ecebe6"
+            }
+          ],
+          [
+            "linea",
+            0.11,
+            0.005,
+            0.11,
+            0.145
+          ],
+          [
+            "circ",
+            0.11,
+            0.075,
+            0.007,
+            {
+              "color": "#b8962e"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-bolsa-reparto",
       "estilo": "tile",
       "prompt": "a grey insulated food-delivery backpack, the square kind couriers carry, zipped shut and lying flat, scuffed, with no logos and no reflective lettering.",
-      "semilla": 8621,
+      "semilla": 8622,
       "candidatas": [
         8621,
         8622
@@ -1222,13 +2579,13 @@
         0.45,
         0.35
       ],
-      "nota": "tile 0.45×0.35 m; no está en ningún plano todavía. Trama: 04-ficcion-de-apertura (el robo del disco)."
+      "nota": "tile 0.45×0.35 m; no está en ningún plano todavía. Trama: 04-ficcion-de-apertura (el robo del disco). Elegida: s8622 (t2i tal cual, revisión 2026-10-31)."
     },
     {
       "id": "tile-sangre",
       "estilo": "tile",
-      "prompt": "a dark pool of fresh blood on the floor with spatters around it and a smeared drag mark leading away, deep crimson and almost black at the centre, glossy.",
-      "semilla": 8631,
+      "prompt": "a dark pool of fresh blood on the floor seen from above, with spatters around it and a smeared drag mark leading away to the right, deep crimson and almost black at the centre, glossy.",
+      "semilla": 8632,
       "candidatas": [
         8631,
         8632
@@ -1239,12 +2596,285 @@
         1.5,
         1
       ],
-      "nota": "tile 1.5×1 m; no está en ningún plano todavía. Horror."
+      "nota": "tile 1.5×1 m; no está en ningún plano todavía. Horror. Elegida: s8632 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "poli",
+            [
+              [
+                0.868,
+                0.5
+              ],
+              [
+                0.953,
+                0.589
+              ],
+              [
+                0.858,
+                0.648
+              ],
+              [
+                0.805,
+                0.708
+              ],
+              [
+                0.777,
+                0.798
+              ],
+              [
+                0.684,
+                0.827
+              ],
+              [
+                0.589,
+                0.836
+              ],
+              [
+                0.5,
+                0.883
+              ],
+              [
+                0.401,
+                0.873
+              ],
+              [
+                0.316,
+                0.828
+              ],
+              [
+                0.226,
+                0.794
+              ],
+              [
+                0.16,
+                0.732
+              ],
+              [
+                0.092,
+                0.669
+              ],
+              [
+                0.117,
+                0.575
+              ],
+              [
+                0.093,
+                0.5
+              ],
+              [
+                0.069,
+                0.416
+              ],
+              [
+                0.103,
+                0.336
+              ],
+              [
+                0.208,
+                0.301
+              ],
+              [
+                0.226,
+                0.206
+              ],
+              [
+                0.319,
+                0.178
+              ],
+              [
+                0.397,
+                0.112
+              ],
+              [
+                0.5,
+                0.112
+              ],
+              [
+                0.585,
+                0.182
+              ],
+              [
+                0.683,
+                0.175
+              ],
+              [
+                0.79,
+                0.189
+              ],
+              [
+                0.844,
+                0.265
+              ],
+              [
+                0.892,
+                0.338
+              ],
+              [
+                0.917,
+                0.418
+              ]
+            ],
+            {
+              "color": "#5a0a10"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.82,
+                0.42
+              ],
+              [
+                0.9,
+                0.45
+              ],
+              [
+                0.98,
+                0.445
+              ],
+              [
+                1.06,
+                0.421
+              ],
+              [
+                1.14,
+                0.422
+              ],
+              [
+                1.22,
+                0.455
+              ],
+              [
+                1.3,
+                0.481
+              ],
+              [
+                1.38,
+                0.47
+              ],
+              [
+                1.46,
+                0.447
+              ],
+              [
+                1.46,
+                0.586
+              ],
+              [
+                1.38,
+                0.559
+              ],
+              [
+                1.3,
+                0.577
+              ],
+              [
+                1.22,
+                0.584
+              ],
+              [
+                1.14,
+                0.548
+              ],
+              [
+                1.06,
+                0.535
+              ],
+              [
+                0.98,
+                0.558
+              ],
+              [
+                0.9,
+                0.549
+              ],
+              [
+                0.82,
+                0.513
+              ]
+            ],
+            {
+              "color": "#6a1218"
+            }
+          ],
+          [
+            "linea",
+            0.95,
+            0.48,
+            1.35,
+            0.5
+          ],
+          [
+            "linea",
+            0.95,
+            0.55,
+            1.3,
+            0.54
+          ],
+          [
+            "circ",
+            0.07,
+            0.1,
+            0.03,
+            {
+              "color": "#5a0a10"
+            }
+          ],
+          [
+            "circ",
+            0.95,
+            0.1,
+            0.025,
+            {
+              "color": "#5a0a10"
+            }
+          ],
+          [
+            "circ",
+            0.1,
+            0.9,
+            0.035,
+            {
+              "color": "#5a0a10"
+            }
+          ],
+          [
+            "circ",
+            0.8,
+            0.88,
+            0.02,
+            {
+              "color": "#5a0a10"
+            }
+          ],
+          [
+            "circ",
+            0.2,
+            0.05,
+            0.015,
+            {
+              "color": "#5a0a10"
+            }
+          ],
+          [
+            "circ",
+            1.1,
+            0.8,
+            0.02,
+            {
+              "color": "#5a0a10"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "tile-ceniza",
       "estilo": "tile",
-      "prompt": "a pile of fine dark charcoal-grey ash roughly in the shape of a lying human body, with an intact black nylon jacket lying on top of the ash.",
+      "prompt": "a pile of fine dark charcoal-grey ash on the floor seen from above, roughly in the shape of a lying human body with the head to the left, and an intact black nylon jacket lying flat on top of the ash.",
       "semilla": 8641,
       "candidatas": [
         8641,
@@ -1256,13 +2886,274 @@
         1.7,
         0.8
       ],
-      "nota": "tile 1.7×0.8 m; no está en ningún plano todavía. Horror: A1-E02 / AYU-06 (Corwin). Ceniza oscura para que BiRefNet la separe del fondo gris claro."
+      "nota": "tile 1.7×0.8 m; no está en ningún plano todavía. Horror: A1-E02 / AYU-06 (Corwin). Ceniza oscura para que BiRefNet la separe del fondo gris claro. Elegida: s8641 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "poli",
+            [
+              [
+                1.57,
+                0.4
+              ],
+              [
+                1.628,
+                0.46
+              ],
+              [
+                1.568,
+                0.515
+              ],
+              [
+                1.468,
+                0.558
+              ],
+              [
+                1.484,
+                0.638
+              ],
+              [
+                1.323,
+                0.659
+              ],
+              [
+                1.208,
+                0.696
+              ],
+              [
+                1.068,
+                0.715
+              ],
+              [
+                0.923,
+                0.727
+              ],
+              [
+                0.779,
+                0.714
+              ],
+              [
+                0.643,
+                0.7
+              ],
+              [
+                0.478,
+                0.708
+              ],
+              [
+                0.403,
+                0.644
+              ],
+              [
+                0.273,
+                0.617
+              ],
+              [
+                0.158,
+                0.577
+              ],
+              [
+                0.055,
+                0.527
+              ],
+              [
+                0.082,
+                0.459
+              ],
+              [
+                0.116,
+                0.4
+              ],
+              [
+                0.108,
+                0.343
+              ],
+              [
+                0.069,
+                0.275
+              ],
+              [
+                0.157,
+                0.223
+              ],
+              [
+                0.252,
+                0.175
+              ],
+              [
+                0.37,
+                0.138
+              ],
+              [
+                0.512,
+                0.12
+              ],
+              [
+                0.639,
+                0.095
+              ],
+              [
+                0.772,
+                0.052
+              ],
+              [
+                0.917,
+                0.104
+              ],
+              [
+                1.055,
+                0.102
+              ],
+              [
+                1.212,
+                0.1
+              ],
+              [
+                1.353,
+                0.125
+              ],
+              [
+                1.384,
+                0.199
+              ],
+              [
+                1.514,
+                0.23
+              ],
+              [
+                1.654,
+                0.272
+              ],
+              [
+                1.64,
+                0.339
+              ]
+            ],
+            {
+              "color": "#3a3a3c"
+            }
+          ],
+          [
+            "circ",
+            0.18,
+            0.4,
+            0.13,
+            {
+              "color": "#38383a"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.5,
+                0.2
+              ],
+              [
+                0.98,
+                0.18
+              ],
+              [
+                1.06,
+                0.3
+              ],
+              [
+                1.06,
+                0.52
+              ],
+              [
+                0.98,
+                0.62
+              ],
+              [
+                0.5,
+                0.6
+              ],
+              [
+                0.44,
+                0.48
+              ],
+              [
+                0.44,
+                0.32
+              ]
+            ],
+            {
+              "color": "#151518"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.5,
+                0.2
+              ],
+              [
+                0.62,
+                0.08
+              ],
+              [
+                1.1,
+                0.06
+              ],
+              [
+                1.12,
+                0.15
+              ],
+              [
+                0.7,
+                0.2
+              ]
+            ],
+            {
+              "color": "#18181b"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.5,
+                0.6
+              ],
+              [
+                0.62,
+                0.72
+              ],
+              [
+                1.1,
+                0.74
+              ],
+              [
+                1.12,
+                0.65
+              ],
+              [
+                0.7,
+                0.6
+              ]
+            ],
+            {
+              "color": "#18181b"
+            }
+          ],
+          [
+            "linea",
+            0.47,
+            0.4,
+            1.06,
+            0.41
+          ]
+        ]
+      }
     },
     {
       "id": "tile-vidrio-roto",
       "estilo": "tile",
-      "prompt": "a scatter of broken window glass on the floor: sharp clear shards with cold blue-grey reflections and a few larger triangular pieces.",
-      "semilla": 8651,
+      "prompt": "a scatter of broken window glass on the floor seen from above: sharp clear shards with cold blue-grey reflections and a few larger triangular pieces, nothing else.",
+      "semilla": 8652,
       "candidatas": [
         8651,
         8652
@@ -1273,7 +3164,452 @@
         1,
         0.8
       ],
-      "nota": "tile 1×0.8 m; no está en ningún plano todavía. Horror."
+      "nota": "tile 1×0.8 m; no está en ningún plano todavía. Horror. Elegida: s8652 (esquema + ControlNet, revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "poli",
+            [
+              [
+                0.104,
+                0.365
+              ],
+              [
+                0.137,
+                0.56
+              ],
+              [
+                0.003,
+                0.558
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.651,
+                0.284
+              ],
+              [
+                0.563,
+                0.097
+              ],
+              [
+                0.7,
+                0.062
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.548,
+                0.433
+              ],
+              [
+                0.403,
+                0.604
+              ],
+              [
+                0.307,
+                0.485
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.193,
+                0.349
+              ],
+              [
+                0.139,
+                0.127
+              ],
+              [
+                0.295,
+                0.119
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.419,
+                0.081
+              ],
+              [
+                0.376,
+                0.133
+              ],
+              [
+                0.347,
+                0.097
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.212,
+                0.336
+              ],
+              [
+                0.143,
+                0.394
+              ],
+              [
+                0.113,
+                0.34
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.232,
+                0.497
+              ],
+              [
+                0.283,
+                0.462
+              ],
+              [
+                0.301,
+                0.501
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.08,
+                0.381
+              ],
+              [
+                0.182,
+                0.379
+              ],
+              [
+                0.17,
+                0.447
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.316,
+                0.176
+              ],
+              [
+                0.379,
+                0.239
+              ],
+              [
+                0.329,
+                0.273
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.286,
+                0.56
+              ],
+              [
+                0.203,
+                0.621
+              ],
+              [
+                0.173,
+                0.558
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.226,
+                0.62
+              ],
+              [
+                0.317,
+                0.655
+              ],
+              [
+                0.282,
+                0.712
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.324,
+                0.355
+              ],
+              [
+                0.266,
+                0.311
+              ],
+              [
+                0.303,
+                0.277
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.41,
+                0.154
+              ],
+              [
+                0.398,
+                0.224
+              ],
+              [
+                0.352,
+                0.207
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.259,
+                0.251
+              ],
+              [
+                0.265,
+                0.354
+              ],
+              [
+                0.195,
+                0.345
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.4,
+                0.38
+              ],
+              [
+                0.465,
+                0.376
+              ],
+              [
+                0.459,
+                0.42
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.467,
+                0.385
+              ],
+              [
+                0.552,
+                0.399
+              ],
+              [
+                0.532,
+                0.454
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.838,
+                0.427
+              ],
+              [
+                0.851,
+                0.352
+              ],
+              [
+                0.899,
+                0.37
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.625,
+                0.314
+              ],
+              [
+                0.728,
+                0.28
+              ],
+              [
+                0.738,
+                0.353
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.376,
+                0.407
+              ],
+              [
+                0.431,
+                0.444
+              ],
+              [
+                0.4,
+                0.476
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.698,
+                0.172
+              ],
+              [
+                0.696,
+                0.277
+              ],
+              [
+                0.626,
+                0.263
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.243,
+                0.506
+              ],
+              [
+                0.169,
+                0.495
+              ],
+              [
+                0.186,
+                0.446
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.341,
+                0.119
+              ],
+              [
+                0.403,
+                0.182
+              ],
+              [
+                0.353,
+                0.215
+              ]
+            ],
+            {
+              "color": "#a8b8c0"
+            }
+          ]
+        ]
+      }
     }
   ]
 }

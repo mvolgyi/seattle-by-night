@@ -757,7 +757,1079 @@
       "_key": "!scenes.notes!bD0nEA1FjbvkG5Vt.3pAl2ne2NqaK0B3o"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "1cjmJS0kOsc1Rmi5",
+      "name": "la cabecera (Halloway, de pie)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 305,
+      "y": 650,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 0,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.1cjmJS0kOsc1Rmi5"
+    },
+    {
+      "_id": "QhO8zQLSYRQqSOPC",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 490,
+      "y": 535,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.QhO8zQLSYRQqSOPC"
+    },
+    {
+      "_id": "3APP93D55D9ddqsn",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 670,
+      "y": 535,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.3APP93D55D9ddqsn"
+    },
+    {
+      "_id": "dFDkg0zQGEtwVE30",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 850,
+      "y": 535,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.dFDkg0zQGEtwVE30"
+    },
+    {
+      "_id": "A1JKrBC8lDbfjUqv",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 490,
+      "y": 765,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.A1JKrBC8lDbfjUqv"
+    },
+    {
+      "_id": "afu2FDBwutKq08S1",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 670,
+      "y": 765,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 5,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.afu2FDBwutKq08S1"
+    },
+    {
+      "_id": "1KUlsfRQ3aulmjSp",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 850,
+      "y": 765,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 6,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.1KUlsfRQ3aulmjSp"
+    },
+    {
+      "_id": "HLyiR00iEJfgtAfy",
+      "name": "carpeta cerrada (cabecera)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 385,
+      "y": 650,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.HLyiR00iEJfgtAfy"
+    },
+    {
+      "_id": "l8wfXeI5SxkOAWSq",
+      "name": "carpeta cerrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 490,
+      "y": 602,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 8,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.l8wfXeI5SxkOAWSq"
+    },
+    {
+      "_id": "Xapwf3oGJPtuKJMM",
+      "name": "carpeta cerrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 670,
+      "y": 602,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 9,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.Xapwf3oGJPtuKJMM"
+    },
+    {
+      "_id": "wTkTQpZYthDmkLM8",
+      "name": "carpeta cerrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 850,
+      "y": 602,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 10,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.wTkTQpZYthDmkLM8"
+    },
+    {
+      "_id": "W0psKumG7e5kBB3f",
+      "name": "carpeta cerrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 490,
+      "y": 698,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 11,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.W0psKumG7e5kBB3f"
+    },
+    {
+      "_id": "HVQTUhVTIgFY4ClQ",
+      "name": "carpeta cerrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 670,
+      "y": 698,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 12,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.HVQTUhVTIgFY4ClQ"
+    },
+    {
+      "_id": "BW7nhr9ncb437SH6",
+      "name": "la de «C. Arden», entre ellas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carpeta-cerrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 850,
+      "y": 698,
+      "width": 30,
+      "height": 24,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 13,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "carpeta"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.BW7nhr9ncb437SH6"
+    },
+    {
+      "_id": "8hxMGy12XZ287jOX",
+      "name": "sofa cuero",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-cuero.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1050,
+      "y": 1130,
+      "width": 220,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 14,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.8hxMGy12XZ287jOX"
+    },
+    {
+      "_id": "FIiIiQMF8alzQ840",
+      "name": "sillon",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 878,
+      "y": 998,
+      "width": 75,
+      "height": 75,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 15,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.FIiIiQMF8alzQ840"
+    },
+    {
+      "_id": "GNj2nNE9ShELaZlN",
+      "name": "sillon",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1228,
+      "y": 998,
+      "width": 75,
+      "height": 75,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 16,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.GNj2nNE9ShELaZlN"
+    },
+    {
+      "_id": "HGaxk9sSZJeWryQ9",
+      "name": "mesa baja",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-baja.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1050,
+      "y": 1000,
+      "width": 140,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.HGaxk9sSZJeWryQ9"
+    },
+    {
+      "_id": "s7gHyKX9j3xLYoOb",
+      "name": "silla despacho",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-despacho.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1922,
+      "y": 288,
+      "width": 65,
+      "height": 65,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 18,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.s7gHyKX9j3xLYoOb"
+    },
+    {
+      "_id": "fMOEGu8jjzMivMme",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1690,
+      "y": 230,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 19,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.fMOEGu8jjzMivMme"
+    },
+    {
+      "_id": "YIkGfLja5E1WxE73",
+      "name": "silla consejo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-consejo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1690,
+      "y": 330,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "nzOgD40Pw9atcm1z"
+      ],
+      "sort": 20,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "torre-atico",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.YIkGfLja5E1WxE73"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -773,177 +1845,8 @@
       "id": "LUG-06",
       "plano": "torre-atico",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Consejo de Primogenitura (A4-E01, Noche 8, 22:30).</strong> «El ascensor privado sube cuarenta y dos pisos sin hacer ruido. Se abre a una sala enorme con una sola pared de cristal sobre Elliott Bay»: la cabina se abre directamente a la <strong>sala del Consejo</strong>, por su pared este. La pared oeste es entera de vidrio (la bahía, las grúas, los ferris, la isla del Sabueso: fuera del mapa). «En el centro hay una mesa larga de madera oscura con siete sillas»: la mesa corre de este a oeste, con la <strong>cabecera contra la pared de cristal</strong>; Halloway, de pie en la cabecera, de espaldas a la bahía y de cara al ascensor por el que entra el Príncipe. Seis sillas a los lados (Whitmore, Marchetti, Voight, Thornquist, Fry y el Sheriff). Delante de cada silla, una carpeta cerrada con un nombre (tiles sin texto; el contenido es AYU-08). Celeste (o su sustituto) y el señor Pell, de pie detrás de Halloway, entre la cabecera y el vidrio. La coterie, de pie. Los muebles de la sala «parecen no haber sido usados nunca».</p>\n<p><strong>El vestíbulo.</strong> Detrás de la doble puerta del este esperan la seguridad ghoul (MEN-04, del piso 40) y los perros de Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».</p>\n<p><strong>El despacho de Halloway</strong>, en la esquina noreste, con vidrio al norte y al este. Para <strong>negociar con Halloway antes del Consejo</strong>, en privado.</p>\n<p><strong>Salir (Escapar).</strong> O por el <strong>ascensor privado</strong>, que necesita la llave de Halloway o la de Pell (la puerta de la cabina está cerrada: la abre la llave), o por la <strong>escalera de emergencia</strong> del vestíbulo: cuarenta y dos pisos (Resistencia + Atletismo Dif 3 para no llegar abajo con el Hambre a 5); la región del pie del tramo marca la bajada, sin mapa del resto de la escalera.</p>\n<p><strong>El ascensor privado</strong> va de la calle al ático y del ático a la bóveda del nivel −3, y es el único acceso a la bóveda. En la cabina, la mitad de la puerta recibe y la mitad del fondo baja a la bóveda (plano «torre-boveda»). La parada de la calle no tiene mapa: el Narrador mueve los tokens a mano.</p>\n<p><strong>Si Halloway huye</strong> (exposición total o derrota): «Y se va hacia el ascensor», baja al nivel −3, saca el maletín de la bóveda y se lo da a Pell. <strong>Si gana</strong>, a las 00:30 sale Pell con el maletín por el mismo ascensor.</p>\n<p><strong>Combate:</strong> atacar a Halloway aquí, delante de la Primogenitura, da la votación por ganada a su favor. Halloway no pelea: Mirada aterradora y al ascensor.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×12, carpeta ×7, sofa, mesa.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar 42 pisos por la escalera de emergencia.</p>",
-      "moviles": [
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 2.75,
-          "y": 6.2,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 4.6,
-          "y": 5.05,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 6.4,
-          "y": 5.05,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 8.2,
-          "y": 5.05,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 4.6,
-          "y": 7.35,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 6.4,
-          "y": 7.35,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 8.2,
-          "y": 7.35,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 3.7,
-          "y": 6.38,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 4.75,
-          "y": 5.9,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 6.55,
-          "y": 5.9,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 8.35,
-          "y": 5.9,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 4.75,
-          "y": 6.86,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 6.55,
-          "y": 6.86,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "carpeta",
-          "tile": "tile-carpeta-cerrada",
-          "x": 8.35,
-          "y": 6.86,
-          "w": 0.3,
-          "h": 0.24
-        },
-        {
-          "tipo": "sofa",
-          "tile": "tile-sofa-cuero",
-          "x": 9.4,
-          "y": 10.85,
-          "w": 2.2,
-          "h": 0.9
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-sillon",
-          "x": 8.4,
-          "y": 9.6,
-          "w": 0.75,
-          "h": 0.75
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-sillon",
-          "x": 11.9,
-          "y": 9.6,
-          "w": 0.75,
-          "h": 0.75
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-baja",
-          "x": 9.8,
-          "y": 9.65,
-          "w": 1.4,
-          "h": 0.7
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-despacho",
-          "x": 18.9,
-          "y": 2.55,
-          "w": 0.65,
-          "h": 0.65
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 16.6,
-          "y": 2,
-          "w": 0.6,
-          "h": 0.6
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-consejo",
-          "x": 16.6,
-          "y": 3,
-          "w": 0.6,
-          "h": 0.6
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Consejo de Primogenitura (A4-E01, Noche 8, 22:30).</strong> «El ascensor privado sube cuarenta y dos pisos sin hacer ruido. Se abre a una sala enorme con una sola pared de cristal sobre Elliott Bay»: la cabina se abre directamente a la <strong>sala del Consejo</strong>, por su pared este. La pared oeste es entera de vidrio (la bahía, las grúas, los ferris, la isla del Sabueso: fuera del mapa). «En el centro hay una mesa larga de madera oscura con siete sillas»: la mesa corre de este a oeste, con la <strong>cabecera contra la pared de cristal</strong>; Halloway, de pie en la cabecera, de espaldas a la bahía y de cara al ascensor por el que entra el Príncipe. Seis sillas a los lados (Whitmore, Marchetti, Voight, Thornquist, Fry y el Sheriff). Delante de cada silla, una carpeta cerrada con un nombre (tiles sin texto; el contenido es AYU-08). Celeste (o su sustituto) y el señor Pell, de pie detrás de Halloway, entre la cabecera y el vidrio. La coterie, de pie. Los muebles de la sala «parecen no haber sido usados nunca».</p>\n<p><strong>El vestíbulo.</strong> Detrás de la doble puerta del este esperan la seguridad ghoul (MEN-04, del piso 40) y los perros de Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».</p>\n<p><strong>El despacho de Halloway</strong>, en la esquina noreste, con vidrio al norte y al este. Para <strong>negociar con Halloway antes del Consejo</strong>, en privado.</p>\n<p><strong>Salir (Escapar).</strong> O por el <strong>ascensor privado</strong>, que necesita la llave de Halloway o la de Pell (la puerta de la cabina está cerrada: la abre la llave), o por la <strong>escalera de emergencia</strong> del vestíbulo: cuarenta y dos pisos (Resistencia + Atletismo Dif 3 para no llegar abajo con el Hambre a 5); la región del pie del tramo marca la bajada, sin mapa del resto de la escalera.</p>\n<p><strong>El ascensor privado</strong> va de la calle al ático y del ático a la bóveda del nivel −3, y es el único acceso a la bóveda. En la cabina, la mitad de la puerta recibe y la mitad del fondo baja a la bóveda (plano «torre-boveda»). La parada de la calle no tiene mapa: el Narrador mueve los tokens a mano.</p>\n<p><strong>Si Halloway huye</strong> (exposición total o derrota): «Y se va hacia el ascensor», baja al nivel −3, saca el maletín de la bóveda y se lo da a Pell. <strong>Si gana</strong>, a las 00:30 sale Pell con el maletín por el mismo ascensor.</p>\n<p><strong>Combate:</strong> atacar a Halloway aquí, delante de la Primogenitura, da la votación por ganada a su favor. Halloway no pelea: Mirada aterradora y al ascensor.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (21) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar 42 pisos por la escalera de emergencia.</p>",
+      "moviles": []
     }
   },
   "_stats": {

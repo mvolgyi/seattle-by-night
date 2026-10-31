@@ -1048,7 +1048,1283 @@
       "_key": "!scenes.notes!AqYnfwMlYuNBE40h.A3qmVnFRcBHEduX8"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "vKAJWhNZWj8jDPMh",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1460,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 0,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.vKAJWhNZWj8jDPMh"
+    },
+    {
+      "_id": "muMvbyzmj3UzAB9n",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1580,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 1,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.muMvbyzmj3UzAB9n"
+    },
+    {
+      "_id": "uY9p0fu80qTgYjuP",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1700,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 2,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.uY9p0fu80qTgYjuP"
+    },
+    {
+      "_id": "uFRjYBlX4qyUXq1i",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1820,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 3,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.uFRjYBlX4qyUXq1i"
+    },
+    {
+      "_id": "iXt8emZC4uROjTXr",
+      "name": "mesa de madera marcada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 645,
+      "y": 1485,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 4,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.iXt8emZC4uROjTXr"
+    },
+    {
+      "_id": "lHZQlVzAYZYgyesj",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 728,
+      "y": 1483,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 5,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.lHZQlVzAYZYgyesj"
+    },
+    {
+      "_id": "Z3byBsiukwMOh7Zt",
+      "name": "mesa de madera marcada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 875,
+      "y": 1585,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.Z3byBsiukwMOh7Zt"
+    },
+    {
+      "_id": "bhpKlqzIdCJUbtVB",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 873,
+      "y": 1503,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.bhpKlqzIdCJUbtVB"
+    },
+    {
+      "_id": "C3ww7XZ06cIw5aCx",
+      "name": "mesa de madera marcada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 645,
+      "y": 1745,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 8,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.C3ww7XZ06cIw5aCx"
+    },
+    {
+      "_id": "bed9PzwEdRJYzmt2",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 643,
+      "y": 1823,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 9,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.bed9PzwEdRJYzmt2"
+    },
+    {
+      "_id": "sIDmFuPQgjVNULI4",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 728,
+      "y": 1743,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 10,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.sIDmFuPQgjVNULI4"
+    },
+    {
+      "_id": "fdedx2PQkfuphHpC",
+      "name": "mesa de madera marcada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 675,
+      "y": 1985,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 11,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.fdedx2PQkfuphHpC"
+    },
+    {
+      "_id": "J82AlNDirJyQrMv4",
+      "name": "mesa de madera marcada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 885,
+      "y": 1985,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 12,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.J82AlNDirJyQrMv4"
+    },
+    {
+      "_id": "auiZTzoMC4FW1Wur",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 757,
+      "y": 1983,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 13,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.auiZTzoMC4FW1Wur"
+    },
+    {
+      "_id": "lHkoyfbVNSv02qG2",
+      "name": "mesa de reuniones de la asamblea",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-asamblea.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 320,
+      "y": 1030,
+      "width": 260,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 14,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.lHkoyfbVNSv02qG2"
+    },
+    {
+      "_id": "oa6WUyQLu1t3bHDz",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 233,
+      "y": 938,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 15,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.oa6WUyQLu1t3bHDz"
+    },
+    {
+      "_id": "2pq8PPGMxq6sGAhX",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 323,
+      "y": 938,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 16,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.2pq8PPGMxq6sGAhX"
+    },
+    {
+      "_id": "ihnGF9WgG5pKn5Vm",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 413,
+      "y": 938,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.ihnGF9WgG5pKn5Vm"
+    },
+    {
+      "_id": "WaCVA1pjMLTYuABf",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 233,
+      "y": 1123,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 18,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.WaCVA1pjMLTYuABf"
+    },
+    {
+      "_id": "0U4VXOEgQ0PDCltg",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 323,
+      "y": 1123,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 19,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.0U4VXOEgQ0PDCltg"
+    },
+    {
+      "_id": "m8MnHp9Y10Wy4DZ1",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 413,
+      "y": 1123,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 20,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.m8MnHp9Y10Wy4DZ1"
+    },
+    {
+      "_id": "BjFoOX8vftgn7lnF",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 482,
+      "y": 1033,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 21,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.BjFoOX8vftgn7lnF"
+    },
+    {
+      "_id": "2yLeeEgtj785n4Ls",
+      "name": "barriles de cerveza",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-barriles.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 710,
+      "y": 985,
+      "width": 160,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 22,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.2yLeeEgtj785n4Ls"
+    },
+    {
+      "_id": "8RM3gARyXmCKBEAJ",
+      "name": "camioneta de un estibador",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-pickup.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1850,
+      "y": 1580,
+      "width": 460,
+      "height": 200,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 23,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.8RM3gARyXmCKBEAJ"
+    },
+    {
+      "_id": "H0s2LMslc19UN2VE",
+      "name": "coche aparcado en el patio",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-coche.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1040,
+      "y": 490,
+      "width": 460,
+      "height": 200,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 24,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.H0s2LMslc19UN2VE"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -1064,209 +2340,8 @@
       "id": "LUG-10",
       "plano": "salitre",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}</p>\n<p><strong>A2-E03 · Salitre.</strong> «La carretera muere en un astillero cerrado, con grúas oxidadas recortadas contra un cielo color pizarra. Junto a la verja hay un bar con un letrero de neón al que le falta una letra: SAL TRE. Dentro hay mesas de madera marcada, una barra hecha con el casco partido de un barco y fotos de huelgas en blanco y negro.» El letrero es una luz «neon» en la fachada (no se pinta: no hay texto en el mapa). Rosa espera con los codos en la <strong>barra</strong> y un soldador encima (tile o token).</p>\n<p><strong>La sala del bar.</strong> Abierta al público mortal hasta las dos. La <strong>barra</strong> es media cáscara de casco de barco, con el estante de botellas detrás; las <strong>fotos de huelgas</strong> cuelgan en los muros norte y sur. Mesas, sillas y taburetes son móviles (tiles): una docena de Anarquistas los usan de cobertura si la cosa se rompe (Combate: Rosa lo para a la segunda ronda, «Acá no»). Tavi Mercer (MEN-05) no les quita los ojos de encima.</p>\n<p><strong>La trastienda.</strong> Mesa de reuniones (la asamblea vota si ayuda a la coterie) y un corcho con recortes: ahí guarda Rosa su recorte de 1996 (AYU-04: «si sale en A2-E03, que sea ella quien lo saque»). Es el sitio para la confesión a David «a solas». La puerta da a la sala, del lado del público; otra puerta pasa al almacén.</p>\n<p><strong>La parte de atrás.</strong> Bas Okonjo se esconde en el <strong>almacén</strong> (barriles, la cámara de los barriles) para que Hal no lo vea; la <strong>puerta trasera</strong> sale al patio del astillero. Hal puede hablarle a solas ahí.</p>\n<p><strong>El astillero.</strong> La verja corrediza cierra la carretera; el bar queda afuera, pegado a ella. Adentro, la <strong>cabecera de la grada de botadura</strong>: está alineada con la carretera y desde ahí se ve venir cualquier coche por la única carretera (vigía de los Anarquistas). La grada sigue hacia el agua, al norte, fuera del mapa; los <strong>tres cascos en dique seco</strong> (los refugios de Salitre, el de Rosa entre ellos; ahí durmió Ray Dorsey en 1996) son el exterior del astillero (t2i): regiones sin destino.</p>\n<p><strong>Escapar.</strong> Nadie los retiene: la puerta del bar da a la carretera.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×16, mesa ×6, palet, auto ×2.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Irse por la única carretera · La grada baja hacia el agua · Al astillero: los tres cascos en dique seco.</p>",
-      "moviles": [
-        {
-          "tipo": "silla",
-          "tile": "tile-taburete",
-          "x": 4.55,
-          "y": 14.4,
-          "w": 0.4,
-          "h": 0.4
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-taburete",
-          "x": 4.55,
-          "y": 15.6,
-          "w": 0.4,
-          "h": 0.4
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-taburete",
-          "x": 4.55,
-          "y": 16.8,
-          "w": 0.4,
-          "h": 0.4
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-taburete",
-          "x": 4.55,
-          "y": 18,
-          "w": 0.4,
-          "h": 0.4
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-bar",
-          "x": 6,
-          "y": 14.4,
-          "w": 0.9,
-          "h": 0.9
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 7.05,
-          "y": 14.6,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-bar",
-          "x": 8.3,
-          "y": 15.4,
-          "w": 0.9,
-          "h": 0.9
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 8.5,
-          "y": 14.8,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-bar",
-          "x": 6,
-          "y": 17,
-          "w": 0.9,
-          "h": 0.9
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 6.2,
-          "y": 18,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 7.05,
-          "y": 17.2,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-bar",
-          "x": 6.3,
-          "y": 19.4,
-          "w": 0.9,
-          "h": 0.9
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-bar",
-          "x": 8.4,
-          "y": 19.4,
-          "w": 0.9,
-          "h": 0.9
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 7.35,
-          "y": 19.6,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-asamblea",
-          "x": 1.9,
-          "y": 9.7,
-          "w": 2.6,
-          "h": 1.2
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 2.1,
-          "y": 9.15,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3,
-          "y": 9.15,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3.9,
-          "y": 9.15,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 2.1,
-          "y": 11,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3,
-          "y": 11,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3.9,
-          "y": 11,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 4.6,
-          "y": 10.1,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-barriles",
-          "x": 6.3,
-          "y": 9.4,
-          "w": 1.6,
-          "h": 0.9
-        },
-        {
-          "tipo": "auto",
-          "tile": "tile-pickup",
-          "x": 17.5,
-          "y": 13.5,
-          "w": 2,
-          "h": 4.6
-        },
-        {
-          "tipo": "auto",
-          "tile": "tile-coche",
-          "x": 9.4,
-          "y": 2.6,
-          "w": 2,
-          "h": 4.6
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Bar Salitre y el astillero viejo}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salitre}</p>\n<p><strong>A2-E03 · Salitre.</strong> «La carretera muere en un astillero cerrado, con grúas oxidadas recortadas contra un cielo color pizarra. Junto a la verja hay un bar con un letrero de neón al que le falta una letra: SAL TRE. Dentro hay mesas de madera marcada, una barra hecha con el casco partido de un barco y fotos de huelgas en blanco y negro.» El letrero es una luz «neon» en la fachada (no se pinta: no hay texto en el mapa). Rosa espera con los codos en la <strong>barra</strong> y un soldador encima (tile o token).</p>\n<p><strong>La sala del bar.</strong> Abierta al público mortal hasta las dos. La <strong>barra</strong> es media cáscara de casco de barco, con el estante de botellas detrás; las <strong>fotos de huelgas</strong> cuelgan en los muros norte y sur. Mesas, sillas y taburetes son móviles (tiles): una docena de Anarquistas los usan de cobertura si la cosa se rompe (Combate: Rosa lo para a la segunda ronda, «Acá no»). Tavi Mercer (MEN-05) no les quita los ojos de encima.</p>\n<p><strong>La trastienda.</strong> Mesa de reuniones (la asamblea vota si ayuda a la coterie) y un corcho con recortes: ahí guarda Rosa su recorte de 1996 (AYU-04: «si sale en A2-E03, que sea ella quien lo saque»). Es el sitio para la confesión a David «a solas». La puerta da a la sala, del lado del público; otra puerta pasa al almacén.</p>\n<p><strong>La parte de atrás.</strong> Bas Okonjo se esconde en el <strong>almacén</strong> (barriles, la cámara de los barriles) para que Hal no lo vea; la <strong>puerta trasera</strong> sale al patio del astillero. Hal puede hablarle a solas ahí.</p>\n<p><strong>El astillero.</strong> La verja corrediza cierra la carretera; el bar queda afuera, pegado a ella. Adentro, la <strong>cabecera de la grada de botadura</strong>: está alineada con la carretera y desde ahí se ve venir cualquier coche por la única carretera (vigía de los Anarquistas). La grada sigue hacia el agua, al norte, fuera del mapa; los <strong>tres cascos en dique seco</strong> (los refugios de Salitre, el de Rosa entre ellos; ahí durmió Ray Dorsey en 1996) son el exterior del astillero (t2i): regiones sin destino.</p>\n<p><strong>Escapar.</strong> Nadie los retiene: la puerta del bar da a la carretera.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (25) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Irse por la única carretera · La grada baja hacia el agua · Al astillero: los tres cascos en dique seco.</p>",
+      "moviles": []
     }
   },
   "_stats": {

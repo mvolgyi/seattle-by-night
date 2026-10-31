@@ -827,7 +827,59 @@
       "_key": "!scenes.notes!cpPIgqv25ByovRVE.uvMqhw0Zeb4xQBP7"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "oAkMTyE1F2CS10nu",
+      "name": "la silla del capitán",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-puente.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 485,
+      "y": 1205,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "RiadZrfkZrlp4wVY"
+      ],
+      "sort": 0,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "ferry-puente",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!cpPIgqv25ByovRVE.oAkMTyE1F2CS10nu"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -843,17 +895,8 @@
       "id": "LUG-15",
       "plano": "ferry-puente",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación (roja a babor, verde a estribor) no están: falta el preset.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla.</p>",
-      "moviles": [
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-puente",
-          "x": 4.55,
-          "y": 11.75,
-          "w": 0.6,
-          "h": 0.6
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación (roja a babor, verde a estribor) no están: falta el preset.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>",
+      "moviles": []
     }
   },
   "_stats": {

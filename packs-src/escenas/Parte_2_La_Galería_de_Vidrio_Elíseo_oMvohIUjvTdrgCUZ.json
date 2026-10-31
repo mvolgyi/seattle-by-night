@@ -1850,7 +1850,518 @@
       "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.LIW2q6w7M5PaJZgN"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "WRItbEzHUknCld8e",
+      "name": "la bandeja de terciopelo para los teléfonos, en el umbral",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-bandeja-terciopelo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1065,
+      "y": 1241,
+      "width": 50,
+      "height": 32,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "bandeja"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.WRItbEzHUknCld8e"
+    },
+    {
+      "_id": "Wl4kjtP5cgbb67JJ",
+      "name": "el sillón del Príncipe, de cara a la terraza",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon-principe.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 340,
+      "y": 740,
+      "width": 80,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 1,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.Wl4kjtP5cgbb67JJ"
+    },
+    {
+      "_id": "6jaGqwbxnF1g6FfZ",
+      "name": "mesa baja",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-baja.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 340,
+      "y": 625,
+      "width": 120,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.6jaGqwbxnF1g6FfZ"
+    },
+    {
+      "_id": "knyCAm6curIwhWc5",
+      "name": "sillon",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 215,
+      "y": 495,
+      "width": 70,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.knyCAm6curIwhWc5"
+    },
+    {
+      "_id": "NyqxPehT2qYlondg",
+      "name": "sillon",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 455,
+      "y": 495,
+      "width": 70,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 4,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.NyqxPehT2qYlondg"
+    },
+    {
+      "_id": "rHy6d5j6KS4JOEEp",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 223,
+      "y": 982,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 5,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.rHy6d5j6KS4JOEEp"
+    },
+    {
+      "_id": "OQIdD2ASFUM3Ye8Y",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 253,
+      "y": 1093,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 6,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.OQIdD2ASFUM3Ye8Y"
+    },
+    {
+      "_id": "fJPxE2EE3cind7OC",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 353,
+      "y": 963,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.fJPxE2EE3cind7OC"
+    },
+    {
+      "_id": "JD2IqEiVxySgwrsp",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 353,
+      "y": 1133,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 8,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.JD2IqEiVxySgwrsp"
+    },
+    {
+      "_id": "2BTCe2M71eySabxU",
+      "name": "carro de servicio con copas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carro-servicio.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2095,
+      "y": 685,
+      "width": 90,
+      "height": 50,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 9,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "carro"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.2BTCe2M71eySabxU"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -1866,89 +2377,8 @@
       "id": "LUG-03",
       "plano": "galeria",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Noche de Elíseo (A2-E01, Noche 3).</strong> Se entra por la plaza, al sur, por las puertas de vidrio del <strong>vestíbulo</strong>. Ahí espera Solène Marchetti, la Guardiana (PNJ-14), en su mostrador con el libro de registro abierto (DOC-03), y en el <strong>umbral</strong> que separa el vestíbulo de la gran sala está la <strong>bandeja de terciopelo</strong> sobre su pedestal: «Sus teléfonos, por favor». La cuarta costumbre del Elíseo es literal: <em>«Ningún dispositivo conectado cruza el umbral»</em> (CIUDAD-LEYES); el umbral es el hueco de 2 m entre el vestíbulo y la sala, y los aparatos apagados se guardan en el casillero de la pared este del vestíbulo. <em>Para un solo jugador</em>, Bear se queda en el banco del vestíbulo con los teléfonos.</p>\n<p><strong>La gran sala de las medusas.</strong> «Cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa.» Las piezas cuelgan a varios metros sobre las cabezas: no se pintan ni estorban el paso; sus charcos de color son las luces de Foundry de la sala (rojas y ámbar, con un temblor leve). En el suelo de terrazo sólo hay dos bancos bajos y tres pedestales con piezas sueltas. Con todas las paredes de cristal, desde casi cualquier punto se ve casi todo lo demás: <em>«las paredes de cristal hacen imposible saber quién escucha desde fuera»</em> (LUG-03).</p>\n<p><strong>El cuarteto que nadie ve.</strong> «Suena un cuarteto de cuerdas que nadie ve»: los músicos tocan en el <strong>nicho</strong> del oeste, que se abre a la sala por un hueco tapado con una mampara de vidrio esmerilado (bloquea la vista, no el paso).</p>\n<p><strong>Quién está dónde (Leer la sala, Astucia + Etiqueta Dif 3).</strong> Whitmore, «al fondo, junto a la terraza», junto a las puertas de vidrio del norte. Halloway se mueve por la sala como un anfitrión. Voight, sola, en la <strong>terraza</strong>, mirando el reloj: «prefiere la terraza porque desde ahí ve quién entra» (desde la terraza se ve, a través de la sala de cristal, todo el vestíbulo). Thornquist, en el rincón sudeste de la sala, junto al vidrio de la plaza, donde nadie se le acerca. Fry, donde quiera.</p>\n<p><strong>La terraza.</strong> Losas de piedra, barandas al norte, oeste y este, sin luz propia: la torre de la Feria se ve al norte, fuera del mapa. <em>Escuchar sin ser vistos</em> (Astucia + Consciencia Dif 4): en la terraza, Halloway le dice a un Vástago menor «El Sheriff está viejo…». La terraza se comunica con la sala por dos puertas de vidrio.</p>\n<p><strong>El salón privado del Príncipe.</strong> Esquina noroeste: se entra desde la gran sala por una puerta de madera; su pared norte es un paño de vidrio fijo sobre la terraza y la oeste, otro sobre la plaza. El vidrio no deja pasar el sonido, pero sí la vista: el sillón de Whitmore mira al norte, hacia la terraza y la torre, así que <strong>desde la terraza se le ven los labios</strong>. Es el detalle de LUG-03: con Astucia + Consciencia Dif 4 se nota que alguien con un teleobjetivo, desde la terraza, podría leer los labios del salón. Aquí se concede la audiencia privada con el Príncipe.</p>\n<p><strong>El personal</strong> (ghouls, intocables por la tercera costumbre) sale del <strong>office</strong> del bloque de servicio, al este, con las copas que nadie bebe. Del pasillo de servicio sale una puerta a la plaza y la <strong>escalera al archivo de la Guardiana</strong>, en el sótano (plano «galeria-archivo»): bajando por la escalera, la región «Bajar al archivo» lleva al pie de la escalera del sótano. El apartamento de Marchetti (Refugio 2) está «sobre el archivo», en la planta alta del bloque de servicio: no tiene mapa.</p>\n<p><strong>Las paredes curvas</strong> del pabellón de 1962: el vidrio norte se abomba hacia la terraza, los paños de la plaza a los lados del vestíbulo se abomban hacia afuera y el salón privado tiene un mirador de vidrio curvo al oeste. En Foundry cada curva son tramos rectos de vidrio; las dos puertas a la terraza son dos de esos tramos.</p>\n<p><strong>Si el Consejo de A4-E01 se traslada aquí</strong> (el Príncipe recuperó la iniciativa; Halloway pierde 2 dados), se juega en la gran sala con una mesa larga traída por el personal (tile de la torre) o en el salón privado si son pocos.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): bandeja, silla ×7, mesa, carro.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Plaza de Seattle Center (entrada y salida).</p>",
-      "moviles": [
-        {
-          "tipo": "bandeja",
-          "tile": "tile-bandeja-terciopelo",
-          "x": 10.4,
-          "y": 12.25,
-          "w": 0.5,
-          "h": 0.32
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-sillon-principe",
-          "x": 3,
-          "y": 7,
-          "w": 0.8,
-          "h": 0.8
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-baja",
-          "x": 2.8,
-          "y": 5.9,
-          "w": 1.2,
-          "h": 0.7
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-sillon",
-          "x": 1.8,
-          "y": 4.6,
-          "w": 0.7,
-          "h": 0.7
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-sillon",
-          "x": 4.2,
-          "y": 4.6,
-          "w": 0.7,
-          "h": 0.7
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-musico",
-          "x": 2,
-          "y": 9.6,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-musico",
-          "x": 2.3,
-          "y": 10.7,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-musico",
-          "x": 3.3,
-          "y": 9.4,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-musico",
-          "x": 3.3,
-          "y": 11.1,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "carro",
-          "tile": "tile-carro-servicio",
-          "x": 20.5,
-          "y": 6.6,
-          "w": 0.9,
-          "h": 0.5
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Noche de Elíseo (A2-E01, Noche 3).</strong> Se entra por la plaza, al sur, por las puertas de vidrio del <strong>vestíbulo</strong>. Ahí espera Solène Marchetti, la Guardiana (PNJ-14), en su mostrador con el libro de registro abierto (DOC-03), y en el <strong>umbral</strong> que separa el vestíbulo de la gran sala está la <strong>bandeja de terciopelo</strong> sobre su pedestal: «Sus teléfonos, por favor». La cuarta costumbre del Elíseo es literal: <em>«Ningún dispositivo conectado cruza el umbral»</em> (CIUDAD-LEYES); el umbral es el hueco de 2 m entre el vestíbulo y la sala, y los aparatos apagados se guardan en el casillero de la pared este del vestíbulo. <em>Para un solo jugador</em>, Bear se queda en el banco del vestíbulo con los teléfonos.</p>\n<p><strong>La gran sala de las medusas.</strong> «Cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa.» Las piezas cuelgan a varios metros sobre las cabezas: no se pintan ni estorban el paso; sus charcos de color son las luces de Foundry de la sala (rojas y ámbar, con un temblor leve). En el suelo de terrazo sólo hay dos bancos bajos y tres pedestales con piezas sueltas. Con todas las paredes de cristal, desde casi cualquier punto se ve casi todo lo demás: <em>«las paredes de cristal hacen imposible saber quién escucha desde fuera»</em> (LUG-03).</p>\n<p><strong>El cuarteto que nadie ve.</strong> «Suena un cuarteto de cuerdas que nadie ve»: los músicos tocan en el <strong>nicho</strong> del oeste, que se abre a la sala por un hueco tapado con una mampara de vidrio esmerilado (bloquea la vista, no el paso).</p>\n<p><strong>Quién está dónde (Leer la sala, Astucia + Etiqueta Dif 3).</strong> Whitmore, «al fondo, junto a la terraza», junto a las puertas de vidrio del norte. Halloway se mueve por la sala como un anfitrión. Voight, sola, en la <strong>terraza</strong>, mirando el reloj: «prefiere la terraza porque desde ahí ve quién entra» (desde la terraza se ve, a través de la sala de cristal, todo el vestíbulo). Thornquist, en el rincón sudeste de la sala, junto al vidrio de la plaza, donde nadie se le acerca. Fry, donde quiera.</p>\n<p><strong>La terraza.</strong> Losas de piedra, barandas al norte, oeste y este, sin luz propia: la torre de la Feria se ve al norte, fuera del mapa. <em>Escuchar sin ser vistos</em> (Astucia + Consciencia Dif 4): en la terraza, Halloway le dice a un Vástago menor «El Sheriff está viejo…». La terraza se comunica con la sala por dos puertas de vidrio.</p>\n<p><strong>El salón privado del Príncipe.</strong> Esquina noroeste: se entra desde la gran sala por una puerta de madera; su pared norte es un paño de vidrio fijo sobre la terraza y la oeste, otro sobre la plaza. El vidrio no deja pasar el sonido, pero sí la vista: el sillón de Whitmore mira al norte, hacia la terraza y la torre, así que <strong>desde la terraza se le ven los labios</strong>. Es el detalle de LUG-03: con Astucia + Consciencia Dif 4 se nota que alguien con un teleobjetivo, desde la terraza, podría leer los labios del salón. Aquí se concede la audiencia privada con el Príncipe.</p>\n<p><strong>El personal</strong> (ghouls, intocables por la tercera costumbre) sale del <strong>office</strong> del bloque de servicio, al este, con las copas que nadie bebe. Del pasillo de servicio sale una puerta a la plaza y la <strong>escalera al archivo de la Guardiana</strong>, en el sótano (plano «galeria-archivo»): bajando por la escalera, la región «Bajar al archivo» lleva al pie de la escalera del sótano. El apartamento de Marchetti (Refugio 2) está «sobre el archivo», en la planta alta del bloque de servicio: no tiene mapa.</p>\n<p><strong>Las paredes curvas</strong> del pabellón de 1962: el vidrio norte se abomba hacia la terraza, los paños de la plaza a los lados del vestíbulo se abomban hacia afuera y el salón privado tiene un mirador de vidrio curvo al oeste. En Foundry cada curva son tramos rectos de vidrio; las dos puertas a la terraza son dos de esos tramos.</p>\n<p><strong>Si el Consejo de A4-E01 se traslada aquí</strong> (el Príncipe recuperó la iniciativa; Halloway pierde 2 dados), se juega en la gran sala con una mesa larga traída por el personal (tile de la torre) o en el salón privado si son pocos.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (10) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Plaza de Seattle Center (entrada y salida).</p>",
+      "moviles": []
     }
   },
   "_stats": {

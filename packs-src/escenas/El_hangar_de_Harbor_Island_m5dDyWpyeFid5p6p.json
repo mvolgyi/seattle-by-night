@@ -1127,7 +1127,824 @@
       "_key": "!scenes.notes!m5dDyWpyeFid5p6p.N5GlSmYFbV6d5SHE"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "skGVkFK3A4U8eXF6",
+      "name": "taburete del banco de Bear",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1013,
+      "y": 863,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 0,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.skGVkFK3A4U8eXF6"
+    },
+    {
+      "_id": "LnZk8sKy66T3XSjM",
+      "name": "mesa plegable de operaciones (teléfonos, papeles de Helen, la USB)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 960,
+      "y": 1170,
+      "width": 220,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.LnZk8sKy66T3XSjM"
+    },
+    {
+      "_id": "GnU1iwc5hvLCs7Gt",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 898,
+      "y": 1083,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.GnU1iwc5hvLCs7Gt"
+    },
+    {
+      "_id": "nTu4Hrq3sCWar4x5",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1007,
+      "y": 1083,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.nTu4Hrq3sCWar4x5"
+    },
+    {
+      "_id": "63RCg7Xoccg4D5Re",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 898,
+      "y": 1253,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.63RCg7Xoccg4D5Re"
+    },
+    {
+      "_id": "Yly65XiwEm7YDsrV",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1007,
+      "y": 1253,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 5,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.Yly65XiwEm7YDsrV"
+    },
+    {
+      "_id": "xtc5TkJUU5BX4vLn",
+      "name": "palé con cajas: tapa la trampilla del túnel de carga",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 875,
+      "y": 1635,
+      "width": 170,
+      "height": 170,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.xtc5TkJUU5BX4vLn"
+    },
+    {
+      "_id": "StOXgeLIi2qXvr0w",
+      "name": "cajas de munición sueltas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-cajas-municion.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1240,
+      "y": 1500,
+      "width": 120,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.StOXgeLIi2qXvr0w"
+    },
+    {
+      "_id": "0bEsYgWbSJvOz8Ij",
+      "name": "el catre militar de David",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-catre.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 358,
+      "y": 422,
+      "width": 195,
+      "height": 75,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 8,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "catre"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.0bEsYgWbSJvOz8Ij"
+    },
+    {
+      "_id": "VxnXV4yu2pl893ue",
+      "name": "el catre del rincón (las noches de Bear mirando al techo)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-catre.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 550,
+      "y": 1848,
+      "width": 200,
+      "height": 75,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 9,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "catre"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.VxnXV4yu2pl893ue"
+    },
+    {
+      "_id": "J6aYpULyFUfcT02G",
+      "name": "la silla plegable de David",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 543,
+      "y": 1573,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 10,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.J6aYpULyFUfcT02G"
+    },
+    {
+      "_id": "0alHQO12V7am3Ptx",
+      "name": "la camioneta de Bear",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-camioneta.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1605,
+      "y": 1555,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 11,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.0alHQO12V7am3Ptx"
+    },
+    {
+      "_id": "4FrApMql4plJwDmk",
+      "name": "palet cajas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2000,
+      "y": 1280,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 12,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.4FrApMql4plJwDmk"
+    },
+    {
+      "_id": "Z8tHGu6EEiPM9aMN",
+      "name": "palet cajas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2000,
+      "y": 1420,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 13,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.Z8tHGu6EEiPM9aMN"
+    },
+    {
+      "_id": "xC4b6vDf0RZHjXJ6",
+      "name": "bidones de aceite y gasoil",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-bidones.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1300,
+      "y": 1780,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 14,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.xC4b6vDf0RZHjXJ6"
+    },
+    {
+      "_id": "OPUAbvAoIkJI9l7H",
+      "name": "la lancha del muelle cubierto",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-lancha.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 650,
+      "width": 540,
+      "height": 200,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 15,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.OPUAbvAoIkJI9l7H"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -1143,137 +1960,8 @@
       "id": "LUG-01",
       "plano": "hangar",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.asQ9jeLO1qmdEJrG]{Epílogo · Lo que el agua no se lleva}</p>\n<p><strong>Qué es.</strong> El refugio de David (Refugio 3, con Acceso marítimo y Arsenal) y la base de la coterie. Por fuera, un hangar de chapa ondulada entre contenedores apilados, con el logo descolorido de una logística que ya no existe. Por dentro huele a aceite de armas, sal y café recalentado; las luces son de obra, colgadas de cables (luces «lampara»). Dentro del hangar no se discute de clanes ni de sires (COT-00).</p>\n<p><strong>Nave principal.</strong> Contra el muro norte, el arsenal: el armero de fusiles (cuatro AR/M4, uno con rayas de pintura blanca; el fusil de cerrojo arriba; la escopeta de corredera), el panel de armas blancas (machetes, cuchillos largos, dos espadas, la katana con saya, tres bates) y, en la esquina, las estanterías de <strong>cajas de munición ordenadas por calibre</strong>. En el muro oeste, el panel de pistolas y revólveres con los cargadores al lado (la de cinta roja en la empuñadura, el revólver con el cilindro marcado). En el medio, el <strong>banco de trabajo de Bear</strong>: ahí limpia la pistola en A4-E02 y en la Coda 3. La mesa plegable de operaciones y las sillas son móviles.</p>\n<p><strong>La trampilla del túnel de carga.</strong> En el piso de la nave, al sudoeste, <strong>debajo de un palé de cajas</strong> (tile): una trampilla de acero de un túnel de carga antiguo que sale a <strong>200 m, junto a la Terminal 46</strong>. Bear lo conoce. Escapar por ahí en A4-E02: Destreza + Sigilo Dif 3 para todo el grupo. La región «Bajar al túnel» no tiene destino: no hay mapa del túnel.</p>\n<p><strong>Cuarto blindado.</strong> Sin ventanas, puerta de acero. Ahí duerme David (el catre militar es móvil). Es el sitio más seguro contra la luz UV de la redada.</p>\n<p><strong>Habitación de Bear.</strong> Cama, taquilla, una mesita y la <strong>caja fuerte</strong> (DOC-12: la nota doblada en cuatro, debajo de una pistola). En la Coda 3 Bear la sacó y la tiene sobre el banco de trabajo.</p>\n<p><strong>Rincón del café.</strong> Mesada con pileta y la cafetera; en la <strong>lata de café</strong>, la llave del camión (DOC-12). El catre de ese rincón es el de las noches de Bear «mirando al techo del hangar». La silla plegable es la de David.</p>\n<p><strong>Muelle cubierto.</strong> La dársena se mete en el edificio desde la bahía; la cierra una persiana de chapa sobre el agua. Pasarelas de madera a los dos lados y al fondo. <strong>La lancha</strong> (tile) es la otra vía de escape de A4-E02, pero el dron con cámara térmica la ve: escapan, el Termómetro no baja. La región «Salir en lancha» queda sin destino (no hay mapa de la bahía).</p>\n<p><strong>La redada (A4-E02, 21:40).</strong> Las luces de obra parpadean y se apagan (apagalas a mano); el dron zumba sobre el techo de chapa. «Seis. Dos por el muelle, cuatro por la puerta»: dos operadores llegan por el <strong>muelle trasero</strong> (puerta del muelle y persiana de la dársena) y cuatro por el <strong>patio</strong> (la puerta grande y la puerta de servicio del sur); la furgoneta con el generador de luz solar artificial se para frente a la puerta grande y la luz blanca entra por debajo. Okafor dirige desde un coche a una manzana (fuera del mapa). Destruir pruebas (el arsenal, los teléfonos, la USB, los papeles de Helen): Destreza + Artesanía o Inteligencia + Tecnología Dif 2, un turno cada una. Ratas del hangar: Animalismo.</p>\n<p><strong>A1-E01 en el hangar.</strong> Si la coterie trae a Helen enseguida, ella ve por primera vez el arsenal de Bear y el catre de David (GAN-02).</p>\n<p><strong>Accesos.</strong> Puerta grande (persiana de 5 m) y puerta de servicio al sur, puerta lateral al callejón de contenedores al oeste, puerta del muelle al norte y la persiana de la dársena sobre el agua.</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×6, mesa, palet ×5, catre ×2, auto, vehiculo.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al túnel de carga (sale junto a la Terminal 46) · Salir en lancha a Elliott Bay · El muelle trasero sigue hacia el oeste · Salir al patio de contenedores de Harbor Island.</p>",
-      "moviles": [
-        {
-          "tipo": "silla",
-          "tile": "tile-taburete",
-          "x": 9.9,
-          "y": 8.4,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-plegable",
-          "x": 8.5,
-          "y": 11.2,
-          "w": 2.2,
-          "h": 1
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-plegable",
-          "x": 8.75,
-          "y": 10.6,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-plegable",
-          "x": 9.85,
-          "y": 10.6,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-plegable",
-          "x": 8.75,
-          "y": 12.3,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-plegable",
-          "x": 9.85,
-          "y": 12.3,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-palet-cajas",
-          "x": 7.9,
-          "y": 15.5,
-          "w": 1.7,
-          "h": 1.7
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-cajas-municion",
-          "x": 11.8,
-          "y": 14.5,
-          "w": 1.2,
-          "h": 1
-        },
-        {
-          "tipo": "catre",
-          "tile": "tile-catre",
-          "x": 3.2,
-          "y": 3.25,
-          "w": 0.75,
-          "h": 1.95
-        },
-        {
-          "tipo": "catre",
-          "tile": "tile-catre",
-          "x": 4.5,
-          "y": 18.1,
-          "w": 2,
-          "h": 0.75
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-plegable",
-          "x": 5.2,
-          "y": 15.5,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "auto",
-          "tile": "tile-camioneta",
-          "x": 15,
-          "y": 12.9,
-          "w": 2.1,
-          "h": 5.3
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-palet-cajas",
-          "x": 19.4,
-          "y": 12.2,
-          "w": 1.2,
-          "h": 1.2
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-palet-cajas",
-          "x": 19.4,
-          "y": 13.6,
-          "w": 1.2,
-          "h": 1.2
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-bidones",
-          "x": 12.4,
-          "y": 17.2,
-          "w": 1.2,
-          "h": 1.2
-        },
-        {
-          "tipo": "vehiculo",
-          "tile": "tile-lancha",
-          "x": 17,
-          "y": 3.8,
-          "w": 2,
-          "h": 5.4
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.asQ9jeLO1qmdEJrG]{Epílogo · Lo que el agua no se lleva}</p>\n<p><strong>Qué es.</strong> El refugio de David (Refugio 3, con Acceso marítimo y Arsenal) y la base de la coterie. Por fuera, un hangar de chapa ondulada entre contenedores apilados, con el logo descolorido de una logística que ya no existe. Por dentro huele a aceite de armas, sal y café recalentado; las luces son de obra, colgadas de cables (luces «lampara»). Dentro del hangar no se discute de clanes ni de sires (COT-00).</p>\n<p><strong>Nave principal.</strong> Contra el muro norte, el arsenal: el armero de fusiles (cuatro AR/M4, uno con rayas de pintura blanca; el fusil de cerrojo arriba; la escopeta de corredera), el panel de armas blancas (machetes, cuchillos largos, dos espadas, la katana con saya, tres bates) y, en la esquina, las estanterías de <strong>cajas de munición ordenadas por calibre</strong>. En el muro oeste, el panel de pistolas y revólveres con los cargadores al lado (la de cinta roja en la empuñadura, el revólver con el cilindro marcado). En el medio, el <strong>banco de trabajo de Bear</strong>: ahí limpia la pistola en A4-E02 y en la Coda 3. La mesa plegable de operaciones y las sillas son móviles.</p>\n<p><strong>La trampilla del túnel de carga.</strong> En el piso de la nave, al sudoeste, <strong>debajo de un palé de cajas</strong> (tile): una trampilla de acero de un túnel de carga antiguo que sale a <strong>200 m, junto a la Terminal 46</strong>. Bear lo conoce. Escapar por ahí en A4-E02: Destreza + Sigilo Dif 3 para todo el grupo. La región «Bajar al túnel» no tiene destino: no hay mapa del túnel.</p>\n<p><strong>Cuarto blindado.</strong> Sin ventanas, puerta de acero. Ahí duerme David (el catre militar es móvil). Es el sitio más seguro contra la luz UV de la redada.</p>\n<p><strong>Habitación de Bear.</strong> Cama, taquilla, una mesita y la <strong>caja fuerte</strong> (DOC-12: la nota doblada en cuatro, debajo de una pistola). En la Coda 3 Bear la sacó y la tiene sobre el banco de trabajo.</p>\n<p><strong>Rincón del café.</strong> Mesada con pileta y la cafetera; en la <strong>lata de café</strong>, la llave del camión (DOC-12). El catre de ese rincón es el de las noches de Bear «mirando al techo del hangar». La silla plegable es la de David.</p>\n<p><strong>Muelle cubierto.</strong> La dársena se mete en el edificio desde la bahía; la cierra una persiana de chapa sobre el agua. Pasarelas de madera a los dos lados y al fondo. <strong>La lancha</strong> (tile) es la otra vía de escape de A4-E02, pero el dron con cámara térmica la ve: escapan, el Termómetro no baja. La región «Salir en lancha» queda sin destino (no hay mapa de la bahía).</p>\n<p><strong>La redada (A4-E02, 21:40).</strong> Las luces de obra parpadean y se apagan (apagalas a mano); el dron zumba sobre el techo de chapa. «Seis. Dos por el muelle, cuatro por la puerta»: dos operadores llegan por el <strong>muelle trasero</strong> (puerta del muelle y persiana de la dársena) y cuatro por el <strong>patio</strong> (la puerta grande y la puerta de servicio del sur); la furgoneta con el generador de luz solar artificial se para frente a la puerta grande y la luz blanca entra por debajo. Okafor dirige desde un coche a una manzana (fuera del mapa). Destruir pruebas (el arsenal, los teléfonos, la USB, los papeles de Helen): Destreza + Artesanía o Inteligencia + Tecnología Dif 2, un turno cada una. Ratas del hangar: Animalismo.</p>\n<p><strong>A1-E01 en el hangar.</strong> Si la coterie trae a Helen enseguida, ella ve por primera vez el arsenal de Bear y el catre de David (GAN-02).</p>\n<p><strong>Accesos.</strong> Puerta grande (persiana de 5 m) y puerta de servicio al sur, puerta lateral al callejón de contenedores al oeste, puerta del muelle al norte y la persiana de la dársena sobre el agua.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (16) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al túnel de carga (sale junto a la Terminal 46) · Salir en lancha a Elliott Bay · El muelle trasero sigue hacia el oeste · Salir al patio de contenedores de Harbor Island.</p>",
+      "moviles": []
     }
   },
   "_stats": {

@@ -2024,7 +2024,1283 @@
       "_key": "!scenes.notes!tSyKulSKEmN3zQE3.mY9xwQf0asclXPGb"
     }
   ],
-  "tiles": [],
+  "tiles": [
+    {
+      "_id": "nI3KkxiU0q2QV2BJ",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 263,
+      "y": 778,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.nI3KkxiU0q2QV2BJ"
+    },
+    {
+      "_id": "zepNTdZkFcQVRpvI",
+      "name": "sacos de pienso para los perros",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sacos-pienso.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 720,
+      "y": 835,
+      "width": 100,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.zepNTdZkFcQVRpvI"
+    },
+    {
+      "_id": "MHff0WxzsZw5obdO",
+      "name": "la mesa larga de madera (A3-E04: la tableta y el sobre con la carta «M.V.»)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-larga.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 390,
+      "y": 1140,
+      "width": 300,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.MHff0WxzsZw5obdO"
+    },
+    {
+      "_id": "INNLon6RZcolof93",
+      "name": "la tableta encendida con la imagen de los silos (A3-E04)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-tableta.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 390,
+      "y": 1136,
+      "width": 30,
+      "height": 22,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "portatil"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.INNLon6RZcolof93"
+    },
+    {
+      "_id": "nAUgD6hxk8Dfxv5P",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 283,
+      "y": 1058,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 4,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.nAUgD6hxk8Dfxv5P"
+    },
+    {
+      "_id": "kyLdEcZn2xw209q5",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 393,
+      "y": 1058,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 5,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.kyLdEcZn2xw209q5"
+    },
+    {
+      "_id": "oiCFFCyJEaD4v5M7",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 502,
+      "y": 1058,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.oiCFFCyJEaD4v5M7"
+    },
+    {
+      "_id": "Zn0CD1wHzI3fCudG",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 283,
+      "y": 1223,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 7,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.Zn0CD1wHzI3fCudG"
+    },
+    {
+      "_id": "2rYi7c1ucP8pvTBE",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 393,
+      "y": 1223,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 8,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.2rYi7c1ucP8pvTBE"
+    },
+    {
+      "_id": "iIuGaaaBhaCJfQeW",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 502,
+      "y": 1223,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 9,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.iIuGaaaBhaCJfQeW"
+    },
+    {
+      "_id": "xemVzBOL4nCRHfUo",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 582,
+      "y": 1138,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 10,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.xemVzBOL4nCRHfUo"
+    },
+    {
+      "_id": "8nrLizZ0CeLCvjqL",
+      "name": "mesa cocina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-cocina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 770,
+      "y": 1070,
+      "width": 100,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 11,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.8nrLizZ0CeLCvjqL"
+    },
+    {
+      "_id": "tPqlJoW5PwijG8BM",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 768,
+      "y": 1143,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 12,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.tPqlJoW5PwijG8BM"
+    },
+    {
+      "_id": "Pc6lhNyhw9MYOryq",
+      "name": "la mecedora de Montgomery",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mecedora.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 695,
+      "y": 1500,
+      "width": 70,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 13,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.Pc6lhNyhw9MYOryq"
+    },
+    {
+      "_id": "9hhqVRd92plTTyeP",
+      "name": "banco de madera del porche",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-banco.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 850,
+      "y": 1438,
+      "width": 180,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 14,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.9hhqVRd92plTTyeP"
+    },
+    {
+      "_id": "pKKXYl4H9nAnLJZX",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 233,
+      "y": 1553,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 15,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.pKKXYl4H9nAnLJZX"
+    },
+    {
+      "_id": "ZJKb7LH74HgeYw9y",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 333,
+      "y": 1583,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 16,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.ZJKb7LH74HgeYw9y"
+    },
+    {
+      "_id": "ufvWy4Q6cAOeVCVl",
+      "name": "la camioneta del Sheriff",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-pickup.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 825,
+      "y": 2045,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.ufvWy4Q6cAOeVCVl"
+    },
+    {
+      "_id": "unELWP0MPZ6U1idF",
+      "name": "fardos de heno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1640,
+      "y": 990,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 18,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.unELWP0MPZ6U1idF"
+    },
+    {
+      "_id": "iJ92ui97dbcRVMyX",
+      "name": "fardos de heno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1980,
+      "y": 990,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 19,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.iJ92ui97dbcRVMyX"
+    },
+    {
+      "_id": "EuF5FkT794QVuHmC",
+      "name": "la mesa larga de los Lobos",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-larga-granero.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 1605,
+      "width": 500,
+      "height": 110,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 20,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.EuF5FkT794QVuHmC"
+    },
+    {
+      "_id": "M0zIwUkPhdFoE6UK",
+      "name": "banco largo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-banco-largo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 1508,
+      "width": 500,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 21,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.M0zIwUkPhdFoE6UK"
+    },
+    {
+      "_id": "VNQAsyOTVIARALiP",
+      "name": "banco largo",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-banco-largo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 1698,
+      "width": 500,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 22,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.VNQAsyOTVIARALiP"
+    },
+    {
+      "_id": "UKGsCJZewkXg7YKD",
+      "name": "fardos de heno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2220,
+      "y": 2010,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 23,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.UKGsCJZewkXg7YKD"
+    },
+    {
+      "_id": "wNRqstlcwu72PdJD",
+      "name": "fardos de heno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1390,
+      "y": 2020,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 24,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.wNRqstlcwu72PdJD"
+    }
+  ],
   "tokens": [],
   "sounds": [],
   "drawings": [],
@@ -2040,209 +3316,8 @@
       "id": "LUG-02",
       "plano": "granja",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>Qué es.</strong> El refugio de Montgomery (Refugio 3, Rebaño 2): casa principal, granero convertido en sala de reuniones de los Lobos, perreras con una docena de perros ghoul y, detrás del granero, las caravanas de los cazarrecompensas (MEN-03). El sótano, con el túnel de 300 m al embarcadero del río, es el plano <strong>granja-sotano</strong> (la escalera del vestíbulo baja ahí).</p>\n<p><strong>A1-E03 · El Sheriff pregunta (en el porche).</strong> «El camino de grava termina en una granja de madera oscura entre campos inundados. Hay perros por todas partes, quietos, que no ladran: miran. En el porche, en una mecedora, hay un hombre corpulento…» Montgomery no se levanta de la <strong>mecedora</strong> (tile); la hoja con la lista está sobre la <strong>baranda del porche</strong>, a su lado. «Cuando el último de ustedes sube los escalones» (los escalones del porche, al centro). No los invita a entrar: lo que se dice en el porche no entra en la casa (Hal lo sabe sin tirada). Los perros: tokens repartidos por el patio y la grava.</p>\n<p><strong>A3-E04 · La jauría duda (adentro).</strong> «Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chimenea apagada, una mesa larga de madera y, en la mesa, una tableta encendida… Los perros se tumban en el porche, de espaldas a la casa… Montgomery está de pie junto a la ventana.» La puerta delantera da directo a la <strong>sala</strong>: chimenea apagada contra el muro oeste, la mesa larga (tile) con la tableta (tile, luz «pantalla») y el sobre con la carta «M.V.», y la ventana del frente, que mira al porche. Abrí la puerta delantera a mano para esta escena.</p>\n<p><strong>Combate (A3-E04, o si la coterie ataca al Sheriff).</strong> Los doce perros salen de las <strong>perreras</strong> (detrás de la casa: cinco corrales de alambre con portones, puertas que dejan ver) y del porche; los seis cazarrecompensas, de las <strong>tres caravanas</strong> de atrás del granero (puerta en el lado oeste de cada una). Montgomery: Potencia de Sangre 5, Fortaleza 4.</p>\n<p><strong>A4-E02 · La redada (si es la granja).</strong> FIRSTLIGHT entra por el <strong>camino de grava</strong> (sur). Escapar: el túnel del sótano al embarcadero del río (bajar por la escalera del vestíbulo; plano granja-sotano); los perros cubren la retirada. Animalismo con los perros de la granja crea caos entre los operadores. Las caravanas y el granero son los otros objetivos de «salvar a los mortales».</p>\n<p><strong>El granero.</strong> Portón corredizo al oeste (abierto), puerta trasera al norte hacia las caravanas y una puerta chica al sur. Adentro, la mesa larga de los Lobos con sus bancos (tiles), la estufa de leña y, al fondo, los boxes viejos convertidos en depósito (tabiques bajos de madera: frenan el paso, no la vista).</p>\n<p><strong>La casa.</strong> Planta baja: sala, cocina, despacho del Sheriff (armero de vidrio), vestíbulo de la escalera al sótano y cuarto de botas con la puerta trasera hacia las perreras.</p>\n<p><strong>Detalle.</strong> Montgomery recibe sentado en el porche aunque llueva. Si invita a alguien a entrar, es que el asunto es grave. Si alguien intenta Dominación o Presencia en A1-E03, se levanta de la mecedora por primera vez: «Vuelve a hacer eso y te entierro en el campo de atrás.»</p>\n\n<p class=\"sbn-moviles\">Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): silla ×15, palet ×5, mesa ×3, portatil, auto.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir por el camino de grava al valle · Sendero al río y al embarcadero.</p>",
-      "moviles": [
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 2.4,
-          "y": 7.55,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-sacos-pienso",
-          "x": 6.7,
-          "y": 7.9,
-          "w": 1,
-          "h": 0.9
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-larga",
-          "x": 2.4,
-          "y": 10.9,
-          "w": 3,
-          "h": 1
-        },
-        {
-          "tipo": "portatil",
-          "tile": "tile-tableta",
-          "x": 3.75,
-          "y": 11.25,
-          "w": 0.3,
-          "h": 0.22
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 2.6,
-          "y": 10.35,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3.7,
-          "y": 10.35,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 4.8,
-          "y": 10.35,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 2.6,
-          "y": 12,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3.7,
-          "y": 12,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 4.8,
-          "y": 12,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 5.6,
-          "y": 11.15,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-cocina",
-          "x": 7.2,
-          "y": 10.3,
-          "w": 1,
-          "h": 0.8
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 7.45,
-          "y": 11.2,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-mecedora",
-          "x": 6.6,
-          "y": 14.6,
-          "w": 0.7,
-          "h": 0.8
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-banco",
-          "x": 7.6,
-          "y": 14.15,
-          "w": 1.8,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 2.1,
-          "y": 15.3,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-silla-madera",
-          "x": 3.1,
-          "y": 15.6,
-          "w": 0.45,
-          "h": 0.45
-        },
-        {
-          "tipo": "auto",
-          "tile": "tile-pickup",
-          "x": 5.6,
-          "y": 19.4,
-          "w": 5.3,
-          "h": 2.1
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-fardos",
-          "x": 15.8,
-          "y": 9.3,
-          "w": 1.2,
-          "h": 1.2
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-fardos",
-          "x": 19.2,
-          "y": 9.3,
-          "w": 1.2,
-          "h": 1.2
-        },
-        {
-          "tipo": "mesa",
-          "tile": "tile-mesa-larga-granero",
-          "x": 15.5,
-          "y": 15.5,
-          "w": 5,
-          "h": 1.1
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-banco-largo",
-          "x": 15.5,
-          "y": 14.85,
-          "w": 5,
-          "h": 0.45
-        },
-        {
-          "tipo": "silla",
-          "tile": "tile-banco-largo",
-          "x": 15.5,
-          "y": 16.75,
-          "w": 5,
-          "h": 0.45
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-fardos",
-          "x": 21.6,
-          "y": 19.5,
-          "w": 1.2,
-          "h": 1.2
-        },
-        {
-          "tipo": "palet",
-          "tile": "tile-fardos",
-          "x": 13.3,
-          "y": 19.6,
-          "w": 1.2,
-          "h": 1.2
-        }
-      ]
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>Qué es.</strong> El refugio de Montgomery (Refugio 3, Rebaño 2): casa principal, granero convertido en sala de reuniones de los Lobos, perreras con una docena de perros ghoul y, detrás del granero, las caravanas de los cazarrecompensas (MEN-03). El sótano, con el túnel de 300 m al embarcadero del río, es el plano <strong>granja-sotano</strong> (la escalera del vestíbulo baja ahí).</p>\n<p><strong>A1-E03 · El Sheriff pregunta (en el porche).</strong> «El camino de grava termina en una granja de madera oscura entre campos inundados. Hay perros por todas partes, quietos, que no ladran: miran. En el porche, en una mecedora, hay un hombre corpulento…» Montgomery no se levanta de la <strong>mecedora</strong> (tile); la hoja con la lista está sobre la <strong>baranda del porche</strong>, a su lado. «Cuando el último de ustedes sube los escalones» (los escalones del porche, al centro). No los invita a entrar: lo que se dice en el porche no entra en la casa (Hal lo sabe sin tirada). Los perros: tokens repartidos por el patio y la grava.</p>\n<p><strong>A3-E04 · La jauría duda (adentro).</strong> «Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chimenea apagada, una mesa larga de madera y, en la mesa, una tableta encendida… Los perros se tumban en el porche, de espaldas a la casa… Montgomery está de pie junto a la ventana.» La puerta delantera da directo a la <strong>sala</strong>: chimenea apagada contra el muro oeste, la mesa larga (tile) con la tableta (tile, luz «pantalla») y el sobre con la carta «M.V.», y la ventana del frente, que mira al porche. Abrí la puerta delantera a mano para esta escena.</p>\n<p><strong>Combate (A3-E04, o si la coterie ataca al Sheriff).</strong> Los doce perros salen de las <strong>perreras</strong> (detrás de la casa: cinco corrales de alambre con portones, puertas que dejan ver) y del porche; los seis cazarrecompensas, de las <strong>tres caravanas</strong> de atrás del granero (puerta en el lado oeste de cada una). Montgomery: Potencia de Sangre 5, Fortaleza 4.</p>\n<p><strong>A4-E02 · La redada (si es la granja).</strong> FIRSTLIGHT entra por el <strong>camino de grava</strong> (sur). Escapar: el túnel del sótano al embarcadero del río (bajar por la escalera del vestíbulo; plano granja-sotano); los perros cubren la retirada. Animalismo con los perros de la granja crea caos entre los operadores. Las caravanas y el granero son los otros objetivos de «salvar a los mortales».</p>\n<p><strong>El granero.</strong> Portón corredizo al oeste (abierto), puerta trasera al norte hacia las caravanas y una puerta chica al sur. Adentro, la mesa larga de los Lobos con sus bancos (tiles), la estufa de leña y, al fondo, los boxes viejos convertidos en depósito (tabiques bajos de madera: frenan el paso, no la vista).</p>\n<p><strong>La casa.</strong> Planta baja: sala, cocina, despacho del Sheriff (armero de vidrio), vestíbulo de la escalera al sótano y cuarto de botas con la puerta trasera hacia las perreras.</p>\n<p><strong>Detalle.</strong> Montgomery recibe sentado en el porche aunque llueva. Si invita a alguien a entrar, es que el asunto es grave. Si alguien intenta Dominación o Presencia en A1-E03, se levanta de la mecedora por primera vez: «Vuelve a hacer eso y te entierro en el campo de atrás.»</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (25) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir por el camino de grava al valle · Sendero al río y al embarcadero.</p>",
+      "moviles": []
     }
   },
   "_stats": {
