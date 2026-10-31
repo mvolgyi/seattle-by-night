@@ -1151,7 +1151,247 @@
       "_key": "!scenes.tiles!YItWymxAL9s6gXRx.wGtbb5XY3AZ7RMr4"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "m0wj8NMPs5nItJhE",
+      "name": "El señor Pell",
+      "displayName": 30,
+      "actorId": "eRE6FTNdGO76lzPK",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-09.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 470,
+      "y": 490,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-09",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Sube despacio por la pasarela con el maletín de aluminio."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.m0wj8NMPs5nItJhE"
+    },
+    {
+      "_id": "rG6AjhTtmSBNnm78",
+      "name": "Dawson",
+      "displayName": 30,
+      "actorId": "Nq5NRC7yFhdkA5Er",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 470,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-04-DAWSON",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Pell va apoyado en su brazo; mira hacia atrás y olfatea el aire."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.rG6AjhTtmSBNnm78"
+    },
+    {
+      "_id": "CdZHtfQ2KiwULENN",
+      "name": "Ghouls de seguridad de Halloway 1",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 350,
+      "y": 490,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Los dos ghouls que acompañan a Dawson, adelante en la pasarela."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.CdZHtfQ2KiwULENN"
+    },
+    {
+      "_id": "qjewgP5x32gaVt4S",
+      "name": "Ghouls de seguridad de Halloway 2",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 350,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.qjewgP5x32gaVt4S"
+    },
+    {
+      "_id": "LoXbF7PIqPriVYWu",
+      "name": "Charles Halloway",
+      "displayName": 30,
+      "actorId": "ys08GDwMs80NuOlf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 610,
+      "y": 550,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "PNJ-03",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Sólo si perdió la votación o quedó expuesto en el Consejo (A4-E01)."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.LoXbF7PIqPriVYWu"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1166,7 +1406,7 @@
       "id": "LUG-15",
       "plano": "terminal-ferry",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, 00:55.</strong> «La terminal está casi vacía bajo los fluorescentes. Un guardia mira el móvil, una máquina de café parpadea con un cartel de &quot;fuera de servicio&quot;. Afuera, el último ferry de la noche espera con todas las luces encendidas, como un edificio blanco de cuatro pisos flotando sobre el agua negra. La sirena suena una vez, larga. En la rampa de pasajeros, un anciano de traje oscuro y un maletín de aluminio sube despacio, apoyado en el brazo de un hombre enorme que mira hacia atrás y olfatea el aire.»</p>\n<p><strong>La sala de espera</strong> está en la planta alta. <strong>Bancos</strong> fijos en tres filas dobles; un puñado de pasajeros con cara de sueño (tokens). El <strong>guardia de seguridad</strong> está en su atril junto a la <strong>puerta de embarque</strong> (oeste), mirando el móvil. La <strong>máquina de café rota</strong> está contra la pared norte (en el mapa, apagada; la luz «pantalla» la hace parpadear). El cartel de «fuera de servicio» no está pintado.</p>\n<p><strong>La rampa de pasajeros.</strong> De la puerta de embarque sale la <strong>pasarela elevada</strong>, vidriada a los dos lados, hacia el oeste: al final se apoya en la popa del ferry. Cuando la coterie entra en la sala, <strong>Pell y Dawson están subiendo por la pasarela</strong> (colocalos a mitad de camino): por los vidrios se los ve desde la sala. Al final de la pasarela, la región «Subir al ferry» lleva a la cubierta de popa del salón (<code>ferry</code>). Subir sin que Dawson los vea: Destreza + Sigilo Dif 4 contra su Astucia + Consciencia (6 dados); Ofuscación no engaña su olfato, el viento del estrecho sí (+1 dado por barlovento: el viento entra del oeste, del agua).</p>\n<p><strong>La rampa de vehículos</strong> (abajo, a nivel del muelle, en la franja sur): la explanada de vehículos y la rampa que cruza el agua hasta la cubierta de coches. Quien llega en coche (Destreza + Conducir Dif 3 para llegar antes de las 00:55) aparece en la explanada; la región del extremo de la rampa lleva a la popa de la cubierta de coches (<code>ferry-coches</code>). La escalera del este baja a la calle y a la explanada (regiones gemelas en este mismo mapa) y la explanada sale a Alaskan Way (sin mapa).</p>\n<p>Los aseos (bloque rayado) no se juegan. La sirena suena a las 00:50: cinco minutos.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir a Alaskan Way.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, 00:55.</strong> «La terminal está casi vacía bajo los fluorescentes. Un guardia mira el móvil, una máquina de café parpadea con un cartel de &quot;fuera de servicio&quot;. Afuera, el último ferry de la noche espera con todas las luces encendidas, como un edificio blanco de cuatro pisos flotando sobre el agua negra. La sirena suena una vez, larga. En la rampa de pasajeros, un anciano de traje oscuro y un maletín de aluminio sube despacio, apoyado en el brazo de un hombre enorme que mira hacia atrás y olfatea el aire.»</p>\n<p><strong>La sala de espera</strong> está en la planta alta. <strong>Bancos</strong> fijos en tres filas dobles; un puñado de pasajeros con cara de sueño (tokens). El <strong>guardia de seguridad</strong> está en su atril junto a la <strong>puerta de embarque</strong> (oeste), mirando el móvil. La <strong>máquina de café rota</strong> está contra la pared norte (en el mapa, apagada; la luz «pantalla» la hace parpadear). El cartel de «fuera de servicio» no está pintado.</p>\n<p><strong>La rampa de pasajeros.</strong> De la puerta de embarque sale la <strong>pasarela elevada</strong>, vidriada a los dos lados, hacia el oeste: al final se apoya en la popa del ferry. Cuando la coterie entra en la sala, <strong>Pell y Dawson están subiendo por la pasarela</strong> (colocalos a mitad de camino): por los vidrios se los ve desde la sala. Al final de la pasarela, la región «Subir al ferry» lleva a la cubierta de popa del salón (<code>ferry</code>). Subir sin que Dawson los vea: Destreza + Sigilo Dif 4 contra su Astucia + Consciencia (6 dados); Ofuscación no engaña su olfato, el viento del estrecho sí (+1 dado por barlovento: el viento entra del oeste, del agua).</p>\n<p><strong>La rampa de vehículos</strong> (abajo, a nivel del muelle, en la franja sur): la explanada de vehículos y la rampa que cruza el agua hasta la cubierta de coches. Quien llega en coche (Destreza + Conducir Dif 3 para llegar antes de las 00:55) aparece en la explanada; la región del extremo de la rampa lleva a la popa de la cubierta de coches (<code>ferry-coches</code>). La escalera del este baja a la calle y a la explanada (regiones gemelas en este mismo mapa) y la explanada sale a Alaskan Way (sin mapa).</p>\n<p>Los aseos (bloque rayado) no se juegan. La sirena suena a las 00:50: cinco minutos.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell} (A4-E03): Sube despacio por la pasarela con el maletín de aluminio.</li><li>@UUID[Actor.Nq5NRC7yFhdkA5Er]{Dawson} (A4-E03): Pell va apoyado en su brazo; mira hacia atrás y olfatea el aire.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 1} · <em>oculto</em> (A4-E03): Los dos ghouls que acompañan a Dawson, adelante en la pasarela.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 2} · <em>oculto</em> (A4-E03)</li><li>@UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway} · <em>oculto</em> (A4-E03): Sólo si perdió la votación o quedó expuesto en el Consejo (A4-E01).</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir a Alaskan Way.</p>",
       "moviles": []
     }
   },

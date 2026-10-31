@@ -1534,7 +1534,56 @@
       "_key": "!scenes.tiles!67ExO7p40rqtAUeC.EQGSHI8KTK5kAVd7"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "t6q7BxUndfgjU7H8",
+      "name": "August Krell",
+      "displayName": 30,
+      "actorId": "Y53IKZpt8sl2sl65",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-12.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1550,
+      "y": 990,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "sHfAu91WLTAnuNaU",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry-coches",
+          "id": "PNJ-12",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Si sobrevivió a A3-E03: con 3 pasos, viene a ayudar a David; sin ellos, a recuperar los folios."
+        }
+      },
+      "_key": "!scenes.tokens!67ExO7p40rqtAUeC.t6q7BxUndfgjU7H8"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1549,7 +1598,7 @@
       "id": "LUG-15",
       "plano": "ferry-coches",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, la cubierta de coches.</strong> «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. <strong>Krell</strong>, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.</p>\n<p>Recorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa, franja rayada). A los lados, los <strong>casings</strong> (ventilación y máquinas, macizos) con las <strong>escaleras</strong> de estribor y babor que suben al salón (<code>ferry</code>). Los <strong>autos</strong> son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.</p>\n<p><strong>La popa abierta.</strong> La cubierta termina en la <strong>cadena de popa</strong>; el paso del centro se suelta al amarrar y por ahí entra la <strong>rampa de vehículos</strong> de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (13) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua por la popa abierta.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, la cubierta de coches.</strong> «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. <strong>Krell</strong>, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.</p>\n<p>Recorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa, franja rayada). A los lados, los <strong>casings</strong> (ventilación y máquinas, macizos) con las <strong>escaleras</strong> de estribor y babor que suben al salón (<code>ferry</code>). Los <strong>autos</strong> son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.</p>\n<p><strong>La popa abierta.</strong> La cubierta termina en la <strong>cadena de popa</strong>; el paso del centro se suelta al amarrar y por ahí entra la <strong>rampa de vehículos</strong> de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (13) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.Y53IKZpt8sl2sl65]{August Krell} · <em>oculto</em> (A4-E03): Si sobrevivió a A3-E03: con 3 pasos, viene a ayudar a David; sin ellos, a recuperar los folios.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua por la popa abierta.</p>",
       "moviles": []
     }
   },

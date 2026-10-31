@@ -65,6 +65,9 @@
         { "id": "escalera-bajar", "nombre": "Bajar por la escalera de servicio (40 m hasta el patio)", "x": 2.2, "y": 7.9, "w": 1.1, "h": 1, "destino": null, "pendiente": "no hay mapa del pie de los silos (patio de la Terminal 86)" },
         { "id": "silo-vecino", "nombre": "Boca del silo vecino (se trepa por dentro: Atletismo Dif 3)", "x": 13.1, "y": 6.9, "w": 0.8, "h": 0.8, "destino": null, "pendiente": "no hay mapa del interior del silo: quien trepa aparece acá" },
         { "id": "compuerta", "nombre": "Fuera de la compuerta: caída al agua, 30 m (4 contundente) / llegada desde la lancha", "x": 22.15, "y": 4.8, "w": 1.85, "h": 2.4, "destino": null, "pendiente": "no hay mapa de la bahía: la caída y la lancha las resuelve el Narrador" }
+      ],
+      "figuras": [
+        { "id": "PNJ-12", "x": 19, "y": 6, "oculto": false, "sentado": true, "escena": "A3-E03", "nota": "Sentado sobre la cinta, con el abrigo gris abierto. El rehén de A3-E01 va atado en la silla de la compuerta: poné su token ahí." }
       ]
     }
   ]

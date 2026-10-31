@@ -109,6 +109,15 @@
         { "id": "plaza", "nombre": "Plaza de Seattle Center (entrada y salida)", "x": 10, "y": 15.3, "w": 4, "h": 1.4, "destino": null, "pendiente": "no hay mapa de Seattle Center: el Narrador mueve los tokens a mano" },
         { "id": "desde-archivo", "nombre": "Llegada desde el archivo (arriba de la escalera)", "x": 21.7, "y": 8.2, "w": 1.2, "h": 1, "llegada": true },
         { "id": "bajar-al-archivo", "nombre": "Bajar al archivo de la Guardiana", "x": 21.7, "y": 10.8, "w": 1.2, "h": 1, "destino": "galeria-archivo:desde-galeria" }
+      ],
+      "figuras": [
+        { "id": "PNJ-14", "x": 10.6, "y": 13.7, "oculto": false, "escena": ["A2-E01", "A4-E01"], "nota": "La Guardiana, en su mostrador con el libro de registro, junto a la bandeja: «Sus teléfonos, por favor»." },
+        { "id": "PNJ-02", "x": 14.8, "y": 4.4, "oculto": false, "escena": ["A2-E01", "A4-E01"], "nota": "«Al fondo, junto a la terraza», al lado de las puertas de vidrio del norte." },
+        { "id": "PNJ-03", "x": 9.6, "y": 9, "oculto": false, "escena": ["A2-E01", "A4-E01"], "nota": "Se mueve por la sala como un anfitrión." },
+        { "id": "PNJ-15", "x": 15, "y": 2.2, "oculto": false, "escena": ["A2-E01", "A4-E01"], "nota": "Sola en la terraza, mirando el reloj." },
+        { "id": "PNJ-13", "x": 16.5, "y": 11.5, "oculto": false, "escena": ["A2-E01", "A4-E01"], "nota": "En el rincón sudeste, junto al vidrio de la plaza; nadie se le acerca." },
+        { "id": "PNJ-16", "x": 14.5, "y": 9.6, "oculto": false, "escena": ["A2-E01", "A4-E01"], "nota": "Con los auriculares al cuello; se acerca él." },
+        { "id": "PNJ-01", "x": 13.8, "y": 14.2, "oculto": true, "escena": ["A2-E01", "A4-E01"], "nota": "Llega tarde y se va temprano." }
       ]
     },
     {

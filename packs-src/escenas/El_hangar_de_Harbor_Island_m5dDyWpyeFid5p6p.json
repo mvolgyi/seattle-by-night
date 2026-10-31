@@ -1943,9 +1943,499 @@
         }
       },
       "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.OPUAbvAoIkJI9l7H"
+    },
+    {
+      "_id": "VnQVA55YnwzCvhHw",
+      "name": "la furgoneta de FIRSTLIGHT con el generador de luz solar artificial, frente a la puerta grande (A4-E02)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-furgoneta-firstlight.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1850,
+      "y": 2095,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 16,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.VnQVA55YnwzCvhHw"
+    },
+    {
+      "_id": "XpOtnYzZeBJ8tJuS",
+      "name": "el dron con cámara térmica, «justo encima del techo de chapa» (A4-E02)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-dron.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1830,
+      "y": 1630,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.XpOtnYzZeBJ8tJuS"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "E41mVWyVObtzggYG",
+      "name": "Tom Whitman",
+      "displayName": 30,
+      "actorId": "TJOGIKk4Ehe5kwXA",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-05.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1080,
+      "y": 835,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "PNJ-05",
+          "escenas": [
+            "A1-E01",
+            "A4-E02",
+            "AVE-01-EPI"
+          ],
+          "nota": "Junto a su banco de trabajo, limpiando una pistola (A4-E02 y la Coda 3)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.E41mVWyVObtzggYG"
+    },
+    {
+      "_id": "1S8U4d35sogXShhT",
+      "name": "Helen Ward",
+      "displayName": 30,
+      "actorId": "cHnmNaT8zN7q4yvy",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1080,
+      "y": 1120,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": true,
+      "disposition": 1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "PNJ-04",
+          "escenas": [
+            "A1-E01",
+            "A4-E02"
+          ],
+          "nota": "Sólo si la coterie la trajo al hangar (A1-E01) o si está acá cuando llega la redada (A4-E02)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.1S8U4d35sogXShhT"
+    },
+    {
+      "_id": "HdGh7tjTJvR4n3Yy",
+      "name": "Teresa «Tess» Navarro",
+      "displayName": 30,
+      "actorId": "cacjzuu13Bv7mJH5",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1440,
+      "y": 1950,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "CAZ-01",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Navarro, en punta de la pareja de la puerta grande (INT-03)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.HdGh7tjTJvR4n3Yy"
+    },
+    {
+      "_id": "FnRUw0c730AgrrOf",
+      "name": "Lena Sorensen",
+      "displayName": 30,
+      "actorId": "2hdWrhkD65ZNl4Xs",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1440,
+      "y": 2070,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "CAZ-03",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Sorensen, con la carga de brecha de la puerta grande (INT-03)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.FnRUw0c730AgrrOf"
+    },
+    {
+      "_id": "RTlILAi8IFpIAVle",
+      "name": "Cole Ransom",
+      "displayName": 30,
+      "actorId": "5ywnpdrw93wmy235",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1320,
+      "y": 2010,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "MEN-11",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Ransom, tercero en la pareja de la puerta grande; si en INT-03 dijo que conoce a Bear, pasalo al perímetro."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.RTlILAi8IFpIAVle"
+    },
+    {
+      "_id": "wFWKjw30b4FYv7YW",
+      "name": "Owen Pak",
+      "displayName": 30,
+      "actorId": "yyJApTmnANPPdw3O",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1900,
+      "y": 2050,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "CAZ-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Pak, dentro de la furgoneta, con el dron."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.wFWKjw30b4FYv7YW"
+    },
+    {
+      "_id": "WPeEjq43oWHPA7HQ",
+      "name": "Equipo táctico de FIRSTLIGHT 1",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1250,
+      "y": 160,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "«Dos por el muelle»: la pareja del muelle trasero."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.WPeEjq43oWHPA7HQ"
+    },
+    {
+      "_id": "xstJr6Cwnc9Z9nrG",
+      "name": "Equipo táctico de FIRSTLIGHT 2",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1130,
+      "y": 160,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 7,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "«Dos por el muelle»: la pareja del muelle trasero."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.xstJr6Cwnc9Z9nrG"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1960,7 +2450,7 @@
       "id": "LUG-01",
       "plano": "hangar",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.asQ9jeLO1qmdEJrG]{Epílogo · Lo que el agua no se lleva}</p>\n<p><strong>Qué es.</strong> El refugio de David (Refugio 3, con Acceso marítimo y Arsenal) y la base de la coterie. Por fuera, un hangar de chapa ondulada entre contenedores apilados, con el logo descolorido de una logística que ya no existe. Por dentro huele a aceite de armas, sal y café recalentado; las luces son de obra, colgadas de cables (luces «lampara»). Dentro del hangar no se discute de clanes ni de sires (COT-00).</p>\n<p><strong>Nave principal.</strong> Contra el muro norte, el arsenal: el armero de fusiles (cuatro AR/M4, uno con rayas de pintura blanca; el fusil de cerrojo arriba; la escopeta de corredera), el panel de armas blancas (machetes, cuchillos largos, dos espadas, la katana con saya, tres bates) y, en la esquina, las estanterías de <strong>cajas de munición ordenadas por calibre</strong>. En el muro oeste, el panel de pistolas y revólveres con los cargadores al lado (la de cinta roja en la empuñadura, el revólver con el cilindro marcado). En el medio, el <strong>banco de trabajo de Bear</strong>: ahí limpia la pistola en A4-E02 y en la Coda 3. La mesa plegable de operaciones y las sillas son móviles.</p>\n<p><strong>La trampilla del túnel de carga.</strong> En el piso de la nave, al sudoeste, <strong>debajo de un palé de cajas</strong> (tile): una trampilla de acero de un túnel de carga antiguo que sale a <strong>200 m, junto a la Terminal 46</strong>. Bear lo conoce. Escapar por ahí en A4-E02: Destreza + Sigilo Dif 3 para todo el grupo. La región «Bajar al túnel» no tiene destino: no hay mapa del túnel.</p>\n<p><strong>Cuarto blindado.</strong> Sin ventanas, puerta de acero. Ahí duerme David (el catre militar es móvil). Es el sitio más seguro contra la luz UV de la redada.</p>\n<p><strong>Habitación de Bear.</strong> Cama, taquilla, una mesita y la <strong>caja fuerte</strong> (DOC-12: la nota doblada en cuatro, debajo de una pistola). En la Coda 3 Bear la sacó y la tiene sobre el banco de trabajo.</p>\n<p><strong>Rincón del café.</strong> Mesada con pileta y la cafetera; en la <strong>lata de café</strong>, la llave del camión (DOC-12). El catre de ese rincón es el de las noches de Bear «mirando al techo del hangar». La silla plegable es la de David.</p>\n<p><strong>Muelle cubierto.</strong> La dársena se mete en el edificio desde la bahía; la cierra una persiana de chapa sobre el agua. Pasarelas de madera a los dos lados y al fondo. <strong>La lancha</strong> (tile) es la otra vía de escape de A4-E02, pero el dron con cámara térmica la ve: escapan, el Termómetro no baja. La región «Salir en lancha» queda sin destino (no hay mapa de la bahía).</p>\n<p><strong>La redada (A4-E02, 21:40).</strong> Las luces de obra parpadean y se apagan (apagalas a mano); el dron zumba sobre el techo de chapa. «Seis. Dos por el muelle, cuatro por la puerta»: dos operadores llegan por el <strong>muelle trasero</strong> (puerta del muelle y persiana de la dársena) y cuatro por el <strong>patio</strong> (la puerta grande y la puerta de servicio del sur); la furgoneta con el generador de luz solar artificial se para frente a la puerta grande y la luz blanca entra por debajo. Okafor dirige desde un coche a una manzana (fuera del mapa). Destruir pruebas (el arsenal, los teléfonos, la USB, los papeles de Helen): Destreza + Artesanía o Inteligencia + Tecnología Dif 2, un turno cada una. Ratas del hangar: Animalismo.</p>\n<p><strong>A1-E01 en el hangar.</strong> Si la coterie trae a Helen enseguida, ella ve por primera vez el arsenal de Bear y el catre de David (GAN-02).</p>\n<p><strong>Accesos.</strong> Puerta grande (persiana de 5 m) y puerta de servicio al sur, puerta lateral al callejón de contenedores al oeste, puerta del muelle al norte y la persiana de la dársena sobre el agua.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (16) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al túnel de carga (sale junto a la Terminal 46) · Salir en lancha a Elliott Bay · El muelle trasero sigue hacia el oeste · Salir al patio de contenedores de Harbor Island.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.104UV0anmZHNCTrD]{El hangar de Harbor Island}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.asQ9jeLO1qmdEJrG]{Epílogo · Lo que el agua no se lleva}</p>\n<p><strong>Qué es.</strong> El refugio de David (Refugio 3, con Acceso marítimo y Arsenal) y la base de la coterie. Por fuera, un hangar de chapa ondulada entre contenedores apilados, con el logo descolorido de una logística que ya no existe. Por dentro huele a aceite de armas, sal y café recalentado; las luces son de obra, colgadas de cables (luces «lampara»). Dentro del hangar no se discute de clanes ni de sires (COT-00).</p>\n<p><strong>Nave principal.</strong> Contra el muro norte, el arsenal: el armero de fusiles (cuatro AR/M4, uno con rayas de pintura blanca; el fusil de cerrojo arriba; la escopeta de corredera), el panel de armas blancas (machetes, cuchillos largos, dos espadas, la katana con saya, tres bates) y, en la esquina, las estanterías de <strong>cajas de munición ordenadas por calibre</strong>. En el muro oeste, el panel de pistolas y revólveres con los cargadores al lado (la de cinta roja en la empuñadura, el revólver con el cilindro marcado). En el medio, el <strong>banco de trabajo de Bear</strong>: ahí limpia la pistola en A4-E02 y en la Coda 3. La mesa plegable de operaciones y las sillas son móviles.</p>\n<p><strong>La trampilla del túnel de carga.</strong> En el piso de la nave, al sudoeste, <strong>debajo de un palé de cajas</strong> (tile): una trampilla de acero de un túnel de carga antiguo que sale a <strong>200 m, junto a la Terminal 46</strong>. Bear lo conoce. Escapar por ahí en A4-E02: Destreza + Sigilo Dif 3 para todo el grupo. La región «Bajar al túnel» no tiene destino: no hay mapa del túnel.</p>\n<p><strong>Cuarto blindado.</strong> Sin ventanas, puerta de acero. Ahí duerme David (el catre militar es móvil). Es el sitio más seguro contra la luz UV de la redada.</p>\n<p><strong>Habitación de Bear.</strong> Cama, taquilla, una mesita y la <strong>caja fuerte</strong> (DOC-12: la nota doblada en cuatro, debajo de una pistola). En la Coda 3 Bear la sacó y la tiene sobre el banco de trabajo.</p>\n<p><strong>Rincón del café.</strong> Mesada con pileta y la cafetera; en la <strong>lata de café</strong>, la llave del camión (DOC-12). El catre de ese rincón es el de las noches de Bear «mirando al techo del hangar». La silla plegable es la de David.</p>\n<p><strong>Muelle cubierto.</strong> La dársena se mete en el edificio desde la bahía; la cierra una persiana de chapa sobre el agua. Pasarelas de madera a los dos lados y al fondo. <strong>La lancha</strong> (tile) es la otra vía de escape de A4-E02, pero el dron con cámara térmica la ve: escapan, el Termómetro no baja. La región «Salir en lancha» queda sin destino (no hay mapa de la bahía).</p>\n<p><strong>La redada (A4-E02, 21:40).</strong> Las luces de obra parpadean y se apagan (apagalas a mano); el dron zumba sobre el techo de chapa. «Seis. Dos por el muelle, cuatro por la puerta»: dos operadores llegan por el <strong>muelle trasero</strong> (puerta del muelle y persiana de la dársena) y cuatro por el <strong>patio</strong> (la puerta grande y la puerta de servicio del sur); la furgoneta con el generador de luz solar artificial se para frente a la puerta grande y la luz blanca entra por debajo. Okafor dirige desde un coche a una manzana (fuera del mapa). Destruir pruebas (el arsenal, los teléfonos, la USB, los papeles de Helen): Destreza + Artesanía o Inteligencia + Tecnología Dif 2, un turno cada una. Ratas del hangar: Animalismo.</p>\n<p><strong>A1-E01 en el hangar.</strong> Si la coterie trae a Helen enseguida, ella ve por primera vez el arsenal de Bear y el catre de David (GAN-02).</p>\n<p><strong>Accesos.</strong> Puerta grande (persiana de 5 m) y puerta de servicio al sur, puerta lateral al callejón de contenedores al oeste, puerta del muelle al norte y la persiana de la dársena sobre el agua.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (18) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.TJOGIKk4Ehe5kwXA]{Tom Whitman} (A1-E01, A4-E02, AVE-01-EPI): Junto a su banco de trabajo, limpiando una pistola (A4-E02 y la Coda 3).</li><li>@UUID[Actor.cHnmNaT8zN7q4yvy]{Helen Ward} · <em>oculto</em> (A1-E01, A4-E02): Sólo si la coterie la trajo al hangar (A1-E01) o si está acá cuando llega la redada (A4-E02).</li><li>@UUID[Actor.cacjzuu13Bv7mJH5]{Teresa «Tess» Navarro} · <em>oculto</em> (A4-E02): Navarro, en punta de la pareja de la puerta grande (INT-03).</li><li>@UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen} · <em>oculto</em> (A4-E02): Sorensen, con la carga de brecha de la puerta grande (INT-03).</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>oculto</em> (A4-E02): Ransom, tercero en la pareja de la puerta grande; si en INT-03 dijo que conoce a Bear, pasalo al perímetro.</li><li>@UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak} · <em>oculto</em> (A4-E02): Pak, dentro de la furgoneta, con el dron.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT 1} · <em>oculto</em> (A4-E02): «Dos por el muelle»: la pareja del muelle trasero.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT 2} · <em>oculto</em> (A4-E02): «Dos por el muelle»: la pareja del muelle trasero.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al túnel de carga (sale junto a la Terminal 46) · Salir en lancha a Elliott Bay · El muelle trasero sigue hacia el oeste · Salir al patio de contenedores de Harbor Island.</p>",
       "moviles": []
     }
   },

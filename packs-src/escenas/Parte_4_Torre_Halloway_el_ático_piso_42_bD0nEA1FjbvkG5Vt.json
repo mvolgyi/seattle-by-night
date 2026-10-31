@@ -1830,7 +1830,626 @@
       "_key": "!scenes.tiles!bD0nEA1FjbvkG5Vt.YIkGfLja5E1WxE73"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "luSloR69qDF5qaaV",
+      "name": "Charles Halloway",
+      "displayName": 30,
+      "actorId": "ys08GDwMs80NuOlf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 170,
+      "y": 600,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-03",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "De pie en la cabecera, de espaldas a la bahía."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.luSloR69qDF5qaaV"
+    },
+    {
+      "_id": "ODR6qDTbym8gqx0R",
+      "name": "El señor Pell",
+      "displayName": 30,
+      "actorId": "eRE6FTNdGO76lzPK",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-09.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 110,
+      "y": 710,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "MEN-09",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "De pie detrás de Halloway, entre la cabecera y el vidrio."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.ODR6qDTbym8gqx0R"
+    },
+    {
+      "_id": "OUf3qBjLm5DvPaRL",
+      "name": "Julian Ashby",
+      "displayName": 30,
+      "actorId": "GidWqhJ9e6JUxiTS",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-10.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 110,
+      "y": 490,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-10",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "Sólo si nadie juega a Celeste: de pie detrás de Halloway."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.OUf3qBjLm5DvPaRL"
+    },
+    {
+      "_id": "1AaU0E91iDY62FXX",
+      "name": "Solène Marchetti",
+      "displayName": 30,
+      "actorId": "Zs7rGAyl8O4vOx0u",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-14.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 440,
+      "y": 390,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-14",
+          "escenas": [
+            "A4-E01"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.1AaU0E91iDY62FXX"
+    },
+    {
+      "_id": "MIgi5q0jcMBL7wxt",
+      "name": "Dra. Anneliese Voight",
+      "displayName": 30,
+      "actorId": "75UbIo5Kl9zVsd0V",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-15.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 620,
+      "y": 390,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-15",
+          "escenas": [
+            "A4-E01"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.MIgi5q0jcMBL7wxt"
+    },
+    {
+      "_id": "KiDq9HEZtoy1rXF7",
+      "name": "Abel Thornquist",
+      "displayName": 30,
+      "actorId": "NDI68PA4J59Be6ts",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 800,
+      "y": 390,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-13",
+          "escenas": [
+            "A4-E01"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.KiDq9HEZtoy1rXF7"
+    },
+    {
+      "_id": "dS68IppkapnTBZJv",
+      "name": "Wendell Fry",
+      "displayName": 30,
+      "actorId": "XuP20cPC3T1EiCxD",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 440,
+      "y": 800,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-16",
+          "escenas": [
+            "A4-E01"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.dS68IppkapnTBZJv"
+    },
+    {
+      "_id": "HyUmurn0fBwjMlhW",
+      "name": "Ethan Montgomery",
+      "displayName": 30,
+      "actorId": "dd9CRIHVGO38YUhN",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 620,
+      "y": 800,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 7,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-01",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "Si no está enfrentado a la coterie."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.HyUmurn0fBwjMlhW"
+    },
+    {
+      "_id": "rg3mMdfguEKv7UkP",
+      "name": "Marcus Whitmore",
+      "displayName": 30,
+      "actorId": "mS4hVbBIId47tDop",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1180,
+      "y": 550,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 8,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PNJ-02",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "Entra después de la coterie, por el ascensor privado."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.rg3mMdfguEKv7UkP"
+    },
+    {
+      "_id": "Ba4ZoIdEmKqcinsX",
+      "name": "Ghouls de seguridad de Halloway 1",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1400,
+      "y": 990,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 9,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "Seguridad ghoul del piso 40: detienen a David si Halloway da la orden."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.Ba4ZoIdEmKqcinsX"
+    },
+    {
+      "_id": "RGgiqkWAS4Js6J1s",
+      "name": "Ghouls de seguridad de Halloway 2",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1550,
+      "y": 790,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 10,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E01"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.RGgiqkWAS4Js6J1s"
+    },
+    {
+      "_id": "pcCVYDjhT5NY9VhX",
+      "name": "Los perros de Montgomery 1",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1400,
+      "y": 790,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 11,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A4-E01"
+          ],
+          "nota": "Vienen con Montgomery: «Los perros, en el vestíbulo, empiezan a aullar»."
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.pcCVYDjhT5NY9VhX"
+    },
+    {
+      "_id": "HqjlT92afH7NdnGU",
+      "name": "Los perros de Montgomery 2",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1550,
+      "y": 990,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "nzOgD40Pw9atcm1z",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 12,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "torre-atico",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A4-E01"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!bD0nEA1FjbvkG5Vt.HqjlT92afH7NdnGU"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1845,7 +2464,7 @@
       "id": "LUG-06",
       "plano": "torre-atico",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Consejo de Primogenitura (A4-E01, Noche 8, 22:30).</strong> «El ascensor privado sube cuarenta y dos pisos sin hacer ruido. Se abre a una sala enorme con una sola pared de cristal sobre Elliott Bay»: la cabina se abre directamente a la <strong>sala del Consejo</strong>, por su pared este. La pared oeste es entera de vidrio (la bahía, las grúas, los ferris, la isla del Sabueso: fuera del mapa). «En el centro hay una mesa larga de madera oscura con siete sillas»: la mesa corre de este a oeste, con la <strong>cabecera contra la pared de cristal</strong>; Halloway, de pie en la cabecera, de espaldas a la bahía y de cara al ascensor por el que entra el Príncipe. Seis sillas a los lados (Whitmore, Marchetti, Voight, Thornquist, Fry y el Sheriff). Delante de cada silla, una carpeta cerrada con un nombre (tiles sin texto; el contenido es AYU-08). Celeste (o su sustituto) y el señor Pell, de pie detrás de Halloway, entre la cabecera y el vidrio. La coterie, de pie. Los muebles de la sala «parecen no haber sido usados nunca».</p>\n<p><strong>El vestíbulo.</strong> Detrás de la doble puerta del este esperan la seguridad ghoul (MEN-04, del piso 40) y los perros de Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».</p>\n<p><strong>El despacho de Halloway</strong>, en la esquina noreste, con vidrio al norte y al este. Para <strong>negociar con Halloway antes del Consejo</strong>, en privado.</p>\n<p><strong>Salir (Escapar).</strong> O por el <strong>ascensor privado</strong>, que necesita la llave de Halloway o la de Pell (la puerta de la cabina está cerrada: la abre la llave), o por la <strong>escalera de emergencia</strong> del vestíbulo: cuarenta y dos pisos (Resistencia + Atletismo Dif 3 para no llegar abajo con el Hambre a 5); la región del pie del tramo marca la bajada, sin mapa del resto de la escalera.</p>\n<p><strong>El ascensor privado</strong> va de la calle al ático y del ático a la bóveda del nivel −3, y es el único acceso a la bóveda. En la cabina, la mitad de la puerta recibe y la mitad del fondo baja a la bóveda (plano «torre-boveda»). La parada de la calle no tiene mapa: el Narrador mueve los tokens a mano.</p>\n<p><strong>Si Halloway huye</strong> (exposición total o derrota): «Y se va hacia el ascensor», baja al nivel −3, saca el maletín de la bóveda y se lo da a Pell. <strong>Si gana</strong>, a las 00:30 sale Pell con el maletín por el mismo ascensor.</p>\n<p><strong>Combate:</strong> atacar a Halloway aquí, delante de la Primogenitura, da la votación por ganada a su favor. Halloway no pelea: Mirada aterradora y al ascensor.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (21) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar 42 pisos por la escalera de emergencia.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.L6Fl1S0tjkWno2we]{Torre Halloway}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Consejo de Primogenitura (A4-E01, Noche 8, 22:30).</strong> «El ascensor privado sube cuarenta y dos pisos sin hacer ruido. Se abre a una sala enorme con una sola pared de cristal sobre Elliott Bay»: la cabina se abre directamente a la <strong>sala del Consejo</strong>, por su pared este. La pared oeste es entera de vidrio (la bahía, las grúas, los ferris, la isla del Sabueso: fuera del mapa). «En el centro hay una mesa larga de madera oscura con siete sillas»: la mesa corre de este a oeste, con la <strong>cabecera contra la pared de cristal</strong>; Halloway, de pie en la cabecera, de espaldas a la bahía y de cara al ascensor por el que entra el Príncipe. Seis sillas a los lados (Whitmore, Marchetti, Voight, Thornquist, Fry y el Sheriff). Delante de cada silla, una carpeta cerrada con un nombre (tiles sin texto; el contenido es AYU-08). Celeste (o su sustituto) y el señor Pell, de pie detrás de Halloway, entre la cabecera y el vidrio. La coterie, de pie. Los muebles de la sala «parecen no haber sido usados nunca».</p>\n<p><strong>El vestíbulo.</strong> Detrás de la doble puerta del este esperan la seguridad ghoul (MEN-04, del piso 40) y los perros de Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».</p>\n<p><strong>El despacho de Halloway</strong>, en la esquina noreste, con vidrio al norte y al este. Para <strong>negociar con Halloway antes del Consejo</strong>, en privado.</p>\n<p><strong>Salir (Escapar).</strong> O por el <strong>ascensor privado</strong>, que necesita la llave de Halloway o la de Pell (la puerta de la cabina está cerrada: la abre la llave), o por la <strong>escalera de emergencia</strong> del vestíbulo: cuarenta y dos pisos (Resistencia + Atletismo Dif 3 para no llegar abajo con el Hambre a 5); la región del pie del tramo marca la bajada, sin mapa del resto de la escalera.</p>\n<p><strong>El ascensor privado</strong> va de la calle al ático y del ático a la bóveda del nivel −3, y es el único acceso a la bóveda. En la cabina, la mitad de la puerta recibe y la mitad del fondo baja a la bóveda (plano «torre-boveda»). La parada de la calle no tiene mapa: el Narrador mueve los tokens a mano.</p>\n<p><strong>Si Halloway huye</strong> (exposición total o derrota): «Y se va hacia el ascensor», baja al nivel −3, saca el maletín de la bóveda y se lo da a Pell. <strong>Si gana</strong>, a las 00:30 sale Pell con el maletín por el mismo ascensor.</p>\n<p><strong>Combate:</strong> atacar a Halloway aquí, delante de la Primogenitura, da la votación por ganada a su favor. Halloway no pelea: Mirada aterradora y al ascensor.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (21) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway} (A4-E01): De pie en la cabecera, de espaldas a la bahía.</li><li>@UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell} (A4-E01): De pie detrás de Halloway, entre la cabecera y el vidrio.</li><li>@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby} · <em>oculto</em> (A4-E01): Sólo si nadie juega a Celeste: de pie detrás de Halloway.</li><li>@UUID[Actor.Zs7rGAyl8O4vOx0u]{Solène Marchetti} (A4-E01)</li><li>@UUID[Actor.75UbIo5Kl9zVsd0V]{Dra. Anneliese Voight} (A4-E01)</li><li>@UUID[Actor.NDI68PA4J59Be6ts]{Abel Thornquist} (A4-E01)</li><li>@UUID[Actor.XuP20cPC3T1EiCxD]{Wendell Fry} (A4-E01)</li><li>@UUID[Actor.dd9CRIHVGO38YUhN]{Ethan Montgomery} · <em>oculto</em> (A4-E01): Si no está enfrentado a la coterie.</li><li>@UUID[Actor.mS4hVbBIId47tDop]{Marcus Whitmore} · <em>oculto</em> (A4-E01): Entra después de la coterie, por el ascensor privado.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 1} · <em>oculto</em> (A4-E01): Seguridad ghoul del piso 40: detienen a David si Halloway da la orden.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 2} · <em>oculto</em> (A4-E01)</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 1} · <em>oculto</em> (A4-E01): Vienen con Montgomery: «Los perros, en el vestíbulo, empiezan a aullar».</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 2} · <em>oculto</em> (A4-E01)</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar 42 pisos por la escalera de emergencia.</p>",
       "moviles": []
     }
   },

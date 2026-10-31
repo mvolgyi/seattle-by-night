@@ -76,6 +76,9 @@
       "regiones": [
         { "id": "subir-pioneer", "nombre": "Subir a Pioneer Square", "x": 0.15, "y": 7.1, "w": 1, "h": 1.8, "destino": null, "pendiente": "no hay mapa de la calle (Pioneer Square): el Narrador mueve los tokens a mano" },
         { "id": "desde-pioneer", "nombre": "Llegada desde Pioneer Square (ante la puerta de hierro)", "x": 2.05, "y": 7.1, "w": 0.9, "h": 1.8, "llegada": true }
+      ],
+      "figuras": [
+        { "id": "PNJ-13", "x": 20.9, "y": 2.75, "oculto": false, "sentado": true, "escena": "A1-E04", "nota": "En el sillón del barbero, «como si fuera un trono»." }
       ]
     }
   ]

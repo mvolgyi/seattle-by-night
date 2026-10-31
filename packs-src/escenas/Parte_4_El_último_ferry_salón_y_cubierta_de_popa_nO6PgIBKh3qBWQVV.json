@@ -1584,7 +1584,294 @@
     }
   ],
   "tiles": [],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "YJ0LocbLGIPFDDtA",
+      "name": "El señor Pell",
+      "displayName": 30,
+      "actorId": "eRE6FTNdGO76lzPK",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-09.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 865,
+      "y": 2020,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "U6wpwA49JF5P7hD6",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry",
+          "id": "MEN-09",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "En el reservado de babor, junto a la ventana, con el maletín esposado a la muñeca (Astucia + Investigación Dif 3 para encontrarlo)."
+        }
+      },
+      "_key": "!scenes.tokens!nO6PgIBKh3qBWQVV.YJ0LocbLGIPFDDtA"
+    },
+    {
+      "_id": "EdFSHd1EGTShlsf4",
+      "name": "Dawson",
+      "displayName": 30,
+      "actorId": "Nq5NRC7yFhdkA5Er",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 910,
+      "y": 1830,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "U6wpwA49JF5P7hD6",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry",
+          "id": "MEN-04-DAWSON",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Cerca de Pell."
+        }
+      },
+      "_key": "!scenes.tokens!nO6PgIBKh3qBWQVV.EdFSHd1EGTShlsf4"
+    },
+    {
+      "_id": "6amrAyshwTlYT6lK",
+      "name": "Ghouls de seguridad de Halloway 1",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 790,
+      "y": 1830,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "U6wpwA49JF5P7hD6",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!nO6PgIBKh3qBWQVV.6amrAyshwTlYT6lK"
+    },
+    {
+      "_id": "8tvLpgiqCLPHUXqu",
+      "name": "Ghouls de seguridad de Halloway 2",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1030,
+      "y": 1830,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "U6wpwA49JF5P7hD6",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!nO6PgIBKh3qBWQVV.8tvLpgiqCLPHUXqu"
+    },
+    {
+      "_id": "sbqTebv3AwX2oSaU",
+      "name": "Charles Halloway",
+      "displayName": 30,
+      "actorId": "ys08GDwMs80NuOlf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1005,
+      "y": 2020,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "U6wpwA49JF5P7hD6",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry",
+          "id": "PNJ-03",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Sólo si va a bordo (perdió la votación o quedó expuesto). Negocia en la cubierta de popa; huye hacia el puente."
+        }
+      },
+      "_key": "!scenes.tokens!nO6PgIBKh3qBWQVV.sbqTebv3AwX2oSaU"
+    },
+    {
+      "_id": "7BmPxsyISkkzevqC",
+      "name": "Wendell Fry",
+      "displayName": 30,
+      "actorId": "XuP20cPC3T1EiCxD",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1095,
+      "y": 280,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "U6wpwA49JF5P7hD6",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "ferry",
+          "id": "PNJ-16",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Sólo si votó con la coterie: en otro reservado, con los auriculares puestos."
+        }
+      },
+      "_key": "!scenes.tokens!nO6PgIBKh3qBWQVV.7BmPxsyISkkzevqC"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1599,7 +1886,7 @@
       "id": "LUG-15",
       "plano": "ferry",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, a bordo.</strong> El último ferry a Bainbridge: 35 minutos de travesía, unos <strong>cuarenta pasajeros</strong> mortales, seis tripulantes y <strong>cámaras de seguridad en los salones</strong> (tres objetos «CCTV» en el mapa; no son ANOMALY). Este plano es la <strong>cubierta de pasajeros</strong> (segundo piso del barco) recortada a la popa: el salón sigue hacia proa (franja rayada) y no se juega.</p>\n<p><strong>Pell</strong> «está en el salón de pasajeros del segundo piso, junto a una ventana, con el maletín esposado a la muñeca» (Astucia + Investigación Dif 3 para encontrarlo): ponelo en el <strong>reservado de babor</strong> marcado, junto a la ventana, con Dawson y los ghouls cerca. Si votó con la coterie, <strong>Fry</strong> está en otro reservado con los auriculares puestos («El último barco de la noche. Te lo dije»). En el salón, cuarenta testigos: cualquier acción sobrenatural visible es <strong>Termómetro +2</strong>. Presencia (Pavor) para que los pasajeros se queden en el salón: Carisma + Intimidación Dif 3. Potencia para romper la esposa del maletín sin cortarle la mano a Pell: Fuerza + Latrocinio Dif 3.</p>\n<p><strong>Cubierta exterior de popa.</strong> Al zarpar, la pasarela se retira: el <strong>portón</strong> de la borda queda cerrado y la región «Bajar por la rampa» sólo funciona amarrado (desactivala al zarpar, a las 00:55). Acá se negocia con Halloway si va a bordo («Ofrece todo: dinero, dominio, el puesto de Sheriff»). <strong>Saltar al agua desde la popa: 6 metros</strong>; el agua está a 9 grados y la corriente es fuerte: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre, que sigue al ferry y puede abordar por popa. Si se salta con el maletín, el disco se pierde. Tirar el maletín al agua es la forma más rápida de destruirlo.</p>\n<p><strong>Transiciones.</strong> Escaleras de estribor y babor (junto a la popa del salón) bajan a la <strong>cubierta de coches</strong> (<code>ferry-coches</code>). La <strong>escalera al puente</strong>, en el centro del salón, sube a la cubierta superior y al <strong>puente</strong> (<code>ferry-puente</code>): es hacia donde huye Halloway («usa Mirada aterradora y huye hacia el puente para tomar el control del barco»).</p>\n<p><strong>Cafetería</strong> en el centro del salón (mostradores fijos). Los bancos y mesas de los reservados están atornillados al piso (son fijos; no hay muebles móviles en este plano).</p>\n\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua desde la popa (6 m) · Saltar al agua desde la popa (6 m).</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, a bordo.</strong> El último ferry a Bainbridge: 35 minutos de travesía, unos <strong>cuarenta pasajeros</strong> mortales, seis tripulantes y <strong>cámaras de seguridad en los salones</strong> (tres objetos «CCTV» en el mapa; no son ANOMALY). Este plano es la <strong>cubierta de pasajeros</strong> (segundo piso del barco) recortada a la popa: el salón sigue hacia proa (franja rayada) y no se juega.</p>\n<p><strong>Pell</strong> «está en el salón de pasajeros del segundo piso, junto a una ventana, con el maletín esposado a la muñeca» (Astucia + Investigación Dif 3 para encontrarlo): ponelo en el <strong>reservado de babor</strong> marcado, junto a la ventana, con Dawson y los ghouls cerca. Si votó con la coterie, <strong>Fry</strong> está en otro reservado con los auriculares puestos («El último barco de la noche. Te lo dije»). En el salón, cuarenta testigos: cualquier acción sobrenatural visible es <strong>Termómetro +2</strong>. Presencia (Pavor) para que los pasajeros se queden en el salón: Carisma + Intimidación Dif 3. Potencia para romper la esposa del maletín sin cortarle la mano a Pell: Fuerza + Latrocinio Dif 3.</p>\n<p><strong>Cubierta exterior de popa.</strong> Al zarpar, la pasarela se retira: el <strong>portón</strong> de la borda queda cerrado y la región «Bajar por la rampa» sólo funciona amarrado (desactivala al zarpar, a las 00:55). Acá se negocia con Halloway si va a bordo («Ofrece todo: dinero, dominio, el puesto de Sheriff»). <strong>Saltar al agua desde la popa: 6 metros</strong>; el agua está a 9 grados y la corriente es fuerte: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre, que sigue al ferry y puede abordar por popa. Si se salta con el maletín, el disco se pierde. Tirar el maletín al agua es la forma más rápida de destruirlo.</p>\n<p><strong>Transiciones.</strong> Escaleras de estribor y babor (junto a la popa del salón) bajan a la <strong>cubierta de coches</strong> (<code>ferry-coches</code>). La <strong>escalera al puente</strong>, en el centro del salón, sube a la cubierta superior y al <strong>puente</strong> (<code>ferry-puente</code>): es hacia donde huye Halloway («usa Mirada aterradora y huye hacia el puente para tomar el control del barco»).</p>\n<p><strong>Cafetería</strong> en el centro del salón (mostradores fijos). Los bancos y mesas de los reservados están atornillados al piso (son fijos; no hay muebles móviles en este plano).</p>\n\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.eRE6FTNdGO76lzPK]{El señor Pell} · <em>oculto</em> (A4-E03): En el reservado de babor, junto a la ventana, con el maletín esposado a la muñeca (Astucia + Investigación Dif 3 para encontrarlo).</li><li>@UUID[Actor.Nq5NRC7yFhdkA5Er]{Dawson} · <em>oculto</em> (A4-E03): Cerca de Pell.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 1} · <em>oculto</em> (A4-E03)</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 2} · <em>oculto</em> (A4-E03)</li><li>@UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway} · <em>oculto</em> (A4-E03): Sólo si va a bordo (perdió la votación o quedó expuesto). Negocia en la cubierta de popa; huye hacia el puente.</li><li>@UUID[Actor.XuP20cPC3T1EiCxD]{Wendell Fry} · <em>oculto</em> (A4-E03): Sólo si votó con la coterie: en otro reservado, con los auriculares puestos.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua desde la popa (6 m) · Saltar al agua desde la popa (6 m).</p>",
       "moviles": []
     }
   },

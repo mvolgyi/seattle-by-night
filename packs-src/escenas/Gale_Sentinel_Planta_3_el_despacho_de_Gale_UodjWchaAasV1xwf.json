@@ -1383,7 +1383,198 @@
       "_key": "!scenes.tiles!UodjWchaAasV1xwf.lnOUTsZ5pAtbNGeS"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "L2sYDVKUNxRux9q6",
+      "name": "Dawson",
+      "displayName": 30,
+      "actorId": "Nq5NRC7yFhdkA5Er",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1390,
+      "y": 887,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "waFjBMXcDUfwXaaf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "gale-planta3",
+          "id": "MEN-04-DAWSON",
+          "escenas": [
+            "A3-E02"
+          ],
+          "nota": "La ronda: Dawson y dos ghouls pasan cada 40 minutos (pasillo norte, planta abierta, rellano)."
+        }
+      },
+      "_key": "!scenes.tokens!UodjWchaAasV1xwf.L2sYDVKUNxRux9q6"
+    },
+    {
+      "_id": "lsTYFrvEyKTKwqCV",
+      "name": "Ghouls de seguridad de Halloway 1",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1570,
+      "y": 887,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "waFjBMXcDUfwXaaf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "gale-planta3",
+          "id": "MEN-04",
+          "escenas": [
+            "A3-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!UodjWchaAasV1xwf.lsTYFrvEyKTKwqCV"
+    },
+    {
+      "_id": "KampWAhnW7dnz7H2",
+      "name": "Ghouls de seguridad de Halloway 2",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1110,
+      "y": 887,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "waFjBMXcDUfwXaaf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "gale-planta3",
+          "id": "MEN-04",
+          "escenas": [
+            "A3-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!UodjWchaAasV1xwf.KampWAhnW7dnz7H2"
+    },
+    {
+      "_id": "k4Y0g7yz76YQ0F2w",
+      "name": "Preston Gale",
+      "displayName": 30,
+      "actorId": "OE0huDRYvrhnxa9O",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-19.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 170,
+      "y": 730,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "waFjBMXcDUfwXaaf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "gale-planta3",
+          "id": "PNJ-19",
+          "escenas": [
+            "A3-E02"
+          ],
+          "nota": "Sólo si Celeste vino como accionista y Gale la recibe en su despacho, nervioso."
+        }
+      },
+      "_key": "!scenes.tokens!UodjWchaAasV1xwf.k4Y0g7yz76YQ0F2w"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1398,7 +1589,7 @@
       "id": "LUG-07",
       "plano": "gale-planta3",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 2 de A3-E02: las oficinas.</strong> «Planta 3: despacho de Preston Gale. Sala de servidores de oficina.» Todas las puertas que salen del rellano y las del despacho y la sala de servidores tienen <strong>cerradura electrónica</strong>: Destreza + Latrocinio Dif 3, o Inteligencia + Tecnología Dif 3.</p>\n<p><strong>La ronda.</strong> Dawson y dos ghouls de seguridad (MEN-04) pasan cada 40 minutos: suben por la escalera o el ascensor, recorren el pasillo norte, cruzan la planta abierta y vuelven al rellano. Esquivarlos: Astucia + Sigilo Dif 3 para todo el grupo (Auspex, Sentidos agudizados: +2 dados, se los oye venir desde el rellano). Escondites: detrás de los puestos de la planta abierta, la office, la sala de reuniones (pero tiene mamparas de vidrio). Dawson huele a los Vástagos a veinte metros: desde el rellano llega a cualquier punto de la planta.</p>\n<p><strong>Despacho de Gale</strong> (esquina suroeste, con ventanal al estacionamiento). En el <strong>escritorio</strong>, el ordenador de Gale: Inteligencia + Investigación Dif 3. Un éxito: <strong>la firma digital de Preston Gale en las autorizaciones de acceso a Market Street (P-11)</strong>. Tres o más: también <strong>el correo de «C.H.»</strong>: «Recuperar todas las copias. Prioridad máxima. — C.H.», del 13 de noviembre. Ahí están además los registros de pago a Lonnie desde Cascade Holdings (P-14), si no los tienen ya. Si Celeste vino como accionista y Gale la recibe, es acá: el sillón detrás del escritorio, el sofá frente a la puerta.</p>\n<p><strong>Sala de servidores de oficina</strong> (noroeste). El rack del fondo es el <strong>servidor de pruebas mal protegido</strong> de A1-E05 (si la coterie entra en persona en vez de hacerlo en remoto): Inteligencia + Tecnología Dif 4 para entrar; Inteligencia + Investigación Dif 3 para el pedido del 9 de noviembre autorizado por «P.G.» (P-06); DOC-11 está en la carpeta «Q1_board_deck_DRAFT» (automático). Si fallan, Gale registra el intento (Termómetro +1 la noche siguiente).</p>\n<p><strong>Ventanal norte.</strong> Desde el pasillo se ve el patio de servicio y la mole sin ventanas del centro de datos, que zumba.</p>\n<p>Escalera y ascensores bajan al vestíbulo (<code>gale-sentinel</code>). Sillas de la planta abierta y de la sala de reuniones: tiles opcionales, no listados uno por uno.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (4) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 2 de A3-E02: las oficinas.</strong> «Planta 3: despacho de Preston Gale. Sala de servidores de oficina.» Todas las puertas que salen del rellano y las del despacho y la sala de servidores tienen <strong>cerradura electrónica</strong>: Destreza + Latrocinio Dif 3, o Inteligencia + Tecnología Dif 3.</p>\n<p><strong>La ronda.</strong> Dawson y dos ghouls de seguridad (MEN-04) pasan cada 40 minutos: suben por la escalera o el ascensor, recorren el pasillo norte, cruzan la planta abierta y vuelven al rellano. Esquivarlos: Astucia + Sigilo Dif 3 para todo el grupo (Auspex, Sentidos agudizados: +2 dados, se los oye venir desde el rellano). Escondites: detrás de los puestos de la planta abierta, la office, la sala de reuniones (pero tiene mamparas de vidrio). Dawson huele a los Vástagos a veinte metros: desde el rellano llega a cualquier punto de la planta.</p>\n<p><strong>Despacho de Gale</strong> (esquina suroeste, con ventanal al estacionamiento). En el <strong>escritorio</strong>, el ordenador de Gale: Inteligencia + Investigación Dif 3. Un éxito: <strong>la firma digital de Preston Gale en las autorizaciones de acceso a Market Street (P-11)</strong>. Tres o más: también <strong>el correo de «C.H.»</strong>: «Recuperar todas las copias. Prioridad máxima. — C.H.», del 13 de noviembre. Ahí están además los registros de pago a Lonnie desde Cascade Holdings (P-14), si no los tienen ya. Si Celeste vino como accionista y Gale la recibe, es acá: el sillón detrás del escritorio, el sofá frente a la puerta.</p>\n<p><strong>Sala de servidores de oficina</strong> (noroeste). El rack del fondo es el <strong>servidor de pruebas mal protegido</strong> de A1-E05 (si la coterie entra en persona en vez de hacerlo en remoto): Inteligencia + Tecnología Dif 4 para entrar; Inteligencia + Investigación Dif 3 para el pedido del 9 de noviembre autorizado por «P.G.» (P-06); DOC-11 está en la carpeta «Q1_board_deck_DRAFT» (automático). Si fallan, Gale registra el intento (Termómetro +1 la noche siguiente).</p>\n<p><strong>Ventanal norte.</strong> Desde el pasillo se ve el patio de servicio y la mole sin ventanas del centro de datos, que zumba.</p>\n<p>Escalera y ascensores bajan al vestíbulo (<code>gale-sentinel</code>). Sillas de la planta abierta y de la sala de reuniones: tiles opcionales, no listados uno por uno.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (4) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.Nq5NRC7yFhdkA5Er]{Dawson} · <em>oculto</em> (A3-E02): La ronda: Dawson y dos ghouls pasan cada 40 minutos (pasillo norte, planta abierta, rellano).</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 1} · <em>oculto</em> (A3-E02)</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Ghouls de seguridad de Halloway 2} · <em>oculto</em> (A3-E02)</li><li>@UUID[Actor.OE0huDRYvrhnxa9O]{Preston Gale} · <em>oculto</em> (A3-E02): Sólo si Celeste vino como accionista y Gale la recibe en su despacho, nervioso.</li></ul></div>",
       "moviles": []
     }
   },

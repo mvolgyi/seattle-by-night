@@ -93,7 +93,9 @@
         { "tipo": "vehiculo", "x": 17, "y": 3.8, "w": 2, "h": 5.4, "hacia": "e", "tile": "tile-lancha", "desc": "la lancha del muelle cubierto" },
         { "tipo": "contenedor", "x": 0.3, "y": 3.5, "w": 2.44, "h": 6.1, "desc": "two rusted 40-foot shipping containers stacked one on top of the other" },
         { "tipo": "contenedor", "x": 0.3, "y": 10.2, "w": 2.44, "h": 6.1, "desc": "two rusted 40-foot shipping containers stacked one on top of the other" },
-        { "tipo": "contenedor", "x": 0.3, "y": 20.2, "w": 6.1, "h": 2.44, "desc": "two rusted 40-foot shipping containers stacked one on top of the other" }
+        { "tipo": "contenedor", "x": 0.3, "y": 20.2, "w": 6.1, "h": 2.44, "desc": "two rusted 40-foot shipping containers stacked one on top of the other" },
+        { "tipo": "auto", "x": 15.85, "y": 19.9, "w": 5.3, "h": 2.1, "fijo": false, "oculto": true, "tile": "tile-furgoneta-firstlight", "desc": "la furgoneta de FIRSTLIGHT con el generador de luz solar artificial, frente a la puerta grande (A4-E02)" },
+        { "tipo": "vehiculo", "x": 18, "y": 16, "w": 0.6, "h": 0.6, "fijo": false, "oculto": true, "tile": "tile-dron", "desc": "el dron con cámara térmica, «justo encima del techo de chapa» (A4-E02)" }
       ],
       "luces": [
         { "x": 10.5, "y": 5.5, "preset": "lampara", "presetIdeal": "obra", "nombre": "Luz de obra colgada (arsenal)" },
@@ -113,6 +115,16 @@
         { "id": "lancha-bahia", "nombre": "Salir en lancha a Elliott Bay", "x": 16, "y": 0, "w": 4, "h": 1.2, "destino": null, "pendiente": "no hay mapa de la bahía; en A4-E02 el dron ve la lancha" },
         { "id": "muelle-oeste", "nombre": "El muelle trasero sigue hacia el oeste", "x": 0, "y": 1.2, "w": 1, "h": 1.8, "destino": null, "pendiente": "no hay mapa del muelle: por acá llegan los dos operadores del muelle (A4-E02)" },
         { "id": "patio-contenedores", "nombre": "Salir al patio de contenedores de Harbor Island", "x": 8, "y": 22, "w": 8, "h": 1, "destino": null, "pendiente": "no hay mapa del patio de contenedores (la Terminal 46 de A1-E02 es exterior por texto)" }
+      ],
+      "figuras": [
+        { "id": "PNJ-05", "x": 11.3, "y": 8.85, "oculto": false, "escena": ["A1-E01", "A4-E02", "AVE-01-EPI"], "nota": "Junto a su banco de trabajo, limpiando una pistola (A4-E02 y la Coda 3)." },
+        { "id": "PNJ-04", "x": 11.3, "y": 11.7, "oculto": true, "escena": ["A1-E01", "A4-E02"], "nota": "Sólo si la coterie la trajo al hangar (A1-E01) o si está acá cuando llega la redada (A4-E02)." },
+        { "id": "CAZ-01", "x": 14.9, "y": 20, "oculto": true, "escena": "A4-E02", "nota": "Navarro, en punta de la pareja de la puerta grande (INT-03)." },
+        { "id": "CAZ-03", "x": 14.9, "y": 21.2, "oculto": true, "escena": "A4-E02", "nota": "Sorensen, con la carga de brecha de la puerta grande (INT-03)." },
+        { "id": "MEN-11", "x": 13.7, "y": 20.6, "oculto": true, "escena": "A4-E02", "nota": "Ransom, tercero en la pareja de la puerta grande; si en INT-03 dijo que conoce a Bear, pasalo al perímetro." },
+        { "id": "CAZ-02", "x": 19.5, "y": 21, "oculto": true, "sentado": true, "escena": "A4-E02", "nota": "Pak, dentro de la furgoneta, con el dron." },
+        { "id": "MEN-02", "x": 13, "y": 2.1, "oculto": true, "escena": "A4-E02", "nota": "«Dos por el muelle»: la pareja del muelle trasero." },
+        { "id": "MEN-02", "x": 11.8, "y": 2.1, "oculto": true, "escena": "A4-E02", "nota": "«Dos por el muelle»: la pareja del muelle trasero." }
       ]
     }
   ]

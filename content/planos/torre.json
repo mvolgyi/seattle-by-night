@@ -75,6 +75,21 @@
         { "id": "ascensor-a-la-boveda", "nombre": "Ascensor privado: bajar a la bóveda (nivel −3)", "x": 14, "y": 5, "w": 1, "h": 2, "destino": "torre-boveda:ascensor-llegada" },
         { "id": "escalera-llegada", "nombre": "Llegada por la escalera de emergencia", "x": 18.6, "y": 7.3, "w": 1.2, "h": 1, "llegada": true },
         { "id": "escalera-bajar", "nombre": "Bajar 42 pisos por la escalera de emergencia", "x": 18.6, "y": 10.7, "w": 1.2, "h": 1, "destino": null, "pendiente": "no hay mapa de la calle ni del piso 40: Resistencia + Atletismo Dif 3 y el Narrador mueve los tokens" }
+      ],
+      "figuras": [
+        { "id": "PNJ-03", "x": 2.2, "y": 6.5, "oculto": false, "escena": "A4-E01", "nota": "De pie en la cabecera, de espaldas a la bahía." },
+        { "id": "MEN-09", "x": 1.6, "y": 7.6, "oculto": false, "escena": "A4-E01", "nota": "De pie detrás de Halloway, entre la cabecera y el vidrio." },
+        { "id": "PNJ-10", "x": 1.6, "y": 5.4, "oculto": true, "escena": "A4-E01", "nota": "Sólo si nadie juega a Celeste: de pie detrás de Halloway." },
+        { "id": "PNJ-14", "x": 4.9, "y": 4.4, "oculto": false, "escena": "A4-E01" },
+        { "id": "PNJ-15", "x": 6.7, "y": 4.4, "oculto": false, "escena": "A4-E01" },
+        { "id": "PNJ-13", "x": 8.5, "y": 4.4, "oculto": false, "escena": "A4-E01" },
+        { "id": "PNJ-16", "x": 4.9, "y": 8.5, "oculto": false, "escena": "A4-E01" },
+        { "id": "PNJ-01", "x": 6.7, "y": 8.5, "oculto": true, "escena": "A4-E01", "nota": "Si no está enfrentado a la coterie." },
+        { "id": "PNJ-02", "x": 12.3, "y": 6, "oculto": true, "escena": "A4-E01", "nota": "Entra después de la coterie, por el ascensor privado." },
+        { "id": "MEN-04", "x": 14.5, "y": 10.4, "oculto": true, "escena": "A4-E01", "nota": "Seguridad ghoul del piso 40: detienen a David si Halloway da la orden." },
+        { "id": "MEN-04", "x": 16, "y": 8.4, "oculto": true, "escena": "A4-E01" },
+        { "id": "PERROS-MONTGOMERY", "x": 14.5, "y": 8.4, "oculto": true, "escena": "A4-E01", "nota": "Vienen con Montgomery: «Los perros, en el vestíbulo, empiezan a aullar»." },
+        { "id": "PERROS-MONTGOMERY", "x": 16, "y": 10.4, "oculto": true, "escena": "A4-E01" }
       ]
     },
     {

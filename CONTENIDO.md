@@ -164,6 +164,7 @@ disciplinas si no las tiene). Un cazador (`tipo: hunter`) suma `credo`, `impulso
 | `content/coteries.json` | `{ "coteries": [ { "id": "COT-01", "nombre", "lema", "tipo", "dominio", "miembros": ["PNJ-01"] } ] }` |
 | `content/firstlight.json` | `{ "equipo": [ { "id", "nombre", "tipo": "weapon\|gear\|condition", "efecto", "dano", "bonos": [ … ] } ] }` |
 | `content/arte-doc15.json` | `{ "retratos": [{ "id", "prompt" }], "mapas": [{ "id", "nivel", "prompt" }], "ayudas": [{ "id", "prompt" }], "plantillas": { "retrato", "mapa" } }`, textual del doc 15 |
+| `content/planos/*.json` | Planos de los mapas (metros), con muros, vanos, muebles, luces, regiones y `figuras[]` (los tokens colocados: `{ id, x, y, oculto?, sentado?, escena?, nota? }`). El formato completo está en MAPS_SPEC.md §6 |
 
 ## 5. Documentos del mundo y ayudas
 

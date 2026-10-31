@@ -340,9 +340,53 @@ for (const e of firstlight) {
   for (const t of e.tiradas ?? []) if (!contiene(it.system.description, t)) mal(e.id, "falta una tirada.");
 }
 
+/* Tokens colocados (content/planos → figuras) */
+// El token guarda sólo el actorId del MUNDO: la Aventura importa actores y
+// escenas conservando los _id (keepId en client/documents/adventure.mjs), así
+// que el vínculo sobrevive sólo si el actor viaja en la MISMA Aventura. Se
+// comprueba en packs-src/escenas y, otra vez, dentro del Adventure.
+const escenas = leerPack("escenas");
+const actorPorId = new Map([...actores.values()].map(a => [a._id, a]));
+let nTokens = 0;
+const figurasDe = new Map();
+for (const f of fs.readdirSync(path.join(RAIZ, "content/planos")).filter(f => f.endsWith(".json"))) {
+  for (const p of leerJson(`content/planos/${f}`).planos ?? []) figurasDe.set(p.id, p.figuras ?? []);
+}
+for (const s of escenas.values()) {
+  const plano = s.flags?.[MODULO]?.escena;
+  const figuras = figurasDe.get(plano) ?? [];
+  const tokens = s.tokens ?? [];
+  if (tokens.length !== figuras.length) mal(`escena ${plano}`, `${tokens.length} tokens y ${figuras.length} figuras en el plano.`);
+  const niveles = new Set((s.levels ?? []).map(l => l._id));
+  for (const t of tokens) {
+    nTokens++;
+    const donde = `escena ${plano}, token «${t.name}»`;
+    const a = actorPorId.get(t.actorId);
+    if (!a) { mal(donde, `actorId ${t.actorId} no es ningún actor de packs-src/personajes.`); continue; }
+    if (a.flags?.[MODULO]?.id !== t.flags?.[MODULO]?.id) mal(donde, `apunta a ${a.flags?.[MODULO]?.id} y dice ser ${t.flags?.[MODULO]?.id}.`);
+    const proto = a.prototypeToken ?? {};
+    if (Boolean(t.actorLink) !== Boolean(proto.actorLink)) mal(donde, `actorLink ${t.actorLink} ≠ prototipo ${proto.actorLink}.`);
+    if (t.width !== (proto.width ?? 1) || t.height !== (proto.height ?? 1)) mal(donde, "tamaño distinto del prototipo.");
+    if (t.disposition !== (proto.disposition ?? 0)) mal(donde, "disposición distinta del prototipo.");
+    if (!niveles.has(t.level)) mal(donde, `level ${t.level} no es un nivel de la escena (no se dibujaría).`);
+    if (t.x < 0 || t.y < 0 || t.x + t.width * 100 > s.width || t.y + t.height * 100 > s.height) mal(donde, "fuera del lienzo.");
+  }
+}
+const aventura = leerPack("aventura");
+for (const adv of aventura.values()) {
+  const enAventura = new Set((adv.actors ?? []).map(a => a._id));
+  for (const s of adv.scenes ?? []) {
+    for (const t of s.tokens ?? []) {
+      if (!enAventura.has(t.actorId)) mal(`aventura, escena ${s.name}`, `el token «${t.name}» apunta a ${t.actorId}, que no viaja en la Aventura.`);
+    }
+  }
+  const nAventura = (adv.scenes ?? []).reduce((n, s) => n + (s.tokens?.length ?? 0), 0);
+  if (nAventura !== nTokens) mal("aventura", `${nAventura} tokens en sus escenas y ${nTokens} en packs-src/escenas.`);
+}
+
 if (errores.length) {
   console.error(`✗ ${errores.length} diferencia(s) entre content/ y los actores:\n`);
   for (const e of errores) console.error(`  ${e}`);
   process.exit(1);
 }
-console.log(`✓ actores: ${nFichas} fichas con actor (${nSinActor} sin estadísticas, sólo perfil), ${coteries.length} coteries, ${listaCelulas.length} célula(s) y ${firstlight.length} ítems de FIRSTLIGHT coinciden con content/.`);
+console.log(`✓ actores: ${nFichas} fichas con actor (${nSinActor} sin estadísticas, sólo perfil), ${coteries.length} coteries, ${listaCelulas.length} célula(s) y ${firstlight.length} ítems de FIRSTLIGHT coinciden con content/; ${nTokens} tokens de escena apuntan a actores de la Aventura.`);

@@ -17,6 +17,13 @@
  *   - Los pines (Note) van a las páginas de las escenas del libro que pasan en
  *     el plano (`plano.escenas`) y al journal del lugar (`plano.lugar`), que
  *     además queda como journal de la escena (Scene.journal).
+ *   - Los tokens salen de `plano.figuras` (posición en metros, por persona) y
+ *     no de una línea `tokens:` por sala como en DVV (pinesYTokensDe): el
+ *     libro dice dónde está cada uno («detrás de la barra», «en la mecedora»)
+ *     y eso no cae en el centro de la sala. Como en DVV, el token apunta al
+ *     actor del MUNDO (actorId = ID.actor), que la Aventura importa con el
+ *     mismo _id; tamaño, vínculo, disposición, visión y nombre salen del
+ *     prototipo del actor (packs-src/personajes, que se escribe antes).
  *
  * padding 0, como DVV: Foundry corre el rectángulo de la escena por el padding
  * y las coordenadas del plano (px del mapa) quedarían desplazadas.
@@ -28,7 +35,7 @@ import { marked } from "marked";
 import { RAIZ, MODULO, STATS, idEstable, escribirDoc, Carpetas } from "../util.mjs";
 import { ID } from "./ids.mjs";
 import { cargarPlanos } from "../construir-planos.mjs";
-import { derivarMuros, derivarRegiones, mueblesMoviles, GRID_PX, PX_POR_M } from "../planos.mjs";
+import { derivarMuros, derivarRegiones, mueblesMoviles, dentroDeHabitacion, normalizar, GRID_PX, PX_POR_M } from "../planos.mjs";
 import { lucesDePlano } from "../iluminacion.mjs";
 
 const PACK = "escenas";
@@ -77,7 +84,7 @@ const textura = src => ({
 
 /** Escena base: compartida por los planos y la portada. */
 function docEscena({ id, nombre, carpeta, orden, w, h, sinGrid = false, oscuridad = 0, luzGlobal = false,
-  fondo = null, colorFondo = "#000000", walls = [], lights = [], regions = [], notes = [], tiles = [],
+  fondo = null, colorFondo = "#000000", walls = [], lights = [], regions = [], notes = [], tiles = [], tokens = [],
   journal = null, visionToken = true, extra = {} }) {
   const sid = ID.escena(id);
   return conClaves({
@@ -106,8 +113,8 @@ function docEscena({ id, nombre, carpeta, orden, w, h, sinGrid = false, oscurida
     }],
     journal,
     journalEntryPage: null,
-    walls, lights, regions, notes, tiles,
-    tokens: [], sounds: [], drawings: [],
+    walls, lights, regions, notes, tiles, tokens,
+    sounds: [], drawings: [],
     playlist: null, playlistSound: null,
     ownership: { default: 0 },
     flags: flags("escena", { escena: id, ...extra }),
@@ -124,7 +131,7 @@ function docEscena({ id, nombre, carpeta, orden, w, h, sinGrid = false, oscurida
  * largo horizontal y, en asientos, el frente al sur; `hacia` lo rota. En v14
  * x/y es el CENTRO del tile (anchor 0,5) y width/height son del rectángulo
  * sin rotar: a 90°/270° se intercambian para caer sobre la huella del plano.
- * Desbloqueados: son para moverlos.
+ * Desbloqueados: son para moverlos. Con `oculto: true` el tile entra oculto.
  */
 const ROTACION_HACIA = { s: 0, o: 90, n: 180, e: 270 };
 
@@ -144,7 +151,9 @@ function tilesDe(plano, ctx) {
       x: px(m.x + m.w / 2), y: px(m.y + m.h / 2),
       width: px(girado ? m.h : m.w), height: px(girado ? m.w : m.h),
       elevation: 0, levels: [idEstable(`nivel:${plano.id}`)], sort: i, rotation: rotacion ?? 0,
-      alpha: 1, hidden: false, locked: false,
+      // `oculto`: el tile existe sólo en una escena del libro (la furgoneta de la
+      // redada, el dron): va oculto y el Narrador lo revela.
+      alpha: 1, hidden: Boolean(m.oculto), locked: false,
       restrictions: { light: false, weather: false },
       occlusion: { modes: [], alpha: 0 },
       video: { loop: true, autoplay: true, volume: 0 },
@@ -261,6 +270,122 @@ function pinesDe(plano, ctx) {
 }
 
 /* -------------------------------------------- */
+/*  Figuras (tokens colocados)                  */
+/* -------------------------------------------- */
+
+/**
+ * Actores ya construidos (packs-src/personajes), por ID del libro. actores.mjs
+ * corre antes que este constructor (tools/construir-contenido.mjs#PARTES).
+ */
+function actoresConstruidos() {
+  const dir = path.join(RAIZ, "packs-src", "personajes");
+  const out = new Map();
+  for (const f of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
+    if (!f.endsWith(".json")) continue;
+    const d = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+    const id = d.flags?.[MODULO]?.id;
+    if (!d._key?.startsWith("!folders!") && id) out.set(id, d);
+  }
+  return out;
+}
+
+/** Distancia (px) de un punto a un segmento [x0, y0, x1, y1]. */
+function distSegmento(px0, py0, [x0, y0, x1, y1]) {
+  const dx = x1 - x0, dy = y1 - y0, l2 = dx * dx + dy * dy;
+  const t = l2 ? Math.max(0, Math.min(1, ((px0 - x0) * dx + (py0 - y0) * dy) / l2)) : 0;
+  return Math.hypot(px0 - (x0 + t * dx), py0 - (y0 + t * dy));
+}
+
+/** Tramo de solape de dos intervalos. */
+const solape = (a0, a1, b0, b1) => Math.max(0, Math.min(a1, b1) - Math.max(a0, b0));
+
+/**
+ * `plano.figuras` → tokens. Cada figura es una persona (o un perro) en
+ * metros: `{ id, x, y, oculto?, sentado?, escena?, nota? }`, con x/y en el
+ * CENTRO del token. Lo demás sale del prototipo del actor: tamaño, vínculo
+ * (los menores con `cantidad` > 1 van sin vincular y se numeran), disposición,
+ * visión y textura (assets/tokens/<ID>.webp si existe; si no, la del
+ * prototipo). Sin `oculto`, va oculto todo hostil (disposición −1).
+ *
+ * Avisa (no corta el build) si una figura cae fuera del mapa, en un macizo,
+ * pegada a un muro o a una puerta, encima de un mueble móvil (salvo
+ * `sentado: true`) o de otra figura.
+ */
+function tokensDe(plano, ctx, actores) {
+  const figuras = plano.figuras ?? [];
+  if (!figuras.length) return { tokens: [], lista: [] };
+  const norm = normalizar(plano);
+  const muros = derivarMuros(plano);
+  const moviles = mueblesMoviles(plano).filter(m => m.tile);
+  const nivel = idEstable(`nivel:${plano.id}`);
+  const total = figuras.reduce((acc, f) => acc.set(f.id, (acc.get(f.id) ?? 0) + 1), new Map());
+  const vistas = new Map();
+  const colocadas = [];
+  const tokens = [], lista = [];
+  const aviso = (f, msg) => ctx.avisos.push(`plano ${plano.id}: figura ${f.id} (${f.x}, ${f.y}): ${msg}`);
+
+  figuras.forEach((f, i) => {
+    const actor = actores.get(f.id);
+    if (!actor) { aviso(f, "no hay actor con ese ID en packs-src/personajes; sin token"); return; }
+    const proto = actor.prototypeToken ?? {};
+    const w = proto.width ?? 1, h = proto.height ?? 1;
+    const k = vistas.get(f.id) ?? 0;
+    vistas.set(f.id, k + 1);
+
+    // Dónde cae.
+    if (f.x - w / 2 < 0 || f.y - h / 2 < 0 || f.x + w / 2 > plano.ancho || f.y + h / 2 > plano.alto) aviso(f, "se sale del mapa");
+    const macizo = norm.habitaciones.find(hab => hab.piso === "macizo" && dentroDeHabitacion(hab, f.x, f.y));
+    if (macizo) aviso(f, `cae en «${macizo.nombre}», que es macizo`);
+    const cerca = muros.find(m => distSegmento(px(f.x), px(f.y), m.c) < px(Math.min(w, h) / 2 - 0.05));
+    if (cerca) aviso(f, `pegada a un ${cerca.door ? "vano con puerta" : "muro"} (${cerca.c.join(", ")})`);
+    if (!f.sentado) {
+      const debajo = moviles.find(m => solape(f.x - w / 2, f.x + w / 2, m.x, m.x + m.w) > 0.05 && solape(f.y - h / 2, f.y + h / 2, m.y, m.y + m.h) > 0.05);
+      if (debajo) aviso(f, `encima del tile «${debajo.tile}» (si está sentada ahí, poné "sentado": true)`);
+    }
+    const otra = colocadas.find(o => solape(f.x - w / 2, f.x + w / 2, o.x0, o.x1) > 0.1 && solape(f.y - h / 2, f.y + h / 2, o.y0, o.y1) > 0.1);
+    if (otra) aviso(f, `se pisa con ${otra.id}`);
+    colocadas.push({ id: f.id, x0: f.x - w / 2, x1: f.x + w / 2, y0: f.y - h / 2, y1: f.y + h / 2 });
+
+    for (const e of [f.escena ?? []].flat()) if (!ctx.reg.has(e)) aviso(f, `la escena «${e}» no está en el registro`);
+
+    const disposicion = proto.disposition ?? 0;
+    const oculto = f.oculto ?? disposicion === -1;
+    const nombre = total.get(f.id) > 1 && !proto.actorLink ? `${proto.name ?? actor.name} ${k + 1}` : (proto.name ?? actor.name);
+    const arte = existe(`assets/tokens/${f.id}.webp`) ? `modules/${MODULO}/assets/tokens/${f.id}.webp` : null;
+    tokens.push({
+      _id: idEstable(`token:${plano.id}:${f.id}:${k}`),
+      name: nombre,
+      displayName: proto.displayName ?? 30,
+      actorId: actor._id,
+      actorLink: Boolean(proto.actorLink),
+      texture: textura(arte ?? proto.texture?.src ?? "icons/svg/mystery-man.svg"),
+      // En v14 x/y del token es su esquina; la figura da el centro.
+      x: px(f.x - w / 2), y: px(f.y - h / 2), width: w, height: h,
+      // En v14 el token pertenece a un nivel de la escena; sin esto no se dibuja (DVV).
+      elevation: 0, level: nivel, rotation: 0, alpha: 1,
+      lockRotation: proto.lockRotation ?? true, locked: false, sort: i,
+      hidden: Boolean(oculto), disposition: disposicion,
+      ...(proto.sight ? { sight: proto.sight } : {}),
+      flags: flags("token", { escena: plano.id, id: f.id, ...(f.escena ? { escenas: [f.escena].flat() } : {}),
+        ...(f.nota ? { nota: f.nota } : {}) })
+    });
+    lista.push({ ...f, nombre, oculto: Boolean(oculto), uuid: `Actor.${actor._id}` });
+  });
+  return { tokens, lista };
+}
+
+/** Lista de figuras para la nota del Narrador de la escena (como «Tokens en la sala» de DVV). */
+function htmlFiguras(lista) {
+  if (!lista.length) return "";
+  const items = lista.map(f => {
+    const escenas = f.escena ? ` (${[f.escena].flat().join(", ")})` : "";
+    return `<li>@UUID[${f.uuid}]{${f.nombre}}${f.oculto ? " · <em>oculto</em>" : ""}${escenas}${f.nota ? `: ${md2html(f.nota).replace(/^<p>|<\/p>\s*$/g, "")}` : ""}</li>`;
+  }).join("");
+  return `<div class="sbn-figuras"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; ` +
+    `los que dependen de cómo vino la noche dicen cuándo.</p><ul>${items}</ul></div>`;
+}
+
+/* -------------------------------------------- */
 /*  Escenas desde planos                        */
 /* -------------------------------------------- */
 
@@ -270,6 +395,8 @@ function escenasDePlanos(ctx, carpetas) {
   const uuidDeRegion = (idPlano, idRegion) =>
     `Scene.${ID.escena(idPlano)}.Region.${idEstable(`region:${idPlano}:${idRegion}`)}`;
   const resumen = [];
+  const actores = actoresConstruidos();
+  if (!actores.size) ctx.avisos.push("escenas: packs-src/personajes está vacío; las escenas salen sin tokens (corré el build entero)");
 
   for (const plano of planos) {
     // Fondo: el mapa pintado; si no está, el esquema (provisional).
@@ -306,6 +433,7 @@ function escenasDePlanos(ctx, carpetas) {
     const lights = lucesDePlano(plano, idEstable);
     const { tiles, sinTile } = tilesDe(plano, ctx);
     const notes = pinesDe(plano, ctx);
+    const { tokens, lista: figuras } = tokensDe(plano, ctx, actores);
 
     // Journal del lugar (Scene.journal) y nota del Narrador.
     const lugar = plano.lugar ? ctx.reg.get(plano.lugar) : null;
@@ -327,6 +455,7 @@ function escenasDePlanos(ctx, carpetas) {
       enlaces.length ? `<p>${enlaces.join("<br>")}</p>` : "",
       md2html(plano.nota),
       textoMoviles ? `<p class="sbn-moviles">${textoMoviles}</p>` : "",
+      htmlFiguras(figuras),
       pendientes.length ? `<p class="sbn-pendientes"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> ${pendientes.map(r => r.nombre).join(" · ")}.</p>` : ""
     ].filter(Boolean).join("\n");
 
@@ -334,7 +463,7 @@ function escenasDePlanos(ctx, carpetas) {
       id: plano.id, nombre: plano.nombre ?? plano.id, carpeta: carpetas.id(plano.carpeta ?? "Lugares"),
       orden: plano.orden ?? 10, w: W, h: H,
       oscuridad: plano.oscuridad ?? 0.5, luzGlobal: plano.luzGlobal,
-      fondo, walls, lights, regions, notes, tiles,
+      fondo, walls, lights, regions, notes, tiles, tokens,
       journal: idsLugar?.entryId ?? null,
       extra: {
         ...(plano.lugar ? { id: plano.lugar } : {}), plano: plano.id, provisional: fondo === esquema,
@@ -347,7 +476,7 @@ function escenasDePlanos(ctx, carpetas) {
       `${n(m => m.door && m.sight === undefined)} puertas · ${n(m => m.door && m.sight === 0)} puertas/ventanas de vidrio · ` +
       `${n(m => !m.door && m.move === 20 && m.sound !== 0)} vidrios · ${n(m => !m.door && m.sound === 0)} barandas · ` +
       `${lights.length} luces · ${regions.length} regiones (${regions.filter(r => r.behaviors.length).length} activas) · ` +
-      `${notes.length} pines · ${tiles.length} tiles${fondo === esquema ? " · ESQUEMA" : ""}`);
+      `${notes.length} pines · ${tiles.length} tiles · ${tokens.length} tokens (${tokens.filter(t => t.hidden).length} ocultos)${fondo === esquema ? " · ESQUEMA" : ""}`);
   }
   for (const r of resumen) ctx.log(r);
   return resumen.length;

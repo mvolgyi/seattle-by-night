@@ -2846,6 +2846,26 @@
       },
       "prompt": "STYLE TRANSFER. Picture 1 is a flat, simple vector schematic of a floor plan, drawn exactly to scale (1 metre = 1 square): a deep underground vault beneath an office tower in downtown Seattle, seen strictly from directly above with the roof removed. Re-render it completely as a richly textured, hand-painted, realistic top-down map in the style of a professionally published modern-horror map pack. Change the RENDERING of every surface — every flat fill becomes real painted material with grain, wear, dirt and soft shading (grime in every joint, chisel marks on every stone, damp stains, rust, rotting timber) — so that the flat vector look of Picture 1 disappears completely. Change NOTHING of the LAYOUT: it is a surveyor's drawing to be rendered, not an inspiration.\n\nKEEP THE LAYOUT EXACTLY: the position, length and thickness of every wall; every gap in the walls (doorways stay empty openings); the outline and size of every room; the position and footprint of every piece of furniture; the image framing and dimensions. Do not shift, zoom, crop, rotate or re-frame anything. Do not add or remove rooms, walls, partitions, steps, kerbs, low walls or counters, and do not subdivide any room.\n\nPicture 2 is a finished map from the same product line, given ONLY as a rendering reference: match its ink line weight, desaturation, coolness, tonal contrast and how furniture is drawn as solid objects; do NOT copy its rooms, layout or props.\n\nWHAT THE SCHEMATIC SHOWS, ROOM BY ROOM (rooms are described by their position; never write a room name or any label on the map):\n- a lift car, 2 × 2 m, in the middle-left of the image, centred 18% from the left and 50% from the top. Floor: the floor of a lift car: dark stone tiles framed by a border of brushed steel. Nothing else in it: an empty floor.\n- a bare antechamber, 2.5 × 4 m, in the centre of the image, centred 39% from the left and 50% from the top. Floor: stained concrete slab with expansion joints and oil stains. Fixed furniture: a small black combination keypad beside the steel door (against the right wall, in the bottom-right part, 0.1 × 0.2 m).\n- an underground vault, 4.5 × 6 m, in the middle-right of the image, centred 70% from the left and 50% from the top. Floor: stained concrete slab with expansion joints and oil stains. Fixed furniture: grey steel archive shelving with document boxes and old bound journals (against the top wall, in the top-centre part, 3.6 × 0.5 m); grey steel archive shelving with document boxes and typed manuscripts in binders (against the bottom wall, in the bottom-centre part, 3.6 × 0.5 m); a large steel safe set into the concrete wall (against the right wall, in the right part, 0.6 × 1.2 m); a bare brushed-steel table (in the middle, 1.4 × 0.8 m).\n\nOPENINGS: there are 2 doorway openings in the walls, each drawn as a gap with a pale threshold strip and short dashed marks: every one stays an empty, open gap of the same width — never close it, never fill it with wall, never put a door leaf in it.\n\nOUTSIDE THE WALLS, continue to all four edges of the image with solid bedrock and poured concrete around a deep underground vault, a flat featureless dark mass.\nNever leave paper, white space or a margin outside the walls.\n\nSTYLE: illustrated photorealism like a professionally published modern-horror map pack: crisp, confident dark ink outlines on every wall and every object, filled with realistic painted materials. The walls are thick, solid walls of rough, dark grey dressed stone blocks, each block outlined seen only as their flat top edge, with a dark ink outline on both sides. Palette of rainy Seattle in November: wet slate grey, cold harbour blue, deep black; the only saturated colour is a single small crimson accent. The map is in COLOUR, not black-and-white: muted, low saturation overall (about 10 to 15 percent), cool, never warm, never golden, never sepia, no green moss.\n\nFLOORS: real materials drawn board by board and tile by tile — dark stone and brushed steel and stained concrete slab with expansion joints. Seams and joints follow the pattern already drawn in the schematic, so the floor itself reads the 1-metre grid. NEVER draw grid lines, ruled lines or dashed lines over anything.\n\nDETAIL: damp, old and neglected, restrained and legible at table distance: damp stains and mineral streaks along the walls, grime in the joints, scuffs along the walking paths, a little loose grit. Everything here is out of the rain; NO falling rain, no raindrops in the air, no rain streaks.\n\nLIGHT AND SHADOW: one flat, even, dim, cold blue-grey ambient light over the whole map, like an overcast sky, the same brightness everywhere: no room is brighter or warmer than another. Soft short drop shadows down and to the right under raised objects, and ambient occlusion where walls meet the floor. NEVER paint a light source or its effect: no lit lamps, no glowing screens, no glowing windows, no ceiling lights, no light fixtures, no glowing LEDs, no street lamp, no light pools, no halos, no glow, no lens flare, no bright spots, no beams, no orange light on the ground. Every light is added later by the virtual tabletop.\n\nCOMPOSITION: full bleed to all four edges: no border, no frame, no vignette, no paper margin, no white space. Strictly top-down orthographic: walls seen only as their top edge, no wall faces, no ceilings, no perspective, no isometric tilt.\n\nABSOLUTELY EMPTY OF INHABITANTS: no people, no figures, no figurines, no miniatures, no game pieces, no tokens, no silhouettes, no bodies, no animals, no cars.\n\nDOORWAYS: every doorway is an empty gap in the wall with at most a faint threshold strip on the floor. NEVER draw a door leaf, a door panel, a hinged door, a sliding door or a shutter in any opening, open or closed.\n\nNO MOVABLE FURNITURE: do not add chairs, stools, sofas, tables, floor lamps, rugs, plants, boxes, bags or loose objects that are not in the schematic; they are placed later as separate pieces.\n\nABSOLUTELY NO TEXT: no letters, numbers, digits, symbols, labels, room names, door numbers, signs, logos, writing on papers or screens; no compass, no scale bar, no legend."
     },
+    "assets/portadas/portada.webp": {
+      "fecha": "2026-10-31T16:53:45.283Z",
+      "id": "portada",
+      "estilo": "portada",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 9922,
+      "parametros": {
+        "ancho": 1920,
+        "alto": 1088
+      },
+      "segundos": 11.9,
+      "prompt": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: A rain-soaked city waterfront at night, seen from the end of an old wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across black harbour water towards a skyline of plain rectangular dark glass office blocks with flat roofs, half lost in low cloud and mist, countless small cold windows; one block is taller than the rest, and a single window is lit on its top floor, as if someone up there is watching. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. Crimson accent: a single small red navigation buoy light floating on the water in the middle distance, with its long red reflection trembling on the wet surface. Every building is a plain box: no spires, no needle-shaped towers, no observation decks, no saucer tops, no towers on thin stems, no antennas with lights, no recognisable landmark.\n\nCOMPOSITION: the lower middle band of the image (between half and three quarters of its height, across the centre) is calm, dark and simple, only black water with soft broken reflections, because round interface buttons will be placed over it. The painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no title, no logo, no signature, no watermark, no caption, no famous landmark tower.",
+      "recorte": "1920×1088 → 1920×1080 centrado (tanda2.sh)"
+    },
     "assets/retratos/CAZ-01.webp": {
       "fecha": "2026-10-30T22:01:24.985Z",
       "id": "CAZ-01",
@@ -3662,1126 +3682,6 @@
       },
       "segundos": 7.9,
       "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A woman of thirty-eight in the mid-1990s, a youth social worker, shoulder-length dark brown hair with a slight wave, dark grey eyes like her father's, a square, determined jaw, no make-up, a kind but stubborn expression, tired from long shifts. A 1990s oversized knitted cardigan over a plain turtleneck, a canvas shoulder bag stuffed with case folders, a styrofoam cup of coffee in her hand. Standing in the rain outside a run-down community youth centre in Rainier Valley in 1996, a payphone and an old sedan behind her; the painting feels like a remembered photograph from the nineties. Crimson accent: her red wool scarf.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
-    },
-    "assets/tokens/CAZ-01.webp": {
-      "fecha": "2026-10-30T22:17:33.450Z",
-      "id": "CAZ-01",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 10051,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/CAZ-01.webp",
-      "referencia": "assets/retratos/CAZ-01.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Tess Navarro: dark hair in a short braid, black tactical gear and light body armour, a short rifle with a UV flashlight, a medal on a cord in her left hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/CAZ-02.webp": {
-      "fecha": "2026-10-30T22:17:57.756Z",
-      "id": "CAZ-02",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 10151,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/CAZ-02.webp",
-      "referencia": "assets/retratos/CAZ-02.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Owen Pak: a black baseball cap worn backwards, black tactical gear, a ruggedized tablet strapped to his forearm, a small drone in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/CAZ-03.webp": {
-      "fecha": "2026-10-30T22:18:22.059Z",
-      "id": "CAZ-03",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 10251,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/CAZ-03.webp",
-      "referencia": "assets/retratos/CAZ-03.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Lena Sorensen: blonde hair pulled back tight, broad shoulders, black tactical gear and light body armour, a breaching charge in her hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-01.webp": {
-      "fecha": "2026-10-30T22:12:17.655Z",
-      "id": "MEN-01",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8751,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-01.webp",
-      "referencia": "assets/retratos/MEN-01.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Lonnie Barras: lank thinning hair, a cheap faded windbreaker, a cigarette in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-02.webp": {
-      "fecha": "2026-10-30T22:38:30.037Z",
-      "id": "MEN-02",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors",
-        "z_image_turbo_bf16.safetensors",
-        "qwen_3_4b.safetensors",
-        "z_image_ae.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 2,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-02.webp",
-      "referencia": "assets/tokens-crudo/figura/MEN-02-s20051.webp",
-      "figura": {
-        "workflow": "tools/workflows/t2i-zimage.json",
-        "modelos": [
-          "z_image_turbo_bf16.safetensors",
-          "qwen_3_4b.safetensors",
-          "z_image_ae.safetensors"
-        ],
-        "semilla": 20051,
-        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A FIRSTLIGHT tactical operator, a former soldier of about forty, a black helmet with thermal goggles pushed up, a hard tired face. Black tactical gear without any insignia or patches, light body armour, a body camera on the chest, a short rifle with a weapon-mounted UV flashlight held low. Standing in the rain beside a black van in an industrial port lot. Crimson accent: the small red recording light of the body camera.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
-      },
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: a FIRSTLIGHT operator: a black helmet with thermal goggles, black tactical gear and light body armour without insignia, a short rifle with a weapon light held ready.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-03-DUTCH.webp": {
-      "fecha": "2026-10-30T22:12:41.946Z",
-      "id": "MEN-03-DUTCH",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8851,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-03-DUTCH.webp",
-      "referencia": "assets/retratos/MEN-03-DUTCH.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dutch Lindqvist: a faded cap, a worn canvas hunting jacket, a pump shotgun.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-03.webp": {
-      "fecha": "2026-10-30T22:39:18.621Z",
-      "id": "MEN-03",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors",
-        "z_image_turbo_bf16.safetensors",
-        "qwen_3_4b.safetensors",
-        "z_image_ae.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 2,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-03.webp",
-      "referencia": "assets/tokens-crudo/figura/MEN-03-s20251.webp",
-      "figura": {
-        "workflow": "tools/workflows/t2i-zimage.json",
-        "modelos": [
-          "z_image_turbo_bf16.safetensors",
-          "qwen_3_4b.safetensors",
-          "z_image_ae.safetensors"
-        ],
-        "semilla": 20251,
-        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A rural bounty hunter, a former soldier of about forty-five, stubble, a faded cap, a worn canvas hunting jacket over flannel, a hunting rifle held across his body. Standing beside a pickup truck on a gravel farm road in flooded farmland in the rain. Crimson accent: the red tail light of the pickup.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
-      },
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: a rural bounty hunter: a faded cap, a worn canvas hunting jacket, a hunting rifle held in both hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-04-DAWSON.webp": {
-      "fecha": "2026-10-30T22:13:06.238Z",
-      "id": "MEN-04-DAWSON",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8951,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-04-DAWSON.webp",
-      "referencia": "assets/retratos/MEN-04-DAWSON.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dawson: a thickset man with a buzz cut and a bull neck, a dark security jacket with a radio on the shoulder, a collapsible baton.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-04.webp": {
-      "fecha": "2026-10-30T22:38:54.335Z",
-      "id": "MEN-04",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors",
-        "z_image_turbo_bf16.safetensors",
-        "qwen_3_4b.safetensors",
-        "z_image_ae.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 2,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-04.webp",
-      "referencia": "assets/tokens-crudo/figura/MEN-04-s20151.webp",
-      "figura": {
-        "workflow": "tools/workflows/t2i-zimage.json",
-        "modelos": [
-          "z_image_turbo_bf16.safetensors",
-          "qwen_3_4b.safetensors",
-          "z_image_ae.safetensors"
-        ],
-        "semilla": 20151,
-        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A burly corporate security guard, a ghoul, about forty, a buzz cut, a hard blank stare. A plain dark security jacket with no badge, no patches and no insignia over a stab vest, an earpiece, a radio on the shoulder, a collapsible baton in one hand. Standing in the empty marble lobby of a glass corporate tower at night. Crimson accent: the red light of his radio.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
-      },
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: a burly security guard with a buzz cut, a plain dark security jacket over a stab vest, a radio on the shoulder, a collapsible baton in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-05-BAS.webp": {
-      "fecha": "2026-10-30T22:13:30.524Z",
-      "id": "MEN-05-BAS",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9051,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-05-BAS.webp",
-      "referencia": "assets/retratos/MEN-05-BAS.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Bas Okonjo: a broad dark-skinned man in a wool watch cap and a hooded canvas dock jacket.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-05-TAVI.webp": {
-      "fecha": "2026-10-30T22:13:54.827Z",
-      "id": "MEN-05-TAVI",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9151,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-05-TAVI.webp",
-      "referencia": "assets/retratos/MEN-05-TAVI.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Tavi Mercer: a wiry young man with a buzzed undercut, a patched denim jacket over a dark hoodie, a bottle with a rag in its neck.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-05.webp": {
-      "fecha": "2026-10-30T22:39:42.911Z",
-      "id": "MEN-05",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors",
-        "z_image_turbo_bf16.safetensors",
-        "qwen_3_4b.safetensors",
-        "z_image_ae.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 2,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-05.webp",
-      "referencia": "assets/tokens-crudo/figura/MEN-05-s20351.webp",
-      "figura": {
-        "workflow": "tools/workflows/t2i-zimage.json",
-        "modelos": [
-          "z_image_turbo_bf16.safetensors",
-          "qwen_3_4b.safetensors",
-          "z_image_ae.safetensors"
-        ],
-        "semilla": 20351,
-        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: An Anarch vampire dock worker of about thirty-five, pale, unshaven, hard eyes, a hooded canvas work jacket, a wool watch cap, a heavy wrench in one hand. Standing among the hulls of old ships in a closed shipyard in the rain. Crimson accent: a red lantern hanging from a hull.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
-      },
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: an Anarch dock worker: a wool watch cap, a hooded canvas work jacket, a heavy wrench in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-06.webp": {
-      "fecha": "2026-10-30T22:14:19.113Z",
-      "id": "MEN-06",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9251,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-06.webp",
-      "referencia": "assets/retratos/MEN-06.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Teo Vásquez: short black hair, a hi-vis vest over a hooded work jacket, a hard hat under his arm.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-07.webp": {
-      "fecha": "2026-10-30T22:14:43.410Z",
-      "id": "MEN-07",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9351,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-07.webp",
-      "referencia": "assets/retratos/MEN-07.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dr. Marek Kowalski: neatly parted light brown hair, a white lab coat, a manila folder held to his chest.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-08.webp": {
-      "fecha": "2026-10-30T22:38:05.755Z",
-      "id": "MEN-08",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9455,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-08.webp",
-      "referencia": "assets/retratos/MEN-08.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: The Larchmont survivor: an emaciated hairless burn-scarred vampire crouching, a long ragged dark coat hanging straight down, barefoot, long clawed fingers. No cape, no wings, no spikes, no smoke, no aura around him.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-09.webp": {
-      "fecha": "2026-10-30T22:11:04.780Z",
-      "id": "MEN-09",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8151,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-09.webp",
-      "referencia": "assets/retratos/MEN-09.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Mr. Pell: an old man with thin grey hair, an impeccable dark suit of another era, an aluminium briefcase handcuffed to his wrist.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-10.webp": {
-      "fecha": "2026-10-30T22:15:31.975Z",
-      "id": "MEN-10",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9551,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-10.webp",
-      "referencia": "assets/retratos/MEN-10.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Marcos Delgado: short black hair greying at the sides, a dark hooded rain jacket, a basketball under his arm.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-11.webp": {
-      "fecha": "2026-10-30T22:15:56.263Z",
-      "id": "MEN-11",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9651,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-11.webp",
-      "referencia": "assets/retratos/MEN-11.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Cole Ransom: close-cropped grey hair, black tactical gear and light body armour, thermal goggles on his head, a short rifle with a weapon light.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-12.webp": {
-      "fecha": "2026-10-30T22:16:20.554Z",
-      "id": "MEN-12",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9751,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-12.webp",
-      "referencia": "assets/retratos/MEN-12.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Pike, a small hunched Nosferatu: a hairless mottled grey head with oversized ears, a soaked oversized army parka, a padded envelope clutched to his chest.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-13.webp": {
-      "fecha": "2026-10-30T22:16:44.858Z",
-      "id": "MEN-13",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9851,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-13.webp",
-      "referencia": "assets/retratos/MEN-13.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Sal Medeiros: a small old man with thin white combed-back hair, a tweed waistcoat over a cardigan, a pocket watch in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/MEN-14.webp": {
-      "fecha": "2026-10-30T22:17:09.159Z",
-      "id": "MEN-14",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 9951,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/MEN-14.webp",
-      "referencia": "assets/retratos/MEN-14.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Corwin: a huge bald heavily built man in a black bomber jacket, a heavy steel flashlight in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PERROS-MONTGOMERY.webp": {
-      "fecha": "2026-10-30T22:40:07.178Z",
-      "id": "PERROS-MONTGOMERY",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors",
-        "z_image_turbo_bf16.safetensors",
-        "qwen_3_4b.safetensors",
-        "z_image_ae.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 2,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PERROS-MONTGOMERY.webp",
-      "referencia": "assets/tokens-crudo/figura/PERROS-MONTGOMERY-s20451.webp",
-      "figura": {
-        "workflow": "tools/workflows/t2i-zimage.json",
-        "modelos": [
-          "z_image_turbo_bf16.safetensors",
-          "qwen_3_4b.safetensors",
-          "z_image_ae.safetensors"
-        ],
-        "semilla": 20451,
-        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A large ghoul working dog, a shepherd and wolf cross, standing alert in the rain on the dark wooden porch of a farmhouse, thick dark grey and black wet fur, faintly amber eyes, bared teeth, a heavy leather collar. Crimson accent: a drop of blood on its muzzle.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
-      },
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same dog from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only its back, the top of its head and its pointed ears, its tail and its four legs in a stalking stride, the head pointing UP to the top of the frame. Same fur, same colours as in Picture 1. The whole dog, centred. Only the dog: no people, no hands, no leash.\n\nThe dog: a large shepherd and wolf cross with thick dark grey and black wet fur and a heavy leather collar.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PJ-01.webp": {
-      "fecha": "2026-10-30T22:02:36.859Z",
-      "id": "PJ-01",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6051,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PJ-01.webp",
-      "referencia": "assets/retratos/PJ-01.webp",
-      "segundos": 27.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: David Smith: short dark hair greying at the temples, a thick black tactical jacket with reinforced shoulders, an old military folding knife in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PJ-02.webp": {
-      "fecha": "2026-10-30T22:36:55.097Z",
-      "id": "PJ-02",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6154,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PJ-02.webp",
-      "referencia": "assets/retratos/PJ-02.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Celeste Arden: sleek light golden-blonde jaw-length hair, a tailored charcoal coat, a crystal wine glass in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PJ-03.webp": {
-      "fecha": "2026-10-30T22:37:17.362Z",
-      "id": "PJ-03",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6255,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PJ-03.webp",
-      "referencia": "assets/retratos/PJ-03.webp",
-      "segundos": 21.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Ezra Lund, a Nosferatu: a hairless grey-white head with long pointed ears, a plain black hoodie with clean edges and the hood half up, a ruggedized laptop open in his hands. No cape, no wings, no spikes, no smoke, no aura around him.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PJ-04.webp": {
-      "fecha": "2026-10-30T22:03:48.854Z",
-      "id": "PJ-04",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6351,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PJ-04.webp",
-      "referencia": "assets/retratos/PJ-04.webp",
-      "segundos": 23.1,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Nadia Ferro: a shaggy dark bob with one faded streak, a black leather jacket, studio headphones around her neck.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PJ-05.webp": {
-      "fecha": "2026-10-30T22:04:12.168Z",
-      "id": "PJ-05",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6451,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PJ-05.webp",
-      "referencia": "assets/retratos/PJ-05.webp",
-      "segundos": 23,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Hal Brekke: a big broad man with long tangled dirty-blond hair, a dark oilskin jacket over a cream wool sweater, a coil of rope over one shoulder.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PJ-06.webp": {
-      "fecha": "2026-10-30T22:04:36.163Z",
-      "id": "PJ-06",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6551,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PJ-06.webp",
-      "referencia": "assets/retratos/PJ-06.webp",
-      "segundos": 23.6,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Ruth Abernathy: ash-brown hair pinned up in a tight bun, a long white coat over navy scrubs, nitrile gloves, a scalpel in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-01.webp": {
-      "fecha": "2026-10-30T22:05:00.460Z",
-      "id": "PNJ-01",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6651,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-01.webp",
-      "referencia": "assets/retratos/PNJ-01.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Ethan Montgomery: a broad heavy man with short salt-and-pepper hair, a waxed canvas jacket over flannel, enormous scarred hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-02.webp": {
-      "fecha": "2026-10-30T22:37:41.480Z",
-      "id": "PNJ-02",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6752,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-02.webp",
-      "referencia": "assets/retratos/PNJ-02.webp",
-      "segundos": 23.8,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Marcus Whitmore: dark hair swept back, an impeccable dark suit, one ring with a black stone.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-03.webp": {
-      "fecha": "2026-10-31T15:22:51.767Z",
-      "id": "PNJ-03",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6851,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-03-s6814.webp",
-      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-03-s6814.webp",
-      "segundos": 24.1,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Charles Halloway: black hair with a neat side part, a dark classic charcoal suit, both hands clasped behind his back.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-04.webp": {
-      "fecha": "2026-10-31T15:20:49.393Z",
-      "id": "PNJ-04",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 6951,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-04-s6913.webp",
-      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-04-s6913.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Helen Ward: dark hair escaping a grey hoodie, clear glasses pushed up on her head, a cigarette in one hand and a small closed black flip phone in the other.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-05.webp": {
-      "fecha": "2026-10-30T22:06:37.624Z",
-      "id": "PNJ-05",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7051,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-05.webp",
-      "referencia": "assets/retratos/PNJ-05.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Tom «Bear» Whitman: a huge man with a buzz cut, a grey t-shirt and tactical cargo pants, a black metal canteen on his belt.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-10.webp": {
-      "fecha": "2026-10-30T22:11:53.359Z",
-      "id": "PNJ-10",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8351,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-10.webp",
-      "referencia": "assets/retratos/PNJ-10.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Julian Ashby: combed-back light-brown hair, a navy suit, a leather document folder held to his chest.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-11.webp": {
-      "fecha": "2026-10-31T15:26:56.071Z",
-      "id": "PNJ-11",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7151,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-11-s7112.webp",
-      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-11-s7112.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Rosa Iturbe: short black hair, faded blue work overalls with rolled sleeves, steel-toed boots, grease-stained hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-12.webp": {
-      "fecha": "2026-10-31T15:25:18.565Z",
-      "id": "PNJ-12",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7251,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-12-s7212.webp",
-      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-12-s7212.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: August Krell: a shaved head, a long grey wool coat clearly too big at the shoulders over dark work clothes, his left fist raised in front of him.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-13.webp": {
-      "fecha": "2026-10-30T22:07:50.486Z",
-      "id": "PNJ-13",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7351,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-13.webp",
-      "referencia": "assets/retratos/PNJ-13.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Abel Thornquist: an enormous hunched figure with cracked grey wood-like skin on his bald head, a mended 1920s three-piece suit, a carbide lamp in one root-like hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-14.webp": {
-      "fecha": "2026-10-30T22:08:14.766Z",
-      "id": "PNJ-14",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7451,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-14.webp",
-      "referencia": "assets/retratos/PNJ-14.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Solène Marchetti: dark hair in a low bun, a grey vintage-cut dress, a fountain pen and a leather-bound register in her hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-15.webp": {
-      "fecha": "2026-10-30T22:08:39.052Z",
-      "id": "PNJ-15",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7551,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-15.webp",
-      "referencia": "assets/retratos/PNJ-15.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Anneliese Voight: very short hair, a black turtleneck under an open white lab coat.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-16.webp": {
-      "fecha": "2026-10-30T22:09:03.345Z",
-      "id": "PNJ-16",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7651,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-16.webp",
-      "referencia": "assets/retratos/PNJ-16.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Wendell Fry: a faded baseball cap, a corduroy jacket, headphones around his neck.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-17.webp": {
-      "fecha": "2026-10-30T22:09:27.631Z",
-      "id": "PNJ-17",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7751,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-17.webp",
-      "referencia": "assets/retratos/PNJ-17.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Liam O'Connor: a huge man with a wool cap over red hair, an undershirt and suspenders, boxing pads on his hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-18.webp": {
-      "fecha": "2026-10-30T22:09:51.915Z",
-      "id": "PNJ-18",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7851,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-18.webp",
-      "referencia": "assets/retratos/PNJ-18.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dana Okafor: very short greying hair, a plain grey blazer, a paper cup of black coffee in her right hand, her left hand in her pocket.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-19.webp": {
-      "fecha": "2026-10-31T15:24:29.795Z",
-      "id": "PNJ-19",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 7951,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-19-s7914.webp",
-      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-19-s7914.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Preston Gale: a tanned man in his fifties with thinning, greying slicked-back hair, an expensive navy suit and an open-collared white shirt.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-20.webp": {
-      "fecha": "2026-10-30T22:10:40.482Z",
-      "id": "PNJ-20",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8051,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-20.webp",
-      "referencia": "assets/retratos/PNJ-20.webp",
-      "segundos": 23.9,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Jun Takeda: a bike helmet with stickers, a yellow delivery rain jacket, an insulated delivery backpack.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/tokens/PNJ-21.webp": {
-      "fecha": "2026-10-30T22:11:29.061Z",
-      "id": "PNJ-21",
-      "estilo": "token",
-      "modelos": [
-        "qwen-image-edit-2511-Q5_K_M.gguf",
-        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_image_vae.safetensors",
-        "birefnet.safetensors"
-      ],
-      "licencia": "Apache 2.0 + MIT",
-      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
-      "semilla": 8251,
-      "parametros": {
-        "ancho": 1024,
-        "alto": 1024
-      },
-      "crudo": "assets/tokens-crudo/fondo/PNJ-21.webp",
-      "referencia": "assets/retratos/PNJ-21.webp",
-      "segundos": 24,
-      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Sasha Hale: brown hair in a ponytail, a plain grey sweater, headphones around her neck, a paper cup of coffee.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
-    },
-    "assets/portadas/portada.webp": {
-      "fecha": "2026-10-31T16:53:45.283Z",
-      "id": "portada",
-      "estilo": "portada",
-      "modelos": [
-        "z_image_turbo_bf16.safetensors",
-        "qwen_3_4b.safetensors",
-        "z_image_ae.safetensors"
-      ],
-      "licencia": "Apache 2.0",
-      "workflow": "tools/workflows/t2i-zimage.json",
-      "semilla": 9922,
-      "parametros": {
-        "ancho": 1920,
-        "alto": 1088
-      },
-      "segundos": 11.9,
-      "prompt": "Wide 16:9 cinematic cover illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: A rain-soaked city waterfront at night, seen from the end of an old wooden pier. On the left third, a lone man in a long dark coat stands with his back to us at the edge of the pier, small in the frame, looking across black harbour water towards a skyline of plain rectangular dark glass office blocks with flat roofs, half lost in low cloud and mist, countless small cold windows; one block is taller than the rest, and a single window is lit on its top floor, as if someone up there is watching. On the right third, the rusted container cranes of the port loom against the clouds. Far away, a ferry with lit windows crosses the dark water. Crimson accent: a single small red navigation buoy light floating on the water in the middle distance, with its long red reflection trembling on the wet surface. Every building is a plain box: no spires, no needle-shaped towers, no observation decks, no saucer tops, no towers on thin stems, no antennas with lights, no recognisable landmark.\n\nCOMPOSITION: the lower middle band of the image (between half and three quarters of its height, across the centre) is calm, dark and simple, only black water with soft broken reflections, because round interface buttons will be placed over it. The painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no title, no logo, no signature, no watermark, no caption, no famous landmark tower.",
-      "recorte": "1920×1088 → 1920×1080 centrado (tanda2.sh)"
     },
     "assets/tiles/tile-auto-furgoneta.webp": {
       "fecha": "2026-10-31T16:45:50.037Z",
@@ -6316,6 +5216,428 @@
       "prompt": "Flat-lay overhead shot, camera pointing STRAIGHT DOWN at the floor from directly above, like a satellite or a floor-plan view: we see ONLY the top of the object, as a flat 2D shape; legs, castors and side faces are hidden underneath it and NOT visible. Top-down tile artwork of ONE single loose piece of furniture or prop for a virtual tabletop battlemap set in an old apartment building in present-day Seattle. The object is centred and fills about 85% of the frame. If the object is elongated, its long axis runs horizontally from left to right; if it has a backrest, the backrest runs along the top edge. Only the object described below, nothing else.\n\nSUBJECT: a matte black external hard drive the size of a paperback book, a strip of beige painter's masking tape across its top with nothing written on it, a short frayed USB cable.\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), worn, dusty and lived-in, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
       "elegida": "candidatas/tiles/tile-disco-duro-s8582.webp"
     },
+    "assets/tiles/tile-dron.webp": {
+      "fecha": "2026-10-31T22:07:35.830Z",
+      "id": "tile-dron",
+      "estilo": "tile-vehiculo",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors",
+        "Z-Image-Turbo-Fun-Controlnet-Union-2.1-2602-8steps.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/plano-zimage.json + tools/workflows/recortar-birefnet.json + magick (recorte y escala a 100 px/m)",
+      "semilla": 10313,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3113,
+                0.2887
+              ],
+              [
+                0.1513,
+                0.1287
+              ],
+              [
+                0.1287,
+                0.1513
+              ],
+              [
+                0.2887,
+                0.3113
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3113,
+                0.3113
+              ],
+              [
+                0.4713,
+                0.1513
+              ],
+              [
+                0.4487,
+                0.1287
+              ],
+              [
+                0.2887,
+                0.2887
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.2887,
+                0.2887
+              ],
+              [
+                0.1287,
+                0.4487
+              ],
+              [
+                0.1513,
+                0.4713
+              ],
+              [
+                0.3113,
+                0.3113
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.2887,
+                0.3113
+              ],
+              [
+                0.4487,
+                0.4713
+              ],
+              [
+                0.4713,
+                0.4487
+              ],
+              [
+                0.3113,
+                0.2887
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.0373,
+                0.0865
+              ],
+              [
+                0.2271,
+                0.2163
+              ],
+              [
+                0.2427,
+                0.1935
+              ],
+              [
+                0.0529,
+                0.0637
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3729,
+                0.2163
+              ],
+              [
+                0.5627,
+                0.0865
+              ],
+              [
+                0.5471,
+                0.0637
+              ],
+              [
+                0.3573,
+                0.1935
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.0529,
+                0.5363
+              ],
+              [
+                0.2427,
+                0.4065
+              ],
+              [
+                0.2271,
+                0.3837
+              ],
+              [
+                0.0373,
+                0.5135
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3573,
+                0.4065
+              ],
+              [
+                0.5471,
+                0.5363
+              ],
+              [
+                0.5627,
+                0.5135
+              ],
+              [
+                0.3729,
+                0.3837
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "rect",
+            0.215,
+            0.17,
+            0.17,
+            0.26,
+            {
+              "r": 0.045,
+              "color": "#2e3034"
+            }
+          ],
+          [
+            "rect",
+            0.245,
+            0.2,
+            0.11,
+            0.13,
+            {
+              "r": 0.02,
+              "color": "#45484e"
+            }
+          ],
+          [
+            "circ",
+            0.3,
+            0.43,
+            0.04,
+            {
+              "color": "#151515"
+            }
+          ],
+          [
+            "circ",
+            0.3,
+            0.43,
+            0.02,
+            {
+              "color": "#3a4450"
+            }
+          ]
+        ],
+        "fuerza": 0.85,
+        "fin": 1,
+        "denoise": 0.85,
+        "control": "cantos del esquema vectorial (generar-arte.mjs, svgEsquema)",
+        "alfa": "máx(BiRefNet, silueta del esquema erosionada)"
+      },
+      "metros": [
+        0.6,
+        0.6
+      ],
+      "escala": {
+        "px_por_m": 100,
+        "px": [
+          60,
+          60
+        ],
+        "llena_pct": [
+          100,
+          100
+        ]
+      },
+      "segundos": 24,
+      "prompt": "Top-down orthographic illustration of ONE single small quadcopter drone seen from DIRECTLY ABOVE, like a floor plan, painted exactly over the line drawing so that every line of the drawing is an edge or a seam of the drone. We only see its upper surfaces: no side faces, no landing legs, no perspective, no tilt, no horizon. Nothing else around it or behind it.\n\nSUBJECT, seen from above: a matte black professional surveillance quadcopter drone of about sixty centimetres across: a compact black central body with a dark grey battery pack on top, four thin carbon-fibre arms in an X, a black motor at the end of each arm with a two-blade black propeller, a thin translucent grey propeller guard ring around each propeller, and a small round black thermal camera gimbal at the front edge of the body. Status LEDs OFF.\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), matching the battlemaps of the same chronicle. The bodywork is wet with rain: beads of water and cold reflections on the roof and bonnet.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no road, no ground, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. Headlights and tail lights OFF: no glow, no halo, no light beams.\n\nABSOLUTELY NO TEXT: blank licence plates, no letters, no numbers, no logos, no brand emblems, no model badges. Nobody inside, no people, no frame, no border, no second vehicle."
+    },
     "assets/tiles/tile-estanteria-conservas.webp": {
       "fecha": "2026-10-31T18:08:23.081Z",
       "id": "tile-estanteria-conservas",
@@ -6686,6 +6008,41 @@
       "segundos": 20,
       "prompt": "Top-down orthographic illustration of ONE single loose object seen from DIRECTLY ABOVE, like a floor plan, painted exactly over the line drawing so that every line of the drawing is an edge or a seam of the object. We only see its upper surfaces: no side faces, no legs, no perspective, no tilt, no horizon. A worn, dusty piece from an old building in present-day Seattle. Nothing else around it or behind it.\n\nSUBJECT, seen from above: seven faded, sun-bleached plastic flowers tied together with rusty wire in a loose horizontal row, seen from above as round flower heads on short stems, and among them one fresh, real deep-red rose.\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), worn, dusty and lived-in, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
       "elegida": "tiles-esq/todo/tile-flores-valla-s8331.webp"
+    },
+    "assets/tiles/tile-furgoneta-firstlight.webp": {
+      "fecha": "2026-10-31T22:07:52.366Z",
+      "id": "tile-furgoneta-firstlight",
+      "estilo": "tile-vehiculo",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/t2i-zimage.json + tools/workflows/recortar-birefnet.json + magick (giro -90°) + magick (recorte y escala a 100 px/m)",
+      "semilla": 10303,
+      "parametros": {
+        "ancho": 656,
+        "alto": 1600
+      },
+      "metros": [
+        5.3,
+        2.1
+      ],
+      "escala": {
+        "px_por_m": 100,
+        "px": [
+          530,
+          210
+        ],
+        "llena_pct": [
+          100,
+          95
+        ]
+      },
+      "segundos": 16,
+      "prompt": "Top-down tile artwork of ONE single vehicle for a virtual tabletop battlemap set in present-day Seattle, seen from DIRECTLY ABOVE as if photographed from a drone: a strictly orthographic top view like a satellite photo, only the roof, the bonnet, the windscreen and the boot or cargo bed are visible; no side panels, no wheels sticking out, no perspective, no isometric tilt. The vehicle is centred and fills about 90% of the frame along its length.\n\nSUBJECT: FIRSTLIGHT's unmarked surveillance van: a matte black high-roof panel van with no windows in the cargo area and darkly tinted front windows, a low black roof rack carrying a flat bank of large square floodlight panels that are SWITCHED OFF (dark grey glass, unlit), two short black whip antennas and a small black dome camera on the roof, a sliding side door. The van stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), matching the battlemaps of the same chronicle. The bodywork is wet with rain: beads of water and cold reflections on the roof and bonnet.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no road, no ground, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. Headlights and tail lights OFF: no glow, no halo, no light beams.\n\nABSOLUTELY NO TEXT: blank licence plates, no letters, no numbers, no logos, no brand emblems, no model badges. Nobody inside, no people, no frame, no border, no second vehicle."
     },
     "assets/tiles/tile-lampara-carburo.webp": {
       "fecha": "2026-10-31T18:05:40.853Z",
@@ -9951,6 +9308,1106 @@
       "segundos": 20,
       "prompt": "Top-down orthographic illustration of ONE single loose object seen from DIRECTLY ABOVE, like a floor plan, painted exactly over the line drawing so that every line of the drawing is an edge or a seam of the object. We only see its upper surfaces: no side faces, no legs, no perspective, no tilt, no horizon. A worn, dusty piece from an old building in present-day Seattle. Nothing else around it or behind it.\n\nSUBJECT, seen from above: a scatter of broken window glass on the floor seen from above: sharp clear shards with cold blue-grey reflections and a few larger triangular pieces, nothing else.\n\nSTYLE: illustrated photorealism with crisp, confident dark ink outlines under realistic painted materials, cold desaturated palette of rainy Seattle (wet slate grey, harbour blue, deep black), worn, dusty and lived-in, matching the battlemaps of the same chronicle.\n\nBACKGROUND: a perfectly flat, uniform, plain light-grey background with nothing on it: no floor, no rug, no texture, no gradient, NO shadow cast on the ground, no vignette.\n\nLIGHT: neutral even top light. NEVER a lit lamp, glow, halo, light pool or glowing screen.\n\nABSOLUTELY NO TEXT: no letters, labels, logos, numbers or legible print on boxes, papers or screens. No people, no hands, no frame, no border, no second object.",
       "elegida": "tiles-esq/todo/tile-vidrio-roto-s8652.webp"
+    },
+    "assets/tokens/CAZ-01.webp": {
+      "fecha": "2026-10-30T22:17:33.450Z",
+      "id": "CAZ-01",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 10051,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/CAZ-01.webp",
+      "referencia": "assets/retratos/CAZ-01.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Tess Navarro: dark hair in a short braid, black tactical gear and light body armour, a short rifle with a UV flashlight, a medal on a cord in her left hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/CAZ-02.webp": {
+      "fecha": "2026-10-30T22:17:57.756Z",
+      "id": "CAZ-02",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 10151,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/CAZ-02.webp",
+      "referencia": "assets/retratos/CAZ-02.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Owen Pak: a black baseball cap worn backwards, black tactical gear, a ruggedized tablet strapped to his forearm, a small drone in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/CAZ-03.webp": {
+      "fecha": "2026-10-30T22:18:22.059Z",
+      "id": "CAZ-03",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 10251,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/CAZ-03.webp",
+      "referencia": "assets/retratos/CAZ-03.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Lena Sorensen: blonde hair pulled back tight, broad shoulders, black tactical gear and light body armour, a breaching charge in her hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-01.webp": {
+      "fecha": "2026-10-30T22:12:17.655Z",
+      "id": "MEN-01",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8751,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-01.webp",
+      "referencia": "assets/retratos/MEN-01.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Lonnie Barras: lank thinning hair, a cheap faded windbreaker, a cigarette in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-02.webp": {
+      "fecha": "2026-10-30T22:38:30.037Z",
+      "id": "MEN-02",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors",
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 2,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-02.webp",
+      "referencia": "assets/tokens-crudo/figura/MEN-02-s20051.webp",
+      "figura": {
+        "workflow": "tools/workflows/t2i-zimage.json",
+        "modelos": [
+          "z_image_turbo_bf16.safetensors",
+          "qwen_3_4b.safetensors",
+          "z_image_ae.safetensors"
+        ],
+        "semilla": 20051,
+        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A FIRSTLIGHT tactical operator, a former soldier of about forty, a black helmet with thermal goggles pushed up, a hard tired face. Black tactical gear without any insignia or patches, light body armour, a body camera on the chest, a short rifle with a weapon-mounted UV flashlight held low. Standing in the rain beside a black van in an industrial port lot. Crimson accent: the small red recording light of the body camera.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+      },
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: a FIRSTLIGHT operator: a black helmet with thermal goggles, black tactical gear and light body armour without insignia, a short rifle with a weapon light held ready.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-03-DUTCH.webp": {
+      "fecha": "2026-10-30T22:12:41.946Z",
+      "id": "MEN-03-DUTCH",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8851,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-03-DUTCH.webp",
+      "referencia": "assets/retratos/MEN-03-DUTCH.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dutch Lindqvist: a faded cap, a worn canvas hunting jacket, a pump shotgun.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-03.webp": {
+      "fecha": "2026-10-30T22:39:18.621Z",
+      "id": "MEN-03",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors",
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 2,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-03.webp",
+      "referencia": "assets/tokens-crudo/figura/MEN-03-s20251.webp",
+      "figura": {
+        "workflow": "tools/workflows/t2i-zimage.json",
+        "modelos": [
+          "z_image_turbo_bf16.safetensors",
+          "qwen_3_4b.safetensors",
+          "z_image_ae.safetensors"
+        ],
+        "semilla": 20251,
+        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A rural bounty hunter, a former soldier of about forty-five, stubble, a faded cap, a worn canvas hunting jacket over flannel, a hunting rifle held across his body. Standing beside a pickup truck on a gravel farm road in flooded farmland in the rain. Crimson accent: the red tail light of the pickup.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+      },
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: a rural bounty hunter: a faded cap, a worn canvas hunting jacket, a hunting rifle held in both hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-04-DAWSON.webp": {
+      "fecha": "2026-10-30T22:13:06.238Z",
+      "id": "MEN-04-DAWSON",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8951,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-04-DAWSON.webp",
+      "referencia": "assets/retratos/MEN-04-DAWSON.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dawson: a thickset man with a buzz cut and a bull neck, a dark security jacket with a radio on the shoulder, a collapsible baton.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-04.webp": {
+      "fecha": "2026-10-30T22:38:54.335Z",
+      "id": "MEN-04",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors",
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 2,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-04.webp",
+      "referencia": "assets/tokens-crudo/figura/MEN-04-s20151.webp",
+      "figura": {
+        "workflow": "tools/workflows/t2i-zimage.json",
+        "modelos": [
+          "z_image_turbo_bf16.safetensors",
+          "qwen_3_4b.safetensors",
+          "z_image_ae.safetensors"
+        ],
+        "semilla": 20151,
+        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A burly corporate security guard, a ghoul, about forty, a buzz cut, a hard blank stare. A plain dark security jacket with no badge, no patches and no insignia over a stab vest, an earpiece, a radio on the shoulder, a collapsible baton in one hand. Standing in the empty marble lobby of a glass corporate tower at night. Crimson accent: the red light of his radio.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+      },
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: a burly security guard with a buzz cut, a plain dark security jacket over a stab vest, a radio on the shoulder, a collapsible baton in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-05-BAS.webp": {
+      "fecha": "2026-10-30T22:13:30.524Z",
+      "id": "MEN-05-BAS",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9051,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-05-BAS.webp",
+      "referencia": "assets/retratos/MEN-05-BAS.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Bas Okonjo: a broad dark-skinned man in a wool watch cap and a hooded canvas dock jacket.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-05-TAVI.webp": {
+      "fecha": "2026-10-30T22:13:54.827Z",
+      "id": "MEN-05-TAVI",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9151,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-05-TAVI.webp",
+      "referencia": "assets/retratos/MEN-05-TAVI.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Tavi Mercer: a wiry young man with a buzzed undercut, a patched denim jacket over a dark hoodie, a bottle with a rag in its neck.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-05.webp": {
+      "fecha": "2026-10-30T22:39:42.911Z",
+      "id": "MEN-05",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors",
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 2,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-05.webp",
+      "referencia": "assets/tokens-crudo/figura/MEN-05-s20351.webp",
+      "figura": {
+        "workflow": "tools/workflows/t2i-zimage.json",
+        "modelos": [
+          "z_image_turbo_bf16.safetensors",
+          "qwen_3_4b.safetensors",
+          "z_image_ae.safetensors"
+        ],
+        "semilla": 20351,
+        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: An Anarch vampire dock worker of about thirty-five, pale, unshaven, hard eyes, a hooded canvas work jacket, a wool watch cap, a heavy wrench in one hand. Standing among the hulls of old ships in a closed shipyard in the rain. Crimson accent: a red lantern hanging from a hull.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+      },
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: an Anarch dock worker: a wool watch cap, a hooded canvas work jacket, a heavy wrench in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-06.webp": {
+      "fecha": "2026-10-30T22:14:19.113Z",
+      "id": "MEN-06",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9251,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-06.webp",
+      "referencia": "assets/retratos/MEN-06.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Teo Vásquez: short black hair, a hi-vis vest over a hooded work jacket, a hard hat under his arm.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-07.webp": {
+      "fecha": "2026-10-30T22:14:43.410Z",
+      "id": "MEN-07",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9351,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-07.webp",
+      "referencia": "assets/retratos/MEN-07.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dr. Marek Kowalski: neatly parted light brown hair, a white lab coat, a manila folder held to his chest.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-08.webp": {
+      "fecha": "2026-10-30T22:38:05.755Z",
+      "id": "MEN-08",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9455,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-08.webp",
+      "referencia": "assets/retratos/MEN-08.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: The Larchmont survivor: an emaciated hairless burn-scarred vampire crouching, a long ragged dark coat hanging straight down, barefoot, long clawed fingers. No cape, no wings, no spikes, no smoke, no aura around him.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-09.webp": {
+      "fecha": "2026-10-30T22:11:04.780Z",
+      "id": "MEN-09",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8151,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-09.webp",
+      "referencia": "assets/retratos/MEN-09.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Mr. Pell: an old man with thin grey hair, an impeccable dark suit of another era, an aluminium briefcase handcuffed to his wrist.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-10.webp": {
+      "fecha": "2026-10-30T22:15:31.975Z",
+      "id": "MEN-10",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9551,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-10.webp",
+      "referencia": "assets/retratos/MEN-10.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Marcos Delgado: short black hair greying at the sides, a dark hooded rain jacket, a basketball under his arm.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-11.webp": {
+      "fecha": "2026-10-30T22:15:56.263Z",
+      "id": "MEN-11",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9651,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-11.webp",
+      "referencia": "assets/retratos/MEN-11.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Cole Ransom: close-cropped grey hair, black tactical gear and light body armour, thermal goggles on his head, a short rifle with a weapon light.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-12.webp": {
+      "fecha": "2026-10-30T22:16:20.554Z",
+      "id": "MEN-12",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9751,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-12.webp",
+      "referencia": "assets/retratos/MEN-12.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Pike, a small hunched Nosferatu: a hairless mottled grey head with oversized ears, a soaked oversized army parka, a padded envelope clutched to his chest.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-13.webp": {
+      "fecha": "2026-10-30T22:16:44.858Z",
+      "id": "MEN-13",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9851,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-13.webp",
+      "referencia": "assets/retratos/MEN-13.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Sal Medeiros: a small old man with thin white combed-back hair, a tweed waistcoat over a cardigan, a pocket watch in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/MEN-14.webp": {
+      "fecha": "2026-10-30T22:17:09.159Z",
+      "id": "MEN-14",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 9951,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/MEN-14.webp",
+      "referencia": "assets/retratos/MEN-14.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Corwin: a huge bald heavily built man in a black bomber jacket, a heavy steel flashlight in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PERROS-MONTGOMERY.webp": {
+      "fecha": "2026-10-30T22:40:07.178Z",
+      "id": "PERROS-MONTGOMERY",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors",
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/t2i-zimage.json (figura de referencia) + tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 2,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PERROS-MONTGOMERY.webp",
+      "referencia": "assets/tokens-crudo/figura/PERROS-MONTGOMERY-s20451.webp",
+      "figura": {
+        "workflow": "tools/workflows/t2i-zimage.json",
+        "modelos": [
+          "z_image_turbo_bf16.safetensors",
+          "qwen_3_4b.safetensors",
+          "z_image_ae.safetensors"
+        ],
+        "semilla": 20451,
+        "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A large ghoul working dog, a shepherd and wolf cross, standing alert in the rain on the dark wooden porch of a farmhouse, thick dark grey and black wet fur, faintly amber eyes, bared teeth, a heavy leather collar. Crimson accent: a drop of blood on its muzzle.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+      },
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same dog from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only its back, the top of its head and its pointed ears, its tail and its four legs in a stalking stride, the head pointing UP to the top of the frame. Same fur, same colours as in Picture 1. The whole dog, centred. Only the dog: no people, no hands, no leash.\n\nThe dog: a large shepherd and wolf cross with thick dark grey and black wet fur and a heavy leather collar.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PJ-01.webp": {
+      "fecha": "2026-10-30T22:02:36.859Z",
+      "id": "PJ-01",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6051,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PJ-01.webp",
+      "referencia": "assets/retratos/PJ-01.webp",
+      "segundos": 27.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: David Smith: short dark hair greying at the temples, a thick black tactical jacket with reinforced shoulders, an old military folding knife in his hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PJ-02.webp": {
+      "fecha": "2026-10-30T22:36:55.097Z",
+      "id": "PJ-02",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6154,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PJ-02.webp",
+      "referencia": "assets/retratos/PJ-02.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Celeste Arden: sleek light golden-blonde jaw-length hair, a tailored charcoal coat, a crystal wine glass in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PJ-03.webp": {
+      "fecha": "2026-10-30T22:37:17.362Z",
+      "id": "PJ-03",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6255,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PJ-03.webp",
+      "referencia": "assets/retratos/PJ-03.webp",
+      "segundos": 21.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Ezra Lund, a Nosferatu: a hairless grey-white head with long pointed ears, a plain black hoodie with clean edges and the hood half up, a ruggedized laptop open in his hands. No cape, no wings, no spikes, no smoke, no aura around him.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PJ-04.webp": {
+      "fecha": "2026-10-30T22:03:48.854Z",
+      "id": "PJ-04",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6351,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PJ-04.webp",
+      "referencia": "assets/retratos/PJ-04.webp",
+      "segundos": 23.1,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Nadia Ferro: a shaggy dark bob with one faded streak, a black leather jacket, studio headphones around her neck.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PJ-05.webp": {
+      "fecha": "2026-10-30T22:04:12.168Z",
+      "id": "PJ-05",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6451,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PJ-05.webp",
+      "referencia": "assets/retratos/PJ-05.webp",
+      "segundos": 23,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Hal Brekke: a big broad man with long tangled dirty-blond hair, a dark oilskin jacket over a cream wool sweater, a coil of rope over one shoulder.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PJ-06.webp": {
+      "fecha": "2026-10-30T22:04:36.163Z",
+      "id": "PJ-06",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6551,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PJ-06.webp",
+      "referencia": "assets/retratos/PJ-06.webp",
+      "segundos": 23.6,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Ruth Abernathy: ash-brown hair pinned up in a tight bun, a long white coat over navy scrubs, nitrile gloves, a scalpel in one hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-01.webp": {
+      "fecha": "2026-10-30T22:05:00.460Z",
+      "id": "PNJ-01",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6651,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-01.webp",
+      "referencia": "assets/retratos/PNJ-01.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Ethan Montgomery: a broad heavy man with short salt-and-pepper hair, a waxed canvas jacket over flannel, enormous scarred hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-02.webp": {
+      "fecha": "2026-10-30T22:37:41.480Z",
+      "id": "PNJ-02",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6752,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-02.webp",
+      "referencia": "assets/retratos/PNJ-02.webp",
+      "segundos": 23.8,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Marcus Whitmore: dark hair swept back, an impeccable dark suit, one ring with a black stone.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-03.webp": {
+      "fecha": "2026-10-31T15:22:51.767Z",
+      "id": "PNJ-03",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6851,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-03-s6814.webp",
+      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-03-s6814.webp",
+      "segundos": 24.1,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Charles Halloway: black hair with a neat side part, a dark classic charcoal suit, both hands clasped behind his back.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-04.webp": {
+      "fecha": "2026-10-31T15:20:49.393Z",
+      "id": "PNJ-04",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 6951,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-04-s6913.webp",
+      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-04-s6913.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Helen Ward: dark hair escaping a grey hoodie, clear glasses pushed up on her head, a cigarette in one hand and a small closed black flip phone in the other.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-05.webp": {
+      "fecha": "2026-10-30T22:06:37.624Z",
+      "id": "PNJ-05",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7051,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-05.webp",
+      "referencia": "assets/retratos/PNJ-05.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Tom «Bear» Whitman: a huge man with a buzz cut, a grey t-shirt and tactical cargo pants, a black metal canteen on his belt.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-10.webp": {
+      "fecha": "2026-10-30T22:11:53.359Z",
+      "id": "PNJ-10",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8351,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-10.webp",
+      "referencia": "assets/retratos/PNJ-10.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Julian Ashby: combed-back light-brown hair, a navy suit, a leather document folder held to his chest.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-11.webp": {
+      "fecha": "2026-10-31T15:26:56.071Z",
+      "id": "PNJ-11",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7151,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-11-s7112.webp",
+      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-11-s7112.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Rosa Iturbe: short black hair, faded blue work overalls with rolled sleeves, steel-toed boots, grease-stained hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-12.webp": {
+      "fecha": "2026-10-31T15:25:18.565Z",
+      "id": "PNJ-12",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7251,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-12-s7212.webp",
+      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-12-s7212.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: August Krell: a shaved head, a long grey wool coat clearly too big at the shoulders over dark work clothes, his left fist raised in front of him.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-13.webp": {
+      "fecha": "2026-10-30T22:07:50.486Z",
+      "id": "PNJ-13",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7351,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-13.webp",
+      "referencia": "assets/retratos/PNJ-13.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Abel Thornquist: an enormous hunched figure with cracked grey wood-like skin on his bald head, a mended 1920s three-piece suit, a carbide lamp in one root-like hand.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-14.webp": {
+      "fecha": "2026-10-30T22:08:14.766Z",
+      "id": "PNJ-14",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7451,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-14.webp",
+      "referencia": "assets/retratos/PNJ-14.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Solène Marchetti: dark hair in a low bun, a grey vintage-cut dress, a fountain pen and a leather-bound register in her hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-15.webp": {
+      "fecha": "2026-10-30T22:08:39.052Z",
+      "id": "PNJ-15",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7551,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-15.webp",
+      "referencia": "assets/retratos/PNJ-15.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Anneliese Voight: very short hair, a black turtleneck under an open white lab coat.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-16.webp": {
+      "fecha": "2026-10-30T22:09:03.345Z",
+      "id": "PNJ-16",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7651,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-16.webp",
+      "referencia": "assets/retratos/PNJ-16.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Wendell Fry: a faded baseball cap, a corduroy jacket, headphones around his neck.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-17.webp": {
+      "fecha": "2026-10-30T22:09:27.631Z",
+      "id": "PNJ-17",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7751,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-17.webp",
+      "referencia": "assets/retratos/PNJ-17.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Liam O'Connor: a huge man with a wool cap over red hair, an undershirt and suspenders, boxing pads on his hands.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-18.webp": {
+      "fecha": "2026-10-30T22:09:51.915Z",
+      "id": "PNJ-18",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7851,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-18.webp",
+      "referencia": "assets/retratos/PNJ-18.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Dana Okafor: very short greying hair, a plain grey blazer, a paper cup of black coffee in her right hand, her left hand in her pocket.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-19.webp": {
+      "fecha": "2026-10-31T15:24:29.795Z",
+      "id": "PNJ-19",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 7951,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/tokens/fondo/PNJ-19-s7914.webp",
+      "referencia": "../../../../../../tmp/claude-1000/-var-home-mvolgyi-Git-WoD-seattle-by-night/e31c1846-d367-4b9e-a174-b4dc026f7b3a/scratchpad/candidatas/retratos/PNJ-19-s7914.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Preston Gale: a tanned man in his fifties with thinning, greying slicked-back hair, an expensive navy suit and an open-collared white shirt.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-20.webp": {
+      "fecha": "2026-10-30T22:10:40.482Z",
+      "id": "PNJ-20",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8051,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-20.webp",
+      "referencia": "assets/retratos/PNJ-20.webp",
+      "segundos": 23.9,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Jun Takeda: a bike helmet with stickers, a yellow delivery rain jacket, an insulated delivery backpack.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    },
+    "assets/tokens/PNJ-21.webp": {
+      "fecha": "2026-10-30T22:11:29.061Z",
+      "id": "PNJ-21",
+      "estilo": "token",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "birefnet.safetensors"
+      ],
+      "licencia": "Apache 2.0 + MIT",
+      "workflow": "tools/workflows/editar-qwen.json + tools/workflows/recortar-birefnet.json + tools/tokens.mjs (círculo con anillo)",
+      "semilla": 8251,
+      "parametros": {
+        "ancho": 1024,
+        "alto": 1024
+      },
+      "crudo": "assets/tokens-crudo/fondo/PNJ-21.webp",
+      "referencia": "assets/retratos/PNJ-21.webp",
+      "segundos": 24,
+      "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Sasha Hale: brown hair in a ponytail, a plain grey sweater, headphones around her neck, a paper cup of coffee.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
     }
   }
 }

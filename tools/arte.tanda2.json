@@ -3610,6 +3610,427 @@
           ]
         ]
       }
+    },
+    {
+      "id": "tile-furgoneta-firstlight",
+      "estilo": "tile-vehiculo",
+      "prompt": "FIRSTLIGHT's unmarked surveillance van: a matte black high-roof panel van with no windows in the cargo area and darkly tinted front windows, a low black roof rack carrying a flat bank of large square floodlight panels that are SWITCHED OFF (dark grey glass, unlit), two short black whip antennas and a small black dome camera on the roof, a sliding side door. The van stands VERTICALLY with its FRONT pointing DOWN (towards the bottom edge).",
+      "semilla": 10303,
+      "candidatas": [
+        10301,
+        10302,
+        10303,
+        10304
+      ],
+      "ancho": 656,
+      "alto": 1600,
+      "metros": [
+        5.3,
+        2.1
+      ],
+      "girar": -90,
+      "nota": "tile 5.3×2.1 m: la furgoneta de vigilancia de FIRSTLIGHT con el generador de luz solar artificial en el techo (A4-E02, se para frente a la puerta grande del hangar). Horizontal, frente a la derecha (t2i en vertical, frente abajo, girado -90°). Elegida: s10303 (focos del techo apagados, sin texto; revisión 2026-10-31)."
+    },
+    {
+      "id": "tile-dron",
+      "estilo": "tile-vehiculo",
+      "prefijo": "Top-down orthographic illustration of ONE single small quadcopter drone seen from DIRECTLY ABOVE, like a floor plan, painted exactly over the line drawing so that every line of the drawing is an edge or a seam of the drone. We only see its upper surfaces: no side faces, no landing legs, no perspective, no tilt, no horizon. Nothing else around it or behind it.\n\nSUBJECT, seen from above: ",
+      "prompt": "a matte black professional surveillance quadcopter drone of about sixty centimetres across: a compact black central body with a dark grey battery pack on top, four thin carbon-fibre arms in an X, a black motor at the end of each arm with a two-blade black propeller, a thin translucent grey propeller guard ring around each propeller, and a small round black thermal camera gimbal at the front edge of the body. Status LEDs OFF.",
+      "semilla": 10313,
+      "candidatas": [
+        10311,
+        10312,
+        10313,
+        10314
+      ],
+      "ancho": 1024,
+      "alto": 1024,
+      "metros": [
+        0.6,
+        0.6
+      ],
+      "nota": "tile 0.6×0.6 m: el dron térmico de FIRSTLIGHT (Owen Pak, CAZ-02; A4-E02). Esquema + ControlNet: cámara al frente, abajo. Elegida: s10313 (los aros protectores quedan macizos tras el recorte; revisión 2026-10-31).",
+      "esquema": {
+        "tipo": "libre",
+        "formas": [
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.125,
+            {
+              "color": "#5a5e64"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.111,
+            {
+              "hueco": true
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3113,
+                0.2887
+              ],
+              [
+                0.1513,
+                0.1287
+              ],
+              [
+                0.1287,
+                0.1513
+              ],
+              [
+                0.2887,
+                0.3113
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3113,
+                0.3113
+              ],
+              [
+                0.4713,
+                0.1513
+              ],
+              [
+                0.4487,
+                0.1287
+              ],
+              [
+                0.2887,
+                0.2887
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.2887,
+                0.2887
+              ],
+              [
+                0.1287,
+                0.4487
+              ],
+              [
+                0.1513,
+                0.4713
+              ],
+              [
+                0.3113,
+                0.3113
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.2887,
+                0.3113
+              ],
+              [
+                0.4487,
+                0.4713
+              ],
+              [
+                0.4713,
+                0.4487
+              ],
+              [
+                0.3113,
+                0.2887
+              ]
+            ],
+            {
+              "color": "#2a2c30"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.0373,
+                0.0865
+              ],
+              [
+                0.2271,
+                0.2163
+              ],
+              [
+                0.2427,
+                0.1935
+              ],
+              [
+                0.0529,
+                0.0637
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.14,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3729,
+                0.2163
+              ],
+              [
+                0.5627,
+                0.0865
+              ],
+              [
+                0.5471,
+                0.0637
+              ],
+              [
+                0.3573,
+                0.1935
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.14,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.0529,
+                0.5363
+              ],
+              [
+                0.2427,
+                0.4065
+              ],
+              [
+                0.2271,
+                0.3837
+              ],
+              [
+                0.0373,
+                0.5135
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.14,
+            0.46,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.032,
+            {
+              "color": "#1c1d20"
+            }
+          ],
+          [
+            "poli",
+            [
+              [
+                0.3573,
+                0.4065
+              ],
+              [
+                0.5471,
+                0.5363
+              ],
+              [
+                0.5627,
+                0.5135
+              ],
+              [
+                0.3729,
+                0.3837
+              ]
+            ],
+            {
+              "color": "#3a3c40"
+            }
+          ],
+          [
+            "circ",
+            0.46,
+            0.46,
+            0.014,
+            {
+              "color": "#9a9a9a"
+            }
+          ],
+          [
+            "rect",
+            0.215,
+            0.17,
+            0.17,
+            0.26,
+            {
+              "r": 0.045,
+              "color": "#2e3034"
+            }
+          ],
+          [
+            "rect",
+            0.245,
+            0.2,
+            0.11,
+            0.13,
+            {
+              "r": 0.02,
+              "color": "#45484e"
+            }
+          ],
+          [
+            "circ",
+            0.3,
+            0.43,
+            0.04,
+            {
+              "color": "#151515"
+            }
+          ],
+          [
+            "circ",
+            0.3,
+            0.43,
+            0.02,
+            {
+              "color": "#3a4450"
+            }
+          ]
+        ]
+      }
     }
   ]
 }

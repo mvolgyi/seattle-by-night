@@ -107,6 +107,9 @@
         { "id": "subir-planta", "nombre": "Subir a la planta baja por la escalera medio derrumbada (Destreza + Atletismo Dif 2)", "x": 13.2, "y": 7.4, "w": 1.2, "h": 1, "destino": "larchmont-planta:desde-sotano" },
         { "id": "caida-hueco", "nombre": "Caída desde el hueco (escombros)", "x": 15.6, "y": 6.2, "w": 1.2, "h": 1.2, "llegada": true },
         { "id": "desague", "nombre": "Desagüe al estrecho", "x": 0, "y": 2.6, "w": 1.2, "h": 1.6, "destino": null, "pendiente": "no hay mapa del desagüe ni del estrecho (GAN-09, MEN-08)" }
+      ],
+      "figuras": [
+        { "id": "MEN-08", "x": 2, "y": 3.4, "oculto": true, "escena": "A2-E05", "nota": "Sólo si el Narrador adelanta GAN-09: escondido en el desagüe (Ofuscación 3); huye hacia el agua al ver a la coterie." }
       ]
     }
   ]

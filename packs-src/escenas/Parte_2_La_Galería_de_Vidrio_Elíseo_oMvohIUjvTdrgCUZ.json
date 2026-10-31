@@ -2362,7 +2362,351 @@
       "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.2BTCe2M71eySabxU"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "go1BxeKeuxftClor",
+      "name": "Solène Marchetti",
+      "displayName": 30,
+      "actorId": "Zs7rGAyl8O4vOx0u",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-14.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1010,
+      "y": 1320,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-14",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "La Guardiana, en su mostrador con el libro de registro, junto a la bandeja: «Sus teléfonos, por favor»."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.go1BxeKeuxftClor"
+    },
+    {
+      "_id": "CVQ1EiKLLhiWM1fZ",
+      "name": "Marcus Whitmore",
+      "displayName": 30,
+      "actorId": "mS4hVbBIId47tDop",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1430,
+      "y": 390,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-02",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "«Al fondo, junto a la terraza», al lado de las puertas de vidrio del norte."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.CVQ1EiKLLhiWM1fZ"
+    },
+    {
+      "_id": "R1vnYVqPYsecAuWz",
+      "name": "Charles Halloway",
+      "displayName": 30,
+      "actorId": "ys08GDwMs80NuOlf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 910,
+      "y": 850,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-03",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Se mueve por la sala como un anfitrión."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.R1vnYVqPYsecAuWz"
+    },
+    {
+      "_id": "hPRkTiHvC8fDhBDU",
+      "name": "Dra. Anneliese Voight",
+      "displayName": 30,
+      "actorId": "75UbIo5Kl9zVsd0V",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-15.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1450,
+      "y": 170,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-15",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Sola en la terraza, mirando el reloj."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.hPRkTiHvC8fDhBDU"
+    },
+    {
+      "_id": "Vh7ohQLdeEPTUfVh",
+      "name": "Abel Thornquist",
+      "displayName": 30,
+      "actorId": "NDI68PA4J59Be6ts",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1600,
+      "y": 1100,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-13",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "En el rincón sudeste, junto al vidrio de la plaza; nadie se le acerca."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.Vh7ohQLdeEPTUfVh"
+    },
+    {
+      "_id": "e1a22OJxaNVog3J6",
+      "name": "Wendell Fry",
+      "displayName": 30,
+      "actorId": "XuP20cPC3T1EiCxD",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1400,
+      "y": 910,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-16",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Con los auriculares al cuello; se acerca él."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.e1a22OJxaNVog3J6"
+    },
+    {
+      "_id": "Nl0PSNJ8IzqOx1gL",
+      "name": "Ethan Montgomery",
+      "displayName": 30,
+      "actorId": "dd9CRIHVGO38YUhN",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1330,
+      "y": 1370,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-01",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Llega tarde y se va temprano."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.Nl0PSNJ8IzqOx1gL"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -2377,7 +2721,7 @@
       "id": "LUG-03",
       "plano": "galeria",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Noche de Elíseo (A2-E01, Noche 3).</strong> Se entra por la plaza, al sur, por las puertas de vidrio del <strong>vestíbulo</strong>. Ahí espera Solène Marchetti, la Guardiana (PNJ-14), en su mostrador con el libro de registro abierto (DOC-03), y en el <strong>umbral</strong> que separa el vestíbulo de la gran sala está la <strong>bandeja de terciopelo</strong> sobre su pedestal: «Sus teléfonos, por favor». La cuarta costumbre del Elíseo es literal: <em>«Ningún dispositivo conectado cruza el umbral»</em> (CIUDAD-LEYES); el umbral es el hueco de 2 m entre el vestíbulo y la sala, y los aparatos apagados se guardan en el casillero de la pared este del vestíbulo. <em>Para un solo jugador</em>, Bear se queda en el banco del vestíbulo con los teléfonos.</p>\n<p><strong>La gran sala de las medusas.</strong> «Cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa.» Las piezas cuelgan a varios metros sobre las cabezas: no se pintan ni estorban el paso; sus charcos de color son las luces de Foundry de la sala (rojas y ámbar, con un temblor leve). En el suelo de terrazo sólo hay dos bancos bajos y tres pedestales con piezas sueltas. Con todas las paredes de cristal, desde casi cualquier punto se ve casi todo lo demás: <em>«las paredes de cristal hacen imposible saber quién escucha desde fuera»</em> (LUG-03).</p>\n<p><strong>El cuarteto que nadie ve.</strong> «Suena un cuarteto de cuerdas que nadie ve»: los músicos tocan en el <strong>nicho</strong> del oeste, que se abre a la sala por un hueco tapado con una mampara de vidrio esmerilado (bloquea la vista, no el paso).</p>\n<p><strong>Quién está dónde (Leer la sala, Astucia + Etiqueta Dif 3).</strong> Whitmore, «al fondo, junto a la terraza», junto a las puertas de vidrio del norte. Halloway se mueve por la sala como un anfitrión. Voight, sola, en la <strong>terraza</strong>, mirando el reloj: «prefiere la terraza porque desde ahí ve quién entra» (desde la terraza se ve, a través de la sala de cristal, todo el vestíbulo). Thornquist, en el rincón sudeste de la sala, junto al vidrio de la plaza, donde nadie se le acerca. Fry, donde quiera.</p>\n<p><strong>La terraza.</strong> Losas de piedra, barandas al norte, oeste y este, sin luz propia: la torre de la Feria se ve al norte, fuera del mapa. <em>Escuchar sin ser vistos</em> (Astucia + Consciencia Dif 4): en la terraza, Halloway le dice a un Vástago menor «El Sheriff está viejo…». La terraza se comunica con la sala por dos puertas de vidrio.</p>\n<p><strong>El salón privado del Príncipe.</strong> Esquina noroeste: se entra desde la gran sala por una puerta de madera; su pared norte es un paño de vidrio fijo sobre la terraza y la oeste, otro sobre la plaza. El vidrio no deja pasar el sonido, pero sí la vista: el sillón de Whitmore mira al norte, hacia la terraza y la torre, así que <strong>desde la terraza se le ven los labios</strong>. Es el detalle de LUG-03: con Astucia + Consciencia Dif 4 se nota que alguien con un teleobjetivo, desde la terraza, podría leer los labios del salón. Aquí se concede la audiencia privada con el Príncipe.</p>\n<p><strong>El personal</strong> (ghouls, intocables por la tercera costumbre) sale del <strong>office</strong> del bloque de servicio, al este, con las copas que nadie bebe. Del pasillo de servicio sale una puerta a la plaza y la <strong>escalera al archivo de la Guardiana</strong>, en el sótano (plano «galeria-archivo»): bajando por la escalera, la región «Bajar al archivo» lleva al pie de la escalera del sótano. El apartamento de Marchetti (Refugio 2) está «sobre el archivo», en la planta alta del bloque de servicio: no tiene mapa.</p>\n<p><strong>Las paredes curvas</strong> del pabellón de 1962: el vidrio norte se abomba hacia la terraza, los paños de la plaza a los lados del vestíbulo se abomban hacia afuera y el salón privado tiene un mirador de vidrio curvo al oeste. En Foundry cada curva son tramos rectos de vidrio; las dos puertas a la terraza son dos de esos tramos.</p>\n<p><strong>Si el Consejo de A4-E01 se traslada aquí</strong> (el Príncipe recuperó la iniciativa; Halloway pierde 2 dados), se juega en la gran sala con una mesa larga traída por el personal (tile de la torre) o en el salón privado si son pocos.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (10) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Plaza de Seattle Center (entrada y salida).</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{La Galería de Vidrio (Elíseo)}<br><strong>Escenas:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</p>\n<p><strong>Noche de Elíseo (A2-E01, Noche 3).</strong> Se entra por la plaza, al sur, por las puertas de vidrio del <strong>vestíbulo</strong>. Ahí espera Solène Marchetti, la Guardiana (PNJ-14), en su mostrador con el libro de registro abierto (DOC-03), y en el <strong>umbral</strong> que separa el vestíbulo de la gran sala está la <strong>bandeja de terciopelo</strong> sobre su pedestal: «Sus teléfonos, por favor». La cuarta costumbre del Elíseo es literal: <em>«Ningún dispositivo conectado cruza el umbral»</em> (CIUDAD-LEYES); el umbral es el hueco de 2 m entre el vestíbulo y la sala, y los aparatos apagados se guardan en el casillero de la pared este del vestíbulo. <em>Para un solo jugador</em>, Bear se queda en el banco del vestíbulo con los teléfonos.</p>\n<p><strong>La gran sala de las medusas.</strong> «Cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa.» Las piezas cuelgan a varios metros sobre las cabezas: no se pintan ni estorban el paso; sus charcos de color son las luces de Foundry de la sala (rojas y ámbar, con un temblor leve). En el suelo de terrazo sólo hay dos bancos bajos y tres pedestales con piezas sueltas. Con todas las paredes de cristal, desde casi cualquier punto se ve casi todo lo demás: <em>«las paredes de cristal hacen imposible saber quién escucha desde fuera»</em> (LUG-03).</p>\n<p><strong>El cuarteto que nadie ve.</strong> «Suena un cuarteto de cuerdas que nadie ve»: los músicos tocan en el <strong>nicho</strong> del oeste, que se abre a la sala por un hueco tapado con una mampara de vidrio esmerilado (bloquea la vista, no el paso).</p>\n<p><strong>Quién está dónde (Leer la sala, Astucia + Etiqueta Dif 3).</strong> Whitmore, «al fondo, junto a la terraza», junto a las puertas de vidrio del norte. Halloway se mueve por la sala como un anfitrión. Voight, sola, en la <strong>terraza</strong>, mirando el reloj: «prefiere la terraza porque desde ahí ve quién entra» (desde la terraza se ve, a través de la sala de cristal, todo el vestíbulo). Thornquist, en el rincón sudeste de la sala, junto al vidrio de la plaza, donde nadie se le acerca. Fry, donde quiera.</p>\n<p><strong>La terraza.</strong> Losas de piedra, barandas al norte, oeste y este, sin luz propia: la torre de la Feria se ve al norte, fuera del mapa. <em>Escuchar sin ser vistos</em> (Astucia + Consciencia Dif 4): en la terraza, Halloway le dice a un Vástago menor «El Sheriff está viejo…». La terraza se comunica con la sala por dos puertas de vidrio.</p>\n<p><strong>El salón privado del Príncipe.</strong> Esquina noroeste: se entra desde la gran sala por una puerta de madera; su pared norte es un paño de vidrio fijo sobre la terraza y la oeste, otro sobre la plaza. El vidrio no deja pasar el sonido, pero sí la vista: el sillón de Whitmore mira al norte, hacia la terraza y la torre, así que <strong>desde la terraza se le ven los labios</strong>. Es el detalle de LUG-03: con Astucia + Consciencia Dif 4 se nota que alguien con un teleobjetivo, desde la terraza, podría leer los labios del salón. Aquí se concede la audiencia privada con el Príncipe.</p>\n<p><strong>El personal</strong> (ghouls, intocables por la tercera costumbre) sale del <strong>office</strong> del bloque de servicio, al este, con las copas que nadie bebe. Del pasillo de servicio sale una puerta a la plaza y la <strong>escalera al archivo de la Guardiana</strong>, en el sótano (plano «galeria-archivo»): bajando por la escalera, la región «Bajar al archivo» lleva al pie de la escalera del sótano. El apartamento de Marchetti (Refugio 2) está «sobre el archivo», en la planta alta del bloque de servicio: no tiene mapa.</p>\n<p><strong>Las paredes curvas</strong> del pabellón de 1962: el vidrio norte se abomba hacia la terraza, los paños de la plaza a los lados del vestíbulo se abomban hacia afuera y el salón privado tiene un mirador de vidrio curvo al oeste. En Foundry cada curva son tramos rectos de vidrio; las dos puertas a la terraza son dos de esos tramos.</p>\n<p><strong>Si el Consejo de A4-E01 se traslada aquí</strong> (el Príncipe recuperó la iniciativa; Halloway pierde 2 dados), se juega en la gran sala con una mesa larga traída por el personal (tile de la torre) o en el salón privado si son pocos.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (10) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.Zs7rGAyl8O4vOx0u]{Solène Marchetti} (A2-E01, A4-E01): La Guardiana, en su mostrador con el libro de registro, junto a la bandeja: «Sus teléfonos, por favor».</li><li>@UUID[Actor.mS4hVbBIId47tDop]{Marcus Whitmore} (A2-E01, A4-E01): «Al fondo, junto a la terraza», al lado de las puertas de vidrio del norte.</li><li>@UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway} (A2-E01, A4-E01): Se mueve por la sala como un anfitrión.</li><li>@UUID[Actor.75UbIo5Kl9zVsd0V]{Dra. Anneliese Voight} (A2-E01, A4-E01): Sola en la terraza, mirando el reloj.</li><li>@UUID[Actor.NDI68PA4J59Be6ts]{Abel Thornquist} (A2-E01, A4-E01): En el rincón sudeste, junto al vidrio de la plaza; nadie se le acerca.</li><li>@UUID[Actor.XuP20cPC3T1EiCxD]{Wendell Fry} (A2-E01, A4-E01): Con los auriculares al cuello; se acerca él.</li><li>@UUID[Actor.dd9CRIHVGO38YUhN]{Ethan Montgomery} · <em>oculto</em> (A2-E01, A4-E01): Llega tarde y se va temprano.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Plaza de Seattle Center (entrada y salida).</p>",
       "moviles": []
     }
   },

@@ -1840,9 +1840,111 @@
         }
       },
       "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.TCMwYhOJwB5e40uL"
+    },
+    {
+      "_id": "CwzjreHLGKtRa4DR",
+      "name": "el dron térmico de FIRSTLIGHT sobre Market Street (INT-01, vigilancia pasiva: «drones ocasionales»)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-dron.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1650,
+      "y": 1950,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 8,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.CwzjreHLGKtRa4DR"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "VWmWlPwRWaZxOeH4",
+      "name": "Helen Ward",
+      "displayName": 30,
+      "actorId": "cHnmNaT8zN7q4yvy",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 900,
+      "y": 1270,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "pXj0ZJVQR7zoch40",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "helen",
+          "id": "PNJ-04",
+          "escenas": [
+            "A0-E01",
+            "A1-E01",
+            "A3-E01"
+          ],
+          "nota": "Sentada en el suelo del recibidor, con la capucha puesta, de cara a la puerta, contando en voz baja (A0-E01). En A1-E01, con la libreta frente a los mapas del estudio. En A3-E01, si Krell se la llevó y la coterie llega tarde, sacala."
+        }
+      },
+      "_key": "!scenes.tokens!YbfYS93oKtH7vbMN.VWmWlPwRWaZxOeH4"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -1857,7 +1959,7 @@
       "id": "LUG-05",
       "plano": "helen",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}<br><strong>Escenas:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}</p>\n<p><strong>Llegada (A0-E01, 3:34).</strong> El portal de Market Street está abierto; la escalera común sube por el frente del edificio y desemboca en el pasillo del tercer piso, justo al lado de la puerta del 3A. Huele a humedad, a lana mojada y a monedas (Vitae aguada de ghoul, <strong>P-02</strong>: Resolución + Consciencia Dif 2, o Auspex 1). Helen está sentada en el suelo del <strong>recibidor</strong>, con la capucha puesta, de cara a la puerta, contando en voz baja.</p>\n<p><strong>Las cámaras (P-01).</strong> Las cuatro puertas del pasillo tienen timbre con cámara Gale Sentinel y su lucecita azul (luces «led-timbre»). La del <strong>3B</strong>, enfrente de la de Helen, es la única que apunta a su puerta y tiene además una lucecita verde intermitente: transmite en directo (Astucia + Consciencia Dif 3). La de Helen guarda el registro de desconexión de 2:52 a 3:03 (Inteligencia + Tecnología Dif 3). Romper la del 3B a golpes: Termómetro +1; abrirla y desconectarla: Destreza + Latrocinio Dif 3. Salir por el pasillo sin ocuparse de ella: ANOMALY marca a cada Vástago como «sujeto frío» (Termómetro +1).</p>\n<p><strong>La puerta del 3A.</strong> No está forzada: la abrieron con una ganzúa electrónica y la volvieron a cerrar con una sola vuelta (el picaporte quedó recto, no caído). El picaporte exterior tiene la Vitae del ghoul (P-02; Auspex 4, Toque espiritual). Con 3 o más éxitos en Inteligencia + Investigación (A1-E01) se encuentra en el marco un adhesivo negro minúsculo: el repetidor que desconectó las cámaras. <strong>No está pintado ni tiene tile</strong>: es la recompensa de la tirada.</p>\n<p><strong>Estudio.</strong> Paredes cubiertas de mapas con alfileres rojos (muertes), azules (desapariciones) y amarillos. En el escritorio, contra la pared norte, el portátil abierto con el audio en pausa (tile; Inteligencia + Tecnología Dif 4: la nube se borró desde una IP de un centro de datos del Eastside, P-06 a medias) y el cable pelado que cuelga enchufado a nada: ahí estaba el disco. En el <strong>cajón de la derecha</strong>, el teléfono de tapa con un solo número, SAFE (DOC-05). En la pared este, el <strong>armario empotrado</strong> cuya puerta se atasca a mitad de camino y chirría (puerta con sonido «woodCreaky»): al fondo estaba la caja de zapatos con la segunda copia; ya no está. Sólo abrieron el armario y el escritorio. La <strong>ventana de guillotina</strong> de la pared oeste da a la escalera de incendios; el cenicero de Helen está afuera, en la rejilla.</p>\n<p><strong>Salón-cocina.</strong> La tele sigue en su mueble y el frasco con billetes, en la mesada: no se llevaron nada que valiera dinero. La mesa de la cocina es la de A3-E01 si Krell llega tarde: silla volcada, un teléfono con la pantalla rota en el suelo y, sobre la mesa, el papel sujeto con un casquillo. La de Market Street es la única ventana iluminada del tercer piso (lámpara de pie).</p>\n<p><strong>Escapar sin la cámara del 3B.</strong> Por la ventana del estudio a la escalera de incendios y de ahí al callejón de servicio (Destreza + Sigilo Dif 2 para que nadie del edificio los vea bajar). En la escalera de incendios, la región «Bajar» lleva al pie de la escalerilla en el callejón y la de «Subir» trae de vuelta; la escalerilla de caída hay que bajarla desde arriba o alcanzarla de un salto desde el callejón. El callejón sale a Market Street por el sur.</p>\n<p><strong>El rellano de la azotea.</strong> Al lado del tramo que baja, otro tramo sube a un rellano con la puerta de la azotea (cerrada; no hay mapa del techo). Ahí se escondió Helen, detrás de la baranda, donde la luz del pasillo no llega; desde el pasillo el ghoul levantó la cabeza hacia ahí y olfateó.</p>\n<p><strong>Fuera del mapa.</strong> Bear espera en la camioneta en Market Street; a media manzana hay un coche eléctrico gris con alguien adentro (MEN-04, se va a las 4:10 si nadie hace nada). En A3-E01, Krell espera en la vereda de enfrente.</p>\n<p>Los departamentos 3B, 3C y 3D están cerrados (sus puertas, trabadas) y no se detallan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (8) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al portal de Market Street · Rellano de la azotea (puerta cerrada) · Salida del callejón a Market Street.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{El apartamento de Helen Ward}<br><strong>Escenas:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · La llamada de SAFE} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · Lo que se llevaron} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · El otro hijo}</p>\n<p><strong>Llegada (A0-E01, 3:34).</strong> El portal de Market Street está abierto; la escalera común sube por el frente del edificio y desemboca en el pasillo del tercer piso, justo al lado de la puerta del 3A. Huele a humedad, a lana mojada y a monedas (Vitae aguada de ghoul, <strong>P-02</strong>: Resolución + Consciencia Dif 2, o Auspex 1). Helen está sentada en el suelo del <strong>recibidor</strong>, con la capucha puesta, de cara a la puerta, contando en voz baja.</p>\n<p><strong>Las cámaras (P-01).</strong> Las cuatro puertas del pasillo tienen timbre con cámara Gale Sentinel y su lucecita azul (luces «led-timbre»). La del <strong>3B</strong>, enfrente de la de Helen, es la única que apunta a su puerta y tiene además una lucecita verde intermitente: transmite en directo (Astucia + Consciencia Dif 3). La de Helen guarda el registro de desconexión de 2:52 a 3:03 (Inteligencia + Tecnología Dif 3). Romper la del 3B a golpes: Termómetro +1; abrirla y desconectarla: Destreza + Latrocinio Dif 3. Salir por el pasillo sin ocuparse de ella: ANOMALY marca a cada Vástago como «sujeto frío» (Termómetro +1).</p>\n<p><strong>La puerta del 3A.</strong> No está forzada: la abrieron con una ganzúa electrónica y la volvieron a cerrar con una sola vuelta (el picaporte quedó recto, no caído). El picaporte exterior tiene la Vitae del ghoul (P-02; Auspex 4, Toque espiritual). Con 3 o más éxitos en Inteligencia + Investigación (A1-E01) se encuentra en el marco un adhesivo negro minúsculo: el repetidor que desconectó las cámaras. <strong>No está pintado ni tiene tile</strong>: es la recompensa de la tirada.</p>\n<p><strong>Estudio.</strong> Paredes cubiertas de mapas con alfileres rojos (muertes), azules (desapariciones) y amarillos. En el escritorio, contra la pared norte, el portátil abierto con el audio en pausa (tile; Inteligencia + Tecnología Dif 4: la nube se borró desde una IP de un centro de datos del Eastside, P-06 a medias) y el cable pelado que cuelga enchufado a nada: ahí estaba el disco. En el <strong>cajón de la derecha</strong>, el teléfono de tapa con un solo número, SAFE (DOC-05). En la pared este, el <strong>armario empotrado</strong> cuya puerta se atasca a mitad de camino y chirría (puerta con sonido «woodCreaky»): al fondo estaba la caja de zapatos con la segunda copia; ya no está. Sólo abrieron el armario y el escritorio. La <strong>ventana de guillotina</strong> de la pared oeste da a la escalera de incendios; el cenicero de Helen está afuera, en la rejilla.</p>\n<p><strong>Salón-cocina.</strong> La tele sigue en su mueble y el frasco con billetes, en la mesada: no se llevaron nada que valiera dinero. La mesa de la cocina es la de A3-E01 si Krell llega tarde: silla volcada, un teléfono con la pantalla rota en el suelo y, sobre la mesa, el papel sujeto con un casquillo. La de Market Street es la única ventana iluminada del tercer piso (lámpara de pie).</p>\n<p><strong>Escapar sin la cámara del 3B.</strong> Por la ventana del estudio a la escalera de incendios y de ahí al callejón de servicio (Destreza + Sigilo Dif 2 para que nadie del edificio los vea bajar). En la escalera de incendios, la región «Bajar» lleva al pie de la escalerilla en el callejón y la de «Subir» trae de vuelta; la escalerilla de caída hay que bajarla desde arriba o alcanzarla de un salto desde el callejón. El callejón sale a Market Street por el sur.</p>\n<p><strong>El rellano de la azotea.</strong> Al lado del tramo que baja, otro tramo sube a un rellano con la puerta de la azotea (cerrada; no hay mapa del techo). Ahí se escondió Helen, detrás de la baranda, donde la luz del pasillo no llega; desde el pasillo el ghoul levantó la cabeza hacia ahí y olfateó.</p>\n<p><strong>Fuera del mapa.</strong> Bear espera en la camioneta en Market Street; a media manzana hay un coche eléctrico gris con alguien adentro (MEN-04, se va a las 4:10 si nadie hace nada). En A3-E01, Krell espera en la vereda de enfrente.</p>\n<p>Los departamentos 3B, 3C y 3D están cerrados (sus puertas, trabadas) y no se detallan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (9) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.cHnmNaT8zN7q4yvy]{Helen Ward} (A0-E01, A1-E01, A3-E01): Sentada en el suelo del recibidor, con la capucha puesta, de cara a la puerta, contando en voz baja (A0-E01). En A1-E01, con la libreta frente a los mapas del estudio. En A3-E01, si Krell se la llevó y la coterie llega tarde, sacala.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Bajar al portal de Market Street · Rellano de la azotea (puerta cerrada) · Salida del callejón a Market Street.</p>",
       "moviles": []
     }
   },

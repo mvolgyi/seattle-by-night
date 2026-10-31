@@ -306,9 +306,41 @@ packs-src/escenas/*.json                escena + muros + puertas + ventanas + vi
 | `nota` | nota del Narrador (markdown; va a los flags de la escena, con la lista de móviles) |
 | `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros?, contorno? }` — piso: `tablas`, `tablas-alfombra`, `tablas-quemadas`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `marmol`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `ladrillo`, `chapa` (plancha diamantada), `cubierta` (de barco), `goma` (pasarela), `ascensor` (cabina), `tierra`, `grava`, `agua`, `vacio` (hueco, caída), `rejilla` (escalera de incendios), `macizo` (departamento cerrado, rayado); `vetas`: `h`·`v`; `sinMuros`: sólo piso; `contorno`: polígono que reemplaza al rectángulo (puntos `[x, y]` o `[x, y, tipo]` = tipo del tramo que sale de ese punto, o arcos `{ arco: [cx, cy, r, desde°, hasta°], tipo? }`): el piso se recorta y los muros salen en segmentos rectos para Foundry. El nombre (en español) da el rol en el prompt («Porche», «Cubierta», «Sala de calderas»…) |
 | `vanos[]` | `{ x, y, w, eje, tipo, estado?, sonido?, sonoro?, nombre }` — `abierto`, `puerta`, `secreta`, `puerta-vidrio`, `ventana`, `hueco` (ventana sin vidrio), `vidrio`, `baranda`, `arcada`; `estado`: `cerrada`·`abierta`·`trabada`; `sonido`: clave de `CONFIG.Wall.doorSounds` (`woodBasic`, `woodCreaky`, `woodHeavy`, `metal`, `industrial`, `slidingWood`…; por defecto, el de la paleta) |
-| `muebles[]` | `{ tipo, x, y, w, h, desc?, fijo?, luz?, luzIdeal?, luzApagada?, cabecera?, frente?, contra?, tile?, hacia?, material?, anomaly? }` |
+| `muebles[]` | `{ tipo, x, y, w, h, desc?, fijo?, luz?, luzIdeal?, luzApagada?, cabecera?, frente?, contra?, tile?, hacia?, material?, anomaly?, oculto? }` — `oculto: true` en un móvil con tile: el tile entra oculto (la furgoneta y el dron de FIRSTLIGHT, que sólo existen en la redada o en la vigilancia) |
 | `luces[]` | `{ x, y, preset, presetIdeal?, apagada?, nombre? }` — presets en `tools/iluminacion.mjs`, radios en metros; `presetIdeal` se usa si existe (si no, `preset` y `construir-planos` avisa); `apagada: true` crea la luz apagada (`hidden`) |
 | `regiones[]` | `{ id, nombre, x, y, w, h, destino: "<plano>:<región>" \| null, llegada?, pendiente? }` — `llegada: true` sólo recibe; `destino: null` + `pendiente` = acceso a un mapa que todavía no existe |
+| `figuras[]` | `{ id, x, y, oculto?, sentado?, escena?, nota? }` — un token colocado por persona (ver «Figuras» abajo) |
+
+### Figuras (tokens colocados)
+
+`figuras[]` pone en la escena a los PNJ, menores y cazadores que el libro sitúa ahí **cuando
+llega la coterie**, más los que llegan después (refuerzos, la redada), ocultos. Nadie que el
+texto no ponga en ese lugar; los PJ nunca.
+
+- `id`: el ID del actor (`PNJ-11`, `MEN-05`, `CAZ-01`, `PERROS-MONTGOMERY`). Un menor con
+  `cantidad` se repite una vez por token (no hacen falta todos: los que tengan sentido en la
+  escena); el build los numera («Anarquistas de Salitre 2»).
+- `x`, `y`: el **centro** del token, en metros. Donde lo pone el libro: detrás de la barra, en
+  la mecedora, en la pasarela. Nunca sobre un muro, un vano o un tile.
+- `oculto`: `true` = token oculto (lo revela el Narrador desde la capa de tokens). Sin el campo,
+  va oculto todo actor hostil (disposición −1 del prototipo). Va oculto quien no se ve al
+  llegar: emboscadas, escondidos, refuerzos, y quien sólo está según cómo vino la noche
+  (Montgomery en el Consejo, Halloway en el ferry).
+- `sentado`: `true` si está a propósito sobre un asiento o un vehículo que es tile (la mecedora,
+  dentro de la furgoneta). Sin él, pisar un tile es un aviso.
+- `escena`: ID (o lista) de las escenas del libro en que vale esa posición, para un plano que
+  sirve a varias (`granja`: A1-E03, A3-E04, A4-E02).
+- `nota`: una línea para el Narrador: qué hace, cuándo revelarlo, adónde moverlo en otra
+  escena. Va al flag del token y a la lista «Tokens colocados» de la nota de la escena.
+
+El build (`tools/contenido/escenas.mjs`) saca del **prototipo del actor** el tamaño, el vínculo
+(`actorLink`: los menores con `cantidad` > 1 van sin vincular), la disposición, la visión y el
+nombre; la textura es `assets/tokens/<ID>.webp` o, si falta, la del prototipo. El token apunta
+al actor del mundo (`actorId` = id estable del actor), que la Aventura importa con el mismo
+`_id` (como DVV). Avisa si una figura cae fuera del mapa, en un macizo, pegada a un muro o
+vano, sobre un tile (sin `sentado`) o sobre otra figura. `npm run verificar:actores` falla si
+un token apunta a un actor que no está en `packs-src/personajes` o que no viaja en la
+Aventura, o si no coincide con su prototipo.
 
 En Foundry: `puerta` = `door 1`; `secreta` = `door 2` (se ve pared); `puerta-vidrio` y
 `ventana` = `door 1` con `sight 0`, `light 0`, `sound 10` (cerrada se ve a través; abierta se
@@ -354,6 +386,8 @@ esquema), no se entrega con la falla anotada.
       carmesí.
 - [ ] **Transiciones:** cada región con destino tiene su gemela; las pendientes están anotadas.
 - [ ] **Tiles:** alfa real, recortados, sin sombra en el suelo, sin luz pintada.
+- [ ] **Tokens:** cada figura donde la pone el libro, sin pisar muros ni tiles; ocultos los que
+      no se ven al llegar; `npm run verificar:actores` sin diferencias.
 - [ ] **Capturas desde Foundry** (`tools/e2e/`, Pendiente en SBN): cada escena mirada en el
       canvas real.
 

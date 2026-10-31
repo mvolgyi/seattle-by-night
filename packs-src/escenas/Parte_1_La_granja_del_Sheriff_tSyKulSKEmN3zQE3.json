@@ -3299,9 +3299,1025 @@
         }
       },
       "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.wNRqstlcwu72PdJD"
+    },
+    {
+      "_id": "PFYnO4mp77pzVndH",
+      "name": "la furgoneta de FIRSTLIGHT con el generador, al final del camino de grava (A4-E02, si la redada es en la granja)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-furgoneta-firstlight.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 285,
+      "y": 2165,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 25,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.PFYnO4mp77pzVndH"
+    },
+    {
+      "_id": "uWDlOKxd6ybuOX2c",
+      "name": "el dron con cámara térmica (A4-E02, si la redada es en la granja)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-dron.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1150,
+      "y": 1300,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 26,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.uWDlOKxd6ybuOX2c"
     }
   ],
-  "tokens": [],
+  "tokens": [
+    {
+      "_id": "AJL78lfbaS1Mbi0r",
+      "name": "Ethan Montgomery",
+      "displayName": 30,
+      "actorId": "dd9CRIHVGO38YUhN",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 645,
+      "y": 1450,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PNJ-01",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ],
+          "nota": "En la mecedora del porche (A1-E03). En A3-E04, de pie junto a la ventana de la sala: movelo adentro, a (2,5; 13,4)."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.AJL78lfbaS1Mbi0r"
+    },
+    {
+      "_id": "ifxGAcvNX8jjmIFZ",
+      "name": "Los perros de Montgomery 1",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 130,
+      "y": 1780,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ],
+          "nota": "«Quietos, que no ladran: miran.» En A3-E04 se tumban en el porche, de espaldas a la casa."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.ifxGAcvNX8jjmIFZ"
+    },
+    {
+      "_id": "KVnMxa8lft1NxjKb",
+      "name": "Los perros de Montgomery 2",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 280,
+      "y": 1930,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.KVnMxa8lft1NxjKb"
+    },
+    {
+      "_id": "gBmmoAnUU893jnIu",
+      "name": "Los perros de Montgomery 3",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 750,
+      "y": 1780,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.gBmmoAnUU893jnIu"
+    },
+    {
+      "_id": "e6BeYZPZxYabfwmj",
+      "name": "Los perros de Montgomery 4",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 1450,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.e6BeYZPZxYabfwmj"
+    },
+    {
+      "_id": "GIeyqR97vMzzAwwr",
+      "name": "Los perros de Montgomery 5",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 1000,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.GIeyqR97vMzzAwwr"
+    },
+    {
+      "_id": "EfvFhpYH9u6CejHg",
+      "name": "Los perros de Montgomery 6",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 600,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ],
+          "nota": "Seis de los doce; el resto sale de las perreras si hay combate."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.EfvFhpYH9u6CejHg"
+    },
+    {
+      "_id": "fCAChIJNZ95cU5vG",
+      "name": "Dutch Lindqvist",
+      "displayName": 30,
+      "actorId": "tSBtElC53tmJxJnO",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03-DUTCH.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1380,
+      "y": 300,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 7,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03-DUTCH",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ],
+          "nota": "Dutch Lindqvist, en la caravana 1. Los cazarrecompensas salen si hay combate o redada."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.fCAChIJNZ95cU5vG"
+    },
+    {
+      "_id": "XeHAryNuRkvHqx3x",
+      "name": "Los cazarrecompensas de Montgomery 1",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1380,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 8,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.XeHAryNuRkvHqx3x"
+    },
+    {
+      "_id": "hfXgEQpsjyNpoSTp",
+      "name": "Los cazarrecompensas de Montgomery 2",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1730,
+      "y": 300,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 9,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.hfXgEQpsjyNpoSTp"
+    },
+    {
+      "_id": "SgZ08GYNTcJF2fFI",
+      "name": "Los cazarrecompensas de Montgomery 3",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1730,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 10,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.SgZ08GYNTcJF2fFI"
+    },
+    {
+      "_id": "Ob1eVrV8MboBEjHr",
+      "name": "Los cazarrecompensas de Montgomery 4",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2080,
+      "y": 300,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 11,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.Ob1eVrV8MboBEjHr"
+    },
+    {
+      "_id": "OzKpZc9cV8Kq6IXz",
+      "name": "Los cazarrecompensas de Montgomery 5",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2080,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 12,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.OzKpZc9cV8Kq6IXz"
+    },
+    {
+      "_id": "mfcHgdcrsDJmM1HW",
+      "name": "Teresa «Tess» Navarro",
+      "displayName": 30,
+      "actorId": "cacjzuu13Bv7mJH5",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1050,
+      "y": 1810,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 13,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "CAZ-01",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Si la redada es en la granja: el equipo entra por el camino de grava."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.mfcHgdcrsDJmM1HW"
+    },
+    {
+      "_id": "pNLQraaSjd1YwKSv",
+      "name": "Lena Sorensen",
+      "displayName": 30,
+      "actorId": "2hdWrhkD65ZNl4Xs",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1170,
+      "y": 1810,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 14,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "CAZ-03",
+          "escenas": [
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.pNLQraaSjd1YwKSv"
+    },
+    {
+      "_id": "ht85Z8IH711DpJDx",
+      "name": "Cole Ransom",
+      "displayName": 30,
+      "actorId": "5ywnpdrw93wmy235",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1110,
+      "y": 1930,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 15,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-11",
+          "escenas": [
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.ht85Z8IH711DpJDx"
+    },
+    {
+      "_id": "grnle0T5WCNNNp8C",
+      "name": "Owen Pak",
+      "displayName": 30,
+      "actorId": "yyJApTmnANPPdw3O",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 235,
+      "y": 2115,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 16,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "CAZ-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Pak, dentro de la furgoneta, con el dron."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.grnle0T5WCNNNp8C"
+    },
+    {
+      "_id": "DLBeVp0vsL4r4v0l",
+      "name": "Equipo táctico de FIRSTLIGHT 1",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 400,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 17,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "La pareja que rodea la casa hacia la puerta trasera."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.DLBeVp0vsL4r4v0l"
+    },
+    {
+      "_id": "2GMFfMT589kusSXv",
+      "name": "Equipo táctico de FIRSTLIGHT 2",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 200,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 18,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": false
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.2GMFfMT589kusSXv"
+    }
+  ],
   "sounds": [],
   "drawings": [],
   "playlist": null,
@@ -3316,7 +4332,7 @@
       "id": "LUG-02",
       "plano": "granja",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>Qué es.</strong> El refugio de Montgomery (Refugio 3, Rebaño 2): casa principal, granero convertido en sala de reuniones de los Lobos, perreras con una docena de perros ghoul y, detrás del granero, las caravanas de los cazarrecompensas (MEN-03). El sótano, con el túnel de 300 m al embarcadero del río, es el plano <strong>granja-sotano</strong> (la escalera del vestíbulo baja ahí).</p>\n<p><strong>A1-E03 · El Sheriff pregunta (en el porche).</strong> «El camino de grava termina en una granja de madera oscura entre campos inundados. Hay perros por todas partes, quietos, que no ladran: miran. En el porche, en una mecedora, hay un hombre corpulento…» Montgomery no se levanta de la <strong>mecedora</strong> (tile); la hoja con la lista está sobre la <strong>baranda del porche</strong>, a su lado. «Cuando el último de ustedes sube los escalones» (los escalones del porche, al centro). No los invita a entrar: lo que se dice en el porche no entra en la casa (Hal lo sabe sin tirada). Los perros: tokens repartidos por el patio y la grava.</p>\n<p><strong>A3-E04 · La jauría duda (adentro).</strong> «Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chimenea apagada, una mesa larga de madera y, en la mesa, una tableta encendida… Los perros se tumban en el porche, de espaldas a la casa… Montgomery está de pie junto a la ventana.» La puerta delantera da directo a la <strong>sala</strong>: chimenea apagada contra el muro oeste, la mesa larga (tile) con la tableta (tile, luz «pantalla») y el sobre con la carta «M.V.», y la ventana del frente, que mira al porche. Abrí la puerta delantera a mano para esta escena.</p>\n<p><strong>Combate (A3-E04, o si la coterie ataca al Sheriff).</strong> Los doce perros salen de las <strong>perreras</strong> (detrás de la casa: cinco corrales de alambre con portones, puertas que dejan ver) y del porche; los seis cazarrecompensas, de las <strong>tres caravanas</strong> de atrás del granero (puerta en el lado oeste de cada una). Montgomery: Potencia de Sangre 5, Fortaleza 4.</p>\n<p><strong>A4-E02 · La redada (si es la granja).</strong> FIRSTLIGHT entra por el <strong>camino de grava</strong> (sur). Escapar: el túnel del sótano al embarcadero del río (bajar por la escalera del vestíbulo; plano granja-sotano); los perros cubren la retirada. Animalismo con los perros de la granja crea caos entre los operadores. Las caravanas y el granero son los otros objetivos de «salvar a los mortales».</p>\n<p><strong>El granero.</strong> Portón corredizo al oeste (abierto), puerta trasera al norte hacia las caravanas y una puerta chica al sur. Adentro, la mesa larga de los Lobos con sus bancos (tiles), la estufa de leña y, al fondo, los boxes viejos convertidos en depósito (tabiques bajos de madera: frenan el paso, no la vista).</p>\n<p><strong>La casa.</strong> Planta baja: sala, cocina, despacho del Sheriff (armero de vidrio), vestíbulo de la escalera al sótano y cuarto de botas con la puerta trasera hacia las perreras.</p>\n<p><strong>Detalle.</strong> Montgomery recibe sentado en el porche aunque llueva. Si invita a alguien a entrar, es que el asunto es grave. Si alguien intenta Dominación o Presencia en A1-E03, se levanta de la mecedora por primera vez: «Vuelve a hacer eso y te entierro en el campo de atrás.»</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (25) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir por el camino de grava al valle · Sendero al río y al embarcadero.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{La granja del Sheriff y su embarcadero}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · El Sheriff pregunta} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · La jauría duda} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · La redada}</p>\n<p><strong>Qué es.</strong> El refugio de Montgomery (Refugio 3, Rebaño 2): casa principal, granero convertido en sala de reuniones de los Lobos, perreras con una docena de perros ghoul y, detrás del granero, las caravanas de los cazarrecompensas (MEN-03). El sótano, con el túnel de 300 m al embarcadero del río, es el plano <strong>granja-sotano</strong> (la escalera del vestíbulo baja ahí).</p>\n<p><strong>A1-E03 · El Sheriff pregunta (en el porche).</strong> «El camino de grava termina en una granja de madera oscura entre campos inundados. Hay perros por todas partes, quietos, que no ladran: miran. En el porche, en una mecedora, hay un hombre corpulento…» Montgomery no se levanta de la <strong>mecedora</strong> (tile); la hoja con la lista está sobre la <strong>baranda del porche</strong>, a su lado. «Cuando el último de ustedes sube los escalones» (los escalones del porche, al centro). No los invita a entrar: lo que se dice en el porche no entra en la casa (Hal lo sabe sin tirada). Los perros: tokens repartidos por el patio y la grava.</p>\n<p><strong>A3-E04 · La jauría duda (adentro).</strong> «Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chimenea apagada, una mesa larga de madera y, en la mesa, una tableta encendida… Los perros se tumban en el porche, de espaldas a la casa… Montgomery está de pie junto a la ventana.» La puerta delantera da directo a la <strong>sala</strong>: chimenea apagada contra el muro oeste, la mesa larga (tile) con la tableta (tile, luz «pantalla») y el sobre con la carta «M.V.», y la ventana del frente, que mira al porche. Abrí la puerta delantera a mano para esta escena.</p>\n<p><strong>Combate (A3-E04, o si la coterie ataca al Sheriff).</strong> Los doce perros salen de las <strong>perreras</strong> (detrás de la casa: cinco corrales de alambre con portones, puertas que dejan ver) y del porche; los seis cazarrecompensas, de las <strong>tres caravanas</strong> de atrás del granero (puerta en el lado oeste de cada una). Montgomery: Potencia de Sangre 5, Fortaleza 4.</p>\n<p><strong>A4-E02 · La redada (si es la granja).</strong> FIRSTLIGHT entra por el <strong>camino de grava</strong> (sur). Escapar: el túnel del sótano al embarcadero del río (bajar por la escalera del vestíbulo; plano granja-sotano); los perros cubren la retirada. Animalismo con los perros de la granja crea caos entre los operadores. Las caravanas y el granero son los otros objetivos de «salvar a los mortales».</p>\n<p><strong>El granero.</strong> Portón corredizo al oeste (abierto), puerta trasera al norte hacia las caravanas y una puerta chica al sur. Adentro, la mesa larga de los Lobos con sus bancos (tiles), la estufa de leña y, al fondo, los boxes viejos convertidos en depósito (tabiques bajos de madera: frenan el paso, no la vista).</p>\n<p><strong>La casa.</strong> Planta baja: sala, cocina, despacho del Sheriff (armero de vidrio), vestíbulo de la escalera al sótano y cuarto de botas con la puerta trasera hacia las perreras.</p>\n<p><strong>Detalle.</strong> Montgomery recibe sentado en el porche aunque llueva. Si invita a alguien a entrar, es que el asunto es grave. Si alguien intenta Dominación o Presencia en A1-E03, se levanta de la mecedora por primera vez: «Vuelve a hacer eso y te entierro en el campo de atrás.»</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (27) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.dd9CRIHVGO38YUhN]{Ethan Montgomery} (A1-E03, A3-E04): En la mecedora del porche (A1-E03). En A3-E04, de pie junto a la ventana de la sala: movelo adentro, a (2,5; 13,4).</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 1} (A1-E03, A3-E04): «Quietos, que no ladran: miran.» En A3-E04 se tumban en el porche, de espaldas a la casa.</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 2} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 3} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 4} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 5} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Los perros de Montgomery 6} (A1-E03, A3-E04): Seis de los doce; el resto sale de las perreras si hay combate.</li><li>@UUID[Actor.tSBtElC53tmJxJnO]{Dutch Lindqvist} · <em>oculto</em> (A3-E04, A4-E02): Dutch Lindqvist, en la caravana 1. Los cazarrecompensas salen si hay combate o redada.</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery 1} · <em>oculto</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery 2} · <em>oculto</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery 3} · <em>oculto</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery 4} · <em>oculto</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Los cazarrecompensas de Montgomery 5} · <em>oculto</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.cacjzuu13Bv7mJH5]{Teresa «Tess» Navarro} · <em>oculto</em> (A4-E02): Si la redada es en la granja: el equipo entra por el camino de grava.</li><li>@UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen} · <em>oculto</em> (A4-E02)</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>oculto</em> (A4-E02)</li><li>@UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak} · <em>oculto</em> (A4-E02): Pak, dentro de la furgoneta, con el dron.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT 1} · <em>oculto</em> (A4-E02): La pareja que rodea la casa hacia la puerta trasera.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT 2} · <em>oculto</em> (A4-E02)</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Salir por el camino de grava al valle · Sendero al río y al embarcadero.</p>",
       "moviles": []
     }
   },

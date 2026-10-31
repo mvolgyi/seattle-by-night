@@ -110,6 +110,15 @@
         { "id": "carretera", "nombre": "Irse por la única carretera", "x": 11, "y": 21, "w": 6, "h": 1, "destino": null, "pendiente": "no hay mapa de la carretera de Everett: el Narrador mueve los tokens a mano" },
         { "id": "grada-agua", "nombre": "La grada baja hacia el agua", "x": 12, "y": 0, "w": 6, "h": 1, "destino": null, "pendiente": "exterior del astillero (t2i, sin plano): la grada, los tres cascos en dique seco y el agua" },
         { "id": "astillero", "nombre": "Al astillero: los tres cascos en dique seco", "x": 0, "y": 0, "w": 2, "h": 1, "destino": null, "pendiente": "exterior del astillero (t2i, sin plano): los refugios en los cascos" }
+      ],
+      "figuras": [
+        { "id": "PNJ-11", "x": 2.6, "y": 16, "oculto": false, "escena": "A2-E03", "nota": "Detrás de la barra, con los codos apoyados y el soldador encima." },
+        { "id": "MEN-05-TAVI", "x": 7.6, "y": 16.3, "oculto": false, "escena": "A2-E03", "nota": "No les quita los ojos de encima; los puños cerrados." },
+        { "id": "MEN-05", "x": 5.5, "y": 16.3, "oculto": false, "escena": "A2-E03", "nota": "Cuatro de la docena de Anarquistas del bar." },
+        { "id": "MEN-05", "x": 9.4, "y": 14.1, "oculto": false, "escena": "A2-E03" },
+        { "id": "MEN-05", "x": 8.2, "y": 18.3, "oculto": false, "escena": "A2-E03" },
+        { "id": "MEN-05", "x": 5.5, "y": 20.3, "oculto": false, "escena": "A2-E03" },
+        { "id": "MEN-05-BAS", "x": 8.6, "y": 9.3, "oculto": true, "escena": "A2-E03", "nota": "Escondido en el almacén para que Hal no lo vea." }
       ]
     }
   ]
