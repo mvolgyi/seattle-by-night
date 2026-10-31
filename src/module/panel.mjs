@@ -668,9 +668,13 @@ export class Panel extends HandlebarsApplicationMixin(ApplicationV2) {
     // v14: el modo va en las opciones (client/dice/roll.mjs, toMessage(messageData, { messageMode })).
     // Sin él, toMessage aplica el modo del chat del Narrador y ChatMessage.applyMode
     // (client/documents/chat-message.mjs) vacía el whisper si es «public».
+    // La tirada llega a todos los clientes (whisper sólo la oculta en la interfaz): el
+    // flavor es neutro y quién vota va en el flag `aviso`; el GM lo arma al renderizar
+    // (Estado.renderizarAviso). El voto sale del total, que ya viaja con la tirada.
     await roll.toMessage({
-      flavor: t("panel.votacion.tiradaAzar", { nombre: esc(Datos.nombre(pnj)), voto: t(`panel.votacion.votos.${voto}`) }),
-      whisper: idsNarradores()
+      flavor: esc(t("chat.avisoNarrador")),
+      whisper: idsNarradores(),
+      flags: { [SBN.ID]: { [SBN.FLAGS.ORIGEN]: "panel", [SBN.FLAGS.AVISO]: { tipo: "azar", pnj } } }
     }, { messageMode: "gm" });
     await Estado.voto(pnj, voto);
   }

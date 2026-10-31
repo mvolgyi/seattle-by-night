@@ -27,7 +27,13 @@
  *      abiertos ni se repinta con un actor ajeno; el voto al azar de Fry se
  *      susurra; y un JUGADOR (se crea «Jugador e2e») carga data/publico.json
  *      y nunca pide data/cronica.json, y ve como texto los enlaces que no
- *      puede abrir.
+ *      puede abrir;
+ *   7. (4b) los susurros al Narrador: el mensaje guarda un texto neutro y
+ *      claves en un flag; el GM los ve igual que antes (mismo HTML que el
+ *      contenido viejo enriquecido, enlace al interludio que abre) y en el
+ *      cliente del jugador NINGÚN mensaje de game.messages (contenido, flavor
+ *      ni flags) tiene textos de umbral, escenas, interludios, UUIDs ni
+ *      textos de data/cronica.json. Al empezar se vacía el chat del mundo.
  * Si los packs todavía no existen, lo dice y prueba sólo la API.
  * Capturas en tools/e2e/capturas/.
  */
@@ -172,7 +178,9 @@ console.log("\n2. API de estado");
 const a = await page.evaluate(async MOD => {
   const api = game.modules.get(MOD).api;
   const espera = ms => new Promise(r => setTimeout(r, ms));
-  // Estado limpio.
+  // Estado limpio. El chat también: la prueba del jugador (6b) revisa TODO game.messages,
+  // y los mensajes de corridas viejas (anteriores a los avisos con flag) traen el texto.
+  await ChatMessage.implementation.deleteDocuments([], { deleteAll: true });
   await game.settings.set(MOD, "termometro", { valor: 2, congelado: false, registro: [] });
   await game.settings.set(MOD, "pistas", {});
   await game.settings.set(MOD, "noche", 1);
@@ -216,7 +224,10 @@ const a = await page.evaluate(async MOD => {
   const nuevos = game.messages.contents.slice(mensajesAntes).filter(m => m.getFlag(MOD, "origen") === "estado");
   out.mensajes = nuevos.length;
   out.todosSusurrados = nuevos.every(m => m.whisper.length && m.whisper.every(id => game.users.get(id)?.isGM));
-  out.umbrales = nuevos.filter(m => m.content.includes("sbn-chat-umbral") && !m.content.includes("sbn-chat-baja")).map(m => m.content.match(/<h4>(.*?)<\/h4>/)?.[1]);
+  // El texto ya no está en el mensaje: el tipo va en el flag `aviso` y el título sale al renderizar.
+  const subidas = nuevos.filter(m => m.getFlag(MOD, "aviso")?.tipo === "umbral" && m.getFlag(MOD, "aviso").sube);
+  out.umbrales = [];
+  for (const m of subidas) out.umbrales.push((await m.renderHTML()).querySelector(".message-content h4")?.textContent);
   return out;
 }, MOD);
 console.log(JSON.stringify(a, null, 2));
@@ -387,6 +398,144 @@ if (hayPacks) {
     comprobar(await page.evaluate(id => canvas.scene?.id === id, helen.id), "la escena de Helen se abre");
     await captura("escena-helen");
   } else comprobar(false, "hay una escena de Helen (LUG-05)");
+}
+
+/* -------------------------------------------- */
+/*  4b. Avisos al Narrador (sin spoilers)       */
+/* -------------------------------------------- */
+
+console.log("\n4b. Avisos al Narrador");
+const av = await page.evaluate(async MOD => {
+  const api = game.modules.get(MOD).api;
+  const D = api.Datos;
+  const espera = ms => new Promise(r => setTimeout(r, ms));
+  const t = (k, d) => d ? game.i18n.format(`SBN.${k}`, d) : game.i18n.localize(`SBN.${k}`);
+  const esc = x => foundry.utils.escapeHTML(String(x ?? ""));
+  await game.settings.set(MOD, "termometro", { valor: 2, congelado: false, registro: [] });
+  await game.settings.set(MOD, "pistas", {});
+  await game.settings.set(MOD, "noche", 1);
+  await espera(200);
+  const antes = game.messages.size;
+  await api.termometro(+1, "e2e: avisos 2→3");      // umbral 3 (INT-01)
+  await api.termometro("=8", "e2e: avisos a 8");     // umbrales 5 y 7
+  await api.termometro(+1, "e2e: avisos 8→9");      // umbral 9 (A4-E02, INT-03)
+  await api.termometro(-1, "e2e: avisos 9→8");      // baja del 9
+  await api.termometro("congelar", "e2e: avisos");
+  await api.termometro("descongelar", "e2e: avisos");
+  await api.pista("P-07");
+  await api.noche(4);
+  await espera(500);
+
+  // El contenido VIEJO (lo que hacía estado.mjs antes de los flags), enriquecido como lo
+  // enriquecía Foundry: si el HTML nuevo es igual, el Narrador ve exactamente lo mismo.
+  const enlace = (id, texto) => {
+    const ref = D.ref(id);
+    const doc = ref ? fromUuidSync(ref.uuid, { strict: false }) : null;
+    return doc ? `@UUID[${doc.uuid}]{${texto ?? doc.name}}` : esc(texto ?? id);
+  };
+  const escala = v => Array.from({ length: D.termometro.max }, (_, k) => k + 1).map(i =>
+    `<span class="${["sbn-seg", i <= v ? "sbn-on" : "", D.umbrales.some(u => u.valor === i) ? "sbn-umbral" : ""].filter(Boolean).join(" ")}"></span>`).join("");
+  const registro = api.estado().termometro.registro;
+  const viejo = a => {
+    let titulo, cuerpo, clase;
+    if (a.tipo === "termometro") {
+      clase = "sbn-chat-termometro";
+      if (a.cambio === "congelar" || a.cambio === "descongelar") {
+        titulo = t(`termometro.chat.${a.cambio}`);
+        cuerpo = `<p>${t("termometro.chat.valor", { valor: a.despues })}</p>`;
+      } else {
+        titulo = t("termometro.chat.titulo", { antes: a.antes, despues: a.despues, cambio: a.cambio });
+        cuerpo = `<div class="sbn-chat-escala">${escala(a.despues)}</div>`;
+      }
+      const motivo = registro.find(e => e.fecha === a.fecha)?.motivo;
+      if (motivo) cuerpo += `<p class="sbn-chat-motivo">${esc(motivo)}</p>`;
+    } else if (a.tipo === "umbral") {
+      const u = D.umbral(a.valor);
+      if (a.sube) {
+        clase = "sbn-chat-umbral";
+        titulo = t("termometro.umbral.titulo", { icono: u.icono, valor: u.valor, texto: u.texto });
+        cuerpo = `<p>${esc(u.ciudad)}</p><p class="sbn-chat-jugadores">${t("termometro.umbral.jugadores", { texto: esc(u.jugadores) })}</p>`;
+        if (u.escena) cuerpo += `<p>${t("termometro.umbral.escena", { enlace: enlace(u.escena) })}</p>`;
+        if (u.pnj) cuerpo += `<p>${t("termometro.umbral.pnj", { enlace: enlace(u.pnj) })}</p>`;
+        if (u.interludio) cuerpo += `<p>${t("termometro.umbral.interludio", { enlace: enlace(u.interludio) })}</p>`;
+      } else {
+        clase = "sbn-chat-umbral sbn-chat-baja";
+        titulo = t("termometro.umbral.baja", { icono: u.icono, valor: u.valor });
+        cuerpo = `<p>${esc(u.texto)}</p>`;
+      }
+    } else if (a.tipo === "pista") {
+      clase = "sbn-chat-pista";
+      titulo = t(a.obtenida ? "pistas.chat.obtenida" : "pistas.chat.perdida");
+      cuerpo = `<p>${enlace(a.id, `${a.id} · ${D.pista(a.id).nombre}`)}</p><p class="sbn-chat-motivo">${t("pistas.chat.cuenta", { n: a.n, total: D.pistas.length })}</p>`;
+    } else if (a.tipo === "noche") {
+      const n = D.noche(a.n);
+      clase = "sbn-chat-reloj";
+      titulo = t("reloj.chat.titulo", { n: a.n, dia: n.dia });
+      cuerpo = `<p>${esc(n.evento)}</p>`;
+      if (n.escena) cuerpo += `<p>${t("reloj.chat.escena", { enlace: enlace(n.escena) })}</p>`;
+    }
+    return `<div class="sbn-chat ${clase}">${titulo ? `<h4>${titulo}</h4>` : ""}${cuerpo}</div>`;
+  };
+  const normal = html => { const d = document.createElement("div"); d.innerHTML = html; return d.innerHTML.replace(/>\s+</g, "><").trim(); };
+
+  const out = { mensajes: [] };
+  for (const m of game.messages.contents.slice(antes)) {
+    const aviso = m.getFlag(MOD, "aviso");
+    if (!aviso) continue;
+    const html = await m.renderHTML();
+    const c = html.querySelector(".message-content");
+    const esperado = normal(await foundry.applications.ux.TextEditor.implementation.enrichHTML(viejo(aviso), { secrets: true }));
+    out.mensajes.push({
+      id: m.id, aviso, content: m.content,
+      gm: m.whisper.length > 0 && m.whisper.every(id => game.users.get(id)?.isGM),
+      h4: c.querySelector(".sbn-chat h4")?.textContent ?? null,
+      enlaces: [...c.querySelectorAll("a.content-link")].map(a => a.dataset.uuid),
+      igual: normal(c.innerHTML) === esperado,
+      nuevo: normal(c.innerHTML).slice(0, 600), viejo: esperado.slice(0, 600)
+    });
+  }
+  const uuid = id => { const r = D.ref(id); return r && fromUuidSync(r.uuid, { strict: false }) ? r.uuid : null; };
+  out.uuids = { "INT-01": uuid("INT-01"), "INT-03": uuid("INT-03"), "A4-E02": uuid("A4-E02"), "P-07": uuid("P-07"), noche4: uuid(D.noche(4)?.escena) };
+  return out;
+}, MOD);
+const porTipo = (tipo, f = () => true) => av.mensajes.filter(m => m.aviso.tipo === tipo && f(m.aviso));
+const u3 = porTipo("umbral", a => a.valor === 3 && a.sube)[0];
+const u9 = porTipo("umbral", a => a.valor === 9 && a.sube)[0];
+const baja9 = porTipo("umbral", a => a.valor === 9 && !a.sube)[0];
+console.log("  ", av.mensajes.map(m => `${m.aviso.tipo}${m.aviso.valor ?? m.aviso.cambio ?? m.aviso.id ?? m.aviso.n ?? ""}${m.aviso.sube === false ? "↓" : ""}`).join(" "));
+comprobar(av.mensajes.length === 13, `cada cambio susurra su aviso (${av.mensajes.length} = 6 de Termómetro, umbrales 3 5 7 9 y 9↓, pista y noche)`);
+comprobar(av.mensajes.every(m => m.gm), "todos los avisos van sólo a los GM");
+const neutro = await page.evaluate(() => game.i18n.localize("SBN.chat.avisoNarrador"));
+comprobar(av.mensajes.every(m => m.content.includes(neutro) && !/<h4|@UUID|A4-E02|INT-0|sbn-chat-escala/.test(m.content)),
+  "el content de los mensajes es neutro (sin título, enlaces ni escena)");
+const distintos = av.mensajes.filter(m => !m.igual);
+comprobar(distintos.length === 0, `el Narrador ve cada aviso con el mismo HTML que el contenido viejo enriquecido (${av.mensajes.length - distintos.length}/${av.mensajes.length})`);
+for (const m of distintos.slice(0, 3)) console.log(`  - ${JSON.stringify(m.aviso)}\n    nuevo: ${m.nuevo}\n    viejo: ${m.viejo}`);
+comprobar(/Termómetro 3/.test(u3?.h4 ?? "") && /Termómetro 9/.test(u9?.h4 ?? "") && /baja del umbral 9/.test(baja9?.h4 ?? ""),
+  `umbral 3, umbral 9 y la bajada del 9 con su título («${u9?.h4}»)`);
+if (hayPacks) {
+  comprobar(!!av.uuids["INT-01"] && u3?.enlaces.includes(av.uuids["INT-01"]), "el aviso del umbral 3 enlaza el interludio INT-01");
+  comprobar(!!av.uuids["INT-03"] && u9?.enlaces.includes(av.uuids["INT-03"]) && u9?.enlaces.includes(av.uuids["A4-E02"]), "el aviso del umbral 9 enlaza A4-E02 y el interludio INT-03");
+  comprobar(porTipo("pista")[0]?.enlaces.includes(av.uuids["P-07"]) && porTipo("noche")[0]?.enlaces.includes(av.uuids.noche4), "los avisos de pista y de noche enlazan la pista y la escena");
+  // En el log del chat (no sólo renderHTML): el contenido real, y el enlace al interludio abre su journal.
+  await page.evaluate(() => { ui.notifications.clear(); ui.sidebar.expand(); ui.sidebar.changeTab("chat", "primary"); });
+  await page.waitForTimeout(800);
+  const sel = await page.evaluate(([id, uuid]) => {
+    const li = ui.chat.element.querySelector(`.message[data-message-id="${id}"]`);
+    li?.scrollIntoView();
+    return li?.querySelector(`a.content-link[data-uuid="${uuid}"]`) ? `#${ui.chat.element.id} .message[data-message-id="${id}"] a.content-link[data-uuid="${uuid}"]` : null;
+  }, [u9?.id, av.uuids["INT-03"]]);
+  comprobar(!!sel, "en el log del chat, el aviso del umbral 9 muestra el enlace al interludio");
+  if (sel) {
+    await page.waitForTimeout(300);
+    await captura("chat-avisos");
+    await page.locator(sel).first().click();
+    const journal = av.uuids["INT-03"].split(".").slice(0, 2).join(".");
+    await page.waitForFunction(j => [...foundry.applications.instances.values()].some(a => a.document?.uuid === j && a.rendered), journal, { timeout: 8000 }).catch(() => null);
+    const abierto = await page.evaluate(j => [...foundry.applications.instances.values()].some(a => a.document?.uuid === j && a.rendered), journal);
+    comprobar(abierto, "el clic en el enlace del interludio abre su journal");
+    await page.evaluate(() => { for (const app of foundry.applications.instances.values()) if (app.document?.documentName === "JournalEntry") app.close(); });
+  }
 }
 
 /* -------------------------------------------- */
@@ -665,8 +814,15 @@ if (hayPacks) {
     const n = await page.evaluate(() => game.messages.size);
     await azar.click();
     await page.waitForFunction(n => game.messages.size > n, n, { timeout: 5000 }).catch(() => null);
-    const m = await page.evaluate(() => { const m = game.messages.contents.at(-1); return { whisper: m.whisper, gm: m.whisper.every(id => game.users.get(id)?.isGM), rolls: m.rolls.length }; });
+    const m = await page.evaluate(async MOD => {
+      const m = game.messages.contents.at(-1);
+      const flavor = (await m.renderHTML()).querySelector(".flavor-text")?.textContent ?? "";
+      return { whisper: m.whisper, gm: m.whisper.every(id => game.users.get(id)?.isGM), rolls: m.rolls.length,
+        crudo: m.flavor, aviso: m.getFlag(MOD, "aviso"), flavor, neutro: game.i18n.localize("SBN.chat.avisoNarrador") };
+    }, MOD);
     comprobar(m.rolls > 0 && m.whisper.length > 0 && m.gm, `la tirada al azar del voto sale sólo para los GM (${m.whisper.length} destinatarios)`);
+    comprobar(m.crudo === m.neutro && m.aviso?.tipo === "azar" && /Voto de .+: (Sí|No)/.test(m.flavor),
+      `el flavor guardado es neutro y el GM ve «${m.flavor}»`);
   } else console.log("  · (ningún voto al azar en la votación)");
   await page.evaluate(() => foundry.applications.instances.get("sbn-panel")?.close());
 
@@ -737,6 +893,38 @@ if (hayPacks) {
   comprobar(enlaces.bloqueados > 0 && enlaces.vivosSinPermiso === 0 && enlaces.rotos === 0, `los enlaces que no puede abrir quedan como texto (${enlaces.bloqueados})`);
   comprobar(enlaces.propio?.enlace === true, "en el perfil de su PJ, el enlace a la ficha sigue vivo");
   comprobar(enlaces.ajeno?.texto === true, "en el perfil de otro PJ, la ficha queda como texto");
+  // Lo que el cliente del jugador TIENE (no lo que ve): todo game.messages, con content,
+  // flavor, flags y tiradas. Los textos prohibidos salen de data/cronica.json del GM.
+  const prohibidos = await page.evaluate(MOD => {
+    const D = game.modules.get(MOD).api.Datos;
+    const azar = (D.tirada("A4-E01")?.votacion?.primogenitos ?? []).filter(p => p.voto === "azar")
+      .flatMap(p => ["si", "no"].map(v => game.i18n.format("SBN.panel.votacion.tiradaAzar", { nombre: D.nombre(p.pnj), voto: game.i18n.localize(`SBN.panel.votacion.votos.${v}`) })));
+    return [
+      "A4-E02", "INT-0", "@UUID", "JournalEntry",
+      ...D.umbrales.flatMap(u => [u.texto, u.ciudad, u.nota]),
+      ...D.noches.map(n => n.evento),
+      ...D.movimientos.map(m => m.motivo),
+      ...azar
+    ].filter(x => typeof x === "string" && x.length >= 6);
+  }, MOD);
+  const fuga = await jp.evaluate(([MOD, prohibidos]) => {
+    const out = { total: game.messages.size, avisos: 0, visibles: 0, fugas: [] };
+    for (const m of game.messages) {
+      if (m.getFlag(MOD, "aviso")) out.avisos++;
+      if (m.getFlag(MOD, "aviso") && m.visible && !m.isRoll) out.visibles++;
+      const crudo = JSON.stringify(m.toObject());
+      for (const p of prohibidos) if (crudo.includes(p)) out.fugas.push(`${m.id} · «${p.slice(0, 50)}»`);
+    }
+    // Informativo: el registro del Termómetro (setting de mundo) también llega al jugador.
+    const reg = game.settings.get(MOD, "termometro")?.registro ?? [];
+    out.registroSetting = { entradas: reg.length, conMotivo: reg.filter(e => e.motivo).length, conMovimiento: reg.filter(e => e.movimiento).length };
+    return out;
+  }, [MOD, prohibidos]);
+  console.log("  ", JSON.stringify({ ...fuga, fugas: fuga.fugas.length }), `· ${prohibidos.length} textos prohibidos`);
+  comprobar(fuga.avisos >= 13, `el jugador recibe los avisos al Narrador en game.messages (${fuga.avisos} de ${fuga.total} mensajes)…`);
+  comprobar(fuga.fugas.length === 0, `…pero ningún mensaje (content, flavor, flags) tiene textos de umbral, A4-E02, INT-0, @UUID, JournalEntry ni de data/cronica.json (${fuga.fugas.length} fugas)`);
+  for (const f of fuga.fugas.slice(0, 10)) console.log("  -", f);
+  comprobar(fuga.visibles === 0, "ningún aviso es visible para el jugador");
   await jp.screenshot({ path: path.join(CAPTURAS, "jugador.png") });
   comprobar(erroresJugador.length === 0, `sin errores de página en el cliente del jugador (${erroresJugador.length})`);
   for (const e of erroresJugador.slice(0, 5)) console.log("  -", e.slice(0, 300));
@@ -768,6 +956,20 @@ await page.evaluate(async MOD => {
   await game.settings.set(MOD, "noche", 1);
 }, MOD);
 await captura("inicio");
+
+// Recargar el GM: el chat se dibuja antes de que llegue data/cronica.json; los avisos ya
+// en pantalla se repintan en `ready` con el contenido real (main.mjs, repintarAvisos).
+await page.reload({ waitUntil: "networkidle" });
+await listo();
+await page.waitForFunction(id => !!game.modules.get(id)?.api, MOD, { timeout: 30000 });
+await page.waitForTimeout(1500);
+const recarga = await page.evaluate(MOD => {
+  const lis = [...ui.chat.element.querySelectorAll(".message[data-message-id]")]
+    .filter(li => game.messages.get(li.dataset.messageId)?.getFlag(MOD, "aviso")?.tipo !== "azar")
+    .filter(li => game.messages.get(li.dataset.messageId)?.getFlag(MOD, "aviso"));
+  return { avisos: lis.length, conTitulo: lis.filter(li => li.querySelector(".message-content .sbn-chat h4")).length };
+}, MOD);
+comprobar(recarga.avisos > 0 && recarga.conTitulo === recarga.avisos, `al recargar, los avisos del log se ven con su contenido real (${recarga.conTitulo}/${recarga.avisos})`);
 
 await page.waitForTimeout(500);
 // Los tres rechazos de la API avisan con ui.notifications.error, que también va a la consola: son esperados.

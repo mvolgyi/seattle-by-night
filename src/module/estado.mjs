@@ -1,6 +1,6 @@
 import { SBN } from "./constantes.mjs";
 import { Datos } from "./datos.mjs";
-import { t, esc, exigirNarrador, susurrarNarrador, enlaceDelLibro } from "./util.mjs";
+import { t, esc, exigirNarrador, susurrarNarrador, anclaDelLibro } from "./util.mjs";
 
 const { SETTINGS } = SBN;
 
@@ -11,7 +11,8 @@ const { SETTINGS } = SBN;
  *
  * Vive en settings de mundo (config false). Los datos fijos (umbrales,
  * noches, pistas) vienen de data/cronica.json (datos.mjs). Sólo el Narrador escribe;
- * cada escritura susurra un mensaje a los Narradores y, en todos los
+ * cada escritura susurra un aviso a los Narradores (sin el texto: sólo claves en
+ * un flag; lo arma cada GM al renderizar, ver «Avisos al Narrador») y, en todos los
  * clientes, dispara `Hooks.callAll("sbnEstado", estado, detalle)` desde el
  * onChange del setting (el detalle viaja en las opciones de la actualización).
  */
@@ -208,22 +209,9 @@ export class Estado {
       sbn: { clave: SETTINGS.TERMOMETRO, ...entrada }
     });
 
-    await this.#publicarTermometro(entrada);
+    await susurrarNarrador({ tipo: "termometro", cambio: etiqueta, antes, despues, fecha: entrada.fecha });
     await this.#avisarUmbrales(antes, despues);
     return foundry.utils.deepClone(nuevo);
-  }
-
-  static async #publicarTermometro({ cambio, motivo, valorAntes, valorDespues }) {
-    let titulo, cuerpo;
-    if (cambio === "congelar" || cambio === "descongelar") {
-      titulo = t(`termometro.chat.${cambio}`);
-      cuerpo = `<p>${t("termometro.chat.valor", { valor: valorDespues })}</p>`;
-    } else {
-      titulo = t("termometro.chat.titulo", { antes: valorAntes, despues: valorDespues, cambio });
-      cuerpo = `<div class="sbn-chat-escala">${this.#escala(valorDespues)}</div>`;
-    }
-    if (motivo) cuerpo += `<p class="sbn-chat-motivo">${esc(motivo)}</p>`;
-    return susurrarNarrador(cuerpo, { titulo, clase: "sbn-chat-termometro" });
   }
 
   /** Diez segmentos, los encendidos hasta el valor, los umbrales marcados. */
@@ -261,25 +249,10 @@ export class Estado {
     }
   }
 
-  /** Al subir, un susurro por cada umbral cruzado; al bajar, una línea por cada uno que se deja atrás. */
+  /** Al subir, un susurro por cada umbral cruzado; al bajar, uno por cada umbral que se deja atrás. */
   static async #avisarUmbrales(antes, despues) {
     const sube = despues > antes;
-    for (const u of this.cruzados(antes, despues)) {
-      const icono = this.textoUmbral(u.valor, "icono");
-      if (sube) {
-        const titulo = t("termometro.umbral.titulo", { icono, valor: u.valor, texto: this.textoUmbral(u.valor) });
-        let cuerpo = `<p>${esc(this.textoUmbral(u.valor, "ciudad"))}</p>`;
-        cuerpo += `<p class="sbn-chat-jugadores">${t("termometro.umbral.jugadores", { texto: esc(this.textoUmbral(u.valor, "jugadores")) })}</p>`;
-        if (u.escena) cuerpo += `<p>${t("termometro.umbral.escena", { enlace: enlaceDelLibro(u.escena) })}</p>`;
-        if (u.pnj) cuerpo += `<p>${t("termometro.umbral.pnj", { enlace: enlaceDelLibro(u.pnj) })}</p>`;
-        if (u.interludio) cuerpo += `<p>${t("termometro.umbral.interludio", { enlace: enlaceDelLibro(u.interludio) })}</p>`;
-        await susurrarNarrador(cuerpo, { titulo, clase: "sbn-chat-umbral" });
-      } else {
-        await susurrarNarrador(`<p>${esc(this.textoUmbral(u.valor))}</p>`, {
-          titulo: t("termometro.umbral.baja", { icono, valor: u.valor }), clase: "sbn-chat-umbral sbn-chat-baja"
-        });
-      }
-    }
+    for (const u of this.cruzados(antes, despues)) await susurrarNarrador({ tipo: "umbral", valor: u.valor, sube });
   }
 
   /**
@@ -307,11 +280,7 @@ export class Estado {
     await game.settings.set(SBN.ID, SETTINGS.PISTAS, pistas, {
       sbn: { clave: SETTINGS.PISTAS, id, obtenida, usuario: game.user.name }
     });
-    const n = Object.keys(pistas).length;
-    await susurrarNarrador(
-      `<p>${enlaceDelLibro(id, `${id} · ${this.nombrePista(id)}`)}</p><p class="sbn-chat-motivo">${t("pistas.chat.cuenta", { n, total: Datos.pistas.length })}</p>`,
-      { titulo: t(obtenida ? "pistas.chat.obtenida" : "pistas.chat.perdida"), clase: "sbn-chat-pista" }
-    );
+    await susurrarNarrador({ tipo: "pista", id, obtenida, n: Object.keys(pistas).length });
     return { ...pistas };
   }
 
@@ -335,12 +304,7 @@ export class Estado {
     await game.settings.set(SBN.ID, SETTINGS.NOCHE, n, {
       sbn: { clave: SETTINGS.NOCHE, antes, noche: n, usuario: game.user.name }
     });
-    const escena = Datos.noche(n)?.escena;
-    let cuerpo = `<p>${esc(this.textoNoche(n, "evento"))}</p>`;
-    if (escena) cuerpo += `<p>${t("reloj.chat.escena", { enlace: enlaceDelLibro(escena) })}</p>`;
-    await susurrarNarrador(cuerpo, {
-      titulo: t("reloj.chat.titulo", { n, dia: this.textoNoche(n, "dia") }), clase: "sbn-chat-reloj"
-    });
+    await susurrarNarrador({ tipo: "noche", n });
     return n;
   }
 
@@ -390,5 +354,121 @@ export class Estado {
       await game.settings.set(SBN.ID, SETTINGS.VOTOS, votos, { sbn: { clave: SETTINGS.VOTOS, pnj, voto } });
       return this.votosActuales;
     });
+  }
+
+  /* -------------------------------------------- */
+  /*  Avisos al Narrador                          */
+  /* -------------------------------------------- */
+
+  /*
+   * Los susurros al Narrador (util.susurrarNarrador) llegan a todos los clientes:
+   * el mensaje guarda un texto neutro y, en el flag `aviso`, sólo claves que un
+   * jugador ya conoce o no dicen nada (valores del Termómetro, número de noche,
+   * id de pista). El HTML de verdad (textos de umbral, escenas, interludios,
+   * enlaces) se arma acá, en el cliente de cada GM, con data/cronica.json.
+   */
+
+  /**
+   * Hook renderChatMessageHTML: en el cliente de un GM, cambia el contenido
+   * neutro de un aviso por el de verdad. Síncrono (Hooks.callAll no espera):
+   * los enlaces salen ya armados con toAnchor, no con enrichHTML.
+   * @param {ChatMessage} mensaje
+   * @param {HTMLElement} html
+   */
+  static renderizarAviso(mensaje, html) {
+    if (!game.user.isGM) return;
+    const aviso = mensaje.getFlag?.(SBN.ID, SBN.FLAGS.AVISO);
+    if (!aviso) return;
+    // Una tirada (el voto al azar) conserva su contenido: lo que se arma es el flavor.
+    if (aviso.tipo === "azar") {
+      const flavor = html?.querySelector?.(".message-header .flavor-text");
+      const texto = flavor ? this.flavorAzar(aviso, mensaje) : null;
+      if (texto) flavor.innerHTML = texto;
+      return;
+    }
+    const destino = html?.querySelector?.(".message-content");
+    const cuerpo = destino ? this.htmlAviso(aviso) : null;
+    if (cuerpo) destino.innerHTML = cuerpo;
+  }
+
+  /**
+   * Flavor del voto al azar del Consejo (`{ tipo: "azar", pnj }`): par sí, impar no
+   * (Panel #onAzar). Null sin datos de la crónica o sin tirada.
+   */
+  static flavorAzar({ pnj }, mensaje) {
+    const total = mensaje?.rolls?.[0]?.total;
+    if (!Datos.listos || Datos.publicos || !pnj || !Number.isFinite(total)) return null;
+    const voto = total % 2 === 0 ? "si" : "no";
+    return t("panel.votacion.tiradaAzar", { nombre: esc(Datos.nombre(pnj)), voto: t(`panel.votacion.votos.${voto}`) });
+  }
+
+  /**
+   * HTML de un aviso (el que antes iba en el `content` del mensaje), o null si
+   * no hay datos para armarlo (data/cronica.json no cargó, tipo desconocido).
+   * @param {object} aviso  flag `aviso` del mensaje
+   * @returns {string|null}
+   */
+  static htmlAviso(aviso) {
+    if (!Datos.listos || Datos.publicos) return null;
+    const armar = { termometro: this.#avisoTermometro, umbral: this.#avisoUmbral, pista: this.#avisoPista, noche: this.#avisoNoche }[aviso?.tipo];
+    const r = armar?.call(this, aviso);
+    if (!r) return null;
+    return `<div class="sbn-chat ${r.clase}">${r.titulo ? `<h4>${r.titulo}</h4>` : ""}${r.cuerpo}</div>`;
+  }
+
+  /** `{ tipo: "termometro", cambio, antes, despues, fecha }`; el motivo, del registro (por la fecha). */
+  static #avisoTermometro({ cambio, antes, despues, fecha }) {
+    let titulo, cuerpo;
+    if (cambio === "congelar" || cambio === "descongelar") {
+      titulo = t(`termometro.chat.${cambio}`);
+      cuerpo = `<p>${t("termometro.chat.valor", { valor: despues })}</p>`;
+    } else {
+      titulo = t("termometro.chat.titulo", { antes, despues, cambio: esc(cambio) });
+      cuerpo = `<div class="sbn-chat-escala">${this.#escala(despues)}</div>`;
+    }
+    // El motivo no viaja en el mensaje (puede ser texto de la crónica): está en el
+    // registro del Termómetro. Si ya no está (se reinició o pasó el tope), no se muestra.
+    const entrada = fecha ? this.termometroActual.registro.find(e => e.fecha === fecha && e.cambio === cambio) : null;
+    if (entrada?.motivo) cuerpo += `<p class="sbn-chat-motivo">${esc(entrada.motivo)}</p>`;
+    return { titulo, cuerpo, clase: "sbn-chat-termometro" };
+  }
+
+  /** `{ tipo: "umbral", valor, sube }` */
+  static #avisoUmbral({ valor, sube }) {
+    const u = Datos.umbral(valor);
+    if (!u) return null;
+    const icono = u.icono ?? "";
+    if (!sube) {
+      return {
+        titulo: t("termometro.umbral.baja", { icono, valor: u.valor }),
+        cuerpo: `<p>${esc(u.texto)}</p>`,
+        clase: "sbn-chat-umbral sbn-chat-baja"
+      };
+    }
+    let cuerpo = `<p>${esc(u.ciudad)}</p>`;
+    cuerpo += `<p class="sbn-chat-jugadores">${t("termometro.umbral.jugadores", { texto: esc(u.jugadores) })}</p>`;
+    if (u.escena) cuerpo += `<p>${t("termometro.umbral.escena", { enlace: anclaDelLibro(u.escena) })}</p>`;
+    if (u.pnj) cuerpo += `<p>${t("termometro.umbral.pnj", { enlace: anclaDelLibro(u.pnj) })}</p>`;
+    if (u.interludio) cuerpo += `<p>${t("termometro.umbral.interludio", { enlace: anclaDelLibro(u.interludio) })}</p>`;
+    return { titulo: t("termometro.umbral.titulo", { icono, valor: u.valor, texto: esc(u.texto) }), cuerpo, clase: "sbn-chat-umbral" };
+  }
+
+  /** `{ tipo: "pista", id, obtenida, n }` (n: cuántas tenía la coterie después del cambio) */
+  static #avisoPista({ id, obtenida, n }) {
+    if (!Datos.pista(id)) return null;
+    return {
+      titulo: t(obtenida ? "pistas.chat.obtenida" : "pistas.chat.perdida"),
+      cuerpo: `<p>${anclaDelLibro(id, `${id} · ${this.nombrePista(id)}`)}</p><p class="sbn-chat-motivo">${t("pistas.chat.cuenta", { n: Number(n) || 0, total: Datos.pistas.length })}</p>`,
+      clase: "sbn-chat-pista"
+    };
+  }
+
+  /** `{ tipo: "noche", n }` */
+  static #avisoNoche({ n }) {
+    const noche = Datos.noche(n);
+    if (!noche) return null;
+    let cuerpo = `<p>${esc(noche.evento)}</p>`;
+    if (noche.escena) cuerpo += `<p>${t("reloj.chat.escena", { enlace: anclaDelLibro(noche.escena) })}</p>`;
+    return { titulo: t("reloj.chat.titulo", { n: noche.n, dia: esc(noche.dia) }), cuerpo, clase: "sbn-chat-reloj" };
   }
 }

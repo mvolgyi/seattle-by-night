@@ -46,6 +46,15 @@ ln -s "$PWD" ~/.local/share/FoundryVTT/Data/modules/seattle-by-night
 cd ~/FoundryVTT/app/resources/app && node main.js --port=30099 --noupnp --world=sbn-test
 ```
 
+## Notas de versión
+
+- **Avisos al Narrador sin spoilers.** Foundry manda todos los mensajes de chat a todos los
+  clientes (el susurro sólo los oculta en la interfaz). Desde esta versión, los avisos del
+  Termómetro, los umbrales, las pistas, el Reloj y el voto al azar guardan un texto neutro y
+  sólo claves en un flag; el texto real lo arma el cliente de cada GM al mostrarlos. Los
+  mensajes que ya estaban en un mundo conservan su contenido viejo (con el texto completo) y
+  no se migran: si te preocupa, vaciá el chat.
+
 ## Licencias
 
 - **Código** (`src/`, `tools/`, `templates/`): MIT, ver `LICENSE`.

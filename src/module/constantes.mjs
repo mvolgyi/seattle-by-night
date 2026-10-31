@@ -22,7 +22,12 @@ export class SBN {
     /** id del libro (PNJ-12, LUG-05, A1-E01…) dentro de los documentos generados. */
     ID_LIBRO: "id",
     /** En la escena que se activa al importar la crónica por primera vez. */
-    LANDING: "landing"
+    LANDING: "landing",
+    /**
+     * En los susurros al Narrador: las claves del aviso (`{ tipo: "umbral", valor: 3, sube: true }`).
+     * El texto lo arma cada GM al renderizar; el mensaje, que llega a todos los clientes, no lo lleva.
+     */
+    AVISO: "aviso"
   };
 
   static SETTINGS = {

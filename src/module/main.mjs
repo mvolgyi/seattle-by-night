@@ -60,6 +60,7 @@ Hooks.once("ready", async () => {
 
   Botones.instalar();
   Indicador.sincronizar();
+  if (game.user.isGM) repintarAvisos();
 
   console.log(`${SBN.ID} | Listo. Foundry ${game.version} · ${game.system.id} ${game.system.version}`);
 
@@ -118,7 +119,26 @@ for (const hook of ["renderJournalEntrySheet", "renderJournalEntryPageSheet"]) {
     Botones.enlacesSinPermiso(element);
   });
 }
-Hooks.on("renderChatMessageHTML", (_msg, html) => {
+Hooks.on("renderChatMessageHTML", (msg, html) => {
+  // Primero el contenido real de los avisos al Narrador (sólo en el cliente de un GM).
+  Estado.renderizarAviso(msg, html);
   Botones.refrescar(html);
   Botones.enlacesSinPermiso(html);
 });
+
+/**
+ * El chat se dibuja después de `setup` sin esperar a data/cronica.json: los avisos
+ * al Narrador que ya estaban en pantalla salieron con el texto neutro. Una vez
+ * cargados los datos se vuelven a dibujar. Sólo los que ya están en el log: para
+ * uno que no está, ChatLog#updateMessage lo agregaría (client/applications/sidebar/tabs/chat.mjs);
+ * para los que están, repinta también la notificación y el popout.
+ */
+function repintarAvisos() {
+  const log = ui.chat?.element;
+  if (!log) return;
+  const ids = new Set([...log.querySelectorAll(".message[data-message-id]")].map(li => li.dataset.messageId));
+  for (const id of ids) {
+    const m = game.messages.get(id);
+    if (m?.getFlag(SBN.ID, SBN.FLAGS.AVISO)) ui.chat.updateMessage(m);
+  }
+}

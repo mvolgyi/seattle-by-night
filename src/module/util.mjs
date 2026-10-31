@@ -19,15 +19,25 @@ export const esc = s => foundry.utils.escapeHTML(String(s ?? ""));
 export const idsNarradores = () => game.users.filter(u => u.isGM).map(u => u.id);
 
 /**
- * Publica un mensaje de chat que sólo ven los Narradores.
- * `contenido` es HTML ya escapado; se enriquece al renderizar (@UUID funciona).
+ * Publica un aviso de chat que sólo ven los Narradores.
+ *
+ * Foundry manda TODOS los ChatMessage a TODOS los clientes: el `whisper` sólo
+ * los oculta en la interfaz (ChatMessage#visible, client/documents/chat-message.mjs),
+ * pero cualquier jugador los tiene en `game.messages`. Por eso el mensaje no lleva
+ * el contenido: `content` es un texto neutro y el aviso va en el flag `aviso`
+ * sólo como claves (`{ tipo: "umbral", valor: 3, sube: true }`, `{ tipo: "pista",
+ * id: "P-07", … }`), nada que esté sólo en data/cronica.json. El cliente de cada
+ * Narrador arma el HTML real al renderizar (Estado.renderizarAviso, desde el
+ * hook renderChatMessageHTML de main.mjs) con sus datos.
+ *
+ * @param {{ tipo: string }} aviso  claves del aviso (sin textos de la crónica)
  */
-export function susurrarNarrador(contenido, { titulo = "", clase = "" } = {}) {
+export function susurrarNarrador(aviso) {
   return ChatMessage.create({
-    content: `<div class="sbn-chat ${clase}">${titulo ? `<h4>${titulo}</h4>` : ""}${contenido}</div>`,
+    content: `<div class="sbn-chat sbn-chat-aviso"><p>${esc(t("chat.avisoNarrador"))}</p></div>`,
     speaker: { alias: t("titulo") },
     whisper: idsNarradores(),
-    flags: { [SBN.ID]: { origen: "estado" } }
+    flags: { [SBN.ID]: { [SBN.FLAGS.ORIGEN]: "estado", [SBN.FLAGS.AVISO]: aviso } }
   });
 }
 
@@ -62,10 +72,15 @@ export function documentoPorId(id) {
   return doc ?? documentoDelLibro(id);
 }
 
-/** `@UUID[…]{nombre}` si el documento está en el mundo; si no, el id en texto plano. */
-export function enlaceDelLibro(id, texto) {
+/**
+ * Enlace ya renderizado a un ID del libro: el mismo `<a class="content-link">` que
+ * produce TextEditor.enrichHTML con `@UUID[…]{texto}` (TextEditor._createContentLink
+ * → ClientDocument#toAnchor), pero síncrono, para armar HTML dentro de un hook de
+ * render. Si el documento no está en el mundo, el texto sin enlace.
+ */
+export function anclaDelLibro(id, texto) {
   const doc = documentoPorId(id);
-  return doc ? `@UUID[${doc.uuid}]{${texto ?? doc.name}}` : esc(texto ?? id);
+  return doc?.toAnchor ? doc.toAnchor({ name: texto ?? doc.name }).outerHTML : esc(texto ?? id);
 }
 
 /**

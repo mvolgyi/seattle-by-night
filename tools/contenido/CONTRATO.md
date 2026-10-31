@@ -113,3 +113,7 @@ cuenta por noche); `estado()` suma `pruebas` y `votos`. Settings de mundo nuevos
 Hook `sbnEstado(estado, detalle)`. El aviso emergente de umbral lo muestra cada GM en su
 cliente desde ese hook (`Estado.notificarUmbrales(detalle)`); el susurro al chat lo manda el
 que movió el Termómetro, a todos los GM.
+Los susurros al Narrador no llevan texto de la crónica: `content` neutro y
+`flags["seattle-by-night"].aviso` con claves (`termometro`, `umbral`, `pista`, `noche`, `azar`);
+el HTML lo arma cada GM en `renderChatMessageHTML` desde `data/cronica.json`. Todo
+ChatMessage llega a todos los clientes, susurro o no.
