@@ -377,6 +377,12 @@ button.sbn-pista.sbn-obtenida::before {
 }
 #sbn-panel .sbn-panel-resumen.sbn-congelado { border-bottom-color: #7fb4d9; }
 #sbn-panel .sbn-panel-resumen .sbn-panel-aviso { flex-basis: 100%; }
+#sbn-panel .sbn-panel-interludio {
+  border-left-color: var(--sbn-sodio);
+  background: color-mix(in srgb, var(--sbn-sodio) 16%, transparent);
+}
+#sbn-panel .sbn-panel-interludio > i,
+#sbn-panel .sbn-tm-interludio > i { color: var(--sbn-sodio); }
 #sbn-panel .sbn-res-item { display: flex; align-items: baseline; gap: 6px; }
 #sbn-panel .sbn-res-etiqueta { text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.06em; opacity: 0.75; color: inherit; }
 #sbn-panel .sbn-res-valor { font-size: 1.5em; font-weight: bold; color: var(--sbn-sodio); }

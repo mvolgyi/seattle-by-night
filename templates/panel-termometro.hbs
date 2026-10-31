@@ -27,7 +27,8 @@
           <td class="sbn-tm-umbral-valor"><span class="sbn-icono">{{u.icono}}</span> {{u.valor}}</td>
           <td><strong>{{u.texto}}</strong><br>{{u.ciudad}}
             {{#if u.escenaHTML}}<div class="sbn-enlaces">{{{u.escenaHTML}}}</div>{{/if}}
-            {{#if u.pnjHTML}}<div class="sbn-enlaces">{{{u.pnjHTML}}}</div>{{/if}}</td>
+            {{#if u.pnjHTML}}<div class="sbn-enlaces">{{{u.pnjHTML}}}</div>{{/if}}
+            {{#if u.interludioHTML}}<div class="sbn-enlaces sbn-tm-interludio"><i class="fa-solid fa-film"></i> {{localize "SBN.panel.interludio.umbral"}} {{{u.interludioHTML}}}</div>{{/if}}</td>
           <td class="sbn-tm-jugadores">«{{u.jugadores}}»</td>
         </tr>
       {{/each}}

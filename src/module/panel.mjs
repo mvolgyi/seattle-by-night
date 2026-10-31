@@ -141,6 +141,7 @@ export class Panel extends HandlebarsApplicationMixin(ApplicationV2) {
       congelado: e.termometro.congelado,
       icono: umbral?.icono ?? "",
       umbral: umbral?.texto ?? "",
+      interludio: Panel.interludio(e.termometro.valor),
       noche: e.noche,
       dia: Estado.textoNoche(e.noche, "dia"),
       pistas: Object.keys(e.pistas).length,
@@ -153,6 +154,25 @@ export class Panel extends HandlebarsApplicationMixin(ApplicationV2) {
         peligro: celula.system.danger?.value ?? 0,
         peligroMax: celula.system.danger?.max || 5
       } : null
+    };
+  }
+
+  /**
+   * Aviso de interludio de FIRSTLIGHT: el del umbral más alto ya alcanzado que
+   * tenga uno (`interludio` en data/cronica.json: INT-01 en el 3, INT-03 en el 9).
+   * Sigue a la vista mientras el Termómetro no cruce el siguiente, porque el
+   * libro dice que el interludio también sirve si se juega más tarde. Sólo lo
+   * ve el Narrador: el panel es suyo y data/publico.json no lleva `interludio`.
+   */
+  static interludio(valor) {
+    const u = Datos.umbrales.filter(x => x.interludio && x.valor <= valor).at(-1);
+    if (!u) return null;
+    return {
+      id: u.interludio,
+      valor: u.valor,
+      icono: u.icono ?? "",
+      texto: t("panel.interludio.aviso", { icono: u.icono ?? "", valor: u.valor }),
+      enlaceHTML: enlaceHTML(u.interludio)
     };
   }
 
@@ -179,7 +199,8 @@ export class Panel extends HandlebarsApplicationMixin(ApplicationV2) {
       alcanzado: u.valor <= tm.valor,
       actual: u.valor === actual?.valor,
       escenaHTML: u.escena ? enlaceHTML(u.escena, u.escena) : "",
-      pnjHTML: u.pnj ? enlaceHTML(u.pnj) : ""
+      pnjHTML: u.pnj ? enlaceHTML(u.pnj) : "",
+      interludioHTML: u.interludio ? enlaceHTML(u.interludio) : ""
     }));
 
     return {

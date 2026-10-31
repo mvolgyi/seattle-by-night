@@ -1,5 +1,10 @@
 <header class="sbn-panel-resumen{{#if resumen.congelado}} sbn-congelado{{/if}}">
   {{#unless cargado}}<p class="sbn-panel-aviso"><i class="fa-solid fa-triangle-exclamation"></i> {{localize "SBN.panel.sinDatos"}}</p>{{/unless}}
+  {{#if resumen.interludio}}
+    <p class="sbn-panel-aviso sbn-panel-interludio" data-interludio="{{resumen.interludio.id}}">
+      <i class="fa-solid fa-film"></i> {{resumen.interludio.texto}} {{{resumen.interludio.enlaceHTML}}}
+    </p>
+  {{/if}}
   <div class="sbn-res-item" data-tooltip-text="{{resumen.umbral}}">
     <span class="sbn-res-etiqueta">{{localize "SBN.termometro.nombre"}}</span>
     <span class="sbn-res-valor">{{resumen.termometro}}<small>/{{resumen.max}}</small></span>

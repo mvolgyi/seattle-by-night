@@ -44,6 +44,7 @@
         "jugadores": "Lo que perciben los jugadores: «{texto}»",
         "escena": "Escena: {enlace}",
         "pnj": "Quién: {enlace}",
+        "interludio": "Interludio de FIRSTLIGHT: {enlace}",
         "baja": "{icono} El Termómetro baja del umbral {valor}"
       }
     },
@@ -114,6 +115,10 @@
       "celula": "Célula de FIRSTLIGHT: abrir la hoja",
       "desesperacion": "Desesperación",
       "peligro": "Peligro",
+      "interludio": {
+        "aviso": "{icono} El Termómetro cruzó el {valor}: toca el interludio de FIRSTLIGHT",
+        "umbral": "Interludio:"
+      },
       "tabs": {
         "termometro": "Termómetro",
         "reloj": "Reloj",

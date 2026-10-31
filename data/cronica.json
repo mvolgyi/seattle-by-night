@@ -13,7 +13,8 @@
     "icono": "👁",
     "texto": "Vigilancia pasiva sobre Helen.",
     "ciudad": "Vigilancia pasiva sobre Helen: una furgoneta frente a su edificio, drones ocasionales.",
-    "jugadores": "Alguien mira a la periodista."
+    "jugadores": "Alguien mira a la periodista.",
+    "interludio": "INT-01"
    },
    {
     "valor": 5,
@@ -38,7 +39,8 @@
     "texto": "Redada (A4-E02).",
     "ciudad": "Redada (A4-E02).",
     "jugadores": "Llaman a la puerta.",
-    "escena": "A4-E02"
+    "escena": "A4-E02",
+    "interludio": "INT-03"
    },
    {
     "valor": 10,
@@ -1948,6 +1950,16 @@
   "GAN-11": {
    "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cjmyT3bfPbka0X6O",
    "nombre": "GAN-11 · El ayuno de Jun",
+   "tipo": "pagina"
+  },
+  "INT-01": {
+   "uuid": "JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV",
+   "nombre": "INT-01 · La furgoneta blanca",
+   "tipo": "pagina"
+  },
+  "INT-03": {
+   "uuid": "JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx",
+   "nombre": "INT-03 · Luz de día artificial",
    "tipo": "pagina"
   },
   "LOR-01": {

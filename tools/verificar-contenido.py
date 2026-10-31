@@ -44,14 +44,14 @@ for e in errores: print(e)
 print(f"\n{len(ids)} ids declarados, {len(errores)} errores")
 
 # Referencias internas de trackers.json y pistas.json
-claves = ("escena", "escenas", "lugar", "pnj", "pj", "documento", "gancho", "desenlace", "pista", "pistas", "prueba", "lor", "otrasEscenas", "ayuda")
+claves = ("escena", "escenas", "lugar", "pnj", "pj", "documento", "gancho", "desenlace", "pista", "pistas", "prueba", "lor", "otrasEscenas", "ayuda", "interludio")
 malas = []
 def mirar(o, f):
     if isinstance(o, dict):
         for k, v in o.items():
             if k in claves:
                 for x in (v if isinstance(v, list) else [v]):
-                    if isinstance(x, str) and x not in ids and x not in ignorar and x[:1] in "APLDGFMCR":
+                    if isinstance(x, str) and x not in ids and x not in ignorar and x[:1] in "APLDGFMCRI":
                         malas.append(f"{f.name}: {k}={x}")
             mirar(v, f)
     elif isinstance(o, list):

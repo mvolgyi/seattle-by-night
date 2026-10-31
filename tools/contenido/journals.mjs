@@ -751,7 +751,8 @@ function construirTrackers(ctx, carpetas) {
     `<table class="sbn-tabla sbn-tabla-umbrales"><thead><tr><th>Valor</th><th>Qué pasa</th><th>Lo que ven los jugadores</th></tr></thead><tbody>${
       (T.umbrales ?? []).map(u => `<tr><td class="sbn-umbral-valor">${escapar(u.icono ?? "")} <strong>${escapar(u.valor)}</strong></td>`
         + `<td>${L(u.ciudad ?? u.texto ?? "")}${u.ciudad && u.texto && u.ciudad !== u.texto ? `<br><span class="sbn-nota">${L(u.texto)}</span>` : ""}`
-        + `${u.escena ? ` → ${enlace(u.escena)}` : ""}${u.pnj ? ` (${enlace(u.pnj)})` : ""}</td>`
+        + `${u.escena ? ` → ${enlace(u.escena)}` : ""}${u.pnj ? ` (${enlace(u.pnj)})` : ""}`
+        + `${u.interludio ? `<br>Interludio de FIRSTLIGHT: ${enlace(u.interludio)}` : ""}</td>`
         + `<td>${L(u.jugadores === "inicio" ? "Inicio" : (u.jugadores ?? ""))}</td></tr>`).join("")
     }</tbody></table>`,
     ...(T.umbrales ?? []).filter(u => u.efectos?.length || u.nota || Object.keys(u.variantes ?? {}).length).map(u =>

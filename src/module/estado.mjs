@@ -272,6 +272,7 @@ export class Estado {
         cuerpo += `<p class="sbn-chat-jugadores">${t("termometro.umbral.jugadores", { texto: esc(this.textoUmbral(u.valor, "jugadores")) })}</p>`;
         if (u.escena) cuerpo += `<p>${t("termometro.umbral.escena", { enlace: enlaceDelLibro(u.escena) })}</p>`;
         if (u.pnj) cuerpo += `<p>${t("termometro.umbral.pnj", { enlace: enlaceDelLibro(u.pnj) })}</p>`;
+        if (u.interludio) cuerpo += `<p>${t("termometro.umbral.interludio", { enlace: enlaceDelLibro(u.interludio) })}</p>`;
         await susurrarNarrador(cuerpo, { titulo, clase: "sbn-chat-umbral" });
       } else {
         await susurrarNarrador(`<p>${esc(this.textoUmbral(u.valor))}</p>`, {

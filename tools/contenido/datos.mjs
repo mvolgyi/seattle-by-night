@@ -75,7 +75,9 @@ function termometro(t, ctx) {
   const umbrales = (t.umbrales ?? [])
     // El 2 es el valor inicial («Inicio.»), no un umbral.
     .filter(u => u.valor > (t.inicio ?? 0) && u.ciudad)
-    .map(u => tomar(u, ["valor", "icono", "texto", "ciudad", "jugadores", "escena", "pnj", "nota"]));
+    // `interludio`: el interludio de FIRSTLIGHT que se juega al cruzar ese umbral (INT-01 en el 3,
+    // INT-03 en el 9; content/cronica/firstlight/00-firstlight-jugable.md). Sólo para el Narrador.
+    .map(u => tomar(u, ["valor", "icono", "texto", "ciudad", "jugadores", "escena", "pnj", "interludio", "nota"]));
 
   const movimientos = [];
   const idMov = idsEstables();
@@ -261,7 +263,7 @@ function tiradas(p, listaPistas, listaPruebas, ctx) {
 /* -------------------------------------------- */
 
 /** Claves cuyo valor es un ID del libro (o una lista de IDs). */
-const CLAVES_ID = new Set(["escena", "escenas", "pnj", "pj", "lugar", "documento", "gancho", "desenlace", "lor", "ayuda", "pistas", "id"]);
+const CLAVES_ID = new Set(["escena", "escenas", "pnj", "pj", "lugar", "documento", "gancho", "desenlace", "lor", "ayuda", "pistas", "interludio", "id"]);
 /** Además, los IDs que aparecen sueltos en los textos («(A4-E02)», «LOR-01 a nivel 4»). */
 const ID_EN_TEXTO = /\b(?:A\d-E\d{2}|(?:PNJ|PJ|MEN|LUG|DOC|AYU|GAN|LOR|COT|FIN|MAP)-[A-Z]?\d{1,2}|FIN-[A-D])\b/g;
 

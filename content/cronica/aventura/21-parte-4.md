@@ -60,6 +60,8 @@ Solo si el Termómetro llegó a 9. La Célula Puget de FIRSTLIGHT, con la agente
 
 FIRSTLIGHT llega a las 21:40 con el equipo táctico (@ID[MEN-02]): seis operadores con armadura ligera, munición incendiaria, linternas UV de alta intensidad, un dron con cámara térmica y una furgoneta con un generador de luz solar artificial. Okafor dirige desde un coche aparcado a una manzana. El objetivo de FIRSTLIGHT es capturar a un Vástago vivo o, si no puede, destruirlo y llevarse todo el material.
 
+Si se jugaron los interludios de FIRSTLIGHT, antes de empezar mirá lo que dejaron: @ID[INT-00|las ventajas y fisuras para la redada]. Cambian con qué llega cada bando a la puerta (el generador, el megáfono, el dron, las salidas), no quién gana.
+
 La coterie, o la parte de la coterie que esté en el objetivo, tiene tres prioridades: salir viva, salvar a los mortales (@ID[PNJ-05|Bear], @ID[PNJ-04|Helen], los cazarrecompensas) y destruir lo que no debe caer en manos de FIRSTLIGHT.
 
 *Si es el hangar:*
