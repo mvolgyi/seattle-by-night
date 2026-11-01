@@ -11,7 +11,7 @@ Módulo de **Foundry VTT** para **Vampiro: La Mascarada 5ª edición** sobre el 
 | Foundry | v14 (verificado en 14.365) |
 | Idioma | español |
 | Mesa | coterie de 4–5 jugadores |
-| Estado | 0.4.0 — fases 0–2, 4 y 8 hechas (la crónica importable, el Panel del Narrador y FIRSTLIGHT jugable); arte (retratos, tokens y mapas) en curso. Plan y fases en `SPEC.md` |
+| Estado | 1.0.0 — la crónica completa importable, el Panel del Narrador, FIRSTLIGHT jugable, 21 mapas pintados con luces, muros y tokens, y la Guía del Narrador. Plan y fases en `SPEC.md` |
 
 ## Estructura del repositorio
 
@@ -81,6 +81,24 @@ página. Al terminar avisa si queda algún enlace sin destino o algún marcador 
 imágenes reducidas quedan en `cache/guia/` (ignorado por git).
 
 ## Notas de versión
+
+### 1.0.0
+
+Primera versión completa.
+
+- **La crónica:** el libro, la aventura escena por escena, los interludios de FIRSTLIGHT, los
+  desenlaces, la ciudad, 21 documentos y ayudas de juego, PJs y PNJs con retrato y ficha.
+- **21 mapas pintados** con muros, puertas, luces, regiones de transición, muebles móviles,
+  78 personajes colocados y un pin por escena en la sala donde transcurre.
+- **Visión:** los personajes ven según lo que son (a tientas sin luz; Auspex, Protean y gafas
+  térmicas ven en la oscuridad; los perros huelen). El Narrador, sin un token seleccionado,
+  ve el mapa aclarado aunque la escena sea oscura para los jugadores (ajuste del cliente).
+- **Panel del Narrador:** Termómetro con umbrales e interludios, Reloj de ocho noches, pistas
+  y las tiradas clave del Consejo y de la jauría.
+- **Guía del Narrador:** un HTML aparte (`guia-del-narrador.html` en la release), sin
+  internet, con toda la crónica y una mesa de seguimiento.
+
+### Cambios de seguridad (spoilers)
 
 - **Avisos al Narrador sin spoilers.** Foundry manda todos los mensajes de chat a todos los
   clientes (el susurro sólo los oculta en la interfaz). Desde esta versión, los avisos del
