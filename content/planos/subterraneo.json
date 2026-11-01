@@ -4,7 +4,10 @@
     {
       "id": "subterraneo",
       "lugar": "LUG-04",
-      "escenas": ["A1-E04"],
+      "escenas": [
+        { "id": "A1-E04", "sala": "La barbería (oficina de Thornquist)" }
+      ],
+      "salaLugar": "Acera de 1889",
       "nombre": "Parte 1 · Las Galerías Selladas",
       "orden": 40,
       "ancho": 24,
@@ -18,7 +21,7 @@
       "habitaciones": [
         { "nombre": "Cimientos (noroeste)", "x": 0, "y": 0, "w": 3, "h": 6.5, "piso": "macizo" },
         { "nombre": "Relleno de la calle (suroeste)", "x": 0, "y": 9.5, "w": 6, "h": 4.5, "piso": "macizo" },
-        { "nombre": "Escalera de acceso (desde un sótano de Pioneer Square)", "x": 0, "y": 6.5, "w": 3, "h": 3, "piso": "piedra" },
+        { "nombre": "Escalera de acceso (desde un sótano de Pioneer Square)", "x": 0, "y": 6.5, "w": 3, "h": 3, "piso": "piedra", "oscura": true },
         { "nombre": "Acera de 1889", "x": 3, "y": 6.5, "w": 21, "h": 3, "piso": "ladrillo" },
         { "nombre": "Escaparate tapiado (oeste)", "x": 3, "y": 0, "w": 4, "h": 6.5, "piso": "macizo" },
         { "nombre": "El Mercado de Abajo", "x": 7, "y": 0, "w": 8, "h": 6.5, "piso": "tablas", "vetas": "v" },

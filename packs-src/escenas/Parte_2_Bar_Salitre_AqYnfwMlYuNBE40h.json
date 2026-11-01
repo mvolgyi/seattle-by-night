@@ -762,7 +762,7 @@
       "_id": "iTTJdrilqi6QH4P2",
       "name": "Aplique de la puerta trasera",
       "x": 900,
-      "y": 785,
+      "y": 765,
       "elevation": 0,
       "rotation": 0,
       "walls": true,
@@ -976,7 +976,7 @@
       "entryId": "JMwTSsJAcyYdCs3m",
       "pageId": null,
       "x": 560,
-      "y": 1660,
+      "y": 1735,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -1014,7 +1014,7 @@
       "entryId": "FttkHsYSSaCpIugu",
       "pageId": "aJxUAHXcYpRWrhmG",
       "x": 560,
-      "y": 1760,
+      "y": 1835,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -2359,7 +2359,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2407,7 +2415,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2455,7 +2471,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2503,7 +2527,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2550,7 +2582,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2597,7 +2637,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2644,7 +2692,15 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {

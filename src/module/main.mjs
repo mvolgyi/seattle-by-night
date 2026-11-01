@@ -10,6 +10,7 @@
  *   botones.mjs       botones de los journals (.sbn-tirada, -termometro, -pista, -reloj)
  *   indicador.mjs     barrita del Narrador con el Termómetro y la noche
  *   panel.mjs         Panel del Narrador (Termómetro, Reloj, pistas, tiradas clave)
+ *   vision.mjs        el Narrador lee el mapa en escenas oscuras (sólo en su cliente)
  *   textos.mjs        respaldo de lang/es.json si el cliente no está en español
  */
 
@@ -19,6 +20,7 @@ import { Estado } from "./estado.mjs";
 import { Botones } from "./botones.mjs";
 import { Indicador } from "./indicador.mjs";
 import { Panel } from "./panel.mjs";
+import { Vision } from "./vision.mjs";
 import * as Importacion from "./importacion.mjs";
 import { asegurarTextos, textosListos } from "./textos.mjs";
 
@@ -29,7 +31,9 @@ Hooks.once("init", () => {
   Importacion.registrarSettings();
   Estado.registrarSettings();
   Indicador.registrarSettings();
+  Vision.registrarSettings();
   Importacion.instalar();
+  Vision.instalar();
 });
 
 // Las traducciones ya están cargadas en setup; si no hay SBN.*, se traen.

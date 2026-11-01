@@ -4,7 +4,11 @@
     {
       "id": "galeria",
       "lugar": "LUG-03",
-      "escenas": ["A2-E01", "A4-E01"],
+      "escenas": [
+        { "id": "A2-E01", "sala": "Gran sala de las medusas" },
+        { "id": "A4-E01", "sala": "Gran sala de las medusas" }
+      ],
+      "salaLugar": "Vestíbulo de la Guardiana",
       "nombre": "Parte 2 · La Galería de Vidrio (Elíseo)",
       "orden": 30,
       "ancho": 24,
@@ -123,7 +127,10 @@
     {
       "id": "galeria-archivo",
       "lugar": "LUG-03",
-      "escenas": ["A2-E01"],
+      "escenas": [
+        { "id": "A2-E01", "sala": "Archivo de la Guardiana" }
+      ],
+      "salaLugar": "Pie de la escalera",
       "nombre": "Parte 2 · La Galería de Vidrio: el archivo de la Guardiana",
       "orden": 31,
       "ancho": 13,

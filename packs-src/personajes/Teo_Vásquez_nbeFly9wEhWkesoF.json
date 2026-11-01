@@ -12,7 +12,15 @@
     "disposition": 0,
     "lockRotation": true,
     "sight": {
-      "enabled": false
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
     },
     "texture": {
       "src": "modules/seattle-by-night/assets/tokens/MEN-06.webp"

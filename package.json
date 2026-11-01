@@ -24,6 +24,7 @@
     "pack:macros": "fvtt package pack macros --id seattle-by-night --type Module --in packs-src/macros --out packs",
     "contenido": "node tools/construir-contenido.mjs",
     "verificar:actores": "node tools/contenido/verificar-actores.mjs",
+    "revisar:escenas": "node tools/contenido/revisar-escenas.mjs",
     "arte": "node tools/generar-arte.mjs",
     "tokens": "node tools/tokens.mjs"
   },

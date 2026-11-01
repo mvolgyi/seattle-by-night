@@ -180,11 +180,52 @@ Prioridad (los móviles que los planos ya declaran):
 - **Escena:** padding **0** (como DVV: con padding, Foundry corre el rectángulo de la escena y
   las coordenadas del plano quedarían desplazadas), grid cuadrado de 100 px con `alpha 0` (el piso ya lee la
   retícula; el Narrador lo sube si quiere), visión de token y niebla de exploración
-  activadas, oscuridad según la tabla de §1.
+  activadas, oscuridad según la tabla de §1 (ver §4.1).
 - **La escena mide exactamente `ancho × alto × 100` px.**
 - **Una planta por mapa.** Lo que se ve «abajo» desde una planta alta (el callejón bajo la
   escalera de incendios, la vereda) es exterior a nivel de calle: se pinta, y se llega por
   regiones, no caminando. Las barandas lo separan.
+
+### 4.1 Visión y oscuridad
+
+Verificado contra Foundry v14.365 (`client/documents/token.mjs`, `client/config.mjs`,
+`client/canvas/groups/visibility.mjs`, `client/canvas/placeables/token.mjs`).
+
+**Escena.** `tokenVision: true`, niebla individual (`fog.mode 1`), `darknessLevel` = la
+`oscuridad` del plano y luz global apagada (sólo `luzGlobal: true`, para una escena de día,
+la prende, y entonces ilumina todo **para todos**: por eso no se usa para que el Narrador lea
+el mapa). Un jugador ve lo que ilumina una luz (detección `lightPerception`, sin límite) y, sin
+luz, sólo hasta el alcance de visión de su token (`basicSight` = `sight.range`).
+
+**Narrador.** Sin ningún token controlado, Foundry no le aplica máscara de visión ni niebla
+(`CanvasVisibility#refresh`: `visible = fuentes activas || !isGM`): ve el mapa entero, todos los
+tokens (los ocultos, semitransparentes) y dónde cae cada luz. Pero ve la escena con el tinte de
+la oscuridad: con `oscuridad` 1 (`larchmont-sotano`, `granja-sotano`) se lee con esfuerzo.
+Core no trae un ajuste de «oscuridad del GM», así que lo resuelve `src/module/vision.mjs`: un hook
+`configureCanvasEnvironment` aclara `darknessColor` (0x8c8c99) sólo en el cliente del GM y sólo
+mientras no controla un token con visión (ajuste de cliente «Ver el mapa en escenas oscuras»,
+prendido por defecto). Los jugadores no cambian. Con un token controlado, ve **por los ojos de
+ese token**.
+
+**Tokens** (`tools/contenido/actores.mjs`, `token()`; los colocados copian `sight`,
+`detectionModes` y `light` del prototipo). Todos tienen la visión encendida: un PNJ sólo genera
+visión cuando el Narrador lo controla (`Token#_isVisionSource`), así que no le da nada a los
+jugadores. En V5 nadie ve en la oscuridad por ser Vástago; lo dan un poder o un aparato:
+
+| Quién | `visionMode` | `range` (m) | Por qué |
+|---|---|---|---|
+| Todos (PJ, Vástagos, ghouls, mortales, cazadores sin gafas) | `basic` | 3 | a tientas: bultos a unos pasos; más allá, sólo lo iluminado (DVV usa lo mismo) |
+| Auspex 1, Sentidos Agudizados (*Heightened Senses*) | `darkvision` | 10 | agudiza los sentidos: ve en penumbra, en gris |
+| Protean 1, Ojos de la Bestia (*Eyes of the Beast*) | `darkvision` | 30 | ve en la oscuridad total; más que cualquier plano |
+| Gafas térmicas de FIRSTLIGHT (`gafas-termicas`) | `darkvision` | 20 | imagen térmica, en gris; el Vástago se ve como silueta fría |
+
+`darkvision` lleva los valores por defecto del modo (`saturation −1`, `attenuation 0`), como los
+pone la hoja del token. **Olfato** (`detectionModes.feelTremor`, que detecta sin mirar muros):
+los perros de Montgomery a 50 m y Dawson a 20 m (notas de `content/pnjs/menores.json`). **Linternas:**
+los PJ (linterna blanca) y quien lleva la linterna UV (`linterna-uv` o Okafor) traen la luz del token
+configurada y **apagada** (`bright`/`dim` 0). Para prenderla: Configurar token › Luz, radios
+`3`/`8` (blanca) o `1.5`/`4.5` (UV); para apagarla, `0`/`0`. Los alcances están en `VISION_M`,
+`OLFATO_M` y `RADIOS_LINTERNA`; `npm run verificar:actores` los recalcula desde `content/`.
 
 ---
 
@@ -296,6 +337,8 @@ packs-src/escenas/*.json                escena + muros + puertas + ventanas + vi
 | Campo | Qué es |
 |---|---|
 | `id`, `lugar`, `escenas`, `nombre`, `orden` | id estable (archivo y escena), ID del doc (LUG-xx), escenas que pasan ahí, nombre de la escena, orden de navegación |
+| `escenas[]`, `salaLugar` | pines: cada escena como `{ "id": "A1-E01", "sala": "<habitaciones[].nombre exacto>" }` (la sala donde transcurre según el libro) y el pin del lugar en `salaLugar`. Sin sala, el pin cae por descarte en la habitación más grande y `npm run revisar:escenas` avisa |
+| `sinLuces` | `true`: la escena va sin luz (o casi) a propósito y las linternas son de los PJ (sótanos). Sólo silencia los avisos de cobertura de `revisar:escenas`; no cambia el mapa ni la escena |
 | `ancho`, `alto` | lienzo en metros |
 | `paleta`, `fondo` | `apartamento`, `industrial`, `subterraneo`, `oficina`, `galeria`, `rural`, `naval`; `fondo` pisa el exterior de la paleta: `asfalto`, `acera`, `edificio` (techos vecinos, rayado), `roca` y cualquier piso (`agua`, `grava`, `tierra`, `vacio`, `tablas`…) |
 | `exteriores[]` | `{ nombre, x, y, w, h, fondo }`: zonas de exterior sobre el fondo (callejón, vereda, dársena). Si el nombre dice «planta baja» o «más abajo» y el plano no es la planta baja, el prompt la describe «muy abajo» |
@@ -304,7 +347,7 @@ packs-src/escenas/*.json                escena + muros + puertas + ventanas + vi
 | `sujeto`, `sobreSuelo` | opcionales: el lugar en inglés para los prefijos (si no, sale de `exterior` o de la paleta) y los metros sobre el suelo de afuera (si no, se deduce de los nombres de `exteriores`) |
 | `curvas[]` | `{ tipo, puntos, cerrada? }`: muros, vidrios o barandas sueltos como polilínea (ver `contorno`) |
 | `nota` | nota del Narrador (markdown; va a los flags de la escena, con la lista de móviles) |
-| `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros?, contorno? }` — piso: `tablas`, `tablas-alfombra`, `tablas-quemadas`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `marmol`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `ladrillo`, `chapa` (plancha diamantada), `cubierta` (de barco), `goma` (pasarela), `ascensor` (cabina), `tierra`, `grava`, `agua`, `vacio` (hueco, caída), `rejilla` (escalera de incendios), `macizo` (departamento cerrado, rayado); `vetas`: `h`·`v`; `sinMuros`: sólo piso; `contorno`: polígono que reemplaza al rectángulo (puntos `[x, y]` o `[x, y, tipo]` = tipo del tramo que sale de ese punto, o arcos `{ arco: [cx, cy, r, desde°, hasta°], tipo? }`): el piso se recorta y los muros salen en segmentos rectos para Foundry. El nombre (en español) da el rol en el prompt («Porche», «Cubierta», «Sala de calderas»…) |
+| `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros?, contorno?, oscura? }` — `oscura: true`: a oscuras a propósito (armario, baño cerrado, zona restringida apagada); sólo lo usa `revisar:escenas` para no avisar «no le llega ninguna luz». Piso: `tablas`, `tablas-alfombra`, `tablas-quemadas`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `marmol`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `ladrillo`, `chapa` (plancha diamantada), `cubierta` (de barco), `goma` (pasarela), `ascensor` (cabina), `tierra`, `grava`, `agua`, `vacio` (hueco, caída), `rejilla` (escalera de incendios), `macizo` (departamento cerrado, rayado); `vetas`: `h`·`v`; `sinMuros`: sólo piso; `contorno`: polígono que reemplaza al rectángulo (puntos `[x, y]` o `[x, y, tipo]` = tipo del tramo que sale de ese punto, o arcos `{ arco: [cx, cy, r, desde°, hasta°], tipo? }`): el piso se recorta y los muros salen en segmentos rectos para Foundry. El nombre (en español) da el rol en el prompt («Porche», «Cubierta», «Sala de calderas»…) |
 | `vanos[]` | `{ x, y, w, eje, tipo, estado?, sonido?, sonoro?, nombre }` — `abierto`, `puerta`, `secreta`, `puerta-vidrio`, `ventana`, `hueco` (ventana sin vidrio), `vidrio`, `baranda`, `arcada`; `estado`: `cerrada`·`abierta`·`trabada`; `sonido`: clave de `CONFIG.Wall.doorSounds` (`woodBasic`, `woodCreaky`, `woodHeavy`, `metal`, `industrial`, `slidingWood`…; por defecto, el de la paleta) |
 | `muebles[]` | `{ tipo, x, y, w, h, desc?, fijo?, luz?, luzIdeal?, luzApagada?, cabecera?, frente?, contra?, tile?, hacia?, material?, anomaly?, oculto? }` — `oculto: true` en un móvil con tile: el tile entra oculto (la furgoneta y el dron de FIRSTLIGHT, que sólo existen en la redada o en la vigilancia) |
 | `luces[]` | `{ x, y, preset, presetIdeal?, apagada?, nombre? }` — presets en `tools/iluminacion.mjs`, radios en metros; `presetIdeal` se usa si existe (si no, `preset` y `construir-planos` avisa); `apagada: true` crea la luz apagada (`hidden`) |
@@ -371,6 +414,9 @@ lo pisa. Un tipo desconocido sale como caja genérica y `construir-planos` lo av
 Se corre **antes de dar por terminado cualquier mapa**. Si algo falla, se rehace (o se deja el
 esquema), no se entrega con la falla anotada.
 
+- [ ] **Escena revisada:** `npm run contenido && npm run revisar:escenas -- --solo <id> --salida <dir>`
+  da 0 errores y ningún «pin sin sala»; en la imagen de revisión cada pin está en la sala de su
+  escena, cada luminaria pintada tiene su luz y ninguna luz flota sobre algo que no alumbra.
 - [ ] **Cenital 100 %.** Ningún canto lateral de muro, ningún objeto en perspectiva.
 - [ ] **Alineación medida:** los muros del plano dibujados en rojo sobre el mapa final caen
       sobre los muros pintados (tolerancia ~5 px).

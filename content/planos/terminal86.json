@@ -4,7 +4,10 @@
     {
       "id": "terminal86",
       "lugar": "LUG-16",
-      "escenas": ["A3-E03"],
+      "escenas": [
+        { "id": "A3-E03", "sala": "Galería de cintas" }
+      ],
+      "salaLugar": "Escalera de servicio exterior (en zigzag)",
       "nombre": "Parte 3 · Los silos de la Terminal 86",
       "orden": 160,
       "ancho": 24,

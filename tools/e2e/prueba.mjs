@@ -413,6 +413,57 @@ if (hayPacks) {
     await page.waitForTimeout(2500);
     comprobar(await page.evaluate(id => canvas.scene?.id === id, helen.id), "la escena de Helen se abre");
     await captura("escena-helen");
+
+    // Visión (MAPS_SPEC §4.1). Datos: todos los tokens ven, con el alcance del prototipo; los
+    // poderes y aparatos dan darkvision; los perros huelen (feelTremor); las linternas, apagadas.
+    const vis = await page.evaluate(MOD => {
+      const porId = id => game.actors.find(a => a.getFlag(MOD, "id") === id)?.prototypeToken;
+      const escenas = game.scenes.filter(s => s.getFlag(MOD, "origen") === "escena" && s.tokens.size);
+      const tokens = escenas.flatMap(s => s.tokens.contents);
+      const distintos = tokens.filter(t => {
+        const p = t.actor?.prototypeToken;
+        return !p || t.sight.visionMode !== p.sight.visionMode || t.sight.range !== p.sight.range;
+      }).map(t => t.name);
+      const modo = id => { const s = porId(id)?.sight; return s ? `${s.visionMode} ${s.range}` : null; };
+      return {
+        escenas: game.scenes.filter(s => s.getFlag(MOD, "origen") === "escena" && !s.getFlag(MOD, "landing"))
+          .filter(s => !s.tokenVision || s.fog.mode !== CONST.FOG_EXPLORATION_MODES.INDIVIDUAL).map(s => s.name),
+        tokens: tokens.length,
+        sinVision: tokens.filter(t => !t.sight.enabled || !(t.sight.range > 0)).map(t => t.name),
+        distintos,
+        perros: tokens.filter(t => t.actor?.getFlag(MOD, "id") === "PERROS-MONTGOMERY").every(t => t.detectionModes.feelTremor?.range === 50),
+        modos: { "PNJ-01": modo("PNJ-01"), "PNJ-03": modo("PNJ-03"), "CAZ-01": modo("CAZ-01"), "PJ-01": modo("PJ-01"), "PJ-02": modo("PJ-02") },
+        linternas: ["PJ-02", "CAZ-01"].map(porId).every(p => p && p.light.dim === 0 && p.light.bright === 0 && p.light.color)
+      };
+    }, MOD);
+    console.log("  visión:", JSON.stringify(vis.modos));
+    comprobar(!vis.escenas.length, `las escenas de planos tienen visión de token y niebla individual${vis.escenas.length ? ` (no: ${vis.escenas.join(", ")})` : ""}`);
+    comprobar(vis.tokens > 0 && !vis.sinVision.length && !vis.distintos.length,
+      `los ${vis.tokens} tokens colocados ven, con la visión de su prototipo${vis.sinVision.length + vis.distintos.length ? ` (mal: ${[...vis.sinVision, ...vis.distintos].join(", ")})` : ""}`);
+    comprobar(vis.modos["PNJ-01"] === "darkvision 30" && vis.modos["PNJ-03"] === "basic 3" && vis.modos["CAZ-01"] === "darkvision 20" &&
+      vis.modos["PJ-01"] === "darkvision 10" && vis.modos["PJ-02"] === "basic 3",
+      "visión por tipo: a tientas 3 m; Ojos de la Bestia 30, gafas térmicas 20 y Sentidos Agudizados 10 en darkvision");
+    comprobar(vis.perros && vis.linternas, "los perros huelen (feelTremor 50 m) y las linternas de PJ y cazadores vienen apagadas");
+
+    // En el lienzo: el Narrador sin token ve todo el mapa (sin máscara de visión); con un PNJ
+    // controlado ve por sus ojos.
+    const lienzo = await page.evaluate(async MOD => {
+      const t = canvas.tokens.placeables.find(t => t.document.getFlag(MOD, "id"));
+      if (!t) return null;
+      canvas.tokens.releaseAll();
+      await new Promise(r => setTimeout(r, 300));
+      const color = () => canvas.environment.colors.ambientDarkness.css;
+      const libre = { mascara: canvas.visibility.visible, fuentes: canvas.effects.visionSources.filter(s => s.active).length, oscuridad: color() };
+      t.control({ releaseOthers: true });
+      await new Promise(r => setTimeout(r, 600));
+      const conToken = { mascara: canvas.visibility.visible, fuentes: canvas.effects.visionSources.filter(s => s.active).length, oscuridad: color() };
+      canvas.tokens.releaseAll();
+      return { nombre: t.name, libre, conToken };
+    }, MOD);
+    comprobar(lienzo && !lienzo.libre.mascara && lienzo.libre.fuentes === 0 && lienzo.conToken.mascara && lienzo.conToken.fuentes === 1,
+      `el Narrador sin token ve el mapa entero; con «${lienzo?.nombre}» controlado, sólo lo que ve ese token`);
+    comprobar(lienzo?.libre.oscuridad === "#8c8c99" && lienzo?.conToken.oscuridad !== "#8c8c99",
+      `sin token, la oscuridad del Narrador se aclara (${lienzo?.libre.oscuridad}); con un token vuelve a la de Foundry (${lienzo?.conToken.oscuridad})`);
   } else comprobar(false, "hay una escena de Helen (LUG-05)");
 }
 

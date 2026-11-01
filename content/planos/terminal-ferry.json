@@ -4,7 +4,10 @@
     {
       "id": "terminal-ferry",
       "lugar": "LUG-15",
-      "escenas": ["A4-E03"],
+      "escenas": [
+        { "id": "A4-E03", "sala": "Sala de espera" }
+      ],
+      "salaLugar": "Sala de espera",
       "nombre": "Parte 4 · Colman Dock, la terminal de ferris",
       "orden": 150,
       "ancho": 24,

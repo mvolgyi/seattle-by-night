@@ -4,7 +4,10 @@
     {
       "id": "ferry",
       "lugar": "LUG-15",
-      "escenas": ["A4-E03"],
+      "escenas": [
+        { "id": "A4-E03", "sala": "Salón de pasajeros" }
+      ],
+      "salaLugar": "Salón de pasajeros",
       "nombre": "Parte 4 · El último ferry: salón y cubierta de popa",
       "orden": 151,
       "ancho": 24,
@@ -122,7 +125,10 @@
         { "x": 17.2, "y": 12, "preset": "fluorescente", "nombre": "Fluorescentes del salón (popa)" },
         { "x": 10.5, "y": 11.9, "preset": "fluorescente-viejo", "nombre": "Luz de la cafetería" },
         { "x": 19.4, "y": 9, "preset": "farola-pared", "nombre": "Foco de la cubierta de popa (norte)" },
-        { "x": 19.4, "y": 15, "preset": "farola-pared", "nombre": "Foco de la cubierta de popa (sur)" }
+        { "x": 19.4, "y": 15, "preset": "farola-pared", "nombre": "Foco de la cubierta de popa (sur)" },
+        { "x": 17.25, "y": 3.75, "preset": "fluorescente-viejo", "nombre": "Tubo de la escalera de estribor (a la cubierta de coches)" },
+        { "x": 17.25, "y": 20.25, "preset": "fluorescente-viejo", "nombre": "Tubo de la escalera de babor (a la cubierta de coches)" },
+        { "x": 4.5, "y": 12, "preset": "fluorescente-viejo", "nombre": "Tubo de la escalera al puente" }
       ],
       "regiones": [
         { "id": "llegada-desde-rampa", "nombre": "Llegada desde la rampa de pasajeros", "x": 20.6, "y": 11, "w": 1.5, "h": 2, "llegada": true },
@@ -149,7 +155,10 @@
     {
       "id": "ferry-coches",
       "lugar": "LUG-15",
-      "escenas": ["A4-E03"],
+      "escenas": [
+        { "id": "A4-E03", "sala": "Cubierta de vehículos" }
+      ],
+      "salaLugar": "Cubierta de vehículos",
       "nombre": "Parte 4 · El último ferry: cubierta de coches",
       "orden": 152,
       "ancho": 24,
@@ -199,7 +208,9 @@
         { "x": 5, "y": 17, "preset": "fluorescente", "nombre": "Fluorescentes de la cubierta (babor, proa)" },
         { "x": 12.5, "y": 17, "preset": "fluorescente-viejo", "nombre": "Fluorescente que falla (babor)" },
         { "x": 17.5, "y": 12, "preset": "fluorescente", "nombre": "Fluorescentes de la cubierta (centro)" },
-        { "x": 22, "y": 12, "preset": "farola-pared", "nombre": "Foco de la popa abierta" }
+        { "x": 22, "y": 12, "preset": "farola-pared", "nombre": "Foco de la popa abierta" },
+        { "x": 17.25, "y": 2.25, "preset": "fluorescente-viejo", "nombre": "Tubo de la escalera de estribor (al salón)" },
+        { "x": 17.25, "y": 21.75, "preset": "fluorescente-viejo", "nombre": "Tubo de la escalera de babor (al salón)" }
       ],
       "regiones": [
         { "id": "llegada-rampa-vehiculos", "nombre": "Llegada por la rampa de vehículos", "x": 19.5, "y": 10.5, "w": 2, "h": 3, "llegada": true },
@@ -218,7 +229,10 @@
     {
       "id": "ferry-puente",
       "lugar": "LUG-15",
-      "escenas": ["A4-E03"],
+      "escenas": [
+        { "id": "A4-E03", "sala": "Puente (timonera)" }
+      ],
+      "salaLugar": "Cubierta superior",
       "nombre": "Parte 4 · El último ferry: el puente",
       "orden": 153,
       "ancho": 13,
@@ -269,14 +283,17 @@
       "luces": [
         { "x": 3, "y": 9.5, "preset": "pantalla", "nombre": "Pantallas del radar y la carta (al mínimo)" },
         { "x": 3, "y": 14.5, "preset": "pantalla", "nombre": "Pantallas del radar y la carta (al mínimo)" },
-        { "x": 8.5, "y": 2, "preset": "farola-pared", "nombre": "Luz de cubierta (estribor)" },
-        { "x": 8.5, "y": 22, "preset": "farola-pared", "nombre": "Luz de cubierta (babor)" }
+        { "x": 7.35, "y": 4.5, "preset": "farola-pared", "nombre": "Luz de cubierta (estribor), en el mamparo de popa de la timonera" },
+        { "x": 7.35, "y": 19.5, "preset": "farola-pared", "nombre": "Luz de cubierta (babor), en el mamparo de popa de la timonera" },
+        { "x": 10.25, "y": 12, "preset": "pasillo", "nombre": "Plafón de la caseta de la escalera" },
+        { "x": 4.5, "y": 1.2, "preset": "luz-navegacion-verde", "nombre": "Luz de navegación de estribor (verde), en el alerón" },
+        { "x": 4.5, "y": 22.8, "preset": "luz-navegacion-roja", "nombre": "Luz de navegación de babor (roja), en el alerón" }
       ],
       "regiones": [
         { "id": "llegada-escalera", "nombre": "Llegada desde el salón", "x": 7.9, "y": 11.25, "w": 1, "h": 1.5, "llegada": true },
         { "id": "bajar-al-salon", "nombre": "Bajar al salón de pasajeros", "x": 9.9, "y": 10.9, "w": 1.4, "h": 2.2, "destino": "ferry:llegada-desde-puente" }
       ],
-      "nota": "**El puente.** Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la **cubierta superior** y entra al **puente** (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El **puesto de gobierno** está en el centro, frente a la **consola** bajo el ventanal de proa. Los **alerones** de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.\n\nDe noche el puente va **a oscuras** (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación (roja a babor, verde a estribor) no están: falta el preset.\n\nRecorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN)."
+      "nota": "**El puente.** Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la **cubierta superior** y entra al **puente** (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El **puesto de gobierno** está en el centro, frente a la **consola** bajo el ventanal de proa. Los **alerones** de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.\n\nDe noche el puente va **a oscuras** (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación están en la borda de los alerones: verde a estribor (norte), roja a babor (sur). Las dos luces de cubierta cuelgan del mamparo de popa de la timonera y alumbran la cubierta superior; un poco de esa luz entra por las ventanas de popa del puente.\n\nRecorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN)."
     }
   ]
 }
