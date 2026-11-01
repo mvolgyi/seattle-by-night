@@ -450,13 +450,10 @@ magick montage assets/mapas/helen.webp assets/mapas/<id>.webp -tile 2x1 -geometr
 
 ## 8. Mapa regional (MAP-00)
 
-`assets/mapas/seattle.webp` (Pendiente): Seattle y el estrecho de Puget, de Everett a Tacoma y
-de Bainbridge a Bellevue y el valle del Snohomish (doc 15, MAP-00). No se pinta con el modelo:
-se **renderiza desde OpenStreetMap** con un script como `tools/malaga-mapa.py` de DVV, así la
-costa y las calles están donde están. Mismo contrato que los interiores, de noche: tierra
-carbón y pizarra, agua azul marino oscuro, luces de la ciudad como puntos tenues sin halo. Sin
-texto, sin leyenda (la leyenda de AYU-01 va aparte o en Foundry), sin grid. Bbox, escala y
-métricas: Pendiente.
-
-**Atribución obligatoria:** «© OpenStreetMap contributors (ODbL)» en la nota de la escena y
-donde se muestre o redistribuya el mapa.
+`assets/handouts/MAP-00.webp`: Seattle y el estrecho de Puget, de Everett a Tacoma y de
+Bainbridge a Bellevue (doc 15, MAP-00). Es la imagen de la ayuda AYU-01, no una escena. La costa
+no la inventa el modelo: `tools/mapa-regional.mjs` la dibuja desde los datos del U.S. Census
+(Cartographic Boundary Files y TIGER 2024, dominio público; ver `tools/MODELOS.md`, «Datos
+geográficos») y Z-Image + Fun ControlNet sólo la pinta. De noche: tierra carbón y pizarra, agua
+azul marino oscuro, luces de la ciudad como puntos tenues. Sin texto ni leyenda (los nombres
+los pone el HTML de AYU-01), sin grid. La cita de la fuente va en `assets/PROCEDENCIA.json`.

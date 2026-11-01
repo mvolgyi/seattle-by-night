@@ -42,7 +42,7 @@ const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
 const CACHE = path.join(RAIZ, "cache/guia");
 /** Ancho máximo al embeber, por carpeta: los mapas no necesitan 2400 px para leerse en la guía. */
-const ANCHO = { mapas: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200 };
+const ANCHO = { mapas: 1400, lugares: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200 };
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
 const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const avisos = [];
@@ -146,7 +146,8 @@ function limpiar(html) {
 }
 const anclaPagina = (d, p) => ANCLA.get(`JournalEntry.${d._id}.JournalEntryPage.${p._id}`);
 const anclaJournal = d => ANCLA.get(`JournalEntry.${d._id}`);
-const htmlPagina = p => limpiar(p.text?.content);
+// La ilustración del lugar va en la banda de foto, no repetida en el texto.
+const htmlPagina = p => limpiar(p.text?.content)?.replace(/<img class="sbn-lugar-imagen"[^>]*>\s*/g, "");
 
 function hecho(id, etiqueta = "Jugada") {
   return `<label class="hecho"><input type="checkbox" data-hecho="${esc(id)}"><span>${esc(etiqueta)}</span></label>`;
@@ -414,7 +415,8 @@ const lugaresHtml = LUGARES.map((l, i) => {
   const d = J.get(l.id);
   if (!d) { avisos.push(`lugar ${l.id} sin journal`); return ""; }
   const pls = planosDe(l.id);
-  const img = pls.length ? mapaDe(pls[0].id) : null;
+  // Con mapa, el primero; sin mapa (Pike Place, el Club Ceniza…), su ilustración.
+  const img = (pls.length ? mapaDe(pls[0].id) : null) ?? foto(`lugares/${l.id}.webp`);
   if (!img) SIN_ARTE.push(`${l.id} (${d.name}): ${l.mapa === false ? "ilustración del lugar (no lleva mapa)" : "mapa"}`);
   const ps = paginas(d);
   const datos = [

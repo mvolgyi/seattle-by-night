@@ -1,6 +1,197 @@
 {
   "_comentario": "Procedencia de cada imagen generada (CLAUDE.md, Licencias): modelo, licencia, workflow, semilla y prompt. La clave es la ruta del archivo; regenerar pisa la entrada.",
   "imagenes": {
+    "assets/handouts/AYU-06-IMG.webp": {
+      "fecha": "2026-11-01T15:18:18.152Z",
+      "id": "AYU-06-IMG",
+      "estilo": "handout-foto",
+      "modelos": [
+        "qwen-image-edit-2511-Q5_K_M.gguf",
+        "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json (base) + tools/workflows/editar-qwen.json",
+      "semilla": 11164,
+      "parametros": {
+        "ancho": 1536,
+        "alto": 1024
+      },
+      "referencia": "assets/handouts-crudo/AYU-06-IMG-base.webp",
+      "segundos": 23.6,
+      "prompt": "Edit Picture 1, a dark oil painting of a night crime scene. Keep the painting style, the flash lighting, the framing, the container, the ash heap, the black jacket, the yellow ruler and the yellow marker with the digit 3 exactly as they are. Change only these things. First: remove the yellow police tape and the fence in the far background and replace them with plain dark wet pavement and night. Second: erase all three holes in the red container wall, the left one, the middle one and the right one, and restore that part of the wall to smooth, undamaged red corrugated steel like the rest. Third: in one single vertical column directly above the middle of the ash heap, paint exactly three dents, one above the other, like a car door hit three times with a sledgehammer: the red-painted steel is smoothly bent inward into shallow fist-sized hollows, with soft shading inside and a thin highlight of the flash on the lower rim. Exactly three dents in total on the whole wall, all in that one vertical column. The paint is intact: no holes, no cracks, no tears, no black openings.\n\nThe painting fills the whole image edge to edge: no border, no frame, no white margin, no photo print, no polaroid, no paper. No text, no letters, no words, no captions, no date stamp, no watermark, no logos, no license plates, no signs, no signature.",
+      "base": {
+        "archivo": "assets/handouts-crudo/AYU-06-IMG-base.webp",
+        "nota": "base t2i que edita Qwen (no se publica: assets/*-crudo/ está en .gitignore; se regenera con la misma semilla)",
+        "modelos": [
+          "z_image_turbo_bf16.safetensors",
+          "qwen_3_4b.safetensors",
+          "z_image_ae.safetensors"
+        ],
+        "licencia": "Apache 2.0",
+        "workflow": "tools/workflows/t2i-zimage.json",
+        "semilla": 11131,
+        "parametros": {
+          "ancho": 1536,
+          "alto": 1024
+        },
+        "prompt": "Wide 3:2 image. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, painted to look like a grainy night photograph remembered years later. Present-day Seattle, November rain. Palette: wet slate grey, cold harbor blue, sodium-orange light, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: A police crime-scene photograph at night, lit by a harsh direct camera flash that bleaches the centre and falls off quickly into black, seen from standing height looking down at an angle. Wet concrete of an empty industrial container terminal with puddles reflecting the flash; no police tape, no barriers, no signs. The long corrugated side wall of a red steel shipping container fills the background; it is plain, with no markings, no numbers, no logos and no doors. At its base, a soft low heap of fine pale grey powdery ash, and lying on top of the ash an intact, undamaged black nylon jacket, spread out flat as if its wearer had vanished from inside it. On the red wall just above the heap, at the chest height of a man, the corrugated steel is pushed inward in three places one above the other: three smooth, shallow, bowl-shaped hollows the size of a fist, each catching a crescent of flash light on its rim; the paint is cracked around them but the steel is whole. On the ground beside the ash, a yellow L-shaped forensic scale ruler with only black tick marks, and a small yellow plastic evidence tent marker printed with a single large black digit 3 and nothing else. No people.\n\nThe painting fills the whole image edge to edge: no border, no frame, no white margin, no photo print, no polaroid, no paper. No text, no letters, no words, no captions, no date stamp, no watermark, no logos, no license plates, no signs, no signature."
+      }
+    },
+    "assets/handouts/AYU-09-PJ-01-IMG.webp": {
+      "fecha": "2026-11-01T15:16:15.183Z",
+      "id": "AYU-09-PJ-01-IMG",
+      "estilo": "handout-foto",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json + magick (posproceso)",
+      "semilla": 11222,
+      "parametros": {
+        "ancho": 1536,
+        "alto": 1024
+      },
+      "posproceso": "magick <crudo> -region 44x24+58+731 -blur 0x2.5 -modulate 75 +region -region 44x40+1440+568 -blur 0x2.5 +region -flop <destino>",
+      "segundos": 11.9,
+      "prompt": "Wide 3:2 image. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, painted to look like a grainy night photograph remembered years later. Present-day Seattle, November rain. Palette: wet slate grey, cold harbor blue, sodium-orange light, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: A grainy amateur snapshot from 2014, taken at night from a neighbour's second-floor window, looking down at a steep angle across a narrow street. Across the street, a tall four-storey red-brick apartment building with four rows of windows is engulfed in flames, fire pouring from the windows of every floor, heavy black smoke rolling up into a black night sky lit orange from below. Below us, in the middle of the wet empty street, a powerfully built man of about thirty in a long dark coat stands still with his back to the burning building and his face turned up towards us, looking straight into the camera. Short dark hair greying at the temples, an angular hard face with a square jaw; his face is half in shadow, half lit orange by the fire, and a thin pale scar runs down his right cheek from the cheekbone to the corner of his mouth. Cold blue darkness at the edges. Crimson accent: the deep red glow inside the burning windows. No fire trucks, no other people, no parked cars.\n\nThe painting fills the whole image edge to edge: no border, no frame, no white margin, no photo print, no polaroid, no paper. No text, no letters, no words, no captions, no date stamp, no watermark, no logos, no license plates, no signs, no signature."
+    },
+    "assets/handouts/AYU-09-PJ-03-IMG.webp": {
+      "fecha": "2026-11-01T15:16:23.081Z",
+      "id": "AYU-09-PJ-03-IMG",
+      "estilo": "handout-termica",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json + magick (posproceso)",
+      "semilla": 11314,
+      "parametros": {
+        "ancho": 1536,
+        "alto": 864
+      },
+      "posproceso": "magick <crudo> -colorspace Gray -blur 0x3 -resize 25% -resize 400% -auto-level -level 3%,85%,2.4 ( xc:#07143f xc:#0f2a78 xc:#3a2a9a xc:#9a2a8a xc:#e0402a xc:#f58a1a xc:#ffd23a xc:#fff8d0 +append -filter Cubic -resize 256x1! ) -clut -seed 11314 -attenuate 0.15 +noise Gaussian <destino>",
+      "segundos": 7.7,
+      "prompt": "A still frame from a fixed thermal infrared surveillance camera, ironbow false-colour palette: black and deep purple for the coldest, through magenta and red, to orange, yellow and white for the hottest. A low-resolution thermal sensor: everything is a soft, slightly blurry heat map made only of smooth temperature gradients, with no visible-light colours, no fine textures, no readable surface detail, faint sensor noise.\n\nFRAME: Seen from high on a construction site fence, looking down a narrow old downtown street at 3 a.m.: the walls and the pavement still hold warmth and glow in reds and oranges, the parked cars glow orange with bright yellow-white engines and wheels, and in the middle of the street a round manhole cover glows hot yellow with a soft plume of warm steam rising from its edge. A crouching human figure grips the half-lifted manhole cover with both hands, and the whole figure is a flat, uniform dark blue silhouette, colder than everything else in the frame, like a hole cut out of the image in the shape of a person: no warm face, no warm hands, no warm breath, no clothing detail. The cars have no license plates.\n\nThe thermal image fills the whole frame edge to edge. No on-screen display: no timestamp, no numbers, no text, no letters, no temperature scale bar, no crosshair, no icons, no logos, no border."
+    },
+    "assets/handouts/MAP-00.webp": {
+      "fecha": "2026-11-01T15:18:48.408Z",
+      "id": "MAP-00",
+      "estilo": "mapa-regional",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors",
+        "Z-Image-Turbo-Fun-Controlnet-Union-2.1-2602-8steps.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/mapa-regional.mjs (esquema desde TIGER) + tools/workflows/plano-zimage.json",
+      "semilla": 11022,
+      "parametros": {
+        "ancho": 1152,
+        "alto": 1536,
+        "denoise": 0.45,
+        "fuerza": 1,
+        "fin_control": 1,
+        "pasos": 8,
+        "encuadre": {
+          "sur": 47.18,
+          "norte": 48.08,
+          "centro_lon": -122.33
+        }
+      },
+      "datos": "U.S. Census Bureau, 2024 TIGER/Line Shapefiles (AREAWATER, PRISECROADS) y Cartographic Boundary Files (county, place 1:500k). Dominio público (17 U.S.C. §105); el Census pide citar la fuente.",
+      "segundos": 28,
+      "prompt": "An illustrated regional map seen straight from above, painterly cartographic style with a dark gothic mood, like an old hand-painted chart re-imagined at night. Dark navy water, land in charcoal and slate grey with soft relief shading, dark green forests, city lights as tiny scattered gold dots.\n\nMAP: A wide region of saltwater sound, fjord-like inlets, islands and peninsulas at night, seen straight from above, following the coastline of the guide drawing exactly. Calm, smooth, deep dark navy water with faint painted ripples and a thin pale shoreline; dark charcoal and slate land with soft relief shading and dark green forest texture on the islands and peninsulas; a dense glittering city of tiny gold lights on the eastern shore around a deep bay, smaller towns of gold lights along the shores and on the far side of a long narrow freshwater lake to the east; faint gold threads of highways and floating bridges; flat dark river-valley farmland in the north-east; dark forested foothills along the right edge.\n\nA purely pictorial map: absolutely no text, no letters, no place names, no labels, no numbers, no legend box, no cartouche, no title, no compass rose, no scale bar, no grid, no border, no frame, no signature, no watermark. The map fills the whole image edge to edge."
+    },
+    "assets/lugares/LUG-08.webp": {
+      "fecha": "2026-11-01T15:17:15.089Z",
+      "id": "LUG-08",
+      "estilo": "lugar",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 11904,
+      "parametros": {
+        "ancho": 1920,
+        "alto": 1088
+      },
+      "segundos": 11.9,
+      "prompt": "Wide 16:9 cinematic establishing illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, visible brushwork, not a photograph. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: Inside a long, old covered public market on a steep hillside above a dark bay, late at night after closing. Long empty aisles of shuttered market stalls covered with tarpaulins and canvas, rolled-down metal shutters, old timber posts and beams, a worn wet tiled floor reflecting the light, rows of unlit hanging bulbs. On the left, through the open side of the arcade, a glimpse of the rain over black bay water far below. At the end of the aisle, a narrow worn stairway descends into the lower levels, and far down a lower corridor of closed shops a single candle burns on a stall counter, a lone small figure beside it. Crimson accent: the glow of a single plain curved red neon tube, without any letters, humming over the empty aisle and reflected on the wet floor.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no words, no signs, no shop names, no posters, no graffiti, no title, no logo, no signature, no watermark, no caption, no famous landmark.",
+      "recorte": "1920×1088 → 1920×1080 centrado (magick, como la portada)"
+    },
+    "assets/lugares/LUG-09.webp": {
+      "fecha": "2026-11-01T15:17:27.105Z",
+      "id": "LUG-09",
+      "estilo": "lugar",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 12012,
+      "parametros": {
+        "ancho": 1920,
+        "alto": 1088
+      },
+      "segundos": 11.8,
+      "prompt": "Wide 16:9 cinematic establishing illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, visible brushwork, realistic proportions, not a comic, not a photograph. A present-day Pacific Northwest city on a November night. Palette: deep black, smoky brick brown, cold harbor blue, with deep crimson light. Mood: quiet menace, a city that watches.\n\nSCENE: Inside a dry, enclosed basement nightclub under an old building: exposed old brick walls, a low vaulted brick ceiling, hazy smoky air; no rain indoors, no windows. On a small low stage at the back, a bass player and a singer in near silhouette under dim red stage lights. In the middle, a small crowd of ordinary young men and women in dark everyday clothes swaying slowly to heavy, slow music with their eyes closed, their faces a little too pale in the red light. On the right, a short bar of dark wood with a few bottles; a thin man in his thirties with an untidy beard and thick-framed glasses, in a corduroy jacket and a faded baseball cap, sits hunched at the bar writing on a paper napkin. A thin wash of cold blue light falls down a narrow brick stair from the street door at the far left. Crimson accent: the dim red stage lights washing over the dancers.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no words, no signs, no shop names, no posters, no graffiti, no title, no logo, no signature, no watermark, no caption, no famous landmark.",
+      "recorte": "1920×1088 → 1920×1080 centrado (magick, como la portada)"
+    },
+    "assets/lugares/LUG-12.webp": {
+      "fecha": "2026-11-01T15:17:42.138Z",
+      "id": "LUG-12",
+      "estilo": "lugar",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 12121,
+      "parametros": {
+        "ancho": 1920,
+        "alto": 1088
+      },
+      "segundos": 14.8,
+      "prompt": "Wide 16:9 cinematic establishing illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, visible brushwork, not a photograph. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: A small quiet cemetery on a hillside among tall dark cedar trees, north of the city, at night in steady rain, painted with realistic proportions and thick oil brushwork. In the foreground, a single simple grey granite headstone stands in profile, seen exactly side-on, so it appears only as a narrow upright slab of wet stone with a rounded top and its carved face cannot be seen at all. The grass around it is freshly cut. At its foot lies a bouquet of fresh white flowers with one red carnation, wrapped in plain crumpled brown paper and beaded with raindrops. Further away, a few small mossy headstones are dark shapes lost in the mist and shadow between the cedar trunks; a wrought-iron gate with a single sodium-orange lamp far behind, and below the hill the faint blurred lights of the city through the trees. Crimson accent: the single red carnation in the bouquet.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no words, no signs, no shop names, no posters, no graffiti, no title, no logo, no signature, no watermark, no caption, no famous landmark.",
+      "recorte": "1920×1088 → 1920×1080 centrado (magick, como la portada)"
+    },
+    "assets/lugares/LUG-13.webp": {
+      "fecha": "2026-11-01T15:17:54.174Z",
+      "id": "LUG-13",
+      "estilo": "lugar",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 12202,
+      "parametros": {
+        "ancho": 1920,
+        "alto": 1088
+      },
+      "segundos": 11.8,
+      "prompt": "Wide 16:9 cinematic establishing illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, visible brushwork, not a photograph. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: At the top of a steep hill, a tall Victorian Queen Anne-style wooden mansion with carved gables, a wraparound porch and a round corner tower crowned by a weathered green copper observatory dome. The dome's narrow shutter slit is open, and instead of a telescope a modern grey satellite antenna dish pokes out of it into the rain. Through a tall bay window on the ground floor, a glimpse of carved dark wood panelling lined with server racks glowing cold blue. A wet garden with a black wrought-iron fence and bare trees in the foreground; far below the hill, the city and the harbour lights blurred by mist. Crimson accent: a single small red warning light blinking on top of the antenna.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no words, no signs, no shop names, no posters, no graffiti, no title, no logo, no signature, no watermark, no caption, no famous landmark.",
+      "recorte": "1920×1088 → 1920×1080 centrado (magick, como la portada)"
+    },
     "assets/mapas/ferry-coches.webp": {
       "fecha": "2026-10-31T14:10:47.743Z",
       "plano": "ferry-coches",
@@ -3417,6 +3608,63 @@
       "segundos": 7.9,
       "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A broad-shouldered Irish-American man who looks about thirty-four, a massive square iron jaw, a heavy brow, close-cropped dark auburn hair, cold steady blue-grey eyes, a soldier's stillness. A long grey wool overcoat cut for very broad shoulders over a dark 1970s suit and black leather gloves. Standing on a foggy cobbled quay of an old Mediterranean port at night, fishing boats and gas lamps in the mist. Crimson accent: the deep red silk lining of his open coat.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
     },
+    "assets/retratos/PNJ-07.webp": {
+      "fecha": "2026-11-01T15:16:30.972Z",
+      "id": "PNJ-07",
+      "estilo": "retrato",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 11403,
+      "parametros": {
+        "ancho": 832,
+        "alto": 1248
+      },
+      "segundos": 7.8,
+      "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A lean, composed Frenchman who looks about forty-five, close-cropped iron-grey hair, clean-shaven, a long aquiline nose, heavy-lidded dark eyes that weigh everything, thin unsmiling lips, the patience of a man who has waited centuries. A charcoal double-breasted wool overcoat buttoned to the throat, a black scarf, black leather gloves, holding a sealed cream envelope against his chest. Standing alone at the end of a small island ferry dock at night, wet timber pilings, dark water, the distant lights of the city across the sound. Crimson accent: the blood-red wax seal on the envelope.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+    },
+    "assets/retratos/PNJ-08.webp": {
+      "fecha": "2026-11-01T15:16:38.977Z",
+      "id": "PNJ-08",
+      "estilo": "retrato",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 11501,
+      "parametros": {
+        "ancho": 832,
+        "alto": 1248
+      },
+      "segundos": 7.9,
+      "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A formidable woman who looks about fifty, dark hair streaked with silver pulled back into a severe low chignon, high sharp cheekbones, very pale grey eyes, a cold, patient, unreadable expression of absolute authority. A high-collared black dress of austere old-world cut, a single heavy signet ring on her right hand, which rests on a closed, worn leather portfolio tied with a black ribbon. Seated very straight in a carved high-backed chair in a dim old European study lit by a few candles, dark wood panelling, a tall window streaked with rain behind her. Crimson accent: the deep crimson stone of her signet ring.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+    },
+    "assets/retratos/PNJ-09.webp": {
+      "fecha": "2026-11-01T15:16:46.993Z",
+      "id": "PNJ-09",
+      "estilo": "retrato",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 11603,
+      "parametros": {
+        "ancho": 832,
+        "alto": 1248
+      },
+      "segundos": 7.9,
+      "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A rangy, sinewy frontier man who looks about thirty-five, long tangled dark hair and a ragged dark beard, a gaunt weathered face, eyes that catch the light with a faint animal gold glint, an amused, predatory stillness. A long, mud-stained canvas duster coat over a collarless shirt and a worn leather vest, a battered wide-brimmed hat, a heavy hunting knife at his belt. Crouched in the rain at night among enormous redwood trunks on the northern California coast in the 1880s, a dying campfire at his feet, fog between the trees; the painting feels like a memory from the nineteenth century. Crimson accent: the red embers of the dying fire.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+    },
     "assets/retratos/PNJ-10.webp": {
       "fecha": "2026-10-30T21:59:08.882Z",
       "id": "PNJ-10",
@@ -3682,6 +3930,44 @@
       },
       "segundos": 7.9,
       "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A woman of thirty-eight in the mid-1990s, a youth social worker, shoulder-length dark brown hair with a slight wave, dark grey eyes like her father's, a square, determined jaw, no make-up, a kind but stubborn expression, tired from long shifts. A 1990s oversized knitted cardigan over a plain turtleneck, a canvas shoulder bag stuffed with case folders, a styrofoam cup of coffee in her hand. Standing in the rain outside a run-down community youth centre in Rainier Valley in 1996, a payphone and an old sedan behind her; the painting feels like a remembered photograph from the nineties. Crimson accent: her red wool scarf.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+    },
+    "assets/retratos/REF-02.webp": {
+      "fecha": "2026-11-01T15:16:54.993Z",
+      "id": "REF-02",
+      "estilo": "retrato",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 11703,
+      "parametros": {
+        "ancho": 832,
+        "alto": 1248
+      },
+      "segundos": 7.9,
+      "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A friendly young Latino man of about twenty-five, short wavy black hair, light stubble, warm brown eyes, a crooked, teasing half-smile as if he is about to laugh at a friend. A dark green zip-up hooded jacket over a plain grey t-shirt, a canvas messenger bag on his shoulder, a stack of photocopied lecture notes under his arm. Standing in the rain at night on the sidewalk in front of an old four-storey red-brick apartment building in Tacoma in 2014, a lit entrance behind him, wet street; the painting feels like a remembered photograph from 2014. Crimson accent: his red knit beanie.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
+    },
+    "assets/retratos/REF-03.webp": {
+      "fecha": "2026-11-01T15:17:02.999Z",
+      "id": "REF-03",
+      "estilo": "retrato",
+      "modelos": [
+        "z_image_turbo_bf16.safetensors",
+        "qwen_3_4b.safetensors",
+        "z_image_ae.safetensors"
+      ],
+      "licencia": "Apache 2.0",
+      "workflow": "tools/workflows/t2i-zimage.json",
+      "semilla": 11814,
+      "parametros": {
+        "ancho": 832,
+        "alto": 1248
+      },
+      "segundos": 7.9,
+      "prompt": "Vertical 2:3 portrait, waist-up. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture. Present-day Seattle at night, rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches. Realistic, unglamorous features.\n\nSUBJECT: A wiry, pale man who looks about twenty-six, short greasy black hair slicked back, a narrow ferret-like face with sunken cheeks and a thin, crooked nose, a few days of dark stubble, cold pale grey eyes, a lazy predatory smile that does not reach his eyes. A worn brown leather jacket over a dark red-and-black plaid flannel shirt and a plain black t-shirt, a cheap silver chain at his neck, a cigarette between his fingers. Waist-up, leaning in the doorway of a rain-soaked concrete stairwell of a half-abandoned apartment block in Rainier Valley in 1996, a flickering sodium light above him, bare stained walls; the painting feels like a remembered photograph from the nineties. Crimson accent: a red bandana tied around his wrist.\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no canvas edge. A single character only. No text, no letters, no logos, no signature, no watermark, no title, no caption."
     },
     "assets/tiles/tile-auto-furgoneta.webp": {
       "fecha": "2026-10-31T16:45:50.037Z",

@@ -45,7 +45,11 @@
  *     figura?, semilla_figura? (token genérico sin retrato: sujeto de una figura de
  *              referencia en estilo retrato, en assets/tokens-crudo/figura/),
  *     prefijo? (pisa el prefijo del estilo: p. ej. un animal en vez de una persona),
- *     ancho?, alto?, carpeta? }
+ *     ancho?, alto?, carpeta?,
+ *     referencia? (flujo de edición fuera de los tokens: ruta, desde la raíz, de la
+ *              imagen a editar; p. ej. una base t2i en assets/handouts-crudo/),
+ *     posproceso? (sólo camino retrato: argumentos de `magick` entre la entrada y
+ *              la salida, p. ej. el falso color de una captura térmica) }
  *   `fuente: "doc15"` toma el sujeto de content/arte-doc15.json (retratos[].prompt)
  *   tal cual; si no, el sujeto es `prompt`.
  *
@@ -179,6 +183,7 @@ function promptDe(a) {
  */
 const FIGURAS = path.join(RAIZ, "assets/tokens-crudo/figura");
 const rutaReferencia = a => referenciaCli && tipoDe(a) === "token" ? referenciaCli
+  : a.referencia ? path.join(RAIZ, a.referencia)
   : a.figura
     ? path.join(FIGURAS, `${a.id}-s${a.semilla_figura}.webp`)
     : path.join(RAIZ, CONFIG.estilos.retrato.carpeta, `${a.retrato ?? a.id}.webp`);
@@ -594,7 +599,16 @@ async function generar(a, semilla, dir) {
   let total = segundos;
 
   if (tipo === "retrato") {
-    guardar(png, destino, CALIDAD_WEBP);
+    if (flujo.startsWith("editar-")) extra.referencia = path.relative(RAIZ, rutaReferencia(a));
+    if (a.posproceso) {
+      // Pasada de magick sobre el PNG crudo (determinista: los ruidos llevan -seed en el asset).
+      const crudo = path.join(tmpDir, `pos-${nombre}.png`);
+      fs.writeFileSync(crudo, png);
+      fs.mkdirSync(path.dirname(destino), { recursive: true });
+      execFileSync("magick", [crudo, ...a.posproceso, "-quality", String(CALIDAD_WEBP), destino]);
+      workflow += " + magick (posproceso)";
+      extra.posproceso = `magick <crudo> ${a.posproceso.join(" ")} <destino>`;
+    } else guardar(png, destino, CALIDAD_WEBP);
   } else if (tipo === "token" || tipo === "tile") {
     // Crudo (sobre gris liso), recorte con alfa y, si es token, el círculo.
     const crudo = dir ? path.join(dir, "fondo", `${nombre}.webp`) : path.join(CRUDO_TOKENS, "fondo", `${a.id}.webp`);
@@ -675,7 +689,8 @@ if (!forzar && !salidaCli) cola = cola.filter(a => !fs.existsSync(rutaDe(a)));
 // Los retratos primero: los tokens los usan de referencia. Agrupado por flujo
 // para no recargar modelos (un modelo grande por vez).
 const ORDEN = { retrato: 0, tile: 1, token: 2 };
-cola = [...cola].sort((x, y) => (ORDEN[tipoDe(x)] - ORDEN[tipoDe(y)]) || flujoDe(x).localeCompare(flujoDe(y)));
+// Un asset con `referencia` (edición de otra imagen de la tanda) va después de la que edita.
+cola = [...cola].sort((x, y) => (ORDEN[tipoDe(x)] - ORDEN[tipoDe(y)]) || (!!x.referencia - !!y.referencia) || flujoDe(x).localeCompare(flujoDe(y)));
 
 if (!cola.length) {
   console.log("Nada que generar. Usá --forzar para regenerar, o --listar para ver el estado.");

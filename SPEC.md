@@ -229,7 +229,7 @@ corrección de escala → SeedVR2), igual que DVV. Exteriores y mapas de zona po
 
 | Mapa | Lugar | Nivel | Cómo | Escenas |
 |---|---|---|---|---|
-| MAP-00 | Seattle y el estrecho de Puget (AYU-01) | regional | datos de OpenStreetMap estilizados, como `malaga-mapa.py` (ODbL: lleva atribución) | sesión cero, A1-E03 |
+| MAP-00 | Seattle y el estrecho de Puget (AYU-01) | regional | datos del U.S. Census (dominio público) pintados con ControlNet: `tools/mapa-regional.mjs` → `assets/handouts/MAP-00.webp` | sesión cero, A1-E03 |
 | LUG-01 | El hangar de Harbor Island | combate | plano | A4-E02 |
 | LUG-02 | La granja del Sheriff y su embarcadero | zona + combate | t2i (zona) + plano (casa y granero) | A1-E03, A4-E02 |
 | LUG-03 | La Galería de Vidrio, el Elíseo | combate | plano | A2-E01 |

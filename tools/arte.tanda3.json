@@ -1,0 +1,320 @@
+{
+  "_comentario": "Tanda 3 de arte (2026-11-01): las imágenes de los documentos (MAP-00, AYU-06-IMG, AYU-09-PJ-01-IMG, AYU-09-PJ-03-IMG → assets/handouts/), los retratos de las figuras de trasfondo sin actor (PNJ-07, PNJ-08, PNJ-09, REF-02, REF-03 → assets/retratos/) y las ilustraciones de los lugares sin mapa (LUG-08, LUG-09, LUG-12, LUG-13 → assets/lugares/). Se usa ENCIMA de arte.config.json: `node tools/generar-arte.mjs --config tools/arte.tanda3.json …`. Todo con Z-Image Turbo (t2i-zimage, Apache 2.0). Los prompts de los documentos salen de content/arte-doc15.json (mapas[MAP-00], ayudas[]) corregidos: sin rótulos, sin sello de hora ni números de caso (el texto lo maqueta el HTML, CLAUDE.md). Los lugares salen a 1920×1088 y se recortan a 1920×1080 en el centro, como la portada. `semilla` = la elegida a ojo entre `candidatas`.",
+  "estilos": {
+    "lugar": {
+      "_comentario": "Ilustración de un lugar sin mapa (assets/lugares/<id>.webp, 1920×1080 tras recortar). Es la plantilla de la portada sin la franja calma para los botones: Seattle noir, lluvia, la paleta del set, pintura y no foto. Sin landmarks con marca (nada de la torre con plato ni el cartel del mercado).",
+      "tipo": "retrato",
+      "flujo": "t2i-zimage",
+      "prefijo": "Wide 16:9 cinematic establishing illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, visible brushwork, not a photograph. A present-day Pacific Northwest port city at night, November rain and mist. Palette: wet slate grey, cold harbor blue, sodium-orange streetlight, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: ",
+      "sufijo": "\n\nThe painting fills the whole image edge to edge: no border, no frame, no paper margin, no vignette. No text, no letters, no words, no signs, no shop names, no posters, no graffiti, no title, no logo, no signature, no watermark, no caption, no famous landmark.",
+      "ancho": 1920,
+      "alto": 1088,
+      "carpeta": "assets/lugares"
+    },
+    "handout-foto": {
+      "_comentario": "Fotografía dentro del mundo (soporte foto/libreta de los AYU), pintada con el lenguaje del set: óleo oscuro que imita una foto de noche (como los retratos «remembered photograph»). Las pruebas fotorrealistas salían siempre con marco blanco de copia. Es la imagen sola: el pie, el número de caso y la fecha los maqueta el HTML (tools/contenido/journals.mjs, soporte foto).",
+      "tipo": "retrato",
+      "flujo": "t2i-zimage",
+      "prefijo": "Wide 3:2 image. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, painted to look like a grainy night photograph remembered years later. Present-day Seattle, November rain. Palette: wet slate grey, cold harbor blue, sodium-orange light, deep black, with a single deep crimson accent. Mood: quiet menace, a city that watches.\n\nSCENE: ",
+      "sufijo": "\n\nThe painting fills the whole image edge to edge: no border, no frame, no white margin, no photo print, no polaroid, no paper. No text, no letters, no words, no captions, no date stamp, no watermark, no logos, no license plates, no signs, no signature.",
+      "ancho": 1536,
+      "alto": 1024,
+      "carpeta": "assets/handouts"
+    },
+    "handout-termica": {
+      "_comentario": "Fotograma de cámara térmica (AYU-09-PJ-03). Sin sello de hora pintado: si hace falta, lo superpone el HTML.",
+      "tipo": "retrato",
+      "flujo": "t2i-zimage",
+      "prefijo": "A still frame from a fixed thermal infrared surveillance camera, ironbow false-colour palette: black and deep purple for the coldest, through magenta and red, to orange, yellow and white for the hottest. A low-resolution thermal sensor: everything is a soft, slightly blurry heat map made only of smooth temperature gradients, with no visible-light colours, no fine textures, no readable surface detail, faint sensor noise.\n\nFRAME: ",
+      "sufijo": "\n\nThe thermal image fills the whole frame edge to edge. No on-screen display: no timestamp, no numbers, no text, no letters, no temperature scale bar, no crosshair, no icons, no logos, no border.",
+      "ancho": 1536,
+      "alto": 864,
+      "carpeta": "assets/handouts"
+    }
+  },
+  "assets": [
+    {
+      "id": "AYU-06-IMG-base",
+      "estilo": "handout-foto",
+      "semilla": 11131,
+      "candidatas": [
+        11131,
+        11132,
+        11133,
+        11134
+      ],
+      "nota": "Base t2i de AYU-06-IMG (no se publica: assets/handouts-crudo/ está en .gitignore y se regenera desde acá). Foto forense de AYU-06 (doc 15, ayudas[AYU-06-IMG]). El número de caso, la fecha y «FOTO 3 DE 14» van en el pie HTML; en la imagen sólo el cartel amarillo con el 3 (como dice el texto del documento). Ronda 2 (11111–11114, foto realista): seguía el marco blanco de copia y las abolladuras salían como agujeros de bala. Ronda 3 (11121–11124, pintada): sin marco, pero las abolladuras salían como chapa rota o agujeros y aparecía cinta policial con pseudotexto. Ronda 4 (11131–11134): abolladuras como «huecos en forma de cuenco», sin cinta. Elegida 11131 como base: composición y flash buenos, pero los golpes salían como agujeros en fila y había cinta policial; lo arregla la edición (AYU-06-IMG).",
+      "prompt": "A police crime-scene photograph at night, lit by a harsh direct camera flash that bleaches the centre and falls off quickly into black, seen from standing height looking down at an angle. Wet concrete of an empty industrial container terminal with puddles reflecting the flash; no police tape, no barriers, no signs. The long corrugated side wall of a red steel shipping container fills the background; it is plain, with no markings, no numbers, no logos and no doors. At its base, a soft low heap of fine pale grey powdery ash, and lying on top of the ash an intact, undamaged black nylon jacket, spread out flat as if its wearer had vanished from inside it. On the red wall just above the heap, at the chest height of a man, the corrugated steel is pushed inward in three places one above the other: three smooth, shallow, bowl-shaped hollows the size of a fist, each catching a crescent of flash light on its rim; the paint is cracked around them but the steel is whole. On the ground beside the ash, a yellow L-shaped forensic scale ruler with only black tick marks, and a small yellow plastic evidence tent marker printed with a single large black digit 3 and nothing else. No people.",
+      "carpeta": "assets/handouts-crudo"
+    },
+    {
+      "id": "AYU-06-IMG",
+      "estilo": "handout-foto",
+      "flujo": "editar-qwen",
+      "referencia": "assets/handouts-crudo/AYU-06-IMG-base.webp",
+      "semilla": 11164,
+      "candidatas": [
+        11161,
+        11162,
+        11163,
+        11164
+      ],
+      "prefijo": "",
+      "prompt": "Edit Picture 1, a dark oil painting of a night crime scene. Keep the painting style, the flash lighting, the framing, the container, the ash heap, the black jacket, the yellow ruler and the yellow marker with the digit 3 exactly as they are. Change only these things. First: remove the yellow police tape and the fence in the far background and replace them with plain dark wet pavement and night. Second: erase all three holes in the red container wall, the left one, the middle one and the right one, and restore that part of the wall to smooth, undamaged red corrugated steel like the rest. Third: in one single vertical column directly above the middle of the ash heap, paint exactly three dents, one above the other, like a car door hit three times with a sledgehammer: the red-painted steel is smoothly bent inward into shallow fist-sized hollows, with soft shading inside and a thin highlight of the flash on the lower rim. Exactly three dents in total on the whole wall, all in that one vertical column. The paint is intact: no holes, no cracks, no tears, no black openings.",
+      "nota": "Foto forense de AYU-06 (doc 15, ayudas[AYU-06-IMG]): Qwen-Image-Edit-2511 sobre la base AYU-06-IMG-base (Z-Image, s11131). El número de caso, la fecha y «FOTO 3 DE 14» van en el pie HTML; en la imagen sólo el cartel amarillo con el 3 (como dice el texto del documento). Z-Image solo (rondas 1–4, 16 semillas) no logró las tres abolladuras en vertical: salían agujeros de bala, chapa rota o golpes en fila, y a veces cinta policial con pseudotexto. Edición 1 (11141–11144): las tres abolladuras salieron en vertical y se fue la cinta, pero parecían agujeros caricaturescos con grietas («cracked paint» en el prompt). Edición 2 (11151–11154): chapa doblada sin grietas. Edición 2: chapa doblada bien, pero conservaba los golpes de la base y quedaban cinco. Edición 3 (11161–11164): se piden borrar los tres de la base y exactamente tres en una columna. Elegida 11164: tres hondonadas lisas en columna, con el metal desnudo donde saltó la pintura; en 11161–11162 parecían ojos de buey o parlantes y en 11163 quedaba un cuarto agujero."
+    },
+    {
+      "id": "AYU-09-PJ-01-IMG",
+      "estilo": "handout-foto",
+      "semilla": 11222,
+      "candidatas": [
+        11221,
+        11222,
+        11223,
+        11224
+      ],
+      "nota": "Foto del Larchmont (AYU-09, carpeta de David; doc 15, ayudas[AYU-09-PJ-01-IMG]). El hombre con los rasgos del retrato de David (PJ-01): cicatriz del pómulo derecho al labio, abrigo oscuro, pelo oscuro con canas en las sienes. Ronda 2 (11211–11214, foto realista): seguía a ras de calle, con marco de copia y un edificio de dos pisos. Ronda 3 (11221–11224): pintada como el set, vista desde arriba. Elegida 11222 (4 pisos, cicatriz visible, sin marco; 11221 y 11223 salieron con marco de copia, 11224 con un edificio de 3 pisos). `posproceso`: se desenfoca la matrícula del auto y una señal de tránsito (pseudotexto) y se espeja la imagen, porque la cicatriz salió en la mejilla izquierda y David la tiene en la derecha (retrato PJ-01).",
+      "prompt": "A grainy amateur snapshot from 2014, taken at night from a neighbour's second-floor window, looking down at a steep angle across a narrow street. Across the street, a tall four-storey red-brick apartment building with four rows of windows is engulfed in flames, fire pouring from the windows of every floor, heavy black smoke rolling up into a black night sky lit orange from below. Below us, in the middle of the wet empty street, a powerfully built man of about thirty in a long dark coat stands still with his back to the burning building and his face turned up towards us, looking straight into the camera. Short dark hair greying at the temples, an angular hard face with a square jaw; his face is half in shadow, half lit orange by the fire, and a thin pale scar runs down his right cheek from the cheekbone to the corner of his mouth. Cold blue darkness at the edges. Crimson accent: the deep red glow inside the burning windows. No fire trucks, no other people, no parked cars.",
+      "posproceso": [
+        "-region",
+        "44x24+58+731",
+        "-blur",
+        "0x2.5",
+        "-modulate",
+        "75",
+        "+region",
+        "-region",
+        "44x40+1440+568",
+        "-blur",
+        "0x2.5",
+        "+region",
+        "-flop"
+      ]
+    },
+    {
+      "id": "AYU-09-PJ-03-IMG",
+      "estilo": "handout-termica",
+      "semilla": 11314,
+      "candidatas": [
+        11311,
+        11312,
+        11313,
+        11314
+      ],
+      "nota": "Captura térmica (AYU-09, carpeta de Ezra; doc 15, ayudas[AYU-09-PJ-03-IMG]). Se sacó el «Timestamp overlay»: la fecha (8 de marzo de 2018, 3:12) la pone el texto del documento. Ronda 2 (11311–11314): Z-Image no sabe pintar una imagen térmica (salía una foto con filtro naranja y matrículas), así que la escena se pinta normal y `posproceso` la convierte en falso color ironbow con magick (gris → desenfoque y baja resolución de sensor → paleta de azul oscuro a blanco → ruido con semilla): la figura queda azul oscuro y la calle en rojos y naranjas, y el desenfoque borra todo pseudotexto. Elegida 11314: la figura agachada levantando la tapa, el entorno más cálido.",
+      "prompt": "Seen from high on a construction site fence, looking down a narrow old downtown street at 3 a.m.: the walls and the pavement still hold warmth and glow in reds and oranges, the parked cars glow orange with bright yellow-white engines and wheels, and in the middle of the street a round manhole cover glows hot yellow with a soft plume of warm steam rising from its edge. A crouching human figure grips the half-lifted manhole cover with both hands, and the whole figure is a flat, uniform dark blue silhouette, colder than everything else in the frame, like a hole cut out of the image in the shape of a person: no warm face, no warm hands, no warm breath, no clothing detail. The cars have no license plates.",
+      "posproceso": [
+        "-colorspace",
+        "Gray",
+        "-blur",
+        "0x3",
+        "-resize",
+        "25%",
+        "-resize",
+        "400%",
+        "-auto-level",
+        "-level",
+        "3%,85%,2.4",
+        "(",
+        "xc:#07143f",
+        "xc:#0f2a78",
+        "xc:#3a2a9a",
+        "xc:#9a2a8a",
+        "xc:#e0402a",
+        "xc:#f58a1a",
+        "xc:#ffd23a",
+        "xc:#fff8d0",
+        "+append",
+        "-filter",
+        "Cubic",
+        "-resize",
+        "256x1!",
+        ")",
+        "-clut",
+        "-seed",
+        "11314",
+        "-attenuate",
+        "0.15",
+        "+noise",
+        "Gaussian"
+      ]
+    },
+    {
+      "id": "PNJ-07",
+      "estilo": "retrato",
+      "semilla": 11403,
+      "candidatas": [
+        11401,
+        11402,
+        11403,
+        11404
+      ],
+      "nota": "Arconte Duval. Los docs no dan rasgos: se inventó un francés (GAN-07 lo lleva a Marsella) que aparenta unos 45, pelo corto gris acero, afeitado, ojos oscuros de párpado pesado, nariz aguileña, abrigo cruzado y guantes; esperando en el muelle del ferry de Bainbridge (A4-E03) con un sobre lacrado (enviado de la Justicar). Elegida 11403: limpia, guantes y sobre bien resueltos.",
+      "prompt": "A lean, composed Frenchman who looks about forty-five, close-cropped iron-grey hair, clean-shaven, a long aquiline nose, heavy-lidded dark eyes that weigh everything, thin unsmiling lips, the patience of a man who has waited centuries. A charcoal double-breasted wool overcoat buttoned to the throat, a black scarf, black leather gloves, holding a sealed cream envelope against his chest. Standing alone at the end of a small island ferry dock at night, wet timber pilings, dark water, the distant lights of the city across the sound. Crimson accent: the blood-red wax seal on the envelope."
+    },
+    {
+      "id": "PNJ-08",
+      "estilo": "retrato",
+      "semilla": 11501,
+      "candidatas": [
+        11501,
+        11502,
+        11503,
+        11504
+      ],
+      "nota": "Justicar Helena Panhard (Ventrue según AYU-08). Los docs no dan rasgos ni edad: se inventó una mujer que aparenta unos 50, pelo oscuro con mechas plateadas en un rodete severo, pómulos marcados, ojos gris pálido, vestido negro de cuello alto y un anillo de sello carmesí («la firma que falta»), en un estudio europeo antiguo con lluvia en la ventana y una carpeta de cuero cerrada (la copia 3 de los diarios). Elegida 11501: la más severa, mechón plateado, manos y anillo bien.",
+      "prompt": "A formidable woman who looks about fifty, dark hair streaked with silver pulled back into a severe low chignon, high sharp cheekbones, very pale grey eyes, a cold, patient, unreadable expression of absolute authority. A high-collared black dress of austere old-world cut, a single heavy signet ring on her right hand, which rests on a closed, worn leather portfolio tied with a black ribbon. Seated very straight in a carved high-backed chair in a dim old European study lit by a few candles, dark wood panelling, a tall window streaked with rain behind her. Crimson accent: the deep crimson stone of her signet ring."
+    },
+    {
+      "id": "PNJ-09",
+      "estilo": "retrato",
+      "semilla": 11603,
+      "candidatas": [
+        11601,
+        11602,
+        11603,
+        11604
+      ],
+      "nota": "Elijah Kane, Gangrel nómada, sire de Montgomery (1885, cerca de Eureka). Los docs no dan rasgos: se inventó un hombre que aparenta unos 35, flaco y nervudo, pelo largo y barba oscuros y desgreñados, ojos dorados de animal (Gangrel), guardapolvo y sombrero de ala ancha de la frontera, entre secuoyas de noche junto a un fuego que se apaga. Elegida 11603; la 11601 tenía una antena moderna en el fondo (anacronismo).",
+      "prompt": "A rangy, sinewy frontier man who looks about thirty-five, long tangled dark hair and a ragged dark beard, a gaunt weathered face, eyes that catch the light with a faint animal gold glint, an amused, predatory stillness. A long, mud-stained canvas duster coat over a collarless shirt and a worn leather vest, a battered wide-brimmed hat, a heavy hunting knife at his belt. Crouched in the rain at night among enormous redwood trunks on the northern California coast in the 1880s, a dying campfire at his feet, fog between the trees; the painting feels like a memory from the nineteenth century. Crimson accent: the red embers of the dying fire."
+    },
+    {
+      "id": "REF-02",
+      "estilo": "retrato",
+      "semilla": 11703,
+      "candidatas": [
+        11701,
+        11702,
+        11703,
+        11704
+      ],
+      "nota": "Danny Ruiz (2014, amigo de universidad de Helen; vivía en el 4.º piso del Larchmont, Tacoma). Los docs no dan rasgos: se inventó un joven latino de unos 25, pelo negro corto y ondulado, barba de pocos días, ojos marrones risueños, campera con capucha y bolso cruzado con apuntes, delante de un edificio de ladrillo de cuatro pisos en Tacoma en 2014. Elegida 11703: la sonrisa burlona del texto; los apuntes son garabatos ilegibles, no pseudotexto.",
+      "prompt": "A friendly young Latino man of about twenty-five, short wavy black hair, light stubble, warm brown eyes, a crooked, teasing half-smile as if he is about to laugh at a friend. A dark green zip-up hooded jacket over a plain grey t-shirt, a canvas messenger bag on his shoulder, a stack of photocopied lecture notes under his arm. Standing in the rain at night on the sidewalk in front of an old four-storey red-brick apartment building in Tacoma in 2014, a lit entrance behind him, wet street; the painting feels like a remembered photograph from 2014. Crimson accent: his red knit beanie."
+    },
+    {
+      "id": "REF-03",
+      "estilo": "retrato",
+      "semilla": 11814,
+      "candidatas": [
+        11811,
+        11812,
+        11813,
+        11814
+      ],
+      "nota": "Ray Dorsey, Anarquista destruido en 1996 (Rainier Valley). Los docs no dan rasgos ni clan: se inventó un hombre que aparenta unos 26, pelo negro corto y engominado hacia atrás, cara de hurón chupada, barba de días, ojos gris pálido, campera de cuero marrón y franela, en la escalera de un bloque medio abandonado de Rainier Valley en 1996. Ronda 2 (11811–11814): la 1.ª (rubio, grunge, 11801–11804) se parecía demasiado a un músico real de Seattle de los 90; se cambió a pelo negro y otra cara. Elegida 11814: la sonrisa más depredadora; manos bien.",
+      "prompt": "A wiry, pale man who looks about twenty-six, short greasy black hair slicked back, a narrow ferret-like face with sunken cheeks and a thin, crooked nose, a few days of dark stubble, cold pale grey eyes, a lazy predatory smile that does not reach his eyes. A worn brown leather jacket over a dark red-and-black plaid flannel shirt and a plain black t-shirt, a cheap silver chain at his neck, a cigarette between his fingers. Waist-up, leaning in the doorway of a rain-soaked concrete stairwell of a half-abandoned apartment block in Rainier Valley in 1996, a flickering sodium light above him, bare stained walls; the painting feels like a remembered photograph from the nineties. Crimson accent: a red bandana tied around his wrist."
+    },
+    {
+      "id": "LUG-08",
+      "estilo": "lugar",
+      "semilla": 11904,
+      "candidatas": [
+        11901,
+        11902,
+        11903,
+        11904
+      ],
+      "nota": "Pike Place de noche (content/ciudad/LUG-08.md), como mercado cubierto genérico: sin el cartel ni el reloj del Public Market (marca registrada) ni el Space Needle. El neón rojo del texto es un tubo sin letras. Elegida 11904: el tubo de neón sale sin letras; las cuatro son muy parecidas (pasarela cubierta junto al agua).",
+      "prompt": "Inside a long, old covered public market on a steep hillside above a dark bay, late at night after closing. Long empty aisles of shuttered market stalls covered with tarpaulins and canvas, rolled-down metal shutters, old timber posts and beams, a worn wet tiled floor reflecting the light, rows of unlit hanging bulbs. On the left, through the open side of the arcade, a glimpse of the rain over black bay water far below. At the end of the aisle, a narrow worn stairway descends into the lower levels, and far down a lower corridor of closed shops a single candle burns on a stall counter, a lone small figure beside it. Crimson accent: the glow of a single plain curved red neon tube, without any letters, humming over the empty aisle and reflected on the wet floor."
+    },
+    {
+      "id": "LUG-09",
+      "estilo": "lugar",
+      "semilla": 12012,
+      "candidatas": [
+        12011,
+        12012,
+        12013,
+        12014
+      ],
+      "nota": "Club Ceniza (content/ciudad/LUG-09.md): sótano de ladrillo visto, escenario chico, gente bailando con los ojos cerrados bajo luces rojas, Fry (PNJ-16) en la barra escribiendo en una servilleta. Las luces rojas mandan acá (el texto las pide). Ronda 2 (12011–12014, con prefijo propio sin lluvia): la 1.ª (12001–12004) llovía adentro del sótano, tenía un trazo de cómic y bailarinas de vestido gótico en vez de público común. Elegida 12012: en 12011 la gorra de Fry llevaba un parche tipo logo y había una placa con pseudotexto en la pared; en 12013 la gorra tenía emblema.",
+      "prompt": "Inside a dry, enclosed basement nightclub under an old building: exposed old brick walls, a low vaulted brick ceiling, hazy smoky air; no rain indoors, no windows. On a small low stage at the back, a bass player and a singer in near silhouette under dim red stage lights. In the middle, a small crowd of ordinary young men and women in dark everyday clothes swaying slowly to heavy, slow music with their eyes closed, their faces a little too pale in the red light. On the right, a short bar of dark wood with a few bottles; a thin man in his thirties with an untidy beard and thick-framed glasses, in a corduroy jacket and a faded baseball cap, sits hunched at the bar writing on a paper napkin. A thin wash of cold blue light falls down a narrow brick stair from the street door at the far left. Crimson accent: the dim red stage lights washing over the dancers.",
+      "prefijo": "Wide 16:9 cinematic establishing illustration for a modern gothic horror roleplaying chronicle. Dark painterly oil painting with heavy chiaroscuro and a subtle Victorian gothic engraving texture, visible brushwork, realistic proportions, not a comic, not a photograph. A present-day Pacific Northwest city on a November night. Palette: deep black, smoky brick brown, cold harbor blue, with deep crimson light. Mood: quiet menace, a city that watches.\n\nSCENE: "
+    },
+    {
+      "id": "LUG-12",
+      "estilo": "lugar",
+      "semilla": 12121,
+      "candidatas": [
+        12121,
+        12122,
+        12123,
+        12124
+      ],
+      "nota": "Tumba de Emily Smith (content/ciudad/LUG-12.md). La lápida se ve de costado, con la cara inscripta fuera de cuadro: el epitafio lo da el texto. El ramo va en papel de estraza liso en vez de periódico (el periódico sale como pseudotexto); el clavel rojo hace eco de la bufanda roja de su retrato (REF-01). Ronda 2 (12111–12114): la palabra «BEHIND» en mayúsculas del prompt salió pintada en la lápida («BEHA»): nunca usar mayúsculas de énfasis. Ronda 3 (12121–12124): la lápida de perfil, sin mayúsculas. Elegida 12121: lápidas con textura de piedra sin letras; la más lejana a la izquierda tiene vetas borrosas, ilegibles a tamaño real. En 12122 una lápida del fondo tenía renglones de pseudoepitafio.",
+      "prompt": "A small quiet cemetery on a hillside among tall dark cedar trees, north of the city, at night in steady rain, painted with realistic proportions and thick oil brushwork. In the foreground, a single simple grey granite headstone stands in profile, seen exactly side-on, so it appears only as a narrow upright slab of wet stone with a rounded top and its carved face cannot be seen at all. The grass around it is freshly cut. At its foot lies a bouquet of fresh white flowers with one red carnation, wrapped in plain crumpled brown paper and beaded with raindrops. Further away, a few small mossy headstones are dark shapes lost in the mist and shadow between the cedar trunks; a wrought-iron gate with a single sodium-orange lamp far behind, and below the hill the faint blurred lights of the city through the trees. Crimson accent: the single red carnation in the bouquet."
+    },
+    {
+      "id": "LUG-13",
+      "estilo": "lugar",
+      "semilla": 12202,
+      "candidatas": [
+        12201,
+        12202,
+        12203,
+        12204
+      ],
+      "nota": "La Capilla del Observatorio (content/ciudad/LUG-13.md): casona victoriana en lo alto de Queen Anne con cúpula de cobre verde abierta y una antena asomando por la ranura; adentro, madera tallada y racks de servidores. Elegida 12202: la más limpia; en 12201 el jardín tenía basura rara.",
+      "prompt": "At the top of a steep hill, a tall Victorian Queen Anne-style wooden mansion with carved gables, a wraparound porch and a round corner tower crowned by a weathered green copper observatory dome. The dome's narrow shutter slit is open, and instead of a telescope a modern grey satellite antenna dish pokes out of it into the rain. Through a tall bay window on the ground floor, a glimpse of carved dark wood panelling lined with server racks glowing cold blue. A wet garden with a black wrought-iron fence and bare trees in the foreground; far below the hill, the city and the harbour lights blurred by mist. Crimson accent: a single small red warning light blinking on top of the antenna."
+    }
+  ],
+  "mapa_regional": {
+    "_comentario": "MAP-00 (mapa regional de AYU-01) NO sale de generar-arte: lo pinta tools/mapa-regional.mjs. Z-Image solo inventaba la costa de Puget Sound y escribía rótulos (candidatas 11001–11004 descartadas), así que la costa, los lagos, los municipios y las rutas salen de TIGER (U.S. Census Bureau, dominio público) y Z-Image + Fun ControlNet Union (plano-zimage) los pinta desde ese esquema. Sin rótulos: la leyenda y los números de los lugares los maqueta el HTML. Encuadre vertical de Everett (arriba) a Tacoma (abajo), Bainbridge a la izquierda y el valle del Snohomish a la derecha.",
+    "semilla": 11022,
+    "candidatas": [
+      11021,
+      11022,
+      11023,
+      11024
+    ],
+    "ancho": 1152,
+    "alto": 1536,
+    "encuadre": {
+      "sur": 47.18,
+      "norte": 48.08,
+      "centro_lon": -122.33
+    },
+    "denoise": 0.45,
+    "fuerza": 1,
+    "fin": 1,
+    "pasos": 8,
+    "colores": {
+      "agua": "#0c1828",
+      "tierra": "#2a2d31",
+      "ciudad": "#3b3a36",
+      "luz": "#e8c46a",
+      "ruta": "#c9a45a",
+      "costa": "#5d6f80"
+    },
+    "prefijo": "An illustrated regional map seen straight from above, painterly cartographic style with a dark gothic mood, like an old hand-painted chart re-imagined at night. Dark navy water, land in charcoal and slate grey with soft relief shading, dark green forests, city lights as tiny scattered gold dots.\n\nMAP: ",
+    "sufijo": "\n\nA purely pictorial map: absolutely no text, no letters, no place names, no labels, no numbers, no legend box, no cartouche, no title, no compass rose, no scale bar, no grid, no border, no frame, no signature, no watermark. The map fills the whole image edge to edge.",
+    "prompt": "A wide region of saltwater sound, fjord-like inlets, islands and peninsulas at night, seen straight from above, following the coastline of the guide drawing exactly. Calm, smooth, deep dark navy water with faint painted ripples and a thin pale shoreline; dark charcoal and slate land with soft relief shading and dark green forest texture on the islands and peninsulas; a dense glittering city of tiny gold lights on the eastern shore around a deep bay, smaller towns of gold lights along the shores and on the far side of a long narrow freshwater lake to the east; faint gold threads of highways and floating bridges; flat dark river-valley farmland in the north-east; dark forested foothills along the right edge.",
+    "nota": "Mapa regional de AYU-01 (doc 15, mapas[MAP-00]). Se sacó «Leave empty space for a legend» y todo rótulo: la leyenda y los ① … ⑯ los maqueta el HTML. Ahora con costa de datos (TIGER) vía tools/mapa-regional.mjs. Ronda 2 (11021–11024, denoise 0,45, fuerza 1, fin 1, esquema con luces sólo en las 24 ciudades grandes): elegida 11022, la más limpia (sin pseudotexto; Elliott Bay, el lago Washington con Mercer Island, Bainbridge, Everett y Tacoma se reconocen). Las 11011–11014 (denoise 0,85, fuerza 0,8) ignoraban la costa.",
+    "ciudades": [
+      "Seattle",
+      "Bellevue",
+      "Tacoma",
+      "Everett",
+      "Bremerton",
+      "Kirkland",
+      "Redmond",
+      "Renton",
+      "Kent",
+      "Federal Way",
+      "Lynnwood",
+      "Edmonds",
+      "Shoreline",
+      "Burien",
+      "SeaTac",
+      "Tukwila",
+      "Auburn",
+      "Mercer Island",
+      "Bothell",
+      "Issaquah",
+      "Lakewood",
+      "University Place",
+      "Puyallup",
+      "Mukilteo"
+    ]
+  }
+}
