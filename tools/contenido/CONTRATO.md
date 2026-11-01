@@ -89,14 +89,14 @@ La biografía del actor empieza con un enlace `@UUID[...]` a su perfil.
   `reloj` (8 noches con fecha, evento, escenas, horas, movimientos con id, variantes),
   `pistas`, `pruebas`, `tiradas` (A3-E04 y A4-E01 con valores, oponente, márgenes y
   votación), `uuids` (IDs del libro → UUID de mundo) y `actores`.
-- Ids que el mundo guarda (registro del Termómetro, setting `pruebas`): derivados del
+- Ids que el mundo guarda (registro del Termómetro, setting `pruebas`; sellados, ver abajo): derivados del
   contenido, no de la posición: `<tipo>-<escena o lugar o gancho>-<primeras 6 palabras del
   motivo>` (`sube-a0-e01-romper-a-golpes-la-camara-del`), `noche-<n>-<motivo>` para los de cada
   noche, `A4-E01-OTRO-<MOTIVO>` / `VALOR-<MOTIVO>` para las casillas sin pista ni prueba.
   Repetidos: `-2`, `-3`… en el orden de content/.
 - Además escribe `data/publico.json`, lo único que carga un JUGADOR: `publico: true`,
   `termometro` (`inicio`, `min`, `max`, `umbrales[]` con `valor`, `icono`, `jugadores`),
-  `reloj.noches[]` (`n`, `fecha`, `dia`) y `pistas[]` (`id`, `nombre`). Sin escenas, PNJs,
+  `reloj.noches[]` (`n`, `fecha`, `dia`) y `pistas[]` (sólo `id`). Sin escenas, PNJs,
   movimientos, tiradas ni UUIDs.
 - Los textos de la crónica (umbrales, noches, nombres de pistas) viven SÓLO en esos JSON;
   `lang/es.json` guarda sólo textos de interfaz. El módulo los pide con fetch en `setup`
@@ -116,4 +116,26 @@ que movió el Termómetro, a todos los GM.
 Los susurros al Narrador no llevan texto de la crónica: `content` neutro y
 `flags["seattle-by-night"].aviso` con claves (`termometro`, `umbral`, `pista`, `noche`, `azar`);
 el HTML lo arma cada GM en `renderChatMessageHTML` desde `data/cronica.json`. Todo
-ChatMessage llega a todos los clientes, susurro o no.
+ChatMessage llega a todos los clientes, susurro o no. En `azar` el PNJ va sellado
+(`{ tipo: "azar", s }`; los mensajes viejos con `pnj` a la vista se siguen leyendo).
+
+Lo mismo con los settings de mundo: Foundry los manda enteros a cada cliente al entrar
+(`Setting.dump()` sin filtro) y reenvía cada cambio a todos, con las opciones del
+`game.settings.set` (la `operation` del `modifyDocument`). No hay en Foundry un lugar
+sincronizado que vean sólo los GM (journals y settings de usuario también le llegan a
+todos). Por eso el estado guarda sellado (`util.sellar`/`abrirSello`: JSON → XOR con un
+flujo de clave fija y nonce → base64, `"~1.<nonce>.<base64>"`) lo que delata la crónica:
+
+- `termometro.registro[]`: `{ fecha, cambio, usuario, valorAntes, valorDespues, s? }`, con
+  `s` = sello de `{ motivo?, movimiento?, noche? }`.
+- `pruebas`: `{ s }` (sello de `{ id: true }`); `votos`: `{ s }` (sello de `{ PNJ: voto }`);
+  `{}` si están vacíos.
+- A la vista: el valor del Termómetro, `congelado`, `pistas` (`{ "P-07": true }`: la mesa
+  conoce sus pistas) y `noche`. Las opciones del `set` (el `detalle` del hook `sbnEstado`)
+  llevan sólo números, la clave del setting, el id de pista y el usuario.
+
+Sólo un GM abre los sellos: `estado()` de un jugador no tiene motivos, pruebas ni votos.
+Es ofuscación, no cifrado (la clave está en el código, que baja cualquiera, y
+`data/cronica.json` se puede pedir por URL): el objetivo es que en `game.settings`,
+`game.messages` y el socket no haya nada legible. El formato viejo (todo a la vista) se
+lee igual, y el GM activo lo sella al cargar (`Estado.migrar()`, idempotente).

@@ -3,7 +3,7 @@ import { Datos } from "./datos.mjs";
 import { Estado } from "./estado.mjs";
 import { Botones } from "./botones.mjs";
 import { TIPOS_QUE_TIRAN } from "./actores.mjs";
-import { t, esc, exigirNarrador, enlaceHTML, documentoPorId, idsNarradores } from "./util.mjs";
+import { t, esc, exigirNarrador, enlaceHTML, documentoPorId, idsNarradores, sellar } from "./util.mjs";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -669,12 +669,14 @@ export class Panel extends HandlebarsApplicationMixin(ApplicationV2) {
     // Sin él, toMessage aplica el modo del chat del Narrador y ChatMessage.applyMode
     // (client/documents/chat-message.mjs) vacía el whisper si es «public».
     // La tirada llega a todos los clientes (whisper sólo la oculta en la interfaz): el
-    // flavor es neutro y quién vota va en el flag `aviso`; el GM lo arma al renderizar
-    // (Estado.renderizarAviso). El voto sale del total, que ya viaja con la tirada.
+    // flavor es neutro y quién vota va SELLADO en el flag `aviso` (el jugador no ve la
+    // tirada; con el PNJ a la vista sabría quién vota en el Consejo y, por el total, qué
+    // votó); el GM lo arma al renderizar (Estado.renderizarAviso). El voto sale del
+    // total, que ya viaja con la tirada.
     await roll.toMessage({
       flavor: esc(t("chat.avisoNarrador")),
       whisper: idsNarradores(),
-      flags: { [SBN.ID]: { [SBN.FLAGS.ORIGEN]: "panel", [SBN.FLAGS.AVISO]: { tipo: "azar", pnj } } }
+      flags: { [SBN.ID]: { [SBN.FLAGS.ORIGEN]: "panel", [SBN.FLAGS.AVISO]: { tipo: "azar", s: sellar({ pnj }) } } }
     }, { messageMode: "gm" });
     await Estado.voto(pnj, voto);
   }

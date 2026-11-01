@@ -1,6 +1,6 @@
 import { SBN } from "./constantes.mjs";
 import { Datos } from "./datos.mjs";
-import { t, esc, exigirNarrador, susurrarNarrador, anclaDelLibro } from "./util.mjs";
+import { t, esc, exigirNarrador, susurrarNarrador, anclaDelLibro, sellar, abrirSello, esSello } from "./util.mjs";
 
 const { SETTINGS } = SBN;
 
@@ -15,6 +15,15 @@ const { SETTINGS } = SBN;
  * un flag; lo arma cada GM al renderizar, ver «Avisos al Narrador») y, en todos los
  * clientes, dispara `Hooks.callAll("sbnEstado", estado, detalle)` desde el
  * onChange del setting (el detalle viaja en las opciones de la actualización).
+ *
+ * Los settings de mundo, y las opciones con que se escriben, llegan a TODOS los
+ * clientes (ver «Sello» en util.mjs). Por eso lo que delata la crónica va sellado
+ * (formato 2, ver «Formato guardado»): los motivos del Termómetro y qué movimiento
+ * fue, las pruebas marcadas y los votos del Consejo. El valor del Termómetro, si
+ * está congelado, las pistas obtenidas (P-01…, que la mesa conoce) y la noche van
+ * a la vista. El detalle de las opciones lleva sólo números y claves sin texto.
+ * Sólo un GM abre los sellos: para un jugador, `estado()` no tiene motivos,
+ * pruebas ni votos.
  */
 export class Estado {
   /** Las escrituras se encolan: dos clics seguidos no se pisan el valor. */
@@ -71,7 +80,7 @@ export class Estado {
     return {
       valor: Number.isFinite(d.valor) ? d.valor : Datos.termometro.inicio,
       congelado: !!d.congelado,
-      registro: Array.isArray(d.registro) ? d.registro : []
+      registro: Array.isArray(d.registro) ? d.registro.map(e => Estado.#abrirEntrada(e)) : []
     };
   }
 
@@ -84,16 +93,118 @@ export class Estado {
     return Math.clamp(Number.isFinite(n) ? n : 1, 1, Datos.totalNoches);
   }
 
+  /** Pruebas marcadas `{ id: true }` (vacío para un jugador). */
   static get pruebasActuales() {
-    return { ...(game.settings.get(SBN.ID, SETTINGS.PRUEBAS) ?? {}) };
+    return this.#abrirMapa(game.settings.get(SBN.ID, SETTINGS.PRUEBAS));
   }
 
   /** Votos de la votación del Consejo, con el voto por defecto donde el Narrador no tocó nada. */
   static get votosActuales() {
-    const guardados = game.settings.get(SBN.ID, SETTINGS.VOTOS) ?? {};
+    const guardados = this.#abrirMapa(game.settings.get(SBN.ID, SETTINGS.VOTOS));
     const out = {};
     for (const p of Datos.tirada("A4-E01")?.votacion?.primogenitos ?? []) out[p.pnj] = guardados[p.pnj] ?? p.voto;
     return out;
+  }
+
+  /* -------------------------------------------- */
+  /*  Formato guardado                            */
+  /* -------------------------------------------- */
+
+  /*
+   * Formato 2 (el 1, hasta 0.4.0, tenía todo a la vista):
+   *   termometro  { valor, congelado, registro: [{ fecha, cambio, usuario, valorAntes,
+   *               valorDespues, s? }] }; `s` = sello de { motivo?, movimiento?, noche? }
+   *               (sin `s` si no hubo ni motivo ni movimiento)
+   *   pruebas     { s: sello de { "PRUEBA-…": true } }   ({} si no hay ninguna)
+   *   votos       { s: sello de { "PNJ-15": "no", … } }  ({} si no se tocó ninguno)
+   * Se leen los dos formatos; Estado.migrar (GM activo, en `ready`) pasa el 1 al 2.
+   */
+
+  /** Lo que una entrada del registro guarda sellado. */
+  static #SECRETOS_ENTRADA = ["motivo", "movimiento", "noche"];
+
+  /**
+   * Entrada del registro tal como la usa el módulo: `{ fecha, cambio, motivo, usuario,
+   * valorAntes, valorDespues, movimiento?, noche? }`. Para un jugador, motivo vacío.
+   */
+  static #abrirEntrada(e) {
+    const sellado = esSello(e?.s) ? (game.user?.isGM ? abrirSello(e.s) : null) : e;
+    const out = {
+      fecha: e?.fecha,
+      cambio: e?.cambio,
+      motivo: game.user?.isGM ? String(sellado?.motivo ?? "") : "",
+      usuario: e?.usuario,
+      valorAntes: e?.valorAntes,
+      valorDespues: e?.valorDespues
+    };
+    if (game.user?.isGM && sellado?.movimiento) Object.assign(out, { movimiento: String(sellado.movimiento), noche: sellado.noche });
+    return out;
+  }
+
+  /** Entrada para guardar: lo secreto (motivo, movimiento, noche), adentro del sello. */
+  static #sellarEntrada(e) {
+    const secreto = {};
+    if (e.motivo) secreto.motivo = String(e.motivo);
+    if (e.movimiento) Object.assign(secreto, { movimiento: String(e.movimiento), noche: e.noche });
+    const out = { fecha: e.fecha, cambio: e.cambio, usuario: e.usuario, valorAntes: e.valorAntes, valorDespues: e.valorDespues };
+    if (Object.keys(secreto).length) out.s = sellar(secreto);
+    return out;
+  }
+
+  /** ¿La entrada guardada tiene algo secreto a la vista (formato 1)? */
+  static #entradaVieja(e) {
+    return !!e && typeof e === "object" && this.#SECRETOS_ENTRADA.some(k => k in e);
+  }
+
+  /** `{ s: sello }` (formato 2) o el objeto a la vista (formato 1) → el mapa; vacío para un jugador. */
+  static #abrirMapa(guardado) {
+    if (!guardado || typeof guardado !== "object") return {};
+    if (esSello(guardado.s)) {
+      if (!game.user?.isGM) return {};
+      const m = abrirSello(guardado.s);
+      return m && typeof m === "object" ? m : {};
+    }
+    if (!game.user?.isGM) return {};
+    const { s: _s, ...resto } = guardado;
+    return { ...resto };
+  }
+
+  /** Mapa para guardar: `{}` si está vacío, si no `{ s: sello }`. */
+  static #sellarMapa(mapa) {
+    return Object.keys(mapa ?? {}).length ? { s: sellar(mapa) } : {};
+  }
+
+  /** ¿Es un mapa guardado en el formato 1 (claves a la vista)? */
+  static #mapaViejo(guardado) {
+    return !!guardado && typeof guardado === "object" && Object.keys(guardado).some(k => k !== "s");
+  }
+
+  /**
+   * Pasa el estado guardado en formato 1 (motivos, pruebas y votos a la vista) al 2.
+   * Sólo el GM activo (dos GM no migran a la vez), idempotente: si ya está en el
+   * formato 2 no escribe nada. Sin susurros: el estado no cambia, sólo cómo se guarda.
+   * @returns {Promise<string[]>} los settings que reescribió
+   */
+  static migrar() {
+    if (!game.user?.isGM || game.user !== game.users.activeGM) return Promise.resolve([]);
+    return this.#encolar(async () => {
+      const hechos = [];
+      const opciones = clave => ({ sbn: { clave, migracion: true } });
+      const tm = game.settings.get(SBN.ID, SETTINGS.TERMOMETRO);
+      if (Array.isArray(tm?.registro) && tm.registro.some(e => this.#entradaVieja(e))) {
+        const registro = tm.registro.map(e => (this.#entradaVieja(e) ? this.#sellarEntrada(e) : e));
+        await game.settings.set(SBN.ID, SETTINGS.TERMOMETRO, { ...tm, registro }, opciones(SETTINGS.TERMOMETRO));
+        hechos.push(SETTINGS.TERMOMETRO);
+      }
+      for (const clave of [SETTINGS.PRUEBAS, SETTINGS.VOTOS]) {
+        const guardado = game.settings.get(SBN.ID, clave);
+        if (!this.#mapaViejo(guardado)) continue;
+        await game.settings.set(SBN.ID, clave, this.#sellarMapa(this.#abrirMapa(guardado)), opciones(clave));
+        hechos.push(clave);
+      }
+      if (hechos.length) console.log(`${SBN.ID} | estado migrado al formato 2 (${hechos.join(", ")})`);
+      return hechos;
+    });
   }
 
   static obtenida(id) {
@@ -203,11 +314,16 @@ export class Estado {
       valorDespues: despues
     };
     if (movimiento) Object.assign(entrada, { movimiento: String(movimiento), noche: this.nocheActual });
-    const registro = [...actual.registro, entrada].slice(-SBN.REGISTRO_MAX);
-    const nuevo = { valor: despues, congelado, registro };
-    await game.settings.set(SBN.ID, SETTINGS.TERMOMETRO, nuevo, {
-      sbn: { clave: SETTINGS.TERMOMETRO, ...entrada }
+    // Lo que se guarda: las entradas viejas tal como estaban (selladas o, si todavía no se
+    // migró, a la vista) y la nueva sellada. Lo que se devuelve: todo abierto.
+    const guardado = game.settings.get(SBN.ID, SETTINGS.TERMOMETRO)?.registro;
+    const previas = Array.isArray(guardado) ? guardado : [];
+    const registro = [...previas, this.#sellarEntrada(entrada)].slice(-SBN.REGISTRO_MAX);
+    // El detalle viaja a todos los clientes con la operación: sin motivo ni movimiento.
+    await game.settings.set(SBN.ID, SETTINGS.TERMOMETRO, { valor: despues, congelado, registro }, {
+      sbn: { clave: SETTINGS.TERMOMETRO, fecha: entrada.fecha, cambio: etiqueta, usuario: entrada.usuario, valorAntes: antes, valorDespues: despues }
     });
+    const nuevo = { valor: despues, congelado, registro: [...actual.registro, entrada].slice(-SBN.REGISTRO_MAX) };
 
     await susurrarNarrador({ tipo: "termometro", cambio: etiqueta, antes, despues, fecha: entrada.fecha });
     await this.#avisarUmbrales(antes, despues);
@@ -330,8 +446,9 @@ export class Estado {
     if (!!pruebas[id] === marcada) return pruebas;
     if (marcada) pruebas[id] = true;
     else delete pruebas[id];
-    await game.settings.set(SBN.ID, SETTINGS.PRUEBAS, pruebas, {
-      sbn: { clave: SETTINGS.PRUEBAS, id, marcada, usuario: game.user.name }
+    // Sellado; el detalle no dice cuál fue (su id delata la escena).
+    await game.settings.set(SBN.ID, SETTINGS.PRUEBAS, this.#sellarMapa(pruebas), {
+      sbn: { clave: SETTINGS.PRUEBAS, usuario: game.user.name }
     });
     return { ...pruebas };
   }
@@ -350,8 +467,9 @@ export class Estado {
         ui.notifications.error(t("votacion.invalido", { pnj: String(pnj), voto: String(voto) }));
         return null;
       }
-      const votos = { ...(game.settings.get(SBN.ID, SETTINGS.VOTOS) ?? {}), [pnj]: voto };
-      await game.settings.set(SBN.ID, SETTINGS.VOTOS, votos, { sbn: { clave: SETTINGS.VOTOS, pnj, voto } });
+      // Sellado: quién vota en el Consejo y cómo es de la crónica. El detalle, sin el voto.
+      const votos = { ...this.#abrirMapa(game.settings.get(SBN.ID, SETTINGS.VOTOS)), [pnj]: voto };
+      await game.settings.set(SBN.ID, SETTINGS.VOTOS, this.#sellarMapa(votos), { sbn: { clave: SETTINGS.VOTOS } });
       return this.votosActuales;
     });
   }
@@ -392,10 +510,12 @@ export class Estado {
   }
 
   /**
-   * Flavor del voto al azar del Consejo (`{ tipo: "azar", pnj }`): par sí, impar no
-   * (Panel #onAzar). Null sin datos de la crónica o sin tirada.
+   * Flavor del voto al azar del Consejo (`{ tipo: "azar", s }`, con el PNJ sellado; los
+   * mensajes de 0.4.0 traen `pnj` a la vista): par sí, impar no (Panel #onAzar).
+   * Null sin datos de la crónica o sin tirada.
    */
-  static flavorAzar({ pnj }, mensaje) {
+  static flavorAzar({ pnj, s }, mensaje) {
+    if (esSello(s)) pnj = abrirSello(s)?.pnj;
     const total = mensaje?.rolls?.[0]?.total;
     if (!Datos.listos || Datos.publicos || !pnj || !Number.isFinite(total)) return null;
     const voto = total % 2 === 0 ? "si" : "no";

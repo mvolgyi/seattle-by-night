@@ -6,7 +6,7 @@
  *
  *   importacion.mjs   ofrecer e importar la Aventura del compendio
  *   datos.mjs         data/cronica.json: umbrales, noches, pistas, tiradas (lo genera el build)
- *   estado.mjs        Termómetro, pistas, Reloj, pruebas y votos (settings de mundo)
+ *   estado.mjs        Termómetro, pistas, Reloj, pruebas y votos (settings de mundo; lo secreto, sellado)
  *   botones.mjs       botones de los journals (.sbn-tirada, -termometro, -pista, -reloj)
  *   indicador.mjs     barrita del Narrador con el Termómetro y la noche
  *   panel.mjs         Panel del Narrador (Termómetro, Reloj, pistas, tiradas clave)
@@ -57,6 +57,10 @@ Hooks.once("ready", async () => {
     indicador: () => Indicador.sincronizar(),
     abrirPanel: opciones => Panel.abrir(opciones)
   };
+
+  // Partidas empezadas con el formato viejo del estado (motivos, pruebas y votos a la
+  // vista de cualquier cliente): el GM activo lo sella una vez (Estado.migrar).
+  await Estado.migrar().catch(err => console.error(`${SBN.ID} | migración del estado:`, err));
 
   Botones.instalar();
   Indicador.sincronizar();

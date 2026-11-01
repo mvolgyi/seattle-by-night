@@ -151,6 +151,9 @@ disciplinas si no las tiene). Un cazador (`tipo: hunter`) suma `credo`, `impulso
 }
 ```
 
+`nombreToken` (opcional, en cualquier ficha): el nombre del token, si el del actor delata algo
+al pasar el mouse (MEN-04 es «Guardia de seguridad», no «Ghouls de seguridad de Halloway»).
+
 **Versiones de combate** (doc 14): `content/pnjs/combate.json` → `{ "PNJ-03": "markdown", … }`.
 
 ## 4. Otros datos

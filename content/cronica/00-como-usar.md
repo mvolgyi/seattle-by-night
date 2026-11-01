@@ -84,7 +84,7 @@ Todas las referencias cruzadas usan identificadores estables, que no cambian ent
 - **PJ-xx** personajes jugadores · **PNJ-xx** personajes no jugadores · **MEN-xx** PNJs menores
 - **LUG-xx** lugares · **COT-xx** coteries · **LOR-xx** Loresheets · **GAN-xx** ganchos
 - **DOC-xx** documentos del mundo · **AYU-xx** ayudas de juego
-- **@ID[A1-E03]** escena 3 de la parte 1 · **P-xx** pistas · **FIN-x** desenlaces
+- **A1-E03** escena 3 de la parte 1 · **P-xx** pistas · **FIN-x** desenlaces
 
 Dentro de cada escena, el texto se separa siempre en tres tipos de bloque, que en Foundry pasan a ser elementos distintos:
 

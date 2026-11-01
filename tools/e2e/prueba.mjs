@@ -33,7 +33,13 @@
  *      contenido viejo enriquecido, enlace al interludio que abre) y en el
  *      cliente del jugador NINGÚN mensaje de game.messages (contenido, flavor
  *      ni flags) tiene textos de umbral, escenas, interludios, UUIDs ni
- *      textos de data/cronica.json. Al empezar se vacía el chat del mundo.
+ *      textos de data/cronica.json. Al empezar se vacía el chat del mundo;
+ *   8. (6b) del lado del jugador, además de game.messages, todos los settings del
+ *      módulo y lo que recibe por el socket mientras el GM mueve el estado: ni
+ *      motivos, ni ids de movimientos, pruebas, escenas o PNJ, ni votos; y su API
+ *      no abre los sellos;
+ *   9. (7) la migración: un estado en el formato viejo (todo a la vista) se lee
+ *      igual, el GM lo sella al recargar, es idempotente y el panel lo muestra.
  * Si los packs todavía no existen, lo dice y prueba sólo la API.
  * Capturas en tools/e2e/capturas/.
  */
@@ -220,6 +226,14 @@ const a = await page.evaluate(async MOD => {
   const est = api.estado();
   out.registro = est.termometro.registro.map(e => `${e.cambio}:${e.valorAntes}→${e.valorDespues}`);
   out.camposRegistro = Object.keys(est.termometro.registro[0] ?? {});
+  // Lo guardado (lo que le llega a cualquier cliente): sin motivo a la vista, sellado en `s`.
+  const crudo = game.settings.get(MOD, "termometro").registro;
+  out.crudo = {
+    entradas: crudo.length,
+    aLaVista: crudo.filter(e => "motivo" in e || "movimiento" in e).length,
+    sellados: crudo.filter(e => typeof e.s === "string" && e.s.startsWith("~1.")).length,
+    texto: JSON.stringify(crudo).includes("e2e:")
+  };
   out.hooks = hooks.length;
   const nuevos = game.messages.contents.slice(mensajesAntes).filter(m => m.getFlag(MOD, "origen") === "estado");
   out.mensajes = nuevos.length;
@@ -236,6 +250,8 @@ comprobar(a.congelado && a.trasCongelar === null && a.valorCongelado === 4, "con
 comprobar(a.igual10 === 10 && a.tope === 10 && a.piso === 0, "\"=10\", tope 10 y piso 0");
 comprobar(a.invalido === null, "un cambio inválido se rechaza");
 comprobar(a.camposRegistro.join() === "fecha,cambio,motivo,usuario,valorAntes,valorDespues", "el registro tiene { fecha, cambio, motivo, usuario, valorAntes, valorDespues }");
+comprobar(a.crudo.entradas === a.registro.length && a.crudo.aLaVista === 0 && a.crudo.sellados === a.crudo.entradas && !a.crudo.texto,
+  `el setting guarda los motivos sellados, no a la vista (${a.crudo.sellados}/${a.crudo.entradas} sellados)`);
 comprobar(a.umbrales.length === 5, `al subir se avisa cada umbral cruzado (${a.umbrales.length}: 3, 5, 7, 9, 10)`);
 comprobar(a.pistaSi && a.pistaNo && a.pistaInvalida === null, "pista(id) marca y pista(id, false) desmarca");
 comprobar(a.noche === 4 && a.nocheInvalida === null, "noche(4) fija; noche(9) se rechaza");
@@ -834,6 +850,9 @@ if (hayPacks) {
   jp.on("request", req => { if (/\/data\/(cronica|publico)\.json/.test(req.url())) pedidos.push(req.url().split("/").pop()); });
   const erroresJugador = [];
   jp.on("pageerror", err => erroresJugador.push(err.message));
+  // Todo lo que le llega por el socket (socket.io sobre WebSocket: «42["modifyDocument",{…}]»).
+  const tramas = [];
+  jp.on("websocket", ws => ws.on("framereceived", ({ payload }) => tramas.push(typeof payload === "string" ? payload : Buffer.from(payload).toString("utf8"))));
   await jp.goto(`${URL}/join`, { waitUntil: "networkidle" });
   await jp.waitForSelector("select[name=userid]", { timeout: 60000 });
   await jp.selectOption("select[name=userid]", jugadorId);
@@ -848,8 +867,8 @@ if (hayPacks) {
   }, MOD);
   console.log("  ", JSON.stringify(vj), "pedidos:", pedidos.join(", "));
   comprobar(!vj.gm && pedidos.includes("publico.json") && !pedidos.includes("cronica.json"), `el jugador pide data/publico.json y no data/cronica.json (${pedidos.join(", ")})`);
-  comprobar(vj.publicos && vj.pistas === 15 && !!vj.nombre && vj.noches === 8 && !!vj.dia && !!vj.umbral3,
-    "el jugador tiene nombres de pistas, días de las noches y lo que perciben los jugadores en cada umbral");
+  comprobar(vj.publicos && vj.pistas === 15 && vj.nombre === null && vj.noches === 8 && !!vj.dia && !!vj.umbral3,
+    "el jugador tiene los ids de las pistas (sin nombres), días de las noches y lo que perciben los jugadores en cada umbral");
   comprobar(!vj.ciudad && vj.movimientos === 0 && !vj.tiradas && !vj.uuids, "el jugador no tiene textos del Narrador (ciudad, movimientos, tiradas, UUIDs)");
 
   // Enlaces sin permiso: COMO-USAR (visible, con «Aviso legal») enlaza documentos que el jugador no ve.
@@ -894,37 +913,133 @@ if (hayPacks) {
   comprobar(enlaces.propio?.enlace === true, "en el perfil de su PJ, el enlace a la ficha sigue vivo");
   comprobar(enlaces.ajeno?.texto === true, "en el perfil de otro PJ, la ficha queda como texto");
   // Lo que el cliente del jugador TIENE (no lo que ve): todo game.messages, con content,
-  // flavor, flags y tiradas. Los textos prohibidos salen de data/cronica.json del GM.
+  // flavor, flags y tiradas; todos los settings del módulo; y lo que recibe por el socket.
+  // Los textos prohibidos salen de data/cronica.json del GM.
   const prohibidos = await page.evaluate(MOD => {
     const D = game.modules.get(MOD).api.Datos;
-    const azar = (D.tirada("A4-E01")?.votacion?.primogenitos ?? []).filter(p => p.voto === "azar")
+    const votacion = D.tirada("A4-E01")?.votacion?.primogenitos ?? [];
+    const azar = votacion.filter(p => p.voto === "azar")
       .flatMap(p => ["si", "no"].map(v => game.i18n.format("SBN.panel.votacion.tiradaAzar", { nombre: D.nombre(p.pnj), voto: game.i18n.localize(`SBN.panel.votacion.votos.${v}`) })));
-    return [
-      "A4-E02", "INT-0", "@UUID", "JournalEntry",
-      ...D.umbrales.flatMap(u => [u.texto, u.ciudad, u.nota]),
-      ...D.noches.map(n => n.evento),
-      ...D.movimientos.map(m => m.motivo),
-      ...azar
-    ].filter(x => typeof x === "string" && x.length >= 6);
+    const largos = l => l.filter(x => typeof x === "string" && x.length >= 6);
+    // Mensajes: los textos de siempre, los motivos libres de la prueba («e2e: …») y quién vota al azar.
+    const mensajes = [
+      ...largos([
+        "A4-E02", "INT-0", "@UUID", "JournalEntry",
+        ...D.umbrales.flatMap(u => [u.texto, u.ciudad, u.nota]),
+        ...D.noches.map(n => n.evento),
+        ...D.movimientos.map(m => m.motivo),
+        ...azar
+      ]),
+      "e2e:", ...votacion.filter(p => p.voto === "azar").map(p => p.pnj)
+    ];
+    // Settings y socket, además: ids de movimientos, pruebas y casillas, sus nombres y los Primogénitos.
+    const t4 = D.tirada("A4-E01");
+    const ajustes = [
+      ...mensajes,
+      ...largos([
+        ...D.movimientos.map(m => m.id),
+        ...D.noches.flatMap(n => (n.movimientos ?? []).flatMap(m => [m.id, m.motivo])),
+        ...D.pruebas.flatMap(p => [p.id, p.nombre]),
+        ...(t4?.otros ?? []).flatMap(o => [o.id, o.motivo]),
+        ...(t4?.valores ?? []).map(v => v.prueba)
+      ]),
+      ...votacion.map(p => p.pnj)
+    ];
+    return { mensajes: [...new Set(mensajes)], ajustes: [...new Set(ajustes)] };
   }, MOD);
-  const fuga = await jp.evaluate(([MOD, prohibidos]) => {
-    const out = { total: game.messages.size, avisos: 0, visibles: 0, fugas: [] };
+  // Ids legibles de escenas, lugares, interludios, pruebas o PNJ: en ningún setting ni trama.
+  const IDS_LEGIBLES = String(/\b(A\d-E\d{2}|LUG-\d|INT-\d|PRUEBA-|PNJ-\d|noche-\d-|sube-|baja-)/i.source);
+
+  // Con el jugador conectado, el GM mueve el estado: lo que le llegue por el socket desde
+  // ahora se revisa. Lo de antes (los datos del mundo al entrar) trae TODOS los journals,
+  // actores y escenas, también los que el jugador no puede ver: eso es de Foundry, no de
+  // los settings (que ya se revisaron arriba, tal como llegaron).
+  const desde = tramas.length;
+  const accionesGM = await page.evaluate(async MOD => {
+    const api = game.modules.get(MOD).api;
+    const D = api.Datos;
+    const mov = D.movimientos.find(m => m.id && /^[+-]?\d+$/.test(m.cambio)) ?? D.movimientos[0];
+    if (api.estado().termometro.congelado) await api.termometro("descongelar", "e2e: socket");
+    if (api.estado().termometro.valor >= D.termometro.max) await api.termometro("=5", "e2e: socket");
+    await api.termometro(mov.cambio, mov.motivo, { movimiento: mov.id });
+    await api.termometro(-1, "e2e: motivo libre por el socket");
+    await api.prueba("PRUEBA-KRELL-PRESENTE", false);
+    await api.prueba("PRUEBA-KRELL-PRESENTE", true);
+    await api.Estado.voto("PNJ-14", "no");
+    await new Promise(r => setTimeout(r, 300));
+    return { movimiento: mov.id };
+  }, MOD);
+  // Y el voto al azar desde el panel (el mensaje con el flag `aviso` sellado).
+  await page.evaluate(MOD => game.modules.get(MOD).api.abrirPanel({ tab: "tiradas" }), MOD);
+  await page.waitForSelector("#sbn-panel [data-action=azar]", { timeout: 5000 }).catch(() => null);
+  if (await page.locator("#sbn-panel [data-action=azar]").count()) await page.locator("#sbn-panel [data-action=azar]").first().click();
+  await jp.waitForTimeout(1500);
+  await page.evaluate(() => foundry.applications.instances.get("sbn-panel")?.close());
+
+  const fuga = await jp.evaluate(([MOD, prohibidos, idsLegibles]) => {
+    const re = new RegExp(idsLegibles, "i");
+    const out = { total: game.messages.size, avisos: 0, visibles: 0, fugas: [], ajustes: 0, fugasAjustes: [] };
     for (const m of game.messages) {
       if (m.getFlag(MOD, "aviso")) out.avisos++;
       if (m.getFlag(MOD, "aviso") && m.visible && !m.isRoll) out.visibles++;
       const crudo = JSON.stringify(m.toObject());
-      for (const p of prohibidos) if (crudo.includes(p)) out.fugas.push(`${m.id} · «${p.slice(0, 50)}»`);
+      for (const p of prohibidos.mensajes) if (crudo.includes(p)) out.fugas.push(`${m.id} · «${p.slice(0, 50)}»`);
     }
-    // Informativo: el registro del Termómetro (setting de mundo) también llega al jugador.
-    const reg = game.settings.get(MOD, "termometro")?.registro ?? [];
-    out.registroSetting = { entradas: reg.length, conMotivo: reg.filter(e => e.motivo).length, conMovimiento: reg.filter(e => e.movimiento).length };
+    // Todos los settings del módulo: los documentos Setting tal como llegaron y su valor leído.
+    const valores = [];
+    for (const doc of game.settings.storage.get("world")) {
+      if (doc.key?.startsWith(`${MOD}.`)) valores.push([doc.key, JSON.stringify(doc.toObject())]);
+    }
+    for (const [clave, cfg] of game.settings.settings) {
+      if (cfg.namespace !== MOD) continue;
+      try { valores.push([clave, JSON.stringify(game.settings.get(MOD, cfg.key))]); } catch { /* sin valor */ }
+    }
+    out.ajustes = valores.length;
+    for (const [clave, texto] of valores) {
+      for (const p of prohibidos.ajustes) if (texto.includes(p)) out.fugasAjustes.push(`${clave} · «${p.slice(0, 50)}»`);
+      const m = re.exec(texto);
+      if (m) out.fugasAjustes.push(`${clave} · id legible «${m[0]}»`);
+    }
+    // La API del jugador tampoco abre los sellos.
+    const e = game.modules.get(MOD).api.estado();
+    out.api = { motivos: e.termometro.registro.filter(r => r.motivo || r.movimiento).length, pruebas: Object.keys(e.pruebas).length, votos: Object.keys(e.votos).length, registro: e.termometro.registro.length };
     return out;
-  }, [MOD, prohibidos]);
-  console.log("  ", JSON.stringify({ ...fuga, fugas: fuga.fugas.length }), `· ${prohibidos.length} textos prohibidos`);
+  }, [MOD, prohibidos, IDS_LEGIBLES]);
+  // Las tramas del socket: las de documentos (modifyDocument), contra la lista de los settings.
+  const reIds = new RegExp(IDS_LEGIBLES, "i");
+  const nuevas = tramas.slice(desde);
+  const deDocumentos = nuevas.filter(t => t.includes("modifyDocument"));
+  const fugasSocket = [];
+  for (const t of nuevas) {
+    for (const p of prohibidos.ajustes) if (t.includes(p)) fugasSocket.push(`«${p.slice(0, 50)}» en ${t.slice(0, 120)}`);
+    const m = reIds.exec(t);
+    if (m) fugasSocket.push(`id legible «${m[0]}» en ${t.slice(0, 160)}`);
+  }
+  // Un update de Setting llega como { type: "Setting", result: [{ _id, value }], operation }.
+  const deSettings = deDocumentos.filter(t => t.includes('"type":"Setting"')).length;
+  console.log("  ", JSON.stringify({ ...fuga, fugas: fuga.fugas.length, fugasAjustes: fuga.fugasAjustes.length }),
+    `· ${prohibidos.mensajes.length} textos prohibidos en mensajes, ${prohibidos.ajustes.length} en settings y socket`,
+    `· ${nuevas.length} tramas después de entrar (${deDocumentos.length} de documentos, ${deSettings} de settings)`);
+  const ejemplo = deDocumentos.find(t => t.includes('"type":"Setting"') && t.includes('"sbn"'));
+  if (ejemplo) console.log("   una trama de Setting (con el detalle `sbn` de las opciones):", ejemplo.slice(0, 400));
   comprobar(fuga.avisos >= 13, `el jugador recibe los avisos al Narrador en game.messages (${fuga.avisos} de ${fuga.total} mensajes)…`);
-  comprobar(fuga.fugas.length === 0, `…pero ningún mensaje (content, flavor, flags) tiene textos de umbral, A4-E02, INT-0, @UUID, JournalEntry ni de data/cronica.json (${fuga.fugas.length} fugas)`);
+  comprobar(fuga.fugas.length === 0, `…pero ningún mensaje (content, flavor, flags) tiene textos de umbral, A4-E02, INT-0, @UUID, JournalEntry, motivos ni de data/cronica.json (${fuga.fugas.length} fugas, ${prohibidos.mensajes.length} cadenas)`);
   for (const f of fuga.fugas.slice(0, 10)) console.log("  -", f);
   comprobar(fuga.visibles === 0, "ningún aviso es visible para el jugador");
+  comprobar(fuga.ajustes >= 5 && fuga.fugasAjustes.length === 0,
+    `ningún setting del módulo que tiene el jugador lleva motivos, ids de movimientos/pruebas/escenas ni votos (${fuga.ajustes} valores, ${prohibidos.ajustes.length} cadenas, ${fuga.fugasAjustes.length} fugas)`);
+  for (const f of fuga.fugasAjustes.slice(0, 10)) console.log("  -", f);
+  comprobar(deSettings >= 5 && fugasSocket.length === 0,
+    `nada legible en lo que recibe por el socket mientras el GM mueve el estado (${deSettings} cambios de settings, ${fugasSocket.length} fugas)`);
+  for (const f of fugasSocket.slice(0, 10)) console.log("  -", f);
+  comprobar(fuga.api.registro > 0 && fuga.api.motivos === 0 && fuga.api.pruebas === 0 && fuga.api.votos === 0,
+    `la API del jugador no abre los sellos (${fuga.api.registro} entradas sin motivo, sin pruebas ni votos)`);
+  const trasSocket = await page.evaluate(([MOD, mov]) => {
+    const e = game.modules.get(MOD).api.estado();
+    const r = e.termometro.registro;
+    return { mov: r.at(-2)?.movimiento === mov, libre: r.at(-1)?.motivo === "e2e: motivo libre por el socket", krell: e.pruebas["PRUEBA-KRELL-PRESENTE"] === true, voto: e.votos["PNJ-14"] === "no" };
+  }, [MOD, accionesGM.movimiento]);
+  comprobar(Object.values(trasSocket).every(Boolean), `el GM sigue leyendo motivo, movimiento, prueba y voto (${JSON.stringify(trasSocket)})`);
   await jp.screenshot({ path: path.join(CAPTURAS, "jugador.png") });
   comprobar(erroresJugador.length === 0, `sin errores de página en el cliente del jugador (${erroresJugador.length})`);
   for (const e of erroresJugador.slice(0, 5)) console.log("  -", e.slice(0, 300));
@@ -942,6 +1057,98 @@ if (hayPacks) {
     await game.journal.get(a.journalAgregada).pages.get(a.agregada)?.delete();
   }, [antes6, jugadorId]);
 }
+
+/* -------------------------------------------- */
+/*  7. Migración del formato viejo del estado   */
+/* -------------------------------------------- */
+
+console.log("\n7. Migración del estado viejo");
+// Una partida empezada antes de 0.4.x: motivos, movimiento, pruebas y votos a la vista.
+const viejo = await page.evaluate(async MOD => {
+  const D = game.modules.get(MOD).api.Datos;
+  const mov = D.movimientos.find(m => m.id) ?? null;
+  const galeria = D.tirada("A4-E01")?.otros?.find(o => o.a === "Halloway")?.id ?? null;
+  const estado = {
+    termometro: { valor: 5, congelado: false, registro: [
+      { fecha: "2026-10-01T03:00:00.000Z", cambio: "+1", motivo: "e2e: motivo viejo a la vista", usuario: game.user.name, valorAntes: 3, valorDespues: 4 },
+      { fecha: "2026-10-01T03:05:00.000Z", cambio: "+1", motivo: mov?.motivo ?? "e2e: mov", usuario: game.user.name, valorAntes: 4, valorDespues: 5, movimiento: mov?.id ?? "e2e-mov", noche: 2 },
+      { fecha: "2026-10-01T03:10:00.000Z", cambio: "congelar", motivo: "", usuario: game.user.name, valorAntes: 5, valorDespues: 5 },
+      { fecha: "2026-10-01T03:15:00.000Z", cambio: "descongelar", motivo: "e2e: descongelar viejo", usuario: game.user.name, valorAntes: 5, valorDespues: 5 }
+    ] },
+    pruebas: { "PRUEBA-KRELL-PRESENTE": true, ...(galeria ? { [galeria]: true } : {}) },
+    votos: { "PNJ-15": "no", "PNJ-16": "si" }
+  };
+  for (const [k, v] of Object.entries(estado)) await game.settings.set(MOD, k, v);
+  // El voto al azar de antes, con el PNJ a la vista en el flag: el GM lo sigue leyendo.
+  const roll = await new Roll("1d10").evaluate();
+  const msg = await roll.toMessage({
+    flavor: foundry.utils.escapeHTML(game.i18n.localize("SBN.chat.avisoNarrador")),
+    whisper: game.users.filter(u => u.isGM).map(u => u.id),
+    flags: { [MOD]: { origen: "panel", aviso: { tipo: "azar", pnj: "PNJ-16" } } }
+  }, { messageMode: "gm" });
+  // Antes de migrar, el formato viejo se lee igual.
+  const e = game.modules.get(MOD).api.estado();
+  return { estado, mov: mov?.id ?? "e2e-mov", galeria, msg: msg.id,
+    leidoAntes: e.termometro.registro.map(r => r.motivo).join("|") === estado.termometro.registro.map(r => r.motivo).join("|")
+      && e.termometro.registro[1].movimiento === (mov?.id ?? "e2e-mov") && e.pruebas["PRUEBA-KRELL-PRESENTE"] === true && e.votos["PNJ-15"] === "no" };
+}, MOD);
+comprobar(viejo.leidoAntes, "sin migrar, el estado en formato viejo se lee igual (motivos, movimiento, pruebas, votos)");
+// Recargar el GM: en `ready`, el GM activo migra (main.mjs → Estado.migrar).
+await page.reload({ waitUntil: "networkidle" });
+await listo();
+await page.waitForFunction(id => !!game.modules.get(id)?.api, MOD, { timeout: 30000 });
+await page.waitForFunction(MOD => typeof game.settings.get(MOD, "votos")?.s === "string", MOD, { timeout: 10000 }).catch(() => null);
+const mig = await page.evaluate(async ([MOD, viejo]) => {
+  const api = game.modules.get(MOD).api;
+  const crudo = { termometro: game.settings.get(MOD, "termometro"), pruebas: game.settings.get(MOD, "pruebas"), votos: game.settings.get(MOD, "votos") };
+  const texto = JSON.stringify(crudo);
+  const e = api.estado();
+  const r = e.termometro.registro;
+  const out = {
+    sellado: crudo.termometro.registro.every(x => !("motivo" in x) && !("movimiento" in x) && !("noche" in x))
+      && crudo.termometro.registro.filter(x => x.s).length === 3
+      && typeof crudo.pruebas.s === "string" && Object.keys(crudo.pruebas).length === 1
+      && typeof crudo.votos.s === "string" && Object.keys(crudo.votos).length === 1,
+    legible: ["e2e:", "PRUEBA-", "PNJ-", viejo.mov, viejo.galeria].filter(Boolean).filter(x => texto.includes(x)),
+    valores: crudo.termometro.valor === 5 && crudo.termometro.registro.map(x => `${x.fecha}${x.cambio}${x.valorAntes}${x.valorDespues}`).join()
+      === viejo.estado.termometro.registro.map(x => `${x.fecha}${x.cambio}${x.valorAntes}${x.valorDespues}`).join(),
+    motivos: r.map(x => x.motivo).join("|") === viejo.estado.termometro.registro.map(x => x.motivo).join("|"),
+    movimiento: r[1]?.movimiento === viejo.mov && r[1]?.noche === 2 && !r[0].movimiento,
+    campos: Object.keys(r[0] ?? {}).join(),
+    pruebas: JSON.stringify(Object.keys(e.pruebas).sort()) === JSON.stringify(Object.keys(viejo.estado.pruebas).sort()),
+    votos: e.votos["PNJ-15"] === "no" && e.votos["PNJ-16"] === "si",
+    otraVez: await api.Estado.migrar()
+  };
+  // El voto al azar viejo: el GM ve quién votó.
+  const m = game.messages.get(viejo.msg);
+  out.azarViejo = (await m.renderHTML()).querySelector(".flavor-text")?.textContent ?? "";
+  await m.delete();
+  return out;
+}, [MOD, viejo]);
+console.log("  ", JSON.stringify(mig));
+comprobar(mig.sellado && mig.legible.length === 0, `al cargar, el GM migra el estado viejo: motivos, pruebas y votos sellados (legibles: ${mig.legible.join(", ") || "ninguno"})`);
+comprobar(mig.valores, "la migración conserva valores, cambios y fechas del registro");
+comprobar(mig.motivos && mig.movimiento && mig.campos === "fecha,cambio,motivo,usuario,valorAntes,valorDespues", "el GM lee los motivos, el movimiento y la noche migrados");
+comprobar(mig.pruebas && mig.votos, "pruebas y votos migrados se leen igual");
+comprobar(Array.isArray(mig.otraVez) && mig.otraVez.length === 0, "migrar otra vez no reescribe nada (idempotente)");
+comprobar(/Voto de .+: (Sí|No)/.test(mig.azarViejo), `un voto al azar viejo (PNJ a la vista) se sigue leyendo («${mig.azarViejo}»)`);
+// El panel muestra el historial migrado con sus motivos, las pruebas y los votos.
+await page.evaluate(MOD => game.modules.get(MOD).api.abrirPanel({ tab: "termometro" }), MOD);
+await page.waitForSelector("#sbn-panel .sbn-tm-historial", { timeout: 5000 }).catch(() => null);
+const panelMig = await page.evaluate(() => {
+  const filas = [...document.querySelectorAll("#sbn-panel .sbn-tm-historial tbody tr")].map(tr => tr.textContent);
+  return { filas: filas.length, viejo: filas.some(f => f.includes("e2e: motivo viejo a la vista")), noche: filas.some(f => /Noche 2/.test(f)) };
+});
+await page.click('#sbn-panel nav [data-tab="tiradas"]');
+await page.waitForTimeout(400);
+const panelMig2 = await page.evaluate(() => ({
+  krell: document.querySelector('#sbn-panel [data-tirada="A3-E04"] [data-action=prueba][data-id="PRUEBA-KRELL-PRESENTE"]')?.getAttribute("aria-pressed"),
+  voto15: document.querySelector('#sbn-panel select[data-sbn-cambio=voto][data-pnj="PNJ-15"]')?.value ?? null
+}));
+console.log("  ", JSON.stringify({ ...panelMig, ...panelMig2 }));
+comprobar(panelMig.filas === 4 && panelMig.viejo && panelMig.noche, `el panel muestra el historial migrado con sus motivos (${panelMig.filas} filas)`);
+comprobar(panelMig2.krell === "true" && panelMig2.voto15 === "no", `y las pruebas y votos migrados (Krell ${panelMig2.krell}, PNJ-15 ${panelMig2.voto15})`);
+await page.evaluate(() => foundry.applications.instances.get("sbn-panel")?.close());
 
 /* -------------------------------------------- */
 /*  Cierre                                      */

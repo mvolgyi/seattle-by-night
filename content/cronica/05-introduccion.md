@@ -37,7 +37,7 @@ En esta Seattle, el depredador también es presa. No de cazadores con estacas, a
 
 ### El orden contra la conciencia
 
-Los personajes trabajan, de una forma u otra, para la ley de la Camarilla. La aventura les pregunta qué hacen cuando la ley se usa para algo que su código no acepta. No hay una respuesta correcta y los desenlaces (@ID[FIN-A] a @ID[FIN-D]) lo reflejan.
+Los personajes trabajan, de una forma u otra, para la ley de la Camarilla. La aventura les pregunta qué hacen cuando la ley se usa para algo que su código no acepta. No hay una respuesta correcta, y los cuatro desenlaces posibles lo reflejan.
 
 ### Seattle en tres sentidos
 
@@ -59,6 +59,6 @@ Para describir la ciudad sin repetirte, tené a mano estas imágenes:
 | El Eastside | Bellevue y Redmond, al otro lado del lago Washington. Dinero nuevo y centros de datos. |
 | El estrecho | Puget Sound, el brazo de mar que rodea la ciudad. Ferris, niebla y aguas frías. |
 | Everett / Tacoma | Las ciudades del norte y del sur. Una para los Anarquistas, otra para los exiliados y lo que queda del Sabbat. |
-| FIRSTLIGHT | La rama estadounidense de la Segunda Inquisición. En Seattle opera bajo la fachada de Northline Cyber Advisory (@ID[LUG-14]). |
+| FIRSTLIGHT | La rama estadounidense de la Segunda Inquisición. En el Elíseo se dice que tiene una oficina en Seattle; nadie sabe dónde. |
 | El Expediente | El archivo de Helen Ward. Diez años de muertes que no cuadran. |
 | SAFE | El único número del teléfono de tapa de Helen. |

@@ -434,8 +434,9 @@ function biografia(f, ctx, { perfil, coteries }) {
   if ((f.cantidad ?? 1) > 1) fila("Cantidad", f.cantidad);
   if (f.reservas) fila("Reservas", Object.entries(f.reservas).map(([k, v]) => `${k} ${v}`).join(" · "));
   if (f.alternativa) fila("Plantilla", "alternativa");
-  if (f.foco?.length) fila("Foco", f.foco.map(e => inline(`@ID[${e}]`, ctx, f.id)).join(", "));
-  fila("Brilla en", f.brillaEn && inline(f.brillaEn, ctx, f.id));
+  // Foco y Brilla en nombran escenas futuras: en un PJ, la ficha la lee su jugador.
+  if (!f.pj && f.foco?.length) fila("Foco", f.foco.map(e => inline(`@ID[${e}]`, ctx, f.id)).join(", "));
+  if (!f.pj) fila("Brilla en", f.brillaEn && inline(f.brillaEn, ctx, f.id));
   if (coteries.length) fila("Coterie", coteries.map(c => inline(`@ID[${c.id}|${c.nombre}]`, ctx, f.id)).join(", "));
 
   const partes = [];
@@ -682,7 +683,8 @@ function token(f, tipoActor) {
   const vampiro = (tipoActor === "spc" ? f.spcType : tipoActor) === "vampire";
   const disposicion = HOSTILES.has(f.id) ? -1 : (f.pj || AMISTOSOS.has(f.id)) ? 1 : 0;
   return {
-    name: f.nombre,
+    // `nombreToken`: lo que leen los jugadores al pasar el mouse, cuando el nombre del actor delata algo.
+    name: f.nombreToken ?? f.nombre,
     actorLink: (f.cantidad ?? 1) <= 1,
     disposition: disposicion,
     lockRotation: true,

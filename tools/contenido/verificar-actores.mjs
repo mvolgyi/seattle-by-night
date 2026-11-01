@@ -60,7 +60,7 @@ const CONOCIDOS = new Set([
   "ambicion", "deseo", "generacion", "potenciaSangre", "humanidad", "hambre", "atributos", "habilidades",
   "disciplinas", "salud", "voluntad", "convicciones", "piedrasDeToque", "ventajas", "defectos", "equipo",
   "cita", "semblante", "provisional", "nota", "origen", "edad", "depredador", "resonancia", "spcType",
-  "cantidad", "estandar", "excepcionales", "reservas", "notas", "foco", "brillaEn", "secreto", "alternativa",
+  "cantidad", "estandar", "excepcionales", "reservas", "notas", "foco", "brillaEn", "secreto", "alternativa", "nombreToken",
   "_origen", "_clase",
   // Cazadores (content/pnjs/cazadores.json): se chequean en chequearCazador.
   "credo", "impulso", "facultades", "facultadesNotas", "pregenerado", "propuesto", "reemplaza"
@@ -191,7 +191,8 @@ for (const f of fichas()) {
   texto("nacimiento", f.nacimiento, s.bio?.dateof?.birth);
   texto("abrazo", f.abrazado, s.bio?.dateof?.death);
   texto("edad", f.edad != null ? String(f.edad) : null, s.bio?.age?.trueage);
-  texto("brilla en", f.brillaEn, s.biography);
+  // En un PJ, Foco y Brilla en no van al actor (los lee su jugador): quedan en el journal del Narrador.
+  if (!f.pj) texto("brilla en", f.brillaEn, s.biography);
   texto("notas", f.notas, s.biography);
   if (f.pj) {
     // Un PJ lo puede poseer un jugador, que ve las notas privadas: van al perfil, página {narrador}.
@@ -207,7 +208,7 @@ for (const f of fichas()) {
     for (const p of f.provisional ?? []) texto("provisional", p, s.privatenotes);
   }
   if (f.sire) texto("sire", reg.get(f.sire)?.nombre ?? f.sire, s.headers?.sire);
-  for (const e of f.foco ?? []) texto(`foco ${e}`, reg.get(e)?.nombre ?? e, s.biography);
+  for (const e of f.pj ? [] : f.foco ?? []) texto(`foco ${e}`, reg.get(e)?.nombre ?? e, s.biography);
   if (f.cantidad > 1) texto("cantidad", String(f.cantidad), s.biography);
   if (combate[f.id] && !contiene(s.biography, combate[f.id])) mal(f.id, "falta la versión de combate (combate.json).");
   // El secreto de un PJ no va en el actor (su dueño lo vería): tiene que estar en su perfil.
@@ -225,7 +226,7 @@ for (const f of fichas()) {
 
   // Token.
   const t = a.prototypeToken;
-  if (t?.name !== f.nombre) mal(f.id, "el token no lleva el nombre.");
+  if (t?.name !== (f.nombreToken ?? f.nombre)) mal(f.id, "el token no lleva el nombre.");
   if (t?.actorLink !== ((f.cantidad ?? 1) <= 1)) mal(f.id, `actorLink ${t?.actorLink} con cantidad ${f.cantidad ?? 1}.`);
   const vampiro = (spc ? (f.spcType ?? f.tipo) : f.tipo) === "vampire";
   if (!!t?.sight?.enabled !== vampiro) mal(f.id, "visión del token: encendida sólo para vampiros.");

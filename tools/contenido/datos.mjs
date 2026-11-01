@@ -337,8 +337,9 @@ export async function construir(ctx) {
 
   // Lo que carga un jugador (CONTRATO.md): sin textos del Narrador (qué pasa en la
   // ciudad, escenas, PNJs, movimientos, tiradas, UUIDs). Sólo lo que la mesa ya ve:
-  // los nombres de las pistas, la fecha de cada noche y lo que perciben los
-  // jugadores en cada umbral.
+  // los ids de las pistas (sin nombre: el nombre de una pista que la mesa no
+  // encontró es spoiler), la fecha de cada noche y lo que perciben los jugadores
+  // en cada umbral.
   const publico = {
     $generado: `tools/contenido/datos.mjs (subconjunto para jugadores de ${SALIDA}). No editar a mano: npm run contenido.`,
     modulo: MODULO,
@@ -348,7 +349,7 @@ export async function construir(ctx) {
       umbrales: cuerpo.termometro.umbrales.map(u => tomar(u, ["valor", "icono", "jugadores"]))
     },
     reloj: { noches: cuerpo.reloj.noches.map(n => ({ n: n.n, ...tomar(n, ["fecha", "dia"]) })) },
-    pistas: listaPistas.map(x => ({ id: x.id, nombre: x.nombre }))
+    pistas: listaPistas.map(x => ({ id: x.id }))
   };
   fs.writeFileSync(path.join(RAIZ, SALIDA_PUBLICA), JSON.stringify(publico, null, 1) + "\n");
   console.log(`datos: ${SALIDA} (${listaPistas.length} pistas, ${listaPruebas.length} pruebas, ` +

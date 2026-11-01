@@ -15,13 +15,13 @@ origen: "12"
 
 ## Leer en voz alta {jugadores}
 
-*Es el recuadro de llegada de @ID[A3-E03].*
-
 :::leer
 La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería larga y estrecha, de chapa y vidrio sucio. Dentro, una cinta transportadora detenida corre de punta a punta. Huele a grano viejo y a mar. Al fondo hay una compuerta abierta sobre la bahía, por donde entran el viento y la lluvia, y frente a ella una silla con alguien atado. Sentado sobre la cinta, con los codos en las rodillas y el abrigo gris abierto, un hombre de cabeza rapada los mira llegar. No se levanta. «Ven», le dice a David. «Siéntate. Hace cincuenta años que quiero preguntarte algo.»
 :::
 
 ## Notas del Narrador {narrador}
+
+El «Leer en voz alta» es el recuadro de llegada de @ID[A3-E03].
 
 El lugar es el elevador de grano de la Terminal 86, al norte del centro: una hilera de silos de hormigón de cuarenta metros junto al agua, con una galería de cintas transportadoras en lo alto que une los silos con el muelle. @ID[PNJ-12|Krell] espera en la galería. El rehén, si hay, está atado en una silla junto a una compuerta de carga abierta sobre la bahía, a treinta metros del agua.
 

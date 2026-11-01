@@ -41,6 +41,91 @@ export function susurrarNarrador(aviso) {
   });
 }
 
+/* -------------------------------------------- */
+/*  Sello de lo secreto en datos sincronizados  */
+/* -------------------------------------------- */
+
+/*
+ * Foundry no tiene dónde guardar algo que vean todos los GM y ningún jugador: los
+ * settings de mundo (y los de usuario), los journals y los mensajes se le mandan
+ * enteros a cada cliente al entrar (dist/packages/world.mjs: `Setting.dump()`,
+ * `JournalEntry.dump()` sin filtro por usuario) y cada cambio se reenvía a todos
+ * con sus opciones (dist/database/backend/server-backend.mjs: `broadcast.emit
+ * ("modifyDocument", …)` con la `operation` del pedido).
+ *
+ * Lo que el estado guarda y no debe leer un jugador (motivos del Termómetro, qué
+ * movimiento de la crónica fue, pruebas marcadas, votos del Consejo) se «sella»:
+ * JSON → UTF-8 → XOR con un flujo pseudoaleatorio (mulberry32 sembrado con FNV-1a
+ * de una clave fija + un nonce por sello) → base64. Es OFUSCACIÓN, no cifrado: la
+ * clave está en este archivo, que baja cualquier cliente. Alcanza para que en
+ * game.settings, game.messages y el socket no haya nada legible; no frena a quien
+ * lea el código a propósito (que igual podría pedir data/cronica.json por URL).
+ * Sólo un GM abre los sellos (Estado); el cliente de un jugador nunca los abre.
+ */
+
+const SELLO_PREFIJO = "~1.";
+const SELLO_CLAVE = "seattle-by-night|sello|1";
+
+/** FNV-1a de 32 bits. */
+function fnv1a(texto) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < texto.length; i++) {
+    h ^= texto.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return h >>> 0;
+}
+
+/** XOR de los bytes con el flujo mulberry32 de la clave y el nonce (la misma operación sella y abre). */
+function mezclar(bytes, nonce) {
+  let a = fnv1a(SELLO_CLAVE + nonce);
+  return bytes.map(b => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let x = Math.imul(a ^ (a >>> 15), a | 1);
+    x ^= x + Math.imul(x ^ (x >>> 7), x | 61);
+    return b ^ (((x ^ (x >>> 14)) >>> 0) & 0xff);
+  });
+}
+
+/** ¿Es un valor sellado por `sellar`? */
+export const esSello = s => typeof s === "string" && s.startsWith(SELLO_PREFIJO);
+
+/**
+ * Sella un valor serializable a JSON: `"~1.<nonce>.<base64>"`. Dos sellos del mismo
+ * valor no se parecen (nonce aleatorio).
+ */
+export function sellar(valor) {
+  const nonce = foundry.utils.randomID(8);
+  const bytes = mezclar(new TextEncoder().encode(JSON.stringify(valor ?? null)), nonce);
+  let bin = "";
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return `${SELLO_PREFIJO}${nonce}.${btoa(bin)}`;
+}
+
+/** Los sellos ya abiertos (son únicos por el nonce): el panel lee el registro en cada render. */
+const abiertos = new Map();
+
+/**
+ * Abre un sello de `sellar`. `undefined` si no es un sello o está roto. Devuelve
+ * siempre una copia nueva (el caché no se toca desde afuera).
+ */
+export function abrirSello(sello) {
+  if (!esSello(sello)) return undefined;
+  if (!abiertos.has(sello)) {
+    let valor;
+    try {
+      const [nonce, datos] = sello.slice(SELLO_PREFIJO.length).split(".");
+      const bytes = mezclar(Uint8Array.from(atob(datos ?? ""), c => c.charCodeAt(0)), nonce ?? "");
+      valor = JSON.parse(new TextDecoder().decode(bytes));
+    } catch {
+      valor = undefined;
+    }
+    if (abiertos.size > 2000) abiertos.clear();
+    abiertos.set(sello, valor);
+  }
+  return foundry.utils.deepClone(abiertos.get(sello));
+}
+
 /** Sólo el Narrador modifica el estado de la crónica; a un jugador se le avisa. */
 export function exigirNarrador() {
   if (game.user.isGM) return true;

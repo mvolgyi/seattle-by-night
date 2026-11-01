@@ -31,15 +31,18 @@ export class SBN {
   };
 
   static SETTINGS = {
-    /** { valor, congelado, registro: [{ fecha, cambio, motivo, usuario, valorAntes, valorDespues }] } */
+    /**
+     * { valor, congelado, registro: [{ fecha, cambio, usuario, valorAntes, valorDespues, s? }] };
+     * `s`: motivo, movimiento y noche, sellados (util.sellar). Estado los abre en el GM.
+     */
     TERMOMETRO: "termometro",
     /** { "P-07": true, … } */
     PISTAS: "pistas",
     /** Noche actual del Reloj de Halloway (1–8). */
     NOCHE: "noche",
-    /** Pruebas sin ID marcadas y casillas de mesa de las tiradas clave: { "PRUEBA-KRELL-PRESENTE": true, … } */
+    /** Pruebas sin ID marcadas y casillas de mesa de las tiradas clave: { s: sello de { "PRUEBA-…": true } } */
     PRUEBAS: "pruebas",
-    /** Votación del Consejo (A4-E01): { "PNJ-15": "no", … }; lo que falta, el voto por defecto. */
+    /** Votación del Consejo (A4-E01): { s: sello de { "PNJ-15": "no", … } }; lo que falta, el voto por defecto. */
     VOTOS: "votos",
     /** Si ya se le ofreció al Narrador importar la crónica en este mundo. */
     IMPORTACION_OFRECIDA: "importacion-ofrecida",
