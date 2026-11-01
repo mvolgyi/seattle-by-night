@@ -27,7 +27,7 @@ David ya es el Brujah del grupo, y en la ciudad hay tres Brujah PNJ más (Rosa, 
 
 ## La coterie: «Los del Archivo» (COT-00) {jugadores}
 
-Todos los personajes aparecen en el Expediente Ward. Cuando roban el disco, todos quedan expuestos a la vez, y en @ID[A1-E03] Montgomery los reúne en su granja: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos». Es una coterie de tipo *Comando*, con dominio en los muelles de Harbor Island, alrededor del hangar de David, y cada jugador recibe su carpeta (@ID[AYU-09]).
+Todos los personajes aparecen en el Expediente Ward. Cuando roban el disco, todos quedan expuestos a la vez, y el Sheriff Montgomery no tarda en decírselo: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos». Es una coterie de tipo *Comando*, con dominio en los muelles de Harbor Island, alrededor del hangar de David, y cada jugador recibe su carpeta (@ID[AYU-09]).
 
 La página completa de la coterie (idea, alternativas, miembros y agendas, costumbres, tipo, dominio y Trasfondos compartidos, con lo que dice el doc 02 y lo que fija el doc 08) está en @ID[COT-00|Los del Archivo].
 

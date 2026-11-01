@@ -1,5 +1,6 @@
 import { SBN } from "./constantes.mjs";
 import { Estado } from "./estado.mjs";
+import { Datos } from "./datos.mjs";
 import { actorActual } from "./actores.mjs";
 import { t, exigirNarrador } from "./util.mjs";
 
@@ -53,18 +54,48 @@ export class Botones {
     }
     const actor = await actorActual();
     if (!actor) return;
-    const paths = String(sbnTirada ?? "").split(/\s+/).filter(Boolean);
+    const paths = String(sbnTirada ?? "").split(/[\s+]+/).filter(Boolean);
     if (!paths.length) return;
+    await this.tirar({ actor, paths, dificultad, label });
+  }
+
+  /**
+   * Tira con WOD5E.api.RollFromDataset (systems/wod5e/system/api/wod5e-api.js →
+   * _onConfirmRoll en system/actor/scripts/roll.js): `valuePaths` suma los
+   * valores del actor, `flatMod` los dados extra, `selectors` activa los
+   * modificadores situacionales del actor. Con `absoluto` la reserva es ese
+   * número fijo (useAbsoluteValue + absoluteValue), sin mirar la ficha.
+   *
+   * @param {object} o
+   * @param {Actor} o.actor
+   * @param {string[]} [o.paths]   "attributes.manipulation", "skills.persuasion"…
+   * @param {number} [o.dificultad]
+   * @param {string} [o.label]
+   * @param {number} [o.dados]     dados extra (pistas, pruebas): puede ser negativo
+   * @param {number} [o.absoluto]  reserva fija (Halloway: 10 dados)
+   * @param {string} [o.flavor]    texto bajo el título en el chat (el desglose)
+   */
+  static async tirar({ actor, paths = [], dificultad = 0, label = "", dados = 0, absoluto = null, flavor = "" }) {
+    if (!globalThis.WOD5E?.api?.RollFromDataset) {
+      ui.notifications.error(t("tirada.sinSistema"));
+      return false;
+    }
+    if (!actor) {
+      ui.notifications.warn(t("tirada.sinActor"));
+      return false;
+    }
     const selectors = paths.flatMap(p => [p, ...p.split(".")]);
-    await WOD5E.api.RollFromDataset({
-      dataset: {
-        label: label || t("tirada.titulo"),
-        valuePaths: paths.map(p => `${p}.value`).join(" "),
-        selectors: [...new Set(selectors)].join(" "),
-        difficulty: Number(dificultad) || 0
-      },
-      actor
-    });
+    const dataset = {
+      label: label || t("tirada.titulo"),
+      selectors: [...new Set(selectors)].join(" "),
+      difficulty: Number(dificultad) || 0
+    };
+    if (Number.isFinite(absoluto)) Object.assign(dataset, { useAbsoluteValue: true, absoluteValue: absoluto, valuePaths: "" });
+    else dataset.valuePaths = paths.map(p => `${p}.value`).join(" ");
+    if (dados) dataset.flatMod = Number(dados);
+    if (flavor) dataset.flavor = flavor;
+    await WOD5E.api.RollFromDataset({ dataset, actor });
+    return true;
   }
 
   static async #termometro(el) {
@@ -107,7 +138,7 @@ export class Botones {
 
   static #tooltipReloj(el) {
     const n = Number(el.dataset.sbnReloj);
-    if (!(n >= 1 && n <= SBN.RELOJ.NOCHES)) return;
+    if (!(n >= 1 && n <= Datos.totalNoches)) return;
     // El build pone un `title` con la fecha: se pasa al tooltip de Foundry para no tener dos.
     if (el.title) {
       el.dataset.sbnTitulo = el.title;
@@ -117,6 +148,36 @@ export class Botones {
     if (n === Estado.nocheActual) texto += ` · ${t("reloj.esLaActual")}`;
     else if (game.user.isGM) texto += ` · ${t("reloj.clicParaFijar")}`;
     el.dataset.tooltipText = texto;
+  }
+
+  /**
+   * Enlaces que un jugador no puede abrir (el actor de otro PJ, un journal del
+   * Narrador, COT-00 antes de compartirlo): texto plano. Foundry los dibuja
+   * igual que cualquier enlace si el documento está en el cliente
+   * (TextEditor._createContentLink → toAnchor, client/applications/ux/text-editor.mjs)
+   * y al clic la hoja falla por permisos; si no está, como enlace roto
+   * (`.broken`, ícono fa-link-slash). Para el jugador, las dos cosas son ruido:
+   * queda el nombre. Al Narrador no se le toca nada (un roto le avisa de un
+   * error del build). Se reevalúa en cada render: si el Narrador le da
+   * permiso, el enlace vuelve.
+   */
+  static enlacesSinPermiso(raiz = document) {
+    if (game.user.isGM) return;
+    const root = raiz instanceof HTMLElement || raiz instanceof Document ? raiz : raiz?.[0];
+    if (!root) return;
+    for (const a of root.querySelectorAll("a.content-link")) {
+      const uuid = a.dataset.uuid;
+      let bloqueado = a.classList.contains("broken");
+      if (!bloqueado && uuid && !uuid.startsWith("Compendium.")) {
+        const doc = fromUuidSync(uuid, { strict: false });
+        bloqueado = !doc || doc.visible === false;
+      }
+      if (!bloqueado) continue;
+      const span = document.createElement("span");
+      span.className = "sbn-sin-permiso";
+      span.textContent = a.textContent.trim();
+      a.replaceWith(span);
+    }
   }
 
   /**

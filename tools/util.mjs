@@ -73,11 +73,23 @@ export function escribirDoc(pack, doc) {
 /**
  * Carpetas dentro de un compendio. Están tipadas: una carpeta de Item no
  * puede contener JournalEntry. Se crean a demanda y se escriben al final.
+ *
+ * `id(nombre, padre)` acepta rutas de varios niveles en cualquiera de los
+ * dos: `id("Seattle by Night/Vástagos/Brujah")` es lo mismo que
+ * `id("Brujah", "Seattle by Night/Vástagos")`. La clave de cada carpeta (y la
+ * semilla de su _id) es su ruta: raíz «/X», hijos «X/Y», nietos «X/Y/Z».
+ * Cambiarla cambia los _id de un mundo ya importado.
+ *
+ * Opciones: `orden` (nombres en el orden en que van; las que no están, después
+ * y por nombre) y `colores` (color de cada carpeta RAÍZ por nombre). Sin
+ * `orden`, el sort es el orden de creación.
  */
 export class Carpetas {
-  constructor(pack, tipo) {
+  constructor(pack, tipo, { orden = null, colores = {} } = {}) {
     this.pack = pack;
     this.tipo = tipo;
+    this.orden = orden;
+    this.colores = colores;
     this.mapa = new Map();
   }
 
@@ -85,24 +97,39 @@ export class Carpetas {
   // tiñen con él el fondo de las entradas y los títulos dejan de leerse.
   id(nombre, padre = null, color = null) {
     if (!nombre) return null;
-    const clave = `${padre ?? ""}/${nombre}`;
-    if (!this.mapa.has(clave)) {
-      this.mapa.set(clave, {
-        _id: idEstable(`carpeta:${this.pack}:${clave}`),
-        name: nombre,
-        type: this.tipo,
-        folder: padre ? this.id(padre) : null,
-        sorting: "m",
-        sort: this.mapa.size * 10,
-        color,
-        flags: { [MODULO]: { origen: "carpeta" } },
-        _stats: STATS
-      });
-    }
-    return this.mapa.get(clave)._id;
+    const partes = [padre, nombre].filter(Boolean)
+      .flatMap(s => String(s).split("/")).map(s => s.trim()).filter(Boolean);
+    let id = null;
+    let ruta = "";
+    partes.forEach((parte, i) => {
+      const clave = `${ruta}/${parte}`;
+      if (!this.mapa.has(clave)) {
+        const ultima = i === partes.length - 1;
+        const n = this.orden ? this.orden.indexOf(parte) : -1;
+        this.mapa.set(clave, {
+          _id: idEstable(`carpeta:${this.pack}:${clave}`),
+          name: parte,
+          type: this.tipo,
+          folder: id,
+          sorting: "m",
+          sort: this.orden ? (n >= 0 ? (n + 1) * 10 : 0) : this.mapa.size * 10,
+          color: (ultima ? color : null) ?? (id ? null : (this.colores[parte] ?? null)),
+          flags: { [MODULO]: { origen: "carpeta" } },
+          _stats: STATS
+        });
+      }
+      id = this.mapa.get(clave)._id;
+      ruta = ruta ? `${ruta}/${parte}` : parte;
+    });
+    return id;
   }
 
   escribir() {
+    if (this.orden) {
+      // Las que no están en `orden` (los clanes) van después y por nombre.
+      const sueltas = [...this.mapa.values()].filter(c => !c.sort).sort((a, b) => a.name.localeCompare(b.name, "es"));
+      sueltas.forEach((c, i) => { c.sort = 1000 + i * 10; });
+    }
     for (const c of this.mapa.values()) {
       escribirDoc(this.pack, { ...c, _key: `!folders!${c._id}` });
     }

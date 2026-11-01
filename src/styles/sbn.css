@@ -796,3 +796,14 @@ table.sbn-tabla-horas td:first-child { width: 1%; white-space: nowrap; }
   .sbn-guion-linea { grid-template-columns: 1fr; }
   .sbn-guion-personaje { text-align: left; }
 }
+
+/* Retrato del personaje al principio de su perfil. */
+img.sbn-retrato {
+  float: right;
+  width: 38%;
+  max-width: 260px;
+  margin: 0 0 0.8em 1em;
+  border: none;
+  border-radius: 3px;
+  box-shadow: var(--sbn-sombra);
+}

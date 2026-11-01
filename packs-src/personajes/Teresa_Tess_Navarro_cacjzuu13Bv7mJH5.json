@@ -1,0 +1,518 @@
+{
+  "_id": "cacjzuu13Bv7mJH5",
+  "_key": "!actors!cacjzuu13Bv7mJH5",
+  "name": "Teresa «Tess» Navarro",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/CAZ-01.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 40,
+  "prototypeToken": {
+    "name": "Teresa «Tess» Navarro",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "Operadora del equipo táctico de FIRSTLIGHT, ex agente de la ATF: la que ya lo vio",
+      "chronicle": "Seattle by Night",
+      "ambition": "Encontrar lo que se llevó a Ortiz.",
+      "desire": "Que alguien más del equipo vea lo que ella vio y no se quiebre.",
+      "touchstones": "<h3>Piedras de toque</h3><ul><li>La viuda de Ortiz, en Tucson. Navarro le manda dinero cada mes sin decirle por qué.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Cualquier conflicto directo (físico, social o mental) con lo sobrenatural durante la Caza.",
+      "cellname": "Célula Puget"
+    },
+    "bio": {
+      "age": {
+        "trueage": "38",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Operadora del equipo táctico de FIRSTLIGHT, ex agente de la ATF: la que ya lo vio</td></tr><tr><th>Edad</th><td>38</td></tr><tr><th>Ambición</th><td>Encontrar lo que se llevó a Ortiz.</td></tr><tr><th>Deseo</th><td>Que alguien más del equipo vea lo que ella vio y no se quiebre.</td></tr><tr><th>Reservas</th><td>Física 6 · Social 2 · Mental 4 · Armas de fuego 7 · Atletismo 5 · Consciencia 5 · Pelea 5</td></tr></tbody></table><h3>Semblante</h3><p>Treinta y ocho años, morena, el pelo en una trenza corta. Lleva una medalla de San Miguel que no es suya. Va siempre en punta, con la linterna.</p><p>Una de los seis operadores de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}. Es la única del equipo que ya vio a una criatura de cerca, y los demás lo saben aunque no pregunten.</p><h3>Cazador</h3><table class=\"sbn-ficha\"><tbody><tr><th>Célula</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Célula Puget}</td></tr><tr><th>Credo</th><td>Fieles. <em>Desesperación:</em> Cualquier conflicto directo (físico, social o mental) con lo sobrenatural durante la Caza.</td></tr><tr><th>Impulso</th><td>Venganza. <em>Redención:</em> Se redime cuando la Célula destruye a una criatura que mató a un inocente, y ella está ahí para verlo.</td></tr><tr><th>Facultades</th><td>Repeler lo antinatural (Un paso atrás)</td></tr></tbody></table><p>Tucson, 2021. Un registro en un almacén. Su compañero, Ortiz, entró primero. Lo que salió de la oscuridad no era una persona, y se lo llevó. Nadie le creyó, salvo un hombre del Departamento de Seguridad Nacional que la esperaba a la salida del hospital.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.6EUQdXXmzOvNtRy0]{Pregenerado: Teresa «Tess» Navarro · Operadora}</p>",
+    "appearance": "<p>Treinta y ocho años, morena, el pelo en una trenza corta. Lleva una medalla de San Miguel que no es suya. Va siempre en punta, con la linterna.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Propuesto (no está en los docs)</h3><ul><li>Todo el personaje es propuesto (SPEC §6.2: tres operadores con nombre del equipo táctico). Conversión de las reservas de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT} (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Investigación, Ocultismo, Intimidación y Conducir son propias.</li><li>Credo Fiel, Impulso Venganza, Facultad Repeler lo antinatural (la medalla) con el Beneficio «Un paso atrás».</li><li>El doc dice que la mayoría del equipo no lo vio nunca: Navarro es la excepción.</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Fusil",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "repeltheunnatural": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>La medalla de San Miguel de Ortiz, en la mano izquierda, debajo de la linterna. Mientras la sostenga en alto y no ataque, la criatura que quiera acercarse a menos de dos metros tiene que ganarle una tirada enfrentada de Fuerza de Voluntad (Resolución + Compostura contra la suya). No sabe por qué funciona. Funciona.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contactos 1 (ATF, oficina de Phoenix)"
+        }
+      },
+      "name": "Contactos",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contactos 1 (ATF, oficina de Phoenix)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "Y9Wi9lXARScibvU3",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.Y9Wi9lXARScibvU3"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Fusil corto con munición incendiaria",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Agravado contra Vástagos (munición incendiaria). Lleva una linterna UV montada en el arma.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "6q8yK5zzp7say52T",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.6q8yK5zzp7say52T"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "Linterna UV de alta intensidad",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>1 agravado</td></tr></tbody></table><p>Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.</p><p>Estado: @UUID[Item.CbbejNJnKXKf8gbq]{Iluminado por la linterna UV}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "aiHACLYq0u73zpT5",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.aiHACLYq0u73zpT5"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Armadura ligera",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Blindaje</th><td>3</td></tr></tbody></table><p>Blindaje 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "1YYyZ37goPZgvC7m",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.1YYyZ37goPZgvC7m"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Cámaras corporales",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"acción sobrenatural visible delante de una cámara corporal\"><i class=\"fa-solid fa-temperature-half\"></i> Termómetro +1</button> (máximo +2 por escena)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "pDTXMAgQ48ReIEkr",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.pDTXMAgQ48ReIEkr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Gafas térmicas",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "sHpkMNH2wdCb8EtX",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.sHpkMNH2wdCb8EtX"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Munición incendiaria",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "PuOa3pVOOZcaSZas",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.PuOa3pVOOZcaSZas"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "faithful"
+        }
+      },
+      "name": "Fieles",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Cualquier conflicto directo (físico, social o mental) con lo sobrenatural durante la Caza."
+      },
+      "_id": "X0nKUU5BSWVKdq8c",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.X0nKUU5BSWVKdq8c"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "vengeance"
+        }
+      },
+      "name": "Venganza",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Tucson, 2021. Un registro en un almacén. Su compañero, Ortiz, entró primero. Lo que salió de la oscuridad no era una persona, y se lo llevó. Nadie le creyó, salvo un hombre del Departamento de Seguridad Nacional que la esperaba a la salida del hospital.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "redemption": "<p>Se redime cuando la Célula destruye a una criatura que mató a un inocente, y ella está ahí para verlo.</p>"
+      },
+      "_id": "y9P3gGFknAwdQwTi",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.y9P3gGFknAwdQwTi"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Un paso atrás: cuando una criatura retrocede ante la medalla, Navarro y quien vaya pegado a su espalda ganan un turno sin ser atacados por ella."
+        }
+      },
+      "name": "Un paso atrás",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>cuando una criatura retrocede ante la medalla, Navarro y quien vaya pegado a su espalda ganan un turno sin ser atacados por ella.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "CAZ-01"
+        },
+        "edge": "repeltheunnatural",
+        "selected": false
+      },
+      "_id": "cSW3wDrCBLOMl0dg",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.cSW3wDrCBLOMl0dg"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CAZ-01",
+      "journal": null,
+      "doc": "propuesto",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

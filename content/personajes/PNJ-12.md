@@ -70,7 +70,11 @@ Una barcaza oxidada en dique seco en Georgetown, al sur del puerto, que Halloway
 
 ## Máscara y semblante
 
-No tiene Máscara (Máscara 0); usa documentos falsos de un pasaporte portugués. Aparenta unos treinta y cinco años, pero se mueve como alguien mayor. Lleva la cabeza rapada y tiene una cicatriz vieja de cuchillo que le cruza la ceja izquierda, nariz rota mal soldada y manos llenas de nudillos rotos. Viste ropa de trabajo oscura bajo el abrigo de Vance. Es zurdo. Habla poco, con acento francés, y cuando habla en serio baja tanto la voz que hay que acercarse. Huele a lana mojada.
+No tiene Máscara (Máscara 0); usa documentos falsos de un pasaporte portugués. Aparenta unos veintiocho años, pero se mueve como alguien mayor. Lleva la cabeza rapada y tiene una cicatriz vieja de cuchillo que le cruza la ceja izquierda, nariz rota mal soldada y manos llenas de nudillos rotos. Viste ropa de trabajo oscura bajo el abrigo de Vance. Es zurdo. Habla poco, con acento francés, y cuando habla en serio baja tanto la voz que hay que acercarse. Huele a lana mojada.
+
+:::recuadro Nota de edición
+El doc 07 decía «aparenta unos treinta y cinco años»; se decidió que aparenta la edad que tenía al Abrazo (1972, nacido en 1944): unos veintiocho.
+:::
 
 ## Datos de referencia
 
@@ -93,14 +97,16 @@ No tiene Máscara (Máscara 0); usa documentos falsos de un pasaporte portugués
 
 **Disciplinas:**
 
-- Potencia 4: Cuerpo letal (*Lethal Body*), Salto prodigioso (*Soaring Leap*), Proeza (*Prowess*), Chispa de ira (*Spark of Rage*), Elixir de poder (*Draught of Might*)
-- Celeridad 3: Gracia felina (*Cat's Grace*), Reflejos rápidos (*Rapid Reflexes*), Rapidez (*Fleetness*), Parpadeo (*Blink*)
+- Potencia 4: Cuerpo letal (*Lethal Body*), Salto prodigioso (*Soaring Leap*), Proeza (*Prowess*), Elixir de poder (*Draught of Might*)
+- Celeridad 3: Gracia felina (*Cat's Grace*), Rapidez (*Fleetness*), Parpadeo (*Blink*)
 - Presencia 2: Pavor (*Daunt*), Beso persistente (*Lingering Kiss*)
 
 **La guardia invertida (regla especial):** contra un rival que conozca la doctrina completa de la Furia Controlada (David, o cualquier PJ con @ID[LOR-01] a nivel 4 o más), Krell pierde 2 dados en todas sus reservas de defensa cuerpo a cuerpo. Él lo sabe, y por eso evita pelear con David de frente si puede.
 
-:::recuadro Nota de edición · Nivel de LOR-01
+:::recuadro Nota de edición · Nivel de LOR-01 y Disciplinas
 La ficha del capítulo 4 (doc 07) pedía LOR-01 a nivel 3 o más. El capítulo 7 (doc 10) y la versión de combate del capítulo 8 (doc 14) piden nivel 4 o más, que es el nivel de «La guardia completa» en la Loresheet (doc 08). Manda el doc más nuevo: nivel 4.
+
+El doc 07 le daba cinco poderes con Potencia 4 y cuatro con Celeridad 3; en V5 hay uno por punto. Se quitó Chispa de ira (*Spark of Rage*), que es una amalgama que pide Presencia 3 y Krell tiene Presencia 2, y Reflejos rápidos (*Rapid Reflexes*). En Celeridad, Parpadeo es el único que nombran las escenas y la versión de combate; de los otros tres, Gracia felina y Rapidez encajan con sus huidas por los tejados y Reflejos rápidos es el que menos usa.
 :::
 
 **Reservas rápidas:** Ataque desarmado 10 (Fuerza + Pelea, más Proeza) · Iniciativa y defensa 7 · Sigilo 8

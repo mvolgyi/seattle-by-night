@@ -19,7 +19,7 @@ Cada coterie sigue el mismo formato: nombre y apodo, miembros y agendas, costumb
 
 ### La idea
 
-*Del doc 02.* Todos los personajes aparecen en el Expediente Ward. Helen nunca supo qué eran, pero cada uno tiene su carpeta: una foto borrosa, una fecha que no cuadra, un patrón. Cuando roban el disco, todos quedan expuestos a la vez. En @ID[A1-E03], Montgomery los reúne en su granja y lo dice sin rodeos: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos».
+*Del doc 02.* Todos los personajes aparecen en el Expediente Ward. Helen nunca supo qué eran, pero cada uno tiene su carpeta: una foto borrosa, una fecha que no cuadra, un patrón. Cuando roban el disco, todos quedan expuestos a la vez, y el Sheriff Montgomery no tarda en decírselo sin rodeos: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos».
 
 *Alternativas, si preferís otro vínculo:* B) es una coterie que ya existía y Montgomery usa como fuerza de choque; C) son desconocidos que coinciden en el apartamento de Helen (@ID[LUG-05]) la noche del robo.
 
@@ -69,7 +69,7 @@ Cada coterie sigue el mismo formato: nombre y apodo, miembros y agendas, costumb
 
 - **La carpeta propia.** Cada uno leyó lo que Helen sabía de él (@ID[AYU-09]). Nadie lee la carpeta de otro sin permiso.
 - **El hangar es neutral.** Dentro de @ID[LUG-01] no se discute de clanes ni de sires.
-- **Nadie va solo.** Desde lo del muelle 46, ningún miembro sale a cazar sin avisar al menos a otro.
+- **Nadie va solo.** Desde que robaron el disco, ningún miembro sale a cazar sin avisar al menos a otro.
 - **El teléfono de tapa.** Para comunicarse usan teléfonos sin conexión de datos que les consigue Bear.
 
 ### Tipo

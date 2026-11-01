@@ -61,13 +61,15 @@ for (const p of PISTAS) {
 
 /** Reloj de Halloway: 8 noches (jueves 12 a jueves 19 de noviembre de 2026). */
 const comandoNoche = `${API}
-const NOCHES = 8;
+const NOCHES = api.Datos?.totalNoches ?? 8;
 const actual = Number((await api.estado())?.noche) || 0;
 if (actual >= NOCHES) return ui.notifications.warn("El Reloj de Halloway ya está en la última noche (" + NOCHES + ").");
 await api.noche(actual + 1);`;
 
 export async function construir(ctx) {
   const macros = [
+    { id: "panel", nombre: "Panel del Narrador", icono: "icons/svg/book.svg",
+      comando: `${API}\napi.abrirPanel();` },
     { id: "termometro-mas", nombre: "Termómetro +1", icono: "icons/svg/upgrade.svg",
       comando: `${API}\nawait api.termometro(+1, "Macro «Termómetro +1»");` },
     { id: "termometro-menos", nombre: "Termómetro −1", icono: "icons/svg/downgrade.svg",

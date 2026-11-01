@@ -9,6 +9,12 @@
  *   - `mueble.luz`: "<preset>" en un mueble (la lámpara de pie, el portátil
  *     abierto). La luz va al centro del mueble.
  *
+ * Campos de una luz (o de un mueble con `luz`):
+ *   - `presetIdeal`: el preset que la luz debería tener; si existe se usa en
+ *     lugar de `preset` (que queda como el provisorio mientras no exista).
+ *   - `apagada: true`: la luz se crea apagada (`hidden`): está en la escena
+ *     y el Narrador la prende. En un mueble: `luzApagada: true` y `luzIdeal`.
+ *
  * Los radios bright/dim están en METROS: la escena mide en casillas de 1 m
  * (grid.distance 1, units "m"), así que no hay conversión. (DVV los tenía en
  * pies y los convertía al armar la escena; acá no.)
@@ -77,11 +83,79 @@ export const PRESETS = {
   vela: {
     bright: 0.9, dim: 3.7, color: "#ffc547", alpha: 0.5,
     animation: { type: "torch", speed: 4, intensity: 1 }
+  },
+  // Luz a través de vidrio soplado rojo (las medusas de la Galería): charco
+  // corto, saturado, con un vaivén leve.
+  "vidrio-rojo": {
+    bright: 1, dim: 3.6, color: "#c4303a", alpha: 0.5, luminosity: 0.4, attenuation: 0.75,
+    animation: { type: "pulse", speed: 1, intensity: 2 }
+  },
+  // Ídem, vidrio ámbar.
+  "vidrio-ambar": {
+    bright: 1, dim: 3.6, color: "#d98f2e", alpha: 0.45, luminosity: 0.4, attenuation: 0.75,
+    animation: { type: "pulse", speed: 1, intensity: 2 }
+  },
+  // Luz negra (UV): violeta, corta, sin animación. La sala blanca de Northline.
+  uv: {
+    bright: 1.5, dim: 4.5, color: "#7a3cff", alpha: 0.55, luminosity: 0.3, attenuation: 0.6,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  // Claraboya de vidrio violeta de las Galerías Selladas: la noche de la calle
+  // filtrada, apenas un charco.
+  "claraboya-violeta": {
+    bright: 0.5, dim: 3, color: "#8a5cc8", alpha: 0.4, luminosity: 0.3,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  // Lámpara de carburo: blanca y dura (borde marcado), sin parpadeo.
+  carburo: {
+    bright: 2, dim: 5, color: "#f1f3ec", alpha: 0.5, luminosity: 0.5, attenuation: 0.25,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  // Reflector de obra o de taller: neutro-cálido, potente, fijo.
+  obra: {
+    bright: 3, dim: 7, color: "#ffe1b5", alpha: 0.4, luminosity: 0.5,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  // Videopared encendida: fría, ancha, con un pulso lento de imagen que cambia.
+  videopared: {
+    bright: 2, dim: 6, color: "#8fb3f0", alpha: 0.35, luminosity: 0.4,
+    animation: { type: "pulse", speed: 2, intensity: 1 }
+  },
+  // LED de rack de servidores: verde azulado, mínimo, titilando.
+  "led-rack": {
+    bright: 0, dim: 0.8, color: "#3fd6a8", alpha: 0.5, luminosity: 0.2,
+    animation: { type: "pulse", speed: 6, intensity: 3 }
+  },
+  // Algo que parpadea (la pantalla de la máquina de café «fuera de servicio»).
+  parpadeo: {
+    bright: 0, dim: 1.2, color: "#c9dcf0", alpha: 0.45, luminosity: 0.25,
+    animation: { type: "pulse", speed: 8, intensity: 8 }
+  },
+  // Luces de navegación: roja a babor, verde a estribor, blanca de tope.
+  "luz-navegacion-roja": {
+    bright: 0, dim: 1.5, color: "#ff2a2a", alpha: 0.6, luminosity: 0.2,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  "luz-navegacion-verde": {
+    bright: 0, dim: 1.5, color: "#2aff6a", alpha: 0.6, luminosity: 0.2,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  "luz-navegacion-blanca": {
+    bright: 0, dim: 2, color: "#f2f5ff", alpha: 0.5, luminosity: 0.3,
+    animation: { type: null, speed: 5, intensity: 5 }
+  },
+  // Alarma: baliza roja giratoria.
+  alarma: {
+    bright: 2, dim: 6, color: "#ff2020", alpha: 0.5, luminosity: 0.4,
+    animation: { type: "siren", speed: 5, intensity: 5 }
   }
 };
 
+/** El preset que se usa: el ideal si ya existe, si no el provisorio. */
+export const presetDe = l => (l.presetIdeal && PRESETS[l.presetIdeal] ? l.presetIdeal : l.preset);
+
 /** Construye un documento AmbientLight de Foundry a partir de un preset. */
-export function luz(idEstable, semilla, xM, yM, preset, nombre) {
+export function luz(idEstable, semilla, xM, yM, preset, nombre, { apagada = false } = {}) {
   const p = PRESETS[preset];
   if (!p) throw new Error(`preset de luz desconocido: ${preset}`);
   return {
@@ -100,7 +174,8 @@ export function luz(idEstable, semilla, xM, yM, preset, nombre) {
       animation: { type: p.animation.type, speed: p.animation.speed, intensity: p.animation.intensity, reverse: false },
       darkness: { min: 0, max: 1 }
     },
-    hidden: false,
+    // Apagada: la luz existe y el Narrador la prende desde la escena.
+    hidden: Boolean(apagada),
     locked: false,
     flags: {}
   };
@@ -110,13 +185,13 @@ export function luz(idEstable, semilla, xM, yM, preset, nombre) {
 export function lucesDePlano(plano, idEstable) {
   const luces = [];
   for (const [i, l] of (plano.luces ?? []).entries()) {
-    luces.push(luz(idEstable, `${plano.id}:l${i}`, l.x, l.y, l.preset, l.nombre));
+    luces.push(luz(idEstable, `${plano.id}:l${i}`, l.x, l.y, presetDe(l), l.nombre, { apagada: l.apagada }));
   }
   for (const [i, m] of (plano.muebles ?? []).entries()) {
-    const preset = m.luz ?? (m.tipo === "vela" ? "vela" : null);
+    const preset = presetDe({ preset: m.luz ?? (m.tipo === "vela" ? "vela" : null), presetIdeal: m.luzIdeal });
     if (!preset) continue;
     const cx = m.x + (m.w ?? 0.1) / 2, cy = m.y + (m.h ?? 0.1) / 2;
-    luces.push(luz(idEstable, `${plano.id}:m${i}`, cx, cy, preset));
+    luces.push(luz(idEstable, `${plano.id}:m${i}`, cx, cy, preset, undefined, { apagada: m.luzApagada }));
   }
   return luces;
 }

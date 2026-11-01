@@ -35,7 +35,29 @@
  *   vidrio         paño de vidrio fijo: bloquea el paso, no la visión
  *   baranda        baranda o barandilla: bloquea el paso, no la vista, la luz
  *                  ni el sonido (escalera, escalera de incendios)
+ *   hueco          hueco de ventana SIN vidrio (edificio quemado, obra): pasan
+ *                  la vista, la luz y el sonido; para cruzarlo hay que trepar,
+ *                  así que es una puerta (door=1) que se «abre» al pasar. Se
+ *                  dibuja como el alféizar solo, sin paño.
  *   arcada         se expande en huecos abiertos separados por pilares
+ *
+ * Muros que no son rectángulos (el pabellón curvo de la Galería, un casco):
+ *
+ *   habitacion.contorno  polígono en metros que reemplaza al rectángulo para
+ *                  el piso y los muros. Cada punto es [x, y] o [x, y, tipo]
+ *                  (tipo del tramo que SALE de ese punto: muro por defecto,
+ *                  o abierto, vidrio, ventana, baranda, hueco, puerta…), o un
+ *                  arco { arco: [cx, cy, r, desde°, hasta°], tipo?, tramos? }
+ *                  (grados desde el este, en sentido horario: y crece hacia
+ *                  abajo). x/y/w/h siguen siendo el rectángulo envolvente
+ *                  (si faltan, se calculan). Los tramos rectos y alineados
+ *                  se unen con los de las habitaciones vecinas y los vanos
+ *                  los cortan como siempre; los oblicuos van tal cual.
+ *   plano.curvas[] muros sueltos como polilínea: { tipo, puntos: [...] }
+ *                  con el mismo formato de puntos (y `cerrada: true`).
+ *
+ * derivarMuros convierte todo a segmentos rectos (lo que Foundry entiende).
+ * Un vano en un tramo oblicuo no existe: se declara como tipo del tramo.
  */
 
 export const PX_POR_M = 100;           // 1 m = 100 px
@@ -80,6 +102,14 @@ function azar(semilla) {
  */
 export function normalizar(plano) {
   if (plano._normalizado) return plano;
+  const habitaciones = plano.habitaciones.map(h => {
+    if (!h.contorno) return h;
+    const _puntos = expandirPuntos(h.contorno);
+    const xs = _puntos.map(q => q.x), ys = _puntos.map(q => q.y);
+    const x = h.x ?? Math.min(...xs), y = h.y ?? Math.min(...ys);
+    return { ...h, x, y, w: h.w ?? Math.max(...xs) - x, h: h.h ?? Math.max(...ys) - y, _puntos };
+  });
+  const curvas = (plano.curvas ?? []).map(c => ({ ...c, _puntos: expandirPuntos(c.puntos ?? [c], c.tipo) }));
   const vanos = [];
   for (const v of plano.vanos ?? []) {
     if (v.tipo !== "arcada") { vanos.push(v); continue; }
@@ -91,13 +121,54 @@ export function normalizar(plano) {
         y: v.eje === "v" ? v.y + ini : v.y, w: fin - ini, _arcada: true });
     }
   }
-  return { ...plano, vanos, _normalizado: true };
+  return { ...plano, habitaciones, curvas, vanos, _normalizado: true };
 }
+
+/**
+ * Puntos de un contorno o polilínea → [{ x, y, tipo }], con los arcos
+ * expandidos en tramos de ≤ 10° (o `tramos`). `tipo` es el del tramo que sale
+ * del punto.
+ */
+function expandirPuntos(lista, tipoDefecto = "muro") {
+  const out = [];
+  for (const it of lista) {
+    if (Array.isArray(it)) { out.push({ x: it[0], y: it[1], tipo: it[2] ?? tipoDefecto }); continue; }
+    if (!it?.arco) continue;
+    const [cx, cy, r, a0, a1] = it.arco;
+    const n = it.tramos ?? Math.max(2, Math.ceil(Math.abs(a1 - a0) / 10));
+    for (let k = 0; k <= n; k++) {
+      const a = ((a0 + (a1 - a0) * k / n) * Math.PI) / 180;
+      out.push({ x: Math.round((cx + r * Math.cos(a)) * 1000) / 1000, y: Math.round((cy + r * Math.sin(a)) * 1000) / 1000,
+        tipo: it.tipo ?? tipoDefecto });
+    }
+  }
+  return out;
+}
+
+/** Un punto (m) dentro de una habitación (su contorno, si tiene, o su rectángulo). */
+export function dentroDeHabitacion(h, x, y) {
+  if (!h._puntos) return x >= h.x && x <= h.x + h.w && y >= h.y && y <= h.y + h.h;
+  let dentro = false;
+  const P = h._puntos;
+  for (let i = 0, j = P.length - 1; i < P.length; j = i++) {
+    if ((P[i].y > y) !== (P[j].y > y) && x < ((P[j].x - P[i].x) * (y - P[i].y)) / (P[j].y - P[i].y) + P[i].x) dentro = !dentro;
+  }
+  return dentro;
+}
+
+/**
+ * Sinónimos de tipo de mueble: el plano puede usar cualquiera, el renderer y
+ * el prompt ven el canónico. Una cámara de timbre con `anomaly: true` es una
+ * cámara de seguridad de ANOMALY, no un timbre.
+ */
+const ALIAS_MUEBLE = { cajafuerte: "caja-fuerte", pantallas: "videopared", "banco-de-trabajo": "banco-trabajo",
+  coche: "auto", lancha: "vehiculo" };
+export const tipoMueble = m => (m.tipo === "timbre" && m.anomaly ? "camara" : ALIAS_MUEBLE[m.tipo] ?? m.tipo);
 
 /** Un mueble es móvil si su tipo lo es por defecto, salvo que el plano diga `fijo`. */
 const MOVILES = new Set(["silla", "sofa", "mesa", "camilla", "tubos", "lampara", "carro", "palet",
-  "portatil", "cenicero"]);
-export const esMovil = m => (m.fijo === undefined ? MOVILES.has(m.tipo) : !m.fijo);
+  "portatil", "cenicero", "auto", "vehiculo", "bandeja", "carpeta", "maletin", "catre"]);
+export const esMovil = m => (m.fijo === undefined ? MOVILES.has(tipoMueble(m)) : !m.fijo);
 
 /** Los muebles que NO se pintan: van como tiles, y el Narrador los tiene que conocer. */
 export function mueblesMoviles(plano) {
@@ -140,8 +211,12 @@ function restar(intervalos, huecos) {
 }
 
 /** Sonido de puerta por defecto de cada paleta (claves de CONFIG.Wall.doorSounds). */
-const SONIDO_PUERTA = { apartamento: "woodBasic" };
+const SONIDO_PUERTA = { apartamento: "woodBasic", rural: "woodCreaky", industrial: "industrial", naval: "metal",
+  subterraneo: "woodHeavy", oficina: "woodBasic", galeria: "woodBasic" };
 const ESTADO_PUERTA = { cerrada: 0, abierta: 1, trabada: 2 };   // CONST.WALL_DOOR_STATES
+
+/** Tipos de vano que entiende derivarMuros (construir-planos avisa de los demás). */
+export const TIPOS_VANO = ["abierto", "puerta", "secreta", "puerta-vidrio", "ventana", "vidrio", "baranda", "hueco", "arcada"];
 
 /** Una coordenada en metros, redondeada al px. Clave estable para agrupar rectas. */
 const fijo = m => Math.round(m * PX_POR_M) / PX_POR_M;
@@ -149,6 +224,53 @@ const fijo = m => Math.round(m * PX_POR_M) / PX_POR_M;
 const coordsVano = v => v.eje === "h"
   ? [px(v.x), px(v.y), px(v.x + v.w), px(v.y)]
   : [px(v.x), px(v.y), px(v.x), px(v.y + v.w)];
+
+/** Un tramo de muro es oblicuo si no es horizontal ni vertical (curvas, contornos). */
+export const oblicuo = c => c[0] !== c[2] && c[1] !== c[3];
+
+/**
+ * El muro de Foundry de un vano (o de un tramo de contorno/curva de ese tipo)
+ * en las coordenadas `c` (px). null = hueco libre (abierto).
+ */
+function muroDeVano(v, c, sonidoBase) {
+  const ds = ESTADO_PUERTA[v.estado] ?? 0;
+  switch (v.tipo) {
+    case "muro":
+      return { c, _tipo: "muro" };
+    case "puerta":
+      // Las puertas son muros con door=1: Foundry dibuja la hoja y la abre al
+      // clickearla. Por eso el mapa NO trae ninguna puerta pintada.
+      return { c, door: 1, ds, doorSound: v.sonido ?? sonidoBase, _tipo: "puerta" };
+    case "secreta":
+      return { c, door: 2, ds, doorSound: v.sonido ?? "woodHeavy", _tipo: "secreta" };
+    case "puerta-vidrio":
+      // Cerrada se ve a través: la vista y la luz pasan, el paso no.
+      return { c, door: 1, ds, doorSound: v.sonido ?? "slidingModern", sight: 0, light: 0, sound: 10, _tipo: "puerta-vidrio" };
+    case "ventana":
+      // Guillotina: se abre como una puerta y deja pasar la vista cerrada.
+      return { c, door: 1, ds, doorSound: v.sonido ?? "slidingWood", sight: 0, light: 0, sound: 10, _tipo: "ventana" };
+    case "hueco":
+      // Hueco de ventana sin vidrio: todo pasa menos el paso, que se «abre»
+      // trepando (door=1, sin sonido de puerta).
+      return { c, door: 1, ds, sight: 0, light: 0, sound: 0, _tipo: "hueco" };
+    case "vidrio":
+      // Vidrio fijo: se ve, no se pasa. Insonorizado salvo `sonoro`.
+      return { c, move: 20, sight: 0, light: 0, sound: v.sonoro ? 10 : 20, _tipo: "vidrio" };
+    case "baranda":
+      // Barandilla: sólo frena el paso.
+      return { c, move: 20, sight: 0, light: 0, sound: 0, _tipo: "baranda" };
+    default:
+      return null;   // abierto: sólo hueco
+  }
+}
+
+/** Tramos (pares de puntos) de un contorno cerrado o de una polilínea. */
+function tramos(puntos, cerrado) {
+  const out = [];
+  const n = puntos.length;
+  for (let i = 0; i < (cerrado ? n : n - 1); i++) out.push([puntos[i], puntos[(i + 1) % n]]);
+  return out;
+}
 
 /**
  * Deriva los muros a partir de las habitaciones y los vanos.
@@ -158,14 +280,19 @@ const coordsVano = v => v.eje === "h"
  * es lo que permite que un vano caiga sobre la pared compartida por dos
  * habitaciones y perfore las dos de una vez.
  *
+ * Los contornos y las curvas se cortan en segmentos rectos: los tramos de muro
+ * alineados con los ejes entran a las rectas (se unen y los vanos los cortan);
+ * los oblicuos y los de otro tipo (vidrio, baranda…) salen tal cual.
+ *
  * Cada muro sale con `_tipo` ("muro" | "puerta" | "secreta" | "puerta-vidrio" |
- * "ventana" | "vidrio" | "baranda") para el renderer; el build de escenas lo
- * quita antes de escribir.
+ * "ventana" | "hueco" | "vidrio" | "baranda") para el renderer; el build de
+ * escenas lo quita antes de escribir.
  */
 export function derivarMuros(planoCrudo) {
   const plano = normalizar(planoCrudo);
   const rectas = new Map();
   const clave = (eje, f) => `${eje}:${fijo(f)}`;
+  const sonidoBase = SONIDO_PUERTA[plano.paleta] ?? "woodBasic";
 
   const agregar = (eje, f, ini, fin) => {
     const k = clave(eje, f);
@@ -173,13 +300,24 @@ export function derivarMuros(planoCrudo) {
     rectas.get(k).push([Math.min(ini, fin), Math.max(ini, fin)]);
   };
 
+  // Tramos de contornos y curvas: los de muro alineados van a las rectas.
+  const sueltos = [];
+  const tramo = (a, b) => {
+    if (a.tipo === "abierto" || (a.x === b.x && a.y === b.y)) return;
+    if (a.tipo === "muro" && fijo(a.y) === fijo(b.y)) return agregar("h", a.y, a.x, b.x);
+    if (a.tipo === "muro" && fijo(a.x) === fijo(b.x)) return agregar("v", a.x, a.y, b.y);
+    sueltos.push({ tipo: a.tipo, estado: a.estado, c: [px(a.x), px(a.y), px(b.x), px(b.y)] });
+  };
+
   for (const h of plano.habitaciones) {
     if (h.sinMuros) continue;
+    if (h._puntos) { for (const [a, b] of tramos(h._puntos, true)) tramo(a, b); continue; }
     agregar("h", h.y,       h.x, h.x + h.w);
     agregar("h", h.y + h.h, h.x, h.x + h.w);
     agregar("v", h.x,       h.y, h.y + h.h);
     agregar("v", h.x + h.w, h.y, h.y + h.h);
   }
+  for (const cv of plano.curvas ?? []) for (const [a, b] of tramos(cv._puntos, Boolean(cv.cerrada))) tramo(a, b);
 
   const huecos = new Map();
   for (const v of plano.vanos ?? []) {
@@ -191,51 +329,23 @@ export function derivarMuros(planoCrudo) {
   }
 
   const muros = [];
-  for (const [k, tramos] of rectas) {
+  for (const [k, tramosRecta] of rectas) {
     const [eje, fijaStr] = k.split(":");
     const f = Number(fijaStr);
-    for (const [ini, fin] of restar(unir(tramos), huecos.get(k) ?? [])) {
+    for (const [ini, fin] of restar(unir(tramosRecta), huecos.get(k) ?? [])) {
       muros.push(eje === "h"
         ? { c: [px(ini), px(f), px(fin), px(f)], _tipo: "muro" }
         : { c: [px(f), px(ini), px(f), px(fin)], _tipo: "muro" });
     }
   }
-
-  // Las puertas son muros con door=1: Foundry dibuja la hoja y la abre al
-  // clickearla. Por eso el mapa NO trae ninguna puerta pintada.
-  const sonidoBase = SONIDO_PUERTA[plano.paleta] ?? "woodBasic";
-  for (const v of plano.vanos ?? []) {
-    const c = coordsVano(v);
-    const ds = ESTADO_PUERTA[v.estado] ?? 0;
-    switch (v.tipo) {
-      case "puerta":
-        muros.push({ c, door: 1, ds, doorSound: v.sonido ?? sonidoBase, _tipo: "puerta" });
-        break;
-      case "secreta":
-        muros.push({ c, door: 2, ds, doorSound: v.sonido ?? "woodHeavy", _tipo: "secreta" });
-        break;
-      case "puerta-vidrio":
-        // Cerrada se ve a través: la vista y la luz pasan, el paso no.
-        muros.push({ c, door: 1, ds, doorSound: v.sonido ?? "slidingModern",
-          sight: 0, light: 0, sound: 10, _tipo: "puerta-vidrio" });
-        break;
-      case "ventana":
-        // Guillotina: se abre como una puerta y deja pasar la vista cerrada.
-        muros.push({ c, door: 1, ds, doorSound: v.sonido ?? "slidingWood",
-          sight: 0, light: 0, sound: 10, _tipo: "ventana" });
-        break;
-      case "vidrio":
-        // Vidrio fijo: se ve, no se pasa. Insonorizado salvo `sonoro`.
-        muros.push({ c, move: 20, sight: 0, light: 0, sound: v.sonoro ? 10 : 20, _tipo: "vidrio" });
-        break;
-      case "baranda":
-        // Barandilla: sólo frena el paso.
-        muros.push({ c, move: 20, sight: 0, light: 0, sound: 0, _tipo: "baranda" });
-        break;
-      default: break;   // abierto: solo hueco
-    }
+  for (const t of sueltos) {
+    const m = muroDeVano(t, t.c, sonidoBase);
+    if (m) muros.push(m);
   }
-
+  for (const v of plano.vanos ?? []) {
+    const m = muroDeVano(v, coordsVano(v), sonidoBase);
+    if (m) muros.push(m);
+  }
   return muros;
 }
 
@@ -253,8 +363,10 @@ export function derivarMuros(planoCrudo) {
  * `tono` es el tono ambiente uniforme de la escena: un lavado parejo, NUNCA un
  * charco ni un halo. Las fuentes de luz las pone Foundry (tools/iluminacion.mjs).
  *
- * Paletas previstas para los otros lugares (oficina, industrial, subterráneo):
- * Pendiente, se definen con su primer plano.
+ * Todas viven dentro de esa paleta del set: cambian el material de los muros
+ * (`muroEstilo`: revoque, silleria, chapa, madera, acero), cuánta mugre hay
+ * (`suciedadK`, 1 = la de helen) y el valor de cada cosa, nunca el tono de
+ * fondo. Sin musgo, sin dorado, sin óxido naranja: el óxido es pardo-gris.
  */
 const PALETAS = {
   // Edificio de ladrillo viejo de Ballard: tablas de abeto gastadas, revoque
@@ -265,8 +377,65 @@ const PALETAS = {
     umbral: "#8b939a", vidrio: "#9fb6c4", marco: "#3a434b", metal: "#2a2f34",
     tinte: "#5f7a8c", tinteK: 0.16, suciedad: "mugre", mugre: "#3a3f44",
     tono: "#1c2a36", tonoK: 0.06
+  },
+  // Puerto y astillero (hangar, Salitre, Terminal 86): bloque de hormigón y
+  // chapa acanalada, grasa y óxido pardo-gris, más mugre que en ningún lado.
+  industrial: {
+    fondo: "asfalto", exterior: "#32363a", exteriorDetalle: "#23272a",
+    muroEstilo: "chapa", muro: "#565c60", muroSombra: "#101315", tinta: "#0e1113",
+    umbral: "#858c91", vidrio: "#91a8b4", marco: "#353c41", metal: "#2a2f33",
+    tinte: "#5a6f7c", tinteK: 0.13, suciedad: "mugre", mugre: "#39362f", suciedadK: 1.35,
+    tono: "#1a242c", tonoK: 0.06
+  },
+  // Bajo tierra (Galerías Selladas, calderas, sótanos, la bóveda): ladrillo y
+  // piedra húmedos, oscuro, la humedad azul-gris en los zócalos.
+  subterraneo: {
+    fondo: "roca", exterior: "#1c1e1f", exteriorDetalle: "#121415",
+    muroEstilo: "silleria", muro: "#4f4e4a", muroSombra: "#0b0d0e", tinta: "#0c0e0f",
+    umbral: "#6b675e", vidrio: "#7f949e", marco: "#2a2e30", metal: "#272b2e",
+    tinte: "#40505a", tinteK: 0.2, suciedad: "humedad", mugre: "#283035", suciedadK: 1.3,
+    tono: "#0b1418", tonoK: 0.1
+  },
+  // Oficinas (Northline, Gale Sentinel, Torre Halloway): durlock pintado gris
+  // pálido, limpio, frío; la mugre casi no existe.
+  oficina: {
+    fondo: "edificio", exterior: "#2a2e32", exteriorDetalle: "#1d2023",
+    muroEstilo: "revoque", muro: "#737a80", muroSombra: "#13171a", tinta: "#111417",
+    umbral: "#9aa2a8", vidrio: "#a6bccb", marco: "#48525a", metal: "#30363b",
+    tinte: "#6c8494", tinteK: 0.1, suciedad: "mugre", mugre: "#41474c", suciedadK: 0.35,
+    tono: "#1c2a36", tonoK: 0.05
+  },
+  // La Galería de Vidrio: pabellón de 1962, acero negro y hormigón oscuro,
+  // pulido; el lujo es el vacío. Casi sin mugre.
+  galeria: {
+    fondo: "acera", exterior: "#363b3f", exteriorDetalle: "#262a2e",
+    muroEstilo: "revoque", muro: "#3e454b", muroSombra: "#0e1114", tinta: "#0c0f12",
+    umbral: "#8f979d", vidrio: "#a9c0ce", marco: "#1d2226", metal: "#1d2226",
+    tinte: "#5f7a8c", tinteK: 0.1, suciedad: "mugre", mugre: "#394045", suciedadK: 0.25,
+    tono: "#1c2a36", tonoK: 0.05
+  },
+  // La granja del Sheriff: tablas oscuras de granero, barro en todo, madera
+  // gris-parda (nunca dorada).
+  rural: {
+    fondo: "tierra", exterior: "#3a3732", exteriorDetalle: "#2a2824",
+    muroEstilo: "madera", muro: "#58524a", muroSombra: "#14120f", tinta: "#13110e",
+    umbral: "#8a8479", vidrio: "#9db1bc", marco: "#3c3933", metal: "#2c2e30",
+    tinte: "#5f7a8c", tinteK: 0.15, suciedad: "barro", mugre: "#3b352e", suciedadK: 1.4,
+    tono: "#1c2a36", tonoK: 0.06
+  },
+  // El ferry y su terminal: acero pintado de gris pálido, mamparos de chapa
+  // remachada, el agua negra de Puget Sound alrededor.
+  naval: {
+    fondo: "agua", exterior: "#1b2630", exteriorDetalle: "#131b22",
+    muroEstilo: "acero", muro: "#787f85", muroSombra: "#10151a", tinta: "#0f1317",
+    umbral: "#99a1a7", vidrio: "#9fb6c4", marco: "#4a535a", metal: "#2d3338",
+    tinte: "#5f7a8c", tinteK: 0.12, suciedad: "mugre", mugre: "#3a4045", suciedadK: 0.8,
+    tono: "#1a2834", tonoK: 0.06
   }
 };
+
+/** Paletas que existen (construir-planos avisa de las demás: caen en apartamento). */
+export const PALETAS_CONOCIDAS = Object.keys(PALETAS);
 
 /**
  * Materiales de piso. `lado` en metros: las juntas caen en divisores de la
@@ -283,9 +452,27 @@ const PISOS = {
   parquet:  { base: "#8b7657", junta: "#4f4232", veta: "#6e5c42", tabla: 0.2, largo: [0.6, 1.5] },
   // Tablas de abeto de 1910, anchas, largas y grises de tanto fregarlas.
   tablas:   { base: "#7d6f5c", junta: "#3f372d", veta: "#62574a", tabla: 0.2, largo: [1.2, 3.2] },
+  // Tablas carbonizadas (el Larchmont): negras, con huecos donde se cayeron.
+  "tablas-quemadas": { base: "#3b3530", junta: "#141210", veta: "#2a2622", tabla: 0.2, largo: [0.8, 2.6], quemado: true },
   piedra:   { base: "#999488", junta: "#5c5952", var: 0.18, lado: 0.5, losa: true },
+  // Mármol pulido en losas de 1 m con vetas finas.
+  marmol:   { base: "#b9bab6", junta: "#8d908e", var: 0.04, lado: 1, marmol: true },
+  // Ladrillo de vereda (la acera de 1889 bajo Pioneer Square): soga, juntas sucias.
+  ladrillo: { base: "#6f625a", junta: "#3d3631", var: 0.12, ladrillo: [0.25, 0.125] },
+  // Plancha de acero estriada (diamantada), paños soldados de 1 m.
+  chapa:    { base: "#5f6468", junta: "#3c4144", lado: 1, plancha: "diamante" },
+  // Cubierta de barco: acero pintado con antideslizante, paños de 2 m soldados.
+  cubierta: { base: "#646c70", junta: "#454c50", lado: 2, plancha: "grano" },
+  // Goma estriada de pasarela: bastones finos a lo ancho.
+  goma:     { base: "#33373b", junta: "#24272a", goma: true },
+  // Piso de cabina de ascensor: marco de acero cepillado y paño de piedra oscura.
+  ascensor: { base: "#4c5054", junta: "#2e3134", var: 0.03, lado: 0.5, cabina: "#8a9095" },
   tierra:   { base: "#6b5d49", junta: "#55493a", tierra: true },
   grava:    { base: "#8f8a7e", junta: "#6f6a60", grava: true },
+  // Agua: plano oscuro azul pizarra con ondas finas, sin juntas.
+  agua:     { base: "#1e2a35", junta: "#2f4150", agua: true },
+  // Hueco o vacío (el foso del montacargas, la caída de 11 pisos): negro liso.
+  vacio:    { base: "#0d0f12", vacio: true },
   // Entablonado con un camino de alfombra gastado al medio (pasillo de edificio viejo).
   "tablas-alfombra": { base: "#7d6f5c", junta: "#3f372d", veta: "#62574a", tabla: 0.2, largo: [1.2, 3.2],
     alfombra: "#46403d", guarda: "#2a2624", margen: 0.3 },
@@ -294,6 +481,13 @@ const PISOS = {
   // Departamento vecino cerrado: macizo rayado, como el edificio de al lado.
   macizo:   { macizo: true }
 };
+
+/** Pisos que existen (construir-planos avisa de los demás: caen en linóleo). */
+export const PISOS_CONOCIDOS = Object.keys(PISOS);
+/** Fondos de exterior: los propios más cualquier piso (tablas de un muelle, hormigón…). */
+export const FONDOS_CONOCIDOS = ["asfalto", "acera", "edificio", "roca", ...PISOS_CONOCIDOS.filter(k => k !== "macizo")];
+/** Pisos sin mugre ni detritos ni sombra de zócalo (no se pisan o no son suelo). */
+const SIN_SUCIEDAD = new Set(["macizo", "rejilla", "vacio", "agua"]);
 
 /* -------------------------------------------- */
 /*  Utilidades de dibujo                        */
@@ -323,7 +517,19 @@ const variar = (hex, v) => mezclar(hex, v > 0 ? "#ffffff" : "#000000", Math.abs(
 function material(nombre, p) {
   const m = PISOS[nombre] ?? PISOS.linoleo;
   const t = c => (c && p.tinte ? mezclar(c, p.tinte, p.tinteK) : c);
-  return { ...m, base: t(m.base), junta: t(m.junta), alterno: t(m.alterno), veta: t(m.veta) };
+  return { ...m, base: t(m.base), junta: t(m.junta), alterno: t(m.alterno), veta: t(m.veta), cabina: t(m.cabina) };
+}
+
+/**
+ * Patrones SVG por material (plancha diamantada, goma estriada…): miles de
+ * elementos sueltos harían el SVG enorme. Se registran en `p._defs` y van a
+ * <defs> al final del render.
+ */
+function patron(p, id, w, h, cuerpo, rot = 0) {
+  if (!p._defs.has(id)) {
+    p._defs.set(id, `<pattern id="${id}" width="${w}" height="${h}" patternUnits="userSpaceOnUse"${rot ? ` patternTransform="rotate(${rot})"` : ""}>${cuerpo}</pattern>`);
+  }
+  return `url(#${id})`;
 }
 
 /** Rayado de corte de arquitectura (edificio vecino, departamento cerrado). */
@@ -494,15 +700,142 @@ function pisoRejilla(h, m, p, r) {
   return out;
 }
 
+/** Tablas carbonizadas: el entablonado, más huecos negros y ampollas de carbón. */
+function pisoQuemado(h, m, p, r) {
+  const out = pisoTablas(h, m, p, r);
+  const horizontal = (h.vetas ?? (h.w >= h.h ? "h" : "v")) === "h";
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.012); i++) {     // tablas que faltan
+    const l = 0.4 + r() * 1.2, a = m.tabla;
+    const x = h.x + r() * Math.max(0.01, h.w - (horizontal ? l : a)), y = h.y + r() * Math.max(0.01, h.h - (horizontal ? a : l));
+    out.push(`<rect x="${px(x)}" y="${px(y)}" width="${px(horizontal ? l : a)}" height="${px(horizontal ? a : l)}" fill="#07080a" stroke="${m.junta}" stroke-width="1.4"/>`);
+  }
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.05); i++) {      // carbón y hollín
+    out.push(`<ellipse cx="${px(h.x + r() * h.w)}" cy="${px(h.y + r() * h.h)}" rx="${(10 + r() * 34).toFixed(0)}" ry="${(7 + r() * 20).toFixed(0)}" fill="#0b0c0d" opacity="${(0.25 + r() * 0.3).toFixed(2)}"/>`);
+  }
+  return out;
+}
+
+/** Losas de mármol: losetas lisas con vetas finas que cruzan cada losa. */
+function pisoMarmol(h, m, p, r) {
+  const out = pisoLosetas(h, { ...m, marmol: false }, p, r);
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.05); i++) {
+    const x = px(h.x + r() * h.w), y = px(h.y + r() * h.h);
+    out.push(`<path d="M${x},${y}q${(r() - 0.5) * 60},${20 + r() * 30} ${(r() - 0.5) * 80},${50 + r() * 50}" stroke="${variar(m.base, -0.3)}" stroke-width="${(0.6 + r() * 0.8).toFixed(1)}" fill="none" opacity="0.55"/>`);
+  }
+  return out;
+}
+
+/** Ladrillo a soga (vereda de 1889): hiladas de medio ladrillo corrido. */
+function pisoLadrillo(h, m, p, r) {
+  const [L, A] = m.ladrillo;
+  const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${m.junta}"/>`];
+  let fila = 0;
+  for (let y = h.y; y < h.y + h.h - 0.01; y += A, fila++) {
+    for (let x = h.x - (fila % 2 ? L / 2 : 0); x < h.x + h.w - 0.01; x += L) {
+      const x0 = Math.max(x, h.x), x1 = Math.min(x + L, h.x + h.w), y1 = Math.min(y + A, h.y + h.h);
+      if (x1 - x0 < 0.02) continue;
+      out.push(`<rect x="${(px(x0) + 1).toFixed(1)}" y="${(px(y) + 1).toFixed(1)}" width="${(px(x1) - px(x0) - 2).toFixed(1)}" height="${(px(y1) - px(y) - 2).toFixed(1)}" rx="1.5" fill="${variar(m.base, (r() - 0.5) * 2 * m.var)}"/>`);
+    }
+  }
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.02); i++) {      // barro en las juntas
+    out.push(`<ellipse cx="${px(h.x + r() * h.w)}" cy="${px(h.y + r() * h.h)}" rx="${(12 + r() * 30).toFixed(0)}" ry="${(8 + r() * 14).toFixed(0)}" fill="${p.mugre}" opacity="0.22"/>`);
+  }
+  return out;
+}
+
+/** Plancha de acero (diamantada o con antideslizante): paños soldados, patrón y óxido. */
+function pisoPlancha(h, m, p, r) {
+  const id = `pl-${m.plancha}-${m.base.slice(1)}`;
+  const relleno = m.plancha === "diamante"
+    ? patron(p, id, 14, 14, `<rect width="14" height="14" fill="${m.base}"/>` +
+      `<path d="M2,5l4,-3M9,12l4,-3" stroke="${variar(m.base, 0.22)}" stroke-width="2" stroke-linecap="round"/>` +
+      `<path d="M2,12l3,3M9,5l3,3" stroke="${variar(m.base, -0.25)}" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>`)
+    : patron(p, id, 9, 9, `<rect width="9" height="9" fill="${m.base}"/><circle cx="2" cy="3" r="0.9" fill="${variar(m.base, -0.25)}"/>` +
+      `<circle cx="6.5" cy="7" r="0.8" fill="${variar(m.base, 0.15)}"/>`);
+  const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${relleno}"/>`];
+  for (let x = h.x + m.lado; x < h.x + h.w - 0.01; x += m.lado) {
+    out.push(`<line x1="${px(x)}" y1="${px(h.y)}" x2="${px(x)}" y2="${px(h.y + h.h)}" stroke="${m.junta}" stroke-width="2.4" opacity="0.85"/>`);
+  }
+  for (let y = h.y + m.lado; y < h.y + h.h - 0.01; y += m.lado) {
+    out.push(`<line x1="${px(h.x)}" y1="${px(y)}" x2="${px(h.x + h.w)}" y2="${px(y)}" stroke="${m.junta}" stroke-width="2.4" opacity="0.85"/>`);
+  }
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.025); i++) {      // óxido pardo-gris y desgaste
+    out.push(`<ellipse cx="${px(h.x + r() * h.w)}" cy="${px(h.y + r() * h.h)}" rx="${(8 + r() * 30).toFixed(0)}" ry="${(6 + r() * 16).toFixed(0)}" fill="${r() < 0.5 ? "#4a3f38" : variar(m.base, 0.15)}" opacity="0.3"/>`);
+  }
+  return out;
+}
+
+/** Goma estriada de pasarela: bastones a lo ancho del paso. */
+function pisoGoma(h, m, p, r) {
+  const largoX = h.w >= h.h;
+  const id = `goma-${largoX ? "h" : "v"}-${m.base.slice(1)}`;
+  const relleno = patron(p, id, 6, 6, `<rect width="6" height="6" fill="${m.base}"/>` +
+    (largoX ? `<rect x="1.5" width="2.2" height="6" fill="${variar(m.base, 0.12)}"/>` : `<rect y="1.5" width="6" height="2.2" fill="${variar(m.base, 0.12)}"/>`));
+  const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${relleno}" stroke="${m.junta}" stroke-width="2"/>`];
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.03); i++) {      // barro de suelas
+    out.push(`<ellipse cx="${px(h.x + r() * h.w)}" cy="${px(h.y + r() * h.h)}" rx="${(8 + r() * 18).toFixed(0)}" ry="${(5 + r() * 10).toFixed(0)}" fill="${p.mugre}" opacity="0.25"/>`);
+  }
+  return out;
+}
+
+/** Piso de cabina de ascensor: paño de piedra oscura dentro de un marco de acero cepillado. */
+function pisoAscensor(h, m, p, r) {
+  const b = 0.08;
+  const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${m.cabina}"/>`];
+  for (let k = 0; k < Math.round((h.w + h.h) * 12); k++) {          // cepillado
+    const y = px(h.y) + r() * px(h.h);
+    out.push(`<line x1="${px(h.x)}" y1="${y.toFixed(1)}" x2="${px(h.x + h.w)}" y2="${y.toFixed(1)}" stroke="${variar(m.cabina, (r() - 0.5) * 0.3)}" stroke-width="0.8" opacity="0.5"/>`);
+  }
+  out.push(...pisoLosetas({ ...h, x: h.x + b, y: h.y + b, w: h.w - 2 * b, h: h.h - 2 * b }, m, p, r));
+  return out;
+}
+
+/** Agua: plano oscuro azul pizarra con ondas finas; sin juntas ni charcos. */
+function pisoAgua(h, m, p, r) {
+  const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${m.base}"/>`];
+  const claro = mezclar(m.base, "#8ea3b2", 0.22), oscuro = variar(m.base, -0.35);
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.06); i++) {      // ondulación larga, oscura
+    const x = px(h.x + r() * h.w), y = px(h.y + r() * h.h), l = 60 + r() * 160;
+    out.push(`<path d="M${x},${y}q${l / 4},${-4 - r() * 4} ${l / 2},0t${l / 2},0" stroke="${oscuro}" stroke-width="${(3 + r() * 4).toFixed(1)}" fill="none" opacity="0.35"/>`);
+  }
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.22); i++) {      // ondas finas, claras
+    const x = px(h.x + r() * h.w), y = px(h.y + r() * h.h), l = 10 + r() * 34;
+    out.push(`<path d="M${x},${y}q${l / 4},${-1.5 - r() * 2} ${l / 2},0t${l / 2},0" stroke="${claro}" stroke-width="${(0.7 + r() * 0.8).toFixed(1)}" fill="none" opacity="${(0.25 + r() * 0.25).toFixed(2)}"/>`);
+  }
+  return out;
+}
+
+/** Vacío (hueco de ascensor, caída al exterior): negro casi liso. */
+function pisoVacio(h, m) {
+  return [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${m.base}"/>`];
+}
+
 function piso(h, p, r) {
   const m = material(h.piso ?? "linoleo", p);
   if (m.macizo) return [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="url(#rayado)"/>`];
   if (m.rejilla) return pisoRejilla(h, m, p, r);
   if (m.tierra || m.grava) return pisoNatural(h, m, p, r);
+  if (m.agua) return pisoAgua(h, m, p, r);
+  if (m.vacio) return pisoVacio(h, m);
   if (m.hormigon) return pisoHormigon(h, m, p, r);
   if (m.alfombra) return [...pisoTablas(h, m, p, r), ...caminoAlfombra(h, m, p, r)];
+  if (m.quemado) return pisoQuemado(h, m, p, r);
   if (m.tabla) return pisoTablas(h, m, p, r);
+  if (m.marmol) return pisoMarmol(h, m, p, r);
+  if (m.ladrillo) return pisoLadrillo(h, m, p, r);
+  if (m.plancha) return pisoPlancha(h, m, p, r);
+  if (m.goma) return pisoGoma(h, m, p, r);
+  if (m.cabina) return pisoAscensor(h, m, p, r);
   return pisoLosetas(h, m, p, r);
+}
+
+/** El piso de una habitación, recortado a su contorno si no es un rectángulo. */
+function pisoHabitacion(h, i, p, r) {
+  const cosas = piso(h, p, r);
+  if (!h._puntos) return cosas;
+  const id = `contorno-${i}`;
+  p._defs.set(id, `<clipPath id="${id}"><polygon points="${h._puntos.map(q => `${px(q.x)},${px(q.y)}`).join(" ")}"/></clipPath>`);
+  return [`<g clip-path="url(#${id})">`, ...cosas, "</g>"];
 }
 
 /* -------------------------------------------- */
@@ -512,7 +845,8 @@ function piso(h, p, r) {
 /**
  * El exterior del lienzo. `plano.fondo` (o el de la paleta) cubre todo, y
  * `plano.exteriores[]` ({ x, y, w, h, fondo }) pisa zonas: el callejón, la
- * acera, el edificio de enfrente. Fondos: asfalto, acera, edificio, roca.
+ * acera, el edificio de enfrente. Fondos: asfalto, acera, edificio, roca y
+ * cualquier material de piso (agua, grava, tierra, vacio, tablas…).
  */
 function exterior(plano, p, r, W, H) {
   const o = [`<rect width="${W}" height="${H}" fill="${p.exterior}"/>`];
@@ -525,6 +859,11 @@ function exterior(plano, p, r, W, H) {
 
 function zonaExterior(fondo, p, r, X, Y, W, H) {
   const o = [];
+  // Un fondo que es un material de piso (agua, grava, tierra, el entablonado
+  // de un muelle…) se pinta como ese piso, sin mugre de zócalo.
+  if (fondo && fondo !== "macizo" && PISOS[fondo]) {
+    return piso({ x: X / PX_POR_M, y: Y / PX_POR_M, w: W / PX_POR_M, h: H / PX_POR_M, piso: fondo }, p, r);
+  }
   const sup = (W / PX_POR_M) * (H / PX_POR_M);    // m²
   const enX = () => X + r() * W, enY = () => Y + r() * H;
   if (fondo === "asfalto") {
@@ -569,19 +908,20 @@ function zonaExterior(fondo, p, r, X, Y, W, H) {
 /** Lo que hace que un interior no se lea como diagrama: mugre gris contra los zócalos. */
 function suciedad(plano, p, r) {
   const out = [];
+  const K = p.suciedadK ?? 1;
   for (const h of plano.habitaciones) {
-    if (h.sinMuros || h.piso === "macizo" || h.piso === "rejilla") continue;
-    const bordes = [
-      [h.x, h.y, h.w, 0], [h.x, h.y + h.h, h.w, 0],
-      [h.x, h.y, 0, h.h], [h.x + h.w, h.y, 0, h.h]
-    ];
+    if (h.sinMuros || SIN_SUCIEDAD.has(h.piso)) continue;
+    // Bordes como [x, y, dx, dy] (m): los del rectángulo o los del contorno.
+    const bordes = h._puntos
+      ? tramos(h._puntos, true).map(([a, b]) => [a.x, a.y, b.x - a.x, b.y - a.y])
+      : [[h.x, h.y, h.w, 0], [h.x, h.y + h.h, h.w, 0], [h.x, h.y, 0, h.h], [h.x + h.w, h.y, 0, h.h]];
     for (const [bx, by, bw, bh] of bordes) {
-      const largo = bw || bh;
+      const largo = Math.hypot(bw, bh);
       const cuantos = Math.max(1, Math.round(largo / 2.7));
       for (let i = 0; i < cuantos; i++) {
-        if (r() > 0.5) continue;
-        const t = r() * largo;
-        const cx = px(bx + (bw ? t : 0)), cy = px(by + (bh ? t : 0));
+        if (r() > 0.5 * K) continue;
+        const t = r();
+        const cx = px(bx + bw * t), cy = px(by + bh * t);
         const rx = 10 + r() * 30, ry = 8 + r() * 12;
         out.push(`<ellipse cx="${cx}" cy="${cy}" rx="${rx.toFixed(0)}" ry="${ry.toFixed(0)}" fill="${p.mugre}" opacity="0.16"/>`);
       }
@@ -592,12 +932,15 @@ function suciedad(plano, p, r) {
 
 function detritos(plano, p, r) {
   const out = [];
+  const K = p.suciedadK ?? 1;
   for (const h of plano.habitaciones) {
-    if (h.piso === "macizo" || h.piso === "rejilla") continue;
-    const dens = h.limpio ? 0.03 : 0.07;
+    if (SIN_SUCIEDAD.has(h.piso)) continue;
+    const dens = (h.limpio ? 0.03 : 0.07) * K;
     for (let i = 0; i < Math.round(area(h.w, h.h) * dens); i++) {
-      const x = px(h.x + 0.12 + r() * (h.w - 0.24)), y = px(h.y + 0.12 + r() * (h.h - 0.24));
+      const xm = h.x + 0.12 + r() * (h.w - 0.24), ym = h.y + 0.12 + r() * (h.h - 0.24);
+      const x = px(xm), y = px(ym);
       const d = r();
+      if (h._puntos && !dentroDeHabitacion(h, xm, ym)) continue;
       if (d < 0.35) out.push(`<circle cx="${x}" cy="${y}" r="${(1 + r() * 1.6).toFixed(1)}" fill="${p.tinta}" opacity="0.25"/>`);
       else if (d < 0.6) {         // papel, envoltorio, colilla
         const w = 4 + r() * 7, hh = 3 + r() * 5;
@@ -642,7 +985,30 @@ function mueble(m, p, r) {
     }
   };
 
-  switch (m.tipo) {
+  // Rayas paralelas dentro de una caja: a lo largo (`largo`) o a lo ancho.
+  const rayas = (cx, cy, cw, ch, n, aLoLargo, color, ancho = 1.4, op = 1) => {
+    const hor = cw >= ch, out = [];
+    for (let i = 1; i < n; i++) {
+      const t = i / n;
+      const aLoAncho = hor ? !aLoLargo : aLoLargo;   // líneas verticales si true
+      out.push(aLoAncho
+        ? `<line x1="${(cx + cw * t).toFixed(1)}" y1="${(cy + 2).toFixed(1)}" x2="${(cx + cw * t).toFixed(1)}" y2="${(cy + ch - 2).toFixed(1)}" stroke="${color}" stroke-width="${ancho}"${op < 1 ? ` opacity="${op}"` : ""}/>`
+        : `<line x1="${(cx + 2).toFixed(1)}" y1="${(cy + ch * t).toFixed(1)}" x2="${(cx + cw - 2).toFixed(1)}" y2="${(cy + ch * t).toFixed(1)}" stroke="${color}" stroke-width="${ancho}"${op < 1 ? ` opacity="${op}"` : ""}/>`);
+    }
+    return out.join("");
+  };
+  const L = horizontal ? w : h, A = horizontal ? h : w;
+  /** Montón irregular (carbón, escombros): polígono de radio variable. */
+  const monton = (fill, n = 14) => {
+    const cx = x + w / 2, cy = y + h / 2, pts = [];
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * Math.PI * 2, k = 0.72 + r() * 0.28;
+      pts.push(`${(cx + Math.cos(a) * w / 2 * k).toFixed(1)},${(cy + Math.sin(a) * h / 2 * k).toFixed(1)}`);
+    }
+    return `<polygon points="${pts.join(" ")}" fill="${fill}" ${tinta}/>`;
+  };
+
+  switch (tipoMueble(m)) {
     case "escritorio": {
       // Escritorio de madera vieja. Sin pantalla encendida: la luz la pone Foundry.
       const piezas = [caja(x, y, w, h, "#5d5146", 2)];
@@ -866,16 +1232,339 @@ function mueble(m, p, r) {
       piezas.push(`<circle cx="${x + w / 2}" cy="${y + h / 2}" r="${Math.min(w, h) / 3}" fill="#4f5456" ${fina}/>`);
       return piezas.join("");
     }
+    case "videopared":
+    case "panel": {
+      // Videopared (pantallas apagadas, juntas cada medio metro) o panel ciego:
+      // una franja oscura contra el muro. Nada encendido: la luz es de Foundry.
+      const pantallas = tipoMueble(m) === "videopared";
+      const piezas = [caja(x, y, w, h, pantallas ? "#14171a" : "#2b3034", 1)];
+      piezas.push(caja(x + 2, y + 2, w - 4, h - 4, pantallas ? "#1b1f23" : "#353b40", 0, fina));
+      if (pantallas) piezas.push(rayas(x + 2, y + 2, w - 4, h - 4, Math.max(2, Math.round(L / px(0.5))), false, "#2e3439", 1.6));
+      return piezas.join("");
+    }
+    case "rack": {
+      // Rack de servidores (DVV): caja negra con ranuras y marco interior. Sin LED pintado.
+      const piezas = [caja(x, y, w, h, "#24282c", 2)];
+      piezas.push(rayas(x, y, w, h, Math.max(3, Math.round(L / px(0.6))), false, "#3e454b", 1.6));
+      piezas.push(caja(x + 4, y + 4, w - 8, h - 8, "none", 1, `stroke="#4a5158" stroke-width="1.2"`));
+      return piezas.join("");
+    }
+    case "camara": {
+      // Cámara de seguridad: soporte contra el muro y el cuerpo con la lente.
+      const s = Math.max(w, h, 14);
+      const cx = x + w / 2, cy = y + h / 2;
+      return `<rect x="${(cx - s / 2).toFixed(1)}" y="${(cy - s / 4).toFixed(1)}" width="${s}" height="${(s / 2).toFixed(1)}" rx="3" fill="#15181b" ${fina}/>` +
+        `<circle cx="${(cx + s / 2 - 3).toFixed(1)}" cy="${cy.toFixed(1)}" r="3" fill="#39444d" ${fina}/>`;
+    }
+    case "lector":
+      // Lector de tarjetas o biométrico: una cajita junto al marco (DVV), sin luz.
+      return caja(x, y, Math.max(w, 10), Math.max(h, 10), "#23272b", 1, fina) +
+        `<rect x="${x + 3}" y="${y + 3}" width="${Math.max(w, 10) - 6}" height="3" fill="#59636b"/>`;
+    case "banco": {
+      // Banco fijo: listones (madera) o bloque (hormigón, `material: "hormigon"`).
+      if (m.material === "hormigon") return caja(x, y, w, h, "#86877f", 2) + caja(x + 4, y + 4, w - 8, h - 8, "#7a7b74", 1, fina);
+      const tapizado = m.material === "tapizado";
+      const piezas = [caja(x, y, w, h, tapizado ? "#3e454b" : "#5d5246", tapizado ? 6 : 2)];
+      piezas.push(tapizado ? caja(x + 6, y + 6, w - 12, h - 12, "#4a5259", 4, fina)
+        : rayas(x, y, w, h, Math.max(2, Math.round(A / 10)), true, "#3f362d", 1.4));
+      return piezas.join("");
+    }
+    case "mostrador":
+    case "barra": {
+      // Mostrador o barra: cuerpo oscuro, tapa clara y el canto del frente.
+      const barra = tipoMueble(m) === "barra";
+      const piezas = [caja(x, y, w, h, barra ? "#3d342c" : "#4f585f", 3)];
+      piezas.push(caja(x + 5, y + 5, w - 10, h - 10, barra ? "#5a4c3f" : "#a9b0b3", 2, fina));
+      const frente = m.frente ?? (horizontal ? "s" : "e");
+      const f = { s: [x + 3, y + h - 8, w - 6, 4], n: [x + 3, y + 4, w - 6, 4], e: [x + w - 8, y + 3, 4, h - 6], o: [x + 4, y + 3, 4, h - 6] }[frente];
+      if (f) piezas.push(caja(...f, barra ? "#2a231d" : "#3a4248", 1, fina));
+      return piezas.join("");
+    }
+    case "maquina-cafe":
+    case "expendedora": {
+      // Máquina de café o expendedora: caja con rejilla de ventilación arriba y el frente oscuro, apagado.
+      const piezas = [caja(x, y, w, h, tipoMueble(m) === "expendedora" ? "#4a5056" : "#3b4045", 3)];
+      piezas.push(rayas(x + 6, y + 6, w - 12, h * 0.55, 5, false, "#2c3135", 1.3));
+      const frente = m.frente ?? "s";
+      const f = { s: [x + 4, y + h - 9, w - 8, 5], n: [x + 4, y + 4, w - 8, 5], e: [x + w - 9, y + 4, 5, h - 8], o: [x + 4, y + 4, 5, h - 8] }[frente];
+      if (f) piezas.push(caja(...f, "#16191c", 1, fina));
+      return piezas.join("");
+    }
+    case "consola": {
+      // Consola de mando: tablero inclinado con filas de botones y pantallas apagadas.
+      const piezas = [caja(x, y, w, h, "#33393e", 3)];
+      piezas.push(caja(x + 4, y + 4, w - 8, h - 8, "#262b2f", 2, fina));
+      const n = Math.max(3, Math.round(L / px(0.35)));
+      for (let i = 0; i < n; i++) {
+        const t = (i + 0.5) / n;
+        const [bx, by, bw, bh] = horizontal ? [x + w * t - 8, y + 8, 16, Math.max(6, h * 0.35)] : [x + 8, y + h * t - 8, Math.max(6, w * 0.35), 16];
+        piezas.push(caja(bx, by, bw, bh, "#14171a", 1, fina));
+        piezas.push(`<circle cx="${(horizontal ? x + w * t : x + w * 0.75).toFixed(1)}" cy="${(horizontal ? y + h * 0.75 : y + h * t).toFixed(1)}" r="2" fill="#59636b"/>`);
+      }
+      return piezas.join("");
+    }
+    case "timon": {
+      // Puesto de gobierno: pedestal y una rueda chica con rayos (vista cenital).
+      const cx = x + w / 2, cy = y + h / 2, rr = Math.min(w, h) / 2 - 2;
+      const piezas = [caja(x, y, w, h, "#3b4146", 3)];
+      piezas.push(`<circle cx="${cx}" cy="${cy}" r="${rr.toFixed(1)}" fill="none" stroke="${p.tinta}" stroke-width="4"/>`);
+      piezas.push(`<circle cx="${cx}" cy="${cy}" r="${rr.toFixed(1)}" fill="none" stroke="#6a6f73" stroke-width="2"/>`);
+      for (let k = 0; k < 6; k++) {
+        const a = (k / 6) * Math.PI * 2;
+        piezas.push(`<line x1="${cx}" y1="${cy}" x2="${(cx + Math.cos(a) * rr).toFixed(1)}" y2="${(cy + Math.sin(a) * rr).toFixed(1)}" stroke="#6a6f73" stroke-width="1.6"/>`);
+      }
+      piezas.push(`<circle cx="${cx}" cy="${cy}" r="3.5" fill="#2a2f33" ${fina}/>`);
+      return piezas.join("");
+    }
+    case "balsa": {
+      // Contenedor de balsa salvavidas en su cuna: cápsula blanca con dos zunchos.
+      const piezas = [caja(x, y, w, h, "none", 2, `stroke="${p.metal ?? p.tinta}" stroke-width="3"`)];
+      piezas.push(caja(x + 3, y + 3, w - 6, h - 6, "#c4c8c6", Math.min(w, h) / 2 - 3));
+      piezas.push(rayas(x + 3, y + 3, w - 6, h - 6, 3, true, "#5d6468", 2.2));
+      return piezas.join("");
+    }
+    case "generador": {
+      // Grupo electrógeno en su gabinete: rejillas de ventilación y el escape.
+      const piezas = [caja(x, y, w, h, "#5a6064", 3)];
+      piezas.push(caja(x + 5, y + 5, w - 10, h - 10, "#4f5559", 2, fina));
+      piezas.push(rayas(x + 5, y + 5, w * 0.55, h - 10, 8, true, "#373c40", 1.4));
+      piezas.push(`<circle cx="${(x + w * 0.8).toFixed(1)}" cy="${(y + h / 2).toFixed(1)}" r="${Math.min(w, h) * 0.12}" fill="#1f2326" ${fina}/>`);
+      return piezas.join("");
+    }
+    case "enfriadora": {
+      // Enfriadora: caja con ventiladores redondos en el techo.
+      const piezas = [caja(x, y, w, h, "#666c70", 3)];
+      const n = Math.max(1, Math.round(L / px(1.1)));
+      const rr = Math.min(A * 0.38, (L / n) * 0.38);
+      for (let i = 0; i < n; i++) {
+        const t = (i + 0.5) / n;
+        const cx = horizontal ? x + w * t : x + w / 2, cy = horizontal ? y + h / 2 : y + h * t;
+        piezas.push(`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${rr.toFixed(1)}" fill="#2e3336" ${fina}/>`);
+        piezas.push(`<path d="M${(cx - rr * 0.8).toFixed(1)},${cy.toFixed(1)}H${(cx + rr * 0.8).toFixed(1)}M${cx.toFixed(1)},${(cy - rr * 0.8).toFixed(1)}V${(cy + rr * 0.8).toFixed(1)}" stroke="#555b5f" stroke-width="2"/>`);
+      }
+      return piezas.join("");
+    }
+    case "chimenea": {
+      // Hogar de piedra contra el muro: mampostería, boca negra y ceniza fría.
+      const contra = m.contra ?? (horizontal ? "n" : "o");
+      const piezas = [caja(x, y, w, h, "#6a6862", 2)];
+      piezas.push(rayas(x, y, w, h, Math.max(2, Math.round(L / 14)), true, "#4b4a45", 1.2, 0.8));
+      const pr = A * 0.45, mg = L * 0.25;
+      const boca = { n: [x + mg, y + 3, w - 2 * mg, pr], s: [x + mg, y + h - pr - 3, w - 2 * mg, pr],
+        o: [x + 3, y + mg, pr, h - 2 * mg], e: [x + w - pr - 3, y + mg, pr, h - 2 * mg] }[contra];
+      if (boca) piezas.push(caja(...boca, "#1b1c1d", 2, fina) + caja(boca[0] + 4, boca[1] + 4, boca[2] - 8, boca[3] - 8, "#55575a", 2, `stroke="none" opacity="0.6"`));
+      return piezas.join("");
+    }
+    case "banco-trabajo": {
+      // Banco de trabajo: tablones gruesos, una morsa en un extremo y herramientas sueltas.
+      const piezas = [caja(x, y, w, h, "#55493d", 2)];
+      piezas.push(rayas(x, y, w, h, Math.max(2, Math.round(A / 12)), true, "#3b3129", 1.3));
+      const vx = horizontal ? x + 4 : x + w / 2 - 7, vy = horizontal ? y + h / 2 - 7 : y + 4;
+      piezas.push(caja(vx, vy, 14, 14, "#4a5055", 1, fina));
+      for (let i = 0; i < 3; i++) {
+        const tx = x + 20 + r() * Math.max(1, w - 40), ty = y + 6 + r() * Math.max(1, h - 12);
+        piezas.push(`<rect x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" width="${(10 + r() * 12).toFixed(1)}" height="3" transform="rotate(${((r() - 0.5) * 60).toFixed(0)} ${tx.toFixed(1)} ${ty.toFixed(1)})" fill="#2c3034" stroke="${p.tinta}" stroke-width="0.6"/>`);
+      }
+      return piezas.join("");
+    }
+    case "caja-fuerte": {
+      // Caja fuerte: acero oscuro, la puerta marcada y el dial.
+      const piezas = [caja(x, y, w, h, "#3a3f43", 2)];
+      piezas.push(caja(x + 5, y + 5, w - 10, h - 10, "#43494e", 1, fina));
+      piezas.push(`<circle cx="${(x + w / 2).toFixed(1)}" cy="${(y + h / 2).toFixed(1)}" r="${Math.min(w, h) * 0.16}" fill="#2a2e31" stroke="#8a9095" stroke-width="1.6"/>`);
+      return piezas.join("");
+    }
+    case "caseta": {
+      // Caseta (perrera, garita): techo a dos aguas visto de arriba, con la cumbrera.
+      const piezas = [caja(x, y, w, h, "#4d463e", 2)];
+      piezas.push(rayas(x, y, w, h, Math.max(3, Math.round(L / 9)), false, "#3a342e", 1.2, 0.8));
+      piezas.push(horizontal
+        ? `<line x1="${x + 2}" y1="${y + h / 2}" x2="${x + w - 2}" y2="${y + h / 2}" stroke="${p.tinta}" stroke-width="2.4"/>`
+        : `<line x1="${x + w / 2}" y1="${y + 2}" x2="${x + w / 2}" y2="${y + h - 2}" stroke="${p.tinta}" stroke-width="2.4"/>`);
+      return piezas.join("");
+    }
+    case "picadero": {
+      // Picadero de astillero: tacos de madera cruzados en capas.
+      const piezas = [];
+      for (let k = 0; k < 3; k++) {
+        const inset = k * 4;
+        piezas.push(caja(x + inset, y + inset, w - 2 * inset, h - 2 * inset, variar("#5a4c3e", k * 0.08), 1));
+        piezas.push(rayas(x + inset, y + inset, w - 2 * inset, h - 2 * inset, 3, k % 2 === 0, "#3a3027", 1.3));
+      }
+      return piezas.join("");
+    }
+    case "carril": {
+      // Carril de botadura: dos rieles de acero sobre durmientes de madera.
+      const piezas = [];
+      const paso = px(0.6);
+      for (let t = 6; t < L - 4; t += paso) {
+        piezas.push(horizontal ? caja(x + t, y, 12, h, "#4e4337", 1, fina) : caja(x, y + t, w, 12, "#4e4337", 1, fina));
+      }
+      for (const k of [0.28, 0.72]) {
+        piezas.push(horizontal
+          ? `<line x1="${x}" y1="${(y + h * k).toFixed(1)}" x2="${x + w}" y2="${(y + h * k).toFixed(1)}" stroke="${p.tinta}" stroke-width="5"/><line x1="${x}" y1="${(y + h * k).toFixed(1)}" x2="${x + w}" y2="${(y + h * k).toFixed(1)}" stroke="#5b5550" stroke-width="2.4"/>`
+          : `<line x1="${(x + w * k).toFixed(1)}" y1="${y}" x2="${(x + w * k).toFixed(1)}" y2="${y + h}" stroke="${p.tinta}" stroke-width="5"/><line x1="${(x + w * k).toFixed(1)}" y1="${y}" x2="${(x + w * k).toFixed(1)}" y2="${y + h}" stroke="#5b5550" stroke-width="2.4"/>`);
+      }
+      return piezas.join("");
+    }
+    case "grua": {
+      // Base de grúa: marco de acero con cruces de San Andrés y boguies en las esquinas.
+      const piezas = [caja(x, y, w, h, "none", 2, `stroke="${p.tinta}" stroke-width="7"`)];
+      piezas.push(caja(x, y, w, h, "none", 2, `stroke="#55504a" stroke-width="4"`));
+      piezas.push(`<path d="M${x},${y}L${x + w},${y + h}M${x + w},${y}L${x},${y + h}" stroke="#4a4540" stroke-width="3"/>`);
+      const b = Math.min(w, h) * 0.18;
+      for (const [cx, cy] of [[x, y], [x + w, y], [x, y + h], [x + w, y + h]]) {
+        piezas.push(caja(cx - b / 2, cy - b / 2, b, b, "#3a3632", 2, fina));
+      }
+      return piezas.join("");
+    }
+    case "tapiado": {
+      // Tapiado: tablones clavados de través contra el hueco.
+      const piezas = [];
+      const n = Math.max(2, Math.round(L / px(0.2)));
+      for (let i = 0; i < n; i++) {
+        const t = (i / n) * L, l = L / n - 2;
+        piezas.push(horizontal ? caja(x + t, y, l, h, variar("#5b5146", (r() - 0.5) * 0.2), 1, fina)
+          : caja(x, y + t, w, l, variar("#5b5146", (r() - 0.5) * 0.2), 1, fina));
+      }
+      return piezas.join("");
+    }
+    case "cable": {
+      // Mazo de cables a lo largo del muro: dos o tres trazos ondulados negros.
+      const piezas = [];
+      for (let k = 0; k < 3; k++) {
+        const off = (k + 1) / 4;
+        const pts = [];
+        for (let t = 0; t <= L; t += 12) {
+          const d = (r() - 0.5) * A * 0.4;
+          pts.push(horizontal ? `${(x + t).toFixed(1)},${(y + h * off + d).toFixed(1)}` : `${(x + w * off + d).toFixed(1)},${(y + t).toFixed(1)}`);
+        }
+        piezas.push(`<polyline points="${pts.join(" ")}" fill="none" stroke="#111315" stroke-width="2.2" stroke-linejoin="round"/>`);
+      }
+      return piezas.join("");
+    }
+    case "carbon":
+    case "escombros": {
+      // Montón: carbón (negro, en terrones) o escombros (vigas quemadas y ladrillos).
+      const carbon = tipoMueble(m) === "carbon";
+      const piezas = [monton(carbon ? "#1a1b1c" : "#3d3833")];
+      const n = Math.round((w * h) / (carbon ? 60 : 160));
+      for (let i = 0; i < n; i++) {
+        const cx = x + w * (0.15 + r() * 0.7), cy = y + h * (0.15 + r() * 0.7);
+        piezas.push(carbon
+          ? `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(1.5 + r() * 3).toFixed(1)}" fill="${r() < 0.5 ? "#0c0d0e" : "#2c2e30"}"/>`
+          : `<rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${(8 + r() * 40).toFixed(1)}" height="${(4 + r() * 6).toFixed(1)}" transform="rotate(${(r() * 180).toFixed(0)} ${cx.toFixed(1)} ${cy.toFixed(1)})" fill="${r() < 0.5 ? "#161515" : "#5d5149"}" stroke="${p.tinta}" stroke-width="0.8"/>`);
+      }
+      return piezas.join("");
+    }
+    case "canal": {
+      // Canal de desagüe en el piso: bordes de piedra y agua oscura corriendo.
+      const piezas = [caja(x, y, w, h, "#55534d", 1)];
+      const i = Math.min(6, A * 0.25);
+      piezas.push(caja(x + (horizontal ? 0 : i), y + (horizontal ? i : 0), w - (horizontal ? 0 : 2 * i), h - (horizontal ? 2 * i : 0), "#1e2a33", 1, fina));
+      piezas.push(rayas(x + (horizontal ? 0 : i), y + (horizontal ? i : 0), w - (horizontal ? 0 : 2 * i), h - (horizontal ? 2 * i : 0), 3, true, "#3a4c59", 1, 0.6));
+      return piezas.join("");
+    }
+    case "cinta": {
+      // Cinta transportadora: bastidor de acero, banda de goma y rodillos asomando.
+      const piezas = [caja(x, y, w, h, "#3f4448", 2)];
+      const i = Math.min(7, A * 0.18);
+      piezas.push(caja(x + (horizontal ? 0 : i), y + (horizontal ? i : 0), w - (horizontal ? 0 : 2 * i), h - (horizontal ? 2 * i : 0), "#2b2e31", 1, fina));
+      piezas.push(rayas(x, y, w, h, Math.max(3, Math.round(L / px(0.4))), false, "#55595d", 1.4, 0.8));
+      return piezas.join("");
+    }
+    case "flores": {
+      // Flores de plástico descoloridas (y una de verdad): puntitos apagados.
+      const piezas = [];
+      const n = Math.max(4, Math.round((w * h) / 40));
+      for (let i = 0; i < n; i++) {
+        const cx = x + 3 + r() * Math.max(1, w - 6), cy = y + 3 + r() * Math.max(1, h - 6);
+        piezas.push(`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(2 + r() * 2).toFixed(1)}" fill="${["#8d8487", "#9a9590", "#7b8186", "#a39c97"][Math.floor(r() * 4)]}" ${`stroke="${p.tinta}" stroke-width="0.6"`}/>`);
+      }
+      return piezas.join("");
+    }
+    case "pedestal": {
+      // Pedestal o plinto: bloque claro con bisel (o oscuro con `material: "oscuro"`).
+      const oscuro = m.material === "oscuro";
+      return caja(x, y, w, h, oscuro ? "#2a2f33" : "#c3c6c3", 1) + caja(x + 4, y + 4, w - 8, h - 8, oscuro ? "#353b40" : "#d0d2cf", 1, fina);
+    }
+    case "jardinera": {
+      // Jardinera de hormigón: tierra oscura y ramas peladas de invierno.
+      const piezas = [caja(x, y, w, h, "#7d7e78", 2)];
+      piezas.push(caja(x + 5, y + 5, w - 10, h - 10, "#2e2a26", 1, fina));
+      for (let i = 0; i < Math.max(3, Math.round(L / 20)); i++) {
+        const cx = x + 8 + r() * (w - 16), cy = y + 8 + r() * (h - 16);
+        piezas.push(`<path d="M${cx.toFixed(1)},${cy.toFixed(1)}l${((r() - 0.5) * 16).toFixed(1)},${((r() - 0.5) * 16).toFixed(1)}m0,0l${((r() - 0.5) * 8).toFixed(1)},${((r() - 0.5) * 8).toFixed(1)}" stroke="#57514a" stroke-width="1.3" fill="none"/>`);
+      }
+      return piezas.join("");
+    }
+    case "maceta": {
+      // Maceta con planta (de plástico): maceta redonda y hojas gris verdoso apagado.
+      const cx = x + w / 2, cy = y + h / 2, rr = Math.min(w, h) / 2;
+      const piezas = [`<circle cx="${cx}" cy="${cy}" r="${rr}" fill="#c9cbc8" ${tinta}/>`];
+      for (let k = 0; k < 7; k++) {
+        const a = (k / 7) * Math.PI * 2 + r();
+        piezas.push(`<ellipse cx="${(cx + Math.cos(a) * rr * 0.45).toFixed(1)}" cy="${(cy + Math.sin(a) * rr * 0.45).toFixed(1)}" rx="${(rr * 0.4).toFixed(1)}" ry="${(rr * 0.18).toFixed(1)}" transform="rotate(${((a * 180) / Math.PI).toFixed(0)} ${(cx + Math.cos(a) * rr * 0.45).toFixed(1)} ${(cy + Math.sin(a) * rr * 0.45).toFixed(1)})" fill="#55605a" stroke="${p.tinta}" stroke-width="0.8"/>`);
+      }
+      return piezas.join("");
+    }
+    case "lampara-uv": {
+      // Panel de lámparas de pared, apagado: carcasa oscura con los tubos grises.
+      const piezas = [caja(x, y, w, h, "#25292d", 2)];
+      piezas.push(rayas(x, y, w, h, 3, true, "#8c9196", 2));
+      return piezas.join("");
+    }
+    case "catre": {
+      // Catre de campaña: bastidor, lona y patas en X en las puntas.
+      const piezas = [caja(x, y, w, h, "#4a4d45", 2)];
+      piezas.push(caja(x + 4, y + 4, w - 8, h - 8, "#5d6157", 2, fina));
+      return piezas.join("");
+    }
+    case "auto":
+    case "vehiculo": {
+      // Auto o camioneta visto de arriba: carrocería, parabrisas y luneta oscuros, techo.
+      const piezas = [caja(x, y, w, h, "#4f565c", Math.min(w, h) * 0.22)];
+      const [a, b] = horizontal ? [w, h] : [h, w];
+      const pieza = (u, v, lu, lv, fill) => horizontal ? caja(x + u, y + v, lu, lv, fill, 4, fina) : caja(x + v, y + u, lv, lu, fill, 4, fina);
+      piezas.push(pieza(a * 0.28, b * 0.1, a * 0.12, b * 0.8, "#1c2125"));
+      piezas.push(pieza(a * 0.4, b * 0.12, a * 0.32, b * 0.76, "#5d646a"));
+      piezas.push(pieza(a * 0.72, b * 0.12, a * 0.08, b * 0.76, "#1c2125"));
+      return piezas.join("");
+    }
+    case "bandeja":
+    case "carpeta":
+    case "maletin": {
+      // Objetos chicos (casi siempre tiles): bandeja con borde, carpeta, maletín de aluminio.
+      const fill = { bandeja: "#3a2f36", carpeta: "#8f8a7c", maletin: "#a3a8ab" }[tipoMueble(m)];
+      return caja(x, y, w, h, fill, 2) + caja(x + 3, y + 3, w - 6, h - 6, "none", 1, fina);
+    }
     default:
       return caja(x, y, w, h, "#6f6b64", 3);
   }
 }
 
 /** Sombra proyectada abajo-derecha. Se dibujan todas antes que los objetos. */
+const SIN_SOMBRA = new Set(["trampilla", "escalera", "escalerilla", "mapas", "timbre", "camara", "lector", "cable",
+  "canal", "carril", "flores", "tapiado", "videopared", "panel", "lampara-uv", "carbon", "escombros"]);
+const ALTOS = new Set(["estante", "heladera", "maquina", "contenedor", "rack", "expendedora", "maquina-cafe", "generador",
+  "enfriadora", "caja-fuerte", "chimenea", "grua", "caseta", "auto", "vehiculo"]);
+
+/** Tipos que el renderer sabe dibujar (los demás salen como caja genérica; construir-planos avisa). */
+export const TIPOS_MUEBLE = ["escritorio", "silla", "cama", "sofa", "heladera", "mesa", "estante", "mapas", "corcho",
+  "radiador", "tv", "timbre", "contenedor", "escalera", "escalerilla", "trampilla", "inodoro", "lavabo", "ducha", "banera",
+  "mesada", "maquina", "videopared", "panel", "rack", "camara", "lector", "banco", "mostrador", "barra", "maquina-cafe",
+  "expendedora", "consola", "timon", "balsa", "generador", "enfriadora", "chimenea", "banco-trabajo", "caja-fuerte",
+  "caseta", "picadero", "carril", "grua", "tapiado", "cable", "carbon", "escombros", "canal", "cinta", "flores",
+  "pedestal", "jardinera", "maceta", "lampara-uv", "catre", "auto", "vehiculo", "bandeja", "carpeta", "maletin",
+  // móviles sin dibujo propio (van como tile): caja genérica si alguno se fija
+  "lampara", "carro", "palet", "camilla", "tubos", "portatil", "cenicero", "vela"];
+export const tipoConocido = m => TIPOS_MUEBLE.includes(tipoMueble(m));
+
 function sombraMueble(m, p) {
-  if (["trampilla", "escalera", "escalerilla", "mapas", "timbre"].includes(m.tipo)) return "";
+  const tipo = tipoMueble(m);
+  if (SIN_SOMBRA.has(tipo)) return "";
   const x = px(m.x), y = px(m.y), w = px(m.w), h = px(m.h);
-  const alto = ["estante", "heladera", "maquina", "contenedor"].includes(m.tipo) ? 9 : 5;
+  const alto = ALTOS.has(tipo) ? 9 : 5;
   return `<rect x="${x + alto}" y="${y + alto + 1}" width="${w}" height="${h}" rx="4" fill="${p.muroSombra}" opacity="0.42"/>`;
 }
 
@@ -886,31 +1575,181 @@ function sombraMueble(m, p) {
 /** Grosor de muro: 27 cm (tabique revocado de un edificio de 1910). */
 const GROSOR_M = 0.27;
 
+/**
+ * Un muro alineado, según el material de la paleta. Todos ocupan la misma
+ * banda (grosor fijo, extremos extendidos medio espesor para cerrar las
+ * esquinas); cambia lo que se ve en el canto.
+ */
+function muroRecto(m, p, r, g) {
+  const [x1, y1, x2, y2] = m.c;
+  const horizontal = y1 === y2;
+  const largo = horizontal ? x2 - x1 : y2 - y1;
+  const bx = x1 - g / 2, by = y1 - g / 2;
+  const bw = horizontal ? largo + g : g;
+  const bh = horizontal ? g : largo + g;
+  const o = [];
+  const linea = (a, b, c, d, color, w, op = 1) => o.push(`<line x1="${a.toFixed(1)}" y1="${b.toFixed(1)}" x2="${c.toFixed(1)}" y2="${d.toFixed(1)}" stroke="${color}" stroke-width="${w}"${op < 1 ? ` opacity="${op}"` : ""}/>`);
+  if (p.muroEstilo === "silleria") {
+    // Sillería o ladrillo viejo: bloque por bloque, cada uno con su tinta y su valor (DVV).
+    let t = -g / 2;
+    while (t < largo + g / 2 - 1) {
+      const bloque = Math.min(30 + r() * 30, largo + g / 2 - t);
+      const sx = horizontal ? x1 + t : x1 - g / 2, sy = horizontal ? y1 - g / 2 : y1 + t;
+      const sw = horizontal ? bloque : g, sh = horizontal ? g : bloque;
+      o.push(`<path d="${bordeTembloroso(sx, sy, sw, sh, r, 2.2)}" fill="${variar(p.muro, (r() - 0.5) * 0.26)}" stroke="${p.tinta}" stroke-width="2.4" stroke-linejoin="round"/>`);
+      if (r() < 0.25) o.push(`<path d="M${(sx + sw * 0.25).toFixed(1)},${(sy + sh * 0.3).toFixed(1)}l${(sw * 0.3).toFixed(1)},${(sh * 0.25).toFixed(1)}" stroke="${p.muroSombra}" stroke-width="1.4" fill="none" opacity="0.7"/>`);
+      t += bloque;
+    }
+    return o.join("");
+  }
+  o.push(`<path d="${bordeTembloroso(bx, by, bw, bh, r, 1.2)}" fill="${variar(p.muro, (r() - 0.5) * 0.08)}" ` +
+    `stroke="${p.tinta}" stroke-width="2.6" stroke-linejoin="round"/>`);
+  const luz = variar(p.muro, 0.18), sombra = variar(p.muro, -0.3);
+  if (p.muroEstilo === "chapa") {
+    // Chapa acanalada sobre bloque: el canto ondulado se lee como costillas cortas.
+    for (let t = 6; t < (horizontal ? bw : bh) - 4; t += 7) {
+      horizontal ? linea(bx + t, by + 4, bx + t, by + bh - 4, sombra, 1.6, 0.7) : linea(bx + 4, by + t, bx + bw - 4, by + t, sombra, 1.6, 0.7);
+    }
+  } else if (p.muroEstilo === "madera") {
+    // Tablones a lo largo, con alguna junta a tope.
+    for (const k of [1 / 3, 2 / 3]) {
+      horizontal ? linea(bx + 2, by + bh * k, bx + bw - 2, by + bh * k, sombra, 1.3, 0.8) : linea(bx + bw * k, by + 2, bx + bw * k, by + bh - 2, sombra, 1.3, 0.8);
+    }
+    for (let t = 40 + r() * 80; t < (horizontal ? bw : bh) - 10; t += 60 + r() * 120) {
+      horizontal ? linea(bx + t, by + 2, bx + t, by + bh - 2, sombra, 1.3, 0.8) : linea(bx + 2, by + t, bx + bw - 2, by + t, sombra, 1.3, 0.8);
+    }
+  } else if (p.muroEstilo === "acero") {
+    // Mamparo de chapa remachada: dos filas de remaches.
+    for (let t = 8; t < (horizontal ? bw : bh) - 4; t += 16) {
+      for (const k of [0.25, 0.75]) {
+        const cx = horizontal ? bx + t : bx + bw * k, cy = horizontal ? by + bh * k : by + t;
+        o.push(`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="1.4" fill="${sombra}" opacity="0.8"/>`);
+      }
+    }
+  }
+  o.push(horizontal
+    ? `<line x1="${bx + 3}" y1="${by + 5}" x2="${bx + bw - 3}" y2="${by + 5}" stroke="${luz}" stroke-width="2" opacity="0.6"/>`
+    : `<line x1="${bx + 5}" y1="${by + 3}" x2="${bx + 5}" y2="${by + bh - 3}" stroke="${luz}" stroke-width="2" opacity="0.6"/>`);
+  return o.join("");
+}
+
+/**
+ * Muros oblicuos (curvas, contornos): se encadenan en polilíneas por extremos
+ * compartidos y se trazan como banda con canto de tinta, para que una curva
+ * hecha de diez tramos no tenga diez costuras.
+ */
+function cadenas(segmentos) {
+  const restantes = segmentos.map(m => m.c);
+  const out = [];
+  while (restantes.length) {
+    const [x1, y1, x2, y2] = restantes.shift();
+    const cad = [[x1, y1], [x2, y2]];
+    let creció = true;
+    while (creció) {
+      creció = false;
+      for (let i = 0; i < restantes.length; i++) {
+        const [a, b, c, d] = restantes[i];
+        const fin = cad[cad.length - 1], ini = cad[0];
+        if (a === fin[0] && b === fin[1]) cad.push([c, d]);
+        else if (c === fin[0] && d === fin[1]) cad.push([a, b]);
+        else if (c === ini[0] && d === ini[1]) cad.unshift([a, b]);
+        else if (a === ini[0] && b === ini[1]) cad.unshift([c, d]);
+        else continue;
+        restantes.splice(i, 1); creció = true; break;
+      }
+    }
+    out.push(cad);
+  }
+  return out;
+}
+
+/** Un tramo cualquiera dibujado con su eje como X local (para vidrios y barandas oblicuos). */
+function rotado(c, cuerpo) {
+  const [x1, y1, x2, y2] = c;
+  const ang = (Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI;
+  return `<g transform="translate(${x1} ${y1}) rotate(${ang.toFixed(3)})">${cuerpo(Math.hypot(x2 - x1, y2 - y1))}</g>`;
+}
+
+/** Vidrio, ventana o hueco: alféizar (el muro sigue debajo, más bajo) y, salvo el hueco, el paño. */
+function dibujarVidrio(m, p, g) {
+  const [x1, y1, x2, y2] = m.c;
+  const gv = Math.round(g * 0.42);
+  const sinPaño = m._tipo === "hueco";
+  const alfeizar = sinPaño ? variar(p.muro, -0.05) : variar(p.muro, 0.12);
+  const brillo = mezclar(p.vidrio, "#ffffff", 0.4);
+  if (oblicuo(m.c)) {
+    return rotado(m.c, L => [
+      `<rect x="0" y="${-g / 2}" width="${L.toFixed(1)}" height="${g}" fill="${alfeizar}" stroke="${p.tinta}" stroke-width="1.6" opacity="0.9"/>`,
+      sinPaño ? `<rect x="0" y="${-gv / 2}" width="${L.toFixed(1)}" height="${gv}" fill="${variar(p.muroSombra, 0.08)}" opacity="0.8"/>`
+        : `<rect x="0" y="${-gv / 2}" width="${L.toFixed(1)}" height="${gv}" fill="${p.vidrio}" opacity="0.85" stroke="${p.marco}" stroke-width="2"/>` +
+          `<line x1="0" y1="0" x2="${L.toFixed(1)}" y2="0" stroke="${brillo}" stroke-width="1.4"/>`,
+      `<rect x="-5" y="-5" width="10" height="10" fill="${p.marco}" stroke="${p.tinta}" stroke-width="1.4"/>`
+    ].join(""));
+  }
+  const horizontal = y1 === y2;
+  const bx = horizontal ? x1 : x1 - gv / 2, by = horizontal ? y1 - gv / 2 : y1;
+  const bw = horizontal ? x2 - x1 : gv, bh = horizontal ? gv : y2 - y1;
+  const o = [];
+  o.push(`<rect x="${horizontal ? bx : x1 - g / 2}" y="${horizontal ? y1 - g / 2 : by}" width="${horizontal ? bw : g}" height="${horizontal ? g : bh}" fill="${alfeizar}" stroke="${p.tinta}" stroke-width="1.6" opacity="0.9"/>`);
+  if (sinPaño) {
+    // Hueco sin vidrio: el alféizar con una ranura oscura, sin perfil ni montantes.
+    o.push(`<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" fill="${variar(p.muroSombra, 0.08)}" opacity="0.8"/>`);
+    return o.join("");
+  }
+  o.push(`<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" fill="${p.vidrio}" opacity="0.85" stroke="${p.marco}" stroke-width="2"/>`);
+  o.push(horizontal
+    ? `<line x1="${bx}" y1="${y1}" x2="${bx + bw}" y2="${y1}" stroke="${brillo}" stroke-width="1.4"/>`
+    : `<line x1="${x1}" y1="${by}" x2="${x1}" y2="${by + bh}" stroke="${brillo}" stroke-width="1.4"/>`);
+  const largo = horizontal ? bw : bh;
+  const n = Math.max(1, Math.round(largo / GRID_PX));
+  for (let i = 0; i <= n; i++) {
+    const t = largo * i / n;
+    const mx = horizontal ? bx + t : x1, my = horizontal ? y1 : by + t;
+    o.push(`<rect x="${mx - 5}" y="${my - 5}" width="10" height="10" fill="${p.marco}" stroke="${p.tinta}" stroke-width="1.4"/>`);
+  }
+  return o.join("");
+}
+
+/** Baranda: pasamanos fino con parantes cada medio metro, en cualquier dirección. */
+function dibujarBaranda(m, p) {
+  const [x1, y1, x2, y2] = m.c;
+  const largo = Math.hypot(x2 - x1, y2 - y1);
+  const metal = p.metal ?? "#2a2f34";
+  const o = [`<line x1="${x1 + 3}" y1="${y1 + 4}" x2="${x2 + 3}" y2="${y2 + 4}" stroke="${p.muroSombra}" stroke-width="5" opacity="0.4"/>`,
+    `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${p.tinta}" stroke-width="6" stroke-linecap="round"/>`,
+    `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${metal}" stroke-width="3" stroke-linecap="round"/>`];
+  const n = Math.max(1, Math.round(largo / (GRID_PX / 2)));
+  for (let i = 0; i <= n; i++) {
+    const t = i / n;
+    const cx = x1 + (x2 - x1) * t, cy = y1 + (y2 - y1) * t;
+    o.push(`<rect x="${+(cx - 4).toFixed(1)}" y="${+(cy - 4).toFixed(1)}" width="8" height="8" fill="${metal}" stroke="${p.tinta}" stroke-width="1.4"/>`);
+  }
+  return o.join("");
+}
+
 export function renderSvg(planoCrudo) {
   const plano = normalizar(planoCrudo);
-  const p = PALETAS[plano.paleta] ?? PALETAS.apartamento;
+  const p = { ...(PALETAS[plano.paleta] ?? PALETAS.apartamento), _defs: new Map() };
   const r = azar(plano.id);
   const W = px(plano.ancho), H = px(plano.alto);
   const o = [];
 
-  o.push(`<defs>
-    <filter id="grano" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7"/>
-      <feColorMatrix type="saturate" values="0"/>
-    </filter>
-    ${defRayado(p)}
-  </defs>`);
-
   o.push(...exterior(plano, p, r, W, H));
 
-  for (const h of plano.habitaciones) o.push(...piso(h, p, r));
+  plano.habitaciones.forEach((h, i) => o.push(...pisoHabitacion(h, i, p, r)));
   o.push(...suciedad(plano, p, r));
 
-  // Sombra interior contra los muros: oclusión ambiental, no luz.
-  for (const h of plano.habitaciones) {
-    if (h.sinMuros || h.piso === "macizo" || h.piso === "rejilla") continue;
-    o.push(`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" ` +
-      `fill="none" stroke="${p.muroSombra}" stroke-width="18" opacity="0.2"/>`);
+  const g = Math.round(GROSOR_M * PX_POR_M);
+  const todos = derivarMuros(plano);
+  const muros = todos.filter(m => m._tipo === "muro" || m._tipo === "secreta");
+  const rectos = muros.filter(m => !oblicuo(m.c)), torcidos = muros.filter(m => oblicuo(m.c));
+
+  // Sombra de zócalo (oclusión ambiental, no luz): una franja a cada lado de
+  // los muros macizos, debajo de ellos. Sigue a los muros de verdad, así que no
+  // aparece en los pasos abiertos, las barandas ni los bordes sin muro.
+  for (const m of muros) {
+    const [x1, y1, x2, y2] = m.c;
+    o.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${p.muroSombra}" stroke-width="${g + 18}" opacity="0.2"/>`);
   }
 
   o.push(...detritos(plano, p, r));
@@ -922,77 +1761,29 @@ export function renderSvg(planoCrudo) {
   // Muros: los mismos tramos que se le entregan a Foundry, así que lo que se ve
   // y lo que bloquea el paso son literalmente la misma geometría. Se dibujan
   // macizos los muros y las puertas secretas; las puertas normales y las de
-  // vidrio dejan el vano, y los vidrios, ventanas y barandas se dibujan aparte.
-  const g = Math.round(GROSOR_M * PX_POR_M);
-  const todos = derivarMuros(plano);
-  const muros = todos.filter(m => m._tipo === "muro" || m._tipo === "secreta");
-
+  // vidrio dejan el vano, y los vidrios, ventanas, huecos y barandas se dibujan aparte.
   for (const m of muros) {
     const [x1, y1, x2, y2] = m.c;
     o.push(`<line x1="${x1 + 6}" y1="${y1 + 7}" x2="${x2 + 6}" y2="${y2 + 7}" stroke="${p.muroSombra}" stroke-width="${g}" stroke-linecap="square" opacity="0.5"/>`);
   }
-
-  for (const m of muros) {
-    const [x1, y1, x2, y2] = m.c;
-    const horizontal = y1 === y2;
-    const largo = horizontal ? x2 - x1 : y2 - y1;
-    // Tabique revocado: una banda continua con canto de tinta, como corte de
-    // arquitectura. Los extremos se extienden medio espesor para que las
-    // esquinas cierren.
-    const bx = x1 - g / 2, by = y1 - g / 2;
-    const bw = horizontal ? largo + g : g;
-    const bh = horizontal ? g : largo + g;
-    o.push(`<path d="${bordeTembloroso(bx, by, bw, bh, r, 1.2)}" fill="${variar(p.muro, (r() - 0.5) * 0.08)}" ` +
-      `stroke="${p.tinta}" stroke-width="2.6" stroke-linejoin="round"/>`);
-    o.push(horizontal
-      ? `<line x1="${bx + 3}" y1="${by + 5}" x2="${bx + bw - 3}" y2="${by + 5}" stroke="${variar(p.muro, 0.18)}" stroke-width="2" opacity="0.6"/>`
-      : `<line x1="${bx + 5}" y1="${by + 3}" x2="${bx + 5}" y2="${by + bh - 3}" stroke="${variar(p.muro, 0.18)}" stroke-width="2" opacity="0.6"/>`);
+  for (const m of rectos) o.push(muroRecto(m, p, r, g));
+  for (const cad of cadenas(torcidos)) {
+    const d = `M${cad.map(q => q.join(",")).join("L")}`;
+    o.push(`<path d="${d}" fill="none" stroke="${p.tinta}" stroke-width="${g + 5}" stroke-linejoin="round" stroke-linecap="square"/>`);
+    o.push(`<path d="${d}" fill="none" stroke="${variar(p.muro, (r() - 0.5) * 0.08)}" stroke-width="${g - 0.5}" stroke-linejoin="round" stroke-linecap="square"/>`);
   }
 
-  // Vidrios y ventanas: perfil fino con montantes cada metro. Es estructura
-  // (no una hoja de puerta): una guillotina se ve igual abierta o cerrada.
-  for (const m of todos.filter(m => m._tipo === "vidrio" || m._tipo === "ventana")) {
-    const [x1, y1, x2, y2] = m.c;
-    const horizontal = y1 === y2;
-    const gv = Math.round(g * 0.42);
-    const bx = horizontal ? x1 : x1 - gv / 2, by = horizontal ? y1 - gv / 2 : y1;
-    const bw = horizontal ? x2 - x1 : gv, bh = horizontal ? gv : y2 - y1;
-    // Alféizar: el muro sigue debajo de la ventana, más bajo.
-    o.push(`<rect x="${horizontal ? bx : x1 - g / 2}" y="${horizontal ? y1 - g / 2 : by}" width="${horizontal ? bw : g}" height="${horizontal ? g : bh}" fill="${variar(p.muro, 0.12)}" stroke="${p.tinta}" stroke-width="1.6" opacity="0.9"/>`);
-    o.push(`<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" fill="${p.vidrio}" opacity="0.85" stroke="${p.marco}" stroke-width="2"/>`);
-    o.push(horizontal
-      ? `<line x1="${bx}" y1="${y1}" x2="${bx + bw}" y2="${y1}" stroke="${mezclar(p.vidrio, "#ffffff", 0.4)}" stroke-width="1.4"/>`
-      : `<line x1="${x1}" y1="${by}" x2="${x1}" y2="${by + bh}" stroke="${mezclar(p.vidrio, "#ffffff", 0.4)}" stroke-width="1.4"/>`);
-    const largo = horizontal ? bw : bh;
-    const tramos = Math.max(1, Math.round(largo / GRID_PX));
-    for (let i = 0; i <= tramos; i++) {
-      const t = largo * i / tramos;
-      const mx = horizontal ? bx + t : x1, my = horizontal ? y1 : by + t;
-      o.push(`<rect x="${mx - 5}" y="${my - 5}" width="10" height="10" fill="${p.marco}" stroke="${p.tinta}" stroke-width="1.4"/>`);
-    }
-  }
+  // Vidrios, ventanas y huecos: perfil fino con montantes cada metro. Es
+  // estructura (no una hoja de puerta): una guillotina se ve igual abierta o cerrada.
+  for (const m of todos.filter(m => ["vidrio", "ventana", "hueco"].includes(m._tipo))) o.push(dibujarVidrio(m, p, g));
 
-  // Barandas: pasamanos de hierro con parantes cada medio metro. Bloquean el
-  // paso, no la vista: en el mapa se ven finas, para que no se lean como muro.
-  for (const m of todos.filter(m => m._tipo === "baranda")) {
-    const [x1, y1, x2, y2] = m.c;
-    const horizontal = y1 === y2;
-    const largo = horizontal ? x2 - x1 : y2 - y1;
-    o.push(`<line x1="${x1 + 3}" y1="${y1 + 4}" x2="${x2 + 3}" y2="${y2 + 4}" stroke="${p.muroSombra}" stroke-width="5" opacity="0.4"/>`);
-    o.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${p.tinta}" stroke-width="6" stroke-linecap="round"/>`);
-    o.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${p.metal ?? "#2a2f34"}" stroke-width="3" stroke-linecap="round"/>`);
-    const n = Math.max(1, Math.round(largo / (GRID_PX / 2)));
-    for (let i = 0; i <= n; i++) {
-      const t = largo * i / n;
-      const cx = horizontal ? x1 + t : x1, cy = horizontal ? y1 : y1 + t;
-      o.push(`<rect x="${cx - 4}" y="${cy - 4}" width="8" height="8" fill="${p.metal ?? "#2a2f34"}" stroke="${p.tinta}" stroke-width="1.4"/>`);
-    }
-  }
+  // Barandas: bloquean el paso, no la vista: en el mapa se ven finas, para que
+  // no se lean como muro.
+  for (const m of todos.filter(m => m._tipo === "baranda")) o.push(dibujarBaranda(m, p));
 
   // Umbral: marca discreta en el piso. La hoja de la puerta la dibuja Foundry.
-  for (const v of plano.vanos ?? []) {
-    if (v.tipo !== "puerta" && v.tipo !== "puerta-vidrio") continue;
-    const [x1, y1, x2, y2] = coordsVano(v);
+  for (const m of todos.filter(m => m._tipo === "puerta" || m._tipo === "puerta-vidrio")) {
+    const [x1, y1, x2, y2] = m.c;
     o.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${p.umbral}" stroke-width="${Math.round(g * 0.5)}" opacity="0.5"/>`);
     o.push(`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${p.tinta}" stroke-width="2" opacity="0.5" stroke-dasharray="7 9"/>`);
   }
@@ -1004,7 +1795,14 @@ export function renderSvg(planoCrudo) {
   // Grano, para que no se lea como vector limpio. Sin viñeta: a sangre.
   o.push(`<rect width="${W}" height="${H}" filter="url(#grano)" opacity="0.05"/>`);
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${o.join("")}</svg>`;
+  const defs = `<defs>
+    <filter id="grano" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    ${defRayado(p)}${[...p._defs.values()].join("")}
+  </defs>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${defs}${o.join("")}</svg>`;
 }
 
 /* -------------------------------------------- */

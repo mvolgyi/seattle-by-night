@@ -2,9 +2,9 @@
   "_id": "sEdBfHzj0JBxHNAa",
   "_key": "!actors!sEdBfHzj0JBxHNAa",
   "name": "Sasha Hale",
-  "type": "spc",
-  "img": "icons/svg/mystery-man.svg",
-  "folder": "Dns9UX98EXKSFsMv",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-21.webp",
+  "folder": "kkxcazkzuAwrYdB0",
   "sort": 20,
   "prototypeToken": {
     "name": "Sasha Hale",
@@ -15,19 +15,21 @@
       "enabled": false
     },
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-21.webp"
     }
   },
   "system": {
-    "group": "",
+    "group": "HreoEGHHF8fvUBHd",
     "headers": {
       "concept": "Ex analista de inteligencia de señales, treinta y dos años",
       "chronicle": "Seattle by Night",
-      "ambition": "",
-      "desire": "",
-      "touchstones": "",
+      "ambition": "Que su informe sobre ARQUERO sea el que se lea en la sede nacional.",
+      "desire": "Una noche entera sin auriculares.",
+      "touchstones": "<h3>Piedras de toque</h3><ul><li>Su hermano menor, que estudia en Spokane y cree que ella audita bancos.</li></ul>",
       "sire": "",
-      "generation": ""
+      "generation": "",
+      "creedfields": "Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio.",
+      "cellname": "Célula Puget"
     },
     "bio": {
       "age": {
@@ -40,11 +42,11 @@
       },
       "history": ""
     },
-    "biography": "<p>@UUID[JournalEntry.D611Mcr17F6HHEUw]{Perfil: Sasha Hale}</p><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>Analista S. Hale</td></tr><tr><th>Concepto</th><td>Ex analista de inteligencia de señales, treinta y dos años</td></tr></tbody></table>",
-    "appearance": "",
-    "equipment": "",
+    "biography": "<p>@UUID[JournalEntry.D611Mcr17F6HHEUw]{Perfil: Sasha Hale}</p><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>Analista S. Hale</td></tr><tr><th>Concepto</th><td>Ex analista de inteligencia de señales, treinta y dos años</td></tr><tr><th>Ambición</th><td>Que su informe sobre ARQUERO sea el que se lea en la sede nacional.</td></tr><tr><th>Deseo</th><td>Una noche entera sin auriculares.</td></tr><tr><th>Reservas</th><td>Física 2 · Social 3 · Mental 7 · Investigación 8 · Tecnología 7 · Academicismo 5 · Ocultismo (Vástagos) 4</td></tr></tbody></table><h3>Semblante</h3><p>Treinta y dos años, ex analista de inteligencia de señales. Auriculares al cuello, la mirada en otra pantalla.</p><h3>Cazador</h3><table class=\"sbn-ficha\"><tbody><tr><th>Célula</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Célula Puget}</td></tr><tr><th>Credo</th><td>Inquisitivos. <em>Desesperación:</em> Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio.</td></tr><tr><th>Impulso</th><td>Curiosidad. <em>Redención:</em> Se redime cuando descubre algo que alguien quería ocultarle a la Célula y lo pone por escrito, con su firma.</td></tr><tr><th>Facultades</th><td>Biblioteca (Escucha atenta) · Frustrar lo antinatural</td></tr></tbody></table><p>Escuchó el episodio 112 tres veces. Hay un dibujo en esta ciudad y alguien se lo está regalando a la Célula por entregas. Quiere saber quién y por qué, aunque la respuesta no le guste a nadie.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.lsusKQmTy3IEDb5J]{Pregenerado: Sasha Hale · Analista}</p>",
+    "appearance": "<p>Treinta y dos años, ex analista de inteligencia de señales. Auriculares al cuello, la mirada en otra pantalla.</p>",
+    "equipment": "<ul><li>Teléfono cifrado</li><li>Portátil con acceso al canal de ANOMALY</li><li>Credencial de «consultoría» de Northline</li></ul>",
     "notes": "",
-    "privatenotes": "",
+    "privatenotes": "<h3>Propuesto (no está en los docs)</h3><ul><li>Atributos y Habilidades: el doc da reservas de PNJ (Física 2, Social 3, Mental 7; Investigación 8, Tecnología 7, Academicismo 5, Ocultismo 4 (Vástagos); Salud 5, Fuerza de Voluntad 6). Conversión: Inteligencia 4 + Investigación 4, Inteligencia 4 + Tecnología 3, Inteligencia 4 + Academicismo 1, Astucia 3 + Ocultismo 1; Salud = Resistencia 2 + 3; Voluntad = Compostura 3 + Resolución 3. Las habilidades sociales y de Consciencia son propuestas.</li><li>Credo Inquisitiva (su trabajo es sacar información: el pódcast, ANOMALY, la cadena de custodia) e Impulso Curiosidad (DOC-07, punto 6: «¿por qué nos lo da?»).</li><li>Facultades: Biblioteca (el archivo de la Célula) y Frustrar lo antinatural para su Fe del doc. El Beneficio «Escucha atenta» es propuesto.</li><li>Equipo, semblante (salvo la edad y el oficio, que son del doc), ambición, deseo y piedra de toque.</li></ul>",
     "health": {
       "max": 5,
       "value": 5,
@@ -57,43 +59,69 @@
       "aggravated": 0,
       "superficial": 0
     },
-    "spcType": "mortal",
-    "standarddicepools": {
-      "physical": {
-        "value": 2
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
       },
-      "social": {
-        "value": 3
+      "dexterity": {
+        "value": 2,
+        "active": false
       },
-      "mental": {
-        "value": 7
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
       }
     },
-    "exceptionaldicepools": {
+    "skills": {
       "investigation": {
-        "value": 8,
-        "active": true,
+        "value": 4,
+        "active": false,
         "description": "",
         "macroid": "",
         "bonuses": []
       },
       "technology": {
-        "value": 7,
-        "active": true,
+        "value": 3,
+        "active": false,
         "description": "",
         "macroid": "",
         "bonuses": []
       },
       "academics": {
-        "value": 5,
-        "active": true,
+        "value": 1,
+        "active": false,
         "description": "",
         "macroid": "",
         "bonuses": []
       },
       "occult": {
-        "value": 4,
-        "active": true,
+        "value": 1,
+        "active": false,
         "description": "",
         "macroid": "",
         "bonuses": [
@@ -109,17 +137,52 @@
             }
           }
         ]
+      },
+      "insight": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
       }
     },
-    "power": {
+    "edges": {
+      "library": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>El archivo de la Célula Puget en Northline: el tablero de corcho, las transcripciones del pódcast, la anomalía estadística «R. A.» y lo que ANOMALY manda cada noche desde septiembre de 2026.</p>"
+      },
+      "thwarttheunnatural": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Es su Fe (doc 14): −1 dado a las Disciplinas mentales contra ella.</p>"
+      }
+    },
+    "despair": {
       "value": 0
-    },
-    "generaldifficulty": {
-      "normal": 0,
-      "strongest": 0
-    },
-    "settings": {
-      "enableDisciplines": false
     }
   },
   "items": [
@@ -152,8 +215,89 @@
         "points": 0,
         "featuretype": "merit"
       },
-      "_id": "GSs3kX6ljBfd2Eht",
-      "_key": "!actors.items!sEdBfHzj0JBxHNAa.GSs3kX6ljBfd2Eht"
+      "_id": "qqtyn5dVVrBQQZxl",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.qqtyn5dVVrBQQZxl"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "inquisitive"
+        }
+      },
+      "name": "Inquisitivos",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio."
+      },
+      "_id": "GtFlQ4m9Vo2tHSLh",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.GtFlQ4m9Vo2tHSLh"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "curiosity"
+        }
+      },
+      "name": "Curiosidad",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Escuchó el episodio 112 tres veces. Hay un dibujo en esta ciudad y alguien se lo está regalando a la Célula por entregas. Quiere saber quién y por qué, aunque la respuesta no le guste a nadie.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "redemption": "<p>Se redime cuando descubre algo que alguien quería ocultarle a la Célula y lo pone por escrito, con su firma.</p>"
+      },
+      "_id": "r0BW8sRlcyYl0ztm",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.r0BW8sRlcyYl0ztm"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Escucha atenta: +2 dados cuando cruza un hecho nuevo con el archivo de la Célula (el pódcast de Helen Ward, los informes de «R. A.», los registros de sujetos fríos de ANOMALY)."
+        }
+      },
+      "name": "Escucha atenta",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>+2 dados cuando cruza un hecho nuevo con el archivo de la Célula (el pódcast de Helen Ward, los informes de «R. A.», los registros de sujetos fríos de ANOMALY).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-21"
+        },
+        "edge": "library",
+        "selected": false
+      },
+      "_id": "TwMMQl4kk06FGNTc",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.TwMMQl4kk06FGNTc"
     }
   ],
   "effects": [],

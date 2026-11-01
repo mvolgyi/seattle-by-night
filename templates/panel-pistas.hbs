@@ -1,0 +1,34 @@
+<section class="tab sbn-panel-tab sbn-panel-pistas {{tab.cssClass}}" data-tab="pistas" data-group="primary">
+  <h3>{{localize "SBN.panel.pistas.titulo"}} <span class="sbn-cuenta">{{pistas.obtenidas}}/{{pistas.total}}</span></h3>
+  <table class="sbn-tabla sbn-pistas-tabla">
+    <thead><tr><th></th><th>{{localize "SBN.panel.pistas.pista"}}</th><th>{{localize "SBN.panel.pistas.obtencion"}}</th><th>{{localize "SBN.panel.pistas.dados"}}</th></tr></thead>
+    <tbody>
+      {{#each pistas.pistas as |p|}}
+        <tr class="{{#if p.obtenida}}sbn-obtenida{{/if}}" data-pista="{{p.id}}">
+          <td><button type="button" class="sbn-casilla{{#if p.obtenida}} sbn-on{{/if}}" data-action="pista" data-id="{{p.id}}" aria-pressed="{{p.obtenida}}"
+            data-tooltip-text="{{#if p.obtenida}}{{localize 'SBN.pistas.tooltipObtenida'}}{{else}}{{localize 'SBN.pistas.tooltipMarcar'}}{{/if}}">
+            <i class="fa-solid {{#if p.obtenida}}fa-square-check{{else}}fa-square{{/if}}"></i></button></td>
+          <td><span class="sbn-id">{{p.id}}</span> {{{p.nombreHTML}}}</td>
+          <td class="sbn-enlaces">{{{p.escenaHTML}}}{{#each p.otrasHTML as |x|}} {{{x}}}{{/each}}</td>
+          <td>{{#each p.chips as |c|}}<span class="sbn-chip">{{c.texto}}</span>{{/each}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <h3>{{localize "SBN.panel.pistas.pruebas"}}</h3>
+  <p class="sbn-nota">{{localize "SBN.panel.pistas.pruebasNota"}}</p>
+  <table class="sbn-tabla sbn-pruebas-tabla">
+    <tbody>
+      {{#each pistas.pruebas as |p|}}
+        <tr class="{{#if p.marcada}}sbn-obtenida{{/if}}" data-prueba="{{p.id}}">
+          <td><button type="button" class="sbn-casilla{{#if p.marcada}} sbn-on{{/if}}" data-action="prueba" data-id="{{p.id}}" aria-pressed="{{p.marcada}}">
+            <i class="fa-solid {{#if p.marcada}}fa-square-check{{else}}fa-square{{/if}}"></i></button></td>
+          <td><strong>{{p.nombre}}</strong>{{#if p.como}}<div class="sbn-nota">{{p.como}}</div>{{/if}}</td>
+          <td class="sbn-enlaces">{{{p.escenaHTML}}}</td>
+          <td>{{#each p.chips as |c|}}<span class="sbn-chip">{{c.texto}}</span>{{/each}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>

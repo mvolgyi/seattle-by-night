@@ -6,8 +6,9 @@
  * typo en el scope de un setFlag produce «Invalid scope for flag» sin otro
  * síntoma. Se define una sola vez acá.
  *
- * Acá van sólo datos estructurales (valores, ids de escena). Los textos
- * viven en lang/es.json: el módulo publicado no lleva content/.
+ * Acá van sólo ids, settings y rutas. Los datos de la crónica (umbrales,
+ * noches, pistas, tiradas) están en data/cronica.json (datos.mjs) y los
+ * textos de la interfaz en lang/es.json: el módulo publicado no lleva content/.
  */
 export class SBN {
   static ID = "seattle-by-night";
@@ -21,16 +22,28 @@ export class SBN {
     /** id del libro (PNJ-12, LUG-05, A1-E01…) dentro de los documentos generados. */
     ID_LIBRO: "id",
     /** En la escena que se activa al importar la crónica por primera vez. */
-    LANDING: "landing"
+    LANDING: "landing",
+    /**
+     * En los susurros al Narrador: las claves del aviso (`{ tipo: "umbral", valor: 3, sube: true }`).
+     * El texto lo arma cada GM al renderizar; el mensaje, que llega a todos los clientes, no lo lleva.
+     */
+    AVISO: "aviso"
   };
 
   static SETTINGS = {
-    /** { valor, congelado, registro: [{ fecha, cambio, motivo, usuario, valorAntes, valorDespues }] } */
+    /**
+     * { valor, congelado, registro: [{ fecha, cambio, usuario, valorAntes, valorDespues, s? }] };
+     * `s`: motivo, movimiento y noche, sellados (util.sellar). Estado los abre en el GM.
+     */
     TERMOMETRO: "termometro",
     /** { "P-07": true, … } */
     PISTAS: "pistas",
     /** Noche actual del Reloj de Halloway (1–8). */
     NOCHE: "noche",
+    /** Pruebas sin ID marcadas y casillas de mesa de las tiradas clave: { s: sello de { "PRUEBA-…": true } } */
+    PRUEBAS: "pruebas",
+    /** Votación del Consejo (A4-E01): { s: sello de { "PNJ-15": "no", … } }; lo que falta, el voto por defecto. */
+    VOTOS: "votos",
     /** Si ya se le ofreció al Narrador importar la crónica en este mundo. */
     IMPORTACION_OFRECIDA: "importacion-ofrecida",
     /** Última versión del módulo para la que se ofreció actualizar la crónica importada. */
@@ -55,32 +68,22 @@ export class SBN {
     MACROS: "macros"
   };
 
-  /** Termómetro de la Segunda Inquisición (content/trackers.json). */
-  static TERMOMETRO = {
-    INICIO: 2,
-    MIN: 0,
-    MAX: 10,
-    /** Umbrales; el texto está en SBN.termometro.umbrales.<valor>. */
-    UMBRALES: [
-      { valor: 3 },
-      { valor: 5, pnj: "PNJ-18" },
-      { valor: 7 },
-      { valor: 9, escena: "A4-E02" },
-      { valor: 10, escena: "FIN-D" }
-    ],
-    /** Cuántas entradas del registro se conservan. */
-    REGISTRO_MAX: 300
-  };
+  /**
+   * Datos de la crónica para el tiempo de juego (umbrales, noches, pistas,
+   * tiradas): los genera tools/contenido/datos.mjs desde content/ y los lee
+   * datos.mjs. Acá no se repiten.
+   */
+  static DATOS = "data/cronica.json";
 
-  /** Reloj de Halloway: 8 noches, jueves 12 a jueves 19 de noviembre de 2026. */
-  static RELOJ = {
-    NOCHES: 8,
-    /** Escena principal de cada noche; los textos en SBN.reloj.noches.<n>. */
-    ESCENAS: { 1: "A0-E01", 2: "A1-E02", 3: "A2-E01", 4: "A2-E02", 5: "A2-E06", 6: "A3-E01", 7: "A3-E04", 8: "A4-E01" }
-  };
+  /**
+   * Lo que carga un jugador en vez de DATOS: nombres de pistas, fecha de cada
+   * noche y lo que perciben los jugadores en cada umbral. data/cronica.json
+   * tiene la crónica entera (qué pasa, quién, dónde): sólo la pide un GM.
+   */
+  static DATOS_PUBLICO = "data/publico.json";
 
-  /** Pistas P-01…P-15 (content/pistas.json); el nombre en SBN.pistas.nombres.<id>. */
-  static PISTAS = Array.from({ length: 15 }, (_, i) => `P-${String(i + 1).padStart(2, "0")}`);
+  /** Cuántas entradas del registro del Termómetro se conservan. */
+  static REGISTRO_MAX = 300;
 
   static pack(nombre) {
     return game.packs.get(`${this.ID}.${nombre}`);

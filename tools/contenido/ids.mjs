@@ -146,7 +146,10 @@ export function fichas() {
   if (existe("content/pjs.json")) {
     for (const p of leer("content/pjs.json").pjs ?? []) out.push({ ...p, pj: true, _origen: "pjs.json", _clase: "ficha" });
   }
-  return out;
+  // Una ficha con `reemplaza: true` gana sobre las demás con el mismo id
+  // (la versión de cazador de Okafor reemplaza a la de mortal sin borrarla).
+  const ganadoras = new Set(out.filter(f => f.reemplaza).map(f => f.id));
+  return out.filter(f => f.reemplaza || !ganadoras.has(f.id));
 }
 
 /**

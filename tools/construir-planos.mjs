@@ -10,23 +10,25 @@
  *
  * Los muros, las regiones y las luces NO se escriben acá: los deriva el build
  * de escenas del mismo archivo. Así el mapa y la geometría que bloquea el paso
- * no pueden desincronizarse. Acá sólo se cuentan y se validan (presets de luz
- * que existen, regiones con destino que resuelve).
+ * no pueden desincronizarse. Acá sólo se cuentan y se validan (paletas, pisos,
+ * fondos y muebles que existen, presets de luz e ideales, regiones con destino
+ * que resuelve).
  *
  * Uso: node tools/construir-planos.mjs [--solo helen] [--depurar <carpeta>]
  *
  *   --depurar  además escribe `<id>.depurar.webp` en esa carpeta: el esquema
  *              con los muros de Foundry por tipo (rojo muro, verde puerta,
- *              cian vidrio/ventana, amarillo baranda), las regiones y las
- *              luces encima. Sirve para revisar el plano y, más adelante, para
+ *              cian vidrio/ventana, naranja hueco, amarillo baranda), las
+ *              regiones y las luces encima (las apagadas en gris). Sirve para revisar el plano y, más adelante, para
  *              comparar contra el repintado. Nunca va a assets/.
  */
 
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { renderSvg, derivarMuros, mueblesMoviles, GRID_PX, PX_POR_M } from "./planos.mjs";
-import { lucesDePlano } from "./iluminacion.mjs";
+import { renderSvg, derivarMuros, mueblesMoviles, tipoConocido, tipoMueble, normalizar, GRID_PX, PX_POR_M,
+  PALETAS_CONOCIDAS, PISOS_CONOCIDOS, FONDOS_CONOCIDOS, TIPOS_VANO } from "./planos.mjs";
+import { lucesDePlano, presetDe, PRESETS } from "./iluminacion.mjs";
 
 const RAIZ = path.resolve(import.meta.dirname, "..");
 const ENTRADA = path.join(RAIZ, "content/planos");
@@ -54,17 +56,43 @@ function validar(plano, todos) {
     else if (!ids.get(pd).has(rd)) avisos.push(`región «${rg.id}» → «${rg.destino}»: falta la región gemela`);
   }
   for (const v of plano.vanos ?? []) {
-    if (!["abierto", "puerta", "secreta", "puerta-vidrio", "ventana", "vidrio", "baranda", "arcada"].includes(v.tipo)) {
-      avisos.push(`vano de tipo desconocido «${v.tipo}»`);
-    }
+    if (!TIPOS_VANO.includes(v.tipo)) avisos.push(`vano de tipo desconocido «${v.tipo}» (${v.nombre ?? "sin nombre"}): queda como hueco abierto`);
+  }
+  // Nombres de paleta, fondo, piso y mueble: uno desconocido no rompe nada,
+  // cae en un valor por defecto, y por eso hay que avisarlo.
+  if (plano.paleta && !PALETAS_CONOCIDAS.includes(plano.paleta)) {
+    avisos.push(`paleta «${plano.paleta}» no existe (${PALETAS_CONOCIDAS.join(", ")}): el esquema usa apartamento`);
+  }
+  const fondos = [["fondo del plano", plano.fondo], ...(plano.exteriores ?? []).map(z => [`exterior «${z.nombre ?? "?"}»`, z.fondo])];
+  for (const [donde, f] of fondos) if (f && !FONDOS_CONOCIDOS.includes(f)) avisos.push(`${donde}: fondo «${f}» desconocido (se dibuja como roca)`);
+  const pisos = new Map();
+  for (const h of plano.habitaciones) if (h.piso && !PISOS_CONOCIDOS.includes(h.piso)) pisos.set(h.piso, [...(pisos.get(h.piso) ?? []), h.nombre]);
+  for (const [piso, salas] of pisos) avisos.push(`piso «${piso}» desconocido (se dibuja como linóleo): ${salas.join(", ")}`);
+  const muebles = new Map();
+  for (const m of plano.muebles ?? []) if (!tipoConocido(m)) muebles.set(tipoMueble(m), (muebles.get(tipoMueble(m)) ?? 0) + 1);
+  for (const [t, n] of muebles) avisos.push(`mueble de tipo «${t}» sin dibujo propio (×${n}): sale como caja genérica`);
+  const pl = normalizar(plano);
+  for (const t of [...pl.habitaciones.flatMap(h => h._puntos ?? []), ...pl.curvas.flatMap(c => c._puntos)]) {
+    if (t.tipo !== "muro" && !TIPOS_VANO.includes(t.tipo)) avisos.push(`tramo de contorno/curva de tipo desconocido «${t.tipo}»`);
+  }
+  // Luces: el preset tiene que existir; el ideal, si todavía no existe, se avisa.
+  const luces = [...(plano.luces ?? []), ...(plano.muebles ?? []).filter(m => m.luz).map(m => ({ preset: m.luz, presetIdeal: m.luzIdeal, nombre: m.desc ?? m.tipo }))];
+  for (const l of luces) {
+    if (!PRESETS[presetDe(l)]) avisos.push(`luz «${l.nombre ?? "?"}»: preset «${presetDe(l)}» no existe`);
+    else if (l.presetIdeal && !PRESETS[l.presetIdeal]) avisos.push(`luz «${l.nombre ?? "?"}»: presetIdeal «${l.presetIdeal}» no existe todavía, uso «${l.preset}»`);
   }
   return avisos;
+}
+
+/** Luces del plano sin romper la corrida por un preset inexistente (validar lo avisa). */
+function lucesSeguras(plano) {
+  try { return lucesDePlano(plano, s => s); } catch { return []; }
 }
 
 /** Capa de depuración: muros por tipo, regiones y luces sobre el esquema. */
 function capaDepurar(plano) {
   const COLOR = { muro: "#ff2a2a", secreta: "#ff00ff", puerta: "#22dd44", "puerta-vidrio": "#22dd44",
-    ventana: "#00e5ff", vidrio: "#00a0ff", baranda: "#ffd400" };
+    ventana: "#00e5ff", hueco: "#ff9a3c", vidrio: "#00a0ff", baranda: "#ffd400" };
   const o = [];
   for (const m of derivarMuros(plano)) {
     const [x1, y1, x2, y2] = m.c;
@@ -75,9 +103,11 @@ function capaDepurar(plano) {
     const c = rg.llegada ? "#2f7f8c" : rg.destino ? "#b23030" : "#9a9a9a";
     o.push(`<rect x="${rg.x * PX_POR_M}" y="${rg.y * PX_POR_M}" width="${rg.w * PX_POR_M}" height="${rg.h * PX_POR_M}" fill="${c}" fill-opacity="0.35" stroke="${c}" stroke-width="3" stroke-dasharray="10 6"/>`);
   }
-  for (const l of lucesDePlano(plano, s => s)) {
-    o.push(`<circle cx="${l.x}" cy="${l.y}" r="${l.config.dim * PX_POR_M}" fill="none" stroke="#ffb46b" stroke-width="2" stroke-dasharray="4 6" opacity="0.8"/>`);
-    o.push(`<circle cx="${l.x}" cy="${l.y}" r="6" fill="#ffb46b" stroke="#000" stroke-width="1.5"/>`);
+  for (const l of lucesSeguras(plano)) {
+    // Las apagadas, en gris: están en la escena pero arrancan sin luz.
+    const c = l.hidden ? "#9a9a9a" : "#ffb46b";
+    o.push(`<circle cx="${l.x}" cy="${l.y}" r="${l.config.dim * PX_POR_M}" fill="none" stroke="${c}" stroke-width="2" stroke-dasharray="4 6" opacity="0.8"/>`);
+    o.push(`<circle cx="${l.x}" cy="${l.y}" r="6" fill="${c}" stroke="#000" stroke-width="1.5"/>`);
   }
   for (const m of mueblesMoviles(plano)) {
     o.push(`<rect x="${m.x * PX_POR_M}" y="${m.y * PX_POR_M}" width="${m.w * PX_POR_M}" height="${m.h * PX_POR_M}" fill="#ff8c00" fill-opacity="0.25" stroke="#ff8c00" stroke-width="2"/>`);
@@ -125,11 +155,12 @@ if (import.meta.filename === process.argv[1]) {
     const cuenta = (...t) => muros.filter(m => t.includes(m._tipo)).length;
     const kb = Math.round(fs.statSync(destino).size / 1024);
     const moviles = mueblesMoviles(plano).length;
-    const luces = lucesDePlano(plano, s => s).length;
+    const luces = lucesSeguras(plano);
+    const apagadas = luces.filter(l => l.hidden).length;
     console.log(`  ${plano.id.padEnd(22)} ${String(kb).padStart(5)} KB  ${plano.ancho}×${plano.alto} m  ` +
       `${cuenta("muro")} muros · ${cuenta("puerta", "puerta-vidrio", "secreta")} puertas · ` +
-      `${cuenta("ventana")} ventanas · ${cuenta("vidrio")} vidrios · ${cuenta("baranda")} barandas · ` +
-      `${luces} luces · ${(plano.regiones ?? []).length} regiones · ${moviles} móvil(es) sin pintar · grid ${GRID_PX}px`);
+      `${cuenta("ventana")} ventanas · ${cuenta("hueco") ? `${cuenta("hueco")} huecos · ` : ""}${cuenta("vidrio")} vidrios · ${cuenta("baranda")} barandas · ` +
+      `${luces.length} luces${apagadas ? ` (${apagadas} apagadas)` : ""} · ${(plano.regiones ?? []).length} regiones · ${moviles} móvil(es) sin pintar · grid ${GRID_PX}px`);
     for (const a of validar(plano, todos)) console.log(`    ⚠ ${a}`);
   }
   console.log(`✓ ${planos.length} plano(s) → ${path.relative(RAIZ, SALIDA)}`);

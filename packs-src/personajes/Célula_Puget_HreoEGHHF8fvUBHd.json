@@ -1,0 +1,62 @@
+{
+  "_id": "HreoEGHHF8fvUBHd",
+  "_key": "!actors!HreoEGHHF8fvUBHd",
+  "name": "Célula Puget",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 0,
+  "prototypeToken": {
+    "name": "Célula Puget",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "cell",
+    "members": [
+      "Actor.15UcuyhvNvNqkCOf",
+      "Actor.sEdBfHzj0JBxHNAa",
+      "Actor.5ywnpdrw93wmy235",
+      "Actor.cacjzuu13Bv7mJH5",
+      "Actor.yyJApTmnANPPdw3O",
+      "Actor.2hdWrhkD65ZNl4Xs"
+    ],
+    "headers": {
+      "concept": "Célula de FIRSTLIGHT en Seattle (2024), con fachada en Northline Cyber Advisory",
+      "chronicle": "Seattle by Night",
+      "tenets": "<p>No tocarla hasta poder arrancarla de raíz.</p>"
+    },
+    "desperation": {
+      "value": 1
+    },
+    "danger": {
+      "value": 0,
+      "max": 5
+    },
+    "biography": "<p>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Perfil: Célula Puget}</p><blockquote><p><em>No tocarla hasta poder arrancarla de raíz.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Célula de FIRSTLIGHT en Seattle (2024), con fachada en Northline Cyber Advisory</td></tr><tr><th>Base</th><td>@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</td></tr><tr><th>Cazadores</th><td>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}, @UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}, @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom}, @UUID[Actor.cacjzuu13Bv7mJH5]{Teresa «Tess» Navarro}, @UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak}, @UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen}</td></tr><tr><th>Además</th><td>@UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}</td></tr><tr><th>Desesperación inicial</th><td>1</td></tr><tr><th>Peligro inicial</th><td>0 de 5</td></tr></tbody></table><p>Una célula pequeña, con presupuesto ajustado y una orden clara: confirmar si Seattle tiene «una estructura organizada» y, si la tiene, no tocarla hasta poder arrancarla de raíz. La dirige la agente especial Dana Okafor desde un piso 11 de South Lake Union. Tiene una analista que no duerme, dos analistas más, seis operadores contratados como unidad antiterrorista y un enlace con la oficina del FBI de Seattle.</p>",
+    "notes": "",
+    "privatenotes": "<p><strong>Desesperación inicial 1:</strong> una sola célula, un presupuesto que no alcanza y una fuente en la que nadie confía. <strong>Peligro inicial 0:</strong> la presa no sabe que la Célula existe. Ver @UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{La Célula Puget} para cómo suben y bajan durante la aventura.</p><h3>Propuesto (no está en los docs)</h3><ul><li>Desesperación inicial 1 y Peligro inicial 0 (máximo 5), y las reglas para moverlos durante la aventura (página CEL-01).</li><li>El lema resume la orden que el doc 14 le da a Okafor.</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CEL-01",
+      "journal": "JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G",
+      "lema": "No tocarla hasta poder arrancarla de raíz."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

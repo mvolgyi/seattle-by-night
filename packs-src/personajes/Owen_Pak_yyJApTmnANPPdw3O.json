@@ -1,0 +1,533 @@
+{
+  "_id": "yyJApTmnANPPdw3O",
+  "_key": "!actors!yyJApTmnANPPdw3O",
+  "name": "Owen Pak",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/CAZ-02.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 50,
+  "prototypeToken": {
+    "name": "Owen Pak",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": false
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "Operador de drones del equipo táctico de FIRSTLIGHT, ex piloto de drones de la Fuerza Aérea",
+      "chronicle": "Seattle by Night",
+      "ambition": "Que FIRSTLIGHT le dé una flota propia.",
+      "desire": "Que Okafor diga su nombre por radio, no el indicativo.",
+      "touchstones": "<h3>Piedras de toque</h3><ul><li>Su abuela, en el International District, que le cocina los domingos y le pregunta por qué tiene ojeras.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Sigilo y subterfugio en servicio de la Caza.",
+      "cellname": "Célula Puget"
+    },
+    "bio": {
+      "age": {
+        "trueage": "31",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>Operador de drones del equipo táctico de FIRSTLIGHT, ex piloto de drones de la Fuerza Aérea</td></tr><tr><th>Edad</th><td>31</td></tr><tr><th>Ambición</th><td>Que FIRSTLIGHT le dé una flota propia.</td></tr><tr><th>Deseo</th><td>Que Okafor diga su nombre por radio, no el indicativo.</td></tr><tr><th>Reservas</th><td>Física 6 · Social 2 · Mental 4 · Armas de fuego 7 · Atletismo 5 · Consciencia 5 · Pelea 5</td></tr></tbody></table><h3>Semblante</h3><p>Treinta y un años, delgado, gorra hacia atrás, una tablet reforzada atada al antebrazo. Habla con el dron como con un perro.</p><p>Uno de los seis operadores de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT}. Pasa más horas en la furgoneta que en el almacén del puerto.</p><h3>Cazador</h3><table class=\"sbn-ficha\"><tbody><tr><th>Célula</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Célula Puget}</td></tr><tr><th>Credo</th><td>Clandestinos. <em>Desesperación:</em> Sigilo y subterfugio en servicio de la Caza.</td></tr><tr><th>Impulso</th><td>Orgullo. <em>Redención:</em> Se redime cuando su trabajo, y el de nadie más, salva una operación de la Célula, y Okafor lo dice por radio.</td></tr><tr><th>Facultades</th><td>Piloto de drones (Vuelo bajo)</td></tr></tbody></table><p>Fue el mejor de su promoción en la base de Creech y nadie se lo dijo nunca en voz alta. En FIRSTLIGHT no hay nadie en la costa oeste que vuele como él. Lo sabe, y necesita que lo sepan.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.XU2P6dmdMiaqAjHj]{Pregenerado: Owen Pak · Piloto de drones}</p>",
+    "appearance": "<p>Treinta y un años, delgado, gorra hacia atrás, una tablet reforzada atada al antebrazo. Habla con el dron como con un perro.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Propuesto (no está en los docs)</h3><ul><li>Todo el personaje es propuesto. Conversión de las reservas de @UUID[Actor.abaWg7NwNQvM0sDc]{Equipo táctico de FIRSTLIGHT} (Física 6, Social 2, Mental 4; Armas de fuego 7, Atletismo 5, Consciencia 5, Pelea 5; Salud 7, Fuerza de Voluntad 5) a Atributos y Habilidades: Destreza 3 + Armas de fuego 4, Destreza 3 + Atletismo 2, Fuerza 3 + Pelea 2, Astucia 3 + Consciencia 2; Salud = Resistencia 4 + 3; Voluntad = Compostura 3 + Resolución 2. Tecnología (Drones), Conducir, Sigilo e Investigación son propias.</li><li>Credo Clandestino, Impulso Orgullo, Facultad Piloto de drones con el Beneficio «Vuelo bajo». El dron es el del arsenal del doc 14.</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Drones",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "dronejockey": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>El dron con cámara térmica de la Célula es suyo: lo pilota desde la furgoneta o desde una tablet reforzada a doscientos metros. Ve lo que el dron ve.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Fusil corto con munición incendiaria",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>Agravado contra Vástagos (munición incendiaria). Lleva una linterna UV montada en el arma.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "WiA057GBBSXNXZ6L",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.WiA057GBBSXNXZ6L"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "Linterna UV de alta intensidad",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>1 agravado</td></tr></tbody></table><p>Un Vástago iluminado directamente sufre 1 de daño agravado por turno y −2 dados a todas sus acciones. Fortaleza (Desafiar la perdición) reduce el daño.</p><p>Estado: @UUID[Item.CbbejNJnKXKf8gbq]{Iluminado por la linterna UV}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "PytEfowV96pbTsYr",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.PytEfowV96pbTsYr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Armadura ligera",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Blindaje</th><td>3</td></tr></tbody></table><p>Blindaje 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "Mtr3W0uVpUoBvzlQ",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.Mtr3W0uVpUoBvzlQ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Cámaras corporales",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Todo lo que ven va a Northline en tiempo real. Cada acción sobrenatural visible delante de una cámara: Termómetro +1 (máximo +2 por escena).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"acción sobrenatural visible delante de una cámara corporal\"><i class=\"fa-solid fa-temperature-half\"></i> Termómetro +1</button> (máximo +2 por escena)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "ZKkQUJVqu4JVJixW",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.ZKkQUJVqu4JVJixW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Gafas térmicas",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Anulan Ofuscación de nivel 1 y 2. A los Vástagos se los ve como siluetas frías, y eso los delata.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "R95XSQt4u1jNVoIY",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.R95XSQt4u1jNVoIY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Munición incendiaria",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Daño</th><td>agravado contra Vástagos</td></tr></tbody></table><p>El daño de las armas de fuego contra Vástagos es agravado en lugar de superficial. Cada impacto obliga a una tirada de Terror Rojo (Dificultad 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "6RXusk8w10yGvVWI",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.6RXusk8w10yGvVWI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "dron-termico",
+          "agravado": false
+        }
+      },
+      "name": "Dron con cámara térmica",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Ve a toda la zona y coordina al equipo: +2 dados a sus tiradas de Consciencia y emboscada. Derribarlo: Fuerza + Atletismo (Dificultad 4) con un objeto lanzado, o un disparo con Destreza + Armas de fuego (Dificultad 4).</p><p><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.strength skills.athletics\" data-dificultad=\"4\" data-label=\"Derribar el dron con un objeto lanzado: Fuerza + Atletismo (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Derribar el dron con un objeto lanzado: Fuerza + Atletismo (Dificultad 4)</a></p><p><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.dexterity skills.firearms\" data-dificultad=\"4\" data-label=\"Derribar el dron de un disparo: Destreza + Armas de fuego (Dificultad 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Derribar el dron de un disparo: Destreza + Armas de fuego (Dificultad 4)</a></p>",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Dron con cámara térmica",
+            "value": 2,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "always",
+              "path": "",
+              "value": ""
+            }
+          }
+        ],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "OmqBPT472DQ0wKSY",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.OmqBPT472DQ0wKSY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "underground"
+        }
+      },
+      "name": "Clandestinos",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Sigilo y subterfugio en servicio de la Caza."
+      },
+      "_id": "lF1Zq9oF3FmiTJ80",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.lF1Zq9oF3FmiTJ80"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "pride"
+        }
+      },
+      "name": "Orgullo",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Fue el mejor de su promoción en la base de Creech y nadie se lo dijo nunca en voz alta. En FIRSTLIGHT no hay nadie en la costa oeste que vuele como él. Lo sabe, y necesita que lo sepan.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "redemption": "<p>Se redime cuando su trabajo, y el de nadie más, salva una operación de la Célula, y Okafor lo dice por radio.</p>"
+      },
+      "_id": "f6KnGNjYa7zTAjin",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.f6KnGNjYa7zTAjin"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Vuelo bajo: mete el dron en interiores (un hangar, una escalera, un pasillo) sin perder la señal. Destreza + Tecnología (Dificultad 3) por cada obstáculo serio."
+        }
+      },
+      "name": "Vuelo bajo",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>mete el dron en interiores (un hangar, una escalera, un pasillo) sin perder la señal. Destreza + Tecnología (Dificultad 3) por cada obstáculo serio.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "CAZ-02"
+        },
+        "edge": "dronejockey",
+        "selected": false
+      },
+      "_id": "7OVCHhcSrOgilwC0",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.7OVCHhcSrOgilwC0"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CAZ-02",
+      "journal": null,
+      "doc": "propuesto",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

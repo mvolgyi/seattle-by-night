@@ -2,9 +2,9 @@
   "_id": "15UcuyhvNvNqkCOf",
   "_key": "!actors!15UcuyhvNvNqkCOf",
   "name": "Dana Okafor",
-  "type": "mortal",
-  "img": "icons/svg/mystery-man.svg",
-  "folder": "Dns9UX98EXKSFsMv",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-18.webp",
+  "folder": "kkxcazkzuAwrYdB0",
   "sort": 10,
   "prototypeToken": {
     "name": "Dana Okafor",
@@ -15,19 +15,21 @@
       "enabled": false
     },
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-18.webp"
     }
   },
   "system": {
-    "group": "",
+    "group": "HreoEGHHF8fvUBHd",
     "headers": {
       "concept": "FIRSTLIGHT, jefa de la Célula Puget; antagonista latente",
       "chronicle": "Seattle by Night",
-      "ambition": "",
-      "desire": "",
-      "touchstones": "",
+      "ambition": "Que la sede nacional le mande refuerzos y arrancar de raíz la estructura de Seattle.",
+      "desire": "Saber qué quiere ARQUERO antes de la próxima entrega.",
+      "touchstones": "<h3>Piedras de toque</h3><ul><li>Su madre, la maestra de Luisiana, ya jubilada. La llama los domingos y le dice que el trabajo es aburrido.</li></ul>",
       "sire": "",
-      "generation": ""
+      "generation": "",
+      "creedfields": "Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio.",
+      "cellname": "Célula Puget"
     },
     "bio": {
       "age": {
@@ -40,11 +42,11 @@
       },
       "history": ""
     },
-    "biography": "<p>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Perfil: Dana Okafor}</p><blockquote><p><em>«Toda fuente quiere algo. Hasta saber qué quiere, es un cebo.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La que no regala nada</td></tr><tr><th>Concepto</th><td>FIRSTLIGHT, jefa de la Célula Puget; antagonista latente</td></tr><tr><th>Nacimiento</th><td>1981</td></tr></tbody></table><h3>Semblante</h3><p>Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.</p>",
+    "biography": "<p>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Perfil: Dana Okafor}</p><blockquote><p><em>«Toda fuente quiere algo. Hasta saber qué quiere, es un cebo.»</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Apodo</th><td>La que no regala nada</td></tr><tr><th>Concepto</th><td>FIRSTLIGHT, jefa de la Célula Puget; antagonista latente</td></tr><tr><th>Nacimiento</th><td>1981</td></tr><tr><th>Ambición</th><td>Que la sede nacional le mande refuerzos y arrancar de raíz la estructura de Seattle.</td></tr><tr><th>Deseo</th><td>Saber qué quiere ARQUERO antes de la próxima entrega.</td></tr></tbody></table><h3>Semblante</h3><p>Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.</p><h3>Cazador</h3><table class=\"sbn-ficha\"><tbody><tr><th>Célula</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Célula Puget}</td></tr><tr><th>Credo</th><td>Inquisitivos. <em>Desesperación:</em> Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio.</td></tr><tr><th>Impulso</th><td>Expiación. <em>Redención:</em> Se redime cuando la Célula saca con vida a alguien que la presa ya había marcado, antes de que sea un nombre más en una carpeta.</td></tr><tr><th>Facultades</th><td>Frustrar lo antinatural · Acceso global (Enlace federal)</td></tr></tbody></table><p>Chicago, 2017. Encontró el patrón de las desapariciones del South Side y encontró el sótano donde terminaba. Lo que bajó a buscar ya no estaba vivo. La mano es lo de menos: lo que paga desde entonces son los nombres que no alcanzó a tachar a tiempo.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.DJN9P8LlpGP0UXuu]{Pregenerado: Dana Okafor · Agente especial}</p>",
     "appearance": "<p>Cuarenta y cinco años. Alta, pelo muy corto con canas, americana gris; a la mano izquierda le faltan el anular y el meñique, y la lleva casi siempre en el bolsillo.</p>",
     "equipment": "<ul><li>Pistola Glock 19 con munición incendiaria (daño agravado contra Vástagos)</li><li>Linterna UV de bolsillo</li><li>Chaleco antibalas ligero (blindaje 2)</li><li>Teléfono cifrado</li></ul>",
     "notes": "",
-    "privatenotes": "",
+    "privatenotes": "<h3>Propuesto (no está en los docs)</h3><ul><li>Credo Inquisitiva: Investigación 5 (Patrones), Intimidación 3 (Interrogatorios) y Perspicacia 4 (Mentiras) son las de una investigadora; la Célula vive de obtener información.</li><li>Impulso Expiación: el doc dice que encontró el patrón y el sótano; que llegó tarde para los desaparecidos es propuesto.</li><li>Facultades: la Fe inquebrantable del doc se modela como Frustrar lo antinatural (el efecto es el del doc, no el del manual); Contactos 3 y ANOMALY, como Acceso global. El Beneficio «Enlace federal» es propuesto.</li><li>Ambición, deseo y piedra de toque (la madre, maestra de Luisiana, sale del doc; la llamada de los domingos es propuesta).</li></ul>",
     "health": {
       "max": 6,
       "value": 6,
@@ -271,6 +273,23 @@
         "macroid": "",
         "bonuses": []
       }
+    },
+    "edges": {
+      "thwarttheunnatural": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Es su Fe inquebrantable (doc 14): la Dominación y la Presencia tienen −2 dados contra ella; si fallan, ella lo nota. No lo explica ni lo entiende. Lo usa.</p>"
+      },
+      "globalaccess": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Contactos 3 (FBI, Seguridad Nacional, policía de Seattle), el enlace con la oficina del FBI de Seattle y el acceso a ANOMALY a través del piloto con Gale Sentinel.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
     }
   },
   "items": [
@@ -303,8 +322,8 @@
         "points": 0,
         "featuretype": "merit"
       },
-      "_id": "LTWI2XVarFgrxvoS",
-      "_key": "!actors.items!15UcuyhvNvNqkCOf.LTWI2XVarFgrxvoS"
+      "_id": "ioo1ktjmOSwJ7IIr",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.ioo1ktjmOSwJ7IIr"
     },
     {
       "effects": [],
@@ -335,8 +354,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "NHstfsEkpMbOfgXi",
-      "_key": "!actors.items!15UcuyhvNvNqkCOf.NHstfsEkpMbOfgXi"
+      "_id": "pa2gpVxS1EYjX7aG",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.pa2gpVxS1EYjX7aG"
     },
     {
       "effects": [],
@@ -367,8 +386,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "Utn6wtGxlzGsPHnC",
-      "_key": "!actors.items!15UcuyhvNvNqkCOf.Utn6wtGxlzGsPHnC"
+      "_id": "oEOzoOOaZoJp4aHT",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.oEOzoOOaZoJp4aHT"
     },
     {
       "effects": [],
@@ -472,6 +491,87 @@
       },
       "_id": "3qCbsfcUtjw7Ntae",
       "_key": "!actors.items!15UcuyhvNvNqkCOf.3qCbsfcUtjw7Ntae"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "inquisitive"
+        }
+      },
+      "name": "Inquisitivos",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio."
+      },
+      "_id": "xUX4LMIDtyONzbSS",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.xUX4LMIDtyONzbSS"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "atonement"
+        }
+      },
+      "name": "Expiación",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Chicago, 2017. Encontró el patrón de las desapariciones del South Side y encontró el sótano donde terminaba. Lo que bajó a buscar ya no estaba vivo. La mano es lo de menos: lo que paga desde entonces son los nombres que no alcanzó a tachar a tiempo.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": ""
+        },
+        "redemption": "<p>Se redime cuando la Célula saca con vida a alguien que la presa ya había marcado, antes de que sea un nombre más en una carpeta.</p>"
+      },
+      "_id": "RekNyiMBXnCKs3zc",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.RekNyiMBXnCKs3zc"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Enlace federal: una vez por historia, Okafor consigue en una hora un registro que a cualquier otro le costaría una orden judicial (llamadas, cámaras municipales, registros de propiedad, listas de pasajeros). No necesita tirada; sí deja rastro en Washington."
+        }
+      },
+      "name": "Enlace federal",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>una vez por historia, Okafor consigue en una hora un registro que a cualquier otro le costaría una orden judicial (llamadas, cámaras municipales, registros de propiedad, listas de pasajeros). No necesita tirada; sí deja rastro en Washington.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "Seattle by Night",
+          "page": "PNJ-18"
+        },
+        "edge": "globalaccess",
+        "selected": false
+      },
+      "_id": "j1t1qxvUm62OwLF2",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.j1t1qxvUm62OwLF2"
     }
   ],
   "effects": [],

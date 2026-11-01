@@ -192,7 +192,7 @@ Ninguna sobre Halloway. Esta escena trata de aliados y de la herida de David.
 
 ### Salidas
 
-@ID[A2-E04] (Rosa conoce a @ID[PNJ-17|O'Connor]: «El viejo irlandés de Tacoma sabe más de lo que cuenta. Siempre le mando whisky») · Parte 4 (Salitre como aliado o como problema)
+@ID[A2-E04] (Rosa conoce a @ID[PNJ-17|O'Connor]: «El ancilla irlandés de Tacoma sabe más de lo que cuenta. Siempre le mando whisky») · Parte 4 (Salitre como aliado o como problema)
 
 ## A2-E04 · El Sheriff que fue {#A2-E04}
 
@@ -203,7 +203,7 @@ Cualquier noche de la Parte 2. La coterie viaja a Tacoma, unos cuarenta minutos 
 O'Connor no regala nada, pero tampoco quiere cobrar. Quiere ver si el Sabueso «es un perro o un hombre». Le propone a @ID[PJ-01|David] tres asaltos en el ring. No le importa quién gane. Le importa cómo pelea.
 
 :::leer
-El gimnasio Shamrock ocupa la planta baja de un edificio de ladrillo en el puerto de Tacoma. Dentro huele a linimento, a sudor viejo y a whisky. Un par de chicos golpean sacos bajo luces amarillas. En el ring, un hombre enorme, de pelo rojo encanecido y orejas de coliflor, les sostiene las manoplas a una chica que pega con rabia. Sin dejar de moverse, el hombre mira hacia la puerta. «Diles a los chicos que se vayan a casa, Dani», dice. «Llegaron los de la ciudad.»
+El gimnasio Shamrock ocupa la planta baja de un edificio de ladrillo en el puerto de Tacoma. Dentro huele a linimento, a sudor viejo y a whisky. Un par de chicos golpean sacos bajo luces amarillas. En el ring, un hombre enorme, de pelo rojo y orejas de coliflor, les sostiene las manoplas a una chica que pega con rabia. Sin dejar de moverse, el hombre mira hacia la puerta. «Diles a los chicos que se vayan a casa, Dani», dice. «Llegaron los de la ciudad.»
 :::
 
 ### Tiradas
@@ -240,6 +240,10 @@ El gimnasio Shamrock ocupa la planta baja de un edificio de ladrillo en el puert
 ### Salidas
 
 @ID[A2-E05] (O'Connor menciona el Larchmont; si la coterie va, está a diez minutos) · @ID[A3-E02] o @ID[A3-E03] (con P-07, P-08 y P-09, la coterie tiene el dibujo completo: Halloway tiene los diarios y alguien entrenado por Vance trabaja para él)
+
+:::recuadro Nota de edición
+El doc 11 describía a O'Connor «de pelo rojo encanecido»; se decidió que aparenta la edad que tenía al Abrazo (unos treinta y uno), con el pelo rojo sin canas (@ID[PNJ-17]).
+:::
 
 ## A2-E05 · Las cenizas del Larchmont {#A2-E05}
 

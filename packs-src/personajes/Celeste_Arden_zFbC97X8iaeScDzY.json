@@ -3,7 +3,7 @@
   "_key": "!actors!zFbC97X8iaeScDzY",
   "name": "Celeste Arden",
   "type": "vampire",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-02.webp",
   "folder": "DBVWeCZJkvu0ZpyU",
   "sort": 20,
   "prototypeToken": {
@@ -15,13 +15,13 @@
       "enabled": true
     },
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/seattle-by-night/assets/tokens/PJ-02.webp"
     }
   },
   "system": {
     "group": "OcrZOcFhKk0qDrF5",
     "headers": {
-      "concept": "analista de inversiones y chiquilla de Charles Halloway, el antagonista.",
+      "concept": "analista de inversiones y chiquilla de Charles Halloway, el Primogénito Ventrue.",
       "chronicle": "Seattle by Night",
       "ambition": "que su nombre valga más que el de su sire",
       "desire": "que Halloway la reconozca como su igual",
@@ -40,7 +40,7 @@
       },
       "history": ""
     },
-    "biography": "<p>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Perfil: Celeste Arden}</p><blockquote><p><em>La heredera del cristal</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>analista de inversiones y chiquilla de Charles Halloway, el antagonista.</td></tr><tr><th>Clan</th><td>Ventrue</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</td></tr><tr><th>Ambición</th><td>que su nombre valga más que el de su sire</td></tr><tr><th>Deseo</th><td>que Halloway la reconozca como su igual</td></tr><tr><th>Foco</th><td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Noche de Elíseo}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Consejo de Primogenitura}</td></tr><tr><th>Brilla en</th><td>A2-E01, A3-E02 y A4-E01.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{El Consejo de Cristal}</td></tr></tbody></table>",
+    "biography": "<p>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Perfil: Celeste Arden}</p><blockquote><p><em>La heredera del cristal</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concepto</th><td>analista de inversiones y chiquilla de Charles Halloway, el Primogénito Ventrue.</td></tr><tr><th>Clan</th><td>Ventrue</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</td></tr><tr><th>Ambición</th><td>que su nombre valga más que el de su sire</td></tr><tr><th>Deseo</th><td>que Halloway la reconozca como su igual</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Los del Archivo}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{El Consejo de Cristal}</td></tr></tbody></table>",
     "appearance": "",
     "equipment": "",
     "notes": "",
@@ -105,8 +105,8 @@
         "points": 3,
         "featuretype": "background"
       },
-      "_id": "MpIj0zkNfSVdBW0c",
-      "_key": "!actors.items!zFbC97X8iaeScDzY.MpIj0zkNfSVdBW0c"
+      "_id": "G5eaZhlTGr3p3dzS",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.G5eaZhlTGr3p3dzS"
     },
     {
       "effects": [],
@@ -137,8 +137,8 @@
         "points": 2,
         "featuretype": "background"
       },
-      "_id": "z2o4DvzEYL3jMumT",
-      "_key": "!actors.items!zFbC97X8iaeScDzY.z2o4DvzEYL3jMumT"
+      "_id": "QNYJoy0a1hQRO9xc",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.QNYJoy0a1hQRO9xc"
     },
     {
       "effects": [],
@@ -169,8 +169,8 @@
         "points": 1,
         "featuretype": "background"
       },
-      "_id": "uk3doe7prCccPYCx",
-      "_key": "!actors.items!zFbC97X8iaeScDzY.uk3doe7prCccPYCx"
+      "_id": "d7lDYfLGbog9QptL",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.d7lDYfLGbog9QptL"
     },
     {
       "effects": [],
@@ -201,8 +201,8 @@
         "points": 2,
         "featuretype": "background"
       },
-      "_id": "Lcvy5RkJBXTuzLl8",
-      "_key": "!actors.items!zFbC97X8iaeScDzY.Lcvy5RkJBXTuzLl8"
+      "_id": "ZUip138IfpULqZex",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.ZUip138IfpULqZex"
     },
     {
       "effects": [],
@@ -233,8 +233,8 @@
         "points": 0,
         "featuretype": "flaw"
       },
-      "_id": "9Kc3Vzyzj3WQA4Aj",
-      "_key": "!actors.items!zFbC97X8iaeScDzY.9Kc3Vzyzj3WQA4Aj"
+      "_id": "NFX8mOv1kMYpz5qF",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.NFX8mOv1kMYpz5qF"
     }
   ],
   "effects": [],

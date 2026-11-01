@@ -63,7 +63,11 @@ El gimnasio Shamrock, en el puerto de Tacoma: dos plantas de ladrillo, un ring, 
 
 ## Máscara y semblante
 
-Para los mortales es Liam O'Connor, dueño del gimnasio, «un viejo irlandés que no duerme» (Máscara 2). Aparenta unos cincuenta años. Es enorme y de hombros caídos, tiene el pelo rojo encanecido y una barba corta, la nariz rota varias veces y las orejas de coliflor. Viste camiseta interior, tirantes y una gorra de lana. Huele a linimento y a whisky. Habla fuerte, se ríe más fuerte y tiene una voz que se nota acostumbrada a callar estadios.
+Para los mortales es Liam O'Connor, dueño del gimnasio, «un irlandés que no duerme» (Máscara 2); entre los Vástagos, «el ancilla irlandés». Aparenta unos treinta y un años. Es enorme y de hombros caídos, tiene el pelo rojo y una barba corta, la nariz rota varias veces y las orejas de coliflor. Viste camiseta interior, tirantes y una gorra de lana. Huele a linimento y a whisky. Habla fuerte, se ríe más fuerte y tiene una voz que se nota acostumbrada a callar estadios.
+
+:::recuadro Nota de edición
+El doc 07 decía «aparenta unos cincuenta años» y «pelo rojo encanecido»; se decidió que aparenta la edad que tenía al Abrazo (1899, nacido en 1868): unos treinta y uno, con el pelo rojo sin canas. Por lo mismo, «un viejo irlandés» pasó a «un irlandés» para los mortales y a «el ancilla irlandés» entre los Vástagos (también en la frase de Rosa de A2-E04).
+:::
 
 ## Datos de referencia
 

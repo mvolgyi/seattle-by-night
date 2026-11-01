@@ -1,16 +1,29 @@
 import { SBN } from "./constantes.mjs";
-import { t, esc, exigirNarrador, susurrarNarrador, enlaceDelLibro } from "./util.mjs";
+import { Datos } from "./datos.mjs";
+import { t, esc, exigirNarrador, susurrarNarrador, anclaDelLibro, sellar, abrirSello, esSello } from "./util.mjs";
 
-const { TERMOMETRO, RELOJ, SETTINGS } = SBN;
+const { SETTINGS } = SBN;
 
 /**
  * Estado de la crónica: Termómetro de la Segunda Inquisición, pistas
- * obtenidas y noche del Reloj de Halloway.
+ * obtenidas, noche del Reloj de Halloway, y (para el Panel del Narrador)
+ * pruebas sin ID marcadas y la votación del Consejo.
  *
- * Vive en tres settings de mundo (config false). Sólo el Narrador escribe;
- * cada escritura susurra un mensaje a los Narradores y, en todos los
+ * Vive en settings de mundo (config false). Los datos fijos (umbrales,
+ * noches, pistas) vienen de data/cronica.json (datos.mjs). Sólo el Narrador escribe;
+ * cada escritura susurra un aviso a los Narradores (sin el texto: sólo claves en
+ * un flag; lo arma cada GM al renderizar, ver «Avisos al Narrador») y, en todos los
  * clientes, dispara `Hooks.callAll("sbnEstado", estado, detalle)` desde el
  * onChange del setting (el detalle viaja en las opciones de la actualización).
+ *
+ * Los settings de mundo, y las opciones con que se escriben, llegan a TODOS los
+ * clientes (ver «Sello» en util.mjs). Por eso lo que delata la crónica va sellado
+ * (formato 2, ver «Formato guardado»): los motivos del Termómetro y qué movimiento
+ * fue, las pruebas marcadas y los votos del Consejo. El valor del Termómetro, si
+ * está congelado, las pistas obtenidas (P-01…, que la mesa conoce) y la noche van
+ * a la vista. El detalle de las opciones lleva sólo números y claves sin texto.
+ * Sólo un GM abre los sellos: para un jugador, `estado()` no tiene motivos,
+ * pruebas ni votos.
  */
 export class Estado {
   /** Las escrituras se encolan: dos clics seguidos no se pisan el valor. */
@@ -24,7 +37,8 @@ export class Estado {
       scope: "world",
       config: false,
       type: Object,
-      default: { valor: TERMOMETRO.INICIO, congelado: false, registro: [] },
+      // Sin valor: hasta el primer movimiento vale el `inicio` de data/cronica.json.
+      default: { valor: null, congelado: false, registro: [] },
       onChange: alCambiar(SETTINGS.TERMOMETRO)
     });
     game.settings.register(SBN.ID, SETTINGS.PISTAS, {
@@ -41,6 +55,20 @@ export class Estado {
       default: 1,
       onChange: alCambiar(SETTINGS.NOCHE)
     });
+    game.settings.register(SBN.ID, SETTINGS.PRUEBAS, {
+      scope: "world",
+      config: false,
+      type: Object,
+      default: {},
+      onChange: alCambiar(SETTINGS.PRUEBAS)
+    });
+    game.settings.register(SBN.ID, SETTINGS.VOTOS, {
+      scope: "world",
+      config: false,
+      type: Object,
+      default: {},
+      onChange: alCambiar(SETTINGS.VOTOS)
+    });
   }
 
   /* -------------------------------------------- */
@@ -50,9 +78,9 @@ export class Estado {
   static get termometroActual() {
     const d = game.settings.get(SBN.ID, SETTINGS.TERMOMETRO) ?? {};
     return {
-      valor: Number.isFinite(d.valor) ? d.valor : TERMOMETRO.INICIO,
+      valor: Number.isFinite(d.valor) ? d.valor : Datos.termometro.inicio,
       congelado: !!d.congelado,
-      registro: Array.isArray(d.registro) ? d.registro : []
+      registro: Array.isArray(d.registro) ? d.registro.map(e => Estado.#abrirEntrada(e)) : []
     };
   }
 
@@ -62,38 +90,159 @@ export class Estado {
 
   static get nocheActual() {
     const n = Number(game.settings.get(SBN.ID, SETTINGS.NOCHE));
-    return Math.clamp(Number.isFinite(n) ? n : 1, 1, RELOJ.NOCHES);
+    return Math.clamp(Number.isFinite(n) ? n : 1, 1, Datos.totalNoches);
+  }
+
+  /** Pruebas marcadas `{ id: true }` (vacío para un jugador). */
+  static get pruebasActuales() {
+    return this.#abrirMapa(game.settings.get(SBN.ID, SETTINGS.PRUEBAS));
+  }
+
+  /** Votos de la votación del Consejo, con el voto por defecto donde el Narrador no tocó nada. */
+  static get votosActuales() {
+    const guardados = this.#abrirMapa(game.settings.get(SBN.ID, SETTINGS.VOTOS));
+    const out = {};
+    for (const p of Datos.tirada("A4-E01")?.votacion?.primogenitos ?? []) out[p.pnj] = guardados[p.pnj] ?? p.voto;
+    return out;
+  }
+
+  /* -------------------------------------------- */
+  /*  Formato guardado                            */
+  /* -------------------------------------------- */
+
+  /*
+   * Formato 2 (el 1, hasta 0.4.0, tenía todo a la vista):
+   *   termometro  { valor, congelado, registro: [{ fecha, cambio, usuario, valorAntes,
+   *               valorDespues, s? }] }; `s` = sello de { motivo?, movimiento?, noche? }
+   *               (sin `s` si no hubo ni motivo ni movimiento)
+   *   pruebas     { s: sello de { "PRUEBA-…": true } }   ({} si no hay ninguna)
+   *   votos       { s: sello de { "PNJ-15": "no", … } }  ({} si no se tocó ninguno)
+   * Se leen los dos formatos; Estado.migrar (GM activo, en `ready`) pasa el 1 al 2.
+   */
+
+  /** Lo que una entrada del registro guarda sellado. */
+  static #SECRETOS_ENTRADA = ["motivo", "movimiento", "noche"];
+
+  /**
+   * Entrada del registro tal como la usa el módulo: `{ fecha, cambio, motivo, usuario,
+   * valorAntes, valorDespues, movimiento?, noche? }`. Para un jugador, motivo vacío.
+   */
+  static #abrirEntrada(e) {
+    const sellado = esSello(e?.s) ? (game.user?.isGM ? abrirSello(e.s) : null) : e;
+    const out = {
+      fecha: e?.fecha,
+      cambio: e?.cambio,
+      motivo: game.user?.isGM ? String(sellado?.motivo ?? "") : "",
+      usuario: e?.usuario,
+      valorAntes: e?.valorAntes,
+      valorDespues: e?.valorDespues
+    };
+    if (game.user?.isGM && sellado?.movimiento) Object.assign(out, { movimiento: String(sellado.movimiento), noche: sellado.noche });
+    return out;
+  }
+
+  /** Entrada para guardar: lo secreto (motivo, movimiento, noche), adentro del sello. */
+  static #sellarEntrada(e) {
+    const secreto = {};
+    if (e.motivo) secreto.motivo = String(e.motivo);
+    if (e.movimiento) Object.assign(secreto, { movimiento: String(e.movimiento), noche: e.noche });
+    const out = { fecha: e.fecha, cambio: e.cambio, usuario: e.usuario, valorAntes: e.valorAntes, valorDespues: e.valorDespues };
+    if (Object.keys(secreto).length) out.s = sellar(secreto);
+    return out;
+  }
+
+  /** ¿La entrada guardada tiene algo secreto a la vista (formato 1)? */
+  static #entradaVieja(e) {
+    return !!e && typeof e === "object" && this.#SECRETOS_ENTRADA.some(k => k in e);
+  }
+
+  /** `{ s: sello }` (formato 2) o el objeto a la vista (formato 1) → el mapa; vacío para un jugador. */
+  static #abrirMapa(guardado) {
+    if (!guardado || typeof guardado !== "object") return {};
+    if (esSello(guardado.s)) {
+      if (!game.user?.isGM) return {};
+      const m = abrirSello(guardado.s);
+      return m && typeof m === "object" ? m : {};
+    }
+    if (!game.user?.isGM) return {};
+    const { s: _s, ...resto } = guardado;
+    return { ...resto };
+  }
+
+  /** Mapa para guardar: `{}` si está vacío, si no `{ s: sello }`. */
+  static #sellarMapa(mapa) {
+    return Object.keys(mapa ?? {}).length ? { s: sellar(mapa) } : {};
+  }
+
+  /** ¿Es un mapa guardado en el formato 1 (claves a la vista)? */
+  static #mapaViejo(guardado) {
+    return !!guardado && typeof guardado === "object" && Object.keys(guardado).some(k => k !== "s");
+  }
+
+  /**
+   * Pasa el estado guardado en formato 1 (motivos, pruebas y votos a la vista) al 2.
+   * Sólo el GM activo (dos GM no migran a la vez), idempotente: si ya está en el
+   * formato 2 no escribe nada. Sin susurros: el estado no cambia, sólo cómo se guarda.
+   * @returns {Promise<string[]>} los settings que reescribió
+   */
+  static migrar() {
+    if (!game.user?.isGM || game.user !== game.users.activeGM) return Promise.resolve([]);
+    return this.#encolar(async () => {
+      const hechos = [];
+      const opciones = clave => ({ sbn: { clave, migracion: true } });
+      const tm = game.settings.get(SBN.ID, SETTINGS.TERMOMETRO);
+      if (Array.isArray(tm?.registro) && tm.registro.some(e => this.#entradaVieja(e))) {
+        const registro = tm.registro.map(e => (this.#entradaVieja(e) ? this.#sellarEntrada(e) : e));
+        await game.settings.set(SBN.ID, SETTINGS.TERMOMETRO, { ...tm, registro }, opciones(SETTINGS.TERMOMETRO));
+        hechos.push(SETTINGS.TERMOMETRO);
+      }
+      for (const clave of [SETTINGS.PRUEBAS, SETTINGS.VOTOS]) {
+        const guardado = game.settings.get(SBN.ID, clave);
+        if (!this.#mapaViejo(guardado)) continue;
+        await game.settings.set(SBN.ID, clave, this.#sellarMapa(this.#abrirMapa(guardado)), opciones(clave));
+        hechos.push(clave);
+      }
+      if (hechos.length) console.log(`${SBN.ID} | estado migrado al formato 2 (${hechos.join(", ")})`);
+      return hechos;
+    });
   }
 
   static obtenida(id) {
     return !!this.pistasActuales[id];
   }
 
-  /** Copia del estado completo: `{ termometro, pistas, noche }`. */
+  static marcada(id) {
+    return !!this.pruebasActuales[id];
+  }
+
+  /** Copia del estado completo: `{ termometro, pistas, noche, pruebas, votos }`. */
   static estado() {
     return foundry.utils.deepClone({
       termometro: this.termometroActual,
       pistas: this.pistasActuales,
-      noche: this.nocheActual
+      noche: this.nocheActual,
+      pruebas: this.pruebasActuales,
+      votos: this.votosActuales
     });
   }
 
-  /** Umbral de mayor valor alcanzado (o null por debajo de 3). */
+  /** Umbral de mayor valor alcanzado (o null por debajo del primero). */
   static umbralDe(valor) {
-    return TERMOMETRO.UMBRALES.filter(u => u.valor <= valor).at(-1) ?? null;
+    return Datos.umbrales.filter(u => u.valor <= valor).at(-1) ?? null;
   }
 
+  /** Campo de un umbral: texto, ciudad, jugadores, icono. */
   static textoUmbral(valor, campo = "texto") {
-    return t(`termometro.umbrales.${valor}.${campo}`);
+    return Datos.umbral(valor)?.[campo] ?? "";
   }
 
   static nombrePista(id) {
-    const k = `SBN.pistas.nombres.${id}`;
-    return game.i18n.has(k) ? game.i18n.localize(k) : id;
+    return Datos.pista(id)?.nombre ?? id;
   }
 
+  /** Campo de una noche del Reloj: dia, fecha, evento. */
   static textoNoche(n, campo = "dia") {
-    return t(`reloj.noches.${n}.${campo}`);
+    return Datos.noche(n)?.[campo] ?? "";
   }
 
   /* -------------------------------------------- */
@@ -110,14 +259,18 @@ export class Estado {
    * Mueve el Termómetro.
    * @param {number|string} cambio  +1, −2, "+1", "=10", "congelar" o "descongelar".
    * @param {string} [motivo]
+   * @param {object} [opciones]
+   * @param {string} [opciones.movimiento]  id del movimiento de data/cronica.json (los
+   *   botones rápidos del panel): queda en el registro, con la noche, para contar los topes.
    * @returns {Promise<object|null>} el Termómetro resultante, o null si no se pudo.
    */
-  static termometro(cambio, motivo = "") {
+  static termometro(cambio, motivo = "", opciones = {}) {
     if (!exigirNarrador()) return Promise.resolve(null);
-    return this.#encolar(() => this.#termometro(cambio, motivo));
+    return this.#encolar(() => this.#termometro(cambio, motivo, opciones ?? {}));
   }
 
-  static async #termometro(cambio, motivo) {
+  static async #termometro(cambio, motivo, { movimiento } = {}) {
+    const { min, max } = Datos.termometro;
     const actual = this.termometroActual;
     const antes = actual.valor;
     const texto = String(cambio ?? "").trim().toLowerCase();
@@ -144,7 +297,7 @@ export class Estado {
         ui.notifications.warn(t("termometro.estaCongelado"));
         return null;
       }
-      despues = Math.clamp(fijar ? Number(fijar[1]) : antes + delta, TERMOMETRO.MIN, TERMOMETRO.MAX);
+      despues = Math.clamp(fijar ? Number(fijar[1]) : antes + delta, min, max);
       etiqueta = fijar ? `=${despues}` : (delta > 0 ? `+${delta}` : String(delta));
       if (despues === antes) {
         ui.notifications.info(t("termometro.sinCambio", { valor: antes }));
@@ -160,63 +313,62 @@ export class Estado {
       valorAntes: antes,
       valorDespues: despues
     };
-    const registro = [...actual.registro, entrada].slice(-TERMOMETRO.REGISTRO_MAX);
-    const nuevo = { valor: despues, congelado, registro };
-    await game.settings.set(SBN.ID, SETTINGS.TERMOMETRO, nuevo, {
-      sbn: { clave: SETTINGS.TERMOMETRO, ...entrada }
+    if (movimiento) Object.assign(entrada, { movimiento: String(movimiento), noche: this.nocheActual });
+    // Lo que se guarda: las entradas viejas tal como estaban (selladas o, si todavía no se
+    // migró, a la vista) y la nueva sellada. Lo que se devuelve: todo abierto.
+    const guardado = game.settings.get(SBN.ID, SETTINGS.TERMOMETRO)?.registro;
+    const previas = Array.isArray(guardado) ? guardado : [];
+    const registro = [...previas, this.#sellarEntrada(entrada)].slice(-SBN.REGISTRO_MAX);
+    // El detalle viaja a todos los clientes con la operación: sin motivo ni movimiento.
+    await game.settings.set(SBN.ID, SETTINGS.TERMOMETRO, { valor: despues, congelado, registro }, {
+      sbn: { clave: SETTINGS.TERMOMETRO, fecha: entrada.fecha, cambio: etiqueta, usuario: entrada.usuario, valorAntes: antes, valorDespues: despues }
     });
+    const nuevo = { valor: despues, congelado, registro: [...actual.registro, entrada].slice(-SBN.REGISTRO_MAX) };
 
-    await this.#publicarTermometro(entrada);
+    await susurrarNarrador({ tipo: "termometro", cambio: etiqueta, antes, despues, fecha: entrada.fecha });
     await this.#avisarUmbrales(antes, despues);
     return foundry.utils.deepClone(nuevo);
   }
 
-  static async #publicarTermometro({ cambio, motivo, valorAntes, valorDespues }) {
-    let titulo, cuerpo;
-    if (cambio === "congelar" || cambio === "descongelar") {
-      titulo = t(`termometro.chat.${cambio}`);
-      cuerpo = `<p>${t("termometro.chat.valor", { valor: valorDespues })}</p>`;
-    } else {
-      titulo = t("termometro.chat.titulo", { antes: valorAntes, despues: valorDespues, cambio });
-      cuerpo = `<div class="sbn-chat-escala">${this.#escala(valorDespues)}</div>`;
-    }
-    if (motivo) cuerpo += `<p class="sbn-chat-motivo">${esc(motivo)}</p>`;
-    return susurrarNarrador(cuerpo, { titulo, clase: "sbn-chat-termometro" });
-  }
-
   /** Diez segmentos, los encendidos hasta el valor, los umbrales marcados. */
   static #escala(valor) {
-    const umbrales = new Set(TERMOMETRO.UMBRALES.map(u => u.valor));
+    const umbrales = new Set(Datos.umbrales.map(u => u.valor));
     let html = "";
-    for (let i = 1; i <= TERMOMETRO.MAX; i++) {
+    for (let i = 1; i <= Datos.termometro.max; i++) {
       const cls = ["sbn-seg", i <= valor ? "sbn-on" : "", umbrales.has(i) ? "sbn-umbral" : ""].filter(Boolean).join(" ");
       html += `<span class="${cls}"></span>`;
     }
     return html;
   }
 
-  /** Al subir, un aviso por cada umbral cruzado; al bajar, una línea por cada uno que se deja atrás. */
-  static async #avisarUmbrales(antes, despues) {
+  /** Umbrales que se cruzan al pasar de `antes` a `despues` (subiendo o bajando). */
+  static cruzados(antes, despues) {
     const sube = despues > antes;
-    const cruzados = TERMOMETRO.UMBRALES.filter(u => sube
+    return Datos.umbrales.filter(u => sube
       ? (u.valor > antes && u.valor <= despues)
       : (u.valor <= antes && u.valor > despues));
-    for (const u of cruzados) {
+  }
+
+  /**
+   * Aviso emergente de cada umbral cruzado al subir. Lo llama el hook
+   * `sbnEstado` en el cliente de CADA GM (main.mjs): el detalle del cambio
+   * viaja en las opciones del setting, así que lo ven todos, no sólo el que
+   * apretó el botón.
+   */
+  static notificarUmbrales(detalle) {
+    if (detalle?.clave !== SETTINGS.TERMOMETRO) return;
+    const { valorAntes: antes, valorDespues: despues } = detalle;
+    if (!Number.isFinite(antes) || !Number.isFinite(despues) || despues <= antes) return;
+    for (const u of this.cruzados(antes, despues)) {
       const icono = this.textoUmbral(u.valor, "icono");
-      if (sube) {
-        const titulo = t("termometro.umbral.titulo", { icono, valor: u.valor, texto: this.textoUmbral(u.valor) });
-        let cuerpo = `<p>${esc(this.textoUmbral(u.valor, "ciudad"))}</p>`;
-        cuerpo += `<p class="sbn-chat-jugadores">${t("termometro.umbral.jugadores", { texto: esc(this.textoUmbral(u.valor, "jugadores")) })}</p>`;
-        if (u.escena) cuerpo += `<p>${t("termometro.umbral.escena", { enlace: enlaceDelLibro(u.escena) })}</p>`;
-        if (u.pnj) cuerpo += `<p>${t("termometro.umbral.pnj", { enlace: enlaceDelLibro(u.pnj) })}</p>`;
-        ui.notifications.warn(t("termometro.umbral.aviso", { icono, valor: u.valor, texto: this.textoUmbral(u.valor) }), { permanent: u.valor >= 9 });
-        await susurrarNarrador(cuerpo, { titulo, clase: "sbn-chat-umbral" });
-      } else {
-        await susurrarNarrador(`<p>${esc(this.textoUmbral(u.valor))}</p>`, {
-          titulo: t("termometro.umbral.baja", { icono, valor: u.valor }), clase: "sbn-chat-umbral sbn-chat-baja"
-        });
-      }
+      ui.notifications.warn(t("termometro.umbral.aviso", { icono, valor: u.valor, texto: this.textoUmbral(u.valor) }), { permanent: u.valor >= 9 });
     }
+  }
+
+  /** Al subir, un susurro por cada umbral cruzado; al bajar, uno por cada umbral que se deja atrás. */
+  static async #avisarUmbrales(antes, despues) {
+    const sube = despues > antes;
+    for (const u of this.cruzados(antes, despues)) await susurrarNarrador({ tipo: "umbral", valor: u.valor, sube });
   }
 
   /**
@@ -231,7 +383,7 @@ export class Estado {
 
   static async #pista(id, obtenida) {
     id = String(id ?? "").trim().toUpperCase();
-    if (!SBN.PISTAS.includes(id)) {
+    if (!Datos.pista(id)) {
       ui.notifications.error(t("pistas.invalida", { id }));
       return null;
     }
@@ -244,11 +396,7 @@ export class Estado {
     await game.settings.set(SBN.ID, SETTINGS.PISTAS, pistas, {
       sbn: { clave: SETTINGS.PISTAS, id, obtenida, usuario: game.user.name }
     });
-    const n = Object.keys(pistas).length;
-    await susurrarNarrador(
-      `<p>${enlaceDelLibro(id, `${id} · ${this.nombrePista(id)}`)}</p><p class="sbn-chat-motivo">${t("pistas.chat.cuenta", { n, total: SBN.PISTAS.length })}</p>`,
-      { titulo: t(obtenida ? "pistas.chat.obtenida" : "pistas.chat.perdida"), clase: "sbn-chat-pista" }
-    );
+    await susurrarNarrador({ tipo: "pista", id, obtenida, n: Object.keys(pistas).length });
     return { ...pistas };
   }
 
@@ -263,8 +411,8 @@ export class Estado {
 
   static async #noche(n) {
     n = Number(n);
-    if (!Number.isInteger(n) || n < 1 || n > RELOJ.NOCHES) {
-      ui.notifications.error(t("reloj.invalida", { n: String(n), max: RELOJ.NOCHES }));
+    if (!Number.isInteger(n) || n < 1 || n > Datos.totalNoches) {
+      ui.notifications.error(t("reloj.invalida", { n: String(n), max: Datos.totalNoches }));
       return null;
     }
     const antes = this.nocheActual;
@@ -272,12 +420,175 @@ export class Estado {
     await game.settings.set(SBN.ID, SETTINGS.NOCHE, n, {
       sbn: { clave: SETTINGS.NOCHE, antes, noche: n, usuario: game.user.name }
     });
-    const escena = RELOJ.ESCENAS[n];
-    let cuerpo = `<p>${esc(this.textoNoche(n, "evento"))}</p>`;
-    if (escena) cuerpo += `<p>${t("reloj.chat.escena", { enlace: enlaceDelLibro(escena) })}</p>`;
-    await susurrarNarrador(cuerpo, {
-      titulo: t("reloj.chat.titulo", { n, dia: this.textoNoche(n, "dia") }), clase: "sbn-chat-reloj"
-    });
+    await susurrarNarrador({ tipo: "noche", n });
     return n;
+  }
+
+  /**
+   * Marca (o desmarca) una prueba sin ID de pista (data/cronica.json → pruebas)
+   * o una casilla de mesa de las tiradas clave (A4-E01-OTRO-EL-CONSEJO-SE-TRASLADA-A-LA, la Galería de Vidrio).
+   * No susurra nada: es una casilla del panel, no un hallazgo de la mesa.
+   */
+  static prueba(id, marcada = true) {
+    if (!exigirNarrador()) return Promise.resolve(null);
+    return this.#encolar(() => this.#prueba(id, marcada));
+  }
+
+  static async #prueba(id, marcada) {
+    id = String(id ?? "").trim();
+    const otros = Datos.tirada("A4-E01")?.otros ?? [];
+    if (!Datos.prueba(id) && !otros.some(o => o.id === id)) {
+      ui.notifications.error(t("pruebas.invalida", { id }));
+      return null;
+    }
+    marcada = marcada !== false;
+    const pruebas = this.pruebasActuales;
+    if (!!pruebas[id] === marcada) return pruebas;
+    if (marcada) pruebas[id] = true;
+    else delete pruebas[id];
+    // Sellado; el detalle no dice cuál fue (su id delata la escena).
+    await game.settings.set(SBN.ID, SETTINGS.PRUEBAS, this.#sellarMapa(pruebas), {
+      sbn: { clave: SETTINGS.PRUEBAS, usuario: game.user.name }
+    });
+    return { ...pruebas };
+  }
+
+  /**
+   * Voto de un Primogénito en el Consejo (A4-E01).
+   * @param {string} pnj  PNJ-03, PNJ-13…
+   * @param {"si"|"no"|"abstencion"|"azar"} voto
+   */
+  static voto(pnj, voto) {
+    if (!exigirNarrador()) return Promise.resolve(null);
+    return this.#encolar(async () => {
+      const validos = ["si", "no", "abstencion", "azar"];
+      const existe = (Datos.tirada("A4-E01")?.votacion?.primogenitos ?? []).some(p => p.pnj === pnj);
+      if (!existe || !validos.includes(voto)) {
+        ui.notifications.error(t("votacion.invalido", { pnj: String(pnj), voto: String(voto) }));
+        return null;
+      }
+      // Sellado: quién vota en el Consejo y cómo es de la crónica. El detalle, sin el voto.
+      const votos = { ...this.#abrirMapa(game.settings.get(SBN.ID, SETTINGS.VOTOS)), [pnj]: voto };
+      await game.settings.set(SBN.ID, SETTINGS.VOTOS, this.#sellarMapa(votos), { sbn: { clave: SETTINGS.VOTOS } });
+      return this.votosActuales;
+    });
+  }
+
+  /* -------------------------------------------- */
+  /*  Avisos al Narrador                          */
+  /* -------------------------------------------- */
+
+  /*
+   * Los susurros al Narrador (util.susurrarNarrador) llegan a todos los clientes:
+   * el mensaje guarda un texto neutro y, en el flag `aviso`, sólo claves que un
+   * jugador ya conoce o no dicen nada (valores del Termómetro, número de noche,
+   * id de pista). El HTML de verdad (textos de umbral, escenas, interludios,
+   * enlaces) se arma acá, en el cliente de cada GM, con data/cronica.json.
+   */
+
+  /**
+   * Hook renderChatMessageHTML: en el cliente de un GM, cambia el contenido
+   * neutro de un aviso por el de verdad. Síncrono (Hooks.callAll no espera):
+   * los enlaces salen ya armados con toAnchor, no con enrichHTML.
+   * @param {ChatMessage} mensaje
+   * @param {HTMLElement} html
+   */
+  static renderizarAviso(mensaje, html) {
+    if (!game.user.isGM) return;
+    const aviso = mensaje.getFlag?.(SBN.ID, SBN.FLAGS.AVISO);
+    if (!aviso) return;
+    // Una tirada (el voto al azar) conserva su contenido: lo que se arma es el flavor.
+    if (aviso.tipo === "azar") {
+      const flavor = html?.querySelector?.(".message-header .flavor-text");
+      const texto = flavor ? this.flavorAzar(aviso, mensaje) : null;
+      if (texto) flavor.innerHTML = texto;
+      return;
+    }
+    const destino = html?.querySelector?.(".message-content");
+    const cuerpo = destino ? this.htmlAviso(aviso) : null;
+    if (cuerpo) destino.innerHTML = cuerpo;
+  }
+
+  /**
+   * Flavor del voto al azar del Consejo (`{ tipo: "azar", s }`, con el PNJ sellado; los
+   * mensajes de 0.4.0 traen `pnj` a la vista): par sí, impar no (Panel #onAzar).
+   * Null sin datos de la crónica o sin tirada.
+   */
+  static flavorAzar({ pnj, s }, mensaje) {
+    if (esSello(s)) pnj = abrirSello(s)?.pnj;
+    const total = mensaje?.rolls?.[0]?.total;
+    if (!Datos.listos || Datos.publicos || !pnj || !Number.isFinite(total)) return null;
+    const voto = total % 2 === 0 ? "si" : "no";
+    return t("panel.votacion.tiradaAzar", { nombre: esc(Datos.nombre(pnj)), voto: t(`panel.votacion.votos.${voto}`) });
+  }
+
+  /**
+   * HTML de un aviso (el que antes iba en el `content` del mensaje), o null si
+   * no hay datos para armarlo (data/cronica.json no cargó, tipo desconocido).
+   * @param {object} aviso  flag `aviso` del mensaje
+   * @returns {string|null}
+   */
+  static htmlAviso(aviso) {
+    if (!Datos.listos || Datos.publicos) return null;
+    const armar = { termometro: this.#avisoTermometro, umbral: this.#avisoUmbral, pista: this.#avisoPista, noche: this.#avisoNoche }[aviso?.tipo];
+    const r = armar?.call(this, aviso);
+    if (!r) return null;
+    return `<div class="sbn-chat ${r.clase}">${r.titulo ? `<h4>${r.titulo}</h4>` : ""}${r.cuerpo}</div>`;
+  }
+
+  /** `{ tipo: "termometro", cambio, antes, despues, fecha }`; el motivo, del registro (por la fecha). */
+  static #avisoTermometro({ cambio, antes, despues, fecha }) {
+    let titulo, cuerpo;
+    if (cambio === "congelar" || cambio === "descongelar") {
+      titulo = t(`termometro.chat.${cambio}`);
+      cuerpo = `<p>${t("termometro.chat.valor", { valor: despues })}</p>`;
+    } else {
+      titulo = t("termometro.chat.titulo", { antes, despues, cambio: esc(cambio) });
+      cuerpo = `<div class="sbn-chat-escala">${this.#escala(despues)}</div>`;
+    }
+    // El motivo no viaja en el mensaje (puede ser texto de la crónica): está en el
+    // registro del Termómetro. Si ya no está (se reinició o pasó el tope), no se muestra.
+    const entrada = fecha ? this.termometroActual.registro.find(e => e.fecha === fecha && e.cambio === cambio) : null;
+    if (entrada?.motivo) cuerpo += `<p class="sbn-chat-motivo">${esc(entrada.motivo)}</p>`;
+    return { titulo, cuerpo, clase: "sbn-chat-termometro" };
+  }
+
+  /** `{ tipo: "umbral", valor, sube }` */
+  static #avisoUmbral({ valor, sube }) {
+    const u = Datos.umbral(valor);
+    if (!u) return null;
+    const icono = u.icono ?? "";
+    if (!sube) {
+      return {
+        titulo: t("termometro.umbral.baja", { icono, valor: u.valor }),
+        cuerpo: `<p>${esc(u.texto)}</p>`,
+        clase: "sbn-chat-umbral sbn-chat-baja"
+      };
+    }
+    let cuerpo = `<p>${esc(u.ciudad)}</p>`;
+    cuerpo += `<p class="sbn-chat-jugadores">${t("termometro.umbral.jugadores", { texto: esc(u.jugadores) })}</p>`;
+    if (u.escena) cuerpo += `<p>${t("termometro.umbral.escena", { enlace: anclaDelLibro(u.escena) })}</p>`;
+    if (u.pnj) cuerpo += `<p>${t("termometro.umbral.pnj", { enlace: anclaDelLibro(u.pnj) })}</p>`;
+    if (u.interludio) cuerpo += `<p>${t("termometro.umbral.interludio", { enlace: anclaDelLibro(u.interludio) })}</p>`;
+    return { titulo: t("termometro.umbral.titulo", { icono, valor: u.valor, texto: esc(u.texto) }), cuerpo, clase: "sbn-chat-umbral" };
+  }
+
+  /** `{ tipo: "pista", id, obtenida, n }` (n: cuántas tenía la coterie después del cambio) */
+  static #avisoPista({ id, obtenida, n }) {
+    if (!Datos.pista(id)) return null;
+    return {
+      titulo: t(obtenida ? "pistas.chat.obtenida" : "pistas.chat.perdida"),
+      cuerpo: `<p>${anclaDelLibro(id, `${id} · ${this.nombrePista(id)}`)}</p><p class="sbn-chat-motivo">${t("pistas.chat.cuenta", { n: Number(n) || 0, total: Datos.pistas.length })}</p>`,
+      clase: "sbn-chat-pista"
+    };
+  }
+
+  /** `{ tipo: "noche", n }` */
+  static #avisoNoche({ n }) {
+    const noche = Datos.noche(n);
+    if (!noche) return null;
+    let cuerpo = `<p>${esc(noche.evento)}</p>`;
+    if (noche.escena) cuerpo += `<p>${t("reloj.chat.escena", { enlace: anclaDelLibro(noche.escena) })}</p>`;
+    return { titulo: t("reloj.chat.titulo", { n: noche.n, dia: esc(noche.dia) }), cuerpo, clase: "sbn-chat-reloj" };
   }
 }
