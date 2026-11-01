@@ -143,7 +143,7 @@ Sesiones alternas: una con la coterie, otra con la Célula. Lo que hace un bando
 
 ## Cruce con Del Velo a la Vigilia
 
-*Opcional.* Seattle by Night funciona sin él. Si en el mundo está activo el módulo *Del Velo a la Vigilia* (`del-velo-a-la-vigilia`), los cazadores de Marea roja pueden tomar uno de sus **Tres Caminos**, los poderes de cazador de ese módulo. No hace falta traer nada de su trama: sólo las reglas de los Caminos.
+*Opcional.* La crónica funciona sin él. Si en el mundo está activo el módulo *Del Velo a la Vigilia* (`del-velo-a-la-vigilia`), los cazadores de Marea roja pueden tomar uno de sus **Tres Caminos**, los poderes de cazador de ese módulo. No hace falta traer nada de su trama: sólo las reglas de los Caminos.
 
 | Camino de DVV | En Seattle | Quién |
 |---|---|---|

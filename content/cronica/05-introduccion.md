@@ -13,7 +13,7 @@ origen: "03"
 
 Seattle es una ciudad que se mira a sí misma todo el tiempo. Tiene cámaras en los timbres, teléfonos en todos los bolsillos, aplicaciones que saben a qué hora sale cada vecino, empresas que convierten esa información en dinero y agencias que la convierten en expedientes. Durante décadas, la Camarilla de Seattle sobrevivió gracias a tres cosas: la lluvia, que vuelve a la gente indiferente; un Príncipe Toreador que prefiere las apariencias a la guerra; y un Sheriff Gangrel que borra lo que sobra sin preguntar demasiado.
 
-*Seattle by Night* describe esa ciudad en el momento en que deja de funcionar. Presenta a los Vástagos que la gobiernan y a los que quieren gobernarla, los lugares donde se caza y se negocia, los rumores que circulan por el Elíseo y una aventura completa, *El Expediente Ward* (@ID[AVE-01]), en la que los personajes descubren que su existencia está registrada en el disco duro de una periodista mortal, y que alguien lo robó para usarlo.
+Este libro describe esa ciudad en el momento en que deja de funcionar. Presenta a los Vástagos que la gobiernan y a los que quieren gobernarla, los lugares donde se caza y se negocia, los rumores que circulan por el Elíseo y una aventura completa, *El Expediente Ward* (@ID[AVE-01]), en la que los personajes descubren que su existencia está registrada en el disco duro de una periodista mortal, y que alguien lo robó para usarlo.
 
 El libro está pensado para una coterie de 3 a 4 personajes nuevos junto a David Smith (@ID[PJ-01]), el ejecutor Brujah del Sheriff. También funciona para un solo jugador con Bear (@ID[PNJ-05]) como compañero, y en los recuadros se explica cómo adaptar cada parte.
 

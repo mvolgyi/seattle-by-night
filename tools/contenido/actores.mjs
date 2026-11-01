@@ -45,7 +45,9 @@ const tokenDe = id => arteDe("tokens", id) ?? ICONO_ACTOR;
 const md2html = md => marked.parse(md ?? "", { async: false }).trim();
 const md2inline = md => marked.parseInline(md ?? "", { async: false });
 
-const CRONICA = "Seattle by Night";
+// Nombre de la crónica en las fichas (system.headers.chronicle, base-actor-model.js) y
+// libro de origen de los ítems (system.source.book, base-item-model.js).
+const CRONICA = "El Expediente Ward";
 const ICONO_ACTOR = "icons/svg/mystery-man.svg";
 const ICONO_ITEM = "systems/wod5e/assets/icons/items/item-default.svg";
 const ICONO_RASGO = "systems/wod5e/assets/icons/items/feature.svg";   // api/def/itemtypes.js#feature
@@ -668,6 +670,7 @@ const SPC =f => f._clase === "menor" || (!f.atributos && !f.habilidades && !f.pj
 
 function carpetaDe(f, journal, carpetas) {
   let ruta;
+  // «Seattle by Night/» es la clave de la raíz de los journals (ver NOMBRE_CARPETA en journals.mjs).
   if (journal?.meta.carpeta) ruta = journal.meta.carpeta.replace(/^Seattle by Night\//, "");
   else if (f.pj) ruta = "Personajes jugadores";
   else {

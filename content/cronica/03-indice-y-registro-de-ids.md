@@ -15,7 +15,7 @@ Relato de 2.000–2.500 palabras. Es la noche del robo vista por los ojos de Hel
 
 ## 1 · Introducción
 
-- De qué va *Seattle by Night*
+- De qué va este libro
 - Cómo usar este libro: crónica para un jugador, con la variante para coterie en un recuadro
 - Temas y ambiente: la ciudad que todo lo registra
 - Herramientas de seguridad: Líneas y Velos, la carta X y las advertencias de contenido de @ID[AVE-01]

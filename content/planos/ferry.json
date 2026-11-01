@@ -18,7 +18,7 @@
       "oscuridad": 0.6,
       "exterior": "the passenger deck of a white car ferry crossing black open water of Puget Sound seen from directly above at night: dark, flat, slightly rippled, uniform all the way to the edges, with no boats, no wake, no land and no reflections of lights",
       "habitaciones": [
-        { "nombre": "El salón sigue hacia proa (no se juega)", "x": 0, "y": 1, "w": 1.5, "h": 22, "piso": "macizo" },
+        { "nombre": "El salón sigue hacia proa (no se juega)", "x": 0, "y": 2.5, "w": 1.5, "h": 19, "piso": "linoleo" },
         { "nombre": "Paseo exterior de estribor", "x": 1.5, "y": 1, "w": 17.5, "h": 1.5, "piso": "cubierta" },
         { "nombre": "Paseo exterior de babor", "x": 1.5, "y": 21.5, "w": 17.5, "h": 1.5, "piso": "cubierta" },
         { "nombre": "Salón de pasajeros", "x": 1.5, "y": 2.5, "w": 14, "h": 19, "piso": "linoleo" },
@@ -26,7 +26,9 @@
         { "nombre": "Escalera de estribor (a la cubierta de coches)", "x": 15.5, "y": 2.5, "w": 3.5, "h": 2.5, "piso": "cubierta" },
         { "nombre": "Escalera de babor (a la cubierta de coches)", "x": 15.5, "y": 19, "w": 3.5, "h": 2.5, "piso": "cubierta" },
         { "nombre": "Escalera al puente", "x": 3, "y": 10.5, "w": 3, "h": 3, "piso": "cubierta" },
-        { "nombre": "Cubierta exterior de popa", "x": 19, "y": 1, "w": 4, "h": 22, "piso": "cubierta" }
+        { "nombre": "Cubierta exterior de popa", "x": 19, "y": 1, "w": 4, "h": 22, "piso": "cubierta" },
+        { "nombre": "El paseo de estribor sigue hacia proa (no se juega)", "x": 0, "y": 1, "w": 1.5, "h": 1.5, "piso": "cubierta" },
+        { "nombre": "El paseo de babor sigue hacia proa (no se juega)", "x": 0, "y": 21.5, "w": 1.5, "h": 1.5, "piso": "cubierta" }
       ],
       "vanos": [
         { "x": 1.5, "y": 1, "w": 21.5, "eje": "h", "tipo": "baranda", "nombre": "Borda de estribor" },
@@ -56,7 +58,12 @@
         { "x": 19, "y": 7.4, "w": 3.5, "eje": "v", "tipo": "vidrio", "nombre": "Ventanal de popa del salón (norte)" },
         { "x": 19, "y": 11.25, "w": 1.5, "eje": "v", "tipo": "puerta-vidrio", "sonido": "metal", "nombre": "Puerta doble del salón a la popa" },
         { "x": 19, "y": 13.1, "w": 3.5, "eje": "v", "tipo": "vidrio", "nombre": "Ventanal de popa del salón (sur)" },
-        { "x": 19, "y": 17, "w": 1, "eje": "v", "tipo": "puerta-vidrio", "sonido": "metal", "nombre": "Puerta del salón a la popa (babor)" }
+        { "x": 19, "y": 17, "w": 1, "eje": "v", "tipo": "puerta-vidrio", "sonido": "metal", "nombre": "Puerta del salón a la popa (babor)" },
+        { "x": 1.5, "y": 1, "w": 22, "eje": "v", "tipo": "baranda", "nombre": "Cadena de proa: el salón y los paseos siguen hacia proa (hasta acá se juega)" },
+        { "x": 0, "y": 1, "w": 1.5, "eje": "h", "tipo": "baranda", "nombre": "Borda de estribor (sigue hacia proa)" },
+        { "x": 0, "y": 23, "w": 1.5, "eje": "h", "tipo": "baranda", "nombre": "Borda de babor (sigue hacia proa)" },
+        { "x": 0.15, "y": 2.5, "w": 1.2, "eje": "h", "tipo": "vidrio", "nombre": "Ventana del salón (estribor, hacia proa)" },
+        { "x": 0.15, "y": 21.5, "w": 1.2, "eje": "h", "tipo": "vidrio", "nombre": "Ventana del salón (babor, hacia proa)" }
       ],
       "muebles": [
         { "tipo": "banco", "x": 2, "y": 2.6, "w": 0.5, "h": 1.45, "desc": "a fixed upholstered ferry bench seat", "material": "tapizado" },
@@ -115,7 +122,11 @@
         { "tipo": "balsa", "x": 20, "y": 1.15, "w": 1.3, "h": 0.6, "desc": "a white life-raft canister in a steel cradle against the railing" },
         { "tipo": "balsa", "x": 20, "y": 22.25, "w": 1.3, "h": 0.6, "desc": "a white life-raft canister in a steel cradle against the railing" },
         { "tipo": "banco", "x": 19.15, "y": 2.9, "w": 0.5, "h": 1.8, "desc": "a slatted deck bench against the cabin wall" },
-        { "tipo": "banco", "x": 19.15, "y": 19.3, "w": 0.5, "h": 1.8, "desc": "a slatted deck bench against the cabin wall" }
+        { "tipo": "banco", "x": 19.15, "y": 19.3, "w": 0.5, "h": 1.8, "desc": "a slatted deck bench against the cabin wall" },
+        { "tipo": "banco", "x": 0.1, "y": 6.4, "w": 1.25, "h": 0.5, "desc": "a long row of fixed upholstered ferry bench seats" },
+        { "tipo": "banco", "x": 0.1, "y": 6.9, "w": 1.25, "h": 0.5, "desc": "a long row of fixed upholstered ferry bench seats" },
+        { "tipo": "banco", "x": 0.1, "y": 16.6, "w": 1.25, "h": 0.5, "desc": "a long row of fixed upholstered ferry bench seats" },
+        { "tipo": "banco", "x": 0.1, "y": 17.1, "w": 1.25, "h": 0.5, "desc": "a long row of fixed upholstered ferry bench seats" }
       ],
       "luces": [
         { "x": 5, "y": 5, "preset": "fluorescente", "nombre": "Fluorescentes del salón (estribor, proa)" },
@@ -169,10 +180,10 @@
       "oscuridad": 0.65,
       "exterior": "the open stern of a car ferry's vehicle deck, with black open water of Puget Sound seen from directly above at night: dark, flat, slightly rippled, uniform all the way to the edges, with no boats, no wake, no land and no reflections of lights",
       "habitaciones": [
-        { "nombre": "La cubierta sigue hacia proa (no se juega)", "x": 0, "y": 1, "w": 1.5, "h": 22, "piso": "macizo" },
-        { "nombre": "Casing de estribor: ventilación y máquinas (no se juega)", "x": 1.5, "y": 1, "w": 14, "h": 2.5, "piso": "macizo" },
+        { "nombre": "La cubierta de vehículos sigue hacia proa (no se juega)", "x": 0, "y": 3.5, "w": 1.5, "h": 17, "piso": "cubierta" },
+        { "nombre": "Casing de estribor: techo de ventilación y máquinas (no se juega)", "x": 0, "y": 1, "w": 15.5, "h": 2.5, "piso": "cubierta", "oscura": true },
         { "nombre": "Escalera de estribor (al salón)", "x": 15.5, "y": 1, "w": 3.5, "h": 2.5, "piso": "cubierta" },
-        { "nombre": "Casing de babor: ventilación y máquinas (no se juega)", "x": 1.5, "y": 20.5, "w": 14, "h": 2.5, "piso": "macizo" },
+        { "nombre": "Casing de babor: techo de ventilación y máquinas (no se juega)", "x": 0, "y": 20.5, "w": 15.5, "h": 2.5, "piso": "cubierta", "oscura": true },
         { "nombre": "Escalera de babor (al salón)", "x": 15.5, "y": 20.5, "w": 3.5, "h": 2.5, "piso": "cubierta" },
         { "nombre": "Cubierta de vehículos", "x": 1.5, "y": 3.5, "w": 17.5, "h": 17, "piso": "cubierta" },
         { "nombre": "Cubierta de vehículos · popa", "x": 19, "y": 1, "w": 4, "h": 22, "piso": "cubierta" }
@@ -183,7 +194,8 @@
         { "x": 16.6, "y": 20.5, "w": 1, "eje": "h", "tipo": "puerta", "sonido": "metal", "nombre": "Escalera de babor → cubierta" },
         { "x": 23, "y": 3.5, "w": 7, "eje": "v", "tipo": "baranda", "nombre": "Cadena de popa (norte)" },
         { "x": 23, "y": 10.5, "w": 3, "eje": "v", "tipo": "puerta-vidrio", "estado": "cerrada", "sonido": "jailHeavy", "nombre": "Cadena de popa: paso de la rampa de vehículos (se suelta al amarrar)" },
-        { "x": 23, "y": 13.5, "w": 7, "eje": "v", "tipo": "baranda", "nombre": "Cadena de popa (sur)" }
+        { "x": 23, "y": 13.5, "w": 7, "eje": "v", "tipo": "baranda", "nombre": "Cadena de popa (sur)" },
+        { "x": 1.5, "y": 3.5, "w": 17, "eje": "v", "tipo": "baranda", "nombre": "Cadena de proa: la cubierta sigue hacia proa (hasta acá se juega)" }
       ],
       "muebles": [
         { "tipo": "auto", "x": 2, "y": 4.55, "w": 4.6, "h": 1.9, "fijo": false, "tile": "tile-auto-sedan", "hacia": "o", "desc": "auto estacionado (sedan), carril 1" },
@@ -200,7 +212,13 @@
         { "tipo": "auto", "x": 7.5, "y": 17.55, "w": 4.6, "h": 1.9, "fijo": false, "tile": "tile-auto-sedan", "hacia": "o", "desc": "auto estacionado (sedan), carril 5" },
         { "tipo": "auto", "x": 12.6, "y": 17.55, "w": 4.6, "h": 1.9, "fijo": false, "tile": "tile-auto-sedan", "hacia": "o", "desc": "auto estacionado (sedan), carril 5" },
         { "tipo": "escalera", "x": 15.7, "y": 1.15, "w": 3.1, "h": 1, "hacia": "e", "material": "metal", "desc": "a steel ship's stair going up" },
-        { "tipo": "escalera", "x": 15.7, "y": 21.85, "w": 3.1, "h": 1, "hacia": "e", "material": "metal", "desc": "a steel ship's stair going up" }
+        { "tipo": "escalera", "x": 15.7, "y": 21.85, "w": 3.1, "h": 1, "hacia": "e", "material": "metal", "desc": "a steel ship's stair going up" },
+        { "tipo": "maquina", "x": 1.0, "y": 1.55, "w": 2.4, "h": 1.4, "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres" },
+        { "tipo": "maquina", "x": 5.6, "y": 1.55, "w": 2.4, "h": 1.4, "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres" },
+        { "tipo": "maquina", "x": 10.2, "y": 1.55, "w": 2.4, "h": 1.4, "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres" },
+        { "tipo": "maquina", "x": 1.0, "y": 21.05, "w": 2.4, "h": 1.4, "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres" },
+        { "tipo": "maquina", "x": 5.6, "y": 21.05, "w": 2.4, "h": 1.4, "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres" },
+        { "tipo": "maquina", "x": 10.2, "y": 21.05, "w": 2.4, "h": 1.4, "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres" }
       ],
       "luces": [
         { "x": 5, "y": 7, "preset": "fluorescente", "nombre": "Fluorescentes de la cubierta (estribor, proa)" },
@@ -221,7 +239,7 @@
         { "id": "llegada-escalera-babor", "nombre": "Llegada por la escalera de babor", "x": 16.6, "y": 19.45, "w": 1, "h": 1, "llegada": true },
         { "id": "saltar-al-agua", "nombre": "Saltar al agua por la popa abierta", "x": 23, "y": 14, "w": 1, "h": 8, "destino": null, "pendiente": "no hay mapa del agua: Resistencia + Atletismo Dif 3 hasta la orilla o la lancha de Salitre" }
       ],
-      "nota": "**A4-E03, la cubierta de coches.** «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. **Krell**, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.\n\nRecorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa, franja rayada). A los lados, los **casings** (ventilación y máquinas, macizos) con las **escaleras** de estribor y babor que suben al salón (`ferry`). Los **autos** son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.\n\n**La popa abierta.** La cubierta termina en la **cadena de popa**; el paso del centro se suelta al amarrar y por ahí entra la **rampa de vehículos** de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.",
+      "nota": "**A4-E03, la cubierta de coches.** «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. **Krell**, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.\n\nRecorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa: la franja del borde oeste, detrás de una cadena, no se juega). A los lados, los **casings** (ventilación y máquinas: se ve su techo de chapa con las rejillas, no se juegan) con las **escaleras** de estribor y babor que suben al salón (`ferry`). Los **autos** son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.\n\n**La popa abierta.** La cubierta termina en la **cadena de popa**; el paso del centro se suelta al amarrar y por ahí entra la **rampa de vehículos** de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.",
       "figuras": [
         { "id": "PNJ-12", "x": 16, "y": 10.4, "oculto": true, "escena": "A4-E03", "nota": "Si sobrevivió a A3-E03: con 3 pasos, viene a ayudar a David; sin ellos, a recuperar los folios." }
       ]
@@ -248,7 +266,7 @@
         { "nombre": "Alerón de babor", "x": 2, "y": 20, "w": 5, "h": 3, "piso": "cubierta" },
         { "nombre": "Cubierta superior", "x": 7, "y": 1, "w": 5, "h": 22, "piso": "cubierta" },
         { "nombre": "Caseta de la escalera", "x": 9, "y": 10.75, "w": 2.5, "h": 2.5, "piso": "cubierta" },
-        { "nombre": "La cubierta superior sigue hacia popa (no se juega)", "x": 12, "y": 1, "w": 1, "h": 22, "piso": "macizo" }
+        { "nombre": "La cubierta superior sigue hacia popa (no se juega)", "x": 12, "y": 1, "w": 1, "h": 22, "piso": "cubierta" }
       ],
       "vanos": [
         { "x": 2, "y": 4.2, "w": 15.6, "eje": "v", "tipo": "vidrio", "nombre": "Ventanal de proa del puente" },
@@ -267,7 +285,10 @@
         { "x": 7, "y": 5, "w": 5.5, "eje": "v", "tipo": "vidrio", "nombre": "Ventanas de popa del puente (norte)" },
         { "x": 7, "y": 11.5, "w": 1, "eje": "v", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Puerta del puente (la tripulación puede trabarla)" },
         { "x": 7, "y": 13.5, "w": 5.5, "eje": "v", "tipo": "vidrio", "nombre": "Ventanas de popa del puente (sur)" },
-        { "x": 9, "y": 11.4, "w": 1.2, "eje": "v", "tipo": "abierto", "nombre": "Caseta de la escalera → cubierta" }
+        { "x": 9, "y": 11.4, "w": 1.2, "eje": "v", "tipo": "abierto", "nombre": "Caseta de la escalera → cubierta" },
+        { "x": 12, "y": 1, "w": 22, "eje": "v", "tipo": "baranda", "nombre": "Cadena de popa: la cubierta superior sigue (hasta acá se juega)" },
+        { "x": 12, "y": 1, "w": 1, "eje": "h", "tipo": "baranda", "nombre": "Borda de estribor (sigue hacia popa)" },
+        { "x": 12, "y": 23, "w": 1, "eje": "h", "tipo": "baranda", "nombre": "Borda de babor (sigue hacia popa)" }
       ],
       "muebles": [
         { "tipo": "consola", "x": 2.15, "y": 7, "w": 0.9, "h": 10, "frente": "e", "nombre": "Consola del puente", "desc": "the long bridge console under the front windows, with dark switched-off radar and chart screens" },

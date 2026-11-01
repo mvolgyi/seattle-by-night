@@ -18,7 +18,7 @@ const PACK = "macros";
 
 /** Preámbulo común: la API tiene que estar (el módulo activo y `ready`). */
 const API = `const api = game.modules.get("${MODULO}")?.api;
-if (!api) return ui.notifications.error("Seattle by Night: el módulo no está activo en este mundo.");`;
+if (!api) return ui.notifications.error("El Expediente Ward: el módulo no está activo en este mundo.");`;
 
 /** Nombre de pista sin marcas de Markdown (*cursiva*, **negrita**). */
 const plano = t => t.replace(/\*+([^*]+)\*+/g, "$1").trim();

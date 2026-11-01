@@ -34,7 +34,9 @@
         { "nombre": "Escalera de incendios del edificio", "x": 16.5, "y": 2, "w": 2, "h": 2.5, "piso": "hormigon" },
         { "nombre": "Ascensor A", "x": 16.5, "y": 4.5, "w": 2, "h": 1.5, "piso": "ascensor", "limpio": true },
         { "nombre": "Ascensor B", "x": 16.5, "y": 6, "w": 2, "h": 1.5, "piso": "ascensor", "limpio": true },
-        { "nombre": "Cafetería y aseos (cerrados, no se juegan)", "x": 12.5, "y": 7.5, "w": 6, "h": 4, "piso": "macizo" }
+        { "nombre": "Cafetería (cerrada de noche)", "x": 12.5, "y": 7.5, "w": 4, "h": 4, "piso": "baldosa", "oscura": true },
+        { "nombre": "Aseo de hombres (cerrado)", "x": 16.5, "y": 7.5, "w": 2, "h": 2, "piso": "azulejo", "limpio": true, "oscura": true },
+        { "nombre": "Aseo de mujeres (cerrado)", "x": 16.5, "y": 9.5, "w": 2, "h": 2, "piso": "azulejo", "limpio": true, "oscura": true }
       ],
       "vanos": [
         { "x": 0.5, "y": 11.5, "w": 5.1, "eje": "h", "tipo": "vidrio", "nombre": "Fachada de vidrio (ala oeste)" },
@@ -53,7 +55,11 @@
         { "x": 12.5, "y": 6.9, "w": 0.6, "eje": "v", "tipo": "baranda", "nombre": "Baranda de los molinetes (sur)" },
         { "x": 16.5, "y": 2.8, "w": 0.9, "eje": "v", "tipo": "puerta", "sonido": "metal", "nombre": "Puerta de la escalera" },
         { "x": 16.5, "y": 4.75, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "slidingMetal", "nombre": "Puerta del ascensor A" },
-        { "x": 16.5, "y": 6.25, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "slidingMetal", "nombre": "Puerta del ascensor B" }
+        { "x": 16.5, "y": 6.25, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "slidingMetal", "nombre": "Puerta del ascensor B" },
+        { "x": 12.5, "y": 9.4, "w": 1.2, "eje": "v", "tipo": "puerta-vidrio", "estado": "trabada", "sonido": "slidingModern", "nombre": "Puerta de vidrio de la cafetería (trabada de noche)" },
+        { "x": 12.7, "y": 11.5, "w": 3.6, "eje": "h", "tipo": "vidrio", "nombre": "Fachada de vidrio de la cafetería" },
+        { "x": 16.5, "y": 8.1, "w": 0.8, "eje": "v", "tipo": "puerta", "estado": "cerrada", "nombre": "Aseo de hombres" },
+        { "x": 16.5, "y": 10.1, "w": 0.8, "eje": "v", "tipo": "puerta", "estado": "cerrada", "nombre": "Aseo de mujeres" }
       ],
       "muebles": [
         { "tipo": "videopared", "x": 5.6, "y": 4.08, "w": 6.3, "h": 0.27, "frente": "s", "nombre": "Videopared (mosaico de timbres)", "desc": "a giant wall-mounted video wall made of many dark switched-off screens in a thin black frame, flush with the wall" },
@@ -70,7 +76,17 @@
         { "tipo": "camara", "x": 9.1, "y": 1.72, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · salida de servicio, por fuera", "desc": "a small black security camera bracket on the wall, lens only, no light" },
         { "tipo": "camara", "x": 12.65, "y": 2.15, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · hall de ascensores, apunta a los molinetes", "desc": "a small black security camera bracket on the wall, lens only, no light" },
         { "tipo": "escalera", "x": 17, "y": 2.1, "w": 1.4, "h": 2.3, "hacia": "n", "material": "metal", "desc": "a narrow concrete fire stair with steel handrails" },
-        { "tipo": "contenedor", "x": 1, "y": 0.35, "w": 1.7, "h": 1.2, "desc": "a dented commercial dumpster" }
+        { "tipo": "contenedor", "x": 1, "y": 0.35, "w": 1.7, "h": 1.2, "desc": "a dented commercial dumpster" },
+        { "tipo": "mostrador", "x": 12.65, "y": 7.65, "w": 2.6, "h": 0.6, "desc": "a café service counter with an empty glass pastry case" },
+        { "tipo": "maquina-cafe", "x": 15.4, "y": 7.65, "w": 0.8, "h": 0.6, "desc": "a switched-off espresso machine on a steel stand" },
+        { "tipo": "mesa", "fijo": true, "x": 13.1, "y": 9.0, "w": 0.8, "h": 0.8, "desc": "a small round café table with two chairs tucked in" },
+        { "tipo": "mesa", "fijo": true, "x": 14.6, "y": 9.0, "w": 0.8, "h": 0.8, "desc": "a small round café table with two chairs tucked in" },
+        { "tipo": "mesa", "fijo": true, "x": 13.1, "y": 10.4, "w": 0.8, "h": 0.8, "desc": "a small round café table with two chairs tucked in" },
+        { "tipo": "mesa", "fijo": true, "x": 14.6, "y": 10.4, "w": 0.8, "h": 0.8, "desc": "a small round café table with two chairs tucked in" },
+        { "tipo": "inodoro", "x": 17.9, "y": 7.64, "w": 0.42, "h": 0.62, "contra": "n" },
+        { "tipo": "lavabo", "x": 17.6, "y": 9.0, "w": 0.5, "h": 0.4 },
+        { "tipo": "inodoro", "x": 17.9, "y": 10.74, "w": 0.42, "h": 0.62, "contra": "s" },
+        { "tipo": "lavabo", "x": 17.6, "y": 9.62, "w": 0.5, "h": 0.4 }
       ],
       "luces": [
         { "x": 6.6, "y": 4.6, "preset": "neon", "presetIdeal": "videopared", "nombre": "Videopared (mosaico en directo), oeste" },
@@ -231,14 +247,15 @@
       "exterior": "the grounds behind an office building on a suburban tech campus, seen from directly above at night in November rain: a wet asphalt service lane along the left edge, a wide wet asphalt service yard along the bottom edge with a diesel generator enclosure and chiller units on concrete pads, and narrow wet concrete paths along the top and right edges — flat, continuous, with no extra buildings, kerbs or structures",
       "habitaciones": [
         { "nombre": "Almacenamiento · sala de racks", "x": 2, "y": 1, "w": 8, "h": 10.5, "piso": "tecnico" },
-        { "nombre": "Salas técnicas: SAI y baterías (no se juegan)", "x": 2, "y": 11.5, "w": 8, "h": 5, "piso": "macizo" },
+        { "nombre": "Sala técnica: SAI (cerrada)", "x": 2, "y": 11.5, "w": 4.5, "h": 5, "piso": "tecnico", "oscura": true },
         { "nombre": "Archivo privado (aislado)", "x": 10, "y": 1, "w": 3.5, "h": 3, "piso": "tecnico" },
         { "nombre": "Pasillo de seguridad", "x": 10, "y": 4, "w": 2.5, "h": 10, "piso": "tecnico" },
         { "nombre": "Esclusa", "x": 10, "y": 14, "w": 2.5, "h": 2.5, "piso": "linoleo", "limpio": true },
         { "nombre": "Sala de control", "x": 12.5, "y": 11.5, "w": 5, "h": 5, "piso": "tecnico" },
         { "nombre": "Sala de pruebas · entrenamiento de ANOMALY", "x": 12.5, "y": 4, "w": 8.5, "h": 7.5, "piso": "tecnico" },
         { "nombre": "Cómputo de entrenamiento (racks de GPU)", "x": 13.5, "y": 1, "w": 7.5, "h": 3, "piso": "tecnico" },
-        { "nombre": "Enfriamiento (no se juega)", "x": 17.5, "y": 11.5, "w": 3.5, "h": 5, "piso": "macizo" }
+        { "nombre": "Sala de enfriamiento (cerrada)", "x": 17.5, "y": 11.5, "w": 3.5, "h": 5, "piso": "hormigon", "oscura": true },
+        { "nombre": "Sala técnica: baterías (cerrada)", "x": 6.5, "y": 11.5, "w": 3.5, "h": 5, "piso": "hormigon", "oscura": true }
       ],
       "vanos": [
         { "x": 10.8, "y": 16.5, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "cerrada", "sonido": "slidingMetalHeavy", "nombre": "Esclusa · puerta exterior (tarjeta; cámara ANOMALY encima)" },
@@ -252,7 +269,10 @@
         { "x": 15, "y": 4, "w": 4.5, "eje": "h", "tipo": "abierto", "nombre": "Sala de pruebas ↔ cómputo de entrenamiento" },
         { "x": 10.8, "y": 4, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Archivo privado (nivel 3: cerradura propia, sin red)" },
         { "x": 2, "y": 1.7, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Salida de emergencia oeste (barra antipánico; alarma; cámara ANOMALY por fuera)" },
-        { "x": 21, "y": 10.2, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Salida de emergencia este (barra antipánico; alarma; cámara ANOMALY por fuera)" }
+        { "x": 21, "y": 10.2, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Salida de emergencia este (barra antipánico; alarma; cámara ANOMALY por fuera)" },
+        { "x": 10, "y": 12.4, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Pasillo → salas técnicas (cerrada con llave)" },
+        { "x": 6.5, "y": 12.6, "w": 0.9, "eje": "v", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Baterías → SAI" },
+        { "x": 19.2, "y": 11.5, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Sala de pruebas → enfriamiento (cerrada con llave)" }
       ],
       "muebles": [
         { "tipo": "rack", "x": 3, "y": 2.2, "w": 0.6, "h": 6.8, "desc": "a long row of black server racks" },
@@ -287,7 +307,16 @@
         { "tipo": "camara", "x": 10.15, "y": 14.15, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · dentro de la esclusa", "desc": "a small black security camera bracket on the wall, lens only, no light" },
         { "tipo": "camara", "x": 1.72, "y": 16.65, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · esquina suroeste, cubre el patio y el vial", "desc": "a small black security camera bracket on the wall, lens only, no light" },
         { "tipo": "camara", "x": 1.72, "y": 2.75, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · salida de emergencia oeste, por fuera", "desc": "a small black security camera bracket on the wall, lens only, no light" },
-        { "tipo": "camara", "x": 21.13, "y": 11.25, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · salida de emergencia este, por fuera", "desc": "a small black security camera bracket on the wall, lens only, no light" }
+        { "tipo": "camara", "x": 21.13, "y": 11.25, "w": 0.15, "h": 0.15, "anomaly": true, "nombre": "Cámara ANOMALY · salida de emergencia este, por fuera", "desc": "a small black security camera bracket on the wall, lens only, no light" },
+        { "tipo": "maquina", "x": 2.3, "y": 11.8, "w": 3.6, "h": 0.8, "desc": "a row of tall grey UPS cabinets with dark status panels" },
+        { "tipo": "maquina", "x": 2.3, "y": 13.4, "w": 3.6, "h": 0.8, "desc": "a row of tall grey UPS cabinets with dark status panels" },
+        { "tipo": "maquina", "x": 2.3, "y": 15.5, "w": 2.4, "h": 0.7, "desc": "a long grey electrical distribution board" },
+        { "tipo": "maquina", "x": 6.8, "y": 11.75, "w": 1.4, "h": 0.6, "desc": "a grey battery-monitoring cabinet" },
+        { "tipo": "rack", "x": 6.8, "y": 14.2, "w": 2.9, "h": 0.6, "desc": "a long row of black battery cabinets" },
+        { "tipo": "rack", "x": 6.8, "y": 15.6, "w": 2.9, "h": 0.6, "desc": "a long row of black battery cabinets" },
+        { "tipo": "maquina", "x": 17.9, "y": 12.3, "w": 1.0, "h": 1.8, "desc": "a tall grey computer-room air-conditioning unit" },
+        { "tipo": "maquina", "x": 19.6, "y": 12.3, "w": 1.0, "h": 1.8, "desc": "a tall grey computer-room air-conditioning unit" },
+        { "tipo": "maquina", "x": 17.9, "y": 14.9, "w": 2.7, "h": 0.6, "desc": "insulated chilled-water pipes and two pumps on a steel frame" }
       ],
       "luces": [
         { "x": 4, "y": 5.5, "preset": "neon", "nombre": "LED azules de los racks (oeste)" },

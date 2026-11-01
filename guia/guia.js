@@ -1,4 +1,4 @@
-/* Guía del Narrador de Seattle by Night — seguimiento de la partida.
+/* Guía del Narrador de El Expediente Ward — seguimiento de la partida.
    Copiado de la guía de DVV. Todo vive en localStorage ("sbn-guia"): escenas
    jugadas, Termómetro (valor, congelado, registro), noche del Reloj, pistas y
    notas; se exporta e importa como JSON. Los botones del módulo que vienen en

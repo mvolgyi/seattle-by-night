@@ -1,4 +1,4 @@
-/* Seattle by Night — todo prefijado con `sbn-`.
+/* El Expediente Ward (seattle-by-night) — todo prefijado con `sbn-`.
    Paleta del doc 15: pizarra mojada, azul de puerto, naranja de sodio, negro, un acento carmesí. */
 
 :root {
@@ -816,4 +816,16 @@ img.sbn-retrato {
   border: none;
   border-radius: 3px;
   box-shadow: var(--sbn-sombra);
+}
+
+/* Logo del Dark Pack en el aviso legal (journal COMO-USAR, descripción de la Aventura y diálogo
+   de importación). Lo exige el acuerdo; procedencia en assets/legal/LEEME.md. */
+img.sbn-logo-dark-pack {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin: 0.4em 0;
+  border: none;
+  box-shadow: none;
+  background: none;
 }

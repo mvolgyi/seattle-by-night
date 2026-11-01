@@ -1,9 +1,9 @@
 {
   "SBN": {
-    "titulo": "Seattle by Night",
+    "titulo": "El Expediente Ward",
     "soloNarrador": "Eso lo hace el Narrador.",
     "chat": {
-      "avisoNarrador": "Seattle by Night · aviso para el Narrador"
+      "avisoNarrador": "El Expediente Ward · aviso para el Narrador"
     },
     "settings": {
       "indicador": {
@@ -16,11 +16,11 @@
       }
     },
     "importar": {
-      "titulo": "Seattle by Night: importar la crónica",
+      "titulo": "El Expediente Ward: importar la crónica",
       "pregunta": "Este mundo todavía no tiene la crónica. ¿Importás ahora <strong>El Expediente Ward</strong> (journals, personajes, escenas y macros)? Podés hacerlo más tarde desde el compendio «Importar la crónica».",
       "si": "Importar",
       "no": "Ahora no",
-      "actualizarTitulo": "Seattle by Night: actualizar la crónica",
+      "actualizarTitulo": "El Expediente Ward: actualizar la crónica",
       "actualizarPregunta": "La crónica de este mundo se importó con la versión {importada} del módulo y ahora tenés la {version}. ¿La actualizás?",
       "actualizarSeActualiza": "Se actualiza:",
       "actualizarQueSe": "el texto de los journals, las escenas (mapa, muros, luces), las macros y los actores de PNJ con su ficha, como vienen en esta versión.",
@@ -116,7 +116,7 @@
     },
     "panel": {
       "titulo": "Panel del Narrador",
-      "control": "Panel del Narrador (Seattle by Night)",
+      "control": "Panel del Narrador (El Expediente Ward)",
       "sinDatos": "No se cargó data/cronica.json: faltan umbrales, noches y pistas. Reinstalá el módulo o corré npm run contenido.",
       "noImportado": "Ese documento no está en el mundo (¿importaste la crónica?)",
       "celula": "Célula de FIRSTLIGHT: abrir la hoja",

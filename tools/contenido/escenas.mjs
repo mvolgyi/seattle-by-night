@@ -544,7 +544,7 @@ function portada(ctx) {
   });
 
   escribirDoc(PACK, docEscena({
-    id: "portada", nombre: "Seattle by Night — El Expediente Ward", carpeta: null, orden: -10,
+    id: "portada", nombre: "El Expediente Ward", carpeta: null, orden: -10,
     w, h, sinGrid: true, oscuridad: 0, luzGlobal: true, visionToken: false,
     fondo: arte, colorFondo: COLOR_PORTADA, notes,
     extra: { landing: true, provisional: !arte, nota: "<p>Portada de la crónica. Los pines abren cómo usar el módulo, la aventura y la Pantalla del Narrador.</p>" }

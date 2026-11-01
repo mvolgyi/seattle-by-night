@@ -40,6 +40,9 @@
         "vacio": "an open, unlit void dropping away into darkness: a flat, near-black fill with no floor visible",
         "agua": "dark slate-blue open water, flat and calm, covered in fine small ripples, with no foam, no boats, no reflections of lights",
         "roca": "solid packed earth and rock seen as a flat, dark, featureless mass",
+        "escombros": "a heap of collapsed rubble that buries the floor: broken red-grey bricks, chunks of plaster and lath, charred fallen joists and soot, wet and dark, seen from directly above",
+        "relleno": "solid packed wet earth fill mixed with stones, broken brick and old cinders, dark grey-brown, flat and undisturbed, no footprints",
+        "cimiento": "the flat top of an old rubble-stone foundation: rough dark grey stones of uneven sizes set in thick crumbling mortar, damp and stained",
         "_breve": {
           "_comentario": "Versión corta de cada material, para las listas de los prefijos y sufijos ({PISOS}, {MATERIALES}, {ALREDEDOR}, {AFUERA}). Las llena pintar-planos.mjs con los materiales de CADA plano.",
           "tablas": "long, wide, weathered grey-brown floorboards with dark seams",
@@ -66,6 +69,9 @@
           "agua": "dark slate-blue water with fine ripples",
           "vacio": "an unlit void",
           "roca": "solid packed earth and rock",
+          "escombros": "collapsed rubble of bricks, plaster and charred beams",
+          "relleno": "packed earth fill with stones and broken brick",
+          "cimiento": "rough rubble-stone foundation masonry",
           "asfalto": "gritty wet asphalt with oil sheen and shallow puddles",
           "acera": "rain-darkened concrete slabs",
           "edificio": "tar-and-gravel roofing"
@@ -308,6 +314,37 @@
   "mapas": {
     "_comentario": "Cómo se pintó cada mapa (lo lee pintar-planos.mjs sin --camino): camino, semilla y ajustes. helen salió de la prueba de SPEC §4.5 (2026-10-30) y es la referencia de estilo del set. `detalle` = pasada de detalle por mosaicos (pintar-planos --detalle); `grading: true` = grading de estilos.battlemap.grading (un objeto pisa parámetros).",
     "helen": {
+      "parche": {
+        "_comentario": "Los departamentos vecinos 3B, 3C y 3D (antes macizo), repintados con tools/parchar-planos.mjs sobre el mapa de la semilla 11.",
+        "semilla": 7,
+        "zonas": [
+          {
+            "x": 5,
+            "y": 2,
+            "w": 6,
+            "h": 8,
+            "semilla": 90
+          },
+          {
+            "x": 13,
+            "y": 2,
+            "w": 6,
+            "h": 8,
+            "semilla": 31
+          },
+          {
+            "x": 13,
+            "y": 10,
+            "w": 6,
+            "h": 9,
+            "semilla": 112
+          }
+        ],
+        "grading": true,
+        "detalle": {
+          "denoise": 0.45
+        }
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -363,6 +400,19 @@
       "grading": true
     },
     "galeria-archivo": {
+      "parche": {
+        "_comentario": "Los cimientos (mampostería), antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 5,
+        "zonas": [
+          {
+            "x": 5,
+            "y": 8,
+            "w": 7,
+            "h": 2
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -430,6 +480,43 @@
       }
     },
     "subterraneo": {
+      "parche": {
+        "_comentario": "Cimientos, relleno de la calle y las tiendas abandonadas de los escaparates tapiados, antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 3,
+        "zonas": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 3,
+            "h": 6.5
+          },
+          {
+            "x": 0,
+            "y": 9.5,
+            "w": 6,
+            "h": 4.5
+          },
+          {
+            "x": 3,
+            "y": 0,
+            "w": 4,
+            "h": 6.5
+          },
+          {
+            "x": 15,
+            "y": 0,
+            "w": 3,
+            "h": 6.5
+          },
+          {
+            "x": 13,
+            "y": 9.5,
+            "w": 4.5,
+            "h": 4.5
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -476,6 +563,63 @@
       }
     },
     "larchmont-sotano": {
+      "parche": {
+        "_comentario": "La tierra (relleno) y la carbonera derrumbada (escombros), antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 9,
+        "zonas": [
+          {
+            "x": 0,
+            "y": 0.5,
+            "w": 3,
+            "h": 2.1
+          },
+          {
+            "x": 0,
+            "y": 4.2,
+            "w": 3,
+            "h": 6.3
+          },
+          {
+            "x": 13,
+            "y": 0.5,
+            "w": 5,
+            "h": 2.5
+          }
+        ],
+        "grading": {
+          "croma": 0.8,
+          "carmesi": {
+            "hasta": 34,
+            "minimo": 1,
+            "ganancia": 1
+          },
+          "topes": [
+            {
+              "desde": 0,
+              "hasta": 38,
+              "max": 0.04
+            },
+            {
+              "desde": 38,
+              "hasta": 95,
+              "max": 0.035
+            },
+            {
+              "desde": 110,
+              "hasta": 175,
+              "max": 0.015
+            },
+            {
+              "desde": 215,
+              "hasta": 290,
+              "max": 0.03
+            }
+          ]
+        },
+        "detalle": {
+          "denoise": 0.45
+        }
+      },
       "camino": "klein",
       "semilla": 22,
       "macizo": "plano",
@@ -525,6 +669,69 @@
       "grading": true
     },
     "larchmont-planta": {
+      "parche": {
+        "_comentario": "El 1B, el 1C, la portería y el fondo del pasillo derrumbados (escombros), antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 5,
+        "zonas": [
+          {
+            "x": 3,
+            "y": 0.5,
+            "w": 6.5,
+            "h": 3.5
+          },
+          {
+            "x": 9.5,
+            "y": 0.5,
+            "w": 2,
+            "h": 1.5
+          },
+          {
+            "x": 11.5,
+            "y": 0.5,
+            "w": 6.5,
+            "h": 4.5
+          },
+          {
+            "x": 11.5,
+            "y": 5,
+            "w": 1.5,
+            "h": 1.5
+          }
+        ],
+        "grading": {
+          "croma": 0.8,
+          "carmesi": {
+            "hasta": 34,
+            "minimo": 1,
+            "ganancia": 1
+          },
+          "topes": [
+            {
+              "desde": 0,
+              "hasta": 38,
+              "max": 0.04
+            },
+            {
+              "desde": 38,
+              "hasta": 95,
+              "max": 0.035
+            },
+            {
+              "desde": 110,
+              "hasta": 175,
+              "max": 0.015
+            },
+            {
+              "desde": 215,
+              "hasta": 290,
+              "max": 0.03
+            }
+          ]
+        },
+        "detalle": {
+          "denoise": 0.45
+        }
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -559,6 +766,19 @@
       }
     },
     "northline": {
+      "parche": {
+        "_comentario": "El aseo y los montantes, antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 9,
+        "zonas": [
+          {
+            "x": 10.5,
+            "y": 10.5,
+            "w": 2.5,
+            "h": 3.5
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 33,
       "macizo": "plano",
@@ -593,6 +813,19 @@
       }
     },
     "torre-atico": {
+      "parche": {
+        "_comentario": "El núcleo de hormigón de la torre, antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 5,
+        "zonas": [
+          {
+            "x": 15,
+            "y": 5,
+            "w": 5,
+            "h": 2
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 88,
       "macizo": "plano",
@@ -626,6 +859,19 @@
       }
     },
     "galeria": {
+      "parche": {
+        "_comentario": "El cuarto de máquinas (cerrado), antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 9,
+        "zonas": [
+          {
+            "x": 20,
+            "y": 12,
+            "w": 3,
+            "h": 3
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -663,6 +909,25 @@
       }
     },
     "gale-datos": {
+      "parche": {
+        "_comentario": "Las salas técnicas (SAI y baterías) y la sala de enfriamiento, antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 9,
+        "zonas": [
+          {
+            "x": 2,
+            "y": 11.5,
+            "w": 8,
+            "h": 5
+          },
+          {
+            "x": 17.5,
+            "y": 11.5,
+            "w": 3.5,
+            "h": 5
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -774,6 +1039,19 @@
       }
     },
     "gale-sentinel": {
+      "parche": {
+        "_comentario": "La cafetería y los aseos (cerrados), antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 3,
+        "zonas": [
+          {
+            "x": 12.5,
+            "y": 7.5,
+            "w": 6,
+            "h": 4
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 66,
       "macizo": "plano",
@@ -857,6 +1135,19 @@
       }
     },
     "terminal-ferry": {
+      "parche": {
+        "_comentario": "Los aseos (cerrados), antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 3,
+        "zonas": [
+          {
+            "x": 21,
+            "y": 6,
+            "w": 2.5,
+            "h": 4.5
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -904,6 +1195,20 @@
       }
     },
     "ferry": {
+      "parche": {
+        "_comentario": "La franja de proa (salón y paseos que siguen, tras una cadena), antes macizo; se quita el mamparo de x = 1,5. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 3,
+        "zonas": [
+          {
+            "x": 0,
+            "y": 1,
+            "w": 1.75,
+            "h": 22,
+            "margen": 0
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 22,
       "macizo": "plano",
@@ -951,6 +1256,32 @@
       }
     },
     "ferry-coches": {
+      "parche": {
+        "_comentario": "La franja de proa de la cubierta de vehículos (tras una cadena) y el techo de chapa con rejillas de los dos casings, antes macizo. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 5,
+        "zonas": [
+          {
+            "x": 0,
+            "y": 1,
+            "w": 1.75,
+            "h": 22,
+            "margen": 0
+          },
+          {
+            "x": 1.5,
+            "y": 1,
+            "w": 14,
+            "h": 2.5
+          },
+          {
+            "x": 1.5,
+            "y": 20.5,
+            "w": 14,
+            "h": 2.5
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 11,
       "macizo": "plano",
@@ -998,6 +1329,20 @@
       }
     },
     "ferry-puente": {
+      "parche": {
+        "_comentario": "La franja de popa de la cubierta superior (tras una cadena), antes macizo; se quita el muro de x = 12. Repintado con tools/parchar-planos.mjs sobre el mapa pintado.",
+        "semilla": 9,
+        "zonas": [
+          {
+            "x": 11.75,
+            "y": 1,
+            "w": 1.25,
+            "h": 22,
+            "margen": 0
+          }
+        ],
+        "grading": true
+      },
       "camino": "klein",
       "semilla": 22,
       "macizo": "plano",

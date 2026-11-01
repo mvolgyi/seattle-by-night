@@ -22,8 +22,11 @@ import { ID } from "./ids.mjs";
 
 const PACK = "aventura";
 const CLAVE = "sbn";
-const NOMBRE = "Seattle by Night — El Expediente Ward";
-const RAIZ_CARPETAS = "Seattle by Night";
+const NOMBRE = "El Expediente Ward — una crónica en Seattle (fan, no oficial)";
+// Nombre VISIBLE de la carpeta raíz. Su _id sale de `aventura:raiz:<tipo>` y no
+// del nombre, así que cambiarlo sólo la renombra al reimportar. Tiene que ser
+// igual al nombre visible de la raíz de cronica (NOMBRE_CARPETA en journals.mjs).
+const RAIZ_CARPETAS = "El Expediente Ward";
 
 /** Pack de packs-src → campo del Adventure y tipo de documento. */
 const FUENTES = [
@@ -35,9 +38,16 @@ const FUENTES = [
   { pack: "macros", campo: "macros", tipo: "Macro" }
 ];
 
-const AVISO_DARK_PACK = "<p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos " +
+// El logo del Dark Pack lo exige el acuerdo (assets/legal/LEEME.md). La
+// descripción de la Aventura la muestra también el diálogo de importación.
+const AVISO_DARK_PACK =
+  `<p><img class="sbn-logo-dark-pack" src="modules/${MODULO}/assets/legal/dark-pack-logo.webp" alt="Dark Pack" width="96" height="97"></p>` +
+  "<p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos " +
   "materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los " +
-  "derechos reservados. Más información en worldofdarkness.com.</p>";
+  "derechos reservados. Más información en worldofdarkness.com.</p>" +
+  "<p>Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with " +
+  "permission. All rights reserved. For more information please visit worldofdarkness.com.</p>" +
+  "<p>This is not official World of Darkness material.</p>";
 
 /** Copia sin `_key` en ningún nivel. */
 function sinClaves(v) {
@@ -69,8 +79,8 @@ export async function construir(ctx) {
   const vistos = new Map();
   const faltan = [];
   // Una carpeta raíz de un pack que se llama como la raíz de la Aventura
-  // («Seattle by Night» de cronica) no se anida dentro de ella: se funde. Si no,
-  // «Seattle by Night/Seattle by Night/Vástagos/Brujah» se come un nivel de los
+  // («El Expediente Ward» de cronica) no se anida dentro de ella: se funde. Si no,
+  // «El Expediente Ward/El Expediente Ward/Vástagos/Brujah» se come un nivel de los
   // cuatro que permite Foundry (CONST.FOLDER_MAX_DEPTH, common/constants.mjs).
   const fundidas = new Map();
   const padreDe = (folder, tipo) => (folder ? fundidas.get(folder) ?? folder : raiz(tipo)._id);
@@ -94,6 +104,9 @@ export async function construir(ctx) {
       vistos.set(clave, pack);
       contenido[campo].push(sinClaves({ ...d, folder: padreDe(d.folder, tipo) }));
     }
+  }
+  if (!faltan.includes("cronica") && ![...fundidas.values()].includes(raices.JournalEntry?._id)) {
+    ctx.avisos.push(`aventura: ninguna carpeta raíz de cronica se llama «${RAIZ_CARPETAS}»: no se fundió con la raíz (¿cambió NOMBRE_CARPETA en journals.mjs?)`);
   }
   if (faltan.length) ctx.avisos.push(`aventura: todavía no hay nada en packs-src/{${faltan.join(",")}}; se saltea (volvé a correr el build cuando estén)`);
   folders.unshift(...Object.values(raices));

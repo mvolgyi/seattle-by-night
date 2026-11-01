@@ -1277,7 +1277,7 @@ function quitarDestellos(actual, plano, ctx, ajustes = {}) {
  *             ladrillos y ventanas sobre el asfalto liso).
  * Se componen con máscaras sacadas del plano (borde difuminado 2 px); la
  * rejilla de la escalera de incendios queda de la base.
- *   op = { densidad, mosaico, solape, semilla, alfombra, tmp,
+ *   op = { densidad, mosaico, solape, semilla, alfombra, tmp, zonaInterior?,
  *          interior: { motor, denoise, ruido, control, fuerza, fin, pasos }, exterior: {…} | null }
  */
 export async function detallarMosaicos(base, plano, destino, op) {
@@ -1323,7 +1323,8 @@ export async function detallarMosaicos(base, plano, destino, op) {
   }
   if (op.interior) {
     const interior = path.join(tmp, "interior.png");
-    const r = await pasada(grande, plano, interior, libres, "interior", op.interior, ctx);
+    // `zonaInterior` (parchar-planos): sólo se repintan los mosaicos que tocan esas zonas.
+    const r = await pasada(grande, plano, interior, op.zonaInterior ?? libres, "interior", op.interior, ctx);
     segundos += r.segundos; prompts.push(...r.prompts);
     const comp = componer(actual, interior, mascara(zonas.edificio, W, H, D, path.join(tmp, "m-edif.png"), 2), path.join(tmp, "comp-int.png"));
     actual = comp;

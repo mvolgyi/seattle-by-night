@@ -42,7 +42,7 @@ const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
 const CACHE = path.join(RAIZ, "cache/guia");
 /** Ancho máximo al embeber, por carpeta: los mapas no necesitan 2400 px para leerse en la guía. */
-const ANCHO = { mapas: 1400, lugares: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200 };
+const ANCHO = { mapas: 1400, lugares: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200, legal: 300 };
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
 const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const avisos = [];
@@ -243,14 +243,14 @@ const portada = foto("portadas/portada.webp");
 const cabecera = `
 <header class="tablero" id="inicio">
   <div class="fila">
-    <a class="t-logo" href="#inicio" aria-label="Inicio">SbN</a>
+    <a class="t-logo" href="#inicio" aria-label="Inicio">EW</a>
     <nav class="t-nav" aria-label="Secciones">${navLinks}</nav>
     <button class="t-accion" type="button" data-abrir-mesa>La mesa</button>
   </div>
   <div class="hero ${portada ?? ""}" role="img" aria-label="Un hombre de abrigo mira los muelles de Seattle bajo la lluvia">
     <div class="hero-texto">
       <p class="kicker">Vampiro: La Mascarada 5ª · Guía del Narrador</p>
-      <h1><span>Seattle by Night</span><small>El Expediente Ward</small></h1>
+      <h1><span>El Expediente Ward</span><small>Una crónica en&nbsp;Seattle (fan,&nbsp;no&nbsp;oficial)</small></h1>
       <p>Noviembre de 2026. Alguien robó de un apartamento de Ballard el archivo de una periodista que lleva años contando historias de gente que no envejece. Desde esa noche, la ciudad cobra deudas viejas: un hermano que nadie conocía, un Primogénito que quiere el trono y una agencia federal que ya no se conforma con mirar.</p>
       <p>Esta guía tiene el libro, la aventura escena por escena, los interludios de FIRSTLIGHT, cada personaje con su retrato, la ciudad con sus mapas y los documentos para entregar. Se abre desde el disco y guarda la partida en este navegador.</p>
       <button class="cta" type="button" data-abrir-mesa>Abrir la mesa <span aria-hidden="true">→</span></button>
@@ -527,7 +527,7 @@ const foundry = `
   <p class="kicker">El módulo</p>
   <h2>Cómo usar el módulo en Foundry</h2>
   <div class="pasos">
-    <div class="paso"><div class="paso-texto"><h3>1. Importar la crónica</h3><p>Activá <strong>Seattle by Night</strong> en un mundo de <em>wod5e</em>. La primera vez que entra el Narrador, el módulo ofrece importar la aventura entera con sus carpetas: journals, actores, escenas, ítems de FIRSTLIGHT y macros. Si lo dejás para después, está en el compendio «Importar la crónica». Reimportar actualiza sin duplicar y sin pisar los PJ de los jugadores ni lo que hayas revelado.</p></div>${captura("importar.webp", "El diálogo «Importar la crónica»", "El diálogo de importación, con el aviso del Dark Pack.")}</div>
+    <div class="paso"><div class="paso-texto"><h3>1. Importar la crónica</h3><p>Activá <strong>El Expediente Ward</strong> en un mundo de <em>wod5e</em>. La primera vez que entra el Narrador, el módulo ofrece importar la aventura entera con sus carpetas: journals, actores, escenas, ítems de FIRSTLIGHT y macros. Si lo dejás para después, está en el compendio «Importar la crónica». Reimportar actualiza sin duplicar y sin pisar los PJ de los jugadores ni lo que hayas revelado.</p></div>${captura("importar.webp", "El diálogo «Importar la crónica»", "El diálogo de importación, con el aviso del Dark Pack.")}</div>
     <div class="paso"><div class="paso-texto"><h3>2. El indicador</h3><p>Sobre la barra de macros, sólo para el Narrador: el Termómetro con sus diez segmentos, la noche del Reloj de Halloway y las pistas obtenidas, con botones de más y menos. Se pliega a una píldora y abre el Panel del Narrador.</p></div>${captura("indicador.webp", "El indicador del Narrador", "Termómetro 2, noche 1 (jueves 12 de noviembre), 0 de 15 pistas.")}</div>
     <div class="paso"><div class="paso-texto"><h3>3. El Panel del Narrador</h3><p>Cuatro pestañas: <strong>Termómetro</strong> (valor, umbrales, fijar, congelar, lo que lo mueve esta noche e historial), <strong>Reloj</strong> (las ocho noches con su evento y sus escenas), <strong>Pistas</strong> (P-01 a P-15 y las pruebas sin ID) y <strong>Tiradas clave</strong> (A3-E04 y A4-E01, con la reserva calculada según las pistas y la votación del Consejo). Al cruzar un umbral, el Narrador recibe un aviso y un susurro con lo que pasa en la ciudad; en 3 y 9, con el interludio de FIRSTLIGHT que toca.</p></div>${captura("panel-termometro.webp", "El Panel del Narrador en la pestaña Termómetro", "Termómetro en 3: el panel avisa que toca el interludio INT-01.")}${captura("susurro.webp", "Susurro al Narrador al cruzar el umbral 3", "El susurro del umbral, sólo para el Narrador.")}${captura("panel-tiradas.webp", "La pestaña Tiradas clave en el Consejo", "Tiradas clave: márgenes y votación del Consejo de Primogenitura.")}</div>
     <div class="paso"><div class="paso-texto"><h3>4. Los botones de los journals</h3><p>En las escenas hay botones de tirada (tiran con el token seleccionado o el personaje del jugador), del Termómetro (con el motivo; el de las cámaras corporales respeta su tope), de pistas (marcan la pista como obtenida) y de noches del Reloj. Los enlaces llevan a la escena, el lugar, el PNJ o el documento. En esta guía, los mismos botones mueven La mesa.</p></div>${captura("journal.webp", "Un journal con botones del Termómetro y de pistas", "Ajuste a la Parte 1: botones del Termómetro, pistas y enlaces.")}</div>
@@ -573,14 +573,21 @@ const mesa = `
 </aside>`;
 
 /* --------------------------------------------------------------- HTML */
-const LEGAL = "Seattle by Night es material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.";
+const LEGAL = "El Expediente Ward — una crónica en Seattle es material fan y no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.";
+// El texto en inglés, literal, como lo pide el acuerdo del Dark Pack.
+const LEGAL_EN = ["Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com.",
+  "This is not official World of Darkness material."];
+// El logo del Dark Pack lo exige el acuerdo (procedencia en assets/legal/LEEME.md).
+const LOGO_DARK_PACK = existe("assets/legal/dark-pack-logo.webp")
+  ? `<a class="pie-logo" href="https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement"><img src="${A}/legal/dark-pack-logo.webp" alt="Dark Pack" width="96" height="97"></a>` : "";
+if (!LOGO_DARK_PACK) avisos.push("falta assets/legal/dark-pack-logo.webp (el acuerdo del Dark Pack lo exige)");
 let html = `<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seattle by Night — Guía del Narrador</title>
-<meta name="description" content="Seattle by Night y la aventura El Expediente Ward para Vampiro: La Mascarada 5ª edición, completa y con seguimiento de la partida.">
+<title>El Expediente Ward — Guía del Narrador</title>
+<meta name="description" content="El Expediente Ward, una crónica fan y no oficial en Seattle para Vampiro: La Mascarada 5ª edición, completa y con seguimiento de la partida.">
 <meta name="theme-color" content="#0d0f12">
 <link rel="stylesheet" href="../src/styles/sbn.css">
 <link rel="stylesheet" href="../src/styles/sbn-ui.css">
@@ -593,7 +600,7 @@ let html = `<!doctype html>
 <a class="saltar" href="#libro">Saltar al contenido</a>
 ${cabecera}
 <nav class="barra" aria-label="Navegación fija" data-barra>
-  <a class="barra-logo" href="#inicio" aria-label="Volver a la portada">SbN</a>
+  <a class="barra-logo" href="#inicio" aria-label="Volver a la portada">EW</a>
   <div class="barra-links">${navLinks}</div>
   <form class="buscar" role="search" data-buscar><label for="buscar" class="visualmente-oculto">Ir a una escena, un personaje o un lugar</label><input id="buscar" name="buscar" type="search" list="destinos" placeholder="Ir a… (escena, PNJ, lugar, ID)" autocomplete="off" spellcheck="false"><datalist id="destinos"></datalist></form>
   <button class="t-accion" type="button" data-abrir-mesa>La mesa</button>
@@ -609,7 +616,7 @@ ${firstlight}
 ${pantalla}
 ${foundry}
 </main>
-<footer class="pie"><p>${esc(LEGAL)}</p><p>No es material oficial. Todo el arte (retratos, mapas, portada) se generó en local con modelos de licencia comercial; ni arte ni logos de Paradox o White Wolf. Fuentes Oswald, IBM Plex Sans y Amiri (OFL).</p></footer>
+<footer class="pie">${LOGO_DARK_PACK}<div class="pie-texto"><p>${esc(LEGAL)}</p>${LEGAL_EN.map(t => `<p lang="en">${esc(t)}</p>`).join("")}<p>Es gratuito. Todo el arte (retratos, mapas, tokens, ilustraciones, portada) se generó con IA en local, con modelos de licencia comercial; no hay arte de Paradox ni de White Wolf, y el único logo es el del Dark Pack, como lo pide el acuerdo. Fuentes Oswald, IBM Plex Sans y Amiri (OFL).</p></div></footer>
 ${mesa}
 <div class="aviso" data-aviso role="status" aria-live="polite" hidden></div>
 <button type="button" class="arriba" data-arriba hidden aria-label="Volver arriba">▲</button>
