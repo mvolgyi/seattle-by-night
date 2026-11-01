@@ -151,7 +151,8 @@ button.sbn-pista { color: var(--texto); }
 .bf-foto { position: sticky; top: 56px; align-self: start; height: calc(100svh - 56px); margin: 0; overflow: hidden; min-height: 320px; }
 .bf-foto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,13,16,.85) 0%, rgba(11,13,16,0) 45%); }
 .bf-foto.alta { background-position: center top; }
-.bf-foto.sin-foto { background: var(--panel) radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--puerto) 70%, transparent), transparent 70%); }
+/* Sin imagen (figuras de trasfondo, lugares sin mapa): una sola columna, sin el panel vacío. */
+.banda-foto.sin-imagen { grid-template-columns: minmax(0, 1fr); min-height: 0; border-left: 4px solid var(--panel-3); }
 .bf-foto figcaption { position: absolute; inset: auto 0 0 0; z-index: 1; padding: 24px 28px; font-family: var(--titulo); font-weight: 700; font-size: clamp(30px, 3.6vw, 64px); line-height: 0.95; text-transform: uppercase; color: var(--texto); text-shadow: 0 1px 3px rgba(0,0,0,.8); text-wrap: balance; }
 .bf-foto figcaption b { display: block; font-size: 0.4em; color: var(--sodio); font-weight: 600; letter-spacing: 0.12em; margin-bottom: 0.3em; }
 .bf-texto { padding: clamp(32px, 4.5vw, 64px) var(--margen); display: flex; flex-direction: column; justify-content: flex-start; }
@@ -232,6 +233,8 @@ button.sbn-pista { color: var(--texto); }
 .ficha { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 20px; background: var(--panel); padding: 20px; align-items: start; }
 .ficha:not(:has(.ficha-foto)) { grid-template-columns: minmax(0, 1fr); }
 .ficha-foto { aspect-ratio: 2 / 3; background-position: center top; }
+/* Grupos de PNJs menores sin retrato: el token cenital de Foundry, entero. */
+.ficha-foto.token { aspect-ratio: 1; background-size: contain; background-position: center; background-color: transparent; }
 .ficha h4 { margin: 0 0 10px; font-size: 22px; text-transform: none; letter-spacing: 0; color: var(--texto); }
 .ficha-cuerpo { min-width: 0; color: var(--texto-2); font-size: 16px; }
 

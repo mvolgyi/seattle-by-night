@@ -42,7 +42,7 @@ const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
 const CACHE = path.join(RAIZ, "cache/guia");
 /** Ancho máximo al embeber, por carpeta: los mapas no necesitan 2400 px para leerse en la guía. */
-const ANCHO = { mapas: 1400, retratos: 560, portadas: 1920, "guia/capturas": 1200 };
+const ANCHO = { mapas: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200 };
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
 const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const avisos = [];
@@ -136,7 +136,12 @@ function limpiar(html) {
       }
       return `<a class="enlace" href="#${a}">${texto}</a>`;
     })
-    .replace(/src="modules\/seattle-by-night\/(assets\/[^"]+)"/g, (_, rel) => `src="${A}/${rel.slice("assets/".length)}"`)
+    // Imágenes del módulo (retratos, handouts de los documentos…) → ../assets, que embeber() mete en base64.
+    // Si el archivo no está, la imagen se quita (rota en la guía no sirve) y se avisa.
+    .replace(/<img\b[^>]*\bsrc="modules\/seattle-by-night\/(assets\/[^"]+)"[^>]*>/g, (img, rel) => {
+      if (!existe(rel)) { avisos.push(`imagen de journal que no existe: ${rel}`); return ""; }
+      return img.replace(`modules/${MODULO}/${rel}`, `${A}/${rel.slice("assets/".length)}`);
+    })
     .replace(/<i class="fa-[^"]*"><\/i>\s?/g, "");
 }
 const anclaPagina = (d, p) => ANCLA.get(`JournalEntry.${d._id}.JournalEntryPage.${p._id}`);
@@ -178,6 +183,22 @@ function foto(rel) {
 }
 const retrato = id => foto(`retratos/${id}.webp`);
 const mapaDe = id => foto(`mapas/${id}.webp`);
+/** Lo que no tiene imagen en assets/: se lista al final del build (es arte que falta, no un error de la guía). */
+const SIN_ARTE = [];
+/**
+ * Imagen de un actor: su retrato o, si no tiene (los grupos de PNJs menores:
+ * equipo táctico, cazarrecompensas, perros…), la que usa en Foundry (`img`, el
+ * token cenital). `token: true` para maquetarla cuadrada y entera.
+ */
+function imagenActor(a) {
+  const id = idDe(a);
+  const r = id ? retrato(id) : null;
+  if (r) return { clase: r, token: false };
+  const rel = String(a?.img ?? "").match(new RegExp(`^modules/${MODULO}/assets/(.+)$`))?.[1];
+  const c = rel ? foto(rel) : null;
+  if (c) return { clase: c, token: rel.startsWith("tokens/") };
+  return null;
+}
 
 /* --------------------------------------------------------------- piezas */
 const CLAN = { brujah: "Brujah", gangrel: "Gangrel", malkavian: "Malkavian", nosferatu: "Nosferatu", toreador: "Toreador", tremere: "Tremere", ventrue: "Ventrue", caitiff: "Caitiff", thinblood: "Sangre débil" };
@@ -265,6 +286,7 @@ const paneles = partes.map((d, i) => {
   const resto = ps.filter(p => !esIntro(p));
   const conAncla = resto.some(p => idDe(p));
   const img = foto(IMAGEN_PARTE[idDe(d)]);
+  if (!img) avisos.push(`${idDe(d)}: falta assets/${IMAGEN_PARTE[idDe(d)] ?? "(sin imagen asignada en IMAGEN_PARTE)"}`);
   const bandas = resto.map(p => {
     const id = anclaPagina(d, p);
     const marca = idDe(p) ? hecho(id) : "";
@@ -321,12 +343,13 @@ function perfil(j) {
   const d = J.get(j.id);
   const ps = paginas(d);
   const f = FICHA.get(j.id);
-  const img = retrato(j.id);
+  const img = retrato(j.id) ?? (ACTOR.has(j.id) ? imagenActor(ACTOR.get(j.id))?.clase : null);
+  if (!img) SIN_ARTE.push(`${j.id} (${d.name}): retrato`);
   const intro = ps.filter(esIntro).map(p => `<div id="${anclaPagina(d, p)}">${sinRetrato(htmlPagina(p))}</div>`).join("");
   const resto = ps.filter(p => !esIntro(p)).map(p => subpagina(d, p, { plegada: true })).join("");
   return `
-  <article class="banda-foto pnj${alterna++ % 2 ? " invertido" : ""}" id="${anclaJournal(d)}">
-    <figure class="bf-foto alta ${img ?? "sin-foto"}"><figcaption>${esc(d.name)}</figcaption></figure>
+  <article class="banda-foto pnj${alterna++ % 2 ? " invertido" : ""}${img ? "" : " sin-imagen"}" id="${anclaJournal(d)}">
+    ${img ? `<figure class="bf-foto alta ${img}"><figcaption>${esc(d.name)}</figcaption></figure>` : ""}
     <div class="bf-texto">
       <p class="kicker">${kickerFicha(f)}</p>
       <h2>${esc(d.name)}</h2>
@@ -340,10 +363,11 @@ function perfil(j) {
 function fichaCorta(a) {
   const id = idDe(a);
   const f = FICHA.get(id);
-  const img = retrato(id);
+  const img = imagenActor(a);
+  if (!img) SIN_ARTE.push(`${id} (${a.name}): retrato y token`);
   const kick = f?._clase === "menor" ? [TIPO[f.spcType] ?? f.spcType, f.cantidad > 1 ? `${f.cantidad} individuos` : null].filter(Boolean).map(esc).join(" · ") : kickerFicha(f);
   return `<article class="ficha" id="${ancla(id)}">
-    ${img ? `<div class="ficha-foto ${img}" role="img" aria-label="${esc(a.name)}"></div>` : ""}
+    ${img ? `<div class="ficha-foto${img.token ? " token" : ""} ${img.clase}" role="img" aria-label="${esc(a.name)}"></div>` : ""}
     <div class="ficha-cuerpo"><p class="kicker">${kick}</p><h4>${esc(f?.nombre ?? a.name)}</h4>${limpiar(a.system?.biography)}${reservas(f)}</div>
   </article>`;
 }
@@ -380,7 +404,7 @@ const planosDe = lug => PLANOS.filter(p => p.lugar === lug);
 const figuraPlano = (pl, grande = false) => {
   const img = mapaDe(pl.id);
   if (!img) { avisos.push(`plano ${pl.id} sin mapa pintado en assets/mapas/`); return ""; }
-  const escenas = (pl.escenas ?? []).map(e => enlaceLibro(e)).join(" · ");
+  const escenas = (pl.escenas ?? []).map(e => enlaceLibro(typeof e === "string" ? e : e.id)).join(" · ");
   return `<figure class="plano${grande ? " grande" : ""}" id="${ANCLA.get(`Scene.${ID.escena(pl.id)}`)}">
     <button type="button" class="ampliar ${img}" data-ampliar="${esc(pl.nombre)}" style="aspect-ratio: ${pl.ancho ?? 4} / ${pl.alto ?? 3}" aria-label="Ampliar el mapa: ${esc(pl.nombre)}"><span class="lupa">Ampliar</span></button>
     <figcaption><b>${esc(pl.nombre)}</b>${escenas ? `<span>${escenas}</span>` : ""}</figcaption>
@@ -391,6 +415,7 @@ const lugaresHtml = LUGARES.map((l, i) => {
   if (!d) { avisos.push(`lugar ${l.id} sin journal`); return ""; }
   const pls = planosDe(l.id);
   const img = pls.length ? mapaDe(pls[0].id) : null;
+  if (!img) SIN_ARTE.push(`${l.id} (${d.name}): ${l.mapa === false ? "ilustración del lugar (no lleva mapa)" : "mapa"}`);
   const ps = paginas(d);
   const datos = [
     l.escenas?.length ? `<dt>Escenas</dt><dd>${l.escenas.map(e => enlaceLibro(e)).join(" · ")}</dd>` : "",
@@ -398,8 +423,8 @@ const lugaresHtml = LUGARES.map((l, i) => {
   ].join("");
   return `
   <article class="lugar" id="${anclaJournal(d)}">
-    <div class="banda-foto${i % 2 ? " invertido" : ""}">
-      <figure class="bf-foto ${img ?? "sin-foto"}"><figcaption><b>${esc(l.id)}</b>${esc(d.name)}</figcaption></figure>
+    <div class="banda-foto${i % 2 ? " invertido" : ""}${img ? "" : " sin-imagen"}">
+      ${img ? `<figure class="bf-foto ${img}"><figcaption><b>${esc(l.id)}</b>${esc(d.name)}</figcaption></figure>` : ""}
       <div class="bf-texto">
         <p class="kicker">${esc(l.id)}${l.zona ? ` · ${esc(l.zona)}` : ""}</p>
         <h3>${esc(d.name)}</h3>
@@ -431,6 +456,16 @@ const ciudad = `
 const SOPORTE = { transcripcion: "Transcripción", guion: "Guion", "libro-registro": "Libro de registro", mecanografiado: "Copia mecanografiada", sms: "Mensajes de texto", foro: "Foro", correo: "Correo", carta: "Carta", informe: "Informe", poema: "Poema", presentacion: "Presentación", nota: "Nota", libreta: "Libreta", marcador: "Marcador", recorte: "Recorte", tarjeta: "Tarjeta", foto: "Fotografía", diagrama: "Diagrama", "orden-del-dia": "Orden del día", mapa: "Mapa" };
 const ENTREGA = { "sesion-cero": "Sesión cero", narrador: "Sólo para el Narrador", fuera: "Fuera de la aventura", epilogo: "Epílogo" };
 const docs = JDOCS.filter(d => /^(DOC|AYU)-\d+$/.test(idDe(d))).sort((a, b) => idDe(a).localeCompare(idDe(b), "es", { numeric: true }));
+{
+  const dir = path.join(RAIZ, "content/documentos");
+  const pedidas = fs.readdirSync(dir).filter(f => f.endsWith(".md")).flatMap(f => {
+    const m = fs.readFileSync(path.join(dir, f), "utf8").match(/^imagen:\s*(\S+)\s*$/m);
+    return m ? [[path.basename(f, ".md"), m[1]]] : [];
+  });
+  const doc15 = existe("content/arte-doc15.json") ? leerJson("content/arte-doc15.json").ayudas ?? [] : [];
+  for (const a of doc15) if (a.para && !pedidas.some(([, img]) => img === a.id)) pedidas.push([a.para, a.id]);
+  for (const [doc, img] of pedidas) if (!existe(`assets/handouts/${img}.webp`)) SIN_ARTE.push(`${img} (imagen de ${doc}): assets/handouts/${img}.webp`);
+}
 const documentoHtml = d => {
   const fl = d.flags[MODULO];
   const entrega = (fl.entrega ?? []).map(e => ancla(e) ? enlaceLibro(e) : esc(ENTREGA[e] ?? e)).join(" · ");
@@ -454,9 +489,10 @@ const documentos = `
 const TIPO_ITEM = { weapon: "Arma", gear: "Equipo", condition: "Estado" };
 const arsenal = ARSENAL.map(it => `<div class="item" id="${ANCLA.get(`Item.${ID.item(it.id)}`)}"><p class="kicker">${esc(TIPO_ITEM[it.tipo] ?? it.tipo)}${it.dano != null ? ` · daño ${esc(it.dano)}${it.agravado ? " agravado" : ""}` : ""}</p><h4>${esc(it.nombre)}</h4><p>${esc(it.efecto ?? "")}</p>${it.usadoPor?.length ? `<p class="chica">Lo usa: ${it.usadoPor.map(p => enlaceLibro(p, FICHA.get(p)?.nombre ?? p)).join(" · ")}</p>` : ""}</div>`).join("");
 const celula = CELULA.sort(ordenId).map((a, i) => {
-  const id = idDe(a), f = FICHA.get(id), img = retrato(id);
-  return `<article class="banda-foto pnj${i % 2 ? " invertido" : ""}" id="${ancla(id)}">
-    <figure class="bf-foto alta ${img ?? "sin-foto"}"><figcaption>${esc(f?.nombre ?? a.name)}</figcaption></figure>
+  const id = idDe(a), f = FICHA.get(id), img = imagenActor(a)?.clase;
+  if (!img) SIN_ARTE.push(`${id} (${a.name}): retrato`);
+  return `<article class="banda-foto pnj${i % 2 ? " invertido" : ""}${img ? "" : " sin-imagen"}" id="${ancla(id)}">
+    ${img ? `<figure class="bf-foto alta ${img}"><figcaption>${esc(f?.nombre ?? a.name)}</figcaption></figure>` : ""}
     <div class="bf-texto"><p class="kicker">${kickerFicha(f)}</p><h2>${esc(f?.nombre ?? a.name)}</h2>${limpiar(a.system?.biography)}</div>
   </article>`;
 }).join("");
@@ -617,7 +653,12 @@ function embeber(html) {
   return html;
 }
 fs.mkdirSync(path.dirname(SALIDA), { recursive: true });
-fs.writeFileSync(SALIDA, ENLAZADO ? html : embeber(html));
+const final = ENLAZADO ? html : embeber(html);
+if (!ENLAZADO) {
+  const sueltas = [...new Set(final.match(/(?:modules\/seattle-by-night\/|\.\.\/)assets\/[^"')\s]+/g) ?? [])];
+  if (sueltas.length) avisos.push(`imágenes sin embeber: ${sueltas.join(", ")}`);
+}
+fs.writeFileSync(SALIDA, final);
 const kb = Math.round(fs.statSync(SALIDA).size / 1024);
 console.log(`✓ guia/index.html (${kb} KB${ENLAZADO ? ", enlazado" : ", autocontenido"}): ${partes.length} partes, ${todosPerfiles.length} perfiles, ${MENORES.length} menores, ${CELULA.length} de la Célula, ${LUGARES.length} lugares, ${PLANOS.length} mapas, ${docs.length} documentos, ${PISTAS.length} pistas, ${FOTOS.size} imágenes`);
 const problemas = [
@@ -626,6 +667,10 @@ const problemas = [
   ...(sinDestino.length ? [`enlaces internos sin destino: ${sinDestino.join(", ")}`] : []),
   ...(crudos.length ? [`marcadores sin expandir: ${crudos.join(", ")}`] : [])
 ];
+if (SIN_ARTE.length) {
+  console.log(`\nArte que falta en assets/ (${SIN_ARTE.length}; la guía lo maqueta sin imagen):`);
+  for (const s of SIN_ARTE) console.log(`  ${s}`);
+}
 if (problemas.length) {
   console.warn(`\n${problemas.length} aviso(s):`);
   for (const p of problemas) console.warn(`  ${p}`);
