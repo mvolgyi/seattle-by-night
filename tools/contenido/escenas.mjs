@@ -100,6 +100,11 @@ function docEscena({ id, nombre, carpeta, orden, w, h, sinGrid = false, oscurida
     // Casillas de 1 m = 100 px (MAPS_SPEC §4). alpha 0: el piso ya lee la retícula.
     grid: { type: sinGrid ? 0 : 1, size: GRID_PX, style: "solidLines", thickness: 1, color: "#000000",
       alpha: 0, distance: 1, units: "m" },
+    // Visión (MAPS_SPEC §4.1): los jugadores ven sólo lo que ilumina una luz o lo que su
+    // token ve a tientas; la niebla es individual (CONST.FOG_EXPLORATION_MODES). La
+    // oscuridad es la del plano y la luz global queda apagada salvo `luzGlobal` (de día):
+    // encendida, ilumina todo para todos (environment.globalLight, common/documents/scene.mjs).
+    // El Narrador sin token no tiene máscara de visión (CanvasVisibility#refresh).
     tokenVision: visionToken,
     fog: { mode: visionToken ? 1 : 0 },
     environment: { darknessLevel: oscuridad, globalLight: { enabled: Boolean(luzGlobal) } },
@@ -175,9 +180,24 @@ function tilesDe(plano, ctx) {
  * Puntos (metros) para `n` pines dentro de una habitación, libres de muebles,
  * luces y de los otros pines, del más cercano al centro hacia afuera.
  */
-function puntosLibres(plano, hab, n) {
+function puntosLibres(plano, habCruda, n) {
   const R = 0.35, SEP = 0.9, PASO = 0.25;
+  // La sala normalizada (con su contorno, si tiene). Un punto tiene que caer
+  // dentro del contorno, no en una sala con muros más chica que esté adentro
+  // (el cuarto blindado dentro de la nave), lejos de los muros y de los tokens.
+  const pl = normalizar(plano);
+  const hab = pl.habitaciones[plano.habitaciones.indexOf(habCruda)] ?? habCruda;
+  const adentro = pl.habitaciones.filter(o => o !== hab && !o.sinMuros && o.w * o.h < hab.w * hab.h);
+  const muros = derivarMuros(plano).map(m => m.c.map(v => v / PX_POR_M));
+  const distMuro = (x, y, [x0, y0, x1, y1]) => {
+    const dx = x1 - x0, dy = y1 - y0, l2 = dx * dx + dy * dy;
+    const t = l2 ? Math.max(0, Math.min(1, ((x - x0) * dx + (y - y0) * dy) / l2)) : 0;
+    return Math.hypot(x - (x0 + t * dx), y - (y0 + t * dy));
+  };
   const libreDe = (x, y) =>
+    dentroDeHabitacion(hab, x, y) && !adentro.some(o => dentroDeHabitacion(o, x, y)) &&
+    !muros.some(c => distMuro(x, y, c) < R) &&
+    !(plano.figuras ?? []).some(f => Math.hypot(f.x - x, f.y - y) < R + 0.5) &&
     !(plano.muebles ?? []).some(m => x + R > m.x && x - R < m.x + (m.w ?? 0.1) && y + R > m.y && y - R < m.y + (m.h ?? 0.1)) &&
     !(plano.luces ?? []).some(l => Math.hypot(l.x - x, l.y - y) < R + 0.2);
   const cx = hab.x + hab.w / 2, cy = hab.y + hab.h / 2;
@@ -189,18 +209,21 @@ function puntosLibres(plano, hab, n) {
   }
   candidatos.sort((a, b) => a.d - b.d || a.y - b.y || a.x - b.x);
 
-  // Preferido: los n pines en fila o en columna (se leen como un grupo), la
-  // más cercana al centro de la sala.
+  // Preferido: los n pines en columna o en fila (se leen como un grupo), la
+  // más cercana al centro de la sala. Foundry escribe el texto del pin
+  // DEBAJO del ícono (textAnchor 1), centrado y a 24 px: en una fila a 1 m
+  // los rótulos largos («AVE-01-EPI», «LUG-15») se pisan, así que la fila
+  // paga 0,5 m de penalización frente a la columna.
   const libre = new Set(candidatos.map(c => `${c.x.toFixed(2)},${c.y.toFixed(2)}`));
   const esLibre = (x, y) => libre.has(`${x.toFixed(2)},${y.toFixed(2)}`);
   const pasos = Math.round(SEP / PASO);
   let mejor = null;
   for (const c of candidatos) {
-    for (const [dx, dy] of [[1, 0], [0, 1]]) {
+    for (const [dx, dy] of [[0, 1], [1, 0]]) {
       const fila = Array.from({ length: n }, (_, i) => ({ x: c.x + dx * i * pasos * PASO, y: c.y + dy * i * pasos * PASO }));
       if (!fila.every(p => esLibre(p.x, p.y))) continue;
       const mx = fila.reduce((s, p) => s + p.x, 0) / n, my = fila.reduce((s, p) => s + p.y, 0) / n;
-      const d = Math.hypot(mx - cx, my - cy);
+      const d = Math.hypot(mx - cx, my - cy) + (dx && n > 1 ? 0.5 : 0);
       if (!mejor || d < mejor.d - 1e-9) mejor = { d, fila };
     }
   }
@@ -365,7 +388,10 @@ function tokensDe(plano, ctx, actores) {
       elevation: 0, level: nivel, rotation: 0, alpha: 1,
       lockRotation: proto.lockRotation ?? true, locked: false, sort: i,
       hidden: Boolean(oculto), disposition: disposicion,
+      // Visión, olfato y linterna del prototipo (actores.mjs, token(); MAPS_SPEC §4.1).
       ...(proto.sight ? { sight: proto.sight } : {}),
+      ...(proto.detectionModes ? { detectionModes: proto.detectionModes } : {}),
+      ...(proto.light ? { light: proto.light } : {}),
       flags: flags("token", { escena: plano.id, id: f.id, ...(f.escena ? { escenas: [f.escena].flat() } : {}),
         ...(f.nota ? { nota: f.nota } : {}) })
     });

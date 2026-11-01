@@ -684,8 +684,8 @@
       "_id": "mBrBsoY96cwmj2Wq",
       "entryId": "L6Fl1S0tjkWno2we",
       "pageId": null,
-      "x": 735,
-      "y": 760,
+      "x": 1560,
+      "y": 960,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -723,7 +723,7 @@
       "entryId": "doItxeK8y7M1PufU",
       "pageId": "snrsN5RkdAklRIDn",
       "x": 735,
-      "y": 860,
+      "y": 760,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -1864,7 +1864,15 @@
       "hidden": false,
       "disposition": -1,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -1912,7 +1920,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -1960,7 +1976,15 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2008,7 +2032,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2055,7 +2087,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2102,7 +2142,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2149,7 +2197,15 @@
       "hidden": false,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2196,7 +2252,15 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 30,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2244,7 +2308,15 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2292,7 +2364,15 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2340,7 +2420,15 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2387,7 +2475,21 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -2435,7 +2537,21 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
       },
       "flags": {
         "seattle-by-night": {

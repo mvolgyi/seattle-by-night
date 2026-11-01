@@ -511,6 +511,84 @@
       "locked": false,
       "flags": {},
       "_key": "!scenes.lights!67ExO7p40rqtAUeC.bsJXyAIW1aj3BmSQ"
+    },
+    {
+      "_id": "KUlgEvk5ntJj5hXn",
+      "name": "Tubo de la escalera de estribor (al salón)",
+      "x": 1725,
+      "y": 225,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.KUlgEvk5ntJj5hXn"
+    },
+    {
+      "_id": "TV2OiU4Sf3C7kSCt",
+      "name": "Tubo de la escalera de babor (al salón)",
+      "x": 1725,
+      "y": 2175,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!67ExO7p40rqtAUeC.TV2OiU4Sf3C7kSCt"
     }
   ],
   "regions": [
@@ -1568,7 +1646,15 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {

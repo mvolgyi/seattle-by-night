@@ -12,7 +12,21 @@
     "disposition": -1,
     "lockRotation": true,
     "sight": {
-      "enabled": false
+      "enabled": true,
+      "range": 10,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "detectionModes": {
+      "feelTremor": {
+        "enabled": true,
+        "range": 20
+      }
     },
     "texture": {
       "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp"

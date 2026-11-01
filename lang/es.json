@@ -9,6 +9,10 @@
       "indicador": {
         "Name": "Indicador del Narrador",
         "Hint": "Muestra sobre la barra de macros una barrita con el Termómetro y la noche actual (sólo para el Narrador)."
+      },
+      "vistaNarrador": {
+        "Name": "Ver el mapa en escenas oscuras",
+        "Hint": "Sin un token seleccionado, el Narrador ve la escena aclarada para leer el mapa. Los jugadores la siguen viendo oscura; al seleccionar un token, ves por sus ojos."
       }
     },
     "importar": {

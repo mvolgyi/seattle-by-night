@@ -323,8 +323,8 @@
       "_id": "VOT7dvYkXpn5likP",
       "entryId": "Oiln4o98kvxKbOvS",
       "pageId": null,
-      "x": 810,
-      "y": 510,
+      "x": 1610,
+      "y": 485,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -362,7 +362,7 @@
       "entryId": "FttkHsYSSaCpIugu",
       "pageId": "9fTKL8Oeq36BCfU9",
       "x": 810,
-      "y": 610,
+      "y": 560,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -431,7 +431,15 @@
       "hidden": true,
       "disposition": 0,
       "sight": {
-        "enabled": true
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {

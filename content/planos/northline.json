@@ -4,7 +4,10 @@
     {
       "id": "northline",
       "lugar": "LUG-14",
-      "escenas": [],
+      "escenas": [
+        { "id": "INT-02", "sala": "Sala de reuniones" }
+      ],
+      "salaLugar": "Recepción",
       "nombre": "FIRSTLIGHT · Northline Cyber Advisory (piso 11)",
       "orden": 140,
       "ancho": 21,
@@ -21,9 +24,9 @@
         { "nombre": "Recepción", "x": 13, "y": 6, "w": 7, "h": 5, "piso": "moqueta", "limpio": true },
         { "nombre": "Vestíbulo de ascensores", "x": 13, "y": 11, "w": 4, "h": 3, "piso": "terrazo" },
         { "nombre": "Escalera de emergencia", "x": 17, "y": 11, "w": 3, "h": 3, "piso": "hormigon" },
-        { "nombre": "Pasillo restringido", "x": 1, "y": 9, "w": 12, "h": 1.5, "piso": "linoleo", "limpio": true },
-        { "nombre": "Armería", "x": 1, "y": 10.5, "w": 4, "h": 3.5, "piso": "linoleo", "limpio": true },
-        { "nombre": "Sala blanca de «entrevistas»", "x": 5, "y": 10.5, "w": 5.5, "h": 3.5, "piso": "azulejo", "limpio": true },
+        { "nombre": "Pasillo restringido", "x": 1, "y": 9, "w": 12, "h": 1.5, "piso": "linoleo", "limpio": true, "oscura": true },
+        { "nombre": "Armería", "x": 1, "y": 10.5, "w": 4, "h": 3.5, "piso": "linoleo", "limpio": true, "oscura": true },
+        { "nombre": "Sala blanca de «entrevistas»", "x": 5, "y": 10.5, "w": 5.5, "h": 3.5, "piso": "azulejo", "limpio": true, "oscura": true },
         { "nombre": "Aseos y montantes (cerrado)", "x": 10.5, "y": 10.5, "w": 2.5, "h": 3.5, "piso": "macizo" }
       ],
       "vanos": [
@@ -83,7 +86,8 @@
         { "x": 16.4, "y": 3.3, "preset": "fluorescente", "nombre": "Sala de reuniones, persianas cerradas (3 de las 3 luces)" },
         { "x": 15, "y": 12.6, "preset": "fluorescente-viejo", "nombre": "Luz nocturna del vestíbulo de ascensores" },
         { "x": 5.6, "y": 12.25, "preset": "neon", "presetIdeal": "uv", "apagada": true, "nombre": "Lámparas UV de la sala blanca (oeste), APAGADAS" },
-        { "x": 9.9, "y": 12.25, "preset": "neon", "presetIdeal": "uv", "apagada": true, "nombre": "Lámparas UV de la sala blanca (este), APAGADAS" }
+        { "x": 9.9, "y": 12.25, "preset": "neon", "presetIdeal": "uv", "apagada": true, "nombre": "Lámparas UV de la sala blanca (este), APAGADAS" },
+        { "x": 18.5, "y": 12.5, "preset": "pasillo", "nombre": "Luz de emergencia de la escalera (fuera de la suite: no es una de las 3 luces)" }
       ],
       "regiones": [
         { "id": "ascensores", "nombre": "Ascensores (planta baja)", "x": 13.5, "y": 13, "w": 3, "h": 1, "destino": null, "pendiente": "no hay mapa del vestíbulo de la torre: el Narrador mueve los tokens a mano" },

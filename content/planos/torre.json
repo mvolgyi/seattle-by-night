@@ -4,7 +4,10 @@
     {
       "id": "torre-atico",
       "lugar": "LUG-06",
-      "escenas": ["A4-E01"],
+      "escenas": [
+        { "id": "A4-E01", "sala": "Sala del Consejo" }
+      ],
+      "salaLugar": "Vestíbulo de seguridad",
       "nombre": "Parte 4 · Torre Halloway, el ático (piso 42)",
       "orden": 60,
       "ancho": 21,
@@ -95,7 +98,10 @@
     {
       "id": "torre-boveda",
       "lugar": "LUG-06",
-      "escenas": ["A4-E01"],
+      "escenas": [
+        { "id": "A4-E01", "sala": "Bóveda" }
+      ],
+      "salaLugar": "Bóveda",
       "nombre": "Parte 4 · Torre Halloway, la bóveda (nivel −3)",
       "orden": 61,
       "ancho": 11,

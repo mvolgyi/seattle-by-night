@@ -679,16 +679,104 @@ function carpetaDe(f, journal, carpetas) {
   return carpetas.id(a);
 }
 
-function token(f, tipoActor) {
-  const vampiro = (tipoActor === "spc" ? f.spcType : tipoActor) === "vampire";
+/* -------------------------------------------- */
+/*  Visión del token (MAPS_SPEC §4.1)           */
+/* -------------------------------------------- */
+
+/**
+ * Alcances en metros (= casillas: grid.distance 1, units "m"). Foundry 14
+ * (client/documents/token.mjs, prepareBaseData y _prepareDetectionModes): un
+ * token con visión ve todo lo que ilumina una luz (lightPerception, alcance
+ * infinito) y, sin luz, sólo hasta `sight.range` (basicSight). En V5 nadie ve
+ * en la oscuridad por ser Vástago: lo dan un poder o un aparato.
+ *   - penumbra: todos, a tientas (bultos a unos pasos; DVV usa 3 m).
+ *   - sentidos: Auspex 1, Sentidos Agudizados (darkvision corta).
+ *   - ojosBestia: Protean 1, Ojos de la Bestia («ve en la oscuridad total»):
+ *     más que cualquier plano (24 m).
+ *   - termicas: gafas térmicas de FIRSTLIGHT (firstlight.json#gafas-termicas).
+ */
+export const VISION_M = { penumbra: 3, sentidos: 10, ojosBestia: 30, termicas: 20 };
+
+/**
+ * Olfato sobrenatural, en metros (content/pnjs/menores.json, notas): los perros
+ * «sienten la Bestia de cualquier Vástago a cincuenta metros»; Dawson «detecta
+ * Vástagos a 20 metros». Foundry no trae un modo «olfato»: se usa feelTremor
+ * (CONFIG.Canvas.detectionModes, client/config.mjs), que detecta a quien pisa
+ * el suelo sin mirar muros, con el contorno ondulado.
+ */
+export const OLFATO_M = { "PERROS-MONTGOMERY": 50, "MEN-04-DAWSON": 20 };
+
+/**
+ * Linternas: la luz del token viene configurada y APAGADA (bright/dim 0:
+ * Token#_isLightSource no la emite). El Narrador o el dueño la prenden desde
+ * Configurar token › Luz poniéndole los radios de `RADIOS_LINTERNA`.
+ * Campos: LightData (common/data/data.mjs).
+ */
+export const RADIOS_LINTERNA = { linterna: { bright: 3, dim: 8 }, "linterna-uv": { bright: 1.5, dim: 4.5 } };
+const LUZ_TOKEN = {
+  // Linterna de mano blanca (las de los PJ: «las linternas son de los PJ», plano larchmont-sotano).
+  linterna: { color: "#ffe6bf", alpha: 0.4, luminosity: 0.5, attenuation: 0.55 },
+  // Linterna UV de FIRSTLIGHT (firstlight.json#linterna-uv): el mismo violeta que el preset `uv` de tools/iluminacion.mjs.
+  "linterna-uv": { color: "#7a3cff", alpha: 0.55, luminosity: 0.3, attenuation: 0.6 }
+};
+
+const tienePoder = (f, disciplina, poder) => [f.disciplinas?.[disciplina]?.[1] ?? []].flat().includes(poder);
+
+/**
+ * sight del token (common/documents/token.mjs, BaseToken.defineSchema: sight).
+ * Con los valores por defecto del modo (CONFIG.Canvas.visionModes[modo].vision.defaults,
+ * client/config.mjs), como los pone la hoja del token al elegir el modo.
+ */
+export function visionDe(f, idsEquipo = new Set()) {
+  const darkvision = [
+    tienePoder(f, "protean", "Eyes of the Beast") && VISION_M.ojosBestia,
+    idsEquipo.has("gafas-termicas") && VISION_M.termicas,
+    tienePoder(f, "auspex", "Heightened Senses") && VISION_M.sentidos
+  ].filter(Boolean);
+  const modo = darkvision.length ? "darkvision" : "basic";
+  return {
+    enabled: true,
+    range: darkvision.length ? Math.max(...darkvision) : VISION_M.penumbra,
+    angle: 360,
+    visionMode: modo,
+    color: null,
+    attenuation: 0,
+    brightness: 0,
+    saturation: modo === "darkvision" ? -1 : 0,
+    contrast: 0
+  };
+}
+
+/** La linterna que lleva: `linterna-uv` (FIRSTLIGHT, Okafor), `linterna` (los PJ) o null. */
+export function linternaDe(f, idsEquipo = new Set()) {
+  if (idsEquipo.has("linterna-uv") || (f.equipo ?? []).some(e => /linterna uv/i.test(e))) return "linterna-uv";
+  if (f.pj) return "linterna";
+  return null;
+}
+
+function luzToken(tipo) {
+  const p = LUZ_TOKEN[tipo];
+  return {
+    negative: false, priority: 0, alpha: p.alpha, angle: 360, bright: 0, dim: 0, color: p.color, coloration: 1,
+    attenuation: p.attenuation, luminosity: p.luminosity, saturation: 0, contrast: 0, shadows: 0,
+    animation: { type: null, speed: 5, intensity: 5, reverse: false }, darkness: { min: 0, max: 1 }
+  };
+}
+
+function token(f, tipoActor, idsEquipo) {
   const disposicion = HOSTILES.has(f.id) ? -1 : (f.pj || AMISTOSOS.has(f.id)) ? 1 : 0;
+  const linterna = linternaDe(f, idsEquipo);
   return {
     // `nombreToken`: lo que leen los jugadores al pasar el mouse, cuando el nombre del actor delata algo.
     name: f.nombreToken ?? f.nombre,
     actorLink: (f.cantidad ?? 1) <= 1,
     disposition: disposicion,
     lockRotation: true,
-    sight: { enabled: vampiro },
+    // Todos con visión: un PNJ sólo genera visión si el Narrador lo controla
+    // (Token#_isVisionSource), así que no les da nada a los jugadores.
+    sight: visionDe(f, idsEquipo),
+    ...(OLFATO_M[f.id] ? { detectionModes: { feelTremor: { enabled: true, range: OLFATO_M[f.id] } } } : {}),
+    ...(linterna ? { light: luzToken(linterna) } : {}),
     texture: { src: tokenDe(f.id) }
   };
 }
@@ -797,7 +885,7 @@ function construirActor(f, ctx, carpetas) {
     folder: cazador ? carpetas.id("Célula Puget", "FIRSTLIGHT") : carpetaDe(f, journal, carpetas),
     // Cazadores: por su lugar en la Célula, sin tocar el contador del resto.
     sort: cazador ? ((celulaDe(f, ctx)?.miembros.indexOf(f.id) ?? 0) + 1) * 10 : Number(journal?.meta.orden ?? 0) || ctx.orden++ * 10,
-    prototypeToken: token(f, tipoActor),
+    prototypeToken: token(f, tipoActor, idsEquipo),
     system,
     items,
     effects: [],

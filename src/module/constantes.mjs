@@ -51,7 +51,9 @@ export class SBN {
     /** Cliente: si se muestra el indicador del Narrador. */
     INDICADOR: "indicador",
     /** Cliente: si el indicador está plegado. */
-    INDICADOR_PLEGADO: "indicador-plegado"
+    INDICADOR_PLEGADO: "indicador-plegado",
+    /** Cliente del GM: aclarar la oscuridad de la escena cuando no mira por un token (vision.mjs). */
+    VISTA_NARRADOR: "vista-narrador"
   };
 
   /** Hook que se dispara en todos los clientes cuando cambia el estado de la crónica. */

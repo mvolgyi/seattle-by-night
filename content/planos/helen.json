@@ -4,7 +4,12 @@
     {
       "id": "helen",
       "lugar": "LUG-05",
-      "escenas": ["A0-E01", "A1-E01", "A3-E01"],
+      "escenas": [
+        { "id": "A0-E01", "sala": "Pasillo del tercer piso" },
+        { "id": "A1-E01", "sala": "3A · Estudio" },
+        { "id": "A3-E01", "sala": "3A · Salón-cocina" }
+      ],
+      "salaLugar": "Pasillo del tercer piso",
       "nombre": "Prólogo · El apartamento de Helen Ward",
       "orden": 10,
       "ancho": 21,
@@ -25,8 +30,8 @@
         { "nombre": "Escalera común (baja al portal)", "x": 11, "y": 14.5, "w": 1, "h": 4.5, "piso": "tablas" },
         { "nombre": "Escalera a la azotea y su rellano", "x": 12, "y": 14.5, "w": 1, "h": 4.5, "piso": "tablas" },
         { "nombre": "3A · Recibidor", "x": 8.5, "y": 12, "w": 2.5, "h": 2, "piso": "tablas", "vetas": "v" },
-        { "nombre": "3A · Baño", "x": 9.3, "y": 10, "w": 1.7, "h": 2, "piso": "azulejo", "limpio": true },
-        { "nombre": "3A · Armario del estudio", "x": 8.5, "y": 10, "w": 0.8, "h": 2, "piso": "tablas", "limpio": true },
+        { "nombre": "3A · Baño", "x": 9.3, "y": 10, "w": 1.7, "h": 2, "piso": "azulejo", "limpio": true, "oscura": true },
+        { "nombre": "3A · Armario del estudio", "x": 8.5, "y": 10, "w": 0.8, "h": 2, "piso": "tablas", "limpio": true, "oscura": true },
         { "nombre": "3A · Estudio", "x": 5, "y": 10, "w": 3.5, "h": 4, "piso": "tablas" },
         { "nombre": "3A · Salón-cocina", "x": 5, "y": 14, "w": 6, "h": 5, "piso": "tablas" },
         { "nombre": "3A · Cocina (linóleo)", "x": 5, "y": 14, "w": 3.5, "h": 1.3, "piso": "linoleo", "sinMuros": true },
@@ -99,7 +104,7 @@
         { "x": 12, "y": 6.5, "preset": "pasillo", "nombre": "Plafón del pasillo (norte)" },
         { "x": 12, "y": 11.5, "preset": "pasillo", "nombre": "Plafón del pasillo (frente al 3A)" },
         { "x": 12.78, "y": 13.72, "preset": "led-transmision", "nombre": "Cámara del 3B: transmite en directo" },
-        { "x": 4.7, "y": 15.4, "preset": "farola-pared", "nombre": "Aplique de sodio del callejón" },
+        { "x": 4.65, "y": 15.4, "preset": "farola-pared", "nombre": "Aplique de sodio del callejón" },
         { "x": 8, "y": 19.8, "preset": "farola", "nombre": "Farola de Market Street" }
       ],
       "regiones": [

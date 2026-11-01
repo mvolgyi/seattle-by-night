@@ -4,7 +4,10 @@
     {
       "id": "larchmont-planta",
       "lugar": "LUG-11",
-      "escenas": ["A2-E05"],
+      "escenas": [
+        { "id": "A2-E05", "sala": "Vestíbulo" }
+      ],
+      "salaLugar": "Vestíbulo",
       "nombre": "Parte 2 · El Larchmont: planta baja",
       "orden": 110,
       "ancho": 19,
@@ -25,7 +28,7 @@
         { "nombre": "1B (derrumbado)", "x": 11.5, "y": 0.5, "w": 6.5, "h": 4.5, "piso": "macizo" },
         { "nombre": "Portería (derrumbada)", "x": 11.5, "y": 5, "w": 1.5, "h": 1.5, "piso": "macizo" },
         { "nombre": "1A (quemado)", "x": 3, "y": 4, "w": 6.5, "h": 6.5, "piso": "tablas-quemadas", "vetas": "h" },
-        { "nombre": "Pasillo de la planta baja", "x": 9.5, "y": 2, "w": 2, "h": 4.5, "piso": "tablas-quemadas" },
+        { "nombre": "Pasillo de la planta baja", "x": 9.5, "y": 2, "w": 2, "h": 4.5, "piso": "tablas-quemadas", "oscura": true },
         { "nombre": "Vestíbulo", "x": 9.5, "y": 6.5, "w": 3.5, "h": 4, "piso": "terrazo" },
         { "nombre": "Caja de escalera", "x": 13, "y": 5, "w": 5, "h": 5.5, "piso": "terrazo" },
         { "nombre": "Hueco de la escalera (vacío hasta el sótano)", "x": 14.6, "y": 5.2, "w": 3.2, "h": 3.2, "piso": "vacio", "sinMuros": true }
@@ -66,7 +69,10 @@
     {
       "id": "larchmont-sotano",
       "lugar": "LUG-11",
-      "escenas": ["A2-E05"],
+      "escenas": [
+        { "id": "A2-E05", "sala": "Losa nueva sobre la cisterna" }
+      ],
+      "salaLugar": "Pie de la escalera",
       "nombre": "Parte 2 · El Larchmont: sala de calderas",
       "orden": 111,
       "ancho": 19,
@@ -75,6 +81,7 @@
       "fondo": "roca",
       "sujeto": "the old boiler room in the basement of a burned-out brick apartment building in Tacoma",
       "oscuridad": 1,
+      "sinLuces": true,
       "exterior": "solid packed earth and old brick foundations everywhere outside the walls — flat and continuous, with no extra walls or structures",
       "nota": "**El sótano (A2-E05).** Se llega por la escalera medio derrumbada (al pie, bajo el hueco, un montón de escombros mojados donde cae la lluvia) o cayendo por el hueco. Oscuridad total: no hay luz. Se oye agua corriendo: un **canal** abierto en el piso lleva el agua desde los escombros hasta la **boca del desagüe grande** del muro oeste, que sale al estrecho.\n\n**La cisterna sellada.** En el centro de la sala de calderas, **una losa de hormigón nuevo, más claro que el resto del suelo** (Astucia + Investigación Dif 3; automático para David). Debajo están los siete inquilinos, Danny Ruiz (REF-02) entre ellos. **No se pinta abierta:** si la coterie la levanta (Fuerza + Atletismo Dif 4, o automático con Potencia 2), el Narrador pone encima el tile `tile-cisterna-abierta` (Pendiente) y aplica Termómetro +2 y la tirada de Remordimiento de David. **Auspex 4** sobre la losa: siete presencias, frío, agua, «Helen va a venir».\n\n**La flor nueva.** Astucia + Consciencia Dif 4: junto a la losa, huellas recientes de pies descalzos y un olor muy débil a Vitae rancia (MEN-08). **No están pintadas ni tienen tile**: son la recompensa de la tirada, como el repetidor de LUG-05.\n\n**El superviviente (MEN-08, GAN-09).** Si el Narrador quiere adelantar GAN-09, está escondido en el desagüe (Ofuscación 3) y huye hacia el agua al ver a la coterie: la región del desagüe no tiene mapa todavía.\n\n**Calderas.** Dos calderas de hierro remachado y un tanque de fueloil contra el muro norte, frías y oxidadas: dan cobertura.",
       "habitaciones": [

@@ -528,7 +528,7 @@
     },
     {
       "_id": "Z1sodbWOwxecJyF9",
-      "name": "Bombita del muelle cubierto",
+      "name": "Bombita del muelle cubierto (pasarela oeste)",
       "x": 1500,
       "y": 700,
       "elevation": 0,
@@ -725,7 +725,7 @@
       "_id": "B9M3PixqhGPaRKUH",
       "name": "Aplique de sodio del muelle trasero",
       "x": 800,
-      "y": 285,
+      "y": 265,
       "elevation": 0,
       "rotation": 0,
       "walls": true,
@@ -837,6 +837,45 @@
       "locked": false,
       "flags": {},
       "_key": "!scenes.lights!m5dDyWpyeFid5p6p.29c0B9oohswkJ9er"
+    },
+    {
+      "_id": "n4Y43A0rB8sIv9oC",
+      "name": "Bombita del muelle cubierto (pasarela este)",
+      "x": 2100,
+      "y": 700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.n4Y43A0rB8sIv9oC"
     }
   ],
   "regions": [
@@ -2081,7 +2120,15 @@
       "hidden": false,
       "disposition": 1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2131,7 +2178,15 @@
       "hidden": true,
       "disposition": 1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -2180,7 +2235,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -2228,7 +2316,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -2276,7 +2397,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -2324,7 +2478,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -2372,7 +2559,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -2420,7 +2640,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {

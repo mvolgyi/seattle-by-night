@@ -93,6 +93,20 @@ de Z-Image (`comfy_extras/nodes_model_patch.py`: `ModelPatchLoader` detecta el a
 claves; la 2.0 tiene el refiner en cero y ComfyUI la marca como `broken`), FLUX.2 klein
 (`CLIPLoader` tipo `flux2`, `Flux2Scheduler`, `EmptyFlux2LatentImage`).
 
+## Datos geográficos
+
+`tools/mapa-regional.mjs` (MAP-00, el mapa regional de AYU-01) no le pide la costa al modelo:
+la dibuja desde datos y Z-Image + Fun ControlNet (`plano-zimage`) sólo la pinta. Se bajan solos a
+`cache/tiger/` (fuera del repo) con `curl -L -C -`.
+
+| Datos | Archivos | Origen | Licencia | Para qué |
+|---|---|---|---|---|
+| U.S. Census Bureau, 2024 Cartographic Boundary Files 1:500k | `cb_2024_us_county_500k.zip` (11,6 MB), `cb_2024_53_place_500k.zip` (0,5 MB) | [census.gov/geographies/mapping-files](https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html) | Dominio público (obra del gobierno de EE. UU., 17 U.S.C. §105); el Census pide citarlo como fuente ([TIGER/Line 2024, cap. 1](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2024/TGRSHP2024_TechDoc.pdf)). Leído el 2026-11-01. | Tierra recortada a la costa (condados) y municipios (dónde van las luces) |
+| U.S. Census Bureau, 2024 TIGER/Line | `tl_2024_{53033,53053,53061,53035,53029}_areawater.zip`, `tl_2024_53_prisecroads.zip` (3,9 MB) | [www2.census.gov/geo/tiger/TIGER2024](https://www2.census.gov/geo/tiger/TIGER2024/) | Ídem | Lagos y ríos anchos (King, Pierce, Snohomish, Kitsap, Island) y rutas principales |
+
+«TIGER/Line» es marca del Census: no se usa en nombres de producto. El mapa no lleva texto; la cita
+va en `assets/PROCEDENCIA.json` (`datos`).
+
 ## Qué quedó afuera y por qué
 
 - **Z-Image-Turbo-Fun-Controlnet-Union 2.0**: el repo `alibaba-pai/…-Union-2.0` ahora redirige

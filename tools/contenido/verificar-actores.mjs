@@ -14,7 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { RAIZ, MODULO, leerJson } from "../util.mjs";
 import { ID, fichas, tieneActor, registro, journals } from "./ids.mjs";
-import { CAMPOS_CREDO, NOMBRE_FACULTAD, parsearBeneficio, celulas } from "./actores.mjs";
+import { CAMPOS_CREDO, NOMBRE_FACULTAD, parsearBeneficio, celulas, VISION_M, OLFATO_M } from "./actores.mjs";
 
 const { reg } = registro();
 const errores = [];
@@ -228,11 +228,42 @@ for (const f of fichas()) {
   const t = a.prototypeToken;
   if (t?.name !== (f.nombreToken ?? f.nombre)) mal(f.id, "el token no lleva el nombre.");
   if (t?.actorLink !== ((f.cantidad ?? 1) <= 1)) mal(f.id, `actorLink ${t?.actorLink} con cantidad ${f.cantidad ?? 1}.`);
-  const vampiro = (spc ? (f.spcType ?? f.tipo) : f.tipo) === "vampire";
-  if (!!t?.sight?.enabled !== vampiro) mal(f.id, "visión del token: encendida sólo para vampiros.");
+  chequearVision(f, t);
 
   // _key de los embebidos.
   for (const i of its) if (i._key !== `!actors.items!${a._id}.${i._id}`) mal(f.id, `ítem ${i.name}: _key incorrecta.`);
+}
+
+/* Visión del token (MAPS_SPEC §4.1) */
+// Se recalcula desde content/ sin usar visionDe(): sólo se importan los alcances.
+function poderDe(f, d, p) { return [f.disciplinas?.[d]?.[1] ?? []].flat().includes(p); }
+function equipoDe(f) { return new Set([...(f.equipo ?? []), ...firstlight.filter(e => e.usadoPor?.includes(f.id)).map(e => e.id)]); }
+function chequearVision(f, t) {
+  const s = t?.sight ?? {};
+  const eq = equipoDe(f);
+  const alcances = [];
+  if (poderDe(f, "protean", "Eyes of the Beast")) alcances.push(VISION_M.ojosBestia);
+  if (eq.has("gafas-termicas")) alcances.push(VISION_M.termicas);
+  if (poderDe(f, "auspex", "Heightened Senses")) alcances.push(VISION_M.sentidos);
+  const modo = alcances.length ? "darkvision" : "basic";
+  const alcance = alcances.length ? Math.max(...alcances) : VISION_M.penumbra;
+  if (s.enabled !== true) mal(f.id, "visión del token apagada: todos los tokens ven (sólo genera visión el que se controla).");
+  if (s.visionMode !== modo) mal(f.id, `visión del token: modo ${s.visionMode}, se esperaba ${modo}.`);
+  if (s.range !== alcance) mal(f.id, `visión del token: alcance ${s.range} m, se esperaba ${alcance} m.`);
+  if (modo === "darkvision" && s.saturation !== -1) mal(f.id, "visión en la oscuridad sin los valores del modo (saturation −1).");
+  const olfato = OLFATO_M[f.id];
+  const dm = t?.detectionModes ?? {};
+  if (olfato ? dm.feelTremor?.range !== olfato || dm.feelTremor?.enabled !== true : Object.keys(dm).length)
+    mal(f.id, `detectionModes ${JSON.stringify(dm)}: ${olfato ? `se esperaba olfato (feelTremor) a ${olfato} m` : "se esperaba ninguno"}.`);
+  const uv = eq.has("linterna-uv") || (f.equipo ?? []).some(e => /linterna uv/i.test(e));
+  const linterna = uv ? "linterna-uv" : f.pj ? "linterna" : null;
+  if (!linterna && t?.light) mal(f.id, "el token trae luz y no lleva linterna.");
+  if (linterna) {
+    const l = t?.light;
+    if (!l) mal(f.id, `lleva ${linterna} y el token no trae la luz.`);
+    else if (l.bright !== 0 || l.dim !== 0) mal(f.id, "la linterna del token tiene que venir apagada (bright y dim 0).");
+    else if ((linterna === "linterna-uv") !== (l.color === "#7a3cff")) mal(f.id, `la luz del token no es la de ${linterna}.`);
+  }
 }
 
 /* Cazadores */
@@ -369,6 +400,9 @@ for (const s of escenas.values()) {
     if (Boolean(t.actorLink) !== Boolean(proto.actorLink)) mal(donde, `actorLink ${t.actorLink} ≠ prototipo ${proto.actorLink}.`);
     if (t.width !== (proto.width ?? 1) || t.height !== (proto.height ?? 1)) mal(donde, "tamaño distinto del prototipo.");
     if (t.disposition !== (proto.disposition ?? 0)) mal(donde, "disposición distinta del prototipo.");
+    for (const campo of ["sight", "detectionModes", "light"]) {
+      if (JSON.stringify(t[campo] ?? null) !== JSON.stringify(proto[campo] ?? null)) mal(donde, `${campo} distinto del prototipo.`);
+    }
     if (!niveles.has(t.level)) mal(donde, `level ${t.level} no es un nivel de la escena (no se dibujaría).`);
     if (t.x < 0 || t.y < 0 || t.x + t.width * 100 > s.width || t.y + t.height * 100 > s.height) mal(donde, "fuera del lienzo.");
   }

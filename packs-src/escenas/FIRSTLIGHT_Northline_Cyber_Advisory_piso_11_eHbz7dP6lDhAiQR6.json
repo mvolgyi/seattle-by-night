@@ -648,6 +648,45 @@
       "locked": false,
       "flags": {},
       "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.l5EyJkSegMOL96cM"
+    },
+    {
+      "_id": "Ia6eUTFJMHLVoCWv",
+      "name": "Luz de emergencia de la escalera (fuera de la suite: no es una de las 3 luces)",
+      "x": 1850,
+      "y": 1250,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.Ia6eUTFJMHLVoCWv"
     }
   ],
   "regions": [
@@ -755,8 +794,8 @@
       "_id": "N1EepThVStLcAE48",
       "entryId": "KioeAEZP78U0Coz5",
       "pageId": null,
-      "x": 710,
-      "y": 510,
+      "x": 1660,
+      "y": 860,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -788,6 +827,44 @@
         }
       },
       "_key": "!scenes.notes!eHbz7dP6lDhAiQR6.N1EepThVStLcAE48"
+    },
+    {
+      "_id": "ubMhoqvlVfS6RLsb",
+      "entryId": "I3XsZ233TNTuehzS",
+      "pageId": "hcNJvEh25hCamG2B",
+      "x": 1635,
+      "y": 210,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "INT-02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "northline",
+          "id": "INT-02"
+        }
+      },
+      "_key": "!scenes.notes!eHbz7dP6lDhAiQR6.ubMhoqvlVfS6RLsb"
     }
   ],
   "tiles": [
@@ -1132,7 +1209,15 @@
       "hidden": false,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -1180,7 +1265,40 @@
       "hidden": false,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -1228,7 +1346,40 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -1258,7 +1409,7 @@
       "id": "LUG-14",
       "plano": "northline",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</p>\n<p><strong>Northline Cyber Advisory</strong>, la fachada de FIRSTLIGHT. «Moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad» (el panel del logo está en la pared norte de la recepción, retroiluminado y sin una letra en el mapa). «A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas»: las tres son el panel del logo de la recepción, la lámpara del puesto de Hale en las mesas abiertas y el fluorescente de la <strong>sala de reuniones</strong>, cuyas ventanas al norte tienen las persianas bajadas (por fuera se ve la luz, no la sala).</p>\n<p><strong>Sala de reuniones.</strong> La mesa larga y, en la pared este, el <strong>tablero de corcho lleno de fotos</strong>, incluido el pódcast de Helen. La mampara que da a las mesas abiertas es de vidrio con persianas cerradas: en el mapa es muro (no se ve adentro). Aquí se juega el interludio I-2 «SEA-0411» (SPEC §6): Okafor y Hale reciben la entrega de ARQUERO (DOC-07).</p>\n<p><strong>Mesas abiertas</strong> (los analistas): ocho mesas altas en dos islas. La de Hale es la de la lámpara. Okafor «nunca se sienta de espaldas a una puerta».</p>\n<p><strong>Zona restringida.</strong> De las mesas abiertas sale, por una puerta con lector de tarjeta, el pasillo a la <strong>armería cerrada</strong> (taquillas de fusiles cortos, munición incendiaria, linternas UV, chalecos; de noche el equipo táctico MEN-02 está en un almacén del puerto, no aquí, así que hay huecos) y a la <strong>sala blanca de «entrevistas»</strong>: azulejo blanco, una mesa y una silla atornilladas y <strong>lámparas UV de alta intensidad</strong> en las paredes. Apagadas; encendidas, cada Vástago iluminado sufre 1 de daño agravado por turno y −2 dados (linterna UV, arsenal de FIRSTLIGHT). Las luces UV del plano están marcadas como apagadas.</p>\n<p><strong>Accesos.</strong> Ascensores y escalera de emergencia en el vestíbulo común del piso, al sur de la recepción; la puerta de vidrio de Northline está trabada de noche. Ninguno tiene mapa del otro extremo.</p>\n<p><strong>Peligro:</strong> «entrar aquí es la forma más rápida de subir el Termómetro»: si se descubre la intrusión, Termómetro +3. «Es más útil observar que entrar.» No figura en ninguna escena fija: se reserva para la crónica, una coterie muy audaz y los interludios de FIRSTLIGHT (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (6) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale} (INT-02): De pie delante de su portátil, junto al tablero de corcho.</li><li>@UUID[Actor.15UcuyhvNvNqkCOf]{Dana Okafor} (INT-02): Deja el café en la mesa sin mirarlo.</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>oculto</em> (INT-02): Sube a buscar a Okafor para el Denny&#39;s (sale a las 22:15) y puede quedarse de escolta.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Ascensores (planta baja) · Bajar por la escalera de emergencia (11 pisos).</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}<br><strong>Escenas:</strong> @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</p>\n<p><strong>Northline Cyber Advisory</strong>, la fachada de FIRSTLIGHT. «Moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad» (el panel del logo está en la pared norte de la recepción, retroiluminado y sin una letra en el mapa). «A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas»: las tres son el panel del logo de la recepción, la lámpara del puesto de Hale en las mesas abiertas y el fluorescente de la <strong>sala de reuniones</strong>, cuyas ventanas al norte tienen las persianas bajadas (por fuera se ve la luz, no la sala).</p>\n<p><strong>Sala de reuniones.</strong> La mesa larga y, en la pared este, el <strong>tablero de corcho lleno de fotos</strong>, incluido el pódcast de Helen. La mampara que da a las mesas abiertas es de vidrio con persianas cerradas: en el mapa es muro (no se ve adentro). Aquí se juega el interludio I-2 «SEA-0411» (SPEC §6): Okafor y Hale reciben la entrega de ARQUERO (DOC-07).</p>\n<p><strong>Mesas abiertas</strong> (los analistas): ocho mesas altas en dos islas. La de Hale es la de la lámpara. Okafor «nunca se sienta de espaldas a una puerta».</p>\n<p><strong>Zona restringida.</strong> De las mesas abiertas sale, por una puerta con lector de tarjeta, el pasillo a la <strong>armería cerrada</strong> (taquillas de fusiles cortos, munición incendiaria, linternas UV, chalecos; de noche el equipo táctico MEN-02 está en un almacén del puerto, no aquí, así que hay huecos) y a la <strong>sala blanca de «entrevistas»</strong>: azulejo blanco, una mesa y una silla atornilladas y <strong>lámparas UV de alta intensidad</strong> en las paredes. Apagadas; encendidas, cada Vástago iluminado sufre 1 de daño agravado por turno y −2 dados (linterna UV, arsenal de FIRSTLIGHT). Las luces UV del plano están marcadas como apagadas.</p>\n<p><strong>Accesos.</strong> Ascensores y escalera de emergencia en el vestíbulo común del piso, al sur de la recepción; la puerta de vidrio de Northline está trabada de noche. Ninguno tiene mapa del otro extremo.</p>\n<p><strong>Peligro:</strong> «entrar aquí es la forma más rápida de subir el Termómetro»: si se descubre la intrusión, Termómetro +3. «Es más útil observar que entrar.» No figura en ninguna escena fija: se reserva para la crónica, una coterie muy audaz y los interludios de FIRSTLIGHT (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (6) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale} (INT-02): De pie delante de su portátil, junto al tablero de corcho.</li><li>@UUID[Actor.15UcuyhvNvNqkCOf]{Dana Okafor} (INT-02): Deja el café en la mesa sin mirarlo.</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>oculto</em> (INT-02): Sube a buscar a Okafor para el Denny&#39;s (sale a las 22:15) y puede quedarse de escolta.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Ascensores (planta baja) · Bajar por la escalera de emergencia (11 pisos).</p>",
       "moviles": []
     }
   },

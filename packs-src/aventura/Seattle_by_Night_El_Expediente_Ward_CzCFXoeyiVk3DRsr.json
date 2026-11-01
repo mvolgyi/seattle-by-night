@@ -19,7 +19,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp"
@@ -737,7 +745,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-05.webp"
@@ -867,7 +883,15 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-12.webp"
@@ -1519,7 +1543,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-05-BAS.webp"
@@ -1655,7 +1687,40 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.4,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#ffe6bf",
+          "coloration": 1,
+          "attenuation": 0.55,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PJ-02.webp"
@@ -1907,7 +1972,15 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp"
@@ -2718,7 +2791,40 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 20,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.55,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#7a3cff",
+          "coloration": 1,
+          "attenuation": 0.6,
+          "luminosity": 0.3,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp"
@@ -3182,7 +3288,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-14.webp"
@@ -3379,7 +3493,40 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.55,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#7a3cff",
+          "coloration": 1,
+          "attenuation": 0.6,
+          "luminosity": 0.3,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-18.webp"
@@ -3965,7 +4112,40 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 10,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.4,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#ffe6bf",
+          "coloration": 1,
+          "attenuation": 0.55,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PJ-01.webp"
@@ -5469,7 +5649,21 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 10,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "detectionModes": {
+          "feelTremor": {
+            "enabled": true,
+            "range": 20
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp"
@@ -5688,7 +5882,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-07.webp"
@@ -5813,7 +6015,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 10,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-15.webp"
@@ -6631,7 +6841,40 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.4,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#ffe6bf",
+          "coloration": 1,
+          "attenuation": 0.55,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PJ-06.webp"
@@ -6852,7 +7095,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-03-DUTCH.webp"
@@ -7239,7 +7490,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-09.webp"
@@ -7365,7 +7624,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-08.webp"
@@ -7568,7 +7835,40 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 20,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.55,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#7a3cff",
+          "coloration": 1,
+          "attenuation": 0.6,
+          "luminosity": 0.3,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp"
@@ -7897,7 +8197,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 30,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp"
@@ -8811,7 +9119,40 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.4,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#ffe6bf",
+          "coloration": 1,
+          "attenuation": 0.55,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PJ-03.webp"
@@ -9083,7 +9424,15 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp"
@@ -9216,7 +9565,40 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.4,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#ffe6bf",
+          "coloration": 1,
+          "attenuation": 0.55,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PJ-05.webp"
@@ -9457,7 +9839,15 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-04.webp"
@@ -9708,7 +10098,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-10.webp"
@@ -9858,7 +10256,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-20.webp"
@@ -10254,7 +10660,40 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 20,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.55,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#7a3cff",
+          "coloration": 1,
+          "attenuation": 0.6,
+          "luminosity": 0.3,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp"
@@ -10824,7 +11263,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-17.webp"
@@ -11493,7 +11940,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-01.webp"
@@ -12062,7 +12517,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp"
@@ -12351,7 +12814,21 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "detectionModes": {
+          "feelTremor": {
+            "enabled": true,
+            "range": 50
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp"
@@ -12494,7 +12971,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-10.webp"
@@ -12631,7 +13116,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 10,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-02.webp"
@@ -13391,7 +13884,40 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.4,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#ffe6bf",
+          "coloration": 1,
+          "attenuation": 0.55,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PJ-04.webp"
@@ -13643,7 +14169,40 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 20,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.55,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#7a3cff",
+          "coloration": 1,
+          "attenuation": 0.6,
+          "luminosity": 0.3,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp"
@@ -14165,7 +14724,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-12.webp"
@@ -14257,7 +14824,15 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-19.webp"
@@ -14459,7 +15034,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-11.webp"
@@ -15094,7 +15677,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-13.webp"
@@ -15458,7 +16049,15 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-21.webp"
@@ -15775,7 +16374,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 10,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-14.webp"
@@ -16376,7 +16983,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-05-TAVI.webp"
@@ -16512,7 +17127,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/MEN-06.webp"
@@ -16642,7 +17265,40 @@
         "disposition": -1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 20,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.55,
+          "angle": 360,
+          "bright": 0,
+          "dim": 0,
+          "color": "#7a3cff",
+          "coloration": 1,
+          "attenuation": 0.6,
+          "luminosity": 0.3,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp"
@@ -17149,7 +17805,15 @@
         "disposition": 1,
         "lockRotation": true,
         "sight": {
-          "enabled": false
+          "enabled": true,
+          "range": 3,
+          "angle": 360,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": 0,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-05.webp"
@@ -17395,7 +18059,15 @@
         "disposition": 0,
         "lockRotation": true,
         "sight": {
-          "enabled": true
+          "enabled": true,
+          "range": 10,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
         },
         "texture": {
           "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp"
@@ -18752,7 +19424,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Arconte de la Camarilla al servicio de la Justicar @UUID[JournalEntry.gSMgBLLYggWyAN2W]{Helena Panhard} · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> espera en Bainbridge el maletín del Expediente si @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} gana el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}); protagonista de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama}.</p>\n<p><em>Esta página reúne lo que dicen de Duval los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan nombre de pila, clan ni estadísticas.</em></p>\n"
+            "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-07.webp\" alt=\"Arconte Duval\">\n<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Arconte de la Camarilla al servicio de la Justicar @UUID[JournalEntry.gSMgBLLYggWyAN2W]{Helena Panhard} · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> espera en Bainbridge el maletín del Expediente si @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} gana el Consejo (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}); protagonista de @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · El Arconte llama}.</p>\n<p><em>Esta página reúne lo que dicen de Duval los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan nombre de pila, clan ni estadísticas.</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -20630,7 +21302,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><em>Capitol Hill · El rack de los Toreador · Mapa: no</em></p>\n"
+            "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-09.webp\" alt=\"Club Ceniza\">\n<p><em>Capitol Hill · El rack de los Toreador · Mapa: no</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -21675,7 +22347,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Referencia</strong> (mortal fallecido, sin actor) · amigo de universidad de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward} · uno de los siete inquilinos «no localizados» del @UUID[JournalEntry.Oiln4o98kvxKbOvS]{Larchmont} en 2014.</p>\n<p><em>Esta página reúne lo que dicen de Danny los docs 00–16. Entre paréntesis, el doc de origen de cada dato.</em></p>\n"
+            "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/REF-02.webp\" alt=\"Danny Ruiz\">\n<p><strong>Referencia</strong> (mortal fallecido, sin actor) · amigo de universidad de @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward} · uno de los siete inquilinos «no localizados» del @UUID[JournalEntry.Oiln4o98kvxKbOvS]{Larchmont} en 2014.</p>\n<p><em>Esta página reúne lo que dicen de Danny los docs 00–16. Entre paréntesis, el doc de origen de cada dato.</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -24028,7 +24700,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><em>Downtown · Terreno neutral · Mapa: no</em></p>\n"
+            "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-08.webp\" alt=\"El mercado de Pike Place de noche\">\n<p><em>Downtown · Terreno neutral · Mapa: no</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -24133,7 +24805,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Gangrel nómada · sire de @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}.</p>\n<p><em>Esta página reúne lo que dicen de Kane los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan ficha, generación ni paradero actual.</em></p>\n"
+            "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-09.webp\" alt=\"Elijah Kane\">\n<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Gangrel nómada · sire de @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}.</p>\n<p><em>Esta página reúne lo que dicen de Kane los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan ficha, generación ni paradero actual.</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -26726,7 +27398,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Justicar de la Camarilla · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> la autoridad a la que @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} quiere enviar el acta de la regencia; con su reconocimiento, «la regencia se convierte en corona».</p>\n<p><em>Esta página reúne lo que dicen de Panhard los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan clan explícito, edad ni estadísticas; la orden del día del Consejo habla de «la Justicar del clan Ventrue» (doc 15, @UUID[JournalEntry.8EZofopivOgpo5tE]{Orden del día del Consejo de Primogenitura}).</em></p>\n"
+            "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-08.webp\" alt=\"Justicar Helena Panhard\">\n<p><strong>Figura de trasfondo</strong> (sin ficha de actor) · Justicar de la Camarilla · <strong>Rol en @UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward}:</strong> la autoridad a la que @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} quiere enviar el acta de la regencia; con su reconocimiento, «la regencia se convierte en corona».</p>\n<p><em>Esta página reúne lo que dicen de Panhard los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan clan explícito, edad ni estadísticas; la orden del día del Consejo habla de «la Justicar del clan Ventrue» (doc 15, @UUID[JournalEntry.8EZofopivOgpo5tE]{Orden del día del Consejo de Primogenitura}).</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -26912,7 +27584,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><em>Queen Anne · Sede Tremere · Mapa: no</em></p>\n"
+            "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-13.webp\" alt=\"La Capilla del Observatorio\">\n<p><em>Queen Anne · Sede Tremere · Mapa: no</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -28319,7 +28991,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><em>Cementerio al norte de la ciudad · Mapa: no</em></p>\n"
+            "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-12.webp\" alt=\"La tumba de Emily Smith\">\n<p><em>Cementerio al norte de la ciudad · Mapa: no</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -32440,7 +33112,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<p><strong>Referencia</strong> (Vástago destruido en 1996, sin actor) · Anarquista de Seattle · mató a @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith} y lo destruyó @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}.</p>\n<p><em>Esta página reúne lo que dicen de Dorsey los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan clan, sire ni estadísticas.</em></p>\n"
+            "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/REF-03.webp\" alt=\"Ray Dorsey\">\n<p><strong>Referencia</strong> (Vástago destruido en 1996, sin actor) · Anarquista de Seattle · mató a @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith} y lo destruyó @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}.</p>\n<p><em>Esta página reúne lo que dicen de Dorsey los docs 00–16. Entre paréntesis, el doc de origen de cada dato. Los docs no le dan clan, sire ni estadísticas.</em></p>\n"
           },
           "sort": 100000,
           "ownership": {
@@ -35424,7 +36096,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<div class=\"sbn-doc sbn-doc-foto\"><div class=\"sbn-foto-imagen\"><p class=\"sbn-foto-descripcion\"><span class=\"sbn-acotacion\">[foto]</span> Un montón de ceniza gris sobre hormigón mojado, junto a la base de un contenedor rojo. Encima de la ceniza, una chaqueta de nailon negra intacta. En el lateral del contenedor, a la altura del pecho de un hombre, tres abolladuras en vertical, una debajo de la otra. Una regla de escala amarilla en el suelo. Un cartel numerado: 3.</p></div>\n<p class=\"sbn-foto-pie\">PUERTO DE SEATTLE · POLICÍA PORTUARIA · CASO 26-3307 · FOTO 3 DE 14 · 13/11/2026 · 05:06</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">[Detrás de la foto, a lápiz:]</span> <em>¿Qué arde y no quema la chaqueta?</em></p></aside>\n</div>"
+            "content": "<div class=\"sbn-doc sbn-doc-foto\"><div class=\"sbn-foto-imagen\"><img class=\"sbn-doc-imagen\" src=\"modules/seattle-by-night/assets/handouts/AYU-06-IMG.webp\" alt=\"\"><p class=\"sbn-foto-descripcion\"><span class=\"sbn-acotacion\">[foto]</span> Un montón de ceniza gris sobre hormigón mojado, junto a la base de un contenedor rojo. Encima de la ceniza, una chaqueta de nailon negra intacta. En el lateral del contenedor, a la altura del pecho de un hombre, tres abolladuras en vertical, una debajo de la otra. Una regla de escala amarilla en el suelo. Un cartel numerado: 3.</p></div>\n<p class=\"sbn-foto-pie\">PUERTO DE SEATTLE · POLICÍA PORTUARIA · CASO 26-3307 · FOTO 3 DE 14 · 13/11/2026 · 05:06</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">[Detrás de la foto, a lápiz:]</span> <em>¿Qué arde y no quema la chaqueta?</em></p></aside>\n</div>"
           },
           "sort": 100000,
           "ownership": {
@@ -35755,7 +36427,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<div class=\"sbn-doc sbn-doc-mapa\"><p class=\"sbn-doc-titulo\">SEATTLE · NOVIEMBRE DE 2026</p>\n<p><em>Dominios de la noche</em></p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-mapa-tabla\">\n<thead>\n<tr>\n<th>Color</th>\n<th>Zona</th>\n<th>Quién manda</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Dorado</td>\n<td>Downtown, Capitol Hill, Seattle Center</td>\n<td>El Príncipe Whitmore</td>\n</tr>\n<tr>\n<td>Gris piedra</td>\n<td>Bajo Pioneer Square</td>\n<td>Los Topos (Thornquist)</td>\n</tr>\n<tr>\n<td>Verde oscuro</td>\n<td>Valle del Snohomish</td>\n<td>El Sheriff Montgomery</td>\n</tr>\n<tr>\n<td>Azul acero</td>\n<td>Harbor Island y Elliott Bay</td>\n<td>El Sabueso (cedido por el Sheriff)</td>\n</tr>\n<tr>\n<td>Verde esmeralda</td>\n<td>Bellevue y el Eastside</td>\n<td>Halloway</td>\n</tr>\n<tr>\n<td>Rojo óxido</td>\n<td>Everett</td>\n<td>Salitre (Anarquistas)</td>\n</tr>\n<tr>\n<td>Sin color, rayado</td>\n<td>Ballard, South Lake Union, Tacoma</td>\n<td>Nadie, o todos</td>\n</tr>\n</tbody></table>\n<p><strong>Lugares marcados:</strong> ① El hangar · ② La granja · ③ La Galería de Vidrio · ④ Las Galerías Selladas · ⑤ Market Street, Ballard · ⑥ Torre Halloway · ⑦ Gale Sentinel · ⑧ Pike Place · ⑨ Club Ceniza · ⑩ Bar Salitre · ⑪ El Larchmont · ⑫ El cementerio de los cedros · ⑬ El Observatorio · ⑭ Northline · ⑮ Colman Dock · ⑯ Terminal 86</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">En una esquina, a lápiz, con la letra de Hal:</span> «South Lake Union: no cazar. Cámaras en todas partes.»</p></aside>\n</div>"
+            "content": "<div class=\"sbn-doc sbn-doc-mapa\"><img class=\"sbn-doc-imagen\" src=\"modules/seattle-by-night/assets/handouts/MAP-00.webp\" alt=\"\"><p class=\"sbn-doc-titulo\">SEATTLE · NOVIEMBRE DE 2026</p>\n<p><em>Dominios de la noche</em></p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-mapa-tabla\">\n<thead>\n<tr>\n<th>Color</th>\n<th>Zona</th>\n<th>Quién manda</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Dorado</td>\n<td>Downtown, Capitol Hill, Seattle Center</td>\n<td>El Príncipe Whitmore</td>\n</tr>\n<tr>\n<td>Gris piedra</td>\n<td>Bajo Pioneer Square</td>\n<td>Los Topos (Thornquist)</td>\n</tr>\n<tr>\n<td>Verde oscuro</td>\n<td>Valle del Snohomish</td>\n<td>El Sheriff Montgomery</td>\n</tr>\n<tr>\n<td>Azul acero</td>\n<td>Harbor Island y Elliott Bay</td>\n<td>El Sabueso (cedido por el Sheriff)</td>\n</tr>\n<tr>\n<td>Verde esmeralda</td>\n<td>Bellevue y el Eastside</td>\n<td>Halloway</td>\n</tr>\n<tr>\n<td>Rojo óxido</td>\n<td>Everett</td>\n<td>Salitre (Anarquistas)</td>\n</tr>\n<tr>\n<td>Sin color, rayado</td>\n<td>Ballard, South Lake Union, Tacoma</td>\n<td>Nadie, o todos</td>\n</tr>\n</tbody></table>\n<p><strong>Lugares marcados:</strong> ① El hangar · ② La granja · ③ La Galería de Vidrio · ④ Las Galerías Selladas · ⑤ Market Street, Ballard · ⑥ Torre Halloway · ⑦ Gale Sentinel · ⑧ Pike Place · ⑨ Club Ceniza · ⑩ Bar Salitre · ⑪ El Larchmont · ⑫ El cementerio de los cedros · ⑬ El Observatorio · ⑭ Northline · ⑮ Colman Dock · ⑯ Terminal 86</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">En una esquina, a lápiz, con la letra de Hal:</span> «South Lake Union: no cazar. Cámaras en todas partes.»</p></aside>\n</div>"
           },
           "sort": 100000,
           "ownership": {
@@ -36332,7 +37004,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<div class=\"sbn-doc sbn-doc-libreta\"><p class=\"sbn-doc-titulo\">CARPETA SIN NOMBRE</p>\n<p>Catorce fotos. La primera es de 2014: el Larchmont, en llamas, y él de espaldas al fuego, mirando a la cámara del vecino. La última es de 2025: Harbor Island, bajo una farola.</p>\n<p>Misma cara. Misma cicatriz, del pómulo derecho al labio. Mismo abrigo, o uno igual. Mismo modo de pararse: los pies separados, el peso atrás, como si el suelo fuera a moverse.</p>\n<p>Once años y no le salió una cana.</p>\n<p>Aparece en cuatro de mis casos. Siempre después. Nunca durante. Llega cuando ya pasó lo peor y se va antes de que llegue la policía. Una vez lo vi limpiar una escena como quien barre la cocina.</p>\n<p>Me dio un teléfono. Me dijo mi nombre sin que se lo diera.</p>\n<p>No sé qué es. No sé si es bueno. Sé que me cuida, y no sé por qué.</p>\n<p><em>Pendiente: averiguar quién murió en 1960 con su cara.</em></p>\n</div>"
+            "content": "<div class=\"sbn-doc sbn-doc-libreta\"><img class=\"sbn-doc-imagen\" src=\"modules/seattle-by-night/assets/handouts/AYU-09-PJ-01-IMG.webp\" alt=\"\"><p class=\"sbn-doc-titulo\">CARPETA SIN NOMBRE</p>\n<p>Catorce fotos. La primera es de 2014: el Larchmont, en llamas, y él de espaldas al fuego, mirando a la cámara del vecino. La última es de 2025: Harbor Island, bajo una farola.</p>\n<p>Misma cara. Misma cicatriz, del pómulo derecho al labio. Mismo abrigo, o uno igual. Mismo modo de pararse: los pies separados, el peso atrás, como si el suelo fuera a moverse.</p>\n<p>Once años y no le salió una cana.</p>\n<p>Aparece en cuatro de mis casos. Siempre después. Nunca durante. Llega cuando ya pasó lo peor y se va antes de que llegue la policía. Una vez lo vi limpiar una escena como quien barre la cocina.</p>\n<p>Me dio un teléfono. Me dijo mi nombre sin que se lo diera.</p>\n<p>No sé qué es. No sé si es bueno. Sé que me cuida, y no sé por qué.</p>\n<p><em>Pendiente: averiguar quién murió en 1960 con su cara.</em></p>\n</div>"
           },
           "sort": 100000,
           "ownership": {
@@ -36388,7 +37060,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<div class=\"sbn-doc sbn-doc-libreta\"><p class=\"sbn-doc-titulo\">2018 · PIONEER SQUARE</p>\n<p>Una cámara térmica de la obra del metro grabó esto el 8 de marzo a las 3:12: una figura humana levanta una tapa de alcantarilla y baja. En la imagen térmica, todo lo que la rodea tiene color. La figura, no. Es azul oscuro, como el agua del estrecho. Como algo que lleva tiempo muerto.</p>\n<p>La figura volvió a aparecer en la misma cámara seis veces más ese año. Siempre de madrugada. Siempre la misma alcantarilla.</p>\n<p>Y una cosa más, que no sé si tiene que ver: en el último vídeo, antes de bajar, la figura mira hacia la cámara. Y la cámara se apaga. Once minutos.</p>\n<p>Exactamente igual que las de mi edificio la noche del robo.</p>\n<p><em>Pendiente: ¿quién apaga las cámaras de esta ciudad?</em></p>\n</div>"
+            "content": "<div class=\"sbn-doc sbn-doc-libreta\"><img class=\"sbn-doc-imagen\" src=\"modules/seattle-by-night/assets/handouts/AYU-09-PJ-03-IMG.webp\" alt=\"\"><p class=\"sbn-doc-titulo\">2018 · PIONEER SQUARE</p>\n<p>Una cámara térmica de la obra del metro grabó esto el 8 de marzo a las 3:12: una figura humana levanta una tapa de alcantarilla y baja. En la imagen térmica, todo lo que la rodea tiene color. La figura, no. Es azul oscuro, como el agua del estrecho. Como algo que lleva tiempo muerto.</p>\n<p>La figura volvió a aparecer en la misma cámara seis veces más ese año. Siempre de madrugada. Siempre la misma alcantarilla.</p>\n<p>Y una cosa más, que no sé si tiene que ver: en el último vídeo, antes de bajar, la figura mira hacia la cámara. Y la cámara se apaga. Once minutos.</p>\n<p>Exactamente igual que las de mi edificio la noche del robo.</p>\n<p><em>Pendiente: ¿quién apaga las cámaras de esta ciudad?</em></p>\n</div>"
           },
           "sort": 300000,
           "ownership": {
@@ -37350,7 +38022,7 @@
         },
         {
           "_id": "Z1sodbWOwxecJyF9",
-          "name": "Bombita del muelle cubierto",
+          "name": "Bombita del muelle cubierto (pasarela oeste)",
           "x": 1500,
           "y": 700,
           "elevation": 0,
@@ -37542,7 +38214,7 @@
           "_id": "B9M3PixqhGPaRKUH",
           "name": "Aplique de sodio del muelle trasero",
           "x": 800,
-          "y": 285,
+          "y": 265,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -37649,6 +38321,44 @@
             }
           },
           "hidden": true,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "n4Y43A0rB8sIv9oC",
+          "name": "Bombita del muelle cubierto (pasarela este)",
+          "x": 2100,
+          "y": 700,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 0.9,
+            "dim": 3.4,
+            "color": "#ffb35c",
+            "coloration": 1,
+            "attenuation": 0.85,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "torch",
+              "speed": 1,
+              "intensity": 1,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
           "locked": false,
           "flags": {}
         }
@@ -38869,7 +39579,15 @@
           "hidden": false,
           "disposition": 1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -38918,7 +39636,15 @@
           "hidden": true,
           "disposition": 1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -38966,7 +39692,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -39013,7 +39772,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -39060,7 +39852,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -39107,7 +39932,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -39154,7 +40012,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -39201,7 +40092,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -39853,6 +40777,44 @@
           "hidden": true,
           "locked": false,
           "flags": {}
+        },
+        {
+          "_id": "Ia6eUTFJMHLVoCWv",
+          "name": "Luz de emergencia de la escalera (fuera de la suite: no es una de las 3 luces)",
+          "x": 1850,
+          "y": 1250,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
         }
       ],
       "regions": [
@@ -39957,8 +40919,8 @@
           "_id": "N1EepThVStLcAE48",
           "entryId": "KioeAEZP78U0Coz5",
           "pageId": null,
-          "x": 710,
-          "y": 510,
+          "x": 1660,
+          "y": 860,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -39987,6 +40949,43 @@
               "origen": "pin",
               "escena": "northline",
               "id": "LUG-14"
+            }
+          }
+        },
+        {
+          "_id": "ubMhoqvlVfS6RLsb",
+          "entryId": "I3XsZ233TNTuehzS",
+          "pageId": "hcNJvEh25hCamG2B",
+          "x": 1635,
+          "y": 210,
+          "elevation": 0,
+          "sort": 0,
+          "locked": false,
+          "texture": {
+            "src": "icons/svg/book.svg",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "iconSize": 40,
+          "text": "INT-02",
+          "fontFamily": "Signika",
+          "fontSize": 24,
+          "textAnchor": 1,
+          "textColor": "#ffffff",
+          "global": false,
+          "flags": {
+            "seattle-by-night": {
+              "origen": "pin",
+              "escena": "northline",
+              "id": "INT-02"
             }
           }
         }
@@ -40327,7 +41326,15 @@
           "hidden": false,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -40374,7 +41381,40 @@
           "hidden": false,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -40421,7 +41461,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -40450,7 +41523,7 @@
           "id": "LUG-14",
           "plano": "northline",
           "provisional": false,
-          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</p>\n<p><strong>Northline Cyber Advisory</strong>, la fachada de FIRSTLIGHT. «Moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad» (el panel del logo está en la pared norte de la recepción, retroiluminado y sin una letra en el mapa). «A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas»: las tres son el panel del logo de la recepción, la lámpara del puesto de Hale en las mesas abiertas y el fluorescente de la <strong>sala de reuniones</strong>, cuyas ventanas al norte tienen las persianas bajadas (por fuera se ve la luz, no la sala).</p>\n<p><strong>Sala de reuniones.</strong> La mesa larga y, en la pared este, el <strong>tablero de corcho lleno de fotos</strong>, incluido el pódcast de Helen. La mampara que da a las mesas abiertas es de vidrio con persianas cerradas: en el mapa es muro (no se ve adentro). Aquí se juega el interludio I-2 «SEA-0411» (SPEC §6): Okafor y Hale reciben la entrega de ARQUERO (DOC-07).</p>\n<p><strong>Mesas abiertas</strong> (los analistas): ocho mesas altas en dos islas. La de Hale es la de la lámpara. Okafor «nunca se sienta de espaldas a una puerta».</p>\n<p><strong>Zona restringida.</strong> De las mesas abiertas sale, por una puerta con lector de tarjeta, el pasillo a la <strong>armería cerrada</strong> (taquillas de fusiles cortos, munición incendiaria, linternas UV, chalecos; de noche el equipo táctico MEN-02 está en un almacén del puerto, no aquí, así que hay huecos) y a la <strong>sala blanca de «entrevistas»</strong>: azulejo blanco, una mesa y una silla atornilladas y <strong>lámparas UV de alta intensidad</strong> en las paredes. Apagadas; encendidas, cada Vástago iluminado sufre 1 de daño agravado por turno y −2 dados (linterna UV, arsenal de FIRSTLIGHT). Las luces UV del plano están marcadas como apagadas.</p>\n<p><strong>Accesos.</strong> Ascensores y escalera de emergencia en el vestíbulo común del piso, al sur de la recepción; la puerta de vidrio de Northline está trabada de noche. Ninguno tiene mapa del otro extremo.</p>\n<p><strong>Peligro:</strong> «entrar aquí es la forma más rápida de subir el Termómetro»: si se descubre la intrusión, Termómetro +3. «Es más útil observar que entrar.» No figura en ninguna escena fija: se reserva para la crónica, una coterie muy audaz y los interludios de FIRSTLIGHT (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (6) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale} (INT-02): De pie delante de su portátil, junto al tablero de corcho.</li><li>@UUID[Actor.15UcuyhvNvNqkCOf]{Dana Okafor} (INT-02): Deja el café en la mesa sin mirarlo.</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>oculto</em> (INT-02): Sube a buscar a Okafor para el Denny&#39;s (sale a las 22:15) y puede quedarse de escolta.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Ascensores (planta baja) · Bajar por la escalera de emergencia (11 pisos).</p>",
+          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}<br><strong>Escenas:</strong> @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</p>\n<p><strong>Northline Cyber Advisory</strong>, la fachada de FIRSTLIGHT. «Moqueta gris, plantas de plástico, mesas altas, un cartel de bienvenida con el logo de una consultora de ciberseguridad» (el panel del logo está en la pared norte de la recepción, retroiluminado y sin una letra en el mapa). «A las tres de la mañana hay tres luces encendidas en el piso 11. Una de ellas es la de una sala de reuniones con las persianas cerradas»: las tres son el panel del logo de la recepción, la lámpara del puesto de Hale en las mesas abiertas y el fluorescente de la <strong>sala de reuniones</strong>, cuyas ventanas al norte tienen las persianas bajadas (por fuera se ve la luz, no la sala).</p>\n<p><strong>Sala de reuniones.</strong> La mesa larga y, en la pared este, el <strong>tablero de corcho lleno de fotos</strong>, incluido el pódcast de Helen. La mampara que da a las mesas abiertas es de vidrio con persianas cerradas: en el mapa es muro (no se ve adentro). Aquí se juega el interludio I-2 «SEA-0411» (SPEC §6): Okafor y Hale reciben la entrega de ARQUERO (DOC-07).</p>\n<p><strong>Mesas abiertas</strong> (los analistas): ocho mesas altas en dos islas. La de Hale es la de la lámpara. Okafor «nunca se sienta de espaldas a una puerta».</p>\n<p><strong>Zona restringida.</strong> De las mesas abiertas sale, por una puerta con lector de tarjeta, el pasillo a la <strong>armería cerrada</strong> (taquillas de fusiles cortos, munición incendiaria, linternas UV, chalecos; de noche el equipo táctico MEN-02 está en un almacén del puerto, no aquí, así que hay huecos) y a la <strong>sala blanca de «entrevistas»</strong>: azulejo blanco, una mesa y una silla atornilladas y <strong>lámparas UV de alta intensidad</strong> en las paredes. Apagadas; encendidas, cada Vástago iluminado sufre 1 de daño agravado por turno y −2 dados (linterna UV, arsenal de FIRSTLIGHT). Las luces UV del plano están marcadas como apagadas.</p>\n<p><strong>Accesos.</strong> Ascensores y escalera de emergencia en el vestíbulo común del piso, al sur de la recepción; la puerta de vidrio de Northline está trabada de noche. Ninguno tiene mapa del otro extremo.</p>\n<p><strong>Peligro:</strong> «entrar aquí es la forma más rápida de subir el Termómetro»: si se descubre la intrusión, Termómetro +3. «Es más útil observar que entrar.» No figura en ninguna escena fija: se reserva para la crónica, una coterie muy audaz y los interludios de FIRSTLIGHT (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (6) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale} (INT-02): De pie delante de su portátil, junto al tablero de corcho.</li><li>@UUID[Actor.15UcuyhvNvNqkCOf]{Dana Okafor} (INT-02): Deja el café en la mesa sin mirarlo.</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>oculto</em> (INT-02): Sube a buscar a Okafor para el Denny&#39;s (sale a las 22:15) y puede quedarse de escolta.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Ascensores (planta baja) · Bajar por la escalera de emergencia (11 pisos).</p>",
           "moviles": []
         }
       },
@@ -41507,8 +42580,8 @@
           "_id": "hjfwqsBBlxnpWD9Y",
           "entryId": "zSkwEUUtkNGhfXun",
           "pageId": null,
-          "x": 610,
-          "y": 585,
+          "x": 1085,
+          "y": 1485,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -41544,8 +42617,8 @@
           "_id": "GbMpfFr97GfQi8sx",
           "entryId": "C7cxKf7kcAELzuJ1",
           "pageId": "EjJ0vfVBCjTTb0QV",
-          "x": 610,
-          "y": 685,
+          "x": 1135,
+          "y": 910,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -41814,7 +42887,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -41843,7 +42924,7 @@
           "id": "LUG-07",
           "plano": "gale-datos",
           "provisional": false,
-          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 3 de A3-E02: el centro de datos.</strong> «Edificio sin ventanas detrás del principal. Tres salas: almacenamiento, entrenamiento de ANOMALY, archivo privado.» «Puerta con biometría (huella y retina) y una esclusa de seguridad. Un ghoul en la sala de control.»</p>\n<p><strong>La franja de infiltración.</strong> El vial de servicio (oeste) viene del estacionamiento (región «Al estacionamiento», pendiente: mapa de zona) y el patio de servicio (sur) viene del edificio de oficinas (región → <code>gale-sentinel</code>). El generador y las enfriadoras del patio dan cobertura para acercarse a la esclusa. Salir corriendo por el campus delante de las cámaras: Termómetro +1.</p>\n<p><strong>Los tres niveles de seguridad</strong> (el texto no los detalla; se reparten así):</p>\n<ol>\n<li><strong>La esclusa.</strong> Puerta exterior con lector de tarjeta; puerta interior <strong>trabada</strong> con lector biométrico (huella y retina de Gale o de Dawson). Las dos puertas no abren a la vez. Forzarla: Fuerza + Atletismo Dif 5, y salta la alarma. Con Gale de la mano (Celeste, Manipulación + Persuasión Dif 4, o Dominación: Gale tiene Compostura 2; Dawson, Resolución 3 y +2 dados por el Vínculo) la puerta interior se abre sin tirada. El ghoul de la <strong>sala de control</strong> ve la esclusa por la ventanilla blindada.</li>\n<li><strong>Las salas</strong> (almacenamiento y pruebas): puertas <strong>trabadas</strong> con tarjeta; se abren desde la consola de la sala de control o con la tarjeta del ghoul. Desde el pasillo se ve adentro por las vidrieras: a la izquierda, «filas de armarios negros zumban bajo luces azules»; a la derecha, la pared de caras.</li>\n<li><strong>El archivo privado</strong>, al fondo del pasillo: puerta <strong>trabada</strong> con cerradura propia, sin red, aislado del resto.</li>\n</ol>\n<p><strong>Cámaras ANOMALY (en los accesos)</strong>, objetos <code>anomaly</code> sin luz: ① sobre la puerta exterior de la esclusa; ② dentro de la esclusa; ③ en la esquina suroeste, cubre el patio y el vial; ④ y ⑤ sobre las dos salidas de emergencia, por fuera. Si la coterie no desactivó el módulo en la capa 1, cada Vástago que entre queda registrado (el Termómetro +1 es uno solo para toda la incursión).</p>\n<p><strong>Qué hay en cada sala:</strong></p>\n<ul>\n<li><strong>Almacenamiento</strong> (oeste): cuatro filas de racks. En el <strong>armario ignífugo de soportes</strong> (esquina suroeste), el <strong>disco original del Expediente, sólo hasta la Noche 6</strong>. En la <strong>consola de gestión</strong>, los registros de envío del canal ARQUERO con la referencia <strong>SEA-0411 (P-10)</strong> y <strong>DOC-07</strong> completo.</li>\n<li><strong>Sala de pruebas · entrenamiento de ANOMALY</strong> (este): «En una pared hay una pantalla con una cuadrícula de rostros, cientos, cada uno con una etiqueta debajo: COLD_SUBJECT, y un número. Algunos los conocen del Elíseo. Uno de ellos es suyo.» Es la <strong>pared de caras</strong> (pared este; apagada en el mapa, la encienden dos luces «neon»). En los puestos, la <strong>base de datos de sujetos fríos</strong> (incluye a la coterie si la cámara del 3B los grabó en A0-E01) y <strong>DOC-11</strong>, si no lo tienen. Al norte, abierta a la sala, la de cómputo con los racks de GPU.</li>\n<li><strong>Archivo privado</strong> (norte, al fondo del pasillo): el <strong>servidor sin red</strong> con el archivo personal de Halloway escaneado por Pell. Copiarlo: Inteligencia + Tecnología Dif 3. Los folios de «el alemán» (<strong>P-15</strong>): Inteligencia + Investigación Dif 4, o automático buscando «allemand». Este servidor es el que puede terminar en el maletín de A4-E03.</li>\n</ul>\n<p><strong>Alarma.</strong> Si salta (esclusa forzada, salida de emergencia abierta), Dawson tarda <strong>cuatro minutos</strong> en llegar desde el edificio de oficinas y la policía de Bellevue, <strong>doce</strong>. Las salidas de emergencia (oeste y este) sólo abren desde dentro y disparan la alarma: son la vía de escape de un asalto.</p>\n<p><strong>Asalto</strong> (Combate): Termómetro +2; Gale avisa a Halloway, que traslada el original esa misma noche si no se lo llevan. Dawson vivo y capturado es un testigo.</p>\n<p>Los bloques rayados (salas técnicas de SAI y baterías al suroeste, enfriamiento al sureste) no se juegan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (4) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Guardia de seguridad} · <em>oculto</em> (A3-E02): El ghoul de la sala de control; ve la esclusa por la ventanilla.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus (vial de servicio).</p>",
+          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 3 de A3-E02: el centro de datos.</strong> «Edificio sin ventanas detrás del principal. Tres salas: almacenamiento, entrenamiento de ANOMALY, archivo privado.» «Puerta con biometría (huella y retina) y una esclusa de seguridad. Un ghoul en la sala de control.»</p>\n<p><strong>La franja de infiltración.</strong> El vial de servicio (oeste) viene del estacionamiento (región «Al estacionamiento», pendiente: mapa de zona) y el patio de servicio (sur) viene del edificio de oficinas (región → <code>gale-sentinel</code>). El generador y las enfriadoras del patio dan cobertura para acercarse a la esclusa. Salir corriendo por el campus delante de las cámaras: Termómetro +1.</p>\n<p><strong>Los tres niveles de seguridad</strong> (el texto no los detalla; se reparten así):</p>\n<ol>\n<li><strong>La esclusa.</strong> Puerta exterior con lector de tarjeta; puerta interior <strong>trabada</strong> con lector biométrico (huella y retina de Gale o de Dawson). Las dos puertas no abren a la vez. Forzarla: Fuerza + Atletismo Dif 5, y salta la alarma. Con Gale de la mano (Celeste, Manipulación + Persuasión Dif 4, o Dominación: Gale tiene Compostura 2; Dawson, Resolución 3 y +2 dados por el Vínculo) la puerta interior se abre sin tirada. El ghoul de la <strong>sala de control</strong> ve la esclusa por la ventanilla blindada.</li>\n<li><strong>Las salas</strong> (almacenamiento y pruebas): puertas <strong>trabadas</strong> con tarjeta; se abren desde la consola de la sala de control o con la tarjeta del ghoul. Desde el pasillo se ve adentro por las vidrieras: a la izquierda, «filas de armarios negros zumban bajo luces azules»; a la derecha, la pared de caras.</li>\n<li><strong>El archivo privado</strong>, al fondo del pasillo: puerta <strong>trabada</strong> con cerradura propia, sin red, aislado del resto.</li>\n</ol>\n<p><strong>Cámaras ANOMALY (en los accesos)</strong>, objetos <code>anomaly</code> sin luz: ① sobre la puerta exterior de la esclusa; ② dentro de la esclusa; ③ en la esquina suroeste, cubre el patio y el vial; ④ y ⑤ sobre las dos salidas de emergencia, por fuera. Si la coterie no desactivó el módulo en la capa 1, cada Vástago que entre queda registrado (el Termómetro +1 es uno solo para toda la incursión).</p>\n<p><strong>Qué hay en cada sala:</strong></p>\n<ul>\n<li><strong>Almacenamiento</strong> (oeste): cuatro filas de racks. En el <strong>armario ignífugo de soportes</strong> (esquina suroeste), el <strong>disco original del Expediente, sólo hasta la Noche 6</strong>. En la <strong>consola de gestión</strong>, los registros de envío del canal ARQUERO con la referencia <strong>SEA-0411 (P-10)</strong> y <strong>DOC-07</strong> completo.</li>\n<li><strong>Sala de pruebas · entrenamiento de ANOMALY</strong> (este): «En una pared hay una pantalla con una cuadrícula de rostros, cientos, cada uno con una etiqueta debajo: COLD_SUBJECT, y un número. Algunos los conocen del Elíseo. Uno de ellos es suyo.» Es la <strong>pared de caras</strong> (pared este; apagada en el mapa, la encienden dos luces «videopared»). En los puestos, la <strong>base de datos de sujetos fríos</strong> (incluye a la coterie si la cámara del 3B los grabó en A0-E01) y <strong>DOC-11</strong>, si no lo tienen. Al norte, abierta a la sala, la de cómputo con los racks de GPU.</li>\n<li><strong>Archivo privado</strong> (norte, al fondo del pasillo): el <strong>servidor sin red</strong> con el archivo personal de Halloway escaneado por Pell. Copiarlo: Inteligencia + Tecnología Dif 3. Los folios de «el alemán» (<strong>P-15</strong>): Inteligencia + Investigación Dif 4, o automático buscando «allemand». Este servidor es el que puede terminar en el maletín de A4-E03.</li>\n</ul>\n<p><strong>Alarma.</strong> Si salta (esclusa forzada, salida de emergencia abierta), Dawson tarda <strong>cuatro minutos</strong> en llegar desde el edificio de oficinas y la policía de Bellevue, <strong>doce</strong>. Las salidas de emergencia (oeste y este) sólo abren desde dentro y disparan la alarma: son la vía de escape de un asalto.</p>\n<p><strong>Asalto</strong> (Combate): Termómetro +2; Gale avisa a Halloway, que traslada el original esa misma noche si no se lo llevan. Dawson vivo y capturado es un testigo.</p>\n<p>Los bloques rayados (salas técnicas de SAI y baterías al suroeste, enfriamiento al sureste) no se juegan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (4) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Guardia de seguridad} · <em>oculto</em> (A3-E02): El ghoul de la sala de control; ve la esclusa por la ventanilla.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus (vial de servicio).</p>",
           "moviles": []
         }
       },
@@ -42643,7 +43724,7 @@
           "_id": "vBNwGRm5a2uZ6Yrk",
           "name": "Aplique de la salida de servicio",
           "x": 850,
-          "y": 175,
+          "y": 160,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -42735,6 +43816,120 @@
             "coloration": 1,
             "attenuation": 0.6,
             "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "ftgIJBEk21pvD3Gc",
+          "name": "Plafón de la escalera de incendios",
+          "x": 1750,
+          "y": 325,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "QWMNztIwFVKmva2v",
+          "name": "Luz de la cabina del ascensor A",
+          "x": 1750,
+          "y": 525,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "ckIR1JL4D23GTShV",
+          "name": "Luz de la cabina del ascensor B",
+          "x": 1750,
+          "y": 675,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
             "saturation": 0,
             "contrast": 0,
             "shadows": 0,
@@ -43449,7 +44644,7 @@
           "id": "LUG-07",
           "plano": "gale-sentinel",
           "provisional": false,
-          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 1 de A3-E02: el perímetro.</strong> «Dos de la madrugada. El vestíbulo de Gale Sentinel está vacío salvo por un guardia que mira el móvil detrás del mostrador. La pantalla de la pared sigue encendida: un mosaico de miles de imágenes en directo, porches, pasillos, lluvia.» La <strong>videopared</strong> ocupa la pared norte del vestíbulo, frente a la puerta principal; en el mapa está apagada y la encienden tres luces «neon». Debajo va el lema «Vemos lo que la ciudad no ve.» (no está pintado: ningún texto en el mapa). El guardia (uno de los <strong>dos guardias mortales</strong>) está en la silla detrás del <strong>mostrador</strong>; el otro, en la <strong>oficina de seguridad</strong> del ala oeste, con los monitores de las cámaras.</p>\n<p><strong>Cámaras ANOMALY (en todos los accesos)</strong>, marcadas como objetos <code>anomaly</code> sin luz: ① sobre la puerta principal, por fuera; ② en la esquina sureste del vestíbulo, apuntando a la puerta; ③ sobre la salida de servicio al patio, por fuera; ④ en el hall de ascensores, apuntando a los molinetes. Cada Vástago que pase delante con el módulo activo queda registrado como «sujeto frío»: Termómetro +1 en total (A3-E02, capa 1). Desactivarlo desde fuera: Inteligencia + Tecnología Dif 4 (Ezra +2 dados si ya sabe que el firmware es suyo; LOR-03 a nivel 4, automático). Ofuscación no lo engaña.</p>\n<p><strong>Accesos.</strong> La puerta principal (corredera de vidrio) da a la plaza y al estacionamiento: la región «Al estacionamiento» lleva al mapa de zona del campus (pendiente, t2i). La <strong>salida de servicio</strong> del pasillo norte da al patio de servicio, y del patio se cruza al <strong>centro de datos</strong> (región → <code>gale-datos</code>). Los <strong>molinetes</strong> (dos pasos con tarjeta, puertas de vidrio entre barandas) separan el vestíbulo del hall de ascensores; el pasillo de servicio también llega al hall por una puerta con cerradura electrónica. Escalera y ascensores suben a la <strong>planta 3</strong> (<code>gale-planta3</code>).</p>\n<p><strong>A1-E05 (acceso físico).</strong> Si la coterie usa Dominación sobre un técnico de guardia para entrar, entra por acá y pasa por las cámaras ① o ③: Termómetro +1 salvo que se desactiven antes.</p>\n<p><strong>Salir corriendo</strong> por el vestíbulo y la plaza delante de las cámaras: Termómetro +1. Si salta la alarma, la policía de Bellevue tarda doce minutos.</p>\n<p>La cafetería y los aseos de la planta baja (bloque rayado al sureste) están cerrados y no se juegan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (5) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus.</p>",
+          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel, campus y centro de datos}<br><strong>Escenas:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · Los ojos de la ciudad} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · El centro de datos}</p>\n<p><strong>Capa 1 de A3-E02: el perímetro.</strong> «Dos de la madrugada. El vestíbulo de Gale Sentinel está vacío salvo por un guardia que mira el móvil detrás del mostrador. La pantalla de la pared sigue encendida: un mosaico de miles de imágenes en directo, porches, pasillos, lluvia.» La <strong>videopared</strong> ocupa la pared norte del vestíbulo, frente a la puerta principal; en el mapa está apagada y la encienden tres luces «videopared». Debajo va el lema «Vemos lo que la ciudad no ve.» (no está pintado: ningún texto en el mapa). El guardia (uno de los <strong>dos guardias mortales</strong>) está en la silla detrás del <strong>mostrador</strong>; el otro, en la <strong>oficina de seguridad</strong> del ala oeste, con los monitores de las cámaras.</p>\n<p><strong>Cámaras ANOMALY (en todos los accesos)</strong>, marcadas como objetos <code>anomaly</code> sin luz: ① sobre la puerta principal, por fuera; ② en la esquina sureste del vestíbulo, apuntando a la puerta; ③ sobre la salida de servicio al patio, por fuera; ④ en el hall de ascensores, apuntando a los molinetes. Cada Vástago que pase delante con el módulo activo queda registrado como «sujeto frío»: Termómetro +1 en total (A3-E02, capa 1). Desactivarlo desde fuera: Inteligencia + Tecnología Dif 4 (Ezra +2 dados si ya sabe que el firmware es suyo; LOR-03 a nivel 4, automático). Ofuscación no lo engaña.</p>\n<p><strong>Accesos.</strong> La puerta principal (corredera de vidrio) da a la plaza y al estacionamiento: la región «Al estacionamiento» lleva al mapa de zona del campus (pendiente, t2i). La <strong>salida de servicio</strong> del pasillo norte da al patio de servicio, y del patio se cruza al <strong>centro de datos</strong> (región → <code>gale-datos</code>). Los <strong>molinetes</strong> (dos pasos con tarjeta, puertas de vidrio entre barandas) separan el vestíbulo del hall de ascensores; el pasillo de servicio también llega al hall por una puerta con cerradura electrónica. Escalera y ascensores suben a la <strong>planta 3</strong> (<code>gale-planta3</code>).</p>\n<p><strong>A1-E05 (acceso físico).</strong> Si la coterie usa Dominación sobre un técnico de guardia para entrar, entra por acá y pasa por las cámaras ① o ③: Termómetro +1 salvo que se desactiven antes.</p>\n<p><strong>Salir corriendo</strong> por el vestíbulo y la plaza delante de las cámaras: Termómetro +1. Si salta la alarma, la policía de Bellevue tarda doce minutos.</p>\n<p>La cafetería y los aseos de la planta baja (bloque rayado al sureste) están cerrados y no se juegan.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (5) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Al estacionamiento del campus.</p>",
           "moviles": []
         }
       },
@@ -44180,9 +45375,9 @@
         },
         {
           "_id": "sRcjbBFO9yr5fN3f",
-          "name": "Farola del estacionamiento (abajo, oeste)",
-          "x": 300,
-          "y": 1360,
+          "name": "Lámpara del escritorio de Gale (queda prendida)",
+          "x": 410,
+          "y": 825,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -44190,14 +45385,90 @@
           "config": {
             "negative": false,
             "priority": 0,
-            "alpha": 0.45,
+            "alpha": 0.4,
             "angle": 360,
-            "bright": 4,
-            "dim": 12,
-            "color": "#ffb46b",
+            "bright": 0.9,
+            "dim": 3.4,
+            "color": "#ffb35c",
+            "coloration": 1,
+            "attenuation": 0.85,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "torch",
+              "speed": 1,
+              "intensity": 1,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "twRe2MSobV5F2cBd",
+          "name": "LED del rack del servidor de pruebas (A1-E05)",
+          "x": 280,
+          "y": 390,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0.8,
+            "color": "#3fd6a8",
             "coloration": 1,
             "attenuation": 0.6,
-            "luminosity": 0.5,
+            "luminosity": 0.2,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "pulse",
+              "speed": 6,
+              "intensity": 3,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "u0QcnmBXdVAFmf3Y",
+          "name": "Plafón de la escalera de incendios",
+          "x": 1750,
+          "y": 325,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
             "saturation": 0,
             "contrast": 0,
             "shadows": 0,
@@ -44217,10 +45488,10 @@
           "flags": {}
         },
         {
-          "_id": "twRe2MSobV5F2cBd",
-          "name": "Farola del estacionamiento (abajo, este)",
-          "x": 1550,
-          "y": 1360,
+          "_id": "EAtTVdzpA2TxgcG5",
+          "name": "Luz de la cabina del ascensor A",
+          "x": 1750,
+          "y": 525,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -44228,14 +45499,52 @@
           "config": {
             "negative": false,
             "priority": 0,
-            "alpha": 0.45,
+            "alpha": 0.4,
             "angle": 360,
-            "bright": 4,
-            "dim": 12,
-            "color": "#ffb46b",
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
             "coloration": 1,
-            "attenuation": 0.6,
-            "luminosity": 0.5,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "SMXk9QVTNta9UOj3",
+          "name": "Luz de la cabina del ascensor B",
+          "x": 1750,
+          "y": 675,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
             "saturation": 0,
             "contrast": 0,
             "shadows": 0,
@@ -44465,8 +45774,8 @@
           "_id": "m26UpOQO4crxSDOZ",
           "entryId": "zSkwEUUtkNGhfXun",
           "pageId": null,
-          "x": 235,
-          "y": 760,
+          "x": 1460,
+          "y": 510,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -44502,8 +45811,8 @@
           "_id": "FUo31kXd2Ttfqw7F",
           "entryId": "5hwXPdn0tUJ3NaKZ",
           "pageId": "wIpc0OR2nQf7WDFO",
-          "x": 235,
-          "y": 860,
+          "x": 310,
+          "y": 460,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -44539,8 +45848,8 @@
           "_id": "kN4K4fJajvHMPwxn",
           "entryId": "C7cxKf7kcAELzuJ1",
           "pageId": "EjJ0vfVBCjTTb0QV",
-          "x": 235,
-          "y": 960,
+          "x": 310,
+          "y": 835,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -44809,7 +46118,21 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 20
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -44856,7 +46179,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -44902,7 +46233,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -44948,7 +46287,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -46817,7 +48164,7 @@
           "_id": "4r0pvLTGXD2nqBUh",
           "name": "Foco de la puerta trasera (perreras)",
           "x": 820,
-          "y": 480,
+          "y": 460,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -46854,7 +48201,7 @@
         {
           "_id": "a6fZ8lJt652OqwOn",
           "name": "Foco de sodio del granero (patio)",
-          "x": 1280,
+          "x": 1260,
           "y": 1800,
           "elevation": 0,
           "rotation": 0,
@@ -48828,7 +50175,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 30,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -48876,7 +50231,21 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -48924,7 +50293,21 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -48971,7 +50354,21 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49018,7 +50415,21 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49065,7 +50476,21 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49112,7 +50537,21 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49160,7 +50599,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -49208,7 +50655,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -49255,7 +50710,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -49302,7 +50765,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -49349,7 +50820,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -49396,7 +50875,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -49443,7 +50930,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49490,7 +51010,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49536,7 +51089,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49582,7 +51168,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49629,7 +51248,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -49676,7 +51328,40 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 20,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "light": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.55,
+            "angle": 360,
+            "bright": 0,
+            "dim": 0,
+            "color": "#7a3cff",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.3,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -50508,7 +52193,7 @@
           "entryId": "jg1zpvYlDFMJRY8Q",
           "pageId": null,
           "x": 1360,
-          "y": 760,
+          "y": 810,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -50544,8 +52229,8 @@
           "_id": "7vjs2LZv9hcrgQcQ",
           "entryId": "5hwXPdn0tUJ3NaKZ",
           "pageId": "lM1EiE1FoXMkf3Uo",
-          "x": 1360,
-          "y": 860,
+          "x": 2110,
+          "y": 360,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -50764,7 +52449,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -51525,7 +53218,7 @@
           "_id": "iTTJdrilqi6QH4P2",
           "name": "Aplique de la puerta trasera",
           "x": 900,
-          "y": 785,
+          "y": 765,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -51733,7 +53426,7 @@
           "entryId": "JMwTSsJAcyYdCs3m",
           "pageId": null,
           "x": 560,
-          "y": 1660,
+          "y": 1735,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -51770,7 +53463,7 @@
           "entryId": "FttkHsYSSaCpIugu",
           "pageId": "aJxUAHXcYpRWrhmG",
           "x": 560,
-          "y": 1760,
+          "y": 1835,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -53089,7 +54782,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53136,7 +54837,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53183,7 +54892,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53230,7 +54947,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53276,7 +55001,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53322,7 +55055,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53368,7 +55109,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -53920,8 +55669,8 @@
           "_id": "eUL4RjpT6fCPDfks",
           "entryId": "Oiln4o98kvxKbOvS",
           "pageId": null,
-          "x": 585,
-          "y": 760,
+          "x": 1135,
+          "y": 810,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -53957,8 +55706,8 @@
           "_id": "mJWgA1Keh0rwJfdt",
           "entryId": "FttkHsYSSaCpIugu",
           "pageId": "9fTKL8Oeq36BCfU9",
-          "x": 685,
-          "y": 760,
+          "x": 1135,
+          "y": 910,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -54375,8 +56124,8 @@
           "_id": "VOT7dvYkXpn5likP",
           "entryId": "Oiln4o98kvxKbOvS",
           "pageId": null,
-          "x": 810,
-          "y": 510,
+          "x": 1610,
+          "y": 485,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -54413,7 +56162,7 @@
           "entryId": "FttkHsYSSaCpIugu",
           "pageId": "9fTKL8Oeq36BCfU9",
           "x": 810,
-          "y": 610,
+          "y": 560,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -54481,7 +56230,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -56166,7 +57923,7 @@
           "entryId": "iyojT7kJHH23BWLd",
           "pageId": null,
           "x": 1210,
-          "y": 695,
+          "y": 1360,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -56203,7 +57960,7 @@
           "entryId": "FttkHsYSSaCpIugu",
           "pageId": "uL8F2YNogcToiFc6",
           "x": 1210,
-          "y": 795,
+          "y": 745,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -56240,7 +57997,7 @@
           "entryId": "doItxeK8y7M1PufU",
           "pageId": "snrsN5RkdAklRIDn",
           "x": 1210,
-          "y": 895,
+          "y": 845,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -56809,7 +58566,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -56857,7 +58622,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -56905,7 +58678,15 @@
           "hidden": false,
           "disposition": -1,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -56953,7 +58734,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -57001,7 +58790,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -57049,7 +58846,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -57097,7 +58902,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 30,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -57502,8 +59315,8 @@
           "_id": "63iQ1ScYvwbyQKHS",
           "entryId": "iyojT7kJHH23BWLd",
           "pageId": null,
-          "x": 810,
-          "y": 385,
+          "x": 310,
+          "y": 360,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -57539,7 +59352,7 @@
           "_id": "TVo1PyBgzyHZsAUg",
           "entryId": "FttkHsYSSaCpIugu",
           "pageId": "uL8F2YNogcToiFc6",
-          "x": 910,
+          "x": 860,
           "y": 385,
           "elevation": 0,
           "sort": 0,
@@ -58303,8 +60116,8 @@
           "_id": "fa2n2bzYEf6hhp0W",
           "entryId": "lIohEQe1KFTOCQ0U",
           "pageId": null,
-          "x": 1235,
-          "y": 485,
+          "x": 195,
+          "y": 725,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -58340,8 +60153,8 @@
           "_id": "C4a5ccV1n9XcetFj",
           "entryId": "C7cxKf7kcAELzuJ1",
           "pageId": "hAX2tLfjRPJ2o4Tr",
-          "x": 1335,
-          "y": 485,
+          "x": 1260,
+          "y": 710,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -58460,7 +60273,15 @@
           "hidden": false,
           "disposition": -1,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -59637,7 +61458,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -59684,7 +61513,21 @@
           "hidden": false,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 20
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -59731,7 +61574,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -59778,7 +61629,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -59824,7 +61683,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -60339,6 +62206,82 @@
               "type": null,
               "speed": 5,
               "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "KUlgEvk5ntJj5hXn",
+          "name": "Tubo de la escalera de estribor (al salón)",
+          "x": 1725,
+          "y": 225,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.25,
+            "angle": 360,
+            "bright": 0.6,
+            "dim": 3.7,
+            "color": "#cfe3ee",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.25,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "flame",
+              "speed": 8,
+              "intensity": 4,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "TV2OiU4Sf3C7kSCt",
+          "name": "Tubo de la escalera de babor (al salón)",
+          "x": 1725,
+          "y": 2175,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.25,
+            "angle": 360,
+            "bright": 0.6,
+            "dim": 3.7,
+            "color": "#cfe3ee",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.25,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "flame",
+              "speed": 8,
+              "intensity": 4,
               "reverse": false
             },
             "darkness": {
@@ -61381,7 +63324,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -61970,9 +63921,9 @@
         },
         {
           "_id": "zk0ir2YhKFz69Yl0",
-          "name": "Luz de cubierta (estribor)",
-          "x": 850,
-          "y": 200,
+          "name": "Luz de cubierta (estribor), en el mamparo de popa de la timonera",
+          "x": 735,
+          "y": 450,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -62008,9 +63959,9 @@
         },
         {
           "_id": "sdRfmYmppDmcolPt",
-          "name": "Luz de cubierta (babor)",
-          "x": 850,
-          "y": 2200,
+          "name": "Luz de cubierta (babor), en el mamparo de popa de la timonera",
+          "x": 735,
+          "y": 1950,
           "elevation": 0,
           "rotation": 0,
           "walls": true,
@@ -62026,6 +63977,120 @@
             "coloration": 1,
             "attenuation": 0.7,
             "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "MrxPCfE1qEQKxerc",
+          "name": "Plafón de la caseta de la escalera",
+          "x": 1025,
+          "y": 1200,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 1.2,
+            "dim": 4.2,
+            "color": "#e8c46a",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.35,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "9Z6yvSXYlUmhmHPJ",
+          "name": "Luz de navegación de estribor (verde), en el alerón",
+          "x": 450,
+          "y": 120,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.6,
+            "angle": 360,
+            "bright": 0,
+            "dim": 1.5,
+            "color": "#2aff6a",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.2,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": null,
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "YzQgD7QFMwZ4JtQV",
+          "name": "Luz de navegación de babor (roja), en el alerón",
+          "x": 450,
+          "y": 2280,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.6,
+            "angle": 360,
+            "bright": 0,
+            "dim": 1.5,
+            "color": "#ff2a2a",
+            "coloration": 1,
+            "attenuation": 0.6,
+            "luminosity": 0.2,
             "saturation": 0,
             "contrast": 0,
             "shadows": 0,
@@ -62131,7 +64196,7 @@
           "entryId": "IDd94316DhSx3ptV",
           "pageId": null,
           "x": 860,
-          "y": 1160,
+          "y": 1210,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -62167,8 +64232,8 @@
           "_id": "uvMqhw0Zeb4xQBP7",
           "entryId": "doItxeK8y7M1PufU",
           "pageId": "tG1m5PTkmBA1pvmc",
-          "x": 860,
-          "y": 1260,
+          "x": 485,
+          "y": 1135,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -62268,7 +64333,7 @@
           "id": "LUG-15",
           "plano": "ferry-puente",
           "provisional": false,
-          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación (roja a babor, verde a estribor) no están: falta el preset.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>",
+          "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación están en la borda de los alerones: verde a estribor (norte), roja a babor (sur). Las dos luces de cubierta cuelgan del mamparo de popa de la timonera y alumbran la cubierta superior; un poco de esa luz entra por las ventanas de popa del puente.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>",
           "moviles": []
         }
       },
@@ -63322,6 +65387,120 @@
           "hidden": false,
           "locked": false,
           "flags": {}
+        },
+        {
+          "_id": "vKGvlXoVbxlRjObT",
+          "name": "Tubo de la escalera de estribor (a la cubierta de coches)",
+          "x": 1725,
+          "y": 375,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.25,
+            "angle": 360,
+            "bright": 0.6,
+            "dim": 3.7,
+            "color": "#cfe3ee",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.25,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "flame",
+              "speed": 8,
+              "intensity": 4,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "z1fbF9kEHvT4UXit",
+          "name": "Tubo de la escalera de babor (a la cubierta de coches)",
+          "x": 1725,
+          "y": 2025,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.25,
+            "angle": 360,
+            "bright": 0.6,
+            "dim": 3.7,
+            "color": "#cfe3ee",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.25,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "flame",
+              "speed": 8,
+              "intensity": 4,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
+        },
+        {
+          "_id": "ecb2khi63jbGDMQQ",
+          "name": "Tubo de la escalera al puente",
+          "x": 450,
+          "y": 1200,
+          "elevation": 0,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "negative": false,
+            "priority": 0,
+            "alpha": 0.25,
+            "angle": 360,
+            "bright": 0.6,
+            "dim": 3.7,
+            "color": "#cfe3ee",
+            "coloration": 1,
+            "attenuation": 0.8,
+            "luminosity": 0.25,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "type": "flame",
+              "speed": 8,
+              "intensity": 4,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            }
+          },
+          "hidden": false,
+          "locked": false,
+          "flags": {}
         }
       ],
       "regions": [
@@ -63813,7 +65992,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -63860,7 +66047,21 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 20
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -63907,7 +66108,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -63953,7 +66162,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -63999,7 +66216,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -64046,7 +66271,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -64738,8 +66971,8 @@
           "_id": "mBrBsoY96cwmj2Wq",
           "entryId": "L6Fl1S0tjkWno2we",
           "pageId": null,
-          "x": 735,
-          "y": 760,
+          "x": 1560,
+          "y": 960,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -64776,7 +67009,7 @@
           "entryId": "doItxeK8y7M1PufU",
           "pageId": "snrsN5RkdAklRIDn",
           "x": 735,
-          "y": 860,
+          "y": 760,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -65895,7 +68128,15 @@
           "hidden": false,
           "disposition": -1,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -65942,7 +68183,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -65989,7 +68238,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66036,7 +68293,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66082,7 +68347,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66128,7 +68401,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66174,7 +68455,15 @@
           "hidden": false,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66220,7 +68509,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 30,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66267,7 +68564,15 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": true
+            "enabled": true,
+            "range": 10,
+            "angle": 360,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": -1,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66314,7 +68619,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66361,7 +68674,15 @@
           "hidden": true,
           "disposition": -1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {
@@ -66407,7 +68728,21 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -66454,7 +68789,21 @@
           "hidden": true,
           "disposition": 0,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": {
+            "feelTremor": {
+              "enabled": true,
+              "range": 50
+            }
           },
           "flags": {
             "seattle-by-night": {
@@ -67670,7 +70019,7 @@
         {
           "_id": "JZh1TPps7MMQQuPC",
           "name": "Aplique de sodio del callejón",
-          "x": 470,
+          "x": 465,
           "y": 1540,
           "elevation": 0,
           "rotation": 0,
@@ -68256,8 +70605,8 @@
           "_id": "bksG04311rktHbD6",
           "entryId": "YD0Td8Y9aJyIpGSl",
           "pageId": null,
-          "x": 760,
-          "y": 1535,
+          "x": 1210,
+          "y": 785,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -68293,8 +70642,8 @@
           "_id": "OOD4bamNHYxqod7L",
           "entryId": "w9xeQJg6psfiMjFU",
           "pageId": "yyXMKcpDOIhGuZIB",
-          "x": 760,
-          "y": 1635,
+          "x": 1210,
+          "y": 885,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -68330,8 +70679,8 @@
           "_id": "vukDtbSHPF4KTHhn",
           "entryId": "5hwXPdn0tUJ3NaKZ",
           "pageId": "T8gJWjZpOnL4OisP",
-          "x": 760,
-          "y": 1735,
+          "x": 685,
+          "y": 1210,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -68368,7 +70717,7 @@
           "entryId": "C7cxKf7kcAELzuJ1",
           "pageId": "7brn5AgmWggUl420",
           "x": 760,
-          "y": 1835,
+          "y": 1660,
           "elevation": 0,
           "sort": 0,
           "locked": false,
@@ -68887,7 +71236,15 @@
           "hidden": false,
           "disposition": 1,
           "sight": {
-            "enabled": false
+            "enabled": true,
+            "range": 3,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
           },
           "flags": {
             "seattle-by-night": {

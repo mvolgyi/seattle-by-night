@@ -589,9 +589,9 @@
     },
     {
       "_id": "zk0ir2YhKFz69Yl0",
-      "name": "Luz de cubierta (estribor)",
-      "x": 850,
-      "y": 200,
+      "name": "Luz de cubierta (estribor), en el mamparo de popa de la timonera",
+      "x": 735,
+      "y": 450,
       "elevation": 0,
       "rotation": 0,
       "walls": true,
@@ -628,9 +628,9 @@
     },
     {
       "_id": "sdRfmYmppDmcolPt",
-      "name": "Luz de cubierta (babor)",
-      "x": 850,
-      "y": 2200,
+      "name": "Luz de cubierta (babor), en el mamparo de popa de la timonera",
+      "x": 735,
+      "y": 1950,
       "elevation": 0,
       "rotation": 0,
       "walls": true,
@@ -664,6 +664,123 @@
       "locked": false,
       "flags": {},
       "_key": "!scenes.lights!cpPIgqv25ByovRVE.sdRfmYmppDmcolPt"
+    },
+    {
+      "_id": "MrxPCfE1qEQKxerc",
+      "name": "Plafón de la caseta de la escalera",
+      "x": 1025,
+      "y": 1200,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.MrxPCfE1qEQKxerc"
+    },
+    {
+      "_id": "9Z6yvSXYlUmhmHPJ",
+      "name": "Luz de navegación de estribor (verde), en el alerón",
+      "x": 450,
+      "y": 120,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.5,
+        "color": "#2aff6a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.9Z6yvSXYlUmhmHPJ"
+    },
+    {
+      "_id": "YzQgD7QFMwZ4JtQV",
+      "name": "Luz de navegación de babor (roja), en el alerón",
+      "x": 450,
+      "y": 2280,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.5,
+        "color": "#ff2a2a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.YzQgD7QFMwZ4JtQV"
     }
   ],
   "regions": [
@@ -755,7 +872,7 @@
       "entryId": "IDd94316DhSx3ptV",
       "pageId": null,
       "x": 860,
-      "y": 1160,
+      "y": 1210,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -792,8 +909,8 @@
       "_id": "uvMqhw0Zeb4xQBP7",
       "entryId": "doItxeK8y7M1PufU",
       "pageId": "tG1m5PTkmBA1pvmc",
-      "x": 860,
-      "y": 1260,
+      "x": 485,
+      "y": 1135,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -895,7 +1012,7 @@
       "id": "LUG-15",
       "plano": "ferry-puente",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación (roja a babor, verde a estribor) no están: falta el preset.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>El puente.</strong> Halloway «no pelea: usa Mirada aterradora y huye hacia el puente para tomar el control del barco». Sube por la escalera del centro del salón a la <strong>cubierta superior</strong> y entra al <strong>puente</strong> (timonera) por la puerta de popa; la tripulación puede trabarla desde dentro. Adentro están el capitán y un marinero (dos de los seis tripulantes): Dominación sobre ellos, o Halloway los obliga («Para», «Suelta eso»). El <strong>puesto de gobierno</strong> está en el centro, frente a la <strong>consola</strong> bajo el ventanal de proa. Los <strong>alerones</strong> de estribor y babor (abiertos, con borda) tienen cada uno un pedestal de gobierno.</p>\n<p>De noche el puente va <strong>a oscuras</strong> (sólo las pantallas al mínimo, para no perder la visión nocturna): oscuridad alta a propósito. Las luces de navegación están en la borda de los alerones: verde a estribor (norte), roja a babor (sur). Las dos luces de cubierta cuelgan del mamparo de popa de la timonera y alumbran la cubierta superior; un poco de esa luz entra por las ventanas de popa del puente.</p>\n<p>Recorte: el ferry tiene dos puentes, uno en cada punta; éste es el de proa durante la travesía (el que gobierna). Entre la escalera del salón y el puente hay más barco que no se juega; la cubierta superior sigue hacia popa (franja rayada). Si Halloway cae en manos de la coterie, ver Desenlaces (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (1) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>",
       "moviles": []
     }
   },

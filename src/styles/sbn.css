@@ -797,6 +797,16 @@ table.sbn-tabla-horas td:first-child { width: 1%; white-space: nowrap; }
   .sbn-guion-personaje { text-align: left; }
 }
 
+/* Ilustración de un lugar sin mapa, al principio de su journal. */
+img.sbn-lugar-imagen {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.8em;
+  border: none;
+  border-radius: 3px;
+  box-shadow: var(--sbn-sombra);
+}
+
 /* Retrato del personaje al principio de su perfil. */
 img.sbn-retrato {
   float: right;

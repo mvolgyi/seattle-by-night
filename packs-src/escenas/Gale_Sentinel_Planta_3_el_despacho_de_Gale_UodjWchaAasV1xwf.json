@@ -771,9 +771,9 @@
     },
     {
       "_id": "sRcjbBFO9yr5fN3f",
-      "name": "Farola del estacionamiento (abajo, oeste)",
-      "x": 300,
-      "y": 1360,
+      "name": "Lámpara del escritorio de Gale (queda prendida)",
+      "x": 410,
+      "y": 825,
       "elevation": 0,
       "rotation": 0,
       "walls": true,
@@ -781,21 +781,21 @@
       "config": {
         "negative": false,
         "priority": 0,
-        "alpha": 0.45,
+        "alpha": 0.4,
         "angle": 360,
-        "bright": 4,
-        "dim": 12,
-        "color": "#ffb46b",
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
         "coloration": 1,
-        "attenuation": 0.6,
-        "luminosity": 0.5,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
         "saturation": 0,
         "contrast": 0,
         "shadows": 0,
         "animation": {
-          "type": null,
-          "speed": 5,
-          "intensity": 5,
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
           "reverse": false
         },
         "darkness": {
@@ -810,9 +810,9 @@
     },
     {
       "_id": "twRe2MSobV5F2cBd",
-      "name": "Farola del estacionamiento (abajo, este)",
-      "x": 1550,
-      "y": 1360,
+      "name": "LED del rack del servidor de pruebas (A1-E05)",
+      "x": 280,
+      "y": 390,
       "elevation": 0,
       "rotation": 0,
       "walls": true,
@@ -820,14 +820,53 @@
       "config": {
         "negative": false,
         "priority": 0,
-        "alpha": 0.45,
+        "alpha": 0.5,
         "angle": 360,
-        "bright": 4,
-        "dim": 12,
-        "color": "#ffb46b",
+        "bright": 0,
+        "dim": 0.8,
+        "color": "#3fd6a8",
         "coloration": 1,
         "attenuation": 0.6,
-        "luminosity": 0.5,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 6,
+          "intensity": 3,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!UodjWchaAasV1xwf.twRe2MSobV5F2cBd"
+    },
+    {
+      "_id": "u0QcnmBXdVAFmf3Y",
+      "name": "Plafón de la escalera de incendios",
+      "x": 1750,
+      "y": 325,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
         "saturation": 0,
         "contrast": 0,
         "shadows": 0,
@@ -845,7 +884,85 @@
       "hidden": false,
       "locked": false,
       "flags": {},
-      "_key": "!scenes.lights!UodjWchaAasV1xwf.twRe2MSobV5F2cBd"
+      "_key": "!scenes.lights!UodjWchaAasV1xwf.u0QcnmBXdVAFmf3Y"
+    },
+    {
+      "_id": "EAtTVdzpA2TxgcG5",
+      "name": "Luz de la cabina del ascensor A",
+      "x": 1750,
+      "y": 525,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!UodjWchaAasV1xwf.EAtTVdzpA2TxgcG5"
+    },
+    {
+      "_id": "SMXk9QVTNta9UOj3",
+      "name": "Luz de la cabina del ascensor B",
+      "x": 1750,
+      "y": 675,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!UodjWchaAasV1xwf.SMXk9QVTNta9UOj3"
     }
   ],
   "regions": [
@@ -1066,8 +1183,8 @@
       "_id": "m26UpOQO4crxSDOZ",
       "entryId": "zSkwEUUtkNGhfXun",
       "pageId": null,
-      "x": 235,
-      "y": 760,
+      "x": 1460,
+      "y": 510,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -1104,8 +1221,8 @@
       "_id": "FUo31kXd2Ttfqw7F",
       "entryId": "5hwXPdn0tUJ3NaKZ",
       "pageId": "wIpc0OR2nQf7WDFO",
-      "x": 235,
-      "y": 860,
+      "x": 310,
+      "y": 460,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -1142,8 +1259,8 @@
       "_id": "kN4K4fJajvHMPwxn",
       "entryId": "C7cxKf7kcAELzuJ1",
       "pageId": "EjJ0vfVBCjTTb0QV",
-      "x": 235,
-      "y": 960,
+      "x": 310,
+      "y": 835,
       "elevation": 0,
       "sort": 0,
       "locked": false,
@@ -1417,7 +1534,21 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 20
+        }
       },
       "flags": {
         "seattle-by-night": {
@@ -1465,7 +1596,15 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -1512,7 +1651,15 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {
@@ -1559,7 +1706,15 @@
       "hidden": true,
       "disposition": -1,
       "sight": {
-        "enabled": false
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
       },
       "flags": {
         "seattle-by-night": {

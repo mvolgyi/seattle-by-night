@@ -597,6 +597,10 @@ function construirJournal(ctx, j, carpetas) {
     if (i === 0 && rel.startsWith("content/personajes/") && fs.existsSync(path.join(RAIZ, `assets/retratos/${j.id}.webp`))) {
       html = `<img class="sbn-retrato" src="modules/${MODULO}/assets/retratos/${j.id}.webp" alt="${escapar(plano(meta.nombre ?? j.id))}">\n${html}`;
     }
+    // Ilustración de un lugar sin mapa (assets/lugares), al principio de su journal.
+    if (i === 0 && rel.startsWith("content/ciudad/") && fs.existsSync(path.join(RAIZ, `assets/lugares/${j.id}.webp`))) {
+      html = `<img class="sbn-lugar-imagen" src="modules/${MODULO}/assets/lugares/${j.id}.webp" alt="${escapar(plano(meta.nombre ?? j.id))}">\n${html}`;
+    }
     return docPagina(jid, {
       clave,
       nombre: plano(p.nombre ?? meta.nombre ?? j.id),

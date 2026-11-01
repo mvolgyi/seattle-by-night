@@ -12,7 +12,15 @@
     "disposition": 0,
     "lockRotation": true,
     "sight": {
-      "enabled": true
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
     },
     "texture": {
       "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp"

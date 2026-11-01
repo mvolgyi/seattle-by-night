@@ -12,7 +12,40 @@
     "disposition": 1,
     "lockRotation": true,
     "sight": {
-      "enabled": true
+      "enabled": true,
+      "range": 10,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.4,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#ffe6bf",
+      "coloration": 1,
+      "attenuation": 0.55,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
     },
     "texture": {
       "src": "modules/seattle-by-night/assets/tokens/PJ-01.webp"
