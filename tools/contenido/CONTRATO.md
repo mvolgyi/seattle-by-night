@@ -53,7 +53,7 @@ Carpetas: `Carpetas.id(nombre, padre)` de util.mjs acepta rutas con `/` (claves 
 `X/Y/Z`). Las rutas de `carpeta:` son claves estables (de ellas sale el `_id`): por eso siguen
 diciendo «Seattle by Night», el nombre viejo del módulo. Lo que se ve en Foundry lo pone
 `NOMBRE_CARPETA` de journals.mjs: `/Seattle by Night` → «El Expediente Ward» y
-`/El Expediente Ward` (las partes de AVE-01) → «La aventura». En la Aventura, la raíz visible
+`/El Expediente Ward` (las partes de AVE-01) → «Del prólogo al epílogo». En la Aventura, la raíz visible
 «El Expediente Ward» de cronica se funde con la raíz homónima de la Aventura (no se anida):
 Foundry no pasa de 4 niveles (`FOLDER_MAX_DEPTH`).
 

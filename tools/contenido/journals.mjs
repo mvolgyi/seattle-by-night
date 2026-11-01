@@ -486,7 +486,7 @@ const COLOR_RAIZ = {
 /** Clave de carpeta (ruta en content/) → nombre que se ve en Foundry. */
 const NOMBRE_CARPETA = {
   "/Seattle by Night": "El Expediente Ward", // la raíz: el nombre del módulo (se funde con la de la Aventura)
-  "/El Expediente Ward": "La aventura"       // las partes de AVE-01, para no repetir el nombre de la raíz
+  "/El Expediente Ward": "Del prólogo al epílogo" // las partes de AVE-01, para no repetir el nombre de la raíz
 };
 const carpetasDe = pack => new Carpetas(pack, "JournalEntry", { orden: ORDEN_CARPETAS, colores: COLOR_RAIZ });
 
