@@ -13,9 +13,10 @@ packs/
 node_modules/
 .DS_Store
 
-# Artefactos de release
+# Artefactos de release (la guía se arma con `npm run guia` y se publica aparte)
 dist/
 *.zip
+guia/index.html
 
 # Datos crudos descargados (OpenStreetMap, etc.)
 cache/

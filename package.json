@@ -10,6 +10,7 @@
     "planos": "node tools/construir-planos.mjs",
     "pack": "npm run contenido && npm run verificar && npm run verificar:contenido && npm run verificar:actores && npm run pack:cronica && npm run pack:documentos && npm run pack:personajes && npm run pack:escenas && npm run pack:firstlight && npm run pack:macros && npm run pack:aventura",
     "release": "node tools/release.mjs",
+    "guia": "node tools/construir-guia.mjs",
     "e2e": "node tools/e2e/prueba.mjs",
     "verificar:contenido": "python3 tools/verificar-contenido.py .",
     "comfy": "node tools/comfy.mjs",

@@ -15,6 +15,10 @@
  * y assets/. Nada de content/, packs-src/, tools/, cache/, los .docx ni
  * node_modules. Hay que correr `npm run pack` antes: sin packs/ no hay zip.
  *
+ * La Guía del Narrador NO va en el zip (dentro del módulo, un jugador podría
+ * abrirla por URL): se arma aparte en <salida>/guia-del-narrador.html y se sube
+ * a la release como un archivo más.
+ *
  * Después de armarlo lo lee de vuelta (unzip -Z1) y comprueba que esté todo
  * lo que nombra module.json (esmodules, scripts, styles, languages, packs,
  * license) y todo lo que el código y los packs piden por ruta
@@ -71,11 +75,12 @@ const EXCLUIR = [
   /(^|\/)\.DS_Store$/,
   /(^|\/)\.gitkeep$/,
   /\.lock$/,          // el bloqueo que deja Foundry al abrir un paquete en desarrollo
-  /^assets\/[^/]+-crudo\//  // arte sin procesar (tokens-crudo/…): se regenera, no se publica
+  /^assets\/[^/]+-crudo\//, // arte sin procesar (tokens-crudo/…): se regenera, no se publica
+  /^assets\/guia\//         // capturas de la guía: van embebidas en la guía, que se publica aparte
 ];
 
 /** Lo que nunca puede aparecer en el zip (por si alguien amplía INCLUIR). */
-const PROHIBIDO = [/^content\//, /^packs-src\//, /^tools\//, /^cache\//, /^node_modules\//, /^dist\//,
+const PROHIBIDO = [/^content\//, /^packs-src\//, /^tools\//, /^cache\//, /^node_modules\//, /^dist\//, /^guia\//,
   /^scratch\//, /\.docx$/i, /^Seattle by Night - El Expediente Ward\//];
 
 /** Lo que el módulo pide con fetch o por ruta sin que module.json lo nombre (constantes.mjs). */
@@ -166,6 +171,11 @@ if (errores.length) {
 }
 
 fs.copyFileSync(rutaManifest, path.join(salida, "module.json"));
+
+// La guía, aparte: se arma desde packs-src (lo dejó al día `npm run pack`).
+execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs")], { cwd: RAIZ, stdio: "inherit" });
+const guia = path.join(salida, "guia-del-narrador.html");
+fs.copyFileSync(path.join(RAIZ, "guia/index.html"), guia);
 const raiz = new Map();
 for (const f of enZip) {
   const k = f.includes("/") ? f.split("/")[0] + "/" : f;
@@ -174,4 +184,5 @@ for (const f of enZip) {
 const mb = (fs.statSync(zip).size / 1024 / 1024).toFixed(1);
 console.log(`✓ ${zip} · ${manifest.version} · ${enZip.size} archivos · ${mb} MB`);
 console.log(`  ${[...raiz].map(([k, n]) => `${k} ${n}`).join(" · ")}`);
+console.log(`✓ ${guia} · ${(fs.statSync(guia).size / 1024 / 1024).toFixed(1)} MB (se sube aparte)`);
 console.log(`  module.json: ${delManifest.length + (manifest.packs?.length ?? 0)} rutas · ${pedidos.size} rutas pedidas por src/, templates/ y packs: todas adentro`);
