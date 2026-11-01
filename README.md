@@ -1,9 +1,13 @@
-# Seattle by Night — El Expediente Ward
+<p><a href="https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement"><img src="assets/legal/dark-pack-logo.webp" alt="Dark Pack" width="120"></a></p>
 
-Módulo de **Foundry VTT** para **Vampiro: La Mascarada 5ª edición** sobre el sistema
-**wod5e**. Trae la ciudad de Seattle en noviembre de 2026, sus Vástagos y la aventura
-*El Expediente Ward*, con la Segunda Inquisición (FIRSTLIGHT) jugable con reglas de
-*Cazador: La Venganza*.
+# El Expediente Ward — una crónica en Seattle (fan, no oficial)
+
+Módulo fan y **no oficial** de **Foundry VTT** para **Vampiro: La Mascarada 5ª edición** sobre
+el sistema **wod5e**, publicado bajo el Dark Pack. Trae la ciudad de Seattle en noviembre de
+2026, sus Vástagos y la aventura *El Expediente Ward*, con la Segunda Inquisición (FIRSTLIGHT)
+jugable con reglas de *Cazador: La Venganza*.
+
+> This is not official World of Darkness material.
 
 | | |
 |---|---|
@@ -12,6 +16,29 @@ Módulo de **Foundry VTT** para **Vampiro: La Mascarada 5ª edición** sobre el 
 | Idioma | español |
 | Mesa | coterie de 4–5 jugadores |
 | Estado | 1.0.0 — la crónica completa importable, el Panel del Narrador, FIRSTLIGHT jugable, 21 mapas pintados con luces, muros y tokens, y la Guía del Narrador. Plan y fases en `SPEC.md` |
+
+## Cómo instalarlo
+
+El módulo **no está en el listado oficial de foundryvtt.com**. La
+[política de IA de Foundry](https://foundryvtt.com/article/ai-policy) pide que el contenido
+preparado de los paquetes del listado y del marketplace oficiales (texto, imágenes, audio) sea
+obra humana, y todo el arte de este módulo está generado con IA (ver [Licencias](#licencias)).
+La misma política deja publicar por fuera de esos canales, así que se instala a mano, pegando la
+URL del manifiesto:
+
+1. En la pantalla de configuración de Foundry, pestaña de módulos (*Add-on Modules*), tocá
+   **Instalar módulo** (*Install Module*).
+2. Abajo, en el campo de la URL del manifiesto (*Manifest URL*), pegá
+   `https://github.com/mvolgyi/seattle-by-night/releases/latest/download/module.json`
+   y tocá **Instalar**.
+3. Activalo en un mundo de *wod5e*: la primera vez que entra el Narrador, ofrece importar la
+   crónica.
+
+Las actualizaciones llegan solas por el mismo manifiesto. La Guía del Narrador
+(`guia-del-narrador.html`) se baja aparte, desde la página de cada release.
+
+Es **gratis** y lo va a seguir siendo. Si en algún momento se aceptan donaciones, van aparte:
+no compran nada exclusivo ni adelantado, todo el contenido es el mismo para todos.
 
 ## Estructura del repositorio
 
@@ -120,13 +147,29 @@ Primera versión completa.
 ## Licencias
 
 - **Código** (`src/`, `tools/`, `templates/`): MIT, ver `LICENSE`.
-- **Contenido de World of Darkness.** Material no oficial de World of Darkness, publicado
-  bajo el [Dark Pack](https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement).
+- **Contenido de World of Darkness.** Material fan y no oficial de World of Darkness,
+  publicado bajo el [Dark Pack](https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement).
   Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y
   se usan con permiso. Todos los derechos reservados. Más información en
   [worldofdarkness.com](https://www.worldofdarkness.com).
-  Es gratuito: no se vende. Se aceptan donaciones.
-- **Arte.** Todo el arte (mapas, retratos, tokens) es original, generado en local con modelos
-  de licencia abierta que permiten uso comercial (lista y licencias en `tools/MODELOS.md`).
-  No contiene arte ni logos oficiales de Paradox o White Wolf. Cada imagen tiene su
-  procedencia registrada en `assets/PROCEDENCIA.json`.
+
+  > Portions of the materials are the copyrights and trademarks of Paradox Interactive AB,
+  > and are used with permission. All rights reserved. For more information please visit
+  > [worldofdarkness.com](https://www.worldofdarkness.com).
+  >
+  > This is not official World of Darkness material.
+
+  Es gratuito: no se vende. Si se aceptan donaciones, van aparte y sin nada exclusivo.
+- **Nombre.** Durante el desarrollo el módulo se llamó «Seattle by Night — El Expediente
+  Ward». El nombre visible cambió porque *Seattle by Night* es también el de un show oficial
+  con licencia de World of Darkness, y este módulo no tiene que confundirse con material
+  oficial. El id (`seattle-by-night`), el repositorio y los ajustes no cambian, para no romper
+  los mundos que ya lo tienen.
+- **Arte generado con IA.** Todo el arte (mapas, retratos, tokens, tiles e ilustraciones) es
+  original y está **generado con IA en local**, con modelos de licencia abierta que permiten
+  uso comercial (lista y licencias en `tools/MODELOS.md`). Cada imagen tiene su procedencia
+  registrada en `assets/PROCEDENCIA.json`: modelo, licencia, workflow, semilla y prompt. No
+  contiene arte oficial de Paradox ni de White Wolf.
+- **Logo del Dark Pack.** El único logo oficial es el del Dark Pack
+  (`assets/legal/dark-pack-logo.webp`), que se muestra como lo pide el acuerdo; procedencia en
+  `assets/legal/LEEME.md`.

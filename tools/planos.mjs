@@ -478,6 +478,14 @@ const PISOS = {
     alfombra: "#46403d", guarda: "#2a2624", margen: 0.3 },
   // Rejilla de acero de la escalera de incendios: se ve el suelo de abajo.
   rejilla:  { base: "#2c3135", junta: "#4c5359", rejilla: true },
+  // Lo que no se pisa pero se ve (MAPS_SPEC §6): un derrumbe, la tierra de relleno, la
+  // mampostería de los cimientos. Son pisos con textura, no huecos negros.
+  // Escombros: ladrillo partido, revoque, vigas carbonizadas (un cuarto derrumbado).
+  escombros: { base: "#33302d", junta: "#26221f", escombros: true },
+  // Relleno: tierra apisonada con piedras y cascotes (la calle rellenada, la tierra del sótano).
+  relleno:  { base: "#3e3932", junta: "#2a2622", relleno: true },
+  // Cimiento: mampostería de piedra bruta con juntas gruesas de mortero.
+  cimiento: { base: "#5d5a54", junta: "#2a2826", var: 0.2, lado: 0.6, losa: true },
   // Departamento vecino cerrado: macizo rayado, como el edificio de al lado.
   macizo:   { macizo: true }
 };
@@ -680,6 +688,42 @@ function pisoNatural(h, m, p, r) {
   return out;
 }
 
+/** Relleno: tierra apisonada, manchas de humedad y piedras y cascotes sueltos. */
+function pisoRelleno(h, m, p, r) {
+  const out = pisoNatural(h, { ...m, tierra: true }, p, r);
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.35); i++) {
+    const x = px(h.x + r() * h.w), y = px(h.y + r() * h.h), rx = 3 + r() * 9;
+    out.push(`<ellipse cx="${x}" cy="${y}" rx="${rx.toFixed(1)}" ry="${(rx * (0.5 + r() * 0.4)).toFixed(1)}" ` +
+      `fill="${r() < 0.25 ? "#5b4a42" : variar(m.base, 0.1 + r() * 0.25)}" stroke="${m.junta}" stroke-width="1.2"/>`);
+  }
+  return out;
+}
+
+/**
+ * Escombros: el cuarto entero tapado por el derrumbe, con la densidad del montón
+ * de `escombros` (mueble): vigas carbonizadas, ladrillos partidos y revoque.
+ */
+function pisoEscombros(h, m, p, r) {
+  const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${m.base}"/>`];
+  const X = px(h.x), Y = px(h.y), W = px(h.w), H = px(h.h);
+  for (let i = 0; i < Math.round((W * H) / 900); i++) {         // manchas: hollín y polvo de revoque
+    out.push(`<ellipse cx="${(X + r() * W).toFixed(0)}" cy="${(Y + r() * H).toFixed(0)}" rx="${(15 + r() * 45).toFixed(0)}" ry="${(10 + r() * 30).toFixed(0)}" ` +
+      `fill="${r() < 0.6 ? "#1f1d1b" : "#6f6b64"}" opacity="${(0.25 + r() * 0.3).toFixed(2)}"/>`);
+  }
+  for (let i = 0; i < Math.round((W * H) / 160); i++) {         // cascotes, como el montón
+    const cx = X + 4 + r() * (W - 8), cy = Y + 4 + r() * (H - 8), u = r();
+    const color = u < 0.5 ? "#1a1918" : u < 0.8 ? "#463e39" : "#5f5c57";   // hollín, ladrillo quemado, revoque sucio
+    out.push(`<rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${(8 + r() * 40).toFixed(1)}" height="${(4 + r() * 6).toFixed(1)}" ` +
+      `transform="rotate(${(r() * 180).toFixed(0)} ${cx.toFixed(1)} ${cy.toFixed(1)})" fill="${color}" stroke="${p.tinta}" stroke-width="0.8"/>`);
+  }
+  for (let i = 0; i < Math.round(area(h.w, h.h) * 0.03) + 1; i++) {   // vigas caídas
+    const cx = X + r() * W, cy = Y + r() * H, l = px(0.8 + r() * 1.8), rot = (r() * 180).toFixed(0);
+    out.push(`<rect x="${(cx - l / 2).toFixed(1)}" y="${(cy - 8).toFixed(1)}" width="${l.toFixed(1)}" height="16" ` +
+      `transform="rotate(${rot} ${cx.toFixed(1)} ${cy.toFixed(1)})" fill="#1c1a18" stroke="#0b0a09" stroke-width="2"/>`);
+  }
+  return out;
+}
+
 /** Rejilla de acero: planchuelas paralelas al lado corto, óxido gris en los bordes. */
 function pisoRejilla(h, m, p, r) {
   const out = [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="${m.base}"/>`];
@@ -814,6 +858,8 @@ function piso(h, p, r) {
   const m = material(h.piso ?? "linoleo", p);
   if (m.macizo) return [`<rect x="${px(h.x)}" y="${px(h.y)}" width="${px(h.w)}" height="${px(h.h)}" fill="url(#rayado)"/>`];
   if (m.rejilla) return pisoRejilla(h, m, p, r);
+  if (m.escombros) return pisoEscombros(h, m, p, r);
+  if (m.relleno) return pisoRelleno(h, m, p, r);
   if (m.tierra || m.grava) return pisoNatural(h, m, p, r);
   if (m.agua) return pisoAgua(h, m, p, r);
   if (m.vacio) return pisoVacio(h, m);

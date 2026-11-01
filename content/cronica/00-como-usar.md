@@ -98,10 +98,16 @@ Las tiradas se escriben siempre igual: **Astucia + Consciencia (Dificultad 3)**,
 
 ## Aviso legal {jugadores} {#AVISO-LEGAL}
 
-*Seattle by Night — El Expediente Ward* es material **no oficial** de World of Darkness, publicado bajo el [Dark Pack](https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement).
+<p><img class="sbn-logo-dark-pack" src="modules/seattle-by-night/assets/legal/dark-pack-logo.webp" alt="Dark Pack" width="96" height="97"></p>
+
+*El Expediente Ward — una crónica en Seattle* es material fan y **no oficial** de World of Darkness, publicado bajo el [Dark Pack](https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement).
 
 Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en [worldofdarkness.com](https://www.worldofdarkness.com).
 
-Es **gratuito**: no se vende. Se aceptan donaciones.
+*Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit [worldofdarkness.com](https://www.worldofdarkness.com).*
 
-Todo el arte (mapas, retratos, tokens) es original, generado en local con modelos de licencia abierta que permiten uso comercial. No contiene arte ni logos oficiales de Paradox o White Wolf.
+*This is not official World of Darkness material.*
+
+Es **gratuito**: no se vende. Si se aceptan donaciones, van aparte y no compran nada exclusivo.
+
+Todo el arte (mapas, retratos, tokens, tiles e ilustraciones) es original, generado con IA en local con modelos de licencia abierta que permiten uso comercial. No contiene arte oficial de Paradox ni de White Wolf; el único logo es el del Dark Pack, que se muestra como lo pide el acuerdo.

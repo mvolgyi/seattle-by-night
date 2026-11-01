@@ -51,9 +51,9 @@
       "_id": "GRBdY5ZlPqo4xH3D",
       "c": [
         0,
-        100,
-        2300,
-        100
+        350,
+        1660,
+        350
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.GRBdY5ZlPqo4xH3D"
@@ -61,10 +61,10 @@
     {
       "_id": "2Ifxpl45l1pFHlgd",
       "c": [
-        0,
-        2300,
-        2300,
-        2300
+        1760,
+        350,
+        1900,
+        350
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.2Ifxpl45l1pFHlgd"
@@ -73,9 +73,9 @@
       "_id": "K9vP9jO7S1KGkD5L",
       "c": [
         0,
-        100,
-        0,
-        2300
+        2050,
+        1660,
+        2050
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.K9vP9jO7S1KGkD5L"
@@ -83,10 +83,10 @@
     {
       "_id": "pdRCSN4toSC5gIuZ",
       "c": [
-        150,
-        100,
-        150,
-        2300
+        1760,
+        2050,
+        1900,
+        2050
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.pdRCSN4toSC5gIuZ"
@@ -94,10 +94,10 @@
     {
       "_id": "72lVQRDq36lzON51",
       "c": [
-        150,
-        350,
-        1660,
-        350
+        0,
+        100,
+        0,
+        2300
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.72lVQRDq36lzON51"
@@ -105,10 +105,10 @@
     {
       "_id": "PAN1wRdbcKGoRmuY",
       "c": [
-        1760,
-        350,
-        1900,
-        350
+        0,
+        100,
+        2300,
+        100
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.PAN1wRdbcKGoRmuY"
@@ -160,10 +160,10 @@
     {
       "_id": "jARyjdnt73oNmTct",
       "c": [
-        150,
-        2050,
-        1660,
-        2050
+        0,
+        2300,
+        2300,
+        2300
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.jARyjdnt73oNmTct"
@@ -171,10 +171,10 @@
     {
       "_id": "bW3ZMQOzsDrs2RIl",
       "c": [
-        1760,
-        2050,
-        1900,
-        2050
+        2300,
+        100,
+        2300,
+        350
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.bW3ZMQOzsDrs2RIl"
@@ -183,26 +183,15 @@
       "_id": "d2gwFDaEI6GIG2nn",
       "c": [
         2300,
-        100,
+        2050,
         2300,
-        350
+        2300
       ],
       "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.d2gwFDaEI6GIG2nn"
     },
     {
       "_id": "GWiF6GP9u00q3khL",
-      "c": [
-        2300,
-        2050,
-        2300,
-        2300
-      ],
-      "flags": {},
-      "_key": "!scenes.walls!67ExO7p40rqtAUeC.GWiF6GP9u00q3khL"
-    },
-    {
-      "_id": "TSJu0RwQ601VmWQl",
       "c": [
         1660,
         350,
@@ -213,10 +202,10 @@
       "ds": 0,
       "doorSound": "metal",
       "flags": {},
-      "_key": "!scenes.walls!67ExO7p40rqtAUeC.TSJu0RwQ601VmWQl"
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.GWiF6GP9u00q3khL"
     },
     {
-      "_id": "tdKqqStFMhU7R16f",
+      "_id": "TSJu0RwQ601VmWQl",
       "c": [
         1660,
         2050,
@@ -227,10 +216,10 @@
       "ds": 0,
       "doorSound": "metal",
       "flags": {},
-      "_key": "!scenes.walls!67ExO7p40rqtAUeC.tdKqqStFMhU7R16f"
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.TSJu0RwQ601VmWQl"
     },
     {
-      "_id": "eow3McmV0PV2Dmqc",
+      "_id": "tdKqqStFMhU7R16f",
       "c": [
         2300,
         350,
@@ -242,10 +231,10 @@
       "light": 0,
       "sound": 0,
       "flags": {},
-      "_key": "!scenes.walls!67ExO7p40rqtAUeC.eow3McmV0PV2Dmqc"
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.tdKqqStFMhU7R16f"
     },
     {
-      "_id": "lAcdDBuZe8652uoE",
+      "_id": "eow3McmV0PV2Dmqc",
       "c": [
         2300,
         1050,
@@ -259,14 +248,29 @@
       "light": 0,
       "sound": 10,
       "flags": {},
+      "_key": "!scenes.walls!67ExO7p40rqtAUeC.eow3McmV0PV2Dmqc"
+    },
+    {
+      "_id": "lAcdDBuZe8652uoE",
+      "c": [
+        2300,
+        1350,
+        2300,
+        2050
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
       "_key": "!scenes.walls!67ExO7p40rqtAUeC.lAcdDBuZe8652uoE"
     },
     {
       "_id": "a5atIfQvRQFxPyAT",
       "c": [
-        2300,
-        1350,
-        2300,
+        150,
+        350,
+        150,
         2050
       ],
       "move": 20,
@@ -1684,7 +1688,7 @@
       "id": "LUG-15",
       "plano": "ferry-coches",
       "provisional": false,
-      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, la cubierta de coches.</strong> «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. <strong>Krell</strong>, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.</p>\n<p>Recorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa, franja rayada). A los lados, los <strong>casings</strong> (ventilación y máquinas, macizos) con las <strong>escaleras</strong> de estribor y babor que suben al salón (<code>ferry</code>). Los <strong>autos</strong> son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.</p>\n<p><strong>La popa abierta.</strong> La cubierta termina en la <strong>cadena de popa</strong>; el paso del centro se suelta al amarrar y por ahí entra la <strong>rampa de vehículos</strong> de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (13) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.Y53IKZpt8sl2sl65]{August Krell} · <em>oculto</em> (A4-E03): Si sobrevivió a A3-E03: con 3 pasos, viene a ayudar a David; sin ellos, a recuperar los folios.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua por la popa abierta.</p>",
+      "nota": "<p><strong>Lugar:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{La terminal de ferris y el último ferry}<br><strong>Escenas:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · El último ferry}</p>\n<p><strong>A4-E03, la cubierta de coches.</strong> «En la cubierta de coches, entre vehículos, hay pocos testigos: Dificultad de Mascarada normal.» Es el mejor sitio para pelear: Dawson y los ghouls pelean para proteger el maletín. <strong>Krell</strong>, si sobrevivió y llegó a 3 pasos en A3-E03, «aparece en la cubierta de coches para ayudar a David»; si no, aparece para recuperar los folios, como tercera fuerza.</p>\n<p>Recorte: los ~22 m de popa de la cubierta (el resto del barco sigue hacia proa: la franja del borde oeste, detrás de una cadena, no se juega). A los lados, los <strong>casings</strong> (ventilación y máquinas: se ve su techo de chapa con las rejillas, no se juegan) con las <strong>escaleras</strong> de estribor y babor que suben al salón (<code>ferry</code>). Los <strong>autos</strong> son tiles móviles (trece, en cinco carriles): se empujan, se usan de cobertura y se les rompen los vidrios; el Narrador los mueve o los saca.</p>\n<p><strong>La popa abierta.</strong> La cubierta termina en la <strong>cadena de popa</strong>; el paso del centro se suelta al amarrar y por ahí entra la <strong>rampa de vehículos</strong> de la terminal (región «Bajar por la rampa de vehículos», sólo amarrado: desactivala al zarpar). Quien llega tarde en coche y alcanza el ferry antes de soltar amarras entra por acá. Saltar al agua por la popa abierta es más bajo que desde la cubierta de pasajeros (unos 2 m), con la misma tirada para nadar.</p>\n\n<p class=\"sbn-moviles\">Los muebles móviles (13) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.</p>\n<div class=\"sbn-figuras\"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.</p><ul><li>@UUID[Actor.Y53IKZpt8sl2sl65]{August Krell} · <em>oculto</em> (A4-E03): Si sobrevivió a A3-E03: con 3 pasos, viene a ayudar a David; sin ellos, a recuperar los folios.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> Saltar al agua por la popa abierta.</p>",
       "moviles": []
     }
   },

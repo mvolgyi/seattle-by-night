@@ -1,5 +1,5 @@
 {
-  "_comentario": "LUG-14, Northline Cyber Advisory, piso 11 de una torre de oficinas de South Lake Union (la fachada de FIRSTLIGHT, Célula Puget). Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba. La suite ocupa la esquina noroeste del piso: fachada de vidrio al norte y al oeste (la franja de 1 m es el vacío de 11 pisos), el resto del piso (otros inquilinos, núcleo, aseos) es macizo. Mesas abiertas en el ángulo de las fachadas; sala de reuniones al noreste (persianas cerradas); recepción al este, que da por una puerta de vidrio al vestíbulo de ascensores y a la escalera de emergencia; detrás de una puerta con lector de tarjeta, un pasillo restringido con la armería y la sala blanca de «entrevistas». Las ventanas de la armería y de la sala blanca están tapiadas por dentro con paneles (muro).",
+  "_comentario": "LUG-14, Northline Cyber Advisory, piso 11 de una torre de oficinas de South Lake Union (la fachada de FIRSTLIGHT, Célula Puget). Todo en METROS (1 m = 100 px = 1 casilla). Norte arriba. La suite ocupa la esquina noroeste del piso: fachada de vidrio al norte y al oeste (la franja de 1 m es el vacío de 11 pisos), el resto del piso (otros inquilinos, núcleo) queda fuera del mapa; el aseo y los montantes, junto a la sala blanca, están dibujados y cerrados. Mesas abiertas en el ángulo de las fachadas; sala de reuniones al noreste (persianas cerradas); recepción al este, que da por una puerta de vidrio al vestíbulo de ascensores y a la escalera de emergencia; detrás de una puerta con lector de tarjeta, un pasillo restringido con la armería y la sala blanca de «entrevistas». Las ventanas de la armería y de la sala blanca están tapiadas por dentro con paneles (muro).",
   "planos": [
     {
       "id": "northline",
@@ -27,7 +27,8 @@
         { "nombre": "Pasillo restringido", "x": 1, "y": 9, "w": 12, "h": 1.5, "piso": "linoleo", "limpio": true, "oscura": true },
         { "nombre": "Armería", "x": 1, "y": 10.5, "w": 4, "h": 3.5, "piso": "linoleo", "limpio": true, "oscura": true },
         { "nombre": "Sala blanca de «entrevistas»", "x": 5, "y": 10.5, "w": 5.5, "h": 3.5, "piso": "azulejo", "limpio": true, "oscura": true },
-        { "nombre": "Aseos y montantes (cerrado)", "x": 10.5, "y": 10.5, "w": 2.5, "h": 3.5, "piso": "macizo" }
+        { "nombre": "Aseo de la zona restringida", "x": 10.5, "y": 10.5, "w": 2.5, "h": 2.2, "piso": "azulejo", "limpio": true, "oscura": true },
+        { "nombre": "Montantes de instalaciones (cerrado)", "x": 10.5, "y": 12.7, "w": 2.5, "h": 1.3, "piso": "hormigon", "oscura": true }
       ],
       "vanos": [
         { "x": 1, "y": 1, "w": 12, "eje": "h", "tipo": "vidrio", "nombre": "Fachada norte (mesas abiertas)" },
@@ -42,7 +43,9 @@
         { "x": 17, "y": 12, "w": 1, "eje": "v", "tipo": "puerta", "sonido": "metal", "nombre": "Puerta cortafuegos de la escalera de emergencia" },
         { "x": 11.5, "y": 9, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Puerta de la zona restringida (lector de tarjeta)" },
         { "x": 2.5, "y": 10.5, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Puerta de la armería (cerrada)" },
-        { "x": 7.3, "y": 10.5, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Puerta de la sala blanca" }
+        { "x": 7.3, "y": 10.5, "w": 0.9, "eje": "h", "tipo": "puerta", "estado": "cerrada", "sonido": "metal", "nombre": "Puerta de la sala blanca" },
+        { "x": 11.6, "y": 10.5, "w": 0.8, "eje": "h", "tipo": "puerta", "estado": "cerrada", "nombre": "Aseo de la zona restringida" },
+        { "x": 11.6, "y": 12.7, "w": 0.7, "eje": "h", "tipo": "puerta", "estado": "trabada", "sonido": "metal", "nombre": "Registro de los montantes (panel de servicio, con llave)" }
       ],
       "muebles": [
         { "tipo": "escritorio", "x": 3, "y": 3.4, "w": 1.6, "h": 0.8, "frente": "n", "desc": "a tall white standing desk with a monitor" },
@@ -78,7 +81,10 @@
         { "tipo": "lampara-uv", "fijo": true, "x": 5.15, "y": 12.7, "w": 0.22, "h": 0.8, "desc": "a wall-mounted high-intensity lamp panel, switched off" },
         { "tipo": "lampara-uv", "fijo": true, "x": 10.13, "y": 11, "w": 0.22, "h": 0.8, "desc": "a wall-mounted high-intensity lamp panel, switched off" },
         { "tipo": "lampara-uv", "fijo": true, "x": 10.13, "y": 12.7, "w": 0.22, "h": 0.8, "desc": "a wall-mounted high-intensity lamp panel, switched off" },
-        { "tipo": "lampara-uv", "fijo": true, "x": 6.8, "y": 13.63, "w": 2, "h": 0.22, "desc": "a wall-mounted high-intensity lamp panel, switched off" }
+        { "tipo": "lampara-uv", "fijo": true, "x": 6.8, "y": 13.63, "w": 2, "h": 0.22, "desc": "a wall-mounted high-intensity lamp panel, switched off" },
+        { "tipo": "inodoro", "x": 12.25, "y": 11.5, "w": 0.62, "h": 0.42, "contra": "e" },
+        { "tipo": "lavabo", "x": 10.65, "y": 11.0, "w": 0.45, "h": 0.5 },
+        { "tipo": "maquina", "x": 10.7, "y": 12.95, "w": 2.1, "h": 0.85, "desc": "vertical service ducts, pipes and cable trays in a concrete shaft" }
       ],
       "luces": [
         { "x": 16.5, "y": 6.5, "preset": "neon", "nombre": "Panel retroiluminado del logo (1 de las 3 luces)" },

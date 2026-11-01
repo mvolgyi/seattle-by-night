@@ -464,8 +464,14 @@ function maquetarDocumento(soporte, md, render, { imagen } = {}) {
 
 /**
  * Las rutas de `carpeta:` («Seattle by Night/Vástagos/Brujah») las resuelve
- * `Carpetas.id` de util.mjs (claves «/X», «X/Y», «X/Y/Z»); acá sólo el orden
- * y el color de las raíces.
+ * `Carpetas.id` de util.mjs (claves «/X», «X/Y», «X/Y/Z»); acá sólo el orden,
+ * el color de las raíces y el nombre visible.
+ *
+ * Las rutas de content/ son CLAVES, como los IDs: de ellas sale el _id de cada
+ * carpeta, y cambiarlas duplicaría las carpetas de un mundo ya importado. Por
+ * eso siguen diciendo «Seattle by Night» (el nombre viejo del módulo) y lo que
+ * ve el Narrador se cambia en NOMBRE_CARPETA: con el mismo _id, reimportar
+ * sólo las renombra.
  */
 const ORDEN_CARPETAS = [
   "Seattle by Night", "El Expediente Ward", "Documentos del mundo", "Ayudas de juego",
@@ -476,6 +482,11 @@ const COLOR_RAIZ = {
   "El Expediente Ward": "#8f1d24",
   "Documentos del mundo": "#2b3036",
   "Ayudas de juego": "#6b4a1f"
+};
+/** Clave de carpeta (ruta en content/) → nombre que se ve en Foundry. */
+const NOMBRE_CARPETA = {
+  "/Seattle by Night": "El Expediente Ward", // la raíz: el nombre del módulo (se funde con la de la Aventura)
+  "/El Expediente Ward": "La aventura"       // las partes de AVE-01, para no repetir el nombre de la raíz
 };
 const carpetasDe = pack => new Carpetas(pack, "JournalEntry", { orden: ORDEN_CARPETAS, colores: COLOR_RAIZ });
 
@@ -858,7 +869,10 @@ export async function construir(ctx) {
   escribir("cronica", construirPistas(ctx, carpetas.cronica));
   escribir("cronica", construirTrackers(ctx, carpetas.cronica));
 
-  for (const c of Object.values(carpetas)) c.escribir();
+  for (const c of Object.values(carpetas)) {
+    for (const [clave, carpeta] of c.mapa) carpeta.name = NOMBRE_CARPETA[clave] ?? carpeta.name;
+    c.escribir();
+  }
   for (const [pack, n] of Object.entries(cuenta)) {
     console.log(`${pack}: ${n.j} journals, ${n.p} páginas, ${carpetas[pack].mapa.size} carpetas`);
   }

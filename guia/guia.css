@@ -1,4 +1,4 @@
-/* Guía del Narrador — Seattle by Night
+/* Guía del Narrador — El Expediente Ward
    Copiada de la guía de DVV y llevada a la paleta del módulo (sbn.css, doc 15):
    negro mojado, pizarra, azul de puerto, la luz de sodio de las farolas y un
    acento carmesí para la Mascarada. Bandas de mitad texto y mitad imagen,
@@ -91,7 +91,7 @@ h5 { font-family: var(--titulo); font-weight: 600; font-size: 17px; margin: 1.2e
 .hero-texto { position: relative; padding: clamp(32px, 6vw, 96px) var(--margen); max-width: 64ch; }
 .hero-texto p { color: var(--texto-2); }
 .hero h1 { margin: 0 0 24px; font-weight: 400; }
-.hero h1 span { display: block; font-family: var(--serif); font-weight: 700; font-size: clamp(54px, 8vw, 120px); line-height: 0.95; color: var(--texto); letter-spacing: -0.01em; }
+.hero h1 span { display: block; font-family: var(--serif); font-weight: 700; font-size: clamp(46px, 6.1vw, 92px); line-height: 0.95; color: var(--texto); letter-spacing: -0.01em; }
 .hero h1 small { display: block; margin-top: 10px; font-family: var(--titulo); font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; font-size: clamp(16px, 1.8vw, 24px); color: var(--sangre); }
 .hero .cta { margin-top: 8px; }
 
@@ -107,6 +107,11 @@ h5 { font-family: var(--titulo); font-weight: 600; font-size: 17px; margin: 1.2e
 .cuerpo, .banda-cuerpo, .bf-texto, .sub-cuerpo { min-width: 0; overflow-wrap: break-word; }
 .pie { padding: 48px var(--margen); border-top: 1px solid var(--panel-3); color: var(--suave); font-size: 14px; }
 .pie p { margin: 0 0 8px; max-width: 90ch; }
+.pie:has(.pie-logo) { display: flex; gap: 28px; align-items: flex-start; }
+.pie-logo { flex: none; display: block; line-height: 0; }
+.pie-logo img { width: 96px; height: auto; }
+.pie-texto { min-width: 0; }
+@media (max-width: 640px) { .pie:has(.pie-logo) { flex-direction: column; gap: 16px; } }
 .indice { display: flex; flex-wrap: wrap; gap: 4px; margin: 24px 0 0; }
 .indice a { font-family: var(--titulo); font-weight: 500; font-size: 15px; background: var(--panel-2); padding: 8px 12px; text-decoration: none; }
 .indice a b { font-weight: 600; color: var(--sodio); margin-right: 8px; font-size: 13px; letter-spacing: 0.04em; }

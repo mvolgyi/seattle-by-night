@@ -1,5 +1,5 @@
 /**
- * Seattle by Night — punto de entrada del módulo.
+ * El Expediente Ward (seattle-by-night) — punto de entrada del módulo.
  *
  * Sólo cablea: las constantes viven en constantes.mjs y cada mecánica en su
  * propio archivo.
@@ -27,7 +27,7 @@ import { asegurarTextos, textosListos } from "./textos.mjs";
 export { SBN, Datos, Estado, Botones, Indicador, Panel };
 
 Hooks.once("init", () => {
-  console.log(`${SBN.ID} | Inicializando Seattle by Night`);
+  console.log(`${SBN.ID} | Inicializando El Expediente Ward`);
   Importacion.registrarSettings();
   Estado.registrarSettings();
   Indicador.registrarSettings();

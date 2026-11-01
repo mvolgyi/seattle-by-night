@@ -1,7 +1,7 @@
 {
   "id": "seattle-by-night",
-  "title": "Seattle by Night — El Expediente Ward",
-  "description": "<p><strong>Seattle by Night</strong> es un módulo de contenido fan para <em>Vampiro: La Mascarada 5ª edición</em> sobre el sistema wod5e: la ciudad de Seattle en noviembre de 2026, sus Vástagos y la aventura <strong>El Expediente Ward</strong>, con la Segunda Inquisición (FIRSTLIGHT) jugable con reglas de <em>Cazador: La Venganza</em>.</p><p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.</p>",
+  "title": "El Expediente Ward — una crónica en Seattle (fan, no oficial)",
+  "description": "<p><strong>El Expediente Ward</strong> es una crónica fan, no oficial, para <em>Vampiro: La Mascarada 5ª edición</em> sobre el sistema wod5e: la ciudad de Seattle en noviembre de 2026, sus Vástagos y una aventura completa, con la Segunda Inquisición (FIRSTLIGHT) jugable con reglas de <em>Cazador: La Venganza</em>.</p><p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.</p><p>Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com.</p><p>This is not official World of Darkness material.</p>",
   "version": "1.0.0",
   "authors": [
     {
@@ -59,7 +59,7 @@
   "packs": [
     {
       "name": "aventura",
-      "label": "Seattle by Night — Importar la crónica",
+      "label": "El Expediente Ward — Importar la crónica",
       "path": "packs/aventura",
       "type": "Adventure",
       "system": "wod5e",
@@ -70,7 +70,7 @@
     },
     {
       "name": "cronica",
-      "label": "Seattle by Night — Crónica y ciudad",
+      "label": "El Expediente Ward — Crónica y ciudad",
       "path": "packs/cronica",
       "type": "JournalEntry",
       "system": "wod5e",
@@ -81,7 +81,7 @@
     },
     {
       "name": "documentos",
-      "label": "Seattle by Night — Documentos y ayudas",
+      "label": "El Expediente Ward — Documentos y ayudas",
       "path": "packs/documentos",
       "type": "JournalEntry",
       "system": "wod5e",
@@ -92,7 +92,7 @@
     },
     {
       "name": "personajes",
-      "label": "Seattle by Night — Personajes",
+      "label": "El Expediente Ward — Personajes",
       "path": "packs/personajes",
       "type": "Actor",
       "system": "wod5e",
@@ -103,7 +103,7 @@
     },
     {
       "name": "escenas",
-      "label": "Seattle by Night — Escenas",
+      "label": "El Expediente Ward — Escenas",
       "path": "packs/escenas",
       "type": "Scene",
       "system": "wod5e",
@@ -125,7 +125,7 @@
     },
     {
       "name": "macros",
-      "label": "Seattle by Night — Macros",
+      "label": "El Expediente Ward — Macros",
       "path": "packs/macros",
       "type": "Macro",
       "system": "wod5e",
@@ -153,7 +153,7 @@
   "download": "https://github.com/mvolgyi/seattle-by-night/releases/download/v1.0.0/module.zip",
   "packFolders": [
     {
-      "name": "Seattle by Night",
+      "name": "El Expediente Ward",
       "sorting": "m",
       "color": "#1f3a4d",
       "packs": [
@@ -163,7 +163,7 @@
       ],
       "folders": [
         {
-          "name": "El Expediente Ward",
+          "name": "Contenido por tipo",
           "sorting": "m",
           "packs": [
             "cronica",
@@ -183,7 +183,7 @@
     },
     "postImport": false,
     "world": {
-      "description": "<p>Vampiro: La Mascarada 5ª edición — Seattle by Night y la aventura El Expediente Ward, con FIRSTLIGHT jugable con reglas de Cazador: La Venganza. Material no oficial publicado bajo el Dark Pack.</p>"
+      "description": "<p>Vampiro: La Mascarada 5ª edición — El Expediente Ward, una crónica en Seattle, con FIRSTLIGHT jugable con reglas de Cazador: La Venganza. Material fan, no oficial, publicado bajo el Dark Pack. This is not official World of Darkness material.</p>"
     }
   }
 }

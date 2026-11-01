@@ -277,9 +277,15 @@ Canon (doc 15, adaptado por SPEC §4.4):
 
   | Mapa | sat | lum | nota |
   |---|---|---|---|
-  | `helen.esquema` | 8.8 | 26.3 | esquema vectorial; la luminancia baja la ponen los departamentos cerrados rayados |
+  | `helen.esquema` (con macizos) | 8.8 | 26.3 | esquema vectorial; la luminancia baja la ponían los departamentos cerrados rayados |
   | `helen` (klein, sin detalle ni grading) | 6.5 | 27.9 | prueba de SPEC §4.5: casi gris, se descartó |
   | **`helen`** (klein + detalle + grading) | **9.9** | **26.2** | **referencia del set** (2026-10-30); los macizos (#1b1f23, ~40 % del mapa) pesan en la media |
+  | `helen` con los vecinos 3B–3D pintados (2026-11-01, `parchar-planos`) | 8.8 | 36.4 | sin macizos la media sube: el rango de arriba se midió con ellos. Por cuarto, lo nuevo cae donde lo viejo: salón del 3A sat 7.1 lum 43.5, estudio 9.4/41.0; salones del 3B, 3C y 3D 7.6–9.5 / 37.4–44.5 |
+
+  Desde que no hay macizos negros (2026-11-01), la luminancia media de un mapa sube 1–10 puntos
+  (helen 36, subterraneo 35, el resto 27–32). El rango de 22–30 vale para los mapas pintados
+  enteros con sus macizos; para un repintado acotado se compara **por cuarto** con los cuartos
+  viejos del mismo piso (es lo que hace `igualarTonos`).
 
 - **Cenital estricto y a sangre**: ningún canto lateral de muro, sin borde, marco, viñeta ni
   margen.
@@ -327,6 +333,17 @@ packs-src/escenas/*.json                escena + muros + puertas + ventanas + vi
 - **Retoque determinista permitido:** cerrar con `magick … -composite` un hueco que el modelo
   abrió donde el plano tiene muro, clonando un tramo del mismo muro pintado. Se anota en el
   reporte de entrega.
+- **Nada de huecos negros.** Lo que está del otro lado de una puerta cerrada se dibuja como habitación
+  real, amueblada, con su puerta `cerrada` o `trabada` y `oscura: true` si no tiene luz (los vecinos de
+  Helen, los aseos, las salas técnicas); lo que no se pisa se pinta como lo que es (`escombros`,
+  `relleno`, `cimiento`, el hormigón del núcleo de la torre, el techo de chapa de los casings); y la
+  parte de un barco que «no se juega» es la continuación de la cubierta detrás de una cadena
+  (`baranda`). `macizo` queda sólo para un tabique fino (la mampara de la Galería).
+- **Repintado acotado** (`node tools/parchar-planos.mjs --solo <id> --forzar`): cuando cambia una parte
+  del plano, se repinta sólo esa parte con el resto del mapa como contexto (klein sobre una ventana
+  de la zona + la pasada de detalle sólo en los mosaicos que la tocan + grading), y se compone
+  dentro de la máscara de la zona: fuera de ella el mapa queda idéntico. Zonas y semillas en
+  `arte.config.json` → `mapas.<id>.parche`; cada pasada se suma a `parches` en `PROCEDENCIA.json`.
 - **Procedencia:** cada mapa pintado se registra en `assets/PROCEDENCIA.json` (modelo,
   licencia, workflow, semilla, prompt). Sólo modelos permitidos por CLAUDE.md.
 - **Nombres:** el id del plano ES el nombre del archivo y el id de la escena (`helen.webp`,
@@ -347,7 +364,7 @@ packs-src/escenas/*.json                escena + muros + puertas + ventanas + vi
 | `sujeto`, `sobreSuelo` | opcionales: el lugar en inglés para los prefijos (si no, sale de `exterior` o de la paleta) y los metros sobre el suelo de afuera (si no, se deduce de los nombres de `exteriores`) |
 | `curvas[]` | `{ tipo, puntos, cerrada? }`: muros, vidrios o barandas sueltos como polilínea (ver `contorno`) |
 | `nota` | nota del Narrador (markdown; va a los flags de la escena, con la lista de móviles) |
-| `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros?, contorno?, oscura? }` — `oscura: true`: a oscuras a propósito (armario, baño cerrado, zona restringida apagada); sólo lo usa `revisar:escenas` para no avisar «no le llega ninguna luz». Piso: `tablas`, `tablas-alfombra`, `tablas-quemadas`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `marmol`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `ladrillo`, `chapa` (plancha diamantada), `cubierta` (de barco), `goma` (pasarela), `ascensor` (cabina), `tierra`, `grava`, `agua`, `vacio` (hueco, caída), `rejilla` (escalera de incendios), `macizo` (departamento cerrado, rayado); `vetas`: `h`·`v`; `sinMuros`: sólo piso; `contorno`: polígono que reemplaza al rectángulo (puntos `[x, y]` o `[x, y, tipo]` = tipo del tramo que sale de ese punto, o arcos `{ arco: [cx, cy, r, desde°, hasta°], tipo? }`): el piso se recorta y los muros salen en segmentos rectos para Foundry. El nombre (en español) da el rol en el prompt («Porche», «Cubierta», «Sala de calderas»…) |
+| `habitaciones[]` | `{ nombre, x, y, w, h, piso, vetas?, limpio?, sinMuros?, contorno?, oscura? }` — `oscura: true`: a oscuras a propósito (armario, baño cerrado, zona restringida apagada); sólo lo usa `revisar:escenas` para no avisar «no le llega ninguna luz». Piso: `tablas`, `tablas-alfombra`, `tablas-quemadas`, `parquet`, `linoleo`, `baldosa`, `azulejo`, `terrazo`, `marmol`, `moqueta`, `tecnico`, `hormigon`, `piedra`, `ladrillo`, `chapa` (plancha diamantada), `cubierta` (de barco), `goma` (pasarela), `ascensor` (cabina), `tierra`, `grava`, `agua`, `vacio` (hueco, caída), `rejilla` (escalera de incendios), `escombros` (un cuarto derrumbado), `relleno` (tierra apisonada con piedras y cascotes), `cimiento` (mampostería de piedra bruta), `macizo` (bloque cerrado sin interior: ya no lo usa ningún plano, ver abajo); `vetas`: `h`·`v`; `sinMuros`: sólo piso; `contorno`: polígono que reemplaza al rectángulo (puntos `[x, y]` o `[x, y, tipo]` = tipo del tramo que sale de ese punto, o arcos `{ arco: [cx, cy, r, desde°, hasta°], tipo? }`): el piso se recorta y los muros salen en segmentos rectos para Foundry. El nombre (en español) da el rol en el prompt («Porche», «Cubierta», «Sala de calderas»…) |
 | `vanos[]` | `{ x, y, w, eje, tipo, estado?, sonido?, sonoro?, nombre }` — `abierto`, `puerta`, `secreta`, `puerta-vidrio`, `ventana`, `hueco` (ventana sin vidrio), `vidrio`, `baranda`, `arcada`; `estado`: `cerrada`·`abierta`·`trabada`; `sonido`: clave de `CONFIG.Wall.doorSounds` (`woodBasic`, `woodCreaky`, `woodHeavy`, `metal`, `industrial`, `slidingWood`…; por defecto, el de la paleta) |
 | `muebles[]` | `{ tipo, x, y, w, h, desc?, fijo?, luz?, luzIdeal?, luzApagada?, cabecera?, frente?, contra?, tile?, hacia?, material?, anomaly?, oculto? }` — `oculto: true` en un móvil con tile: el tile entra oculto (la furgoneta y el dron de FIRSTLIGHT, que sólo existen en la redada o en la vigilancia) |
 | `luces[]` | `{ x, y, preset, presetIdeal?, apagada?, nombre? }` — presets en `tools/iluminacion.mjs`, radios en metros; `presetIdeal` se usa si existe (si no, `preset` y `construir-planos` avisa); `apagada: true` crea la luz apagada (`hidden`) |

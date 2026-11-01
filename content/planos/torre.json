@@ -22,7 +22,7 @@
         { "nombre": "Sala del Consejo", "x": 1, "y": 1, "w": 12, "h": 11, "piso": "parquet", "limpio": true },
         { "nombre": "Despacho de Halloway", "x": 13, "y": 1, "w": 7, "h": 4, "piso": "parquet", "limpio": true },
         { "nombre": "Ascensor privado (cabina)", "x": 13, "y": 5, "w": 2, "h": 2, "piso": "ascensor", "limpio": true },
-        { "nombre": "Núcleo de la torre (cerrado)", "x": 15, "y": 5, "w": 5, "h": 2, "piso": "macizo" },
+        { "nombre": "Núcleo de la torre (hormigón: ascensores y montantes)", "x": 15, "y": 5, "w": 5, "h": 2, "piso": "hormigon", "oscura": true },
         { "nombre": "Vestíbulo de seguridad", "x": 13, "y": 7, "w": 4, "h": 5, "piso": "marmol", "limpio": true },
         { "nombre": "Escalera de emergencia", "x": 17, "y": 7, "w": 3, "h": 5, "piso": "hormigon" }
       ],
