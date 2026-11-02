@@ -43,6 +43,7 @@ import { RAIZ, MODULO } from "./util.mjs";
 import { ID, journals, fichas } from "./contenido/ids.mjs";
 import { pistasPorEscena, archivoDe } from "./contenido/musica.mjs";
 import { EN, packDe, leerContenido } from "./contenido/idioma.mjs";
+import { tratar } from "./duotono.mjs";
 
 {
   const i = process.argv.indexOf("--idioma");
@@ -91,10 +92,14 @@ const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
 const CACHE = path.join(RAIZ, "cache/guia");
 /** Ancho máximo al embeber, por carpeta: los mapas no necesitan 2400 px para leerse en la guía. */
-const ANCHO = { mapas: 1400, lugares: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200, legal: 300 };
+const ANCHO = { mapas: 1400, lugares: 1400, retratos: 560, tokens: 320, handouts: 1200, portadas: 1920, "guia/capturas": 1200, legal: 300,
+  // Las fotos tratadas de las bandas (tools/duotono.mjs): ocupan media pantalla.
+  guia: 1100, "guia/retratos": 640, "guia/mapas": 960, "guia/lugares": 1000 };
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
 const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const avisos = [];
+// Las fotos de las bandas (assets/guia/, tools/duotono.mjs): lo que falta o cambió se trata ahora.
+tratar({ log: console.log });
 
 /* ---------------------------------------------------------------- datos */
 /** Documentos de un pack de packs-src/ cuyo _key empieza con `prefijo`. */
@@ -231,8 +236,18 @@ function foto(rel) {
   if (!FOTOS.has(rel)) FOTOS.set(rel, `ft-${crypto.createHash("md5").update(rel).digest("hex").slice(0, 8)}`);
   return FOTOS.get(rel);
 }
-const retrato = id => foto(`retratos/${id}.webp`);
+/**
+ * La foto de una banda: la versión tratada de assets/guia/ (tools/duotono.mjs,
+ * que construir-guia corre antes de armar) o, si no está, la original.
+ */
+const TRATADA = { "portadas/portada.webp": "guia/portada.webp", "handouts/MAP-00.webp": "guia/seattle.webp" };
+const fotoBanda = rel => rel ? (foto(TRATADA[rel] ?? `guia/${rel}`) ?? foto(rel)) : null;
+const retrato = id => fotoBanda(`retratos/${id}.webp`);
+/** El mapa tal cual (para ampliarlo en el visor) y el tratado (para la banda). */
 const mapaDe = id => foto(`mapas/${id}.webp`);
+const mapaBanda = id => fotoBanda(`mapas/${id}.webp`);
+/** El rótulo sobre la foto: la etiqueta de contorno y el nombre en mayúsculas (lo pone el CSS). */
+const rotulo = (etiqueta, nombre) => `<figcaption>${etiqueta ? `<span class="etiqueta">${esc(etiqueta)}</span>` : ""}<span class="nombre">${esc(nombre)}</span></figcaption>`;
 /** Lo que no tiene imagen en assets/: se lista al final del build (es arte que falta, no un error de la guía). */
 const SIN_ARTE = [];
 /**
@@ -299,50 +314,47 @@ const NAV = EN
   : [["libro", "El libro"], ["cronica", "La aventura"], ["termometro", "Termómetro y Reloj"], ["dramatis", "Personajes"], ["ciudad", "La ciudad"], ["documentos", "Documentos"], ["firstlight", "FIRSTLIGHT"], ["pantalla", "Pantalla"], ["foundry", "En Foundry"]];
 const MESA = L("La mesa", "The table");
 const navLinks = NAV.map(([id, t]) => `<a href="#${id}">${t}</a>`).join("");
-const portada = foto("portadas/portada.webp");
-const cabecera = EN ? `
+const portada = fotoBanda("portadas/portada.webp");
+const cabecera = `
 <header class="tablero" id="inicio">
   <div class="fila">
-    <a class="t-logo" href="#inicio" aria-label="Home">WF</a>
-    <nav class="t-nav" aria-label="Sections">${navLinks}</nav>
+    <a class="t-logo" href="#inicio" aria-label="${L("Inicio", "Home")}">${L("EW", "WF")}</a>
+    <nav class="t-nav" aria-label="${L("Secciones", "Sections")}">${navLinks}</nav>
     <button class="t-accion" type="button" data-abrir-mesa>${MESA}</button>
   </div>
-  <div class="hero ${portada ?? ""}" role="img" aria-label="A man in a coat looks out over the Seattle docks in the rain">
+  <div class="banda-hero">
+    <figure class="hero-foto t-shutter ${portada ?? ""}" role="img" aria-label="${L("Noche sobre Elliott Bay: las grúas del puerto y una boya roja bajo la lluvia", "Night over Elliott Bay: the harbor cranes and a red buoy in the rain")}">
+      <figcaption><span class="etiqueta">${L("Seattle, noviembre de 2026", "Seattle, November 2026")}</span>${L(`<span class="grande">El Expediente</span><span class="grande">Ward</span>`, `<span class="grande">The Ward</span><span class="grande">File</span>`)}</figcaption>
+    </figure>
     <div class="hero-texto">
-      <p class="kicker">Vampire: The Masquerade 5th Edition · Storyteller Guide</p>
-      <h1><span>The Ward File</span><small>A Seattle chronicle (fan,&nbsp;unofficial)</small></h1>
-      <p>November 2026. Someone broke into an apartment in Ballard and stole the files of a journalist who has spent years telling the stories of people who don't age. Since that night, the city has been calling in old debts: a brother nobody knew about, a Primogen who wants the throne and a federal agency that is no longer content to watch.</p>
-      <p>This guide holds the book, the adventure scene by scene, the FIRSTLIGHT interludes, every character with their portrait, the city with its maps and the documents to hand out. It opens from disk and keeps track of your game in this browser.</p>
-      <button class="cta" type="button" data-abrir-mesa>Open the table <span aria-hidden="true">→</span></button>
-    </div>
-  </div>
-</header>` : `
-<header class="tablero" id="inicio">
-  <div class="fila">
-    <a class="t-logo" href="#inicio" aria-label="Inicio">EW</a>
-    <nav class="t-nav" aria-label="Secciones">${navLinks}</nav>
-    <button class="t-accion" type="button" data-abrir-mesa>La mesa</button>
-  </div>
-  <div class="hero ${portada ?? ""}" role="img" aria-label="Un hombre de abrigo mira los muelles de Seattle bajo la lluvia">
-    <div class="hero-texto">
-      <p class="kicker">Vampiro: La Mascarada 5ª · Guía del Narrador</p>
-      <h1><span>El Expediente Ward</span><small>Una crónica en&nbsp;Seattle (fan,&nbsp;no&nbsp;oficial)</small></h1>
-      <p>Noviembre de 2026. Alguien robó de un apartamento de Ballard el archivo de una periodista que lleva años contando historias de gente que no envejece. Desde esa noche, la ciudad cobra deudas viejas: un hermano que nadie conocía, un Primogénito que quiere el trono y una agencia federal que ya no se conforma con mirar.</p>
-      <p>Esta guía tiene el libro, la aventura escena por escena, los interludios de FIRSTLIGHT, cada personaje con su retrato, la ciudad con sus mapas y los documentos para entregar. Se abre desde el disco y guarda la partida en este navegador.</p>
-      <button class="cta" type="button" data-abrir-mesa>Abrir la mesa <span aria-hidden="true">→</span></button>
+      <p class="kicker">${L("El Expediente Ward · Guía del Narrador", "The Ward File · Storyteller Guide")}</p>
+      <h1>${L("Una crónica de Vampiro en Seattle", "A Vampire chronicle in Seattle")}</h1>
+      <p class="hero-fan">${L("Para Vampiro: La Mascarada 5ª (fan, no oficial)", "For Vampire: The Masquerade 5th Edition (fan, unofficial)")}</p>
+      <p>${L("Noviembre de 2026. Alguien robó de un apartamento de Ballard el archivo de una periodista que lleva años contando historias de gente que no envejece. Desde esa noche, la ciudad cobra deudas viejas: un hermano que nadie conocía, un Primogénito que quiere el trono y una agencia federal que ya no se conforma con mirar.",
+        "November 2026. Someone broke into an apartment in Ballard and stole the files of a journalist who has spent years telling the stories of people who don't age. Since that night, the city has been calling in old debts: a brother nobody knew about, a Primogen who wants the throne and a federal agency that is no longer content to watch.")}</p>
+      <p>${L("Esta guía tiene el libro, la aventura escena por escena, los interludios de FIRSTLIGHT, cada personaje con su retrato, la ciudad con sus mapas y los documentos para entregar. Se abre desde el disco y guarda la partida en este navegador.",
+        "This guide holds the book, the adventure scene by scene, the FIRSTLIGHT interludes, every character with their portrait, the city with its maps and the documents to hand out. It opens from disk and keeps track of your game in this browser.")}</p>
+      <button class="cta" type="button" data-abrir-mesa>${L("Abrir la mesa", "Open the table")} <span aria-hidden="true">→</span></button>
     </div>
   </div>
 </header>`;
 
 /* ------------------------------------------------------- 2. el libro */
 const LIBRO = ["VERDAD", "COMO-USAR", "SEGURIDAD", "CAP-00", "CAP-01", "PJS-COTERIE", "GANCHOS", "TONO-DAVID", "INDICE-IDS"];
+const fotoLibro = fotoBanda("lugares/LUG-12.webp");
 const libro = `
-<section class="pagina" id="libro">
-  <p class="kicker">${L("Antes de empezar", "Before you begin")}</p>
-  <h2>${L("El libro", "The book")}</h2>
-  <p class="standfirst">${L("Lo que el Narrador tiene que saber antes de la primera noche: la verdad detrás de la aventura y su esquema, cómo usar el libro, las herramientas de seguridad, la ficción de apertura, los personajes y la coterie, los ganchos y el registro de IDs.",
-    "What the Storyteller needs to know before the first night: the truth behind the adventure and its outline, how to use the book, the safety tools, the opening fiction, the characters and the coterie, the hooks and the ID index.")}</p>
-  ${LIBRO.map((id, i) => journalPlegado(id, { abierto: i === 0 })).join("")}
+<section class="bandas" id="libro">
+  <article class="banda-foto${fotoLibro ? "" : " sin-imagen"}">
+    ${fotoLibro ? `<figure class="bf-foto ${fotoLibro}">${rotulo(L("Antes de empezar", "Before you begin"), L("El libro", "The book"))}</figure>` : ""}
+    <div class="bf-texto">
+      <p class="kicker">${L("Antes de empezar", "Before you begin")}</p>
+      <h2>${L("El libro", "The book")}</h2>
+      <p class="standfirst">${L("Lo que el Narrador tiene que saber antes de la primera noche: la verdad detrás de la aventura y su esquema, cómo usar el libro, las herramientas de seguridad, la ficción de apertura, los personajes y la coterie, los ganchos y el registro de IDs.",
+        "What the Storyteller needs to know before the first night: the truth behind the adventure and its outline, how to use the book, the safety tools, the opening fiction, the characters and the coterie, the hooks and the ID index.")}</p>
+      <nav class="indice" aria-label="${L("El libro", "The book")}">${LIBRO.filter(id => J.has(id)).map(id => `<a href="#${anclaJournal(J.get(id))}">${esc(J.get(id).name)}</a>`).join("")}</nav>
+    </div>
+  </article>
+  <div class="pagina sin-arriba">${LIBRO.map((id, i) => journalPlegado(id, { abierto: i === 0 })).join("")}</div>
 </section>`;
 
 /* ------------------------------------------------------- 3. la aventura */
@@ -363,7 +375,7 @@ const paneles = partes.map((d, i) => {
   const intro = ps.filter(esIntro);
   const resto = ps.filter(p => !esIntro(p));
   const conAncla = resto.some(p => idDe(p));
-  const img = foto(IMAGEN_PARTE[idDe(d)]);
+  const img = fotoBanda(IMAGEN_PARTE[idDe(d)]);
   if (!img) avisos.push(`${idDe(d)}: falta assets/${IMAGEN_PARTE[idDe(d)] ?? "(sin imagen asignada en IMAGEN_PARTE)"}`);
   const bandas = resto.map(p => {
     const id = anclaPagina(d, p);
@@ -371,8 +383,8 @@ const paneles = partes.map((d, i) => {
     return `<div class="banda${idDe(p) ? " escena" : ""}" id="${id}"><div class="banda-cab"><h3>${esc(p.name)}</h3>${marca}</div><div class="banda-cuerpo">${htmlPagina(p)}</div></div>`;
   }).join("");
   return `<div class="panel${i === 0 ? " activa" : ""}" data-panel="${anclaJournal(d)}" id="${anclaJournal(d)}">
-    <article class="banda-foto acto">
-      <figure class="bf-foto ${img ?? ""}"><figcaption>${esc(corto(d.name))}</figcaption></figure>
+    <article class="banda-foto acto invertido">
+      <figure class="bf-foto ${img ?? ""}">${rotulo(idDe(d) === "FIRSTLIGHT-INTERLUDIOS" ? "FIRSTLIGHT" : L("La aventura", "The adventure"), corto(d.name))}</figure>
       <div class="bf-texto"><p class="kicker">${esc(corto(d.name))}</p><h3 class="panel-titulo">${esc(largo(d.name) || d.name)}</h3>${conAncla ? "" : hecho(anclaJournal(d), L("Leída", "Read"))}${intro.map(p => `<div id="${anclaPagina(d, p)}">${htmlPagina(p)}</div>`).join("")}</div>
     </article>
     ${bandas}
@@ -429,7 +441,7 @@ function perfil(j) {
   const resto = ps.filter(p => !esIntro(p)).map(p => subpagina(d, p, { plegada: true })).join("");
   return `
   <article class="banda-foto pnj${alterna++ % 2 ? " invertido" : ""}${img ? "" : " sin-imagen"}" id="${anclaJournal(d)}">
-    ${img ? `<figure class="bf-foto alta ${img}"><figcaption>${esc(d.name)}</figcaption></figure>` : ""}
+    ${img ? `<figure class="bf-foto alta ${img}">${rotulo(`${L("Expediente", "Case file")} · ${j.id}`, d.name)}</figure>` : ""}
     <div class="bf-texto">
       <p class="kicker">${kickerFicha(f)}</p>
       <h2>${esc(d.name)}</h2>
@@ -499,7 +511,7 @@ const lugaresHtml = LUGARES.map((l, i) => {
   if (!d) { avisos.push(`lugar ${l.id} sin journal`); return ""; }
   const pls = planosDe(l.id);
   // Con mapa, el primero; sin mapa (Pike Place, el Club Ceniza…), su ilustración.
-  const img = (pls.length ? mapaDe(pls[0].id) : null) ?? foto(`lugares/${l.id}.webp`);
+  const img = (pls.length ? mapaBanda(pls[0].id) : null) ?? fotoBanda(`lugares/${l.id}.webp`);
   if (!img) SIN_ARTE.push(`${l.id} (${d.name}): ${l.mapa === false ? "ilustración del lugar (no lleva mapa)" : "mapa"}`);
   const ps = paginas(d);
   const datos = [
@@ -509,7 +521,7 @@ const lugaresHtml = LUGARES.map((l, i) => {
   return `
   <article class="lugar" id="${anclaJournal(d)}">
     <div class="banda-foto${i % 2 ? " invertido" : ""}${img ? "" : " sin-imagen"}">
-      ${img ? `<figure class="bf-foto ${img}"><figcaption><b>${esc(l.id)}</b>${esc(d.name)}</figcaption></figure>` : ""}
+      ${img ? `<figure class="bf-foto ${img}">${rotulo(`${l.id}${l.zona ? ` · ${l.zona}` : ""}`, d.name)}</figure>` : ""}
       <div class="bf-texto">
         <p class="kicker">${esc(l.id)}${l.zona ? ` · ${esc(l.zona)}` : ""}</p>
         <h3>${esc(d.name)}</h3>
@@ -522,13 +534,17 @@ const lugaresHtml = LUGARES.map((l, i) => {
 }).join("");
 const huerfanos = PLANOS.filter(p => !LUGARES.some(l => l.id === p.lugar));
 if (huerfanos.length) avisos.push(`planos sin lugar: ${huerfanos.map(p => p.id).join(", ")}`);
+const fotoCiudad = fotoBanda("handouts/MAP-00.webp");
 const ciudad = `
 <section class="bandas" id="ciudad">
-  <div class="seccion-cab">
-    <p class="kicker">${L("Seattle, noviembre de 2026", "Seattle, November 2026")}</p>
-    <h2>${L("La ciudad", "The city")}</h2>
-    <p class="standfirst">${L("La historia reciente, la política de la Camarilla, los rumores, las leyes del Elíseo y los distritos; después, lugar por lugar, con los mapas de las escenas de Foundry.", "Recent history, Camarilla politics, the rumors, the laws of Elysium and the districts; then, location by location, with the maps of the Foundry scenes.")}</p>
-  </div>
+  <article class="banda-foto invertido${fotoCiudad ? "" : " sin-imagen"}">
+    ${fotoCiudad ? `<figure class="bf-foto ${fotoCiudad}">${rotulo(L("Seattle, noviembre de 2026", "Seattle, November 2026"), L("La ciudad", "The city"))}</figure>` : ""}
+    <div class="bf-texto">
+      <p class="kicker">${L("Seattle, noviembre de 2026", "Seattle, November 2026")}</p>
+      <h2>${L("La ciudad", "The city")}</h2>
+      <p class="standfirst">${L("La historia reciente, la política de la Camarilla, los rumores, las leyes del Elíseo y los distritos; después, lugar por lugar, con los mapas de las escenas de Foundry.", "Recent history, Camarilla politics, the rumors, the laws of Elysium and the districts; then, location by location, with the maps of the Foundry scenes.")}</p>
+    </div>
+  </article>
   <div class="pagina sin-arriba">${CIUDAD.map(id => journalPlegado(id)).join("")}</div>
   <div class="seccion-cab chica-cab"><p class="kicker">${L("Lugares", "Locations")}</p><h2>LUG-01 ${L("a", "to")} LUG-${String(LUGARES.length).padStart(2, "0")}</h2>
     <nav class="indice" aria-label="${L("Lugares", "Locations")}">${LUGARES.map(l => `<a href="#${ancla(l.id)}"><b>${esc(l.id)}</b>${esc(J.get(l.id)?.name ?? l.nombre)}</a>`).join("")}</nav>
@@ -582,17 +598,22 @@ const celula = CELULA.sort(ordenId).map((a, i) => {
   const id = idDe(a), f = FICHA.get(id), img = imagenActor(a)?.clase;
   if (!img) SIN_ARTE.push(`${id} (${a.name}): retrato`);
   return `<article class="banda-foto pnj${i % 2 ? " invertido" : ""}${img ? "" : " sin-imagen"}" id="${ancla(id)}">
-    ${img ? `<figure class="bf-foto alta ${img}"><figcaption>${esc(f?.nombre ?? a.name)}</figcaption></figure>` : ""}
+    ${img ? `<figure class="bf-foto alta ${img}">${rotulo(`FIRSTLIGHT · ${id}`, f?.nombre ?? a.name)}</figure>` : ""}
     <div class="bf-texto"><p class="kicker">${kickerFicha(f)}</p><h2>${esc(f?.nombre ?? a.name)}</h2>${limpiar(a.system?.biography)}</div>
   </article>`;
 }).join("");
+const fotoFirstlight = mapaBanda("northline");
 const firstlight = `
 <section class="bandas" id="firstlight">
-  <div class="seccion-cab">
-    <p class="kicker">${L("La Segunda Inquisición", "The Second Inquisition")}</p>
-    <h2>${L("FIRSTLIGHT jugable", "Playable FIRSTLIGHT")}</h2>
-    <p class="standfirst">${L("La Célula Puget con reglas de Cazador: La Venganza: cómo se juega, los pregenerados, el arsenal y la continuación tras FIN-D. Los interludios están al final de la aventura.", "The Puget Cell with Hunter: The Reckoning rules: how to play it, the pregens, the arsenal and what comes after FIN-D. The interludes are at the end of the adventure.")}</p>
-  </div>
+  <article class="banda-foto${fotoFirstlight ? "" : " sin-imagen"}">
+    ${fotoFirstlight ? `<figure class="bf-foto ${fotoFirstlight}">${rotulo(L("La Segunda Inquisición", "The Second Inquisition"), "FIRSTLIGHT")}</figure>` : ""}
+    <div class="bf-texto">
+      <p class="kicker">${L("La Segunda Inquisición", "The Second Inquisition")}</p>
+      <h2>${L("FIRSTLIGHT jugable", "Playable FIRSTLIGHT")}</h2>
+      <p class="standfirst">${L("La Célula Puget con reglas de Cazador: La Venganza: cómo se juega, los pregenerados, el arsenal y la continuación tras FIN-D. Los interludios están al final de la aventura.", "The Puget Cell with Hunter: The Reckoning rules: how to play it, the pregens, the arsenal and what comes after FIN-D. The interludes are at the end of the adventure.")}</p>
+      <nav class="indice" aria-label="FIRSTLIGHT">${CELULA.map(a => `<a href="#${ancla(idDe(a))}"><b>${esc(idDe(a))}</b>${esc(FICHA.get(idDe(a))?.nombre ?? a.name)}</a>`).join("")}<a href="#${ancla("FIRSTLIGHT-INTERLUDIOS") ?? "cronica"}"><b>INT</b>${L("Interludios", "Interludes")}</a></nav>
+    </div>
+  </article>
   <div class="pagina sin-arriba">${["FIRSTLIGHT-JUGABLE", "FIRSTLIGHT-PREGENERADOS", "FIRSTLIGHT-MAREA-ROJA"].map(id => journalPlegado(id, { kicker: "FIRSTLIGHT" })).join("")}</div>
   ${celula ? `<div class="seccion-cab chica-cab"><p class="kicker">FIRSTLIGHT</p><h2>${L("La Célula Puget", "The Puget Cell")}</h2></div>${celula}` : ""}
   <div class="pagina"><h3>${L("El arsenal", "The arsenal")}</h3><p class="chica">${L("Ítems del compendio «FIRSTLIGHT — Arsenal».", "Items from the “The Ward File — FIRSTLIGHT arsenal” compendium.")}</p><div class="arsenal">${arsenal}</div></div>
@@ -604,7 +625,7 @@ const pantalla = pantallaJ ? `
 <section class="pagina" id="pantalla">
   <p class="kicker">${L("En la mesa", "At the table")}</p>
   <h2>${L("Pantalla del Narrador", "Storyteller Screen")}</h2>
-  <div class="cuerpo ancho" id="${anclaJournal(pantallaJ)}">${paginas(pantallaJ).map(p => subpagina(pantallaJ, p)).join("")}</div>
+  <div class="cuerpo ancho tarjeta" id="${anclaJournal(pantallaJ)}">${paginas(pantallaJ).map(p => subpagina(pantallaJ, p)).join("")}</div>
 </section>` : "";
 
 /* ------------------------------------------------- 10. en Foundry */
@@ -722,8 +743,8 @@ ${firstlight}
 ${pantalla}
 ${foundry}
 </main>
-<footer class="pie">${LOGO_DARK_PACK}<div class="pie-texto"><p>${esc(LEGAL)}</p>${LEGAL_EN.map(t => `<p lang="en">${esc(t)}</p>`).join("")}<p>${L("Es gratuito. Todo el arte (retratos, mapas, tokens, ilustraciones, portada) se generó con IA en local, con modelos de licencia comercial; no hay arte de Paradox ni de White Wolf, y el único logo es el del Dark Pack, como lo pide el acuerdo. Fuentes Oswald, IBM Plex Sans y Amiri (OFL).",
-  "It's free. All the art (portraits, maps, tokens, illustrations, cover) was generated locally with AI, using commercially licensed models; there's no Paradox or White Wolf art, and the only logo is the Dark Pack's, as the agreement requires. Fonts: Oswald, IBM Plex Sans and Amiri (OFL).")}</p></div></footer>
+<footer class="pie">${LOGO_DARK_PACK}<div class="pie-texto"><p>${esc(LEGAL)}</p>${LEGAL_EN.map(t => `<p lang="en">${esc(t)}</p>`).join("")}<p>${L("Es gratuito. Todo el arte (retratos, mapas, tokens, ilustraciones, portada) se generó con IA en local, con modelos de licencia comercial; no hay arte de Paradox ni de White Wolf, y el único logo es el del Dark Pack, como lo pide el acuerdo. Fuentes IBM Plex Sans, IBM Plex Mono y Amiri (OFL).",
+  "It's free. All the art (portraits, maps, tokens, illustrations, cover) was generated locally with AI, using commercially licensed models; there's no Paradox or White Wolf art, and the only logo is the Dark Pack's, as the agreement requires. Fonts: IBM Plex Sans, IBM Plex Mono and Amiri (OFL).")}</p></div></footer>
 ${mesa}
 <div class="aviso" data-aviso role="status" aria-live="polite" hidden></div>
 <button type="button" class="arriba" data-arriba hidden aria-label="${L("Volver arriba", "Back to top")}">▲</button>
@@ -749,9 +770,11 @@ function dataUri(rel) {
   const carpeta = Object.keys(ANCHO).sort((a, b) => b.length - a.length).find(k => rel.startsWith(`assets/${k}/`));
   const ancho = carpeta ? ANCHO[carpeta] : 1200;
   fs.mkdirSync(CACHE, { recursive: true });
-  const clave = crypto.createHash("md5").update(`${rel}:${ancho}:${fs.statSync(abs).mtimeMs}`).digest("hex").slice(0, 12);
+  // Las fotos tratadas llevan grano, que esconde la compresión: van un poco más comprimidas.
+  const calidad = rel.startsWith("assets/guia/") && !rel.startsWith("assets/guia/capturas/") ? 66 : 76;
+  const clave = crypto.createHash("md5").update(`${rel}:${ancho}:${calidad}:${fs.statSync(abs).mtimeMs}`).digest("hex").slice(0, 12);
   const out = path.join(CACHE, `${path.basename(rel, path.extname(rel))}-${clave}.webp`);
-  if (!fs.existsSync(out)) execFileSync("magick", [abs, "-resize", `${ancho}x${ancho}>`, "-quality", "76", "-define", "webp:method=5", out], { stdio: "pipe" });
+  if (!fs.existsSync(out)) execFileSync("magick", [abs, "-resize", `${ancho}x${ancho}>`, "-quality", String(calidad), "-define", "webp:method=5", out], { stdio: "pipe" });
   return `data:image/webp;base64,${fs.readFileSync(out).toString("base64")}`;
 }
 function embeber(html) {

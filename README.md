@@ -99,13 +99,27 @@ seguimiento de la partida en el navegador (escenas jugadas, Termómetro con su r
 del Reloj, pistas, notas), con exportación a un archivo; los botones del Termómetro y de las
 pistas que hay en el texto mueven esa mesa.
 
+Sigue el patrón de la guía de DVV (el de la web de World of Darkness) con los colores de esta
+crónica: fondo negro y bandas de mitad foto y mitad texto, alternando el lado, con la foto fija
+mientras el texto baja, una etiqueta de contorno y el nombre en mayúsculas grandes sobre la foto,
+y el texto en un panel oscuro con una línea y un punto carmesí. Como DVV, evita el «trade dress»
+de Paradox: nada de naranja en la interfaz (el acento es la sangre, el segundo un azul lluvia) ni
+de letra condensada (etiquetas en IBM Plex Mono, títulos en Amiri, texto en IBM Plex Sans). Las
+fotos de las bandas (retratos, mapas, lugares, la portada y el mapa regional) van tratadas en
+tintas frías, azul de puerto, pizarra y hueso frío, con grano y viñeta; conservan el rojo vivo (la
+boya, los neones, la sangre) y el sodio sólo en las farolas y sus reflejos: `tools/duotono.mjs`,
+ImageMagick sin GPU, deja el resultado en `assets/guia/` (fuera del zip del módulo) y la guía lo
+corre sola antes de armarse; son derivadas de imágenes ya registradas en
+`assets/PROCEDENCIA.json`.
+
 No va dentro del módulo: instalada en Foundry, cualquier jugador podría abrirla por URL. Se
 publica como un archivo aparte de cada release (`guia-del-narrador.html`, lo arma
 `tools/release.mjs` junto al zip) y `guia/index.html` no se commitea.
 
 ```bash
 npm run contenido    # content/ → packs-src/ (la guía lee el HTML ya generado de los journals)
-npm run guia         # packs-src/ + content/ → guia/index.html
+npm run guia         # packs-src/ + content/ → guia/index.html (en inglés: --idioma en)
+npm run duotono -- --forzar   # rehace todas las fotos tratadas (después de tocar la tabla de color)
 node tools/construir-guia.mjs --enlazado   # sin embeber nada, para depurar el CSS y el JS
 ```
 
