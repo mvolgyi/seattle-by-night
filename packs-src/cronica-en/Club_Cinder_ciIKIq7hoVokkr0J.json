@@ -1,0 +1,109 @@
+{
+  "_id": "ciIKIq7hoVokkr0J",
+  "_key": "!journal!ciIKIq7hoVokkr0J",
+  "name": "Club Cinder",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-09",
+      "archivo": "content/ciudad/LUG-09.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "YnjocwCRT9rAVhK8",
+      "_key": "!journal.pages!ciIKIq7hoVokkr0J.YnjocwCRT9rAVhK8",
+      "name": "Club Cinder",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-09.webp\" alt=\"Club Cinder\">\n<p><em>Capitol Hill · The Toreador rack · Map: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "tSCe3zZnVyKF3RS5",
+      "_key": "!journal.pages!ciIKIq7hoVokkr0J.tSCe3zZnVyKF3RS5",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>A black door with no sign on a street full of bars. Inside, an exposed-brick basement with a small stage and a crowd that dances with their eyes closed. The music is slow and low, with a bass line that gets inside your chest. Under the red lights, everyone looks a little paler than they should. Someone at the bar is writing on a napkin.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iqpLuEWIqwzcNkFX",
+      "_key": "!journal.pages!ciIKIq7hoVokkr0J.iqpLuEWIqwzcNkFX",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Prince&#39;s foundation owns it. Nadia (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}) feeds here. @UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry} comes in almost every night and writes on napkins (@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: “Song for the Son of the Fist”}).</p>\n<p>Hunting here is easy (Difficulty 2), but the Club belongs to the Prince: you ask permission or you pay.</p>\n<p>It&#39;s a good place for an improvised social scene or for finding Fry outside Elysium.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

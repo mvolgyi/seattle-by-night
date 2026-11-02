@@ -1,0 +1,290 @@
+{
+  "_fuente": {
+    "hangar": "0e8d356c4df6c42e"
+  },
+  "planos": {
+    "hangar": {
+      "nombre": "The Harbor Island Hangar",
+      "nota": "**What it is.** David's haven (Haven 3, with Water Access and Hidden Armory) and the coterie's base. From outside, a corrugated-metal hangar among stacked containers, with the faded logo of a logistics company that no longer exists. Inside it smells of gun oil, salt, and reheated coffee; the lights are work lights hung from cables (“lampara” lights). Inside the hangar, nobody argues about clans or sires (COT-00).\n\n**Main bay.** Against the north wall, the armory: the rifle rack (four AR/M4s, one with stripes of white paint; the bolt-action rifle on top; the pump shotgun), the blade panel (machetes, long knives, two swords, the katana in its saya, three bats) and, in the corner, the shelves of **ammo cases sorted by caliber**. On the west wall, the panel of pistols and revolvers with the magazines beside them (the one with red tape on the grip, the revolver with the marked cylinder). In the middle, **Bear's workbench**: that's where he cleans the pistol in A4-E02 and in Coda 3. The folding operations table and the chairs are movable.\n\n**The cargo-tunnel hatch.** In the bay floor, to the southwest, **under a pallet of crates** (tile): a steel hatch to an old cargo tunnel that comes out **200 m away, next to Terminal 46**. Bear knows about it. Escaping that way in A4-E02: Dexterity + Stealth Diff. 3 for the whole group. The “Go down into the tunnel” region has no destination: there's no map of the tunnel.\n\n**Armored room.** No windows, steel door. David sleeps here (the army cot is movable). It's the safest spot against the raid's UV light.\n\n**Bear's room.** Bed, locker, a small table, and the **safe** (DOC-12: the note folded in quarters, under a pistol). In Coda 3 Bear has taken it out and has it on the workbench.\n\n**Coffee corner.** Counter with a sink and the coffee maker; in the **coffee tin**, the truck key (DOC-12). The cot in this corner is the one from Bear's nights “staring at the hangar ceiling.” The folding chair is David's.\n\n**Covered dock.** The slip runs into the building from the bay; a sheet-metal roll-up door closes it off over the water. Wooden walkways on both sides and at the far end. **The boat** (tile) is the other escape route in A4-E02, but the thermal-camera drone sees it: they get away, the Thermometer doesn't go down. The “Leave by boat” region has no destination (there's no map of the bay).\n\n**The raid (A4-E02, 9:40 p.m.).** The work lights flicker and die (turn them off by hand); the drone hums over the sheet-metal roof. “Six. Two by the dock, four by the door”: two operators come in by the **back pier** (the pier door and the slip's roll-up door) and four by the **yard** (the big door and the south service door); the van with the artificial sunlight generator stops in front of the big door and the white light gets in underneath. Okafor directs from a car a block away (off the map). Destroying evidence (the armory, the phones, the USB drive, Helen's papers): Dexterity + Craft or Intelligence + Technology Diff. 2, one turn each. Hangar rats: Animalism.\n\n**A1-E01 in the hangar.** If the coterie brings Helen here right away, she sees Bear's armory and David's cot for the first time (GAN-02).\n\n**Access.** Big door (5 m roll-up door) and service door to the south, side door to the container alley to the west, pier door to the north, and the slip's roll-up door over the water.",
+      "habitaciones": [
+        {
+          "nombre": "Main bay (armory and work area)"
+        },
+        {
+          "nombre": "Armored room (David)"
+        },
+        {
+          "nombre": "Bear's room"
+        },
+        {
+          "nombre": "Restroom"
+        },
+        {
+          "nombre": "Coffee corner"
+        },
+        {
+          "nombre": "East bay (big door)"
+        },
+        {
+          "nombre": "Covered dock · west walkway"
+        },
+        {
+          "nombre": "Covered dock · far walkway"
+        },
+        {
+          "nombre": "Covered dock · east walkway"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Elliott Bay"
+        },
+        {
+          "nombre": "Back pier on pilings (west)"
+        },
+        {
+          "nombre": "Mouth of the slip"
+        },
+        {
+          "nombre": "Back pier on pilings (east)"
+        },
+        {
+          "nombre": "Covered dock slip"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Edge of the west walkway over the slip"
+        },
+        {
+          "nombre": "Edge of the east walkway over the slip"
+        },
+        {
+          "nombre": "Edge of the far walkway over the slip"
+        },
+        {
+          "nombre": "Sheet-metal roll-up door of the slip (over the water)"
+        },
+        {
+          "nombre": "Back pier door"
+        },
+        {
+          "nombre": "Bay → covered dock"
+        },
+        {
+          "nombre": "Roll-up door between the east bay and the covered dock"
+        },
+        {
+          "nombre": "Main bay ↔ east bay"
+        },
+        {
+          "nombre": "Big door (5 m roll-up door): the UV light gets in underneath"
+        },
+        {
+          "nombre": "Yard service door"
+        },
+        {
+          "nombre": "Side door to the container alley"
+        },
+        {
+          "nombre": "Steel door of the armored room"
+        },
+        {
+          "nombre": "Bear's room"
+        },
+        {
+          "nombre": "Restroom"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a wall rack of assault rifles, a wooden bolt-action rifle and a pump shotgun hanging on pegboard"
+        },
+        {
+          "desc": "a wall panel of machetes, long knives, two longswords, a sheathed katana and three baseball bats"
+        },
+        {
+          "desc": "deep steel shelving stacked with olive-green ammunition cases sorted in rows"
+        },
+        {
+          "desc": "a wall rack of pistols and revolvers with loaded magazines laid beside them"
+        },
+        {
+          "desc": "a long steel-topped gunsmith's workbench with a bench vice, pistol parts and cleaning rods on an oily rag"
+        },
+        {
+          "desc": "stool at Bear's workbench"
+        },
+        {
+          "desc": "folding operations table (phones, Helen's papers, the USB drive)"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "the outline of a heavy steel cargo hatch set flush in the concrete floor"
+        },
+        {
+          "desc": "pallet of crates: hides the cargo-tunnel hatch"
+        },
+        {
+          "desc": "loose ammo cases"
+        },
+        {
+          "desc": "David's army cot"
+        },
+        {
+          "desc": "a low steel shelf with folded dark clothes and a few boxes"
+        },
+        {
+          "desc": "a small grey steel table"
+        },
+        {
+          "desc": "a narrow metal-framed bed made up with an olive army blanket"
+        },
+        {
+          "desc": "a grey steel locker and shelving with folded clothes and boots"
+        },
+        {
+          "desc": "a large, heavy dark-grey steel gun safe with a combination dial, closed"
+        },
+        {
+          "desc": "a small battered wooden table"
+        },
+        null,
+        null,
+        null,
+        {
+          "desc": "a short steel counter with a small sink, a drip coffee maker and a coffee tin"
+        },
+        {
+          "desc": "a small old refrigerator"
+        },
+        {
+          "desc": "the corner cot (Bear's nights staring at the ceiling)"
+        },
+        {
+          "desc": "David's folding chair"
+        },
+        {
+          "desc": "Bear's pickup truck"
+        },
+        null,
+        null,
+        {
+          "desc": "steel shelving with tools, jerrycans and spare parts"
+        },
+        {
+          "desc": "drums of oil and diesel"
+        },
+        {
+          "desc": "a grey wall-mounted electrical panel with the main breaker"
+        },
+        {
+          "desc": "a rack of life jackets, coiled ropes and fuel cans"
+        },
+        {
+          "desc": "the covered dock's boat"
+        },
+        {
+          "desc": "two rusted 40-foot shipping containers stacked one on top of the other"
+        },
+        {
+          "desc": "two rusted 40-foot shipping containers stacked one on top of the other"
+        },
+        {
+          "desc": "two rusted 40-foot shipping containers stacked one on top of the other"
+        },
+        {
+          "desc": "the FIRSTLIGHT van with the artificial sunlight generator, in front of the big door (A4-E02)"
+        },
+        {
+          "desc": "the thermal-camera drone, “right above the sheet-metal roof” (A4-E02)"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Hanging work light (armory)"
+        },
+        {
+          "nombre": "Hanging work light (table)"
+        },
+        {
+          "nombre": "Hanging work light (east bay)"
+        },
+        {
+          "nombre": "Covered dock bulb (west walkway)"
+        },
+        {
+          "nombre": "Armored room bulb"
+        },
+        {
+          "nombre": "Bear's lamp"
+        },
+        {
+          "nombre": "Restroom tube light"
+        },
+        {
+          "nombre": "Coffee corner bulb"
+        },
+        {
+          "nombre": "Back pier sodium wall light"
+        },
+        {
+          "nombre": "Container yard light tower"
+        },
+        {
+          "nombre": "FIRSTLIGHT van's sunlight floodlight (A4-E02: it gets in under the roll-up door), OFF"
+        },
+        {
+          "nombre": "Covered dock bulb (east walkway)"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Go Down into the Cargo Tunnel (Comes Out Next to Terminal 46)",
+          "pendiente": "the cargo tunnel comes out 200 m away, next to Terminal 46 (A4-E02): there's no map of the tunnel or the exit; the Storyteller moves the tokens by hand"
+        },
+        {
+          "nombre": "Leave by Boat into Elliott Bay",
+          "pendiente": "there's no map of the bay; in A4-E02 the drone sees the boat"
+        },
+        {
+          "nombre": "The Back Pier Continues West",
+          "pendiente": "there's no map of the pier: this is where the two pier operators come in (A4-E02)"
+        },
+        {
+          "nombre": "Out to the Harbor Island Container Yard",
+          "pendiente": "there's no map of the container yard (Terminal 46 in A1-E02 is an exterior described in text only)"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "At his workbench, cleaning a pistol (A4-E02 and Coda 3)."
+        },
+        {
+          "nota": "Only if the coterie brought her to the hangar (A1-E01) or if she's here when the raid hits (A4-E02)."
+        },
+        {
+          "nota": "Navarro, on point for the big-door team (INT-03)."
+        },
+        {
+          "nota": "Sorensen, with the breaching charge for the big door (INT-03)."
+        },
+        {
+          "nota": "Ransom, third man on the big-door team; if he said in INT-03 that he knows Bear, move him to the perimeter."
+        },
+        {
+          "nota": "Pak, inside the van, with the drone."
+        },
+        {
+          "nota": "“Two by the dock”: the back-pier team."
+        },
+        {
+          "nota": "“Two by the dock”: the back-pier team."
+        }
+      ]
+    }
+  }
+}

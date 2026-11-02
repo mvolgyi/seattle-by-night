@@ -1,0 +1,85 @@
+{
+  "_id": "9zcPuCCutNfUtYJ0",
+  "_key": "!journal!9zcPuCCutNfUtYJ0",
+  "name": "Vance's Lineage Tree",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-07",
+      "archivo": "content/documentos/AYU-07.md",
+      "soporte": "diagrama",
+      "entrega": [
+        "A3-E03"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "puedwqkVFAkL0E9b",
+      "_key": "!journal.pages!9zcPuCCutNfUtYJ0.puedwqkVFAkL0E9b",
+      "name": "Vance's Lineage Tree",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-diagrama\"><p class=\"sbn-doc-titulo\">LINEAGE OF MARCUS “IRONJAW” VANCE</p>\n<p><em>Brujah · Camarilla · Doctrine of Controlled Fury</em></p>\n<p>Unnamed Brujah veteran</p>\n<p class=\"sbn-diagrama-conector\">│</p>\n<p><em>Berlin, 1945</em></p>\n<p class=\"sbn-diagrama-conector\">│</p>\n<p class=\"sbn-doc-titulo\">MARCUS VANCE</p>\n<p><em>8th Generation · disappeared in 1985, near Cluj-Napoca</em></p>\n<p class=\"sbn-diagrama-conector\">│</p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-diagrama-tabla\">\n<thead>\n<tr>\n<th>┌───────────</th>\n<th>───────────┐</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><em>Haiti, 1960</em><br><strong>DAVID SMITH</strong><br>9th Generation<br>“The American”<br>Finished the lesson<br>Full guard</td>\n<td><em>Marseille, 1972</em><br><strong>AUGUST KRELL</strong><br>9th Generation<br>“The German”<br>Abandoned in 1976<br>Inverted guard</td>\n</tr>\n</tbody></table>\n<p><em>“If the American and the German ever meet, let the American teach him the other guard.”</em></p>\n<p class=\"sbn-firma\">— Journal of M. V., folio 42</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3aUcnUiZD1SyY46b",
+      "_key": "!journal.pages!9zcPuCCutNfUtYJ0.3aUcnUiZD1SyY46b",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> Diagram. <strong>Hand out:</strong> After @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}.</p>\n<p><em>Storyteller: diagram to hand out after @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}, once the coterie knows Krell is Vance&#39;s childe. Not before.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "_id": "gRfqeOIXEHOcLemr",
+  "_key": "!journal!gRfqeOIXEHOcLemr",
+  "name": "Dr. Ruth Abernathy",
+  "folder": "eP0C1qeFsQtuqlDN",
+  "sort": 60,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PJ-06",
+      "archivo": "content/personajes/PJ-06.md",
+      "actor": "Actor.9Sei2feAoKaQPPto"
+    }
+  },
+  "pages": [
+    {
+      "_id": "8DnSFCNwiGCegFjK",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.8DnSFCNwiGCegFjK",
+      "name": "Dr. Ruth Abernathy",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PJ-06.webp\" alt=\"Dr. Ruth Abernathy\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.9Sei2feAoKaQPPto]{Dr. Ruth Abernathy}</p>\n<p><strong>Concept:</strong> night-shift pathologist at the county medical examiner&#39;s office and a member of Voight&#39;s chantry.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "d9H1XYaZN2RC3VqL",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.d9H1XYaZN2RC3VqL",
+      "name": "Mortal Days",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ruth performed autopsies for twelve years. She was meticulous, dry, and had no patience for the living. In 2004 she signed the report on a body with no blood and no visible wounds. The next day the body had vanished from the morgue cooler, and her boss asked her to “revise” the report.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pAxQHkWxPX6KBSyP",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.pAxQHkWxPX6KBSyP",
+      "name": "Kindred Nights",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Dr. Anneliese Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dr. Anneliese Voight}) Embraced her in 2005: a medical examiner who asks questions is a danger, but a medical examiner who answers to the chantry is a weapon. Since then, Ruth is the reason Kindred deaths in Seattle end up as “overdose,” “accidental fire,” or “animal attack.” This week she&#39;s on leave: a substitute is signing the night-shift reports. She feeds in hospitals, on sedated patients.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "BEbpaZn17NogiwCi",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.BEbpaZn17NogiwCi",
+      "name": "Connection to the Coterie",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The File holds a table of Helen&#39;s listing fifteen “impossible” autopsy reports. Every one of them bears Ruth&#39;s signature.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9sAvV20wWVFykVwf",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.9sAvV20wWVFykVwf",
+      "name": "Ambition, Desire, and Touchstone",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Ambition:</strong> find the body that disappeared in 2004. <strong>Desire:</strong> one night without corpses. <strong>Suggested Conviction:</strong> “The dead deserve the truth, even if the living don&#39;t.” <strong>Touchstone:</strong> her ex-husband, a retired homicide detective who still calls her when he can&#39;t sleep.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1hGjQDWbyeEg6FWn",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.1hGjQDWbyeEg6FWn",
+      "name": "Suggested Backgrounds",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Influence (medical examiner&#39;s office) 2, Contacts (police) 2, Resources 2, Mawla (Voight) 1.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2k2APbh7FRd0dNDb",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.2k2APbh7FRd0dNDb",
+      "name": "Shines In",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash at Pier 46}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Assess. Execute.”} (forensic analysis of <em>Controlled Fury</em>), and @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sw7UPaoOvgyqqHBG",
+      "_key": "!journal.pages!gRfqeOIXEHOcLemr.sw7UPaoOvgyqqHBG",
+      "name": "Secret",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Agent Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}) already has a file on her. FIRSTLIGHT considers her “statistical anomaly number one.” She&#39;s the first person they&#39;ll come for.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

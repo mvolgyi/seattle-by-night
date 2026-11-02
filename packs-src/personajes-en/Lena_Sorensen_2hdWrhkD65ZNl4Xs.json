@@ -1,0 +1,616 @@
+{
+  "_id": "2hdWrhkD65ZNl4Xs",
+  "_key": "!actors!2hdWrhkD65ZNl4Xs",
+  "name": "Lena Sorensen",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/CAZ-03.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 60,
+  "prototypeToken": {
+    "name": "Lena Sorensen",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 20,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.55,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#7a3cff",
+      "coloration": 1,
+      "attenuation": 0.6,
+      "luminosity": 0.3,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "FIRSTLIGHT tactical team breacher, former Army combat engineer",
+      "chronicle": "The Ward File",
+      "ambition": "Retire with the house paid off before forty-five.",
+      "desire": "One night on the job without anyone saying “subject.”",
+      "touchstones": "<h3>Touchstones</h3><ul><li>Her mother, in the house in Ballard, four blocks from Market Street.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Building, inventing, augmenting or repairing during the Hunt.",
+      "cellname": "Puget Cell"
+    },
+    "bio": {
+      "age": {
+        "trueage": "41",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>FIRSTLIGHT tactical team breacher, former Army combat engineer</td></tr><tr><th>Age</th><td>41</td></tr><tr><th>Ambition</th><td>Retire with the house paid off before forty-five.</td></tr><tr><th>Desire</th><td>One night on the job without anyone saying “subject.”</td></tr><tr><th>Dice pools</th><td>Physical 6 · Social 2 · Mental 4 · Firearms 7 · Athletics 5 · Awareness 5 · Brawl 5</td></tr></tbody></table><h3>Demeanor</h3><p>Forty-one, blonde, broad-shouldered, hands covered in small scars. Chews nicotine gum. Counts under her breath before every door.</p><p>One of the six operators of @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}. The van&#39;s generator takes two turns to start; she says in her hands it takes one and a half.</p><h3>Hunter</h3><table class=\"sbn-ficha\"><tbody><tr><th>Cell</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Puget Cell}</td></tr><tr><th>Creed</th><td>Entrepreneurial. <em>Desperation:</em> Building, inventing, augmenting or repairing during the Hunt.</td></tr><tr><th>Drive</th><td>Greed. <em>Redemption:</em> She finds redemption when the hunt leaves her something of value (money, an object, a favor she can call in) and she uses it to close out a debt.</td></tr><tr><th>Edges</th><td>Ordnance (Handmade)</td></tr></tbody></table><p>She grew up in Ballard, a fisherman&#39;s daughter. She owes on her mother&#39;s house and on another debt she doesn&#39;t talk about. FIRSTLIGHT pays for risk at federal rates, and she bills it by the hour. What she takes home from each operation, she&#39;s already counted.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.hKlrjorCoIiKhIi8]{Pregen: Lena Sorensen · Breacher}</p>",
+    "appearance": "<p>Forty-one, blonde, broad-shouldered, hands covered in small scars. Chews nicotine gum. Counts under her breath before every door.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Proposed (not in the docs)</h3><ul><li>The whole character is proposed. Conversion of the @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team} pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Craft (Explosives), Science, Drive, and Medicine are her own.</li><li>Entrepreneurial Creed (she builds charges, fixes the generator, improvises), Greed Drive, Ordnance Edge with the “Handmade” Perk. The generator is the one from the doc 14 arsenal; that she&#39;s the one who runs it is proposed.</li><li>Resources 1 Advantage and Debt 1 Flaw.</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "craft": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Explosives",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "science": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "medicine": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "ordnance": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Breaching charges, flashbangs, and the van&#39;s artificial sunlight generator: she sets it up, turns it on, and shuts it off.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 1 (contractor's salary, all of it spoken for)"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 1 (contractor&#39;s salary, all of it spoken for)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "XdkPeX8ToHEWCLOP",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.XdkPeX8ToHEWCLOP"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Debt 1 (someone at the port knows where her mother lives)"
+        }
+      },
+      "name": "Debt",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Debt 1 (someone at the port knows where her mother lives)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "flaw"
+      },
+      "_id": "kkuB5slJEf3gccqt",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.kkuB5slJEf3gccqt"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Carbine with incendiary ammunition",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Aggravated against Kindred (incendiary ammunition). Has a UV flashlight mounted on the weapon.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "2DZJOtyLdkpYJrVg",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.2DZJOtyLdkpYJrVg"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "High-intensity UV flashlight",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>1 aggravated</td></tr></tbody></table><p>A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.</p><p>Condition: @UUID[Item.CbbejNJnKXKf8gbq]{Lit by the UV flashlight}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "1ZcI9tZ8eHWzRb0N",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.1ZcI9tZ8eHWzRb0N"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Light body armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Armor</th><td>3</td></tr></tbody></table><p>Armor 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "dtj1RYUvebwIpaf2",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.dtj1RYUvebwIpaf2"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Body cameras",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"visible supernatural action in front of a body camera\"><i class=\"fa-solid fa-temperature-half\"></i> Thermometer +1</button> (maximum +2 per scene)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "deaelmGOsOEqKZ8z",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.deaelmGOsOEqKZ8z"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Thermal goggles",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "xfPmcosJe7iLO59w",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.xfPmcosJe7iLO59w"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Incendiary ammunition",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "sn0nIs36Chxw7xgD",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.sn0nIs36Chxw7xgD"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "generador-luz-solar",
+          "agravado": true
+        }
+      },
+      "name": "Artificial sunlight generator",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>2 aggravated</td></tr></tbody></table><p>In the van. Lights up a 20-meter area. Inside it: 2 aggravated damage per turn and an automatic Terror Frenzy test (Difficulty 3) on entering. Takes two turns to power up.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "u8AOxydDIONMLbFc",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.u8AOxydDIONMLbFc"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "entrepreneurial"
+        }
+      },
+      "name": "Entrepreneurial",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Building, inventing, augmenting or repairing during the Hunt."
+      },
+      "_id": "vhJFHVLV7BVDI1Px",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.vhJFHVLV7BVDI1Px"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "greed"
+        }
+      },
+      "name": "Greed",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>She grew up in Ballard, a fisherman&#39;s daughter. She owes on her mother&#39;s house and on another debt she doesn&#39;t talk about. FIRSTLIGHT pays for risk at federal rates, and she bills it by the hour. What she takes home from each operation, she&#39;s already counted.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "redemption": "<p>She finds redemption when the hunt leaves her something of value (money, an object, a favor she can call in) and she uses it to close out a debt.</p>"
+      },
+      "_id": "YZvKO8czW9v3Ujq1",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.YZvKO8czW9v3Ujq1"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Handmade: in one night, with whatever's in the armory, she builds two breaching charges or three flashbangs. A door, a thin wall, or a metal roll-down shutter goes down in one turn."
+        }
+      },
+      "name": "Handmade",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>in one night, with whatever&#39;s in the armory, she builds two breaching charges or three flashbangs. A door, a thin wall, or a metal roll-down shutter goes down in one turn.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "CAZ-03"
+        },
+        "edge": "ordnance",
+        "selected": false
+      },
+      "_id": "FJMJvPxw44IBEUoo",
+      "_key": "!actors.items!2hdWrhkD65ZNl4Xs.FJMJvPxw44IBEUoo"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CAZ-03",
+      "journal": null,
+      "doc": "propuesto",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

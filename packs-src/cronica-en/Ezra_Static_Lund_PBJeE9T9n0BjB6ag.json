@@ -1,0 +1,250 @@
+{
+  "_id": "PBJeE9T9n0BjB6ag",
+  "_key": "!journal!PBJeE9T9n0BjB6ag",
+  "name": "Ezra “Static” Lund",
+  "folder": "eP0C1qeFsQtuqlDN",
+  "sort": 30,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PJ-03",
+      "archivo": "content/personajes/PJ-03.md",
+      "actor": "Actor.zGqiDTb68QRTrlLv"
+    }
+  },
+  "pages": [
+    {
+      "_id": "Iem3lY9A60ptGTRn",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.Iem3lY9A60ptGTRn",
+      "name": "Ezra “Static” Lund",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PJ-03.webp\" alt=\"Ezra “Static” Lund\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.zGqiDTb68QRTrlLv]{Ezra Lund}</p>\n<p><strong>Concept:</strong> network security engineer, Embraced by the Underground&#39;s information broker.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "vCnexktEBiykYP0v",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.vCnexktEBiykYP0v",
+      "name": "Mortal Days",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Ezra worked six years for a big cloud company in South Lake Union. In 2018 he discovered that thousands of Seattle doorbell cameras were sending video to a server that didn&#39;t appear in any contract. He reported it internally. Two weeks later they fired him for a made-up “policy violation,” and no company in the city ever answered him again.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Unt6qGTgG6dtTmXb",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.Unt6qGTgG6dtTmXb",
+      "name": "Kindred Nights",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Abel Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}) Embraced him in 2019. He wanted someone who could see the city&#39;s digital nervous system the way he sees the tunnels. Ezra lives in the Sealed Underground (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{The Sealed Underground (Seattle Underground)}), among recycled servers and cables that run down through 19th-century holes. He sells information with no face and no name. His Mask is an anonymous account on a dozen forums. He feeds on blood bags he gets by hacking a blood bank&#39;s inventory (<em>Bagger</em>).</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "aHqQRNBH7lu6TW0q",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.aHqQRNBH7lu6TW0q",
+      "name": "Connection to the Coterie",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The File has a thermal camera capture showing a figure with no body heat going into a manhole in Pioneer Square. It&#39;s him.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iriioV5GwQJ2mHGH",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.iriioV5GwQJ2mHGH",
+      "name": "Ambition, Desire, and Touchstone",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Ambition:</strong> expose whoever controls the city&#39;s cameras. <strong>Desire:</strong> for someone to see his face and not look away. <strong>Suggested Conviction:</strong> “Information belongs to whoever needs it, not whoever pays for it.” <strong>Touchstone:</strong> his sister Maja, a night-shift nurse, who leaves food at his door even though she knows he doesn&#39;t eat it.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "skUGDINgstBDquGH",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.skUGDINgstBDquGH",
+      "name": "Suggested Backgrounds",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Contacts (hackers) 2, Herd 1, Haven 2 (in the Underground), Mawla (Thornquist) 1. Advantage: feed from bags without penalty.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "28LvxcFNCkfnEHUU",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.28LvxcFNCkfnEHUU",
+      "name": "Shines In",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below}, @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes}, and @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}. He&#39;s the natural specialist for @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.qA75WygzgVjOeJvT]{LOR-03 · The City's Eyes} <em>The City&#39;s Eyes</em>.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "PVKArd3lrWlxlsfr",
+      "_key": "!journal.pages!PBJeE9T9n0BjB6ag.PVKArd3lrWlxlsfr",
+      "name": "Secret",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>In 2017, as a contractor, Ezra wrote the firmware for Gale Sentinel&#39;s cameras. The back door Preston Gale uses is his code. Ezra suspects it, but he&#39;s never confirmed it.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

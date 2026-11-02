@@ -1,0 +1,256 @@
+{
+  "_id": "TJOGIKk4Ehe5kwXA",
+  "_key": "!actors!TJOGIKk4Ehe5kwXA",
+  "name": "Tom Whitman",
+  "type": "ghoul",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-05.webp",
+  "folder": "CnV2nZgZZRdzG6KO",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "Tom Whitman",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-05.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "David's ghoul; ex-SEAL and the hangar's armorer",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>No kids, ever.</li><li>No clear-cut victims.</li><li>No killing for sport.</li></ul>",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "48",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Profile: Tom “Bear” Whitman}</p><blockquote><p><em>“No kids. No people who didn&#39;t do anything. No killing just because.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>Bear</td></tr><tr><th>Concept</th><td>David&#39;s ghoul; ex-SEAL and the hangar&#39;s armorer</td></tr><tr><th>Age</th><td>48</td></tr></tbody></table><h3>Demeanor</h3><p>Huge, late forties; says little, dry barracks humor; a wrecked knee that barely hurts him anymore.</p>",
+    "appearance": "<p>Huge, late forties; says little, dry barracks humor; a wrecked knee that barely hurts him anymore.</p>",
+    "equipment": "<ul><li>Black metal canteen of Vitae, always in his backpack</li><li>A weapon in his personal safe in the hangar (with note DOC-12)</li></ul>",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {
+      "potence": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 4,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Long guns",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "craft": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Gunsmithing",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "melee": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-05"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "nC7X23VcvYlLvhzQ",
+      "_key": "!actors.items!TJOGIKk4Ehe5kwXA.nC7X23VcvYlLvhzQ"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-05",
+      "journal": "JournalEntry.sP1Adp7t6FvaF4zw",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

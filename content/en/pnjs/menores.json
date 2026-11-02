@@ -1,0 +1,193 @@
+{
+  "_fuente": {
+    "MEN-01": "a4d4b72b834893e6",
+    "MEN-02": "f7dc966697d3c1fd",
+    "MEN-11": "67cfa151694f7ad7",
+    "MEN-03": "401e55e6bb1dcb49",
+    "MEN-03-DUTCH": "6eb47da3220770fe",
+    "PERROS-MONTGOMERY": "bb8109bb69a4601f",
+    "MEN-04": "95b90547e6a3f420",
+    "MEN-04-DAWSON": "51efe39a91526f7f",
+    "MEN-09": "ac3fdf59c908ebe3",
+    "PNJ-10": "fb594a0c59e26482",
+    "MEN-05": "0f60ca5a348852bf",
+    "MEN-05-BAS": "a27a468f13426079",
+    "MEN-05-TAVI": "d3169f9617f2df74",
+    "MEN-13": "280c2b0cde2d39da",
+    "MEN-14": "26671ba2835467bd",
+    "MEN-06": "ef543e6feb663731",
+    "MEN-07": "00a04e931c99e046",
+    "MEN-10": "b6c0007a5ea7de16",
+    "MEN-08": "a4190865bc2aa8ee",
+    "MEN-12": "877b57003229e503"
+  },
+  "menores": {
+    "MEN-01": {
+      "nombre": "Lonnie Barras",
+      "concepto": "The Thief Who Kept One",
+      "notas": "Forty-something, former alarm technician. Chain-smokes. He opened Helen's door and copied the drive in the car.",
+      "nota": "MEN-01 is Lonnie Barras per the records in docs 11 and 14 (the newest). Doc 01 (and docs 03, 06, and 10, which talk about “the MEN-01 crew”) used it for the whole crew of thieves; doc 14 wins.",
+      "excepcionales": {
+        "larceny": [
+          null,
+          "electronic locks"
+        ]
+      }
+    },
+    "MEN-02": {
+      "nombre": "FIRSTLIGHT Tactical Team",
+      "concepto": "Six operators",
+      "notas": "Ex-military and former federal agents. Hired as a “special counterterrorism unit.” They think they know what they're hunting. Most of them have never seen it.\n\n**Gear:** short carbine with incendiary ammunition (aggravated against Kindred), weapon-mounted UV flashlight, light body armor (armor 3), body camera, radio, thermal goggles (negate Obfuscate levels 1 and 2).\n\n**Tactics:** they never go in alone. Always in pairs, always with a drone overhead and a light source behind them. If they lose two operators, they pull back and wait for dawn."
+    },
+    "MEN-11": {
+      "nombre": "Cole Ransom",
+      "concepto": "MEN-02 operator, Bear's former SEAL teammate",
+      "notas": "Forty-nine, mustache, knees wrecked like Bear's. He thinks he works for Homeland Security. Absolute loyalty to his teammates, and Bear was one of them.\n\nUses the stats of @ID[MEN-02], with **Insight 6** to notice that Bear doesn't limp anymore. (See @ID[GAN-04].)"
+    },
+    "MEN-03": {
+      "nombre": "Montgomery's Bounty Hunters",
+      "concepto": "Six mortals",
+      "notas": "Ex-military and ex-cops who live in trailers behind the barn. They know Montgomery as “the Boss.” They don't ask questions.\n\n**Gear:** shotguns, hunting rifles, pickup trucks.",
+      "nota": "MEN-03 is the group of six bounty hunters (doc 14, newest record). Doc 08 assigned it to Dutch Lindqvist alone; doc 14 wins, and it gives Dutch his own pools within MEN-03."
+    },
+    "MEN-03-DUTCH": {
+      "nombre": "Dutch Lindqvist",
+      "concepto": "The oldest of Montgomery's bounty hunters",
+      "notas": "The oldest, sixty. He's been with Montgomery for twenty years and is starting to wonder what exactly his boss is. Uses the same stats as @ID[MEN-03] with **Insight 5**. If the coterie wins him over (@tirada{attributes.charisma+skills.persuasion|3|Charisma + Persuasion (Difficulty 3)}), he warns them when Montgomery gives the order to hunt them down (@ID[A3-E04]).",
+      "nota": "No ID of his own in the docs: doc 14 places him within MEN-03 “with his own pools” (doc 08 assigned him MEN-03). Derived ID for the actor."
+    },
+    "PERROS-MONTGOMERY": {
+      "nombre": "Montgomery's Dogs",
+      "concepto": "Twelve ghoul working dogs",
+      "notas": "Shepherds and wolf crosses. They sense Montgomery's will and the Beast of any Kindred within fifty meters.\n\n**Attack** 6 (bite, +1 damage) · **Defense** 5 · **Tracking** 8 · **Health** 5 · They act as a pack: each additional dog adds +1 die to the first one's attack, up to +3.",
+      "excepcionales": {
+        "brawl": [
+          null,
+          "bite"
+        ],
+        "survival": [
+          null,
+          "tracking"
+        ]
+      },
+      "reservas": {
+        "_claves": {
+          "ataque": "attack",
+          "defensa": "defense",
+          "rastreo": "tracking"
+        }
+      }
+    },
+    "MEN-04": {
+      "nombre": "Halloway's Security Ghouls",
+      "concepto": "Four in total; two go with Dawson",
+      "notas": "**Gear:** pistols, extendable batons, vests (armor 2), radios.",
+      "nota": "MEN-04 is the “Dawson and the security ghouls” entry in doc 14 (newest record). Doc 11 assigned it to Dawson alone and doc 01 to Gale's security ghouls; doc 14 wins. This actor carries the pools for the four ghouls; Dawson goes in MEN-04-DAWSON.",
+      "nombreToken": "Security Guard"
+    },
+    "MEN-04-DAWSON": {
+      "nombre": "Dawson",
+      "concepto": "Head of Halloway's security ghouls",
+      "notas": "The boss. Ex-Marine, bull neck, supernatural sense of smell. He's the one who sniffed out Helen's stairwell and took the drive from Lonnie.\n\n**Awareness 6 (smell):** detects Kindred within 20 meters, ignores Obfuscate unless the wind is against him.\n\n**Disciplines:** Potence 1 (Lethal Body), Auspex 1 (Heightened Senses) · **Blood Bond** to Halloway, level 2 (+2 dice to resist).\n\n**Gear:** pistols, extendable batons, vests (armor 2), radios.",
+      "nota": "No ID of his own in doc 14: he's the boss within MEN-04, with his own pools (doc 11 assigned him MEN-04). Derived ID for the actor.",
+      "excepcionales": {
+        "awareness": [
+          null,
+          "smell"
+        ]
+      }
+    },
+    "MEN-09": {
+      "nombre": "Mr. Pell",
+      "concepto": "Halloway's ghoul archivist since 1958",
+      "notas": "Ninety-six years old, looks sixty. Polite, sad, meticulous. He typed up Vance's journals and knows where every one of his master's papers is.\n\n**Blood Bond** to Halloway, level 3 (+3 dice to resist others' Disciplines).",
+      "nota": "Editor's Note: doc 14 said “since 1950,” before Halloway's Embrace (1958); 1958 was chosen. The 96 years and the appearance of 60 stay (he was made a ghoul at 28)."
+    },
+    "PNJ-10": {
+      "nombre": "Julian Ashby",
+      "concepto": "Halloway's childe (only if nobody plays Celeste Arden)",
+      "notas": "Looks thirty-something, corporate lawyer Embraced in 2009. He fills Celeste's role (@ID[PJ-02]): he signs for the Cascade Holdings accounts and is the Council's scapegoat. He knows less than he thinks.\n\n**If he's accused at the Council:** he falls apart. A @tirada{attributes.charisma+skills.persuasion|2|Charisma + Persuasion (Difficulty 2)} roll convinces him to testify against Halloway (+2 dice to the case)."
+    },
+    "MEN-05": {
+      "nombre": "Salt's Anarchs",
+      "concepto": "About fifteen Kindred: longshoremen, mechanics, a nurse, two thin-bloods",
+      "notas": "Longshoremen, mechanics, a nurse, two thin-bloods. They vote every Friday. Use these pools for anyone unnamed.\n\n**Disciplines:** Potence 1 or Celerity 1 (one or the other, Storyteller's choice).",
+      "nota": "MEN-05 is the Salt's Anarchs group (doc 14, newest record). Doc 08 used it for Bas Okonjo and Tavi Mercer as named members; doc 14 wins, and it gives them their own pools within MEN-05."
+    },
+    "MEN-05-BAS": {
+      "nombre": "Bas Okonjo",
+      "concepto": "Gangrel, former Wolf; Salt's Anarch",
+      "notas": "He fears Montgomery more than anything.",
+      "nota": "No ID of his own in doc 14: a member of MEN-05 with his own pools (doc 08 put him under MEN-05). Derived ID for the actor."
+    },
+    "MEN-05-TAVI": {
+      "nombre": "Tavi Mercer",
+      "concepto": "Brujah, impatient; Salt's Anarch",
+      "notas": "If he attacks Elysium, he does it with three comrades and Molotov cocktails.",
+      "nota": "No ID of his own in doc 14: a member of MEN-05 with his own pools (doc 08 put him under MEN-05). Derived ID for the actor."
+    },
+    "MEN-13": {
+      "nombre": "Sal Medeiros",
+      "concepto": "SoDo fence (dies on Night 4 if nobody steps in)",
+      "notas": "Seventy, former antiques dealer. Buys and sells to clients who only come out at night, and doesn't ask why. *Dies on @reloj{4} if nobody steps in.*",
+      "excepcionales": {
+        "finance": [
+          null,
+          "haggling"
+        ],
+        "academics": [
+          null,
+          "antiques"
+        ]
+      }
+    },
+    "MEN-14": {
+      "nombre": "Corwin",
+      "concepto": "Caitiff, Sal's protector (destroyed on Night 4 if nobody steps in)",
+      "notas": "Former nightclub bouncer Embraced in 2011. Guards the warehouse in exchange for bagged blood and a corner to sleep in. *Destroyed on @reloj{4} if nobody steps in.*"
+    },
+    "MEN-06": {
+      "nombre": "Teo Vásquez",
+      "concepto": "Terminal 46 crane operator",
+      "notas": "Forty, three kids. He saw Krell destroy Pike (@ID[MEN-12]) from the cab. He's sure of what he saw.",
+      "excepcionales": {
+        "drive": [
+          null,
+          "cranes and heavy vehicles"
+        ]
+      }
+    },
+    "MEN-07": {
+      "nombre": "Dr. Marek Kowalski",
+      "concepto": "Fill-in pathologist at the medical examiner's office",
+      "notas": "Thirty-eight, a recent hire, very conscientious. He did his job right on case 26-3307, and that's the problem."
+    },
+    "MEN-10": {
+      "nombre": "Marcos Delgado",
+      "concepto": "Survivor of Emily's night (1996), youth counselor",
+      "notas": "Survivor of Emily's night (1996), youth counselor (@ID[GAN-01]).",
+      "excepcionales": {
+        "streetwise": [
+          null,
+          "Rainier Valley"
+        ]
+      }
+    },
+    "MEN-08": {
+      "nombre": "The Larchmont Survivor",
+      "concepto": "Former Sabbat Kindred",
+      "notas": "Former Sabbat Kindred (@ID[GAN-09]). Nobody knows his name. He's spent twelve years in the Tacoma storm drains, feeding carefully. Old, patient, deformed by the 2014 fire. He visits the Larchmont cistern barefoot.\n\n**Disciplines:** Obfuscate 3, Protean 2 (Feral Weapons), Fortitude 2.\n\n**Tactics:** he never fights in the open. He flees toward the water and waits.",
+      "excepcionales": {
+        "survival": [
+          null,
+          "sewers"
+        ]
+      }
+    },
+    "MEN-12": {
+      "nombre": "Pike",
+      "concepto": "Nosferatu runner for the Moles, destroyed on Night 2",
+      "notas": "Minor Nosferatu, runner for the Moles. He had just received a partial copy of the File from Jun Takeda for a buyer when Krell destroyed him beside a red shipping container at Terminal 46, on @reloj{2}, between 2:00 and 3:00 a.m. (@ID[A1-E02])."
+    }
+  }
+}

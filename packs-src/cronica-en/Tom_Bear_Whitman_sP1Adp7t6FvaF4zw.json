@@ -1,0 +1,502 @@
+{
+  "_id": "sP1Adp7t6FvaF4zw",
+  "_key": "!journal!sP1Adp7t6FvaF4zw",
+  "name": "Tom “Bear” Whitman",
+  "folder": "TDRainDNFr8zoPD6",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-05",
+      "archivo": "content/personajes/PNJ-05.md",
+      "actor": "Actor.TJOGIKk4Ehe5kwXA"
+    }
+  },
+  "pages": [
+    {
+      "_id": "9alC3eIvgDj8JyRd",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.9alC3eIvgDj8JyRd",
+      "name": "Tom “Bear” Whitman",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-05.webp\" alt=\"Tom “Bear” Whitman\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.TJOGIKk4Ehe5kwXA]{Tom Whitman}</p>\n<p><em>“No kids. No people who didn&#39;t do anything. No killing just because.”</em></p>\n<p>David&#39;s <strong>ghoul</strong> · Ex-SEAL and the hangar&#39;s armorer</p>\n<p>These three characters already have their full documentation in the project folder. Here&#39;s a summary to keep on hand during the session.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "MBrL4iUiKSo0F09k",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.MBrL4iUiKSo0F09k",
+      "name": "In One Sentence",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>48 years old, first through the door and last out, bound to David by Vitae and by something like brotherhood.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pkpmwbeYnYpUoXIv",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.pkpmwbeYnYpUoXIv",
+      "name": "In This Adventure",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>logistics, weapons, driver, and shield. He&#39;s a possible target for Krell in @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}. His note in the safe (@UUID[JournalEntry.5mQIPoGa4I0tQtbR]{Note Kept in Bear's Safe}) is waiting in the hangar. <em>Reminder: the Vitae-rationing hook is excluded.</em></p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LsmoQcohk2hmgNnA",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.LsmoQcohk2hmgNnA",
+      "name": "Document",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>“Tom ‘Bear’ Whitman” (Touchstones).</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "DpasC9nRUEQwZnHD",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.DpasC9nRUEQwZnHD",
+      "name": "Stats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Stats:</strong> Strength 4, Dexterity 3, Stamina 4 · Charisma 2, Manipulation 2, Composure 3 · Intelligence 2, Wits 3, Resolve 3 · Health 7 · Willpower 6</p>\n<p><strong>Skills:</strong> Firearms 4 (Long Guns), Craft 3 (Gunsmithing), Athletics 3, Drive 3, Awareness 3, Intimidation 3, Brawl 3, Melee 2, Survival 2</p>\n<p><strong>Discipline (ghoul):</strong> Potence 1: Lethal Body (<em>Lethal Body</em>)</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "JQYwfodvKFMKA5A5",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.JQYwfodvKFMKA5A5",
+      "name": "🧬 Basic Facts",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Earlier source: doc 25, “Tom ‘Bear’ Whitman” (Touchstones). Where it clashes with docs 00–16, those win; see the last page.</em></p>\n<p>Tom “Bear” Whitman never wanted to be anybody&#39;s soldier again after he left the Navy.</p>\n<p>Then he met David. And it turned out some contracts aren&#39;t signed in ink, but in blood.</p>\n<ul>\n<li><p><strong>Name:</strong> Thomas “Bear” Whitman</p>\n</li>\n<li><p><strong>Apparent age:</strong> well into his forties</p>\n</li>\n<li><p><strong>Actual age:</strong> 48</p>\n</li>\n<li><p><strong>Occupation:</strong> Ex-SEAL, private security contractor, now David&#39;s right-hand man / ghoul</p>\n</li>\n<li><p><strong>Nickname:</strong> “Bear”—for his size, the way he charges… and because when he gets angry, all you want is for him to look somewhere else.</p>\n</li>\n<li><p><strong>Status:</strong> Human ghoul, strongly bound to David&#39;s Vitae</p>\n</li>\n</ul>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "dQC5xwsi0hm3alzE",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.dQC5xwsi0hm3alzE",
+      "name": "🎖️ Before the Blood: The Navy Bear",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Tom grew up in a working-class neighborhood in Philadelphia, the son of a truck driver and a waitress. He was the typical big kid, strong and slow to anger… until somebody messed with his people. That&#39;s when the “bear” came out.</p>\n<ul>\n<li><p>He enlisted in the Navy at 18.</p>\n</li>\n<li><p>He made it through brutal selection and ended up on a SEAL special operations team.</p>\n</li>\n<li><p>Specialty: <strong>heavy support, breacher, and long-gun operator</strong>.</p>\n<ul>\n<li><p>First man through the door.</p>\n</li>\n<li><p>Last man out of the blast radius.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>In the service he learned the kind of violence that doesn&#39;t make it into the movies:</p>\n<p>dirty operations, “unofficial” targets, cleanups no report ever acknowledges.</p>\n<p>He got out honorably… but <strong>not in one piece</strong>.</p>\n<p>He carried with him:</p>\n<ul>\n<li><p>Mild but constant post-traumatic stress disorder.</p>\n</li>\n<li><p>A wrecked knee.</p>\n</li>\n<li><p>A list of faces he saw in his dreams.</p>\n</li>\n</ul>\n<p>He reinvented himself as a <strong>private security contractor</strong>, first for security firms, then for “private clients” who paid under the table.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pOQRZlzyBmy0kIGB",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.pOQRZlzyBmy0kIGB",
+      "name": "🩸 Meeting David",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>In the late 2000s, Tom was working security at a <strong>loading dock in Seattle</strong>, where things went on that didn&#39;t add up:</p>\n<ul>\n<li><p>containers that “didn&#39;t exist” as far as Customs was concerned,</p>\n</li>\n<li><p>night movements with no route plan,</p>\n</li>\n<li><p>quiet guys who never looked at the cameras.</p>\n</li>\n</ul>\n<p>One night, a “live” shipment got out of control:</p>\n<ul>\n<li><p>abductees, screaming, shadows moving too fast,</p>\n</li>\n<li><p>gunshots that didn&#39;t seem to stop a figure inside the container.</p>\n</li>\n</ul>\n<p>Tom did what he always did: he went in first.</p>\n<p>He saw:</p>\n<ul>\n<li><p>a pale man with his jaw knocked loose by a bullet, who <strong>kept coming</strong>;</p>\n</li>\n<li><p>eyes shining with an impossible hunger;</p>\n</li>\n<li><p>a guy in a tactical jacket, completely calm in the middle of hell, who grabbed the monster by the back of the neck and slammed it into the metal until he&#39;d broken more than bones.</p>\n</li>\n</ul>\n<p>That guy was David.</p>\n<p>Tom fired, shouted, tried to enforce protocol.</p>\n<p>It didn&#39;t work.</p>\n<p>The next clear image he remembers is:</p>\n<ul>\n<li><p>the hot, metallic taste in his mouth,</p>\n</li>\n<li><p>a deep voice saying:</p>\n<p> “Either you die here, or you get up knowing too much. Decide.”</p>\n</li>\n</ul>\n<p>It wasn&#39;t really a decision.</p>\n<p>David offered him his blood. Tom drank.</p>\n<p>He woke up hours later with no real wounds, his body feeling like it had just come out of a luxury operating room, and a ferocious energy in his veins. The cameras that night had “malfunctioned.”</p>\n<p>So had the reports.</p>\n<p>And David, sitting on a folding chair in the hangar, simply told him:</p>\n<blockquote>\n<p>“As of today, you&#39;re part of the cleanup.</p>\n<p>What you saw doesn&#39;t exist.</p>\n<p>What&#39;s coming doesn&#39;t either.</p>\n<p>But you&#39;ll get to keep fighting for something other than a paycheck.”</p>\n</blockquote>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "JAjpEH2t1HXr4u6I",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.JAjpEH2t1HXr4u6I",
+      "name": "🧷 From Soldier to Ghoul",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The first few months were a mix of miracle and damnation.</p>\n<p><strong>The good:</strong></p>\n<ul>\n<li><p>Knee almost pain-free.</p>\n</li>\n<li><p>Absurd muscle recovery.</p>\n</li>\n<li><p>Physical endurance that made him feel twenty-something again.</p>\n</li>\n<li><p>Sharper senses, faster reflexes, that rush right before going into action.</p>\n</li>\n</ul>\n<p><strong>The bad:</strong></p>\n<ul>\n<li><p>David&#39;s <strong>Vitae</strong> became the invisible axis of his life.</p>\n</li>\n<li><p>If he went too long without it:</p>\n<ul>\n<li><p>tremors,</p>\n</li>\n<li><p>bad sleep,</p>\n</li>\n<li><p>a shitty mood,</p>\n</li>\n<li><p>a feeling of emptiness, as if the world suddenly drained of color.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>At first he rationalized it:</p>\n<blockquote>\n<p>“I&#39;ve been hooked on adrenaline, on war, on booze back in the day…</p>\n<p>Now it&#39;s just something else. And at least this is good for something.”</p>\n</blockquote>\n<p>But deep down he knows that, without that blood, he&#39;d fall apart.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "E6N0DuR8S48ULcx8",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.E6N0DuR8S48ULcx8",
+      "name": "🤝 Relationship with David",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The relationship between David and Tom isn&#39;t a simple “master and servant” thing. It&#39;s more complicated:</p>\n<ul>\n<li><p><strong>Brother in arms</strong>:</p>\n<ul>\n<li>They share tactical language, silences, that way of entering a room with every angle calculated.</li>\n</ul>\n</li>\n<li><p><strong>Toxic father / loyal son</strong>, dark version:</p>\n<ul>\n<li><p>David gives him power, direction, and a cause.</p>\n</li>\n<li><p>But he also keeps him <strong>tied</strong> through the Vitae.</p>\n</li>\n</ul>\n</li>\n<li><p><strong>Absolute trust in combat</strong>:</p>\n<ul>\n<li><p>If David says “cover that door,” Tom covers it even if the world blows up.</p>\n</li>\n<li><p>If Tom says “something&#39;s off about this job,” David listens.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>Tom doesn&#39;t entirely fool himself:</p>\n<ul>\n<li><p>He knows David is a monster.</p>\n</li>\n<li><p>He knows he&#39;s becoming one himself, on his human scale.</p>\n</li>\n<li><p>But he&#39;d rather be a monster in the service of someone with a code than go back to being a loose weapon in anybody&#39;s hands.</p>\n</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "GZLl7sffEOfrQ8xm",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.GZLl7sffEOfrQ8xm",
+      "name": "⚖️ Bear's Personal Code",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Tom doesn&#39;t have the same code as David, but the two overlap:</p>\n<ul>\n<li><p><strong>No kids, ever.</strong></p>\n</li>\n<li><p><strong>No clear-cut victims.</strong></p>\n</li>\n<li><p><strong>No killing for sport.</strong></p>\n</li>\n</ul>\n<p>When David has to cross the gray line, Tom sometimes looks the other way… but he feels it.</p>\n<p>Sometimes he argues:</p>\n<blockquote>\n<p>“That guy was garbage, sure, but he had a family. We could&#39;ve done something else.”</p>\n</blockquote>\n<p>Sometimes he just keeps quiet… and drinks.</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4BezFzCCI5E1u107",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.4BezFzCCI5E1u107",
+      "name": "💊 Vitae Dependence",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>His dependence on Vitae shows in everyday details:</p>\n<ul>\n<li><p>He always carries a black metal canteen in his backpack. Nobody knows what&#39;s inside. He does.</p>\n</li>\n<li><p>When David is away too long, Tom gets more irritable and risks his neck on dangerous jobs to “kill the craving.”</p>\n</li>\n<li><p>He tried to quit once:</p>\n<ul>\n<li><p>three weeks without Vitae,</p>\n</li>\n<li><p>sweats, migraines, flashbacks to old operations,</p>\n</li>\n<li><p>whole nights without sleep, staring at the hangar ceiling.</p>\n</li>\n</ul>\n</li>\n<li><p>He ended up on his knees on the floor of the haven, his voice broken:</p>\n<p> “Give it to me or finish me. But don&#39;t leave me halfway.”</p>\n</li>\n</ul>\n<p>David gave it to him.</p>\n<p>And with it, a few words Tom never forgot:</p>\n<blockquote>\n<p>“You&#39;re not my slave, Bear. But without this, you won&#39;t survive what you&#39;ve already seen.</p>\n<p>Decide what kills you: the truth or the withdrawal.”</p>\n</blockquote>\n"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ylQFG80ZzUdMl83x",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.ylQFG80ZzUdMl83x",
+      "name": "🛠️ Role in the “Cleanup Unit”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Tom is:</p>\n<ul>\n<li><p><strong>Logistics and fire support</strong> for the Hound of the Masquerade:</p>\n<ul>\n<li><p>drives the vehicles,</p>\n</li>\n<li><p>maintains and modifies the weapons in the hangar&#39;s arsenal,</p>\n</li>\n<li><p>plans entry and exit routes.</p>\n</li>\n</ul>\n</li>\n<li><p><strong>Human shield</strong>:</p>\n<ul>\n<li>puts himself between David and bullets, explosions, or physical dangers that David could sometimes dodge… but that they&#39;d both rather didn&#39;t hit him.</li>\n</ul>\n</li>\n<li><p><strong>“Human” face</strong>:</p>\n<ul>\n<li><p>can talk to police, guards, neighbors, and security staff without raising supernatural suspicions.</p>\n</li>\n<li><p>acts as go-between when they need someone with a clean ID and a pulse.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>In combat, he&#39;s:</p>\n<ul>\n<li><p>the guy who goes in with the rifle,</p>\n</li>\n<li><p>the one who holds the door,</p>\n</li>\n<li><p>the one who drags the wounded out of the crossfire.</p>\n</li>\n</ul>\n<p>And, if it comes to it, the one who finishes off whatever David leaves lying on the floor.</p>\n"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ILD7P61h7GNVrpf6",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.ILD7P61h7GNVrpf6",
+      "name": "🧨 Wounds and Demons of His Own",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Tom carries several shadows:</p>\n<ul>\n<li><p><strong>War guilt</strong>:</p>\n<ul>\n<li><p>operations where the target wasn&#39;t all that clear,</p>\n</li>\n<li><p>orders he followed even knowing they stank of political bullshit.</p>\n</li>\n</ul>\n</li>\n<li><p><strong>People he saved who then didn&#39;t know what to do with their lives</strong>, and came to a bad end.</p>\n</li>\n<li><p>Now he wonders if he isn&#39;t repeating the pattern:</p>\n<ul>\n<li><p>he saves people from monsters…</p>\n</li>\n<li><p>but he also helps monsters go on existing.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>Over the years, he&#39;s developed a quiet conviction:</p>\n<blockquote>\n<p>“If David goes too far over the line, if he turns into one of those monsters with no code…</p>\n<p>somebody&#39;s going to have to stop him.</p>\n<p>And maybe that somebody has to be me.”</p>\n</blockquote>\n<p>He doesn&#39;t say it out loud.</p>\n<p>But every so often, when he looks at the gun he keeps in his personal safe, he wonders whether one day he&#39;ll point it at his own master. <em>(Under that gun is the note from @UUID[JournalEntry.5mQIPoGa4I0tQtbR]{Note Kept in Bear's Safe}.)</em></p>\n"
+      },
+      "sort": 1400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "5gC57TcZvhuYf2Kd",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.5gC57TcZvhuYf2Kd",
+      "name": "🎭 How to Play Him at the Table",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Personality:</strong></p>\n<ul>\n<li><p>Talks little, thinks more.</p>\n</li>\n<li><p>Dry, barracks humor:</p>\n<ul>\n<li><p>dark jokes,</p>\n</li>\n<li><p>short sentences,</p>\n</li>\n<li><p>doesn&#39;t waste time on speeches.</p>\n</li>\n</ul>\n</li>\n<li><p>Instinctively protective:</p>\n<ul>\n<li><p>of mortals caught in the crossfire,</p>\n</li>\n<li><p>of @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} if she&#39;s in front of him,</p>\n</li>\n<li><p>of David, even when he knows David would survive anyway.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>Relationship with Helen (if they meet):</strong></p>\n<ul>\n<li><p>He sees her as a “brave but reckless civilian.”</p>\n</li>\n<li><p>He respects her, but he also wants to yell at her:</p>\n<p> “Drop this, go back to writing about crooked mayors, this is going to get you killed.”</p>\n</li>\n<li><p>If he ever has to choose between saving Helen and carrying out one of David&#39;s orders, drama is guaranteed.</p>\n</li>\n</ul>\n"
+      },
+      "sort": 1500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CvagHxLfwnssPszc",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.CvagHxLfwnssPszc",
+      "name": "🧩 Story Hooks",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ol>\n<li><p><strong>The Mission That Binds Them Forever</strong></p>\n<ul>\n<li><p>An operation where Tom gets literally <strong>torn to pieces</strong> protecting David and a group of mortals.</p>\n</li>\n<li><p>David “puts him back together” with Vitae.</p>\n</li>\n<li><p>From then on, Tom&#39;s dependence skyrockets, but so does his loyalty.</p>\n</li>\n</ul>\n</li>\n<li><p><strong>The Military Past Comes Back</strong> <em>(developed as @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ]{GAN-04 · The Old Teammate}, with Cole Ransom, @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom})</em></p>\n<ul>\n<li><p>An old SEAL buddy of Tom&#39;s shows up in Seattle, now working for someone (Camarilla, Anarchs, hunters… whatever you like).</p>\n</li>\n<li><p>He notices something strange about Tom: impossible reflexes, wounds that heal too fast.</p>\n</li>\n<li><p>He wants answers.</p>\n</li>\n</ul>\n</li>\n<li><p><strong>The Possible Break</strong></p>\n<ul>\n<li><p>David, for strategic reasons, decides to <strong>ration or cut off Tom&#39;s Vitae</strong> for a while.</p>\n</li>\n<li><p>That creates tension:</p>\n<ul>\n<li><p>Tom more vulnerable,</p>\n</li>\n<li><p>more unstable,</p>\n</li>\n<li><p>tempted to look for <strong>another source of Blood</strong> (another vampire, or even the Sabbat).</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ol>\n<p>NOT HAPPENING! :D</p>\n<p><em>(The Vitae-rationing hook is excluded: doc 00.)</em></p>\n"
+      },
+      "sort": 1600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SzV4mJ5X4K7Wojro",
+      "_key": "!journal.pages!sP1Adp7t6FvaF4zw.SzV4mJ5X4K7Wojro",
+      "name": "Differences from Docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Code.</strong> Doc 25 says “No kids, ever. No clear-cut victims. No killing for sport.”; doc 07 quotes it as “No kids. No people who didn&#39;t do anything. No killing just because.” Same idea, different words.</li>\n<li><strong>Hooks.</strong> Hook 2 is @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ]{GAN-04 · The Old Teammate}. Hook 3 (rationing the Vitae) is excluded by doc 25 itself and by doc 00. Hook 1 (the mission that binds them) doesn&#39;t appear in docs 00–16.</li>\n<li><strong>Touchstone.</strong> David&#39;s sheet (doc 18) lists him as a Touchstone; docs 00–16 say he works as an anchor, even though he&#39;s a ghoul.</li>\n<li><strong>Arrival at the hangar.</strong> He met David in the late 2000s, at a Seattle loading dock; docs 00–16 don&#39;t date it.</li>\n</ul>\n"
+      },
+      "sort": 1700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

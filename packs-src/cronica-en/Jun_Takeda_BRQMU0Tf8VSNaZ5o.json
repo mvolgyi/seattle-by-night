@@ -1,0 +1,334 @@
+{
+  "_id": "BRQMU0Tf8VSNaZ5o",
+  "_key": "!journal!BRQMU0Tf8VSNaZ5o",
+  "name": "Jun Takeda",
+  "folder": "bVvs72eunC8Wlxo4",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-20",
+      "archivo": "content/personajes/PNJ-20.md",
+      "actor": "Actor.l3z7Cp6AX0CmtLI6"
+    }
+  },
+  "pages": [
+    {
+      "_id": "SzuZThtVNiCmiWmV",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.SzuZThtVNiCmiWmV",
+      "name": "Jun Takeda",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-20.webp\" alt=\"Jun Takeda\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.l3z7Cp6AX0CmtLI6]{Jun Takeda}</p>\n<p><em>“I just deliver. I don&#39;t open the packages. That&#39;s rule number one.”</em></p>\n<p><strong>Clan:</strong> thin-blood · <strong>Sect:</strong> none (Thornquist&#39;s protégée) · <strong>Role in @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}:</strong> courier, possible victim, and clue (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wZxrfXenQd62yVtT]{Jun, the Thin-Blood Courier})</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oBgOZ4LUUmHogyVz",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.oBgOZ4LUUmHogyVz",
+      "name": "Mortal Days: The Beacon Hill Courier",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Jun Takeda is 22. She grew up on Beacon Hill, between her grandmother&#39;s flower shop in the International District and the hills she biked up to get to class. She dropped out of college to pay her mother&#39;s rent and started delivering for several apps at once: food by day, packages by night. She knew the city better than any map. In the spring of 2025, at four in the morning, she dropped off an order at a building in Georgetown, and the customer opened the door with a stained mouth.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "zznjx56uRhAQjgxz",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.zznjx56uRhAQjgxz",
+      "name": "Kindred Nights: The Courier from Below",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>She doesn&#39;t know who Embraced her. She woke up in the doorway the next night, hungry and without a pulse, though sometimes, when she eats something, a little of it comes back. She drifted for two weeks until a thin-blood from the docks brought her down to the Underground. Thornquist offered her what she does best: delivering. Ever since, she has carried packages between Kindred without asking what&#39;s inside.</p>\n<p>On Night 1, Thornquist had her take two USB drives to two different buyers. One was for the Nosferatu destroyed at Pier 46. The other was for a buyer who never showed up to the meet. Jun still has that second drive in her jacket pocket. Krell knows it.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "YlYYKPz8AmIo6Awf",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.YlYYKPz8AmIo6Awf",
+      "name": "Plans and Schemes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Survive.</strong> Since she heard about Pier 46, she sleeps somewhere different every day. She hasn&#39;t gone back to the Underground.</p>\n<p><strong>Hand it over or throw it away.</strong> She doesn&#39;t know what to do with the USB drive. If she gives it to Thornquist, she figures he&#39;ll sell it anyway. If she throws it away, she&#39;ll have nothing to bargain with. If the coterie finds her before Krell does, she may give it to them in exchange for protection.</p>\n<p><strong>Learn.</strong> If she survives, she wants to learn to hunt for real (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cjmyT3bfPbka0X6O]{GAN-11 · Jun's Fast}).</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0p0Os02srWtzKjcl",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.0p0Os02srWtzKjcl",
+      "name": "Domain and Haven",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Nothing fixed. She sleeps in rented storage units, in the back room of her grandmother&#39;s flower shop, or at a friend&#39;s bike shop (Haven 0). As a thin-blood, she can eat some food and stand sunlight for a while, but she needs blood. She buys expired bags from a hospital orderly and, when she&#39;s out of money, carefully bites other couriers asleep at the bus stop.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KOvHoBZp6bOmmMvq",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.KOvHoBZp6bOmmMvq",
+      "name": "Servants and Tools",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The bike</strong>: electric, modified, the fastest in the Underground.</p>\n<p><strong>Contacts 2</strong>: couriers across half the city.</p>\n<p><strong>The USB drive</strong>: a partial copy of the File, with the folders from 2019 through 2022.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ljWImLJlNwxpB4hY",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.ljWImLJlNwxpB4hY",
+      "name": "Relationships with Kindred",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Abel Thornquist</strong> (dependence). She owes him everything and doesn&#39;t trust him.</p>\n<p><strong>Rosa Iturbe</strong> (admiration). She once saw her argue with the Sheriff and not look away.</p>\n<p><strong>Ezra Lund</strong> (complicity). The only Nosferatu who talks to her like a person.</p>\n<p><strong>August Krell</strong> (terror). She saw him once, from a distance, in the coat. She doesn&#39;t know his name.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Bf2neDsXEPcM4cV8",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.Bf2neDsXEPcM4cV8",
+      "name": "Whispers",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“There&#39;s a thin-blood selling secrets in the Underground.” <em>(Half-true: she delivers them; she doesn&#39;t sell them.)</em></li>\n<li>“Jun can walk in daylight.” <em>(True, for a while and in a lot of pain.)</em></li>\n<li>“Jun knows who Embraced her.” <em>(False.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "FSTVdCg5Pu8rCOp9",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.FSTVdCg5Pu8rCOp9",
+      "name": "Mask and Appearance",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>To mortals she is Jun Takeda, delivery courier (Mask 3: she has a legal life, accounts, and family). She looks her age. She is small and wiry, with hair dyed a faded blue, ear piercings, a yellow waterproof delivery jacket, an insulated backpack, and a helmet covered in stickers. She talks fast, cracks jokes when she&#39;s scared, and never stays still.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "RACU04Mo2VYLHKTE",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.RACU04Mo2VYLHKTE",
+      "name": "Reference Data",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> unknown</li>\n<li><strong>Embraced:</strong> 2025 (born 2004)</li>\n<li><strong>Ambition:</strong> not to die in a doorway.</li>\n<li><strong>Conviction:</strong> “Don&#39;t open the packages.”</li>\n<li><strong>Touchstone:</strong> her grandmother Haruko, who runs a flower shop in the International District and reads her fortune in tea leaves.</li>\n<li><strong>Humanity:</strong> 8</li>\n<li><strong>Generation:</strong> 15th</li>\n<li><strong>Blood Potency:</strong> 0</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9b29sY1ElsvKV4J8",
+      "_key": "!journal.pages!BRQMU0Tf8VSNaZ5o.9b29sY1ElsvKV4J8",
+      "name": "Stats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Attributes:</strong> Strength 2, Dexterity 4, Stamina 2 · Charisma 3, Manipulation 2, Composure 2 · Intelligence 2, Wits 3, Resolve 2</p>\n<p><strong>Secondary Attributes:</strong> Health 5 · Willpower 4</p>\n<p><strong>Skills:</strong> Athletics 4 (Bicycle), Streetwise 3 (Shortcuts), Drive 2, Awareness 2, Persuasion 1, Stealth 3, Subterfuge 2, Technology 1</p>\n<p><strong>Thin-Blood Alchemy 1:</strong> Far Reach (<em>Far Reach</em>). <strong>Thin-Blood Merits:</strong> Day Drinker (<em>Day Drinker</em>).</p>\n<p><strong>Quick Pools:</strong> Flee by bike 8 · Hide in the city 6 · Fight 3</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

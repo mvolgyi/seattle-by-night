@@ -1,0 +1,137 @@
+{
+  "_id": "CRdeqlwyfpxGPyzT",
+  "_key": "!journal!CRdeqlwyfpxGPyzT",
+  "name": "Archon Duval",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-07",
+      "archivo": "content/personajes/PNJ-07.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "h20POKos3NDy08B5",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.h20POKos3NDy08B5",
+      "name": "Archon Duval",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-07.webp\" alt=\"Archon Duval\">\n<p><strong>Background figure</strong> (no actor sheet) · Camarilla Archon in the service of Justicar @UUID[JournalEntry.gSMgBLLYggWyAN2W]{Helena Panhard} · <strong>Role in @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}:</strong> waits on Bainbridge for the briefcase with the File if @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} wins the Council (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}); protagonist of @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · The Archon Calls}.</p>\n<p><em>This page collects what docs 00–16 say about Duval. The source doc for each detail is in parentheses. The docs give him no first name, clan, or stats.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oMuTbb0vn1wjJum8",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.oMuTbb0vn1wjJum8",
+      "name": "Who He Is",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>He appears as a background figure, like Justicar Panhard and @UUID[JournalEntry.WIihWwv4LCOX68B1]{Vance} (doc 01, NPC index; ID registry v2: “PNJ-07 · Archon Duval (background)”).</li>\n<li>He knew Vance (doc 09, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · The Archon Calls}).</li>\n<li>He serves as Justicar Panhard&#39;s envoy (doc 13, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry} and the ID registry: “Archon Duval appears on Bainbridge as the Justicar&#39;s envoy”).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "uxlM5ZfJDWsLrQwu",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.uxlM5ZfJDWsLrQwu",
+      "name": "In the Adventure",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Night 8.</strong> If Halloway wins the Council (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}), at 12:30 a.m. Mr. Pell (@UUID[Actor.eRE6FTNdGO76lzPK]{Mr. Pell}) leaves Halloway Tower with the briefcase to hand over the original File “to an envoy of the Justicar on Bainbridge”: it&#39;s the proof Panhard asked of him before she&#39;ll recognize the regency (doc 13, Storyteller Notes for A4-E01). Pell travels with Dawson and two ghouls (@UUID[Actor.BzNGxOAK3F6Uo56T]{Halloway's Security Ghouls}) and means “to deliver it to Archon Duval, who waits on Bainbridge as the Justicar&#39;s envoy, as proof of the ‘crisis’ that justifies the regency” (doc 13, A4-E03).</li>\n<li><strong>The Endings.</strong> If the File reaches Duval and Halloway lost or was exposed: @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · The Truth Before the Throne} (“Duval sends it back”). If Halloway won: @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · The Hound Changes Masters}. If Halloway won but the coterie kept the File: a partial FIN-B, because Halloway has no proof to put before the Justicar (doc 13, endings table). Losing the briefcase “into Duval&#39;s hands” is one of the four possible endings (doc 13, Notes for A4-E03).</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "7WR0SL8SigPUEK5l",
+      "_key": "!journal.pages!CRdeqlwyfpxGPyzT.7WR0SL8SigPUEK5l",
+      "name": "Chronicle Hook: GAN-07 · The Archon Calls",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Doc 01:</strong> “Duval asks a favor that forces David to leave the city.”</li>\n<li><strong>Doc 09:</strong> Mr. Pell typed three copies of Vance&#39;s journals. Halloway sent copy 3 to Justicar Panhard in 2025, as a goodwill gift. Duval, who knew Vance, has read it and wants to talk to @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}. He asks him to travel to Marseille. It isn&#39;t an order. Not yet.<ul>\n<li><strong>David goes:</strong> Duval shows him copy 3, which has folios that aren&#39;t in the other two, including the ones about Krell. David earns an Archon&#39;s favor (temporary Mawla 2), but he&#39;s away from Seattle for one story.</li>\n<li><strong>David refuses:</strong> Duval doesn&#39;t press, but he takes note. Next time it will be an order.</li>\n<li><strong>Panhard takes an interest in Seattle:</strong> if the ending was FIN-B, the Justicar sends Duval to the city to investigate. He arrives with a question: who is Prince now?</li>\n</ul>\n</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

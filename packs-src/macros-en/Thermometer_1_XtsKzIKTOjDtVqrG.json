@@ -1,0 +1,25 @@
+{
+  "_id": "XtsKzIKTOjDtVqrG",
+  "_key": "!macros!XtsKzIKTOjDtVqrG",
+  "name": "Thermometer −1",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/downgrade.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"The Ward File: the module isn't active in this world.\");\nawait api.termometro(-1, \"“Thermometer −1” macro\");",
+  "folder": null,
+  "sort": 300,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "termometro-menos"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

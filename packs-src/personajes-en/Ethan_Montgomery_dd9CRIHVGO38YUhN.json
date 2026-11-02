@@ -1,0 +1,943 @@
+{
+  "_id": "dd9CRIHVGO38YUhN",
+  "_key": "!actors!dd9CRIHVGO38YUhN",
+  "name": "Ethan Montgomery",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-01.webp",
+  "folder": "JtTpp9X9G7Vc91kJ",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Ethan Montgomery",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 30,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp"
+    }
+  },
+  "system": {
+    "group": "ojNU0zDY0OsVIFDp",
+    "headers": {
+      "concept": "Sheriff of Seattle",
+      "chronicle": "The Ward File",
+      "ambition": "For Seattle to outlive its Prince.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>The Beast does not rule: it is mastered</li><li>No lawless monster deserves the gift of the night</li></ul><h3>Touchstones</h3><ul><li><strong>Dr. Lucy Harlan</strong>: A Snohomish veterinarian who looks after his dogs and makes him coffee he never drinks.</li></ul>",
+      "sire": "Elijah Kane (PNJ-09)",
+      "generation": "8"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1845",
+        "death": "1885"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Profile: Ethan Montgomery}</p><blockquote><p><em>“I am the guardian between the Beast and the city. If one wakes, the other falls.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Sentinel of Puget Sound</td></tr><tr><th>Concept</th><td>Sheriff of Seattle</td></tr><tr><th>Clan</th><td>Gangrel</td></tr><tr><th>Sect</th><td>Camarilla (out of personal loyalty to the Prince)</td></tr><tr><th>Sire</th><td>Elijah Kane (PNJ-09)</td></tr><tr><th>Born</th><td>1845</td></tr><tr><th>Embraced</th><td>1885</td></tr><tr><th>Ambition</th><td>For Seattle to outlive its Prince.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{Whitmore&#39;s Wolves}</td></tr></tbody></table><h3>Demeanor</h3><p>Heavyset, weathered skin, a short salt-and-pepper beard, and huge hands; flannel, a waxed jacket, boots; amber eyes under strain.</p>",
+    "appearance": "<p>Heavyset, weathered skin, a short salt-and-pepper beard, and huge hands; flannel, a waxed jacket, boots; amber eyes under strain.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Provisional (doc 16)</h3><ul><li>David came to Seattle in the &#39;80s (per the whisper “Montgomery and the Hound have been lovers since the seventies”)</li></ul>",
+    "health": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 5,
+      "generation": "8"
+    },
+    "humanity": {
+      "value": 5,
+      "stains": 0
+    },
+    "disciplines": {
+      "animalism": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "protean": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 4,
+        "active": false
+      },
+      "dexterity": {
+        "value": 4,
+        "active": false
+      },
+      "stamina": {
+        "value": 5,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 5,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Sniper",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Supernatural tracking",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "leadership": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Authority through respect",
+            "value": 1,
+            "paths": [
+              "skills.leadership"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "occult": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Limits of the Beast",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Savage fighting",
+            "value": 1,
+            "paths": [
+              "skills.brawl"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "stealth": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tracking",
+            "value": 1,
+            "paths": [
+              "skills.survival"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "animalken": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Dogs",
+            "value": 1,
+            "paths": [
+              "skills.animalken"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "gangrel"
+        }
+      },
+      "name": "Gangrel",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "Pmg1R5UyWdTQSn0Z",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.Pmg1R5UyWdTQSn0Z"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Bond Famulus",
+          "homebrew": false
+        }
+      },
+      "name": "Bond Famulus",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalism 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "kfThP6lZ6iP2GOB6",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.kfThP6lZ6iP2GOB6"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Feral Whispers",
+          "homebrew": false
+        }
+      },
+      "name": "Feral Whispers",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalism 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "UpJ4DibEOR9vjqy2",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.UpJ4DibEOR9vjqy2"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Quell the Beast",
+          "homebrew": false
+        }
+      },
+      "name": "Quell the Beast",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalism 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "660LVhlI81Xcanfk",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.660LVhlI81Xcanfk"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Resilience",
+          "homebrew": false
+        }
+      },
+      "name": "Resilience",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortitude 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "de2FagYQNVPsYjKa",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.de2FagYQNVPsYjKa"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unswayable Mind",
+          "homebrew": false
+        }
+      },
+      "name": "Unswayable Mind",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortitude 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "oCBOkJwdTzLWtvsL",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.oCBOkJwdTzLWtvsL"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Toughness",
+          "homebrew": false
+        }
+      },
+      "name": "Toughness",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortitude 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "VihrteVwp1mLpbkU",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.VihrteVwp1mLpbkU"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Defy Bane",
+          "homebrew": false
+        }
+      },
+      "name": "Defy Bane",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortitude 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "2tTFzYoMXwvBSbtm",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.2tTFzYoMXwvBSbtm"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Eyes of the Beast",
+          "homebrew": false
+        }
+      },
+      "name": "Eyes of the Beast",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Protean 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "protean",
+        "selected": false
+      },
+      "_id": "27y50q8MEKVS1yxI",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.27y50q8MEKVS1yxI"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Feral Weapons",
+          "homebrew": false
+        }
+      },
+      "name": "Feral Weapons",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Protean 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "protean",
+        "selected": false
+      },
+      "_id": "d5KdK661bvnQ65zR",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.d5KdK661bvnQ65zR"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Earth Meld",
+          "homebrew": false
+        }
+      },
+      "name": "Earth Meld",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Protean 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "protean",
+        "selected": false
+      },
+      "_id": "kvA3Tn58Auxs41FY",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.kvA3Tn58Auxs41FY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Status 4 (Camarilla): respected Sheriff of the domain (earlier source, doc 22)"
+        }
+      },
+      "name": "Status",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Status 4 (Camarilla): respected Sheriff of the domain (earlier source, doc 22)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "jPqim13FmrbXhbP5",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.jPqim13FmrbXhbP5"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 3 (farm in the Snohomish Valley, with a tunnel to a boat landing; LUG-02)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 3 (farm in the Snohomish Valley, with a tunnel to a boat landing; LUG-02)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "o4ybPMhKDbB2pmkf",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.o4ybPMhKDbB2pmkf"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 2 (the bounty hunters, MEN-03)"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 2 (the bounty hunters, MEN-03)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "54jOboFEFsvZNrok",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.54jOboFEFsvZNrok"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 3 (state police, the port, and security firms)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 3 (state police, the port, and security firms)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "ryawfbHQULLIlVyl",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.ryawfbHQULLIlVyl"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ally 3 (David Smith, PJ-01)"
+        }
+      },
+      "name": "Ally",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ally 3 (David Smith, PJ-01)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "tBCDfihgYejTfTw7",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.tBCDfihgYejTfTw7"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 2 (retired private security consultant and working-dog breeder)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 2 (retired private security consultant and working-dog breeder)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "1SKmwOJ3edGSTvxv",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.1SKmwOJ3edGSTvxv"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Shapeshifter's scars (amber eyes under stress)"
+        }
+      },
+      "name": "Shapeshifter's scars",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Shapeshifter&#39;s scars (amber eyes under stress)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "T2P6vFyiLbutd3dt",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.T2P6vFyiLbutd3dt"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Predator's instinct (frenzy test when he smells fresh human blood, Difficulty 2)"
+        }
+      },
+      "name": "Predator's instinct",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Predator&#39;s instinct (frenzy test when he smells fresh human blood, Difficulty 2)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "k0INDXnemDy59OxR",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.k0INDXnemDy59OxR"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Distrust of neonates (−1 die on Social tests with Kindred under 50 years old)"
+        }
+      },
+      "name": "Distrust of neonates",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Distrust of neonates (−1 die on Social tests with Kindred under 50 years old)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "yqRLu9Ha1glG957p",
+      "_key": "!actors.items!dd9CRIHVGO38YUhN.yqRLu9Ha1glG957p"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-01",
+      "journal": "JournalEntry.1UgmJAqeofD7SSaf",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

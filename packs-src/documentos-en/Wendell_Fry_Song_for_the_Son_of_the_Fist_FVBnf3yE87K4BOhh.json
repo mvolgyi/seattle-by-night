@@ -1,0 +1,85 @@
+{
+  "_id": "FVBnf3yE87K4BOhh",
+  "_key": "!journal!FVBnf3yE87K4BOhh",
+  "name": "Wendell Fry: “Song for the Son of the Fist”",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-10",
+      "archivo": "content/documentos/DOC-10.md",
+      "soporte": "poema",
+      "entrega": [
+        "A2-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "1wxq90uAdFvsiLGe",
+      "_key": "!journal.pages!FVBnf3yE87K4BOhh.1wxq90uAdFvsiLGe",
+      "name": "Wendell Fry: “Song for the Son of the Fist”",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-poema\"><p><em>Song for the Son of the Fist</em></p>\n<p>There is a father who isn&#39;t here</p>\n<p>and two sons who wait for him,</p>\n<p>one in the water, one in the rain,</p>\n<p>both with the same guard of stone.</p>\n<p>One finished the lesson.</p>\n<p>The other learned half,</p>\n<p>and the half, when it rots,</p>\n<p>weighs more than the truth.</p>\n<p>Don&#39;t look for the father on the pier.</p>\n<p>The coat isn&#39;t his who wears it.</p>\n<p>Look for the one who signs with his left,</p>\n<p>the one who asks to be seen.</p>\n<p>The city has blue eyes</p>\n<p>that never blink.</p>\n<p>The glass king smiles.</p>\n<p>The queen of the rain takes notes.</p>\n<p>And the last boat of the night</p>\n<p>carries off what no one wanted to read.</p>\n<p>If you come late, Hound,</p>\n<p>come this time.</p>\n<p class=\"sbn-firma\">— W.</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "emXXne5BZkKamm4X",
+      "_key": "!journal.pages!FVBnf3yE87K4BOhh.emXXne5BZkKamm4X",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Medium:</strong> a poem written in ballpoint pen on a Club Cinder paper napkin, with a wine stain. <strong>When:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}. Fry (@UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Wendell Fry}) leaves it for David or for the PC who has paid him the most attention.</p>\n<p><strong>Foreshadows:</strong> Krell and David, Vance&#39;s two sons; Vance&#39;s absence; and the last ferry (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}).</p>\n<p><strong>Truth:</strong> Fry doesn&#39;t know what he knows. Everything he says is true, but ordered by the logic of his clan. “The one who signs with his left” is Krell and his inverted guard.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

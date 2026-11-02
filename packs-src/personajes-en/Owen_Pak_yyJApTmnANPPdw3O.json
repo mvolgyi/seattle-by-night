@@ -1,0 +1,566 @@
+{
+  "_id": "yyJApTmnANPPdw3O",
+  "_key": "!actors!yyJApTmnANPPdw3O",
+  "name": "Owen Pak",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/CAZ-02.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 50,
+  "prototypeToken": {
+    "name": "Owen Pak",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 20,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.55,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#7a3cff",
+      "coloration": 1,
+      "attenuation": 0.6,
+      "luminosity": 0.3,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "FIRSTLIGHT tactical team drone operator, former Air Force drone pilot",
+      "chronicle": "The Ward File",
+      "ambition": "Get FIRSTLIGHT to give him a fleet of his own.",
+      "desire": "For Okafor to say his name over the radio, not his call sign.",
+      "touchstones": "<h3>Touchstones</h3><ul><li>His grandmother, in the International District, who cooks for him on Sundays and asks why he has bags under his eyes.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Stealth and subterfuge in service of the Hunt.",
+      "cellname": "Puget Cell"
+    },
+    "bio": {
+      "age": {
+        "trueage": "31",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>FIRSTLIGHT tactical team drone operator, former Air Force drone pilot</td></tr><tr><th>Age</th><td>31</td></tr><tr><th>Ambition</th><td>Get FIRSTLIGHT to give him a fleet of his own.</td></tr><tr><th>Desire</th><td>For Okafor to say his name over the radio, not his call sign.</td></tr><tr><th>Dice pools</th><td>Physical 6 · Social 2 · Mental 4 · Firearms 7 · Athletics 5 · Awareness 5 · Brawl 5</td></tr></tbody></table><h3>Demeanor</h3><p>Thirty-one, skinny, backward cap, a ruggedized tablet strapped to his forearm. Talks to the drone like it&#39;s a dog.</p><p>One of the six operators of @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}. Spends more hours in the van than in the port warehouse.</p><h3>Hunter</h3><table class=\"sbn-ficha\"><tbody><tr><th>Cell</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Puget Cell}</td></tr><tr><th>Creed</th><td>Underground. <em>Desperation:</em> Stealth and subterfuge in service of the Hunt.</td></tr><tr><th>Drive</th><td>Pride. <em>Redemption:</em> He finds redemption when his work, and nobody else&#39;s, saves a Cell operation, and Okafor says so over the radio.</td></tr><tr><th>Edges</th><td>Drone Jockey (Flying Low)</td></tr></tbody></table><p>He was top of his class at Creech, and nobody ever said it out loud. Nobody in FIRSTLIGHT on the West Coast flies like he does. He knows it, and he needs them to know it.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.XU2P6dmdMiaqAjHj]{Pregen: Owen Pak · Drone Pilot}</p>",
+    "appearance": "<p>Thirty-one, skinny, backward cap, a ruggedized tablet strapped to his forearm. Talks to the drone like it&#39;s a dog.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Proposed (not in the docs)</h3><ul><li>The whole character is proposed. Conversion of the @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team} pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Technology (Drones), Drive, Stealth, and Investigation are his own.</li><li>Underground Creed, Pride Drive, Drone Jockey Edge with the “Flying Low” Perk. The drone is the one from the doc 14 arsenal.</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Drones",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "dronejockey": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>The Cell&#39;s thermal-camera drone is his: he flies it from the van or from a ruggedized tablet two hundred meters away. He sees what the drone sees.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Carbine with incendiary ammunition",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Aggravated against Kindred (incendiary ammunition). Has a UV flashlight mounted on the weapon.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "WiA057GBBSXNXZ6L",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.WiA057GBBSXNXZ6L"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "High-intensity UV flashlight",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>1 aggravated</td></tr></tbody></table><p>A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.</p><p>Condition: @UUID[Item.CbbejNJnKXKf8gbq]{Lit by the UV flashlight}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "PytEfowV96pbTsYr",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.PytEfowV96pbTsYr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Light body armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Armor</th><td>3</td></tr></tbody></table><p>Armor 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "Mtr3W0uVpUoBvzlQ",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.Mtr3W0uVpUoBvzlQ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Body cameras",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"visible supernatural action in front of a body camera\"><i class=\"fa-solid fa-temperature-half\"></i> Thermometer +1</button> (maximum +2 per scene)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "ZKkQUJVqu4JVJixW",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.ZKkQUJVqu4JVJixW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Thermal goggles",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "R95XSQt4u1jNVoIY",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.R95XSQt4u1jNVoIY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Incendiary ammunition",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "6RXusk8w10yGvVWI",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.6RXusk8w10yGvVWI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "dron-termico",
+          "agravado": false
+        }
+      },
+      "name": "Thermal camera drone",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Sees the whole area and coordinates the team: +2 dice to their Awareness and ambush tests. Bringing it down: Strength + Athletics (Difficulty 4) with a thrown object, or a shot with Dexterity + Firearms (Difficulty 4).</p><p><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.strength skills.athletics\" data-dificultad=\"4\" data-label=\"Bring down the drone with a thrown object: Strength + Athletics (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Bring down the drone with a thrown object: Strength + Athletics (Difficulty 4)</a></p><p><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.dexterity skills.firearms\" data-dificultad=\"4\" data-label=\"Shoot down the drone: Dexterity + Firearms (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Shoot down the drone: Dexterity + Firearms (Difficulty 4)</a></p>",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Thermal camera drone",
+            "value": 2,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "always",
+              "path": "",
+              "value": ""
+            }
+          }
+        ],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "OmqBPT472DQ0wKSY",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.OmqBPT472DQ0wKSY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "underground"
+        }
+      },
+      "name": "Underground",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Stealth and subterfuge in service of the Hunt."
+      },
+      "_id": "lF1Zq9oF3FmiTJ80",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.lF1Zq9oF3FmiTJ80"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "pride"
+        }
+      },
+      "name": "Pride",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>He was top of his class at Creech, and nobody ever said it out loud. Nobody in FIRSTLIGHT on the West Coast flies like he does. He knows it, and he needs them to know it.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "redemption": "<p>He finds redemption when his work, and nobody else&#39;s, saves a Cell operation, and Okafor says so over the radio.</p>"
+      },
+      "_id": "f6KnGNjYa7zTAjin",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.f6KnGNjYa7zTAjin"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Flying Low: he takes the drone indoors (a hangar, a stairwell, a hallway) without losing signal. Dexterity + Technology (Difficulty 3) for each serious obstacle."
+        }
+      },
+      "name": "Flying Low",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>he takes the drone indoors (a hangar, a stairwell, a hallway) without losing signal. Dexterity + Technology (Difficulty 3) for each serious obstacle.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "CAZ-02"
+        },
+        "edge": "dronejockey",
+        "selected": false
+      },
+      "_id": "7OVCHhcSrOgilwC0",
+      "_key": "!actors.items!yyJApTmnANPPdw3O.7OVCHhcSrOgilwC0"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CAZ-02",
+      "journal": null,
+      "doc": "propuesto",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

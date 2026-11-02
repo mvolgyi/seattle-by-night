@@ -1,0 +1,255 @@
+{
+  "_id": "YrFSWeqhbymzT7q4",
+  "_key": "!actors!YrFSWeqhbymzT7q4",
+  "name": "The Glass Council",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 220,
+  "prototypeToken": {
+    "name": "The Glass Council",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.ys08GDwMs80NuOlf",
+      "Actor.zFbC97X8iaeScDzY",
+      "Actor.OE0huDRYvrhnxa9O",
+      "Actor.eRE6FTNdGO76lzPK"
+    ],
+    "headers": {
+      "concept": "Regency",
+      "chronicle": "The Ward File",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 2
+    },
+    "lien": {
+      "value": 4
+    },
+    "portillon": {
+      "value": 5
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{Profile: The Glass Council}</p><blockquote><p><em>The ones who look down from above.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Type</th><td>Regency</td></tr><tr><th>Domain</th><td>Halloway Tower and the Eastside</td></tr><tr><th>Location</th><td>@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Halloway Tower}</td></tr><tr><th>Members</th><td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}, @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}, @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}, @UUID[Actor.eRE6FTNdGO76lzPK]{Mr. Pell}</td></tr><tr><th>Substitutes</th><td>@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby} if nobody plays @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}</td></tr></tbody></table><p>A Primogen, his childe, two ghouls, and an investment fund. None of them uses the word “conspiracy.”</p><h3>Domain</h3><ul><li><strong>Chasse 2:</strong> employees and contracted partners only</li><li><strong>Lien 4:</strong> half of Bellevue works for someone who works for Halloway</li><li><strong>Portillon 5:</strong> private elevators, ghoul security, ANOMALY cameras</li></ul>",
+    "notes": "",
+    "privatenotes": ""
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 5"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 5</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 5,
+        "featuretype": "background"
+      },
+      "_id": "pV5vtpnSn6dZrLjE",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.pV5vtpnSn6dZrLjE"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence 4 (finance, media)"
+        }
+      },
+      "name": "Influence",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence 4 (finance, media)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "VB0JE6GSZH7TJ5qx",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.VB0JE6GSZH7TJ5qx"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 3"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 3</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "H3s9VoPD5VdQVUDo",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.H3s9VoPD5VdQVUDo"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ally 3 (Gale Sentinel)"
+        }
+      },
+      "name": "Ally",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ally 3 (Gale Sentinel)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "z94EjkKh0bvy3YQE",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.z94EjkKh0bvy3YQE"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 4"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 4</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "PsfFKFKdkcYrfvU4",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.PsfFKFKdkcYrfvU4"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 1"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "KMxI2peYW2aTsImO",
+      "_key": "!actors.items!YrFSWeqhbymzT7q4.KMxI2peYW2aTsImO"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-02",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2",
+      "lema": "The ones who look down from above."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

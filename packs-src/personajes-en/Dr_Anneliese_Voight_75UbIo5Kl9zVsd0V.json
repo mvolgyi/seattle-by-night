@@ -1,0 +1,845 @@
+{
+  "_id": "75UbIo5Kl9zVsd0V",
+  "_key": "!actors!75UbIo5Kl9zVsd0V",
+  "name": "Dr. Anneliese Voight",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-15.webp",
+  "folder": "yszv6jhJ4tmh4rx0",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Dr. Anneliese Voight",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 10,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-15.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Regent of the Observatory Chantry and Tremere Primogen",
+      "chronicle": "The Ward File",
+      "ambition": "For the Seattle Camarilla to survive the age of data.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>Never ignore a pattern</li><li>Knowledge without action is complicity</li></ul><h3>Touchstones</h3><ul><li><strong>Mateo Ruiz-Okoye</strong>: An epidemiology PhD candidate whose dissertation she advises by email without him knowing who she is.</li></ul>",
+      "sire": "Regent Friedrich Ahlers of Vienna (destroyed in 1945)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1891",
+        "death": "1924"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Profile: Dr. Anneliese Voight}</p><blockquote><p><em>“An epidemic never starts with the first death. It starts with the first data point nobody wanted to look at.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>She Who Watches the Net</td></tr><tr><th>Concept</th><td>Regent of the Observatory Chantry and Tremere Primogen</td></tr><tr><th>Clan</th><td>Tremere</td></tr><tr><th>Sect</th><td>Camarilla</td></tr><tr><th>Sire</th><td>Regent Friedrich Ahlers of Vienna (destroyed in 1945)</td></tr><tr><th>Born</th><td>1891</td></tr><tr><th>Embraced</th><td>1924</td></tr><tr><th>Ambition</th><td>For the Seattle Camarilla to survive the age of data.</td></tr></tbody></table><h3>Demeanor</h3><p>Looks about thirty-three. Petite, very short hair in its natural color, rimless glasses, a black turtleneck, and a lab coat; Viennese accent.</p>",
+    "appearance": "<p>Looks about thirty-three. Petite, very short hair in its natural color, rimless glasses, a black turtleneck, and a lab coat; Viennese accent.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: doc 06 said “looks about fifty” and “white hair”; the decision was to use her age at the Embrace (about 33, hair in its natural color).</p>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 4,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "auspex": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "dominate": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "sorcery": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "rituals": {
+        "value": 0,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 5,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Epidemiology",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "science": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Statistics",
+            "value": 1,
+            "paths": [
+              "skills.science"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Patterns",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "medicine": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Thaumaturgy",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "politics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Networks",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "tremere"
+        }
+      },
+      "name": "Tremere",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "ArqEsV9sRWmSAIRT",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.ArqEsV9sRWmSAIRT"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "dD8D4HA8tDCg5OL5",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.dD8D4HA8tDCg5OL5"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "Z7009lj2I6rKKibY",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Z7009lj2I6rKKibY"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Share the Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Share the Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "Z9IpkqjZlmMzni3f",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Z9IpkqjZlmMzni3f"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Compel",
+          "homebrew": false
+        }
+      },
+      "name": "Compel",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "qQqELb2ddDjTsAr9",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.qQqELb2ddDjTsAr9"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Mesmerize",
+          "homebrew": false
+        }
+      },
+      "name": "Mesmerize",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "NJmKEFTZ7vlxNhlq",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.NJmKEFTZ7vlxNhlq"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Corrosive Vitae",
+          "homebrew": false
+        }
+      },
+      "name": "Corrosive Vitae",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Blood Sorcery 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "c2t46zU74KDu9TDm",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.c2t46zU74KDu9TDm"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Extinguish Vitae",
+          "homebrew": false
+        }
+      },
+      "name": "Extinguish Vitae",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Blood Sorcery 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "IFYBvBS5gF0H605O",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.IFYBvBS5gF0H605O"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Blood of Potency",
+          "homebrew": false
+        }
+      },
+      "name": "Blood of Potency",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Blood Sorcery 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "r72u3oRBxG8ChLlc",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.r72u3oRBxG8ChLlc"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Theft of Vitae",
+          "homebrew": false
+        }
+      },
+      "name": "Theft of Vitae",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Blood Sorcery 4. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "sorcery",
+        "selected": false
+      },
+      "_id": "fBobBvBZpjWElmND",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.fBobBvBZpjWElmND"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Ward against Ghouls",
+          "homebrew": false
+        }
+      },
+      "name": "Ward against Ghouls",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Rituals 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "rituals",
+        "selected": false
+      },
+      "_id": "Q90Tik3z0h3iYXOV",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Q90Tik3z0h3iYXOV"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Communicate with Kindred Sire",
+          "homebrew": false
+        }
+      },
+      "name": "Communicate with Kindred Sire",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Rituals 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "rituals",
+        "selected": false
+      },
+      "_id": "JIIz7zqEAhM7LQfw",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.JIIz7zqEAhM7LQfw"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Blood Walk",
+          "homebrew": false
+        }
+      },
+      "name": "Blood Walk",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Rituals 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-15"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "rituals",
+        "selected": false
+      },
+      "_id": "3Qt4mv4PmaaixBRR",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.3Qt4mv4PmaaixBRR"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 3 (the Observatory Chantry in Queen Anne, with blood sorcery wards; LUG-13)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 3 (the Observatory Chantry in Queen Anne, with blood sorcery wards; LUG-13)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "tNYCvCApciECSSVg",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.tNYCvCApciECSSVg"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 3 (the dome's servers)"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 3 (the dome&#39;s servers)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "EhoWH3jvdQpslIvl",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.EhoWH3jvdQpslIvl"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 2 (technology)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 2 (technology)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "Y1ZlYqvfzPbXzbJl",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.Y1ZlYqvfzPbXzbJl"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence 2 (the university, through the research lab)"
+        }
+      },
+      "name": "Influence",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence 2 (the university, through the research lab)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "s1y3d5JldpEle7A1",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.s1y3d5JldpEle7A1"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 2 (Dr. A. Voight, director of a private computational epidemiology lab)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 2 (Dr. A. Voight, director of a private computational epidemiology lab)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "AFUVN9P3RxVFkVmR",
+      "_key": "!actors.items!75UbIo5Kl9zVsd0V.AFUVN9P3RxVFkVmR"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-15",
+      "journal": "JournalEntry.yaAsxCkCLf8CANL5",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

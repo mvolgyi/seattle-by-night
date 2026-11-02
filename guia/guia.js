@@ -4,10 +4,13 @@
    notas; se exporta e importa como JSON. Los botones del módulo que vienen en
    el texto (.sbn-termometro, .sbn-pista, .sbn-reloj) mueven esta mesa, no la
    de Foundry. Los datos fijos (umbrales, noches, pistas) los pone el build en
-   <script id="datos-guia">. */
+   <script id="datos-guia">, con `textos` (castellano → inglés) en la guía en
+   inglés (tools/construir-guia.mjs --idioma en). */
 (() => {
   const CLAVE = "sbn-guia";
   const DATOS = JSON.parse(document.getElementById("datos-guia")?.textContent || "{}");
+  /** Texto fijo de la mesa en el idioma de la guía: T("Noche {n}", { n: 3 }). */
+  const T = (es, vars = {}) => (DATOS.textos?.[es] ?? es).replace(/\{(\w+)\}/g, (todo, k) => (k in vars ? String(vars[k]) : todo));
   const MIN = DATOS.min ?? 0, MAX = DATOS.max ?? 10, NOCHES = DATOS.noches ?? [], UMBRALES = DATOS.umbrales ?? [];
   const nuevo = () => ({ hecho: {}, termometro: { valor: DATOS.inicio ?? 0, congelado: false, registro: [] }, noche: 1, pistas: {}, notas: {}, tab: null });
   let estado = nuevo();
@@ -40,8 +43,8 @@
     const hechas = casillas.filter(c => c.checked).length;
     for (const p of document.querySelectorAll("[data-progreso]")) {
       p.textContent = p.dataset.progreso === "cronica"
-        ? `${hechas} de ${casillas.length} jugadas`
-        : `${hechas} de ${casillas.length} escenas y partes jugadas (${casillas.length ? Math.round(hechas / casillas.length * 100) : 0} %)`;
+        ? T("{n} de {total} jugadas", { n: hechas, total: casillas.length })
+        : T("{n} de {total} escenas y partes jugadas ({pct} %)", { n: hechas, total: casillas.length, pct: casillas.length ? Math.round(hechas / casillas.length * 100) : 0 });
     }
   }
   progreso();
@@ -61,7 +64,7 @@
       }
     }
     const boton = document.querySelector("[data-termo-congelar]");
-    if (boton) { boton.setAttribute("aria-pressed", String(congelado)); boton.textContent = congelado ? "Congelado" : "Congelar"; }
+    if (boton) { boton.setAttribute("aria-pressed", String(congelado)); boton.textContent = congelado ? T("Congelado") : T("Congelar"); }
     const u = umbralDe(valor), p = document.querySelector("[data-termo-umbral]");
     if (p) {
       p.innerHTML = "";
@@ -69,15 +72,15 @@
         const b = document.createElement("b"); b.textContent = `${u.icono} ${u.valor} · `;
         p.append(b, document.createTextNode(u.texto));
         if (u.destino.length) { const s = document.createElement("span"); s.innerHTML = ` → ${u.destino.map(enlaceDestino).join(" · ")}`; p.append(s); }
-      } else p.textContent = "Ningún umbral cruzado todavía.";
-      if (congelado) p.append(document.createTextNode(" (congelado: no sube)"));
+      } else p.textContent = T("Ningún umbral cruzado todavía.");
+      if (congelado) p.append(document.createTextNode(T(" (congelado: no sube)")));
     }
     const ol = document.querySelector("[data-termo-registro]");
     if (ol) {
       ol.innerHTML = "";
       for (const r of [...registro].reverse().slice(0, 40)) {
         const li = document.createElement("li");
-        li.textContent = `${r.de} → ${r.a}${r.motivo ? `: ${r.motivo}` : ""}${r.noche ? ` (noche ${r.noche})` : ""}`;
+        li.textContent = `${r.de} → ${r.a}${r.motivo ? `: ${r.motivo}` : ""}${r.noche ? T(" (noche {n})", { n: r.noche }) : ""}`;
         ol.append(li);
       }
     }
@@ -87,23 +90,23 @@
     const t = estado.termometro, de = t.valor;
     if (cambio === "congelar" || cambio === "descongelar") {
       t.congelado = cambio === "congelar";
-      t.registro.push({ de, a: de, motivo: `${t.congelado ? "Congelado" : "Descongelado"}${motivo ? `: ${motivo}` : ""}`, noche: estado.noche });
-      guardar(); pintarTermometro(); avisar(t.congelado ? "Termómetro congelado: no sube hasta que lo descongeles." : "Termómetro descongelado.");
+      t.registro.push({ de, a: de, motivo: `${t.congelado ? T("Congelado") : T("Descongelado")}${motivo ? `: ${motivo}` : ""}`, noche: estado.noche });
+      guardar(); pintarTermometro(); avisar(t.congelado ? T("Termómetro congelado: no sube hasta que lo descongeles.") : T("Termómetro descongelado."));
       return;
     }
     let a = de;
     if (/^=\s*\d+$/.test(cambio)) a = Number(cambio.replace(/[=\s]/g, ""));
     else if (Number.isFinite(Number(cambio))) a = de + Number(cambio);
     a = Math.max(MIN, Math.min(MAX, a));
-    if (t.congelado && a > de) { avisar("El Termómetro está congelado: no sube."); return; }
-    if (a === de) { avisar(`El Termómetro ya está en ${de}: no cambia.`); return; }
+    if (t.congelado && a > de) { avisar(T("El Termómetro está congelado: no sube.")); return; }
+    if (a === de) { avisar(T("El Termómetro ya está en {n}: no cambia.", { n: de })); return; }
     t.valor = a;
     t.registro.push({ de, a, motivo, noche: estado.noche });
     guardar(); pintarTermometro();
     const cruzado = UMBRALES.filter(u => (a > de ? u.valor > de && u.valor <= a : u.valor <= de && u.valor > a)).at(-1);
-    avisar(`Termómetro ${de} → ${a}${motivo ? ` · ${motivo}` : ""}${cruzado && a > de ? ` · Umbral ${cruzado.valor}: ${cruzado.texto}` : ""}`);
+    avisar(`${T("Termómetro")} ${de} → ${a}${motivo ? ` · ${motivo}` : ""}${cruzado && a > de ? ` · ${T("Umbral {n}", { n: cruzado.valor })}: ${cruzado.texto}` : ""}`);
   }
-  for (const b of document.querySelectorAll("[data-termo]")) b.addEventListener("click", () => moverTermometro(b.dataset.termo, "a mano"));
+  for (const b of document.querySelectorAll("[data-termo]")) b.addEventListener("click", () => moverTermometro(b.dataset.termo, T("a mano")));
   document.querySelector("[data-termo-congelar]")?.addEventListener("click", () => moverTermometro(estado.termometro.congelado ? "descongelar" : "congelar"));
   pintarTermometro();
 
@@ -115,9 +118,9 @@
     if (p) {
       p.innerHTML = "";
       if (n) {
-        const b = document.createElement("b"); b.textContent = `Noche ${n.n} · ${n.dia} `;
+        const b = document.createElement("b"); b.textContent = `${T("Noche {n}", { n: n.n })} · ${n.dia} `;
         p.append(b, document.createTextNode(n.evento));
-        if (n.ancla) { const a = document.createElement("a"); a.href = `#${n.ancla}`; a.textContent = " Ver la noche →"; p.append(a); }
+        if (n.ancla) { const a = document.createElement("a"); a.href = `#${n.ancla}`; a.textContent = T(" Ver la noche →"); p.append(a); }
       }
     }
     for (const s of document.querySelectorAll(".sbn-reloj[data-sbn-reloj]")) {
@@ -137,13 +140,13 @@
     for (const b of document.querySelectorAll("button.sbn-pista[data-sbn-pista]")) b.classList.toggle("sbn-obtenida", !!estado.pistas[b.dataset.sbnPista]);
     for (const c of document.querySelectorAll("[data-pista-mesa]")) c.checked = !!estado.pistas[c.dataset.pistaMesa];
     const n = Object.keys(estado.pistas).length, cuenta = document.querySelector("[data-pistas-cuenta]");
-    if (cuenta) cuenta.textContent = `${n} de ${(DATOS.pistas ?? []).length}`;
+    if (cuenta) cuenta.textContent = T("{n} de {total}", { n, total: (DATOS.pistas ?? []).length });
   }
   const marcarPista = (id, si) => {
     if (si) estado.pistas[id] = true; else delete estado.pistas[id];
     guardar(); pintarPistas();
     const p = (DATOS.pistas ?? []).find(x => x.id === id);
-    avisar(`${id}${p ? ` · ${p.nombre}` : ""}: ${si ? "obtenida" : "desmarcada"}`);
+    avisar(`${id}${p ? ` · ${p.nombre}` : ""}: ${si ? T("obtenida") : T("desmarcada")}`);
   };
   for (const c of document.querySelectorAll("[data-pista-mesa]")) c.addEventListener("change", () => marcarPista(c.dataset.pistaMesa, c.checked));
   pintarPistas();
@@ -160,9 +163,9 @@
       if (n?.ancla) { location.hash = n.ancla; }
     }
   });
-  for (const t of document.querySelectorAll(".sbn-tirada")) t.title = `Tirada: ${t.dataset.label ?? ""}. Se tira desde el journal en Foundry.`;
-  for (const t of document.querySelectorAll("button.sbn-termometro")) t.title = "Mueve el Termómetro de La mesa";
-  for (const t of document.querySelectorAll("button.sbn-pista")) t.title = "Marca o desmarca la pista en La mesa";
+  for (const t of document.querySelectorAll(".sbn-tirada")) t.title = T("Tirada: {label}. Se tira desde el journal en Foundry.", { label: t.dataset.label ?? "" });
+  for (const t of document.querySelectorAll("button.sbn-termometro")) t.title = T("Mueve el Termómetro de La mesa");
+  for (const t of document.querySelectorAll("button.sbn-pista")) t.title = T("Marca o desmarca la pista en La mesa");
 
   /* ---- notas ---- */
   for (const t of document.querySelectorAll("textarea[data-notas]")) {
@@ -214,17 +217,17 @@
   });
   document.querySelector("[data-importar]")?.addEventListener("change", async e => {
     const f = e.target.files?.[0]; if (!f) return;
-    if (!confirm("Importar reemplaza el seguimiento guardado en este navegador. ¿Seguir?")) { e.target.value = ""; return; }
+    if (!confirm(T("Importar reemplaza el seguimiento guardado en este navegador. ¿Seguir?"))) { e.target.value = ""; return; }
     try {
       const d = JSON.parse(await f.text());
       if (!d || typeof d !== "object" || !d.termometro) throw new Error();
       const base = nuevo();
       estado = { hecho: d.hecho ?? {}, termometro: { ...base.termometro, ...d.termometro }, noche: d.noche ?? 1, pistas: d.pistas ?? {}, notas: d.notas ?? {}, tab: d.tab ?? null };
       guardar(); location.reload();
-    } catch { alert("Ese archivo no es una partida exportada desde esta guía. Exportá una desde La mesa y volvé a intentarlo."); }
+    } catch { alert(T("Ese archivo no es una partida exportada desde esta guía. Exportá una desde La mesa y volvé a intentarlo.")); }
   });
   document.querySelector("[data-reiniciar]")?.addEventListener("click", () => {
-    if (!confirm("¿Borrar el seguimiento (escenas jugadas, Termómetro, noche, pistas y notas)?")) return;
+    if (!confirm(T("¿Borrar el seguimiento (escenas jugadas, Termómetro, noche, pistas y notas)?"))) return;
     estado = nuevo(); guardar(); location.reload();
   });
 
@@ -260,7 +263,7 @@
     for (const b of document.querySelectorAll("[data-ampliar]")) b.addEventListener("click", () => {
       const m = /url\(["']?(.*?)["']?\)$/.exec(getComputedStyle(b).backgroundImage);
       if (!m) return;
-      img.src = m[1]; img.alt = `Mapa: ${b.dataset.ampliar}`; titulo.textContent = b.dataset.ampliar;
+      img.src = m[1]; img.alt = `${T("Mapa")}: ${b.dataset.ampliar}`; titulo.textContent = b.dataset.ampliar;
       cuerpo.classList.add("encajar"); visor.showModal();
     });
     // Un toque alterna entre «encajar» y tamaño real.

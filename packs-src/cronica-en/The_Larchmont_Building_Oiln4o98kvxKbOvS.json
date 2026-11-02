@@ -1,0 +1,109 @@
+{
+  "_id": "Oiln4o98kvxKbOvS",
+  "_key": "!journal!Oiln4o98kvxKbOvS",
+  "name": "The Larchmont Building",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 110,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-11",
+      "archivo": "content/ciudad/LUG-11.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "xtAzFL03vQDfwucm",
+      "_key": "!journal.pages!Oiln4o98kvxKbOvS.xtAzFL03vQDfwucm",
+      "name": "The Larchmont Building",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Tacoma · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0atnaEpSLykrc3kl",
+      "_key": "!journal.pages!Oiln4o98kvxKbOvS.0atnaEpSLykrc3kl",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Twelve years later, the Larchmont still stands like a black box gutted from the inside: four stories of blackened brick, windows with no glass, a construction fence with a demolition notice nobody ever acted on. The rain comes in through the roof and falls down the stairwell to the basement, where you can hear water running. On the fence, someone has left seven plastic flowers tied on with wire.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oVbKABRYH90z2fkF",
+      "_key": "!journal.pages!Oiln4o98kvxKbOvS.oVbKABRYH90z2fkF",
+      "name": "Storyteller Notes · What Happened in 2014",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A pack of three Sabbat Kindred who didn&#39;t leave for Gehenna used the Larchmont&#39;s basement as a farm: they kept seven tenants locked in the old cistern and fed on them for weeks.</p>\n<p>One of Montgomery&#39;s contacts tipped him off. The Sheriff sent David. David arrived after the pack, warned, had already set the building on fire to erase the trail. The seven tenants were already dead. He destroyed two of the three. The third escaped through the storm drain into the Sound (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · The Larchmont Survivor}).</p>\n<p>Montgomery ordered the cistern sealed without removing the bodies: seven bloodless corpses were a Masquerade breach. Danny Ruiz (@UUID[JournalEntry.5xUDUgkyHXGD8IPY]{Danny Ruiz}) is still down there.</p>\n<p>The photo in the File of David with his back to the fire is from that night.</p>\n<p><strong>Scene:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont} (optional). If the coterie opens the cistern, Thermometer +2 (<button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"Opening the Larchmont cistern\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">Opening the Larchmont cistern</span></button>) and a Remorse test for David. If @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} ever finds out, the Touchstone relationship changes forever.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,128 @@
+{
+ "$generado": "tools/contenido/datos.mjs (subconjunto para jugadores de data/en/cronica.json). No editar a mano: npm run contenido.",
+ "modulo": "seattle-by-night",
+ "publico": true,
+ "termometro": {
+  "inicio": 2,
+  "min": 0,
+  "max": 10,
+  "umbrales": [
+   {
+    "valor": 3,
+    "icono": "👁",
+    "jugadores": "Someone is watching the journalist."
+   },
+   {
+    "valor": 5,
+    "icono": "☎",
+    "jugadores": "Someone calls the journalist."
+   },
+   {
+    "valor": 7,
+    "icono": "🔍",
+    "jugadores": "Someone is pulling the thread on one of ours."
+   },
+   {
+    "valor": 9,
+    "icono": "🚨",
+    "jugadores": "There's a knock at the door."
+   },
+   {
+    "valor": 10,
+    "icono": "🔥",
+    "jugadores": "There's no door anymore."
+   }
+  ]
+ },
+ "reloj": {
+  "noches": [
+   {
+    "n": 1,
+    "fecha": "2026-11-12",
+    "dia": "Thu, Nov 12"
+   },
+   {
+    "n": 2,
+    "fecha": "2026-11-13",
+    "dia": "Fri, Nov 13"
+   },
+   {
+    "n": 3,
+    "fecha": "2026-11-14",
+    "dia": "Sat, Nov 14"
+   },
+   {
+    "n": 4,
+    "fecha": "2026-11-15",
+    "dia": "Sun, Nov 15"
+   },
+   {
+    "n": 5,
+    "fecha": "2026-11-16",
+    "dia": "Mon, Nov 16"
+   },
+   {
+    "n": 6,
+    "fecha": "2026-11-17",
+    "dia": "Tue, Nov 17"
+   },
+   {
+    "n": 7,
+    "fecha": "2026-11-18",
+    "dia": "Wed, Nov 18"
+   },
+   {
+    "n": 8,
+    "fecha": "2026-11-19",
+    "dia": "Thu, Nov 19"
+   }
+  ]
+ },
+ "pistas": [
+  {
+   "id": "P-01"
+  },
+  {
+   "id": "P-02"
+  },
+  {
+   "id": "P-03"
+  },
+  {
+   "id": "P-04"
+  },
+  {
+   "id": "P-05"
+  },
+  {
+   "id": "P-06"
+  },
+  {
+   "id": "P-07"
+  },
+  {
+   "id": "P-08"
+  },
+  {
+   "id": "P-09"
+  },
+  {
+   "id": "P-10"
+  },
+  {
+   "id": "P-11"
+  },
+  {
+   "id": "P-12"
+  },
+  {
+   "id": "P-13"
+  },
+  {
+   "id": "P-14"
+  },
+  {
+   "id": "P-15"
+  }
+ ]
+}

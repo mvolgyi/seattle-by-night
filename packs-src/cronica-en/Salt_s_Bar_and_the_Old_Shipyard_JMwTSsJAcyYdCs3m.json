@@ -1,0 +1,109 @@
+{
+  "_id": "JMwTSsJAcyYdCs3m",
+  "_key": "!journal!JMwTSsJAcyYdCs3m",
+  "name": "Salt's Bar and the Old Shipyard",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 100,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-10",
+      "archivo": "content/ciudad/LUG-10.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "kHKmS1cPIXdSTWXF",
+      "_key": "!journal.pages!JMwTSsJAcyYdCs3m.kHKmS1cPIXdSTWXF",
+      "name": "Salt's Bar and the Old Shipyard",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Everett · Anarch domain · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pMDUdoywotLTx8f3",
+      "_key": "!journal.pages!JMwTSsJAcyYdCs3m.pMDUdoywotLTx8f3",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The bar sits next to a shuttered shipyard, its rusted cranes cut out against the sky. Inside there are scarred wooden tables, a bar built from a split ship&#39;s hull, and photos of old strikes on the walls. The talk stops when you walk in. A woman with short hair and grease-stained hands leans her elbows on the bar and looks at you the way someone sizes up a wound.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "imtJxgzvANBmOMOo",
+      "_key": "!journal.pages!JMwTSsJAcyYdCs3m.imtJxgzvANBmOMOo",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> the bar (open to the mortal public until two), the back room (meetings), the shipyard (havens inside three ship hulls in dry dock), and the launching slipway, which overlooks the only road and shows any car coming long before it arrives.</p>\n<p><strong>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{COT-03 · Salt's} Backgrounds:</strong> Haven 2, Herd 2 (union longshoremen), Allies 2.</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}. It&#39;s also the setting for @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.0e8h94hwnGDTnixI]{GAN-06 · Blood Hunt in Everett}.</p>\n<p><strong>Tension:</strong> if David walks in, @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa} knows who he is and what happened in 1996. And he doesn&#39;t know what she did (@UUID[JournalEntry.j4MhqWVhWECuqaA3]{rumor 11}).</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

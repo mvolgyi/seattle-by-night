@@ -1,0 +1,109 @@
+{
+  "_id": "OSMVQHNXfk9zRyLM",
+  "_key": "!journal!OSMVQHNXfk9zRyLM",
+  "name": "The Observatory Chantry",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 130,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-13",
+      "archivo": "content/ciudad/LUG-13.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "dTYHrbOb8OyQXFQ9",
+      "_key": "!journal.pages!OSMVQHNXfk9zRyLM.dTYHrbOb8OyQXFQ9",
+      "name": "The Observatory Chantry",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-13.webp\" alt=\"The Observatory Chantry\">\n<p><em>Queen Anne · Tremere seat · Map: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "wIHnBJ2rJOy55OvS",
+      "_key": "!journal.pages!OSMVQHNXfk9zRyLM.wIHnBJ2rJOy55OvS",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>At the top of the hill stands a Victorian house with a green copper dome that was once a private observatory. The dome still opens. What pokes out through the slit isn&#39;t a telescope but an antenna. Inside, carved wood paneling shares the walls with server racks and screens showing network traffic graphs.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "yvTHgSaty73PFVWg",
+      "_key": "!journal.pages!OSMVQHNXfk9zRyLM.yvTHgSaty73PFVWg",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>From here, Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dr. Anneliese Voight}) monitors Northline&#39;s communications. She knows the Puget Cell exists, but she doesn&#39;t know about ARCHER.</p>\n<p>Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}) has a lab in the basement.</p>\n<p>If the coterie allies with Voight, they can get @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, Internal Memo SEA-0411} here before @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

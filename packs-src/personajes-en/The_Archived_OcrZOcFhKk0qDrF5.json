@@ -1,0 +1,161 @@
+{
+  "_id": "OcrZOcFhKk0qDrF5",
+  "_key": "!actors!OcrZOcFhKk0qDrF5",
+  "name": "The Archived",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 200,
+  "prototypeToken": {
+    "name": "The Archived",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.g4XbpMuCHwxVhzeC",
+      "Actor.zFbC97X8iaeScDzY",
+      "Actor.zGqiDTb68QRTrlLv",
+      "Actor.0IIsgytowpgAWwK6",
+      "Actor.doLuya2qqzFb2wqn",
+      "Actor.9Sei2feAoKaQPPto"
+    ],
+    "headers": {
+      "concept": "Commando",
+      "chronicle": "The Ward File",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 2
+    },
+    "lien": {
+      "value": 1
+    },
+    "portillon": {
+      "value": 2
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{Profile: The Archived}</p><blockquote><p><em>The ones who were on the drive.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Type</th><td>Commando</td></tr><tr><th>Domain</th><td>The Harbor Island docks, around David&#39;s hangar</td></tr><tr><th>Location</th><td>@UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}</td></tr><tr><th>Members</th><td>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}, @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}, @UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}, @UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}, @UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke}, @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}</td></tr><tr><th>Allies</th><td>@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom “Bear” Whitman}</td></tr><tr><th>Handout</th><td>@UUID[JournalEntry.vtenvgNlXVPd99Rc]{“Your Folder in the File”}</td></tr></tbody></table><p>A coterie born of a shared threat: they all appear in the Ward File, and either they recover it together or they go down together.</p><p>Commando: a unit assembled for a mission that became permanent (doc 02). If it survives AVE-01, it can become Cerberus or Regency depending on the ending (doc 08).</p><h3>Domain</h3><ul><li><strong>Chasse 2:</strong> Night-shift workers. Hunting is possible, but you have to be careful.</li><li><strong>Lien 1:</strong> The coterie has barely any influence over the mortals at the port. Bear knows a few.</li><li><strong>Portillon 2:</strong> Lots of access points, containers, and water. Easy to get in and out. For enemies too.</li></ul>",
+    "notes": "",
+    "privatenotes": "<p><strong>Domain according to doc 02:</strong> caza 2 · lien 1 · portillon 1</p><p><strong>Backgrounds according to doc 02:</strong></p><ul><li>Haven (the hangar, provided by David)</li><li>Contacts (port) 1</li></ul><p><strong>Alternatives:</strong></p><ul><li>B) they&#39;re an existing coterie that Montgomery uses as a strike force</li><li>C) they&#39;re strangers who cross paths at Helen&#39;s apartment the night of the theft</li></ul>"
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 3 (the hangar, provided by David): with Water Access and Arsenal"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 3 (the hangar, provided by David): with Water Access and Arsenal</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "mYuRgUo4pkrcbI3x",
+      "_key": "!actors.items!OcrZOcFhKk0qDrF5.mYuRgUo4pkrcbI3x"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 1 (port): through Bear"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 1 (port): through Bear</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "zHraMUP9hXEgfOgk",
+      "_key": "!actors.items!OcrZOcFhKk0qDrF5.zHraMUP9hXEgfOgk"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ally: Tom “Bear” Whitman (PNJ-05), shared with David"
+        }
+      },
+      "name": "Ally",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ally: Tom “Bear” Whitman (PNJ-05), shared with David</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "Aj4jxrbFP9LPreYN",
+      "_key": "!actors.items!OcrZOcFhKk0qDrF5.Aj4jxrbFP9LPreYN"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-00",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb",
+      "lema": "The ones who were on the drive."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

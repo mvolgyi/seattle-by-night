@@ -1,0 +1,236 @@
+{
+  "_id": "Nq5NRC7yFhdkA5Er",
+  "_key": "!actors!Nq5NRC7yFhdkA5Er",
+  "name": "Dawson",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-04-DAWSON.webp",
+  "folder": "YWm2LWWrpHgOUZLn",
+  "sort": 70,
+  "prototypeToken": {
+    "name": "Dawson",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 10,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "detectionModes": {
+      "feelTremor": {
+        "enabled": true,
+        "range": 20
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Head of Halloway's security ghouls",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Head of Halloway&#39;s security ghouls</td></tr></tbody></table><p>The boss. Ex-Marine, bull neck, supernatural sense of smell. He&#39;s the one who sniffed out Helen&#39;s stairwell and took the drive from Lonnie.</p>\n<p><strong>Awareness 6 (smell):</strong> detects Kindred within 20 meters, ignores Obfuscate unless the wind is against him.</p>\n<p><strong>Disciplines:</strong> Potence 1 (Lethal Body), Auspex 1 (Heightened Senses) · <strong>Blood Bond</strong> to Halloway, level 2 (+2 dice to resist).</p>\n<p><strong>Gear:</strong> pistols, extendable batons, vests (armor 2), radios.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>No ID of his own in doc 14: he&#39;s the boss within MEN-04, with his own pools (doc 11 assigned him MEN-04). Derived ID for the actor.</p>",
+    "health": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {
+      "potence": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "auspex": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "ghoul",
+    "standarddicepools": {
+      "physical": {
+        "value": 6
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "smell",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "MEN-04-DAWSON"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "HdlcLR1edQ9Ey35A",
+      "_key": "!actors.items!Nq5NRC7yFhdkA5Er.HdlcLR1edQ9Ey35A"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "MEN-04-DAWSON"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "KJqP0a2m05dJIERi",
+      "_key": "!actors.items!Nq5NRC7yFhdkA5Er.KJqP0a2m05dJIERi"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-04-DAWSON",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

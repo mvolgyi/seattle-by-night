@@ -1,0 +1,85 @@
+{
+  "_id": "lcO0CdwUlZHg2wAX",
+  "_key": "!journal!lcO0CdwUlZHg2wAX",
+  "name": "Register of the Keeper of Elysium, November Folio",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-03",
+      "archivo": "content/documentos/DOC-03.md",
+      "soporte": "libro-registro",
+      "entrega": [
+        "A2-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "N6jeNJAg9i5bWH24",
+      "_key": "!journal.pages!lcO0CdwUlZHg2wAX.N6jeNJAg9i5bWH24",
+      "name": "Register of the Keeper of Elysium, November Folio",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-libro-registro\"><p class=\"sbn-doc-titulo\">REGISTER OF THE ELYSIUM OF SEATTLE</p>\n<p><em>Glass Gallery · Book XIV · Folio 211</em></p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Night of October 22.</span> Regular session. Present: H.H. Prince Whitmore, the full Primogen, and the Sheriff. No incidents. Primogen Halloway requests a private audience with H.H. Denied owing to the schedule.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Night of October 29.</span> Sheriff Montgomery withdraws before midnight without taking leave of H.H. No one remarks on it aloud.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Night of November 5.</span> Regent Voight delivers to H.H. an envelope sealed with black wax. H.H. does not open it in the hall. Primogen Halloway again requests a private audience. Denied. This Keeper notes that the Primogen smiled upon receiving the answer.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Night of November 5 (cont.).</span> A guest is relieved of a phone he was carrying, switched on, in his inside pocket. He is reminded of the fourth tradition of this Elysium: <em>no connected device crosses the threshold</em>. He apologizes. The device is returned to him on his way out, switched off.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Night of November 5 (cont.).</span> Mr. Wendell Fry, of Clan Malkavian, asks that the following be entered into the record: “The fist has two sons, and neither of them knows it.” So entered.</p>\n<p class=\"sbn-registro-entrada\"><span class=\"sbn-registro-fecha\">Night of November 12.</span> <span class=\"sbn-acotacion\">[Entry left blank. Only the date.]</span></p>\n<p><em>S. M., Keeper</em></p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "aYXnJsracYEXMInc",
+      "_key": "!journal.pages!lcO0CdwUlZHg2wAX.aYXnJsracYEXMInc",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Medium:</strong> handwritten register book, sepia ink, careful penmanship. <strong>When:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}, if a PC with Status 2 or higher asks Solène Marchetti (@UUID[JournalEntry.bB0eDKVFcxQW4C2d]{Solène Marchetti}) to see the register, or if Nadia consults it at court.</p>\n<p><strong>Foreshadows:</strong> Halloway&#39;s frustration, the tension between the Sheriff and the Prince, and Fry&#39;s prophecy (@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: “Song for the Son of the Fist”}).</p>\n<p><strong>Truth:</strong> all of it is accurate. Marchetti records what she sees, not what she thinks. Voight&#39;s envelope contains her first report on FIRSTLIGHT.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -20,8 +20,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { Marked } from "marked";
-import { RAIZ, MODULO, STATS, idEstable, slug, escribirDoc, Carpetas, leerJson } from "../util.mjs";
+import { RAIZ, MODULO, STATS, idEstable, slug, Carpetas } from "../util.mjs";
 import { ID, journals, clavePagina, fichas } from "./ids.mjs";
+import { EN, es, leerContenido } from "./idioma.mjs";
+import { T, T as Tx, escribir as escribirDoc, escribirCarpetas, nombreCarpeta } from "./fijos.mjs";
+
+const leerJson = leerContenido;
 
 const marked = new Marked({ gfm: true });
 const md2html = texto => marked.parse(texto, { async: false });
@@ -68,21 +72,23 @@ const CLAVES_TIRADA = {
 };
 const PATH_VALIDO = new Set(Object.entries(CLAVES_TIRADA).flatMap(([g, ks]) => ks.split(" ").map(k => `${g}.${k}`)));
 
-/** «2026-11-15» → «15/11/2026». */
+/** «2026-11-15» → «15/11/2026» (en inglés, «Nov 15, 2026»). */
+const MESES_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const fechaCorta = iso => {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso ?? "");
+  if (m && EN) return `${MESES_EN[Number(m[2]) - 1]} ${Number(m[3])}, ${m[1]}`;
   return m ? `${m[3]}/${m[2]}/${m[1]}` : (iso ?? "");
 };
 const tituloNoche = n => {
   const noche = NOCHES.get(Number(n));
   if (!noche) return null;
-  return `Noche ${n} · ${noche.dia ?? ""} (madrugada del ${fechaCorta(noche.fecha)})`.replace(/\s+/g, " ");
+  return T("Noche {n} · {dia} (madrugada del {fecha})", { n, dia: noche.dia ?? "", fecha: fechaCorta(noche.fecha) }).replace(/\s+/g, " ");
 };
 
 /** Etiqueta de un movimiento del Termómetro: +1, −2, = 10, Congelar. */
 function etiquetaCambio(cambio) {
   const c = String(cambio).trim();
-  if (/^congelar$/i.test(c)) return "Congelar";
+  if (/^congelar$/i.test(c)) return T("Congelar");
   if (/^=/.test(c)) return `= ${c.slice(1).trim()}`;
   const n = Number(c);
   if (Number.isFinite(n)) return n > 0 ? `+${n}` : n < 0 ? `−${Math.abs(n)}` : "±0";
@@ -126,7 +132,7 @@ function htmlPista(id, etiqueta) {
 
 function htmlReloj(n, etiqueta) {
   const t = tituloNoche(n);
-  return `<span class="sbn-reloj" data-sbn-reloj="${n}"${t ? ` title="${escapar(t)}"` : ""}>${escapar(etiqueta?.trim() || `Noche ${n}`)}</span>`;
+  return `<span class="sbn-reloj" data-sbn-reloj="${n}"${t ? ` title="${escapar(t)}"` : ""}>${escapar(etiqueta?.trim() || T("Noche {n}", { n }))}</span>`;
 }
 
 /* -------------------------------------------- */
@@ -201,7 +207,8 @@ function crearRender(ctx, rel, jid) {
         out = `<section class="secret" id="secret-${sid}">${html}</section>`;
       } else {
         const t = titulo.trim();
-        const nota = /^nota de edici[oó]n/i.test(t);
+        // En inglés, el título traducido (glosario: «Nota de edición»).
+        const nota = /^(nota de edici[oó]n|editor[’']?s notes?|editorial notes?)/i.test(t);
         const clase = nota ? "sbn-recuadro sbn-nota-edicion" : "sbn-recuadro";
         out = `<aside class="${clase}">${t ? `<h4>${md2inline(inlineMarcadores(t))}</h4>` : ""}${html}</aside>`;
         // En una página de jugadores, la nota de edición es del Narrador: secreto nativo
@@ -274,10 +281,11 @@ function enlazarIds(ctx, texto) {
 
 /** Clase de una anotación manuscrita según lo que dice su acotación. */
 function varianteManuscrito(texto) {
-  if (/adhesiva|post-?it/i.test(texto)) return "postit";
-  if (/cinta/i.test(texto)) return "cinta";
-  if (/l[aá]piz/i.test(texto)) return "lapiz";
-  if (/bol[ií]grafo|boli\b/i.test(texto)) return "boligrafo";
+  // Con las palabras del inglés para content/en/ (en castellano no aparecen).
+  if (/adhesiva|post-?it|sticky/i.test(texto)) return "postit";
+  if (/cinta|\btape\b/i.test(texto)) return "cinta";
+  if (/l[aá]piz|pencil/i.test(texto)) return "lapiz";
+  if (/bol[ií]grafo|boli\b|ballpoint|biro\b/i.test(texto)) return "boligrafo";
   return "tinta";
 }
 
@@ -297,14 +305,14 @@ function maquetarComun(html, soporte) {
   });
 
   // Sello de goma: «*[sello de goma, tinta violeta:] COPIA 2 DE 3*».
-  html = html.replace(/<p><em>\[(sello[^\]]*)\]\s*([^<]+)<\/em><\/p>/gi,
+  html = html.replace(/<p><em>\[((?:sello|rubber stamp|stamp)[^\]]*)\]\s*([^<]+)<\/em><\/p>/gi,
     '<p class="sbn-sello"><span class="sbn-acotacion">[$1]</span> <span class="sbn-sello-texto">$2</span></p>');
   // Membrete: «*[Membrete: …]*».
-  html = html.replace(/<p><em>\[Membrete:\s*([^\]]*)\]<\/em><\/p>/gi,
-    '<p class="sbn-membrete"><span class="sbn-acotacion">[Membrete]</span> $1</p>');
+  html = html.replace(/<p><em>\[(?:Membrete|Letterhead):\s*([^\]]*)\]<\/em><\/p>/gi,
+    `<p class="sbn-membrete"><span class="sbn-acotacion">[${T("Membrete")}]</span> $1</p>`);
   // Párrafo que es sólo una acotación: [lluvia.], *[SINTONÍA…]*, **[ PANTALLA ]**.
   html = html.replace(/<p>(?:<(em|strong)>)?(\[[^<\]]*\])(?:<\/\1>)?<\/p>/g, (_, _tag, t) => {
-    const extra = /^\[nota de/i.test(t) ? " sbn-nota-margen" : "";
+    const extra = /^\[(nota de|note\b|margin note)/i.test(t) ? " sbn-nota-margen" : "";
     return `<p class="sbn-acotacion${extra}">${t}</p>`;
   });
   // Acotación dentro de un párrafo.
@@ -342,7 +350,7 @@ const SOPORTES = {
     // La pantalla del móvil de tapa; lo escrito a mano (la cinta de la tapa) queda fuera.
     const notas = [];
     html = html.replace(/<aside class="sbn-manuscrito[\s\S]*?<\/aside>/g, m => { notas.push(m); return ""; });
-    html = html.replace(/<p class="sbn-acotacion">(\[Bater[ií]a[^<]*)<\/p>/i, '<p class="sbn-pantalla-estado">$1</p>');
+    html = html.replace(/<p class="sbn-acotacion">(\[(?:Bater[ií]a|Battery)[^<]*)<\/p>/i, '<p class="sbn-pantalla-estado">$1</p>');
     html = html.replace(/<p>(─+)<\/p>/g, '<hr class="sbn-pantalla-raya">');
     return `<div class="sbn-pantalla">${html}</div>${notas.join("")}`;
   },
@@ -357,7 +365,7 @@ const SOPORTES = {
     }
     if (!campos.length) return html;
     const dl = campos.map(([k, v]) => {
-      const clase = /clasificaci/i.test(k) ? ' class="sbn-correo-clasificacion"' : "";
+      const clase = /clasificaci|classification/i.test(k) ? ' class="sbn-correo-clasificacion"' : "";
       return `<dt>${k}</dt><dd${clase}>${v}</dd>`;
     }).join("");
     return `<dl class="sbn-correo-cabecera">${dl}</dl><div class="sbn-correo-cuerpo">${html}</div>`;
@@ -367,12 +375,12 @@ const SOPORTES = {
     return html
       .replace(/<p><strong>([^<]+?):<\/strong>\s*([\s\S]*?)<\/p>/g,
         '<p class="sbn-guion-linea"><span class="sbn-guion-personaje">$1</span> <span class="sbn-guion-texto">$2</span></p>')
-      .replace(/<p class="sbn-acotacion">(\[(?!nota de)[^<]*)<\/p>/gi, '<p class="sbn-acotacion sbn-guion-direccion">$1</p>');
+      .replace(/<p class="sbn-acotacion">(\[(?!nota de|note\b|margin note)[^<]*)<\/p>/gi, '<p class="sbn-acotacion sbn-guion-direccion">$1</p>');
   },
 
   "libro-registro"(html) {
     return html.replace(/<p><strong>([^<]+)<\/strong>\s*([\s\S]*?)<\/p>/g, (todo, fecha, texto) =>
-      /^noche/i.test(fecha)
+      /^(noche|night)/i.test(fecha)
         ? `<p class="sbn-registro-entrada"><span class="sbn-registro-fecha">${fecha}</span> ${texto}</p>`
         : todo);
   },
@@ -383,14 +391,14 @@ const SOPORTES = {
   },
 
   informe(html) {
-    return html.replace(/<p>Firma:\s*<em>([^<]+)<\/em><\/p>/g,
-      '<p class="sbn-informe-firma">Firma: <span class="sbn-firma-manuscrita">$1</span></p>');
+    return html.replace(/<p>(Firma|Signature|Signed):\s*<em>([^<]+)<\/em><\/p>/g,
+      '<p class="sbn-informe-firma">$1: <span class="sbn-firma-manuscrita">$2</span></p>');
   },
 
   foto(html, { imagen }) {
-    html = html.replace(/<p><strong>\[FOTO\]<\/strong>\s*([\s\S]*?)<\/p>/, (_, desc) =>
-      `<div class="sbn-foto-imagen">${imagen ?? ""}<p class="sbn-foto-descripcion"><span class="sbn-acotacion">[foto]</span> ${desc}</p></div>`);
-    return html.replace(/<p><strong>Pie de foto:<\/strong>\s*([\s\S]*?)<\/p>/, '<p class="sbn-foto-pie">$1</p>');
+    html = html.replace(/<p><strong>\[(?:FOTO|PHOTO)\]<\/strong>\s*([\s\S]*?)<\/p>/, (_, desc) =>
+      `<div class="sbn-foto-imagen">${imagen ?? ""}<p class="sbn-foto-descripcion"><span class="sbn-acotacion">[${T("foto")}]</span> ${desc}</p></div>`);
+    return html.replace(/<p><strong>(?:Pie de foto|Caption):<\/strong>\s*([\s\S]*?)<\/p>/, '<p class="sbn-foto-pie">$1</p>');
   },
 
   diagrama(html) {
@@ -404,19 +412,19 @@ const SOPORTES_MD = {
     const [post, ...resto] = md.split(/^— — —\s*$/m);
     const comentarios = resto.join("\n").split(/^### /m).map(s => s.trim()).filter(Boolean);
     let htmlPost = render.html(post.trim())
-      .replace(/^\s*<p>([\s\S]*?Publicado por[\s\S]*?)<\/p>/, '<header class="sbn-foro-meta">$1</header>')
+      .replace(/^\s*<p>([\s\S]*?(?:Publicado por|Posted by)[\s\S]*?)<\/p>/, '<header class="sbn-foro-meta">$1</header>')
       .replace(/(<\/header>)\s*<p><strong>([^<]+)<\/strong><\/p>/, '$1<h3 class="sbn-foro-titulo">$2</h3>')
-      .replace(/<p><em>\[imagen:\s*([^\]]*)\]<\/em><\/p>/g,
+      .replace(/<p><em>\[(?:imagen|image):\s*([^\]]*)\]<\/em><\/p>/g,
         '<div class="sbn-foro-imagen"><i class="fa-regular fa-image"></i> <span>$1</span></div>');
-    const op = (/Publicado por \*\*([^*]+)\*\*/.exec(post) ?? [])[1];
+    const op = (/(?:Publicado por|Posted by) \*\*([^*]+)\*\*/.exec(post) ?? [])[1];
     const htmlComentarios = comentarios.map(c => {
       const [linea, ...cuerpo] = c.split("\n");
-      const m = /^(.+?)\s*·\s*(-?\d+)\s*puntos?\s*$/.exec(linea.trim());
+      const m = /^(.+?)\s*·\s*(-?\d+)\s*(?:puntos?|points?)\s*$/.exec(linea.trim());
       const usuario = m ? m[1] : linea.trim();
-      const eliminado = /eliminado/i.test(usuario) ? " sbn-foro-eliminado" : usuario === op ? " sbn-foro-op" : "";
+      const eliminado = /eliminado|deleted/i.test(usuario) ? " sbn-foro-eliminado" : usuario === op ? " sbn-foro-op" : "";
       return `<div class="sbn-foro-comentario${eliminado}"><header class="sbn-foro-autor">`
         + `<span class="sbn-foro-usuario">${escapar(usuario)}</span>`
-        + (m ? ` <span class="sbn-foro-puntos">${m[2]} puntos</span>` : "")
+        + (m ? ` <span class="sbn-foro-puntos">${T("{n} puntos", { n: m[2] })}</span>` : "")
         + `</header><div class="sbn-foro-texto">${render.html(cuerpo.join("\n").trim())}</div></div>`;
     }).join("");
     return `<article class="sbn-foro-post">${htmlPost}</article>`
@@ -430,7 +438,7 @@ const SOPORTES_MD = {
     for (const d of diapos) {
       const [titulo, ...cuerpo] = d.split("\n");
       let html = render.html(cuerpo.join("\n").trim());
-      html = html.replace(/<p><em>Pie de página:\s*([\s\S]*?)<\/em><\/p>/, '<footer class="sbn-diapositiva-pie">$1</footer>');
+      html = html.replace(/<p><em>(?:Pie de página|Footer):\s*([\s\S]*?)<\/em><\/p>/, '<footer class="sbn-diapositiva-pie">$1</footer>');
       out.push(`<section class="sbn-diapositiva"><h3>${render.inline(titulo.trim())}</h3>${html}</section>`);
     }
     return out.join("");
@@ -489,6 +497,8 @@ const NOMBRE_CARPETA = {
   "/El Expediente Ward": "Del prólogo al epílogo" // las partes de AVE-01, para no repetir el nombre de la raíz
 };
 const carpetasDe = pack => new Carpetas(pack, "JournalEntry", { orden: ORDEN_CARPETAS, colores: COLOR_RAIZ });
+/** Nombre visible de la raíz de cronica en el idioma del build (aventura.mjs funde con él su raíz). */
+export const NOMBRE_RAIZ = nombreCarpeta("/Seattle by Night", NOMBRE_CARPETA["/Seattle by Night"], { fijo: true });
 
 /* -------------------------------------------- */
 /*  Documentos de Foundry                       */
@@ -532,17 +542,24 @@ function docJournal({ id, nombre, folder, orden, nivel, paginas, extra = {} }) {
 function notasDeEdicionPJ(f) {
   const partes = [];
   if (f.nota) partes.push(f.nota);
-  if (f.provisional?.length) partes.push("### Provisional (doc 16)", f.provisional.map(p => `- ${p}`).join("\n"));
-  if (f.propuesto?.length) partes.push("### Propuesto (no está en los docs)", f.propuesto.map(p => `- ${p}`).join("\n"));
+  if (f.provisional?.length) partes.push(`### ${T("Provisional (doc 16)")}`, f.provisional.map(p => `- ${p}`).join("\n"));
+  if (f.propuesto?.length) partes.push(`### ${T("Propuesto (no está en los docs)")}`, f.propuesto.map(p => `- ${p}`).join("\n"));
   return partes.join("\n\n");
 }
 
 const ENTREGA = {
-  "sesion-cero": "Sesión cero",
-  narrador: "Sólo para el Narrador",
-  fuera: "Fuera de la aventura",
-  epilogo: "Epílogo"
+  "sesion-cero": T("Sesión cero"),
+  narrador: T("Sólo para el Narrador"),
+  fuera: T("Fuera de la aventura"),
+  epilogo: T("Epílogo")
 };
+
+/**
+ * «Para el Narrador»: la página que cierra un documento. Por su título en
+ * castellano (en inglés, el de la página castellana con la que se emparejó) o
+ * porque la generó el build (`paraNarrador`).
+ */
+const esParaNarrador = p => p.paraNarrador || /^para el narrador$/i.test(es(p).nombre ?? "");
 
 /** Un journal desde un archivo de content/. */
 function construirJournal(ctx, j, carpetas) {
@@ -564,11 +581,13 @@ function construirJournal(ctx, j, carpetas) {
   const entrega = lista(meta.entrega);
 
   // «nota» del frontmatter → página «Para el Narrador», salvo que el archivo ya la tenga.
-  if (esDocumento && meta.nota && !paginas.some(p => /^para el narrador$/i.test(p.nombre ?? ""))) {
+  if (esDocumento && meta.nota && !paginas.some(esParaNarrador)) {
     const donde = entrega.map(e => ctx.reg.has(e) ? `@ID[${e}]` : (ENTREGA[e] ?? e)).join(" · ");
+    // La clave, la del título castellano: el _id de la página no depende del idioma.
     paginas.push({
-      titulo: "Para el Narrador {narrador}", nombre: "Para el Narrador", ancla: null, visibilidad: "narrador",
-      md: [`**Soporte:** ${meta.soporte}.${donde ? ` **Entrega:** ${donde}.` : ""}`, `*${meta.nota}*`].join("\n\n")
+      titulo: "Para el Narrador {narrador}", nombre: T("Para el Narrador"), ancla: null, visibilidad: "narrador",
+      clave: `t:${slug("Para el Narrador")}`, paraNarrador: true,
+      md: [`**${T("Soporte")}:** ${meta.soporte}.${donde ? ` **${T("Entrega")}:** ${donde}.` : ""}`, `*${meta.nota}*`].join("\n\n")
     });
   }
 
@@ -578,7 +597,7 @@ function construirJournal(ctx, j, carpetas) {
   const pj = j.pack === "cronica" && rel.startsWith("content/personajes/") ? FICHAS_PJ.get(j.id) : null;
   if (pj) {
     const md = notasDeEdicionPJ(pj);
-    if (md) paginas.push({ titulo: "Notas de edición {narrador}", nombre: "Notas de edición", ancla: null, visibilidad: "narrador", md });
+    if (md) paginas.push({ titulo: "Notas de edición {narrador}", nombre: T("Notas de edición"), ancla: null, visibilidad: "narrador", clave: `t:${slug("Notas de edición")}`, md });
   }
   const vistas = new Set();
 
@@ -592,7 +611,7 @@ function construirJournal(ctx, j, carpetas) {
     render.pagina(clave, { jugadores: nivelDe(p) >= OBSERVADOR });
 
     const esIntro = p.titulo === null;
-    const paraNarrador = /^para el narrador$/i.test(p.nombre ?? "");
+    const paraNarrador = esParaNarrador(p);
     let html;
     if (esDocumento && !paraNarrador) {
       const imagen = imagenDe(p.ancla && IMAGEN_PARA.get(p.ancla)) ?? (esIntro ? imagenDe(meta.imagen) : null);
@@ -602,7 +621,7 @@ function construirJournal(ctx, j, carpetas) {
       if (paraNarrador && esDocumento) html = `<div class="sbn-para-narrador">${html}</div>`;
     }
     if (actor && i === 0) {
-      html = `<p class="sbn-enlace-actor"><i class="fa-solid fa-user"></i> Ficha: @UUID[${actor.uuid}]{${escapar(plano(actor.nombre))}}</p>\n${html}`;
+      html = `<p class="sbn-enlace-actor"><i class="fa-solid fa-user"></i> ${T("Ficha")}: @UUID[${actor.uuid}]{${escapar(plano(actor.nombre))}}</p>\n${html}`;
     }
     // Retrato de la fase 6 al principio del perfil (también los de trasfondo sin actor).
     if (i === 0 && rel.startsWith("content/personajes/") && fs.existsSync(path.join(RAIZ, `assets/retratos/${j.id}.webp`))) {
@@ -644,13 +663,13 @@ function construirJournal(ctx, j, carpetas) {
 /*  Journal generado: Pistas                    */
 /* -------------------------------------------- */
 
-const TIPO_OBTENCION = {
+const TIPO_OBTENCION = Object.fromEntries(Object.entries({
   principal: "Principal", preludio: "Preludio", documento: "Documento", relato: "Relato",
   loresheet: "Loresheet", parcial: "Parcial", alternativa: "Alternativa", indicio: "Indicio",
   refuerzo: "Refuerzo", adelantada: "Adelantada"
-};
+}).map(([k, v]) => [k, T(v)]));
 
-const origenDoc = o => o ? ` <span class="sbn-origen">doc ${escapar(o)}</span>` : "";
+const origenDoc = o => o ? ` <span class="sbn-origen">${T("doc {o}", { o: escapar(o) })}</span>` : "";
 
 function construirPistas(ctx, carpetas) {
   if (!PISTAS.length) return null;
@@ -666,10 +685,10 @@ function construirPistas(ctx, carpetas) {
     if (p.texto) h.push(`<p>${L(p.texto)}</p>`);
 
     const escenas = [p.escena, ...(p.otrasEscenas ?? [])].filter(Boolean);
-    h.push(`<h3>Dónde se obtiene</h3>`);
+    h.push(`<h3>${T("Dónde se obtiene")}</h3>`);
     if (escenas.length) {
-      h.push(`<p><strong>Escena principal:</strong> ${enlace(escenas[0])}`
-        + (escenas.length > 1 ? ` · <strong>También en:</strong> ${escenas.slice(1).map(enlace).join(", ")}` : "") + `</p>`);
+      h.push(`<p><strong>${T("Escena principal")}:</strong> ${enlace(escenas[0])}`
+        + (escenas.length > 1 ? ` · <strong>${T("También en")}:</strong> ${escenas.slice(1).map(enlace).join(", ")}` : "") + `</p>`);
     }
     if (p.obtencion?.length) {
       h.push(`<ul class="sbn-lista-obtencion">${p.obtencion.map(o => {
@@ -681,23 +700,23 @@ function construirPistas(ctx, carpetas) {
     }
 
     if (p.dados?.length) {
-      h.push(`<h3>Dados que aporta</h3><ul class="sbn-lista-dados">${p.dados.map(d =>
+      h.push(`<h3>${T("Dados que aporta")}</h3><ul class="sbn-lista-dados">${p.dados.map(d =>
         `<li><span class="sbn-dados">+${escapar(d.cantidad)}</span> ${enlace(d.tirada)}: ${L(d.texto ?? "")}${origenDoc(d.origen)}</li>`
       ).join("")}</ul>`);
     }
     if (p.efectos?.length) {
-      h.push(`<h3>Efectos</h3><ul>${p.efectos.map(e =>
+      h.push(`<h3>${T("Efectos")}</h3><ul>${p.efectos.map(e =>
         `<li>${e.escena ? `<strong>${enlace(e.escena)}</strong>: ` : ""}${L(e.efecto ?? e.texto ?? "")}`
         + `${e.pj ? ` (${enlace(e.pj)})` : ""}${origenDoc(e.origen)}</li>`).join("")}</ul>`);
     }
-    if (p.ayuda) h.push(`<h3>Ayuda de juego</h3><p>${L(p.ayuda)}</p>`);
-    if (p.nota) h.push(`<aside class="sbn-recuadro sbn-nota-edicion"><h4>Nota</h4><p>${L(p.nota)}</p></aside>`);
+    if (p.ayuda) h.push(`<h3>${T("Ayuda de juego")}</h3><p>${L(p.ayuda)}</p>`);
+    if (p.nota) h.push(`<aside class="sbn-recuadro sbn-nota-edicion"><h4>${T("Nota")}</h4><p>${L(p.nota)}</p></aside>`);
     const nombres = Object.entries(p.nombres ?? {});
     const variantes = Object.entries(p.variantes ?? {});
     if (nombres.length || variantes.length) {
-      h.push(`<h3>En los docs</h3><ul class="sbn-lista-variantes">`
-        + nombres.map(([doc, n]) => `<li><span class="sbn-origen">doc ${escapar(doc)}</span> «${L(n)}»</li>`).join("")
-        + variantes.map(([doc, v]) => `<li><span class="sbn-origen">doc ${escapar(doc)}</span> ${L(v)}</li>`).join("")
+      h.push(`<h3>${T("En los docs")}</h3><ul class="sbn-lista-variantes">`
+        + nombres.map(([doc, n]) => `<li><span class="sbn-origen">${T("doc {o}", { o: escapar(doc) })}</span> «${L(n)}»</li>`).join("")
+        + variantes.map(([doc, v]) => `<li><span class="sbn-origen">${T("doc {o}", { o: escapar(doc) })}</span> ${L(v)}</li>`).join("")
         + `</ul>`);
     }
     return docPagina(jid, {
@@ -712,7 +731,7 @@ function construirPistas(ctx, carpetas) {
   });
 
   return docJournal({
-    id: "PISTAS", nombre: "Pistas", folder: carpetas.id("El Expediente Ward"), orden: 900,
+    id: "PISTAS", nombre: T("Pistas"), folder: carpetas.id("El Expediente Ward"), orden: 900,
     nivel: NINGUNO, paginas, extra: { archivo: "content/pistas.json" }
   });
 }
@@ -735,19 +754,19 @@ function construirTrackers(ctx, carpetas) {
   const nochesDe = x => [...(x.noches ?? []), ...(x.noche != null ? [x.noche] : [])];
   const variantes = v => {
     const e = Object.entries(v ?? {});
-    return e.length ? `<ul class="sbn-lista-variantes">${e.map(([d, t]) => `<li><span class="sbn-origen">doc ${escapar(d)}</span> ${L(t)}</li>`).join("")}</ul>` : "";
+    return e.length ? `<ul class="sbn-lista-variantes">${e.map(([d, t]) => `<li><span class="sbn-origen">${Tx("doc {o}", { o: escapar(d) })}</span> ${L(t)}</li>`).join("")}</ul>` : "";
   };
   /** Dónde ocurre un movimiento: escena, lugar, noche, gancho… */
   const donde = x => {
     const out = [];
     for (const k of ["escena", "lugar", "documento", "pnj", "pj", "gancho", "desenlace", "lor"]) if (x[k]) out.push(enlace(x[k]));
     for (const n of nochesDe(x)) out.push(htmlReloj(n));
-    if (x.por) out.push(`por ${escapar(x.por)}`);
-    if (x.maximo != null) out.push(`máx. ${escapar(x.maximo)}`);
-    if (x.alcance) out.push(`sólo ${escapar(x.alcance)}`);
+    if (x.por) out.push(Tx("por {x}", { x: escapar(x.por) }));
+    if (x.maximo != null) out.push(Tx("máx. {x}", { x: escapar(x.maximo) }));
+    if (x.alcance) out.push(Tx("sólo {x}", { x: escapar(x.alcance) }));
     return out.join(" · ");
   };
-  const tablaMovimientos = filas => `<table class="sbn-tabla sbn-tabla-movimientos"><thead><tr><th>Cambio</th><th>Motivo</th><th>Dónde</th></tr></thead><tbody>${
+  const tablaMovimientos = filas => `<table class="sbn-tabla sbn-tabla-movimientos"><thead><tr><th>${Tx("Cambio")}</th><th>${Tx("Motivo")}</th><th>${Tx("Dónde")}</th></tr></thead><tbody>${
     filas.map(x => {
       const cambio = valorCambio(x.cantidad);
       const boton = cambio && cambio !== "+0" && cambio !== "0" ? htmlTermometro(cambio, plano(x.motivo), { corto: true }) : `<span class="sbn-termometro-cambio">${escapar(etiquetaCambio(x.cantidad))}</span>`;
@@ -757,58 +776,58 @@ function construirTrackers(ctx, carpetas) {
 
   // 1. El Termómetro: qué es y sus umbrales.
   render.pagina("termometro");
-  pagina("termometro", "El Termómetro de FIRSTLIGHT", [
+  pagina("termometro", Tx("El Termómetro de FIRSTLIGHT"), [
     T.descripcion && `<p>${L(T.descripcion)}</p>`,
-    `<p><strong>Empieza en</strong> ${escapar(T.inicio ?? "")} · <strong>escala</strong> ${escapar(T.min ?? 0)}–${escapar(T.max ?? 10)}`
-      + (T.ayuda ? ` · <strong>ayuda de juego:</strong> ${enlace(T.ayuda)}` : "") + `</p>`,
+    `<p><strong>${Tx("Empieza en")}</strong> ${escapar(T.inicio ?? "")} · <strong>${Tx("escala")}</strong> ${escapar(T.min ?? 0)}–${escapar(T.max ?? 10)}`
+      + (T.ayuda ? ` · <strong>${Tx("ayuda de juego:")}</strong> ${enlace(T.ayuda)}` : "") + `</p>`,
     T.visibilidad && `<p><em>${L(T.visibilidad)}</em></p>`,
-    `<h3>Umbrales</h3>`,
-    `<table class="sbn-tabla sbn-tabla-umbrales"><thead><tr><th>Valor</th><th>Qué pasa</th><th>Lo que ven los jugadores</th></tr></thead><tbody>${
+    `<h3>${Tx("Umbrales")}</h3>`,
+    `<table class="sbn-tabla sbn-tabla-umbrales"><thead><tr><th>${Tx("Valor")}</th><th>${Tx("Qué pasa")}</th><th>${Tx("Lo que ven los jugadores")}</th></tr></thead><tbody>${
       (T.umbrales ?? []).map(u => `<tr><td class="sbn-umbral-valor">${escapar(u.icono ?? "")} <strong>${escapar(u.valor)}</strong></td>`
         + `<td>${L(u.ciudad ?? u.texto ?? "")}${u.ciudad && u.texto && u.ciudad !== u.texto ? `<br><span class="sbn-nota">${L(u.texto)}</span>` : ""}`
         + `${u.escena ? ` → ${enlace(u.escena)}` : ""}${u.pnj ? ` (${enlace(u.pnj)})` : ""}`
-        + `${u.interludio ? `<br>Interludio de FIRSTLIGHT: ${enlace(u.interludio)}` : ""}</td>`
-        + `<td>${L(u.jugadores === "inicio" ? "Inicio" : (u.jugadores ?? ""))}</td></tr>`).join("")
+        + `${u.interludio ? `<br>${Tx("Interludio de FIRSTLIGHT")}: ${enlace(u.interludio)}` : ""}</td>`
+        + `<td>${L(u.jugadores === "inicio" ? Tx("Inicio") : (u.jugadores ?? ""))}</td></tr>`).join("")
     }</tbody></table>`,
     ...(T.umbrales ?? []).filter(u => u.efectos?.length || u.nota || Object.keys(u.variantes ?? {}).length).map(u =>
       `<h4>${escapar(u.icono ?? "")} ${escapar(u.valor)} · ${L(u.texto ?? "")}</h4>`
       + (u.efectos?.length ? `<ul>${u.efectos.map(e => `<li>${L(e.texto)}${e.lugar ? ` (${enlace(e.lugar)})` : ""}${e.pnj ? ` (${enlace(e.pnj)})` : ""}${origenDoc(e.origen)}</li>`).join("")}</ul>` : "")
       + (u.nota ? `<p class="sbn-nota">${L(u.nota)}</p>` : "")
       + variantes(u.variantes)),
-    T.condiciones?.length && `<h3>Condiciones</h3><table class="sbn-tabla sbn-tabla-condiciones"><thead><tr><th>Termómetro</th><th>Efecto</th><th>Dónde</th></tr></thead><tbody>${
+    T.condiciones?.length && `<h3>${Tx("Condiciones")}</h3><table class="sbn-tabla sbn-tabla-condiciones"><thead><tr><th>${Tx("Termómetro")}</th><th>${Tx("Efecto")}</th><th>${Tx("Dónde")}</th></tr></thead><tbody>${
       T.condiciones.map(c => `<tr><td><strong>${escapar(c.valor)}</strong></td><td>${L(c.efecto)}`
         + `${c.nota ? `<br><span class="sbn-nota">${L(c.nota)}</span>` : ""}${variantes(c.variantes)}${origenDoc(c.origen)}</td>`
         + `<td>${[...(c.escenas ?? (c.escena ? [c.escena] : [])).map(enlace), c.lor ? enlace(c.lor) : "", c.noche != null ? htmlReloj(c.noche) : ""].filter(Boolean).join(" · ")}</td></tr>`).join("")
     }</tbody></table>`,
-    T.origen && `<p class="sbn-origen">Fuentes: docs ${escapar(T.origen)}</p>`
+    T.origen && `<p class="sbn-origen">${Tx("Fuentes: docs {x}", { x: escapar(T.origen) })}</p>`
   ]);
 
   // 2. Movimientos: sube, baja, otros y cómo evitar que suba.
   render.pagina("termometro-movimientos");
-  pagina("termometro-movimientos", "Movimientos del Termómetro", [
-    `<p>Los botones mueven el Termómetro (sólo el Narrador).</p>`,
-    T.sube?.length && `<h3>Sube</h3>${tablaMovimientos(T.sube)}`,
-    T.baja?.length && `<h3>Baja</h3>${tablaMovimientos(T.baja)}`,
-    T.otros?.length && `<h3>Otros movimientos</h3>${tablaMovimientos(T.otros)}`,
-    T.evitar?.length && `<h3>Cómo evitar que suba</h3><ul>${T.evitar.map(e =>
+  pagina("termometro-movimientos", Tx("Movimientos del Termómetro"), [
+    `<p>${Tx("Los botones mueven el Termómetro (sólo el Narrador).")}</p>`,
+    T.sube?.length && `<h3>${Tx("Sube")}</h3>${tablaMovimientos(T.sube)}`,
+    T.baja?.length && `<h3>${Tx("Baja")}</h3>${tablaMovimientos(T.baja)}`,
+    T.otros?.length && `<h3>${Tx("Otros movimientos")}</h3>${tablaMovimientos(T.otros)}`,
+    T.evitar?.length && `<h3>${Tx("Cómo evitar que suba")}</h3><ul>${T.evitar.map(e =>
       `<li>${L(e.motivo)}${donde(e) ? ` · ${donde(e)}` : ""}${origenDoc(e.origen)}</li>`).join("")}</ul>`
   ]);
 
   // 3. El Reloj: resumen y variantes condicionales.
   const noches = R.noches ?? [];
   render.pagina("reloj");
-  pagina("reloj", "El Reloj de Halloway", [
+  pagina("reloj", Tx("El Reloj de Halloway"), [
     R.descripcion && `<p>${L(R.descripcion)}</p>`,
     R.convencionFechas && `<p class="sbn-nota">${L(R.convencionFechas)}</p>`,
-    `<table class="sbn-tabla sbn-tabla-reloj"><thead><tr><th>Noche</th><th>Fecha</th><th>Qué pasa</th><th>Escenas</th></tr></thead><tbody>${
+    `<table class="sbn-tabla sbn-tabla-reloj"><thead><tr><th>${Tx("Noche")}</th><th>${Tx("Fecha")}</th><th>${Tx("Qué pasa")}</th><th>${Tx("Escenas")}</th></tr></thead><tbody>${
       noches.map(n => `<tr><td>${htmlReloj(n.n)}</td><td>${escapar(n.dia ?? fechaCorta(n.fecha))}</td><td>${L(n.evento)}</td>`
         + `<td>${(n.escenas ?? (n.escena ? [n.escena] : [])).map(enlace).join(", ")}</td></tr>`).join("")
     }</tbody></table>`,
-    R.variantes?.length && `<h3>Si la coterie…</h3><table class="sbn-tabla sbn-tabla-variantes"><thead><tr><th>Si…</th><th>Entonces…</th><th>Dónde</th></tr></thead><tbody>${
+    R.variantes?.length && `<h3>${Tx("Si la coterie…")}</h3><table class="sbn-tabla sbn-tabla-variantes"><thead><tr><th>${Tx("Si…")}</th><th>${Tx("Entonces…")}</th><th>${Tx("Dónde")}</th></tr></thead><tbody>${
       R.variantes.map(v => `<tr><td>${L(v.si)}</td><td>${L(v.entonces)}${origenDoc(v.origen)}</td><td>${donde(v)}</td></tr>`).join("")
     }</tbody></table>`,
-    R.nota && `<aside class="sbn-recuadro sbn-nota-edicion"><h4>Nota de edición</h4><p>${L(R.nota)}</p></aside>`,
-    R.versionDoc01?.length && `<h3>Versión del doc 01</h3><ul class="sbn-lista-variantes">${R.versionDoc01.map(v =>
+    R.nota && `<aside class="sbn-recuadro sbn-nota-edicion"><h4>${Tx("Nota de edición")}</h4><p>${L(R.nota)}</p></aside>`,
+    R.versionDoc01?.length && `<h3>${Tx("Versión del doc 01")}</h3><ul class="sbn-lista-variantes">${R.versionDoc01.map(v =>
       `<li>${htmlReloj(v.n)} ${L(v.evento)}</li>`).join("")}</ul>`
   ]);
 
@@ -817,31 +836,31 @@ function construirTrackers(ctx, carpetas) {
     const clave = `noche-${n.n}`;
     render.pagina(clave);
     const movs = n.movimientos ?? [];
-    pagina(clave, `Noche ${n.n} · ${n.dia ?? fechaCorta(n.fecha)}`, [
-      `<p class="sbn-noche-fecha">${htmlReloj(n.n)} · madrugada del ${escapar(fechaCorta(n.fecha))}</p>`,
+    pagina(clave, Tx("Noche {n} · {dia}", { n: n.n, dia: n.dia ?? fechaCorta(n.fecha) }), [
+      `<p class="sbn-noche-fecha">${htmlReloj(n.n)} · ${Tx("madrugada del {fecha}", { fecha: escapar(fechaCorta(n.fecha)) })}</p>`,
       `<p>${L(n.evento)}</p>`,
       (n.escenas ?? (n.escena ? [n.escena] : [])).length
-        && `<p><strong>Escenas:</strong> ${(n.escenas ?? [n.escena]).map(enlace).join(", ")}</p>`,
-      (n.termometro != null || movs.length) && `<h3>Termómetro</h3>`
-        + (n.termometro != null ? `<p>Cambio fijo de la noche: <strong>${escapar(etiquetaCambio(n.termometro))}</strong>.</p>` : "")
+        && `<p><strong>${Tx("Escenas")}:</strong> ${(n.escenas ?? [n.escena]).map(enlace).join(", ")}</p>`,
+      (n.termometro != null || movs.length) && `<h3>${Tx("Termómetro")}</h3>`
+        + (n.termometro != null ? `<p>${Tx("Cambio fijo de la noche")}: <strong>${escapar(etiquetaCambio(n.termometro))}</strong>.</p>` : "")
         + (movs.length ? `<ul>${movs.map(m => {
           const c = valorCambio(m.cantidad);
           return `<li>${c ? htmlTermometro(c, plano(m.motivo)) : `${escapar(m.cantidad)} ${L(m.motivo)}`}`
-            + `${m.condicional ? ` <em>(si pasa)</em>` : ""}${origenDoc(m.origen)}</li>`;
+            + `${m.condicional ? ` <em>${Tx("(si pasa)")}</em>` : ""}${origenDoc(m.origen)}</li>`;
         }).join("")}</ul>` : ""),
-      n.horas?.length && `<h3>Hora a hora</h3><table class="sbn-tabla sbn-tabla-horas"><thead><tr><th>Hora</th><th>Qué pasa</th></tr></thead><tbody>${
+      n.horas?.length && `<h3>${Tx("Hora a hora")}</h3><table class="sbn-tabla sbn-tabla-horas"><thead><tr><th>${Tx("Hora")}</th><th>${Tx("Qué pasa")}</th></tr></thead><tbody>${
         n.horas.map(h => `<tr><td class="sbn-hora">${escapar(h.hora)}${h.dia ? `<br><span class="sbn-nota">${escapar(h.dia)}</span>` : ""}</td>`
           + `<td>${L(h.evento)}${h.nota ? `<br><span class="sbn-nota">${L(h.nota)}</span>` : ""}${variantes(h.variantes)}${origenDoc(h.origen)}</td></tr>`).join("")
       }</tbody></table>`,
-      Object.keys(n.variantes ?? {}).length && `<h3>Versiones de los docs</h3>${variantes(n.variantes)}`,
+      Object.keys(n.variantes ?? {}).length && `<h3>${Tx("Versiones de los docs")}</h3>${variantes(n.variantes)}`,
       (R.variantes ?? []).some(v => Number(v.noche) === Number(n.n))
-        && `<h3>Si la coterie…</h3><ul>${R.variantes.filter(v => Number(v.noche) === Number(n.n)).map(v =>
+        && `<h3>${Tx("Si la coterie…")}</h3><ul>${R.variantes.filter(v => Number(v.noche) === Number(n.n)).map(v =>
           `<li>${L(v.si)} → ${L(v.entonces)}${origenDoc(v.origen)}</li>`).join("")}</ul>`
     ]);
   }
 
   return docJournal({
-    id: "TRACKERS", nombre: "El Termómetro y el Reloj", folder: carpetas.id("El Expediente Ward"), orden: 910,
+    id: "TRACKERS", nombre: Tx("El Termómetro y el Reloj"), folder: carpetas.id("El Expediente Ward"), orden: 910,
     nivel: NINGUNO, paginas, extra: { archivo: "content/trackers.json" }
   });
 }
@@ -870,8 +889,10 @@ export async function construir(ctx) {
   escribir("cronica", construirTrackers(ctx, carpetas.cronica));
 
   for (const c of Object.values(carpetas)) {
-    for (const [clave, carpeta] of c.mapa) carpeta.name = NOMBRE_CARPETA[clave] ?? carpeta.name;
-    c.escribir();
+    for (const [clave, carpeta] of c.mapa) {
+      carpeta.name = NOMBRE_CARPETA[clave] ? nombreCarpeta(clave, NOMBRE_CARPETA[clave], { fijo: true }) : carpeta.name;
+    }
+    escribirCarpetas(c, { fijas: new Set(Object.keys(NOMBRE_CARPETA)) });
   }
   for (const [pack, n] of Object.entries(cuenta)) {
     console.log(`${pack}: ${n.j} journals, ${n.p} páginas, ${carpetas[pack].mapa.size} carpetas`);

@@ -1,0 +1,109 @@
+{
+  "_id": "NNzMhIvsavpG0iTQ",
+  "_key": "!journal!NNzMhIvsavpG0iTQ",
+  "name": "The Sheriff's Farm and Boat Landing",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-02",
+      "archivo": "content/ciudad/LUG-02.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "1lXdPG8lQHM7RAfV",
+      "_key": "!journal.pages!NNzMhIvsavpG0iTQ.1lXdPG8lQHM7RAfV",
+      "name": "The Sheriff's Farm and Boat Landing",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Snohomish Valley, 40 minutes north · Ethan Montgomery&#39;s haven · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "5MMvM2eIxnCgrLun",
+      "_key": "!journal.pages!NNzMhIvsavpG0iTQ.5MMvM2eIxnCgrLun",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The gravel road ends at a dark-timbered farmhouse surrounded by fields flooded with rain. There are dogs, a lot of them, and they don&#39;t bark: they watch. Behind the house, through the trees, the river glints. The man waiting for you on the porch doesn&#39;t get up from his rocking chair. His eyes are a color that isn&#39;t quite human.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "uoeAt9PqL4u5aB3h",
+      "_key": "!journal.pages!NNzMhIvsavpG0iTQ.uoeAt9PqL4u5aB3h",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> main house, a barn converted into the Wolves&#39; meeting hall, a basement with a tunnel roughly 300 meters long leading to a private boat landing on the Snohomish River, and kennels holding a dozen ghoul dogs.</p>\n<p><strong>Backgrounds:</strong> Haven 3 and Herd 2 (the bounty hunters, @UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters}, who live in trailers behind the barn).</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks} (the coterie forms) and @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers} (the pack wavers). It&#39;s one of the possible targets in @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}.</p>\n<p><strong>Detail:</strong> Montgomery receives visitors sitting on the porch, even in the rain. If he invites someone inside, the matter is serious.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

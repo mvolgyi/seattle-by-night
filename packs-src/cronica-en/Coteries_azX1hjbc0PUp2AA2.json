@@ -1,0 +1,226 @@
+{
+  "_id": "azX1hjbc0PUp2AA2",
+  "_key": "!journal!azX1hjbc0PUp2AA2",
+  "name": "Coteries",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 60,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-COTERIES",
+      "archivo": "content/ciudad/coteries.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "JP7Ie6uKLXl2uc3u",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.JP7Ie6uKLXl2uc3u",
+      "name": "Coteries",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>In Seattle, nobody survives alone for long. Not even the Hound. This chapter presents the five coteries that move the city during <em>The Ward File</em>: the players&#39; coterie and four NPC coteries. At the end are three new Loresheets (@UUID[JournalEntry.x7rVnQfKbb3HdbG5]{Loresheets}).</p>\n<p>Each coterie follows the same format: name and nickname, members and agendas, customs, type, domain (Chasse, Lien, and Portillon), and shared Backgrounds. Coterie types that have no official Spanish name are followed by the original in italics.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kiaygGF4KgylB6fb",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.kiaygGF4KgylB6fb",
+      "name": "COT-00 · The Archived",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“The ones who were on the drive.”</em> · A coterie born of a shared threat: they all appear in the Ward File, and either they get it back together or they go down together.</p>\n<h3>The Idea</h3>\n<p><em>From doc 02.</em> All the characters appear in the Ward File. Helen never knew what they were, but each of them has a folder: a blurry photo, a date that doesn&#39;t add up, a pattern. When the drive is stolen, they&#39;re all exposed at once, and Sheriff Montgomery wastes no time telling them flat out: “You&#39;re all on the same drive. Either you get it back together or you go down together.”</p>\n<p><em>Alternatives, if you prefer a different bond:</em> B) they&#39;re a coterie that already existed, and Montgomery uses them as a strike force; C) they&#39;re strangers who cross paths at Helen&#39;s apartment (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{Helen Ward's Apartment}) the night of the theft.</p>\n<h3>Members and Agendas</h3>\n<p><em>Depending on which characters are in play. Each agenda includes the secret only the Storyteller knows.</em></p>\n<p><strong>David Smith</strong> (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}, Brujah). <em>Agenda:</em> recover the File without Helen paying the price.</p>\n<section class=\"secret\" id=\"secret-krdaf13L0QAxCNXs\"><p><em>What he doesn&#39;t know:</em> that he has a blood brother in the city.</p>\n</section>\n<p><strong>Celeste Arden</strong> (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}, Ventrue). <em>Agenda:</em> prove she&#39;s worth more than her sire.</p>\n<section class=\"secret\" id=\"secret-nhDYYb1c3Fzn16UU\"><p><em>What she doesn&#39;t know:</em> that her sire has already picked her as the scapegoat.</p>\n</section>\n<p><strong>Ezra “Static” Lund</strong> (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}, Nosferatu). <em>Agenda:</em> expose whoever controls the cameras.</p>\n<section class=\"secret\" id=\"secret-7jouRX65J7QjDWhX\"><p><em>What he doesn&#39;t know:</em> that the back door is his own code.</p>\n</section>\n<p><strong>Nadia Ferro</strong> (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}, Toreador). <em>Agenda:</em> protect Helen&#39;s work.</p>\n<section class=\"secret\" id=\"secret-2K1xaYgBfhMd3UFa\"><p><em>What she doesn&#39;t know:</em> that her cloud calendar led the thieves to the door.</p>\n</section>\n<p><strong>Hal Brekke</strong> (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke}, Gangrel). <em>Agenda:</em> earn his sire&#39;s respect.</p>\n<section class=\"secret\" id=\"secret-0DQqIF7PZSG6ySqL\"><p><em>What he&#39;s hiding:</em> he&#39;s been informing on David for years.</p>\n</section>\n<p><strong>Dr. Ruth Abernathy</strong> (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}, Tremere, alternate). <em>Agenda:</em> keep the city&#39;s dead invisible.</p>\n<section class=\"secret\" id=\"secret-0nXYe3KmHpWminoU\"><p><em>What she doesn&#39;t know:</em> that FIRSTLIGHT has her at number one on its list.</p>\n</section>\n<h3>Suggested Customs</h3>\n<p><em>The players can change these in session zero. They&#39;re a starting point.</em></p>\n<ul>\n<li><strong>Your own folder.</strong> Each of them has read what Helen knew about them (@UUID[JournalEntry.vtenvgNlXVPd99Rc]{“Your Folder in the File”}). Nobody reads someone else&#39;s folder without permission.</li>\n<li><strong>The hangar is neutral.</strong> Inside @UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}, nobody argues about clans or sires.</li>\n<li><strong>Nobody goes alone.</strong> Since the drive was stolen, no member goes out to hunt without telling at least one other.</li>\n<li><strong>The flip phone.</strong> To communicate, they use phones with no data connection that Bear gets for them.</li>\n</ul>\n<h3>Type</h3>\n<p>Commando (<em>Commando</em>): a unit assembled for a mission. If it survives @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}, it can become another type depending on the ending: Cerberus (<em>Cerberus</em>) if it stays to guard the port, Regency (<em>Regency</em>) if one of its members takes an office.</p>\n<p><em>Doc 02:</em> <em>Commando</em>. It&#39;s a unit assembled for a mission that became permanent.</p>\n<h3>Domain</h3>\n<p>The Harbor Island docks.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n<th>What it means</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Chasse</td>\n<td>2</td>\n<td>Night-shift workers. Feeding is possible, but you have to be careful.</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>1</td>\n<td>The coterie has barely any sway over the port&#39;s mortals. Bear knows a few.</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>2</td>\n<td>Lots of access points, containers, and water. Easy to get in and out. For enemies too.</td>\n</tr>\n</tbody></table>\n<p><em>Doc 02 (suggested domain):</em> the Harbor Island docks, around David&#39;s hangar (Chasse 2, Lien 1, Portillon 1).</p>\n<h3>Suggested Shared Backgrounds</h3>\n<ul>\n<li><strong>Haven 3</strong> (the hangar, contributed by David): with Water Access and Hidden Armory.</li>\n<li><strong>Contacts 1</strong> (port): through Bear.</li>\n<li><strong>Ally</strong>: Tom “Bear” Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom “Bear” Whitman}), shared with David.</li>\n</ul>\n<p>Each player can contribute 1 point of their Backgrounds to the common pool.</p>\n<p><em>Doc 02 (suggested shared backgrounds):</em> Haven (the hangar, contributed by David), Contacts (port) 1.</p>\n<h3>Handout</h3>\n<p>@UUID[JournalEntry.vtenvgNlXVPd99Rc]{“Your Folder in the File”}, “Your Folder in the File.” Each player gets a page with what Helen knew about their character, written in her voice.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-00"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "bxduXJhh2oXcM6Uy",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.bxduXJhh2oXcM6Uy",
+      "name": "COT-01 · Whitmore's Wolves",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“The Sheriff&#39;s pack.”</em> · The ones who clean up the city while the Prince raises a glass in the Gallery.</p>\n<h3>Members and Agendas</h3>\n<ul>\n<li><strong>Ethan Montgomery</strong> (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}, Gangrel), the alpha. <em>Agenda:</em> recover the File and find out whether Vance is in the city.</li>\n<li><strong>Hal Brekke</strong> (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke} or an NPC with the same background), the tracker. <em>Agenda:</em> to hear his sire tell him, just once, that he did well.</li>\n<li><strong>The bounty hunters</strong> (@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters}): six mortals, ex-military and ex-cops. <em>Agenda:</em> get paid and ask no questions. One of them, Dutch Lindqvist, is starting to ask them.</li>\n<li><strong>The dogs</strong>: twelve canine ghouls. They sense Montgomery&#39;s will and react to any Kindred&#39;s Beast.</li>\n<li><strong>David Smith</strong> (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), outside ally. He isn&#39;t a member, but the Wolves treat him like one of their own.</li>\n</ul>\n<h3>Customs</h3>\n<ul>\n<li><strong>The monthly report.</strong> Each member gives Montgomery a report on the first Sunday of every month, in person and out loud. Nobody puts it in writing.</li>\n<li><strong>No feeding where you patrol.</strong> No Wolf feeds inside Seattle city limits.</li>\n<li><strong>The porch.</strong> Montgomery receives visitors on the porch. If he invites you inside, it&#39;s serious.</li>\n<li><strong>The list.</strong> Everyone knows it exists. Nobody knows the eleven names except the alpha.</li>\n</ul>\n<h3>Type</h3>\n<p><em>Sbirri</em>: enforcers in the service of a Camarilla office.</p>\n<h3>Domain</h3>\n<p>The farm and the Snohomish Valley (@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{The Sheriff's Farm and Boat Landing}).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Chasse</td>\n<td>3 (truckers, hunters, rest areas)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>2 (the town sees them as an odd family of dog breeders)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>4 (open fields, dogs, a single gravel road, and the tunnel to the river)</td>\n</tr>\n</tbody></table>\n<h3>Backgrounds</h3>\n<p>Haven 3 · Herd 2 · Contacts 3 (state police, port, private security) · Status 4 (Montgomery&#39;s) · Ally 3 (David)</p>\n<h3>In AVE-01</h3>\n<p>The Wolves are the coterie&#39;s natural backup until @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers}. From then on, if Montgomery doubts David, the bounty hunters can turn into pursuers. Dutch Lindqvist is a possible crack: if the coterie wins him over, he warns them about the order before it comes down.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "zWDnUlWxPHfXyIA2",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.zWDnUlWxPHfXyIA2",
+      "name": "COT-02 · The Glass Council",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“The ones who look down from above.”</em> · A Primogen, his childe, two ghouls, and an investment fund. None of them uses the word “conspiracy.”</p>\n<h3>Members and Agendas</h3>\n<ul>\n<li><strong>Charles Halloway</strong> (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}, Ventrue). <em>Agenda:</em> the crown of Seattle.</li>\n<li><strong>Celeste Arden</strong> (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}) or her NPC substitute (@UUID[Actor.GidWqhJ9e6JUxiTS]{Julian Ashby}). <em>Agenda:</em> make her name worth more than her sire&#39;s. She thinks the Council is a business meeting. She doesn&#39;t know she&#39;s the fall guy.</li>\n<li><strong>Preston Gale</strong> (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}, ghoul). <em>Agenda:</em> a billion-dollar valuation for Gale Sentinel, and the next dose of Vitae.</li>\n<li><strong>Mr. Pell</strong> (@UUID[Actor.eRE6FTNdGO76lzPK]{Mr. Pell}, ghoul). <em>Agenda:</em> to serve. He&#39;s 96 and afraid of what will happen if his master stops feeding him.</li>\n<li><strong>Three mortal investors</strong> (no ID): they believe they&#39;re part of an exclusive fund with an ailing, brilliant chairman.</li>\n</ul>\n<h3>Customs</h3>\n<ul>\n<li><strong>Cameras off.</strong> Meetings happen by video call. Halloway never turns his on.</li>\n<li><strong>Everything under contract.</strong> Nobody works for the Council without signing a nondisclosure agreement. Halloway only feeds on people who&#39;ve signed.</li>\n<li><strong>Nothing in writing with his name on it.</strong> Orders come through Pell or Celeste.</li>\n<li><strong>Smile when you lose.</strong> Halloway always does. The others have learned to fear that smile.</li>\n</ul>\n<h3>Type</h3>\n<p>Regency (<em>Regency</em>): a coterie preparing to rule.</p>\n<h3>Domain</h3>\n<p>Halloway Tower (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Halloway Tower}) and the Eastside.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Chasse</td>\n<td>2 (only employees and partners under contract)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>4 (half of Bellevue works for someone who works for Halloway)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>5 (private elevators, ghoul security, ANOMALY cameras)</td>\n</tr>\n</tbody></table>\n<h3>Backgrounds</h3>\n<p>Resources 5 · Influence 4 (finance, media) · Contacts 3 · Ally 3 (Gale Sentinel) · Haven 4 · Herd 1</p>\n<h3>In AVE-01</h3>\n<p>The Council is the hidden antagonist. The coterie shouldn&#39;t know it exists until @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}, when they find Gale&#39;s signature (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-11\"><span class=\"sbn-pista-id\">P-11</span> <span class=\"sbn-pista-nombre\">Gale&#39;s Signature</span></button>). If Celeste is in play, the Council is inside the coterie from the first scene.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SSDCSJFv8Esl6Ki5",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.SSDCSJFv8Esl6Ki5",
+      "name": "COT-03 · Salt's",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“The ones who don&#39;t kneel.”</em> · The Anarchs of the Everett shipyard: they vote, they weld, and they owe nothing to any Prince.</p>\n<h3>Members and Agendas</h3>\n<ul>\n<li><strong>Rosa “Salt” Iturbe</strong> (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa “Salt” Iturbe}, Brujah), Baroness. <em>Agenda:</em> clear Everett&#39;s name and settle the debt from 1996.</li>\n<li><strong>Bas Okonjo</strong> (@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs}, Gangrel). He left the Camarilla in 2019 and used to be one of Montgomery&#39;s Wolves. <em>Agenda:</em> keep Montgomery from making him pay for deserting.</li>\n<li><strong>Tavi Mercer</strong> (@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs}, Brujah). Young, impatient, wants to hit Elysium “before they hit us.” <em>Agenda:</em> war. Halloway is feeding her rumors through Thornquist.</li>\n<li><strong>A dozen more Anarchs</strong> (@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs}): longshoremen, mechanics, a nurse, two thin-bloods.</li>\n</ul>\n<h3>Customs</h3>\n<ul>\n<li><strong>Decisions get voted on.</strong> Assembly every Friday in the back room of the bar. Rosa has one vote, like everyone else.</li>\n<li><strong>Nobody uses a minor as herd.</strong> The only rule Rosa has never put to a vote.</li>\n<li><strong>Dues.</strong> Every member puts something into the common fund: money, bagged blood, or labor.</li>\n<li><strong>The open door.</strong> Any Kindred can ask for shelter for one night. By the second night, they have to present themselves to the assembly.</li>\n</ul>\n<h3>Type</h3>\n<p>Cerberus (<em>Cerberus</em>): a coterie that guards a territory.</p>\n<h3>Domain</h3>\n<p>The old shipyard and the port of Everett (@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt's Bar and the Old Shipyard}).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Chasse</td>\n<td>3 (welders and longshoremen, some of them willing)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>3 (the union is theirs)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>2 (a single road, but the water has no doors)</td>\n</tr>\n</tbody></table>\n<h3>Backgrounds</h3>\n<p>Haven 2 · Herd 2 · Allies 3 (the union) · Influence 2 (port of Everett) · Contacts 1 (naval base)</p>\n<h3>In AVE-01</h3>\n<p>Salt&#39;s can be an ally or an enemy (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}). If the coterie wins Rosa over, the Anarchs can show up at the climax (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}) as backup. If not, Tavi Mercer may attack Elysium on her own during Part 4, which hands Halloway the perfect excuse for his motion.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Dy9L39SvdB7rns0t",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.Dy9L39SvdB7rns0t",
+      "name": "COT-04 · The Moles",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“Everything&#39;s for sale down below.”</em> · The brokers of the Seattle Underground: the stone of 1889 and the cables of 2026.</p>\n<h3>Members and Agendas</h3>\n<ul>\n<li><strong>Abel Thornquist</strong> (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}, Nosferatu), the owner. <em>Agenda:</em> sell the File to the highest bidder and cash in his vote on the Council.</li>\n<li><strong>Ezra Lund</strong> (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund} or an NPC with the same background), the tech. <em>Agenda:</em> expose who controls the cameras.</li>\n<li><strong>The dock thin-bloods</strong> (no ID; Jun Takeda, @UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}, is one of them): runners and couriers. <em>Agenda:</em> survive.</li>\n<li><strong>The Mother Below</strong>: Thornquist&#39;s sire, in torpor in a corner of the Sealed Underground. She has no agenda. Yet.</li>\n</ul>\n<h3>Customs</h3>\n<ul>\n<li><strong>Everything has a price.</strong> Nobody gives anything away in the Undermarket, not even advice.</li>\n<li><strong>Nobody asks about anybody&#39;s face.</strong> In the Sealed Underground, nobody comments on another Kindred&#39;s appearance.</li>\n<li><strong>No fighting in the Market.</strong> Whoever breaks this rule never comes back down.</li>\n<li><strong>Packages stay closed.</strong> Runners carry without looking. Jun follows this to the letter.</li>\n</ul>\n<h3>Type</h3>\n<p>Brokers: a type unique to this book. It uses the <em>Mercenary Company</em> rules for closing deals and the <em>Questari</em> rules for gathering information.</p>\n<h3>Domain</h3>\n<p>The Sealed Underground (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{The Sealed Underground (Seattle Underground)}).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Chasse</td>\n<td>2 (homeless people, in exchange for shelter)</td>\n</tr>\n<tr>\n<td>Lien</td>\n<td>3 (doormen, janitors, and technicians all over the city)</td>\n</tr>\n<tr>\n<td>Portillon</td>\n<td>5 (nobody gets into the Sealed Underground without Thornquist knowing)</td>\n</tr>\n</tbody></table>\n<h3>Backgrounds</h3>\n<p>Haven 4 · Contacts 4 · Influence 3 (the underground) · Allies 2 (the thin-bloods) · Resources 2</p>\n<h3>In AVE-01</h3>\n<p>The Moles sell information to everyone. In @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below}, Thornquist confirms there are copies on the market. If the coterie pays him well, he also sells them the location of Krell&#39;s barge, though that costs a bigger favor.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "COT-04"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "h0Rk6eLTVPdKSdeh",
+      "_key": "!journal.pages!azX1hjbc0PUp2AA2.h0Rk6eLTVPdKSdeh",
+      "name": "ID Registry (Additions)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>COT-00 to COT-04</strong> · Complete coteries</li>\n<li><strong>LOR-01 to LOR-03</strong> · Complete Loresheets</li>\n<li><strong>MEN-03</strong> · Dutch Lindqvist, the Wolves&#39; bounty hunter who starts asking questions</li>\n<li><strong>MEN-05</strong> · Bas Okonjo (Gangrel, ex-Wolf) and Tavi Mercer (Brujah, impatient) as named members of Salt&#39;s</li>\n<li><strong>No ID</strong> · The Mother Below, Thornquist&#39;s sire, in torpor</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · MEN-01, MEN-03, MEN-04, and MEN-05</h4><p>The newest registry wins, the one in chapter 8 (doc 14): <strong>@UUID[Actor.9rv5Jdb3y6bZZ1fj]{Lonnie Barras}</strong> is Lonnie Barras, the thief who kept one (not the whole crew of thieves); <strong>@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters}</strong> is Montgomery&#39;s bounty hunters, with Dutch Lindqvist as a member with his own dice pools; <strong>@UUID[Actor.BzNGxOAK3F6Uo56T]{Halloway's Security Ghouls}</strong> is “Dawson and the security ghouls” (Dawson, the boss, with his own dice pools); <strong>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs}</strong> is Salt&#39;s Anarchs, with Bas Okonjo and Tavi Mercer as members with their own dice pools.</p>\n</aside>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

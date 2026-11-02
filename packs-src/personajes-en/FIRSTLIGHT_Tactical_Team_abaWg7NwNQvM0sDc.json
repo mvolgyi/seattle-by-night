@@ -1,0 +1,369 @@
+{
+  "_id": "abaWg7NwNQvM0sDc",
+  "_key": "!actors!abaWg7NwNQvM0sDc",
+  "name": "FIRSTLIGHT Tactical Team",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "FIRSTLIGHT Tactical Team",
+    "actorLink": false,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 20,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.55,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#7a3cff",
+      "coloration": 1,
+      "attenuation": 0.6,
+      "luminosity": 0.3,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Six operators",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Six operators</td></tr><tr><th>Number</th><td>6</td></tr></tbody></table><p>Ex-military and former federal agents. Hired as a “special counterterrorism unit.” They think they know what they&#39;re hunting. Most of them have never seen it.</p>\n<p><strong>Gear:</strong> short carbine with incendiary ammunition (aggravated against Kindred), weapon-mounted UV flashlight, light body armor (armor 3), body camera, radio, thermal goggles (negate Obfuscate levels 1 and 2).</p>\n<p><strong>Tactics:</strong> they never go in alone. Always in pairs, always with a drone overhead and a light source behind them. If they lose two operators, they pull back and wait for dawn.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 6
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Carbine with incendiary ammunition",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Aggravated against Kindred (incendiary ammunition). Has a UV flashlight mounted on the weapon.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "Yn8Dy1JUK4XEQ6DE",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.Yn8Dy1JUK4XEQ6DE"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "High-intensity UV flashlight",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>1 aggravated</td></tr></tbody></table><p>A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.</p><p>Condition: @UUID[Item.CbbejNJnKXKf8gbq]{Lit by the UV flashlight}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "dCzDoiXpfGMAl70w",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.dCzDoiXpfGMAl70w"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Light body armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Armor</th><td>3</td></tr></tbody></table><p>Armor 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "y851LFR8coy5plpi",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.y851LFR8coy5plpi"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Body cameras",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"visible supernatural action in front of a body camera\"><i class=\"fa-solid fa-temperature-half\"></i> Thermometer +1</button> (maximum +2 per scene)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "3uoEFx1eqkzAlPqv",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.3uoEFx1eqkzAlPqv"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Thermal goggles",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "bm6OrjA9smsNzeMX",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.bm6OrjA9smsNzeMX"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Incendiary ammunition",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "ioTW4Ndf0c65NRdB",
+      "_key": "!actors.items!abaWg7NwNQvM0sDc.ioTW4Ndf0c65NRdB"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-02",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 6,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

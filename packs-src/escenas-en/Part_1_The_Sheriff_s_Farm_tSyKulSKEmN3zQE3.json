@@ -1,0 +1,4682 @@
+{
+  "_id": "tSyKulSKEmN3zQE3",
+  "_key": "!scenes!tSyKulSKEmN3zQE3",
+  "name": "Part 1 · The Sheriff's Farm",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 20,
+  "width": 2400,
+  "height": 2300,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.85,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "Wd9sfn2ary7atYRz",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/granja.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!tSyKulSKEmN3zQE3.Wd9sfn2ary7atYRz"
+    }
+  ],
+  "journal": "NNzMhIvsavpG0iTQ",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "Ar7KIbCdqtl3P5Po",
+      "c": [
+        100,
+        500,
+        820,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Ar7KIbCdqtl3P5Po"
+    },
+    {
+      "_id": "vZpKQwROWF8A8sZo",
+      "c": [
+        910,
+        500,
+        1000,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.vZpKQwROWF8A8sZo"
+    },
+    {
+      "_id": "ZGOwJ2hm9yLKr1oD",
+      "c": [
+        100,
+        900,
+        540,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.ZGOwJ2hm9yLKr1oD"
+    },
+    {
+      "_id": "RfSnvCYjIhJouwyq",
+      "c": [
+        630,
+        900,
+        840,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.RfSnvCYjIhJouwyq"
+    },
+    {
+      "_id": "syBbrHA6bljHjOdC",
+      "c": [
+        930,
+        900,
+        1000,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.syBbrHA6bljHjOdC"
+    },
+    {
+      "_id": "IxeamDdFNEQdcP83",
+      "c": [
+        1300,
+        900,
+        1750,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.IxeamDdFNEQdcP83"
+    },
+    {
+      "_id": "mA29JkJoC1BbQZAN",
+      "c": [
+        1850,
+        900,
+        2300,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.mA29JkJoC1BbQZAN"
+    },
+    {
+      "_id": "Bz7g0I5Z2b8fvxiG",
+      "c": [
+        100,
+        50,
+        100,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Bz7g0I5Z2b8fvxiG"
+    },
+    {
+      "_id": "K1R2t6MC36mykL4O",
+      "c": [
+        100,
+        500,
+        100,
+        640
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.K1R2t6MC36mykL4O"
+    },
+    {
+      "_id": "D46qMaRt3F5471UT",
+      "c": [
+        100,
+        740,
+        100,
+        960
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.D46qMaRt3F5471UT"
+    },
+    {
+      "_id": "U54Yz0IUNw5gjoPh",
+      "c": [
+        100,
+        1060,
+        100,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.U54Yz0IUNw5gjoPh"
+    },
+    {
+      "_id": "w5om5zDfJoq8kpSn",
+      "c": [
+        400,
+        500,
+        400,
+        505
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.w5om5zDfJoq8kpSn"
+    },
+    {
+      "_id": "1U77Iq4cX0b0e1Ne",
+      "c": [
+        400,
+        585,
+        400,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.1U77Iq4cX0b0e1Ne"
+    },
+    {
+      "_id": "RHzhpBOXPObCfb6F",
+      "c": [
+        650,
+        500,
+        650,
+        680
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.RHzhpBOXPObCfb6F"
+    },
+    {
+      "_id": "HTAaomgX7jXDtmsg",
+      "c": [
+        650,
+        770,
+        650,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HTAaomgX7jXDtmsg"
+    },
+    {
+      "_id": "wEDVjIi1HfHk8Usw",
+      "c": [
+        650,
+        1320,
+        650,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.wEDVjIi1HfHk8Usw"
+    },
+    {
+      "_id": "y28vbwrIXO3FdC26",
+      "c": [
+        1000,
+        500,
+        1000,
+        1080
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.y28vbwrIXO3FdC26"
+    },
+    {
+      "_id": "5RWHtqyI4MJAUQnY",
+      "c": [
+        1000,
+        1200,
+        1000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.5RWHtqyI4MJAUQnY"
+    },
+    {
+      "_id": "SoZlk3nNpStlzkpS",
+      "c": [
+        100,
+        1400,
+        180,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.SoZlk3nNpStlzkpS"
+    },
+    {
+      "_id": "UDZu27O8W34nnprb",
+      "c": [
+        320,
+        1400,
+        430,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.UDZu27O8W34nnprb"
+    },
+    {
+      "_id": "BVGoaKfXvSY72o8q",
+      "c": [
+        530,
+        1400,
+        760,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.BVGoaKfXvSY72o8q"
+    },
+    {
+      "_id": "uMpgGkkwGnUA1KvL",
+      "c": [
+        880,
+        1400,
+        1000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.uMpgGkkwGnUA1KvL"
+    },
+    {
+      "_id": "9JmkDLi7zB11flt3",
+      "c": [
+        100,
+        50,
+        1000,
+        50
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.9JmkDLi7zB11flt3"
+    },
+    {
+      "_id": "lvSmIBTi2jtkOToE",
+      "c": [
+        1300,
+        1200,
+        1550,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lvSmIBTi2jtkOToE"
+    },
+    {
+      "_id": "IxiXlvHqvAUMB2lY",
+      "c": [
+        2050,
+        1200,
+        2300,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.IxiXlvHqvAUMB2lY"
+    },
+    {
+      "_id": "stQGf5Vx1IftqEK9",
+      "c": [
+        1300,
+        900,
+        1300,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.stQGf5Vx1IftqEK9"
+    },
+    {
+      "_id": "xEmGo4i0FK1qiWDA",
+      "c": [
+        1300,
+        1700,
+        1300,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.xEmGo4i0FK1qiWDA"
+    },
+    {
+      "_id": "HqJJWKo5quQIcgcW",
+      "c": [
+        2300,
+        900,
+        2300,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HqJJWKo5quQIcgcW"
+    },
+    {
+      "_id": "sNK542l2Ps03LNIZ",
+      "c": [
+        1300,
+        2100,
+        1850,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.sNK542l2Ps03LNIZ"
+    },
+    {
+      "_id": "a7UQuvUClXo7INkk",
+      "c": [
+        1940,
+        2100,
+        2300,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.a7UQuvUClXo7INkk"
+    },
+    {
+      "_id": "lbGMsems1T1BpvjK",
+      "c": [
+        1330,
+        80,
+        1570,
+        80
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lbGMsems1T1BpvjK"
+    },
+    {
+      "_id": "eLK4vsGoRbmajADH",
+      "c": [
+        1680,
+        80,
+        1920,
+        80
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.eLK4vsGoRbmajADH"
+    },
+    {
+      "_id": "6QziPF5nq7nGRpfB",
+      "c": [
+        2030,
+        80,
+        2270,
+        80
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.6QziPF5nq7nGRpfB"
+    },
+    {
+      "_id": "q0cQ1iY1hUcpVSod",
+      "c": [
+        1330,
+        780,
+        1400,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.q0cQ1iY1hUcpVSod"
+    },
+    {
+      "_id": "27hrCJdgSU3DfNld",
+      "c": [
+        1500,
+        780,
+        1570,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.27hrCJdgSU3DfNld"
+    },
+    {
+      "_id": "mB9Em7bXMTafQbCe",
+      "c": [
+        1680,
+        780,
+        1750,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.mB9Em7bXMTafQbCe"
+    },
+    {
+      "_id": "lzNY3WgaP2P9e3LQ",
+      "c": [
+        1850,
+        780,
+        1920,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lzNY3WgaP2P9e3LQ"
+    },
+    {
+      "_id": "lQqHgUDwn4gt0omc",
+      "c": [
+        2030,
+        780,
+        2100,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.lQqHgUDwn4gt0omc"
+    },
+    {
+      "_id": "uIH4poo8rUFGX36C",
+      "c": [
+        2200,
+        780,
+        2270,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.uIH4poo8rUFGX36C"
+    },
+    {
+      "_id": "5jbnslrsakdcdIo0",
+      "c": [
+        1330,
+        80,
+        1330,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.5jbnslrsakdcdIo0"
+    },
+    {
+      "_id": "3IasyrQE2dISvrRA",
+      "c": [
+        1330,
+        620,
+        1330,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.3IasyrQE2dISvrRA"
+    },
+    {
+      "_id": "qfVdnYJPHmRARmbF",
+      "c": [
+        1570,
+        80,
+        1570,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.qfVdnYJPHmRARmbF"
+    },
+    {
+      "_id": "EE02PzUFWZJy8NZy",
+      "c": [
+        1680,
+        80,
+        1680,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.EE02PzUFWZJy8NZy"
+    },
+    {
+      "_id": "G2uDzBw7ANlTz8bC",
+      "c": [
+        1680,
+        620,
+        1680,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.G2uDzBw7ANlTz8bC"
+    },
+    {
+      "_id": "gDfLUSHWI3WIFmME",
+      "c": [
+        1920,
+        80,
+        1920,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.gDfLUSHWI3WIFmME"
+    },
+    {
+      "_id": "KI5mhbU4sboNUFRr",
+      "c": [
+        2030,
+        80,
+        2030,
+        540
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.KI5mhbU4sboNUFRr"
+    },
+    {
+      "_id": "Gms23UwEgw6pYjUV",
+      "c": [
+        2030,
+        620,
+        2030,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Gms23UwEgw6pYjUV"
+    },
+    {
+      "_id": "fdcezJX8oIQ3Sfsp",
+      "c": [
+        2270,
+        80,
+        2270,
+        780
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.fdcezJX8oIQ3Sfsp"
+    },
+    {
+      "_id": "GhLFKTYlPab7X8mv",
+      "c": [
+        430,
+        1400,
+        530,
+        1400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.GhLFKTYlPab7X8mv"
+    },
+    {
+      "_id": "5riKBXinzy9Zxstc",
+      "c": [
+        180,
+        1400,
+        320,
+        1400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.5riKBXinzy9Zxstc"
+    },
+    {
+      "_id": "uzGLTZApuw5U2yVK",
+      "c": [
+        760,
+        1400,
+        880,
+        1400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.uzGLTZApuw5U2yVK"
+    },
+    {
+      "_id": "WutjqgvaJJmPmSI6",
+      "c": [
+        100,
+        960,
+        100,
+        1060
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.WutjqgvaJJmPmSI6"
+    },
+    {
+      "_id": "gndym90MsIzpObEl",
+      "c": [
+        1000,
+        1080,
+        1000,
+        1200
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.gndym90MsIzpObEl"
+    },
+    {
+      "_id": "rk736IuAj30nFQ9b",
+      "c": [
+        100,
+        640,
+        100,
+        740
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.rk736IuAj30nFQ9b"
+    },
+    {
+      "_id": "iu3q0uMpTLQgNAiT",
+      "c": [
+        540,
+        900,
+        630,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.iu3q0uMpTLQgNAiT"
+    },
+    {
+      "_id": "TV1SWPRE7dEjXMlH",
+      "c": [
+        400,
+        505,
+        400,
+        585
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.TV1SWPRE7dEjXMlH"
+    },
+    {
+      "_id": "n71nENk1k5x0y7bJ",
+      "c": [
+        650,
+        680,
+        650,
+        770
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.n71nENk1k5x0y7bJ"
+    },
+    {
+      "_id": "P5BE0YZFb7m7U3YY",
+      "c": [
+        840,
+        900,
+        930,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.P5BE0YZFb7m7U3YY"
+    },
+    {
+      "_id": "AfyyAKu47poGEpU2",
+      "c": [
+        820,
+        500,
+        910,
+        500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.AfyyAKu47poGEpU2"
+    },
+    {
+      "_id": "fMjI8ccLRBZ1jbdc",
+      "c": [
+        100,
+        1650,
+        430,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.fMjI8ccLRBZ1jbdc"
+    },
+    {
+      "_id": "pM1pdNlfZkFsK9v0",
+      "c": [
+        570,
+        1650,
+        1000,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.pM1pdNlfZkFsK9v0"
+    },
+    {
+      "_id": "PbHn40kz3IVqOzbn",
+      "c": [
+        100,
+        1400,
+        100,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.PbHn40kz3IVqOzbn"
+    },
+    {
+      "_id": "heEQQms0jzkfSdRa",
+      "c": [
+        1000,
+        1400,
+        1000,
+        1650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.heEQQms0jzkfSdRa"
+    },
+    {
+      "_id": "DXUkRXNkhZ1ija9e",
+      "c": [
+        1000,
+        50,
+        1000,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.DXUkRXNkhZ1ija9e"
+    },
+    {
+      "_id": "SAJKXS4vPWHKBEfa",
+      "c": [
+        100,
+        400,
+        150,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.SAJKXS4vPWHKBEfa"
+    },
+    {
+      "_id": "0EVdhNkAjfX0Nkwc",
+      "c": [
+        150,
+        400,
+        230,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.0EVdhNkAjfX0Nkwc"
+    },
+    {
+      "_id": "nj7AcSfACZqGqvAG",
+      "c": [
+        230,
+        400,
+        330,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.nj7AcSfACZqGqvAG"
+    },
+    {
+      "_id": "LbS8us0AKeVo8LsJ",
+      "c": [
+        330,
+        400,
+        410,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.LbS8us0AKeVo8LsJ"
+    },
+    {
+      "_id": "BqEQ1MFROpfZ1cOS",
+      "c": [
+        410,
+        400,
+        510,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.BqEQ1MFROpfZ1cOS"
+    },
+    {
+      "_id": "dP6DdMbI7RX7KIyL",
+      "c": [
+        510,
+        400,
+        590,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.dP6DdMbI7RX7KIyL"
+    },
+    {
+      "_id": "zYWB7jlTIf1JaWF5",
+      "c": [
+        590,
+        400,
+        690,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.zYWB7jlTIf1JaWF5"
+    },
+    {
+      "_id": "dIK4vFetZzczV1uc",
+      "c": [
+        690,
+        400,
+        770,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.dIK4vFetZzczV1uc"
+    },
+    {
+      "_id": "zcMkdiXSt3w9mzIY",
+      "c": [
+        770,
+        400,
+        870,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.zcMkdiXSt3w9mzIY"
+    },
+    {
+      "_id": "TZaTv8hzHHzkot6K",
+      "c": [
+        870,
+        400,
+        950,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "jail",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.TZaTv8hzHHzkot6K"
+    },
+    {
+      "_id": "jH1VLM1fEZORjPUN",
+      "c": [
+        950,
+        400,
+        1000,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.jH1VLM1fEZORjPUN"
+    },
+    {
+      "_id": "n0PVnFlqe8KIO8kc",
+      "c": [
+        280,
+        50,
+        280,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.n0PVnFlqe8KIO8kc"
+    },
+    {
+      "_id": "HwDPCVPyOkuuXw9F",
+      "c": [
+        460,
+        50,
+        460,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HwDPCVPyOkuuXw9F"
+    },
+    {
+      "_id": "ZmhPVfnFzrqztMqw",
+      "c": [
+        640,
+        50,
+        640,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.ZmhPVfnFzrqztMqw"
+    },
+    {
+      "_id": "cRZpkrxhL2RQLd6l",
+      "c": [
+        820,
+        50,
+        820,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.cRZpkrxhL2RQLd6l"
+    },
+    {
+      "_id": "cTn26TetD53lwRXO",
+      "c": [
+        1300,
+        1400,
+        1300,
+        1700
+      ],
+      "door": 1,
+      "ds": 1,
+      "doorSound": "slidingWood",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.cTn26TetD53lwRXO"
+    },
+    {
+      "_id": "HgDPbzaFTYXU3rJG",
+      "c": [
+        1750,
+        900,
+        1850,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HgDPbzaFTYXU3rJG"
+    },
+    {
+      "_id": "7WRoRWF9Irc4nZUA",
+      "c": [
+        1850,
+        2100,
+        1940,
+        2100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.7WRoRWF9Irc4nZUA"
+    },
+    {
+      "_id": "klVQS9TCVh5AikGf",
+      "c": [
+        1550,
+        900,
+        1550,
+        1120
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.klVQS9TCVh5AikGf"
+    },
+    {
+      "_id": "Bd92jGQJBUk12Qtr",
+      "c": [
+        2050,
+        900,
+        2050,
+        1120
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Bd92jGQJBUk12Qtr"
+    },
+    {
+      "_id": "IoDkMLskRNJeUxYo",
+      "c": [
+        1330,
+        540,
+        1330,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.IoDkMLskRNJeUxYo"
+    },
+    {
+      "_id": "Nn1Ivf3B0SOTUbva",
+      "c": [
+        1680,
+        540,
+        1680,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.Nn1Ivf3B0SOTUbva"
+    },
+    {
+      "_id": "HeXGHfbsx5Pi04kR",
+      "c": [
+        2030,
+        540,
+        2030,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.HeXGHfbsx5Pi04kR"
+    },
+    {
+      "_id": "QHM53Vb1zNbBarLz",
+      "c": [
+        1400,
+        780,
+        1500,
+        780
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.QHM53Vb1zNbBarLz"
+    },
+    {
+      "_id": "eijdR6xqnFNnCDIC",
+      "c": [
+        1750,
+        780,
+        1850,
+        780
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.eijdR6xqnFNnCDIC"
+    },
+    {
+      "_id": "pvxUeRe6a5IK2kHb",
+      "c": [
+        2100,
+        780,
+        2200,
+        780
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tSyKulSKEmN3zQE3.pvxUeRe6a5IK2kHb"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "feMlo9vrYxeWGg4k",
+      "name": "Porch bulb",
+      "x": 550,
+      "y": 1430,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.feMlo9vrYxeWGg4k"
+    },
+    {
+      "_id": "PDqZwWA9M6actkUg",
+      "name": "Living room lamp",
+      "x": 350,
+      "y": 1280,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.PDqZwWA9M6actkUg"
+    },
+    {
+      "_id": "G89DypMvLoda4M2d",
+      "name": "Kitchen light",
+      "x": 820,
+      "y": 1150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.G89DypMvLoda4M2d"
+    },
+    {
+      "_id": "cLEOdrWY6m1UvHHY",
+      "name": "Office lamp",
+      "x": 250,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.cLEOdrWY6m1UvHHY"
+    },
+    {
+      "_id": "4r0pvLTGXD2nqBUh",
+      "name": "Back door floodlight (kennels)",
+      "x": 820,
+      "y": 460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.4r0pvLTGXD2nqBUh"
+    },
+    {
+      "_id": "a6fZ8lJt652OqwOn",
+      "name": "Barn sodium floodlight (yard)",
+      "x": 1260,
+      "y": 1800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.a6fZ8lJt652OqwOn"
+    },
+    {
+      "_id": "IJtCqq3XEvC70hly",
+      "name": "Hanging barn bulb",
+      "x": 1800,
+      "y": 1350,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.IJtCqq3XEvC70hly"
+    },
+    {
+      "_id": "mjZC6TYWvvpPm7zY",
+      "name": "Hanging barn bulb",
+      "x": 1800,
+      "y": 1850,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.mjZC6TYWvvpPm7zY"
+    },
+    {
+      "_id": "kMOgcHNlTntXWpO9",
+      "name": "Trailer 1 light",
+      "x": 1450,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.kMOgcHNlTntXWpO9"
+    },
+    {
+      "_id": "xMYjWthFZcFMy6BV",
+      "name": "Trailer 2 light",
+      "x": 1800,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.xMYjWthFZcFMy6BV"
+    },
+    {
+      "_id": "SIec1WFguj6VzUdS",
+      "name": "Trailer 3 light",
+      "x": 2150,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.SIec1WFguj6VzUdS"
+    },
+    {
+      "_id": "fqs0RSCWI5HUvIXf",
+      "x": 390,
+      "y": 1136,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tSyKulSKEmN3zQE3.fqs0RSCWI5HUvIXf"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "OHf3PheTgSNUtpq5",
+      "name": "Arrival from the cellar (stair landing)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 415,
+          "y": 505,
+          "width": 100,
+          "height": 80,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "llegada-desde-sotano",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.OHf3PheTgSNUtpq5"
+    },
+    {
+      "_id": "4vIg8cCx7dl5XSjG",
+      "name": "Down to the cellar",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 415,
+          "y": 790,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "FU75YuA05fEzkcnI",
+          "name": "Down to the cellar",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.dtv1tCtbE4Jh6UFV.Region.W60g8ukpN4W5145E"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!tSyKulSKEmN3zQE3.4vIg8cCx7dl5XSjG.FU75YuA05fEzkcnI"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "bajar-sotano",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.4vIg8cCx7dl5XSjG"
+    },
+    {
+      "_id": "Xds9cDseaxnWBokF",
+      "name": "Arrival by the gravel road",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1000,
+          "y": 2060,
+          "width": 300,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "llegada-camino",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.Xds9cDseaxnWBokF"
+    },
+    {
+      "_id": "XECNTCJkXwagURfM",
+      "name": "Leave by the gravel road into the valley",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 900,
+          "y": 2200,
+          "width": 600,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "camino-valle",
+          "estado": "pendiente",
+          "pendiente": "Snohomish Valley zone map (t2i, no floor plan): its twin road region is missing"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.XECNTCJkXwagURfM"
+    },
+    {
+      "_id": "8M36fLJm8SZn1CYz",
+      "name": "Path to the river and the boat landing",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1000,
+          "y": 0,
+          "width": 300,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "granja",
+          "region": "sendero-rio",
+          "estado": "pendiente",
+          "pendiente": "the river and the boat landing are on the valley zone map (t2i, no floor plan)"
+        }
+      },
+      "_key": "!scenes.regions!tSyKulSKEmN3zQE3.8M36fLJm8SZn1CYz"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "fR00lLBf0totsqBh",
+      "entryId": "NNzMhIvsavpG0iTQ",
+      "pageId": null,
+      "x": 560,
+      "y": 1485,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "LUG-02"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.fR00lLBf0totsqBh"
+    },
+    {
+      "_id": "1LfeFTGOSpN8jFhg",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "xWx5IoPih8fX83b1",
+      "x": 560,
+      "y": 1585,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "A1-E03"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.1LfeFTGOSpN8jFhg"
+    },
+    {
+      "_id": "jv2TVYUgOZqXxSts",
+      "entryId": "C7cxKf7kcAELzuJ1",
+      "pageId": "aGN9NHO00wmdUzVn",
+      "x": 410,
+      "y": 1285,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A3-E04",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "A3-E04"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.jv2TVYUgOZqXxSts"
+    },
+    {
+      "_id": "mY9xwQf0asclXPGb",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "ogKpm1VYgcVGCw1T",
+      "x": 1810,
+      "y": 1760,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "granja",
+          "id": "A4-E02"
+        }
+      },
+      "_key": "!scenes.notes!tSyKulSKEmN3zQE3.mY9xwQf0asclXPGb"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "nI3KkxiU0q2QV2BJ",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 263,
+      "y": 778,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.nI3KkxiU0q2QV2BJ"
+    },
+    {
+      "_id": "zepNTdZkFcQVRpvI",
+      "name": "sacks of dog feed",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sacos-pienso.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 720,
+      "y": 835,
+      "width": 100,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.zepNTdZkFcQVRpvI"
+    },
+    {
+      "_id": "MHff0WxzsZw5obdO",
+      "name": "the long wooden table (A3-E04: the tablet and the envelope with the “M.V.” letter)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-larga.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 390,
+      "y": 1140,
+      "width": 300,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.MHff0WxzsZw5obdO"
+    },
+    {
+      "_id": "INNLon6RZcolof93",
+      "name": "the tablet, switched on, showing the image of the silos (A3-E04)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-tableta.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 390,
+      "y": 1136,
+      "width": 30,
+      "height": 22,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "portatil"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.INNLon6RZcolof93"
+    },
+    {
+      "_id": "nAUgD6hxk8Dfxv5P",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 283,
+      "y": 1058,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 4,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.nAUgD6hxk8Dfxv5P"
+    },
+    {
+      "_id": "kyLdEcZn2xw209q5",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 393,
+      "y": 1058,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 5,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.kyLdEcZn2xw209q5"
+    },
+    {
+      "_id": "oiCFFCyJEaD4v5M7",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 502,
+      "y": 1058,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.oiCFFCyJEaD4v5M7"
+    },
+    {
+      "_id": "Zn0CD1wHzI3fCudG",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 283,
+      "y": 1223,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 7,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.Zn0CD1wHzI3fCudG"
+    },
+    {
+      "_id": "2rYi7c1ucP8pvTBE",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 393,
+      "y": 1223,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 8,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.2rYi7c1ucP8pvTBE"
+    },
+    {
+      "_id": "iIuGaaaBhaCJfQeW",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 502,
+      "y": 1223,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 9,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.iIuGaaaBhaCJfQeW"
+    },
+    {
+      "_id": "xemVzBOL4nCRHfUo",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 582,
+      "y": 1138,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 10,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.xemVzBOL4nCRHfUo"
+    },
+    {
+      "_id": "8nrLizZ0CeLCvjqL",
+      "name": "mesa cocina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-cocina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 770,
+      "y": 1070,
+      "width": 100,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 11,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.8nrLizZ0CeLCvjqL"
+    },
+    {
+      "_id": "tPqlJoW5PwijG8BM",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 768,
+      "y": 1143,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 12,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.tPqlJoW5PwijG8BM"
+    },
+    {
+      "_id": "Pc6lhNyhw9MYOryq",
+      "name": "Montgomery's rocking chair",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mecedora.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 695,
+      "y": 1500,
+      "width": 70,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 13,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.Pc6lhNyhw9MYOryq"
+    },
+    {
+      "_id": "9hhqVRd92plTTyeP",
+      "name": "wooden porch bench",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-banco.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 850,
+      "y": 1438,
+      "width": 180,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 14,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.9hhqVRd92plTTyeP"
+    },
+    {
+      "_id": "pKKXYl4H9nAnLJZX",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 233,
+      "y": 1553,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 15,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.pKKXYl4H9nAnLJZX"
+    },
+    {
+      "_id": "ZJKb7LH74HgeYw9y",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 333,
+      "y": 1583,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 16,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.ZJKb7LH74HgeYw9y"
+    },
+    {
+      "_id": "ufvWy4Q6cAOeVCVl",
+      "name": "the Sheriff's pickup truck",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-pickup.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 825,
+      "y": 2045,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.ufvWy4Q6cAOeVCVl"
+    },
+    {
+      "_id": "unELWP0MPZ6U1idF",
+      "name": "hay bales",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1640,
+      "y": 990,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 18,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.unELWP0MPZ6U1idF"
+    },
+    {
+      "_id": "iJ92ui97dbcRVMyX",
+      "name": "hay bales",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1980,
+      "y": 990,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 19,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.iJ92ui97dbcRVMyX"
+    },
+    {
+      "_id": "EuF5FkT794QVuHmC",
+      "name": "the Wolves' long table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-larga-granero.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 1605,
+      "width": 500,
+      "height": 110,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 20,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.EuF5FkT794QVuHmC"
+    },
+    {
+      "_id": "M0zIwUkPhdFoE6UK",
+      "name": "long bench",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-banco-largo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 1508,
+      "width": 500,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 21,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.M0zIwUkPhdFoE6UK"
+    },
+    {
+      "_id": "VNQAsyOTVIARALiP",
+      "name": "long bench",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-banco-largo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 1698,
+      "width": 500,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 22,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.VNQAsyOTVIARALiP"
+    },
+    {
+      "_id": "UKGsCJZewkXg7YKD",
+      "name": "hay bales",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2220,
+      "y": 2010,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 23,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.UKGsCJZewkXg7YKD"
+    },
+    {
+      "_id": "wNRqstlcwu72PdJD",
+      "name": "hay bales",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-fardos.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1390,
+      "y": 2020,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 24,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.wNRqstlcwu72PdJD"
+    },
+    {
+      "_id": "PFYnO4mp77pzVndH",
+      "name": "the FIRSTLIGHT van with the generator, at the end of the gravel road (A4-E02, if the raid is at the farm)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-furgoneta-firstlight.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 285,
+      "y": 2165,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 25,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.PFYnO4mp77pzVndH"
+    },
+    {
+      "_id": "uWDlOKxd6ybuOX2c",
+      "name": "the thermal camera drone (A4-E02, if the raid is at the farm)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-dron.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1150,
+      "y": 1300,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "Wd9sfn2ary7atYRz"
+      ],
+      "sort": 26,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "granja",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!tSyKulSKEmN3zQE3.uWDlOKxd6ybuOX2c"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "AJL78lfbaS1Mbi0r",
+      "name": "Ethan Montgomery",
+      "displayName": 30,
+      "actorId": "dd9CRIHVGO38YUhN",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 645,
+      "y": 1450,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 30,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PNJ-01",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ],
+          "nota": "In the porch rocking chair (A1-E03). In A3-E04, standing by the living room window: move him inside, to (2,5; 13,4)."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.AJL78lfbaS1Mbi0r"
+    },
+    {
+      "_id": "ifxGAcvNX8jjmIFZ",
+      "name": "Montgomery's Dogs 1",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 130,
+      "y": 1780,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ],
+          "nota": "“Motionless, not barking: watching.” In A3-E04 they lie down on the porch, their backs to the house."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.ifxGAcvNX8jjmIFZ"
+    },
+    {
+      "_id": "KVnMxa8lft1NxjKb",
+      "name": "Montgomery's Dogs 2",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 280,
+      "y": 1930,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.KVnMxa8lft1NxjKb"
+    },
+    {
+      "_id": "gBmmoAnUU893jnIu",
+      "name": "Montgomery's Dogs 3",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 750,
+      "y": 1780,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.gBmmoAnUU893jnIu"
+    },
+    {
+      "_id": "e6BeYZPZxYabfwmj",
+      "name": "Montgomery's Dogs 4",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 1450,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.e6BeYZPZxYabfwmj"
+    },
+    {
+      "_id": "GIeyqR97vMzzAwwr",
+      "name": "Montgomery's Dogs 5",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 1000,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.GIeyqR97vMzzAwwr"
+    },
+    {
+      "_id": "EfvFhpYH9u6CejHg",
+      "name": "Montgomery's Dogs 6",
+      "displayName": 30,
+      "actorId": "kred15jySmCveej8",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 600,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 50
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "PERROS-MONTGOMERY",
+          "escenas": [
+            "A1-E03",
+            "A3-E04"
+          ],
+          "nota": "Six of the twelve; the rest come out of the kennels if there's combat."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.EfvFhpYH9u6CejHg"
+    },
+    {
+      "_id": "fCAChIJNZ95cU5vG",
+      "name": "Dutch Lindqvist",
+      "displayName": 30,
+      "actorId": "tSBtElC53tmJxJnO",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03-DUTCH.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1380,
+      "y": 300,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 7,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03-DUTCH",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ],
+          "nota": "Dutch Lindqvist, in trailer 1. The bounty hunters come out if there's combat or a raid."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.fCAChIJNZ95cU5vG"
+    },
+    {
+      "_id": "XeHAryNuRkvHqx3x",
+      "name": "Montgomery's Bounty Hunters 1",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1380,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 8,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.XeHAryNuRkvHqx3x"
+    },
+    {
+      "_id": "hfXgEQpsjyNpoSTp",
+      "name": "Montgomery's Bounty Hunters 2",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1730,
+      "y": 300,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 9,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.hfXgEQpsjyNpoSTp"
+    },
+    {
+      "_id": "SgZ08GYNTcJF2fFI",
+      "name": "Montgomery's Bounty Hunters 3",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1730,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 10,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.SgZ08GYNTcJF2fFI"
+    },
+    {
+      "_id": "Ob1eVrV8MboBEjHr",
+      "name": "Montgomery's Bounty Hunters 4",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2080,
+      "y": 300,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 11,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.Ob1eVrV8MboBEjHr"
+    },
+    {
+      "_id": "OzKpZc9cV8Kq6IXz",
+      "name": "Montgomery's Bounty Hunters 5",
+      "displayName": 30,
+      "actorId": "L1oU4dlqHg8Yszon",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2080,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 12,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-03",
+          "escenas": [
+            "A3-E04",
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.OzKpZc9cV8Kq6IXz"
+    },
+    {
+      "_id": "mfcHgdcrsDJmM1HW",
+      "name": "Teresa “Tess” Navarro",
+      "displayName": 30,
+      "actorId": "cacjzuu13Bv7mJH5",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1050,
+      "y": 1810,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 13,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "CAZ-01",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "If the raid is at the farm: the team comes in by the gravel road."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.mfcHgdcrsDJmM1HW"
+    },
+    {
+      "_id": "pNLQraaSjd1YwKSv",
+      "name": "Lena Sorensen",
+      "displayName": 30,
+      "actorId": "2hdWrhkD65ZNl4Xs",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1170,
+      "y": 1810,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 14,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "CAZ-03",
+          "escenas": [
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.pNLQraaSjd1YwKSv"
+    },
+    {
+      "_id": "ht85Z8IH711DpJDx",
+      "name": "Cole Ransom",
+      "displayName": 30,
+      "actorId": "5ywnpdrw93wmy235",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1110,
+      "y": 1930,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 15,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-11",
+          "escenas": [
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.ht85Z8IH711DpJDx"
+    },
+    {
+      "_id": "grnle0T5WCNNNp8C",
+      "name": "Owen Pak",
+      "displayName": 30,
+      "actorId": "yyJApTmnANPPdw3O",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 235,
+      "y": 2115,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 16,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "CAZ-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Pak, inside the van, with the drone."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.grnle0T5WCNNNp8C"
+    },
+    {
+      "_id": "DLBeVp0vsL4r4v0l",
+      "name": "FIRSTLIGHT Tactical Team 1",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 400,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 17,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "The pair circling the house toward the back door."
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.DLBeVp0vsL4r4v0l"
+    },
+    {
+      "_id": "2GMFfMT589kusSXv",
+      "name": "FIRSTLIGHT Tactical Team 2",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1100,
+      "y": 200,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "Wd9sfn2ary7atYRz",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 18,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "granja",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!tSyKulSKEmN3zQE3.2GMFfMT589kusSXv"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "83usJsoFqfDGQEnX",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "granja",
+      "id": "LUG-02",
+      "plano": "granja",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.NNzMhIvsavpG0iTQ]{The Sheriff's Farm and Boat Landing}<br><strong>Scenes:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}</p>\n<p><strong>What it is.</strong> Montgomery&#39;s haven (Haven 3, Herd 2): main house, a barn converted into the Wolves&#39; meeting hall, kennels with a dozen ghouled dogs, and, behind the barn, the bounty hunters&#39; trailers (MEN-03). The cellar, with the 300 m tunnel to the river boat landing, is the <strong>granja-sotano</strong> map (the stairwell hall leads down there).</p>\n<p><strong>A1-E03 · The Sheriff Asks (on the porch).</strong> “The gravel road ends at a dark wooden farmhouse among flooded fields. There are dogs everywhere, motionless, not barking: watching. On the porch, in a rocking chair, sits a heavyset man…” Montgomery doesn&#39;t get up from the <strong>rocking chair</strong> (tile); the sheet with the list is on the <strong>porch railing</strong> beside him. “When the last of you climbs the steps” (the porch steps, at the center). He doesn&#39;t invite them in: what&#39;s said on the porch doesn&#39;t go into the house (Hal knows this without a roll). The dogs: tokens spread across the yard and the gravel.</p>\n<p><strong>A3-E04 · The Pack Hesitates (inside).</strong> “This time, the farmhouse door is open. Inside is a room with a cold fireplace, a long wooden table, and, on the table, a tablet, switched on… The dogs lie down on the porch, their backs to the house… Montgomery is standing by the window.” The front door opens straight into the <strong>living room</strong>: the cold fireplace against the west wall, the long table (tile) with the tablet (tile, “screen” light) and the envelope with the “M.V.” letter, and the front window, which looks out on the porch. Open the front door manually for this scene.</p>\n<p><strong>Combat (A3-E04, or if the coterie attacks the Sheriff).</strong> The twelve dogs come out of the <strong>kennels</strong> (behind the house: five wire pens with gates, doors you can see through) and off the porch; the six bounty hunters come out of the <strong>three trailers</strong> behind the barn (door on the west side of each). Montgomery: Blood Potency 5, Fortitude 4.</p>\n<p><strong>A4-E02 · The Raid (if it&#39;s the farm).</strong> FIRSTLIGHT comes in by the <strong>gravel road</strong> (south). Escape: the cellar tunnel to the river boat landing (down the stairwell hall stairs; granja-sotano map); the dogs cover the retreat. Animalism on the farm dogs creates chaos among the operators. The trailers and the barn are the other “save the mortals” objectives.</p>\n<p><strong>The barn.</strong> Sliding door to the west (open), back door to the north toward the trailers, and a small door to the south. Inside, the Wolves&#39; long table with its benches (tiles), the wood stove, and, at the far end, the old stalls converted into storage (low wooden partitions: they block movement, not sight).</p>\n<p><strong>The house.</strong> Ground floor: living room, kitchen, the Sheriff&#39;s office (glass-front gun cabinet), the hall with the stairs down to the cellar, and the mudroom with the back door toward the kennels.</p>\n<p><strong>Detail.</strong> Montgomery receives visitors sitting on the porch even in the rain. If he invites someone inside, the matter is serious. If anyone attempts Dominate or Presence in A1-E03, he gets up from the rocking chair for the first time: “Do that again and I&#39;ll bury you in the back field.”</p>\n\n<p class=\"sbn-moviles\">The movable furniture (27) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.dd9CRIHVGO38YUhN]{Ethan Montgomery} (A1-E03, A3-E04): In the porch rocking chair (A1-E03). In A3-E04, standing by the living room window: move him inside, to (2,5; 13,4).</li><li>@UUID[Actor.kred15jySmCveej8]{Montgomery's Dogs 1} (A1-E03, A3-E04): “Motionless, not barking: watching.” In A3-E04 they lie down on the porch, their backs to the house.</li><li>@UUID[Actor.kred15jySmCveej8]{Montgomery's Dogs 2} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Montgomery's Dogs 3} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Montgomery's Dogs 4} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Montgomery's Dogs 5} (A1-E03, A3-E04)</li><li>@UUID[Actor.kred15jySmCveej8]{Montgomery's Dogs 6} (A1-E03, A3-E04): Six of the twelve; the rest come out of the kennels if there&#39;s combat.</li><li>@UUID[Actor.tSBtElC53tmJxJnO]{Dutch Lindqvist} · <em>hidden</em> (A3-E04, A4-E02): Dutch Lindqvist, in trailer 1. The bounty hunters come out if there&#39;s combat or a raid.</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters 1} · <em>hidden</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters 2} · <em>hidden</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters 3} · <em>hidden</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters 4} · <em>hidden</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters 5} · <em>hidden</em> (A3-E04, A4-E02)</li><li>@UUID[Actor.cacjzuu13Bv7mJH5]{Teresa “Tess” Navarro} · <em>hidden</em> (A4-E02): If the raid is at the farm: the team comes in by the gravel road.</li><li>@UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen} · <em>hidden</em> (A4-E02)</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>hidden</em> (A4-E02)</li><li>@UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak} · <em>hidden</em> (A4-E02): Pak, inside the van, with the drone.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team 1} · <em>hidden</em> (A4-E02): The pair circling the house toward the back door.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team 2} · <em>hidden</em> (A4-E02)</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Leave by the gravel road into the valley · Path to the river and the boat landing.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

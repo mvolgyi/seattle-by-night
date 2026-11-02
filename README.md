@@ -9,13 +9,21 @@ jugable con reglas de *Cazador: La Venganza*.
 
 > This is not official World of Darkness material.
 
+**In English — *The Ward File*.** An unofficial fan chronicle for *Vampire: The Masquerade 5th
+Edition* (wod5e system) set in Seattle, November 2026, with the Second Inquisition (FIRSTLIGHT)
+playable under *Hunter: The Reckoning* rules. The whole chronicle is available in **Spanish and
+English**: the Storyteller picks the language when importing, and can switch it mid-campaign
+without losing anything (player characters, revealed handouts, tokens, the Thermometer). Install
+it with the manifest URL below; the Storyteller's guide in English is `narrator-guide.html` on
+each release page.
+
 | | |
 |---|---|
 | Sistema | wod5e ≥ 5.3.0 |
 | Foundry | v14 (verificado en 14.365) |
 | Idioma | español |
 | Mesa | coterie de 4–5 jugadores |
-| Estado | 1.1.0 — la crónica completa importable, el Panel del Narrador, FIRSTLIGHT jugable, 21 mapas pintados con luces, muros y tokens, música de ambiente por escena y la Guía del Narrador. Plan y fases en `SPEC.md` |
+| Estado | 2.0.0 — la crónica completa importable en castellano o en inglés, el Panel del Narrador, FIRSTLIGHT jugable, 21 mapas pintados con luces, muros y tokens, música de ambiente por escena y la Guía del Narrador. Plan y fases en `SPEC.md` |
 
 ## Cómo instalarlo
 
@@ -109,6 +117,23 @@ imágenes reducidas quedan en `cache/guia/` (ignorado por git).
 
 ## Notas de versión
 
+### 2.0.0
+
+- **La crónica en inglés: *The Ward File*.** Toda la crónica (libro, aventura, ciudad,
+  personajes, documentos, mapas, Panel y música) se puede jugar en castellano o en inglés. El
+  idioma se elige al importar y se puede cambiar con la partida empezada («Idioma de la
+  crónica» en la configuración del módulo, o «Actualizar la crónica» en el otro idioma): se
+  conservan los PJs, los handouts entregados, los tokens y el estado del Termómetro.
+- **Compendios en inglés** en su propia carpeta, «The Ward File»; los de castellano no
+  cambian.
+- **La interfaz** (Panel, botones, avisos) sale en el idioma de Foundry de cada usuario.
+- **Guía del Narrador en inglés:** `narrator-guide.html`, aparte, en cada release.
+- **Cómo se traduce:** el castellano sigue siendo la fuente; el inglés vive en `content/en/` y
+  lo genera `tools/traducir.mjs` con la API de Claude, con un glosario de términos oficiales de
+  V5 y H5 en inglés. Cada traducción guarda la huella del castellano del que salió:
+  `npm run verificar:traduccion` avisa qué quedó desactualizado. Plan completo en
+  `TRADUCCION.md`.
+
 ### 1.1.0
 
 - **Música de ambiente por escena.** Un compendio nuevo, *El Expediente Ward — Música*, con la
@@ -183,6 +208,9 @@ Primera versión completa.
   uso comercial (lista y licencias en `tools/MODELOS.md`). Cada imagen tiene su procedencia
   registrada en `assets/PROCEDENCIA.json`: modelo, licencia, workflow, semilla y prompt. No
   contiene arte oficial de Paradox ni de White Wolf.
+- **Traducción al inglés con IA.** El texto en inglés (`content/en/`) es una traducción del
+  castellano hecha con la API de Claude (Anthropic) y revisada con controles automáticos de
+  formato y terminología; el original es el castellano.
 - **Música generada con IA.** Toda la música (`assets/musica/`) es original y está **generada
   en local con ACE-Step 1.5** (licencia MIT, permite uso comercial), sin voces ni muestras de
   terceros. Su procedencia (modelo, licencia, prompt y semilla) está en

@@ -1,0 +1,25 @@
+{
+  "_id": "ryBwZhzsZroePayN",
+  "_key": "!macros!ryBwZhzsZroePayN",
+  "name": "Mark clue…",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/eye.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"The Ward File: the module isn't active in this world.\");\nconst PISTAS = [{\"id\":\"P-01\",\"nombre\":\"Professional Mortal Thieves; Looped Cameras\"},{\"id\":\"P-02\",\"nombre\":\"Ghoul Vitae on the Doorknob\"},{\"id\":\"P-03\",\"nombre\":\"The Controlled Fury Technique\"},{\"id\":\"P-04\",\"nombre\":\"Partial Copy of the File on a USB Drive\"},{\"id\":\"P-05\",\"nombre\":\"Jun, the Thin-Blood Courier\"},{\"id\":\"P-06\",\"nombre\":\"Unlogged Gale Sentinel Data Request\"},{\"id\":\"P-07\",\"nombre\":\"Halloway Knows About the Cold Water\"},{\"id\":\"P-08\",\"nombre\":\"The Inverted Guard\"},{\"id\":\"P-09\",\"nombre\":\"The Journals Bought in 1986\"},{\"id\":\"P-10\",\"nombre\":\"SEA-0411 Shipments / DOC-07\"},{\"id\":\"P-11\",\"nombre\":\"Gale's Signature\"},{\"id\":\"P-12\",\"nombre\":\"Krell's Testimony\"},{\"id\":\"P-13\",\"nombre\":\"Sal's Ledger\"},{\"id\":\"P-14\",\"nombre\":\"The Payment from Cascade Holdings\"},{\"id\":\"P-15\",\"nombre\":\"The Folios About the German\"}];\nconst estado = (await api.estado())?.pistas ?? {};\nconst marcada = v => (v && typeof v === \"object\") ? Boolean(v.obtenida ?? v.marcada ?? v.valor) : Boolean(v);\nconst esc = foundry.utils.escapeHTML ?? (s => s);\nconst filas = PISTAS.map(p => `<label class=\"sbn-macro-pista\" style=\"display:flex;gap:.5em;align-items:baseline;margin:.15em 0\">\n  <input type=\"checkbox\" name=\"${p.id}\" ${marcada(estado[p.id]) ? \"checked\" : \"\"}>\n  <span><strong>${p.id}</strong> · ${esc(p.nombre)}</span></label>`).join(\"\");\nconst datos = await foundry.applications.api.DialogV2.input({\n  window: { title: \"Mark clue…\", icon: \"fa-solid fa-magnifying-glass\" },\n  position: { width: 520 },\n  content: `<p>Check the clues the coterie already has; uncheck one to remove it.</p><div class=\"sbn-macro-pistas\">${filas}</div>`,\n  ok: { label: \"Save\", icon: \"fa-solid fa-check\" }\n});\nif (!datos) return;\nfor (const p of PISTAS) {\n  const nueva = Boolean(datos[p.id]);\n  if (nueva !== marcada(estado[p.id])) await api.pista(p.id, nueva);\n}",
+  "folder": null,
+  "sort": 400,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "pista"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

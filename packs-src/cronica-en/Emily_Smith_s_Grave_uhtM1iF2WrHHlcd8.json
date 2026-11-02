@@ -1,0 +1,109 @@
+{
+  "_id": "uhtM1iF2WrHHlcd8",
+  "_key": "!journal!uhtM1iF2WrHHlcd8",
+  "name": "Emily Smith's Grave",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 120,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-12",
+      "archivo": "content/ciudad/LUG-12.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "Ik08KZ7LwQVNbwmQ",
+      "_key": "!journal.pages!uhtM1iF2WrHHlcd8.Ik08KZ7LwQVNbwmQ",
+      "name": "Emily Smith's Grave",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-12.webp\" alt=\"Emily Smith's Grave\">\n<p><em>Cemetery north of the city · Map: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sFVHTJhgg1DU3Yhx",
+      "_key": "!journal.pages!uhtM1iF2WrHHlcd8.sFVHTJhgg1DU3Yhx",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>A plain gray granite headstone on a hillside of cedars. EMILY ROSE SMITH · 1958–1996 · “She stayed with the ones nobody wanted.” The grass is trimmed. At the foot of the stone lies a bunch of fresh flowers, wrapped in newspaper, still beaded with rain.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "QcFB2Q8ZU08qZ14T",
+      "_key": "!journal.pages!uhtM1iF2WrHHlcd8.QcFB2Q8ZU08qZ14T",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The fresh flowers are the core of @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cGEW4b4hCJlaDeSK]{GAN-12 · The Visited Grave}. Who leaves them is left open for the chronicle (Marcos from @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived}, someone from Salt&#39;s, or someone who signs “M.V.”).</p>\n<p>It appears in the Epilogue of @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File} as one of the three possible codas.</p>\n<p>Use as a lost Touchstone: a visit lets David make a Remorse test with one extra die, but it also makes him ask himself a question he doesn&#39;t want to ask.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

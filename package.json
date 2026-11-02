@@ -1,14 +1,24 @@
 {
   "private": true,
   "name": "seattle-by-night",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Módulo fan y no oficial de Foundry VTT para Vampiro: La Mascarada 5e (wod5e): El Expediente Ward, una crónica en Seattle, con FIRSTLIGHT jugable",
   "type": "module",
   "scripts": {
     "verificar": "node tools/verificar.mjs",
     "docx": "python3 tools/importar-docx.py",
     "planos": "node tools/construir-planos.mjs",
-    "pack": "npm run contenido && npm run verificar && npm run verificar:contenido && npm run verificar:actores && npm run pack:cronica && npm run pack:documentos && npm run pack:personajes && npm run pack:escenas && npm run pack:firstlight && npm run pack:macros && npm run pack:playlists && npm run pack:aventura",
+    "pack": "npm run contenido && npm run verificar && npm run verificar:contenido && npm run verificar:actores && npm run pack:cronica && npm run pack:documentos && npm run pack:personajes && npm run pack:escenas && npm run pack:firstlight && npm run pack:macros && npm run pack:playlists && npm run pack:aventura && npm run verificar:traduccion && npm run pack:en",
+    "pack:en": "npm run pack:cronica-en && npm run pack:documentos-en && npm run pack:personajes-en && npm run pack:escenas-en && npm run pack:firstlight-en && npm run pack:macros-en && npm run pack:playlists-en && npm run pack:aventura-en",
+    "pack:aventura-en": "fvtt package pack aventura-en --id seattle-by-night --type Module --in packs-src/aventura-en --out packs",
+    "pack:cronica-en": "fvtt package pack cronica-en --id seattle-by-night --type Module --in packs-src/cronica-en --out packs",
+    "pack:documentos-en": "fvtt package pack documentos-en --id seattle-by-night --type Module --in packs-src/documentos-en --out packs",
+    "pack:personajes-en": "fvtt package pack personajes-en --id seattle-by-night --type Module --in packs-src/personajes-en --out packs",
+    "pack:escenas-en": "fvtt package pack escenas-en --id seattle-by-night --type Module --in packs-src/escenas-en --out packs",
+    "pack:firstlight-en": "fvtt package pack firstlight-en --id seattle-by-night --type Module --in packs-src/firstlight-en --out packs",
+    "pack:macros-en": "fvtt package pack macros-en --id seattle-by-night --type Module --in packs-src/macros-en --out packs",
+    "pack:playlists-en": "fvtt package pack playlists-en --id seattle-by-night --type Module --in packs-src/playlists-en --out packs",
+    "verificar:traduccion": "node tools/contenido/verificar-traduccion.mjs",
     "release": "node tools/release.mjs",
     "guia": "node tools/construir-guia.mjs",
     "e2e": "node tools/e2e/prueba.mjs",
@@ -28,11 +38,15 @@
     "revisar:escenas": "node tools/contenido/revisar-escenas.mjs",
     "arte": "node tools/generar-arte.mjs",
     "tokens": "node tools/tokens.mjs",
-    "musica": "node tools/generar-musica.mjs"
+    "musica": "node tools/generar-musica.mjs",
+    "traducir": "node tools/traducir.mjs"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.4",
     "marked": "^18.0.7",
     "playwright-core": "^1.64.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0"
   }
 }

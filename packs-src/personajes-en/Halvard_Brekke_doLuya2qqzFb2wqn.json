@@ -1,0 +1,281 @@
+{
+  "_id": "doLuya2qqzFb2wqn",
+  "_key": "!actors!doLuya2qqzFb2wqn",
+  "name": "Halvard Brekke",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-05.webp",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 50,
+  "prototypeToken": {
+    "name": "Halvard Brekke",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.4,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#ffe6bf",
+      "coloration": 1,
+      "attenuation": 0.55,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PJ-05.webp"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "former crab fisherman, childe of Sheriff Montgomery, and member of his pack.",
+      "chronicle": "The Ward File",
+      "ambition": "earn a domain of his own",
+      "desire": "hear Montgomery tell him, just once, that he did well",
+      "touchstones": "<h3>Convictions</h3><ul><li>Leave no one in the water</li></ul><h3>Touchstones</h3><ul><li>his niece Ingrid, who captains the family boat now and saves him a seat at the Christmas table even though he never comes</li></ul>",
+      "sire": "Ethan Montgomery",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.B4nqUk8dojvCw97H]{Profile: Halvard “Hal” Brekke}</p><blockquote><p><em>The Wolf of Ballard</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>Hal</td></tr><tr><th>Concept</th><td>former crab fisherman, childe of Sheriff Montgomery, and member of his pack.</td></tr><tr><th>Clan</th><td>Gangrel</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</td></tr><tr><th>Predator Type</th><td>Alleycat</td></tr><tr><th>Ambition</th><td>earn a domain of his own</td></tr><tr><th>Desire</th><td>hear Montgomery tell him, just once, that he did well</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{The Archived}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{Whitmore&#39;s Wolves}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "gangrel"
+        }
+      },
+      "name": "Gangrel",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "miPiUxKnN0yhQJQs",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.miPiUxKnN0yhQJQs"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Alleycat",
+      "type": "predatorType",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "dicepool": {}
+      },
+      "_id": "OcW9cBiTT58tu9wd",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.OcW9cBiTT58tu9wd"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Allies (longshoremen) 2"
+        }
+      },
+      "name": "Allies (longshoremen)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Allies (longshoremen) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "crJ9jW3oPJbeRa1V",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.crJ9jW3oPJbeRa1V"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts (port police) 1"
+        }
+      },
+      "name": "Contacts (port police)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts (port police) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "WYvlSWxNIzkuXcZL",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.WYvlSWxNIzkuXcZL"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Montgomery) 2"
+        }
+      },
+      "name": "Mawla (Montgomery)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Montgomery) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "P17J06w1TFTg9pqI",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.P17J06w1TFTg9pqI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 1 (a boat moored in Salmon Bay)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 1 (a boat moored in Salmon Bay)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "Qd3SXWdfy3xtVdYr",
+      "_key": "!actors.items!doLuya2qqzFb2wqn.Qd3SXWdfy3xtVdYr"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-05",
+      "journal": "JournalEntry.B4nqUk8dojvCw97H",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

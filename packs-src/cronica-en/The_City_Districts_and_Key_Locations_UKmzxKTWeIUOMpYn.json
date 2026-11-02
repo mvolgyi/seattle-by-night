@@ -1,0 +1,109 @@
+{
+  "_id": "UKmzxKTWeIUOMpYn",
+  "_key": "!journal!UKmzxKTWeIUOMpYn",
+  "name": "The City · Districts and Key Locations",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-DISTRITOS",
+      "archivo": "content/ciudad/04-distritos.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "XqRcgHuRlvxIe61J",
+      "_key": "!journal.pages!UKmzxKTWeIUOMpYn.XqRcgHuRlvxIe61J",
+      "name": "Domain Map",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Zone</th>\n<th>Held By</th>\n<th>Hunting</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Downtown and Pioneer Square</td>\n<td>Prince (surface) / Nosferatu (below ground)</td>\n<td>Difficulty 3</td>\n<td>Tourists and the unhoused. Hunting is watched.</td>\n</tr>\n<tr>\n<td>Capitol Hill</td>\n<td>Toreador</td>\n<td>Difficulty 2</td>\n<td>Nightlife; the city&#39;s <em>rack</em>.</td>\n</tr>\n<tr>\n<td>Ballard and the north</td>\n<td>Unclaimed</td>\n<td>Difficulty 4</td>\n<td>Residential neighborhood. The three kids in @UUID[JournalEntry.zNhdOMSnEHdvMIGE]{Helen Ward's Voice Memos #7} were killed there.</td>\n</tr>\n<tr>\n<td>Harbor Island and Elliott Bay</td>\n<td>Sheriff, ceded to David</td>\n<td>Difficulty 3</td>\n<td>Night-shift workers.</td>\n</tr>\n<tr>\n<td>South Lake Union</td>\n<td>Unclaimed</td>\n<td>Difficulty 5</td>\n<td>Cameras everywhere. FIRSTLIGHT territory.</td>\n</tr>\n<tr>\n<td>Eastside (Bellevue)</td>\n<td>Halloway</td>\n<td>Difficulty 4</td>\n<td>Money, private security, Gale Sentinel.</td>\n</tr>\n<tr>\n<td>Everett</td>\n<td>Anarchs</td>\n<td>Difficulty 3</td>\n<td>Shipyards and naval bases.</td>\n</tr>\n<tr>\n<td>Tacoma</td>\n<td>Nobody and everybody</td>\n<td>Difficulty 3</td>\n<td>Exiles, Sabbat remnants, the Hecata funeral home.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "EzyYyUzGVByBaBew",
+      "_key": "!journal.pages!UKmzxKTWeIUOMpYn.EzyYyUzGVByBaBew",
+      "name": "Locations",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>@UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar} · The Harbor Island Hangar</li>\n<li>@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{The Sheriff's Farm and Boat Landing} · The Sheriff&#39;s Farm and Boat Landing</li>\n<li>@UUID[JournalEntry.iyojT7kJHH23BWLd]{The Glass Gallery (Elysium)} · The Glass Gallery (Elysium)</li>\n<li>@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{The Sealed Underground (Seattle Underground)} · The Sealed Underground (Seattle Underground)</li>\n<li>@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{Helen Ward's Apartment} · Helen Ward&#39;s Apartment</li>\n<li>@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Halloway Tower} · Halloway Tower</li>\n<li>@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel Campus and Data Center} · Gale Sentinel Campus and Data Center</li>\n<li>@UUID[JournalEntry.YCxHPFDwwk4QiaET]{Pike Place Market by Night} · Pike Place Market by Night</li>\n<li>@UUID[JournalEntry.ciIKIq7hoVokkr0J]{Club Cinder} · Club Cinder</li>\n<li>@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt's Bar and the Old Shipyard} · Salt&#39;s Bar and the Old Shipyard</li>\n<li>@UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building} · The Larchmont Building</li>\n<li>@UUID[JournalEntry.uhtM1iF2WrHHlcd8]{Emily Smith's Grave} · Emily Smith&#39;s Grave</li>\n<li>@UUID[JournalEntry.OSMVQHNXfk9zRyLM]{The Observatory Chantry} · The Observatory Chantry</li>\n<li>@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory} · Northline Cyber Advisory</li>\n<li>@UUID[JournalEntry.IDd94316DhSx3ptV]{The Ferry Terminal and the Last Ferry} · The Ferry Terminal and the Last Ferry</li>\n<li>@UUID[JournalEntry.lIohEQe1KFTOCQ0U]{The Terminal 86 Grain Elevator} · The Terminal 86 Grain Elevator</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TdtGhTcUw5EvXTLV",
+      "_key": "!journal.pages!UKmzxKTWeIUOMpYn.TdtGhTcUw5EvXTLV",
+      "name": "ID Registry (Additions)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>PNJ-22</strong> · Adelaide Grange, former Ventrue Prince, vanished in 1962 (background)</li>\n<li><strong>MEN-08</strong> · The Larchmont survivor, a Sabbat Kindred (hook for @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · The Larchmont Survivor})</li>\n<li><strong>REF-01</strong> · Emily Rose Smith, 1958–1996</li>\n<li><strong>REF-02</strong> · Danny Ruiz, in the Larchmont cistern</li>\n<li>Locked in: Emily&#39;s death in <strong>1996</strong> and the Larchmont fire in <strong>March 2014</strong>.</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

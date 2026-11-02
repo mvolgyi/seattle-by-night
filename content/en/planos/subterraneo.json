@@ -1,0 +1,196 @@
+{
+  "_fuente": {
+    "subterraneo": "4da0a5386724a20c"
+  },
+  "planos": {
+    "subterraneo": {
+      "nombre": "Part 1 · The Sealed Underground",
+      "nota": "**Arrival (A1-E04, Nights 2 to 4).** A staircase leads down from a Pioneer Square basement (west) to the **iron door** that appears on no map. Behind it, the 1889 brick sidewalk runs east beneath the city: boarded-up shopfronts on both sides of the Market's entrance, **violet glass skylights** in the ceiling (Foundry lights over the sidewalk, nothing painted), and a **network cable** running along the top of the south wall to Ezra's door. It smells of mold, of damp, and, every so often, of server ozone.\n\n**The Undermarket.** The big shop in the middle, open to the sidewalk through its cast-iron columns. Stalls of information and favors (fixed, painted) and two stall lanterns. **Rules Below:** no fighting in the Market, everything has a price, and nobody asks about anybody's face. Fighting here turns Thornquist and a dozen runners against the coterie and shuts off LOR-02.\n\n**The barbershop (Thornquist's office).** At the far east end of the sidewalk, “there's a carbide lamp burning”: you can see it from a distance through the shopfront window, the only one that still has its glass. Thornquist receives visitors seated in the **barber's chair** (fixed, bolted to the floor) “as if it were a throne.” The carbide lamp is a lit tile (`tile-lampara-carburo`) on the counter. In the back corner, the **safe** with the duplicates of USB drives 1 and 2 (AVE-01-AJUSTE; Krell doesn't know they exist). Tests: Manipulation + Persuasion Diff. 4 (Ezra +2), Wits + Insight Diff. 3.\n\n**Ezra's nest (PJ-03, Haven 2).** Under the street, across from the barbershop: racks of salvaged servers, the desk with his monitors (“screen” light), and the cot. The network cable from the sidewalk comes in through his door; the cables “come down through nineteenth-century holes” in the ceiling.\n\n**The thin-blood shelter.** An old coal vault under the street: mattresses, blankets, candles, and the heap of coal nobody ever cleared out. Jun Takeda (PNJ-20) hasn't been back since the Pier 46 business: if they look for her here, she isn't here (she sleeps in a storage unit in SoDo).\n\n**LOR-02.** The boarded-up shopfronts open onto abandoned shops with no door (the boards are nailed over the wall); if a PC has “Sealed Haven” (•••), the Storyteller can open one with a secret door.\n\n**Off the map.** The staircase climbs to Pioneer Square (no street map). The sidewalk continues east behind a brick partition wall.",
+      "habitaciones": [
+        {
+          "nombre": "Foundations (northwest)"
+        },
+        {
+          "nombre": "Street fill (southwest)"
+        },
+        {
+          "nombre": "Access stairs (from a Pioneer Square basement)"
+        },
+        {
+          "nombre": "1889 sidewalk"
+        },
+        {
+          "nombre": "Boarded-up shopfront (west): abandoned shop"
+        },
+        {
+          "nombre": "The Undermarket"
+        },
+        {
+          "nombre": "Boarded-up shopfront (east): abandoned shop"
+        },
+        {
+          "nombre": "The barbershop (Thornquist's office)"
+        },
+        {
+          "nombre": "Thin-blood shelter (old coal vault)"
+        },
+        {
+          "nombre": "Street fill (center)"
+        },
+        {
+          "nombre": "Ezra's server nest (vault under the street)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "The iron door (appears on no map)"
+        },
+        {
+          "nombre": "Undermarket front: cast-iron columns"
+        },
+        {
+          "nombre": "Barbershop door"
+        },
+        {
+          "nombre": "Barbershop window (the only one with glass: the carbide lamp shows through)"
+        },
+        {
+          "nombre": "Coal vault door (thin-blood shelter)"
+        },
+        {
+          "nombre": "Door to Ezra's nest"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a narrow flight of worn stone steps coming down from the west"
+        },
+        {
+          "desc": "weathered wooden planks nailed across an old boarded-up shopfront"
+        },
+        {
+          "desc": "weathered wooden planks nailed across an old boarded-up shopfront"
+        },
+        {
+          "desc": "a bundle of black network cable stapled along the top of the wall like a creeping vine"
+        },
+        {
+          "desc": "a market stall: a trestle table with crates and small goods under a stained tarp"
+        },
+        {
+          "desc": "a market stall: a trestle table with crates and small goods under a stained tarp"
+        },
+        {
+          "desc": "a market stall: a trestle table with crates and small goods under a stained tarp"
+        },
+        {
+          "desc": "a long market stall made of two trestle tables with boxes of papers, phones and old electronics"
+        },
+        {
+          "desc": "rickety wooden shelves stacked with boxes and bundles"
+        },
+        {
+          "desc": "rickety wooden shelves stacked with boxes and bundles"
+        },
+        {
+          "desc": "the old barber's counter with two porcelain basins under a long tarnished mirror"
+        },
+        {
+          "desc": "a heavy old iron safe with a brass dial"
+        },
+        {
+          "desc": "an old cast-iron barber's chair bolted to the floor, cracked leather seat, facing the door"
+        },
+        {
+          "desc": "shelves of ledgers, file boxes and old newspapers"
+        },
+        {
+          "desc": "Thornquist's carbide lamp, lit on the counter"
+        },
+        {
+          "desc": "a low heap of old black coal against the back wall"
+        },
+        {
+          "desc": "a bare mattress on the floor with grey blankets"
+        },
+        {
+          "desc": "a bare mattress on the floor with grey blankets"
+        },
+        {
+          "desc": "a bare mattress on the floor with grey blankets"
+        },
+        {
+          "desc": "a bare mattress on the floor with grey blankets"
+        },
+        {
+          "desc": "a pallet with candles, cans, and a backpack"
+        },
+        {
+          "desc": "a tall rack of salvaged servers and tangled cables"
+        },
+        {
+          "desc": "a tall rack of salvaged servers and tangled cables"
+        },
+        {
+          "desc": "a cluttered desk with three old monitors, keyboards and coils of cable"
+        },
+        null,
+        {
+          "desc": "a narrow camp cot with a sleeping bag"
+        },
+        {
+          "desc": "a heap of fallen plaster and broken lath in the corner"
+        },
+        {
+          "desc": "an empty, rotting wooden shop shelf"
+        },
+        {
+          "desc": "an old shop counter under a thick layer of dust"
+        },
+        {
+          "desc": "an empty, rotting wooden shop shelf"
+        },
+        {
+          "desc": "a pile of rotten crates and fallen plaster"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Violet glass skylight (dirty light from the street)"
+        },
+        {
+          "nombre": "Violet glass skylight"
+        },
+        {
+          "nombre": "Violet glass skylight"
+        },
+        {
+          "nombre": "Violet glass skylight"
+        },
+        {
+          "nombre": "Market stall lantern"
+        },
+        {
+          "nombre": "Market stall lantern"
+        },
+        {
+          "nombre": "Thin-blood shelter candles"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Up to Pioneer Square",
+          "pendiente": "no street map (Pioneer Square): the Storyteller moves the tokens by hand"
+        },
+        {
+          "nombre": "Arrival from Pioneer Square (in front of the iron door)"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "In the barber's chair, “as if it were a throne.”"
+        }
+      ]
+    }
+  }
+}

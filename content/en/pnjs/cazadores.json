@@ -1,0 +1,378 @@
+{
+  "_fuente": {
+    "PNJ-18": "4c1c2d7b68c89efd",
+    "PNJ-21": "ef91b69198b3dacd",
+    "MEN-11": "a23a12a0d7ee1de5",
+    "CAZ-01": "456c12cc83bd2303",
+    "CAZ-02": "19710847dfa9e6a4",
+    "CAZ-03": "3c29c04b94fc9879",
+    "CEL-01": "55444e56e4e9d03d"
+  },
+  "pnjs": {
+    "PNJ-18": {
+      "nombre": "Dana Okafor",
+      "apodo": "She Who Gives Nothing Away",
+      "concepto": "FIRSTLIGHT, head of the Puget Cell; latent antagonist",
+      "nacimiento": "1981",
+      "ambicion": "Get the national office to send reinforcements and tear Seattle's structure out by the roots.",
+      "deseo": "Find out what ARCHER wants before the next delivery.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Her mother",
+          "descripcion": "Her mother, the schoolteacher from Louisiana, now retired. Okafor calls her on Sundays and tells her the job is boring."
+        }
+      ],
+      "ventajas": [
+        "Unshakable Faith (Dominate and Presence take −2 dice against her; if they fail, she notices)",
+        "Contacts 3 (FBI, Homeland Security, Seattle police)",
+        "Resources 3 (federal budget)"
+      ],
+      "equipo": [
+        "Glock 19 pistol with incendiary ammunition (aggravated damage against Kindred)",
+        "Pocket UV flashlight",
+        "Light bulletproof vest (armor 2)",
+        "Encrypted phone"
+      ],
+      "cita": "“Every source wants something. Until you know what, it's bait.”",
+      "semblante": "Forty-five. Tall, very short graying hair, gray blazer; her left hand is missing the ring and little fingers, and she almost always keeps it in her pocket.",
+      "propuesto": [
+        "Inquisitive Creed: Investigation 5 (Patterns), Intimidation 3 (Interrogations), and Insight 4 (Lies) are an investigator's skills; the Cell lives on getting information.",
+        "Atonement Drive: the doc says she found the pattern and the basement; that she got there too late for the missing is proposed.",
+        "Edges: the doc's Unshakable Faith is modeled as Thwart the Unnatural (the effect is the doc's, not the rulebook's); Contacts 3 and ANOMALY, as Global Access. The “Federal Liaison” Perk is proposed.",
+        "Ambition, desire, and Touchstone (the mother, a schoolteacher from Louisiana, comes from the doc; the Sunday call is proposed)."
+      ],
+      "habilidades": {
+        "firearms": [
+          null,
+          "Pistol"
+        ],
+        "awareness": [
+          null,
+          "Ambushes"
+        ],
+        "intimidation": [
+          null,
+          "Interrogations"
+        ],
+        "investigation": [
+          null,
+          "Patterns"
+        ],
+        "occult": [
+          null,
+          "Kindred"
+        ],
+        "insight": [
+          null,
+          "Lies"
+        ],
+        "politics": [
+          null,
+          "Agencies"
+        ]
+      },
+      "impulso": {
+        "nombre": "Atonement",
+        "texto": "Chicago, 2017. She found the pattern behind the South Side disappearances, and she found the basement where it ended. What she went down looking for was no longer alive. The hand is the least of it: what she's been paying for ever since are the names she didn't cross off in time.",
+        "redencion": "She finds redemption when the Cell gets someone out alive whom the quarry had already marked, before they become one more name in a file."
+      },
+      "facultades": {
+        "globalaccess": [
+          null,
+          [
+            "Federal Liaison: once per story, Okafor gets within an hour a record that would cost anyone else a court order (phone records, city cameras, property records, passenger lists). No roll needed; it does leave a trail in Washington."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "thwarttheunnatural": "This is her Unshakable Faith (doc 14): Dominate and Presence take −2 dice against her; if they fail, she notices. She doesn't explain it or understand it. She uses it.",
+        "globalaccess": "Contacts 3 (FBI, Homeland Security, Seattle police), the liaison with the FBI's Seattle field office, and access to ANOMALY through the pilot program with Gale Sentinel."
+      }
+    },
+    "PNJ-21": {
+      "nombre": "Sasha Hale",
+      "apodo": "Analyst S. Hale",
+      "concepto": "Former signals intelligence analyst, thirty-two",
+      "ambicion": "Make her report on ARCHER the one they read at the national office.",
+      "deseo": "One whole night without headphones.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Her younger brother",
+          "descripcion": "Her younger brother, who's in college in Spokane and thinks she audits banks."
+        }
+      ],
+      "ventajas": [
+        "Faith (−1 die to mental Disciplines against her)"
+      ],
+      "equipo": [
+        "Encrypted phone",
+        "Laptop with access to the ANOMALY feed",
+        "Northline “consulting” ID badge"
+      ],
+      "semblante": "Thirty-two, former signals intelligence analyst. Headphones around her neck, eyes on another screen.",
+      "propuesto": [
+        "Attributes and Skills: the doc gives NPC pools (Physical 2, Social 3, Mental 7; Investigation 8, Technology 7, Academics 5, Occult 4 (Kindred); Health 5, Willpower 6). Conversion: Intelligence 4 + Investigation 4, Intelligence 4 + Technology 3, Intelligence 4 + Academics 1, Wits 3 + Occult 1; Health = Stamina 2 + 3; Willpower = Composure 3 + Resolve 3. The social skills and Awareness are proposed.",
+        "Inquisitive Creed (her job is pulling out information: the podcast, ANOMALY, the chain of custody) and Curiosity Drive (DOC-07, point 6: “why is it giving us this?”).",
+        "Edges: Library (the Cell's archive) and Thwart the Unnatural for her Faith from the doc. The “Close Listening” Perk is proposed.",
+        "Equipment, appearance (except age and profession, which are from the doc), ambition, desire, and Touchstone."
+      ],
+      "habilidades": {
+        "occult": [
+          null,
+          "Kindred"
+        ]
+      },
+      "reservas": {
+        "_claves": {
+          "Física": "Physical",
+          "Social": "Social",
+          "Mental": "Mental",
+          "Investigación": "Investigation",
+          "Tecnología": "Technology",
+          "Academicismo": "Academics",
+          "Ocultismo (Vástagos)": "Occult (Kindred)"
+        }
+      },
+      "impulso": {
+        "nombre": "Curiosity",
+        "texto": "She listened to episode 112 three times. There's a pattern in this city, and someone is handing it to the Cell in installments. She wants to know who and why, even if nobody likes the answer.",
+        "redencion": "She finds redemption when she uncovers something someone wanted to hide from the Cell and puts it in writing, with her signature."
+      },
+      "facultades": {
+        "library": [
+          null,
+          [
+            "Close Listening: +2 dice when she cross-references a new fact against the Cell's archive (Helen Ward's podcast, the “R. A.” reports, ANOMALY's cold subject logs)."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "library": "The Puget Cell's archive at Northline: the corkboard, the podcast transcripts, the “R. A.” statistical anomaly, and whatever ANOMALY has sent every night since September 2026.",
+        "thwarttheunnatural": "This is her Faith (doc 14): −1 die to mental Disciplines against her."
+      }
+    },
+    "MEN-11": {
+      "nombre": "Cole Ransom",
+      "concepto": "MEN-02 operator, Bear's former SEAL teammate",
+      "ambicion": "Make it to fifty-five with both knees and his full pension.",
+      "deseo": "For somebody to finally explain what they're really hunting.",
+      "piedrasDeToque": [
+        {
+          "nombre": "His daughter",
+          "descripcion": "His daughter Kayla, a nurse in San Diego, who sends him pictures of his grandson and doesn't ask about work."
+        }
+      ],
+      "semblante": "Forty-nine, mustache, wrecked knees. Thinks he works for Homeland Security.",
+      "notas": "Forty-nine, mustache, knees as wrecked as Bear's. Thinks he works for Homeland Security. Absolute loyalty to his teammates, and Bear was one of them.\n\nUses the stats of @ID[MEN-02], with **Insight 6**.",
+      "propuesto": [
+        "Conversion of the @ID[MEN-02] pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Ransom adds Wits 3 + Insight 3 = 6 (doc). Survival, Stealth, and Medicine are proposed (ex-SEAL).",
+        "Martial Creed, Oath Drive (“nobody gets left behind,” the SEAL one), and the Arsenal Edge (the armory in the port warehouse).",
+        "Incendiary ammunition is added because his carbine uses it (doc 14).",
+        "Ambition, desire, and Touchstone (the daughter in San Diego)."
+      ],
+      "reservas": {
+        "_claves": {
+          "Física": "Physical",
+          "Social": "Social",
+          "Mental": "Mental",
+          "Armas de fuego": "Firearms",
+          "Atletismo": "Athletics",
+          "Consciencia": "Awareness",
+          "Pelea": "Brawl",
+          "Perspicacia": "Insight"
+        }
+      },
+      "impulso": {
+        "nombre": "Oath",
+        "texto": "An old oath, from when he wore the trident on his chest: nobody gets left behind. He kept it in places that aren't on the maps. He doesn't know any other way to keep it.",
+        "redencion": "He finds redemption when he risks something of his own (his job, his pension, his hide) to pull out a brother-in-arms, whatever team they're on."
+      },
+      "facultades": {
+        "arsenal": [
+          null,
+          [
+            "Double-Checked: once per scene, when a team weapon jams or runs dry at the worst moment, Ransom already has the spare in his hand."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "arsenal": "He runs the armory in the port warehouse where the tactical team sleeps: the carbines, the incendiary ammunition, the UV flashlights."
+      }
+    },
+    "CAZ-01": {
+      "nombre": "Teresa “Tess” Navarro",
+      "concepto": "FIRSTLIGHT tactical team operator, former ATF agent: the one who's already seen it",
+      "ambicion": "Find whatever took Ortiz.",
+      "deseo": "For someone else on the team to see what she saw and not break.",
+      "piedrasDeToque": [
+        {
+          "nombre": "Ortiz's widow",
+          "descripcion": "Ortiz's widow, in Tucson. Navarro sends her money every month without telling her why."
+        }
+      ],
+      "ventajas": [
+        "Contacts 1 (ATF, Phoenix field office)"
+      ],
+      "semblante": "Thirty-eight, dark-haired, hair in a short braid. Wears a Saint Michael medal that isn't hers. Always on point, with the flashlight.",
+      "notas": "One of the six operators of @ID[MEN-02]. She's the only one on the team who's seen a creature up close, and the others know it even if they don't ask.",
+      "propuesto": [
+        "The whole character is proposed (SPEC §6.2: three named operators on the tactical team). Conversion of the @ID[MEN-02] pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Investigation, Occult, Intimidation, and Drive are her own.",
+        "Faithful Creed, Vengeance Drive, Repel the Unnatural Edge (the medal) with the “One Step Back” Perk.",
+        "The doc says most of the team has never seen it: Navarro is the exception."
+      ],
+      "habilidades": {
+        "firearms": [
+          null,
+          "Rifle"
+        ]
+      },
+      "reservas": {
+        "_claves": {
+          "Física": "Physical",
+          "Social": "Social",
+          "Mental": "Mental",
+          "Armas de fuego": "Firearms",
+          "Atletismo": "Athletics",
+          "Consciencia": "Awareness",
+          "Pelea": "Brawl"
+        }
+      },
+      "impulso": {
+        "nombre": "Vengeance",
+        "texto": "Tucson, 2021. A warehouse search. Her partner, Ortiz, went in first. What came out of the dark wasn't a person, and it took him. Nobody believed her, except a man from the Department of Homeland Security who was waiting for her outside the hospital.",
+        "redencion": "She finds redemption when the Cell destroys a creature that killed an innocent, and she's there to see it."
+      },
+      "facultades": {
+        "repeltheunnatural": [
+          null,
+          [
+            "One Step Back: when a creature recoils from the medal, Navarro and whoever is right at her back gain a turn without being attacked by it."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "repeltheunnatural": "Ortiz's Saint Michael medal, in her left hand, under the flashlight. As long as she holds it up and doesn't attack, any creature that wants to come within two meters has to beat her in a contested Willpower test (Resolve + Composure against hers). She doesn't know why it works. It works."
+      }
+    },
+    "CAZ-02": {
+      "nombre": "Owen Pak",
+      "concepto": "FIRSTLIGHT tactical team drone operator, former Air Force drone pilot",
+      "ambicion": "Get FIRSTLIGHT to give him a fleet of his own.",
+      "deseo": "For Okafor to say his name over the radio, not his call sign.",
+      "piedrasDeToque": [
+        {
+          "nombre": "His grandmother",
+          "descripcion": "His grandmother, in the International District, who cooks for him on Sundays and asks why he has bags under his eyes."
+        }
+      ],
+      "semblante": "Thirty-one, skinny, backward cap, a ruggedized tablet strapped to his forearm. Talks to the drone like it's a dog.",
+      "notas": "One of the six operators of @ID[MEN-02]. Spends more hours in the van than in the port warehouse.",
+      "propuesto": [
+        "The whole character is proposed. Conversion of the @ID[MEN-02] pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Technology (Drones), Drive, Stealth, and Investigation are his own.",
+        "Underground Creed, Pride Drive, Drone Jockey Edge with the “Flying Low” Perk. The drone is the one from the doc 14 arsenal."
+      ],
+      "habilidades": {
+        "technology": [
+          null,
+          "Drones"
+        ]
+      },
+      "reservas": {
+        "_claves": {
+          "Física": "Physical",
+          "Social": "Social",
+          "Mental": "Mental",
+          "Armas de fuego": "Firearms",
+          "Atletismo": "Athletics",
+          "Consciencia": "Awareness",
+          "Pelea": "Brawl"
+        }
+      },
+      "impulso": {
+        "nombre": "Pride",
+        "texto": "He was top of his class at Creech, and nobody ever said it out loud. Nobody in FIRSTLIGHT on the West Coast flies like he does. He knows it, and he needs them to know it.",
+        "redencion": "He finds redemption when his work, and nobody else's, saves a Cell operation, and Okafor says so over the radio."
+      },
+      "facultades": {
+        "dronejockey": [
+          null,
+          [
+            "Flying Low: he takes the drone indoors (a hangar, a stairwell, a hallway) without losing signal. Dexterity + Technology (Difficulty 3) for each serious obstacle."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "dronejockey": "The Cell's thermal-camera drone is his: he flies it from the van or from a ruggedized tablet two hundred meters away. He sees what the drone sees."
+      }
+    },
+    "CAZ-03": {
+      "nombre": "Lena Sorensen",
+      "concepto": "FIRSTLIGHT tactical team breacher, former Army combat engineer",
+      "ambicion": "Retire with the house paid off before forty-five.",
+      "deseo": "One night on the job without anyone saying “subject.”",
+      "piedrasDeToque": [
+        {
+          "nombre": "Her mother",
+          "descripcion": "Her mother, in the house in Ballard, four blocks from Market Street."
+        }
+      ],
+      "ventajas": [
+        "Resources 1 (contractor's salary, all of it spoken for)"
+      ],
+      "defectos": [
+        "Debt 1 (someone at the port knows where her mother lives)"
+      ],
+      "semblante": "Forty-one, blonde, broad-shouldered, hands covered in small scars. Chews nicotine gum. Counts under her breath before every door.",
+      "notas": "One of the six operators of @ID[MEN-02]. The van's generator takes two turns to start; she says in her hands it takes one and a half.",
+      "propuesto": [
+        "The whole character is proposed. Conversion of the @ID[MEN-02] pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Craft (Explosives), Science, Drive, and Medicine are her own.",
+        "Entrepreneurial Creed (she builds charges, fixes the generator, improvises), Greed Drive, Ordnance Edge with the “Handmade” Perk. The generator is the one from the doc 14 arsenal; that she's the one who runs it is proposed.",
+        "Resources 1 Advantage and Debt 1 Flaw."
+      ],
+      "habilidades": {
+        "craft": [
+          null,
+          "Explosives"
+        ]
+      },
+      "reservas": {
+        "_claves": {
+          "Física": "Physical",
+          "Social": "Social",
+          "Mental": "Mental",
+          "Armas de fuego": "Firearms",
+          "Atletismo": "Athletics",
+          "Consciencia": "Awareness",
+          "Pelea": "Brawl"
+        }
+      },
+      "impulso": {
+        "nombre": "Greed",
+        "texto": "She grew up in Ballard, a fisherman's daughter. She owes on her mother's house and on another debt she doesn't talk about. FIRSTLIGHT pays for risk at federal rates, and she bills it by the hour. What she takes home from each operation, she's already counted.",
+        "redencion": "She finds redemption when the hunt leaves her something of value (money, an object, a favor she can call in) and she uses it to close out a debt."
+      },
+      "facultades": {
+        "ordnance": [
+          null,
+          [
+            "Handmade: in one night, with whatever's in the armory, she builds two breaching charges or three flashbangs. A door, a thin wall, or a metal roll-down shutter goes down in one turn."
+          ]
+        ]
+      },
+      "facultadesNotas": {
+        "ordnance": "Breaching charges, flashbangs, and the van's artificial sunlight generator: she sets it up, turns it on, and shuts it off."
+      }
+    }
+  },
+  "celula": {
+    "nombre": "Puget Cell",
+    "lema": "Don't touch it until you can tear it out by the roots.",
+    "concepto": "FIRSTLIGHT cell in Seattle (2024), with Northline Cyber Advisory as its front",
+    "descripcion": "A small cell, with a tight budget and a clear order: confirm whether Seattle has “an organized structure” and, if it does, don't touch it until it can be torn out by the roots. Special Agent Dana Okafor runs it from an eleventh-floor office in South Lake Union. It has one analyst who doesn't sleep, two more analysts, six operators contracted as a counterterrorism unit, and a liaison with the FBI's Seattle field office.",
+    "notas": "**Starting Desperation 1:** a single cell, a budget that doesn't stretch far enough, and a source nobody trusts. **Starting Danger 0:** the quarry doesn't know the Cell exists. See @ID[CEL-01|The Puget Cell] for how they rise and fall during the adventure.",
+    "propuesto": [
+      "Starting Desperation 1 and starting Danger 0 (maximum 5), and the rules for moving them during the adventure (page CEL-01).",
+      "The motto sums up the order doc 14 gives Okafor."
+    ]
+  }
+}

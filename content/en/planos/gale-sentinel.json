@@ -1,0 +1,784 @@
+{
+  "_fuente": {
+    "gale-sentinel": "47b9810015c7938d",
+    "gale-planta3": "bbd96acb42513810",
+    "gale-datos": "0da9055350ea4152"
+  },
+  "planos": {
+    "gale-sentinel": {
+      "nombre": "Gale Sentinel · The Lobby (Ground Floor)",
+      "nota": "**Layer 1 of A3-E02: the perimeter.** “Two a.m. The Gale Sentinel lobby is empty except for a guard looking at his phone behind the desk. The wall screen is still on: a mosaic of thousands of live feeds, porches, hallways, rain.” The **video wall** takes up the north wall of the lobby, facing the main entrance; on the map it's off, and three “video wall” lights turn it on. Beneath it runs the motto “We see what the city doesn't.” (it isn't painted: no text on the map). The guard (one of the **two mortal guards**) sits in the chair behind the **reception desk**; the other is in the **security office** in the west wing, with the camera monitors.\n\n**ANOMALY cameras (at every entrance)**, marked as `anomaly` objects with no light: ① above the main entrance, outside; ② in the southeast corner of the lobby, aimed at the door; ③ above the service exit to the yard, outside; ④ in the elevator hall, aimed at the turnstiles. Every Kindred who passes in front of one with the module active is logged as a “cold subject”: Thermometer +1 in total (A3-E02, layer 1). Disabling it from outside: Intelligence + Technology Diff. 4 (Ezra +2 dice if he already knows the firmware is his; LOR-03 at level 4: automatic). Obfuscate doesn't fool it.\n\n**Entrances.** The main entrance (sliding glass door) opens onto the plaza and the parking lot: the “To the campus parking lot” region leads to the campus zone map (pending, t2i). The **service exit** off the north hallway opens onto the service yard, and from the yard you cross to the **data center** (region → `gale-datos`). The **turnstiles** (two card-access lanes, glass gates between railings) separate the lobby from the elevator hall; the service hallway also reaches the hall through a door with an electronic lock. Stairs and elevators go up to the **third floor** (`gale-planta3`).\n\n**A1-E05 (physical access).** If the coterie uses Dominate on an on-call technician to get in, they come in this way and pass camera ① or ③: Thermometer +1 unless the cameras are disabled first.\n\n**Running out** through the lobby and the plaza in front of the cameras: Thermometer +1. If the alarm goes off, Bellevue police take twelve minutes.\n\nThe ground-floor café and restrooms (hatched block to the southeast) are closed and aren't played.",
+      "habitaciones": [
+        {
+          "nombre": "Security office"
+        },
+        {
+          "nombre": "Service hallway"
+        },
+        {
+          "nombre": "Lobby"
+        },
+        {
+          "nombre": "Lobby · waiting area (west wing)"
+        },
+        {
+          "nombre": "Elevator hall (past the turnstiles)"
+        },
+        {
+          "nombre": "Building fire stairs"
+        },
+        {
+          "nombre": "Elevator A"
+        },
+        {
+          "nombre": "Elevator B"
+        },
+        {
+          "nombre": "Café (closed at night)"
+        },
+        {
+          "nombre": "Men's restroom (closed)"
+        },
+        {
+          "nombre": "Women's restroom (closed)"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Service yard (north, ground floor)"
+        },
+        {
+          "nombre": "Entrance plaza (ground floor)"
+        },
+        {
+          "nombre": "Campus parking lot (ground floor)"
+        },
+        {
+          "nombre": "West side sidewalk"
+        },
+        {
+          "nombre": "East side sidewalk"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Glass facade (west wing)"
+        },
+        {
+          "nombre": "Main entrance (double sliding glass door): ANOMALY camera above"
+        },
+        {
+          "nombre": "Glass facade (east)"
+        },
+        {
+          "nombre": "Glass facade (west)"
+        },
+        {
+          "nombre": "Lobby ↔ waiting area"
+        },
+        {
+          "nombre": "Security office → lobby"
+        },
+        {
+          "nombre": "Lobby → service hallway (staff only, electronic lock)"
+        },
+        {
+          "nombre": "Service exit to the yard (electronic lock; ANOMALY camera above)"
+        },
+        {
+          "nombre": "Service hallway → elevator hall (electronic lock)"
+        },
+        {
+          "nombre": "Turnstile railing (north)"
+        },
+        {
+          "nombre": "Turnstile 1 (card)"
+        },
+        {
+          "nombre": "Turnstile railing (center)"
+        },
+        {
+          "nombre": "Turnstile 2 (card)"
+        },
+        {
+          "nombre": "Turnstile railing (south)"
+        },
+        {
+          "nombre": "Stairwell door"
+        },
+        {
+          "nombre": "Elevator A door"
+        },
+        {
+          "nombre": "Elevator B door"
+        },
+        {
+          "nombre": "Café glass door (locked at night)"
+        },
+        {
+          "nombre": "Café glass facade"
+        },
+        {
+          "nombre": "Men's restroom"
+        },
+        {
+          "nombre": "Women's restroom"
+        }
+      ],
+      "muebles": [
+        {
+          "nombre": "Video wall (doorbell mosaic)",
+          "desc": "a giant wall-mounted video wall made of many dark switched-off screens in a thin black frame, flush with the wall"
+        },
+        {
+          "nombre": "Reception desk",
+          "desc": "a long modern reception desk of pale grey stone"
+        },
+        {
+          "desc": "the guard's chair, behind the desk"
+        },
+        null,
+        null,
+        null,
+        {
+          "desc": "a security desk with a row of switched-off CCTV monitors"
+        },
+        {
+          "desc": "a row of grey steel staff lockers"
+        },
+        null,
+        {
+          "nombre": "ANOMALY camera · main entrance, outside",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · lobby, aimed at the main entrance",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · service exit, outside",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · elevator hall, aimed at the turnstiles",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "desc": "a narrow concrete fire stair with steel handrails"
+        },
+        {
+          "desc": "a dented commercial dumpster"
+        },
+        {
+          "desc": "a café service counter with an empty glass pastry case"
+        },
+        {
+          "desc": "a switched-off espresso machine on a steel stand"
+        },
+        {
+          "desc": "a small round café table with two chairs tucked in"
+        },
+        {
+          "desc": "a small round café table with two chairs tucked in"
+        },
+        {
+          "desc": "a small round café table with two chairs tucked in"
+        },
+        {
+          "desc": "a small round café table with two chairs tucked in"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Video wall (live mosaic), west"
+        },
+        {
+          "nombre": "Video wall (live mosaic), center"
+        },
+        {
+          "nombre": "Video wall (live mosaic), east"
+        },
+        {
+          "nombre": "The guard's phone, on the desk"
+        },
+        {
+          "nombre": "Lobby night light"
+        },
+        {
+          "nombre": "Security office monitors"
+        },
+        {
+          "nombre": "Elevator hall"
+        },
+        {
+          "nombre": "Service hallway"
+        },
+        {
+          "nombre": "Service exit wall light"
+        },
+        {
+          "nombre": "Parking lot light pole (west)"
+        },
+        {
+          "nombre": "Parking lot light pole (east)"
+        },
+        {
+          "nombre": "Fire stairs ceiling light"
+        },
+        {
+          "nombre": "Elevator A car light"
+        },
+        {
+          "nombre": "Elevator B car light"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "To the campus parking lot",
+          "pendiente": "campus zone map (t2i, LUG-07): the Storyteller moves the tokens by hand"
+        },
+        {
+          "nombre": "Arrival from the service yard"
+        },
+        {
+          "nombre": "Cross the yard to the data center"
+        },
+        {
+          "nombre": "Arrival by the stairs"
+        },
+        {
+          "nombre": "Up the stairs to the third floor"
+        },
+        {
+          "nombre": "Arrival by elevator"
+        },
+        {
+          "nombre": "Elevator A to the third floor"
+        },
+        {
+          "nombre": "Elevator B to the third floor"
+        }
+      ]
+    },
+    "gale-planta3": {
+      "nombre": "Gale Sentinel · Third Floor, Gale's Office",
+      "nota": "**Layer 2 of A3-E02: the offices.** “Third floor: Preston Gale's office. Office server room.” Every door leading off the landing, plus the doors to the office and the server room, has an **electronic lock**: Dexterity + Larceny Diff. 3, or Intelligence + Technology Diff. 3.\n\n**The patrol.** Dawson and two security ghouls (MEN-04) come through every 40 minutes: they come up the stairs or the elevator, walk the north hallway, cross the open-plan floor, and return to the landing. Avoiding them: Wits + Stealth Diff. 3 for the whole group (Auspex, Heightened Senses: +2 dice; they can be heard coming from the landing). Hiding spots: behind the open-plan workstations, the kitchenette, the conference room (but it has glass partitions). Dawson smells Kindred within twenty meters: from the landing he reaches any point on the floor.\n\n**Gale's office** (southwest corner, with a window wall overlooking the parking lot). On the **desk**, Gale's computer: Intelligence + Investigation Diff. 3. One success: **Preston Gale's digital signature on the Market Street access authorizations (P-11)**. Three or more: also **the “C.H.” email**: “Recover all copies. Top priority. — C.H.”, dated November 13. The payment records to Lonnie from Cascade Holdings (P-14) are also there, if they don't already have them. If Celeste came as a shareholder and Gale receives her, it's here: the chair behind the desk, the sofa facing the door.\n\n**Office server room** (northwest). The rack at the back is the **poorly secured test server** from A1-E05 (if the coterie goes in person instead of remotely): Intelligence + Technology Diff. 4 to get in; Intelligence + Investigation Diff. 3 for the November 9 order authorized by “P.G.” (P-06); DOC-11 is in the “Q1_board_deck_DRAFT” folder (automatic). If they fail, Gale logs the attempt (Thermometer +1 the following night).\n\n**North window wall.** From the hallway you can see the service yard and the windowless hulk of the data center, humming.\n\nStairs and elevators go down to the lobby (`gale-sentinel`). Chairs in the open-plan floor and the conference room: optional tiles, not listed one by one.",
+      "habitaciones": [
+        {
+          "nombre": "Office server room"
+        },
+        {
+          "nombre": "North hallway"
+        },
+        {
+          "nombre": "Conference room (glass-walled)"
+        },
+        {
+          "nombre": "Kitchenette"
+        },
+        {
+          "nombre": "Elevator landing"
+        },
+        {
+          "nombre": "Building fire stairs"
+        },
+        {
+          "nombre": "Elevator A"
+        },
+        {
+          "nombre": "Elevator B"
+        },
+        {
+          "nombre": "Preston Gale's office"
+        },
+        {
+          "nombre": "Open-plan floor"
+        },
+        {
+          "nombre": "Open-plan floor (east)"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Service yard (north, ground floor)"
+        },
+        {
+          "nombre": "Entrance plaza (ground floor)"
+        },
+        {
+          "nombre": "Campus parking lot (ground floor)"
+        },
+        {
+          "nombre": "West side sidewalk"
+        },
+        {
+          "nombre": "East side sidewalk"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "North hallway window wall (overlooks the yard and the data center)"
+        },
+        {
+          "nombre": "Office window wall (south)"
+        },
+        {
+          "nombre": "Open-plan floor window wall (south)"
+        },
+        {
+          "nombre": "Office window wall (west)"
+        },
+        {
+          "nombre": "Open-plan floor window wall (east)"
+        },
+        {
+          "nombre": "Landing → north hallway (electronic lock)"
+        },
+        {
+          "nombre": "Landing → open-plan floor (double glass door, electronic lock)"
+        },
+        {
+          "nombre": "Open-plan floor ↔ open-plan floor (east)"
+        },
+        {
+          "nombre": "Hallway → server room (electronic lock)"
+        },
+        {
+          "nombre": "Hallway → conference room"
+        },
+        {
+          "nombre": "Conference room glass partition (to the hallway)"
+        },
+        {
+          "nombre": "Conference room glass partition (to the open-plan floor)"
+        },
+        {
+          "nombre": "Hallway → kitchenette"
+        },
+        {
+          "nombre": "Kitchenette → open-plan floor"
+        },
+        {
+          "nombre": "Open-plan floor → Gale's office (electronic lock)"
+        },
+        {
+          "nombre": "Stairwell door"
+        },
+        {
+          "nombre": "Elevator A door"
+        },
+        {
+          "nombre": "Elevator B door"
+        }
+      ],
+      "muebles": [
+        {
+          "nombre": "Gale's desk (P-11, “C.H.” email, P-14)",
+          "desc": "a large dark executive desk with one switched-off monitor and a few loose papers"
+        },
+        {
+          "desc": "Gale's executive chair"
+        },
+        {
+          "desc": "a low dark wood credenza against the wall"
+        },
+        null,
+        null,
+        {
+          "desc": "a row of black server racks"
+        },
+        {
+          "nombre": "Test server rack (A1-E05)",
+          "desc": "a row of black server racks"
+        },
+        {
+          "desc": "a small technician's desk with a switched-off monitor"
+        },
+        null,
+        {
+          "desc": "a narrow concrete fire stair with steel handrails"
+        },
+        {
+          "desc": "a kitchenette counter with a sink and a coffee machine"
+        },
+        {
+          "desc": "a small office fridge"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        },
+        {
+          "desc": "an open-plan office desk with a switched-off monitor"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Elevator landing (night light)"
+        },
+        {
+          "nombre": "Server room rack LEDs"
+        },
+        {
+          "nombre": "Open-plan floor night light"
+        },
+        {
+          "nombre": "Hallway exit sign"
+        },
+        {
+          "nombre": "Gale's desk lamp (left on)"
+        },
+        {
+          "nombre": "Test server rack LED (A1-E05)"
+        },
+        {
+          "nombre": "Fire stairs ceiling light"
+        },
+        {
+          "nombre": "Elevator A car light"
+        },
+        {
+          "nombre": "Elevator B car light"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival by the stairs"
+        },
+        {
+          "nombre": "Down the stairs to the lobby"
+        },
+        {
+          "nombre": "Arrival by elevator"
+        },
+        {
+          "nombre": "Elevator A to the lobby"
+        },
+        {
+          "nombre": "Elevator B to the lobby"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "The patrol: Dawson and two ghouls come through every 40 minutes (north hallway, open-plan floor, landing)."
+        },
+        null,
+        null,
+        {
+          "nota": "Only if Celeste came as a shareholder and Gale receives her in his office, nervous."
+        }
+      ]
+    },
+    "gale-datos": {
+      "nombre": "Gale Sentinel · The Data Center",
+      "nota": "**Layer 3 of A3-E02: the data center.** “A windowless building behind the main one. Three rooms: storage, ANOMALY training, private archive.” “A door with biometrics (fingerprint and retina) and a security mantrap. One ghoul in the control room.”\n\n**The infiltration strip.** The service road (west) comes from the parking lot (“To the campus parking lot” region, pending: zone map) and the service yard (south) comes from the office building (region → `gale-sentinel`). The generator and chillers in the yard give cover for approaching the mantrap. Running out across the campus in front of the cameras: Thermometer +1.\n\n**The three security levels** (the text doesn't detail them; they break down like this):\n1. **The mantrap.** Outer door with a card reader; inner door **locked** with a biometric reader (Gale's or Dawson's fingerprint and retina). The two doors don't open at the same time. Forcing it: Strength + Athletics Diff. 5, and the alarm goes off. With Gale in hand (Celeste, Manipulation + Persuasion Diff. 4, or Dominate: Gale has Composure 2; Dawson, Resolve 3 and +2 dice from the Bond) the inner door opens without a roll. The ghoul in the **control room** watches the mantrap through the armored window.\n2. **The rooms** (storage and testing): **locked** card-access doors; they open from the control room console or with the ghoul's card. From the hallway you can see inside through the glass windows: on the left, “rows of black cabinets hum under blue lights”; on the right, the wall of faces.\n3. **The private archive**, at the end of the hallway: a **locked** door with its own lock, no network, isolated from everything else.\n\n**ANOMALY cameras (at the entrances)**, `anomaly` objects with no light: ① above the outer mantrap door; ② inside the mantrap; ③ in the southwest corner, covering the yard and the service road; ④ and ⑤ above the two emergency exits, outside. If the coterie didn't disable the module in layer 1, every Kindred who enters is logged (the Thermometer +1 counts only once for the whole incursion).\n\n**What's in each room:**\n- **Storage** (west): four rows of racks. In the **fireproof media safe** (southwest corner), the **original drive of the File, only until Night 6**. On the **management console**, the shipping logs for the ARCHER channel with the reference **SEA-0411 (P-10)** and the complete **DOC-07**.\n- **Testing room · ANOMALY training** (east): “On one wall there's a screen with a grid of faces, hundreds of them, each with a label underneath: COLD_SUBJECT, and a number. Some of them you know from Elysium. One of them is yours.” This is the **wall of faces** (east wall; off on the map, two “video wall” lights turn it on). At the workstations, the **cold subject database** (it includes the coterie if the 3B camera recorded them in A0-E01) and **DOC-11**, if they don't have it. To the north, open to the room, the compute room with the GPU racks.\n- **Private archive** (north, at the end of the hallway): the **air-gapped server** with Halloway's personal archive, scanned by Pell. Copying it: Intelligence + Technology Diff. 3. The folios on “the German” (**P-15**): Intelligence + Investigation Diff. 4, or automatic by searching for “allemand.” This server is the one that may end up in the briefcase in A4-E03.\n\n**Alarm.** If it goes off (mantrap forced, emergency exit opened), Dawson takes **four minutes** to arrive from the office building, and Bellevue police take **twelve**. The emergency exits (west and east) only open from inside and trip the alarm: they're the escape route for an assault.\n\n**Assault** (Combat): Thermometer +2; Gale warns Halloway, who moves the original that same night if they don't take it. Dawson, alive and captured, is a witness.\n\nThe hatched blocks (UPS and battery utility rooms to the southwest, cooling to the southeast) aren't played.",
+      "habitaciones": [
+        {
+          "nombre": "Storage · rack room"
+        },
+        {
+          "nombre": "Utility room: UPS (closed)"
+        },
+        {
+          "nombre": "Private archive (isolated)"
+        },
+        {
+          "nombre": "Security hallway"
+        },
+        {
+          "nombre": "Mantrap"
+        },
+        {
+          "nombre": "Control room"
+        },
+        {
+          "nombre": "Testing room · ANOMALY training"
+        },
+        {
+          "nombre": "Training compute (GPU racks)"
+        },
+        {
+          "nombre": "Cooling room (closed)"
+        },
+        {
+          "nombre": "Utility room: batteries (closed)"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Service road (west), coming from the parking lot"
+        },
+        {
+          "nombre": "Service yard (south), toward the office building"
+        },
+        {
+          "nombre": "Perimeter path (north)"
+        },
+        {
+          "nombre": "Perimeter path (east)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Mantrap · outer door (card; ANOMALY camera above)"
+        },
+        {
+          "nombre": "Mantrap · inner door (biometrics: fingerprint and retina)"
+        },
+        {
+          "nombre": "Armored window from the control room to the mantrap"
+        },
+        {
+          "nombre": "Hallway → control room"
+        },
+        {
+          "nombre": "Hallway → storage (level 2: card)"
+        },
+        {
+          "nombre": "Storage glass window (the racks are visible from the hallway)"
+        },
+        {
+          "nombre": "Hallway → testing room (level 2: card)"
+        },
+        {
+          "nombre": "Testing room glass window (the wall of faces is visible from the hallway)"
+        },
+        {
+          "nombre": "Testing room ↔ training compute"
+        },
+        {
+          "nombre": "Private archive (level 3: its own lock, no network)"
+        },
+        {
+          "nombre": "West emergency exit (panic bar; alarm; ANOMALY camera outside)"
+        },
+        {
+          "nombre": "East emergency exit (panic bar; alarm; ANOMALY camera outside)"
+        },
+        {
+          "nombre": "Hallway → utility rooms (locked)"
+        },
+        {
+          "nombre": "Batteries → UPS"
+        },
+        {
+          "nombre": "Testing room → cooling (locked)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a long row of black server racks"
+        },
+        {
+          "desc": "a long row of black server racks"
+        },
+        {
+          "desc": "a long row of black server racks"
+        },
+        {
+          "desc": "a long row of black server racks"
+        },
+        {
+          "nombre": "Fireproof media safe (the original drive, until Night 6)",
+          "desc": "a squat grey fireproof media safe"
+        },
+        {
+          "nombre": "Management console (ARCHER logs, SEA-0411: P-10; DOC-07)",
+          "desc": "a management console desk with a switched-off monitor"
+        },
+        {
+          "nombre": "Biometric reader (fingerprint and retina)",
+          "desc": "a small wall-mounted biometric reader"
+        },
+        {
+          "nombre": "Outer door card reader",
+          "desc": "a small wall-mounted card reader"
+        },
+        {
+          "desc": "a bank of switched-off CCTV monitors on the wall"
+        },
+        {
+          "desc": "a long control desk with switched-off monitors"
+        },
+        {
+          "desc": "a black network rack"
+        },
+        {
+          "desc": "the on-duty ghoul's chair"
+        },
+        {
+          "nombre": "Private archive server (P-15)",
+          "desc": "a single black server cabinet standing alone"
+        },
+        {
+          "desc": "an isolated workstation desk with a switched-off monitor"
+        },
+        null,
+        {
+          "desc": "a long row of black GPU server racks"
+        },
+        {
+          "desc": "a long row of black GPU server racks"
+        },
+        {
+          "nombre": "Wall of faces (COLD_SUBJECT)",
+          "desc": "a huge wall of many dark switched-off screens in a thin black frame, flush with the wall"
+        },
+        {
+          "desc": "an analyst workstation with switched-off monitors"
+        },
+        {
+          "desc": "an analyst workstation with switched-off monitors"
+        },
+        {
+          "desc": "an analyst workstation with switched-off monitors"
+        },
+        {
+          "desc": "an analyst workstation with switched-off monitors"
+        },
+        null,
+        null,
+        {
+          "desc": "a large diesel standby generator in a grey steel enclosure"
+        },
+        {
+          "desc": "a chiller unit with two fans on a concrete pad"
+        },
+        {
+          "desc": "a chiller unit with two fans on a concrete pad"
+        },
+        {
+          "desc": "a dented commercial dumpster"
+        },
+        {
+          "nombre": "ANOMALY camera · outer mantrap door",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · inside the mantrap",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · southwest corner, covers the yard and the service road",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · west emergency exit, outside",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "nombre": "ANOMALY camera · east emergency exit, outside",
+          "desc": "a small black security camera bracket on the wall, lens only, no light"
+        },
+        {
+          "desc": "a row of tall grey UPS cabinets with dark status panels"
+        },
+        {
+          "desc": "a row of tall grey UPS cabinets with dark status panels"
+        },
+        {
+          "desc": "a long grey electrical distribution board"
+        },
+        {
+          "desc": "a grey battery-monitoring cabinet"
+        },
+        {
+          "desc": "a long row of black battery cabinets"
+        },
+        {
+          "desc": "a long row of black battery cabinets"
+        },
+        {
+          "desc": "a tall grey computer-room air-conditioning unit"
+        },
+        {
+          "desc": "a tall grey computer-room air-conditioning unit"
+        },
+        {
+          "desc": "insulated chilled-water pipes and two pumps on a steel frame"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Blue rack LEDs (west)"
+        },
+        {
+          "nombre": "Blue rack LEDs (east)"
+        },
+        {
+          "nombre": "Blue GPU rack LEDs"
+        },
+        {
+          "nombre": "Wall of faces (north)"
+        },
+        {
+          "nombre": "Wall of faces (south)"
+        },
+        {
+          "nombre": "Security hallway"
+        },
+        {
+          "nombre": "Mantrap"
+        },
+        {
+          "nombre": "Control room monitors"
+        },
+        {
+          "nombre": "Control room"
+        },
+        {
+          "nombre": "Private archive screen"
+        },
+        {
+          "nombre": "Mantrap wall light"
+        },
+        {
+          "nombre": "Service road light pole"
+        },
+        {
+          "nombre": "Service yard light pole"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival from the office building"
+        },
+        {
+          "nombre": "Cross the yard to the office building"
+        },
+        {
+          "nombre": "To the campus parking lot (service road)",
+          "pendiente": "campus zone map (t2i, LUG-07): the Storyteller moves the tokens by hand"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "The control room ghoul; watches the mantrap through the window."
+        }
+      ]
+    }
+  }
+}

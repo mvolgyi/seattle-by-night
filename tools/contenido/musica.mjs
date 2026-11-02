@@ -27,9 +27,10 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { RAIZ, MODULO, STATS, escribirDoc } from "../util.mjs";
-import { ID } from "./ids.mjs";
-import { cargarPlanos } from "../construir-planos.mjs";
+import { RAIZ, MODULO, STATS } from "../util.mjs";
+import { ID, planos as cargarPlanos } from "./ids.mjs";
+import { leerContenido } from "./idioma.mjs";
+import { T, escribir as escribirDoc } from "./fijos.mjs";
 
 const PACK = "playlists";
 const FUENTE = "content/musica.json";
@@ -44,7 +45,8 @@ export const archivoDe = pista => `${DIR_MUSICA}/${pista.id}.ogg`;
 let cache = null;
 /** content/musica.json (o vacío si no está). */
 export function cargarMusica() {
-  if (!cache) cache = existe(FUENTE) ? JSON.parse(fs.readFileSync(path.join(RAIZ, FUENTE), "utf8")) : { listas: [] };
+  // En inglés, con los nombres de content/en/musica.json (si está).
+  if (!cache) cache = existe(FUENTE) ? leerContenido(FUENTE) : { listas: [] };
   return cache;
 }
 
@@ -79,7 +81,7 @@ export async function construir(ctx) {
 
   // Coherencia con las escenas: ids que existen, una pista por escena, toda escena con pista.
   const planos = cargarPlanos();
-  const nombreDe = new Map([["portada", "El Expediente Ward (portada)"], ...planos.map(p => [p.id, p.nombre ?? p.id])]);
+  const nombreDe = new Map([["portada", T("El Expediente Ward (portada)")], ...planos.map(p => [p.id, p.nombre ?? p.id])]);
   const escenas = new Set(nombreDe.keys());
   const asignada = new Map();
   const idsPista = new Set();
@@ -113,7 +115,7 @@ export async function construir(ctx) {
         _id: sid,
         _key: `!playlists.sounds!${pid}.${sid}`,
         name: pista.nombre,
-        description: en.length ? `Suena al activar: ${en.map(e => nombreDe.get(e) ?? e).join(" · ")}` : "Para lanzar a mano.",
+        description: en.length ? T("Suena al activar: {escenas}", { escenas: en.map(e => nombreDe.get(e) ?? e).join(" · ") }) : T("Para lanzar a mano."),
         path: `modules/${MODULO}/${archivo}`,
         channel: "",
         playing: false,

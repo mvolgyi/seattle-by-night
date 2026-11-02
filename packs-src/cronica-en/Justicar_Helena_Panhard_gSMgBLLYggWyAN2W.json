@@ -1,0 +1,193 @@
+{
+  "_id": "gSMgBLLYggWyAN2W",
+  "_key": "!journal!gSMgBLLYggWyAN2W",
+  "name": "Justicar Helena Panhard",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-08",
+      "archivo": "content/personajes/PNJ-08.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "xhInWhdoCl2jT9jw",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.xhInWhdoCl2jT9jw",
+      "name": "Justicar Helena Panhard",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-08.webp\" alt=\"Justicar Helena Panhard\">\n<p><strong>Background figure</strong> (no actor sheet) · Camarilla Justicar · <strong>Role in @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}:</strong> the authority to whom @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway} wants to send the regency minutes; with her recognition, “the regency becomes a crown.”</p>\n<p><em>This page gathers what docs 00–16 say about Panhard. In parentheses, the source doc for each fact. The docs give her no explicit clan, age, or stats; the Council&#39;s order of business speaks of “the Justicar of Clan Ventrue” (doc 15, @UUID[JournalEntry.8EZofopivOgpo5tE]{Primogen Council Agenda}).</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "n4i0AXRXXJ9oJlww",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.n4i0AXRXXJ9oJlww",
+      "name": "Who She Is",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Background figure alongside Archon @UUID[JournalEntry.CRdeqlwyfpxGPyzT]{Duval} and @UUID[JournalEntry.WIihWwv4LCOX68B1]{Vance} (doc 01, NPC index; ID registry v2: “PNJ-08 · Justicar Helena Panhard (background)”).</li>\n<li>Duval acts as her envoy (doc 13).</li>\n<li>She holds copy 3 of Vance&#39;s journals, the one Mr. Pell typed: Halloway sent it to her in 2025 “as a goodwill gift” (doc 09, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · The Archon Calls}; ID registry: “Copy 3 of 3 of Vance&#39;s journals, held by Justicar Panhard”).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "V0FlGYHtVYXl3TYE",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.V0FlGYHtVYXl3TYE",
+      "name": "Panhard and Halloway",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>The city&#39;s <strong>Rumor 4</strong>, “Halloway has Justicar Panhard&#39;s support”: half true. “He&#39;s been writing to her for a year. She doesn&#39;t answer him, but she doesn&#39;t tell him no either” (doc 05).</li>\n<li>Halloway started writing to her a year ago; to him she is his “hope”: “If she recognizes his regency, no one in Seattle will be able to oppose him” (doc 06, Halloway&#39;s sheet).</li>\n<li>Whisper: “Halloway has the Justicar in his pocket.” <em>(False. She hasn&#39;t answered him)</em> (doc 06).</li>\n<li>Halloway told her about @UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste}: if David turns Duval down in GAN-07, Celeste receives a parallel invitation from the Justicar (doc 09).</li>\n<li>At the Council (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}), if a majority of the Primogen votes for the “emergency regency,” Halloway “can send the minutes to Justicar Panhard, with whom he&#39;s been corresponding for a year. With a Justicar&#39;s blessing, the regency becomes a crown” (doc 13). The motion asks that the minutes be forwarded “to the Justicar of Clan Ventrue for her information and confirmation” (doc 15, AYU-08).</li>\n<li>The original of the File “is the evidence Panhard asked him for in order to recognize the regency” (doc 13, A4-E01 Notes).</li>\n</ul>\n<aside class=\"sbn-recuadro\"><h4>Two Versions of the Correspondence</h4><p>Docs 05 and 06 say Panhard doesn&#39;t answer Halloway. Doc 13 says she asked him for the File as evidence and, in an ambiguous phrase, that “he&#39;s been corresponding with her for a year.” If it matters at your table, decide whether the Justicar has already answered or whether Halloway only believes she will.</p>\n</aside>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "nyPBOIqNuvLt18YU",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.nyPBOIqNuvLt18YU",
+      "name": "Panhard in the Endings",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · The Hound Changes Masters}:</strong> Halloway is Regent “with Justicar Panhard&#39;s recognition if the File reached Duval” (doc 13).</li>\n<li><strong>Partial FIN-B:</strong> if Halloway wins the Council but the coterie keeps the File, “Halloway doesn&#39;t have his evidence before the Justicar: his regency is weak” (doc 13, endings table).</li>\n<li><strong>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Purifying Fire}:</strong> if Halloway won the Council and the File is destroyed, “his regency lacks the evidence the Justicar asked for: Panhard doesn&#39;t recognize it.” Seattle is left in political limbo (doc 13).</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "fKWrOmVVkhCOnohy",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.fKWrOmVVkhCOnohy",
+      "name": "Rumors",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“Whitmore has a secret arrangement with the Justicar to retire to Europe.” <em>(False)</em> (doc 06, Whitmore&#39;s sheet; it doesn&#39;t say which Justicar).</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xzsSqbI2YbtcGqj5",
+      "_key": "!journal.pages!gSMgBLLYggWyAN2W.xzsSqbI2YbtcGqj5",
+      "name": "Chronicle Hooks",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · The Archon Calls} · The Archon Calls:</strong> if the ending was FIN-B, Panhard sends Duval to Seattle to investigate (doc 09).</li>\n<li><strong>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Letters from Cluj} · Letters from Cluj:</strong> one of the three options for the author of the letter from “M. V.”: “It&#39;s the Justicar. Panhard read copy 3 of the journals (GAN-07) and wants to know what the Hound does when he believes his sire is calling him” (doc 09).</li>\n</ul>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

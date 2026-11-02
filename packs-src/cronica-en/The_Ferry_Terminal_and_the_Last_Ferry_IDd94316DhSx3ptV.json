@@ -1,0 +1,109 @@
+{
+  "_id": "IDd94316DhSx3ptV",
+  "_key": "!journal!IDd94316DhSx3ptV",
+  "name": "The Ferry Terminal and the Last Ferry",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 150,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-15",
+      "archivo": "content/ciudad/LUG-15.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "KEbfKrjXUcuK1N2t",
+      "_key": "!journal.pages!IDd94316DhSx3ptV.KEbfKrjXUcuK1N2t",
+      "name": "The Ferry Terminal and the Last Ferry",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Colman Dock and Puget Sound · Map: yes (terminal and ferry deck)</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "XweO0SZKwcHv5wqG",
+      "_key": "!journal.pages!IDd94316DhSx3ptV.XweO0SZKwcHv5wqG",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The terminal is almost empty. Under the fluorescents there&#39;s a handful of sleepy-faced passengers, a security guard staring at his phone, and a broken coffee machine. Outside, the last ferry of the night waits with its lights on and its engines running, like a white building floating on black water. The horn sounds once, long. Five minutes.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "w5CTptVFfisPYSuA",
+      "_key": "!journal.pages!IDd94316DhSx3ptV.w5CTptVFfisPYSuA",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Structure:</strong> the terminal waiting room, the vehicle ramp, and the ferry: car deck, passenger cabin, bridge, and open stern deck.</p>\n<p>The crossing to the far shore takes 35 minutes. Any conflict aboard has mortal witnesses locked in with the characters (Masquerade risk on every conspicuous roll).</p>\n<p><strong>Scene:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}, the climax. @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}, @UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Gale}, or a courier tries to get the original of the File out of the city.</p>\n<p>It&#39;s the “last boat of the night” from @UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: “Song for the Son of the Fist”}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "_id": "GidWqhJ9e6JUxiTS",
+  "_key": "!actors!GidWqhJ9e6JUxiTS",
+  "name": "Julian Ashby",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-10.webp",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 90,
+  "prototypeToken": {
+    "name": "Julian Ashby",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-10.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Halloway's childe (only if nobody plays Celeste Arden)",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Halloway&#39;s childe (only if nobody plays Celeste Arden)</td></tr></tbody></table><p>Looks thirty-something, corporate lawyer Embraced in 2009. He fills Celeste&#39;s role (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}): he signs for the Cascade Holdings accounts and is the Council&#39;s scapegoat. He knows less than he thinks.</p>\n<p><strong>If he&#39;s accused at the Council:</strong> he falls apart. A <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.charisma skills.persuasion\" data-dificultad=\"2\" data-label=\"Charisma + Persuasion (Difficulty 2)\"><i class=\"fa-solid fa-dice-d10\"></i> Charisma + Persuasion (Difficulty 2)</a> roll convinces him to testify against Halloway (+2 dice to the case).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 1,
+      "generation": ""
+    },
+    "disciplines": {
+      "dominate": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 3
+      },
+      "social": {
+        "value": 6
+      },
+      "mental": {
+        "value": 5
+      }
+    },
+    "exceptionaldicepools": {
+      "finance": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-10",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

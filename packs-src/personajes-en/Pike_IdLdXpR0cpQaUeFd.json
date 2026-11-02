@@ -1,0 +1,101 @@
+{
+  "_id": "IdLdXpR0cpQaUeFd",
+  "_key": "!actors!IdLdXpR0cpQaUeFd",
+  "name": "Pike",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-12.webp",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 190,
+  "prototypeToken": {
+    "name": "Pike",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-12.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Nosferatu runner for the Moles, destroyed on Night 2",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Nosferatu runner for the Moles, destroyed on Night 2</td></tr></tbody></table><p>Minor Nosferatu, runner for the Moles. He had just received a partial copy of the File from Jun Takeda for a buyer when Krell destroyed him beside a red shipping container at Terminal 46, on <span class=\"sbn-reloj\" data-sbn-reloj=\"2\">Night 2</span>, between 2:00 and 3:00 a.m. (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash at Pier 46}).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 0
+      },
+      "social": {
+        "value": 0
+      },
+      "mental": {
+        "value": 0
+      }
+    },
+    "exceptionaldicepools": {},
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-12",
+      "journal": null,
+      "doc": "10",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

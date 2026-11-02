@@ -1,0 +1,148 @@
+{
+  "_id": "tSBtElC53tmJxJnO",
+  "_key": "!actors!tSBtElC53tmJxJnO",
+  "name": "Dutch Lindqvist",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-03-DUTCH.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 40,
+  "prototypeToken": {
+    "name": "Dutch Lindqvist",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-03-DUTCH.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "The oldest of Montgomery's bounty hunters",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>The oldest of Montgomery&#39;s bounty hunters</td></tr></tbody></table><p>The oldest, sixty. He&#39;s been with Montgomery for twenty years and is starting to wonder what exactly his boss is. Uses the same stats as @UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery&#39;s Bounty Hunters} with <strong>Insight 5</strong>. If the coterie wins him over (<a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.charisma skills.persuasion\" data-dificultad=\"3\" data-label=\"Charisma + Persuasion (Difficulty 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Charisma + Persuasion (Difficulty 3)</a>), he warns them when Montgomery gives the order to hunt them down (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers}).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>No ID of his own in the docs: doc 14 places him within MEN-03 “with his own pools” (doc 08 assigned him MEN-03). Derived ID for the actor.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-03-DUTCH",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

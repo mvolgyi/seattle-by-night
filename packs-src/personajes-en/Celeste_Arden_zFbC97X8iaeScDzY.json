@@ -1,0 +1,292 @@
+{
+  "_id": "zFbC97X8iaeScDzY",
+  "_key": "!actors!zFbC97X8iaeScDzY",
+  "name": "Celeste Arden",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-02.webp",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "Celeste Arden",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.4,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#ffe6bf",
+      "coloration": 1,
+      "attenuation": 0.55,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PJ-02.webp"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "investment analyst and childe of Charles Halloway, the Ventrue Primogen.",
+      "chronicle": "The Ward File",
+      "ambition": "make her name worth more than her sire's",
+      "desire": "have Halloway recognize her as his equal",
+      "touchstones": "<h3>Convictions</h3><ul><li>Never let anyone fall alone</li></ul><h3>Touchstones</h3><ul><li>her mother, who lives in a memory care home and still calls her by her name</li></ul>",
+      "sire": "Charles Halloway",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Profile: Celeste Arden}</p><blockquote><p><em>The Glass Heiress</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>investment analyst and childe of Charles Halloway, the Ventrue Primogen.</td></tr><tr><th>Clan</th><td>Ventrue</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</td></tr><tr><th>Ambition</th><td>make her name worth more than her sire&#39;s</td></tr><tr><th>Desire</th><td>have Halloway recognize her as his equal</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{The Archived}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{The Glass Council}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "ventrue"
+        }
+      },
+      "name": "Ventrue",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "l59LPyQHlx8TgtI4",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.l59LPyQHlx8TgtI4"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 3"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 3</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "G5eaZhlTGr3p3dzS",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.G5eaZhlTGr3p3dzS"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts (finance) 2"
+        }
+      },
+      "name": "Contacts (finance)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts (finance) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "QNYJoy0a1hQRO9xc",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.QNYJoy0a1hQRO9xc"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence (Eastside) 1"
+        }
+      },
+      "name": "Influence (Eastside)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence (Eastside) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "d7lDYfLGbog9QptL",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.d7lDYfLGbog9QptL"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Halloway) 2"
+        }
+      },
+      "name": "Mawla (Halloway)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Halloway) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "ZUip138IfpULqZex",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.ZUip138IfpULqZex"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Level 2 Blood Bond to Halloway"
+        }
+      },
+      "name": "Level 2 Blood Bond to Halloway",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Level 2 Blood Bond to Halloway</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "NFX8mOv1kMYpz5qF",
+      "_key": "!actors.items!zFbC97X8iaeScDzY.NFX8mOv1kMYpz5qF"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-02",
+      "journal": "JournalEntry.zQMt8VMfKPoL6INq",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

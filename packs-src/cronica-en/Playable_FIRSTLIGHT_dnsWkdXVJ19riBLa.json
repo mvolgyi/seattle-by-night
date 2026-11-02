@@ -1,0 +1,167 @@
+{
+  "_id": "dnsWkdXVJ19riBLa",
+  "_key": "!journal!dnsWkdXVJ19riBLa",
+  "name": "Playable FIRSTLIGHT",
+  "folder": "U14g3yo4N4JwXcQT",
+  "sort": 110,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "FIRSTLIGHT-JUGABLE",
+      "archivo": "content/cronica/firstlight/00-firstlight-jugable.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "8QAk1ptBtEkfxbXj",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.8QAk1ptBtEkfxbXj",
+      "name": "Playable FIRSTLIGHT",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Thermometer (@UUID[JournalEntry.b13NIR35K7HpthZv]{FIRSTLIGHT's Thermometer}) is a number. This chapter gives it a face. Three times during @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}, the table sets its vampires aside and takes up the hunters of the Puget Cell: a van outside Helen&#39;s place, a conference room in South Lake Union with a delivery nobody asked for, a port warehouse on the night of the raid. These are the “The Other Side” interludes (@UUID[JournalEntry.I3XsZ233TNTuehzS]{From the Other Side · FIRSTLIGHT Interludes}).</p>\n<p>Everything in this folder is new content, written for the module. The facts in the docs (Okafor, Hale, the tactical team, Ransom, the arsenal, Northline, the raid) don&#39;t change. Whatever was invented to make it playable is marked <strong>Proposed</strong>: the Storyteller decides whether to use it.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Journal</th>\n<th>What&#39;s in it</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>This one</td>\n<td>How to use the interludes, Hunter on one page, the Puget Cell (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{The Puget Cell}), and what each interlude leaves for the raid (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.8DXPPUEUUp5bHka5]{INT-00 · Advantages and Cracks for the Raid})</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS]{From the Other Side · FIRSTLIGHT Interludes}</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van} · The White Van · @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411} · SEA-0411 · @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight} · Artificial Daylight</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.LfywH6qtS3GxDxJx]{The Puget Cell · Pregenerated Characters}</td>\n<td>One page per hunter, to hand to the player</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.jiea701LDJdMoHoY]{Red Tide · Continuation After FIN-D}</td>\n<td>The continuation after @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Red Tide}: premise, hooks, and the optional crossover with <em>From the Veil to the Vigil</em></td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2zsBufwPxP1rRUtF",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.2zsBufwPxP1rRUtF",
+      "name": "How to Use the Interludes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h3>What They Are</h3>\n<p>Short scenes, 30 to 45 minutes, in which the players run the FIRSTLIGHT hunters. They don&#39;t change the coterie&#39;s plot: nobody finds out there who ARCHER is or where the drive is. What they do is show, from the other side, what the Thermometer measures. What the hunters decide moves the Thermometer or gives FIRSTLIGHT an advantage in the raid (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}). Sometimes, a crack.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Interlude</th>\n<th>When</th>\n<th>Where</th>\n<th>What&#39;s at stake</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van} · The White Van</td>\n<td>When it crosses threshold 3</td>\n<td>Market Street, Ballard (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{Helen Ward's Apartment})</td>\n<td>Passive surveillance of Helen. The players see, from outside, the scene their vampires just played</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411} · SEA-0411</td>\n<td><span class=\"sbn-reloj\" data-sbn-reloj=\"5\" title=\"Night 5 · Mon, Nov 16 (early hours of Nov 16, 2026)\">Night 5</span>, at 8:00 p.m.</td>\n<td>Northline (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory})</td>\n<td>ARCHER&#39;s second delivery. Okafor and Hale decide how far to trust the source</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight} · Artificial Daylight</td>\n<td>Threshold 9, <span class=\"sbn-reloj\" data-sbn-reloj=\"8\" title=\"Night 8 · Thu, Nov 19 (early hours of Nov 19, 2026)\">Night 8</span>, before @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}</td>\n<td>A port warehouse and the target</td>\n<td>The briefing and the breach of the raid, until the scene switches over to the coterie</td>\n</tr>\n</tbody></table>\n<h3>When to Cut</h3>\n<p>An interlude interrupts the chronicle, so put it where the chronicle already has room to breathe:</p>\n<ul>\n<li><strong>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van}</strong> is played right after the scene that pushed the Thermometer to 3. Usually that&#39;s @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE} (the camera at 3B) or ARCHER&#39;s first delivery on Night 2. If the threshold comes later, that works too: the van shows up late, the way vans do.</li>\n<li><strong>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</strong> is played as a <em>flashback</em> at the end of Night 5, once the coterie has decided what to do about Lonnie (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · The One Who Kept One}). If it&#39;s played earlier, the players will know Okafor is waiting for them at the Denny&#39;s. Not a big deal, but the surprise is lost.</li>\n<li><strong>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</strong> is played at the start of the Night 8 session, before @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}. The players know what&#39;s coming. Their vampires don&#39;t. That&#39;s the point.</li>\n</ul>\n<h3>Who Plays Whom</h3>\n<p>Six pregenerated characters (@UUID[JournalEntry.LfywH6qtS3GxDxJx]{The Puget Cell · Pregenerated Characters}). You don&#39;t need all of them in every interlude:</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th></th>\n<th>Okafor</th>\n<th>Hale</th>\n<th>Ransom</th>\n<th>Navarro</th>\n<th>Pak</th>\n<th>Sorensen</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van}</td>\n<td>on the radio</td>\n<td>in the van</td>\n<td>at the wheel</td>\n<td>in the van</td>\n<td>the drone</td>\n<td>optional</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</td>\n<td>yes</td>\n<td>yes</td>\n<td>escort</td>\n<td>optional</td>\n<td>optional</td>\n<td>—</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n</tr>\n</tbody></table>\n<p>Have each player pick a hunter the first time and keep them. If someone is left without a hunter in an interlude, they run an operator from @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team} with the simplified sheet, or they play ARCHER, the radio, the rain.</p>\n<h3>What the Players Know and What the Hunters Know</h3>\n<p>The players know who ARCHER is. The hunters don&#39;t. There&#39;s only one rule: <strong>play what your hunter knows.</strong> The Storyteller can ask “how does Hale know that?” and, if the answer is “because I read it in Part 3,” it doesn&#39;t count.</p>\n<p>Sooner or later a player will want their hunter to fail in order to protect their vampire. That&#39;s allowed, and it isn&#39;t free. Every interlude has an option that leaves the Cell empty-handed: if it&#39;s chosen, <strong>the Cell&#39;s Desperation rises by 1</strong> (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{The Puget Cell}). A desperate cell doesn&#39;t back off: it goes into the raid with the generator already running and no warning. Failing on purpose lowers tonight&#39;s risk and raises Night 8&#39;s.</p>\n<h3>How an Interlude Closes</h3>\n<p>When it&#39;s over, the Storyteller notes three things:</p>\n<ol>\n<li><strong>The Thermometer.</strong> Using each interlude&#39;s buttons. No interlude moves it more than its table says.</li>\n<li><strong>Advantages and cracks for the raid.</strong> In the table in @UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.8DXPPUEUUp5bHka5]{INT-00 · Advantages and Cracks for the Raid}. Jot them in the Puget Cell actor&#39;s notes so you have them handy on Night 8.</li>\n<li><strong>The Cell&#39;s Desperation and Danger.</strong> On the Cell actor&#39;s sheet (group, cell type).</li>\n</ol>\n<h3>If They Aren&#39;t Played</h3>\n<p>The interludes are optional. If they aren&#39;t played, what the docs say happens: on Night 5 Hale writes @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, Internal Memo SEA-0411} and Okafor uses the delivery without believing it; the raid happens as written. No advantages, no cracks.</p>\n<h3>With a Single Player</h3>\n<p>The player runs Okafor in @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411} and Ransom in @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van} and @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}. The Storyteller plays the rest over the radio. The interludes run about 20 minutes.</p>\n<h3>Safety</h3>\n<p>The interludes put the players on the side of whoever is hunting their characters. Go over the table&#39;s Lines and Veils (@UUID[JournalEntry.BPqr3MwJXyy5lXZz]{Safety Tools}) before the first one. Northline&#39;s white room, with its lamps, is an interrogation space: if the table ruled it out, the room exists, but nobody uses it on screen.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "8oCsq7kqbIYWaNX6",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.8oCsq7kqbIYWaNX6",
+      "name": "Hunter on One Page",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The bare minimum of <em>Hunter: The Reckoning</em> (5th ed.) to play the interludes. If you have the rulebook, the rulebook wins. The pregens&#39; Edges and Perks are written in our own words, built for Seattle: if the book has one that looks similar, use the book&#39;s.</p>\n<p><strong>Creed.</strong> What the hunter does best during the Hunt. Each Creed has a Desperation field: the kind of action in which the hunter can add Desperation dice.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Creed</th>\n<th>Desperation field</th>\n<th>In the Cell</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Inquisitive</td>\n<td>Gathering information: research, breaking and entering, interrogation</td>\n<td>Okafor, Hale</td>\n</tr>\n<tr>\n<td>Martial</td>\n<td>Physical conflict, supernatural or not</td>\n<td>Ransom</td>\n</tr>\n<tr>\n<td>Faithful</td>\n<td>Direct conflict with the supernatural (physical, social, or mental)</td>\n<td>Navarro</td>\n</tr>\n<tr>\n<td>Underground</td>\n<td>Stealth and subterfuge</td>\n<td>Pak</td>\n</tr>\n<tr>\n<td>Entrepreneurial</td>\n<td>Building, inventing, augmenting, or repairing</td>\n<td>Sorensen</td>\n</tr>\n</tbody></table>\n<p><strong>Drive and Redemption.</strong> Why they hunt. Each Drive says when the hunter is redeemed: when they meet that condition, they come out of Despair (see below). On the wod5e sheet, the Drive appears as <em>Motivation</em>.</p>\n<p><strong>Desperation.</strong> It belongs to the Cell, not to each hunter: a number from 0 to 5. When a hunter rolls something that falls within their Creed&#39;s field, they can add as many Desperation dice as the Cell has marked. If any of those dice comes up 1, the player chooses:</p>\n<ul>\n<li><strong>Overreach:</strong> the roll stands as rolled, and the Cell&#39;s Danger rises by 1. The quarry learns something.</li>\n<li><strong>Despair:</strong> the roll fails, and the hunter falls into Despair. They can&#39;t add Desperation dice again until they&#39;re redeemed through their Drive.</li>\n</ul>\n<p>If the roll had already failed, there&#39;s no choice: Despair. The wod5e roll dialog offers Desperation dice to hunter-type actors and marks the result.</p>\n<p><strong>Danger.</strong> From 0 to 5, also the Cell&#39;s. It measures how much the quarry knows about the hunters. It&#39;s the mirror of the Thermometer: the Thermometer measures what FIRSTLIGHT knows about the coterie; Danger, what the coterie (or the city) knows about FIRSTLIGHT.</p>\n<p><strong>Edges and Perks.</strong> What the hunter brings to the Hunt that nobody else has: access, gear, a gift they don&#39;t understand. Each Edge can have Perks that refine it. They&#39;re on the sheet&#39;s Edges tab.</p>\n<p><strong>They&#39;re mortal.</strong> Health and Willpower like any V5 mortal. Disciplines work on them, except for Okafor&#39;s and Hale&#39;s Faith, which subtracts dice. Damage from a Kindred is superficial or aggravated depending on the attack; for the weapons in FIRSTLIGHT&#39;s arsenal, see @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team} and the Storyteller Screen.</p>\n<p><strong>Tests</strong> are written as in the rest of the module, Attribute + Skill and Difficulty. If the test falls within the Creed&#39;s field, the text says so: <em>(Desperation: Inquisitive)</em>.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "O8yPSIYLlTrKHm8G",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.O8yPSIYLlTrKHm8G",
+      "name": "The Puget Cell",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“Don&#39;t touch it until we can pull it out by the root.”</em></p>\n<p>A small FIRSTLIGHT cell on a tight budget, opened in Seattle in 2024. It&#39;s run by Special Agent @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor} out of @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}, on the 11th floor of a tower in South Lake Union. It has analyst @UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}, two more analysts, six operators contracted as a “special counterterrorism unit” (@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}), and a liaison to the FBI&#39;s Seattle field office. The tactical team sleeps in a port warehouse, not at Northline.</p>\n<p><strong>The hunters</strong> (hunter-type actors, with the Cell as their group): Okafor, Hale, @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom}, and three named operators: @UUID[Actor.cacjzuu13Bv7mJH5]{Teresa “Tess” Navarro}, @UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak}, and @UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen}. The other two operators remain the simplified sheet from @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}.</p>\n<h3>Desperation and Danger</h3>\n<p><em>Proposed.</em> The Cell starts at <strong>Desperation 1</strong> (a single cell, a budget that doesn&#39;t stretch, and a source nobody trusts) and <strong>Danger 0</strong> (the quarry doesn&#39;t know it exists). They move like this over the course of the adventure, whether or not the interludes are played:</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Desperation</th>\n<th>When</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>+1</td>\n<td>The quarry beats them to the punch: the coterie takes the Pike USB drive before chain of custody (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash at Pier 46}) or snatches Lonnie out from under their noses in @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · The One Who Kept One}</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>An operator is badly wounded or killed</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>The coterie cuts Northline&#39;s access to ANOMALY or wipes the cold subject database (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center})</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>In an interlude, the players choose the option that leaves the Cell empty-handed</td>\n</tr>\n<tr>\n<td>−1</td>\n<td>The Cell gets something solid: an identified cold subject, Lonnie and USB drive 3, a confirmed ARCHER target</td>\n</tr>\n</tbody></table>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Danger</th>\n<th>When</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>+1</td>\n<td>Each Overreach (see Hunter on One Page)</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>The coterie identifies a member of the Cell: the agents at the Denny&#39;s, the van, Hale&#39;s face</td>\n</tr>\n<tr>\n<td>+1</td>\n<td>The coterie, or @UUID[JournalEntry.yaAsxCkCLf8CANL5]{Voight}, reads @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, Internal Memo SEA-0411}</td>\n</tr>\n<tr>\n<td>+2</td>\n<td>Someone gets into Northline (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}), whether or not they&#39;re caught</td>\n</tr>\n</tbody></table>\n<p><strong>Danger in the interludes.</strong> At Danger 3 or higher, the Difficulty of any hunter test to go unnoticed rises by 1: the quarry already knows what to look for.</p>\n<p><strong>Desperation in the raid.</strong> When @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid} begins:</p>\n<ul>\n<li><strong>Desperation 3 or higher:</strong> the artificial sunlight generator is already running when they go in (advantage V4 from @UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.8DXPPUEUUp5bHka5]{INT-00 · Advantages and Cracks for the Raid}, free).</li>\n<li><strong>Desperation 4 or higher:</strong> no bullhorn. Okafor gives no warning. The first line of the dialogue guide comes after the light (advantage V5, free).</li>\n<li><strong>Desperation 5:</strong> Okafor leaves the car and goes in behind the team, with her Glock and her bad hand in her pocket. Her Faith goes with her.</li>\n</ul>\n<h3>In Foundry</h3>\n<p>The Cell is a cell-type group actor, in the FIRSTLIGHT/Puget Cell folder of the characters compendium. The six hunters are its members: their sheets pull Desperation from there. Danger is marked on the Cell&#39;s sheet. If <em>From the Veil to the Vigil</em> is active, its panel finds the Cell too: it&#39;s the only cell in the world (see @UUID[JournalEntry.jiea701LDJdMoHoY]{Red Tide · Continuation After FIN-D}).</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "CEL-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "8DXPPUEUUp5bHka5",
+      "_key": "!journal.pages!dnsWkdXVJ19riBLa.8DXPPUEUUp5bHka5",
+      "name": "INT-00 · Advantages and Cracks for the Raid",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>What each interlude leaves for @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}. The <strong>advantages</strong> belong to FIRSTLIGHT; the <strong>cracks</strong>, to the coterie. They apply only if the raid happens. None of them changes who wins: they change what each side brings to the door.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th></th>\n<th>Name</th>\n<th>Comes from</th>\n<th>Effect in @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>V1</strong></td>\n<td>A Face on File</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van}</td>\n<td>FIRSTLIGHT has a still frame of a PC. If that PC is at the target, the operators&#39; first test against them gets +2 dice: they know who they&#39;re looking for</td>\n</tr>\n<tr>\n<td><strong>V2</strong></td>\n<td>The Plate</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van}</td>\n<td>The coterie&#39;s vehicle (Bear&#39;s truck or another) is flagged. Escaping in it without first bringing down the drone is impossible: the drone follows it</td>\n</tr>\n<tr>\n<td><strong>V3</strong></td>\n<td>Prior Recon</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</td>\n<td>The Cell studied that target beforehand. The known escape routes (the hangar&#39;s loading tunnel, the farm&#39;s boat landing) are at Difficulty +1</td>\n</tr>\n<tr>\n<td><strong>V4</strong></td>\n<td>Generator in Position</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>The artificial sunlight generator switches on the first turn instead of taking two</td>\n</tr>\n<tr>\n<td><strong>V5</strong></td>\n<td>Radio Silence</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>No bullhorn warning. Detecting the raid goes to Difficulty 5</td>\n</tr>\n<tr>\n<td><strong>V6</strong></td>\n<td>Cordon</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>Two operators cover the water exit. The boat at the covered dock is no longer an option: it&#39;s being watched</td>\n</tr>\n<tr>\n<td><strong>F1</strong></td>\n<td>Ransom&#39;s Doubt</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van} or @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>Ransom knows who Bear is and didn&#39;t say so. Bear&#39;s test to buy a minute at the door drops to Difficulty 2, and that half second of hesitation is his</td>\n</tr>\n<tr>\n<td><strong>F2</strong></td>\n<td>The Familiar Van</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV]{INT-01 · The White Van}</td>\n<td>The coterie saw the white van on Market Street. During the raid they recognize it: Detecting the raid drops by 1 Difficulty</td>\n</tr>\n<tr>\n<td><strong>F3</strong></td>\n<td>Okafor Doubts ARCHER</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</td>\n<td>If someone tells her over the radio who her source is, Okafor doesn&#39;t believe it, but she orders a one-turn hold before going in. Talking to her over the radio is no longer impossible</td>\n</tr>\n<tr>\n<td><strong>F4</strong></td>\n<td>Noise on the Approach</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>The approach made noise. The coterie detects the raid without rolling and has three minutes, not two</td>\n</tr>\n<tr>\n<td><strong>F5</strong></td>\n<td>No Drone</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>The drone didn&#39;t take off or had to land. The team loses the +2 to Awareness and half its coordination from the first turn</td>\n</tr>\n<tr>\n<td><strong>F6</strong></td>\n<td>Covered Camera</td>\n<td>@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}</td>\n<td>One operator&#39;s body camera is covered. Whatever happens in front of them doesn&#39;t raise the Thermometer</td>\n</tr>\n</tbody></table>\n<p>If an advantage and a crack overlap (V5 and F4), the crack wins: the noise has already been made.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "INT-00"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

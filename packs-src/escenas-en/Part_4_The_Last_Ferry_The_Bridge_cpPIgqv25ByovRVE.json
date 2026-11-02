@@ -1,0 +1,1036 @@
+{
+  "_id": "cpPIgqv25ByovRVE",
+  "_key": "!scenes!cpPIgqv25ByovRVE",
+  "name": "Part 4 · The Last Ferry: The Bridge",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 153,
+  "width": 1300,
+  "height": 2400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.85,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "RiadZrfkZrlp4wVY",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/ferry-puente.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!cpPIgqv25ByovRVE.RiadZrfkZrlp4wVY"
+    }
+  ],
+  "journal": "IDd94316DhSx3ptV",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "kDzYEufIv4aSQ24a",
+      "c": [
+        200,
+        400,
+        220,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.kDzYEufIv4aSQ24a"
+    },
+    {
+      "_id": "lzCI7UIqRF2UN7MM",
+      "c": [
+        380,
+        400,
+        400,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.lzCI7UIqRF2UN7MM"
+    },
+    {
+      "_id": "qzFNaPSrPA84ANeB",
+      "c": [
+        500,
+        400,
+        520,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.qzFNaPSrPA84ANeB"
+    },
+    {
+      "_id": "vJuOB3OScBclsquu",
+      "c": [
+        680,
+        400,
+        700,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.vJuOB3OScBclsquu"
+    },
+    {
+      "_id": "ztAQunON2zZqYA4s",
+      "c": [
+        200,
+        400,
+        200,
+        420
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.ztAQunON2zZqYA4s"
+    },
+    {
+      "_id": "ddP272n5JVbaiLI6",
+      "c": [
+        200,
+        1980,
+        200,
+        2000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.ddP272n5JVbaiLI6"
+    },
+    {
+      "_id": "VWorZYuiQsCdvjwx",
+      "c": [
+        700,
+        400,
+        700,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.VWorZYuiQsCdvjwx"
+    },
+    {
+      "_id": "e76XT0s9YVqxkesH",
+      "c": [
+        700,
+        1050,
+        700,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.e76XT0s9YVqxkesH"
+    },
+    {
+      "_id": "9woFljqjpBERypwc",
+      "c": [
+        700,
+        1250,
+        700,
+        1350
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.9woFljqjpBERypwc"
+    },
+    {
+      "_id": "RVu8Q3LG6cqaRNRq",
+      "c": [
+        700,
+        1900,
+        700,
+        2000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.RVu8Q3LG6cqaRNRq"
+    },
+    {
+      "_id": "8cJ3JQ6OJ2Novsj7",
+      "c": [
+        200,
+        2000,
+        220,
+        2000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.8cJ3JQ6OJ2Novsj7"
+    },
+    {
+      "_id": "o99Yo5GBPVhwP7i0",
+      "c": [
+        380,
+        2000,
+        400,
+        2000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.o99Yo5GBPVhwP7i0"
+    },
+    {
+      "_id": "Ra7VaQz1lrgIoGrw",
+      "c": [
+        500,
+        2000,
+        520,
+        2000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.Ra7VaQz1lrgIoGrw"
+    },
+    {
+      "_id": "yOZkIs1ArXB2Q9Bo",
+      "c": [
+        680,
+        2000,
+        700,
+        2000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.yOZkIs1ArXB2Q9Bo"
+    },
+    {
+      "_id": "XmfOBWK7TMPnxuC8",
+      "c": [
+        900,
+        1075,
+        1150,
+        1075
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.XmfOBWK7TMPnxuC8"
+    },
+    {
+      "_id": "009OtYTNICAIFkJh",
+      "c": [
+        900,
+        1325,
+        1150,
+        1325
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.009OtYTNICAIFkJh"
+    },
+    {
+      "_id": "lQJ7dTrjfsxTpwug",
+      "c": [
+        900,
+        1075,
+        900,
+        1140
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.lQJ7dTrjfsxTpwug"
+    },
+    {
+      "_id": "4uUcGYDqZi3K0oOI",
+      "c": [
+        900,
+        1260,
+        900,
+        1325
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.4uUcGYDqZi3K0oOI"
+    },
+    {
+      "_id": "kaN7cbGoiHgKRV1f",
+      "c": [
+        1150,
+        1075,
+        1150,
+        1325
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.kaN7cbGoiHgKRV1f"
+    },
+    {
+      "_id": "YLG620Kbqcgt55Vm",
+      "c": [
+        1300,
+        100,
+        1300,
+        2300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.YLG620Kbqcgt55Vm"
+    },
+    {
+      "_id": "0dzoxXdaeSlce9KQ",
+      "c": [
+        200,
+        420,
+        200,
+        1980
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.0dzoxXdaeSlce9KQ"
+    },
+    {
+      "_id": "RDhToV0EhKb1SBYO",
+      "c": [
+        220,
+        400,
+        380,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.RDhToV0EhKb1SBYO"
+    },
+    {
+      "_id": "Q0AdpBSypCDZbw9u",
+      "c": [
+        400,
+        400,
+        500,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.Q0AdpBSypCDZbw9u"
+    },
+    {
+      "_id": "AfdwZteCZ40MJSvY",
+      "c": [
+        520,
+        400,
+        680,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.AfdwZteCZ40MJSvY"
+    },
+    {
+      "_id": "OMiz8O7k3DZUGFv1",
+      "c": [
+        220,
+        2000,
+        380,
+        2000
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.OMiz8O7k3DZUGFv1"
+    },
+    {
+      "_id": "XQ3vxvaJ5Swe32gs",
+      "c": [
+        400,
+        2000,
+        500,
+        2000
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.XQ3vxvaJ5Swe32gs"
+    },
+    {
+      "_id": "GarzLXcuSrrQYmqA",
+      "c": [
+        520,
+        2000,
+        680,
+        2000
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.GarzLXcuSrrQYmqA"
+    },
+    {
+      "_id": "QuEKFUKmhkfmpv04",
+      "c": [
+        200,
+        100,
+        200,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.QuEKFUKmhkfmpv04"
+    },
+    {
+      "_id": "MEMWR6BhSqKuD9YV",
+      "c": [
+        200,
+        2000,
+        200,
+        2300
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.MEMWR6BhSqKuD9YV"
+    },
+    {
+      "_id": "jiCzYSh2SFbXTkcP",
+      "c": [
+        200,
+        100,
+        1200,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.jiCzYSh2SFbXTkcP"
+    },
+    {
+      "_id": "xw1CpzVhFKlzIqSQ",
+      "c": [
+        200,
+        2300,
+        1200,
+        2300
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.xw1CpzVhFKlzIqSQ"
+    },
+    {
+      "_id": "rzWIn7gOoduPg9f3",
+      "c": [
+        700,
+        500,
+        700,
+        1050
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.rzWIn7gOoduPg9f3"
+    },
+    {
+      "_id": "LFApklXZ5kT2Rhcy",
+      "c": [
+        700,
+        1150,
+        700,
+        1250
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.LFApklXZ5kT2Rhcy"
+    },
+    {
+      "_id": "4sxTt4o8MVdjRwBq",
+      "c": [
+        700,
+        1350,
+        700,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.4sxTt4o8MVdjRwBq"
+    },
+    {
+      "_id": "54KweMmekVOEk2CE",
+      "c": [
+        1200,
+        100,
+        1200,
+        2300
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.54KweMmekVOEk2CE"
+    },
+    {
+      "_id": "XTVwqbx4TRpYwA6D",
+      "c": [
+        1200,
+        100,
+        1300,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.XTVwqbx4TRpYwA6D"
+    },
+    {
+      "_id": "6UE2Vp0FFwJ6m0JX",
+      "c": [
+        1200,
+        2300,
+        1300,
+        2300
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!cpPIgqv25ByovRVE.6UE2Vp0FFwJ6m0JX"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "UNg7Sj8SNWBmnKjA",
+      "name": "Radar and chart screens (turned down)",
+      "x": 300,
+      "y": 950,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.UNg7Sj8SNWBmnKjA"
+    },
+    {
+      "_id": "YFWfo2l3ydABBXYD",
+      "name": "Radar and chart screens (turned down)",
+      "x": 300,
+      "y": 1450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.YFWfo2l3ydABBXYD"
+    },
+    {
+      "_id": "zk0ir2YhKFz69Yl0",
+      "name": "Deck light (starboard), on the wheelhouse aft bulkhead",
+      "x": 735,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.zk0ir2YhKFz69Yl0"
+    },
+    {
+      "_id": "sdRfmYmppDmcolPt",
+      "name": "Deck light (port), on the wheelhouse aft bulkhead",
+      "x": 735,
+      "y": 1950,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.sdRfmYmppDmcolPt"
+    },
+    {
+      "_id": "MrxPCfE1qEQKxerc",
+      "name": "Stair housing ceiling light",
+      "x": 1025,
+      "y": 1200,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.MrxPCfE1qEQKxerc"
+    },
+    {
+      "_id": "9Z6yvSXYlUmhmHPJ",
+      "name": "Starboard navigation light (green), on the wing",
+      "x": 450,
+      "y": 120,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.5,
+        "color": "#2aff6a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.9Z6yvSXYlUmhmHPJ"
+    },
+    {
+      "_id": "YzQgD7QFMwZ4JtQV",
+      "name": "Port navigation light (red), on the wing",
+      "x": 450,
+      "y": 2280,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.5,
+        "color": "#ff2a2a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!cpPIgqv25ByovRVE.YzQgD7QFMwZ4JtQV"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "1BqxEtpdjwCU4Wbh",
+      "name": "Arrival from the cabin",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 790,
+          "y": 1125,
+          "width": 100,
+          "height": 150,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-puente",
+          "region": "llegada-escalera",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!cpPIgqv25ByovRVE.1BqxEtpdjwCU4Wbh"
+    },
+    {
+      "_id": "VifXMA0e0ZjJkmgZ",
+      "name": "Down to the passenger cabin",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 990,
+          "y": 1090,
+          "width": 140,
+          "height": 220,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "LN3PYlnYQYeSQjfW",
+          "name": "Down to the passenger cabin",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.nO6PgIBKh3qBWQVV.Region.hReBTzn9lz5Oa0wO"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!cpPIgqv25ByovRVE.VifXMA0e0ZjJkmgZ.LN3PYlnYQYeSQjfW"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "ferry-puente",
+          "region": "bajar-al-salon",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!cpPIgqv25ByovRVE.VifXMA0e0ZjJkmgZ"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "zn0hD162FIt5Xk81",
+      "entryId": "IDd94316DhSx3ptV",
+      "pageId": null,
+      "x": 860,
+      "y": 1210,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-15",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "ferry-puente",
+          "id": "LUG-15"
+        }
+      },
+      "_key": "!scenes.notes!cpPIgqv25ByovRVE.zn0hD162FIt5Xk81"
+    },
+    {
+      "_id": "uvMqhw0Zeb4xQBP7",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "tG1m5PTkmBA1pvmc",
+      "x": 485,
+      "y": 1135,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "ferry-puente",
+          "id": "A4-E03"
+        }
+      },
+      "_key": "!scenes.notes!cpPIgqv25ByovRVE.uvMqhw0Zeb4xQBP7"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "oAkMTyE1F2CS10nu",
+      "name": "the captain's chair",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-puente.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 485,
+      "y": 1205,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "RiadZrfkZrlp4wVY"
+      ],
+      "sort": 0,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "ferry-puente",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!cpPIgqv25ByovRVE.oAkMTyE1F2CS10nu"
+    }
+  ],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "mIHo75xMWMbS7H3D",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "ferry-puente",
+      "id": "LUG-15",
+      "plano": "ferry-puente",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{The Ferry Terminal and the Last Ferry}<br><strong>Scenes:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}</p>\n<p><strong>The bridge.</strong> Halloway “doesn&#39;t fight: he uses Daunt and flees toward the bridge to take control of the ship.” He climbs the stair in the middle of the cabin to the <strong>upper deck</strong> and enters the <strong>bridge</strong> (wheelhouse) through the aft door; the crew can lock it from inside. Inside are the captain and a deckhand (two of the six crew): Dominate on them, or Halloway forces them (“Stop.” “Let go of that.”). The <strong>helm station</strong> is in the center, facing the <strong>console</strong> under the forward windows. The starboard and port <strong>bridge wings</strong> (open, with rails) each have a control pedestal.</p>\n<p>At night the bridge runs <strong>dark</strong> (only the screens, turned all the way down, to protect night vision): high darkness on purpose. The navigation lights are on the wing rails: green to starboard (north), red to port (south). The two deck lights hang from the wheelhouse&#39;s aft bulkhead and light the upper deck; a little of that light gets in through the bridge&#39;s aft windows.</p>\n<p>Crop: the ferry has two bridges, one at each end; this is the forward one during the crossing (the one steering). Between the cabin stair and the bridge there&#39;s more ship that isn&#39;t played; the upper deck continues aft (hatched strip). If Halloway falls into the coterie&#39;s hands, see Endings (AVE-01-FIN).</p>\n\n<p class=\"sbn-moviles\">The movable furniture (1) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

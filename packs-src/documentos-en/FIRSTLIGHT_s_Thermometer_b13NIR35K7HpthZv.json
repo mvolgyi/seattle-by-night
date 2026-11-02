@@ -1,0 +1,85 @@
+{
+  "_id": "b13NIR35K7HpthZv",
+  "_key": "!journal!b13NIR35K7HpthZv",
+  "name": "FIRSTLIGHT's Thermometer",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-03",
+      "archivo": "content/documentos/AYU-03.md",
+      "soporte": "marcador",
+      "entrega": [
+        "narrador"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "QIgsYhhjisOfzz32",
+      "_key": "!journal.pages!b13NIR35K7HpthZv.QIgsYhhjisOfzz32",
+      "name": "FIRSTLIGHT's Thermometer",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-marcador\"><p class=\"sbn-doc-titulo\">THE CITY&#39;S EYES</p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-marcador-tabla\">\n<thead>\n<tr>\n<th>0</th>\n<th>1</th>\n<th><strong>2</strong><br><em>start</em></th>\n<th><strong>3</strong><br>👁</th>\n<th>4</th>\n<th><strong>5</strong><br>☎</th>\n<th>6</th>\n<th><strong>7</strong><br>🔍</th>\n<th>8</th>\n<th><strong>9</strong><br>🚨</th>\n<th><strong>10</strong><br>🔥</th>\n</tr>\n</thead>\n</table>\n<p>👁 <strong>3</strong> · Someone is watching the journalist.</p>\n<p>☎ <strong>5</strong> · Someone calls the journalist.</p>\n<p>🔍 <strong>7</strong> · Someone pulls the thread on one of ours.</p>\n<p>🚨 <strong>9</strong> · Someone knocks at the door.</p>\n<p>🔥 <strong>10</strong> · There is no door anymore.</p>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4q0rKmYzfI8ZJ2zF",
+      "_key": "!journal.pages!b13NIR35K7HpthZv.4q0rKmYzfI8ZJ2zF",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> Cut-out tracker. <strong>Distribution:</strong> Storyteller only (or in view, without the number).</p>\n<p><em>Storyteller: print it and use a paper clip or a token as a marker. In Foundry, a gauge on the scene or a token on a track. Players can see it; the exact number, better not.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

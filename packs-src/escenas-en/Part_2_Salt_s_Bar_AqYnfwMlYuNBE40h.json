@@ -1,0 +1,2742 @@
+{
+  "_id": "AqYnfwMlYuNBE40h",
+  "_key": "!scenes!AqYnfwMlYuNBE40h",
+  "name": "Part 2 · Salt's Bar",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 100,
+  "width": 2000,
+  "height": 2200,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.75,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "PG8AdrxQxpOj6CBv",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/salitre.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!AqYnfwMlYuNBE40h.PG8AdrxQxpOj6CBv"
+    }
+  ],
+  "journal": "JMwTSsJAcyYdCs3m",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "DoMyZDzVFZLkwwp3",
+      "c": [
+        100,
+        1300,
+        480,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.DoMyZDzVFZLkwwp3"
+    },
+    {
+      "_id": "9sYDo9L5sb6HJAAJ",
+      "c": [
+        570,
+        1300,
+        860,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.9sYDo9L5sb6HJAAJ"
+    },
+    {
+      "_id": "Q4rPgbzZqxlxov2E",
+      "c": [
+        940,
+        1300,
+        1000,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.Q4rPgbzZqxlxov2E"
+    },
+    {
+      "_id": "PtIsZWbv6TPW4wob",
+      "c": [
+        100,
+        2100,
+        620,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.PtIsZWbv6TPW4wob"
+    },
+    {
+      "_id": "moQWXUoDKAlxA6cP",
+      "c": [
+        740,
+        2100,
+        1000,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.moQWXUoDKAlxA6cP"
+    },
+    {
+      "_id": "4hPm54xjVbk9dyIf",
+      "c": [
+        100,
+        800,
+        100,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.4hPm54xjVbk9dyIf"
+    },
+    {
+      "_id": "xBiR5BSw240HFHB8",
+      "c": [
+        100,
+        1100,
+        100,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.xBiR5BSw240HFHB8"
+    },
+    {
+      "_id": "iuDbRJHNlYK6oRPv",
+      "c": [
+        1000,
+        800,
+        1000,
+        1420
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.iuDbRJHNlYK6oRPv"
+    },
+    {
+      "_id": "WJA6WhG2YMfyp5to",
+      "c": [
+        1000,
+        1540,
+        1000,
+        1750
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.WJA6WhG2YMfyp5to"
+    },
+    {
+      "_id": "9vjOh7tiJGFP4TaK",
+      "c": [
+        1000,
+        1850,
+        1000,
+        1960
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.9vjOh7tiJGFP4TaK"
+    },
+    {
+      "_id": "s6g42FQzEwXSodNS",
+      "c": [
+        1000,
+        2060,
+        1000,
+        2100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.s6g42FQzEwXSodNS"
+    },
+    {
+      "_id": "FggcB8GwDuBvzgaF",
+      "c": [
+        100,
+        800,
+        860,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.FggcB8GwDuBvzgaF"
+    },
+    {
+      "_id": "ME6oBaGfVszcjXIn",
+      "c": [
+        950,
+        800,
+        1000,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.ME6oBaGfVszcjXIn"
+    },
+    {
+      "_id": "CIziCBYw7Os9TeeK",
+      "c": [
+        600,
+        800,
+        600,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.CIziCBYw7Os9TeeK"
+    },
+    {
+      "_id": "pIxGbDyHTJcjnwx0",
+      "c": [
+        600,
+        980,
+        600,
+        1300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.pIxGbDyHTJcjnwx0"
+    },
+    {
+      "_id": "6MShYFBV7P2l7n53",
+      "c": [
+        600,
+        1050,
+        1000,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.6MShYFBV7P2l7n53"
+    },
+    {
+      "_id": "upUM3UKP0bnXW4ns",
+      "c": [
+        1000,
+        1750,
+        1000,
+        1850
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.upUM3UKP0bnXW4ns"
+    },
+    {
+      "_id": "4LBs8CqfHY9wJU1y",
+      "c": [
+        1000,
+        1420,
+        1000,
+        1540
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.4LBs8CqfHY9wJU1y"
+    },
+    {
+      "_id": "HXyiiqnpINJptqo1",
+      "c": [
+        1000,
+        1960,
+        1000,
+        2060
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.HXyiiqnpINJptqo1"
+    },
+    {
+      "_id": "6i2Vb61jskBXQsc4",
+      "c": [
+        620,
+        2100,
+        740,
+        2100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.6i2Vb61jskBXQsc4"
+    },
+    {
+      "_id": "lgHpVXgIUDOvL0Ct",
+      "c": [
+        100,
+        1000,
+        100,
+        1100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.lgHpVXgIUDOvL0Ct"
+    },
+    {
+      "_id": "XYD0OsNCr5YzlPpu",
+      "c": [
+        480,
+        1300,
+        570,
+        1300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.XYD0OsNCr5YzlPpu"
+    },
+    {
+      "_id": "ZUcAn3eiv2oCp8FV",
+      "c": [
+        600,
+        900,
+        600,
+        980
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.ZUcAn3eiv2oCp8FV"
+    },
+    {
+      "_id": "HNozxLpOMCcaGR0h",
+      "c": [
+        860,
+        1300,
+        940,
+        1300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.HNozxLpOMCcaGR0h"
+    },
+    {
+      "_id": "SS2BbvwBdGufNeb8",
+      "c": [
+        860,
+        800,
+        950,
+        800
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.SS2BbvwBdGufNeb8"
+    },
+    {
+      "_id": "JyJxrMTWgVeV1jFC",
+      "c": [
+        0,
+        800,
+        100,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.JyJxrMTWgVeV1jFC"
+    },
+    {
+      "_id": "JSGs3PzfDOGlX8X7",
+      "c": [
+        1000,
+        1100,
+        1150,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.JSGs3PzfDOGlX8X7"
+    },
+    {
+      "_id": "8DNgJVUg80Iau3d5",
+      "c": [
+        1150,
+        1100,
+        1650,
+        1100
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetal",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.8DNgJVUg80Iau3d5"
+    },
+    {
+      "_id": "4ohluQa9s7Pc72m2",
+      "c": [
+        1650,
+        1100,
+        2000,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.4ohluQa9s7Pc72m2"
+    },
+    {
+      "_id": "Wpj0KiuF3xX1VEdq",
+      "c": [
+        1200,
+        0,
+        1200,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.Wpj0KiuF3xX1VEdq"
+    },
+    {
+      "_id": "yAlWjIzI3dtCm6QX",
+      "c": [
+        1800,
+        0,
+        1800,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.yAlWjIzI3dtCm6QX"
+    },
+    {
+      "_id": "ktTWwYPRIF56dIw8",
+      "c": [
+        1200,
+        800,
+        1450,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.ktTWwYPRIF56dIw8"
+    },
+    {
+      "_id": "Qx1vgdT5bbmGY0sF",
+      "c": [
+        1600,
+        800,
+        1800,
+        800
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!AqYnfwMlYuNBE40h.Qx1vgdT5bbmGY0sF"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "ndgAveCE03ispGGI",
+      "name": "“SAL 'S” neon sign (missing a letter)",
+      "x": 1035,
+      "y": 1640,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.ndgAveCE03ispGGI"
+    },
+    {
+      "_id": "UqoHs7eJ7dyEV8gs",
+      "name": "Bar hanging lamp",
+      "x": 550,
+      "y": 1550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.UqoHs7eJ7dyEV8gs"
+    },
+    {
+      "_id": "XZKHZGvwuzGiZvC7",
+      "name": "Bar hanging lamp",
+      "x": 700,
+      "y": 1900,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.XZKHZGvwuzGiZvC7"
+    },
+    {
+      "_id": "cqui1oJdTfNapUKP",
+      "name": "Light behind the bar",
+      "x": 240,
+      "y": 1650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.cqui1oJdTfNapUKP"
+    },
+    {
+      "_id": "u6z7G982Ar4C0huW",
+      "name": "Back-room bare bulb",
+      "x": 320,
+      "y": 1030,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.u6z7G982Ar4C0huW"
+    },
+    {
+      "_id": "LFXMnPMn5jGhLFdl",
+      "name": "Storeroom fluorescent tube",
+      "x": 800,
+      "y": 930,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.LFXMnPMn5jGhLFdl"
+    },
+    {
+      "_id": "hvPfIiH9SXA0MK83",
+      "name": "Restroom fluorescent tube",
+      "x": 800,
+      "y": 1180,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.hvPfIiH9SXA0MK83"
+    },
+    {
+      "_id": "iTTJdrilqi6QH4P2",
+      "name": "Back-door wall light",
+      "x": 900,
+      "y": 765,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.iTTJdrilqi6QH4P2"
+    },
+    {
+      "_id": "86JVavXFp2zYTZd1",
+      "name": "Sodium streetlight at the gate",
+      "x": 1700,
+      "y": 1140,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!AqYnfwMlYuNBE40h.86JVavXFp2zYTZd1"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "crwPSsHwfq1OXEgH",
+      "name": "Arrival by the road",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1250,
+          "y": 1960,
+          "width": 300,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "llegada-carretera",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.crwPSsHwfq1OXEgH"
+    },
+    {
+      "_id": "splFo8wM22szfnDz",
+      "name": "Leave by the only road",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 2100,
+          "width": 600,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "carretera",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the Everett road: the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.splFo8wM22szfnDz"
+    },
+    {
+      "_id": "EfHXYGiNhz1SkYba",
+      "name": "The slipway runs down to the water",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1200,
+          "y": 0,
+          "width": 600,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "grada-agua",
+          "estado": "pendiente",
+          "pendiente": "shipyard exterior (t2i, no map): the slipway, the three hulls in dry dock, and the water"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.EfHXYGiNhz1SkYba"
+    },
+    {
+      "_id": "poxE5SMLQBE8X1LW",
+      "name": "To the shipyard: the three hulls in dry dock",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 0,
+          "width": 200,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "salitre",
+          "region": "astillero",
+          "estado": "pendiente",
+          "pendiente": "shipyard exterior (t2i, no map): the havens in the hulls"
+        }
+      },
+      "_key": "!scenes.regions!AqYnfwMlYuNBE40h.poxE5SMLQBE8X1LW"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "YEFiaP6SiErovLOd",
+      "entryId": "JMwTSsJAcyYdCs3m",
+      "pageId": null,
+      "x": 560,
+      "y": 1735,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-10",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "salitre",
+          "id": "LUG-10"
+        }
+      },
+      "_key": "!scenes.notes!AqYnfwMlYuNBE40h.YEFiaP6SiErovLOd"
+    },
+    {
+      "_id": "A3qmVnFRcBHEduX8",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "aJxUAHXcYpRWrhmG",
+      "x": 560,
+      "y": 1835,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "salitre",
+          "id": "A2-E03"
+        }
+      },
+      "_key": "!scenes.notes!AqYnfwMlYuNBE40h.A3qmVnFRcBHEduX8"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "vKAJWhNZWj8jDPMh",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1460,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 0,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.vKAJWhNZWj8jDPMh"
+    },
+    {
+      "_id": "muMvbyzmj3UzAB9n",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1580,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 1,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.muMvbyzmj3UzAB9n"
+    },
+    {
+      "_id": "uY9p0fu80qTgYjuP",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1700,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 2,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.uY9p0fu80qTgYjuP"
+    },
+    {
+      "_id": "uFRjYBlX4qyUXq1i",
+      "name": "taburete",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 475,
+      "y": 1820,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 3,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.uFRjYBlX4qyUXq1i"
+    },
+    {
+      "_id": "iXt8emZC4uROjTXr",
+      "name": "scarred wooden table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 645,
+      "y": 1485,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 4,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.iXt8emZC4uROjTXr"
+    },
+    {
+      "_id": "lHZQlVzAYZYgyesj",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 728,
+      "y": 1483,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 5,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.lHZQlVzAYZYgyesj"
+    },
+    {
+      "_id": "Z3byBsiukwMOh7Zt",
+      "name": "scarred wooden table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 875,
+      "y": 1585,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.Z3byBsiukwMOh7Zt"
+    },
+    {
+      "_id": "bhpKlqzIdCJUbtVB",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 873,
+      "y": 1503,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.bhpKlqzIdCJUbtVB"
+    },
+    {
+      "_id": "C3ww7XZ06cIw5aCx",
+      "name": "scarred wooden table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 645,
+      "y": 1745,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 8,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.C3ww7XZ06cIw5aCx"
+    },
+    {
+      "_id": "bed9PzwEdRJYzmt2",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 643,
+      "y": 1823,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 9,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.bed9PzwEdRJYzmt2"
+    },
+    {
+      "_id": "sIDmFuPQgjVNULI4",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 728,
+      "y": 1743,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 10,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.sIDmFuPQgjVNULI4"
+    },
+    {
+      "_id": "fdedx2PQkfuphHpC",
+      "name": "scarred wooden table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 675,
+      "y": 1985,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 11,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.fdedx2PQkfuphHpC"
+    },
+    {
+      "_id": "J82AlNDirJyQrMv4",
+      "name": "scarred wooden table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-bar.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 885,
+      "y": 1985,
+      "width": 90,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 12,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.J82AlNDirJyQrMv4"
+    },
+    {
+      "_id": "auiZTzoMC4FW1Wur",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 757,
+      "y": 1983,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 13,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.auiZTzoMC4FW1Wur"
+    },
+    {
+      "_id": "lHkoyfbVNSv02qG2",
+      "name": "the assembly's meeting table",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-asamblea.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 320,
+      "y": 1030,
+      "width": 260,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 14,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.lHkoyfbVNSv02qG2"
+    },
+    {
+      "_id": "oa6WUyQLu1t3bHDz",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 233,
+      "y": 938,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 15,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.oa6WUyQLu1t3bHDz"
+    },
+    {
+      "_id": "2pq8PPGMxq6sGAhX",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 323,
+      "y": 938,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 16,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.2pq8PPGMxq6sGAhX"
+    },
+    {
+      "_id": "ihnGF9WgG5pKn5Vm",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 413,
+      "y": 938,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.ihnGF9WgG5pKn5Vm"
+    },
+    {
+      "_id": "WaCVA1pjMLTYuABf",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 233,
+      "y": 1123,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 18,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.WaCVA1pjMLTYuABf"
+    },
+    {
+      "_id": "0U4VXOEgQ0PDCltg",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 323,
+      "y": 1123,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 19,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.0U4VXOEgQ0PDCltg"
+    },
+    {
+      "_id": "m8MnHp9Y10Wy4DZ1",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 413,
+      "y": 1123,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 20,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.m8MnHp9Y10Wy4DZ1"
+    },
+    {
+      "_id": "BjFoOX8vftgn7lnF",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 482,
+      "y": 1033,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 21,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.BjFoOX8vftgn7lnF"
+    },
+    {
+      "_id": "2yLeeEgtj785n4Ls",
+      "name": "beer kegs",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-barriles.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 710,
+      "y": 985,
+      "width": 160,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 22,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.2yLeeEgtj785n4Ls"
+    },
+    {
+      "_id": "8RM3gARyXmCKBEAJ",
+      "name": "a longshoreman's pickup truck",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-pickup.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1850,
+      "y": 1580,
+      "width": 460,
+      "height": 200,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 23,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.8RM3gARyXmCKBEAJ"
+    },
+    {
+      "_id": "H0s2LMslc19UN2VE",
+      "name": "car parked in the yard",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-coche.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1040,
+      "y": 490,
+      "width": 460,
+      "height": 200,
+      "elevation": 0,
+      "levels": [
+        "PG8AdrxQxpOj6CBv"
+      ],
+      "sort": 24,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "salitre",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!AqYnfwMlYuNBE40h.H0s2LMslc19UN2VE"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "oDrnI2pc5ADNz3Hd",
+      "name": "Rosa Iturbe",
+      "displayName": 30,
+      "actorId": "JtFCjV4kHyARORQl",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-11.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 210,
+      "y": 1550,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "PNJ-11",
+          "escenas": [
+            "A2-E03"
+          ],
+          "nota": "Behind the bar, elbows propped on it, the welding torch on top."
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.oDrnI2pc5ADNz3Hd"
+    },
+    {
+      "_id": "u2XcLmEUJimZsf9s",
+      "name": "Tavi Mercer",
+      "displayName": 30,
+      "actorId": "FoPBa0JoGJzoM2E6",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-05-TAVI.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 710,
+      "y": 1580,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "MEN-05-TAVI",
+          "escenas": [
+            "A2-E03"
+          ],
+          "nota": "Never looks away from them; fists clenched."
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.u2XcLmEUJimZsf9s"
+    },
+    {
+      "_id": "3xKTsvrONmHUjBNL",
+      "name": "Salt's Anarchs 1",
+      "displayName": 30,
+      "actorId": "k2TLqQkkzzjSLzkp",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-05.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 500,
+      "y": 1580,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "MEN-05",
+          "escenas": [
+            "A2-E03"
+          ],
+          "nota": "Four of the bar's dozen Anarchs."
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.3xKTsvrONmHUjBNL"
+    },
+    {
+      "_id": "AAQAX0YWLh0fOGZN",
+      "name": "Salt's Anarchs 2",
+      "displayName": 30,
+      "actorId": "k2TLqQkkzzjSLzkp",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-05.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 890,
+      "y": 1360,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "MEN-05",
+          "escenas": [
+            "A2-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.AAQAX0YWLh0fOGZN"
+    },
+    {
+      "_id": "wUwwAzVWmdi8vP7d",
+      "name": "Salt's Anarchs 3",
+      "displayName": 30,
+      "actorId": "k2TLqQkkzzjSLzkp",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-05.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 770,
+      "y": 1780,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "MEN-05",
+          "escenas": [
+            "A2-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.wUwwAzVWmdi8vP7d"
+    },
+    {
+      "_id": "hzmdgN8EDE5ZoSLW",
+      "name": "Salt's Anarchs 4",
+      "displayName": 30,
+      "actorId": "k2TLqQkkzzjSLzkp",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-05.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 500,
+      "y": 1980,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "MEN-05",
+          "escenas": [
+            "A2-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.hzmdgN8EDE5ZoSLW"
+    },
+    {
+      "_id": "c0WW2tZmc7Mm7c2l",
+      "name": "Bas Okonjo",
+      "displayName": 30,
+      "actorId": "01GwkksMEQcbAbe9",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-05-BAS.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 810,
+      "y": 880,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PG8AdrxQxpOj6CBv",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "salitre",
+          "id": "MEN-05-BAS",
+          "escenas": [
+            "A2-E03"
+          ],
+          "nota": "Hiding in the storeroom so Hal won't see him."
+        }
+      },
+      "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.c0WW2tZmc7Mm7c2l"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "tW1WLQrXEtNKMK5p",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "salitre",
+      "id": "LUG-10",
+      "plano": "salitre",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt's Bar and the Old Shipyard}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}</p>\n<p><strong>A2-E03 · Salt&#39;s.</strong> “The road dies at a closed shipyard, rusted cranes cut out against a slate-colored sky. By the gate there&#39;s a bar with a neon sign missing a letter: SAL &#39;S. Inside are scarred wooden tables, a bar built from the split hull of a boat, and black-and-white photos of strikes.” The sign is a “neon” light on the façade (it isn&#39;t painted: there&#39;s no text on the map). Rosa waits with her elbows on the <strong>bar</strong> and a welding torch on top of it (tile or token).</p>\n<p><strong>The barroom.</strong> Open to the mortal public until two. The <strong>bar</strong> is half the shell of a boat&#39;s hull, with the bottle shelf behind it; the <strong>strike photos</strong> hang on the north and south walls. Tables, chairs, and stools are movable (tiles): a dozen Anarchs use them as cover if things break (Combat: Rosa stops it on the second round, “Not here.”). Tavi Mercer (MEN-05) never looks away from them.</p>\n<p><strong>The back room.</strong> A meeting table (the assembly votes on whether to help the coterie) and a cork board with clippings: that&#39;s where Rosa keeps her 1996 clipping (AYU-04: “if it comes up in A2-E03, let her be the one to take it out”). It&#39;s the place for the confession to David “alone.” The door opens onto the barroom, on the public side; another door leads to the storeroom.</p>\n<p><strong>The back.</strong> Bas Okonjo hides in the <strong>storeroom</strong> (kegs, the keg cooler) so Hal won&#39;t see him; the <strong>back door</strong> opens onto the shipyard yard. Hal can talk to him alone there.</p>\n<p><strong>The shipyard.</strong> The sliding gate closes off the road; the bar sits outside, right up against it. Inside is the <strong>head of the slipway</strong>: it&#39;s lined up with the road, and from there you can see any car coming down the only road (the Anarchs&#39; lookout). The slipway continues toward the water, to the north, off the map; the <strong>three hulls in dry dock</strong> (Salt&#39;s havens, Rosa&#39;s among them; Ray Dorsey slept there in 1996) are the shipyard exterior (t2i): regions with no destination.</p>\n<p><strong>Escape.</strong> Nobody holds them back: the bar door opens onto the road.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (25) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.JtFCjV4kHyARORQl]{Rosa Iturbe} (A2-E03): Behind the bar, elbows propped on it, the welding torch on top.</li><li>@UUID[Actor.FoPBa0JoGJzoM2E6]{Tavi Mercer} (A2-E03): Never looks away from them; fists clenched.</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 1} (A2-E03): Four of the bar&#39;s dozen Anarchs.</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 2} (A2-E03)</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 3} (A2-E03)</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 4} (A2-E03)</li><li>@UUID[Actor.01GwkksMEQcbAbe9]{Bas Okonjo} · <em>hidden</em> (A2-E03): Hiding in the storeroom so Hal won&#39;t see him.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Leave by the only road · The slipway runs down to the water · To the shipyard: the three hulls in dry dock.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

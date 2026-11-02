@@ -1,0 +1,261 @@
+{
+  "_id": "cHnmNaT8zN7q4yvy",
+  "_key": "!actors!cHnmNaT8zN7q4yvy",
+  "name": "Helen Ward",
+  "type": "mortal",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-04.webp",
+  "folder": "CnV2nZgZZRdzG6KO",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Helen Ward",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-04.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Investigative journalist and host of “What the City Forgets”",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "34",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Profile: Helen Ward}</p><blockquote><p><em>“You can&#39;t just make people disappear.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>She Who Looks Where She Shouldn&#39;t</td></tr><tr><th>Concept</th><td>Investigative journalist and host of “What the City Forgets”</td></tr><tr><th>Age</th><td>34</td></tr></tbody></table><h3>Demeanor</h3><p>Wry, sarcastic, smokes too much, sleeps too little; wears glasses when she&#39;s exhausted, but won&#39;t admit it. Talks fast and listens better.</p>",
+    "appearance": "<p>Wry, sarcastic, smokes too much, sleeps too little; wears glasses when she&#39;s exhausted, but won&#39;t admit it. Talks fast and listens better.</p>",
+    "equipment": "<ul><li>Recorder</li><li>Notepad</li><li>Flip phone with a single number: SAFE (DOC-05)</li></ul>",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Cold Cases",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Contradictions",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Interviews",
+            "value": 1,
+            "paths": [
+              "skills.persuasion"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "subterfuge": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts: three in the police (earlier source, no rating)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts: three in the police (earlier source, no rating)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "60SAsNYvrb7VBcMH",
+      "_key": "!actors.items!cHnmNaT8zN7q4yvy.60SAsNYvrb7VBcMH"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-04",
+      "journal": "JournalEntry.fVXK7vOoqn0ZL0uf",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

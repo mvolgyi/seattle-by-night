@@ -1,0 +1,109 @@
+{
+  "_id": "YCxHPFDwwk4QiaET",
+  "_key": "!journal!YCxHPFDwwk4QiaET",
+  "name": "Pike Place Market by Night",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-08",
+      "archivo": "content/ciudad/LUG-08.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "JVw2NX6LSMx2xslj",
+      "_key": "!journal.pages!YCxHPFDwwk4QiaET.JVw2NX6LSMx2xslj",
+      "name": "Pike Place Market by Night",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-lugar-imagen\" src=\"modules/seattle-by-night/assets/lugares/LUG-08.webp\" alt=\"Pike Place Market by Night\">\n<p><em>Downtown · Neutral ground · Map: no</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ZOFBO9tYbSMLeUqk",
+      "_key": "!journal.pages!YCxHPFDwwk4QiaET.ZOFBO9tYbSMLeUqk",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>By day it smells of fish and flowers, and there are tourists taking pictures of everything. By night, the market is something else. The stalls are covered with tarps, the shutters pulled down, the red neon sign humming over an empty street. Below, on the lower levels, among corridors of closed comic book shops and stairways that lead down toward the bay, someone lights a candle.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1U7HISACpDa1HeKR",
+      "_key": "!journal.pages!YCxHPFDwwk4QiaET.1U7HISACpDa1HeKR",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>By custom, the lower levels are neutral ground outside Elysium: the place where favors are called in and paid off without witnesses from the court.</p>\n<p>It&#39;s useful for meetings with @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa Iturbe}, with @UUID[JournalEntry.dj4gIszHHTN1QRKk]{Thornquist} outside his domain, or with @UUID[JournalEntry.oQ2AhEeDkwdPRv71]{O'Connor} if he comes into the city.</p>\n<p>It doesn&#39;t appear in any fixed scene; it&#39;s a wild card for the Storyteller.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

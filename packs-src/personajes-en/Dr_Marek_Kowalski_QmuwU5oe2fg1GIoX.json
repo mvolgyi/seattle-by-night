@@ -1,0 +1,134 @@
+{
+  "_id": "QmuwU5oe2fg1GIoX",
+  "_key": "!actors!QmuwU5oe2fg1GIoX",
+  "name": "Dr. Marek Kowalski",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-07.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 160,
+  "prototypeToken": {
+    "name": "Dr. Marek Kowalski",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-07.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Fill-in pathologist at the medical examiner's office",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Fill-in pathologist at the medical examiner&#39;s office</td></tr></tbody></table><p>Thirty-eight, a recent hire, very conscientious. He did his job right on case 26-3307, and that&#39;s the problem.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 2
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 6
+      }
+    },
+    "exceptionaldicepools": {
+      "medicine": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "science": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-07",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

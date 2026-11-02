@@ -1,0 +1,238 @@
+{
+  "SBN": {
+    "titulo": "The Ward File",
+    "soloNarrador": "Only the Storyteller can do that.",
+    "chat": {
+      "avisoNarrador": "The Ward File · note for the Storyteller"
+    },
+    "settings": {
+      "indicador": {
+        "Name": "Storyteller indicator",
+        "Hint": "Shows a small bar above the macro bar with the Thermometer and the current night (Storyteller only)."
+      },
+      "vistaNarrador": {
+        "Name": "See the map in dark scenes",
+        "Hint": "With no token selected, the Storyteller sees the scene brightened to read the map. Players still see it dark; select a token to see through its eyes."
+      }
+    },
+    "importar": {
+      "titulo": "The Ward File: import the chronicle",
+      "pregunta": "This world doesn't have the chronicle yet. Import <strong>The Ward File</strong> now (journals, characters, scenes and macros)? You can do it later from the “Import the chronicle” compendium.",
+      "si": "Import",
+      "no": "Not now",
+      "actualizarTitulo": "The Ward File: update the chronicle",
+      "actualizarPregunta": "This world's chronicle was imported with version {importada} of the module and you now have {version}. Update it?",
+      "actualizarSeActualiza": "Updated:",
+      "actualizarQueSe": "the text of the journals, the scenes (map, walls, lights), the macros and the NPC actors with their sheets, as they come in this version.",
+      "actualizarSeConserva": "Kept:",
+      "actualizarQueNo": "who can see and who owns each document; the handouts and pages you already revealed; the PCs and every actor owned by a player (left untouched: Hunger, damage, XP and gear stay as they are; only missing ones are created); the pages, items, tokens, drawings and notes you added by hand; the active scene; and the state of the chronicle (Thermometer, clues, night).",
+      "actualizarAviso": "Anything you changed by hand INSIDE one of the module's documents (the text of a page, an NPC's sheet, a wall) is overwritten by the new version.",
+      "actualizarSi": "Update",
+      "sinAventura": "I can't find the Adventure in the module's “{pack}” compendium.",
+      "hecho": "Chronicle imported: {creados} new documents, {actualizados} updated.",
+      "conservados": "{n} player-owned actor(s) were not updated: {nombres}."
+    },
+    "idioma": {
+      "es": "Spanish (El Expediente Ward)",
+      "en": "English (The Ward File)",
+      "etiqueta": "Chronicle language",
+      "hint": "The language of the journals, sheets, scenes and the Panel. Buttons show in each user's Foundry language.",
+      "cambiado": "The chronicle is now in {idioma}.",
+      "menu": {
+        "Name": "Chronicle language",
+        "Label": "Choose language",
+        "Hint": "Imports the chronicle in Spanish or in English. Mid-chronicle, it switches language while keeping the PCs, what you revealed and the state of the chronicle.",
+        "titulo": "The Ward File: chronicle language",
+        "actual": "This world's chronicle is in <strong>{idioma}</strong>.",
+        "sinCronica": "This world doesn't have the chronicle yet. Choose the language to import it in.",
+        "cambiar": "Import in this language",
+        "aviso": "Journals, scenes and NPCs are rewritten in the chosen language: anything you changed by hand INSIDE them is lost. Player-owned PCs stay as they are, in their language."
+      }
+    },
+    "termometro": {
+      "nombre": "Thermometer",
+      "cambioInvalido": "I don't understand the Thermometer change “{cambio}” (use +1, -2, =10, congelar or descongelar).",
+      "estaCongelado": "The Thermometer is frozen: it won't go up or down until you unfreeze it.",
+      "yaCongelado": "The Thermometer was already frozen.",
+      "yaDescongelado": "The Thermometer wasn't frozen.",
+      "sinCambio": "The Thermometer is already at {valor}: no change.",
+      "chat": {
+        "titulo": "Thermometer {antes} → {despues} ({cambio})",
+        "congelar": "Thermometer frozen",
+        "descongelar": "Thermometer unfrozen",
+        "valor": "It stays at {valor}. While frozen, it won't go up or down."
+      },
+      "umbral": {
+        "titulo": "{icono} Thermometer {valor}: {texto}",
+        "aviso": "{icono} Thermometer {valor}: {texto}",
+        "jugadores": "What the players notice: “{texto}”",
+        "escena": "Scene: {enlace}",
+        "pnj": "Who: {enlace}",
+        "interludio": "FIRSTLIGHT interlude: {enlace}",
+        "baja": "{icono} The Thermometer drops below threshold {valor}"
+      }
+    },
+    "pistas": {
+      "invalida": "“{id}” isn't a clue in the chronicle (P-01 to P-15).",
+      "tooltipMarcar": "Click: mark the clue as found",
+      "tooltipObtenida": "Found. Click: unmark it",
+      "desmarcarTitulo": "Unmark the clue",
+      "desmarcarPregunta": "Unmark {id} (“{nombre}”) as found?",
+      "chat": {
+        "obtenida": "Clue found",
+        "perdida": "Clue unmarked",
+        "cuenta": "The coterie has {n} of {total} clues."
+      }
+    },
+    "reloj": {
+      "nombre": "Halloway's Clock",
+      "invalida": "“{n}” isn't a night of the Clock (1 to {max}).",
+      "tooltip": "Night {n} · {dia}",
+      "esLaActual": "this is the current night",
+      "clicParaFijar": "click to make it the current night",
+      "fijarTitulo": "Halloway's Clock",
+      "fijarPregunta": "Move to Night {n} ({dia})? It's currently Night {actual}.",
+      "chat": {
+        "titulo": "Night {n} · {dia}",
+        "escena": "Scene: {enlace}"
+      }
+    },
+    "tirada": {
+      "titulo": "Test",
+      "sinSistema": "These tests need the wod5e system.",
+      "sinActor": "There's no character to roll with: select a token or assign yourself a character.",
+      "elegirActor": "Who rolls?",
+      "actor": "Character",
+      "tirar": "Roll",
+      "tooltip": "Difficulty {dif}"
+    },
+    "indicador": {
+      "termometro": "Thermometer",
+      "noche": "Night",
+      "plegar": "Collapse",
+      "desplegar": "Expand",
+      "subir": "Raise the Thermometer",
+      "bajar": "Lower the Thermometer",
+      "congelar": "Freeze the Thermometer",
+      "descongelar": "Unfreeze the Thermometer",
+      "nocheAnterior": "Previous night",
+      "nocheSiguiente": "Next night",
+      "termometroValor": "Thermometer: {valor} of {max}",
+      "proximo": "Next threshold: {valor} · {texto}",
+      "congelado": "Frozen: it won't go up or down.",
+      "ultimo": "Last: {cambio} · {motivo}",
+      "pistasTooltip": "Clues found",
+      "motivo": "Storyteller adjustment (indicator)",
+      "abrirPanel": "Open the Storyteller Panel"
+    },
+    "pruebas": {
+      "invalida": "“{id}” isn't a piece of evidence or a box of the key tests (data/cronica.json)."
+    },
+    "votacion": {
+      "invalido": "Invalid vote: {pnj} → {voto}."
+    },
+    "panel": {
+      "titulo": "Storyteller Panel",
+      "control": "Storyteller Panel (The Ward File)",
+      "sinDatos": "data/cronica.json didn't load: thresholds, nights and clues are missing. Reinstall the module or run npm run contenido.",
+      "noImportado": "That document isn't in the world (did you import the chronicle?)",
+      "celula": "FIRSTLIGHT Cell: open the sheet",
+      "desesperacion": "Desperation",
+      "peligro": "Danger",
+      "interludio": {
+        "aviso": "{icono} The Thermometer crossed {valor}: time for the FIRSTLIGHT interlude",
+        "umbral": "Interlude:"
+      },
+      "tabs": {
+        "termometro": "Thermometer",
+        "reloj": "Clock",
+        "pistas": "Clues",
+        "tiradas": "Key tests"
+      },
+      "termometro": {
+        "fijar": "Set",
+        "congelar": "Freeze",
+        "descongelar": "Unfreeze",
+        "motivoPlaceholder": "Reason (for ±, set and freeze)",
+        "motivoManual": "Storyteller adjustment (panel)",
+        "umbrales": "Thresholds",
+        "enLaCiudad": "What happens in the city",
+        "perciben": "What the players notice",
+        "rapidos": "What moves it",
+        "grupoNoche": "Tonight · Night {n} ({dia})",
+        "grupoMapa": "On this map · {lugar}",
+        "grupoSiempre": "In any scene",
+        "grupoResto": "The rest of the chronicle",
+        "condicional": "if it happens",
+        "tope": "tonight {veces}/{tope}",
+        "evitar": "How to keep it from rising",
+        "condiciones": "What changes with the value",
+        "historial": "History",
+        "historialVacio": "Nothing has moved the Thermometer yet.",
+        "cuando": "When",
+        "cambio": "Change",
+        "motivo": "Reason",
+        "quien": "Who"
+      },
+      "reloj": {
+        "actual": "Night {n} of {total}",
+        "esta": "tonight",
+        "fijar": "Move to this night",
+        "horas": "Hour by hour",
+        "variantes": "If the coterie steps in"
+      },
+      "pistas": {
+        "titulo": "Clues",
+        "pista": "Clue",
+        "obtencion": "Where it's found",
+        "dados": "Dice",
+        "pruebas": "Evidence and witnesses (no clue number)",
+        "pruebasNota": "What the coterie got hold of, or what happened at the table, that adds (or removes) dice for the key tests. Marking them doesn't notify anyone."
+      },
+      "tiradas": {
+        "sinActores": "There are no characters to roll with: import the chronicle or assign characters to the players.",
+        "dificultad": "Difficulty {dif}",
+        "ruta": "Pool",
+        "pistasQueSuman": "Clues they can present (+{n} each)",
+        "mesa": "At the table",
+        "dados": "dice",
+        "tirar": "Roll {n} dice",
+        "porPistas": "Clues ({n})",
+        "flavor": "Pool {base} {extra} = {total}",
+        "listaComprobacion": "Case checklist",
+        "aHalloway": "to Halloway",
+        "tirarHalloway": "Roll for Halloway",
+        "sinHalloway": "Halloway (PNJ-03) isn't in the world: import the chronicle.",
+        "tiradaHalloway": "A4-E01 · Halloway: {texto} ({n} dice)",
+        "hallowayMenos": "Halloway {n} dice (the Council moved to the Glass Gallery)",
+        "exitosCoterie": "Coterie successes",
+        "exitosHalloway": "Halloway successes",
+        "margen": "Margin:",
+        "margenes": "Margins",
+        "resultados": "Results"
+      },
+      "votacion": {
+        "titulo": "Regency vote",
+        "primogenito": "Primogen",
+        "defecto": "Default",
+        "cambia": "Changes if…",
+        "voto": "Vote",
+        "votos": {
+          "si": "Yes (regency)",
+          "no": "No",
+          "abstencion": "Abstain",
+          "azar": "Unpredictable"
+        },
+        "azar": "Roll 1 die: even, yes; odd, no",
+        "tiradaAzar": "{nombre}'s vote: {voto}",
+        "cambiaria": "The coterie already has what it takes to change this vote.",
+        "cuenta": "Yes {si} · No {no} · Abstain {abstencion} · Undecided {azar}",
+        "veredicto": {
+          "aprobada": "Halloway gets the regency ({necesita} of {total})",
+          "pendiente": "It depends on the undecided votes",
+          "rechazada": "The regency doesn't pass"
+        }
+      }
+    }
+  }
+}

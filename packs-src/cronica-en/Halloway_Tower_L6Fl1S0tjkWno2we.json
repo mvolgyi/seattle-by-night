@@ -1,0 +1,109 @@
+{
+  "_id": "L6Fl1S0tjkWno2we",
+  "_key": "!journal!L6Fl1S0tjkWno2we",
+  "name": "Halloway Tower",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 60,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-06",
+      "archivo": "content/ciudad/LUG-06.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "ojSIQTmGaP4KFsM2",
+      "_key": "!journal.pages!L6Fl1S0tjkWno2we.ojSIQTmGaP4KFsM2",
+      "name": "Halloway Tower",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Downtown · Charles Halloway&#39;s Haven · Map: yes (penthouse and vault)</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "JhrUgexJe92KZmkU",
+      "_key": "!journal.pages!L6Fl1S0tjkWno2we.JhrUgexJe92KZmkU",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Forty-two stories of dark glass in the financial district. The private elevator rises without a sound and opens onto a penthouse with soaring ceilings and furniture that looks like it has never been used. The entire west wall is a window over Elliott Bay: the port cranes, the ferries, the island where the Hound lives. From up here, the city looks like a game board.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "uSlgqElknZgbswKr",
+      "_key": "!journal.pages!L6Fl1S0tjkWno2we.uSlgqElknZgbswKr",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> floors 1 through 38 are Halloway Meridian Capital offices (Influence and Resources); floor 40 has ghoul security (@UUID[Actor.BzNGxOAK3F6Uo56T]{Halloway's Security Ghouls}); the penthouse holds the Council chamber and the study; an underground vault on level −3, reachable only by the private elevator.</p>\n<p><strong>The vault</strong> holds the original of Vance&#39;s journals, copy 1 of 3, and, from Night 6 on (<span class=\"sbn-reloj\" data-sbn-reloj=\"6\" title=\"Night 6 · Tue, Nov 17 (early hours of Nov 17, 2026)\">Night 6</span>), the File&#39;s original drive.</p>\n<p><strong>Backgrounds:</strong> Haven 4, Resources 5, Influence 4.</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}. A possible infiltration before the climax, if the coterie plans one.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

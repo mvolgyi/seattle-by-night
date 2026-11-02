@@ -1,0 +1,691 @@
+{
+  "_id": "J2aw6dqzOFuc9ac8",
+  "_key": "!actors!J2aw6dqzOFuc9ac8",
+  "name": "Liam O'Connor",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-17.webp",
+  "folder": "aMxEpfQ4AWpWbYKv",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "Liam O'Connor",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-17.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Witness and informant (A2-E04)",
+      "chronicle": "The Ward File",
+      "ambition": "For the truth about 1978 to be on the record.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>Nobody gets left alone in the alley</li><li>A badge is a promise, not a license</li></ul><h3>Touchstones</h3><ul><li><strong>Dani Okeke</strong>: His best boxer, 19 years old, whom he&#39;s preparing for her first professional fight.</li></ul>",
+      "sire": "A union Brujah, destroyed in 1934",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1868",
+        "death": "1899"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Profile: Liam O'Connor}</p><blockquote><p><em>“I wore this badge before there was a port. They took it from me with three photos.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Sheriff That Was</td></tr><tr><th>Concept</th><td>Witness and informant (A2-E04)</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Sect</th><td>independent</td></tr><tr><th>Sire</th><td>A union Brujah, destroyed in 1934</td></tr><tr><th>Born</th><td>1868</td></tr><tr><th>Embraced</th><td>1899</td></tr><tr><th>Ambition</th><td>For the truth about 1978 to be on the record.</td></tr></tbody></table><h3>Demeanor</h3><p>Looks about thirty-one. Huge and round-shouldered, red hair and a short beard, a broken nose and cauliflower ears; undershirt, suspenders, and a wool cap.</p>",
+    "appearance": "<p>Looks about thirty-one. Huge and round-shouldered, red hair and a short beard, a broken nose and cauliflower ears; undershirt, suspenders, and a wool cap.</p>",
+    "equipment": "<ul><li>DOC-08: the original letter, kept in a plastic sleeve under the ring</li></ul>",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: doc 07 said “looks about fifty” and “graying red hair”; his age at the Embrace was settled on instead (about 31, red hair with no gray).</p>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "potence": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "celerity": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 5,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 4,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "athletics": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Docks",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "leadership": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Unions",
+            "value": 1,
+            "paths": [
+              "skills.leadership"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "medicine": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Cuts",
+            "value": 1,
+            "paths": [
+              "skills.medicine"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Boxing",
+            "value": 1,
+            "paths": [
+              "skills.brawl"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "politics": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Camarilla from 1931 to 1978",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "brujah"
+        }
+      },
+      "name": "Brujah",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "NCilg3qMp4USJpMs",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.NCilg3qMp4USJpMs"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "FKXHHyEMsEc9JP60",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.FKXHHyEMsEc9JP60"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "j8x585bCJAzDu0VX",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.j8x585bCJAzDu0VX"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Uncanny Grip",
+          "homebrew": false
+        }
+      },
+      "name": "Uncanny Grip",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "ZHXN7qchlkKj4mVh",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.ZHXN7qchlkKj4mVh"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Awe",
+          "homebrew": false
+        }
+      },
+      "name": "Awe",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "aaxkYyD4YKDjSxT7",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.aaxkYyD4YKDjSxT7"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "9sWWPaG8rrAVWoLe",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.9sWWPaG8rrAVWoLe"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Entrancement",
+          "homebrew": false
+        }
+      },
+      "name": "Entrancement",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "MgrxnLZhuaErqj2q",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.MgrxnLZhuaErqj2q"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rapid Reflexes",
+          "homebrew": false
+        }
+      },
+      "name": "Rapid Reflexes",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celerity 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-17"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "DR9H7kfoKkn5fTHO",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.DR9H7kfoKkn5fTHO"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 1 and Allies 1 (the gym kids: young boxers who think he's an old trainer with insomnia)"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 1 and Allies 1 (the gym kids: young boxers who think he&#39;s an old trainer with insomnia)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "ii9z5SArNA1DyZCp",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.ii9z5SArNA1DyZCp"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 1 and Allies 1 (the gym kids: young boxers who think he's an old trainer with insomnia)"
+        }
+      },
+      "name": "Allies",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 1 and Allies 1 (the gym kids: young boxers who think he&#39;s an old trainer with insomnia)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "I42guBX3hvGfE2WD",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.I42guBX3hvGfE2WD"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 2 (the Port of Tacoma and old retired longshoremen)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 2 (the Port of Tacoma and old retired longshoremen)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "DLGoFBXDICHX9U3Q",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.DLGoFBXDICHX9U3Q"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 2 (the Shamrock gym, Port of Tacoma)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 2 (the Shamrock gym, Port of Tacoma)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "qdow4VcKle1q3Cyt",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.qdow4VcKle1q3Cyt"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 2"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "0goZdavec3iSlW3T",
+      "_key": "!actors.items!J2aw6dqzOFuc9ac8.0goZdavec3iSlW3T"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-17",
+      "journal": "JournalEntry.oQ2AhEeDkwdPRv71",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

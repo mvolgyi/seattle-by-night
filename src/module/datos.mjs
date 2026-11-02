@@ -1,4 +1,5 @@
 import { SBN } from "./constantes.mjs";
+import { idiomaCronica, datosDe } from "./idioma.mjs";
 
 /**
  * Datos de la crónica para el tiempo de juego: data/cronica.json, que genera
@@ -35,7 +36,8 @@ export class Datos {
 
   /**
    * Pide los datos (una sola vez): data/cronica.json si el usuario es GM,
-   * data/publico.json si no. Necesita game.user: se llama desde `setup`.
+   * data/publico.json si no, del idioma de la crónica (data/en/… en inglés).
+   * Necesita game.user y los settings del mundo: se llama desde `setup`.
    */
   static cargar() {
     if (!game.user) return Promise.resolve();
@@ -49,9 +51,19 @@ export class Datos {
     return this.#carga;
   }
 
-  /** Qué archivo le toca a este usuario. */
+  /** Qué archivo le toca a este usuario, en el idioma de la crónica. */
   static get archivo() {
-    return game.user?.isGM ? SBN.DATOS : SBN.DATOS_PUBLICO;
+    return datosDe(game.user?.isGM ? SBN.DATOS : SBN.DATOS_PUBLICO, idiomaCronica());
+  }
+
+  /**
+   * Vuelve a pedir los datos (cambió el idioma de la crónica). Los ids son los
+   * mismos en los dos idiomas: el estado del mundo sigue valiendo.
+   */
+  static recargar() {
+    this.#carga = null;
+    this.error = null;
+    return this.cargar();
   }
 
   /** ¿Son los datos públicos (cliente de jugador)? */

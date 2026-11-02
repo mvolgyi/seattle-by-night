@@ -1,0 +1,656 @@
+{
+  "_id": "JtFCjV4kHyARORQl",
+  "_key": "!actors!JtFCjV4kHyARORQl",
+  "name": "Rosa Iturbe",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-11.webp",
+  "folder": "aMxEpfQ4AWpWbYKv",
+  "sort": 30,
+  "prototypeToken": {
+    "name": "Rosa Iturbe",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-11.webp"
+    }
+  },
+  "system": {
+    "group": "1bO7d7GAsCR0I3Q3",
+    "headers": {
+      "concept": "Baroness of Everett",
+      "chronicle": "The Ward File",
+      "ambition": "For Everett to be a free domain recognized by everyone.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>Nobody uses a minor as herd</li><li>Decisions get put to a vote</li></ul><h3>Touchstones</h3><ul><li><strong>Joe Barrientos</strong>: The oldest welder in the shipyard, who has kept the night shift for her since 1989.</li></ul>",
+      "sire": "An Anarch from the shipyard, who disappeared in 1999",
+      "generation": "11"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1961",
+        "death": "1991"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Profile: Rosa “Salt” Iturbe}</p><blockquote><p><em>“Nobody kisses rings here. Here, we weld.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>Salt</td></tr><tr><th>Concept</th><td>Baroness of Everett</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Sect</th><td>Anarchs</td></tr><tr><th>Sire</th><td>An Anarch from the shipyard, who disappeared in 1999</td></tr><tr><th>Born</th><td>1961</td></tr><tr><th>Embraced</th><td>1991</td></tr><tr><th>Ambition</th><td>For Everett to be a free domain recognized by everyone.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{Salt&#39;s}</td></tr></tbody></table><h3>Demeanor</h3><p>Short and compact, short black hair, welding burns on her forearms; blue work coveralls with her name embroidered on them and steel-toed boots.</p>",
+    "appearance": "<p>Short and compact, short black hair, welding burns on her forearms; blue work coveralls with her name embroidered on them and steel-toed boots.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 2,
+      "generation": "11"
+    },
+    "humanity": {
+      "value": 7,
+      "stains": 0
+    },
+    "disciplines": {
+      "celerity": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 3,
+        "active": false
+      },
+      "charisma": {
+        "value": 4,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "craft": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Welding",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "leadership": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Assemblies",
+            "value": 1,
+            "paths": [
+              "skills.leadership"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "melee": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tools",
+            "value": 1,
+            "paths": [
+              "skills.melee"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "politics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Anarchs",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "brujah"
+        }
+      },
+      "name": "Brujah",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "gPzPdNbfeF2LQwqz",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.gPzPdNbfeF2LQwqz"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rapid Reflexes",
+          "homebrew": false
+        }
+      },
+      "name": "Rapid Reflexes",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celerity 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-11"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "IIJryTooOvoDLoI3",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.IIJryTooOvoDLoI3"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-11"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "hKx9b2N1y80Wr2by",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.hKx9b2N1y80Wr2by"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-11"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "8nrkjt6zMxIOj12I",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.8nrkjt6zMxIOj12I"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Awe",
+          "homebrew": false
+        }
+      },
+      "name": "Awe",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-11"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "HGiQAFkp26uUJDi0",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.HGiQAFkp26uUJDi0"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lingering Kiss",
+          "homebrew": false
+        }
+      },
+      "name": "Lingering Kiss",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-11"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "FqjKEswQaxJuWOCx",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.FqjKEswQaxJuWOCx"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Allies 3 and Herd 2 (the union: loyal longshoremen and welders)"
+        }
+      },
+      "name": "Allies",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Allies 3 and Herd 2 (the union: loyal longshoremen and welders)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "uaw7MLHe9M0MPzqJ",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.uaw7MLHe9M0MPzqJ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Allies 3 and Herd 2 (the union: loyal longshoremen and welders)"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Allies 3 and Herd 2 (the union: loyal longshoremen and welders)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "RhVidKVWyaOfT8Hz",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.RhVidKVWyaOfT8Hz"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence 2 (the Port of Everett and the naval base)"
+        }
+      },
+      "name": "Influence",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence 2 (the Port of Everett and the naval base)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "M8rsRT5EtJvY4soK",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.M8rsRT5EtJvY4soK"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 2 (a ship's hull in dry dock, Everett's old shipyard, LUG-10)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 2 (a ship&#39;s hull in dry dock, Everett&#39;s old shipyard, LUG-10)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "y38uvVzzcfZBzzaY",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.y38uvVzzcfZBzzaY"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 2"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "zi9yt1t2M2QRwMGO",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.zi9yt1t2M2QRwMGO"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Salt's Anarchs (COT-03; MEN-05): some fifteen Kindred"
+        }
+      },
+      "name": "Salt's Anarchs",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Salt&#39;s Anarchs (COT-03; MEN-05): some fifteen Kindred</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "r6wSKZzgIoAAe9af",
+      "_key": "!actors.items!JtFCjV4kHyARORQl.r6wSKZzgIoAAe9af"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-11",
+      "journal": "JournalEntry.WHkwE8CYfaKW5WyO",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

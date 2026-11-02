@@ -1,0 +1,85 @@
+{
+  "_id": "8EZofopivOgpo5tE",
+  "_key": "!journal!8EZofopivOgpo5tE",
+  "name": "Primogen Council Agenda",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-08",
+      "archivo": "content/documentos/AYU-08.md",
+      "soporte": "orden-del-dia",
+      "entrega": [
+        "A4-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "QtnmA6llg7pIo5ME",
+      "_key": "!journal.pages!8EZofopivOgpo5tE.QtnmA6llg7pIo5ME",
+      "name": "Primogen Council Agenda",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-orden-del-dia\"><p class=\"sbn-membrete\"><span class=\"sbn-acotacion\">[Letterhead]</span> a stylized H, embossed, no color</p>\n<p class=\"sbn-doc-titulo\">EXTRAORDINARY SESSION OF THE PRIMOGEN COUNCIL OF THE DOMAIN OF SEATTLE</p>\n<p>Convened at the request of the Primogen of Clan Ventrue</p>\n<p>Night of November 19, 2026 · 10:30 PM · Halloway Tower, 42nd floor</p>\n<p><strong>Attendees summoned:</strong></p>\n<p>H.H. Prince Marcus Whitmore · Primogen Charles Halloway (Ventrue) · Primogen and Keeper of Elysium Solène Marchetti (Toreador) · Primogen and Regent Anneliese Voight (Tremere) · Primogen Abel Thornquist (Nosferatu) · Primogen Wendell Fry (Malkavian) · Sheriff Ethan Montgomery, attending as witness</p>\n<p class=\"sbn-doc-titulo\">AGENDA</p>\n<ol>\n<li>Presentation on the presence in the domain of a Second Inquisition cell and on the existence of a source supplying it with information from within this court.</li>\n<li>Presentation on the incidents at Terminal 46 and in SoDo, and on the possible involvement of an agent tied to the Sheriff.</li>\n<li>Identification of the Second Inquisition&#39;s source. <em>(Documentation attached in a separate folder.)</em></li>\n<li>Motion for an emergency regency.</li>\n</ol>\n<p><strong>TEXT OF THE MOTION (item 4)</strong></p>\n<p>Whereas the security of the Masquerade in the domain has been gravely and continuously compromised;</p>\n<p>Whereas H.H. the Prince was warned of this threat by the Regent of the Chantry on November 5 and no measure whatsoever was taken;</p>\n<p>Whereas the security apparatus of the domain, under the charge of the Sheriff and his agents, is under suspicion;</p>\n<p>The Primogen <strong>REQUEST</strong> that H.H. the Prince temporarily delegate his functions to an emergency Regent, chosen from among the Primogen, until the threat has been neutralized, and that the minutes of this session be forwarded to the Justicar of Clan Ventrue for her review and confirmation.</p>\n<p>Primogen Charles Halloway is proposed as emergency Regent.</p>\n<p><em>Votes required: simple majority of the Primogen present.</em></p>\n<section class=\"secret\" id=\"secret-ua6Ji6vpX89tHeIB\"><p class=\"sbn-acotacion\">[At the bottom, on the coterie&#39;s copy, if anyone looks closely: the paper carries an almost invisible watermark. “Cascade Holdings LLC.”]</p>\n</section>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "HpCf99Zfrq32wV6B",
+      "_key": "!journal.pages!8EZofopivOgpo5tE.HpCf99Zfrq32wV6B",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> Formal document. <strong>Delivery:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}.</p>\n<p><em>Storyteller: the document Halloway hands out in folders, one per attendee, in @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}. Heavy paper with Halloway Tower letterhead.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

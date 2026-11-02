@@ -1,0 +1,82 @@
+{
+  "_id": "w9xeQJg6psfiMjFU",
+  "_key": "!journal!w9xeQJg6psfiMjFU",
+  "name": "Prologue · Rain over Ballard",
+  "folder": "FKeYwpEhGbx72MA5",
+  "sort": 110,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AVE-01-P0",
+      "archivo": "content/cronica/aventura/11-prologo.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "CFf4W9SStWZF1eSd",
+      "_key": "!journal.pages!w9xeQJg6psfiMjFU.CFf4W9SStWZF1eSd",
+      "name": "Preludes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Before @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE}, every character other than @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David} lives through a brief moment in the small hours of the same night as the break-in. These are one- or two-minute scenes, with no tests, so each player starts the session with something in hand. Read them separately or together.</p>\n<aside class=\"sbn-recuadro\"><h4>Storyteller Notes · Preludes</h4><p><strong>Celeste (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{PJ-02}).</strong> At 3:30 a.m., @UUID[Actor.eRE6FTNdGO76lzPK]{Mr. Pell} texts her asking her to authorize “an urgent payment to a security vendor” from one of Halloway Meridian&#39;s companies. It&#39;s routine. She signs off on it. <em>(It&#39;s the payment to the @UUID[Actor.9rv5Jdb3y6bZZ1fj]{MEN-01} team. If she reviews the transfer later, it&#39;s a clue: an early <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-14\"><span class=\"sbn-pista-id\">P-14</span> <span class=\"sbn-pista-nombre\">The Payment from Cascade Holdings</span></button>.)</em></p>\n<p><strong>Ezra (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{PJ-03}).</strong> On his monitors down in the underground, at 2:52 a.m., a block of doorbell cameras in Ballard goes dark. All Gale Sentinel, all at once, for eleven minutes. He&#39;s never seen a failure that clean. <em>(<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-01\"><span class=\"sbn-pista-id\">P-01</span> <span class=\"sbn-pista-nombre\">Professional Mortal Thieves; Looped Cameras</span></button>.)</em></p>\n<p><strong>Nadia (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{PJ-04}).</strong> At 3:20 a.m. she gets a voicemail from @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} on her regular phone. All she hears is four seconds of breathing, and then it cuts off. <em>(Helen started to call her and hung up. Nadia can go to the apartment on her own.)</em></p>\n<p><strong>Hal (@UUID[JournalEntry.B4nqUk8dojvCw97H]{PJ-05}).</strong> He&#39;s watching David&#39;s hangar on @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Montgomery}&#39;s orders, as he does every few weeks. At 3:21 a.m. he sees David and @UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Bear} tear out in the truck. <em>(Hal can follow them or report in.)</em></p>\n<p><strong>Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{PJ-06}).</strong> She&#39;s on leave, at home, unable to sleep. At 3:40 a.m. her ex-husband, the retired detective, calls her: “They&#39;re telling me there&#39;s a weird call in Ballard nobody wants to take. You know anything?” <em>(She doesn&#39;t know anything yet. But she will.)</em></p>\n</aside>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · Celeste&#39;s Clue</h4><p>Installment 1 (doc 10) called this clue “an early P-11.” Installment 2 (doc 11) defines P-14 as the payment to Lonnie “made from Cascade Holdings LLC, a Halloway Meridian company (the one Celeste signed off on in her prelude),” and Part 4 (doc 13) talks about “P-14 and the prelude note.” The newest doc wins: it&#39;s @UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC]{The Payment from Cascade Holdings}. P-11 is still Gale&#39;s signature (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}).</p>\n</aside>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "yyXMKcpDOIhGuZIB",
+      "_key": "!journal.pages!w9xeQJg6psfiMjFU.yyXMKcpDOIhGuZIB",
+      "name": "A0-E01 · The Call from SAFE",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h3>Storyteller Context</h3>\n<p>It&#39;s 3:19 a.m. @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}&#39;s flip phone rings for the first time in four years. The conversation is the one told in @UUID[JournalEntry.CeLqLZCfHQEtHYlk]{CAP-00}. Fifteen minutes later, David and @UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Bear} arrive at @UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{Helen's apartment}. Nadia and Hal can arrive too if they followed their preludes. The rest of the coterie isn&#39;t there yet: they come together in @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks}.</p>\n<p>The goal of the scene is simple: secure @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen}, figure out what happened, and get out before things get worse. What the coterie doesn&#39;t know is that the doorbell camera on 3B, across from Helen&#39;s door, is still streaming.</p>\n<p><em>If you&#39;re playing with a single player, this scene is the way in, and David arrives alone with Bear.</em></p>\n<section class=\"sbn-leer\"><p>Market Street gleams in the rain. The hardware store is closed, its shutter pulled down, and above it, on the third floor, a single window is lit. The street door is open. The stairwell smells of damp, of wet wool, and of something else, metallic and sweet, like coins squeezed in a fist. In the third-floor hallway every door has a camera doorbell, each with its little blue light. Helen&#39;s door is shut. On the other side, someone is counting under their breath: “...one hundred forty-one, one hundred forty-two...”</p>\n</section>\n<h3>Tests</h3>\n<ul>\n<li><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.awareness\" data-dificultad=\"3\" data-label=\"Wits + Awareness (Difficulty 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Wits + Awareness (Difficulty 3)</a>: the doorbell camera on 3B, the only one in the hallway pointed at Helen&#39;s door, has a steady blue light and a second, tiny green light, blinking. It&#39;s streaming live.</li>\n<li><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.resolve skills.awareness\" data-dificultad=\"2\" data-label=\"Resolve + Awareness (Difficulty 2)\"><i class=\"fa-solid fa-dice-d10\"></i> Resolve + Awareness (Difficulty 2)</a>, or automatic with Auspex 1: the coin smell in the hallway is Vitae, but watered-down and with no Beast behind it. It belongs to a ghoul (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-02\"><span class=\"sbn-pista-id\">P-02</span> <span class=\"sbn-pista-nombre\">Ghoul Vitae on the Doorknob</span></button>).</li>\n<li><a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"3\" data-label=\"Intelligence + Technology (Difficulty 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Intelligence + Technology (Difficulty 3)</a>: the camera on her door and the one on 3B are the same Gale Sentinel model. Helen&#39;s has a disconnection log from 2:52 to 3:03 (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-01\"><span class=\"sbn-pista-id\">P-01</span> <span class=\"sbn-pista-nombre\">Professional Mortal Thieves; Looped Cameras</span></button>).</li>\n</ul>\n<h3>Coterie Options</h3>\n<table class=\"sbn-tabla sbn-tabla-claves\"><tbody><tr>\n<td><strong>Escape</strong></td>\n<td>Taking Helen out by the fire escape avoids the 3B camera. <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.dexterity skills.stealth\" data-dificultad=\"2\" data-label=\"Dexterity + Stealth (Difficulty 2)\"><i class=\"fa-solid fa-dice-d10\"></i> Dexterity + Stealth (Difficulty 2)</a> so no one in the building sees them go down. If they leave through the hallway without doing anything about the camera, ANOMALY logs each Kindred as a “cold subject”: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"They left through the hallway without dealing with the 3B camera (A0-E01)\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">They left through the hallway without dealing with the 3B camera (A0-E01)</span></button>.</td>\n</tr><tr>\n<td><strong>Manipulate</strong></td>\n<td>Helen is in shock and only half trusts David, the one person she called. <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.charisma skills.persuasion\" data-dificultad=\"2\" data-label=\"Charisma + Persuasion (Difficulty 2)\"><i class=\"fa-solid fa-dice-d10\"></i> Charisma + Persuasion (Difficulty 2)</a> to get her to agree to leave with them tonight. On a failure, she refuses to leave her home until dawn. With 3 or more successes, she volunteers the business about the ghoul sniffing the stairwell.</td>\n</tr>\n<tr>\n<td><strong>Combat</strong></td>\n<td>There&#39;s no one to fight. But if someone smashes the 3B camera, the last image it sends is a hand moving faster than it should (<button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"They smashed the 3B camera (A0-E01)\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">They smashed the 3B camera (A0-E01)</span></button>). Opening it carefully and disconnecting it is <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.dexterity skills.larceny\" data-dificultad=\"3\" data-label=\"Dexterity + Larceny (Difficulty 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Dexterity + Larceny (Difficulty 3)</a>, and the Thermometer doesn&#39;t go up.</td>\n</tr>\n<tr>\n<td><strong>Disciplines</strong></td>\n<td><strong>Obfuscate</strong> (Cloak of Shadows) keeps the camera from recording whoever uses it, but not the others. <strong>Auspex 4</strong> (Spirit&#39;s Touch) on the doorknob: gloves, a calm pulse, and a thirst for something that isn&#39;t food, the mark of a ghoul waiting for their next fix (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-02\"><span class=\"sbn-pista-id\">P-02</span> <span class=\"sbn-pista-nombre\">Ghoul Vitae on the Doorknob</span></button>). <strong>Dominate</strong> on Helen to calm her works, but it costs 1 Stain to anyone who uses it on their own Touchstone (David), and Helen notices the gap in her memory the next day.</td>\n</tr>\n</tbody></table>\n<h3>Dialogue Guide: Helen Ward</h3>\n<p><em>Helen is exhausted and scared, but she&#39;s still a journalist. She talks fast, smokes, and asks questions whenever she can. She&#39;s more direct with David than with anyone.</em></p>\n<ul>\n<li><strong>“Are you okay?”</strong> — “I&#39;m in one piece. Okay is something else.”</li>\n<li><strong>“What did they take?”</strong> — “Everything that matters. The drive, the copy in the closet. And somebody wiped the cloud at 3:01. This isn&#39;t some random burglar: they didn&#39;t even take the TV.”</li>\n<li><strong>“Who knew the file existed?”</strong> — “Nadia, my producer. My source at the M.E.&#39;s office. You, I guess.” She looks at him. “Did you know?”</li>\n<li><strong>“Did you see their faces?”</strong> — “Caps, gloves. One of them stopped in the hallway and sniffed the stairs. Like a dog. He smelled like wet wool and coins.”</li>\n<li><strong>(To David) “Why didn&#39;t you change the lock?”</strong> — She goes quiet for a moment. “Because you never told me why. And I don&#39;t do things without knowing why.”</li>\n<li><strong>“Who are they?”</strong> (if Nadia or Hal are present) — “Don&#39;t take me for an idiot. I called one number and three people showed up. None of you blinks enough.”</li>\n</ul>\n<h3>Clues</h3>\n<p><button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-01\"><span class=\"sbn-pista-id\">P-01</span> <span class=\"sbn-pista-nombre\">Professional Mortal Thieves; Looped Cameras</span></button> (the cameras disconnected from 2:52 to 3:03) · <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-02\"><span class=\"sbn-pista-id\">P-02</span> <span class=\"sbn-pista-nombre\">Ghoul Vitae on the Doorknob</span></button> (ghoul Vitae on the doorknob and in the hallway)</p>\n<h3>Exits</h3>\n<p>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took} (the scene continues in the apartment) · if the coterie takes Helen away right away, A1-E01 takes place at the @UUID[JournalEntry.104UV0anmZHNCTrD]{hangar}, and P-02 is lost if it wasn&#39;t detected.</p>\n<h3>Storyteller Notes</h3>\n<ul>\n<li>If nobody notices the 3B camera, don&#39;t say so. Let it be a surprise in @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes} or @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}, when they find their own image on Gale&#39;s servers.</li>\n<li>Bear stays in the truck watching the street. If someone asks him, he saw a gray electric car parked half a block down with someone inside: it&#39;s the ghoul lookout (@UUID[Actor.BzNGxOAK3F6Uo56T]{MEN-04}). If the coterie does nothing, it leaves at 4:10 a.m.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "A0-E01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

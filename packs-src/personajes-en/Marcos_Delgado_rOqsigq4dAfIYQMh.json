@@ -1,0 +1,146 @@
+{
+  "_id": "rOqsigq4dAfIYQMh",
+  "_key": "!actors!rOqsigq4dAfIYQMh",
+  "name": "Marcos Delgado",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-10.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 170,
+  "prototypeToken": {
+    "name": "Marcos Delgado",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-10.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Survivor of Emily's night (1996), youth counselor",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Survivor of Emily&#39;s night (1996), youth counselor</td></tr></tbody></table><p>Survivor of Emily&#39;s night (1996), youth counselor (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived}).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 3
+      },
+      "social": {
+        "value": 5
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "persuasion": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Rainier Valley",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-10",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

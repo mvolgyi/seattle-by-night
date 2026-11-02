@@ -1,0 +1,86 @@
+{
+  "_id": "WW7eg88I0uDGj8ks",
+  "_key": "!journal!WW7eg88I0uDGj8ks",
+  "name": "FIRSTLIGHT, Internal Memo SEA-0411",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-07",
+      "archivo": "content/documentos/DOC-07.md",
+      "soporte": "correo",
+      "entrega": [
+        "A3-E02",
+        "A2-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "2nuDaPVyJq2EOMhb",
+      "_key": "!journal.pages!WW7eg88I0uDGj8ks.2nuDaPVyJq2EOMhb",
+      "name": "FIRSTLIGHT, Internal Memo SEA-0411",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-correo\"><dl class=\"sbn-correo-cabecera\"><dt>FROM</dt><dd>Analyst S. Hale, Puget Cell</dd><dt>TO</dt><dd>Special Agent D. Okafor</dd><dt>DATE</dt><dd>11/10/2026</dd><dt>REF.</dt><dd>SEA-0411</dd><dt>CLASSIFICATION</dt><dd class=\"sbn-correo-clasificacion\">FIRSTLIGHT / CONFIDENTIAL / DO NOT FORWARD</dd><dt>SUBJECT</dt><dd>Source ARCHER, second delivery</dd></dl><div class=\"sbn-correo-cuerpo\"><ol>\n<li><p>The anonymous source designated ARCHER has delivered a second sample through the agreed channel. Provisional reliability: B-2 (usually reliable; information probably true). The source claims to have access “to the local structure” and to know its hierarchy.</p>\n</li>\n<li><p>The sample includes three locations of interest:</p>\n<p>a) Rural property in the Snohomish Valley, with a private boat landing.</p>\n<p>b) Industrial hangar on Harbor Island, registered to a dormant logistics company.</p>\n<p>c) Penthouse in a residential building on Capitol Hill, registered to a cultural foundation.</p>\n</li>\n<li><p>All three match areas flagged in episode 112 of the podcast “What the City Forgets” (WARD, Helen). Recommend increasing passive surveillance on WARD. Direct contact not recommended at this time.</p>\n</li>\n<li><p>The source claims to be able to deliver, within the next few days, “the complete index” of a private archive documenting ten years of incidents in the area. If so, it would be the cell&#39;s biggest find since its creation.</p>\n</li>\n<li><p>Separately: surveillance continues on statistical anomaly no. 1 (M.E. signature “R. A.,” King County office, 15 reports with an inconsistent pattern).</p>\n</li>\n<li><p>Open question: why is the source giving us this? Every source wants something. Until we know what ARCHER wants, I propose treating its deliveries as possible bait.</p>\n</li>\n</ol>\n<p class=\"sbn-firma\">— S. H.</p>\n</div></div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "w5RXUy5SkHFmZfLD",
+      "_key": "!journal.pages!WW7eg88I0uDGj8ks.w5RXUy5SkHFmZfLD",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> encrypted email, printed. <strong>When:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}, on the Gale Sentinel servers (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wRvr7GFOMQsgTJ2z]{SEA-0411 Shipments / DOC-07}), or in @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night} if Voight (@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dr. Anneliese Voight}) trusts the coterie.</p>\n<p><strong>Foreshadows:</strong> the existence of Halloway&#39;s mole and the raid&#39;s target list (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}).</p>\n<p><strong>Truth:</strong> the source <em>ARCHER</em> is Halloway, working through Preston Gale. Every address points to assets belonging to Whitmore, Montgomery, or David. None points to Halloway. If Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}) is in play, the “anomaly” is her; if not, it&#39;s an NPC medical examiner.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

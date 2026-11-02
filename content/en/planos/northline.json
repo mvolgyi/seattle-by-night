@@ -1,0 +1,236 @@
+{
+  "_fuente": {
+    "northline": "3fac91ca6c53f4a9"
+  },
+  "planos": {
+    "northline": {
+      "nombre": "FIRSTLIGHT · Northline Cyber Advisory (11th Floor)",
+      "nota": "**Northline Cyber Advisory**, FIRSTLIGHT's front. “Gray carpet, plastic plants, standing desks, a welcome sign with the logo of a cybersecurity consulting firm” (the logo panel is on the north wall of reception, backlit and with no lettering on the map). “At three in the morning, three lights are burning on the 11th floor. One of them belongs to a conference room with the blinds closed”: the three are the logo panel in reception, the lamp at Hale's station in the open desks, and the fluorescent light in the **conference room**, whose north windows have the blinds drawn (from outside you see the light, not the room).\n\n**Conference room.** The long table and, on the east wall, the **corkboard covered in photos**, Helen's podcast among them. The partition facing the open desks is glass with closed blinds: on the map it's a wall (you can't see in). This is where interlude I-2 “SEA-0411” (SPEC §6) plays out: Okafor and Hale receive ARCHER's delivery (DOC-07).\n\n**Open desks** (the analysts): eight standing desks in two islands. Hale's is the one with the lamp. Okafor “never sits with her back to a door.”\n\n**Restricted area.** From the open desks, a door with a card reader opens onto the hallway to the **locked armory** (lockers of carbines, incendiary ammunition, UV flashlights, vests; at night the tactical team MEN-02 is in a warehouse at the port, not here, so there are gaps) and to the **white “interview” room**: white tile, a table and a chair bolted down, and **high-intensity UV lamps** on the walls. They're off; switched on, every Kindred in their light takes 1 aggravated damage per turn and −2 dice (UV flashlight, FIRSTLIGHT arsenal). The UV lights on the map are marked as off.\n\n**Access.** Elevators and emergency stairs in the floor's shared lobby, south of reception; Northline's glass door is locked at night. Neither has a map of the other end.\n\n**Danger:** “coming in here is the fastest way to raise the Thermometer”: if the intrusion is discovered, Thermometer +3. “It's more useful to watch than to go in.” It doesn't appear in any fixed scene: it's held in reserve for the chronicle, a very bold coterie, and FIRSTLIGHT's interludes (I-2, I-3).",
+      "habitaciones": [
+        {
+          "nombre": "Open desks"
+        },
+        {
+          "nombre": "Conference room"
+        },
+        {
+          "nombre": "Reception"
+        },
+        {
+          "nombre": "Elevator lobby"
+        },
+        {
+          "nombre": "Emergency stairs"
+        },
+        {
+          "nombre": "Restricted hallway"
+        },
+        {
+          "nombre": "Armory"
+        },
+        {
+          "nombre": "White “interview” room"
+        },
+        {
+          "nombre": "Restricted-area restroom"
+        },
+        {
+          "nombre": "Utility risers (closed off)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "North facade (open desks)"
+        },
+        {
+          "nombre": "West facade (open desks)"
+        },
+        {
+          "nombre": "Conference room windows (blinds closed)"
+        },
+        {
+          "nombre": "Conference room door"
+        },
+        {
+          "nombre": "Reception → open desks"
+        },
+        {
+          "nombre": "Reception glass to the lobby"
+        },
+        {
+          "nombre": "Northline glass door (west leaf, locked at night)"
+        },
+        {
+          "nombre": "Northline glass door (east leaf, locked at night)"
+        },
+        {
+          "nombre": "Reception glass to the lobby"
+        },
+        {
+          "nombre": "Emergency stair fire door"
+        },
+        {
+          "nombre": "Restricted-area door (card reader)"
+        },
+        {
+          "nombre": "Armory door (locked)"
+        },
+        {
+          "nombre": "White room door"
+        },
+        {
+          "nombre": "Restricted-area restroom"
+        },
+        {
+          "nombre": "Riser access (service panel, locked)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor and a small desk lamp (the analyst's)"
+        },
+        {
+          "desc": "a tall white standing desk with a monitor"
+        },
+        {
+          "desc": "Hale's stool"
+        },
+        {
+          "desc": "a large grey office printer"
+        },
+        {
+          "desc": "a potted plastic plant in a white pot"
+        },
+        {
+          "desc": "a potted plastic plant in a white pot"
+        },
+        {
+          "desc": "a potted plastic plant in a white pot"
+        },
+        {
+          "desc": "a long white meeting table with a conference phone"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "a wall-wide corkboard covered in pinned photographs and printouts, no legible writing"
+        },
+        {
+          "desc": "a blank backlit wall panel (the logo wall), with no lettering"
+        },
+        {
+          "desc": "a white reception counter with a monitor"
+        },
+        null,
+        {
+          "desc": "a potted plastic plant in a white pot"
+        },
+        {
+          "desc": "a concrete emergency stair going down"
+        },
+        {
+          "desc": "a row of locked steel gun lockers"
+        },
+        {
+          "desc": "steel shelving with ammunition cases, body armour and boxed lamps"
+        },
+        {
+          "desc": "a steel workbench"
+        },
+        {
+          "desc": "a bare steel table bolted to the floor"
+        },
+        {
+          "desc": "a steel chair bolted to the floor, with restraints"
+        },
+        {
+          "desc": "a wall-mounted high-intensity lamp panel, switched off"
+        },
+        {
+          "desc": "a wall-mounted high-intensity lamp panel, switched off"
+        },
+        {
+          "desc": "a wall-mounted high-intensity lamp panel, switched off"
+        },
+        {
+          "desc": "a wall-mounted high-intensity lamp panel, switched off"
+        },
+        {
+          "desc": "a wall-mounted high-intensity lamp panel, switched off"
+        },
+        null,
+        null,
+        {
+          "desc": "vertical service ducts, pipes and cable trays in a concrete shaft"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Backlit logo panel (1 of the 3 lights)"
+        },
+        {
+          "nombre": "Lamp at Hale's station (2 of the 3 lights)"
+        },
+        {
+          "nombre": "Conference room, blinds closed (3 of the 3 lights)"
+        },
+        {
+          "nombre": "Elevator lobby night light"
+        },
+        {
+          "nombre": "White room UV lamps (west), OFF"
+        },
+        {
+          "nombre": "White room UV lamps (east), OFF"
+        },
+        {
+          "nombre": "Stairwell emergency light (outside the suite: not one of the 3 lights)"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Elevators (ground floor)",
+          "pendiente": "there's no map of the tower lobby: the Storyteller moves the tokens by hand"
+        },
+        {
+          "nombre": "Arrival by the emergency stairs"
+        },
+        {
+          "nombre": "Down the emergency stairs (11 floors)",
+          "pendiente": "there's no map of the street"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "Standing at the laptop, by the corkboard."
+        },
+        {
+          "nota": "Sets the coffee down on the table without looking at it."
+        },
+        {
+          "nota": "Comes up to get Okafor for Denny's (leaves at 10:15 p.m.) and may stay on as an escort."
+        }
+      ]
+    }
+  }
+}

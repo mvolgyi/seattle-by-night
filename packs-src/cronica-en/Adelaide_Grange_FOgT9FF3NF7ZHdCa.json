@@ -1,0 +1,193 @@
+{
+  "_id": "FOgT9FF3NF7ZHdCa",
+  "_key": "!journal!FOgT9FF3NF7ZHdCa",
+  "name": "Adelaide Grange",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 190,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-22",
+      "archivo": "content/personajes/PNJ-22.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "G0nnEfIxMoy0fTEO",
+      "_key": "!journal.pages!FOgT9FF3NF7ZHdCa.G0nnEfIxMoy0fTEO",
+      "name": "Adelaide Grange",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-22.webp\" alt=\"Adelaide Grange\">\n<p><strong>Background figure</strong> (no actor sheet) · Boston Ventrue · Prince of Seattle from 1897 to 1962 · sire of @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}.</p>\n<p><em>This page gathers what docs 00–16 say about Grange. The source doc for each fact is in parentheses.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TzlqLOOSwl7WT7C9",
+      "_key": "!journal.pages!FOgT9FF3NF7ZHdCa.TzlqLOOSwl7WT7C9",
+      "name": "What Is Known",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“Prince Adelaide Grange, a Boston Ventrue, ruled from 1897 with an accountant&#39;s hand” over the city&#39;s first Camarilla, small and harbor-bound (doc 05, history; timeline: “1897 · Adelaide Grange (Ventrue), Prince”).</li>\n<li>In 1931 she named @UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor} Sheriff, “because nobody knew the port better than he did” (doc 05), “and because that kept him on her side” (doc 07, O&#39;Connor&#39;s profile). O&#39;Connor survived her fall and served Whitmore for sixteen more years (doc 07).</li>\n<li>In 1958 she Embraced Charles Halloway for his press contacts (doc 06, Halloway&#39;s profile: “<strong>Sire:</strong> Adelaide Grange (PNJ-22) · <strong>Embraced:</strong> 1958”).</li>\n<li>In the spring of 1962, the year of the World&#39;s Fair, she “left the city ‘for health reasons’ and was never seen again” (doc 05). @UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore} took the throne. “Whitmore understood something Grange never saw: in a city that looks forward, power isn&#39;t imposed, it&#39;s displayed” (doc 05).</li>\n<li>ID registry: “PNJ-22 · Adelaide Grange, former Ventrue Prince, vanished in 1962 (background)” (doc 05); “PNJ-22 · Adelaide Grange, Halloway&#39;s sire, driven out by Whitmore in 1962” (doc 06).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CQBRogkud1qsxm9p",
+      "_key": "!journal.pages!FOgT9FF3NF7ZHdCa.CQBRogkud1qsxm9p",
+      "name": "The Truth of 1962",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Whitmore gathered evidence of a Masquerade breach by Grange, “some real and some exaggerated,” and showed it to her in private. She left the city without a fight. It was a clean coup, without bloodshed (doc 06, Whitmore&#39;s profile). His strategy with Halloway is the same one he used with Grange: wait for him to overreach (doc 06).</li>\n<li>Halloway saw it up close: his sire “had been defeated without a drop of blood,” and the method worked. In 1978 he used it against O&#39;Connor (doc 06, Halloway&#39;s profile).</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qUMceqx3La6Vjmp2",
+      "_key": "!journal.pages!FOgT9FF3NF7ZHdCa.qUMceqx3La6Vjmp2",
+      "name": "How They Feel About Her",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Whitmore</strong> (unease): “He never knew whether she left or whether others made her disappear. He prefers not to know” (doc 06).</li>\n<li><strong>Halloway:</strong> “Halloway knows where Grange is.” <em>(False. He&#39;d give anything to know)</em> (doc 06).</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "eZ3wKkgabjg75zgG",
+      "_key": "!journal.pages!FOgT9FF3NF7ZHdCa.eZ3wKkgabjg75zgG",
+      "name": "Rumors",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“Whitmore ran Grange out with blackmail.” <em>(True)</em> (doc 06).</li>\n<li>“Halloway is the childe of former Prince Grange.” <em>(True. Few people remember)</em> (doc 06).</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Rk2uXWkmO156fCe7",
+      "_key": "!journal.pages!FOgT9FF3NF7ZHdCa.Rk2uXWkmO156fCe7",
+      "name": "Echoes in the Adventure",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>In @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}, if the coterie defends the Prince well, Whitmore tells Halloway: “Charles. Sixty-four years ago I watched your sire make the same mistake. She believed a good story was the same thing as the truth” (doc 13). Halloway&#39;s sire is Grange (doc 06).</li>\n<li>In @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · The Hound Changes Masters}, Whitmore abdicates “‘for health reasons,’ like Grange in 1962, and vanishes from the city” (doc 13).</li>\n</ul>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

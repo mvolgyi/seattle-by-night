@@ -1,0 +1,2814 @@
+{
+  "_id": "oMvohIUjvTdrgCUZ",
+  "_key": "!scenes!oMvohIUjvTdrgCUZ",
+  "name": "Part 2 · The Glass Gallery (Elysium)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 30,
+  "width": 2400,
+  "height": 1700,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.6,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "PqjgjsZgSFct8blf",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/galeria.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!oMvohIUjvTdrgCUZ.PqjgjsZgSFct8blf"
+    }
+  ],
+  "journal": "iyojT7kJHH23BWLd",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "0zfzmuumL0qiFrpv",
+      "c": [
+        1800,
+        400,
+        2300,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.0zfzmuumL0qiFrpv"
+    },
+    {
+      "_id": "P3cjBFdPy5o2X4Y6",
+      "c": [
+        600,
+        400,
+        600,
+        760
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.P3cjBFdPy5o2X4Y6"
+    },
+    {
+      "_id": "jpPy4cn1U4dE7fDZ",
+      "c": [
+        600,
+        860,
+        600,
+        990
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.jpPy4cn1U4dE7fDZ"
+    },
+    {
+      "_id": "giyzjzSdCfmW90yk",
+      "c": [
+        600,
+        1110,
+        600,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.giyzjzSdCfmW90yk"
+    },
+    {
+      "_id": "EybTRaGLDpmPUrKc",
+      "c": [
+        100,
+        900,
+        600,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.EybTRaGLDpmPUrKc"
+    },
+    {
+      "_id": "qEiIbym4lq09Ao5s",
+      "c": [
+        400,
+        1200,
+        600,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.qEiIbym4lq09Ao5s"
+    },
+    {
+      "_id": "6ZD1IIYuMJg8Uih5",
+      "c": [
+        2000,
+        1200,
+        2300,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.6ZD1IIYuMJg8Uih5"
+    },
+    {
+      "_id": "kSJGLLHOlMird6jO",
+      "c": [
+        1800,
+        400,
+        1800,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.kSJGLLHOlMird6jO"
+    },
+    {
+      "_id": "rscKyLXwmBdpV3Te",
+      "c": [
+        1800,
+        620,
+        1800,
+        920
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.rscKyLXwmBdpV3Te"
+    },
+    {
+      "_id": "FEDEFmcQ5NLw6Hn2",
+      "c": [
+        1800,
+        1020,
+        1800,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.FEDEFmcQ5NLw6Hn2"
+    },
+    {
+      "_id": "9AEwJNaeKsjNhwn7",
+      "c": [
+        680,
+        970,
+        695,
+        970
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9AEwJNaeKsjNhwn7"
+    },
+    {
+      "_id": "ind2mZeVLccD3eQl",
+      "c": [
+        680,
+        1130,
+        695,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ind2mZeVLccD3eQl"
+    },
+    {
+      "_id": "7MS5uSh9vdby8QTi",
+      "c": [
+        680,
+        970,
+        680,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.7MS5uSh9vdby8QTi"
+    },
+    {
+      "_id": "W6zIlS74QPDrvmlf",
+      "c": [
+        695,
+        970,
+        695,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.W6zIlS74QPDrvmlf"
+    },
+    {
+      "_id": "2XclhFrGB0Ik2sqI",
+      "c": [
+        1800,
+        1500,
+        1860,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.2XclhFrGB0Ik2sqI"
+    },
+    {
+      "_id": "ofVl7ooQ39jaEVxa",
+      "c": [
+        1950,
+        1500,
+        2300,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ofVl7ooQ39jaEVxa"
+    },
+    {
+      "_id": "dEE5zmhEOy1NHhr3",
+      "c": [
+        1800,
+        800,
+        1850,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.dEE5zmhEOy1NHhr3"
+    },
+    {
+      "_id": "0PCSr1gx0AaYWqvc",
+      "c": [
+        1940,
+        800,
+        2300,
+        800
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.0PCSr1gx0AaYWqvc"
+    },
+    {
+      "_id": "PiNc4cMHVrWJ34Hf",
+      "c": [
+        2300,
+        400,
+        2300,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.PiNc4cMHVrWJ34Hf"
+    },
+    {
+      "_id": "YxzCnKlAL2PYijTR",
+      "c": [
+        2000,
+        800,
+        2000,
+        860
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.YxzCnKlAL2PYijTR"
+    },
+    {
+      "_id": "fuc8Wh2y591xWLHU",
+      "c": [
+        2000,
+        950,
+        2000,
+        1330
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.fuc8Wh2y591xWLHU"
+    },
+    {
+      "_id": "9i3oObnrPXRAXN7f",
+      "c": [
+        2000,
+        1420,
+        2000,
+        1500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9i3oObnrPXRAXN7f"
+    },
+    {
+      "_id": "nt6sGpIR1CY1GbG1",
+      "c": [
+        100,
+        900,
+        67,
+        820
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.nt6sGpIR1CY1GbG1"
+    },
+    {
+      "_id": "m7YORIVBGHNJvhw9",
+      "c": [
+        67,
+        820,
+        47,
+        736
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.m7YORIVBGHNJvhw9"
+    },
+    {
+      "_id": "TaB3C05sPqgVIJBC",
+      "c": [
+        47,
+        736,
+        40,
+        650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.TaB3C05sPqgVIJBC"
+    },
+    {
+      "_id": "wxuEHXHhx4y7wYJx",
+      "c": [
+        40,
+        650,
+        47,
+        564
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.wxuEHXHhx4y7wYJx"
+    },
+    {
+      "_id": "XAgUl3oBkbW0L2Rn",
+      "c": [
+        47,
+        564,
+        67,
+        480
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.XAgUl3oBkbW0L2Rn"
+    },
+    {
+      "_id": "cv0AYLJTc2LdtXVj",
+      "c": [
+        67,
+        480,
+        100,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.cv0AYLJTc2LdtXVj"
+    },
+    {
+      "_id": "vT6KJxGmJ7eSrvgt",
+      "c": [
+        400,
+        1200,
+        348,
+        1195
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.vT6KJxGmJ7eSrvgt"
+    },
+    {
+      "_id": "NtU1N83nbinRUKon",
+      "c": [
+        348,
+        1195,
+        297,
+        1182
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.NtU1N83nbinRUKon"
+    },
+    {
+      "_id": "406dshzF4sbTuvIK",
+      "c": [
+        297,
+        1182,
+        250,
+        1160
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.406dshzF4sbTuvIK"
+    },
+    {
+      "_id": "9TYk9KiUukqVi0WH",
+      "c": [
+        250,
+        1160,
+        207,
+        1130
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9TYk9KiUukqVi0WH"
+    },
+    {
+      "_id": "i8YQA3jXGimOCfdx",
+      "c": [
+        207,
+        1130,
+        170,
+        1093
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.i8YQA3jXGimOCfdx"
+    },
+    {
+      "_id": "l4BHPJCpgliQC87O",
+      "c": [
+        170,
+        1093,
+        140,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.l4BHPJCpgliQC87O"
+    },
+    {
+      "_id": "Jbq2SHYb3WqknOp9",
+      "c": [
+        140,
+        1050,
+        118,
+        1003
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.Jbq2SHYb3WqknOp9"
+    },
+    {
+      "_id": "EhUjtopvLQUoAKTT",
+      "c": [
+        118,
+        1003,
+        105,
+        952
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.EhUjtopvLQUoAKTT"
+    },
+    {
+      "_id": "C3esXXN81cuMLMmC",
+      "c": [
+        105,
+        952,
+        100,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.C3esXXN81cuMLMmC"
+    },
+    {
+      "_id": "2EJlfoWctktUK8IE",
+      "c": [
+        600,
+        400,
+        700,
+        372
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.2EJlfoWctktUK8IE"
+    },
+    {
+      "_id": "jvPUquVBcPuEl5Jb",
+      "c": [
+        700,
+        372,
+        800,
+        350
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.jvPUquVBcPuEl5Jb"
+    },
+    {
+      "_id": "XIqM83zO1CmK5uJn",
+      "c": [
+        800,
+        350,
+        960,
+        324
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.XIqM83zO1CmK5uJn"
+    },
+    {
+      "_id": "MTJYasL0CWpJ177L",
+      "c": [
+        960,
+        324,
+        1080,
+        314
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.MTJYasL0CWpJ177L"
+    },
+    {
+      "_id": "lf9N9fl3f2NEB8jQ",
+      "c": [
+        1080,
+        314,
+        1200,
+        310
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.lf9N9fl3f2NEB8jQ"
+    },
+    {
+      "_id": "xzAxQrhY1zccNDXy",
+      "c": [
+        1200,
+        310,
+        1320,
+        314
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.xzAxQrhY1zccNDXy"
+    },
+    {
+      "_id": "duYh1Xphidk2mk3H",
+      "c": [
+        1320,
+        314,
+        1400,
+        320
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.duYh1Xphidk2mk3H"
+    },
+    {
+      "_id": "QD7KyWEMwoF0c0s9",
+      "c": [
+        1400,
+        320,
+        1560,
+        342
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.QD7KyWEMwoF0c0s9"
+    },
+    {
+      "_id": "L0juymxc4VKpHHcP",
+      "c": [
+        1560,
+        342,
+        1680,
+        367
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.L0juymxc4VKpHHcP"
+    },
+    {
+      "_id": "66j9R6aSfAz81JAn",
+      "c": [
+        1680,
+        367,
+        1800,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.66j9R6aSfAz81JAn"
+    },
+    {
+      "_id": "QzGabm9BlIxHDfcw",
+      "c": [
+        1800,
+        1200,
+        1756,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.QzGabm9BlIxHDfcw"
+    },
+    {
+      "_id": "7sBne6XAV2qtyuwQ",
+      "c": [
+        1756,
+        1233,
+        1705,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.7sBne6XAV2qtyuwQ"
+    },
+    {
+      "_id": "IyCqKU8343YNCYiK",
+      "c": [
+        1705,
+        1253,
+        1650,
+        1260
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IyCqKU8343YNCYiK"
+    },
+    {
+      "_id": "gTu3nKkv1noWMGFi",
+      "c": [
+        1650,
+        1260,
+        1595,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.gTu3nKkv1noWMGFi"
+    },
+    {
+      "_id": "ppSftR2SSpsZhD2E",
+      "c": [
+        1595,
+        1253,
+        1544,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ppSftR2SSpsZhD2E"
+    },
+    {
+      "_id": "eppIAYae7T823oXD",
+      "c": [
+        1544,
+        1233,
+        1500,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.eppIAYae7T823oXD"
+    },
+    {
+      "_id": "yQHc2fyIQdGduDTq",
+      "c": [
+        900,
+        1200,
+        856,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.yQHc2fyIQdGduDTq"
+    },
+    {
+      "_id": "IqrUb98R3advycGl",
+      "c": [
+        856,
+        1233,
+        805,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IqrUb98R3advycGl"
+    },
+    {
+      "_id": "94rrC58smVufYtjU",
+      "c": [
+        805,
+        1253,
+        750,
+        1260
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.94rrC58smVufYtjU"
+    },
+    {
+      "_id": "NxXmMGOHcY6ZbzJi",
+      "c": [
+        750,
+        1260,
+        695,
+        1253
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.NxXmMGOHcY6ZbzJi"
+    },
+    {
+      "_id": "G1lhthWAGz30n5qA",
+      "c": [
+        695,
+        1253,
+        644,
+        1233
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.G1lhthWAGz30n5qA"
+    },
+    {
+      "_id": "ITYiFq6ZDpNHCQfx",
+      "c": [
+        644,
+        1233,
+        600,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.ITYiFq6ZDpNHCQfx"
+    },
+    {
+      "_id": "2hoYekzBn37grHwW",
+      "c": [
+        100,
+        100,
+        1800,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.2hoYekzBn37grHwW"
+    },
+    {
+      "_id": "7pm81chTYkNuxi0i",
+      "c": [
+        100,
+        100,
+        100,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.7pm81chTYkNuxi0i"
+    },
+    {
+      "_id": "DWJ5Iou1xVSEX2wq",
+      "c": [
+        1800,
+        100,
+        1800,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.DWJ5Iou1xVSEX2wq"
+    },
+    {
+      "_id": "IVzm9ttnccPAvs2s",
+      "c": [
+        100,
+        400,
+        600,
+        400
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IVzm9ttnccPAvs2s"
+    },
+    {
+      "_id": "mGvnH4rqAXRLioTU",
+      "c": [
+        600,
+        760,
+        600,
+        860
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.mGvnH4rqAXRLioTU"
+    },
+    {
+      "_id": "q5UMflXKe39DChNx",
+      "c": [
+        1800,
+        520,
+        1800,
+        620
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.q5UMflXKe39DChNx"
+    },
+    {
+      "_id": "Gb1CxkBp9x2ofwIW",
+      "c": [
+        1800,
+        920,
+        1800,
+        1020
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.Gb1CxkBp9x2ofwIW"
+    },
+    {
+      "_id": "jDgYNfWtA6xAV2dy",
+      "c": [
+        900,
+        1200,
+        1100,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.jDgYNfWtA6xAV2dy"
+    },
+    {
+      "_id": "WmxOAS67kof3byUV",
+      "c": [
+        1300,
+        1200,
+        1500,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.WmxOAS67kof3byUV"
+    },
+    {
+      "_id": "Q7SqoeIQmUbITjny",
+      "c": [
+        900,
+        1200,
+        900,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.Q7SqoeIQmUbITjny"
+    },
+    {
+      "_id": "9bxR68hnKtaB6Kbk",
+      "c": [
+        1500,
+        1200,
+        1500,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.9bxR68hnKtaB6Kbk"
+    },
+    {
+      "_id": "eImMzIjbvXcvikNN",
+      "c": [
+        900,
+        1500,
+        1060,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.eImMzIjbvXcvikNN"
+    },
+    {
+      "_id": "0ROmq13mQE4ICmB9",
+      "c": [
+        1060,
+        1500,
+        1200,
+        1500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.0ROmq13mQE4ICmB9"
+    },
+    {
+      "_id": "CNOepMWbBq6zCME0",
+      "c": [
+        1200,
+        1500,
+        1340,
+        1500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.CNOepMWbBq6zCME0"
+    },
+    {
+      "_id": "AYDYio72BW8pkBjx",
+      "c": [
+        1340,
+        1500,
+        1500,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.AYDYio72BW8pkBjx"
+    },
+    {
+      "_id": "lxjpVK5jJZT6Jkq5",
+      "c": [
+        1850,
+        800,
+        1940,
+        800
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.lxjpVK5jJZT6Jkq5"
+    },
+    {
+      "_id": "XmzCryl3FQqLvPtK",
+      "c": [
+        2000,
+        860,
+        2000,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.XmzCryl3FQqLvPtK"
+    },
+    {
+      "_id": "mZjqaPmGczs6y372",
+      "c": [
+        1860,
+        1500,
+        1950,
+        1500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.mZjqaPmGczs6y372"
+    },
+    {
+      "_id": "IvzLuBbyZoIFRGjY",
+      "c": [
+        2000,
+        1330,
+        2000,
+        1420
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!oMvohIUjvTdrgCUZ.IvzLuBbyZoIFRGjY"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "uEbnE0y0tkOst9ae",
+      "name": "Red jellyfish (northwest)",
+      "x": 860,
+      "y": 660,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#c4303a",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.uEbnE0y0tkOst9ae"
+    },
+    {
+      "_id": "hLeWIpAofC9S1h0A",
+      "name": "Amber jellyfish (north)",
+      "x": 1160,
+      "y": 560,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.hLeWIpAofC9S1h0A"
+    },
+    {
+      "_id": "x7FEYLSN2nwNysE7",
+      "name": "Red jellyfish (northeast)",
+      "x": 1460,
+      "y": 620,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#c4303a",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.x7FEYLSN2nwNysE7"
+    },
+    {
+      "_id": "gMF2rTQTX3cA32ab",
+      "name": "Amber jellyfish (east)",
+      "x": 1660,
+      "y": 880,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.gMF2rTQTX3cA32ab"
+    },
+    {
+      "_id": "tXzIWH6dDoSbR6oQ",
+      "name": "Amber jellyfish (west)",
+      "x": 920,
+      "y": 960,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.tXzIWH6dDoSbR6oQ"
+    },
+    {
+      "_id": "LthoXs63jjMgyUxb",
+      "name": "Red jellyfish (center)",
+      "x": 1240,
+      "y": 980,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#c4303a",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.LthoXs63jjMgyUxb"
+    },
+    {
+      "_id": "cvCHa7BOD8cIA6D3",
+      "name": "Amber jellyfish (southeast)",
+      "x": 1520,
+      "y": 1080,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1,
+        "dim": 3.6,
+        "color": "#d98f2e",
+        "coloration": 1,
+        "attenuation": 0.75,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 2,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.cvCHa7BOD8cIA6D3"
+    },
+    {
+      "_id": "xkBswvhVpHMMFaga",
+      "name": "Keeper's desk lamp",
+      "x": 965,
+      "y": 1300,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.xkBswvhVpHMMFaga"
+    },
+    {
+      "_id": "yjDEQygwPVvUiGiq",
+      "name": "Private salon lamp",
+      "x": 220,
+      "y": 830,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.yjDEQygwPVvUiGiq"
+    },
+    {
+      "_id": "gXngO0S2ozYpTFo0",
+      "name": "Quartet music-stand light",
+      "x": 300,
+      "y": 1050,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.7,
+        "color": "#ffc547",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 4,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.gXngO0S2ozYpTFo0"
+    },
+    {
+      "_id": "SywJOFcMAMjSwI9t",
+      "name": "Pantry fluorescent",
+      "x": 2050,
+      "y": 580,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.SywJOFcMAMjSwI9t"
+    },
+    {
+      "_id": "SK8WW0F4arxAzDiV",
+      "name": "Service hallway ceiling light",
+      "x": 1900,
+      "y": 1150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.SK8WW0F4arxAzDiV"
+    },
+    {
+      "_id": "Kok40XUiFDTxJw8K",
+      "name": "Stairwell ceiling light",
+      "x": 2100,
+      "y": 1000,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.Kok40XUiFDTxJw8K"
+    },
+    {
+      "_id": "B9lRDwJPDi1Zudvi",
+      "name": "Plaza streetlight",
+      "x": 650,
+      "y": 1630,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!oMvohIUjvTdrgCUZ.B9lRDwJPDi1Zudvi"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "HVXiKhCcsUxh0CpQ",
+      "name": "Seattle Center plaza (entrance and exit)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1000,
+          "y": 1530,
+          "width": 400,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria",
+          "region": "plaza",
+          "estado": "pendiente",
+          "pendiente": "there's no Seattle Center map: the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!oMvohIUjvTdrgCUZ.HVXiKhCcsUxh0CpQ"
+    },
+    {
+      "_id": "muOtU8g4fdCYw1IV",
+      "name": "Arrival from the archive (top of the stairs)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2170,
+          "y": 820,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria",
+          "region": "desde-archivo",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!oMvohIUjvTdrgCUZ.muOtU8g4fdCYw1IV"
+    },
+    {
+      "_id": "uWunoVN1ivAZ5CjX",
+      "name": "Down to the Keeper's archive",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2170,
+          "y": 1080,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "tK2jPFEbKlFuGJx5",
+          "name": "Down to the Keeper's archive",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.4WNwrNyFjucH1Kkc.Region.e5c1DXXHEBBVM5t0"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!oMvohIUjvTdrgCUZ.uWunoVN1ivAZ5CjX.tK2jPFEbKlFuGJx5"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "galeria",
+          "region": "bajar-al-archivo",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!oMvohIUjvTdrgCUZ.uWunoVN1ivAZ5CjX"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "OrvdwHW4sxQ9qNPW",
+      "entryId": "iyojT7kJHH23BWLd",
+      "pageId": null,
+      "x": 1210,
+      "y": 1360,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria",
+          "id": "LUG-03"
+        }
+      },
+      "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.OrvdwHW4sxQ9qNPW"
+    },
+    {
+      "_id": "TKAV2YhXy8LWmluv",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "uL8F2YNogcToiFc6",
+      "x": 1210,
+      "y": 745,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria",
+          "id": "A2-E01"
+        }
+      },
+      "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.TKAV2YhXy8LWmluv"
+    },
+    {
+      "_id": "LIW2q6w7M5PaJZgN",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "snrsN5RkdAklRIDn",
+      "x": 1210,
+      "y": 845,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "galeria",
+          "id": "A4-E01"
+        }
+      },
+      "_key": "!scenes.notes!oMvohIUjvTdrgCUZ.LIW2q6w7M5PaJZgN"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "WRItbEzHUknCld8e",
+      "name": "the velvet tray for phones, on the threshold",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-bandeja-terciopelo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1065,
+      "y": 1241,
+      "width": 50,
+      "height": 32,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "bandeja"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.WRItbEzHUknCld8e"
+    },
+    {
+      "_id": "Wl4kjtP5cgbb67JJ",
+      "name": "the Prince's armchair, facing the terrace",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon-principe.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 340,
+      "y": 740,
+      "width": 80,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 1,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.Wl4kjtP5cgbb67JJ"
+    },
+    {
+      "_id": "6jaGqwbxnF1g6FfZ",
+      "name": "mesa baja",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-baja.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 340,
+      "y": 625,
+      "width": 120,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.6jaGqwbxnF1g6FfZ"
+    },
+    {
+      "_id": "knyCAm6curIwhWc5",
+      "name": "sillon",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 215,
+      "y": 495,
+      "width": 70,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.knyCAm6curIwhWc5"
+    },
+    {
+      "_id": "NyqxPehT2qYlondg",
+      "name": "sillon",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sillon.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 455,
+      "y": 495,
+      "width": 70,
+      "height": 70,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 4,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.NyqxPehT2qYlondg"
+    },
+    {
+      "_id": "rHy6d5j6KS4JOEEp",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 223,
+      "y": 982,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 5,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.rHy6d5j6KS4JOEEp"
+    },
+    {
+      "_id": "OQIdD2ASFUM3Ye8Y",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 253,
+      "y": 1093,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 6,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.OQIdD2ASFUM3Ye8Y"
+    },
+    {
+      "_id": "fJPxE2EE3cind7OC",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 353,
+      "y": 963,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.fJPxE2EE3cind7OC"
+    },
+    {
+      "_id": "JD2IqEiVxySgwrsp",
+      "name": "silla musico",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-musico.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 353,
+      "y": 1133,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 8,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.JD2IqEiVxySgwrsp"
+    },
+    {
+      "_id": "2BTCe2M71eySabxU",
+      "name": "service cart with glasses",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-carro-servicio.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2095,
+      "y": 685,
+      "width": 90,
+      "height": 50,
+      "elevation": 0,
+      "levels": [
+        "PqjgjsZgSFct8blf"
+      ],
+      "sort": 9,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "galeria",
+          "tipo": "carro"
+        }
+      },
+      "_key": "!scenes.tiles!oMvohIUjvTdrgCUZ.2BTCe2M71eySabxU"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "go1BxeKeuxftClor",
+      "name": "Solène Marchetti",
+      "displayName": 30,
+      "actorId": "Zs7rGAyl8O4vOx0u",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-14.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1010,
+      "y": 1320,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-14",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "The Keeper, at her desk with the ledger, beside the tray: “Your phones, please.”"
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.go1BxeKeuxftClor"
+    },
+    {
+      "_id": "CVQ1EiKLLhiWM1fZ",
+      "name": "Marcus Whitmore",
+      "displayName": 30,
+      "actorId": "mS4hVbBIId47tDop",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1430,
+      "y": 390,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-02",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "“At the back, by the terrace,” next to the north glass doors."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.CVQ1EiKLLhiWM1fZ"
+    },
+    {
+      "_id": "R1vnYVqPYsecAuWz",
+      "name": "Charles Halloway",
+      "displayName": 30,
+      "actorId": "ys08GDwMs80NuOlf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 910,
+      "y": 850,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-03",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Moves through the hall like a host."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.R1vnYVqPYsecAuWz"
+    },
+    {
+      "_id": "hPRkTiHvC8fDhBDU",
+      "name": "Dr. Anneliese Voight",
+      "displayName": 30,
+      "actorId": "75UbIo5Kl9zVsd0V",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-15.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1450,
+      "y": 170,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-15",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Alone on the terrace, checking her watch."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.hPRkTiHvC8fDhBDU"
+    },
+    {
+      "_id": "Vh7ohQLdeEPTUfVh",
+      "name": "Abel Thornquist",
+      "displayName": 30,
+      "actorId": "NDI68PA4J59Be6ts",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1600,
+      "y": 1100,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-13",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "In the southeast corner, by the plaza glass; nobody approaches him."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.Vh7ohQLdeEPTUfVh"
+    },
+    {
+      "_id": "e1a22OJxaNVog3J6",
+      "name": "Wendell Fry",
+      "displayName": 30,
+      "actorId": "XuP20cPC3T1EiCxD",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1400,
+      "y": 910,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-16",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Headphones around his neck; he's the one who comes to you."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.e1a22OJxaNVog3J6"
+    },
+    {
+      "_id": "Nl0PSNJ8IzqOx1gL",
+      "name": "Ethan Montgomery",
+      "displayName": 30,
+      "actorId": "dd9CRIHVGO38YUhN",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1330,
+      "y": 1370,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "PqjgjsZgSFct8blf",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 30,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "galeria",
+          "id": "PNJ-01",
+          "escenas": [
+            "A2-E01",
+            "A4-E01"
+          ],
+          "nota": "Arrives late and leaves early."
+        }
+      },
+      "_key": "!scenes.tokens!oMvohIUjvTdrgCUZ.Nl0PSNJ8IzqOx1gL"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "LnFYbWYpHAT0Yq5Q",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "galeria",
+      "id": "LUG-03",
+      "plano": "galeria",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.iyojT7kJHH23BWLd]{The Glass Gallery (Elysium)}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night} · @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}</p>\n<p><strong>Elysium night (A2-E01, Night 3).</strong> You enter from the plaza, to the south, through the glass doors of the <strong>lobby</strong>. Solène Marchetti, the Keeper (PNJ-14), waits there at her desk with the ledger open (DOC-03), and on the <strong>threshold</strong> that separates the lobby from the great hall stands the <strong>velvet tray</strong> on its pedestal: “Your phones, please.” The fourth custom of Elysium is literal: <em>“No connected device crosses the threshold”</em> (CIUDAD-LEYES); the threshold is the 2 m gap between the lobby and the hall, and switched-off devices are kept in the cabinet on the lobby&#39;s east wall. <em>For a single player</em>, Bear stays on the lobby bench with the phones.</p>\n<p><strong>The great jellyfish hall.</strong> “Hundreds of pieces of blown glass hang from the ceiling like frozen jellyfish, red, amber, and black, and the light passing through them shifts across the floor every time someone walks by.” The pieces hang several meters above everyone&#39;s heads: they aren&#39;t drawn and don&#39;t block movement; their pools of color are the hall&#39;s Foundry lights (red and amber, with a slight flicker). On the terrazzo floor there are only two low benches and three pedestals with individual pieces. With every wall made of glass, from almost any point you can see almost everything else: <em>“the glass walls make it impossible to know who&#39;s listening from outside”</em> (LUG-03).</p>\n<p><strong>The quartet nobody sees.</strong> “A string quartet nobody can see is playing”: the musicians play in the west <strong>alcove</strong>, which opens onto the hall through a gap covered by a frosted-glass screen (it blocks sight, not movement).</p>\n<p><strong>Who&#39;s where (Read the room, Wits + Etiquette Diff. 3).</strong> Whitmore, “at the back, by the terrace,” beside the north glass doors. Halloway moves through the hall like a host. Voight, alone, on the <strong>terrace</strong>, checking her watch: “she prefers the terrace because from there she can see who comes in” (from the terrace, through the glass hall, you can see the whole lobby). Thornquist, in the southeast corner of the hall, by the plaza glass, where nobody approaches him. Fry, wherever he likes.</p>\n<p><strong>The terrace.</strong> Stone flagstones, railings on the north, west, and east, no light of its own: the Fair tower can be seen to the north, off the map. <em>Eavesdropping unseen</em> (Wits + Awareness Diff. 4): on the terrace, Halloway tells a lesser Kindred, “The Sheriff is old…” The terrace connects to the hall through two glass doors.</p>\n<p><strong>The Prince&#39;s private salon.</strong> Northwest corner: you enter from the great hall through a wooden door; its north wall is a fixed pane of glass over the terrace, and its west wall another over the plaza. The glass doesn&#39;t let sound through, but it does let sight through: Whitmore&#39;s armchair faces north, toward the terrace and the tower, so <strong>from the terrace you can see his lips</strong>. It&#39;s the detail from LUG-03: with Wits + Awareness Diff. 4 you notice that someone with a telephoto lens on the terrace could read lips in the salon. This is where the private audience with the Prince is granted.</p>\n<p><strong>The staff</strong> (ghouls, untouchable under the third custom) come out of the <strong>pantry</strong> in the service block, to the east, carrying the glasses nobody drinks. From the service hallway, one door leads out to the plaza, and the <strong>stairs to the Keeper&#39;s archive</strong> lead down to the basement (map “galeria-archivo”): going down the stairs, the region “Down to the archive” leads to the foot of the basement stairs. Marchetti&#39;s apartment (Haven 2) is “above the archive,” on the upper floor of the service block: it has no map.</p>\n<p><strong>The curved walls</strong> of the 1962 pavilion: the north glass bows out toward the terrace, the plaza panes on either side of the lobby bow outward, and the private salon has a curved glass bay window to the west. In Foundry each curve is a run of straight glass segments; the two terrace doors are two of those segments.</p>\n<p><strong>If the A4-E01 Council moves here</strong> (the Prince regained the initiative; Halloway loses 2 dice), play it in the great hall with a long table brought in by the staff (tile from the tower), or in the private salon if there are only a few of them.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (10) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.Zs7rGAyl8O4vOx0u]{Solène Marchetti} (A2-E01, A4-E01): The Keeper, at her desk with the ledger, beside the tray: “Your phones, please.”</li><li>@UUID[Actor.mS4hVbBIId47tDop]{Marcus Whitmore} (A2-E01, A4-E01): “At the back, by the terrace,” next to the north glass doors.</li><li>@UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway} (A2-E01, A4-E01): Moves through the hall like a host.</li><li>@UUID[Actor.75UbIo5Kl9zVsd0V]{Dr. Anneliese Voight} (A2-E01, A4-E01): Alone on the terrace, checking her watch.</li><li>@UUID[Actor.NDI68PA4J59Be6ts]{Abel Thornquist} (A2-E01, A4-E01): In the southeast corner, by the plaza glass; nobody approaches him.</li><li>@UUID[Actor.XuP20cPC3T1EiCxD]{Wendell Fry} (A2-E01, A4-E01): Headphones around his neck; he&#39;s the one who comes to you.</li><li>@UUID[Actor.dd9CRIHVGO38YUhN]{Ethan Montgomery} · <em>hidden</em> (A2-E01, A4-E01): Arrives late and leaves early.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Seattle Center plaza (entrance and exit).</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

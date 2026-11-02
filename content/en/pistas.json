@@ -1,0 +1,665 @@
+{
+  "_fuente": {
+    "P-01": "48f28ca64693c325",
+    "P-02": "c56ae6c4f6c3fd0f",
+    "P-03": "3aab7e8b8deaa9f4",
+    "P-04": "9dfcd9414f7bb1a0",
+    "P-05": "bd5bbb8825d0032f",
+    "P-06": "bdc9692050fddf11",
+    "P-07": "afea0ad8a523e285",
+    "P-08": "a201456a817215fb",
+    "P-09": "953eb9be4cd47ea2",
+    "P-10": "8e9df83248b89853",
+    "P-11": "c07416730ab73c93",
+    "P-12": "35b72f142d7db198",
+    "P-13": "9408d3371b443e30",
+    "P-14": "e3eaf8e3bdc9aebe",
+    "P-15": "046da7d229586fa5",
+    "PRUEBA-CORREO-CH": "6bd311d2c80eadcf",
+    "PRUEBA-DOC-08": "fd623214b15e4b2a",
+    "PRUEBA-DOC-03": "a8455a0b34ed073f",
+    "PRUEBA-TESTIGO-LONNIE": "8b2585754ee9d739",
+    "PRUEBA-TESTIGO-GALE": "5caa372b93e83a79",
+    "PRUEBA-MONTGOMERY": "f59e63ef7fa66a28",
+    "PRUEBA-DISCO-ORIGINAL": "c4a61fa5db28a61e",
+    "PRUEBA-KRELL-PRESENTE": "7327928d65fa2f0b",
+    "PRUEBA-FAVOR-MONTGOMERY": "c3d9d0fac5da9334",
+    "PRUEBA-MENTIRA-A1-E03": "f5853db9c493d15b",
+    "PRUEBA-HONESTIDAD-DAVID": "cc5bd348532dc451",
+    "PRUEBA-HERMANO-DE-SANGRE": "5e4986d41c251711",
+    "PRUEBA-FALSIFICACION": "9400407a934abdc3",
+    "PRUEBA-INFORMES-HAL": "1a8b9e2ee3b94b8c",
+    "PRUEBA-CELESTE-VERDAD": "0843490b6af1a346",
+    "PRUEBA-NADIA-PRINCIPE": "cbd14ea699e31aae",
+    "PRUEBA-ASHBY": "e5c1934e2fa77859",
+    "PRUEBA-OKAFOR-LONNIE": "45534ecd73a2b774",
+    "A3-E04": "990bbc0f50356c6b",
+    "A4-E01": "b5a241ffc5858921"
+  },
+  "pistas": {
+    "P-01": {
+      "nombre": "Professional Mortal Thieves; Looped Cameras",
+      "texto": "The thieves were mortal professionals, and the building's cameras were put on a loop. (Doc 10: the cameras were disconnected from 2:52 to 3:03.)",
+      "obtencion": [
+        {
+          "como": "Ezra's prelude: at 2:52 he sees a block of Gale Sentinel cameras in Ballard go dark for eleven minutes."
+        },
+        {
+          "como": "Intelligence + Technology (Difficulty 3): Helen's camera has a disconnection log from 2:52 to 3:03."
+        },
+        {
+          "como": "The thieves were mortal professionals and the cameras were looped. Intelligence + Investigation (Difficulty 3) when searching the apartment: they got in with an electronic lock pick and knew where to look (P-01, reinforced); with 3 or more successes, the adhesive repeater on the door frame."
+        },
+        {
+          "como": "DOC-01: the cameras that “didn't record anything” are the first sign of Gale Sentinel."
+        },
+        {
+          "como": "The dark lights on the Gale Sentinel cameras are P-01 and lead to A1-E05."
+        }
+      ]
+    },
+    "P-02": {
+      "nombre": "Ghoul Vitae on the Doorknob",
+      "texto": "There's a smell of someone else's Vitae on the doorknob: it belongs to a ghoul. (Doc 10: ghoul Vitae on the doorknob and in the hallway.)",
+      "nota": "If the coterie takes Helen away right away, A1-E01 happens at the hangar, and P-02 is lost if it wasn't detected (doc 10).",
+      "obtencion": [
+        {
+          "como": "Resolve + Awareness (Difficulty 2), or automatic with Auspex 1: the coin smell in the hallway is watered-down Vitae, with no Beast behind it. Auspex 4 (Spirit's Touch) on the doorknob: the mark of a ghoul waiting for their next dose."
+        },
+        {
+          "como": "Smell of someone else's Vitae on the doorknob: it belongs to a ghoul (if it wasn't found earlier)."
+        },
+        {
+          "como": "The one sniffing around the stairwell is a Gale ghoul (MEN-04). His Vitae is the P-02 trail."
+        }
+      ]
+    },
+    "P-03": {
+      "nombre": "The *Controlled Fury* Technique",
+      "texto": "The blows that destroyed the minor Nosferatu at Pier 46 follow the doctrine of *Controlled Fury*.",
+      "obtencion": [
+        {
+          "como": "Intelligence + Brawl (Difficulty 4): dents at chest height, always in the same sequence (ribs, sternum, throat). David, with LOR-01 at level 4, recognizes it without rolling."
+        },
+        {
+          "como": "LOR-01 level 4 “The Complete Guard”: you recognize the doctrine the moment you see it."
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Vote: Thornquist switches to “no” if the coterie proves to him that Krell, Halloway's man, destroyed Pike (P-03 plus P-12 or Krell's testimony)."
+        }
+      ]
+    },
+    "P-04": {
+      "nombre": "Partial Copy of the File on a USB Drive",
+      "texto": "On the body there's a USB drive with a partial copy of the File.",
+      "nota": "It's USB drive 1 (folders 2014–2018, includes the Larchmont). If the coterie doesn't get it, it enters the chain of custody and Hale copies it on Night 3 (Thermometer +1). Montgomery confiscates it in A1-E03 if they show it to him, unless Manipulation + Persuasion (Difficulty 3) (docs 10 and 11).",
+      "obtencion": [
+        {
+          "como": "Wits + Awareness (Difficulty 3): the USB drive is in the inside pocket of the jacket, among the ashes. Taking it without the officers seeing: Dexterity + Larceny (Difficulty 3)."
+        }
+      ]
+    },
+    "P-05": {
+      "nombre": "Jun, the Thin-Blood Courier",
+      "texto": "Thornquist confirms there are copies of the File on the market and that the courier is a thin-blood, Jun.",
+      "obtencion": [
+        {
+          "como": "Manipulation + Persuasion (Difficulty 4) with Thornquist: with one success he confirms there are copies for sale; with 3 or more, he reveals that Jun brought them to him and where she sleeps. Ezra gets +2 dice."
+        }
+      ]
+    },
+    "P-06": {
+      "nombre": "Unlogged Gale Sentinel Data Request",
+      "texto": "The doorbell cameras in Helen's building are all Gale Sentinel. The company received a data request that doesn't appear in any log. (Doc 10: authorized by “P.G.”; partially in A1-E01, the Eastside IP.)",
+      "obtencion": [
+        {
+          "como": "Intelligence + Technology (Difficulty 4) on Helen's laptop: the cloud was wiped from an IP at an Eastside data center (P-06, partial)."
+        },
+        {
+          "como": "Intelligence + Investigation (Difficulty 3): a request dated November 9, at 4:12, for access to the Market Street building's network, with no contract, authorized by “P.G.”"
+        },
+        {
+          "como": "If A1-E05 is skipped, the same information turns up in A3-E02."
+        },
+        {
+          "como": "DOC-05: the November 9 message (“Change the lock”). It was Gale Sentinel (P-06)."
+        }
+      ]
+    },
+    "P-07": {
+      "nombre": "Halloway Knows About the Cold Water",
+      "texto": "Halloway mentions Vance with a detail he shouldn't know. (Doc 11: Halloway knows about the cold-water business.)",
+      "nombres": {
+        "11": "Halloway Knows About the Cold Water",
+        "13": "P-07 · Halloway Knows About the Cold Water",
+        "01": "Halloway Knows Too Much About Vance"
+      },
+      "obtencion": [
+        {
+          "como": "Intelligence + Academics (Difficulty 3), or automatic for David: Halloway quotes “the cold water in the mornings,” which appears only in Vance's private journals. Wits + Insight (Difficulty 4) to notice he's lying when he explains it."
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Winning over the assembly at Salt's: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council"
+        }
+      ]
+    },
+    "P-08": {
+      "nombre": "The Inverted Guard",
+      "texto": "An Intelligence + Brawl (Difficulty 4) test reveals that the technique is wrong: Krell strikes with the inverted guard, the way Vance taught the students who never finished their training. (Doc 10: hint in A1-E02.)",
+      "nombres": {
+        "11": "The Inverted Guard",
+        "13": "P-08 · The Inverted Guard",
+        "01": "Krell's Inverted Guard"
+      },
+      "obtencion": [
+        {
+          "como": "With 4 or more successes on Intelligence + Brawl, or LOR-01 at level 4 and one success on Wits + Brawl (Difficulty 3): the last blow came in from the left, as if the attacker's guard were switched. Teo: “He hit with his left out front, like southpaws in boxing.”"
+        },
+        {
+          "como": "Intelligence + Brawl (Difficulty 4) on Corwin's ashes: Controlled Fury with the inverted guard, weak hand forward. David, with LOR-01 at level 4: automatic."
+        },
+        {
+          "como": "If the coterie arrives in time, David automatically recognizes the inverted guard with LOR-01 at level 4."
+        },
+        {
+          "como": "DOC-04: the doctrine of Controlled Fury and the inverted guard, which gives Krell away (P-08)."
+        },
+        {
+          "como": "LOR-01 level 4 “The Complete Guard”: you recognize the doctrine the moment you see it (P-03, P-08)."
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Winning over the assembly at Salt's: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council"
+        }
+      ]
+    },
+    "P-09": {
+      "nombre": "The Journals Bought in 1986",
+      "texto": "O'Connor reveals that Vance's journals weren't burned: in 1986 they were sold to “a Seattle Ventrue with patience.”",
+      "nombres": {
+        "11": "The Journals Bought in 1986",
+        "13": "P-09 · The Journals Bought in 1986",
+        "01": "The Journals Sold in 1986"
+      },
+      "obtencion": [
+        {
+          "como": "After the three rounds in the ring, O'Connor tells them about the 1986 shipment from Lyon, addressed to one of Halloway's companies: handwritten journals with “M.V.” on the cover."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council"
+        }
+      ]
+    },
+    "P-10": {
+      "nombre": "SEA-0411 Shipments / DOC-07",
+      "texto": "The log of shipments to “SEA-0411” at the Gale Sentinel data center.",
+      "nombres": {
+        "12": "The SEA-0411 Shipments",
+        "13": "P-10 · SEA-0411 Shipments / DOC-07",
+        "01": "Shipments to “SEA-0411”"
+      },
+      "obtencion": [
+        {
+          "como": "Layer 3, storage: the shipping logs from the ARCHER channel, with reference SEA-0411, and the complete DOC-07."
+        },
+        {
+          "como": "DOC-07 can arrive earlier if Voight trusts the coterie."
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Vote: Voight switches to “no” if the coterie proves to her that ARCHER is Halloway (P-10, the C.H. email, or Gale's or Dawson's testimony)."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+2 dice to the case test at the Council (proves Halloway is ARCHER)"
+        }
+      ]
+    },
+    "P-11": {
+      "nombre": "Gale's Signature",
+      "texto": "The digital signature of Preston Gale, Halloway's ghoul.",
+      "nota": "COT-02 · The Glass Council: the coterie shouldn't know it exists until A3-E02, when they find Gale's signature (doc 08).",
+      "nombres": {
+        "12": "Gale's Signature",
+        "13": "P-11 · Gale's Signature",
+        "01": "Preston Gale's Digital Signature"
+      },
+      "variantes": {
+        "10": "Celeste's prelude (A0-E01) called the payment to the crew of thieves “P-11 early.” Doc 11 assigns that payment to P-14 (“the one Celeste signed in her prelude”); doc 11 wins."
+      },
+      "obtencion": [
+        {
+          "como": "Layer 2, Gale's office: Intelligence + Investigation (Difficulty 3); one success: Preston Gale's digital signature on the access authorizations for Market Street."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council"
+        }
+      ]
+    },
+    "P-12": {
+      "nombre": "Krell's Testimony",
+      "texto": "Krell's testimony, if he agrees to be a witness against Halloway.",
+      "nota": "Doc 07 (PNJ-12): if the coterie shows him the folios Halloway promised him, Krell switches sides (P-12).",
+      "nombres": {
+        "01": "Krell's Testimony"
+      },
+      "obtencion": [
+        {
+          "como": "With Krell at 3 “steps,” the “Witness” offer: Manipulation + Persuasion (Difficulty 3); Krell accepts if David promises him nobody will destroy him afterward. The “The Other Guard” offer (LOR-01 at level 4 and P-15, or folio 42) also turns him into a witness, no roll needed."
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Krell present as a witness: +2 more dice to the central test."
+        },
+        {
+          "efecto": "Vote: Thornquist switches to “no” with P-03 plus P-12 or Krell's testimony. If Krell testifies, Halloway loses his composure for the first time."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+3 dice to the case test at the Council (Krell as a witness)"
+        }
+      ]
+    },
+    "P-13": {
+      "nombre": "Sal's Ledger",
+      "texto": "“L.B. — 3 keys, 2 sold, 1 pending”",
+      "nombres": {
+        "11": "Sal's Ledger",
+        "13": "P-13 and P-14 · Sal's Ledger and the Cascade Payment"
+      },
+      "obtencion": [
+        {
+          "como": "Doc 11 erratum: Thornquist says the copies come from a fence in SoDo; the fence's name is worth a minor favor (P-13, partial)."
+        },
+        {
+          "como": "Wits + Investigation (Difficulty 3): the ledger is under the desk. Entry for November 13: “L.B. — 3 keys, 2 sold (T.), 1 pending. Motel?”"
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council, together with P-14 (the two count as a single die)"
+        }
+      ]
+    },
+    "P-14": {
+      "nombre": "The Payment from Cascade Holdings",
+      "texto": "The payment to Lonnie, made from Cascade Holdings LLC, a Halloway Meridian company (the one Celeste signed in her prelude).",
+      "nota": "If the coterie uses Dominate on Lonnie to make him forget, P-14 is lost unless they question him first (doc 11).",
+      "nombres": {
+        "11": "The Payment to Lonnie, Made from Cascade Holdings LLC / Payment from Cascade Holdings",
+        "13": "P-13 and P-14 · Sal's Ledger and the Cascade Payment"
+      },
+      "obtencion": [
+        {
+          "como": "Celeste's prelude: at 3:30 she authorizes “an urgent payment to a security vendor” from a Halloway Meridian company. If she reviews the transfer later, it's an early clue.",
+          "nota": "Doc 10 called it “P-11 early”; doc 11 defines P-14 as the payment “from Cascade Holdings LLC… the one Celeste signed in her prelude,” and doc 13 mentions “P-14 and the note from the prelude.” The newest doc wins."
+        },
+        {
+          "como": "If Celeste reviews the Cascade accounts that same week (Halloway's trap), she finds P-14 earlier."
+        },
+        {
+          "como": "Lonnie: “The money came from a company. Cascade Holdings. I've got the receipt.”"
+        },
+        {
+          "como": "Layer 2, Gale's office: the records of the payments to Lonnie from Cascade Holdings, if they don't already have them."
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Celeste defends herself with the truth: if she found P-14 and the note from the prelude, she proves she only signed what Pell handed her: +2 dice to the case test."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council, together with P-13 (the two count as a single die)"
+        }
+      ]
+    },
+    "P-15": {
+      "nombre": "The Folios About the German",
+      "texto": "Folios 41 and 42 of Vance's journal about “the German,” with Pell's note and Halloway's reply (“No. — C.H.”).",
+      "nota": "GAN-07: copy 3 of the journals, held by the Justicar, has folios that aren't in the other two, including the ones that talk about Krell (doc 09).",
+      "ayuda": "Given out as a handout: two folios from Vance's journal (Marseille, 1976), in French, with Pell's typewritten translation (doc 12).",
+      "obtencion": [
+        {
+          "como": "Layer 3, private archive (air-gapped server): copying the files takes Intelligence + Technology (Difficulty 3); finding the folios among thousands of images takes Intelligence + Investigation (Difficulty 4), or it's automatic by searching for the word “allemand.”"
+        }
+      ],
+      "efectos": [
+        {
+          "efecto": "Showing P-15 to Krell adds 3 “steps” at once. The “The Other Guard” offer requires LOR-01 at level 4 and P-15 (or David knowing folio 42)."
+        },
+        {
+          "efecto": "Spotting the forgery of the “M.V.” letter is automatic with P-15 or DOC-04. If the coterie already showed P-15 or the C.H. email to Montgomery, the scene skips its first half."
+        }
+      ],
+      "dados": [
+        {
+          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+        },
+        {
+          "texto": "+1 die to the case test at the Council (and the “No. — C.H.” note)"
+        }
+      ]
+    }
+  },
+  "pruebas": {
+    "PRUEBA-CORREO-CH": {
+      "nombre": "“C.H.” Email to Gale",
+      "como": "Layer 2, Gale's office: three or more successes on Intelligence + Investigation (Difficulty 3). “Recover all copies. Top priority. — C.H.,” dated November 13.",
+      "efectos": [
+        {
+          "efecto": "Vote: Voight switches to “no.”"
+        },
+        {
+          "efecto": "If they already showed it to Montgomery, the scene skips its first half."
+        }
+      ],
+      "valores": [
+        {
+          "texto": "+2 dice to the case test"
+        }
+      ]
+    },
+    "PRUEBA-DOC-08": {
+      "nombre": "DOC-08 · O'Connor's Letter",
+      "efectos": [
+        {
+          "efecto": "Vote: Marchetti switches to “no” if she sees DOC-08, with Whitmore's note (“C.H. — watch”). Keeping the promise to O'Connor makes him Allies 2."
+        }
+      ],
+      "valores": [
+        {
+          "texto": "+1 die to the case test"
+        }
+      ]
+    },
+    "PRUEBA-DOC-03": {
+      "nombre": "DOC-03 · Marchetti's Night 3 Record",
+      "efectos": [
+        {
+          "efecto": "Vote: Marchetti switches to “no” if the coterie cites her Night 3 record: the record is what she respects most."
+        }
+      ]
+    },
+    "PRUEBA-TESTIGO-LONNIE": {
+      "nombre": "Witness: Lonnie Barras",
+      "valores": [
+        {
+          "texto": "+2 dice to the case test"
+        }
+      ]
+    },
+    "PRUEBA-TESTIGO-GALE": {
+      "nombre": "Witness: Dawson or Gale",
+      "como": "Dawson alive and captured is a witness: Gale's ghoul, he sniffed out Helen's stairwell and received the drive from Lonnie (doc 12).",
+      "efectos": [
+        {
+          "efecto": "Vote: Voight switches to “no” with Gale's or Dawson's testimony."
+        }
+      ],
+      "valores": [
+        {
+          "texto": "+2 dice to the case test"
+        }
+      ]
+    },
+    "PRUEBA-MONTGOMERY": {
+      "nombre": "Montgomery in Favor",
+      "como": "Success with 3 or more successes on the central test in A3-E04: Montgomery enters the Council alongside David.",
+      "valores": [
+        {
+          "texto": "+2 dice to the case test"
+        }
+      ]
+    },
+    "PRUEBA-DISCO-ORIGINAL": {
+      "nombre": "The Original Drive in the Coterie's Hands",
+      "como": "It's only in Gale's data center until Night 6.",
+      "efectos": [
+        {
+          "efecto": "Halloway can't use it as evidence against the Prince."
+        },
+        {
+          "efecto": "Halloway finds out on Night 7 and speeds up the leak to FIRSTLIGHT: Thermometer +1."
+        }
+      ]
+    },
+    "PRUEBA-KRELL-PRESENTE": {
+      "nombre": "Krell Present as a Witness",
+      "valores": [
+        {
+          "texto": "+2 dice to the central test"
+        }
+      ]
+    },
+    "PRUEBA-FAVOR-MONTGOMERY": {
+      "nombre": "Montgomery owes the coterie a favor (Krell handed over to the Sheriff in A3-E03)",
+      "valores": [
+        {
+          "texto": "+2 dice to the central test"
+        }
+      ]
+    },
+    "PRUEBA-MENTIRA-A1-E03": {
+      "nombre": "The coterie lied to Montgomery in A1-E03 and he wrote it down",
+      "valores": [
+        {
+          "texto": "−2 dice to the central test"
+        }
+      ]
+    },
+    "PRUEBA-HONESTIDAD-DAVID": {
+      "nombre": "David admits something that costs him (what he knows about Krell, what he felt in the silos, the Larchmont business)",
+      "valores": [
+        {
+          "texto": "+1 die to the central test"
+        }
+      ]
+    },
+    "PRUEBA-HERMANO-DE-SANGRE": {
+      "nombre": "“He's my blood brother” (if David knows it and says so)",
+      "valores": [
+        {
+          "texto": "+1 die to the central test"
+        }
+      ]
+    },
+    "PRUEBA-FALSIFICACION": {
+      "nombre": "Proving the “M.V.” letter is a forgery",
+      "como": "Intelligence + Academics (Difficulty 3), or automatic with DOC-04 or P-15: it's in English (Vance wrote in French) and has traces of toner.",
+      "valores": [
+        {
+          "texto": "+2 dice to the central test"
+        }
+      ]
+    },
+    "PRUEBA-INFORMES-HAL": {
+      "nombre": "Hal says that in thirty years of reports he never found anything that cast doubt on David",
+      "valores": [
+        {
+          "texto": "+2 dice to the central test"
+        }
+      ]
+    },
+    "PRUEBA-CELESTE-VERDAD": {
+      "nombre": "Celeste defends herself with the truth (P-14 and the note from the prelude)",
+      "valores": [
+        {
+          "texto": "+2 dice to the case test"
+        }
+      ]
+    },
+    "PRUEBA-NADIA-PRINCIPE": {
+      "nombre": "Nadia speaks on behalf of the Prince (Charisma + Performance instead of Politics)",
+      "valores": [
+        {
+          "texto": "+2 dice to the case test if it succeeds"
+        }
+      ]
+    },
+    "PRUEBA-ASHBY": {
+      "nombre": "Julian Ashby testifies against Halloway (Charisma + Persuasion, Difficulty 2, if he's accused at the Council)",
+      "valores": [
+        {
+          "texto": "+2 dice to the case"
+        }
+      ]
+    },
+    "PRUEBA-OKAFOR-LONNIE": {
+      "nombre": "FIRSTLIGHT has Lonnie: Okafor has a witness who talks about Cascade Holdings",
+      "como": "“If the coterie finds out about this later, they can use it in A4-E01.” The doc doesn't set its value."
+    }
+  },
+  "tiradas": {
+    "A3-E04": {
+      "nombre": "The Pack Hesitates: The Central Test",
+      "tirada": "Manipulation + Persuasion (Difficulty 4), rolled by whoever speaks for the coterie",
+      "automatico": "If anyone attempts Dominate or Presence on Montgomery (Fortitude 4, Unswayable Mind), he notices and the central test automatically fails.",
+      "nota": "Doc 12 wins: +1 die for each clue from P-07 to P-15.",
+      "variantes": {
+        "01": "Manipulation + Persuasion, Difficulty 4, +1 die for each clue P-07 to P-12."
+      },
+      "resultados": [
+        {
+          "resultado": "Success with 3 or more successes",
+          "efecto": "The Wolves (COT-01) are with the coterie: Montgomery enters the Council alongside David; during the raid, the bounty hunters help evacuate; in A4-E03, Montgomery waits on the dock."
+        },
+        {
+          "resultado": "Simple success",
+          "efecto": "Montgomery doesn't turn against them, but he doesn't help openly either: “Prove it to me tomorrow in front of everyone.”"
+        },
+        {
+          "resultado": "Failure",
+          "efecto": "The coterie are fugitives. The bounty hunters are hunting David. In A4-E01, David needs to get into the Council without being stopped at the door."
+        }
+      ]
+    },
+    "A4-E01": {
+      "nombre": "Primogen Council: The Case Test",
+      "tirada": "Manipulation or Charisma + Politics (Difficulty 4), contested by Halloway (Manipulation + Politics: 10 dice)",
+      "oponente": {
+        "texto": "Manipulation + Politics"
+      },
+      "resultados": [
+        {
+          "margen": "Halloway wins",
+          "efecto": "The room believes him. Celeste is handed over. The votes lean toward the regency."
+        },
+        {
+          "margen": "Tie or 1–2 successes",
+          "efecto": "Doubt. The vote decides."
+        },
+        {
+          "margen": "3–4 successes",
+          "efecto": "Halloway is exposed. The vote almost certainly turns against him."
+        },
+        {
+          "margen": "5 or more",
+          "efecto": "Total exposure. The Prince orders the Sheriff to arrest Halloway on the spot. Halloway flees (A4-E03)."
+        }
+      ],
+      "valores": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "efecto": "Halloway can't use it as evidence against the Prince"
+        }
+      ],
+      "otros": [
+        null,
+        null,
+        null,
+        {
+          "motivo": "The Council moves to the Glass Gallery (the Prince has regained the initiative)",
+          "a": "Halloway"
+        }
+      ],
+      "votacion": {
+        "necesita": "3 votes in favor out of 5",
+        "porDefecto": "If the coterie does nothing, Halloway wins 3 to 0, with two abstentions or Fry voting against.",
+        "automatico": "Attacking Halloway in his tower: the vote comes out “yes” automatically. Using Dominate on a Primogen and getting caught (Voight's Wits + Awareness: 7 dice): that Primogen's vote turns against whoever tried it.",
+        "primogenitos": [
+          {
+            "defecto": "Yes",
+            "cambia": "Never."
+          },
+          {
+            "defecto": "Yes. She believes Whitmore failed.",
+            "cambia": "The coterie proves to her that ARCHER is Halloway (P-10, the C.H. email, or Gale's or Dawson's testimony)."
+          },
+          {
+            "defecto": "Yes. Halloway paid him.",
+            "cambia": "The coterie proves to him that Krell destroyed Pike (P-03 plus P-12 or Krell's testimony), or offers him a major favor from the whole coterie."
+          },
+          {
+            "defecto": "Abstains.",
+            "cambia": "She sees DOC-08, with Whitmore's note (“C.H. — watch”), or the coterie cites her Night 3 record (DOC-03). Then she votes “no.”"
+          },
+          {
+            "defecto": "Unpredictable: roll 1 die; even, yes; odd, no.",
+            "cambia": "Someone speaks a hard truth out loud during the debate: Fry votes with whoever said it."
+          }
+        ]
+      }
+    }
+  }
+}

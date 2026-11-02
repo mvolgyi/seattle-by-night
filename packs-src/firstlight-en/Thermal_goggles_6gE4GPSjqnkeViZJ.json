@@ -1,0 +1,42 @@
+{
+  "_id": "6gE4GPSjqnkeViZJ",
+  "_key": "!items!6gE4GPSjqnkeViZJ",
+  "name": "Thermal goggles",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<p>Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away.</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "The Ward File",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "gafas-termicas",
+      "agravado": false
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 40,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

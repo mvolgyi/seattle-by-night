@@ -1,9 +1,18 @@
 import { SBN } from "./constantes.mjs";
 import { t, esc } from "./util.mjs";
+import { IDIOMAS, idiomaCronica, idiomaPorDefecto, cronicaImportada, packDe, idiomaDePack, nombreIdioma } from "./idioma.mjs";
+
+export { cronicaImportada };
 
 /**
  * Importar la crónica al mundo desde la Aventura del compendio `aventura`
- * (journals, actores, escenas, macros y carpetas). Copiado de DVV.
+ * (castellano) o `aventura-en` (inglés): journals, actores, escenas, macros y
+ * carpetas. Copiado de DVV.
+ *
+ * Las dos Aventuras traen los MISMOS _id (TRADUCCION.md): cambiar de idioma con
+ * la partida empezada es importar la otra, que actualiza los documentos con
+ * conservarMundo igual que una actualización de versión. El idioma elegido
+ * queda en el setting `sbn-idioma-cronica` (idioma.mjs).
  *
  * Reimportar («Actualizar la crónica») usa el mismo Adventure#import, que para
  * los documentos que ya existen hace updateDocuments con diff:false y
@@ -43,13 +52,26 @@ export function instalar() {
     ultimoResumen = resumen;
     SBN.log("importación: se conserva", resumen);
   });
+  // También si el Narrador importa a mano la Aventura del otro idioma desde su compendio.
+  Hooks.on("importAdventure", adventure => {
+    if (!esNuestra(adventure) || !game.user.isGM) return;
+    const idioma = idiomaDeAventura(adventure);
+    if (game.settings.get(SBN.ID, SBN.SETTINGS.IDIOMA) !== idioma) {
+      game.settings.set(SBN.ID, SBN.SETTINGS.IDIOMA, idioma).catch(err => console.error(`${SBN.ID} | idioma:`, err));
+    }
+  });
 }
 
 /** Lo que conservó la última importación (para el aviso al Narrador). */
 let ultimoResumen = null;
 
+/** Las dos Aventuras del módulo (castellano e inglés). */
 const esNuestra = adventure => adventure?.collection?.metadata?.packageName === SBN.ID
-  || adventure?.pack === `${SBN.ID}.${SBN.PACKS.AVENTURA}`;
+  || IDIOMAS.some(i => adventure?.pack === `${SBN.ID}.${packDe(SBN.PACKS.AVENTURA, i)}`);
+
+/** El idioma de una de nuestras Aventuras: el flag que pone el build o el nombre del pack. */
+const idiomaDeAventura = adventure => adventure.getFlag?.(SBN.ID, "idioma")
+  ?? idiomaDePack(adventure.collection?.metadata?.name ?? adventure.pack?.split(".").at(-1));
 
 /** Colecciones embebidas que el Narrador suele tocar en mesa y la Aventura no trae. */
 const EMBEBIDOS = {
@@ -129,35 +151,37 @@ export function conservarMundo(toCreate, toUpdate) {
   return { conservados, documentos };
 }
 
-/** La Aventura del compendio: el único documento del pack. */
-export async function aventura() {
-  const pack = SBN.pack(SBN.PACKS.AVENTURA);
+/** La Aventura del compendio de un idioma (por defecto, el de la crónica): el único documento del pack. */
+export async function aventura(idioma = idiomaCronica()) {
+  const pack = SBN.pack(packDe(SBN.PACKS.AVENTURA, idioma));
   if (!pack) return null;
   const indice = await pack.getIndex();
   const entrada = indice.contents[0];
   return entrada ? pack.getDocument(entrada._id) : null;
 }
 
-/** ¿Hay en el mundo algo generado por el build? (todo lleva el flag `origen`). */
-export function cronicaImportada() {
-  const generado = d => !!d.getFlag(SBN.ID, SBN.FLAGS.ORIGEN);
-  return game.journal.some(generado) || game.scenes.some(generado) || game.actors.some(generado);
-}
-
-/** Importa (o actualiza) todo el contenido de la crónica en el mundo. */
-export async function importarCronica({ silencioso = false } = {}) {
+/**
+ * Importa (o actualiza) todo el contenido de la crónica en el mundo, en un
+ * idioma (por defecto, el que ya tiene el mundo). Con el otro idioma, cambia el
+ * de la crónica conservando lo del mundo (conservarMundo).
+ */
+export async function importarCronica({ silencioso = false, idioma = idiomaCronica() } = {}) {
   if (!game.user.isGM) {
     ui.notifications.warn(t("soloNarrador"));
     return null;
   }
-  const doc = await aventura();
+  if (!IDIOMAS.includes(idioma)) idioma = idiomaCronica();
+  const doc = await aventura(idioma);
   if (!doc) {
-    ui.notifications.error(t("importar.sinAventura"));
+    ui.notifications.error(t("importar.sinAventura", { pack: packDe(SBN.PACKS.AVENTURA, idioma) }));
     return null;
   }
   const primeraVez = !cronicaImportada();
+  const cambiaIdioma = !primeraVez && idioma !== idiomaCronica();
   ultimoResumen = null;
   const resultado = await doc.import({ dialog: false });
+  // El hook importAdventure ya lo puso; acá se espera a que quede guardado.
+  await game.settings.set(SBN.ID, SBN.SETTINGS.IDIOMA, idioma);
   await game.settings.set(SBN.ID, SBN.SETTINGS.IMPORTACION_OFRECIDA, true);
   await game.settings.set(SBN.ID, SBN.SETTINGS.VERSION_OFRECIDA, game.modules.get(SBN.ID).version);
 
@@ -172,6 +196,7 @@ export async function importarCronica({ silencioso = false } = {}) {
   const contar = grupo => Object.values(grupo ?? {}).reduce((a, b) => a + (b?.length ?? 0), 0);
   if (!silencioso) {
     ui.notifications.info(t("importar.hecho", { creados: contar(resultado?.created), actualizados: contar(resultado?.updated) }));
+    if (cambiaIdioma) ui.notifications.info(t("idioma.cambiado", { idioma: nombreIdioma(idioma) }));
     const conservados = ultimoResumen?.conservados ?? [];
     if (conservados.length) {
       ui.notifications.info(t("importar.conservados", { n: conservados.length, nombres: conservados.map(esc).join(", ") }));
@@ -185,48 +210,103 @@ export function versionImportada(doc) {
   return game.settings.get("core", "adventureImports")?.[doc.uuid]?.moduleVersion ?? "";
 }
 
+/** El selector de idioma de los diálogos de importación (un <select name="idioma">). */
+function selectorIdioma(elegido) {
+  const opciones = IDIOMAS.map(i => `<option value="${i}"${i === elegido ? " selected" : ""}>${esc(nombreIdioma(i))}</option>`).join("");
+  return `<div class="form-group sbn-idioma"><label for="sbn-idioma-cronica">${t("idioma.etiqueta")}</label>`
+    + `<div class="form-fields"><select id="sbn-idioma-cronica" name="idioma">${opciones}</select></div>`
+    + `<p class="hint">${t("idioma.hint")}</p></div>`;
+}
+
+/** Botón «sí» de un diálogo con selector: devuelve el idioma elegido. */
+const idiomaDelFormulario = (_evento, boton) => {
+  const v = boton.form?.elements?.idioma?.value;
+  return IDIOMAS.includes(v) ? v : idiomaCronica();
+};
+
 /**
- * Al entrar por primera vez a un mundo sin la crónica, se ofrece importarla.
- * Si ya está importada pero con otra versión del módulo, se ofrece
- * actualizarla, una vez por versión. Lo llama sólo game.users.activeGM
- * (main.mjs): con dos GM conectados, el diálogo sale una vez.
+ * Al entrar por primera vez a un mundo sin la crónica, se ofrece importarla
+ * eligiendo el idioma (por defecto, el de Foundry). Si ya está importada pero
+ * con otra versión del módulo, se ofrece actualizarla (en su idioma o en el
+ * otro), una vez por versión. Lo llama sólo game.users.activeGM (main.mjs):
+ * con dos GM conectados, el diálogo sale una vez.
  */
 export async function ofrecerImportacion() {
   if (!game.user.isGM) return;
-  const doc = await aventura();
-  if (!doc) return;
   const version = game.modules.get(SBN.ID).version;
   const dialogo = foundry.applications.api.DialogV2;
 
   if (cronicaImportada()) {
+    const actual = idiomaCronica();
+    const doc = await aventura(actual);
+    if (!doc) return;
     const importada = versionImportada(doc);
     const ofrecida = game.settings.get(SBN.ID, SBN.SETTINGS.VERSION_OFRECIDA);
     if (!importada || importada === version || ofrecida === version) return;
     // Por defecto «No»: actualizar reescribe documentos; con Enter no se hace sin querer.
-    const si = await dialogo.confirm({
+    const idioma = await dialogo.confirm({
       window: { title: t("importar.actualizarTitulo") },
       classes: ["sbn-dialogo"],
       position: { width: 520 },
       content: `<p>${t("importar.actualizarPregunta", { importada: esc(importada), version: esc(version) })}</p>`
         + `<p><strong>${t("importar.actualizarSeActualiza")}</strong> ${t("importar.actualizarQueSe")}</p>`
         + `<p><strong>${t("importar.actualizarSeConserva")}</strong> ${t("importar.actualizarQueNo")}</p>`
-        + `<p class="hint">${t("importar.actualizarAviso")}</p>`,
-      yes: { label: t("importar.actualizarSi"), default: false },
+        + `<p class="hint">${t("importar.actualizarAviso")}</p>`
+        + selectorIdioma(actual),
+      yes: { label: t("importar.actualizarSi"), default: false, callback: idiomaDelFormulario },
       no: { label: t("importar.no"), default: true }
     });
     await game.settings.set(SBN.ID, SBN.SETTINGS.VERSION_OFRECIDA, version);
-    if (si) await importarCronica();
+    if (IDIOMAS.includes(idioma)) await importarCronica({ idioma });
     return;
   }
 
   if (game.settings.get(SBN.ID, SBN.SETTINGS.IMPORTACION_OFRECIDA)) return;
-  const si = await dialogo.confirm({
+  const idioma = await preguntarImportacion();
+  await game.settings.set(SBN.ID, SBN.SETTINGS.IMPORTACION_OFRECIDA, true);
+  if (IDIOMAS.includes(idioma)) await importarCronica({ idioma });
+}
+
+/**
+ * El diálogo de la primera importación, con el selector de idioma y la
+ * descripción de la Aventura (con el aviso del Dark Pack). Devuelve el idioma
+ * elegido, o false/null si no se importa. Lo usa también tools/e2e/capturas-guia.mjs.
+ */
+export async function preguntarImportacion(propuesto = idiomaPorDefecto()) {
+  const doc = await aventura(propuesto) ?? await aventura("es");
+  if (!doc) return null;
+  return foundry.applications.api.DialogV2.confirm({
     window: { title: t("importar.titulo") },
     classes: ["sbn-dialogo"],
-    content: `<p>${t("importar.pregunta")}</p>${doc.description ?? ""}`,
-    yes: { label: t("importar.si"), default: true },
+    content: `<p>${t("importar.pregunta")}</p>${selectorIdioma(propuesto)}${doc.description ?? ""}`,
+    yes: { label: t("importar.si"), default: true, callback: idiomaDelFormulario },
     no: { label: t("importar.no"), default: false }
   });
-  await game.settings.set(SBN.ID, SBN.SETTINGS.IMPORTACION_OFRECIDA, true);
-  if (si) await importarCronica();
+}
+
+/**
+ * «Idioma de la crónica» en la configuración del módulo (sólo el Narrador):
+ * importa la crónica en el idioma elegido. Con la partida empezada, es cambiar
+ * de idioma conservando el mundo (los PJ de los jugadores no se tocan).
+ */
+export class MenuIdioma extends foundry.applications.api.DialogV2 {
+  constructor(options = {}) {
+    const actual = idiomaCronica();
+    const importada = cronicaImportada();
+    super(foundry.utils.mergeObject({
+      window: { title: t("idioma.menu.titulo"), icon: "fa-solid fa-language" },
+      classes: ["sbn-dialogo"],
+      position: { width: 520 },
+      content: `<p>${importada ? t("idioma.menu.actual", { idioma: esc(nombreIdioma(actual)) }) : t("idioma.menu.sinCronica")}</p>`
+        + selectorIdioma(actual)
+        + (importada ? `<p><strong>${t("importar.actualizarSeConserva")}</strong> ${t("importar.actualizarQueNo")}</p><p class="hint">${t("idioma.menu.aviso")}</p>` : ""),
+      buttons: [
+        { action: "importar", label: importada ? t("idioma.menu.cambiar") : t("importar.si"), icon: "fa-solid fa-language", default: true, callback: idiomaDelFormulario },
+        { action: "cancelar", label: t("importar.no"), icon: "fa-solid fa-xmark" }
+      ],
+      submit: async resultado => {
+        if (IDIOMAS.includes(resultado)) await importarCronica({ idioma: resultado });
+      }
+    }, options));
+  }
 }

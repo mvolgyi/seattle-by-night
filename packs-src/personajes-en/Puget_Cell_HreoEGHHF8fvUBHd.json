@@ -1,0 +1,62 @@
+{
+  "_id": "HreoEGHHF8fvUBHd",
+  "_key": "!actors!HreoEGHHF8fvUBHd",
+  "name": "Puget Cell",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 0,
+  "prototypeToken": {
+    "name": "Puget Cell",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "cell",
+    "members": [
+      "Actor.15UcuyhvNvNqkCOf",
+      "Actor.sEdBfHzj0JBxHNAa",
+      "Actor.5ywnpdrw93wmy235",
+      "Actor.cacjzuu13Bv7mJH5",
+      "Actor.yyJApTmnANPPdw3O",
+      "Actor.2hdWrhkD65ZNl4Xs"
+    ],
+    "headers": {
+      "concept": "FIRSTLIGHT cell in Seattle (2024), with Northline Cyber Advisory as its front",
+      "chronicle": "The Ward File",
+      "tenets": "<p>Don&#39;t touch it until you can tear it out by the roots.</p>"
+    },
+    "desperation": {
+      "value": 1
+    },
+    "danger": {
+      "value": 0,
+      "max": 5
+    },
+    "biography": "<p>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Profile: Puget Cell}</p><blockquote><p><em>Don&#39;t touch it until you can tear it out by the roots.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>FIRSTLIGHT cell in Seattle (2024), with Northline Cyber Advisory as its front</td></tr><tr><th>Base</th><td>@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}</td></tr><tr><th>Hunters</th><td>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}, @UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}, @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom}, @UUID[Actor.cacjzuu13Bv7mJH5]{Teresa “Tess” Navarro}, @UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak}, @UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen}</td></tr><tr><th>Also</th><td>@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}</td></tr><tr><th>Starting Desperation</th><td>1</td></tr><tr><th>Starting Danger</th><td>0 of 5</td></tr></tbody></table><p>A small cell, with a tight budget and a clear order: confirm whether Seattle has “an organized structure” and, if it does, don&#39;t touch it until it can be torn out by the roots. Special Agent Dana Okafor runs it from an eleventh-floor office in South Lake Union. It has one analyst who doesn&#39;t sleep, two more analysts, six operators contracted as a counterterrorism unit, and a liaison with the FBI&#39;s Seattle field office.</p>",
+    "notes": "",
+    "privatenotes": "<p><strong>Starting Desperation 1:</strong> a single cell, a budget that doesn&#39;t stretch far enough, and a source nobody trusts. <strong>Starting Danger 0:</strong> the quarry doesn&#39;t know the Cell exists. See @UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{The Puget Cell} for how they rise and fall during the adventure.</p><h3>Proposed (not in the docs)</h3><ul><li>Starting Desperation 1 and starting Danger 0 (maximum 5), and the rules for moving them during the adventure (page CEL-01).</li><li>The motto sums up the order doc 14 gives Okafor.</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CEL-01",
+      "journal": "JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G",
+      "lema": "Don't touch it until you can tear it out by the roots."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

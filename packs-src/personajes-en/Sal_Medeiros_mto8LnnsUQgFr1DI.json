@@ -1,0 +1,158 @@
+{
+  "_id": "mto8LnnsUQgFr1DI",
+  "_key": "!actors!mto8LnnsUQgFr1DI",
+  "name": "Sal Medeiros",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-13.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 130,
+  "prototypeToken": {
+    "name": "Sal Medeiros",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-13.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "SoDo fence (dies on Night 4 if nobody steps in)",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>SoDo fence (dies on Night 4 if nobody steps in)</td></tr></tbody></table><p>Seventy, former antiques dealer. Buys and sells to clients who only come out at night, and doesn&#39;t ask why. <em>Dies on <span class=\"sbn-reloj\" data-sbn-reloj=\"4\">Night 4</span> if nobody steps in.</em></p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 1
+      },
+      "social": {
+        "value": 5
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "finance": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "haggling",
+            "value": 1,
+            "paths": [
+              "skills.finance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "academics": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "antiques",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-13",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

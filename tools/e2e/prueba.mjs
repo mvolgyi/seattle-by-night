@@ -41,7 +41,15 @@
  *      motivos, ni ids de movimientos, pruebas, escenas o PNJ, ni votos; y su API
  *      no abre los sellos;
  *   9. (7) la migración: un estado en el formato viejo (todo a la vista) se lee
- *      igual, el GM lo sella al recargar, es idempotente y el panel lo muestra.
+ *      igual, el GM lo sella al recargar, es idempotente y el panel lo muestra;
+ *  10. (8) la crónica en inglés (TRADUCCION.md): el menú «Idioma de la crónica»,
+ *      importar la Aventura de aventura-en con lo que haya en content/en/ (lo
+ *      traducido sale en inglés, lo que falta en castellano), los mismos _id
+ *      (sin duplicados), data/en/cronica.json en el Panel, el PJ con dueño, el
+ *      handout entregado y la escena activa conservados, los avisos al Narrador
+ *      con la interfaz en inglés, y la vuelta al castellano.
+ * Las secciones 1–7 leen textos de la interfaz en castellano: el cliente del GM
+ * se pone en castellano (core.language) al empezar.
  * Si los packs todavía no existen, lo dice y prueba sólo la API.
  * Capturas en tools/e2e/capturas/.
  */
@@ -125,6 +133,22 @@ if (await page.evaluate(id => game.modules.get(id)?.active ?? null, MOD) === fal
   console.log("· módulo activado y mundo recargado");
 }
 await page.waitForFunction(id => !!game.modules.get(id)?.api, MOD, { timeout: 30000 });
+
+/** Idioma de la interfaz de este cliente (setting de cliente core.language, pide recargar). */
+async function idiomaCliente(pagina, lang) {
+  if (await pagina.evaluate(() => game.i18n.lang) === lang) return;
+  await pagina.evaluate(lang => game.settings.set("core", "language", lang), lang);
+  await pagina.reload({ waitUntil: "networkidle" });
+  await pagina.waitForFunction(() => globalThis.game?.ready === true, null, { timeout: 120000 });
+  await pagina.waitForFunction(id => !!game.modules.get(id)?.api, MOD, { timeout: 30000 });
+}
+// Las comprobaciones de 1–7 leen textos de lang/es.json (la sección 8 prueba el inglés).
+await idiomaCliente(page, "es");
+// Si una corrida anterior quedó a mitad de la sección 8, la crónica vuelve al castellano.
+if (await page.evaluate(MOD => game.settings.get(MOD, "sbn-idioma-cronica"), MOD) === "en") {
+  await page.evaluate(MOD => game.modules.get(MOD).api.importarCronica({ idioma: "es", silencioso: true }), MOD);
+  console.log("· la crónica estaba en inglés (corrida anterior): vuelve al castellano");
+}
 
 /* -------------------------------------------- */
 /*  1. Carga                                    */
@@ -1253,6 +1277,189 @@ console.log("  ", JSON.stringify({ ...panelMig, ...panelMig2 }));
 comprobar(panelMig.filas === 4 && panelMig.viejo && panelMig.noche, `el panel muestra el historial migrado con sus motivos (${panelMig.filas} filas)`);
 comprobar(panelMig2.krell === "true" && panelMig2.voto15 === "no", `y las pruebas y votos migrados (Krell ${panelMig2.krell}, PNJ-15 ${panelMig2.voto15})`);
 await page.evaluate(() => foundry.applications.instances.get("sbn-panel")?.close());
+
+/* -------------------------------------------- */
+/*  8. Crónica en inglés (The Ward File)        */
+/* -------------------------------------------- */
+
+if (hayPacks && r.packs["aventura-en"] > 0) {
+  console.log("\n8. Crónica en inglés");
+  // Lo que hay en content/en/: los journals traducidos (id y nombre inglés) y uno que falta.
+  const leerMeta = abs => {
+    const m = /^---\n([\s\S]*?)\n---/.exec(fs.readFileSync(abs, "utf8"));
+    return Object.fromEntries((m?.[1] ?? "").split("\n").map(l => /^(\w+):\s*"?(.*?)"?\s*$/.exec(l)).filter(Boolean).map(x => [x[1], x[2]]));
+  };
+  const mdDe = dir => fs.existsSync(dir) ? fs.readdirSync(dir, { recursive: true }).filter(f => f.endsWith(".md")).map(f => path.join(dir, f)) : [];
+  const CONTENT = path.join(RAIZ_REPO, "content");
+  const traducidos = mdDe(path.join(CONTENT, "en")).map(abs => {
+    const rel = path.relative(path.join(CONTENT, "en"), abs);
+    const es = leerMeta(path.join(CONTENT, rel));
+    return { id: es.id, es: es.nombre, en: leerMeta(abs).nombre };
+  }).filter(t => t.id && t.en);
+  const sinTraducir = mdDe(path.join(CONTENT, "ciudad")).map(abs => ({ rel: path.relative(CONTENT, abs), ...leerMeta(abs) }))
+    .find(m => !fs.existsSync(path.join(CONTENT, "en", m.rel)));
+  console.log(`  · content/en/: ${traducidos.length} journal(es) traducido(s)${sinTraducir ? `; sin traducir, p. ej. ${sinTraducir.id}` : ", todos"}`);
+
+  // El menú de la configuración ofrece los dos idiomas.
+  const menu = await page.evaluate(async MOD => {
+    const m = game.settings.menus.get(`${MOD}.sbn-idioma-menu`);
+    if (!m) return null;
+    const app = new m.type();
+    await app.render(true);
+    const opciones = [...app.element.querySelectorAll("select[name=idioma] option")].map(o => o.value);
+    const elegido = app.element.querySelector("select[name=idioma]")?.value;
+    await app.close();
+    return { opciones, elegido, restringido: m.restricted };
+  }, MOD);
+  comprobar(menu?.opciones?.join() === "es,en" && menu.elegido === "es" && menu.restringido,
+    `el menú «Idioma de la crónica» ofrece castellano e inglés y propone el actual (${JSON.stringify(menu)})`);
+
+  // Antes: un PJ con dueño jugador, un handout entregado, la escena activa.
+  const antes8 = await page.evaluate(async MOD => {
+    const jugador = game.users.getName("Jugador e2e") ?? await User.create({ name: "Jugador e2e", role: CONST.USER_ROLES.PLAYER });
+    const pj = game.actors.find(a => a.getFlag(MOD, "id") === "PJ-01");
+    if (pj.ownership[jugador.id] !== 3) await pj.update({ ownership: { [jugador.id]: 3 } });
+    const handout = game.journal.find(j => j.getFlag(MOD, "soporte"));
+    await handout.update({ "ownership.default": 2 });
+    await handout.pages.contents[0].update({ "ownership.default": 2 });
+    const gen = d => !!d.getFlag(MOD, "origen");
+    return {
+      jugador: jugador.id, pj: pj.id, pjNombre: pj.name, pjBio: pj.system.biography, hambre: pj.system.hunger?.value,
+      handout: handout.id, pagina: handout.pages.contents[0].id, activa: game.scenes.active?.id ?? null,
+      cuenta: { j: game.journal.filter(gen).length, a: game.actors.filter(gen).length, e: game.scenes.filter(gen).length, c: game.folders.filter(gen).length }
+    };
+  }, MOD);
+
+  const pedidosDatos = [];
+  const anotar = req => { const m = /\/modules\/seattle-by-night\/(data\/[^?]+)/.exec(req.url()); if (m) pedidosDatos.push(m[1]); };
+  page.on("request", anotar);
+  await page.evaluate(MOD => game.modules.get(MOD).api.importarCronica({ idioma: "en", silencioso: true }), MOD);
+  await page.waitForFunction(MOD => game.modules.get(MOD).api.Datos.archivo === "data/en/cronica.json" && game.modules.get(MOD).api.Datos.listos, MOD, { timeout: 10000 }).catch(() => null);
+  await page.waitForTimeout(1500);
+  const en8 = await page.evaluate(async ([MOD, a, ids, sinId, raizId]) => {
+    const api = game.modules.get(MOD).api;
+    const porId = id => game.journal.find(j => j.getFlag(MOD, "id") === id);
+    const gen = d => !!d.getFlag(MOD, "origen");
+    const pj = game.actors.get(a.pj);
+    const handout = game.journal.get(a.handout);
+    const helen = game.actors.find(x => x.getFlag(MOD, "id") === "PNJ-04");
+    return {
+      idioma: api.idioma(), setting: game.settings.get(MOD, "sbn-idioma-cronica"),
+      archivo: api.Datos.archivo, listos: api.Datos.listos, umbrales: api.Datos.umbrales.length,
+      traducidos: ids.map(id => porId(id)?.name ?? null),
+      paginasEn: porId(ids[0])?.pages.contents.map(p => p.name) ?? [],
+      sinTraducir: porId(sinId)?.name ?? null,
+      helen: helen ? { nombre: helen.name, perfil: /Profile:/.test(helen.system.biography ?? "") } : null,
+      raiz: game.folders.get(raizId)?.name ?? null,
+      cuenta: { j: game.journal.filter(gen).length, a: game.actors.filter(gen).length, e: game.scenes.filter(gen).length, c: game.folders.filter(gen).length },
+      pj: { dueño: pj.ownership[a.jugador], nombre: pj.name, bio: pj.system.biography === a.pjBio, hambre: pj.system.hunger?.value },
+      handout: handout.ownership.default, pagina: handout.pages.get(a.pagina)?.ownership.default,
+      activa: game.scenes.active?.id ?? null,
+      importada: Object.keys(game.settings.get("core", "adventureImports") ?? {}).filter(k => k.includes(`${MOD}.aventura-en`)).length
+    };
+  }, [MOD, antes8, traducidos.map(t => t.id), sinTraducir?.id, idEstable("aventura:raiz:JournalEntry")]);
+  page.off("request", anotar);
+  console.log("  ", JSON.stringify({ ...en8, pjBio: undefined }));
+  comprobar(en8.idioma === "en" && en8.setting === "en", `importar aventura-en deja la crónica en inglés (sbn-idioma-cronica = ${en8.setting})`);
+  comprobar(en8.archivo === "data/en/cronica.json" && en8.listos && en8.umbrales === 5 && pedidosDatos.includes("data/en/cronica.json"),
+    `el Panel recarga data/en/cronica.json (${pedidosDatos.join(", ") || "sin pedidos"}; ${en8.umbrales} umbrales)`);
+  const limpio = s => String(s ?? "").replace(/[*`]/g, "").replace(/\\(.)/g, "$1").trim();
+  const distintos8 = traducidos.filter((t, i) => limpio(en8.traducidos[i]) !== limpio(t.en));
+  comprobar(traducidos.length > 0 && !distintos8.length,
+    `lo traducido sale en inglés (${traducidos.length} journals: ${en8.traducidos.slice(0, 4).join(" · ")}…)${distintos8.length ? ` · distintos: ${distintos8.slice(0, 3).map(t => `${t.id} «${t.en}»`).join(", ")}` : ""}`);
+  comprobar(en8.paginasEn.length > 0 && !en8.paginasEn.some(n => /Notas del Narrador|Leer en voz alta/.test(n)), `y sus páginas también (${en8.paginasEn.join(" · ")})`);
+  if (sinTraducir) comprobar(en8.sinTraducir === sinTraducir.nombre, `lo que falta en content/en/ sigue en castellano («${en8.sinTraducir}»)`);
+  else console.log("  · (content/en/ tiene todo: no hay nada que caiga al castellano)");
+  if (fs.existsSync(path.join(CONTENT, "en/pnjs/fuera.json"))) comprobar(en8.helen?.perfil, `la ficha traducida de Helen (PNJ-04) está en inglés (${JSON.stringify(en8.helen)})`);
+  comprobar(en8.raiz === "The Ward File", `la carpeta raíz se llama «${en8.raiz}»`);
+  comprobar(JSON.stringify(en8.cuenta) === JSON.stringify(antes8.cuenta),
+    `mismos _id: no se duplicó nada (antes ${JSON.stringify(antes8.cuenta)}, después ${JSON.stringify(en8.cuenta)})`);
+  comprobar(en8.pj.dueño === 3 && en8.pj.nombre === antes8.pjNombre && en8.pj.bio && en8.pj.hambre === antes8.hambre,
+    `el PJ con dueño jugador no se toca al cambiar de idioma («${en8.pj.nombre}», Hambre ${en8.pj.hambre})`);
+  comprobar(en8.handout === 2 && en8.pagina === 2, "el handout entregado sigue revelado al cambiar de idioma");
+  comprobar(en8.activa === antes8.activa, "la escena activa no cambia al cambiar de idioma");
+  comprobar(en8.importada === 1, "Foundry anota la importación de aventura-en");
+
+  // Muestra amplia de lo que se ve: un journal de cada carpeta (nombre, páginas y su HTML), un PNJ
+  // con ventajas y poderes (Krell, PNJ-12), y una escena con salas (Helen: escena, regiones, luces).
+  // Heurística de tools/contenido/verificar-traduccion.mjs: frases con palabras frecuentes del
+  // castellano. Los nombres de los tiles (muebles[].desc) no se traducen todavía: no entran.
+  const muestra = await page.evaluate(MOD => {
+    const ES = new Set(["el", "los", "las", "que", "para", "con", "una", "del", "por", "pero", "está", "están", "también", "porque",
+      "cuando", "entre", "sobre", "muy", "sus", "como", "más", "este", "esta", "eso", "esto", "hasta", "desde", "donde", "dónde", "qué", "nada", "todo", "todos"]);
+    const CORTAS = ["y", "o", "en", "de", "la", "un", "es", "le", "lo", "se", "su", "ya"];
+    const legible = s => String(s ?? "").replace(/@UUID\[[^\]]*\]\{([^}]*)\}/g, "$1").replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/gi, " ");
+    const malas = [];
+    let revisados = 0;
+    const revisar = (donde, s) => {
+      revisados++;
+      for (const f of legible(s).split(/(?<=[.!?:;])\s+|\n+/).map(x => x.trim()).filter(x => x.length > 12)) {
+        const p = f.toLowerCase().match(/\p{L}+/gu) ?? [];
+        const hits = p.filter(w => ES.has(w) || CORTAS.includes(w)).length, largas = p.filter(w => ES.has(w)).length;
+        if (/[¿¡]/.test(f) || (p.length >= 4 && largas >= 2 && hits / p.length > 0.18)) { malas.push(`${donde}: «${f.slice(0, 80)}»`); return; }
+      }
+    };
+    const gen = d => !!d.getFlag(MOD, "origen");
+    const porCarpeta = new Map();
+    for (const j of game.journal.filter(gen)) if (!porCarpeta.has(j.folder?.id ?? null)) porCarpeta.set(j.folder?.id ?? null, j);
+    for (const j of porCarpeta.values()) {
+      revisar(`journal ${j.name}`, j.name);
+      for (const p of j.pages) { revisar(`${j.name} › ${p.name}`, p.name); revisar(`${j.name} › ${p.name}`, p.text?.content); }
+    }
+    const krell = game.actors.find(a => a.getFlag(MOD, "id") === "PNJ-12");
+    revisar("Krell", krell.system.biography);
+    revisar("Krell (piedras de toque)", krell.system.headers?.touchstones);
+    const ventajas = krell.items.filter(i => i.type === "feature"), poderes = krell.items.filter(i => i.type === "power");
+    for (const i of krell.items) { revisar(`Krell › ${i.name}`, i.name); revisar(`Krell › ${i.name}`, i.system.description); }
+    const helen = game.scenes.find(s => s.getFlag(MOD, "plano") === "helen");
+    revisar("escena Helen", helen.name);
+    revisar("escena Helen (nota)", helen.getFlag(MOD, "nota"));
+    for (const r of helen.regions) revisar(`escena Helen › región`, r.name);
+    return { carpetas: porCarpeta.size, revisados, malas, ventajas: ventajas.map(i => i.name), poderes: poderes.map(i => i.name),
+      regiones: helen.regions.contents.slice(0, 3).map(r => r.name) };
+  }, MOD);
+  console.log("  ", JSON.stringify({ ...muestra, malas: muestra.malas.slice(0, 8) }));
+  comprobar(muestra.carpetas >= 10 && muestra.ventajas.length > 0 && muestra.poderes.length > 0 && muestra.malas.length === 0,
+    `muestra en inglés sin castellano suelto: ${muestra.carpetas} carpetas, ${muestra.revisados} textos (Krell: ${muestra.ventajas.join(", ")} · ${muestra.poderes.join(", ")}; Helen: ${muestra.regiones.join(" · ")})${muestra.malas.length ? ` · ${muestra.malas.length} sospechosos` : ""}`);
+
+  // Los avisos al Narrador con la interfaz en inglés (el cliente arma el texto con lang/en.json).
+  await idiomaCliente(page, "en");
+  const chatEn = await page.evaluate(async MOD => {
+    const api = game.modules.get(MOD).api;
+    const espera = ms => new Promise(r => setTimeout(r, ms));
+    await game.settings.set(MOD, "termometro", { valor: 2, congelado: false, registro: [] });
+    await espera(200);
+    const n = game.messages.size;
+    await api.termometro(+1, "e2e: inglés");
+    await espera(800);
+    const nuevos = game.messages.contents.slice(n);
+    const html = [];
+    for (const m of nuevos) html.push((await m.renderHTML()).querySelector(".sbn-chat h4")?.textContent ?? "");
+    for (const m of nuevos) await m.delete();
+    await game.settings.set(MOD, "termometro", { valor: 2, congelado: false, registro: [] });
+    return { lang: game.i18n.lang, titulos: html.filter(Boolean), indicador: game.i18n.localize("SBN.indicador.termometro") };
+  }, MOD);
+  console.log("  ", JSON.stringify(chatEn));
+  comprobar(chatEn.lang === "en" && chatEn.titulos.some(t => /Thermometer 3/.test(t)) && chatEn.indicador === "Thermometer",
+    `con Foundry en inglés, los avisos y la interfaz salen en inglés («${chatEn.titulos.join(" | ")}»)`);
+  await captura("ingles");
+
+  // De vuelta al castellano: la misma operación con la otra Aventura.
+  await page.evaluate(MOD => game.modules.get(MOD).api.importarCronica({ idioma: "es", silencioso: true }), MOD);
+  await page.waitForTimeout(1500);
+  const es8 = await page.evaluate(([MOD, ids, a]) => ({
+    idioma: game.modules.get(MOD).api.idioma(),
+    archivo: game.modules.get(MOD).api.Datos.archivo,
+    nombres: ids.map(id => game.journal.find(j => j.getFlag(MOD, "id") === id)?.name ?? null),
+    pj: game.actors.get(a.pj).ownership[a.jugador]
+  }), [MOD, traducidos.map(t => t.id), antes8]);
+  const distintosEs = traducidos.filter((t, i) => limpio(es8.nombres[i]) !== limpio(t.es));
+  comprobar(es8.idioma === "es" && es8.archivo === "data/cronica.json" && !distintosEs.length && es8.pj === 3,
+    `volver a importar en castellano deja todo como estaba (${es8.nombres.slice(0, 4).join(" · ")}…)${distintosEs.length ? ` · distintos: ${distintosEs.slice(0, 3).map(t => t.id).join(", ")}` : ""}`);
+  await idiomaCliente(page, "es");
+} else if (hayPacks) {
+  console.log("\n8. (sin el compendio aventura-en compilado: se saltea el inglés)");
+}
 
 /* -------------------------------------------- */
 /*  Cierre                                      */

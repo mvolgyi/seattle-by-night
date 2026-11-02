@@ -1,0 +1,140 @@
+{
+  "_id": "x7rVnQfKbb3HdbG5",
+  "_key": "!journal!x7rVnQfKbb3HdbG5",
+  "name": "Loresheets",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-LORESHEETS",
+      "archivo": "content/ciudad/loresheets.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "hf0l5o8u4dQ5fJPt",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.hf0l5o8u4dQ5fJPt",
+      "name": "Loresheets",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>These three Loresheets are tied to Seattle and to the adventure. They&#39;re bought with experience points like any Background. A character can have only one Loresheet at level 4 or 5, unless the Storyteller says otherwise.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oGnroV6R68YdMQyD",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.oGnroV6R68YdMQyD",
+      "name": "LOR-01 · The Doctrine of Controlled Fury",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“Locate. Assess. Execute. Everything that comes after the first blow is the Beast asking permission.”</em></p>\n<p>In the &#39;50s, the Brujah Marcus “Ironjaw” Vance (@UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus “Ironjaw” Vance}) developed a method of combat and discipline for hunting Kindred without losing control of one&#39;s own Beast. He taught it to very few, in brutal sessions with cold water and broken bones. Today the doctrine survives in a handful of Camarilla enforcers on three continents. In Seattle, two know it: the one who finished the lesson and the one who didn&#39;t.</p>\n<p><strong>Prerequisite:</strong> having been trained by Vance or by someone who has this Loresheet at level 4 or higher.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Level</th>\n<th>Name</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>•</td>\n<td><strong>Locate</strong></td>\n<td>When you pursue a specific target (a Kindred you were sent to find), you gain +1 die on Awareness and Investigation tests to find them.</td>\n</tr>\n<tr>\n<td>••</td>\n<td><strong>Assess</strong></td>\n<td>Once per scene, after observing a Kindred for one turn, make a Wits + Insight test against their Composure + Subterfuge. On a success, the Storyteller tells you their Hunger level and whether they&#39;ll try to flee, fight, or negotiate.</td>\n</tr>\n<tr>\n<td>•••</td>\n<td><strong>Execute</strong></td>\n<td>Against a target you&#39;ve assessed (level 2) this scene, your first attack gains +2 dice. If that first attack misses, you can&#39;t use this effect again during the scene.</td>\n</tr>\n<tr>\n<td>••••</td>\n<td><strong>The Full Guard</strong></td>\n<td>You recognize the doctrine the moment you see it (<button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-03\"><span class=\"sbn-pista-id\">P-03</span> <span class=\"sbn-pista-nombre\">The <em>Controlled Fury</em> Technique</span></button>, <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-08\"><span class=\"sbn-pista-id\">P-08</span> <span class=\"sbn-pista-nombre\">The Inverted Guard</span></button>). A rival using the inverted guard loses 2 dice from their close-combat defense pools against you. In addition, you gain +1 die to resist fury frenzy during combat.</td>\n</tr>\n<tr>\n<td>•••••</td>\n<td><strong>Heir to the Fist</strong></td>\n<td>You can teach the doctrine up to level 3. Once per story, spend 1 point of Willpower to automatically succeed at a test to resist frenzy in combat. The Camarilla&#39;s Archons know your name, for better and for worse.</td>\n</tr>\n</tbody></table>\n<p><strong>Tests:</strong> Assess: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.insight\" data-dificultad=\"0\" data-label=\"Wits + Insight (vs. Composure + Subterfuge)\"><i class=\"fa-solid fa-dice-d10\"></i> Wits + Insight (vs. Composure + Subterfuge)</a> · the target resists with <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.composure skills.subterfuge\" data-dificultad=\"0\" data-label=\"Composure + Subterfuge\"><i class=\"fa-solid fa-dice-d10\"></i> Composure + Subterfuge</a>.</p>\n<p><em>Note: David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) has this Loresheet at level 4 if the player agrees. Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}) has level 2 and the inverted guard, without level 4.</em></p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "LOR-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2fax8pORxdPqKspO",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.2fax8pORxdPqKspO",
+      "name": "LOR-02 · The Seattle Underground",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“The city above is the one you see. The one below is the one that remembers.”</em></p>\n<p>Since 1889, buried streets, storefronts, and sidewalks have lain beneath Pioneer Square. Tourists see three blocks. The Nosferatu see the rest: tunnels linking basements, sewers, old steam conduits, and bricked-up passages that run all the way to the port. Whoever knows the underground knows a city that doesn&#39;t appear on any map.</p>\n<p><strong>Prerequisite:</strong> none, though levels 4 and 5 require permission from Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}) or his successor.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Level</th>\n<th>Name</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>•</td>\n<td><strong>Shortcuts</strong></td>\n<td>Downtown and in Pioneer Square, you gain +2 dice on tests to escape a pursuit or to reach a place first by going beneath the streets.</td>\n</tr>\n<tr>\n<td>••</td>\n<td><strong>The Undermarket</strong></td>\n<td>You have access to the Undermarket. Once per story, you can buy a specific piece of information in exchange for a minor favor to the Moles (@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{COT-04 · The Moles}).</td>\n</tr>\n<tr>\n<td>•••</td>\n<td><strong>Sealed Haven</strong></td>\n<td>You know a bricked-up passage that only you know how to open. It works as an additional Haven 1, with the Hidden advantage, and it&#39;s less than ten minutes from anywhere downtown.</td>\n</tr>\n<tr>\n<td>••••</td>\n<td><strong>The Mother</strong></td>\n<td>You know where the Mother Below sleeps. Once per chronicle, you can wake her for a moment to ask her a question. She knows things from before 1889. She sets the price.</td>\n</tr>\n<tr>\n<td>•••••</td>\n<td><strong>Architect Below</strong></td>\n<td>You can open and close sections of the Sealed Underground. Once per story, you can create a new Portillon for your coterie (+1 Portillon in a downtown domain). Seattle&#39;s Nosferatu treat you as if you were one of the clan.</td>\n</tr>\n</tbody></table>\n<p><em>Location: the Sealed Underground (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{The Sealed Underground (Seattle Underground)}).</em></p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "LOR-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qA75WygzgVjOeJvT",
+      "_key": "!journal.pages!x7rVnQfKbb3HdbG5.qA75WygzgVjOeJvT",
+      "name": "LOR-03 · The City's Eyes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>“We see what the city doesn&#39;t.” (Gale Sentinel slogan)</em></p>\n<p>Seattle has more cameras than streetlights: doorbells, traffic, public transit, stores, delivery drones. Almost all of them are connected. Kindred who understand this network can use it to their advantage. Those who don&#39;t end up in a file.</p>\n<p><strong>Prerequisite:</strong> Technology 2 or higher, or a contact who has it.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Level</th>\n<th>Name</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>•</td>\n<td><strong>Blind Spots</strong></td>\n<td>You know which parts of the city have fewer cameras and at what hours they fail. You gain +1 die on Stealth against electronic surveillance.</td>\n</tr>\n<tr>\n<td>••</td>\n<td><strong>Access</strong></td>\n<td>Once per session, make an Intelligence + Technology test (Difficulty 3) to view the doorbell and traffic camera footage of a specific place from the last 72 hours.</td>\n</tr>\n<tr>\n<td>•••</td>\n<td><strong>Erase</strong></td>\n<td>You know how to make yourself disappear from footage. Once per story, when FIRSTLIGHT&#39;s Thermometer would rise because of a camera, it doesn&#39;t.</td>\n</tr>\n<tr>\n<td>••••</td>\n<td><strong>Cold Subject</strong></td>\n<td>You know Gale Sentinel&#39;s ANOMALY model and how to fool it with thermal clothing, heat, or interference. ANOMALY cameras don&#39;t register the members of your coterie if you prepare beforehand (one Intelligence + Technology test, Difficulty 4, per scene).</td>\n</tr>\n<tr>\n<td>•••••</td>\n<td><strong>The Eye Inside</strong></td>\n<td>You have a trusted contact inside Gale Sentinel or Northline. Once per story, you can learn the Thermometer&#39;s current value and FIRSTLIGHT&#39;s next target.</td>\n</tr>\n</tbody></table>\n<p><strong>Tests:</strong> Access: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"3\" data-label=\"Intelligence + Technology (Difficulty 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Intelligence + Technology (Difficulty 3)</a> · Cold Subject: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"4\" data-label=\"Intelligence + Technology (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Intelligence + Technology (Difficulty 4)</a>.</p>\n<p><em>Note: Ezra Lund (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}) is the natural candidate for this Loresheet. If he discovers that Gale&#39;s firmware is his (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes} or @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}), he can buy level 4 without needing training.</em></p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "LOR-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

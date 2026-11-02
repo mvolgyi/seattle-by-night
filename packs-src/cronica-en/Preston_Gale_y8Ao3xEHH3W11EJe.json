@@ -1,0 +1,82 @@
+{
+  "_id": "y8Ao3xEHH3W11EJe",
+  "_key": "!journal!y8Ao3xEHH3W11EJe",
+  "name": "Preston Gale",
+  "folder": "TDRainDNFr8zoPD6",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-19",
+      "archivo": "content/personajes/PNJ-19.md",
+      "actor": "Actor.OE0huDRYvrhnxa9O"
+    }
+  },
+  "pages": [
+    {
+      "_id": "gogzWrW0qbJ1VTwj",
+      "_key": "!journal.pages!y8Ao3xEHH3W11EJe.gogzWrW0qbJ1VTwj",
+      "name": "Preston Gale",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-19.webp\" alt=\"Preston Gale\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.OE0huDRYvrhnxa9O]{Preston Gale}</p>\n<p>Halloway&#39;s ghoul, CEO of Gale Sentinel</p>\n<p>Early fifties, an investor-pitch smile, talks in slogans. He&#39;s been drinking from Halloway for twenty-six years, and for just as long he&#39;s been finding whatever he&#39;s asked to find.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "7bufauGi2zrLC5Rp",
+      "_key": "!journal.pages!y8Ao3xEHH3W11EJe.7bufauGi2zrLC5Rp",
+      "name": "Traits",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Standard Dice Pools:</strong> Physical 3 · Social 5 · Mental 5</p>\n<p><strong>Exceptional Dice Pools:</strong> Technology 7, Finance 6, Persuasion 6, Subterfuge 5</p>\n<p><strong>Health</strong> 6 · <strong>Willpower</strong> 4 · <strong>Discipline:</strong> Dominate 1 (Cloud Memory), through Halloway&#39;s blood</p>\n<p><strong>Weakness:</strong> his dose of Vitae has been due for three days. −1 die to everything until he gets it.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

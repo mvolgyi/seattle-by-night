@@ -1,0 +1,81 @@
+{
+  "_id": "ZUud4rgap2FTsiKB",
+  "_key": "!journal!ZUud4rgap2FTsiKB",
+  "name": "The City · The Laws of the Seattle Elysium",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 40,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-LEYES",
+      "archivo": "content/ciudad/03-leyes-del-eliseo.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "hcTLJY8naU8zazB0",
+      "_key": "!journal.pages!ZUud4rgap2FTsiKB.hcTLJY8naU8zazB0",
+      "name": "The City · The Laws of the Seattle Elysium",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Glass Gallery (@UUID[JournalEntry.iyojT7kJHH23BWLd]{The Glass Gallery (Elysium)}) enforces the Traditions of the Camarilla and five customs of its own. Solène Marchetti enforces all five and logs every infraction in her register (@UUID[JournalEntry.lcO0CdwUlZHg2wAX]{Register of the Keeper of Elysium, November Folio}).</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hsNI959HVuqpsE5W",
+      "_key": "!journal.pages!ZUud4rgap2FTsiKB.hsNI959HVuqpsE5W",
+      "name": "The Five Customs",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>The peace of the glass.</strong> No violence and no hostile Disciplines inside the Gallery. <em>Infraction:</em> immediate expulsion, loss of 1 dot of Status, and, if there is damage, a trial before the Prince.</li>\n<li><strong>The presentation.</strong> Every Kindred who arrives in the city presents themself to the Keeper before their third night. <em>Infraction:</em> they are considered a trespasser, and the Sheriff may hunt them.</li>\n<li><strong>Those who serve.</strong> The mortals and ghouls on the Gallery&#39;s staff are untouchable, however appetizing they may be. <em>Infraction:</em> a major debt to the Prince.</li>\n<li><strong>No connected device crosses the threshold.</strong> Phones, smartwatches, earbuds: everything is switched off and handed over at the entrance. Voight imposed this custom in 2024. <em>Infraction:</em> confiscation and a note in the register. On the second offense, loss of 1 dot of Status.</li>\n<li><strong>What is said among the glass.</strong> Nothing said in the Gallery is repeated outside without the Keeper&#39;s permission. <em>Infraction:</em> Marchetti stops receiving the offender until further notice, which in practice cuts them out of the city&#39;s political life.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

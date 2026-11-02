@@ -1,0 +1,109 @@
+{
+  "_id": "zSkwEUUtkNGhfXun",
+  "_key": "!journal!zSkwEUUtkNGhfXun",
+  "name": "Gale Sentinel Campus and Data Center",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 70,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-07",
+      "archivo": "content/ciudad/LUG-07.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "BxfZwDeir6T3tVdD",
+      "_key": "!journal.pages!zSkwEUUtkNGhfXun.BxfZwDeir6T3tVdD",
+      "name": "Gale Sentinel Campus and Data Center",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Bellevue, Eastside · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "BQPpOLqqyVa9mhVI",
+      "_key": "!journal.pages!zSkwEUUtkNGhfXun.BQPpOLqqyVa9mhVI",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The campus is an office park with artificial turf and benches nobody uses. In the lobby, a giant screen shows a mosaic of thousands of live doorbell feeds: porches, hallways, rain. Below it, the company motto: “We see what the city doesn&#39;t.” The building out back has no windows. It hums.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "R6nugsNhCADdUeYd",
+      "_key": "!journal.pages!zSkwEUUtkNGhfXun.R6nugsNhCADdUeYd",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Structure:</strong> an office building (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}&#39;s office is on the third floor), a windowless data center with three levels of security, and a testing room where the ANOMALY model is trained.</p>\n<p><strong>Security:</strong> mortal guards; at night, four of Gale&#39;s ghouls (@UUID[Actor.BzNGxOAK3F6Uo56T]{Halloway's Security Ghouls}). There are ANOMALY cameras at the entrances, so any Kindred who comes in through the front door gets logged as a “cold subject” (Thermometer +1: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"Kindred logged as a “cold subject” at Gale Sentinel\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">Kindred logged as a “cold subject” at Gale Sentinel</span></button>), unless @UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra} or someone with Technology 3 disables the module first.</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes} and @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}.</p>\n<p><strong>Clues:</strong> <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-06\"><span class=\"sbn-pista-id\">P-06</span> <span class=\"sbn-pista-nombre\">Unlogged Gale Sentinel Data Request</span></button>, <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-10\"><span class=\"sbn-pista-id\">P-10</span> <span class=\"sbn-pista-nombre\">SEA-0411 Shipments / DOC-07</span></button>, <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-11\"><span class=\"sbn-pista-id\">P-11</span> <span class=\"sbn-pista-nombre\">Gale&#39;s Signature</span></button>, @UUID[JournalEntry.YhmNvLugMfCZezEH]{Gale Sentinel: 2027 Product Roadmap, Confidential}.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

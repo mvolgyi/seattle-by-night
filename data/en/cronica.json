@@ -1,0 +1,2200 @@
+{
+ "$generado": "tools/contenido/datos.mjs desde content/trackers.json y content/pistas.json, con content/en/. No editar a mano: npm run contenido.",
+ "modulo": "seattle-by-night",
+ "termometro": {
+  "inicio": 2,
+  "min": 0,
+  "max": 10,
+  "visibilidad": "Players can see it; better if they don't see the exact number (AYU-03, doc 15). It helps for them to know it exists (doc 03).",
+  "ayuda": "AYU-03",
+  "umbrales": [
+   {
+    "valor": 3,
+    "icono": "👁",
+    "texto": "Passive surveillance on Helen.",
+    "ciudad": "Passive surveillance on Helen: a van outside her building, occasional drones.",
+    "jugadores": "Someone is watching the journalist.",
+    "interludio": "INT-01"
+   },
+   {
+    "valor": 5,
+    "icono": "☎",
+    "texto": "Okafor contacts Helen.",
+    "ciudad": "Okafor contacts Helen. She offers her protection in exchange for the file.",
+    "jugadores": "Someone calls the journalist.",
+    "pnj": "PNJ-18",
+    "nota": "The Clock (docs 10 and 11) also has Okafor contact Helen on Night 5, even if the Thermometer hasn't reached 5."
+   },
+   {
+    "valor": 7,
+    "icono": "🔍",
+    "texto": "Active investigation of a coterie asset. Visit to the medical examiner “R. A.”",
+    "ciudad": "Active investigation of a coterie asset: the company that owns the hangar, the Medical Examiner's Office, Nadia's calendar.",
+    "jugadores": "Someone is pulling the thread on one of ours.",
+    "nota": "Doc 14 (the newest) wins for the short text; doc 10 details the assets. Doc 01 spoke of “a mortal asset of David's” because it was written for a single player."
+   },
+   {
+    "valor": 9,
+    "icono": "🚨",
+    "texto": "Raid (A4-E02).",
+    "ciudad": "Raid (A4-E02).",
+    "jugadores": "There's a knock at the door.",
+    "escena": "A4-E02",
+    "interludio": "INT-03"
+   },
+   {
+    "valor": 10,
+    "icono": "🔥",
+    "texto": "Purge (FIN-D).",
+    "ciudad": "Purge: at least one Camarilla haven falls. The chronicle continues in survival mode.",
+    "jugadores": "There's no door anymore.",
+    "escena": "FIN-D"
+   }
+  ],
+  "movimientos": [
+   {
+    "id": "sube-cada-entrega-de-arquero-noches-2",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Each ARCHER delivery (Nights 2 and 5)",
+    "noches": [
+     2,
+     5
+    ]
+   },
+   {
+    "id": "sube-a3-e02-halloway-acelera-la-filtracion-porque-la",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Halloway speeds up the leak because the coterie took the original from Gale Sentinel",
+    "escena": "A3-E02",
+    "noche": 7
+   },
+   {
+    "id": "sube-un-vastago-registrado-por-anomaly-por",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "A Kindred recorded by ANOMALY (per scene)",
+    "por": "scene"
+   },
+   {
+    "id": "sube-a0-e01-salir-del-apartamento-de-helen-por",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Leaving Helen's apartment through the hallway without dealing with the 3B camera: ANOMALY records each Kindred as a “cold subject”",
+    "escena": "A0-E01",
+    "lugar": "LUG-05"
+   },
+   {
+    "id": "sube-a0-e01-romper-a-golpes-la-camara-del",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Smashing the 3B camera: the last image is a hand moving faster than normal",
+    "escena": "A0-E01",
+    "lugar": "LUG-05"
+   },
+   {
+    "id": "sube-a1-e02-salir-corriendo-a-velocidad-sobrenatural-de",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Running out of Terminal 46 at supernatural speed: the cameras, back up by now, record them",
+    "escena": "A1-E02"
+   },
+   {
+    "id": "sube-a1-e05-intento-de-intrusion-fallido-en-el",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Failed intrusion attempt on Gale Sentinel's test server (applies the following night: Gale shares those logs with Northline)",
+    "escena": "A1-E05",
+    "noche": "siguiente"
+   },
+   {
+    "id": "sube-a1-e05-dominacion-sobre-un-tecnico-de-guardia",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Dominate on an on-call technician at the Gale campus, in front of the ANOMALY cameras, if they weren't disabled first",
+    "escena": "A1-E05",
+    "lugar": "LUG-07"
+   },
+   {
+    "id": "sube-a3-e02-entrar-en-gale-sentinel-sin-desactivar",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Entering Gale Sentinel without disabling ANOMALY: each Kindred is recorded as a “cold subject” (+1 total)",
+    "escena": "A3-E02",
+    "lugar": "LUG-07"
+   },
+   {
+    "id": "sube-a3-e02-salir-corriendo-por-el-campus-de",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Running across the Gale Sentinel campus in front of the cameras",
+    "escena": "A3-E02",
+    "lugar": "LUG-07"
+   },
+   {
+    "id": "sube-camaras-corporales-de-firstlight-cada-accion",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "FIRSTLIGHT body cameras: each visible supernatural action in front of a camera (maximum +2 per scene)",
+    "por": "action",
+    "maximo": 2
+   },
+   {
+    "id": "sube-a2-e06-fallo-al-sacar-a-lonnie-delante",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Failing to get Lonnie out in front of FIRSTLIGHT's body cameras",
+    "escena": "A2-E06",
+    "noche": 5
+   },
+   {
+    "id": "sube-a1-e02-la-usb-de-pike-queda-en",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Pike's USB drive stays in the chain of custody: Hale copies it on Night 3 with her “consulting authorization” (DOC-09)",
+    "escena": "A1-E02",
+    "noche": 3,
+    "documento": "DOC-09"
+   },
+   {
+    "id": "sube-a1-e02-teo-vasquez-contesta-a-nrthln-research",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Teo Vásquez answers nrthln_research (if nobody deals with him before Night 4)",
+    "escena": "A1-E02",
+    "noche": 4,
+    "pnj": "MEN-06",
+    "documento": "DOC-06"
+   },
+   {
+    "id": "sube-a1-e04-la-subasta-de-thornquist-se-celebra",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "The Thornquist auction takes place (Night 5)",
+    "escena": "A1-E04",
+    "noche": 5,
+    "lugar": "LUG-04"
+   },
+   {
+    "id": "sube-a2-e02-escena-del-almacen-de-sal-sin",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "The scene at Sal's warehouse left uncleaned: the police find the phrase written in blood",
+    "escena": "A2-E02",
+    "noche": 4
+   },
+   {
+    "id": "sube-a2-e02-ruth-firma-la-autopsia-de-sal",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Ruth signs Sal's autopsy: FIRSTLIGHT's “R. A.” anomaly adds a report",
+    "escena": "A2-E02",
+    "pj": "PJ-06"
+   },
+   {
+    "id": "sube-gan-09-cada-informe-falso-mas-firmado-por",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "Each additional false report signed by “R. A.”",
+    "pj": "PJ-06",
+    "gancho": "GAN-09"
+   },
+   {
+    "id": "sube-a2-e05-abrir-la-cisterna-del-larchmont",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "Opening the Larchmont cistern",
+    "escena": "A2-E05",
+    "lugar": "LUG-11"
+   },
+   {
+    "id": "sube-a2-e06-firstlight-se-queda-con-lonnie-y",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "FIRSTLIGHT gets Lonnie and USB drive 3 (Lonnie sells USB drive 3 to nrthln_research, or the coterie arrives after 11:00 p.m.)",
+    "escena": "A2-E06",
+    "noche": 5,
+    "pnj": "MEN-01"
+   },
+   {
+    "id": "sube-a2-e06-combate-en-el-aparcamiento-del-denny",
+    "tipo": "sube",
+    "cambio": "+3",
+    "motivo": "Combat in the Denny's parking lot",
+    "escena": "A2-E06",
+    "noche": 5
+   },
+   {
+    "id": "sube-a3-e02-asalto-ruidoso-a-gale-sentinel-gale",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "Loud assault on Gale Sentinel (Gale warns Halloway, who moves the original that same night if they don't take it)",
+    "escena": "A3-E02",
+    "lugar": "LUG-07"
+   },
+   {
+    "id": "sube-a4-e03-accion-sobrenatural-visible-en-el-salon",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "Visible supernatural action in the ferry's passenger cabin (forty witnesses)",
+    "escena": "A4-E03",
+    "noche": 8,
+    "lugar": "LUG-15"
+   },
+   {
+    "id": "sube-lug-14-intrusion-descubierta-en-northline",
+    "tipo": "sube",
+    "cambio": "+3",
+    "motivo": "Intrusion discovered at Northline",
+    "lugar": "LUG-14"
+   },
+   {
+    "id": "sube-a4-e02-masacre-de-operadores-de-firstlight-en",
+    "tipo": "sube",
+    "cambio": "=10",
+    "motivo": "Massacre of FIRSTLIGHT operators in the raid: FIRSTLIGHT gets the definitive proof (Purge)",
+    "escena": "A4-E02",
+    "noche": 8
+   },
+   {
+    "id": "sube-a4-e02-firstlight-captura-a-un-vastago-en",
+    "tipo": "sube",
+    "cambio": "=10",
+    "motivo": "FIRSTLIGHT captures a Kindred in the raid: Purge; the adventure ends in FIN-D even if the Council goes well",
+    "escena": "A4-E02",
+    "noche": 8,
+    "desenlace": "FIN-D"
+   },
+   {
+    "id": "sube-el-expediente-llega-a-manos-de",
+    "tipo": "sube",
+    "cambio": "=10",
+    "motivo": "The File ends up in Okafor's hands (FIN-D · Red Tide)",
+    "desenlace": "FIN-D"
+   },
+   {
+    "id": "sube-gan-01-la-analista-hale-llega",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "GAN-01: analyst Hale gets to Marcos Delgado first (and has a composite sketch of David)",
+    "gancho": "GAN-01"
+   },
+   {
+    "id": "sube-gan-03-un-pj-que-bebio",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "GAN-03: a PC who drank the marked blood is seen under UV light (per scene)",
+    "gancho": "GAN-03",
+    "por": "scene"
+   },
+   {
+    "id": "sube-gan-04-ransom-le-cuenta-a",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "GAN-04: Ransom tells Okafor about Bear",
+    "gancho": "GAN-04"
+   },
+   {
+    "id": "sube-gan-08-helen-habla-del-video",
+    "tipo": "sube",
+    "cambio": "+2",
+    "motivo": "GAN-08: Helen talks about the viral video on the podcast without having talked to the PCs first",
+    "gancho": "GAN-08"
+   },
+   {
+    "id": "sube-gan-11-jun-comete-un-error",
+    "tipo": "sube",
+    "cambio": "+1",
+    "motivo": "GAN-11: Jun makes a mistake in public during the first story",
+    "gancho": "GAN-11"
+   },
+   {
+    "id": "baja-a1-e02-interceptar-el-informe-forense-doc-09",
+    "tipo": "baja",
+    "cambio": "-1",
+    "motivo": "Intercepting the DOC-09 medical examiner's report before Night 3",
+    "escena": "A1-E02",
+    "noche": 3,
+    "documento": "DOC-09"
+   },
+   {
+    "id": "baja-gan-03-retirar-la-sangre-marcada-gan-03",
+    "tipo": "baja",
+    "cambio": "-1",
+    "motivo": "Removing the marked blood (GAN-03); the coterie also earns a favor from Thornquist",
+    "gancho": "GAN-03"
+   },
+   {
+    "id": "baja-a4-e02-destruir-pruebas-en-la-redada-la",
+    "tipo": "baja",
+    "cambio": "-1",
+    "motivo": "Destroying evidence in the raid: the coterie escapes with everything destroyed (Haven −2 for the owner)",
+    "escena": "A4-E02",
+    "noche": 8
+   },
+   {
+    "id": "baja-a3-e02-borrar-la-base-de-datos-de",
+    "tipo": "baja",
+    "cambio": "-2",
+    "motivo": "Wiping the cold-subject database (Intelligence + Technology, Difficulty 4); Gale detects it the next day",
+    "escena": "A3-E02",
+    "lugar": "LUG-07"
+   },
+   {
+    "id": "baja-halloway-cae-como-arquero-fin-a",
+    "tipo": "baja",
+    "cambio": "-2",
+    "motivo": "Halloway goes down as ARCHER (FIN-A · The Truth Before the Throne): FIRSTLIGHT loses its source",
+    "desenlace": "FIN-A"
+   },
+   {
+    "id": "baja-el-expediente-se-destruye-fin-c",
+    "tipo": "baja",
+    "cambio": "-3",
+    "motivo": "The File is destroyed (FIN-C · Purifying Fire)",
+    "desenlace": "FIN-C"
+   },
+   {
+    "id": "otros-fin-b-el-sabueso-cambia-de",
+    "tipo": "otros",
+    "cambio": "congelar",
+    "motivo": "FIN-B · The Hound Changes Masters: no change, but it doesn't rise again while Halloway reigns",
+    "desenlace": "FIN-B"
+   },
+   {
+    "id": "otros-a3-e02-cortar-el-acceso-de-northline-a",
+    "tipo": "otros",
+    "cambio": "congelar",
+    "motivo": "Cutting Northline's access to ANOMALY (Intelligence + Technology, Difficulty 3): the Thermometer stops rising from cameras for the rest of the adventure",
+    "escena": "A3-E02",
+    "lugar": "LUG-07",
+    "alcance": "cameras"
+   }
+  ],
+  "evitar": [
+   {
+    "motivo": "Taking Helen out by the fire escape avoids the 3B camera; opening the camera carefully and disconnecting it (Dexterity + Larceny, Difficulty 3) doesn't raise it; Obfuscate (Cloak of Shadows) keeps it from recording whoever uses it, but not the others",
+    "escena": "A0-E01"
+   },
+   {
+    "motivo": "Convincing the officers at Terminal 46 that it's “a funeral home dumping ashes”: the case is closed, DOC-09 doesn't exist, and the Thermometer doesn't rise on Night 3",
+    "escena": "A1-E02",
+    "noche": 3
+   },
+   {
+    "motivo": "Dealing with Teo before Night 4: buying him off, convincing him, or wiping his memory (the last one, 1 Stain to anyone without a good reason)",
+    "escena": "A1-E02",
+    "noche": 4
+   },
+   {
+    "motivo": "Cleaning up the scene at Sal's warehouse: staging it as a robbery (Intelligence + Subterfuge, Difficulty 3) or calling Montgomery",
+    "escena": "A2-E02"
+   },
+   {
+    "motivo": "Disabling ANOMALY from outside (Intelligence + Technology, Difficulty 4; Ezra +2 dice if he discovered the firmware is his; automatic with LOR-03 at level 4)",
+    "escena": "A3-E02"
+   },
+   {
+    "motivo": "Fooling ANOMALY: LOR-03 at level 4, prepared thermal clothing (Intelligence + Technology, Difficulty 4, per scene), or disabling the module locally (Intelligence + Technology, Difficulty 4). Obfuscate doesn't fool it"
+   },
+   {
+    "motivo": "LOR-03 level 3 “Erase”: once per story, when the Thermometer would rise because of a camera, it doesn't",
+    "lor": "LOR-03"
+   },
+   {
+    "motivo": "GAN-08: burying the viral video within 48 hours (Intelligence + Technology, Difficulty 5): the Thermometer doesn't rise",
+    "gancho": "GAN-08"
+   }
+  ],
+  "condiciones": [
+   {
+    "valor": "4 or more",
+    "efecto": "Montgomery receives the coterie in a foul mood and spends the first two minutes reproaching them for every mistake.",
+    "escena": "A1-E03"
+   },
+   {
+    "valor": "9 or more at the end of A3-E04",
+    "efecto": "The raid is triggered (A4-E02): it happens at 9:40 p.m. on Night 8, before the Council.",
+    "escena": "A4-E02",
+    "noche": 8
+   },
+   {
+    "valor": "4 or less at the end of the adventure",
+    "efecto": "+1 experience point for the whole coterie."
+   },
+   {
+    "valor": "any",
+    "efecto": "LOR-03 level 5 “The Eye Inside”: once per story, the character can learn the Thermometer's current value and FIRSTLIGHT's next target.",
+    "lor": "LOR-03"
+   }
+  ]
+ },
+ "reloj": {
+  "descripcion": "The city moves even if the coterie doesn't act. Each night that passes, the event on the table happens. If the coterie steps in first, the event changes or disappears. The date is that of each night's small hours.",
+  "noches": [
+   {
+    "n": 1,
+    "fecha": "2026-11-12",
+    "dia": "Thu, Nov 12",
+    "evento": "The theft (Prologue).",
+    "escena": "A0-E01",
+    "escenas": [
+     "A0-E01",
+     "A1-E01"
+    ],
+    "horas": [
+     {
+      "hora": "2:52–3:03 a.m.",
+      "evento": "The Gale Sentinel cameras in Helen's building go dark (eleven minutes). Ezra sees it on his monitors (P-01)."
+     },
+     {
+      "hora": "3:01 a.m.",
+      "evento": "Someone wipes Helen's cloud with the correct credentials."
+     },
+     {
+      "hora": "3:04 a.m.",
+      "evento": "The theft."
+     },
+     {
+      "hora": "3:19 a.m.",
+      "evento": "David's flip phone rings: the call from SAFE (A0-E01). David and Bear arrive fifteen minutes later."
+     },
+     {
+      "hora": "3:20 a.m.",
+      "evento": "Nadia gets a voicemail from Helen: four seconds of breathing."
+     },
+     {
+      "hora": "3:21 a.m.",
+      "evento": "Hal sees David and Bear leave the hangar in the truck."
+     },
+     {
+      "hora": "3:30 a.m.",
+      "evento": "Mr. Pell asks Celeste to authorize “an urgent payment to a security vendor.”"
+     },
+     {
+      "hora": "3:40 a.m.",
+      "evento": "Ruth's ex-husband calls her about a strange call-out in Ballard."
+     },
+     {
+      "hora": "3:40 a.m.",
+      "evento": "Lonnie Barras opens the drive's folders in the car and copies three blocks onto three USB drives."
+     },
+     {
+      "hora": "4:10 a.m.",
+      "evento": "The ghoul watcher in the gray electric car leaves, if the coterie does nothing."
+     },
+     {
+      "hora": "4:20 a.m.",
+      "evento": "Helen writes from memory the list of what was in the basement (AYU-02)."
+     }
+    ],
+    "movimientos": []
+   },
+   {
+    "n": 2,
+    "fecha": "2026-11-13",
+    "dia": "Fri, Nov 13",
+    "evento": "Krell destroys Pike at Pier 46 (A1-E02). Gale discovers the drive was copied. First ARCHER delivery.",
+    "escena": "A1-E02",
+    "escenas": [
+     "A1-E02",
+     "A1-E03",
+     "A1-E04"
+    ],
+    "horas": [
+     {
+      "hora": "2:00–3:00 a.m. (2:30)",
+      "evento": "Krell destroys Pike beside a red shipping container at Terminal 46. Teo Vásquez sees it from the crane (DOC-06)."
+     },
+     {
+      "hora": "4:30 a.m.",
+      "evento": "The shift supervisor calls the Port Police."
+     },
+     {
+      "hora": "4:45 a.m.",
+      "evento": "Police cordon. The coterie can arrive between 4:45 and 6:00 a.m."
+     },
+     {
+      "hora": "6:52 a.m.",
+      "evento": "The remains arrive at the Medical Examiner's Office (DOC-09)."
+     },
+     {
+      "hora": "7:12 a.m.",
+      "evento": "Sunrise."
+     },
+     {
+      "hora": "end of the night",
+      "evento": "Montgomery summons the coterie to the farm (A1-E03), or at the start of Night 3."
+     }
+    ],
+    "movimientos": [
+     {
+      "id": "noche-2-primera-entrega-de-arquero",
+      "cambio": "+1",
+      "motivo": "First ARCHER delivery"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "fecha": "2026-11-14",
+    "dia": "Sat, Nov 14",
+    "evento": "Elysium night (A2-E01). Krell watches Sal's warehouse.",
+    "escena": "A2-E01",
+    "escenas": [
+     "A2-E01"
+    ],
+    "horas": [],
+    "movimientos": [
+     {
+      "id": "noche-3-hale-copia-la-usb-de-pike",
+      "cambio": "+1",
+      "motivo": "Hale copies Pike's USB drive if it stayed in the chain of custody (DOC-09)",
+      "condicional": true
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "fecha": "2026-11-15",
+    "dia": "Sun, Nov 15",
+    "evento": "Krell raids the fence's warehouse: he destroys his protector Corwin, kills Sal, and, if she's still unprotected, Jun, who'd gone there to get paid (A2-E02).",
+    "escena": "A2-E02",
+    "escenas": [
+     "A2-E02",
+     "A2-E06"
+    ],
+    "horas": [
+     {
+      "hora": "1:50–2:10 a.m.",
+      "evento": "If the coterie arrives in this window, they find Krell in the middle of the job."
+     },
+     {
+      "hora": "1:55 a.m.",
+      "evento": "If the coterie sets up an ambush, Krell comes in through the back door."
+     },
+     {
+      "hora": "2:00 a.m.",
+      "evento": "Krell raids Sal's warehouse in SoDo."
+     },
+     {
+      "hora": "3:15 a.m.",
+      "evento": "The police arrive."
+     },
+     {
+      "hora": "3:22 a.m.",
+      "evento": "A freight train passes by the warehouse."
+     }
+    ],
+    "movimientos": [
+     {
+      "id": "noche-4-teo-contesta-a-nrthln-research-si",
+      "cambio": "+1",
+      "motivo": "Teo answers nrthln_research if nobody dealt with him",
+      "condicional": true
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "fecha": "2026-11-16",
+    "dia": "Mon, Nov 16",
+    "evento": "A terrified Lonnie sets up an 11:00 p.m. meeting with nrthln_research to sell them USB drive 3 (A2-E06). If he pulls it off: Thermometer +2. Second ARCHER delivery (+1). Okafor contacts Helen.",
+    "escena": "A2-E06",
+    "escenas": [
+     "A2-E06"
+    ],
+    "horas": [
+     {
+      "hora": "before 10:00 p.m.",
+      "evento": "The coterie finds Lonnie in room 214 of the Starlite (also works on Night 4)."
+     },
+     {
+      "hora": "10:00–11:00 p.m.",
+      "evento": "Lonnie heads for the Denny's: he has to be intercepted on the way or in the parking lot."
+     },
+     {
+      "hora": "11:00 p.m.",
+      "dia": "Mon, Nov 16",
+      "evento": "Meeting at the Denny's with nrthln_research (Okafor and two MEN-02 agents)."
+     }
+    ],
+    "movimientos": [
+     {
+      "id": "noche-5-segunda-entrega-de-arquero",
+      "cambio": "+1",
+      "motivo": "Second ARCHER delivery"
+     },
+     {
+      "id": "noche-5-lonnie-le-vende-la-usb-3",
+      "cambio": "+2",
+      "motivo": "Lonnie sells USB drive 3 to FIRSTLIGHT",
+      "condicional": true
+     },
+     {
+      "id": "noche-5-la-subasta-de-thornquist-se-celebra",
+      "cambio": "+2",
+      "motivo": "The Thornquist auction takes place",
+      "condicional": true
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "fecha": "2026-11-17",
+    "dia": "Tue, Nov 17",
+    "evento": "Krell finds Lonnie, if FIRSTLIGHT doesn't already have him. Krell goes after one of the coterie's Touchstones (A3-E01). The original moves to Halloway's vault.",
+    "escena": "A3-E01",
+    "escenas": [
+     "A3-E01"
+    ],
+    "horas": [
+     {
+      "hora": "shortly after midnight",
+      "evento": "Krell goes after the most exposed person in the coterie's circle (A3-E01)."
+     },
+     {
+      "hora": "during the night",
+      "evento": "Gale moves the original drive from the data center (LUG-07) to the vault in Halloway Tower (LUG-06)."
+     }
+    ],
+    "movimientos": []
+   },
+   {
+    "n": 7,
+    "fecha": "2026-11-18",
+    "dia": "Wed, Nov 18",
+    "evento": "Halloway hands Montgomery “evidence” against David (A3-E04).",
+    "escena": "A3-E04",
+    "escenas": [
+     "A3-E03",
+     "A3-E04"
+    ],
+    "horas": [
+     {
+      "hora": "midnight",
+      "evento": "Krell's meeting at Terminal 86 (A3-E03). Gale's drone records from outside."
+     },
+     {
+      "hora": "at the end of the night",
+      "evento": "A3-E04 · The Pack Doubts (or at the start of Night 8)."
+     }
+    ],
+    "movimientos": []
+   },
+   {
+    "n": 8,
+    "fecha": "2026-11-19",
+    "dia": "Thu, Nov 19",
+    "evento": "Primogen Council (A4-E01). If the Thermometer is at 9 or more, the raid (A4-E02).",
+    "escena": "A4-E01",
+    "escenas": [
+     "A4-E02",
+     "A4-E01",
+     "A4-E03"
+    ],
+    "horas": [
+     {
+      "hora": "9:40 p.m.",
+      "evento": "If the Thermometer is at 9 or more at the end of A3-E04: FIRSTLIGHT reaches the raid's target (A4-E02), before the Council."
+     },
+     {
+      "hora": "10:30 p.m.",
+      "dia": "Thu, Nov 19",
+      "evento": "Primogen Council in Halloway Tower (A4-E01)."
+     },
+     {
+      "hora": "12:30 a.m.",
+      "evento": "Mr. Pell leaves the tower with the briefcase (A4-E03)."
+     },
+     {
+      "hora": "12:55 a.m.",
+      "evento": "Last ferry to Bainbridge from Colman Dock (A4-E03). The crossing takes 35 minutes."
+     },
+     {
+      "hora": "1:30 a.m.",
+      "evento": "The ferry reaches the far shore: endings."
+     }
+    ],
+    "movimientos": []
+   }
+  ],
+  "variantes": [
+   {
+    "si": "In A1-E03 the coterie asks for more than three nights and gets them (Manipulation + Persuasion, Difficulty 4)",
+    "entonces": "Montgomery gives five nights and A3-E04 happens on Night 8 instead of Night 7.",
+    "escena": "A1-E03"
+   },
+   {
+    "si": "Montgomery sets his deadline in A1-E03",
+    "entonces": "Three nights. After that, if he has neither the drive nor a name, he goes looking himself, his way.",
+    "escena": "A1-E03"
+   },
+   {
+    "si": "Jun flees on the bicycle and wins the chase (A1-E04)",
+    "entonces": "She disappears until Night 4.",
+    "escena": "A1-E04"
+   },
+   {
+    "si": "The coterie doesn't rescue Jun before Night 4",
+    "entonces": "Jun is the second victim, at Sal's warehouse (A2-E02).",
+    "escena": "A2-E02",
+    "noche": 4
+   },
+   {
+    "si": "The coterie convinces the officers at Terminal 46 (A1-E02)",
+    "entonces": "DOC-09 doesn't exist and the Thermometer doesn't rise on Night 3.",
+    "noche": 3
+   },
+   {
+    "si": "The coterie gets into Gale's server (A1-E05) on Nights 1 to 3",
+    "entonces": "They also find the 3B camera footage from the early hours of the theft.",
+    "escena": "A1-E05"
+   },
+   {
+    "si": "The coterie reaches Gale Sentinel (A3-E02) on Night 6 or earlier",
+    "entonces": "The original is still in the data center. After that, it's in the vault in Halloway Tower.",
+    "escena": "A3-E02",
+    "noche": 6
+   },
+   {
+    "si": "The coterie storms Gale Sentinel by force",
+    "entonces": "Gale warns Halloway, who moves the original that same night if they don't take it.",
+    "escena": "A3-E02"
+   },
+   {
+    "si": "The coterie takes the original from Gale Sentinel",
+    "entonces": "Halloway finds out on Night 7, can no longer use it against the Prince in A4-E01, and speeds up the leak: Thermometer +1 on Night 7.",
+    "noche": 7
+   },
+   {
+    "si": "Lonnie is under the coterie's protection after A2-E06",
+    "entonces": "On Night 6 Krell may go after him instead of a Touchstone.",
+    "escena": "A3-E01",
+    "noche": 6
+   },
+   {
+    "si": "Krell gets Lonnie on Night 6",
+    "entonces": "Lonnie dies. USB drive 3 goes to Halloway's vault along with the original.",
+    "noche": 6
+   },
+   {
+    "si": "In A3-E01 the hostage gets away from Krell",
+    "entonces": "Krell falls back and tries again on Night 7 with another target.",
+    "escena": "A3-E01",
+    "noche": 7
+   },
+   {
+    "si": "Krell didn't take a hostage in A3-E01",
+    "entonces": "The Terminal 86 meeting comes anyway: a note on the hangar door in the same handwriting.",
+    "escena": "A3-E03",
+    "noche": 7
+   },
+   {
+    "si": "The coterie follows Krell's trail that same Night 6",
+    "entonces": "They reach Terminal 86 earlier than expected (A3-E03, “If the Coterie Arrives Early”).",
+    "escena": "A3-E01",
+    "noche": 6
+   },
+   {
+    "si": "The coterie already told Montgomery about Krell and showed him P-15 or the email from C.H.",
+    "entonces": "A3-E04 skips the first half and becomes a planning session for the climax.",
+    "escena": "A3-E04"
+   },
+   {
+    "si": "The Prince regains the initiative (for example, warned earlier with evidence)",
+    "entonces": "The Council moves to the Glass Gallery and Halloway loses 2 dice on all his tests in the scene.",
+    "escena": "A4-E01",
+    "noche": 8
+   },
+   {
+    "si": "The coterie leaves Halloway Tower after 12:30 a.m.",
+    "entonces": "Dexterity + Drive (Difficulty 3) to reach Colman Dock before 12:55 a.m.; on a failure, they have to catch the ferry by boat.",
+    "escena": "A4-E03",
+    "noche": 8
+   },
+   {
+    "si": "Someone has LOR-03 at level 5",
+    "entonces": "They know the raid's target and time from Night 7 on.",
+    "escena": "A4-E02",
+    "noche": 7
+   }
+  ]
+ },
+ "pistas": [
+  {
+   "id": "P-01",
+   "nombre": "Professional Mortal Thieves; Looped Cameras",
+   "escena": "A1-E01",
+   "escenas": [
+    "A1-E01",
+    "A0-E01"
+   ],
+   "obtencion": [
+    {
+     "escena": "A0-E01",
+     "tipo": "preludio",
+     "como": "Ezra's prelude: at 2:52 he sees a block of Gale Sentinel cameras in Ballard go dark for eleven minutes.",
+     "pj": "PJ-03"
+    },
+    {
+     "escena": "A0-E01",
+     "tipo": "principal",
+     "como": "Intelligence + Technology (Difficulty 3): Helen's camera has a disconnection log from 2:52 to 3:03.",
+     "lugar": "LUG-05"
+    },
+    {
+     "escena": "A1-E01",
+     "tipo": "principal",
+     "como": "The thieves were mortal professionals and the cameras were looped. Intelligence + Investigation (Difficulty 3) when searching the apartment: they got in with an electronic lock pick and knew where to look (P-01, reinforced); with 3 or more successes, the adhesive repeater on the door frame.",
+     "lugar": "LUG-05"
+    },
+    {
+     "escena": "A1-E01",
+     "tipo": "documento",
+     "como": "DOC-01: the cameras that “didn't record anything” are the first sign of Gale Sentinel.",
+     "documento": "DOC-01"
+    },
+    {
+     "escena": "CAP-00",
+     "tipo": "relato",
+     "como": "The dark lights on the Gale Sentinel cameras are P-01 and lead to A1-E05."
+    }
+   ],
+   "dados": {},
+   "efectos": []
+  },
+  {
+   "id": "P-02",
+   "nombre": "Ghoul Vitae on the Doorknob",
+   "escena": "A1-E01",
+   "escenas": [
+    "A1-E01",
+    "A0-E01"
+   ],
+   "obtencion": [
+    {
+     "escena": "A0-E01",
+     "tipo": "principal",
+     "como": "Resolve + Awareness (Difficulty 2), or automatic with Auspex 1: the coin smell in the hallway is watered-down Vitae, with no Beast behind it. Auspex 4 (Spirit's Touch) on the doorknob: the mark of a ghoul waiting for their next dose.",
+     "lugar": "LUG-05"
+    },
+    {
+     "escena": "A1-E01",
+     "tipo": "principal",
+     "como": "Smell of someone else's Vitae on the doorknob: it belongs to a ghoul (if it wasn't found earlier).",
+     "lugar": "LUG-05"
+    },
+    {
+     "escena": "CAP-00",
+     "tipo": "relato",
+     "como": "The one sniffing around the stairwell is a Gale ghoul (MEN-04). His Vitae is the P-02 trail."
+    }
+   ],
+   "dados": {},
+   "efectos": []
+  },
+  {
+   "id": "P-03",
+   "nombre": "The Controlled Fury Technique",
+   "escena": "A1-E02",
+   "escenas": [
+    "A1-E02"
+   ],
+   "obtencion": [
+    {
+     "escena": "A1-E02",
+     "tipo": "principal",
+     "como": "Intelligence + Brawl (Difficulty 4): dents at chest height, always in the same sequence (ribs, sternum, throat). David, with LOR-01 at level 4, recognizes it without rolling."
+    },
+    {
+     "escena": "LOR-01",
+     "tipo": "loresheet",
+     "como": "LOR-01 level 4 “The Complete Guard”: you recognize the doctrine the moment you see it."
+    }
+   ],
+   "dados": {},
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Thornquist switches to “no” if the coterie proves to him that Krell, Halloway's man, destroyed Pike (P-03 plus P-12 or Krell's testimony)."
+    }
+   ]
+  },
+  {
+   "id": "P-04",
+   "nombre": "Partial Copy of the File on a USB Drive",
+   "escena": "A1-E02",
+   "escenas": [
+    "A1-E02"
+   ],
+   "obtencion": [
+    {
+     "escena": "A1-E02",
+     "tipo": "principal",
+     "como": "Wits + Awareness (Difficulty 3): the USB drive is in the inside pocket of the jacket, among the ashes. Taking it without the officers seeing: Dexterity + Larceny (Difficulty 3)."
+    }
+   ],
+   "dados": {},
+   "efectos": []
+  },
+  {
+   "id": "P-05",
+   "nombre": "Jun, the Thin-Blood Courier",
+   "escena": "A1-E04",
+   "escenas": [
+    "A1-E04"
+   ],
+   "obtencion": [
+    {
+     "escena": "A1-E04",
+     "tipo": "principal",
+     "como": "Manipulation + Persuasion (Difficulty 4) with Thornquist: with one success he confirms there are copies for sale; with 3 or more, he reveals that Jun brought them to him and where she sleeps. Ezra gets +2 dice.",
+     "lugar": "LUG-04"
+    }
+   ],
+   "dados": {},
+   "efectos": []
+  },
+  {
+   "id": "P-06",
+   "nombre": "Unlogged Gale Sentinel Data Request",
+   "escena": "A1-E05",
+   "escenas": [
+    "A1-E05",
+    "A1-E01",
+    "A3-E02",
+    "A0-E01"
+   ],
+   "obtencion": [
+    {
+     "escena": "A1-E01",
+     "tipo": "parcial",
+     "como": "Intelligence + Technology (Difficulty 4) on Helen's laptop: the cloud was wiped from an IP at an Eastside data center (P-06, partial)."
+    },
+    {
+     "escena": "A1-E05",
+     "tipo": "principal",
+     "como": "Intelligence + Investigation (Difficulty 3): a request dated November 9, at 4:12, for access to the Market Street building's network, with no contract, authorized by “P.G.”",
+     "lugar": "LUG-07"
+    },
+    {
+     "escena": "A3-E02",
+     "tipo": "alternativa",
+     "como": "If A1-E05 is skipped, the same information turns up in A3-E02.",
+     "lugar": "LUG-07"
+    },
+    {
+     "escena": "A0-E01",
+     "tipo": "documento",
+     "como": "DOC-05: the November 9 message (“Change the lock”). It was Gale Sentinel (P-06).",
+     "documento": "DOC-05"
+    }
+   ],
+   "dados": {},
+   "efectos": []
+  },
+  {
+   "id": "P-07",
+   "nombre": "Halloway Knows About the Cold Water",
+   "escena": "A2-E01",
+   "escenas": [
+    "A2-E01"
+   ],
+   "obtencion": [
+    {
+     "escena": "A2-E01",
+     "tipo": "principal",
+     "como": "Intelligence + Academics (Difficulty 3), or automatic for David: Halloway quotes “the cold water in the mornings,” which appears only in Vance's private journals. Wits + Insight (Difficulty 4) to notice he's lying when he explains it.",
+     "lugar": "LUG-03"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": [
+    {
+     "escena": "A2-E03",
+     "efecto": "Winning over the assembly at Salt's: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
+    }
+   ]
+  },
+  {
+   "id": "P-08",
+   "nombre": "The Inverted Guard",
+   "escena": "A2-E02",
+   "escenas": [
+    "A2-E02",
+    "A1-E02",
+    "A3-E01",
+    "A3-E03"
+   ],
+   "obtencion": [
+    {
+     "escena": "A1-E02",
+     "tipo": "indicio",
+     "como": "With 4 or more successes on Intelligence + Brawl, or LOR-01 at level 4 and one success on Wits + Brawl (Difficulty 3): the last blow came in from the left, as if the attacker's guard were switched. Teo: “He hit with his left out front, like southpaws in boxing.”"
+    },
+    {
+     "escena": "A2-E02",
+     "tipo": "principal",
+     "como": "Intelligence + Brawl (Difficulty 4) on Corwin's ashes: Controlled Fury with the inverted guard, weak hand forward. David, with LOR-01 at level 4: automatic."
+    },
+    {
+     "escena": "A3-E01",
+     "tipo": "refuerzo",
+     "como": "If the coterie arrives in time, David automatically recognizes the inverted guard with LOR-01 at level 4."
+    },
+    {
+     "escena": "A3-E03",
+     "tipo": "documento",
+     "como": "DOC-04: the doctrine of Controlled Fury and the inverted guard, which gives Krell away (P-08).",
+     "documento": "DOC-04"
+    },
+    {
+     "escena": "LOR-01",
+     "tipo": "loresheet",
+     "como": "LOR-01 level 4 “The Complete Guard”: you recognize the doctrine the moment you see it (P-03, P-08)."
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": [
+    {
+     "escena": "A2-E03",
+     "efecto": "Winning over the assembly at Salt's: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
+    }
+   ]
+  },
+  {
+   "id": "P-09",
+   "nombre": "The Journals Bought in 1986",
+   "escena": "A2-E04",
+   "escenas": [
+    "A2-E04"
+   ],
+   "obtencion": [
+    {
+     "escena": "A2-E04",
+     "tipo": "principal",
+     "como": "After the three rounds in the ring, O'Connor tells them about the 1986 shipment from Lyon, addressed to one of Halloway's companies: handwritten journals with “M.V.” on the cover."
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": []
+  },
+  {
+   "id": "P-10",
+   "nombre": "SEA-0411 Shipments / DOC-07",
+   "escena": "A3-E02",
+   "escenas": [
+    "A3-E02",
+    "A2-E01"
+   ],
+   "obtencion": [
+    {
+     "escena": "A3-E02",
+     "tipo": "principal",
+     "como": "Layer 3, storage: the shipping logs from the ARCHER channel, with reference SEA-0411, and the complete DOC-07.",
+     "lugar": "LUG-07"
+    },
+    {
+     "escena": "A2-E01",
+     "tipo": "documento",
+     "como": "DOC-07 can arrive earlier if Voight trusts the coterie.",
+     "documento": "DOC-07"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 2
+   },
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Voight switches to “no” if the coterie proves to her that ARCHER is Halloway (P-10, the C.H. email, or Gale's or Dawson's testimony)."
+    }
+   ]
+  },
+  {
+   "id": "P-11",
+   "nombre": "Gale's Signature",
+   "escena": "A3-E02",
+   "escenas": [
+    "A3-E02"
+   ],
+   "obtencion": [
+    {
+     "escena": "A3-E02",
+     "tipo": "principal",
+     "como": "Layer 2, Gale's office: Intelligence + Investigation (Difficulty 3); one success: Preston Gale's digital signature on the access authorizations for Market Street.",
+     "lugar": "LUG-07"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": []
+  },
+  {
+   "id": "P-12",
+   "nombre": "Krell's Testimony",
+   "escena": "A3-E03",
+   "escenas": [
+    "A3-E03"
+   ],
+   "obtencion": [
+    {
+     "escena": "A3-E03",
+     "tipo": "principal",
+     "como": "With Krell at 3 “steps,” the “Witness” offer: Manipulation + Persuasion (Difficulty 3); Krell accepts if David promises him nobody will destroy him afterward. The “The Other Guard” offer (LOR-01 at level 4 and P-15, or folio 42) also turns him into a witness, no roll needed.",
+     "lugar": "LUG-16"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 3
+   },
+   "efectos": [
+    {
+     "escena": "A3-E04",
+     "efecto": "Krell present as a witness: +2 more dice to the central test."
+    },
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Thornquist switches to “no” with P-03 plus P-12 or Krell's testimony. If Krell testifies, Halloway loses his composure for the first time."
+    }
+   ]
+  },
+  {
+   "id": "P-13",
+   "nombre": "Sal's Ledger",
+   "escena": "A2-E02",
+   "escenas": [
+    "A2-E02",
+    "A1-E04"
+   ],
+   "obtencion": [
+    {
+     "escena": "A1-E04",
+     "tipo": "parcial",
+     "como": "Doc 11 erratum: Thornquist says the copies come from a fence in SoDo; the fence's name is worth a minor favor (P-13, partial).",
+     "lugar": "LUG-04"
+    },
+    {
+     "escena": "A2-E02",
+     "tipo": "principal",
+     "como": "Wits + Investigation (Difficulty 3): the ledger is under the desk. Entry for November 13: “L.B. — 3 keys, 2 sold (T.), 1 pending. Motel?”"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": []
+  },
+  {
+   "id": "P-14",
+   "nombre": "The Payment from Cascade Holdings",
+   "escena": "A2-E06",
+   "escenas": [
+    "A2-E06",
+    "A0-E01",
+    "A2-E01",
+    "A3-E02"
+   ],
+   "obtencion": [
+    {
+     "escena": "A0-E01",
+     "tipo": "adelantada",
+     "como": "Celeste's prelude: at 3:30 she authorizes “an urgent payment to a security vendor” from a Halloway Meridian company. If she reviews the transfer later, it's an early clue.",
+     "pj": "PJ-02"
+    },
+    {
+     "escena": "A2-E01",
+     "tipo": "adelantada",
+     "como": "If Celeste reviews the Cascade accounts that same week (Halloway's trap), she finds P-14 earlier.",
+     "pj": "PJ-02"
+    },
+    {
+     "escena": "A2-E06",
+     "tipo": "principal",
+     "como": "Lonnie: “The money came from a company. Cascade Holdings. I've got the receipt.”"
+    },
+    {
+     "escena": "A3-E02",
+     "tipo": "alternativa",
+     "como": "Layer 2, Gale's office: the records of the payments to Lonnie from Cascade Holdings, if they don't already have them.",
+     "lugar": "LUG-07"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Celeste defends herself with the truth: if she found P-14 and the note from the prelude, she proves she only signed what Pell handed her: +2 dice to the case test.",
+     "pj": "PJ-02"
+    }
+   ]
+  },
+  {
+   "id": "P-15",
+   "nombre": "The Folios About the German",
+   "escena": "A3-E02",
+   "escenas": [
+    "A3-E02"
+   ],
+   "obtencion": [
+    {
+     "escena": "A3-E02",
+     "tipo": "principal",
+     "como": "Layer 3, private archive (air-gapped server): copying the files takes Intelligence + Technology (Difficulty 3); finding the folios among thousands of images takes Intelligence + Investigation (Difficulty 4), or it's automatic by searching for the word “allemand.”",
+     "lugar": "LUG-07"
+    }
+   ],
+   "dados": {
+    "A3-E04": 1,
+    "A4-E01": 1
+   },
+   "efectos": [
+    {
+     "escena": "A3-E03",
+     "efecto": "Showing P-15 to Krell adds 3 “steps” at once. The “The Other Guard” offer requires LOR-01 at level 4 and P-15 (or David knowing folio 42)."
+    },
+    {
+     "escena": "A3-E04",
+     "efecto": "Spotting the forgery of the “M.V.” letter is automatic with P-15 or DOC-04. If the coterie already showed P-15 or the C.H. email to Montgomery, the scene skips its first half."
+    }
+   ]
+  }
+ ],
+ "pruebas": [
+  {
+   "id": "PRUEBA-CORREO-CH",
+   "nombre": "“C.H.” Email to Gale",
+   "escena": "A3-E02",
+   "como": "Layer 2, Gale's office: three or more successes on Intelligence + Investigation (Difficulty 3). “Recover all copies. Top priority. — C.H.,” dated November 13.",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Voight switches to “no.”"
+    },
+    {
+     "escena": "A3-E04",
+     "efecto": "If they already showed it to Montgomery, the scene skips its first half."
+    }
+   ]
+  },
+  {
+   "id": "PRUEBA-DOC-08",
+   "nombre": "DOC-08 · O'Connor's Letter",
+   "escena": "A2-E04",
+   "documento": "DOC-08",
+   "dados": {
+    "A4-E01": 1
+   },
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Marchetti switches to “no” if she sees DOC-08, with Whitmore's note (“C.H. — watch”). Keeping the promise to O'Connor makes him Allies 2."
+    }
+   ]
+  },
+  {
+   "id": "PRUEBA-DOC-03",
+   "nombre": "DOC-03 · Marchetti's Night 3 Record",
+   "escena": "A2-E01",
+   "documento": "DOC-03",
+   "dados": {},
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Marchetti switches to “no” if the coterie cites her Night 3 record: the record is what she respects most."
+    }
+   ]
+  },
+  {
+   "id": "PRUEBA-TESTIGO-LONNIE",
+   "nombre": "Witness: Lonnie Barras",
+   "escena": "A2-E06",
+   "pnj": "MEN-01",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-TESTIGO-GALE",
+   "nombre": "Witness: Dawson or Gale",
+   "escena": "A3-E02",
+   "como": "Dawson alive and captured is a witness: Gale's ghoul, he sniffed out Helen's stairwell and received the drive from Lonnie (doc 12).",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Vote: Voight switches to “no” with Gale's or Dawson's testimony."
+    }
+   ]
+  },
+  {
+   "id": "PRUEBA-MONTGOMERY",
+   "nombre": "Montgomery in Favor",
+   "escena": "A3-E04",
+   "como": "Success with 3 or more successes on the central test in A3-E04: Montgomery enters the Council alongside David.",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-DISCO-ORIGINAL",
+   "nombre": "The Original Drive in the Coterie's Hands",
+   "escena": "A3-E02",
+   "como": "It's only in Gale's data center until Night 6.",
+   "dados": {},
+   "efectos": [
+    {
+     "escena": "A4-E01",
+     "efecto": "Halloway can't use it as evidence against the Prince."
+    },
+    {
+     "escena": "A3-E02",
+     "efecto": "Halloway finds out on Night 7 and speeds up the leak to FIRSTLIGHT: Thermometer +1."
+    }
+   ]
+  },
+  {
+   "id": "PRUEBA-KRELL-PRESENTE",
+   "nombre": "Krell Present as a Witness",
+   "escena": "A3-E03",
+   "dados": {
+    "A3-E04": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-FAVOR-MONTGOMERY",
+   "nombre": "Montgomery owes the coterie a favor (Krell handed over to the Sheriff in A3-E03)",
+   "escena": "A3-E03",
+   "dados": {
+    "A3-E04": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-MENTIRA-A1-E03",
+   "nombre": "The coterie lied to Montgomery in A1-E03 and he wrote it down",
+   "escena": "A1-E03",
+   "dados": {
+    "A3-E04": -2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-HONESTIDAD-DAVID",
+   "nombre": "David admits something that costs him (what he knows about Krell, what he felt in the silos, the Larchmont business)",
+   "escena": "A3-E04",
+   "pj": "PJ-01",
+   "dados": {
+    "A3-E04": 1
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-HERMANO-DE-SANGRE",
+   "nombre": "“He's my blood brother” (if David knows it and says so)",
+   "escena": "A3-E04",
+   "pj": "PJ-01",
+   "dados": {
+    "A3-E04": 1
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-FALSIFICACION",
+   "nombre": "Proving the “M.V.” letter is a forgery",
+   "escena": "A3-E04",
+   "como": "Intelligence + Academics (Difficulty 3), or automatic with DOC-04 or P-15: it's in English (Vance wrote in French) and has traces of toner.",
+   "dados": {
+    "A3-E04": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-INFORMES-HAL",
+   "nombre": "Hal says that in thirty years of reports he never found anything that cast doubt on David",
+   "escena": "A3-E04",
+   "pj": "PJ-05",
+   "dados": {
+    "A3-E04": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-CELESTE-VERDAD",
+   "nombre": "Celeste defends herself with the truth (P-14 and the note from the prelude)",
+   "escena": "A4-E01",
+   "pj": "PJ-02",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-NADIA-PRINCIPE",
+   "nombre": "Nadia speaks on behalf of the Prince (Charisma + Performance instead of Politics)",
+   "escena": "A4-E01",
+   "pj": "PJ-04",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-ASHBY",
+   "nombre": "Julian Ashby testifies against Halloway (Charisma + Persuasion, Difficulty 2, if he's accused at the Council)",
+   "escena": "A4-E01",
+   "pnj": "PNJ-10",
+   "dados": {
+    "A4-E01": 2
+   },
+   "efectos": []
+  },
+  {
+   "id": "PRUEBA-OKAFOR-LONNIE",
+   "nombre": "FIRSTLIGHT has Lonnie: Okafor has a witness who talks about Cascade Holdings",
+   "escena": "A2-E06",
+   "como": "“If the coterie finds out about this later, they can use it in A4-E01.” The doc doesn't set its value.",
+   "dados": {},
+   "efectos": []
+  }
+ ],
+ "tiradas": {
+  "A3-E04": {
+   "nombre": "The Pack Hesitates: The Central Test",
+   "tirada": "Manipulation + Persuasion (Difficulty 4), rolled by whoever speaks for the coterie",
+   "dificultad": 4,
+   "automatico": "If anyone attempts Dominate or Presence on Montgomery (Fortitude 4, Unswayable Mind), he notices and the central test automatically fails.",
+   "nota": "Doc 12 wins: +1 die for each clue from P-07 to P-15.",
+   "rutas": [
+    [
+     "attributes.manipulation",
+     "skills.persuasion"
+    ]
+   ],
+   "pistas": [
+    "P-07",
+    "P-08",
+    "P-09",
+    "P-10",
+    "P-11",
+    "P-12",
+    "P-13",
+    "P-14",
+    "P-15"
+   ],
+   "porPista": 1,
+   "pruebas": [
+    "PRUEBA-KRELL-PRESENTE",
+    "PRUEBA-FAVOR-MONTGOMERY",
+    "PRUEBA-MENTIRA-A1-E03",
+    "PRUEBA-HONESTIDAD-DAVID",
+    "PRUEBA-HERMANO-DE-SANGRE",
+    "PRUEBA-FALSIFICACION",
+    "PRUEBA-INFORMES-HAL"
+   ],
+   "resultados": [
+    {
+     "resultado": "Success with 3 or more successes",
+     "efecto": "The Wolves (COT-01) are with the coterie: Montgomery enters the Council alongside David; during the raid, the bounty hunters help evacuate; in A4-E03, Montgomery waits on the dock."
+    },
+    {
+     "resultado": "Simple success",
+     "efecto": "Montgomery doesn't turn against them, but he doesn't help openly either: “Prove it to me tomorrow in front of everyone.”"
+    },
+    {
+     "resultado": "Failure",
+     "efecto": "The coterie are fugitives. The bounty hunters are hunting David. In A4-E01, David needs to get into the Council without being stopped at the door."
+    }
+   ]
+  },
+  "A4-E01": {
+   "nombre": "Primogen Council: The Case Test",
+   "tirada": "Manipulation or Charisma + Politics (Difficulty 4), contested by Halloway (Manipulation + Politics: 10 dice)",
+   "dificultad": 4,
+   "rutas": [
+    [
+     "attributes.manipulation",
+     "skills.politics"
+    ],
+    [
+     "attributes.charisma",
+     "skills.politics"
+    ]
+   ],
+   "oponente": {
+    "pnj": "PNJ-03",
+    "reserva": 10,
+    "texto": "Manipulation + Politics"
+   },
+   "valores": [
+    {
+     "id": "P-07",
+     "cantidad": 1,
+     "pistas": [
+      "P-07"
+     ]
+    },
+    {
+     "id": "P-08",
+     "cantidad": 1,
+     "pistas": [
+      "P-08"
+     ]
+    },
+    {
+     "id": "P-09",
+     "cantidad": 1,
+     "pistas": [
+      "P-09"
+     ]
+    },
+    {
+     "id": "P-10",
+     "cantidad": 2,
+     "pistas": [
+      "P-10"
+     ]
+    },
+    {
+     "id": "P-11",
+     "cantidad": 1,
+     "pistas": [
+      "P-11"
+     ]
+    },
+    {
+     "id": "PRUEBA-CORREO-CH",
+     "cantidad": 2,
+     "prueba": "PRUEBA-CORREO-CH"
+    },
+    {
+     "id": "P-13+P-14",
+     "cantidad": 1,
+     "pistas": [
+      "P-13",
+      "P-14"
+     ]
+    },
+    {
+     "id": "P-15",
+     "cantidad": 1,
+     "pistas": [
+      "P-15"
+     ]
+    },
+    {
+     "id": "PRUEBA-DOC-08",
+     "cantidad": 1,
+     "prueba": "PRUEBA-DOC-08"
+    },
+    {
+     "id": "P-12",
+     "cantidad": 3,
+     "pistas": [
+      "P-12"
+     ]
+    },
+    {
+     "id": "PRUEBA-TESTIGO-LONNIE",
+     "cantidad": 2,
+     "prueba": "PRUEBA-TESTIGO-LONNIE"
+    },
+    {
+     "id": "PRUEBA-TESTIGO-GALE",
+     "cantidad": 2,
+     "prueba": "PRUEBA-TESTIGO-GALE"
+    },
+    {
+     "id": "PRUEBA-MONTGOMERY",
+     "cantidad": 2,
+     "prueba": "PRUEBA-MONTGOMERY"
+    },
+    {
+     "id": "PRUEBA-DISCO-ORIGINAL",
+     "cantidad": 0,
+     "prueba": "PRUEBA-DISCO-ORIGINAL",
+     "efecto": "Halloway can't use it as evidence against the Prince"
+    }
+   ],
+   "otros": [
+    {
+     "id": "PRUEBA-CELESTE-VERDAD",
+     "cantidad": 2,
+     "prueba": "PRUEBA-CELESTE-VERDAD"
+    },
+    {
+     "id": "PRUEBA-NADIA-PRINCIPE",
+     "cantidad": 2,
+     "prueba": "PRUEBA-NADIA-PRINCIPE"
+    },
+    {
+     "id": "PRUEBA-ASHBY",
+     "cantidad": 2,
+     "prueba": "PRUEBA-ASHBY"
+    },
+    {
+     "id": "A4-E01-OTRO-EL-CONSEJO-SE-TRASLADA-A-LA",
+     "cantidad": -2,
+     "motivo": "The Council moves to the Glass Gallery (the Prince has regained the initiative)",
+     "a": "Halloway"
+    }
+   ],
+   "resultados": [
+    {
+     "margen": "Halloway wins",
+     "efecto": "The room believes him. Celeste is handed over. The votes lean toward the regency.",
+     "max": -1
+    },
+    {
+     "margen": "Tie or 1–2 successes",
+     "efecto": "Doubt. The vote decides.",
+     "min": 0,
+     "max": 2
+    },
+    {
+     "margen": "3–4 successes",
+     "efecto": "Halloway is exposed. The vote almost certainly turns against him.",
+     "min": 3,
+     "max": 4
+    },
+    {
+     "margen": "5 or more",
+     "efecto": "Total exposure. The Prince orders the Sheriff to arrest Halloway on the spot. Halloway flees (A4-E03).",
+     "min": 5
+    }
+   ],
+   "votacion": {
+    "texto": "3 votes in favor out of 5",
+    "necesita": 3,
+    "total": 5,
+    "porDefecto": "If the coterie does nothing, Halloway wins 3 to 0, with two abstentions or Fry voting against.",
+    "automatico": "Attacking Halloway in his tower: the vote comes out “yes” automatically. Using Dominate on a Primogen and getting caught (Voight's Wits + Awareness: 7 dice): that Primogen's vote turns against whoever tried it.",
+    "primogenitos": [
+     {
+      "pnj": "PNJ-03",
+      "defecto": "Yes",
+      "cambia": "Never.",
+      "voto": "si",
+      "apoyos": []
+     },
+     {
+      "pnj": "PNJ-15",
+      "defecto": "Yes. She believes Whitmore failed.",
+      "cambia": "The coterie proves to her that ARCHER is Halloway (P-10, the C.H. email, or Gale's or Dawson's testimony).",
+      "voto": "si",
+      "apoyos": [
+       "P-10",
+       "PRUEBA-CORREO-CH",
+       "PRUEBA-TESTIGO-GALE"
+      ]
+     },
+     {
+      "pnj": "PNJ-13",
+      "defecto": "Yes. Halloway paid him.",
+      "cambia": "The coterie proves to him that Krell destroyed Pike (P-03 plus P-12 or Krell's testimony), or offers him a major favor from the whole coterie.",
+      "voto": "si",
+      "apoyos": [
+       "P-03",
+       "P-12"
+      ]
+     },
+     {
+      "pnj": "PNJ-14",
+      "defecto": "Abstains.",
+      "cambia": "She sees DOC-08, with Whitmore's note (“C.H. — watch”), or the coterie cites her Night 3 record (DOC-03). Then she votes “no.”",
+      "voto": "abstencion",
+      "apoyos": [
+       "PRUEBA-DOC-08",
+       "PRUEBA-DOC-03"
+      ]
+     },
+     {
+      "pnj": "PNJ-16",
+      "defecto": "Unpredictable: roll 1 die; even, yes; odd, no.",
+      "cambia": "Someone speaks a hard truth out loud during the debate: Fry votes with whoever said it.",
+      "voto": "azar",
+      "apoyos": []
+     }
+    ]
+   }
+  }
+ },
+ "uuids": {
+  "A0-E01": {
+   "uuid": "JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB",
+   "nombre": "A0-E01 · The Call from SAFE",
+   "tipo": "pagina"
+  },
+  "A1-E01": {
+   "uuid": "JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP",
+   "nombre": "A1-E01 · What They Took",
+   "tipo": "pagina"
+  },
+  "A1-E02": {
+   "uuid": "JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y",
+   "nombre": "A1-E02 · Ash at Pier 46",
+   "tipo": "pagina"
+  },
+  "A1-E03": {
+   "uuid": "JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1",
+   "nombre": "A1-E03 · The Sheriff Asks",
+   "tipo": "pagina"
+  },
+  "A1-E04": {
+   "uuid": "JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo",
+   "nombre": "A1-E04 · Everything Sells Below",
+   "tipo": "pagina"
+  },
+  "A1-E05": {
+   "uuid": "JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO",
+   "nombre": "A1-E05 · The City's Eyes",
+   "tipo": "pagina"
+  },
+  "A2-E01": {
+   "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6",
+   "nombre": "A2-E01 · Elysium Night",
+   "tipo": "pagina"
+  },
+  "A2-E02": {
+   "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z",
+   "nombre": "A2-E02 · “Locate. Assess. Execute.”",
+   "tipo": "pagina"
+  },
+  "A2-E03": {
+   "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG",
+   "nombre": "A2-E03 · Salt's",
+   "tipo": "pagina"
+  },
+  "A2-E04": {
+   "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO",
+   "nombre": "A2-E04 · The Sheriff That Was",
+   "tipo": "pagina"
+  },
+  "A2-E05": {
+   "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9",
+   "nombre": "A2-E05 · The Ashes of the Larchmont",
+   "tipo": "pagina"
+  },
+  "A2-E06": {
+   "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie",
+   "nombre": "A2-E06 · The One Who Kept One",
+   "tipo": "pagina"
+  },
+  "A3-E01": {
+   "uuid": "JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420",
+   "nombre": "A3-E01 · The Other Son",
+   "tipo": "pagina"
+  },
+  "A3-E02": {
+   "uuid": "JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV",
+   "nombre": "A3-E02 · The Data Center",
+   "tipo": "pagina"
+  },
+  "A3-E03": {
+   "uuid": "JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr",
+   "nombre": "A3-E03 · Face to Face with Krell",
+   "tipo": "pagina"
+  },
+  "A3-E04": {
+   "uuid": "JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn",
+   "nombre": "A3-E04 · The Pack Wavers",
+   "tipo": "pagina"
+  },
+  "A4-E01": {
+   "uuid": "JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn",
+   "nombre": "A4-E01 · Primogen Council",
+   "tipo": "pagina"
+  },
+  "A4-E02": {
+   "uuid": "JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T",
+   "nombre": "A4-E02 · The Raid",
+   "tipo": "pagina"
+  },
+  "A4-E03": {
+   "uuid": "JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc",
+   "nombre": "A4-E03 · The Last Ferry",
+   "tipo": "pagina"
+  },
+  "AYU-02": {
+   "uuid": "JournalEntry.ifdmxLzsoLizs9uN",
+   "nombre": "Index of the Ward File",
+   "tipo": "journal"
+  },
+  "AYU-03": {
+   "uuid": "JournalEntry.b13NIR35K7HpthZv",
+   "nombre": "FIRSTLIGHT's Thermometer",
+   "tipo": "journal"
+  },
+  "CAP-00": {
+   "uuid": "JournalEntry.CeLqLZCfHQEtHYlk",
+   "nombre": "Chapter 0 · What the Water Doesn't Wash Away",
+   "tipo": "journal"
+  },
+  "COT-01": {
+   "uuid": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy",
+   "nombre": "COT-01 · Whitmore's Wolves",
+   "tipo": "pagina"
+  },
+  "DOC-01": {
+   "uuid": "JournalEntry.zNhdOMSnEHdvMIGE",
+   "nombre": "Helen Ward's Voice Memos #7",
+   "tipo": "journal"
+  },
+  "DOC-03": {
+   "uuid": "JournalEntry.lcO0CdwUlZHg2wAX",
+   "nombre": "Register of the Keeper of Elysium, November Folio",
+   "tipo": "journal"
+  },
+  "DOC-04": {
+   "uuid": "JournalEntry.kzeWNRBY6tgLP37S",
+   "nombre": "Journal of M. Vance, Marseille, 1963, Folio 14 (Typewritten Copy)",
+   "tipo": "journal"
+  },
+  "DOC-05": {
+   "uuid": "JournalEntry.EQ3lkuiGnEvoSW7x",
+   "nombre": "SAFE: Saved Messages",
+   "tipo": "journal"
+  },
+  "DOC-06": {
+   "uuid": "JournalEntry.BxMkvzNl7Yt8OyTI",
+   "nombre": "r/SeattleAfterDark: “Anyone Else See This on Harbor Island?”",
+   "tipo": "journal"
+  },
+  "DOC-07": {
+   "uuid": "JournalEntry.WW7eg88I0uDGj8ks",
+   "nombre": "FIRSTLIGHT, Internal Memo SEA-0411",
+   "tipo": "journal"
+  },
+  "DOC-08": {
+   "uuid": "JournalEntry.4858IAb89fTokFfV",
+   "nombre": "Letter from Sheriff O'Connor to Prince Whitmore, 1978",
+   "tipo": "journal"
+  },
+  "DOC-09": {
+   "uuid": "JournalEntry.Gfcnqy3u5K3xDilP",
+   "nombre": "King County Medical Examiner's Office, Preliminary Report, Case 26-3307",
+   "tipo": "journal"
+  },
+  "FIN-A": {
+   "uuid": "JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL",
+   "nombre": "FIN-A · The Truth Before the Throne",
+   "tipo": "pagina"
+  },
+  "FIN-B": {
+   "uuid": "JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg",
+   "nombre": "FIN-B · The Hound Changes Masters",
+   "tipo": "pagina"
+  },
+  "FIN-C": {
+   "uuid": "JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp",
+   "nombre": "FIN-C · Purifying Fire",
+   "tipo": "pagina"
+  },
+  "FIN-D": {
+   "uuid": "JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2",
+   "nombre": "FIN-D · Red Tide",
+   "tipo": "pagina"
+  },
+  "GAN-01": {
+   "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu",
+   "nombre": "GAN-01 · The Boy Who Survived",
+   "tipo": "pagina"
+  },
+  "GAN-03": {
+   "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.c5BCc8zELaNV3QV3",
+   "nombre": "GAN-03 · Marked Blood",
+   "tipo": "pagina"
+  },
+  "GAN-04": {
+   "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ",
+   "nombre": "GAN-04 · The Old Teammate",
+   "tipo": "pagina"
+  },
+  "GAN-08": {
+   "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.UFOfuIElB3CH4nQE",
+   "nombre": "GAN-08 · The Viral Video",
+   "tipo": "pagina"
+  },
+  "GAN-09": {
+   "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41",
+   "nombre": "GAN-09 · The Larchmont Survivor",
+   "tipo": "pagina"
+  },
+  "GAN-11": {
+   "uuid": "JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cjmyT3bfPbka0X6O",
+   "nombre": "GAN-11 · Jun's Fast",
+   "tipo": "pagina"
+  },
+  "INT-01": {
+   "uuid": "JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mnN2petGkva9YpRV",
+   "nombre": "INT-01 · The White Van",
+   "tipo": "pagina"
+  },
+  "INT-03": {
+   "uuid": "JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx",
+   "nombre": "INT-03 · Artificial Daylight",
+   "tipo": "pagina"
+  },
+  "LOR-01": {
+   "uuid": "JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD",
+   "nombre": "LOR-01 · The Doctrine of Controlled Fury",
+   "tipo": "pagina"
+  },
+  "LOR-03": {
+   "uuid": "JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.qA75WygzgVjOeJvT",
+   "nombre": "LOR-03 · The City's Eyes",
+   "tipo": "pagina"
+  },
+  "LUG-03": {
+   "uuid": "JournalEntry.iyojT7kJHH23BWLd",
+   "nombre": "The Glass Gallery (Elysium)",
+   "tipo": "journal"
+  },
+  "LUG-04": {
+   "uuid": "JournalEntry.jg1zpvYlDFMJRY8Q",
+   "nombre": "The Sealed Underground (Seattle Underground)",
+   "tipo": "journal"
+  },
+  "LUG-05": {
+   "uuid": "JournalEntry.YD0Td8Y9aJyIpGSl",
+   "nombre": "Helen Ward's Apartment",
+   "tipo": "journal"
+  },
+  "LUG-06": {
+   "uuid": "JournalEntry.L6Fl1S0tjkWno2we",
+   "nombre": "Halloway Tower",
+   "tipo": "journal"
+  },
+  "LUG-07": {
+   "uuid": "JournalEntry.zSkwEUUtkNGhfXun",
+   "nombre": "Gale Sentinel Campus and Data Center",
+   "tipo": "journal"
+  },
+  "LUG-11": {
+   "uuid": "JournalEntry.Oiln4o98kvxKbOvS",
+   "nombre": "The Larchmont Building",
+   "tipo": "journal"
+  },
+  "LUG-14": {
+   "uuid": "JournalEntry.KioeAEZP78U0Coz5",
+   "nombre": "Northline Cyber Advisory",
+   "tipo": "journal"
+  },
+  "LUG-15": {
+   "uuid": "JournalEntry.IDd94316DhSx3ptV",
+   "nombre": "The Ferry Terminal and the Last Ferry",
+   "tipo": "journal"
+  },
+  "LUG-16": {
+   "uuid": "JournalEntry.lIohEQe1KFTOCQ0U",
+   "nombre": "The Terminal 86 Grain Elevator",
+   "tipo": "journal"
+  },
+  "MEN-01": {
+   "uuid": "Actor.9rv5Jdb3y6bZZ1fj",
+   "nombre": "Lonnie Barras",
+   "tipo": "actor"
+  },
+  "MEN-02": {
+   "uuid": "Actor.abaWg7NwNQvM0sDc",
+   "nombre": "FIRSTLIGHT Tactical Team",
+   "tipo": "actor"
+  },
+  "MEN-04": {
+   "uuid": "Actor.BzNGxOAK3F6Uo56T",
+   "nombre": "Halloway's Security Ghouls",
+   "tipo": "actor"
+  },
+  "MEN-06": {
+   "uuid": "Actor.nbeFly9wEhWkesoF",
+   "nombre": "Teo Vásquez",
+   "tipo": "actor"
+  },
+  "P-01": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.NIaBWn52GOUI61A5",
+   "nombre": "Professional Mortal Thieves; Looped Cameras",
+   "tipo": "pagina"
+  },
+  "P-02": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Sv7fUQ7md0daHTzy",
+   "nombre": "Ghoul Vitae on the Doorknob",
+   "tipo": "pagina"
+  },
+  "P-03": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.hBCw4YOXRWH4DQhg",
+   "nombre": "The Controlled Fury Technique",
+   "tipo": "pagina"
+  },
+  "P-04": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.iqkRrhCpp04lKugB",
+   "nombre": "Partial Copy of the File on a USB Drive",
+   "tipo": "pagina"
+  },
+  "P-05": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wZxrfXenQd62yVtT",
+   "nombre": "Jun, the Thin-Blood Courier",
+   "tipo": "pagina"
+  },
+  "P-06": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.6YVCnLlyxpVum6JX",
+   "nombre": "Unlogged Gale Sentinel Data Request",
+   "tipo": "pagina"
+  },
+  "P-07": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.xQqepYpthm1bxP8u",
+   "nombre": "Halloway Knows About the Cold Water",
+   "tipo": "pagina"
+  },
+  "P-08": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.HYE4rNbNf1sEbYGe",
+   "nombre": "The Inverted Guard",
+   "tipo": "pagina"
+  },
+  "P-09": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.TOvLdg2zhgDzjOAG",
+   "nombre": "The Journals Bought in 1986",
+   "tipo": "pagina"
+  },
+  "P-10": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.wRvr7GFOMQsgTJ2z",
+   "nombre": "SEA-0411 Shipments / DOC-07",
+   "tipo": "pagina"
+  },
+  "P-11": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.Pvm4xZpxzhCtg4rf",
+   "nombre": "Gale's Signature",
+   "tipo": "pagina"
+  },
+  "P-12": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jXff6tMXQQbmJg0m",
+   "nombre": "Krell's Testimony",
+   "tipo": "pagina"
+  },
+  "P-13": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.c6hzsNRnUCcABsCZ",
+   "nombre": "Sal's Ledger",
+   "tipo": "pagina"
+  },
+  "P-14": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.9WkqebVXUF2scLLC",
+   "nombre": "The Payment from Cascade Holdings",
+   "tipo": "pagina"
+  },
+  "P-15": {
+   "uuid": "JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO",
+   "nombre": "The Folios About the German",
+   "tipo": "pagina"
+  },
+  "PJ-01": {
+   "uuid": "JournalEntry.3zcQLj7aEAxHT0Yr",
+   "nombre": "David Smith",
+   "tipo": "journal"
+  },
+  "PJ-02": {
+   "uuid": "JournalEntry.zQMt8VMfKPoL6INq",
+   "nombre": "Celeste Arden",
+   "tipo": "journal"
+  },
+  "PJ-03": {
+   "uuid": "JournalEntry.PBJeE9T9n0BjB6ag",
+   "nombre": "Ezra “Static” Lund",
+   "tipo": "journal"
+  },
+  "PJ-04": {
+   "uuid": "JournalEntry.rg50DlMYSzgbZeBv",
+   "nombre": "Nadia Ferro",
+   "tipo": "journal"
+  },
+  "PJ-05": {
+   "uuid": "JournalEntry.B4nqUk8dojvCw97H",
+   "nombre": "Halvard “Hal” Brekke",
+   "tipo": "journal"
+  },
+  "PJ-06": {
+   "uuid": "JournalEntry.gRfqeOIXEHOcLemr",
+   "nombre": "Dr. Ruth Abernathy",
+   "tipo": "journal"
+  },
+  "PNJ-03": {
+   "uuid": "JournalEntry.uDNdrVnGBbAh18Tt",
+   "nombre": "Charles Halloway",
+   "tipo": "journal"
+  },
+  "PNJ-10": {
+   "uuid": "Actor.GidWqhJ9e6JUxiTS",
+   "nombre": "Julian Ashby",
+   "tipo": "actor"
+  },
+  "PNJ-13": {
+   "uuid": "JournalEntry.dj4gIszHHTN1QRKk",
+   "nombre": "Abel Thornquist",
+   "tipo": "journal"
+  },
+  "PNJ-14": {
+   "uuid": "JournalEntry.bB0eDKVFcxQW4C2d",
+   "nombre": "Solène Marchetti",
+   "tipo": "journal"
+  },
+  "PNJ-15": {
+   "uuid": "JournalEntry.yaAsxCkCLf8CANL5",
+   "nombre": "Dr. Anneliese Voight",
+   "tipo": "journal"
+  },
+  "PNJ-16": {
+   "uuid": "JournalEntry.AeAhHuCNHL9KWVnT",
+   "nombre": "Wendell Fry",
+   "tipo": "journal"
+  },
+  "PNJ-18": {
+   "uuid": "JournalEntry.bJA2iRyDgbm2TcuK",
+   "nombre": "Dana Okafor",
+   "tipo": "journal"
+  }
+ },
+ "actores": {
+  "MEN-01": "Actor.9rv5Jdb3y6bZZ1fj",
+  "MEN-02": "Actor.abaWg7NwNQvM0sDc",
+  "MEN-04": "Actor.BzNGxOAK3F6Uo56T",
+  "MEN-06": "Actor.nbeFly9wEhWkesoF",
+  "PJ-01": "Actor.g4XbpMuCHwxVhzeC",
+  "PJ-02": "Actor.zFbC97X8iaeScDzY",
+  "PJ-03": "Actor.zGqiDTb68QRTrlLv",
+  "PJ-04": "Actor.0IIsgytowpgAWwK6",
+  "PJ-05": "Actor.doLuya2qqzFb2wqn",
+  "PJ-06": "Actor.9Sei2feAoKaQPPto",
+  "PNJ-03": "Actor.ys08GDwMs80NuOlf",
+  "PNJ-10": "Actor.GidWqhJ9e6JUxiTS",
+  "PNJ-13": "Actor.NDI68PA4J59Be6ts",
+  "PNJ-14": "Actor.Zs7rGAyl8O4vOx0u",
+  "PNJ-15": "Actor.75UbIo5Kl9zVsd0V",
+  "PNJ-16": "Actor.XuP20cPC3T1EiCxD",
+  "PNJ-18": "Actor.15UcuyhvNvNqkCOf"
+ }
+}

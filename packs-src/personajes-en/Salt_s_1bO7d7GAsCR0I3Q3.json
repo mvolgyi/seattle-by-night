@@ -1,0 +1,221 @@
+{
+  "_id": "1bO7d7GAsCR0I3Q3",
+  "_key": "!actors!1bO7d7GAsCR0I3Q3",
+  "name": "Salt's",
+  "type": "group",
+  "img": "icons/svg/mystery-man.svg",
+  "folder": "jNfL5fnoP2sSyH5b",
+  "sort": 230,
+  "prototypeToken": {
+    "name": "Salt's",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "system": {
+    "groupType": "coterie",
+    "members": [
+      "Actor.JtFCjV4kHyARORQl",
+      "Actor.k2TLqQkkzzjSLzkp"
+    ],
+    "headers": {
+      "concept": "Cerberus",
+      "chronicle": "The Ward File",
+      "tenets": ""
+    },
+    "chasse": {
+      "value": 3
+    },
+    "lien": {
+      "value": 3
+    },
+    "portillon": {
+      "value": 2
+    },
+    "biography": "<p>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{Profile: Salt's}</p><blockquote><p><em>The ones who don&#39;t kneel.</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Type</th><td>Cerberus</td></tr><tr><th>Domain</th><td>The old shipyard and the Port of Everett</td></tr><tr><th>Location</th><td>@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt&#39;s Bar and the Old Shipyard}</td></tr><tr><th>Members</th><td>@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa “Salt” Iturbe}, @UUID[Actor.k2TLqQkkzzjSLzkp]{Salt&#39;s Anarchs}</td></tr></tbody></table><p>The Anarchs of the Everett shipyard: they vote, they weld, and they owe nothing to any Prince.</p><h3>Domain</h3><ul><li><strong>Chasse 3:</strong> welders and longshoremen, some of them willing</li><li><strong>Lien 3:</strong> the union is theirs</li><li><strong>Portillon 2:</strong> a single highway, but the water has no doors</li></ul>",
+    "notes": "",
+    "privatenotes": ""
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 2"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "pAGyyWicgM4BzS7U",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.pAGyyWicgM4BzS7U"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 2"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "YWrcFPlwU31jT22K",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.YWrcFPlwU31jT22K"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Allies 3 (the union)"
+        }
+      },
+      "name": "Allies",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Allies 3 (the union)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "BM0QXX2965CEUNib",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.BM0QXX2965CEUNib"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence 2 (Port of Everett)"
+        }
+      },
+      "name": "Influence",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence 2 (Port of Everett)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "WK2AsWeLtwFqY06J",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.WK2AsWeLtwFqY06J"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 1 (naval base)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 1 (naval base)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "Dez4eWiigXX3P1NX",
+      "_key": "!actors.items!1bO7d7GAsCR0I3Q3.Dez4eWiigXX3P1NX"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "COT-03",
+      "journal": "JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5",
+      "lema": "The ones who don't kneel."
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

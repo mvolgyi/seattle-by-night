@@ -1,0 +1,674 @@
+{
+  "_id": "Y53IKZpt8sl2sl65",
+  "_key": "!actors!Y53IKZpt8sl2sl65",
+  "name": "August Krell",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-12.webp",
+  "folder": "aMxEpfQ4AWpWbYKv",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "August Krell",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-12.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Antagonist; the false Vance",
+      "chronicle": "The Ward File",
+      "ambition": "For someone to acknowledge that he was Vance's son too.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>A job gets finished</li><li>Never hit someone who can&#39;t hit back</li></ul>",
+      "sire": "Marcus “Ironjaw” Vance (PNJ-06)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1944",
+        "death": "1972"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.OmK2qlPVNl758u6h]{Profile: August Krell}</p><blockquote><p><em>“He taught you to stop the blow. He taught me to take it.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Other Son</td></tr><tr><th>Concept</th><td>Antagonist; the false Vance</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Sect</th><td>none</td></tr><tr><th>Sire</th><td>Marcus “Ironjaw” Vance (PNJ-06)</td></tr><tr><th>Born</th><td>1944</td></tr><tr><th>Embraced</th><td>1972</td></tr><tr><th>Ambition</th><td>For someone to acknowledge that he was Vance&#39;s son too.</td></tr></tbody></table><h3>Demeanor</h3><p>Looks about twenty-eight, though he moves like an older man. Shaved head, a knife scar through his left eyebrow, a broken nose that healed badly; dark work clothes under Vance&#39;s coat. He&#39;s left-handed.</p><section class=\"sbn-combate\"><h3>August Krell · Combat Version</h3>\n<p><em>Full profile in Chapter 4.</em></p>\n<p><strong>Health</strong> 7 · <strong>Willpower</strong> 6 · <strong>Usual Hunger</strong> 2 · <strong>Blood Potency</strong> 3</p>\n<p><strong>Unarmed attack</strong> 10 (Strength + Brawl + Prowess). +2 superficial damage, or lethal against mortals (Lethal Body). <strong>With iron bar</strong> 8 (Strength + Melee), +2 damage.</p>\n<p><strong>Defense</strong> 8 (Dexterity + Athletics; 9 with Dexterity + Brawl). <em>Editor&#39;s Note: doc 14 said 7.</em> <strong>Initiative</strong> 7. <strong>Stealth</strong> 8. <strong>Escape</strong> 8, plus Blink.</p>\n<p><strong>Key combat powers:</strong> Prowess (+4 damage for one scene, costs Hunger), Blink (moves up to 50 meters in one turn), Soaring Leap (reaches rooftops), Daunt (mortals back away).</p>\n<p><strong>The inverted guard:</strong> against David or anyone with @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · The Doctrine of Controlled Fury} at level 4 or higher, −2 dice to melee defense.</p>\n<p><strong>Tactics:</strong> he strikes first, always in the same sequence (ribs, sternum, throat). If the fight lasts more than three turns, he leaves. He doesn&#39;t fight David head-on if he can avoid it. He doesn&#39;t kill mortals unless he has to. If he drops to half his Health, he flees toward the water.</p></section>",
+    "appearance": "<p>Looks about twenty-eight, though he moves like an older man. Shaved head, a knife scar through his left eyebrow, a broken nose that healed badly; dark work clothes under Vance&#39;s coat. He&#39;s left-handed.</p>",
+    "equipment": "<ul><li>Vance&#39;s coat: a long gray wool overcoat, tailored for a man broader in the shoulders (DOC-06, DOC-10)</li><li>Copy 2 of 3 of Vance&#39;s journals (DOC-04), with his pencil notes</li><li>Support from Halloway: an electric car with no registered plates, and two security ghouls (MEN-04) if he asks for them</li></ul>",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: doc 07 said “looks about thirty-five”; his age at the Embrace was settled on instead (about 28). Doc 07 gave him five powers with Potence 4 and four with Celerity 3; Spark of Rage (an amalgam that requires Presence 3; Krell has 2) and Rapid Reflexes (the Celerity power the adventure doesn&#39;t use) were removed, one per dot.</p><h3>Provisional (doc 16)</h3><ul><li>Krell is Vance&#39;s childe (David&#39;s blood brother).</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 4,
+      "stains": 0
+    },
+    "hunger": {
+      "value": 2,
+      "max": 5
+    },
+    "disciplines": {
+      "potence": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "celerity": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 5,
+        "active": false
+      },
+      "dexterity": {
+        "value": 4,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Docks",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Silence",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Incomplete Controlled Fury",
+            "value": 1,
+            "paths": [
+              "skills.brawl"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "melee": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Crowbars and knives",
+            "value": 1,
+            "paths": [
+              "skills.melee"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "stealth": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "brujah"
+        }
+      },
+      "name": "Brujah",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "NYoAK23EDbc5hOos",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.NYoAK23EDbc5hOos"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "77WsjL4cA2CDpgYv",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.77WsjL4cA2CDpgYv"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Soaring Leap",
+          "homebrew": false
+        }
+      },
+      "name": "Soaring Leap",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "BipsUqBs3gw4vi7H",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.BipsUqBs3gw4vi7H"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "NBTTWnqwSB9FtDWe",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.NBTTWnqwSB9FtDWe"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Draught of Might",
+          "homebrew": false
+        }
+      },
+      "name": "Draught of Might",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 4. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "Ka10asmJtq3Pg8pr",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.Ka10asmJtq3Pg8pr"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cat's Grace",
+          "homebrew": false
+        }
+      },
+      "name": "Cat's Grace",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celerity 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "NL3MTHGRjVmWSUvK",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.NL3MTHGRjVmWSUvK"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Fleetness",
+          "homebrew": false
+        }
+      },
+      "name": "Fleetness",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celerity 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "jHn89PQl7hwWCI0r",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.jHn89PQl7hwWCI0r"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Blink",
+          "homebrew": false
+        }
+      },
+      "name": "Blink",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Celerity 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "TBqiEfrFsfwWWgJ6",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.TBqiEfrFsfwWWgJ6"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "4nl8WUrPLJTgxqxd",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.4nl8WUrPLJTgxqxd"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lingering Kiss",
+          "homebrew": false
+        }
+      },
+      "name": "Lingering Kiss",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-12"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "yDwd8wxAOtRFmZ3n",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.yDwd8wxAOtRFmZ3n"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 1 (what Halloway pays him)"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 1 (what Halloway pays him)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "RCvo8VkT5KKS4RLA",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.RCvo8VkT5KKS4RLA"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 1 (a barge in dry dock in Georgetown)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 1 (a barge in dry dock in Georgetown)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "VfLc38PtlGzyBiQj",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.VfLc38PtlGzyBiQj"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 0 (forged papers for a Portuguese passport)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 0 (forged papers for a Portuguese passport)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "IE7mV5JU0JwPiyT1",
+      "_key": "!actors.items!Y53IKZpt8sl2sl65.IE7mV5JU0JwPiyT1"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-12",
+      "journal": "JournalEntry.OmK2qlPVNl758u6h",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "_id": "FoPBa0JoGJzoM2E6",
+  "_key": "!actors!FoPBa0JoGJzoM2E6",
+  "name": "Tavi Mercer",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-05-TAVI.webp",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 120,
+  "prototypeToken": {
+    "name": "Tavi Mercer",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-05-TAVI.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Brujah, impatient; Salt's Anarch",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Brujah, impatient; Salt&#39;s Anarch</td></tr></tbody></table><p>If he attacks Elysium, he does it with three comrades and Molotov cocktails.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>No ID of his own in doc 14: a member of MEN-05 with his own pools (doc 08 put him under MEN-05). Derived ID for the actor.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 1,
+      "generation": ""
+    },
+    "disciplines": {
+      "potence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "celerity": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 6
+      },
+      "social": {
+        "value": 4
+      },
+      "mental": {
+        "value": 2
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-05-TAVI",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

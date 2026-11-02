@@ -1,0 +1,507 @@
+{
+  "_id": "5ywnpdrw93wmy235",
+  "_key": "!actors!5ywnpdrw93wmy235",
+  "name": "Cole Ransom",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-11.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 30,
+  "prototypeToken": {
+    "name": "Cole Ransom",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 20,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.55,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#7a3cff",
+      "coloration": 1,
+      "attenuation": 0.6,
+      "luminosity": 0.3,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "MEN-02 operator, Bear's former SEAL teammate",
+      "chronicle": "The Ward File",
+      "ambition": "Make it to fifty-five with both knees and his full pension.",
+      "desire": "For somebody to finally explain what they're really hunting.",
+      "touchstones": "<h3>Touchstones</h3><ul><li>His daughter Kayla, a nurse in San Diego, who sends him pictures of his grandson and doesn&#39;t ask about work.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Physical conflict during the Hunt (it doesn't have to be with the quarry or with the supernatural).",
+      "cellname": "Puget Cell"
+    },
+    "bio": {
+      "age": {
+        "trueage": "49",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>MEN-02 operator, Bear&#39;s former SEAL teammate</td></tr><tr><th>Age</th><td>49</td></tr><tr><th>Ambition</th><td>Make it to fifty-five with both knees and his full pension.</td></tr><tr><th>Desire</th><td>For somebody to finally explain what they&#39;re really hunting.</td></tr><tr><th>Dice pools</th><td>Physical 6 · Social 2 · Mental 4 · Firearms 7 · Athletics 5 · Awareness 5 · Brawl 5 · Insight 6</td></tr></tbody></table><h3>Demeanor</h3><p>Forty-nine, mustache, wrecked knees. Thinks he works for Homeland Security.</p><p>Forty-nine, mustache, knees as wrecked as Bear&#39;s. Thinks he works for Homeland Security. Absolute loyalty to his teammates, and Bear was one of them.</p>\n<p>Uses the stats of @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}, with <strong>Insight 6</strong>.</p><h3>Hunter</h3><table class=\"sbn-ficha\"><tbody><tr><th>Cell</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Puget Cell}</td></tr><tr><th>Creed</th><td>Martial. <em>Desperation:</em> Physical conflict during the Hunt (it doesn't have to be with the quarry or with the supernatural).</td></tr><tr><th>Drive</th><td>Oath. <em>Redemption:</em> He finds redemption when he risks something of his own (his job, his pension, his hide) to pull out a brother-in-arms, whatever team they&#39;re on.</td></tr><tr><th>Edges</th><td>Arsenal (Double-Checked)</td></tr></tbody></table><p>An old oath, from when he wore the trident on his chest: nobody gets left behind. He kept it in places that aren&#39;t on the maps. He doesn&#39;t know any other way to keep it.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.UmBoausZdK2xvygi]{Pregen: Cole Ransom · Operator}</p>",
+    "appearance": "<p>Forty-nine, mustache, wrecked knees. Thinks he works for Homeland Security.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Proposed (not in the docs)</h3><ul><li>Conversion of the @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team} pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Ransom adds Wits 3 + Insight 3 = 6 (doc). Survival, Stealth, and Medicine are proposed (ex-SEAL).</li><li>Martial Creed, Oath Drive (“nobody gets left behind,” the SEAL one), and the Arsenal Edge (the armory in the port warehouse).</li><li>Incendiary ammunition is added because his carbine uses it (doc 14).</li><li>Ambition, desire, and Touchstone (the daughter in San Diego).</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "medicine": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "arsenal": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>He runs the armory in the port warehouse where the tactical team sleeps: the carbines, the incendiary ammunition, the UV flashlights.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Carbine with incendiary ammunition",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Aggravated against Kindred (incendiary ammunition). Has a UV flashlight mounted on the weapon.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "UiDBRj1xf6Qqe8kr",
+      "_key": "!actors.items!5ywnpdrw93wmy235.UiDBRj1xf6Qqe8kr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "High-intensity UV flashlight",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>1 aggravated</td></tr></tbody></table><p>A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.</p><p>Condition: @UUID[Item.CbbejNJnKXKf8gbq]{Lit by the UV flashlight}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "OGg7WpHJbsgc6DPp",
+      "_key": "!actors.items!5ywnpdrw93wmy235.OGg7WpHJbsgc6DPp"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Light body armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Armor</th><td>3</td></tr></tbody></table><p>Armor 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "mMy9R0ifeO2RhpxS",
+      "_key": "!actors.items!5ywnpdrw93wmy235.mMy9R0ifeO2RhpxS"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Body cameras",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"visible supernatural action in front of a body camera\"><i class=\"fa-solid fa-temperature-half\"></i> Thermometer +1</button> (maximum +2 per scene)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "WhP57gpanN2ReQak",
+      "_key": "!actors.items!5ywnpdrw93wmy235.WhP57gpanN2ReQak"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Thermal goggles",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "PH91UQTCgiG4ZVeQ",
+      "_key": "!actors.items!5ywnpdrw93wmy235.PH91UQTCgiG4ZVeQ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Incendiary ammunition",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "do5AjqZsEocvZlNX",
+      "_key": "!actors.items!5ywnpdrw93wmy235.do5AjqZsEocvZlNX"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "martial"
+        }
+      },
+      "name": "Martial",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Physical conflict during the Hunt (it doesn't have to be with the quarry or with the supernatural)."
+      },
+      "_id": "KK60UTRCMH7T7wLA",
+      "_key": "!actors.items!5ywnpdrw93wmy235.KK60UTRCMH7T7wLA"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "oath"
+        }
+      },
+      "name": "Oath",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>An old oath, from when he wore the trident on his chest: nobody gets left behind. He kept it in places that aren&#39;t on the maps. He doesn&#39;t know any other way to keep it.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "redemption": "<p>He finds redemption when he risks something of his own (his job, his pension, his hide) to pull out a brother-in-arms, whatever team they&#39;re on.</p>"
+      },
+      "_id": "X0yOHppCiNXjqf1k",
+      "_key": "!actors.items!5ywnpdrw93wmy235.X0yOHppCiNXjqf1k"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Double-Checked: once per scene, when a team weapon jams or runs dry at the worst moment, Ransom already has the spare in his hand."
+        }
+      },
+      "name": "Double-Checked",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>once per scene, when a team weapon jams or runs dry at the worst moment, Ransom already has the spare in his hand.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "MEN-11"
+        },
+        "edge": "arsenal",
+        "selected": false
+      },
+      "_id": "hhnqbER5oJlV94T5",
+      "_key": "!actors.items!5ywnpdrw93wmy235.hhnqbER5oJlV94T5"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-11",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -28,9 +28,26 @@
       "actualizarQueNo": "quién ve y quién es dueño de cada documento; los handouts y páginas que ya revelaste; los PJ y todo actor que tenga un jugador como dueño (no se tocan: hambre, daño, PX y equipo quedan como están; sólo se crean los que falten); las páginas, ítems, tokens, dibujos y notas que agregaste a mano; la escena activa; y el estado de la crónica (Termómetro, pistas, noche).",
       "actualizarAviso": "Lo que cambiaste a mano DENTRO de un documento del módulo (el texto de una página, la ficha de un PNJ, un muro) se pisa con la versión nueva.",
       "actualizarSi": "Actualizar",
-      "sinAventura": "No encuentro la Aventura en el compendio «aventura» del módulo.",
+      "sinAventura": "No encuentro la Aventura en el compendio «{pack}» del módulo.",
       "hecho": "Crónica importada: {creados} documentos nuevos, {actualizados} actualizados.",
       "conservados": "No se actualizaron {n} actor(es) con dueño jugador: {nombres}."
+    },
+    "idioma": {
+      "es": "Castellano (El Expediente Ward)",
+      "en": "Inglés (The Ward File)",
+      "etiqueta": "Idioma de la crónica",
+      "hint": "El de los journals, las fichas, las escenas y el Panel. Los botones salen en el idioma de Foundry de cada uno.",
+      "cambiado": "La crónica quedó en {idioma}.",
+      "menu": {
+        "Name": "Idioma de la crónica",
+        "Label": "Elegir idioma",
+        "Hint": "Importa la crónica en castellano o en inglés. Con la partida empezada, cambia de idioma conservando los PJ, lo revelado y el estado de la crónica.",
+        "titulo": "El Expediente Ward: idioma de la crónica",
+        "actual": "La crónica de este mundo está en <strong>{idioma}</strong>.",
+        "sinCronica": "Este mundo todavía no tiene la crónica. Elegí en qué idioma importarla.",
+        "cambiar": "Importar en este idioma",
+        "aviso": "Los journals, las escenas y los PNJ se reescriben en el idioma elegido: lo que cambiaste a mano DENTRO de ellos se pierde. Los PJ con dueño jugador quedan como están, en su idioma."
+      }
     },
     "termometro": {
       "nombre": "Termómetro",

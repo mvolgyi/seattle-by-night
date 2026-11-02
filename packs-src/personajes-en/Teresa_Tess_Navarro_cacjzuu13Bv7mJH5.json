@@ -1,0 +1,551 @@
+{
+  "_id": "cacjzuu13Bv7mJH5",
+  "_key": "!actors!cacjzuu13Bv7mJH5",
+  "name": "Teresa “Tess” Navarro",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/CAZ-01.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 40,
+  "prototypeToken": {
+    "name": "Teresa “Tess” Navarro",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 20,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.55,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#7a3cff",
+      "coloration": 1,
+      "attenuation": 0.6,
+      "luminosity": 0.3,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "FIRSTLIGHT tactical team operator, former ATF agent: the one who's already seen it",
+      "chronicle": "The Ward File",
+      "ambition": "Find whatever took Ortiz.",
+      "desire": "For someone else on the team to see what she saw and not break.",
+      "touchstones": "<h3>Touchstones</h3><ul><li>Ortiz&#39;s widow, in Tucson. Navarro sends her money every month without telling her why.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Any direct conflict (physical, social or mental) with the supernatural during the Hunt.",
+      "cellname": "Puget Cell"
+    },
+    "bio": {
+      "age": {
+        "trueage": "38",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>FIRSTLIGHT tactical team operator, former ATF agent: the one who&#39;s already seen it</td></tr><tr><th>Age</th><td>38</td></tr><tr><th>Ambition</th><td>Find whatever took Ortiz.</td></tr><tr><th>Desire</th><td>For someone else on the team to see what she saw and not break.</td></tr><tr><th>Dice pools</th><td>Physical 6 · Social 2 · Mental 4 · Firearms 7 · Athletics 5 · Awareness 5 · Brawl 5</td></tr></tbody></table><h3>Demeanor</h3><p>Thirty-eight, dark-haired, hair in a short braid. Wears a Saint Michael medal that isn&#39;t hers. Always on point, with the flashlight.</p><p>One of the six operators of @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}. She&#39;s the only one on the team who&#39;s seen a creature up close, and the others know it even if they don&#39;t ask.</p><h3>Hunter</h3><table class=\"sbn-ficha\"><tbody><tr><th>Cell</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Puget Cell}</td></tr><tr><th>Creed</th><td>Faithful. <em>Desperation:</em> Any direct conflict (physical, social or mental) with the supernatural during the Hunt.</td></tr><tr><th>Drive</th><td>Vengeance. <em>Redemption:</em> She finds redemption when the Cell destroys a creature that killed an innocent, and she&#39;s there to see it.</td></tr><tr><th>Edges</th><td>Repel the Unnatural (One Step Back)</td></tr></tbody></table><p>Tucson, 2021. A warehouse search. Her partner, Ortiz, went in first. What came out of the dark wasn&#39;t a person, and it took him. Nobody believed her, except a man from the Department of Homeland Security who was waiting for her outside the hospital.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.6EUQdXXmzOvNtRy0]{Pregen: Teresa “Tess” Navarro · Operator}</p>",
+    "appearance": "<p>Thirty-eight, dark-haired, hair in a short braid. Wears a Saint Michael medal that isn&#39;t hers. Always on point, with the flashlight.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<h3>Proposed (not in the docs)</h3><ul><li>The whole character is proposed (SPEC §6.2: three named operators on the tactical team). Conversion of the @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team} pools (Physical 6, Social 2, Mental 4; Firearms 7, Athletics 5, Awareness 5, Brawl 5; Health 7, Willpower 5) to Attributes and Skills: Dexterity 3 + Firearms 4, Dexterity 3 + Athletics 2, Strength 3 + Brawl 2, Wits 3 + Awareness 2; Health = Stamina 4 + 3; Willpower = Composure 3 + Resolve 2. Investigation, Occult, Intimidation, and Drive are her own.</li><li>Faithful Creed, Vengeance Drive, Repel the Unnatural Edge (the medal) with the “One Step Back” Perk.</li><li>The doc says most of the team has never seen it: Navarro is the exception.</li></ul>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 3,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 1,
+        "active": false
+      },
+      "manipulation": {
+        "value": 1,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Rifle",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "repeltheunnatural": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Ortiz&#39;s Saint Michael medal, in her left hand, under the flashlight. As long as she holds it up and doesn&#39;t attack, any creature that wants to come within two meters has to beat her in a contested Willpower test (Resolve + Composure against hers). She doesn&#39;t know why it works. It works.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 1 (ATF, Phoenix field office)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 1 (ATF, Phoenix field office)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "Y9Wi9lXARScibvU3",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.Y9Wi9lXARScibvU3"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "fusil-corto-incendiario",
+          "agravado": true
+        }
+      },
+      "name": "Carbine with incendiary ammunition",
+      "type": "weapon",
+      "img": "icons/weapons/guns/rifle-assault-carbine.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Aggravated against Kindred (incendiary ammunition). Has a UV flashlight mounted on the weapon.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "6q8yK5zzp7say52T",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.6q8yK5zzp7say52T"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "linterna-uv",
+          "agravado": true
+        }
+      },
+      "name": "High-intensity UV flashlight",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>1 aggravated</td></tr></tbody></table><p>A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.</p><p>Condition: @UUID[Item.CbbejNJnKXKf8gbq]{Lit by the UV flashlight}</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "aiHACLYq0u73zpT5",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.aiHACLYq0u73zpT5"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "armadura-ligera",
+          "agravado": false
+        }
+      },
+      "name": "Light body armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Armor</th><td>3</td></tr></tbody></table><p>Armor 3.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 3,
+        "quantity": 1
+      },
+      "_id": "1YYyZ37goPZgvC7m",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.1YYyZ37goPZgvC7m"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "camaras-corporales",
+          "agravado": false
+        }
+      },
+      "name": "Body cameras",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"visible supernatural action in front of a body camera\"><i class=\"fa-solid fa-temperature-half\"></i> Thermometer +1</button> (maximum +2 per scene)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "pDTXMAgQ48ReIEkr",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.pDTXMAgQ48ReIEkr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "gafas-termicas",
+          "agravado": false
+        }
+      },
+      "name": "Thermal goggles",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<p>Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "sHpkMNH2wdCb8EtX",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.sHpkMNH2wdCb8EtX"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Incendiary ammunition",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "PuOa3pVOOZcaSZas",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.PuOa3pVOOZcaSZas"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "faithful"
+        }
+      },
+      "name": "Faithful",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Any direct conflict (physical, social or mental) with the supernatural during the Hunt."
+      },
+      "_id": "X0nKUU5BSWVKdq8c",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.X0nKUU5BSWVKdq8c"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "vengeance"
+        }
+      },
+      "name": "Vengeance",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Tucson, 2021. A warehouse search. Her partner, Ortiz, went in first. What came out of the dark wasn&#39;t a person, and it took him. Nobody believed her, except a man from the Department of Homeland Security who was waiting for her outside the hospital.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "redemption": "<p>She finds redemption when the Cell destroys a creature that killed an innocent, and she&#39;s there to see it.</p>"
+      },
+      "_id": "y9P3gGFknAwdQwTi",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.y9P3gGFknAwdQwTi"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "One Step Back: when a creature recoils from the medal, Navarro and whoever is right at her back gain a turn without being attacked by it."
+        }
+      },
+      "name": "One Step Back",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>when a creature recoils from the medal, Navarro and whoever is right at her back gain a turn without being attacked by it.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "CAZ-01"
+        },
+        "edge": "repeltheunnatural",
+        "selected": false
+      },
+      "_id": "cSW3wDrCBLOMl0dg",
+      "_key": "!actors.items!cacjzuu13Bv7mJH5.cSW3wDrCBLOMl0dg"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "CAZ-01",
+      "journal": null,
+      "doc": "propuesto",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

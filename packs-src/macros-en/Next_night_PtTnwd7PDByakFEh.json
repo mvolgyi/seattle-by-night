@@ -1,0 +1,25 @@
+{
+  "_id": "PtTnwd7PDByakFEh",
+  "_key": "!macros!PtTnwd7PDByakFEh",
+  "name": "Next night",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/clockwork.svg",
+  "command": "const api = game.modules.get(\"seattle-by-night\")?.api;\nif (!api) return ui.notifications.error(\"The Ward File: the module isn't active in this world.\");\nconst NOCHES = api.Datos?.totalNoches ?? 8;\nconst actual = Number((await api.estado())?.noche) || 0;\nif (actual >= NOCHES) return ui.notifications.warn(\"Halloway's Clock is already on the last night (\" + NOCHES + \").\");\nawait api.noche(actual + 1);",
+  "folder": null,
+  "sort": 500,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "macro",
+      "macro": "noche"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}
