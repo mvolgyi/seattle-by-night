@@ -70,10 +70,6 @@ Al terminar, el Narrador anota tres cosas:
 
 Los interludios son opcionales. Si no se juegan, pasa lo que dicen los docs: en la Noche 5 Hale escribe @ID[DOC-07] y Okafor usa la entrega sin creérsela; la redada ocurre como está escrita. No hay ventajas ni fisuras.
 
-### Con un solo jugador
-
-El jugador lleva a uno de los PJs nuevos, con David y Bear como compañeros PNJ. En los interludios, a Okafor en @ID[INT-02] y a Ransom en @ID[INT-01] e @ID[INT-03]. El Narrador hace de los demás por radio. Los interludios quedan en 20 minutos.
-
 ### Seguridad
 
 Los interludios ponen a los jugadores del lado de quien caza a sus personajes. Repasá las Líneas y los Velos de la mesa (@ID[SEGURIDAD]) antes del primero. La sala blanca de Northline, con sus lámparas, es un lugar de interrogatorio: si la mesa la vetó, la sala existe, pero nadie la usa en escena.

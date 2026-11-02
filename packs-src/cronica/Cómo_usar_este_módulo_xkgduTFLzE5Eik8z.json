@@ -26,7 +26,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<p><strong>Aventura central:</strong> <em>El Expediente Ward</em> (@UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward})</p>\n<p><strong>Sistema:</strong> Vampiro: La Mascarada 5ª edición. La Segunda Inquisición (FIRSTLIGHT) está presente en la trama de forma latente.</p>\n<p><strong>Ciudad:</strong> Seattle y el estrecho de Puget, noviembre de 2026. Zonas principales: Elliott Bay y Harbor Island, Pioneer Square y el Seattle subterráneo, Capitol Hill, Ballard, el Eastside, Tacoma y Everett.</p>\n<p><strong>Formato de juego:</strong> coterie de 4–5 jugadores con los PJs nuevos (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden} a @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}). David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) y Tom &quot;Bear&quot; Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}) son PNJs aliados que acompañan a la coterie.</p>\n"
+        "content": "<p><strong>Aventura central:</strong> <em>El Expediente Ward</em> (@UUID[JournalEntry.ll97TEj4MRjtM595]{Capítulo 7 · El Expediente Ward})</p>\n<p><strong>Sistema:</strong> Vampiro: La Mascarada 5ª edición. La Segunda Inquisición (FIRSTLIGHT) está presente en la trama de forma latente.</p>\n<p><strong>Ciudad:</strong> Seattle y el estrecho de Puget, noviembre de 2026. Zonas principales: Elliott Bay y Harbor Island, Pioneer Square y el Seattle subterráneo, Capitol Hill, Ballard, el Eastside, Tacoma y Everett.</p>\n<p><strong>Formato de juego:</strong> coterie de 4–5 jugadores con los cinco PJs (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden} a @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}). David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}) y Tom &quot;Bear&quot; Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom «Bear» Whitman}) son PNJs aliados que acompañan a la coterie.</p>\n"
       },
       "sort": 100000,
       "ownership": {
@@ -166,37 +166,9 @@
       },
       "text": {
         "format": 1,
-        "content": "<p><em>Las del doc 00. Donde una fila cambia, manda la tabla siguiente.</em></p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Pregunta</th>\n<th>Decisión</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>¿Quién mueve los hilos?</td>\n<td><strong>Charles Halloway</strong>, Primogénito Ventrue (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}). Las señales de Vance son una pista falsa que planta él. Vance no está en la ciudad.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>El Sheriff O&#39;Connor</td>\n<td>Fue el <strong>Sheriff anterior</strong>, hasta 1978. Ahora es una pieza de trasfondo (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}).</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Muerte de Emily</td>\n<td>En los <strong>años 90</strong>. Ella tenía unos 35 años.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Jugadores</td>\n<td><strong>David solo</strong>. Bear lo acompaña como PNJ.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>¿El incendio de Helen fue obra de David?</td>\n<td><em>Pendiente.</em></td>\n</tr>\n<tr>\n<td>—</td>\n<td>Segunda Inquisición</td>\n<td>Latente durante toda la aventura. Se mide con el Termómetro de FIRSTLIGHT.</td>\n</tr>\n<tr>\n<td>—</td>\n<td>Gancho de racionar la Vitae de Bear</td>\n<td>Excluido, como pide su ficha.</td>\n</tr>\n</tbody></table>\n"
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Pregunta</th>\n<th>Decisión</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>¿Quién mueve los hilos?</td>\n<td><strong>Charles Halloway</strong>, Primogénito Ventrue (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}). Las señales de Vance son falsas; las deja August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}). Vance no está en la ciudad.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>El Sheriff O&#39;Connor</td>\n<td>Fue el <strong>Sheriff anterior</strong>, hasta 1978. Es una pieza de trasfondo (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}).</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Muerte de Emily</td>\n<td>En los <strong>años 90</strong>. Ella tenía unos 35 años.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Jugadores</td>\n<td><strong>4–5 jugadores</strong> con los cinco PJs (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden} a @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}). <strong>David y Bear son PNJs aliados.</strong></td>\n</tr>\n<tr>\n<td>5</td>\n<td>Incendio del Larchmont</td>\n<td><strong>David no llegó a tiempo.</strong></td>\n</tr>\n<tr>\n<td>6</td>\n<td>Clan del Príncipe Whitmore</td>\n<td><strong>Toreador.</strong></td>\n</tr>\n<tr>\n<td>7</td>\n<td>Ficción de apertura</td>\n<td>Desde el punto de vista de <strong>Helen Ward</strong>.</td>\n</tr>\n<tr>\n<td>—</td>\n<td>Segunda Inquisición</td>\n<td>Latente durante toda la aventura. Se mide con el Termómetro de FIRSTLIGHT.</td>\n</tr>\n<tr>\n<td>—</td>\n<td>Gancho de racionar la Vitae de Bear</td>\n<td>Excluido, como pide su ficha.</td>\n</tr>\n</tbody></table>\n"
       },
       "sort": 600000,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {
-        "seattle-by-night": {
-          "origen": "pagina"
-        }
-      },
-      "_stats": {
-        "coreVersion": "14.365",
-        "systemId": "wod5e",
-        "systemVersion": "5.3.28"
-      }
-    },
-    {
-      "_id": "yo8IuXmGHjfHmM04",
-      "_key": "!journal.pages!xkgduTFLzE5Eik8z.yo8IuXmGHjfHmM04",
-      "name": "Decisiones actualizadas (doc 02)",
-      "type": "text",
-      "title": {
-        "show": true,
-        "level": 1
-      },
-      "text": {
-        "format": 1,
-        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Pregunta</th>\n<th>Decisión</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>¿Quién mueve los hilos?</td>\n<td>Charles Halloway (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}). Las señales de Vance son falsas; las deja August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}).</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Sheriff O&#39;Connor</td>\n<td>Fue el Sheriff anterior, hasta 1978 (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}).</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Muerte de Emily</td>\n<td>En los años 90.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Jugadores</td>\n<td><strong>4–5 jugadores</strong> con los PJs nuevos (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden} a @UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dra. Ruth Abernathy}). <strong>David y Bear son PNJ.</strong> <em>Decisión del autor posterior al doc 02: manda sobre él.</em></td>\n</tr>\n<tr>\n<td>5</td>\n<td>Incendio del Larchmont</td>\n<td><strong>David no llegó a tiempo.</strong></td>\n</tr>\n<tr>\n<td>6</td>\n<td>Clan del Príncipe Whitmore</td>\n<td><strong>Toreador.</strong></td>\n</tr>\n<tr>\n<td>7</td>\n<td>Ficción de apertura</td>\n<td>Desde el punto de vista de <strong>Helen Ward</strong>.</td>\n</tr>\n</tbody></table>\n"
-      },
-      "sort": 700000,
       "ownership": {
         "default": 0
       },
@@ -224,7 +196,7 @@
         "format": 1,
         "content": "<p>Cada capítulo cumple una función distinta y se puede leer por separado.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Capítulo</th>\n<th>Contenido</th>\n<th>Para quién</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>0 · Ficción de apertura</td>\n<td>El relato de Helen la noche del robo</td>\n<td>Narrador y jugadores</td>\n</tr>\n<tr>\n<td>1 · Introducción</td>\n<td>Este capítulo</td>\n<td>Narrador y jugadores</td>\n</tr>\n<tr>\n<td>2 · Documentos del mundo</td>\n<td>Doce fragmentos (@UUID[JournalEntry.zNhdOMSnEHdvMIGE]{Notas de voz de Helen Ward #7} a @UUID[JournalEntry.5mQIPoGa4I0tQtbR]{Nota guardada en la caja fuerte de Bear}) que se entregan como ayudas de juego</td>\n<td>Jugadores, cuando el Narrador lo indique</td>\n</tr>\n<tr>\n<td>3 · La ciudad</td>\n<td>Historia, política, rumores, leyes del Elíseo y lugares (LUG-xx)</td>\n<td>Narrador; algunas partes se pueden compartir</td>\n</tr>\n<tr>\n<td>4 · Vástagos de la ciudad</td>\n<td>Fichas completas de los PNJs (PNJ-xx), agrupadas por clan</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>5 · Coteries</td>\n<td>Las coteries de PNJs (COT-xx) y tres Loresheets nuevas</td>\n<td>Narrador y jugadores</td>\n</tr>\n<tr>\n<td>6 · Ganchos de crónica</td>\n<td>Doce ganchos (GAN-xx) para seguir después de la aventura</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>7 · La aventura</td>\n<td><em>El Expediente Ward</em>, escena por escena</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>8 · Estadísticas</td>\n<td>Antagonistas y PNJs menores</td>\n<td>Narrador</td>\n</tr>\n<tr>\n<td>9 · Apéndice</td>\n<td>Ayudas de juego (AYU-xx), prompts de imagen y manifiesto para Foundry VTT</td>\n<td>Narrador</td>\n</tr>\n</tbody></table>\n"
       },
-      "sort": 800000,
+      "sort": 700000,
       "ownership": {
         "default": 2
       },
@@ -252,7 +224,7 @@
         "format": 1,
         "content": "<p>Todas las referencias cruzadas usan identificadores estables, que no cambian entre versiones del libro y que se convierten en enlaces en Foundry VTT:</p>\n<ul>\n<li><strong>PJ-xx</strong> personajes jugadores · <strong>PNJ-xx</strong> personajes no jugadores · <strong>MEN-xx</strong> PNJs menores</li>\n<li><strong>LUG-xx</strong> lugares · <strong>COT-xx</strong> coteries · <strong>LOR-xx</strong> Loresheets · <strong>GAN-xx</strong> ganchos</li>\n<li><strong>DOC-xx</strong> documentos del mundo · <strong>AYU-xx</strong> ayudas de juego</li>\n<li><strong>A1-E03</strong> escena 3 de la parte 1 · <strong>P-xx</strong> pistas · <strong>FIN-x</strong> desenlaces</li>\n</ul>\n<p>Dentro de cada escena, el texto se separa siempre en tres tipos de bloque, que en Foundry pasan a ser elementos distintos:</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Bloque</th>\n<th>Qué es</th>\n<th>En Foundry</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>📢 <strong>Leer en voz alta</strong></td>\n<td>Texto breve para leer o parafrasear a los jugadores</td>\n<td>Página de diario visible para jugadores</td>\n</tr>\n<tr>\n<td>🕯️ <strong>Notas del Narrador</strong></td>\n<td>Contexto, secretos, tiradas, opciones y consecuencias</td>\n<td>Página de diario privada del Narrador</td>\n</tr>\n<tr>\n<td>🩸 <strong>Estadísticas</strong></td>\n<td>Reservas de dados, Atributos, Disciplinas</td>\n<td>Actor</td>\n</tr>\n</tbody></table>\n<p>Las tiradas se escriben siempre igual: <strong>Astucia + Consciencia (Dificultad 3)</strong>, seguidas de lo que revela un éxito.</p>\n"
       },
-      "sort": 900000,
+      "sort": 800000,
       "ownership": {
         "default": 2
       },
@@ -280,7 +252,7 @@
         "format": 1,
         "content": "<p><img class=\"sbn-logo-dark-pack\" src=\"modules/seattle-by-night/assets/legal/dark-pack-logo.webp\" alt=\"Dark Pack\" width=\"96\" height=\"97\"></p><p><em>El Expediente Ward — una crónica en Seattle</em> es material fan y <strong>no oficial</strong> de World of Darkness, publicado bajo el <a href=\"https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement\">Dark Pack</a>.</p>\n<p>Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en <a href=\"https://www.worldofdarkness.com\">worldofdarkness.com</a>.</p>\n<p><em>Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit <a href=\"https://www.worldofdarkness.com\">worldofdarkness.com</a>.</em></p>\n<p><em>This is not official World of Darkness material.</em></p>\n<p>Es <strong>gratuito</strong>: no se vende. Si se aceptan donaciones, van aparte y no compran nada exclusivo.</p>\n<p>Todo el arte (mapas, retratos, tokens, tiles e ilustraciones) es original, generado con IA en local con modelos de licencia abierta que permiten uso comercial. No contiene arte oficial de Paradox ni de White Wolf; el único logo es el del Dark Pack, que se muestra como lo pide el acuerdo.</p>\n"
       },
-      "sort": 1000000,
+      "sort": 900000,
       "ownership": {
         "default": 2
       },

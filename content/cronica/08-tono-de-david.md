@@ -9,7 +9,7 @@ origen: "19"
 
 # 🩸 Tono general: «El profesional sobrenatural»
 
-*Guía para que el Narrador interprete a @ID[PJ-01|David Smith], PNJ aliado de la coterie, en escenas sociales. Fuente: doc 19 (fuente previa), escrita para quien lo jugaba y adaptada aquí al Narrador. Complementa las sinergias tácticas de su ficha.*
+*Guía para que el Narrador interprete a @ID[PJ-01|David Smith], PNJ aliado de la coterie, en escenas sociales. Fuente: doc 19 (fuente previa). Complementa las sinergias tácticas de su ficha.*
 
 **Con la coterie, David ayuda, pero no manda.** Opina, presiona y reacciona; las decisiones son de los jugadores. Su ayuda es +1 dado al PJ que tira, o una acción que narrás sin tirar. Nunca resuelve solo lo que le toca a la coterie.
 

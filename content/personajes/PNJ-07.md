@@ -28,7 +28,7 @@ origen: "01, 09, 13"
 
 - **Doc 01:** «Duval pide un favor que obliga a David a salir de la ciudad.»
 - **Doc 09:** el señor Pell mecanografió tres copias de los diarios de Vance. La copia 3 la envió Halloway a la Justicar Panhard en 2025, como regalo de buena voluntad. Duval, que conoció a Vance, la ha leído y quiere hablar con @ID[PJ-01|David]. Le pide que viaje a Marsella. No es una orden. Todavía.
-  - **Con David de PNJ:** antes de contestar, David se lo cuenta a la coterie. Lo que digan pesa, y si lo acompañan, el viaje es una historia de la coterie.
+  - **Antes de contestar,** David se lo cuenta a la coterie. Lo que digan pesa, y si lo acompañan, el viaje es una historia de la coterie.
   - **David viaja:** Duval le enseña la copia 3, que tiene folios que no están en las otras dos, incluidos los que hablan de Krell. David gana el favor de un Arconte (Mawla 2 temporal), pero se ausenta de Seattle durante una historia. Si va solo, la coterie la juega sin él y sin su +1 dado. *Propuesto: el PJ que lo acompañó a Marsella comparte el favor de Duval (Mawla 2 temporal).*
   - **David se niega:** Duval no insiste, pero toma nota. La próxima vez será una orden.
   - **Panhard se interesa por Seattle:** si el desenlace fue FIN-B, la Justicar manda a Duval a la ciudad a investigar. Llega con una pregunta: ¿quién es el Príncipe ahora?

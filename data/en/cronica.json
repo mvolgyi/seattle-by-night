@@ -5,7 +5,7 @@
   "inicio": 2,
   "min": 0,
   "max": 10,
-  "visibilidad": "Players can see it; better if they don't see the exact number (AYU-03, doc 15). It helps for them to know it exists (doc 03).",
+  "visibilidad": "The players can see it; better that they don't see the exact number (AYU-03, doc 15). It's best if they know it exists (doc 03).",
   "ayuda": "AYU-03",
   "umbrales": [
    {
@@ -13,7 +13,7 @@
     "icono": "👁",
     "texto": "Passive surveillance on Helen.",
     "ciudad": "Passive surveillance on Helen: a van outside her building, occasional drones.",
-    "jugadores": "Someone is watching the journalist.",
+    "jugadores": "Someone's watching the journalist.",
     "interludio": "INT-01"
    },
    {
@@ -29,9 +29,9 @@
     "valor": 7,
     "icono": "🔍",
     "texto": "Active investigation of a coterie asset. Visit to the medical examiner “R. A.”",
-    "ciudad": "Active investigation of a coterie asset: the company that owns the hangar, the Medical Examiner's Office, Nadia's calendar.",
-    "jugadores": "Someone is pulling the thread on one of ours.",
-    "nota": "Doc 14 (the newest) wins for the short text; doc 10 details the assets. Doc 01 spoke of “a mortal asset of David's” because it was written for a single player."
+    "ciudad": "Active investigation of a coterie asset: the hangar's holding company, the medical examiner's office, Nadia's calendar.",
+    "jugadores": "Someone's pulling the thread on one of ours.",
+    "nota": "Doc 14 (the newest) wins for the short text; doc 10 details the assets."
    },
    {
     "valor": 9,
@@ -81,7 +81,7 @@
     "id": "sube-a0-e01-salir-del-apartamento-de-helen-por",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Leaving Helen's apartment through the hallway without dealing with the 3B camera: ANOMALY records each Kindred as a “cold subject”",
+    "motivo": "Leaving Helen's apartment through the hallway without dealing with the 3B camera: ANOMALY logs each Kindred as a “cold subject”",
     "escena": "A0-E01",
     "lugar": "LUG-05"
    },
@@ -89,7 +89,7 @@
     "id": "sube-a0-e01-romper-a-golpes-la-camara-del",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Smashing the 3B camera: the last image is a hand moving faster than normal",
+    "motivo": "Smashing the 3B camera: the last frame is a hand moving faster than it should",
     "escena": "A0-E01",
     "lugar": "LUG-05"
    },
@@ -97,7 +97,7 @@
     "id": "sube-a1-e02-salir-corriendo-a-velocidad-sobrenatural-de",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Running out of Terminal 46 at supernatural speed: the cameras, back up by now, record them",
+    "motivo": "Running out of Terminal 46 at supernatural speed: the cameras, back online by then, record them",
     "escena": "A1-E02"
    },
    {
@@ -112,7 +112,7 @@
     "id": "sube-a1-e05-dominacion-sobre-un-tecnico-de-guardia",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Dominate on an on-call technician at the Gale campus, in front of the ANOMALY cameras, if they weren't disabled first",
+    "motivo": "Dominate on an on-duty technician at the Gale campus, in front of the ANOMALY cameras, if they weren't disabled first",
     "escena": "A1-E05",
     "lugar": "LUG-07"
    },
@@ -120,7 +120,7 @@
     "id": "sube-a3-e02-entrar-en-gale-sentinel-sin-desactivar",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Entering Gale Sentinel without disabling ANOMALY: each Kindred is recorded as a “cold subject” (+1 total)",
+    "motivo": "Entering Gale Sentinel without disabling ANOMALY: each Kindred is logged as a “cold subject” (+1 total)",
     "escena": "A3-E02",
     "lugar": "LUG-07"
    },
@@ -152,7 +152,7 @@
     "id": "sube-a1-e02-la-usb-de-pike-queda-en",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Pike's USB drive stays in the chain of custody: Hale copies it on Night 3 with her “consulting authorization” (DOC-09)",
+    "motivo": "The Pike USB drive stays in the chain of custody: Hale copies it on Night 3 with her “consulting authorization” (DOC-09)",
     "escena": "A1-E02",
     "noche": 3,
     "documento": "DOC-09"
@@ -161,7 +161,7 @@
     "id": "sube-a1-e02-teo-vasquez-contesta-a-nrthln-research",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Teo Vásquez answers nrthln_research (if nobody deals with him before Night 4)",
+    "motivo": "Teo Vásquez replies to nrthln_research (if nobody deals with him before Night 4)",
     "escena": "A1-E02",
     "noche": 4,
     "pnj": "MEN-06",
@@ -171,7 +171,7 @@
     "id": "sube-a1-e04-la-subasta-de-thornquist-se-celebra",
     "tipo": "sube",
     "cambio": "+2",
-    "motivo": "The Thornquist auction takes place (Night 5)",
+    "motivo": "Thornquist's auction takes place (Night 5)",
     "escena": "A1-E04",
     "noche": 5,
     "lugar": "LUG-04"
@@ -180,7 +180,7 @@
     "id": "sube-a2-e02-escena-del-almacen-de-sal-sin",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "The scene at Sal's warehouse left uncleaned: the police find the phrase written in blood",
+    "motivo": "Sal's warehouse scene left uncleaned: the police find the words written in blood",
     "escena": "A2-E02",
     "noche": 4
    },
@@ -188,7 +188,7 @@
     "id": "sube-a2-e02-ruth-firma-la-autopsia-de-sal",
     "tipo": "sube",
     "cambio": "+1",
-    "motivo": "Ruth signs Sal's autopsy: FIRSTLIGHT's “R. A.” anomaly adds a report",
+    "motivo": "Ruth signs Sal's autopsy: FIRSTLIGHT's “R. A.” anomaly adds another report",
     "escena": "A2-E02",
     "pj": "PJ-06"
    },
@@ -229,7 +229,7 @@
     "id": "sube-a3-e02-asalto-ruidoso-a-gale-sentinel-gale",
     "tipo": "sube",
     "cambio": "+2",
-    "motivo": "Loud assault on Gale Sentinel (Gale warns Halloway, who moves the original that same night if they don't take it)",
+    "motivo": "Loud assault on Gale Sentinel (Gale alerts Halloway, who moves the original that same night if they don't take it)",
     "escena": "A3-E02",
     "lugar": "LUG-07"
    },
@@ -277,7 +277,7 @@
     "id": "sube-gan-01-la-analista-hale-llega",
     "tipo": "sube",
     "cambio": "+2",
-    "motivo": "GAN-01: analyst Hale gets to Marcos Delgado first (and has a composite sketch of David)",
+    "motivo": "GAN-01: the analyst Hale reaches Marcos Delgado first (and has a composite sketch of David)",
     "gancho": "GAN-01"
    },
    {
@@ -329,7 +329,7 @@
     "id": "baja-a4-e02-destruir-pruebas-en-la-redada-la",
     "tipo": "baja",
     "cambio": "-1",
-    "motivo": "Destroying evidence in the raid: the coterie escapes with everything destroyed (Haven −2 for the owner)",
+    "motivo": "Destroying evidence in the raid: the coterie escapes with everything destroyed (Haven −2 for its owner)",
     "escena": "A4-E02",
     "noche": 8
    },
@@ -337,7 +337,7 @@
     "id": "baja-a3-e02-borrar-la-base-de-datos-de",
     "tipo": "baja",
     "cambio": "-2",
-    "motivo": "Wiping the cold-subject database (Intelligence + Technology, Difficulty 4); Gale detects it the next day",
+    "motivo": "Wiping the cold subject database (Intelligence + Technology, Difficulty 4); Gale detects it the next day",
     "escena": "A3-E02",
     "lugar": "LUG-07"
    },
@@ -345,7 +345,7 @@
     "id": "baja-halloway-cae-como-arquero-fin-a",
     "tipo": "baja",
     "cambio": "-2",
-    "motivo": "Halloway goes down as ARCHER (FIN-A · The Truth Before the Throne): FIRSTLIGHT loses its source",
+    "motivo": "Halloway falls as ARCHER (FIN-A · The Truth Before the Throne): FIRSTLIGHT loses its source",
     "desenlace": "FIN-A"
    },
    {
@@ -378,17 +378,17 @@
     "escena": "A0-E01"
    },
    {
-    "motivo": "Convincing the officers at Terminal 46 that it's “a funeral home dumping ashes”: the case is closed, DOC-09 doesn't exist, and the Thermometer doesn't rise on Night 3",
+    "motivo": "Convincing the officers at Terminal 46 that it's “a funeral home dumping ashes”: the case is closed, DOC-09 never exists, and the Thermometer doesn't rise on Night 3",
     "escena": "A1-E02",
     "noche": 3
    },
    {
-    "motivo": "Dealing with Teo before Night 4: buying him off, convincing him, or wiping his memory (the last one, 1 Stain to anyone without a good reason)",
+    "motivo": "Dealing with Teo before Night 4: buying him off, convincing him, or wiping his memory (the last one costs 1 Stain to anyone without a good reason)",
     "escena": "A1-E02",
     "noche": 4
    },
    {
-    "motivo": "Cleaning up the scene at Sal's warehouse: staging it as a robbery (Intelligence + Subterfuge, Difficulty 3) or calling Montgomery",
+    "motivo": "Fixing Sal's warehouse scene: staging it as a robbery (Intelligence + Subterfuge, Difficulty 3) or calling Montgomery",
     "escena": "A2-E02"
    },
    {
@@ -415,7 +415,7 @@
    },
    {
     "valor": "9 or more at the end of A3-E04",
-    "efecto": "The raid is triggered (A4-E02): it happens at 9:40 p.m. on Night 8, before the Council.",
+    "efecto": "The raid (A4-E02) triggers: it happens at 9:40 p.m. on Night 8, before the Council.",
     "escena": "A4-E02",
     "noche": 8
    },
@@ -425,7 +425,7 @@
    },
    {
     "valor": "any",
-    "efecto": "LOR-03 level 5 “The Eye Inside”: once per story, the character can learn the Thermometer's current value and FIRSTLIGHT's next target.",
+    "efecto": "LOR-03 level 5 “The Eye Within”: once per story, the character can learn the current value of the Thermometer and FIRSTLIGHT's next target.",
     "lor": "LOR-03"
    }
   ]
@@ -1786,7 +1786,7 @@
   },
   "A2-E02": {
    "uuid": "JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z",
-   "nombre": "A2-E02 · “Locate. Assess. Execute.”",
+   "nombre": "A2-E02 · “Locate. Evaluate. Execute.”",
    "tipo": "pagina"
   },
   "A2-E03": {

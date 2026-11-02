@@ -1,17 +1,17 @@
 ---
 nombre: "General Tone: The Supernatural Professional"
-fuente: 504be42ee4a1b3f9
+fuente: 5e1da30346e18ab8
 ---
 
 # 🩸 General Tone: “The Supernatural Professional”
 
-*A guide for the Storyteller to portray @ID[PJ-01|David Smith], the coterie's allied NPC, in social scenes. Source: doc 19 (earlier source), written for whoever played him and adapted here for the Storyteller. It complements the tactical synergies on his sheet.*
+*A guide for the Storyteller to play @ID[PJ-01|David Smith], the coterie's NPC ally, in social scenes. Source: doc 19 (earlier source). It complements the tactical synergies on his character sheet.*
 
-**With the coterie, David helps, but he doesn't lead.** He weighs in, pushes, and reacts; the decisions belong to the players. His help is +1 die to the PC who's rolling, or an action you narrate without a roll. He never resolves on his own what's the coterie's to resolve.
+**With the coterie, David helps, but he doesn't lead.** He gives his opinion, pushes, and reacts; the decisions belong to the players. His help is +1 die to the PC who rolls, or an action you narrate without a roll. He never resolves on his own what is the coterie's to resolve.
 
 **David Smith doesn't argue—he defines.**
 When he socializes, he isn't after sympathy or political power; he's after efficiency and truth.
-His presence should convey that:
+His presence should convey this:
 
 > “I'm not your enemy, but I'm not your friend either. I'm here to finish the job.”
 
@@ -21,20 +21,20 @@ His presence should convey that:
 
 **Narrative tools:**
 
-- He comes in slowly. He observes first, speaks later.
-  *(Describe how his eyes sweep the room as if he were measuring lines of fire or exits.)*
+- He enters slowly. He observes first, speaks later.
+  *(Describe how his eyes sweep the room as if he were measuring lines of fire or exits).*
 
 - Speak for him in a low but clear voice. Make the other person have to listen closely.
 
 - He doesn't gesture. Every movement he makes should seem measured.
 
-- He doesn't sit first. If he does, it's after sizing up the surroundings.
+- He doesn't sit first. If he does, it's after assessing the surroundings.
 
-- If the other person moves around too much, he follows them with his eyes, not his body: *as if marking them in combat*.
+- If the other person moves too much, he follows them with his eyes, not his body: *as if he were marking them in combat*.
 
 💬 **Example:**
 
-> “David rests both hands on the table, without pressing. His knuckles look like marble. He doesn't interrupt, but every time the other man pauses, the silence turns uncomfortable.”
+> “David rests both hands on the table, without pressing down. His knuckles look like marble. He doesn't interrupt, but every time the other person pauses, the silence turns uncomfortable.”
 
 ## 🔥 2. ECONOMY OF WORDS (The Weight of Silence)
 
@@ -50,9 +50,9 @@ His presence should convey that:
 
 - If someone asks him something he doesn't want to answer, he deflects:
 
-  - “It's not relevant to the mission.”
+  - “That's not relevant to the mission.”
   - “What matters is that we meet the objective.”
-  - “Why exactly do you want to know?”
+  - “Why exactly are you interested in that?”
 
 💬 **Example:**
 
@@ -66,47 +66,47 @@ His presence should convey that:
 
 - His language is **operational**, not emotional: *‘Objective,’ ‘phase,’ ‘contact,’ ‘deadline’*.
 
-- He doesn't make promises; he proposes temporary arrangements:
+- He doesn't promise; he proposes temporary arrangements:
 
   - “For now, we work together.”
   - “Later we'll see if we're still on the same side.”
 
-- He treats the PCs as colleagues, not as superiors or subordinates, unless it can't be helped.
+- He treats the PCs as colleagues, not as superiors or subordinates, unless it's unavoidable.
 
-- He respects only efficiency or loyalty. Not lineage or power.
+- He respects only efficiency or loyalty. Not lineage, not power.
 
 💬 **Example:**
 
-> “Smith doesn't argue with the Ventrue's order. He just says: ‘Understood. But if the Masquerade breaks, the report carries your signature, not mine.’”
+> “Smith doesn't argue with the Ventrue's order. He simply says: ‘Understood. But if the Masquerade breaks, the report carries your signature, not mine.’”
 
-## 🕯️ 4. HUNTER'S INTUITION (Auspex + Insight, Narrated)
+## 🕯️ 4. HUNTER'S INTUITION (Narrated Auspex + Insight)
 
 > David doesn't look: he examines.
 
 **Narrative tools:**
 
-- Describe how he **picks up on microdetails**:
-  *‘He sees the other man touch his ring when he lies,’ ‘The smell of old blood on his coat tells him he fed recently’*.
+- Describe how he **observes microdetails**:
+  *‘He sees how the other man touches his ring when he lies,’ ‘The smell of old blood on his coat tells him he fed recently’*.
 
-- Before speaking, he drops small remarks that show what he's noticed:
+- Before speaking, he drops small statements that reveal what he's observed:
 
   - “You changed your perfume. You're expecting to see someone else.”
   - “You don't carry that gun out of habit.”
   - “You're hungry. And hungry people make mistakes.”
 
-💬 *This isn't meant to intimidate directly, but to show that nothing gets past him.* If a PC rolls to read someone with David beside them, what he notices is worth +1 die.
+💬 *This isn't meant to intimidate directly, but to show that nothing gets past him.* If a PC rolls to read someone with David at their side, what he notices is worth +1 die.
 
 ## 🩶 5. HONOR OF WAR (Mature Brujah Morality)
 
-> He isn't after domination; he's after respect earned through results.
+> He doesn't seek domination; he seeks respect earned through results.
 
 **Narrative tools:**
 
 - He speaks from **experience**, not from ideology.
 
-  - “I've seen what happens when Cainites think they're gods. Blood in the gutters, dust at dawn.”
+  - “I've seen what happens when Cainites think they're gods. Blood in the sewers, dust at dawn.”
 
-- He rejects pointless violence matter-of-factly, the coterie's included:
+- He rejects gratuitous violence matter-of-factly, the coterie's included:
 
   - “If you want to prove how strong you are, there are cemeteries full of idiots who tried.”
 
@@ -114,7 +114,7 @@ His presence should convey that:
 
   - “I don't like you. But you know how to do your job. That's enough.”
 
-## 💀 6. CONTROLLED THREAT (Presence and Potence, Narrated)
+## 💀 6. CONTROLLED THREAT (Narrated Presence and Potence)
 
 > He doesn't need to show his fangs. You can tell.
 
@@ -126,10 +126,10 @@ His presence should convey that:
 
 - Let the silence after one of his lines last *a little longer than normal*.
 
-- In a war of words, he doesn't challenge: he **warns**.
+- In a verbal fight, he doesn't challenge: he **warns**.
 
   - “Don't bring that up again.”
-  - “Lie to me again and I'll know.”
+  - “If you lie to me again, I'll know.”
   - “Don't make me remind you why I'm still alive after all these years.”
 
 ## 🧩 7. COOPERATION WITHOUT ATTACHMENT (The Art of Functional Distance)
@@ -138,24 +138,24 @@ His presence should convey that:
 
 **Narrative tools:**
 
-- When he's given an instruction, he rephrases it in tactical terms:
+- When he receives an instruction, he rephrases it in tactical terms:
 
   - “Fine. You open, I clean up. Then we go our separate ways.”
 
 - If the other person tries to get close emotionally, he redirects:
 
-  - “Let's not mix the past with the job.”
+  - “Let's not mix the past with work.”
 
 - If he notices manipulation, he **doesn't confront it directly**: he files it away for later.
- (David doesn't react: he *plans*.)
+ (David doesn't react: *he plans*.)
 
-## 🩸 8. FAREWELL OR END OF MISSION
+## 🩸 8. FAREWELL OR MISSION CLOSE
 
 > His narrative signature: leaving the other person wondering whether he was an ally or a threat.
 
 **Narrative tools:**
 
-- He ends conversations before the others do.
+- He ends conversations before anyone else does.
 
 - He closes with lines that imply an ending, not a goodbye:
 
@@ -163,14 +163,14 @@ His presence should convey that:
   - “If you need me, you know how not to find me.”
   - “See you next night, if the city's still standing.”
 
-💬 *That's how he keeps the mystique of the lone hound without fully cutting the operational ties.*
+💬 *That's how he keeps the mystique of the lone hound without fully cutting his operational ties.*
 
-## 🎭 In Summary—The Perfect Balance for Cooperating
+## 🎭 In Summary—The Perfect Balance for Cooperation
 
 | Aspect | Narrative tool | Discipline it enhances |
 |---|---|---|
-| Control of the surroundings | Silence, fixed stare, measured movements | **Presence (Instinctive Authority)** |
-| Reading the other person | Microgestures, active observation | **Auspex (Heightened Senses)** |
+| Control of the environment | Silence, fixed stare, measured movements | **Presence (Instinctive Authority)** |
+| Reading others | Microexpressions, active observation | **Auspex (Heightened Senses)** |
 | Tactical cooperation | Professional language, temporary arrangements | **Resolve + Leadership** |
-| Handling tension | Veiled threats, long pause | **Fortitude + Composure** |
-| Graceful exit | Short lines, blunt endings | **Potence + Intimidation** |
+| Handling tension | Veiled threats, long pauses | **Fortitude + Composure** |
+| Graceful exit | Short lines, clean-cut endings | **Potence + Intimidation** |
