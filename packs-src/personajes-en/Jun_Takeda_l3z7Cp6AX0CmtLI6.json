@@ -1,0 +1,411 @@
+{
+  "_id": "l3z7Cp6AX0CmtLI6",
+  "_key": "!actors!l3z7Cp6AX0CmtLI6",
+  "name": "Jun Takeda",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-20.webp",
+  "folder": "9e23qS6GIuBDHuQb",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Jun Takeda",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-20.webp"
+    }
+  },
+  "system": {
+    "group": "BZHKi8od2TMxi33B",
+    "headers": {
+      "concept": "Courier, possible victim, and clue (P-05)",
+      "chronicle": "The Ward File",
+      "ambition": "Not to die in some doorway.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>Don&#39;t open the packages</li></ul><h3>Touchstones</h3><ul><li><strong>Haruko Takeda</strong>: Her grandmother, who runs a flower shop in the International District and reads her fortune in tea leaves.</li></ul>",
+      "sire": "Unknown",
+      "generation": "15"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "2004",
+        "death": "2025"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Profile: Jun Takeda}</p><blockquote><p><em>“I just deliver. I don&#39;t open the packages. That&#39;s rule number one.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>She Who Doesn&#39;t Know What She Carries</td></tr><tr><th>Concept</th><td>Courier, possible victim, and clue (P-05)</td></tr><tr><th>Clan</th><td>Thin-Blood</td></tr><tr><th>Sect</th><td>none (under Thornquist&#39;s protection)</td></tr><tr><th>Sire</th><td>Unknown</td></tr><tr><th>Born</th><td>2004</td></tr><tr><th>Embraced</th><td>2025</td></tr><tr><th>Ambition</th><td>Not to die in some doorway.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{The Moles}</td></tr></tbody></table><h3>Demeanor</h3><p>Slight and wiry, faded blue-dyed hair, piercings; yellow waterproof delivery jacket, insulated backpack, and a helmet covered in stickers.</p>",
+    "appearance": "<p>Slight and wiry, faded blue-dyed hair, piercings; yellow waterproof delivery jacket, insulated backpack, and a helmet covered in stickers.</p>",
+    "equipment": "<ul><li>The bike: electric, modified, the fastest in the underground</li><li>The USB drive: a partial copy of the File, with the folders from 2019 to 2022</li></ul>",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 0,
+      "generation": "15"
+    },
+    "humanity": {
+      "value": 8,
+      "stains": 0
+    },
+    "disciplines": {
+      "alchemy": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 4,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 2,
+        "active": false
+      },
+      "intelligence": {
+        "value": 2,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "athletics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Cycling",
+            "value": 1,
+            "paths": [
+              "skills.athletics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Shortcuts",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "thinblood"
+        }
+      },
+      "name": "Thin-Blood",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "KZRegBWaJNXC2KGq",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.KZRegBWaJNXC2KGq"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Far Reach",
+          "homebrew": false
+        }
+      },
+      "name": "Far Reach",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Thin-Blood Alchemy 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-20"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "alchemy",
+        "selected": false
+      },
+      "_id": "sO0n6sropGizCEfj",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.sO0n6sropGizCEfj"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Day Drinker, thin-blood Merit"
+        }
+      },
+      "name": "Day Drinker, thin-blood Merit",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Day Drinker, thin-blood Merit</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "JfdCHskZZnonFlyR",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.JfdCHskZZnonFlyR"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 2 (delivery riders across half the city)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 2 (delivery riders across half the city)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "b18SHnD31UvBCn0i",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.b18SHnD31UvBCn0i"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 0"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 0</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "4gnafZVm00vsHoDn",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.4gnafZVm00vsHoDn"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 3 (she has a legal life, bank accounts, and a family)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 3 (she has a legal life, bank accounts, and a family)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "iQZx6y7Dcombzq8Y",
+      "_key": "!actors.items!l3z7Cp6AX0CmtLI6.iQZx6y7Dcombzq8Y"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-20",
+      "journal": "JournalEntry.BRQMU0Tf8VSNaZ5o",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

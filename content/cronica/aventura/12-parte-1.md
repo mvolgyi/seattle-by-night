@@ -50,7 +50,7 @@ Helen enciende un cigarrillo con manos que todavía tiemblan un poco y mira la p
 - **«¿Había algo sobre nosotros?»** — Los mira uno por uno. «Había carpetas. Sin nombres, porque no tengo nombres. Tengo fotos. Fechas. Patrones. —Pausa—. Sí. Creo que sí.»
 - **«¿Quién podría querer esto?»** — «Un periódico, no. La policía, tampoco: si quisieran mis archivos, me los pedirían con una orden. Esto lo quiere alguien que aparece en ellos. O alguien que quiere encontrar a los que aparecen.»
 - **«¿Le contaste a alguien lo que tenías?»** — «Nunca entero. En el pódcast hablé de patrones. En el episodio 112 hablé de un hombre que no envejece. —Mira a David—. No enseñé tu foto. Pero hablé de ella.» *(Entregá @ID[DOC-02|DOC-02] si no lo tienen.)*
-- **«¿Por qué no te fuiste cuando te llegó el mensaje?»** (@ID[DOC-05|DOC-05]) — «Porque era la primera vez en cuatro años que decías algo que no era "seguís mirando". Y no decías por qué.»
+- **«¿Por qué no te fuiste cuando te llegó el mensaje?»** (@ID[DOC-05|DOC-05]; contesta mirando a David, pregunte quien pregunte) — «Porque era la primera vez en cuatro años que decías algo que no era "seguís mirando". Y no decías por qué.»
 
 ### Pistas
 
@@ -66,6 +66,7 @@ Helen enciende un cigarrillo con manos que todavía tiemblan un poco y mira la p
 ### Notas del Narrador
 
 - @ID[AYU-02|AYU-02] incluye una línea por cada carpeta de PJ, con el estilo de Helen. Así es como los personajes descubren, uno por uno, que están en el archivo.
+- **Lo que David calla.** El 9 de noviembre, un contacto de Montgomery en el puerto le avisó de que alguien había pedido datos de vigilancia del edificio de Helen. David le mandó el mensaje y no fue a comprobarlo. No lo cuenta si nadie le pregunta. Si un PJ se lo pregunta a solas, lo admite sin tirada: «Me avisaron. No fui.» Delante de Helen no lo dice. Sacárselo ahí es @tirada{attributes.manipulation+skills.intimidation|4|Manipulación + Intimidación (Dificultad 4)}: Helen lo oye y David no ayuda a ese PJ hasta el final de la Parte 1. Lo que sabe apunta a @ID[A1-E05]. Qué le cuentan a Helen es cosa de los jugadores.
 - Nadia: si se juega, esta escena es su primer momento difícil. Helen menciona el calendario. Si Nadia lo revisa, verá que sincroniza con una aplicación cuya política de privacidad incluye a «socios de seguridad». Ese es el secreto de @ID[PJ-04|PJ-04], y conviene que lo descubra el jugador solo.
 
 ## A1-E02 · Ceniza en el muelle 46 {#A1-E02}
@@ -85,8 +86,9 @@ La Terminal 46 a las cinco de la mañana es un tablero de contenedores bajo foco
 ### Tiradas
 
 - **Llegar al cordón sin llamar la atención:** Hal con Contactos (policía portuaria), Ruth con Influencia (oficina forense) o cualquiera con @tirada{attributes.manipulation+skills.subterfuge|3|Manipulación + Subterfugio (Dificultad 3)} haciéndose pasar por personal del puerto.
-- **Leer la escena:** @tirada{attributes.intelligence+skills.brawl|4|Inteligencia + Pelea (Dificultad 4)}. Las abolladuras en el contenedor están todas a la altura del pecho y en la misma secuencia: costillas, esternón, garganta. Un trabajo, no una pelea. Es la *Furia Controlada* (@pista{P-03}). **David, con @ID[LOR-01|LOR-01] a nivel 4, lo reconoce sin tirar,** y siente el golpe de reconocer los pasos de su sire.
-- **Con 4 o más éxitos en la tirada anterior, o LOR-01 a nivel 4 y un éxito en** @tirada{attributes.wits+skills.brawl|3|Astucia + Pelea (Dificultad 3)}: hay algo raro. El último golpe, el del pecho, entró ligeramente desde la izquierda, como si el atacante tuviera la guardia cambiada. Es un primer indicio de P-08, que se confirma en @ID[A2-E02].
+- **Leer la escena:** @tirada{attributes.intelligence+skills.brawl|4|Inteligencia + Pelea (Dificultad 4)}. Las abolladuras en el contenedor están todas a la altura del pecho y en la misma secuencia: costillas, esternón, garganta. Un trabajo, no una pelea. Es la *Furia Controlada* (@pista{P-03}).
+- **Si David está:** lo reconoce al instante (@ID[LOR-01|LOR-01] a nivel 4), pero no lo dice. Se queda muy quieto mirando el contenedor. Notarlo es @tirada{attributes.wits+skills.insight|2|Astucia + Perspicacia (Dificultad 2)}. Si un PJ le muestra las abolladuras y le pregunta qué ve, David no lo esquiva y la pista sale sin tirar: «Costillas, esternón, garganta. Así me enseñaron a mí.» Si nadie le pregunta, se lo guarda. Le pesa reconocer los pasos de su sire.
+- **Con 4 o más éxitos en la tirada de leer la escena, o con David explicando la secuencia y un éxito en** @tirada{attributes.wits+skills.brawl|3|Astucia + Pelea (Dificultad 3)}: hay algo raro. El último golpe, el del pecho, entró ligeramente desde la izquierda, como si el atacante tuviera la guardia cambiada. Es un primer indicio de P-08, que se confirma en @ID[A2-E02]. Si un PJ se lo señala a David, él frunce el ceño: «Vance no pegaba así.»
 - **Encontrar la memoria USB:** @tirada{attributes.wits+skills.awareness|3|Astucia + Consciencia (Dificultad 3)}. Está en el bolsillo interior de la chaqueta, entre las cenizas. Cogerla sin que los agentes lo vean es @tirada{attributes.dexterity+skills.larceny|3|Destreza + Latrocinio (Dificultad 3)} (@pista{P-04}).
 - **Hablar con el testigo:** ver la guía de diálogo.
 
@@ -119,15 +121,15 @@ La Terminal 46 a las cinco de la mañana es un tablero de contenedores bajo foco
 
 - **Si la coterie no consigue la USB,** entra en la cadena de custodia policial. La analista @ID[PNJ-21|Hale] la copia en la Noche 3 con su "autorización de consultoría" (@ID[DOC-09|DOC-09]): @termometro{+1|La USB de Pike quedó en la cadena de custodia y Hale la copia (Noche 3)}.
 - **Si nadie se ocupa de Teo** antes de la Noche 4, le contesta a *nrthln_research*: @termometro{+1|Teo Vásquez le contesta a nrthln_research (Noche 4)}. Comprarlo, convencerlo o borrarle la memoria son opciones válidas. La última cuesta 1 Mancha a quien no tenga una buena razón.
-- La USB contiene las carpetas de 2014 a 2018 del Expediente, incluida la del Larchmont. Si el jugador de David la abre y la lee, que el Narrador le pase la foto de las llamas en privado.
+- La USB contiene las carpetas de 2014 a 2018 del Expediente, incluida la del Larchmont. Si un PJ abre esa carpeta, pasale la foto de las llamas, en privado si la mesa lo prefiere. Si David está delante, cierra el portátil y sale a fumar al muelle. No explica nada: el Larchmont espera en @ID[A2-E05]. Si le enseñan la USB o no, lo deciden ellos.
 
 ## A1-E03 · El Sheriff pregunta {#A1-E03}
 
 ### Contexto para el Narrador
 
-Final de la Noche 2, o comienzo de la Noche 3. @ID[PNJ-01|Montgomery] convoca a la coterie en su @ID[LUG-02|granja]. Hal es el encargado de avisar a todos. Es la escena de formación de «Los del Archivo»: Montgomery ha cruzado la lista de Helen (@ID[AYU-02|AYU-02]) con lo que sabe de la ciudad y ha identificado a cada Vástago que aparece en ella.
+Final de la Noche 2, o comienzo de la Noche 3. @ID[PNJ-01|Montgomery] convoca a la coterie en su @ID[LUG-02|granja]. Hal es el encargado de avisar a todos; si Hal no se juega, avisa David. Es la escena de formación de «Los del Archivo»: Montgomery ha cruzado la lista de Helen (@ID[AYU-02|AYU-02]) con lo que sabe de la ciudad y ha identificado a cada Vástago que aparece en ella.
 
-Montgomery quiere tres cosas: el Expediente de vuelta, saber quién destruyó a @ID[MEN-12|Pike] y una respuesta a la pregunta que no se atreve a hacerle a @ID[PJ-01|David] en privado.
+Montgomery quiere tres cosas: el Expediente de vuelta, saber quién destruyó a @ID[MEN-12|Pike] y una respuesta a la pregunta que no se atreve a hacerle a @ID[PJ-01|David] en privado. Al final pone a David con ellos: el Sabueso sigue siendo suyo, pero desde esta noche acompaña a la coterie.
 
 *Si el Termómetro está ya en 4 o más, Montgomery recibe a la coterie de mal humor y los primeros dos minutos los pasa reprochándoles cada error.*
 
@@ -156,8 +158,8 @@ El camino de grava termina en una granja de madera oscura entre campos inundados
 - **(Abre él) «¿Por qué estamos aquí?»** — «Porque están todos en el mismo disco. —Toca la lista—. Una periodista mortal tiene fotos suyas, fechas suyas, patrones suyos. Ya no las tiene. Las tiene otro. O lo recuperan juntos o caen juntos. No hay una tercera opción.»
 - **«¿Por qué nosotros?»** — «Porque son los que más pierden si sale. Los que tienen algo que perder trabajan mejor.»
 - **«¿Qué sabe del muelle 46?»** — Silencio. Mira a David. «Sé lo que vi en las fotos de la policía. Golpes cortos. Siempre en los mismos sitios. Conozco esa forma de trabajar porque la tengo sentada en mi porche.»
-- **(A David) «¿Qué estás insinuando?»** — «Nada. Pregunto. —Pausa larga—. ¿Tu sire está vivo, Sabueso?»
-- **«No lo sé.»** (o cualquier respuesta honesta) — Asiente despacio. «Bien. Esa es la respuesta que yo daría. No me gusta, pero es la correcta.»
+- **(Lo pregunta David, o un PJ que lo defienda) «¿Qué está insinuando?»** — «Nada. Pregunto. —Pausa larga—. ¿Tu sire está vivo, Sabueso?»
+- **David: «No lo sé.»** — Asiente despacio. «Bien. Esa es la respuesta que yo daría. No me gusta, pero es la correcta.» *(David dice la verdad. Si un PJ cuenta aquí lo que vieron en el muelle, David no lo niega: se lo deja a ellos.)*
 - **«¿Cuánto tiempo tenemos?»** — «Tres noches. Después, si no tengo el disco y no tengo un nombre, lo busco yo. A mi manera.»
 - **«¿Qué pasa si encontramos al que mata en los muelles?»** — «Me lo traen. Entero, si se puede. Si no se puede, lo que quede.»
 
@@ -172,7 +174,7 @@ Ninguna nueva. Esta escena reparte recursos y presión. Si la coterie le enseña
 ### Notas del Narrador
 
 - Al terminar la reunión, Montgomery le pide a Hal que se quede un momento. Si Hal es PJ, el Narrador juega esa conversación aparte: el Sheriff quiere el informe sobre David antes de lo previsto.
-- Es el momento para que los jugadores definan las costumbres de @ID[COT-00|COT-00] si no lo hicieron en la sesión cero.
+- Es el momento para que los jugadores definan las costumbres de @ID[COT-00|COT-00] si no lo hicieron en la sesión cero. David les ofrece el hangar como refugio. Si aceptan, el dominio de la coterie son los muelles de Harbor Island, alrededor del hangar.
 
 ## A1-E04 · Todo se vende abajo {#A1-E04}
 

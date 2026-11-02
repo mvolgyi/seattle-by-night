@@ -21,7 +21,7 @@ Halloway tiene tres objetivos esta noche: sembrar dudas sobre el Sheriff, reaviv
 
 La escena funciona como una ronda de conversaciones. El Narrador decide el orden según quién se acerque a quién. Al final, el Príncipe toma la palabra.
 
-*Para un solo jugador: David llega con @ID[PNJ-05|Bear], que se queda en el vestíbulo con los teléfonos. Las conversaciones son las mismas.*
+*Con un solo jugador: el PJ llega con David y @ID[PNJ-05|Bear], que se queda en el vestíbulo con los teléfonos. Las conversaciones son las mismas; las que van dirigidas a David, el PJ las oye a su lado.*
 
 :::leer
 En la entrada, una mujer de gris les tiende una bandeja de terciopelo: «Sus teléfonos, por favor». Dentro, cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa. Suena un cuarteto de cuerdas que nadie ve. Hay copas en las manos de todos, y nadie bebe de ellas. Al fondo, junto a la terraza, un hombre de pelo plateado se ríe de algo, y la sala entera parece girar un poco hacia él.
@@ -30,7 +30,7 @@ En la entrada, una mujer de gris les tiende una bandeja de terciopelo: «Sus tel
 ### Tiradas
 
 - **Leer la sala:** @tirada{attributes.wits+skills.etiquette|3|Astucia + Etiqueta (Dificultad 3)}. Quién habla con quién. Halloway se mueve por la sala como un anfitrión, aunque el anfitrión es el Príncipe. Voight está sola junto a la terraza, mirando el reloj. Thornquist está en un rincón y nadie se le acerca.
-- **Detectar el error de Halloway:** @tirada{attributes.intelligence+skills.academics|3|Inteligencia + Academicismo (Dificultad 3)}, o automático para David. Ver la guía de diálogo. Halloway cita una frase de Vance que no figura en ningún archivo de la Camarilla, solo en los diarios privados (@pista{P-07}).
+- **Detectar el error de Halloway:** @tirada{attributes.intelligence+skills.academics|3|Inteligencia + Academicismo (Dificultad 3)}. Ver la guía de diálogo. Halloway cita una frase de Vance que no figura en ningún archivo de la Camarilla, solo en los diarios privados (@pista{P-07}). David lo sabe en cuanto lo oye, pero no lo dice delante de Halloway. Notar que algo le cambió en la cara es @tirada{attributes.wits+skills.insight|2|Astucia + Perspicacia (Dificultad 2)}. Si un PJ le pregunta después, lo explica: «Eso no lo sabía nadie más que él y yo.» Si David no oyó la frase y un PJ se la repite, la reconoce igual.
 - **Escuchar sin ser vistos:** @tirada{attributes.wits+skills.awareness|4|Astucia + Consciencia (Dificultad 4)}. En la terraza, Halloway le dice a un Vástago menor: «El Sheriff está viejo. Y el Sabueso tiene lealtades que no son nuestras». Sirve para @ID[A3-E04].
 - **Pedir ver el registro de Marchetti (Estatus 2 o más):** @tirada{attributes.charisma+skills.etiquette|3|Carisma + Etiqueta (Dificultad 3)}. Entrega @ID[DOC-03|DOC-03].
 
@@ -44,9 +44,9 @@ En la entrada, una mujer de gris les tiende una bandeja de terciopelo: «Sus tel
 
 ### Guía de diálogo: Charles Halloway
 
-*Cortés, tranquilo, nunca interrumpe. Sus manos no se mueven. Llama a David «señor Smith», nunca «Sabueso».*
+*Cortés, tranquilo, nunca interrumpe. Sus manos no se mueven. Llama a David «señor Smith», nunca «Sabueso». Le habla a David, pero mide a la coterie: quiere ver quién salta.*
 
-- **(Se acerca él, a David) «¿Qué quiere?»** — «Presentarle mis condolencias, señor Smith. Me dicen que en los muelles han aparecido cosas que le recuerdan a alguien. Debe de ser difícil.»
+- **(Se acerca él, a David y a la coterie) «¿Qué quiere?»** — «Presentarle mis condolencias, señor Smith. Me dicen que en los muelles han aparecido cosas que le recuerdan a alguien. Debe de ser difícil.»
 - **«¿A qué se refiere?»** — «A su sire. Un hombre notable. "Localiza, evalúa, ejecuta". Y el agua fría por las mañanas, ¿no? Un método severo.» *(El agua fría solo aparece en los diarios: @pista{P-07}.)*
 - **«¿Cómo sabe lo del agua fría?»** — Pausa mínima. «Los Ventrue leemos mucho, señor Smith. Los informes de los Arcontes de los setenta eran muy detallados.» *(Mentira. @tirada{attributes.wits+skills.insight|4|Astucia + Perspicacia (Dificultad 4)} para notarlo.)*
 - **«¿Qué piensa del Sheriff?»** — «Que lleva cincuenta años haciendo un trabajo excelente. Y que cincuenta años es mucho tiempo para cualquiera.»
@@ -85,7 +85,7 @@ En la entrada, una mujer de gris les tiende una bandeja de terciopelo: «Sus tel
 
 ### Notas del Narrador
 
-- El rumor 10 («el Sabueso destruyó a su propio sire») circula esta noche. Si David no lo desmiente en público, en A3-E04 Montgomery lo ha oído tres veces.
+- El rumor 10 («el Sabueso destruyó a su propio sire») circula esta noche. David no lo desmiente: no discute rumores en una sala de Ventrue. Si ningún PJ lo desmiente en público (@tirada{attributes.charisma+skills.etiquette|3|Carisma + Etiqueta (Dificultad 3)}), en A3-E04 Montgomery lo ha oído tres veces.
 - Si Tavi Mercer (@ID[COT-03|COT-03]) se entera de que en el Elíseo se culpa a Everett, la tensión con Salitre sube (@ID[A2-E03] empieza con Dificultad +1).
 
 ## A2-E02 · «Localiza. Evalúa. Ejecuta.» {#A2-E02}
@@ -106,7 +106,8 @@ La nave huele a óxido, a cera para muebles viejos y a algo mucho más fresco. E
 
 ### Tiradas
 
-- **Leer el combate:** @tirada{attributes.intelligence+skills.brawl|4|Inteligencia + Pelea (Dificultad 4)}. La secuencia de golpes sobre las cenizas de Corwin es la doctrina de la *Furia Controlada*, pero con la guardia invertida: la mano débil adelante. Quien atacó es zurdo o pelea como tal. Vance no peleaba así (@pista{P-08}). **David, con @ID[LOR-01|LOR-01] a nivel 4: automático,** y entiende lo que significa: el asesino aprendió de Vance, pero no terminó.
+- **Leer el combate:** @tirada{attributes.intelligence+skills.brawl|4|Inteligencia + Pelea (Dificultad 4)}. La secuencia de golpes sobre las cenizas de Corwin es la doctrina de la *Furia Controlada*, pero con la guardia invertida: la mano débil adelante. Quien atacó es zurdo o pelea como tal. Vance no peleaba así (@pista{P-08}).
+- **Si David está:** lo ve antes que nadie (@ID[LOR-01|LOR-01] a nivel 4) y entiende lo que significa: el asesino aprendió de Vance, pero no terminó. No lo dice solo. Si un PJ le pide que mire las cenizas, la pista sale sin tirar: «Lo dejaron a medias.» Notar que lo vio, si nadie se lo pide, es @tirada{attributes.wits+skills.insight|3|Astucia + Perspicacia (Dificultad 3)}.
 - **@ID[PJ-06|Ruth], o cualquiera con Medicina 3:** @tirada{attributes.intelligence+skills.medicine|3|Inteligencia + Medicina (Dificultad 3)} sobre Sal. Un solo golpe en la nuca. Murió en el acto. El asesino no quiso hacerlo sufrir. «Profesional», dice el cuerpo.
 - **Buscar en el escritorio:** @tirada{attributes.wits+skills.investigation|3|Astucia + Investigación (Dificultad 3)}. El libro de cuentas de Sal está tirado debajo del escritorio. Krell no lo vio, o no le importó: no lee bien inglés escrito a mano. Entrada del 13 de noviembre: «L.B. — 3 llaves, 2 vendidas (T.), 1 pendiente. Motel?» (@pista{P-13}).
 - **Seguir el rastro de Krell:** @tirada{attributes.wits+skills.survival|4|Astucia + Supervivencia (Dificultad 4; Hal +2 dados)}, o @ID[PJ-05|Hal] con +2 dados. Olor a lana mojada hacia la puerta trasera, luego hacia las vías, luego hacia el sur. Georgetown. Con 4 o más éxitos, Hal encuentra la barcaza (pero ver Notas).
@@ -117,11 +118,11 @@ La nave huele a óxido, a cera para muebles viejos y a algo mucho más fresco. E
 |---|---|
 | **Manipular** | La escena es un problema de Mascarada: un cuerpo humano, ceniza humana aparente y una frase escrita con sangre. Hay tres maneras de arreglarlo. **Montarlo como un robo:** @tirada{attributes.intelligence+skills.subterfuge|3|Inteligencia + Subterfugio (Dificultad 3)}, limpiar la pared y llevarse la ceniza. **Llamar a Montgomery:** sus contactos lo tapan, pero el Sheriff se entera de que la coterie estuvo ahí y de la frase de la pared. **Ruth firma la autopsia:** funciona, pero la anomalía «R. A.» de FIRSTLIGHT suma un informe (@termometro{+1|Ruth firma la autopsia de Sal (anomalía «R. A.»)}).<br>Si no hacen nada, la policía encuentra la frase. @termometro{+1|La policía encuentra la consigna escrita con sangre en el almacén de Sal}, y la prensa local habla de «un crimen ritual en el SoDo». |
 | **Combate** | Si la coterie llega antes y prepara una emboscada, Krell entra por la puerta trasera a la 1:55. Pelea con la coterie si no está David; si David está, mira, sonríe apenas, y huye. Huir es su reserva de Destreza + Atletismo (8) contra la persecución de la coterie, a 3 éxitos. Usa Celeridad (Parpadeo) para cubrir distancia. Si lo acorralan, pelea en serio (ver @ID[PNJ-12|PNJ-12]). **Krell no debería morir aquí.** Si la coterie lo acorrala de verdad, salta al río desde el muelle del almacén. |
-| **Disciplinas** | **Auspex 4** (Toque espiritual) sobre la pared escrita: rabia antigua, envidia, y una pregunta repetida: *¿por qué él y no yo?*. **Hechicería de sangre** (Ruth o @ID[PNJ-15|Voight]): con un ritual de rastreo por Vitae sobre una gota de Krell en el suelo, saben que su sangre es Brujah de la novena generación, la misma que la de David. *(Es la primera pista de que son hermanos de sangre. Dásela al jugador de David en privado, si lo prefieren.)* |
+| **Disciplinas** | **Auspex 4** (Toque espiritual) sobre la pared escrita: rabia antigua, envidia, y una pregunta repetida: *¿por qué él y no yo?*. **Hechicería de sangre** (Ruth o @ID[PNJ-15|Voight]): con un ritual de rastreo por Vitae sobre una gota de Krell en el suelo, saben que su sangre es Brujah de la novena generación, la misma que la de David. *(Es la primera pista de que son hermanos de sangre. Dásela en privado a quien hizo el ritual. Si lo hizo Voight, se lo dice a quien se lo pidió, no a David. Si se lo cuentan a David, y cuándo, lo deciden los jugadores. Ver @ID[A3-E03].)* |
 
 ### Guía de diálogo: August Krell (si hay encuentro)
 
-*Habla poco, en voz muy baja, con acento francés. Mira a David todo el tiempo, incluso cuando habla con otro.*
+*Habla poco, en voz muy baja, con acento francés. Mira a David todo el tiempo, incluso cuando habla con otro. Si le pregunta un PJ, le contesta a David.*
 
 - **(A David, antes de huir)** — «Llegaste tarde otra vez, americano.»
 - **«¿Quién sos?»** — «Pregúntale a tu padre. Ah. No puedes.»
@@ -138,7 +139,7 @@ La nave huele a óxido, a cera para muebles viejos y a algo mucho más fresco. E
 ### Notas del Narrador
 
 - **Si Jun murió aquí,** todos los PJ que la conocieron en A1-E04 hacen una tirada de Remordimiento al final de la sesión. @ID[GAN-11|GAN-11] queda cerrado. Su USB ya no está: Krell la encontró.
-- **Si Hal encuentra la barcaza esta noche,** Krell no está: no vuelve allí hasta el amanecer. Hal puede registrarla. Encuentra la copia 2 de los diarios de Vance (@ID[DOC-04|DOC-04], con la nota en el margen) y una foto de David recortada de un periódico de 1996. Krell sabrá que alguien estuvo allí y cambia de refugio.
+- **Si Hal encuentra la barcaza esta noche,** Krell no está: no vuelve allí hasta el amanecer. Hal puede registrarla. Encuentra la copia 2 de los diarios de Vance (@ID[DOC-04|DOC-04], con la nota en el margen) y una foto de David recortada de un periódico de 1996. Krell sabrá que alguien estuvo allí y cambia de refugio. Si le enseñan la foto a David, o los diarios, es decisión de la coterie.
 
 ## A2-E03 · Salitre {#A2-E03}
 
@@ -146,7 +147,7 @@ La nave huele a óxido, a cera para muebles viejos y a algo mucho más fresco. E
 
 Escena opcional, cualquier noche de la Parte 2. Los rumores del Elíseo culpan a los @ID[COT-03|Anarquistas de Everett] de las muertes en los muelles. La coterie puede ir a Everett a preguntar, por iniciativa propia o porque @ID[PNJ-01|Montgomery] les pide que «miren a los de Salitre». @ID[PNJ-11|Rosa Iturbe] los recibe en su bar (@ID[LUG-10|LUG-10]) con hostilidad: sabe que el Sheriff la vigila y cree que la coterie viene a buscar un culpable cómodo.
 
-La escena tiene dos capas. En la superficie, una negociación: Rosa no sabe quién mata en los muelles, pero sabe que no es de los suyos y está dispuesta a demostrarlo. Debajo, una confesión: Rosa le dio refugio al Anarquista que mató a @ID[REF-01|Emily Smith] en 1996. Si @ID[PJ-01|David] está presente, ella tiene que decidir si se lo dice.
+La escena tiene dos capas. En la superficie, una negociación: Rosa no sabe quién mata en los muelles, pero sabe que no es de los suyos y está dispuesta a demostrarlo. Debajo, una confesión: Rosa le dio refugio al Anarquista que mató a @ID[REF-01|Emily Smith] en 1996. No se atreve a decírselo a @ID[PJ-01|David]. Si la coterie se gana a la asamblea, se lo cuenta a un PJ y le deja la decisión. Si David vino y se queda último, se lo dice a él.
 
 *Saltá esta escena si la coterie no tiene interés en los Anarquistas. Sus consecuencias aparecen en la Parte 4 de todos modos (Tavi Mercer).*
 
@@ -176,15 +177,17 @@ La carretera muere en un astillero cerrado, con grúas oxidadas recortadas contr
 - **«El asesino pelea como el sire de David.»** — Mira a David. «¿Y eso te sorprende? Ustedes los perros se parecen todos.»
 - **«Alguien en la corte los está culpando a ustedes.»** — «Ya lo sé. Lo que no sé es quién. —Pausa—. Tavi dice que vayamos a preguntarle al Elíseo con soldadores. Yo digo que esperemos. Si me traen un nombre, puede que gane yo.»
 - **«¿Nos ayudás?»** — «Lo vota la asamblea. Si votan que sí, tienen quince Anarquistas en el puerto de Everett y un barco cuando lo necesiten.»
-- **(A David, a solas, si la coterie ganó la votación o si David se queda último)** — Mira el suelo, algo que no hace nunca. «Hay algo que tengo que decirte. Hace treinta años. Un tipo llamado Ray Dorsey me pidió refugio una semana. Dijo que el Sheriff lo perseguía. Le di una cama en el astillero. —Levanta la vista—. Una semana después mató a una trabajadora social en Rainier Valley. Tú sabes cuál.»
+- **(A un PJ, a solas, si la coterie ganó la votación)** — Mira el suelo, algo que no hace nunca. «Hay algo que el Sabueso tiene que saber, y yo no puedo decírselo. Hace treinta años. Un tipo llamado Ray Dorsey me pidió refugio una semana. Dijo que el Sheriff lo perseguía. Le di una cama en el astillero. —Levanta la vista—. Una semana después mató a una trabajadora social en Rainier Valley. Su hija. Díselo tú. O no. Tú decides.»
+- **(A David, a solas, si los PJs lo dejan quedarse último)** — Mira el suelo. «Hay algo que tengo que decirte. Hace treinta años. Un tipo llamado Ray Dorsey me pidió refugio una semana. Dijo que el Sheriff lo perseguía. Le di una cama en el astillero. —Levanta la vista—. Una semana después mató a una trabajadora social en Rainier Valley. Tú sabes cuál.»
 - **«¿Lo sabías?»** — «No. Te lo juro por mi padre. Pero le di la cama. —Pausa—. Desde entonces, nadie en Everett usa a un chico como rebaño. Es lo único que pude hacer.»
 
 ### Consecuencias de la confesión
 
-- **David hace una tirada de Remordimiento** o, si el jugador lo prefiere, una tirada para resistir el frenesí de furia (Dificultad 3). Si cae en frenesí dentro del bar, ver Combate.
-- **Si David la perdona,** o simplemente la escucha sin violencia: Rosa se convierte en Aliada 2 de David de forma permanente y Salitre aparece en el clímax. David gana una nueva Convicción posible: «Las deudas se pagan con hechos, no con sangre».
-- **Si David la ataca,** Salitre se convierte en enemiga. Se activa GAN-06 y Halloway gana la excusa que buscaba.
-- **Si David se va sin decir nada,** Rosa no vuelve a sacar el tema. Las flores en la tumba de Emily (@ID[GAN-12|GAN-12]) pueden ser suyas.
+- **Si el PJ se lo calla:** no hay coste inmediato. Rosa no vuelve a sacar el tema. Las flores en la tumba de Emily (@ID[GAN-12|GAN-12]) pueden ser suyas. Si David se entera más adelante de que la coterie lo sabía, deja de ayudarlos (+1 dado) hasta que alguien se lo explique a la cara.
+- **Si David se entera dentro del bar** (por Rosa o por un PJ): queda al borde del frenesí de furia. Un PJ tiene que pararlo antes de que se mueva: @tirada{attributes.charisma+skills.persuasion|3|Carisma + Persuasión (Dificultad 3)}, o ponerse en medio con @tirada{attributes.strength+skills.brawl|4|Fuerza + Pelea (Dificultad 4)}. Si fallan los dos intentos, David va a por Rosa: ver Combate y «Si David la ataca».
+- **Si se entera fuera del bar,** no hay frenesí, pero quiere volver a Everett esa noche. Dejarlo ir solo o acompañarlo lo deciden los jugadores.
+- **Si la coterie consigue que David la escuche sin violencia:** Rosa se convierte en Aliada 2 de la coterie de forma permanente y Salitre aparece en el clímax. David no dice que la perdona. Dice «Ya está» y no vuelve a hablar del tema. El PJ que estuvo a su lado puede tomar la Convicción «Las deudas se pagan con hechos, no con sangre».
+- **Si David la ataca,** Salitre se convierte en enemiga. Se activa GAN-06 y Halloway gana la excusa que buscaba. David queda tocado: se lo reprocha a sí mismo, no a la coterie.
 
 ### Pistas
 
@@ -200,7 +203,7 @@ Ninguna sobre Halloway. Esta escena trata de aliados y de la herida de David.
 
 Cualquier noche de la Parte 2. La coterie viaja a Tacoma, unos cuarenta minutos al sur, para hablar con @ID[PNJ-17|Liam O'Connor] en su gimnasio, el Shamrock. O'Connor sabe dos cosas que nadie le ha preguntado: que @ID[PNJ-03|Halloway] hizo caer al Sheriff en 1978 con fotos fabricadas, y que en 1986 Halloway compró los diarios de @ID[PNJ-06|Vance].
 
-O'Connor no regala nada, pero tampoco quiere cobrar. Quiere ver si el Sabueso «es un perro o un hombre». Le propone a @ID[PJ-01|David] tres asaltos en el ring. No le importa quién gane. Le importa cómo pelea.
+O'Connor no regala nada, pero tampoco quiere cobrar. Quiere ver si el Sabueso «es un perro o un hombre». Le propone a @ID[PJ-01|David] tres asaltos en el ring. No le importa quién gane. Le importa cómo pelea. Quién sube, y quién hace de esquina, lo decide la coterie.
 
 :::leer
 El gimnasio Shamrock ocupa la planta baja de un edificio de ladrillo en el puerto de Tacoma. Dentro huele a linimento, a sudor viejo y a whisky. Un par de chicos golpean sacos bajo luces amarillas. En el ring, un hombre enorme, de pelo rojo y orejas de coliflor, les sostiene las manoplas a una chica que pega con rabia. Sin dejar de moverse, el hombre mira hacia la puerta. «Diles a los chicos que se vayan a casa, Dani», dice. «Llegaron los de la ciudad.»
@@ -208,10 +211,11 @@ El gimnasio Shamrock ocupa la planta baja de un edificio de ladrillo en el puert
 
 ### Tiradas
 
-- **El combate en el ring: tres asaltos.** David contra O'Connor, sin Disciplinas ni colmillos. Cada asalto es una tirada enfrentada de @tirada{attributes.strength+skills.brawl|0|Fuerza + Pelea (enfrentada; O'Connor: 10 dados)}. Lo que importa no es ganar.
-- Si David pelea con la *Furia Controlada* (golpes cortos, medidos, sin buscar humillar), O'Connor lo respeta aunque gane él.
-- Si David usa Potencia o pierde la calma, O'Connor para el combate: «Un perro». Hace falta una tirada de @tirada{attributes.manipulation+skills.persuasion|4|Manipulación + Persuasión (Dificultad 4)} para que hable igual.
-- Si David se niega a pelear, O'Connor lo entiende pero sube la Dificultad de todo lo demás en 1.
+- **El combate en el ring: tres asaltos, sin Disciplinas ni colmillos.** Lo que importa no es ganar.
+- **Si sube David:** el Narrador narra los asaltos sin tirar. Lo que se juega es la esquina. Entre asaltos, O'Connor lo provoca para ver si se rompe. Un PJ en la esquina lo mantiene en la *Furia Controlada* con @tirada{attributes.charisma+skills.leadership|3|Carisma + Liderazgo (Dificultad 3)}. Si sale, David pelea con golpes cortos, medidos, sin buscar humillar, y O'Connor lo respeta aunque gane él. Si falla, David pierde la calma en el tercer asalto.
+- **Si sube un PJ** (porque David no vino o porque la coterie lo prefiere), O'Connor acepta: «A ver qué clase de gente anda con el Sabueso». Cada asalto es una tirada enfrentada de @tirada{attributes.strength+skills.brawl|0|Fuerza + Pelea (enfrentada; O'Connor: 10 dados)}. Vale lo mismo: pelear limpio, sin humillar, le gana el respeto.
+- Si quien pelea usa Potencia o pierde la calma, O'Connor para el combate: «Un perro». Hace falta una tirada de @tirada{attributes.manipulation+skills.persuasion|4|Manipulación + Persuasión (Dificultad 4)} para que hable igual.
+- Si nadie sube, O'Connor lo entiende pero sube la Dificultad de todo lo demás en 1.
 - **Ganarse la confianza de O'Connor:** @tirada{attributes.charisma+skills.streetwise|3|Carisma + Callejeo (Dificultad 3)} si la coterie trata con respeto a los chicos del gimnasio y a Dani. Con 3 o más éxitos, saca @ID[DOC-08|DOC-08] de debajo del ring sin que nadie se lo pida.
 
 ### Opciones de la coterie
@@ -224,7 +228,7 @@ El gimnasio Shamrock ocupa la planta baja de un edificio de ladrillo en el puert
 
 ### Guía de diálogo: Liam O'Connor
 
-*Habla fuerte, se ríe fuerte, acento de Cork. Cuando habla en serio, se sienta en el borde del ring y baja la voz.*
+*Habla fuerte, se ríe fuerte, acento de Cork. Cuando habla en serio, se sienta en el borde del ring y baja la voz. Si David no vino, lo que es para él se lo dice a la coterie: «Díganle al Sabueso que…».*
 
 - **«Queremos saber de Vance.»** — «Todo el mundo quiere saber de Vance. Nadie quiere saber de O'Connor. —Se ríe—. Súbete al ring, Sabueso. Tres asaltos. Después hablamos.»
 - **(Después del combate) «¿Qué sabe?»** — «Que en el 86 un viejo amigo del puerto vio llegar un envío desde Lyon. Cajas de libros, a nombre de una sociedad de Charles Halloway. Mi amigo abrió una por curiosidad. Diarios a mano. En la tapa, "M.V.". —Pausa—. Los diarios de tu sire nunca se quemaron, muchacho. Los compró un Ventrue con paciencia.» (@pista{P-09})
@@ -251,11 +255,13 @@ El doc 11 describía a O'Connor «de pelo rojo encanecido»; se decidió que apa
 
 Escena opcional. Cualquier noche de la Parte 2, normalmente después de @ID[A2-E04], porque el Larchmont está en Tacoma. La coterie puede llegar aquí por la USB de Pike (la carpeta del Larchmont), por @ID[PNJ-17|O'Connor] o porque @ID[PNJ-04|Helen] o @ID[PJ-04|Nadia] insisten.
 
-Esta escena es para @ID[PJ-01|David]. Es la segunda vez que llegó tarde, y la que Helen no conoce. Lo que pasó está en @ID[LUG-11|LUG-11]: una manada Sabbat, siete inquilinos encerrados en la cisterna, David llegó cuando el edificio ya ardía, @ID[PNJ-01|Montgomery] ordenó sellar la cisterna con los cuerpos dentro. Danny Ruiz, el amigo de Helen, sigue ahí abajo.
+Esta escena es la herida de @ID[PJ-01|David], pero la viven los PJs: descubren qué pasó y deciden qué hacer con eso. Es la segunda vez que David llegó tarde, y la que Helen no conoce. Lo que pasó está en @ID[LUG-11|LUG-11]: una manada Sabbat, siete inquilinos encerrados en la cisterna, David llegó cuando el edificio ya ardía, @ID[PNJ-01|Montgomery] ordenó sellar la cisterna con los cuerpos dentro. Danny Ruiz, el amigo de Helen, sigue ahí abajo.
 
 La pregunta de la escena no es qué pasó. Es qué hacer con eso.
 
-*Saltá esta escena si el jugador de David prefiere no tocar el tema todavía. Queda como gancho (@ID[GAN-09|GAN-09]).*
+**David y el Larchmont.** David no propone venir. Si la coterie se lo pide, viene y no habla en todo el camino. Si no se lo piden, no pregunta adónde van.
+
+*Saltá esta escena si la coterie no tiene interés en el Larchmont o si la mesa prefiere no tocar el tema todavía. Queda como gancho (@ID[GAN-09|GAN-09]).*
 
 :::leer
 Doce años después, el Larchmont sigue en pie: cuatro pisos de ladrillo ennegrecido, ventanas sin cristal, una valla de obra con un cartel de demolición que nadie cumplió. La lluvia entra por el techo y baja por el hueco de la escalera hasta el sótano, donde se oye agua corriendo. En la valla, atadas con alambre, hay siete flores de plástico descoloridas. Y una octava, nueva, de verdad, todavía con gotas.
@@ -264,7 +270,8 @@ Doce años después, el Larchmont sigue en pie: cuatro pisos de ladrillo ennegre
 ### Tiradas
 
 - **Bajar al sótano:** @tirada{attributes.dexterity+skills.athletics|2|Destreza + Atletismo (Dificultad 2)}. La escalera está medio derrumbada.
-- **Encontrar la cisterna sellada:** @tirada{attributes.wits+skills.investigation|3|Astucia + Investigación (Dificultad 3)}, o automático para David. Una losa de hormigón nuevo, más claro que el resto del suelo, en el centro del cuarto de calderas.
+- **Encontrar la cisterna sellada:** @tirada{attributes.wits+skills.investigation|3|Astucia + Investigación (Dificultad 3)}, o sin tirada si David vino: va derecho al cuarto de calderas y se queda parado delante. Una losa de hormigón nuevo, más claro que el resto del suelo, en el centro del cuarto de calderas.
+- **Que David cuente qué pasó:** @tirada{attributes.charisma+skills.insight|3|Carisma + Perspicacia (Dificultad 3)}. Si sale, cuenta lo de @ID[LUG-11|LUG-11] entero, incluida la orden de Montgomery. Si falla, sólo dice: «Llegué tarde.» Presionarlo con Intimidación funciona, pero David no ayuda a ese PJ en lo que queda de la Parte 2.
 - **La flor nueva:** @tirada{attributes.wits+skills.awareness|4|Astucia + Consciencia (Dificultad 4)}. Junto a la losa hay huellas recientes, de hace una o dos noches. Pies descalzos. Y un olor muy débil a Vitae vieja, rancia, que no es de nadie de la coterie. *(El superviviente del Sabbat, @ID[MEN-08|MEN-08], visita el lugar. GAN-09.)*
 
 ### Opciones de la coterie
@@ -277,8 +284,8 @@ Doce años después, el Larchmont sigue en pie: cuatro pisos de ladrillo ennegre
 
 ### Consecuencias
 
-- **Abrir la cisterna:** @termometro{+2|Abrieron la cisterna del Larchmont} (el hormigón roto y el olor a cuerpos no pasan desapercibidos en un edificio vigilado por el ayuntamiento). David hace una tirada de Remordimiento. Si sacan a Danny Ruiz y lo entregan a la familia Hecata de Tacoma, la familia les debe un favor mayor.
-- **Contárselo a Helen:** la relación de Piedra de toque cambia para siempre. El Narrador y el jugador de David deciden si Helen lo perdona, se aleja o decide escribir sobre ello. Cualquier opción es válida. Si se lo cuenta Nadia antes que David, la Dificultad de cualquier tirada social de David con Helen sube en 2 durante el resto de la aventura.
+- **Abrir la cisterna:** @termometro{+2|Abrieron la cisterna del Larchmont} (el hormigón roto y el olor a cuerpos no pasan desapercibidos en un edificio vigilado por el ayuntamiento). Si David está, no los frena, pero no ayuda: «Eso lo selló el Sheriff.» Cuando ven lo que hay abajo, sube la escalera y no vuelve a hablar en toda la noche. Hasta la noche siguiente no ayuda a nadie. Si sacan a Danny Ruiz y lo entregan a la familia Hecata de Tacoma, la familia les debe un favor mayor.
+- **Contárselo a Helen:** la relación entre Helen y David cambia para siempre. Quién se lo cuenta lo decide la coterie: pueden llevar a David para que lo diga él, o decírselo ellos. El Narrador decide, según cómo y quién, si Helen lo perdona, se aleja o decide escribir sobre ello. Cualquier opción es válida. Si se lo cuenta un PJ antes que David, Helen deja de fiarse de él: durante el resto de la aventura, cualquier tirada social de la coterie con Helen sube la Dificultad en 2 si David está delante. David no se lo reprocha a nadie en voz alta.
 - **No contárselo y no abrir:** no hay coste mecánico inmediato. Pero la carpeta del Larchmont sigue en la USB 1 y en el original del Expediente. Si FIRSTLIGHT la lee, también la leerá alguien más.
 - **Hablar con Montgomery:** si la coterie le pregunta por el Larchmont, el Sheriff lo admite sin rodeos. «Siete cuerpos sin sangre eran una brecha. Sellé la brecha. Haría lo mismo hoy.» Luego, más bajo: «No lo haría igual».
 
@@ -341,7 +348,7 @@ Aurora Avenue de noche es una fila interminable de moteles con letreros de neón
 - **Si FIRSTLIGHT se queda con Lonnie y la USB 3:** @termometro{+2|FIRSTLIGHT se queda con Lonnie y la USB 3 (A2-E06)}. Okafor tiene un testigo que habla de «gente que no envejece» y de Cascade Holdings. Eso, curiosamente, también es un problema para @ID[PNJ-03|Halloway]: FIRSTLIGHT empieza a sospechar de su propia fuente. Si la coterie se entera de esto más adelante, puede usarlo en @ID[A4-E01].
 - **Si Krell se queda con Lonnie en la Noche 6:** Lonnie muere. La USB 3 va a la bóveda de Halloway junto con el original.
 - **Qué hacer con Lonnie si la coterie lo protege:** @ID[PNJ-01|Montgomery] puede sacarlo de la ciudad. @ID[PNJ-11|Rosa] puede esconderlo en Everett. Thornquist puede venderle una identidad nueva. @ID[PNJ-05|Bear], si alguien le pregunta, dice: «A estos tipos los conozco. Si no lo sacás del estado, en una semana vuelve a vender algo».
-- **La USB 3 tiene una carpeta especial:** «SAFE». Contiene las catorce fotos de David, la transcripción del episodio 112 y una nota de Helen: «¿Quién es? ¿Qué es? ¿Por qué me cuida?». Si el jugador de David la lee, que sea en privado.
+- **La USB 3 tiene una carpeta especial:** «SAFE». Contiene las catorce fotos de David, la transcripción del episodio 112 y una nota de Helen: «¿Quién es? ¿Qué es? ¿Por qué me cuida?». Quién la abre y qué hace con ella (dársela a David, devolvérsela a Helen, borrarla) lo deciden los jugadores. Si se la dan a David, la mira sin decir nada y se la guarda.
 
 ## Registro de IDs (añadidos en esta entrega) {narrador}
 

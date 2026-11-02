@@ -1,0 +1,1482 @@
+{
+  "_id": "eHbz7dP6lDhAiQR6",
+  "_key": "!scenes!eHbz7dP6lDhAiQR6",
+  "name": "FIRSTLIGHT · Northline Cyber Advisory (11th Floor)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 140,
+  "width": 2100,
+  "height": 1500,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.8,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "UVSSV3AdHDbZoCim",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/northline.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!eHbz7dP6lDhAiQR6.UVSSV3AdHDbZoCim"
+    }
+  ],
+  "journal": "KioeAEZP78U0Coz5",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "ZGlT1PnuR57ze8wk",
+      "c": [
+        100,
+        900,
+        1150,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.ZGlT1PnuR57ze8wk"
+    },
+    {
+      "_id": "a0kn2qnGw9a7wMQm",
+      "c": [
+        1240,
+        900,
+        1300,
+        900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.a0kn2qnGw9a7wMQm"
+    },
+    {
+      "_id": "KgMgQYYLNwlne7lu",
+      "c": [
+        100,
+        900,
+        100,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.KgMgQYYLNwlne7lu"
+    },
+    {
+      "_id": "cYsWaDekkiRvcOqx",
+      "c": [
+        1300,
+        100,
+        1300,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.cYsWaDekkiRvcOqx"
+    },
+    {
+      "_id": "wMJ1cUoO9M5DHsfN",
+      "c": [
+        1300,
+        500,
+        1300,
+        640
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.wMJ1cUoO9M5DHsfN"
+    },
+    {
+      "_id": "7VORfPSN4kGaCLc0",
+      "c": [
+        1300,
+        900,
+        1300,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.7VORfPSN4kGaCLc0"
+    },
+    {
+      "_id": "KgwEvZz0yGj0MBFm",
+      "c": [
+        1300,
+        600,
+        2000,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.KgwEvZz0yGj0MBFm"
+    },
+    {
+      "_id": "jkMt7alMxJkeW0N9",
+      "c": [
+        2000,
+        100,
+        2000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.jkMt7alMxJkeW0N9"
+    },
+    {
+      "_id": "aJ665WTXieEB7VrY",
+      "c": [
+        1700,
+        1100,
+        2000,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.aJ665WTXieEB7VrY"
+    },
+    {
+      "_id": "Pla8UPkAGXKj4Ytc",
+      "c": [
+        100,
+        1400,
+        2000,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.Pla8UPkAGXKj4Ytc"
+    },
+    {
+      "_id": "clZ5kefxbOVnMJYk",
+      "c": [
+        1700,
+        1100,
+        1700,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.clZ5kefxbOVnMJYk"
+    },
+    {
+      "_id": "5hHIcmt88HlrWYMB",
+      "c": [
+        1700,
+        1300,
+        1700,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.5hHIcmt88HlrWYMB"
+    },
+    {
+      "_id": "T5xJirtFXSetQWjX",
+      "c": [
+        100,
+        1050,
+        250,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.T5xJirtFXSetQWjX"
+    },
+    {
+      "_id": "Uiwfwy3nMxAGYbVb",
+      "c": [
+        340,
+        1050,
+        730,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.Uiwfwy3nMxAGYbVb"
+    },
+    {
+      "_id": "r3ROwvBppJGVkmzP",
+      "c": [
+        820,
+        1050,
+        1160,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.r3ROwvBppJGVkmzP"
+    },
+    {
+      "_id": "bYan8CQra0xIi0uG",
+      "c": [
+        1240,
+        1050,
+        1300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.bYan8CQra0xIi0uG"
+    },
+    {
+      "_id": "4XQnwDnHn5bMy7qj",
+      "c": [
+        500,
+        1050,
+        500,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.4XQnwDnHn5bMy7qj"
+    },
+    {
+      "_id": "hSfGXYk1QZyIh7u2",
+      "c": [
+        1050,
+        1050,
+        1050,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.hSfGXYk1QZyIh7u2"
+    },
+    {
+      "_id": "sHEcC4G5hmoiPKzj",
+      "c": [
+        1050,
+        1270,
+        1160,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.sHEcC4G5hmoiPKzj"
+    },
+    {
+      "_id": "vjUpjN88CP6CiIJ9",
+      "c": [
+        1230,
+        1270,
+        1300,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.vjUpjN88CP6CiIJ9"
+    },
+    {
+      "_id": "qSfc6lc85RbQujuM",
+      "c": [
+        100,
+        100,
+        1300,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.qSfc6lc85RbQujuM"
+    },
+    {
+      "_id": "Rl2kRAk8PuhfOtaL",
+      "c": [
+        100,
+        100,
+        100,
+        900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.Rl2kRAk8PuhfOtaL"
+    },
+    {
+      "_id": "M2qXuXT84CCZ6G32",
+      "c": [
+        1300,
+        100,
+        2000,
+        100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.M2qXuXT84CCZ6G32"
+    },
+    {
+      "_id": "TFY9voppLvFKDZor",
+      "c": [
+        1300,
+        400,
+        1300,
+        500
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.TFY9voppLvFKDZor"
+    },
+    {
+      "_id": "tLEjTZM7OC1gTSHK",
+      "c": [
+        1300,
+        1100,
+        1400,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.tLEjTZM7OC1gTSHK"
+    },
+    {
+      "_id": "EffIdCcgU24zCyA2",
+      "c": [
+        1400,
+        1100,
+        1500,
+        1100
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.EffIdCcgU24zCyA2"
+    },
+    {
+      "_id": "YuVAWpZZjOqcxddp",
+      "c": [
+        1500,
+        1100,
+        1600,
+        1100
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.YuVAWpZZjOqcxddp"
+    },
+    {
+      "_id": "xHCOY97vFhfcdRcS",
+      "c": [
+        1600,
+        1100,
+        1700,
+        1100
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.xHCOY97vFhfcdRcS"
+    },
+    {
+      "_id": "iVHiS9qngDT7ob5s",
+      "c": [
+        1700,
+        1200,
+        1700,
+        1300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.iVHiS9qngDT7ob5s"
+    },
+    {
+      "_id": "iuRpTYNkWG34qoj1",
+      "c": [
+        1150,
+        900,
+        1240,
+        900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.iuRpTYNkWG34qoj1"
+    },
+    {
+      "_id": "FRtjRm9SWwXnH6XJ",
+      "c": [
+        250,
+        1050,
+        340,
+        1050
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.FRtjRm9SWwXnH6XJ"
+    },
+    {
+      "_id": "qIa6SMSSH0zCA1Ma",
+      "c": [
+        730,
+        1050,
+        820,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.qIa6SMSSH0zCA1Ma"
+    },
+    {
+      "_id": "evhX9MifygMahiD7",
+      "c": [
+        1160,
+        1050,
+        1240,
+        1050
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.evhX9MifygMahiD7"
+    },
+    {
+      "_id": "weYEwMGr2ScClXoO",
+      "c": [
+        1160,
+        1270,
+        1230,
+        1270
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!eHbz7dP6lDhAiQR6.weYEwMGr2ScClXoO"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "pMgTJPb8Bny7Hk4S",
+      "name": "Backlit logo panel (1 of the 3 lights)",
+      "x": 1650,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#7fd1ff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.pMgTJPb8Bny7Hk4S"
+    },
+    {
+      "_id": "qVSWJjXmUWmA4SKz",
+      "name": "Lamp at Hale's station (2 of the 3 lights)",
+      "x": 880,
+      "y": 460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.qVSWJjXmUWmA4SKz"
+    },
+    {
+      "_id": "kXW4mkXFQWcrVJcg",
+      "name": "Conference room, blinds closed (3 of the 3 lights)",
+      "x": 1640,
+      "y": 330,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.kXW4mkXFQWcrVJcg"
+    },
+    {
+      "_id": "UXxiHgHSEpKA90Qi",
+      "name": "Elevator lobby night light",
+      "x": 1500,
+      "y": 1260,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.UXxiHgHSEpKA90Qi"
+    },
+    {
+      "_id": "a64Ep6jEGkaOUmI9",
+      "name": "White room UV lamps (west), OFF",
+      "x": 560,
+      "y": 1225,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 4.5,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": true,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.a64Ep6jEGkaOUmI9"
+    },
+    {
+      "_id": "l5EyJkSegMOL96cM",
+      "name": "White room UV lamps (east), OFF",
+      "x": 990,
+      "y": 1225,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 4.5,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": true,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.l5EyJkSegMOL96cM"
+    },
+    {
+      "_id": "Ia6eUTFJMHLVoCWv",
+      "name": "Stairwell emergency light (outside the suite: not one of the 3 lights)",
+      "x": 1850,
+      "y": 1250,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!eHbz7dP6lDhAiQR6.Ia6eUTFJMHLVoCWv"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "4T6EXSERPQX9SwIO",
+      "name": "Elevators (ground floor)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1350,
+          "y": 1300,
+          "width": 300,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "northline",
+          "region": "ascensores",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the tower lobby: the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!eHbz7dP6lDhAiQR6.4T6EXSERPQX9SwIO"
+    },
+    {
+      "_id": "NQSGgMZYEblVtoJe",
+      "name": "Arrival by the emergency stairs",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1860,
+          "y": 1120,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "northline",
+          "region": "escalera-llegada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!eHbz7dP6lDhAiQR6.NQSGgMZYEblVtoJe"
+    },
+    {
+      "_id": "5v4rtOacDn40vxDL",
+      "name": "Down the emergency stairs (11 floors)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1860,
+          "y": 1280,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "northline",
+          "region": "escalera-bajar",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the street"
+        }
+      },
+      "_key": "!scenes.regions!eHbz7dP6lDhAiQR6.5v4rtOacDn40vxDL"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "N1EepThVStLcAE48",
+      "entryId": "KioeAEZP78U0Coz5",
+      "pageId": null,
+      "x": 1660,
+      "y": 860,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-14",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "northline",
+          "id": "LUG-14"
+        }
+      },
+      "_key": "!scenes.notes!eHbz7dP6lDhAiQR6.N1EepThVStLcAE48"
+    },
+    {
+      "_id": "ubMhoqvlVfS6RLsb",
+      "entryId": "I3XsZ233TNTuehzS",
+      "pageId": "hcNJvEh25hCamG2B",
+      "x": 1635,
+      "y": 210,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "INT-02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "northline",
+          "id": "INT-02"
+        }
+      },
+      "_key": "!scenes.notes!eHbz7dP6lDhAiQR6.ubMhoqvlVfS6RLsb"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "73M4XAR4jEObU1RB",
+      "name": "Hale's stool",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete-alto.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 880,
+      "y": 545,
+      "width": 50,
+      "height": 50,
+      "elevation": 0,
+      "levels": [
+        "UVSSV3AdHDbZoCim"
+      ],
+      "sort": 0,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "northline",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!eHbz7dP6lDhAiQR6.73M4XAR4jEObU1RB"
+    },
+    {
+      "_id": "ShDLO0iOmfMlu1tR",
+      "name": "silla oficina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1528,
+      "y": 223,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "UVSSV3AdHDbZoCim"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "northline",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!eHbz7dP6lDhAiQR6.ShDLO0iOmfMlu1tR"
+    },
+    {
+      "_id": "3e6gi7DJwHJQSlRb",
+      "name": "silla oficina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1717,
+      "y": 223,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "UVSSV3AdHDbZoCim"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "northline",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!eHbz7dP6lDhAiQR6.3e6gi7DJwHJQSlRb"
+    },
+    {
+      "_id": "VtIyjcdwvnIlAuLJ",
+      "name": "silla oficina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1528,
+      "y": 428,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "UVSSV3AdHDbZoCim"
+      ],
+      "sort": 3,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "northline",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!eHbz7dP6lDhAiQR6.VtIyjcdwvnIlAuLJ"
+    },
+    {
+      "_id": "dMsw7LDW9Re7dyCp",
+      "name": "silla oficina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1717,
+      "y": 428,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "UVSSV3AdHDbZoCim"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "northline",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!eHbz7dP6lDhAiQR6.dMsw7LDW9Re7dyCp"
+    },
+    {
+      "_id": "SYRaMGvRld3vCsA0",
+      "name": "sofa espera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-espera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1930,
+      "y": 940,
+      "width": 200,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "UVSSV3AdHDbZoCim"
+      ],
+      "sort": 5,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "northline",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!eHbz7dP6lDhAiQR6.SYRaMGvRld3vCsA0"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "W9GBp9faDCt0RiyV",
+      "name": "Sasha Hale",
+      "displayName": 30,
+      "actorId": "sEdBfHzj0JBxHNAa",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-21.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1830,
+      "y": 275,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "UVSSV3AdHDbZoCim",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "northline",
+          "id": "PNJ-21",
+          "escenas": [
+            "INT-02"
+          ],
+          "nota": "Standing at the laptop, by the corkboard."
+        }
+      },
+      "_key": "!scenes.tokens!eHbz7dP6lDhAiQR6.W9GBp9faDCt0RiyV"
+    },
+    {
+      "_id": "7DLpzpqa8CYJ1ctQ",
+      "name": "Dana Okafor",
+      "displayName": 30,
+      "actorId": "15UcuyhvNvNqkCOf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-18.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1570,
+      "y": 440,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "UVSSV3AdHDbZoCim",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "northline",
+          "id": "PNJ-18",
+          "escenas": [
+            "INT-02"
+          ],
+          "nota": "Sets the coffee down on the table without looking at it."
+        }
+      },
+      "_key": "!scenes.tokens!eHbz7dP6lDhAiQR6.7DLpzpqa8CYJ1ctQ"
+    },
+    {
+      "_id": "q83MJIbGpFgrRKCD",
+      "name": "Cole Ransom",
+      "displayName": 30,
+      "actorId": "5ywnpdrw93wmy235",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1400,
+      "y": 1200,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "UVSSV3AdHDbZoCim",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "northline",
+          "id": "MEN-11",
+          "escenas": [
+            "INT-02"
+          ],
+          "nota": "Comes up to get Okafor for Denny's (leaves at 10:15 p.m.) and may stay on as an escort."
+        }
+      },
+      "_key": "!scenes.tokens!eHbz7dP6lDhAiQR6.q83MJIbGpFgrRKCD"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "Qo84gsuNSWN9r2i1",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "northline",
+      "id": "LUG-14",
+      "plano": "northline",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}<br><strong>Scenes:</strong> @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}</p>\n<p><strong>Northline Cyber Advisory</strong>, FIRSTLIGHT&#39;s front. “Gray carpet, plastic plants, standing desks, a welcome sign with the logo of a cybersecurity consulting firm” (the logo panel is on the north wall of reception, backlit and with no lettering on the map). “At three in the morning, three lights are burning on the 11th floor. One of them belongs to a conference room with the blinds closed”: the three are the logo panel in reception, the lamp at Hale&#39;s station in the open desks, and the fluorescent light in the <strong>conference room</strong>, whose north windows have the blinds drawn (from outside you see the light, not the room).</p>\n<p><strong>Conference room.</strong> The long table and, on the east wall, the <strong>corkboard covered in photos</strong>, Helen&#39;s podcast among them. The partition facing the open desks is glass with closed blinds: on the map it&#39;s a wall (you can&#39;t see in). This is where interlude I-2 “SEA-0411” (SPEC §6) plays out: Okafor and Hale receive ARCHER&#39;s delivery (DOC-07).</p>\n<p><strong>Open desks</strong> (the analysts): eight standing desks in two islands. Hale&#39;s is the one with the lamp. Okafor “never sits with her back to a door.”</p>\n<p><strong>Restricted area.</strong> From the open desks, a door with a card reader opens onto the hallway to the <strong>locked armory</strong> (lockers of carbines, incendiary ammunition, UV flashlights, vests; at night the tactical team MEN-02 is in a warehouse at the port, not here, so there are gaps) and to the <strong>white “interview” room</strong>: white tile, a table and a chair bolted down, and <strong>high-intensity UV lamps</strong> on the walls. They&#39;re off; switched on, every Kindred in their light takes 1 aggravated damage per turn and −2 dice (UV flashlight, FIRSTLIGHT arsenal). The UV lights on the map are marked as off.</p>\n<p><strong>Access.</strong> Elevators and emergency stairs in the floor&#39;s shared lobby, south of reception; Northline&#39;s glass door is locked at night. Neither has a map of the other end.</p>\n<p><strong>Danger:</strong> “coming in here is the fastest way to raise the Thermometer”: if the intrusion is discovered, Thermometer +3. “It&#39;s more useful to watch than to go in.” It doesn&#39;t appear in any fixed scene: it&#39;s held in reserve for the chronicle, a very bold coterie, and FIRSTLIGHT&#39;s interludes (I-2, I-3).</p>\n\n<p class=\"sbn-moviles\">The movable furniture (6) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale} (INT-02): Standing at the laptop, by the corkboard.</li><li>@UUID[Actor.15UcuyhvNvNqkCOf]{Dana Okafor} (INT-02): Sets the coffee down on the table without looking at it.</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>hidden</em> (INT-02): Comes up to get Okafor for Denny&#39;s (leaves at 10:15 p.m.) and may stay on as an escort.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Elevators (ground floor) · Down the emergency stairs (11 floors).</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

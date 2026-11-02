@@ -1,0 +1,214 @@
+{
+  "_fuente": {
+    "terminal-ferry": "9f5031f36e28be18"
+  },
+  "planos": {
+    "terminal-ferry": {
+      "nombre": "Part 4 · Colman Dock, the Ferry Terminal",
+      "nota": "**A4-E03, 12:55 a.m.** “The terminal is almost empty under the fluorescents. A guard looks at his phone; a coffee machine blinks behind an ‘out of service’ sign. Outside, the last ferry of the night waits with every light on, like a four-story white building floating on black water. The horn sounds once, long. On the passenger ramp, an old man in a dark suit with an aluminum briefcase climbs slowly, leaning on the arm of an enormous man who looks back and sniffs the air.”\n\n**The waiting room** is on the upper floor. Fixed **benches** in three double rows; a handful of sleepy-looking passengers (tokens). The **security guard** is at his podium beside the **boarding door** (west), looking at his phone. The **broken coffee machine** stands against the north wall (dark on the map; the “screen” light makes it blink). The “out of service” sign isn't painted on.\n\n**The passenger ramp.** From the boarding door, the **elevated walkway**, glassed in on both sides, runs west: at its far end it rests on the ferry's stern. When the coterie enters the waiting room, **Pell and Dawson are climbing the walkway** (place them halfway along): they can be seen through the glass from the room. At the end of the walkway, the “Board the ferry” region leads to the stern deck of the passenger cabin (`ferry`). Boarding without Dawson seeing them: Dexterity + Stealth Diff. 4 against his Wits + Awareness (6 dice); Obfuscate doesn't fool his nose, but the wind off the Sound does (+1 die for the windward side: the wind comes in from the west, off the water).\n\n**The vehicle ramp** (below, at dock level, in the southern strip): the vehicle holding lot and the ramp that crosses the water to the car deck. Anyone arriving by car (Dexterity + Drive Diff. 3 to get there before 12:55 a.m.) appears in the holding lot; the region at the end of the ramp leads to the stern of the car deck (`ferry-coches`). The east stairs go down to the street and the holding lot (twin regions on this same map), and the holding lot exits onto Alaskan Way (no map).\n\nThe restrooms (hatched block) aren't played. The horn sounds at 12:50 a.m.: five minutes.",
+      "habitaciones": [
+        {
+          "nombre": "Waiting room"
+        },
+        {
+          "nombre": "Stairs to the street and the vehicle holding lot"
+        },
+        {
+          "nombre": "North restroom (closed)"
+        },
+        {
+          "nombre": "Passenger ramp (elevated walkway)"
+        },
+        {
+          "nombre": "South restroom (closed)"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Dock (north, ground level)"
+        },
+        {
+          "nombre": "Alaskan Way sidewalk"
+        },
+        {
+          "nombre": "Vehicle holding lot (ground level)"
+        },
+        {
+          "nombre": "Vehicle ramp (ground level, over the water)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "West window (onto the water and the ferry)"
+        },
+        {
+          "nombre": "Boarding door to the passenger ramp"
+        },
+        {
+          "nombre": "West window (south)"
+        },
+        {
+          "nombre": "North window (onto the dock)"
+        },
+        {
+          "nombre": "South window (onto the vehicle holding lot)"
+        },
+        {
+          "nombre": "Waiting room ↔ stairs"
+        },
+        {
+          "nombre": "Walkway: north glass"
+        },
+        {
+          "nombre": "Walkway: south glass"
+        },
+        {
+          "nombre": "End of the walkway (rests on the ferry's stern)"
+        },
+        {
+          "nombre": "North railing of the vehicle ramp"
+        },
+        {
+          "nombre": "South railing of the vehicle ramp"
+        },
+        {
+          "nombre": "Dock edge (north of the ramp)"
+        },
+        {
+          "nombre": "Dock edge (south of the ramp)"
+        },
+        {
+          "nombre": "North restroom (closed at night)"
+        },
+        {
+          "nombre": "South restroom (closed at night)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "desc": "a long row of fixed steel-framed waiting-room seats bolted to the floor"
+        },
+        {
+          "nombre": "The broken coffee machine",
+          "desc": "a tall coffee vending machine, its screen dark"
+        },
+        {
+          "desc": "a snack vending machine, unlit"
+        },
+        {
+          "desc": "a small security podium beside the boarding doors"
+        },
+        {
+          "desc": "the security guard's stool"
+        },
+        {
+          "desc": "a wide concrete staircase going down to the street"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Waiting room fluorescents (north)"
+        },
+        {
+          "nombre": "Waiting room fluorescents (center)"
+        },
+        {
+          "nombre": "Flickering fluorescent (south)"
+        },
+        {
+          "nombre": "The coffee machine, blinking “out of service”"
+        },
+        {
+          "nombre": "The guard's phone"
+        },
+        {
+          "nombre": "Walkway light"
+        },
+        {
+          "nombre": "Vehicle holding lot streetlight"
+        },
+        {
+          "nombre": "Vehicle ramp floodlight"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Board the ferry via the passenger ramp"
+        },
+        {
+          "nombre": "Arrival from the ferry (passenger ramp)"
+        },
+        {
+          "nombre": "Board the ferry via the vehicle ramp"
+        },
+        {
+          "nombre": "Arrival from the car deck"
+        },
+        {
+          "nombre": "Go down to the street and the vehicle holding lot"
+        },
+        {
+          "nombre": "Arrival at the waiting room (from the street)"
+        },
+        {
+          "nombre": "Go up to the waiting room"
+        },
+        {
+          "nombre": "Arrival at the vehicle holding lot"
+        },
+        {
+          "nombre": "Exit to Alaskan Way",
+          "pendiente": "there's no street map (Alaskan Way): the Storyteller moves the tokens by hand"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "Climbs the walkway slowly with the aluminum briefcase."
+        },
+        {
+          "nota": "Pell leans on his arm; he looks back and sniffs the air."
+        },
+        {
+          "nota": "The two ghouls with Dawson, ahead on the walkway."
+        },
+        null,
+        {
+          "nota": "Only if he lost the vote or was exposed at the Council (A4-E01)."
+        }
+      ]
+    }
+  }
+}

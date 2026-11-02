@@ -1,0 +1,292 @@
+{
+  "_id": "0IIsgytowpgAWwK6",
+  "_key": "!actors!0IIsgytowpgAWwK6",
+  "name": "Nadia Ferro",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-04.webp",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 40,
+  "prototypeToken": {
+    "name": "Nadia Ferro",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.4,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#ffe6bf",
+      "coloration": 1,
+      "attenuation": 0.55,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PJ-04.webp"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "sound producer on Helen's podcast and childe of Prince Whitmore.",
+      "chronicle": "The Ward File",
+      "ambition": "record something that outlives the Masquerade",
+      "desire": "see Helen finish her big story",
+      "touchstones": "<h3>Convictions</h3><ul><li>Never silence someone who tells the truth</li></ul><h3>Touchstones</h3><ul><li>Theo, her old bandmate, who still plays Thursdays at a dive bar on Capitol Hill</li></ul>",
+      "sire": "Marcus Whitmore",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Profile: Nadia Ferro}</p><blockquote><p><em>The Voice Behind the Mic</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>sound producer on Helen&#39;s podcast and childe of Prince Whitmore.</td></tr><tr><th>Clan</th><td>Toreador</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</td></tr><tr><th>Ambition</th><td>record something that outlives the Masquerade</td></tr><tr><th>Desire</th><td>see Helen finish her big story</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{The Archived}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "toreador"
+        }
+      },
+      "name": "Toreador",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "pVGccDolBVH9JHSb",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.pVGccDolBVH9JHSb"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Fame 1 (music scene)"
+        }
+      },
+      "name": "Fame",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Fame 1 (music scene)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "As0peMEF82zpPbZh",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.As0peMEF82zpPbZh"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts (media) 2"
+        }
+      },
+      "name": "Contacts (media)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts (media) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "jQcDQ4HOKCAI6UDT",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.jQcDQ4HOKCAI6UDT"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Status (Camarilla) 1"
+        }
+      },
+      "name": "Status (Camarilla)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Status (Camarilla) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "iXbpp16dq8Fm1xDt",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.iXbpp16dq8Fm1xDt"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Whitmore) 2"
+        }
+      },
+      "name": "Mawla (Whitmore)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Whitmore) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "iCS8lq4Mba7qAfzr",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.iCS8lq4Mba7qAfzr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 1"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "NUqkBWp8fWdZO2hn",
+      "_key": "!actors.items!0IIsgytowpgAWwK6.NUqkBWp8fWdZO2hn"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-04",
+      "journal": "JournalEntry.rg50DlMYSzgbZeBv",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

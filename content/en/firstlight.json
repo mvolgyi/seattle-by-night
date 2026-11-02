@@ -1,0 +1,80 @@
+{
+  "_fuente": {
+    "municion-incendiaria": "6768a5d12e7f88d8",
+    "linterna-uv": "676c655a8ea43343",
+    "iluminado-uv": "f8b17012b51cee93",
+    "generador-luz-solar": "0804b924ad0f7ecb",
+    "gafas-termicas": "6ae853709763b8bb",
+    "dron-termico": "9c95ac22d3c2dc27",
+    "camaras-corporales": "6dd79babc0f02c70",
+    "glock-19-incendiaria": "b262bb210fd0b754",
+    "fusil-corto-incendiario": "668cf6a1cd9d2825",
+    "chaleco-ligero": "e681ac27b6668936",
+    "armadura-ligera": "f45d9d44a35baf2f"
+  },
+  "equipo": {
+    "municion-incendiaria": {
+      "nombre": "Incendiary ammunition",
+      "efecto": "Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2)."
+    },
+    "linterna-uv": {
+      "nombre": "High-intensity UV flashlight",
+      "efecto": "A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage."
+    },
+    "iluminado-uv": {
+      "nombre": "Lit by the UV flashlight",
+      "efecto": "A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.",
+      "bonos": [
+        {
+          "a": "all actions",
+          "condicion": "lit by the UV flashlight"
+        }
+      ]
+    },
+    "generador-luz-solar": {
+      "nombre": "Artificial sunlight generator",
+      "efecto": "In the van. Lights up a 20-meter area. Inside it: 2 aggravated damage per turn and an automatic Terror Frenzy test (Difficulty 3) on entering. Takes two turns to power up."
+    },
+    "gafas-termicas": {
+      "nombre": "Thermal goggles",
+      "efecto": "Negate Obfuscate levels 1 and 2. Kindred show up as cold silhouettes, and that gives them away."
+    },
+    "dron-termico": {
+      "nombre": "Thermal camera drone",
+      "efecto": "Sees the whole area and coordinates the team: +2 dice to their Awareness and ambush tests. Bringing it down: Strength + Athletics (Difficulty 4) with a thrown object, or a shot with Dexterity + Firearms (Difficulty 4).",
+      "bonos": [
+        {
+          "a": "Awareness and ambush",
+          "condicion": "the team coordinated by the drone"
+        }
+      ],
+      "tiradas": [
+        "@tirada{attributes.strength+skills.athletics|4|Bring down the drone with a thrown object: Strength + Athletics (Difficulty 4)}",
+        "@tirada{attributes.dexterity+skills.firearms|4|Shoot down the drone: Dexterity + Firearms (Difficulty 4)}"
+      ]
+    },
+    "camaras-corporales": {
+      "nombre": "Body cameras",
+      "efecto": "Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).",
+      "termometro": {
+        "motivo": "visible supernatural action in front of a body camera"
+      }
+    },
+    "glock-19-incendiaria": {
+      "nombre": "Glock 19 pistol with incendiary ammunition",
+      "efecto": "Aggravated damage against Kindred (incendiary ammunition)."
+    },
+    "fusil-corto-incendiario": {
+      "nombre": "Carbine with incendiary ammunition",
+      "efecto": "Aggravated against Kindred (incendiary ammunition). Has a UV flashlight mounted on the weapon."
+    },
+    "chaleco-ligero": {
+      "nombre": "Light bulletproof vest",
+      "efecto": "Armor 2."
+    },
+    "armadura-ligera": {
+      "nombre": "Light body armor",
+      "efecto": "Armor 3."
+    }
+  }
+}

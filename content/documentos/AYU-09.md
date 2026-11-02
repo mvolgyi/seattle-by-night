@@ -6,7 +6,7 @@ orden: 90
 soporte: libreta
 entrega: [sesion-cero, A1-E01]
 jugadores: no
-nota: "una hoja por personaje. Es lo que Helen tenía de cada uno, escrito con su voz, como sus notas de trabajo. Entregala en privado. Si un jugador crea un personaje propio, escribí la suya con este mismo estilo a partir de lo que decida en la sesión cero."
+nota: "una hoja por personaje. Es lo que Helen tenía de cada uno, escrito con su voz, como sus notas de trabajo. Entregala en privado. Si un jugador crea un personaje propio, escribí la suya con este mismo estilo a partir de lo que decida en la sesión cero. La de David (PJ-01) no se le entrega a nadie: es la carpeta que Helen tenía de él. La coterie puede leerla en la carpeta «SAFE» de la USB 3 (A2-E06) y decidir si se la enseña."
 origen: "15"
 imagenes: [AYU-09-PJ-01-IMG, AYU-09-PJ-03-IMG]
 ---
@@ -112,3 +112,5 @@ No creo que esté loca. Creo que es muy buena en su trabajo. Lo que no sé es pa
 **Soporte:** Una hoja por PJ. **Entrega:** Sesión cero o @ID[A1-E01].
 
 *Narrador: una hoja por personaje. Es lo que Helen tenía de cada uno, escrito con su voz, como sus notas de trabajo. Entregala en privado. Si un jugador crea un personaje propio, escribí la suya con este mismo estilo a partir de lo que decida en la sesión cero.*
+
+*La de David (@ID[PJ-01]) no se le entrega a nadie: David es PNJ. Es la carpeta que Helen tenía de él, la «carpeta sin nombre» de las catorce fotos. La coterie puede leerla en la carpeta «SAFE» de la USB 3 (@ID[A2-E06]). Decidir si se la enseñan a David, y qué le dicen de lo que pone Helen, es cosa de los jugadores.*

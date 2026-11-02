@@ -1,0 +1,334 @@
+{
+  "_id": "yaAsxCkCLf8CANL5",
+  "_key": "!journal!yaAsxCkCLf8CANL5",
+  "name": "Dr. Anneliese Voight",
+  "folder": "c2du20lgw47pDomh",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-15",
+      "archivo": "content/personajes/PNJ-15.md",
+      "actor": "Actor.75UbIo5Kl9zVsd0V"
+    }
+  },
+  "pages": [
+    {
+      "_id": "3oPCGs7495Yr0G8j",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.3oPCGs7495Yr0G8j",
+      "name": "Dr. Anneliese Voight",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-15.webp\" alt=\"Dr. Anneliese Voight\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.75UbIo5Kl9zVsd0V]{Dr. Anneliese Voight}</p>\n<p><em>“The epidemic never begins with the first death. It begins with the first data point nobody wanted to look at.”</em></p>\n<p><strong>Clan:</strong> Tremere · <strong>Positions:</strong> Regent of the Observatory Chantry and Primogen · <strong>Sect:</strong> Camarilla</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "qNm7vAkemavpSBMk",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.qNm7vAkemavpSBMk",
+      "name": "Mortal Days: The Statistician of Vienna",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Anneliese Voight earned her doctorate in medical statistics at the University of Vienna in 1919, when women were barely allowed into the lecture halls. She spent the influenza pandemic counting the dead on maps of the city and was one of the first to see that the infections followed the streetcar lines. Nobody listened to her in time. Ever since, she can&#39;t stand it when someone ignores a pattern.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "HrsV8eXXwVyQdPZT",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.HrsV8eXXwVyQdPZT",
+      "name": "Kindred Nights: The Regent of the Dome",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A Regent of the Vienna Chantry Embraced her in 1924 so she would apply her methods to something more important than the flu. In 1964 she was sent to Seattle to run a small Chantry the Pyramid considered irrelevant. When the Pyramid fell, Voight kept the Chantry, its books, and her independence, and she joined none of the houses that emerged.</p>\n<p>Since 2019 she has turned the old Queen Anne observatory (@UUID[JournalEntry.OSMVQHNXfk9zRyLM]{The Observatory Chantry}) into a network surveillance center. She was the first to detect FIRSTLIGHT in the city and the one who imposed the 2024 law on devices in Elysium. She wrote the Prince a detailed report that took him two nights to open. She&#39;s beginning to think the Seattle Camarilla won&#39;t survive its Prince.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "XLQa94jeNTBuiFNR",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.XLQa94jeNTBuiFNR",
+      "name": "Plans and Machinations",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Watch Northline.</strong> She intercepts part of the Puget Cell&#39;s traffic. She knows there&#39;s an inside source, but she doesn&#39;t know who ARCHER is. She&#39;d give a lot to find out.</p>\n<p><strong>Protect Ruth.</strong> She knows FIRSTLIGHT has marked her childe (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}) or the NPC medical examiner who takes her place. She&#39;s preparing an evacuation plan.</p>\n<p><strong>A Prince who listens.</strong> She doesn&#39;t want Halloway to win, but she doesn&#39;t want Whitmore to stay either. If the coterie proves it knows how to read patterns, it could become her candidate in the shadows.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Pce4SG4DbDDiTfv9",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.Pce4SG4DbDDiTfv9",
+      "name": "Domain and Haven",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Observatory Chantry in Queen Anne (@UUID[JournalEntry.OSMVQHNXfk9zRyLM]{The Observatory Chantry}; Haven 3, with Blood Sorcery wards). She feeds on blood-bank blood the Chantry buys through a research lab, and occasionally on researchers working late on the university campus.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UpfguaEAi9fVFg9y",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.UpfguaEAi9fVFg9y",
+      "name": "Servants and Tools",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The Chantry</strong>: three Tremere apprentices and Ruth Abernathy, if she&#39;s in play.</p>\n<p><strong>The dome&#39;s servers</strong> (Resources 3, Contacts 2 in technology).</p>\n<p><strong>Research lab</strong> (Influence 2 at the university).</p>\n<p><strong>Rituals</strong>: ward against ghouls, blood communion, tracking by Vitae.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pHlQxe0LQNtfljw6",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.pHlQxe0LQNtfljw6",
+      "name": "Kindred Relationships",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</strong> (frustration). She gave him the data. He chose not to look at it.</p>\n<p><strong>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</strong> (suspicion). He seems too calm to her for someone with so much to lose.</p>\n<p><strong>@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Ruth Abernathy}</strong> (responsibility). She turned her into a weapon and feels obligated to protect her.</p>\n<p><strong>@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra Lund}</strong> (interest). She&#39;d like to work with him. Thornquist won&#39;t let her get close.</p>\n<p><strong>@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}</strong> (mutual respect). Two professionals in a court of amateurs.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "IAZzheVsK7j8qyhb",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.IAZzheVsK7j8qyhb",
+      "name": "Whispers",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“Voight can read anyone&#39;s email in the city.” <em>(False: only Northline&#39;s, and not all of it.)</em></li>\n<li>“The Observatory Chantry no longer answers to anyone outside Seattle.” <em>(True.)</em></li>\n<li>“Voight wants to be Prince.” <em>(False. She wants a Prince who listens to her.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iHeXsUu0HduJCn1G",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.iHeXsUu0HduJCn1G",
+      "name": "Mask and Appearance",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>To mortals she&#39;s Dr. A. Voight, director of a private computational epidemiology lab affiliated with the university (Mask 2). She looks about thirty-three. She&#39;s petite, with very short hair in her natural color, and she wears rimless glasses, black turtlenecks, and a lab coat she forgets to take off. She speaks perfect English with a Viennese accent. She has a habit of answering questions with a percentage.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note</h4><p>Doc 06 said “looks about fifty” and “white hair”; it was decided that she looks the age she was at her Embrace (1924, born in 1891): about thirty-three, with her hair in its natural color.</p>\n</aside>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "emKsjGr8Rrg5pLLK",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.emKsjGr8Rrg5pLLK",
+      "name": "Reference Data",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> Regent Friedrich Ahlers of Vienna (destroyed in 1945)</li>\n<li><strong>Embraced:</strong> 1924 (born in 1891)</li>\n<li><strong>Ambition:</strong> for the Seattle Camarilla to survive the age of data.</li>\n<li><strong>Convictions:</strong> “Never ignore a pattern” · “Knowledge without action is complicity.”</li>\n<li><strong>Touchstone:</strong> Mateo Ruiz-Okoye, an epidemiology PhD student whose dissertation she supervises by email without his knowing who she is.</li>\n<li><strong>Humanity:</strong> 6</li>\n<li><strong>Generation:</strong> 9th</li>\n<li><strong>Blood Potency:</strong> 4</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "8zoUgoPfjs4t8y2o",
+      "_key": "!journal.pages!yaAsxCkCLf8CANL5.8zoUgoPfjs4t8y2o",
+      "name": "Stats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Attributes:</strong> Strength 1, Dexterity 2, Stamina 2 · Charisma 2, Manipulation 3, Composure 4 · Intelligence 5, Wits 4, Resolve 4</p>\n<p><strong>Secondary Attributes:</strong> Health 5 · Willpower 8</p>\n<p><strong>Skills:</strong> Academics 4 (Epidemiology), Science 4 (Statistics), Awareness 3, Etiquette 2, Investigation 4 (Patterns), Medicine 3, Occult 4 (Thaumaturgy), Politics 2, Technology 4 (Networks)</p>\n<p><strong>Disciplines:</strong></p>\n<ul>\n<li>Auspex 3: Heightened Senses (<em>Heightened Senses</em>), Premonition (<em>Premonition</em>), Share the Senses (<em>Share the Senses</em>)</li>\n<li>Dominate 2: Compel (<em>Compel</em>), Mesmerize (<em>Mesmerize</em>)</li>\n<li>Blood Sorcery 4: Corrosive Vitae (<em>Corrosive Vitae</em>), Extinguish Vitae (<em>Extinguish Vitae</em>), Blood of Potency (<em>Blood of Potency</em>), Theft of Vitae (<em>Theft of Vitae</em>)</li>\n</ul>\n<p><strong>Rituals:</strong> Ward against Ghouls (<em>Ward against Ghouls</em>), Communicate with Kindred Sire (<em>Communicate with Kindred Sire</em>), Blood Walk (<em>Blood Walk</em>)</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

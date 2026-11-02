@@ -1,0 +1,250 @@
+{
+  "_id": "zQMt8VMfKPoL6INq",
+  "_key": "!journal!zQMt8VMfKPoL6INq",
+  "name": "Celeste Arden",
+  "folder": "eP0C1qeFsQtuqlDN",
+  "sort": 20,
+  "ownership": {
+    "default": 2
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PJ-02",
+      "archivo": "content/personajes/PJ-02.md",
+      "actor": "Actor.zFbC97X8iaeScDzY"
+    }
+  },
+  "pages": [
+    {
+      "_id": "fjlWcfxPFQB7Uyb2",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.fjlWcfxPFQB7Uyb2",
+      "name": "Celeste Arden",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PJ-02.webp\" alt=\"Celeste Arden\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.zFbC97X8iaeScDzY]{Celeste Arden}</p>\n<p><strong>Concept:</strong> investment analyst and childe of Charles Halloway, the Ventrue Primogen.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "q9Q8Oac9tsU52kbo",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.q9Q8Oac9tsU52kbo",
+      "name": "Mortal Days",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Celeste grew up in Bellevue, in a lake-view house that her father, a real estate developer, lost in 2008 along with everything else. She was nineteen, and she watched the money disappear first and the friends after. She swore she would never again be on the wrong side of a spreadsheet. She studied quantitative finance, landed at a small fund, and by twenty-six she was spotting companies about to collapse before anyone else. That caught Halloway&#39;s attention.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "YPdOhIvkAQuGpGUf",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.YPdOhIvkAQuGpGUf",
+      "name": "Kindred Nights",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Halloway Embraced her in 2011 and offered her what she wanted most: never to lose again. Today she runs Halloway Meridian Capital&#39;s network of shell companies. She knows her sire is ambitious. She feeds only on people who have just been ruined: the Blood of someone who has lost everything is the only kind that works for her, and it always reminds her of her father.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TuZ4RPnJzTTHE8VZ",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.TuZ4RPnJzTTHE8VZ",
+      "name": "Connection to the Coterie",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Her folder in the File is a photo of her at the scene of a suicide in a Bellevue parking garage. She was there to feed, not to kill, but the photo doesn&#39;t prove it.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "GCQxsXXb53VcQOQ0",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.GCQxsXXb53VcQOQ0",
+      "name": "Ambition, Desire, and Touchstone",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Ambition:</strong> to make her name worth more than her sire&#39;s. <strong>Desire:</strong> for Halloway to recognize her as his equal. <strong>Suggested Conviction:</strong> “Never let anyone fall alone.” <strong>Touchstone:</strong> her mother, who lives in a memory care facility with dementia and still calls her by her name.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "2uoETh2az5qiWwyc",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.2uoETh2az5qiWwyc",
+      "name": "Suggested Backgrounds",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Resources 3, Contacts (finance) 2, Influence (Eastside) 1, Mawla (Halloway) 2. Flaw: a level 2 Blood Bond to Halloway.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "vYof5gOrRvaQAGf4",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.vYof5gOrRvaQAGf4",
+      "name": "Shines In",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell} (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.jqTQDyJH3ogdAuWO]{The Folios on the German} comes out of her sire&#39;s house), and @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ogBXtiyrMb50WQMN",
+      "_key": "!journal.pages!zQMt8VMfKPoL6INq.ogBXtiyrMb50WQMN",
+      "name": "Secret",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>She doesn&#39;t know that among Halloway&#39;s companies is the one that controls Gale Sentinel. Halloway chose her as his scapegoat. The fragments leaked to FIRSTLIGHT go out through accounts in her companies&#39; names. At the Council (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}), he will offer her up as the traitor. Celeste will have to choose between her sire, the coterie, and the truth.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

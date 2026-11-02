@@ -1,0 +1,42 @@
+{
+  "_id": "rylRm0nWurc6JzCR",
+  "_key": "!items!rylRm0nWurc6JzCR",
+  "name": "Incendiary ammunition",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "The Ward File",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "municion-incendiaria",
+      "agravado": true
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 0,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "_id": "kred15jySmCveej8",
+  "_key": "!actors!kred15jySmCveej8",
+  "name": "Montgomery's Dogs",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp",
+  "folder": "YWm2LWWrpHgOUZLn",
+  "sort": 50,
+  "prototypeToken": {
+    "name": "Montgomery's Dogs",
+    "actorLink": false,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": {
+      "feelTremor": {
+        "enabled": true,
+        "range": 50
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PERROS-MONTGOMERY.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Twelve ghoul working dogs",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Twelve ghoul working dogs</td></tr><tr><th>Number</th><td>12</td></tr><tr><th>Dice pools</th><td>attack 6 · defense 5 · tracking 8</td></tr></tbody></table><p>Shepherds and wolf crosses. They sense Montgomery&#39;s will and the Beast of any Kindred within fifty meters.</p>\n<p><strong>Attack</strong> 6 (bite, +1 damage) · <strong>Defense</strong> 5 · <strong>Tracking</strong> 8 · <strong>Health</strong> 5 · They act as a pack: each additional dog adds +1 die to the first one&#39;s attack, up to +3.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 0,
+      "value": 0,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {},
+    "spcType": "ghoul",
+    "standarddicepools": {
+      "physical": {
+        "value": 0
+      },
+      "social": {
+        "value": 0
+      },
+      "mental": {
+        "value": 0
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "bite",
+            "value": 1,
+            "paths": [
+              "skills.brawl"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "survival": {
+        "value": 8,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "tracking",
+            "value": 1,
+            "paths": [
+              "skills.survival"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PERROS-MONTGOMERY",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 12,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

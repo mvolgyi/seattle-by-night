@@ -1,0 +1,313 @@
+{
+  "_id": "zGqiDTb68QRTrlLv",
+  "_key": "!actors!zGqiDTb68QRTrlLv",
+  "name": "Ezra Lund",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-03.webp",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 30,
+  "prototypeToken": {
+    "name": "Ezra Lund",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.4,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#ffe6bf",
+      "coloration": 1,
+      "attenuation": 0.55,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PJ-03.webp"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "network security engineer, Embraced by the Underground's information broker.",
+      "chronicle": "The Ward File",
+      "ambition": "expose whoever controls the city's cameras",
+      "desire": "have someone see his face and not look away",
+      "touchstones": "<h3>Convictions</h3><ul><li>Information belongs to whoever needs it, not whoever pays for it</li></ul><h3>Touchstones</h3><ul><li>his sister Maja, a night-shift nurse, who leaves food at his door even though she knows he doesn&#39;t eat it</li></ul>",
+      "sire": "Abel Thornquist",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Profile: Ezra “Static” Lund}</p><blockquote><p><em>The Ghost in the Network</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>Static</td></tr><tr><th>Concept</th><td>network security engineer, Embraced by the Underground&#39;s information broker.</td></tr><tr><th>Clan</th><td>Nosferatu</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}</td></tr><tr><th>Predator Type</th><td>Bagger</td></tr><tr><th>Ambition</th><td>expose whoever controls the city&#39;s cameras</td></tr><tr><th>Desire</th><td>have someone see his face and not look away</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{The Archived}, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{The Moles}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "nosferatu"
+        }
+      },
+      "name": "Nosferatu",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "dqKNRA2Inq4SchoA",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.dqKNRA2Inq4SchoA"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Bagger",
+      "type": "predatorType",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "dicepool": {}
+      },
+      "_id": "oP5wzPT0VeuCUZiJ",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.oP5wzPT0VeuCUZiJ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts (hackers) 2"
+        }
+      },
+      "name": "Contacts (hackers)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts (hackers) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "wHcRyTA01twh2j8y",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.wHcRyTA01twh2j8y"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 1"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "OcvOrTwxuKQN5WOA",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.OcvOrTwxuKQN5WOA"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 2 (in the Underground)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 2 (in the Underground)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "G4WZZWSwZb0gsRRd",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.G4WZZWSwZb0gsRRd"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Thornquist) 1"
+        }
+      },
+      "name": "Mawla (Thornquist)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Thornquist) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "FWIoGCZr5MB4KXUL",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.FWIoGCZr5MB4KXUL"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Feeds from blood bags without penalty"
+        }
+      },
+      "name": "Feeds from blood bags without penalty",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Feeds from blood bags without penalty</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "DV5MC6ZnYcA5vRh1",
+      "_key": "!actors.items!zGqiDTb68QRTrlLv.DV5MC6ZnYcA5vRh1"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-03",
+      "journal": "JournalEntry.PBJeE9T9n0BjB6ag",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

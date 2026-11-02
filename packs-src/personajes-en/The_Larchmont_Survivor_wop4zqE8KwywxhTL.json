@@ -1,0 +1,213 @@
+{
+  "_id": "wop4zqE8KwywxhTL",
+  "_key": "!actors!wop4zqE8KwywxhTL",
+  "name": "The Larchmont Survivor",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-08.webp",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 180,
+  "prototypeToken": {
+    "name": "The Larchmont Survivor",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-08.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Former Sabbat Kindred",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Former Sabbat Kindred</td></tr></tbody></table><p>Former Sabbat Kindred (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · The Larchmont Survivor}). Nobody knows his name. He&#39;s spent twelve years in the Tacoma storm drains, feeding carefully. Old, patient, deformed by the 2014 fire. He visits the Larchmont cistern barefoot.</p>\n<p><strong>Disciplines:</strong> Obfuscate 3, Protean 2 (Feral Weapons), Fortitude 2.</p>\n<p><strong>Tactics:</strong> he never fights in the open. He flees toward the water and waits.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": ""
+    },
+    "humanity": {
+      "value": 3,
+      "stains": 0
+    },
+    "disciplines": {
+      "obfuscate": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "protean": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 6
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 5
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 8,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "sewers",
+            "value": 1,
+            "paths": [
+              "skills.survival"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "occult": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Feral Weapons",
+          "homebrew": false
+        }
+      },
+      "name": "Feral Weapons",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Protean 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "MEN-08"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "protean",
+        "selected": false
+      },
+      "_id": "c2Rq2IaWf7SLZKPA",
+      "_key": "!actors.items!wop4zqE8KwywxhTL.c2Rq2IaWf7SLZKPA"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-08",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

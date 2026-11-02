@@ -32,8 +32,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
-import { RAIZ, MODULO, STATS, escribirDoc, Carpetas, leerJson, slug } from "../util.mjs";
-import { ID, fichas, tieneActor, journals, clavePagina } from "./ids.mjs";
+import { RAIZ, MODULO, STATS, Carpetas, slug } from "../util.mjs";
+import { ID, fichas, tieneActor, journals, clavePagina, journalEs } from "./ids.mjs";
+import { EN, es, copia, leerContenido } from "./idioma.mjs";
+import { T, tabla, escribir as escribirDoc, escribirCarpetas } from "./fijos.mjs";
+
+const leerJson = leerContenido;
 
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
 
@@ -47,7 +51,7 @@ const md2inline = md => marked.parseInline(md ?? "", { async: false });
 
 // Nombre de la crónica en las fichas (system.headers.chronicle, base-actor-model.js) y
 // libro de origen de los ítems (system.source.book, base-item-model.js).
-const CRONICA = "El Expediente Ward";
+const CRONICA = T("El Expediente Ward");
 const ICONO_ACTOR = "icons/svg/mystery-man.svg";
 const ICONO_ITEM = "systems/wod5e/assets/icons/items/item-default.svg";
 const ICONO_RASGO = "systems/wod5e/assets/icons/items/feature.svg";   // api/def/itemtypes.js#feature
@@ -64,17 +68,21 @@ const ICONO = {
 /*  Tablas                                      */
 /* -------------------------------------------- */
 
-const NOMBRE_CLAN = {
+const NOMBRE_CLAN = tabla({
   brujah: "Brujah", gangrel: "Gangrel", malkavian: "Malkavian", nosferatu: "Nosferatu",
   toreador: "Toreador", tremere: "Tremere", ventrue: "Ventrue", caitiff: "Caitiff", thinblood: "Sangre débil"
-};
+}, { thinblood: "Thin-Blood" });
 
-const NOMBRE_DISCIPLINA = {
+const NOMBRE_DISCIPLINA = tabla({
   animalism: "Animalismo", auspex: "Auspex", celerity: "Celeridad", dominate: "Dominación",
   fortitude: "Fortaleza", obfuscate: "Ofuscación", potence: "Potencia", presence: "Presencia",
   protean: "Protean", sorcery: "Hechicería de sangre", oblivion: "Oblivion",
   alchemy: "Alquimia de sangre débil", rituals: "Rituales", ceremonies: "Ceremonias"
-};
+}, {
+  animalism: "Animalism", celerity: "Celerity", dominate: "Dominate", fortitude: "Fortitude",
+  obfuscate: "Obfuscate", potence: "Potence", presence: "Presence", sorcery: "Blood Sorcery",
+  alchemy: "Thin-Blood Alchemy", rituals: "Rituals", ceremonies: "Ceremonies"
+});
 
 /** Claves válidas (system/api/def/disciplines.js). */
 const DISCIPLINAS = new Set(Object.keys(NOMBRE_DISCIPLINA));
@@ -122,30 +130,45 @@ const HOSTILES = new Set(["PNJ-12", "PNJ-03", "PNJ-19", "PNJ-18", "PNJ-21", "MEN
  * (construirPersonajes, CAMPOS_CREDO). El texto va a creed.system.desperationFields
  * (item/data-models/htr/creed-item-model.js) y a headers.creedfields.
  */
-export const CAMPOS_CREDO = {
+export const CAMPOS_CREDO = tabla({
   underground: ["Clandestinos", "Sigilo y subterfugio en servicio de la Caza."],
   entrepreneurial: ["Emprendedores", "Construir, inventar, aumentar o reparar durante la Caza."],
   faithful: ["Fieles", "Cualquier conflicto directo (físico, social o mental) con lo sobrenatural durante la Caza."],
   inquisitive: ["Inquisitivos", "Obtener información durante la Caza: documentación, allanamiento de morada e interrogatorio."],
   martial: ["Marciales", "Conflicto físico durante la Caza (no necesita ser con la presa ni con lo sobrenatural)."]
-};
+}, {
+  underground: ["Underground", "Stealth and subterfuge in service of the Hunt."],
+  entrepreneurial: ["Entrepreneurial", "Building, inventing, augmenting or repairing during the Hunt."],
+  faithful: ["Faithful", "Any direct conflict (physical, social or mental) with the supernatural during the Hunt."],
+  inquisitive: ["Inquisitive", "Gaining information during the Hunt: research, breaking and entering, and interrogation."],
+  martial: ["Martial", "Physical conflict during the Hunt (it doesn't have to be with the quarry or with the supernatural)."]
+});
 
 /** Facultades (system/api/def/edges.js), con la etiqueta de lang/es/hunter-es.json; las que no la traen (turncoat, experimentalmedicine, cleansetheunnatural, greatdestiny, unnaturalchanges), traducción propia. */
-export const NOMBRE_FACULTAD = {
+export const NOMBRE_FACULTAD = tabla({
   arsenal: "Arsenal", fleet: "Flota", ordnance: "Artillería", library: "Biblioteca",
   improvisedgear: "Equipamiento improvisado", globalaccess: "Acceso global", dronejockey: "Piloto de drones",
   beastwhisperer: "Encantador de bestias", sensetheunnatural: "Sentir lo antinatural",
   repeltheunnatural: "Repeler lo antinatural", thwarttheunnatural: "Frustrar lo antinatural",
   artifact: "Artefacto", turncoat: "Desertor", experimentalmedicine: "Medicina experimental",
   cleansetheunnatural: "Purificar lo antinatural", greatdestiny: "Gran destino", unnaturalchanges: "Cambios antinaturales"
-};
+}, {
+  // Los nombres de H5 (system/api/def/edges.js, lang/en del sistema).
+  arsenal: "Arsenal", fleet: "Fleet", ordnance: "Ordnance", library: "Library",
+  improvisedgear: "Improvised Gear", globalaccess: "Global Access", dronejockey: "Drone Jockey",
+  beastwhisperer: "Beast Whisperer", sensetheunnatural: "Sense the Unnatural",
+  repeltheunnatural: "Repel the Unnatural", thwarttheunnatural: "Thwart the Unnatural",
+  artifact: "Artifact", turncoat: "Turncoat", experimentalmedicine: "Experimental Medicine",
+  cleansetheunnatural: "Cleanse the Unnatural", greatdestiny: "Great Destiny", unnaturalchanges: "Unnatural Changes"
+});
 
 /** «Nombre: descripción» de un Beneficio → { nombre, descripcion }. */
 export function parsearBeneficio(texto) {
   const i = texto.indexOf(":");
   return i < 0 ? { nombre: texto.trim(), descripcion: "" } : { nombre: texto.slice(0, i).trim(), descripcion: texto.slice(i + 1).trim() };
 }
-const AMISTOSOS = new Set(["PNJ-04", "PNJ-05"]);
+// David (PJ-01) es un PNJ aliado de la coterie: amistoso, como Bear.
+const AMISTOSOS = new Set(["PJ-01", "PNJ-04", "PNJ-05"]);
 
 /** Ventajas que son Trasfondos de V5; el resto de las ventajas son Méritos. */
 const TRASFONDO = /^(Aliados?|Contactos|Fama|Influencia|Refugio|Rebaño|Recursos|Máscara|Mawla|Estatus)\b/i;
@@ -171,13 +194,13 @@ function expandir(md, ctx, origen) {
     .replace(/@tirada\{([^|}]*)\|([^|}]*)\|([^}]*)\}/g, (_, paths, dif, texto) =>
       `<a class="sbn-tirada" data-sbn-tirada="${escapar(paths.split(/[+\s]+/).filter(Boolean).join(" "))}" data-dificultad="${escapar(dif || 0)}" data-label="${escapar(texto)}"><i class="fa-solid fa-dice-d10"></i> ${texto}</a>`)
     .replace(/@termometro\{([^|}]*)(?:\|([^}]*))?\}/g, (_, cambio, motivo = "") =>
-      `<button type="button" class="sbn-termometro" data-sbn-termometro="${escapar(cambio)}" data-motivo="${escapar(motivo)}"><i class="fa-solid fa-temperature-half"></i> Termómetro ${escapar(cambio)}</button>`)
+      `<button type="button" class="sbn-termometro" data-sbn-termometro="${escapar(cambio)}" data-motivo="${escapar(motivo)}"><i class="fa-solid fa-temperature-half"></i> ${T("Termómetro")} ${escapar(cambio)}</button>`)
     .replace(/@pista\{([^}]+)\}/g, (_, id) => {
       const r = ctx.reg.get(id.trim());
       if (!r) ctx.avisos.push(`actores: ${origen}: @pista{${id}} no está en el registro.`);
       return `<button type="button" class="sbn-pista" data-sbn-pista="${escapar(id)}"><i class="fa-solid fa-magnifying-glass"></i> ${r?.nombre ?? id}</button>`;
     })
-    .replace(/@reloj\{(\d+)\}/g, (_, n) => `<span class="sbn-reloj" data-sbn-reloj="${n}">Noche ${n}</span>`);
+    .replace(/@reloj\{(\d+)\}/g, (_, n) => `<span class="sbn-reloj" data-sbn-reloj="${n}">${T("Noche {n}", { n })}</span>`);
 }
 
 const html = (md, ctx, origen) => md2html(expandir(md, ctx, origen));
@@ -241,14 +264,37 @@ function partirRasgos(texto) {
   return [{ t: texto, original: texto }];
 }
 
+/**
+ * La misma partición en el texto inglés, si el castellano se partió en dos
+ * («Herd 1 and Allies 1 (…)»). Si el inglés no tiene esa forma, los dos rasgos
+ * llevan el texto entero.
+ */
+function partirRasgosEn(texto, partes) {
+  if (partes.length < 2) return [{ t: texto, original: texto }];
+  const m = /^([^\d(]+? \d),? (?:and|&) ([^\d(]+? \d)(.*)$/i.exec(texto);
+  if (m) return [m[1] + m[3], m[2] + m[3]].map(t => ({ t, original: texto }));
+  return partes.map(() => ({ t: texto, original: texto }));
+}
+
+/**
+ * Ventajas, defectos y trasfondos → ítems feature. La semilla del _id, los
+ * puntos y el tipo salen siempre del texto castellano (en inglés, el de la
+ * misma posición); el nombre y la descripción, del texto del idioma.
+ */
 function rasgos(aid, lista, tipoDefecto, prefijo, ctx, origen) {
   const out = [];
   const semilla = semillas();
-  (lista ?? []).forEach(texto => {
-    partirRasgos(texto).forEach(({ t, original }) => {
-      const { nombre, puntos } = parsearRasgo(t);
+  const listaEs = es(lista) ?? [];
+  (lista ?? []).forEach((textoIdioma, i) => {
+    const texto = listaEs[i] ?? textoIdioma;
+    const partes = partirRasgos(texto);
+    const partesIdioma = textoIdioma === texto ? partes : partirRasgosEn(textoIdioma, partes);
+    partes.forEach(({ t }, k) => {
+      const { nombre: nombreEs, puntos } = parsearRasgo(t);
+      const { t: tIdioma, original } = partesIdioma[k] ?? partesIdioma[0];
+      const nombre = tIdioma === t ? nombreEs : parsearRasgo(tIdioma).nombre;
       const featuretype = tipoDefecto === "flaw" ? "flaw" : (TRASFONDO.test(t) ? "background" : "merit");
-      out.push(embebido(aid, semilla(prefijo, nombre), {
+      out.push(embebido(aid, semilla(prefijo, nombreEs), {
         name: nombre, type: "feature", img: ICONO_RASGO,
         system: SISTEMA_ITEM({
           description: `<p>${inline(original, ctx, origen)}</p>`,
@@ -271,10 +317,30 @@ function rasgos(aid, lista, tipoDefecto, prefijo, ctx, origen) {
  *   - **Español** (Disciplina N[ homebrew]; *English*): descripción
  * y sus sub-viñetas. Devuelve índices por nombre inglés y por nombre español.
  */
-function poderesDelPerfil(journal) {
+function poderesDelPerfil(journal, ctx) {
   const porIngles = new Map(), porEspanol = new Map();
   if (!journal) return { porIngles, porEspanol };
-  const lineas = journal.cuerpo.split("\n");
+  // Se lee el perfil castellano (nombres y niveles); en inglés, la descripción y
+  // el nombre visible salen de la viñeta inglesa en la misma posición.
+  const jes = journalEs(journal);
+  const lista = vinetasDePoder(jes.cuerpo);
+  const listaIdioma = jes !== journal ? vinetasDePoder(journal.cuerpo) : null;
+  const paralela = listaIdioma?.length === lista.length ? listaIdioma : null;
+  if (listaIdioma && !paralela && lista.length) {
+    ctx.avisos.push(`actores: ${journal.id}: el perfil en inglés tiene ${listaIdioma.length} viñetas de poderes y el castellano ${lista.length}; las descripciones van en castellano`);
+  }
+  for (const [i, p] of lista.entries()) {
+    if (listaIdioma) Object.assign(p, { descEs: p.desc, desc: paralela?.[i].desc ?? p.desc, visible: paralela?.[i].es ?? p.es });
+    porEspanol.set(p.es, p);
+    if (p.en) porIngles.set(p.en, p);
+  }
+  return { porIngles, porEspanol };
+}
+
+/** Las viñetas de poderes de un perfil, en orden. */
+function vinetasDePoder(cuerpo) {
+  const out = [];
+  const lineas = cuerpo.split("\n");
   for (let i = 0; i < lineas.length; i++) {
     const m = /^- \*\*(.+?)\*\* \(([^)]*)\)(?::\s*(.*))?$/.exec(lineas[i]);
     if (!m) continue;
@@ -287,11 +353,9 @@ function poderesDelPerfil(journal) {
     // Sin texto propio, las sub-viñetas suben un nivel (si no, Markdown las anida bajo la primera).
     if (!resto) for (let k = 0; k < sub.length; k++) sub[k] = sub[k].replace(/^\s{2}/, "");
     const desc = [resto, ...sub].filter(Boolean).join("\n").trim();
-    const p = { es, en, nivel, desc, homebrew: /homebrew/i.test(parentesis) };
-    porEspanol.set(es, p);
-    if (en) porIngles.set(en, p);
+    out.push({ es, en, nivel, desc, homebrew: /homebrew/i.test(parentesis) });
   }
-  return { porIngles, porEspanol };
+  return out;
 }
 
 /** «Bala Cinética (homebrew, amalgama Celeridad 2)» → { nombre, homebrew, nota }. */
@@ -303,13 +367,17 @@ function parsearPoder(texto) {
 
 function poderes(f, aid, journal, ctx) {
   const items = [];
-  const perfil = poderesDelPerfil(journal);
-  for (const [disc, [valor, lista]] of Object.entries(f.disciplinas ?? {})) {
+  const perfil = poderesDelPerfil(journal, ctx);
+  const jes = journalEs(journal);
+  // Los poderes, de la ficha castellana (de ahí la semilla del _id); el texto
+  // del idioma, de la misma posición.
+  for (const [disc, [valor, lista]] of Object.entries(es(f).disciplinas ?? {})) {
     if (!DISCIPLINAS.has(disc)) {
       ctx.avisos.push(`actores: ${f.id}: disciplina «${disc}» no existe en wod5e (system/api/def/disciplines.js).`);
       continue;
     }
-    for (const texto of lista ?? []) {
+    const listaIdioma = f.disciplinas?.[disc]?.[1] ?? [];
+    for (const [k, texto] of (lista ?? []).entries()) {
       const { nombre, homebrew, nota } = parsearPoder(texto);
       const delPerfil = perfil.porIngles.get(nombre) ?? perfil.porEspanol.get(nombre);
       let nivel = delPerfil?.nivel ?? NIVEL_V5[disc]?.[nombre] ?? null;
@@ -324,28 +392,36 @@ function poderes(f, aid, journal, ctx) {
       if (valor != null && nivel > valor) {
         ctx.avisos.push(`actores: ${f.id}: «${nombre}» es de nivel ${nivel} y ${NOMBRE_DISCIPLINA[disc]} está a ${valor}.`);
       }
-      const nombreFinal = delPerfil && !homebrew && delPerfil.es !== nombre ? `${nombre} · ${delPerfil.es}` : nombre;
+      // En inglés, el nombre de V5 (o el del homebrew, de la viñeta inglesa), sin el castellano al lado.
+      const nombreIdioma = !EN ? nombre
+        : homebrew ? (delPerfil?.visible ?? parsearPoder(listaIdioma[k] ?? texto).nombre) : nombre;
+      const nombreFinal = EN ? nombreIdioma
+        : delPerfil && !homebrew && delPerfil.es !== nombre ? `${nombre} · ${delPerfil.es}` : nombre;
 
       // Descripción: sólo lo que dice content/. Homebrew: la viñeta del perfil
       // y, si el perfil le dedica una página (`## Nombre`), un enlace a ella.
       const partes = [];
-      if (homebrew) partes.push(`<p><em>Homebrew${nota ? ` (${nota})` : ""}.</em></p>`);
+      const notaIdioma = EN && homebrew ? (parsearPoder(listaIdioma[k] ?? texto).nota || nota) : nota;
+      if (homebrew) partes.push(`<p><em>Homebrew${notaIdioma ? ` (${notaIdioma})` : ""}.</em></p>`);
       if (delPerfil?.desc) partes.push(html(delPerfil.desc, ctx, f.id));
-      const pagina = journal?.paginas.find(p => p.nombre === nombre);
+      // La página del perfil con el nombre del poder, buscada en el castellano.
+      const iPagina = jes?.paginas.findIndex(p => p.nombre === nombre) ?? -1;
+      const pagina = iPagina >= 0 ? journal.paginas[iPagina] : undefined;
+      const paginaEs = iPagina >= 0 ? jes.paginas[iPagina] : undefined;
       if (pagina) {
         const jid = ID.journal(journal.id);
-        partes.push(`<p>@UUID[JournalEntry.${jid}.JournalEntryPage.${ID.pagina(jid, clavePagina(pagina))}]{${nombre}}</p>`);
+        partes.push(`<p>@UUID[JournalEntry.${jid}.JournalEntryPage.${ID.pagina(jid, clavePagina(pagina))}]{${nombreIdioma}}</p>`);
         partes.push(html(pagina.md, ctx, `${f.id}#${nombre}`));
       }
       if (homebrew && !delPerfil?.desc && !pagina) {
-        partes.push(`<p>El libro no lo describe.</p>`);
+        partes.push(`<p>${T("El libro no lo describe.")}</p>`);
         ctx.avisos.push(`actores: ${f.id}: el poder homebrew «${nombre}» no tiene descripción en content/.`);
       }
-      if (!homebrew) partes.push(`<p><em>${NOMBRE_DISCIPLINA[disc]} ${nivel || ""}. Poder del manual básico de V5.</em></p>`);
+      if (!homebrew) partes.push(`<p><em>${T("{disciplina} {nivel}. Poder del manual básico de V5.", { disciplina: NOMBRE_DISCIPLINA[disc], nivel: nivel || "" })}</em></p>`);
       const descripcion = partes.join("");
 
-      // Coste en Enardecimientos: sólo si content/ lo da.
-      const textoCoste = [delPerfil?.desc ?? "", pagina?.md ?? ""].join("\n");
+      // Coste en Enardecimientos: sólo si content/ lo da (se lee del castellano).
+      const textoCoste = [delPerfil?.descEs ?? delPerfil?.desc ?? "", paginaEs?.md ?? ""].join("\n");
       const mc = /Coste:?\**:?[\s\S]{0,40}?(\d+)\s+(?:tirada de )?Enardecimiento/i.exec(textoCoste);
       const cost = mc ? Number(mc[1]) : 0;
 
@@ -368,7 +444,7 @@ function poderes(f, aid, journal, ctx) {
 
 /** system.disciplines (ObjectField libre: system/actor/vtm/scripts/prepare-data.js). */
 function disciplinas(f) {
-  return Object.fromEntries(Object.entries(f.disciplinas ?? {})
+  return Object.fromEntries(Object.entries(es(f).disciplinas ?? {})
     .filter(([d]) => DISCIPLINAS.has(d))
     .map(([d, [valor]]) => [d, { value: valor ?? 0, visible: true, description: "", selected: false }]));
 }
@@ -399,10 +475,10 @@ function habilidades(lista, { activa = false } = {}) {
 function piedrasYConvicciones(f, ctx) {
   const partes = [];
   if (f.convicciones?.length) {
-    partes.push(`<h3>Convicciones</h3><ul>${f.convicciones.map(c => `<li>${inline(c, ctx, f.id)}</li>`).join("")}</ul>`);
+    partes.push(`<h3>${T("Convicciones")}</h3><ul>${f.convicciones.map(c => `<li>${inline(c, ctx, f.id)}</li>`).join("")}</ul>`);
   }
   if (f.piedrasDeToque?.length) {
-    partes.push(`<h3>Piedras de toque</h3><ul>${f.piedrasDeToque.map(p => {
+    partes.push(`<h3>${T("Piedras de toque")}</h3><ul>${f.piedrasDeToque.map(p => {
       const desc = p.descripcion ?? "";
       const texto = desc.toLowerCase().startsWith(String(p.nombre).toLowerCase())
         ? inline(desc, ctx, f.id)
@@ -414,38 +490,40 @@ function piedrasYConvicciones(f, ctx) {
 }
 
 function equipoHtml(f, ctx, idsFirstlight) {
-  const libres = (f.equipo ?? []).filter(e => !idsFirstlight.has(e));
+  // Qué es un id de firstlight.json, según el castellano (en inglés, la misma posición).
+  const equipoEs = es(f.equipo) ?? [];
+  const libres = (f.equipo ?? []).filter((e, i) => !idsFirstlight.has(equipoEs[i] ?? e));
   return libres.length ? `<ul>${libres.map(e => `<li>${inline(e, ctx, f.id)}</li>`).join("")}</ul>` : "";
 }
 
 function biografia(f, ctx, { perfil, coteries }) {
   const filas = [];
   const fila = (k, v) => v != null && v !== "" && filas.push(`<tr><th>${k}</th><td>${v}</td></tr>`);
-  fila("Apodo", f.apodo && inline(f.apodo, ctx, f.id));
-  fila("Concepto", f.concepto && inline(f.concepto, ctx, f.id));
-  fila("Clan", f.clan && NOMBRE_CLAN[f.clan]);
-  fila("Secta", f.secta && inline(f.secta, ctx, f.id));
-  fila("Sire", f.sire && (ctx.reg.has(f.sire) ? inline(`@ID[${f.sire}]`, ctx, f.id) : inline(f.sire, ctx, f.id)));
-  fila("Nacimiento", f.nacimiento);
-  fila("Abrazo", f.abrazado);
-  fila("Edad", f.edad);
-  fila("Depredador", f.depredador && inline(f.depredador, ctx, f.id));
-  fila("Resonancia", f.resonancia);
-  fila("Ambición", f.ambicion && inline(f.ambicion, ctx, f.id));
-  fila("Deseo", f.deseo && inline(f.deseo, ctx, f.id));
-  if ((f.cantidad ?? 1) > 1) fila("Cantidad", f.cantidad);
-  if (f.reservas) fila("Reservas", Object.entries(f.reservas).map(([k, v]) => `${k} ${v}`).join(" · "));
-  if (f.alternativa) fila("Plantilla", "alternativa");
+  fila(T("Apodo"), f.apodo && inline(f.apodo, ctx, f.id));
+  fila(T("Concepto"), f.concepto && inline(f.concepto, ctx, f.id));
+  fila(T("Clan"), f.clan && NOMBRE_CLAN[f.clan]);
+  fila(T("Secta"), f.secta && inline(f.secta, ctx, f.id));
+  fila(T("Sire"), f.sire && (ctx.reg.has(f.sire) ? inline(`@ID[${f.sire}]`, ctx, f.id) : inline(f.sire, ctx, f.id)));
+  fila(T("Nacimiento"), f.nacimiento);
+  fila(T("Abrazo"), f.abrazado);
+  fila(T("Edad"), f.edad);
+  fila(T("Depredador"), f.depredador && inline(f.depredador, ctx, f.id));
+  fila(T("Resonancia"), f.resonancia);
+  fila(T("Ambición"), f.ambicion && inline(f.ambicion, ctx, f.id));
+  fila(T("Deseo"), f.deseo && inline(f.deseo, ctx, f.id));
+  if ((f.cantidad ?? 1) > 1) fila(T("Cantidad"), f.cantidad);
+  if (f.reservas) fila(T("Reservas"), Object.entries(f.reservas).map(([k, v]) => `${k} ${v}`).join(" · "));
+  if (f.alternativa) fila(T("Plantilla"), T("alternativa"));
   // Foco y Brilla en nombran escenas futuras: en un PJ, la ficha la lee su jugador.
-  if (!f.pj && f.foco?.length) fila("Foco", f.foco.map(e => inline(`@ID[${e}]`, ctx, f.id)).join(", "));
-  if (!f.pj) fila("Brilla en", f.brillaEn && inline(f.brillaEn, ctx, f.id));
-  if (coteries.length) fila("Coterie", coteries.map(c => inline(`@ID[${c.id}|${c.nombre}]`, ctx, f.id)).join(", "));
+  if (!f.pj && f.foco?.length) fila(T("Foco"), f.foco.map(e => inline(`@ID[${e}]`, ctx, f.id)).join(", "));
+  if (!f.pj) fila(T("Brilla en"), f.brillaEn && inline(f.brillaEn, ctx, f.id));
+  if (coteries.length) fila(T("Coterie"), coteries.map(c => inline(`@ID[${c.id}|${c.nombre}]`, ctx, f.id)).join(", "));
 
   const partes = [];
-  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{Perfil: ${perfil.nombre}}</p>`);
+  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{${T("Perfil: {nombre}", { nombre: perfil.nombre })}}</p>`);
   if (f.cita) partes.push(`<blockquote><p><em>${inline(f.cita, ctx, f.id)}</em></p></blockquote>`);
   if (filas.length) partes.push(`<table class="sbn-ficha"><tbody>${filas.join("")}</tbody></table>`);
-  if (f.semblante) partes.push(`<h3>Semblante</h3><p>${inline(f.semblante, ctx, f.id)}</p>`);
+  if (f.semblante) partes.push(`<h3>${T("Semblante")}</h3><p>${inline(f.semblante, ctx, f.id)}</p>`);
   if (f.notas) partes.push(html(f.notas, ctx, f.id));
   const combate = ctx.combate[f.id];
   if (combate) partes.push(`<section class="sbn-combate">${html(combate, ctx, `combate.json#${f.id}`)}</section>`);
@@ -462,7 +540,7 @@ function notasPrivadas(f, ctx) {
   if (f.pj) return "";
   const partes = [];
   if (f.nota) partes.push(html(f.nota, ctx, f.id));
-  if (f.provisional?.length) partes.push(`<h3>Provisional (doc 16)</h3><ul>${f.provisional.map(p => `<li>${inline(p, ctx, f.id)}</li>`).join("")}</ul>`);
+  if (f.provisional?.length) partes.push(`<h3>${T("Provisional (doc 16)")}</h3><ul>${f.provisional.map(p => `<li>${inline(p, ctx, f.id)}</li>`).join("")}</ul>`);
   return partes.join("");
 }
 
@@ -475,16 +553,16 @@ function itemFirstlight(e, ctx) {
   const tipo = e.blindaje != null ? "armor" : e.tipo;
   const partes = [`<p>${inline(e.efecto, ctx, `firstlight.json#${e.id}`)}</p>`];
   const filas = [];
-  if (e.dano != null) filas.push(["Daño", `${e.dano}${e.agravado ? " agravado" : ""}`]);
-  else if (e.agravado) filas.push(["Daño", "agravado contra Vástagos"]);
-  if (e.blindaje != null) filas.push(["Blindaje", e.blindaje]);
+  if (e.dano != null) filas.push([T("Daño"), `${e.dano}${e.agravado ? ` ${T("agravado")}` : ""}`]);
+  else if (e.agravado) filas.push([T("Daño"), T("agravado contra Vástagos")]);
+  if (e.blindaje != null) filas.push([T("Blindaje"), e.blindaje]);
   if (filas.length) partes.unshift(`<table class="sbn-ficha"><tbody>${filas.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join("")}</tbody></table>`);
   if (e.estado) {
     const r = ctx.reg.get(e.estado);
-    partes.push(`<p>Estado: ${r ? `@UUID[${r.uuid}]{${r.nombre}}` : e.estado}</p>`);
+    partes.push(`<p>${T("Estado")}: ${r ? `@UUID[${r.uuid}]{${r.nombre}}` : e.estado}</p>`);
   }
   for (const t of e.tiradas ?? []) partes.push(`<p>${inline(t, ctx, `firstlight.json#${e.id}`)}</p>`);
-  if (e.termometro) partes.push(`<p>${expandir(`@termometro{+${e.termometro.cantidad}|${e.termometro.motivo}}`, ctx, e.id)} (máximo +${e.termometro.maximoPorEscena} por escena)</p>`);
+  if (e.termometro) partes.push(`<p>${expandir(`@termometro{+${e.termometro.cantidad}|${e.termometro.motivo}}`, ctx, e.id)} ${T("(máximo +{n} por escena)", { n: e.termometro.maximoPorEscena })}</p>`);
 
   const bonuses = (e.bonos ?? []).map(b => ({
     source: e.nombre, value: b.valor, paths: b.selectores,
@@ -503,7 +581,7 @@ function itemFirstlight(e, ctx) {
   } else {
     system = { ...base, uses: { current: 0, max: 0, enabled: false }, quantity: 1, dicepool: {} };
   }
-  const img = tipo === "weapon" ? (/fusil/i.test(e.nombre) ? ICONO.rifle : ICONO.weapon) : ICONO[tipo] ?? ICONO_ITEM;
+  const img = tipo === "weapon" ? (/fusil/i.test(es(e).nombre) ? ICONO.rifle : ICONO.weapon) : ICONO[tipo] ?? ICONO_ITEM;
   return { name: e.nombre, type: tipo, img, system, flags: { [MODULO]: { origen: "firstlight", id: e.id, agravado: !!e.agravado } } };
 }
 
@@ -522,7 +600,7 @@ function construirFirstlight(ctx) {
     });
     n++;
   }
-  carpetas.escribir();
+  escribirCarpetas(carpetas);
   return n;
 }
 
@@ -545,6 +623,7 @@ const celulaDe = (f, ctx) => ctx.celulas.find(c => c.miembros.includes(f.id)) ??
  */
 function aplicarCazador(f, ctx, aid, system, items) {
   const [credoNombre, campos] = CAMPOS_CREDO[f.credo] ?? [f.credo ?? "", ""];
+  const fes = es(f);
   if (f.credo && !CAMPOS_CREDO[f.credo]) ctx.avisos.push(`actores: ${f.id}: credo «${f.credo}» desconocido.`);
   if (f.credo) {
     items.push(embebido(aid, "credo", {
@@ -560,13 +639,14 @@ function aplicarCazador(f, ctx, aid, system, items) {
         description: f.impulso.texto ? html(f.impulso.texto, ctx, f.id) : "",
         redemption: f.impulso.redencion ? html(f.impulso.redencion, ctx, f.id) : ""
       }),
-      flags: { [MODULO]: { origen: "actor", impulso: f.impulso.clave ?? f.impulso.nombre } }
+      flags: { [MODULO]: { origen: "actor", impulso: fes.impulso?.clave ?? fes.impulso?.nombre ?? f.impulso.nombre } }
     }));
   }
 
   system.edges = {};
   const semilla = semillas();
   for (const [edge, [valor, beneficios = []]] of Object.entries(f.facultades ?? {})) {
+    const beneficiosEs = fes.facultades?.[edge]?.[1] ?? beneficios;
     if (!NOMBRE_FACULTAD[edge]) {
       ctx.avisos.push(`actores: ${f.id}: Facultad «${edge}» no existe en wod5e (system/api/def/edges.js).`);
       continue;
@@ -577,7 +657,9 @@ function aplicarCazador(f, ctx, aid, system, items) {
     };
     beneficios.forEach((texto, i) => {
       const { nombre, descripcion } = parsearBeneficio(texto);
-      items.push(embebido(aid, semilla(`beneficio:${edge}`, nombre), {
+      // La semilla, del nombre castellano: el _id no cambia con el idioma.
+      const nombreEs = parsearBeneficio(beneficiosEs[i] ?? texto).nombre;
+      items.push(embebido(aid, semilla(`beneficio:${edge}`, nombreEs), {
         name: nombre, type: "perk", img: ICONO_ITEM, sort: i * 100,
         system: SISTEMA_ITEM({ description: descripcion ? html(descripcion, ctx, f.id) : "", source: { book: CRONICA, page: f.id }, edge, selected: false }),
         flags: { [MODULO]: { origen: "actor", beneficio: texto } }
@@ -594,21 +676,21 @@ function aplicarCazador(f, ctx, aid, system, items) {
   // Biografía: Credo, Impulso y Facultades a la vista; el pregenerado, enlazado.
   const filas = [];
   const fila = (k, v) => v && filas.push(`<tr><th>${k}</th><td>${v}</td></tr>`);
-  fila("Célula", celula && inline(`@ID[${celula.id}|${celula.nombre}]`, ctx, f.id));
-  fila("Credo", credoNombre && `${credoNombre}. <em>Desesperación:</em> ${campos}`);
-  fila("Impulso", f.impulso && `${f.impulso.nombre}${f.impulso.redencion ? `. <em>Redención:</em> ${inline(f.impulso.redencion, ctx, f.id)}` : ""}`);
-  fila("Facultades", Object.entries(f.facultades ?? {}).map(([e, [, b = []]]) =>
+  fila(T("Célula"), celula && inline(`@ID[${celula.id}|${celula.nombre}]`, ctx, f.id));
+  fila(T("Credo"), credoNombre && `${credoNombre}. <em>${T("Desesperación")}:</em> ${campos}`);
+  fila(T("Impulso"), f.impulso && `${f.impulso.nombre}${f.impulso.redencion ? `. <em>${T("Redención")}:</em> ${inline(f.impulso.redencion, ctx, f.id)}` : ""}`);
+  fila(T("Facultades"), Object.entries(f.facultades ?? {}).map(([e, [, b = []]]) =>
     `${NOMBRE_FACULTAD[e] ?? e}${b.length ? ` (${b.map(t => parsearBeneficio(t).nombre).join(", ")})` : ""}`).join(" · "));
-  const bloque = [`<h3>Cazador</h3><table class="sbn-ficha"><tbody>${filas.join("")}</tbody></table>`];
+  const bloque = [`<h3>${T("Cazador")}</h3><table class="sbn-ficha"><tbody>${filas.join("")}</tbody></table>`];
   if (f.impulso?.texto) bloque.push(`<p>${inline(f.impulso.texto, ctx, f.id)}</p>`);
   system.biography += bloque.join("");
   const pre = f.pregenerado && ctx.reg.get(f.pregenerado);
   if (f.pregenerado && !pre) ctx.avisos.push(`actores: ${f.id}: pregenerado ${f.pregenerado} no está en el registro.`);
-  if (pre) system.biography += `<p>@UUID[${pre.uuid}]{Pregenerado: ${pre.nombre}}</p>`;
+  if (pre) system.biography += `<p>@UUID[${pre.uuid}]{${T("Pregenerado: {nombre}", { nombre: pre.nombre })}}</p>`;
 
   // Lo inventado para el módulo, a la vista del Narrador (de un PJ, en su perfil: ver notasPrivadas).
   if (f.propuesto?.length && !f.pj) {
-    system.privatenotes += `<h3>Propuesto (no está en los docs)</h3><ul>${f.propuesto.map(p => `<li>${inline(p, ctx, f.id)}</li>`).join("")}</ul>`;
+    system.privatenotes += `<h3>${T("Propuesto (no está en los docs)")}</h3><ul>${f.propuesto.map(p => `<li>${inline(p, ctx, f.id)}</li>`).join("")}</ul>`;
   }
 }
 
@@ -619,20 +701,20 @@ function construirCelula(c, ctx, carpetas) {
   const enlaces = ids => (ids ?? []).map(id => inline(`@ID[${id}]`, ctx, c.id)).join(", ");
   const fila = (k, v) => v ? `<tr><th>${k}</th><td>${v}</td></tr>` : "";
   const partes = [];
-  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{Perfil: ${c.nombre}}</p>`);
+  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{${T("Perfil: {nombre}", { nombre: c.nombre })}}</p>`);
   if (c.lema) partes.push(`<blockquote><p><em>${inline(c.lema, ctx, c.id)}</em></p></blockquote>`);
   partes.push(`<table class="sbn-ficha"><tbody>${[
-    fila("Concepto", c.concepto && inline(c.concepto, ctx, c.id)),
-    fila("Base", c.lugar && enlaces([c.lugar])),
-    fila("Cazadores", enlaces(c.miembros)),
-    fila("Además", enlaces(c.otros)),
-    fila("Desesperación inicial", String(c.desesperacion ?? 0)),
-    fila("Peligro inicial", `${c.peligro ?? 0} de ${c.peligroMax ?? 5}`)
+    fila(T("Concepto"), c.concepto && inline(c.concepto, ctx, c.id)),
+    fila(T("Base"), c.lugar && enlaces([c.lugar])),
+    fila(T("Cazadores"), enlaces(c.miembros)),
+    fila(T("Además"), enlaces(c.otros)),
+    fila(T("Desesperación inicial"), String(c.desesperacion ?? 0)),
+    fila(T("Peligro inicial"), T("{n} de {max}", { n: c.peligro ?? 0, max: c.peligroMax ?? 5 }))
   ].join("")}</tbody></table>`);
   if (c.descripcion) partes.push(`<p>${inline(c.descripcion, ctx, c.id)}</p>`);
   const privadas = [];
   if (c.notas) privadas.push(html(c.notas, ctx, c.id));
-  if (c.propuesto?.length) privadas.push(`<h3>Propuesto (no está en los docs)</h3><ul>${c.propuesto.map(p => `<li>${inline(p, ctx, c.id)}</li>`).join("")}</ul>`);
+  if (c.propuesto?.length) privadas.push(`<h3>${T("Propuesto (no está en los docs)")}</h3><ul>${c.propuesto.map(p => `<li>${inline(p, ctx, c.id)}</li>`).join("")}</ul>`);
   for (const m of c.miembros) if (!ctx.actores.has(m)) ctx.avisos.push(`actores: ${c.id}: miembro ${m} no tiene actor.`);
 
   return {
@@ -723,7 +805,7 @@ const LUZ_TOKEN = {
   "linterna-uv": { color: "#7a3cff", alpha: 0.55, luminosity: 0.3, attenuation: 0.6 }
 };
 
-const tienePoder = (f, disciplina, poder) => [f.disciplinas?.[disciplina]?.[1] ?? []].flat().includes(poder);
+const tienePoder = (f, disciplina, poder) => [es(f).disciplinas?.[disciplina]?.[1] ?? []].flat().includes(poder);
 
 /**
  * sight del token (common/documents/token.mjs, BaseToken.defineSchema: sight).
@@ -752,7 +834,7 @@ export function visionDe(f, idsEquipo = new Set()) {
 
 /** La linterna que lleva: `linterna-uv` (FIRSTLIGHT, Okafor), `linterna` (los PJ) o null. */
 export function linternaDe(f, idsEquipo = new Set()) {
-  if (idsEquipo.has("linterna-uv") || (f.equipo ?? []).some(e => /linterna uv/i.test(e))) return "linterna-uv";
+  if (idsEquipo.has("linterna-uv") || (es(f).equipo ?? []).some(e => /linterna uv/i.test(e))) return "linterna-uv";
   if (f.pj) return "linterna";
   return null;
 }
@@ -813,7 +895,7 @@ function construirActor(f, ctx, carpetas) {
 
   // Equipo de FIRSTLIGHT: los ids que la ficha lista y los ítems con `usadoPor`.
   const idsEquipo = new Set([
-    ...(f.equipo ?? []).filter(e => ctx.firstlightPorId.has(e)),
+    ...(es(f).equipo ?? []).filter(e => ctx.firstlightPorId.has(e)),
     ...ctx.firstlight.filter(e => e.usadoPor?.includes(f.id)).map(e => e.id)
   ]);
   for (const id of idsEquipo) {
@@ -907,27 +989,27 @@ function construirCoterie(c, ctx, carpetas) {
   const fila = (k, v) => v ? `<tr><th>${k}</th><td>${v}</td></tr>` : "";
   const enlaces = ids => (ids ?? []).map(id => inline(`@ID[${id}]`, ctx, c.id)).join(", ");
   const partes = [];
-  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{Perfil: ${c.nombre}}</p>`);
+  if (perfil) partes.push(`<p>@UUID[${perfil.uuid}]{${T("Perfil: {nombre}", { nombre: c.nombre })}}</p>`);
   if (c.lema) partes.push(`<blockquote><p><em>${inline(c.lema, ctx, c.id)}</em></p></blockquote>`);
   partes.push(`<table class="sbn-ficha"><tbody>${[
-    fila("Tipo", c.tipo),
-    fila("Dominio", c.dominio && inline(c.dominio, ctx, c.id)),
-    fila("Lugar", c.lugar && enlaces([c.lugar])),
-    fila("Miembros", enlaces(c.miembros)),
-    fila("Aliados", enlaces(c.aliados)),
-    fila("Sustitutos", c.sustitutos && Object.entries(c.sustitutos).map(([a, b]) => `${enlaces([b])} si nadie juega ${enlaces([a])}`).join("; ")),
-    fila("Ayuda", c.ayuda && enlaces([c.ayuda]))
+    fila(T("Tipo"), c.tipo),
+    fila(T("Dominio"), c.dominio && inline(c.dominio, ctx, c.id)),
+    fila(T("Lugar"), c.lugar && enlaces([c.lugar])),
+    fila(T("Miembros"), enlaces(c.miembros)),
+    fila(T("Aliados"), enlaces(c.aliados)),
+    fila(T("Sustitutos"), c.sustitutos && Object.entries(c.sustitutos).map(([a, b]) => T("{b} si nadie juega {a}", { b: enlaces([b]), a: enlaces([a]) })).join("; ")),
+    fila(T("Ayuda"), c.ayuda && enlaces([c.ayuda]))
   ].join("")}</tbody></table>`);
   if (c.descripcion) partes.push(`<p>${inline(c.descripcion, ctx, c.id)}</p>`);
   if (c.tipoNota) partes.push(`<p>${inline(c.tipoNota, ctx, c.id)}</p>`);
   if (c.dominioNotas) {
-    const NOM = { caza: "Caza (Chasse)", lien: "Lien", portillon: "Portillon" };
-    partes.push(`<h3>Dominio</h3><ul>${Object.entries(c.dominioNotas).map(([k, v]) => `<li><strong>${NOM[k] ?? k} ${c[k] ?? ""}:</strong> ${inline(v, ctx, c.id)}</li>`).join("")}</ul>`);
+    const NOM = { caza: T("Caza (Chasse)"), lien: "Lien", portillon: "Portillon" };
+    partes.push(`<h3>${T("Dominio")}</h3><ul>${Object.entries(c.dominioNotas).map(([k, v]) => `<li><strong>${NOM[k] ?? k} ${c[k] ?? ""}:</strong> ${inline(v, ctx, c.id)}</li>`).join("")}</ul>`);
   }
   const privadas = [];
-  if (c.dominioDoc02) privadas.push(`<p><strong>Dominio según el doc 02:</strong> ${Object.entries(c.dominioDoc02).map(([k, v]) => `${k} ${v}`).join(" · ")}</p>`);
-  if (c.trasfondosDoc02?.length) privadas.push(`<p><strong>Trasfondos según el doc 02:</strong></p><ul>${c.trasfondosDoc02.map(t => `<li>${inline(t, ctx, c.id)}</li>`).join("")}</ul>`);
-  if (c.alternativas?.length) privadas.push(`<p><strong>Alternativas:</strong></p><ul>${c.alternativas.map(t => `<li>${inline(t, ctx, c.id)}</li>`).join("")}</ul>`);
+  if (c.dominioDoc02) privadas.push(`<p><strong>${T("Dominio según el doc 02:")}</strong> ${Object.entries(c.dominioDoc02).map(([k, v]) => `${k} ${v}`).join(" · ")}</p>`);
+  if (c.trasfondosDoc02?.length) privadas.push(`<p><strong>${T("Trasfondos según el doc 02:")}</strong></p><ul>${c.trasfondosDoc02.map(t => `<li>${inline(t, ctx, c.id)}</li>`).join("")}</ul>`);
+  if (c.alternativas?.length) privadas.push(`<p><strong>${T("Alternativas:")}</strong></p><ul>${c.alternativas.map(t => `<li>${inline(t, ctx, c.id)}</li>`).join("")}</ul>`);
 
   return {
     _id: aid,
@@ -968,7 +1050,7 @@ export function celulas() {
     .filter(f => f.endsWith(".json") && f !== "combate.json")
     .flatMap(f => {
       const c = leerJson(`content/pnjs/${f}`).celula;
-      return c ? [{ ...c, _origen: `pnjs/${f}` }] : [];
+      return c ? [copia(c, { _origen: `pnjs/${f}` })] : [];
     });
 }
 
@@ -985,11 +1067,14 @@ export async function construir(ctx) {
   local.firstlightPorId = new Map(local.firstlight.map(e => [e.id, e]));
 
   // Ids de equipo que no están en firstlight.json: quedan como texto.
-  for (const f of fichas()) for (const e of f.equipo ?? []) {
+  for (const f of fichas()) for (const e of es(f).equipo ?? []) {
     if (/^[a-z0-9-]+$/.test(e) && !local.firstlightPorId.has(e)) ctx.avisos.push(`actores: ${f.id}: equipo «${e}» no está en firstlight.json.`);
   }
 
   const carpetas = new Carpetas("personajes", "Actor");
+  // La carpeta de los PJ, primera (el orden sale del de creación; antes la abría
+  // David, que está en content/pnjs y ahora es PNJ).
+  carpetas.id("Personajes jugadores");
   const cuenta = {};
   for (const f of fichas().filter(tieneActor)) {
     const doc = construirActor(f, local, carpetas);
@@ -1006,7 +1091,7 @@ export async function construir(ctx) {
     escribirDoc("personajes", construirCelula(c, local, carpetas));
     cuenta["group/cell"] = (cuenta["group/cell"] ?? 0) + 1;
   }
-  carpetas.escribir();
+  escribirCarpetas(carpetas);
   const nItems = construirFirstlight(local);
   console.log(`personajes: ${Object.entries(cuenta).map(([k, v]) => `${v} ${k}`).join(", ")} · firstlight: ${nItems} ítems`);
 }

@@ -1,0 +1,141 @@
+{
+  "_id": "L1oU4dlqHg8Yszon",
+  "_key": "!actors!L1oU4dlqHg8Yszon",
+  "name": "Montgomery's Bounty Hunters",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/tokens/MEN-03.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 30,
+  "prototypeToken": {
+    "name": "Montgomery's Bounty Hunters",
+    "actorLink": false,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-03.webp"
+    }
+  },
+  "system": {
+    "group": "ojNU0zDY0OsVIFDp",
+    "headers": {
+      "concept": "Six mortals",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Six mortals</td></tr><tr><th>Number</th><td>6</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.bxduXJhh2oXcM6Uy]{Whitmore&#39;s Wolves}</td></tr></tbody></table><p>Ex-military and ex-cops who live in trailers behind the barn. They know Montgomery as “the Boss.” They don&#39;t ask questions.</p>\n<p><strong>Gear:</strong> shotguns, hunting rifles, pickup trucks.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>MEN-03 is the group of six bounty hunters (doc 14, newest record). Doc 08 assigned it to Dutch Lindqvist alone; doc 14 wins, and it gives Dutch his own pools within MEN-03.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "survival": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-03",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 6,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

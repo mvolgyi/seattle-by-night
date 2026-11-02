@@ -1,0 +1,429 @@
+{
+  "_id": "AnZpyM4onyACPwiC",
+  "_key": "!journal!AnZpyM4onyACPwiC",
+  "name": "Chapter 6 · Chronicle Hooks",
+  "folder": "6HgCsgxtaVxFMM6U",
+  "sort": 80,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "GANCHOS",
+      "archivo": "content/cronica/07-ganchos-de-cronica.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "PaQu9iwJ42uEwLRh",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.PaQu9iwJ42uEwLRh",
+      "name": "Chapter 6 · Chronicle Hooks",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The city doesn&#39;t stop when <em>The Ward File</em> ends. These twelve hooks let you continue the chronicle after the adventure, fill the nights between parts, or give each character a story of their own. They&#39;re grouped by theme.</p>\n<p>Every hook uses the same format: <strong>Cast</strong> (who appears), <strong>What happened</strong> (the starting situation), <strong>What could happen</strong> (two or three outcomes with mechanical consequences), and <strong>Emphasis</strong> (which kind of Attributes it tests).</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>ID</th>\n<th>Theme</th>\n<th>Hook</th>\n<th>When</th>\n<th>Focus</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived}</td>\n<td>Humanity</td>\n<td>The Boy Who Survived</td>\n<td>After</td>\n<td>Hal, with David</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.j1wUSqY1dsP0iFfp]{GAN-02 · The Night She Beholds the Beast}</td>\n<td>Humanity</td>\n<td>The Night She Beholds the Beast</td>\n<td>During or after</td>\n<td>Nadia, with David</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cGEW4b4hCJlaDeSK]{GAN-12 · The Visited Grave}</td>\n<td>Humanity</td>\n<td>The Visited Grave</td>\n<td>After</td>\n<td>Hal, with David</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.c5BCc8zELaNV3QV3]{GAN-03 · Marked Blood}</td>\n<td>Hunger</td>\n<td>Marked Blood</td>\n<td>After</td>\n<td>Whole coterie, Ezra, Ruth</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cjmyT3bfPbka0X6O]{GAN-11 · Jun's Fast}</td>\n<td>Hunger</td>\n<td>Jun&#39;s Fast</td>\n<td>After (if Jun lives)</td>\n<td>Anyone</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ]{GAN-04 · The Old Comrade}</td>\n<td>Beast</td>\n<td>The Old Comrade</td>\n<td>After</td>\n<td>Anyone, with Bear and David</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.fFX1NcQJoU5VfHH1]{GAN-05 · Moon over the Snohomish}</td>\n<td>Frenzy</td>\n<td>Moon over the Snohomish</td>\n<td>After</td>\n<td>Hal</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.0e8h94hwnGDTnixI]{GAN-06 · Blood Hunt in Everett}</td>\n<td>Hierarchy</td>\n<td>Blood Hunt in Everett</td>\n<td>During or after</td>\n<td>Hal, Nadia</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · The Archon Calls}</td>\n<td>Hierarchy</td>\n<td>The Archon Calls</td>\n<td>After</td>\n<td>Celeste, with David</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.UFOfuIElB3CH4nQE]{GAN-08 · The Viral Video}</td>\n<td>Masquerade</td>\n<td>The Viral Video</td>\n<td>During or after</td>\n<td>Anyone, Ezra</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · The Larchmont Survivor}</td>\n<td>Masquerade</td>\n<td>The Larchmont Survivor</td>\n<td>After</td>\n<td>Ruth, with David</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Letters from Cluj}</td>\n<td>Blood</td>\n<td>Letters from Cluj</td>\n<td>End of the adventure</td>\n<td>Whole coterie, with David</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "pCLncsxglYsxJtbu",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.pCLncsxglYsxJtbu",
+      "name": "GAN-01 · The Boy Who Survived",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Humanity</p>\n<p><strong>Cast:</strong> Marcos Delgado (mortal, 45), Hal Brekke (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), analyst S. Hale (@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}).</p>\n<p><strong>What happened:</strong> in 1996, Marcos was fifteen and in the Rainier Valley apartment the night Ray Dorsey killed Emily Smith. He was the only kid who survived. Before he passed out, he saw a man with a scar on his face shoot Dorsey and kneel beside the social worker. Today Marcos is a youth counselor in the same neighborhood. He&#39;s spent thirty years looking for that man to thank him.</p>\n<p>Now someone else is looking for him. Analyst Hale, cross-referencing fragments of the File, found the 1996 folder: a juvenile witness who talked about “a man who didn&#39;t bleed.” Hale is going to visit Marcos next week.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The coterie gets there first and lets David be seen.</strong> Marcos recognizes him thirty years later, unchanged. He can become a new Touchstone for David, and the loss of Emily hurts a little less: play him more whole, less alone. But Marcos knows something now, and FIRSTLIGHT is going to ask him about it.</li>\n<li><strong>Hal wipes the memory.</strong> Hal already cleaned up that scene once. He can do it again, this time with Dominate or Presence. The Masquerade is safe, but taking away the one memory that made Marcos who he is costs 1 Stain.</li>\n<li><strong>Hale gets there first.</strong> Marcos tells her everything. FIRSTLIGHT&#39;s Thermometer rises by 2, and the Inquisition has a composite sketch of David. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"GAN-01: Hale gets there first\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">GAN-01: Hale gets there first</span></button></li>\n</ul>\n<p><strong>Emphasis:</strong> Social.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "j1wUSqY1dsP0iFfp",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.j1wUSqY1dsP0iFfp",
+      "name": "GAN-02 · The Night She Beholds the Beast",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Humanity</p>\n<p><strong>Cast:</strong> Helen Ward (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), Nadia Ferro (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}).</p>\n<p><strong>What happened:</strong> sooner or later, Helen sees David do something no man can do. It can happen during @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}, if Krell goes after her, or on any night afterward: a steel door torn off its hinges, a three-story fall he gets up from, eyes that shine in the dark. She doesn&#39;t see everything, but she sees enough.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>She pulls away.</strong> Helen stops answering, moves, turns off the flip phone. She&#39;s still alive, but David loses his Touchstone. He&#39;s shaken: quieter, harder, closer to the Beast. The coterie notices.</li>\n<li><strong>She doubles down.</strong> She&#39;s finally found something real. Helen demands answers and threatens to publish if she doesn&#39;t get them. Someone has to negotiate with her: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.manipulation skills.persuasion\" data-dificultad=\"4\" data-label=\"Manipulation + Persuasion (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Manipulation + Persuasion (Difficulty 4)</a> to keep her quiet without using Disciplines. If anyone uses Dominate, 1 Stain.</li>\n<li><strong>She starts investigating who she&#39;s been helping.</strong> Helen begins cross-referencing the dates of SAFE&#39;s messages against her cases and finds the Larchmont. If Nadia feeds her information, the discovery comes sooner. If she gets to the bottom of it, the relationship changes forever (see @UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}).</li>\n</ul>\n<p><strong>Emphasis:</strong> Social and Mental.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "cGEW4b4hCJlaDeSK",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.cGEW4b4hCJlaDeSK",
+      "name": "GAN-12 · The Visited Grave",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Humanity</p>\n<p><strong>Cast:</strong> Hal Brekke (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke}) or whichever PC is closest to David, David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), and someone of the Storyteller&#39;s choosing.</p>\n<p><strong>What happened:</strong> for the past few months, someone has been leaving fresh flowers every Sunday on Emily Smith&#39;s grave (@UUID[JournalEntry.uhtM1iF2WrHHlcd8]{Emily Smith's Grave}), wrapped in newspaper. David never leaves flowers. Nobody else should know that grave matters.</p>\n<p><strong>Who leaves the flowers?</strong> The Storyteller picks one option, depending on where they want to take the chronicle:</p>\n<ul>\n<li><strong>Marcos Delgado</strong> (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived}). The most human outcome: a link to the past that threatens no one.</li>\n<li><strong>Rosa Iturbe</strong> (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa “Salt” Iturbe}). It&#39;s her way of paying a debt she&#39;s never confessed. She&#39;s been doing it since 1996, but only recently started going in person.</li>\n<li><strong>Someone who signs “M. V.”</strong> The flowers come with a card bearing those initials. See @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Letters from Cluj}.</li>\n</ul>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The coterie watches the grave and finds whoever leaves the flowers.</strong> The players decide whether to tell David or take it to the grave. If David is part of that conversation, he comes out of it changed: more at peace or more broken. Decide based on what gets said.</li>\n<li><strong>Nobody asks.</strong> The coterie lets it go on. David knows and says nothing; as long as the flowers keep coming, he&#39;s a little more at peace.</li>\n<li><strong>Someone uses it against him.</strong> If FIRSTLIGHT discovers the grave, it has a place to wait for the Hound.</li>\n</ul>\n<p><strong>Emphasis:</strong> Social.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-12"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "c5BCc8zELaNV3QV3",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.c5BCc8zELaNV3QV3",
+      "name": "GAN-03 · Marked Blood",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Hunger</p>\n<p><strong>Cast:</strong> Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}), Ezra Lund (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}), Ruth Abernathy (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}), the thin-bloods of the docks.</p>\n<p><strong>What happened:</strong> FIRSTLIGHT has put a batch of blood bags into circulation on the port&#39;s black market. The blood carries a chemical marker that makes the Vitae of whoever drinks it glow under ultraviolet light for 48 hours. The Puget Cell installs discreet UV lamps at three known hunting grounds and waits.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The coterie catches it in time.</strong> Ruth can analyze a bag with <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.science\" data-dificultad=\"4\" data-label=\"Intelligence + Science (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Intelligence + Science (Difficulty 4)</a>. Ezra can trace the purchase of the lamps. If they pull the batch, the Thermometer drops by 1 <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-1\" data-motivo=\"GAN-03: the marked blood is pulled\"><span class=\"sbn-termometro-cambio\">−1</span> <span class=\"sbn-termometro-motivo\">GAN-03: the marked blood is pulled</span></button> and the coterie earns a favor from Thornquist for protecting the thin-bloods.</li>\n<li><strong>Someone drinks.</strong> If a PC drank from a bag in the batch, any UV lamp gives them away for two nights. Thermometer +1 for each scene in which they&#39;re seen. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"GAN-03: a marked PC seen under UV light\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">GAN-03: a marked PC seen under UV light</span></button></li>\n<li><strong>The thin-bloods fall.</strong> Three thin-bloods are captured in a single night. Thornquist demands vengeance or compensation, and Rosa offers shelter in Everett.</li>\n</ul>\n<p><strong>Emphasis:</strong> Mental.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "cjmyT3bfPbka0X6O",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.cjmyT3bfPbka0X6O",
+      "name": "GAN-11 · Jun's Fast",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Hunger</p>\n<p><strong>Cast:</strong> Jun Takeda (@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}), any PC who rescued her, Rosa Iturbe (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa “Salt” Iturbe}), Abel Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}).</p>\n<p><strong>What happened:</strong> if Jun survived the adventure, she doesn&#39;t want to deliver packages anymore. She wants to learn to hunt without leaving a trail and without hurting anyone. She asks the PC who saved her to teach her. She&#39;s been feeding badly for weeks: expired bags and bites from sleeping strangers. She&#39;s at Hunger 3 most of the time.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Mentor.</strong> The PC teaches her. Jun becomes loyal Allies 1 (or Retainers 1). But if she makes a mistake in public during the first story, the Masquerade suffers and the Thermometer rises by 1. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"GAN-11: Jun's public mistake\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">GAN-11: Jun&#39;s public mistake</span></button></li>\n<li><strong>Everett.</strong> The PC sends her to Rosa. Jun joins Salt&#39;s, the coterie gains an ally in Everett (+1 to relations with @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{COT-03 · Salt's}) and loses a contact in the Underground.</li>\n<li><strong>Nobody helps her.</strong> Three weeks later, Jun turns up destroyed in a doorway, just like the night she was Embraced. Every PC who knew her makes a Remorse test.</li>\n</ul>\n<p><strong>Emphasis:</strong> Social and Physical.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-11"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "NONJmwNuBweLPdPQ",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.NONJmwNuBweLPdPQ",
+      "name": "GAN-04 · The Old Comrade",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Beast</p>\n<p><strong>Cast:</strong> Tom “Bear” Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom “Bear” Whitman}), Cole Ransom (mortal, former SEAL), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}).</p>\n<p><strong>What happened:</strong> Cole Ransom served with Bear on the same SEAL team. Now he works as a private contractor on the FIRSTLIGHT Tactical Team (@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}), though he thinks it&#39;s a Department of Homeland Security counterterrorism unit. He runs into Bear at a bar by the port. He recognizes him. And he notices something strange: Bear moves like he did at twenty-five, and he isn&#39;t limping on the wrecked knee.</p>\n<p><em>Note: this hook doesn&#39;t use the rationing of Bear&#39;s Vitae, which is off the table.</em></p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Double agent.</strong> Bear keeps up the friendship with Ransom and pumps him for information on the Puget Cell. The coterie gains a source inside FIRSTLIGHT (temporary Contacts 2). Bear has to lie to a brother in arms every week. If Ransom finds out, it ends all at once.</li>\n<li><strong>The Beast decides.</strong> Ransom gets too close to the hangar. David, with the Beast close to the surface, wants it closed that same night. The coterie decides what to do with him. If they kill him, 2 Stains for whoever does it, and Bear never looks at them the same way again. If they make him a ghoul, Bear knows exactly what&#39;s in store for his friend.</li>\n<li><strong>Ransom reports.</strong> Ransom tells Okafor about Bear. Thermometer +2. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"GAN-04: Ransom reports\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">GAN-04: Ransom reports</span></button> Bear is marked and can no longer move around the port by day without a tail.</li>\n</ul>\n<p><strong>Emphasis:</strong> Social and Physical.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-04"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "fFX1NcQJoU5VfHH1",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.fFX1NcQJoU5VfHH1",
+      "name": "GAN-05 · Moon over the Snohomish",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Frenzy</p>\n<p><strong>Cast:</strong> Ethan Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}), Hal Brekke (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), Dr. Lucy Harlan (Montgomery&#39;s Touchstone).</p>\n<p><strong>What happened:</strong> after the events of @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}, Montgomery is at his limit. He hasn&#39;t fed properly in weeks, and he&#39;s under pressure he hasn&#39;t felt in a century. On a full-moon night, a group of hikers gets lost near the farm. One of them cuts himself on a barbed-wire fence. The Sheriff smells the blood.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The coterie contains him.</strong> They have to restrain a Blood Potency 5 Gangrel in full frenzy without destroying him. It&#39;s a long, dangerous fight. If they pull it off, Montgomery owes them a major favor and won&#39;t forget it.</li>\n<li><strong>Hal faces his sire.</strong> Hal is the only one Montgomery&#39;s Beast might recognize. A <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.charisma skills.animalken\" data-dificultad=\"5\" data-label=\"Charisma + Animal Ken (Difficulty 5)\"><i class=\"fa-solid fa-dice-d10\"></i> Charisma + Animal Ken (Difficulty 5)</a> test can calm him. If it works, Hal earns the recognition he was looking for. If it fails, Hal ends up badly hurt.</li>\n<li><strong>Someone dies.</strong> If the hikers die, Montgomery loses 1 point of Humanity and the farm&#39;s cover is compromised. If the victim is Dr. Harlan, who came to help, he also loses his Touchstone.</li>\n</ul>\n<p><strong>Emphasis:</strong> Physical.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-05"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0e8h94hwnGDTnixI",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.0e8h94hwnGDTnixI",
+      "name": "GAN-06 · Blood Hunt in Everett",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Hierarchy</p>\n<p><strong>Cast:</strong> Tavi Mercer (@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs}), Rosa Iturbe (@UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa “Salt” Iturbe}), Marcus Whitmore (@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}), Ethan Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}), the coterie.</p>\n<p><strong>What happened:</strong> Tavi Mercer, Salt&#39;s impatient Brujah, attacked Club Cinder (@UUID[JournalEntry.ciIKIq7hoVokkr0J]{Club Cinder}) or the area around Elysium. It may have happened during Part 4 of @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File} or afterward. Mortals were injured. The Prince declares a Blood Hunt against her and, if he&#39;s feeling strong, against “those who shelter her.” Rosa refuses to hand her over.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The coterie hunts Tavi.</strong> It carries out the Prince&#39;s order. It gains +1 Status (Camarilla) and loses any relationship with Salt&#39;s. If Halloway was the one who pushed Tavi, the coterie has done his dirty work.</li>\n<li><strong>The coterie negotiates.</strong> Rosa hands Tavi over in exchange for the Hunt not extending to Everett. The Prince has to be convinced with <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.charisma skills.politics\" data-dificultad=\"4\" data-label=\"Charisma + Politics (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Charisma + Politics (Difficulty 4)</a> at Elysium, and Rosa with <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.manipulation skills.persuasion\" data-dificultad=\"4\" data-label=\"Manipulation + Persuasion (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Manipulation + Persuasion (Difficulty 4)</a>. If they pull it off, nobody&#39;s happy, but nobody dies.</li>\n<li><strong>The coterie protects Tavi.</strong> If they prove Halloway manipulated her, the Hunt is called off. If they can&#39;t prove it, the PCs are marked as accessories: −1 Status for all of them.</li>\n</ul>\n<p><strong>Emphasis:</strong> Social.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-06"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "MbCyCqKpBUEan9GR",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.MbCyCqKpBUEan9GR",
+      "name": "GAN-07 · The Archon Calls",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Hierarchy</p>\n<p><strong>Cast:</strong> Archon Duval (@UUID[JournalEntry.CRdeqlwyfpxGPyzT]{Archon Duval}), Justicar Panhard (@UUID[JournalEntry.gSMgBLLYggWyAN2W]{Justicar Helena Panhard}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), Celeste Arden (@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste Arden}).</p>\n<p><strong>What happened:</strong> Mr. Pell typed three copies of Vance&#39;s journals. Copy 1 is in Halloway&#39;s vault, and Krell has copy 2. Halloway sent copy 3 to Justicar Panhard in 2025 as a goodwill gift. Now Archon Duval, who knew Vance, has read it and wants to talk to David. He asks him to travel to Marseille. It isn&#39;t an order. Yet.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The coterie travels with David.</strong> Duval shows them copy 3. It has folios that aren&#39;t in the other two, including the ones about Krell. The PC who deals with Duval gains an Archon&#39;s favor (temporary Mawla 2), but the coterie is away from Seattle for a story, and the city keeps moving without it.</li>\n<li><strong>David goes alone.</strong> If no one goes with him, he goes anyway. The coterie spends a story without the Hound: without his help, and with the hangar in their charge. He comes back with the Krell folios.</li>\n<li><strong>David doesn&#39;t go.</strong> The coterie convinces him to stay, or he refuses. Duval doesn&#39;t press, but he takes note. Next time it&#39;ll be an order. Celeste, if she&#39;s in play, receives a parallel invitation from the Justicar, whom Halloway told about her.</li>\n<li><strong>Panhard takes an interest in Seattle.</strong> If the ending of @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File} was @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · The Hound Changes Masters} (pact with Halloway), the Justicar sends Duval to the city to investigate. He arrives with one question: who is Prince now?</li>\n</ul>\n<p><strong>Emphasis:</strong> Social and Mental.</p>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-07"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UFOfuIElB3CH4nQE",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.UFOfuIElB3CH4nQE",
+      "name": "GAN-08 · The Viral Video",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Masquerade</p>\n<p><strong>Cast:</strong> any PC, Ezra Lund (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}), Helen Ward (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}), Nadia Ferro (@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}).</p>\n<p><strong>What happened:</strong> an eleven-second video recorded by a Gale Sentinel doorbell camera shows one of the PCs moving too fast: crossing a street in under a second, or clearing a ten-foot fence without touching it. Someone posted it on social media. It has 400,000 views in a day and it&#39;s still climbing. A mystery podcast asks Helen to discuss it live.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Scrub the trail.</strong> Ezra can trace the source and take the video down with <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.technology\" data-dificultad=\"5\" data-label=\"Intelligence + Technology (Difficulty 5)\"><i class=\"fa-solid fa-dice-d10\"></i> Intelligence + Technology (Difficulty 5)</a>. It can&#39;t be erased from the internet, but it can be buried. If they pull it off within 48 hours, the Thermometer doesn&#39;t rise.</li>\n<li><strong>Tell a different story.</strong> Nadia can fabricate a plausible explanation: a fake, a viral ad, an actor with effects. It takes <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.manipulation skills.performance\" data-dificultad=\"4\" data-label=\"Manipulation + Performance (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Manipulation + Performance (Difficulty 4)</a> and media Contacts. The video becomes a joke.</li>\n<li><strong>Helen talks.</strong> If Helen goes on the podcast, she says what she thinks. If the PCs haven&#39;t talked to her first, the Thermometer rises by 2 and the video becomes “the case of the year.” <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"GAN-08: Helen talks\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">GAN-08: Helen talks</span></button></li>\n</ul>\n<p><strong>Emphasis:</strong> Mental and Social.</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-08"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "18vJtyOOVZe1Uk41",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.18vJtyOOVZe1Uk41",
+      "name": "GAN-09 · The Larchmont Survivor",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Masquerade</p>\n<p><strong>Cast:</strong> the survivor (@UUID[Actor.wop4zqE8KwywxhTL]{The Larchmont Survivor}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), Ruth Abernathy (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}), Liam O&#39;Connor (@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}), the Hecata family of Tacoma.</p>\n<p><strong>What happened:</strong> in 2014, the third Kindred of the Larchmont pack escaped through the drain into the Sound. He&#39;s spent twelve years hiding in Tacoma, feeding carefully, never drawing attention. O&#39;Connor watches him from a distance. Now people are disappearing in Tacoma again: two homeless people in a month, a night-shift nurse. Ruth gets the bodies. They&#39;re missing blood.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Finish the job.</strong> The coterie finds him with O&#39;Connor&#39;s help and destroys him; the players decide who strikes the final blow. If David is there, he gets back some of what he lost in 2014: play him more whole. And before he dies, the survivor tells them something about the seven tenants that even David didn&#39;t know.</li>\n<li><strong>Ruth covers it up.</strong> Ruth signs off on the three deaths as overdoses. The Masquerade is safe for now, but FIRSTLIGHT already had “R. A.” on its list: the Thermometer rises by 1 for each false report. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"GAN-09: false report from “R. A.”\"><span class=\"sbn-termometro-cambio\">+1</span> <span class=\"sbn-termometro-motivo\">GAN-09: false report from “R. A.”</span></button></li>\n<li><strong>The Hecata family.</strong> The Hecata of Tacoma know where he is and want something in return: someone has to open the Larchmont cistern and hand over the seven bodies so they can be properly buried. That means telling Helen about Danny Ruiz, or at least risking that she finds out.</li>\n</ul>\n<p><strong>Emphasis:</strong> Physical and Mental.</p>\n"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-09"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Y1E4i0kdsA7wcPIj",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.Y1E4i0kdsA7wcPIj",
+      "name": "GAN-10 · Letters from Cluj",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Blood</p>\n<p><strong>Cast:</strong> the coterie, David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}), and whoever signs the letters.</p>\n<p><strong>What happened:</strong> weeks after the end of the adventure, an envelope with no return address arrives at the hangar, postmarked Cluj-Napoca, Romania. Inside is a single sheet of paper with one line, handwritten in Marcus Vance&#39;s hand: <em>“There are two. You know that already. Finish the lesson.”</em> Signed: <em>“M. V.”</em> A PC finds it, not David. What they do with it is the first decision.</p>\n<p><strong>Who wrote it?</strong> The Storyteller decides, depending on what they want to do with the chronicle:</p>\n<ul>\n<li><strong>Vance is alive.</strong> He survived in 1985, changed somehow, and he knows what happened in Seattle. This opens an international arc. If David knows, the coterie has to decide whether to help him look for his sire or convince him to leave it buried.</li>\n<li><strong>It&#39;s Krell.</strong> If Krell survived the adventure, this is his last play: he wants David to believe their father is still alive so they&#39;ll look for him together.</li>\n<li><strong>It&#39;s the Justicar.</strong> Panhard read copy 3 of the journals (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.MbCyCqKpBUEan9GR]{GAN-07 · The Archon Calls}) and wants to know what the Hound does when he thinks his sire is calling.</li>\n</ul>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>They burn it.</strong> Whoever found it does, or David, if they give it to him. If David burns it, he comes out of that night steadier: play him without doubt for the next story. The letters keep arriving every February 14.</li>\n<li><strong>They answer.</strong> The coterie, or David if they give it to him, sends a reply to the address on the postmark. What comes back depends on who wrote it.</li>\n<li><strong>They look for Krell.</strong> If Krell is alive, the coterie finds him and shows him the letter, with or without David present. The conversation between Vance&#39;s two sons can make Krell an ally or an enemy for good.</li>\n</ul>\n<p><strong>Emphasis:</strong> Mental and Social.</p>\n"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "GAN-10"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "FA96Wmf5Z0yOUBz7",
+      "_key": "!journal.pages!AnZpyM4onyACPwiC.FA96Wmf5Z0yOUBz7",
+      "name": "ID Registry (Additions)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived} through @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cGEW4b4hCJlaDeSK]{GAN-12 · The Visited Grave}</strong> · Complete hooks</li>\n<li><strong>@UUID[Actor.rOqsigq4dAfIYQMh]{Marcos Delgado}</strong> · Marcos Delgado, the survivor of the night Emily died (1996)</li>\n<li><strong>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom}</strong> · Cole Ransom, former SEAL and FIRSTLIGHT contractor</li>\n<li><strong>Item</strong> · Copy 3 of 3 of Vance&#39;s journals, held by Justicar Panhard</li>\n</ul>\n"
+      },
+      "sort": 1400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

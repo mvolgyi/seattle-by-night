@@ -1,0 +1,836 @@
+{
+  "_id": "ys08GDwMs80NuOlf",
+  "_key": "!actors!ys08GDwMs80NuOlf",
+  "name": "Charles Halloway",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-03.webp",
+  "folder": "ivqsdeJKQ4xuUZkN",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Charles Halloway",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp"
+    }
+  },
+  "system": {
+    "group": "YrFSWeqhbymzT7q4",
+    "headers": {
+      "concept": "Ventrue Primogen",
+      "chronicle": "The Ward File",
+      "ambition": "The crown of Seattle.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>Order is a service, not a privilege</li><li>Never let them see you get your hands dirty</li></ul><h3>Touchstones</h3><ul><li><strong>Margaret Halloway</strong>: His 22-year-old grandniece, a journalism student, who believes her great-uncle is the anonymous benefactor behind her scholarship.</li></ul>",
+      "sire": "Adelaide Grange (PNJ-22)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1921",
+        "death": "1958"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Profile: Charles Halloway}</p><blockquote><p><em>“This city doesn&#39;t need a Prince who looks. It needs one who sees.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Uncrowned King</td></tr><tr><th>Concept</th><td>Ventrue Primogen</td></tr><tr><th>Clan</th><td>Ventrue</td></tr><tr><th>Sect</th><td>Camarilla</td></tr><tr><th>Sire</th><td>Adelaide Grange (PNJ-22)</td></tr><tr><th>Born</th><td>1921</td></tr><tr><th>Embraced</th><td>1958</td></tr><tr><th>Ambition</th><td>The crown of Seattle.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{The Glass Council}</td></tr></tbody></table><h3>Demeanor</h3><p>Slim, medium height, black hair parted on the side, and tired brown eyes; a classic dark suit, white shirt, and thin tie.</p><section class=\"sbn-combate\"><h3>Charles Halloway · Combat Version</h3>\n<p><em>Full profile in Chapter 4.</em></p>\n<p><strong>Health</strong> 6 · <strong>Willpower</strong> 8 · <strong>Usual Hunger</strong> 1 · <strong>Blood Potency</strong> 3</p>\n<p><strong>Halloway doesn&#39;t fight.</strong> His defense pool is 6 (Dexterity + Wits) and he never attacks in person.</p>\n<p><strong>Dread Gaze</strong> (Presence 3): Charisma + Intimidation (6 dice) vs. Composure + Resolve. Whoever fails flees or freezes for one scene.</p>\n<p><strong>Dominate:</strong> Manipulation + Dominate (9 dice). He uses Compel (“Stop,” “Drop that”) and Forgetful Mind on mortal witnesses.</p>\n<p><strong>Fortitude 2:</strong> reduces superficial damage taken by 2.</p>\n<p><strong>Tactics:</strong> surround himself with ghouls (Dawson and @UUID[Actor.BzNGxOAK3F6Uo56T]{Halloway&#39;s Security Ghouls}), use Dread Gaze on the most dangerous opponent, and flee. On the ferry, toward the bridge. In the tower, toward the private elevator. If he&#39;s cornered with no way out, he negotiates: he offers everything.</p></section>",
+    "appearance": "<p>Slim, medium height, black hair parted on the side, and tired brown eyes; a classic dark suit, white shirt, and thin tie.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: doc 06 gave him five powers with Dominate 4 and three with Fortitude 2; Cloud Memory (Forgetful Mind covers it) and Resilience (his Health 6 doesn&#39;t include it) were removed, one per dot.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 3,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 5,
+      "stains": 0
+    },
+    "hunger": {
+      "value": 1,
+      "max": 5
+    },
+    "disciplines": {
+      "dominate": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 3,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 5,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Camarilla",
+            "value": 1,
+            "paths": [
+              "skills.etiquette"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "finance": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Shell companies",
+            "value": 1,
+            "paths": [
+              "skills.finance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Silences",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "leadership": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Negotiation",
+            "value": 1,
+            "paths": [
+              "skills.persuasion"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "politics": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Power grabs",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "subterfuge": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Lying without lying",
+            "value": 1,
+            "paths": [
+              "skills.subterfuge"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "ventrue"
+        }
+      },
+      "name": "Ventrue",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "Q9CijMsU9koWpeQU",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Q9CijMsU9koWpeQU"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Compel",
+          "homebrew": false
+        }
+      },
+      "name": "Compel",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.manipulation"
+          },
+          "d2": {
+            "path": "disciplines.dominate"
+          }
+        },
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "Ds1FxX6u1V6ehHDg",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Ds1FxX6u1V6ehHDg"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Mesmerize",
+          "homebrew": false
+        }
+      },
+      "name": "Mesmerize",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "QqBTbJ6t17DcAOdu",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.QqBTbJ6t17DcAOdu"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Forgetful Mind",
+          "homebrew": false
+        }
+      },
+      "name": "Forgetful Mind",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.manipulation"
+          },
+          "d2": {
+            "path": "disciplines.dominate"
+          }
+        },
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "It3JPrfGKarqzFUA",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.It3JPrfGKarqzFUA"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rationalize",
+          "homebrew": false
+        }
+      },
+      "name": "Rationalize",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 4. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "Qd2nec2UjUptRfOf",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Qd2nec2UjUptRfOf"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unswayable Mind",
+          "homebrew": false
+        }
+      },
+      "name": "Unswayable Mind",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortitude 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "ixebWPVXK6ysH4Ja",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.ixebWPVXK6ysH4Ja"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Toughness",
+          "homebrew": false
+        }
+      },
+      "name": "Toughness",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Fortitude 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "dsJNICIgoenE6Ey8",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.dsJNICIgoenE6Ey8"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Awe",
+          "homebrew": false
+        }
+      },
+      "name": "Awe",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "03WN1fPqN8YvTeHA",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.03WN1fPqN8YvTeHA"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "WxXSlqf23QTIF0ts",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.WxXSlqf23QTIF0ts"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Dread Gaze",
+          "homebrew": false
+        }
+      },
+      "name": "Dread Gaze",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Presence 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-03"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.charisma"
+          },
+          "d2": {
+            "path": "skills.intimidation"
+          }
+        },
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "Bcri4iguYWbpHfMI",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Bcri4iguYWbpHfMI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 4 (Halloway Tower, with a penthouse and a vault; LUG-06)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 4 (Halloway Tower, with a penthouse and a vault; LUG-06)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "QSRk2L4SNd3owMBs",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.QSRk2L4SNd3owMBs"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ally 3 (Preston Gale, PNJ-19)"
+        }
+      },
+      "name": "Ally",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ally 3 (Preston Gale, PNJ-19)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "7gBM05pQZsTVl0l5",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.7gBM05pQZsTVl0l5"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 5 (Halloway Meridian Capital)"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 5 (Halloway Meridian Capital)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 5,
+        "featuretype": "background"
+      },
+      "_id": "Nh4ilKpO1y6SkspI",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Nh4ilKpO1y6SkspI"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence 4 (finance and media)"
+        }
+      },
+      "name": "Influence",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence 4 (finance and media)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "Q1NrjAYEfqOhWuyj",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Q1NrjAYEfqOhWuyj"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 3 (the press, city hall, and a state senator's office)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 3 (the press, city hall, and a state senator&#39;s office)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "B7yxvpPHCDCpxThN",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.B7yxvpPHCDCpxThN"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 3 (Charles Halloway Jr., reclusive chairman of an investment fund)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 3 (Charles Halloway Jr., reclusive chairman of an investment fund)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "Z3EzeS1t7cEFSqTr",
+      "_key": "!actors.items!ys08GDwMs80NuOlf.Z3EzeS1t7cEFSqTr"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-03",
+      "journal": "JournalEntry.uDNdrVnGBbAh18Tt",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

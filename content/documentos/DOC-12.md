@@ -6,7 +6,7 @@ orden: 120
 soporte: nota
 entrega: [fuera]
 jugadores: no
-nota: "no se entrega en la aventura. Úsala si Bear muere, si FIRSTLIGHT asalta el hangar (A4-E02) o como cierre de GAN-04. También se la podés dar en privado al jugador de David, si lo acuerdan, como horror personal."
+nota: "no se entrega en la aventura. Úsala si Bear muere, si FIRSTLIGHT asalta el hangar (A4-E02) o como cierre de GAN-04. Dásela al jugador cuyo PJ tenga más trato con Bear (A3-E01). Ese PJ decide si se la enseña a David."
 origen: "04"
 ---
 
@@ -28,7 +28,7 @@ Cubrí la puerta, Sabueso. Yo ya no puedo.
 
 ## Para el Narrador {narrador}
 
-**Soporte:** hoja de libreta arrancada, doblada en cuatro, guardada debajo de una pistola en la caja fuerte personal de Tom Whitman en el hangar (@ID[LUG-01]). **Cuándo:** no se entrega en la aventura. Úsala si Bear muere, si FIRSTLIGHT asalta el hangar (@ID[A4-E02]) o como cierre de @ID[GAN-04]. También se la podés dar en privado al jugador de David, si lo acuerdan, como horror personal.
+**Soporte:** hoja de libreta arrancada, doblada en cuatro, guardada debajo de una pistola en la caja fuerte personal de Tom Whitman en el hangar (@ID[LUG-01]). **Cuándo:** no se entrega en la aventura. Úsala si Bear muere, si FIRSTLIGHT asalta el hangar (@ID[A4-E02]) o como cierre de @ID[GAN-04]. Dásela en privado al jugador cuyo PJ tenga más trato con Bear (@ID[A3-E01]). Ese PJ decide si se la enseña a David. El horror es tenerla en la mano.
 
 **Presagia:** el límite moral de Bear y lo que haría si David lo cruza.
 

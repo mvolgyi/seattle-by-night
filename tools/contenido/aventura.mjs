@@ -17,16 +17,19 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { RAIZ, MODULO, STATS, idEstable, escribirDoc } from "../util.mjs";
+import { RAIZ, MODULO, STATS, idEstable } from "../util.mjs";
 import { ID } from "./ids.mjs";
+import { EN, packDe } from "./idioma.mjs";
+import { T, escribir as escribirDoc, nombreCarpeta } from "./fijos.mjs";
 
 const PACK = "aventura";
+// La misma clave (y el mismo _id) en los dos idiomas: cada Aventura vive en su pack.
 const CLAVE = "sbn";
-const NOMBRE = "El Expediente Ward — una crónica en Seattle (fan, no oficial)";
+const NOMBRE = T("El Expediente Ward — una crónica en Seattle (fan, no oficial)");
 // Nombre VISIBLE de la carpeta raíz. Su _id sale de `aventura:raiz:<tipo>` y no
 // del nombre, así que cambiarlo sólo la renombra al reimportar. Tiene que ser
 // igual al nombre visible de la raíz de cronica (NOMBRE_CARPETA en journals.mjs).
-const RAIZ_CARPETAS = "El Expediente Ward";
+const RAIZ_CARPETAS = nombreCarpeta("/Seattle by Night", "El Expediente Ward", { fijo: true });
 
 /** Pack de packs-src → campo del Adventure y tipo de documento. */
 const FUENTES = [
@@ -41,11 +44,12 @@ const FUENTES = [
 
 // El logo del Dark Pack lo exige el acuerdo (assets/legal/LEEME.md). La
 // descripción de la Aventura la muestra también el diálogo de importación.
+// En inglés va sólo el texto del acuerdo, que ya está en inglés.
 const AVISO_DARK_PACK =
   `<p><img class="sbn-logo-dark-pack" src="modules/${MODULO}/assets/legal/dark-pack-logo.webp" alt="Dark Pack" width="96" height="97"></p>` +
-  "<p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos " +
+  (EN ? "" : "<p>Material no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos " +
   "materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los " +
-  "derechos reservados. Más información en worldofdarkness.com.</p>" +
+  "derechos reservados. Más información en worldofdarkness.com.</p>") +
   "<p>Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with " +
   "permission. All rights reserved. For more information please visit worldofdarkness.com.</p>" +
   "<p>This is not official World of Darkness material.</p>";
@@ -62,7 +66,7 @@ function sinClaves(v) {
 }
 
 function leerPack(pack) {
-  const dir = path.join(RAIZ, "packs-src", pack);
+  const dir = path.join(RAIZ, "packs-src", packDe(pack));
   if (!fs.existsSync(dir)) return null;
   return fs.readdirSync(dir).filter(f => f.endsWith(".json")).sort()
     .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")));
@@ -143,24 +147,24 @@ export async function construir(ctx) {
   if (!portada || !portada.includes("portada")) ctx.avisos.push(`aventura: sin arte de portada; uso ${portada ?? "un icono del core"}`);
   const img = portada ? `modules/${MODULO}/${portada}` : "icons/svg/city.svg";
 
-  const n = (k, uno, varios) => `<strong>${k.length} ${k.length === 1 ? uno : varios}</strong>`;
+  const n = (k, uno, varios) => `<strong>${k.length} ${k.length === 1 ? T(uno) : T(varios)}</strong>`;
   escribirDoc(PACK, {
     _id: aid,
     _key: `!adventures!${aid}`,
     name: NOMBRE,
     img,
-    caption: "<p>Seattle, noviembre de 2026. La crónica completa, lista para dirigir.</p>",
+    caption: `<p>${T("Seattle, noviembre de 2026. La crónica completa, lista para dirigir.")}</p>`,
     description:
-      `<p>Importa al mundo ${n(scenes, "escena", "escenas")}, ${n(actors, "actor", "actores")} (PJs, PNJs y la Célula Puget), ` +
-      `${n(journal, "journal", "journals")} (la aventura, la ciudad, los personajes y los documentos para entregar), ` +
-      `${n(items, "ítem", "ítems")} de FIRSTLIGHT, ${n(macros, "macro", "macros")} y ` +
-      `${n(playlists, "lista", "listas")} de música (cada escena suena con su ambiente al activarla), con sus carpetas.</p>` +
-      "<p>Reimportar actualiza los documentos existentes sin duplicarlos.</p>" +
+      `<p>${T("Importa al mundo {escenas}, {actores} (PJs, PNJs y la Célula Puget), {journals} (la aventura, la ciudad, los personajes y los documentos para entregar), {items} de FIRSTLIGHT, {macros} y {listas} de música (cada escena suena con su ambiente al activarla), con sus carpetas.", {
+        escenas: n(scenes, "escena", "escenas"), actores: n(actors, "actor", "actores"), journals: n(journal, "journal", "journals"),
+        items: n(items, "ítem", "ítems"), macros: n(macros, "macro", "macros"), listas: n(playlists, "lista", "listas")
+      })}</p>` +
+      `<p>${T("Reimportar actualiza los documentos existentes sin duplicarlos.")}</p>` +
       AVISO_DARK_PACK,
     actors, journal, scenes, items, macros, playlists, folders,
     tables: [], cards: [], combats: [],
     folder: null, sort: 0,
-    flags: { [MODULO]: { origen: "aventura", aventura: CLAVE } },
+    flags: { [MODULO]: { origen: "aventura", aventura: CLAVE, ...(EN ? { idioma: "en" } : {}) } },
     _stats: STATS
   });
 
@@ -169,7 +173,8 @@ export async function construir(ctx) {
   // se reescribe desde el build.
   const manifiesto = JSON.parse(fs.readFileSync(path.join(RAIZ, "module.json"), "utf8"));
   const esperado = `Compendium.${MODULO}.${PACK}.Adventure.${aid}`;
-  if (manifiesto.quickstart?.adventures?.[STATS.systemId]?.uuid !== esperado) {
+  // El quickstart es uno solo (el castellano): Foundry no elige por idioma.
+  if (!EN && manifiesto.quickstart?.adventures?.[STATS.systemId]?.uuid !== esperado) {
     ctx.avisos.push(`aventura: module.json quickstart.adventures.${STATS.systemId}.uuid debería ser ${esperado}`);
   }
 

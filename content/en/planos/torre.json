@@ -1,0 +1,230 @@
+{
+  "_fuente": {
+    "torre-atico": "0d8ee0bbb1498a3a",
+    "torre-boveda": "8f2087f8a92fd6f5"
+  },
+  "planos": {
+    "torre-atico": {
+      "nombre": "Part 4 · Halloway Tower, the Penthouse (42nd Floor)",
+      "nota": "**Primogen Council (A4-E01, Night 8, 10:30 p.m.).** “The private elevator climbs forty-two floors without a sound. It opens onto an enormous room with a single wall of glass over Elliott Bay”: the car opens directly into the **council room**, through its east wall. The west wall is all glass (the bay, the cranes, the ferries, the Hound's island: off the map). “In the center there's a long table of dark wood with seven chairs”: the table runs east to west, with the **head against the glass wall**; Halloway stands at the head, his back to the bay, facing the elevator the Prince comes in by. Six chairs along the sides (Whitmore, Marchetti, Voight, Thornquist, Fry, and the Sheriff). In front of each chair, a closed folder with a name on it (tiles without text; the contents are AYU-08). Celeste (or her stand-in) and Mr. Pell stand behind Halloway, between the head of the table and the glass. The coterie stands. The room's furniture “looks like it has never been used.”\n\n**The vestibule.** Behind the east double door wait the ghoul security (MEN-04, from the 40th floor) and Montgomery's dogs: “The dogs in the vestibule begin to howl.”\n\n**Halloway's office**, in the northeast corner, with glass to the north and east. For **negotiating with Halloway before the Council**, in private.\n\n**Leaving (Escape).** Either by the **private elevator**, which needs Halloway's key or Pell's (the car door is locked: the key opens it), or by the **emergency stairs** off the vestibule: forty-two floors (Stamina + Athletics Diff. 3 to avoid reaching the bottom at Hunger 5); the region at the foot of the flight marks the descent, with no map of the rest of the stairwell.\n\n**The private elevator** runs from the street to the penthouse and from the penthouse to the vault on level −3, and it's the only access to the vault. In the car, the door half receives arrivals and the back half goes down to the vault (plan “torre-boveda”). The street stop has no map: the Storyteller moves the tokens by hand.\n\n**If Halloway flees** (total exposure or defeat): “And he heads for the elevator,” goes down to level −3, takes the briefcase out of the vault, and hands it to Pell. **If he wins**, at 12:30 a.m. Pell leaves with the briefcase by the same elevator.\n\n**Combat:** attacking Halloway here, in front of the Primogen, hands him the vote. Halloway doesn't fight: Daunt, and into the elevator.",
+      "habitaciones": [
+        {
+          "nombre": "Council room"
+        },
+        {
+          "nombre": "Halloway's office"
+        },
+        {
+          "nombre": "Private elevator (car)"
+        },
+        {
+          "nombre": "Tower core (concrete: elevators and risers)"
+        },
+        {
+          "nombre": "Security vestibule"
+        },
+        {
+          "nombre": "Emergency stairs"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "The west wall: glass over Elliott Bay"
+        },
+        {
+          "nombre": "Office north window"
+        },
+        {
+          "nombre": "Office east window"
+        },
+        {
+          "nombre": "Door of Halloway's office"
+        },
+        {
+          "nombre": "Private elevator door (Halloway's or Pell's key)"
+        },
+        {
+          "nombre": "Vestibule double door (north leaf)"
+        },
+        {
+          "nombre": "Vestibule double door (south leaf)"
+        },
+        {
+          "nombre": "Emergency stair fire door"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a long dark hardwood council table, polished and bare"
+        },
+        {
+          "desc": "the head of the table (Halloway, standing)"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "closed folder (head of the table)"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "the one for “C. Arden,” between them"
+        },
+        {
+          "desc": "a long low dark credenza, empty on top"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "a large dark executive desk with a leather blotter and nothing else on it"
+        },
+        null,
+        null,
+        null,
+        {
+          "desc": "a low bookcase of leather-bound ledgers"
+        },
+        {
+          "desc": "a low leather bench against the wall"
+        },
+        {
+          "desc": "a concrete emergency stair going down"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Pendant over the table (west)"
+        },
+        {
+          "nombre": "Pendant over the table (east)"
+        },
+        {
+          "nombre": "Halloway's desk lamp"
+        },
+        {
+          "nombre": "Elevator car light"
+        },
+        {
+          "nombre": "Vestibule ceiling light"
+        },
+        {
+          "nombre": "Emergency stair fluorescent"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Private elevator (arrives at the penthouse)"
+        },
+        {
+          "nombre": "Private elevator: down to the vault (level −3)"
+        },
+        {
+          "nombre": "Arrival by the emergency stairs"
+        },
+        {
+          "nombre": "Down 42 floors by the emergency stairs",
+          "pendiente": "no map of the street or the 40th floor: Stamina + Athletics Diff. 3, and the Storyteller moves the tokens"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "Standing at the head of the table, his back to the bay."
+        },
+        {
+          "nota": "Standing behind Halloway, between the head of the table and the glass."
+        },
+        {
+          "nota": "Only if nobody is playing Celeste: standing behind Halloway."
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "nota": "If he isn't at odds with the coterie."
+        },
+        {
+          "nota": "Comes in after the coterie, by the private elevator."
+        },
+        {
+          "nota": "Ghoul security from the 40th floor: they detain David if Halloway gives the order."
+        },
+        null,
+        {
+          "nota": "They come with Montgomery: “The dogs in the vestibule begin to howl.”"
+        }
+      ]
+    },
+    "torre-boveda": {
+      "nombre": "Part 4 · Halloway Tower, the Vault (Level −3)",
+      "nota": "**The vault on level −3**, “accessible only by the private elevator” (LUG-06). The car opens onto a concrete antechamber with a single steel door, locked with a combination (Mr. Pell knows it; with 3 or more successes on the ferry, A4-E03, he hands it over along with the elevator key). In the car, the door half receives arrivals and the back half goes up to the penthouse (plan “torre-atico”).\n\n**What it holds** (LUG-06): the **original of Vance's journals** (bought in 1986), **copy 1 of 3**, typewritten by Pell, and, since Night 6, the **original drive of the File** (and USB drive 3 if Lonnie died that night). The journals and the copy on the shelves; the drive in the safe. On the night of the Council, the **aluminum briefcase** waits on the steel table.\n\n**A4-E01 → A4-E03.** If Halloway flees, “he takes the private elevator down to level −3, takes the briefcase out of the vault, and hands it to Pell.” An infiltration before the climax also ends here, if the coterie plans one.",
+      "habitaciones": [
+        {
+          "nombre": "Private elevator (car)"
+        },
+        {
+          "nombre": "Antechamber"
+        },
+        {
+          "nombre": "Vault"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Private elevator door"
+        },
+        {
+          "nombre": "The vault's only steel door (combination: Pell knows it)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a small black combination keypad beside the steel door"
+        },
+        {
+          "desc": "grey steel archive shelving with document boxes and old bound journals"
+        },
+        {
+          "desc": "grey steel archive shelving with document boxes and typed manuscripts in binders"
+        },
+        {
+          "desc": "a large steel safe set into the concrete wall"
+        },
+        {
+          "desc": "a bare brushed-steel table"
+        },
+        {
+          "desc": "the aluminum briefcase (on the night of the Council)"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Vault fluorescent"
+        },
+        {
+          "nombre": "Antechamber ceiling light"
+        },
+        {
+          "nombre": "Elevator car light"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Private elevator (arrives at the vault)"
+        },
+        {
+          "nombre": "Private elevator: up to the penthouse (42nd floor)"
+        }
+      ]
+    }
+  }
+}

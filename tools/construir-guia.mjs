@@ -28,17 +28,65 @@
  * abre con doble clic en cualquier máquina. Cada imagen va UNA vez, como
  * clase CSS (`.ft-…`), aunque se use en varias secciones.
  *
- * Uso: node tools/construir-guia.mjs [--enlazado]   (--enlazado: sin embeber, para depurar)
+ * En inglés (`--idioma en`), la Guía de The Ward File: lee packs-src/<pack>-en y
+ * content/en/ fundido (tools/contenido/idioma.mjs), con los textos fijos de la
+ * guía en inglés (L() acá y DATOS.textos para guia/guia.js), y sale en
+ * guia/narrator-guide.html. Se relanza con SBN_IDIOMA=en, como el build.
+ *
+ * Uso: node tools/construir-guia.mjs [--enlazado] [--idioma es|en]   (--enlazado: sin embeber, para depurar)
  */
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import crypto from "node:crypto";
-import { RAIZ, MODULO, leerJson } from "./util.mjs";
+import { RAIZ, MODULO } from "./util.mjs";
 import { ID, journals, fichas } from "./contenido/ids.mjs";
 import { pistasPorEscena, archivoDe } from "./contenido/musica.mjs";
+import { EN, packDe, leerContenido } from "./contenido/idioma.mjs";
 
-const SALIDA = path.join(RAIZ, "guia/index.html");
+{
+  const i = process.argv.indexOf("--idioma");
+  const idioma = i >= 0 ? process.argv[i + 1] : "es";
+  if (!["es", "en"].includes(idioma)) { console.error("Uso: node tools/construir-guia.mjs [--enlazado] [--idioma es|en]"); process.exit(1); }
+  // idioma.mjs lee SBN_IDIOMA al importarse: en inglés se relanza con la variable puesta.
+  if ((idioma === "en") !== EN) {
+    const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env: { ...process.env, SBN_IDIOMA: idioma } });
+    process.exit(r.status ?? 1);
+  }
+}
+/** Texto fijo de la guía en su idioma. */
+const L = (es, en) => (EN ? en : es);
+/** Los textos de guia/guia.js (sus claves son el castellano tal cual) en inglés. */
+const TEXTOS_MESA_EN = {
+  "{n} de {total} jugadas": "{n} of {total} played",
+  "{n} de {total} escenas y partes jugadas ({pct} %)": "{n} of {total} scenes and parts played ({pct}%)",
+  "{n} de {total}": "{n} of {total}",
+  "Congelado": "Frozen", "Congelar": "Freeze", "Descongelado": "Unfrozen",
+  "Ningún umbral cruzado todavía.": "No threshold crossed yet.",
+  " (congelado: no sube)": " (frozen: it won't rise)",
+  " (noche {n})": " (night {n})",
+  "Termómetro congelado: no sube hasta que lo descongeles.": "Thermometer frozen: it won't rise until you unfreeze it.",
+  "Termómetro descongelado.": "Thermometer unfrozen.",
+  "El Termómetro está congelado: no sube.": "The Thermometer is frozen: it won't rise.",
+  "El Termómetro ya está en {n}: no cambia.": "The Thermometer is already at {n}: no change.",
+  "Termómetro": "Thermometer",
+  "Umbral {n}": "Threshold {n}",
+  "a mano": "by hand",
+  "Noche {n}": "Night {n}",
+  " Ver la noche →": " See the night →",
+  "obtenida": "found", "desmarcada": "unmarked",
+  "Importar reemplaza el seguimiento guardado en este navegador. ¿Seguir?": "Importing replaces the tracking saved in this browser. Continue?",
+  "Ese archivo no es una partida exportada desde esta guía. Exportá una desde La mesa y volvé a intentarlo.": "That file isn't a game exported from this guide. Export one from The table and try again.",
+  "¿Borrar el seguimiento (escenas jugadas, Termómetro, noche, pistas y notas)?": "Erase the tracking (scenes played, Thermometer, night, clues and notes)?",
+  "Tirada: {label}. Se tira desde el journal en Foundry.": "Test: {label}. Roll it from the journal in Foundry.",
+  "Mueve el Termómetro de La mesa": "Moves the Thermometer on The table",
+  "Marca o desmarca la pista en La mesa": "Marks or unmarks the clue on The table",
+  "Mapa": "Map"
+};
+const leerJson = leerContenido;
+
+const NOMBRE_SALIDA = EN ? "guia/narrator-guide.html" : "guia/index.html";
+const SALIDA = path.join(RAIZ, NOMBRE_SALIDA);
 const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
 const CACHE = path.join(RAIZ, "cache/guia");
@@ -51,7 +99,7 @@ const avisos = [];
 /* ---------------------------------------------------------------- datos */
 /** Documentos de un pack de packs-src/ cuyo _key empieza con `prefijo`. */
 function leerPack(pack, prefijo) {
-  const dir = path.join(RAIZ, "packs-src", pack);
+  const dir = path.join(RAIZ, "packs-src", packDe(pack));
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => {
     const d = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
@@ -79,7 +127,7 @@ const PLANOS = fs.readdirSync(path.join(RAIZ, "content/planos")).filter(f => f.e
   const fuentes = journals();
   const faltan = fuentes.filter(j => !J.has(j.id)).map(j => j.id);
   if (faltan.length) {
-    console.error(`✗ packs-src no tiene ${faltan.join(", ")}. Corré antes: npm run contenido`);
+    console.error(`✗ packs-src${EN ? " (-en)" : ""} no tiene ${faltan.join(", ")}. Corré antes: npm run contenido`);
     process.exit(1);
   }
   const viejos = fuentes.filter(j => fs.statSync(path.join(RAIZ, j.rel)).mtimeMs > fs.statSync(J.get(j.id).archivo).mtimeMs + 1000);
@@ -133,7 +181,7 @@ function limpiar(html) {
       const a = ANCLA.get(uuid);
       if (!a) {
         ROTOS.push(`${uuid} {${texto}}`);
-        return `<span class="enlace roto" title="Sin destino en la guía">${texto}</span>`;
+        return `<span class="enlace roto" title="${L("Sin destino en la guía", "No target in this guide")}">${texto}</span>`;
       }
       return `<a class="enlace" href="#${a}">${texto}</a>`;
     })
@@ -150,7 +198,7 @@ const anclaJournal = d => ANCLA.get(`JournalEntry.${d._id}`);
 // La ilustración del lugar va en la banda de foto, no repetida en el texto.
 const htmlPagina = p => limpiar(p.text?.content)?.replace(/<img class="sbn-lugar-imagen"[^>]*>\s*/g, "");
 
-function hecho(id, etiqueta = "Jugada") {
+function hecho(id, etiqueta = L("Jugada", "Played")) {
   return `<label class="hecho"><input type="checkbox" data-hecho="${esc(id)}"><span>${esc(etiqueta)}</span></label>`;
 }
 
@@ -203,24 +251,32 @@ function imagenActor(a) {
 }
 
 /* --------------------------------------------------------------- piezas */
-const CLAN = { brujah: "Brujah", gangrel: "Gangrel", malkavian: "Malkavian", nosferatu: "Nosferatu", toreador: "Toreador", tremere: "Tremere", ventrue: "Ventrue", caitiff: "Caitiff", thinblood: "Sangre débil" };
-const TIPO = { vampire: "Vampiro", ghoul: "Ghoul", mortal: "Mortal", hunter: "Cazador" };
-const CREDO = { faithful: "Fiel", inquisitive: "Inquisitivo", martial: "Marcial", underground: "Clandestino", entrepreneurial: "Emprendedor" };
-const HAB = { athletics: "Atletismo", brawl: "Pelea", craft: "Artesanía", drive: "Conducir", firearms: "Armas de fuego", larceny: "Latrocinio", melee: "Cuerpo a cuerpo", stealth: "Sigilo", survival: "Supervivencia", animalken: "Trato con animales", etiquette: "Etiqueta", insight: "Perspicacia", intimidation: "Intimidación", leadership: "Liderazgo", performance: "Interpretación", persuasion: "Persuasión", streetwise: "Callejeo", subterfuge: "Subterfugio", academics: "Academicismo", awareness: "Alerta", finance: "Finanzas", investigation: "Investigación", medicine: "Medicina", occult: "Ocultismo", politics: "Política", science: "Ciencia", technology: "Tecnología" };
-const DISC = { animalism: "Animalismo", auspex: "Auspex", celerity: "Celeridad", dominate: "Dominación", fortitude: "Fortaleza", obfuscate: "Ofuscación", potence: "Potencia", presence: "Presencia", protean: "Protean", sorcery: "Hechicería de Sangre", oblivion: "Olvido", alchemy: "Alquimia de Sangre débil" };
+const CLAN = { brujah: "Brujah", gangrel: "Gangrel", malkavian: "Malkavian", nosferatu: "Nosferatu", toreador: "Toreador", tremere: "Tremere", ventrue: "Ventrue", caitiff: "Caitiff", thinblood: L("Sangre débil", "Thin-Blood") };
+const TIPO = EN ? { vampire: "Vampire", ghoul: "Ghoul", mortal: "Mortal", hunter: "Hunter" } : { vampire: "Vampiro", ghoul: "Ghoul", mortal: "Mortal", hunter: "Cazador" };
+const CREDO = EN ? { faithful: "Faithful", inquisitive: "Inquisitive", martial: "Martial", underground: "Underground", entrepreneurial: "Entrepreneurial" }
+  : { faithful: "Fiel", inquisitive: "Inquisitivo", martial: "Marcial", underground: "Clandestino", entrepreneurial: "Emprendedor" };
+const HAB = EN
+  ? { athletics: "Athletics", brawl: "Brawl", craft: "Craft", drive: "Drive", firearms: "Firearms", larceny: "Larceny", melee: "Melee", stealth: "Stealth", survival: "Survival", animalken: "Animal Ken", etiquette: "Etiquette", insight: "Insight", intimidation: "Intimidation", leadership: "Leadership", performance: "Performance", persuasion: "Persuasion", streetwise: "Streetwise", subterfuge: "Subterfuge", academics: "Academics", awareness: "Awareness", finance: "Finance", investigation: "Investigation", medicine: "Medicine", occult: "Occult", politics: "Politics", science: "Science", technology: "Technology" }
+  : { athletics: "Atletismo", brawl: "Pelea", craft: "Artesanía", drive: "Conducir", firearms: "Armas de fuego", larceny: "Latrocinio", melee: "Cuerpo a cuerpo", stealth: "Sigilo", survival: "Supervivencia", animalken: "Trato con animales", etiquette: "Etiqueta", insight: "Perspicacia", intimidation: "Intimidación", leadership: "Liderazgo", performance: "Interpretación", persuasion: "Persuasión", streetwise: "Callejeo", subterfuge: "Subterfugio", academics: "Academicismo", awareness: "Alerta", finance: "Finanzas", investigation: "Investigación", medicine: "Medicina", occult: "Ocultismo", politics: "Política", science: "Ciencia", technology: "Tecnología" };
+const DISC = EN
+  ? { animalism: "Animalism", auspex: "Auspex", celerity: "Celerity", dominate: "Dominate", fortitude: "Fortitude", obfuscate: "Obfuscate", potence: "Potence", presence: "Presence", protean: "Protean", sorcery: "Blood Sorcery", oblivion: "Oblivion", alchemy: "Thin-Blood Alchemy" }
+  : { animalism: "Animalismo", auspex: "Auspex", celerity: "Celeridad", dominate: "Dominación", fortitude: "Fortaleza", obfuscate: "Ofuscación", potence: "Potencia", presence: "Presencia", protean: "Protean", sorcery: "Hechicería de Sangre", oblivion: "Olvido", alchemy: "Alquimia de Sangre débil" };
+/** «11» → «11.ª generación» / «11th Generation». */
+const ordinal = n => `${n}${n % 100 >= 11 && n % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" })[n % 10] ?? "th"}`;
+const generacion = n => (EN ? `${ordinal(n)} Generation` : `${n}.ª generación`);
 
 /** Línea de datos bajo el nombre: tipo, clan, generación, Potencia de Sangre… */
 function kickerFicha(f) {
-  if (!f) return "Trasfondo";
+  if (!f) return L("Trasfondo", "Background");
   const t = f.tipo ?? f.spcType;
   return [
-    f.pj ? "Personaje jugador" : null,
+    f.pj ? L("Personaje jugador", "Player character") : null,
     TIPO[t] ?? t,
     CLAN[f.clan] ?? f.clan,
-    f.generacion ? `${f.generacion}.ª generación` : null,
-    f.potenciaSangre != null ? `Potencia de Sangre ${f.potenciaSangre}` : null,
-    f.humanidad != null ? `Humanidad ${f.humanidad}` : null,
-    f.credo ? `Credo ${CREDO[f.credo] ?? f.credo}` : null
+    f.generacion ? generacion(Number(f.generacion)) : null,
+    f.potenciaSangre != null ? `${L("Potencia de Sangre", "Blood Potency")} ${f.potenciaSangre}` : null,
+    f.humanidad != null ? `${L("Humanidad", "Humanity")} ${f.humanidad}` : null,
+    f.credo ? `${L("Credo", "Creed")} ${CREDO[f.credo] ?? f.credo}` : null
   ].filter(Boolean).map(esc).join(" · ");
 }
 const valor = v => Array.isArray(v) ? `${v[0]}${v[1] ? ` (${v[1]})` : ""}` : v;
@@ -228,20 +284,39 @@ function reservas(f) {
   if (!f) return "";
   const out = [];
   const e = f.estandar ?? {};
-  if (e.physical != null) out.push(`Física ${e.physical}`, `Social ${e.social}`, `Mental ${e.mental}`);
+  if (e.physical != null) out.push(`${L("Física", "Physical")} ${e.physical}`, `Social ${e.social}`, `Mental ${e.mental}`);
   for (const [k, v] of Object.entries(f.excepcionales ?? {})) out.push(`${HAB[k] ?? k} ${valor(v)}`);
   for (const [k, v] of Object.entries(f.disciplinas ?? {})) out.push(`${DISC[k] ?? k} ${Array.isArray(v) ? v[0] : v}`);
-  if (f.salud) out.push(`Salud ${f.salud}`);
-  if (f.voluntad) out.push(`Voluntad ${f.voluntad}`);
+  if (f.salud) out.push(`${L("Salud", "Health")} ${f.salud}`);
+  if (f.voluntad) out.push(`${L("Voluntad", "Willpower")} ${f.voluntad}`);
   return out.length ? `<div class="reservas">${out.map(s => `<span>${esc(s)}</span>`).join("")}</div>` : "";
 }
 const sinRetrato = html => html.replace(/<img class="sbn-retrato"[^>]*>\s*/g, "").replace(/<p class="sbn-enlace-actor">[\s\S]*?<\/p>\s*/, "");
 
 /* ---------------------------------------------------------- 1. cabecera */
-const NAV = [["libro", "El libro"], ["cronica", "La aventura"], ["termometro", "Termómetro y Reloj"], ["dramatis", "Personajes"], ["ciudad", "La ciudad"], ["documentos", "Documentos"], ["firstlight", "FIRSTLIGHT"], ["pantalla", "Pantalla"], ["foundry", "En Foundry"]];
+const NAV = EN
+  ? [["libro", "The book"], ["cronica", "The adventure"], ["termometro", "Thermometer & Clock"], ["dramatis", "Characters"], ["ciudad", "The city"], ["documentos", "Documents"], ["firstlight", "FIRSTLIGHT"], ["pantalla", "Screen"], ["foundry", "In Foundry"]]
+  : [["libro", "El libro"], ["cronica", "La aventura"], ["termometro", "Termómetro y Reloj"], ["dramatis", "Personajes"], ["ciudad", "La ciudad"], ["documentos", "Documentos"], ["firstlight", "FIRSTLIGHT"], ["pantalla", "Pantalla"], ["foundry", "En Foundry"]];
+const MESA = L("La mesa", "The table");
 const navLinks = NAV.map(([id, t]) => `<a href="#${id}">${t}</a>`).join("");
 const portada = foto("portadas/portada.webp");
-const cabecera = `
+const cabecera = EN ? `
+<header class="tablero" id="inicio">
+  <div class="fila">
+    <a class="t-logo" href="#inicio" aria-label="Home">WF</a>
+    <nav class="t-nav" aria-label="Sections">${navLinks}</nav>
+    <button class="t-accion" type="button" data-abrir-mesa>${MESA}</button>
+  </div>
+  <div class="hero ${portada ?? ""}" role="img" aria-label="A man in a coat looks out over the Seattle docks in the rain">
+    <div class="hero-texto">
+      <p class="kicker">Vampire: The Masquerade 5th Edition · Storyteller Guide</p>
+      <h1><span>The Ward File</span><small>A Seattle chronicle (fan,&nbsp;unofficial)</small></h1>
+      <p>November 2026. Someone broke into an apartment in Ballard and stole the files of a journalist who has spent years telling the stories of people who don't age. Since that night, the city has been calling in old debts: a brother nobody knew about, a Primogen who wants the throne and a federal agency that is no longer content to watch.</p>
+      <p>This guide holds the book, the adventure scene by scene, the FIRSTLIGHT interludes, every character with their portrait, the city with its maps and the documents to hand out. It opens from disk and keeps track of your game in this browser.</p>
+      <button class="cta" type="button" data-abrir-mesa>Open the table <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+</header>` : `
 <header class="tablero" id="inicio">
   <div class="fila">
     <a class="t-logo" href="#inicio" aria-label="Inicio">EW</a>
@@ -263,9 +338,10 @@ const cabecera = `
 const LIBRO = ["VERDAD", "COMO-USAR", "SEGURIDAD", "CAP-00", "CAP-01", "PJS-COTERIE", "GANCHOS", "TONO-DAVID", "INDICE-IDS"];
 const libro = `
 <section class="pagina" id="libro">
-  <p class="kicker">Antes de empezar</p>
-  <h2>El libro</h2>
-  <p class="standfirst">Lo que el Narrador tiene que saber antes de la primera noche: la verdad detrás de la aventura y su esquema, cómo usar el libro, las herramientas de seguridad, la ficción de apertura, los personajes y la coterie, los ganchos y el registro de IDs.</p>
+  <p class="kicker">${L("Antes de empezar", "Before you begin")}</p>
+  <h2>${L("El libro", "The book")}</h2>
+  <p class="standfirst">${L("Lo que el Narrador tiene que saber antes de la primera noche: la verdad detrás de la aventura y su esquema, cómo usar el libro, las herramientas de seguridad, la ficción de apertura, los personajes y la coterie, los ganchos y el registro de IDs.",
+    "What the Storyteller needs to know before the first night: the truth behind the adventure and its outline, how to use the book, the safety tools, the opening fiction, the characters and the coterie, the hooks and the ID index.")}</p>
   ${LIBRO.map((id, i) => journalPlegado(id, { abierto: i === 0 })).join("")}
 </section>`;
 
@@ -281,7 +357,7 @@ const partes = AVENTURA.map(id => J.get(id)).filter(Boolean);
 const corto = n => n.split(" · ")[0];
 const largo = n => n.includes(" · ") ? n.split(" · ").slice(1).join(" · ") : "";
 const pestanas = partes.map((d, i) =>
-  `<button type="button" class="tab${i === 0 ? " activa" : ""}" data-tab="${anclaJournal(d)}"><span>${esc(idDe(d) === "FIRSTLIGHT-INTERLUDIOS" ? "Interludios" : corto(d.name))}</span><small>${esc(idDe(d) === "FIRSTLIGHT-INTERLUDIOS" ? "FIRSTLIGHT" : largo(d.name))}</small></button>`).join("");
+  `<button type="button" class="tab${i === 0 ? " activa" : ""}" data-tab="${anclaJournal(d)}"><span>${esc(idDe(d) === "FIRSTLIGHT-INTERLUDIOS" ? L("Interludios", "Interludes") : corto(d.name))}</span><small>${esc(idDe(d) === "FIRSTLIGHT-INTERLUDIOS" ? "FIRSTLIGHT" : largo(d.name))}</small></button>`).join("");
 const paneles = partes.map((d, i) => {
   const ps = paginas(d);
   const intro = ps.filter(esIntro);
@@ -297,21 +373,22 @@ const paneles = partes.map((d, i) => {
   return `<div class="panel${i === 0 ? " activa" : ""}" data-panel="${anclaJournal(d)}" id="${anclaJournal(d)}">
     <article class="banda-foto acto">
       <figure class="bf-foto ${img ?? ""}"><figcaption>${esc(corto(d.name))}</figcaption></figure>
-      <div class="bf-texto"><p class="kicker">${esc(corto(d.name))}</p><h3 class="panel-titulo">${esc(largo(d.name) || d.name)}</h3>${conAncla ? "" : hecho(anclaJournal(d), "Leída")}${intro.map(p => `<div id="${anclaPagina(d, p)}">${htmlPagina(p)}</div>`).join("")}</div>
+      <div class="bf-texto"><p class="kicker">${esc(corto(d.name))}</p><h3 class="panel-titulo">${esc(largo(d.name) || d.name)}</h3>${conAncla ? "" : hecho(anclaJournal(d), L("Leída", "Read"))}${intro.map(p => `<div id="${anclaPagina(d, p)}">${htmlPagina(p)}</div>`).join("")}</div>
     </article>
     ${bandas}
   </div>`;
 }).join("");
 const cronica = `
 <section class="agenda" id="cronica">
-  <div class="agenda-cab"><div><p class="kicker">Capítulo 7</p><h2>El Expediente Ward</h2><p class="standfirst">El prólogo, las cuatro partes, los desenlaces y el epílogo, escena por escena, con los interludios de FIRSTLIGHT al final. Marcá cada escena cuando se juegue; los botones del Termómetro y de las pistas mueven la mesa de esta guía.</p></div><p class="progreso" data-progreso="cronica" aria-live="polite"></p></div>
+  <div class="agenda-cab"><div><p class="kicker">${L("Capítulo 7", "Chapter 7")}</p><h2>${L("El Expediente Ward", "The Ward File")}</h2><p class="standfirst">${L("El prólogo, las cuatro partes, los desenlaces y el epílogo, escena por escena, con los interludios de FIRSTLIGHT al final. Marcá cada escena cuando se juegue; los botones del Termómetro y de las pistas mueven la mesa de esta guía.",
+    "The prologue, the four parts, the endings and the epilogue, scene by scene, with the FIRSTLIGHT interludes at the end. Check each scene once it's played; the Thermometer and clue buttons move this guide's table.")}</p></div><p class="progreso" data-progreso="cronica" aria-live="polite"></p></div>
   <div class="agenda-grid"><div class="tabs" role="tablist">${pestanas}</div><div class="paneles">${paneles}</div></div>
 </section>`;
 
 /* ------------------------------------------------- 4. Termómetro y Reloj */
 const T = TRACKERS.termometro, R = TRACKERS.reloj;
 const UMBRAL = new Map((T.umbrales ?? []).map(u => [Number(u.valor), u]));
-const escala = (chica = false) => `<ol class="escala${chica ? " chica" : ""}" data-escala aria-label="Termómetro de ${T.min ?? 0} a ${T.max ?? 10}">${
+const escala = (chica = false) => `<ol class="escala${chica ? " chica" : ""}" data-escala aria-label="${L("Termómetro de", "Thermometer from")} ${T.min ?? 0} ${L("a", "to")} ${T.max ?? 10}">${
   Array.from({ length: (T.max ?? 10) - (T.min ?? 0) + 1 }, (_, k) => (T.min ?? 0) + k).map(v => {
     const u = UMBRAL.get(v);
     const destino = u && (u.interludio ?? u.escena);
@@ -320,24 +397,25 @@ const escala = (chica = false) => `<ol class="escala${chica ? " chica" : ""}" da
 const trackers = J.get("TRACKERS"), pistasJ = J.get("PISTAS");
 const termometro = `
 <section class="pagina" id="termometro">
-  <p class="kicker">FIRSTLIGHT y Halloway</p>
-  <h2>El Termómetro y el Reloj</h2>
-  <p class="standfirst">${esc(T.descripcion ?? "Cuánto sabe la Segunda Inquisición de los Vástagos de Seattle.")}</p>
+  <p class="kicker">${L("FIRSTLIGHT y Halloway", "FIRSTLIGHT and Halloway")}</p>
+  <h2>${L("El Termómetro y el Reloj", "The Thermometer and the Clock")}</h2>
+  <p class="standfirst">${esc(T.descripcion ?? L("Cuánto sabe la Segunda Inquisición de los Vástagos de Seattle.", "How much the Second Inquisition knows about Seattle's Kindred."))}</p>
   ${escala()}
-  <p class="chica">La escala marca el valor de <strong>La mesa</strong>. Los umbrales 3 y 9 abren un interludio de FIRSTLIGHT.</p>
+  <p class="chica">${L("La escala marca el valor de <strong>La mesa</strong>. Los umbrales 3 y 9 abren un interludio de FIRSTLIGHT.", "The scale shows the value on <strong>The table</strong>. Thresholds 3 and 9 open a FIRSTLIGHT interlude.")}</p>
   ${trackers ? `<div id="${anclaJournal(trackers)}">${paginas(trackers).map((p, i) => subpagina(trackers, p, { plegada: true, abierta: i === 0 })).join("")}</div>` : ""}
-  <h3>Las pistas</h3>
-  <p class="chica">Tocá el botón de una pista para marcarla como obtenida (o desmarcarla) en La mesa.</p>
+  <h3>${L("Las pistas", "The clues")}</h3>
+  <p class="chica">${L("Tocá el botón de una pista para marcarla como obtenida (o desmarcarla) en La mesa.", "Tap a clue's button to mark it as found (or unmark it) on The table.")}</p>
   ${pistasJ ? `<div id="${anclaJournal(pistasJ)}">${paginas(pistasJ).map(p => subpagina(pistasJ, p, { plegada: true })).join("")}</div>` : ""}
 </section>`;
 
 /* ----------------------------------------------------- 5. personajes */
+// [clave del grupo (y de su ancla), regex sobre la carpeta castellana, nombre visible, entradilla]
 const GRUPOS = [
-  ["Personajes jugadores", /Personajes jugadores$/, "La coterie: David y los conceptos nuevos. Las fichas están en el compendio de personajes."],
-  ["Vástagos", /Vástagos/, "La Camarilla de Seattle y los que vienen de fuera."],
-  ["Mortales y ghouls", /Mortales y ghouls$/, ""],
-  ["FIRSTLIGHT", /FIRSTLIGHT$/, "La Segunda Inquisición en Seattle. La Célula Puget y su arsenal están en la sección FIRSTLIGHT."],
-  ["Trasfondo", /Trasfondo$/, "Nombres que pesan en la historia aunque no salgan a escena."]
+  ["Personajes jugadores", /Personajes jugadores$/, L("Personajes jugadores", "Player characters"), L("La coterie: los cinco conceptos nuevos (David y Bear, sus aliados, están más abajo). Las fichas están en el compendio de personajes.", "The coterie: the five new concepts (David and Bear, their allies, are further down). The sheets are in the characters compendium.")],
+  ["Vástagos", /Vástagos/, L("Vástagos", "Kindred"), L("La Camarilla de Seattle y los que vienen de fuera.", "Seattle's Camarilla and those who come from outside.")],
+  ["Mortales y ghouls", /Mortales y ghouls$/, L("Mortales y ghouls", "Mortals and ghouls"), ""],
+  ["FIRSTLIGHT", /FIRSTLIGHT$/, "FIRSTLIGHT", L("La Segunda Inquisición en Seattle. La Célula Puget y su arsenal están en la sección FIRSTLIGHT.", "The Second Inquisition in Seattle. The Puget Cell and its arsenal are in the FIRSTLIGHT section.")],
+  ["Trasfondo", /Trasfondo$/, L("Trasfondo", "Background"), L("Nombres que pesan en la historia aunque no salgan a escena.", "Names that weigh on the story even if they never step on stage.")]
 ];
 const perfiles = journals().filter(j => j.rel.startsWith("content/personajes/"));
 let alterna = 0;
@@ -367,16 +445,16 @@ function fichaCorta(a) {
   const f = FICHA.get(id);
   const img = imagenActor(a);
   if (!img) SIN_ARTE.push(`${id} (${a.name}): retrato y token`);
-  const kick = f?._clase === "menor" ? [TIPO[f.spcType] ?? f.spcType, f.cantidad > 1 ? `${f.cantidad} individuos` : null].filter(Boolean).map(esc).join(" · ") : kickerFicha(f);
+  const kick = f?._clase === "menor" ? [TIPO[f.spcType] ?? f.spcType, f.cantidad > 1 ? `${f.cantidad} ${L("individuos", "individuals")}` : null].filter(Boolean).map(esc).join(" · ") : kickerFicha(f);
   return `<article class="ficha" id="${ancla(id)}">
     ${img ? `<div class="ficha-foto${img.token ? " token" : ""} ${img.clase}" role="img" aria-label="${esc(a.name)}"></div>` : ""}
     <div class="ficha-cuerpo"><p class="kicker">${kick}</p><h4>${esc(f?.nombre ?? a.name)}</h4>${limpiar(a.system?.biography)}${reservas(f)}</div>
   </article>`;
 }
-const dramatisGrupos = GRUPOS.map(([nombre, re, texto]) => {
+const dramatisGrupos = GRUPOS.map(([clave, re, nombre, texto]) => {
   const js = perfiles.filter(j => re.test(j.meta.carpeta ?? "")).sort((a, b) => a.id.localeCompare(b.id, "es", { numeric: true }));
   if (!js.length) return "";
-  return `<div class="grupo" id="grupo-${nombre.toLowerCase().replace(/\s+/g, "-")}"><div class="seccion-cab chica-cab"><p class="kicker">Personajes</p><h2>${esc(nombre)}</h2>${texto ? `<p class="standfirst">${esc(texto)}</p>` : ""}</div>${js.map(perfil).join("")}</div>`;
+  return `<div class="grupo" id="grupo-${clave.toLowerCase().replace(/\s+/g, "-")}"><div class="seccion-cab chica-cab"><p class="kicker">${L("Personajes", "Characters")}</p><h2>${esc(nombre)}</h2>${texto ? `<p class="standfirst">${esc(texto)}</p>` : ""}</div>${js.map(perfil).join("")}</div>`;
 }).join("");
 const sinGrupo = perfiles.filter(j => !GRUPOS.some(([, re]) => re.test(j.meta.carpeta ?? "")));
 if (sinGrupo.length) avisos.push(`perfiles sin grupo en la guía: ${sinGrupo.map(j => j.id).join(", ")}`);
@@ -390,12 +468,12 @@ const dramatis = `
 <section class="bandas" id="dramatis">
   <div class="seccion-cab">
     <p class="kicker">Dramatis personae</p>
-    <h2>Quién es quién en Seattle</h2>
-    <p class="standfirst">Cada personaje con su retrato, su historia, lo que quiere y lo que sabe. Las secciones largas están plegadas; abrilas cuando las necesites.</p>
-    <nav class="indice" aria-label="Personajes">${todosPerfiles.map(j => `<a href="#${ancla(j.id)}"><b>${esc(j.id)}</b>${esc(J.get(j.id).name)}</a>`).join("")}<a href="#menores"><b>MEN</b>PNJs menores</a></nav>
+    <h2>${L("Quién es quién en Seattle", "Who's who in Seattle")}</h2>
+    <p class="standfirst">${L("Cada personaje con su retrato, su historia, lo que quiere y lo que sabe. Las secciones largas están plegadas; abrilas cuando las necesites.", "Every character with their portrait, their story, what they want and what they know. Long sections are folded; open them when you need them.")}</p>
+    <nav class="indice" aria-label="${L("Personajes", "Characters")}">${todosPerfiles.map(j => `<a href="#${ancla(j.id)}"><b>${esc(j.id)}</b>${esc(J.get(j.id).name)}</a>`).join("")}<a href="#menores"><b>MEN</b>${L("PNJs menores", "Minor NPCs")}</a></nav>
   </div>
   ${dramatisGrupos}
-  <div class="grupo" id="menores"><div class="seccion-cab chica-cab"><p class="kicker">Personajes</p><h2>PNJs menores</h2><p class="standfirst">Reservas simplificadas (Física, Social, Mental y las excepcionales), como en el doc 14.</p></div>
+  <div class="grupo" id="menores"><div class="seccion-cab chica-cab"><p class="kicker">${L("Personajes", "Characters")}</p><h2>${L("PNJs menores", "Minor NPCs")}</h2><p class="standfirst">${L("Reservas simplificadas (Física, Social, Mental y las excepcionales), como en el doc 14.", "Simplified dice pools (Physical, Social, Mental and the exceptional ones), as in doc 14.")}</p></div>
     <div class="fichas">${MENORES.sort(ordenId).map(fichaCorta).join("")}</div>
   </div>
 </section>`;
@@ -412,8 +490,8 @@ const figuraPlano = (pl, grande = false) => {
   const pista = MUSICA.get(pl.id)?.pista;
   const musica = pista && fs.existsSync(path.join(RAIZ, archivoDe(pista))) ? pista.nombre : null;
   return `<figure class="plano${grande ? " grande" : ""}" id="${ANCLA.get(`Scene.${ID.escena(pl.id)}`)}">
-    <button type="button" class="ampliar ${img}" data-ampliar="${esc(pl.nombre)}" style="aspect-ratio: ${pl.ancho ?? 4} / ${pl.alto ?? 3}" aria-label="Ampliar el mapa: ${esc(pl.nombre)}"><span class="lupa">Ampliar</span></button>
-    <figcaption><b>${esc(pl.nombre)}</b>${escenas ? `<span>${escenas}</span>` : ""}${musica ? `<span>Música: <i>${esc(musica)}</i></span>` : ""}</figcaption>
+    <button type="button" class="ampliar ${img}" data-ampliar="${esc(pl.nombre)}" style="aspect-ratio: ${pl.ancho ?? 4} / ${pl.alto ?? 3}" aria-label="${L("Ampliar el mapa", "Enlarge the map")}: ${esc(pl.nombre)}"><span class="lupa">${L("Ampliar", "Enlarge")}</span></button>
+    <figcaption><b>${esc(pl.nombre)}</b>${escenas ? `<span>${escenas}</span>` : ""}${musica ? `<span>${L("Música", "Music")}: <i>${esc(musica)}</i></span>` : ""}</figcaption>
   </figure>`;
 };
 const lugaresHtml = LUGARES.map((l, i) => {
@@ -425,8 +503,8 @@ const lugaresHtml = LUGARES.map((l, i) => {
   if (!img) SIN_ARTE.push(`${l.id} (${d.name}): ${l.mapa === false ? "ilustración del lugar (no lleva mapa)" : "mapa"}`);
   const ps = paginas(d);
   const datos = [
-    l.escenas?.length ? `<dt>Escenas</dt><dd>${l.escenas.map(e => enlaceLibro(e)).join(" · ")}</dd>` : "",
-    l.pnjs?.length ? `<dt>Quién</dt><dd>${l.pnjs.map(p => enlaceLibro(p, J.get(p)?.name ?? FICHA.get(p)?.nombre ?? p)).join(" · ")}</dd>` : ""
+    l.escenas?.length ? `<dt>${L("Escenas", "Scenes")}</dt><dd>${l.escenas.map(e => enlaceLibro(e)).join(" · ")}</dd>` : "",
+    l.pnjs?.length ? `<dt>${L("Quién", "Who")}</dt><dd>${l.pnjs.map(p => enlaceLibro(p, J.get(p)?.name ?? FICHA.get(p)?.nombre ?? p)).join(" · ")}</dd>` : ""
   ].join("");
   return `
   <article class="lugar" id="${anclaJournal(d)}">
@@ -447,21 +525,25 @@ if (huerfanos.length) avisos.push(`planos sin lugar: ${huerfanos.map(p => p.id).
 const ciudad = `
 <section class="bandas" id="ciudad">
   <div class="seccion-cab">
-    <p class="kicker">Seattle, noviembre de 2026</p>
-    <h2>La ciudad</h2>
-    <p class="standfirst">La historia reciente, la política de la Camarilla, los rumores, las leyes del Elíseo y los distritos; después, lugar por lugar, con los mapas de las escenas de Foundry.</p>
+    <p class="kicker">${L("Seattle, noviembre de 2026", "Seattle, November 2026")}</p>
+    <h2>${L("La ciudad", "The city")}</h2>
+    <p class="standfirst">${L("La historia reciente, la política de la Camarilla, los rumores, las leyes del Elíseo y los distritos; después, lugar por lugar, con los mapas de las escenas de Foundry.", "Recent history, Camarilla politics, the rumors, the laws of Elysium and the districts; then, location by location, with the maps of the Foundry scenes.")}</p>
   </div>
   <div class="pagina sin-arriba">${CIUDAD.map(id => journalPlegado(id)).join("")}</div>
-  <div class="seccion-cab chica-cab"><p class="kicker">Lugares</p><h2>LUG-01 a LUG-${String(LUGARES.length).padStart(2, "0")}</h2>
-    <nav class="indice" aria-label="Lugares">${LUGARES.map(l => `<a href="#${ancla(l.id)}"><b>${esc(l.id)}</b>${esc(J.get(l.id)?.name ?? l.nombre)}</a>`).join("")}</nav>
+  <div class="seccion-cab chica-cab"><p class="kicker">${L("Lugares", "Locations")}</p><h2>LUG-01 ${L("a", "to")} LUG-${String(LUGARES.length).padStart(2, "0")}</h2>
+    <nav class="indice" aria-label="${L("Lugares", "Locations")}">${LUGARES.map(l => `<a href="#${ancla(l.id)}"><b>${esc(l.id)}</b>${esc(J.get(l.id)?.name ?? l.nombre)}</a>`).join("")}</nav>
   </div>
   ${lugaresHtml}
-  <div class="pagina">${["CIUDAD-COTERIES", "CIUDAD-LORESHEETS"].map(id => journalPlegado(id, { kicker: "La ciudad" })).join("")}</div>
+  <div class="pagina">${["CIUDAD-COTERIES", "CIUDAD-LORESHEETS"].map(id => journalPlegado(id, { kicker: L("La ciudad", "The city") })).join("")}</div>
 </section>`;
 
 /* --------------------------------------------------------- 7. documentos */
-const SOPORTE = { transcripcion: "Transcripción", guion: "Guion", "libro-registro": "Libro de registro", mecanografiado: "Copia mecanografiada", sms: "Mensajes de texto", foro: "Foro", correo: "Correo", carta: "Carta", informe: "Informe", poema: "Poema", presentacion: "Presentación", nota: "Nota", libreta: "Libreta", marcador: "Marcador", recorte: "Recorte", tarjeta: "Tarjeta", foto: "Fotografía", diagrama: "Diagrama", "orden-del-dia": "Orden del día", mapa: "Mapa" };
-const ENTREGA = { "sesion-cero": "Sesión cero", narrador: "Sólo para el Narrador", fuera: "Fuera de la aventura", epilogo: "Epílogo" };
+const SOPORTE = EN
+  ? { transcripcion: "Transcript", guion: "Script", "libro-registro": "Logbook", mecanografiado: "Typewritten copy", sms: "Text messages", foro: "Forum", correo: "Email", carta: "Letter", informe: "Report", poema: "Poem", presentacion: "Slide deck", nota: "Note", libreta: "Notebook", marcador: "Bookmark", recorte: "Clipping", tarjeta: "Card", foto: "Photograph", diagrama: "Diagram", "orden-del-dia": "Agenda", mapa: "Map" }
+  : { transcripcion: "Transcripción", guion: "Guion", "libro-registro": "Libro de registro", mecanografiado: "Copia mecanografiada", sms: "Mensajes de texto", foro: "Foro", correo: "Correo", carta: "Carta", informe: "Informe", poema: "Poema", presentacion: "Presentación", nota: "Nota", libreta: "Libreta", marcador: "Marcador", recorte: "Recorte", tarjeta: "Tarjeta", foto: "Fotografía", diagrama: "Diagrama", "orden-del-dia": "Orden del día", mapa: "Mapa" };
+const ENTREGA = EN
+  ? { "sesion-cero": "Session zero", narrador: "Storyteller only", fuera: "Outside the adventure", epilogo: "Epilogue" }
+  : { "sesion-cero": "Sesión cero", narrador: "Sólo para el Narrador", fuera: "Fuera de la aventura", epilogo: "Epílogo" };
 const docs = JDOCS.filter(d => /^(DOC|AYU)-\d+$/.test(idDe(d))).sort((a, b) => idDe(a).localeCompare(idDe(b), "es", { numeric: true }));
 {
   const dir = path.join(RAIZ, "content/documentos");
@@ -477,24 +559,25 @@ const documentoHtml = d => {
   const fl = d.flags[MODULO];
   const entrega = (fl.entrega ?? []).map(e => ancla(e) ? enlaceLibro(e) : esc(ENTREGA[e] ?? e)).join(" · ");
   return `<details class="regla doc" id="${anclaJournal(d)}"><summary><span class="regla-kicker">${esc(idDe(d))}</span><h3>${esc(d.name)}</h3></summary>
-    <div class="cuerpo"><p class="doc-meta">${fl.soporte ? `<span>${esc(SOPORTE[fl.soporte] ?? fl.soporte)}</span>` : ""}${entrega ? `<span>Entrega: ${entrega}</span>` : ""}</p>
+    <div class="cuerpo"><p class="doc-meta">${fl.soporte ? `<span>${esc(SOPORTE[fl.soporte] ?? fl.soporte)}</span>` : ""}${entrega ? `<span>${L("Entrega", "Hand out")}: ${entrega}</span>` : ""}</p>
     ${paginas(d).map(p => subpagina(d, p)).join("")}</div></details>`;
 };
 const documentos = `
 <section class="pagina" id="documentos">
-  <p class="kicker">Para entregar</p>
-  <h2>Documentos del mundo y ayudas de juego</h2>
-  <p class="standfirst">DOC-01 a DOC-12 son objetos de la ficción (notas de voz, mensajes, diarios, informes); AYU-01 a AYU-09, ayudas de juego. Están maquetados igual que en Foundry, donde se entregan al jugador desde el journal. Cada uno cierra con su nota para el Narrador.</p>
-  ${journalPlegado("DOCUMENTOS-RESUMEN", { kicker: "Resumen" })}
-  <h3>Documentos</h3>
+  <p class="kicker">${L("Para entregar", "To hand out")}</p>
+  <h2>${L("Documentos del mundo y ayudas de juego", "In-world documents and handouts")}</h2>
+  <p class="standfirst">${L("DOC-01 a DOC-12 son objetos de la ficción (notas de voz, mensajes, diarios, informes); AYU-01 a AYU-09, ayudas de juego. Están maquetados igual que en Foundry, donde se entregan al jugador desde el journal. Cada uno cierra con su nota para el Narrador.",
+    "DOC-01 to DOC-12 are objects from the fiction (voice memos, messages, diaries, reports); AYU-01 to AYU-09 are handouts. They're laid out just as in Foundry, where you hand them to the player from the journal. Each one ends with its note for the Storyteller.")}</p>
+  ${journalPlegado("DOCUMENTOS-RESUMEN", { kicker: L("Resumen", "Summary") })}
+  <h3>${L("Documentos", "Documents")}</h3>
   ${docs.filter(d => idDe(d).startsWith("DOC")).map(documentoHtml).join("")}
-  <h3>Ayudas de juego</h3>
+  <h3>${L("Ayudas de juego", "Handouts")}</h3>
   ${docs.filter(d => idDe(d).startsWith("AYU")).map(documentoHtml).join("")}
 </section>`;
 
 /* --------------------------------------------------------- 8. FIRSTLIGHT */
-const TIPO_ITEM = { weapon: "Arma", gear: "Equipo", condition: "Estado" };
-const arsenal = ARSENAL.map(it => `<div class="item" id="${ANCLA.get(`Item.${ID.item(it.id)}`)}"><p class="kicker">${esc(TIPO_ITEM[it.tipo] ?? it.tipo)}${it.dano != null ? ` · daño ${esc(it.dano)}${it.agravado ? " agravado" : ""}` : ""}</p><h4>${esc(it.nombre)}</h4><p>${esc(it.efecto ?? "")}</p>${it.usadoPor?.length ? `<p class="chica">Lo usa: ${it.usadoPor.map(p => enlaceLibro(p, FICHA.get(p)?.nombre ?? p)).join(" · ")}</p>` : ""}</div>`).join("");
+const TIPO_ITEM = EN ? { weapon: "Weapon", gear: "Gear", condition: "Condition" } : { weapon: "Arma", gear: "Equipo", condition: "Estado" };
+const arsenal = ARSENAL.map(it => `<div class="item" id="${ANCLA.get(`Item.${ID.item(it.id)}`)}"><p class="kicker">${esc(TIPO_ITEM[it.tipo] ?? it.tipo)}${it.dano != null ? ` · ${L("daño", "damage")} ${esc(it.dano)}${it.agravado ? ` ${L("agravado", "aggravated")}` : ""}` : ""}</p><h4>${esc(it.nombre)}</h4><p>${esc(it.efecto ?? "")}</p>${it.usadoPor?.length ? `<p class="chica">${L("Lo usa", "Used by")}: ${it.usadoPor.map(p => enlaceLibro(p, FICHA.get(p)?.nombre ?? p)).join(" · ")}</p>` : ""}</div>`).join("");
 const celula = CELULA.sort(ordenId).map((a, i) => {
   const id = idDe(a), f = FICHA.get(id), img = imagenActor(a)?.clase;
   if (!img) SIN_ARTE.push(`${id} (${a.name}): retrato`);
@@ -506,28 +589,43 @@ const celula = CELULA.sort(ordenId).map((a, i) => {
 const firstlight = `
 <section class="bandas" id="firstlight">
   <div class="seccion-cab">
-    <p class="kicker">La Segunda Inquisición</p>
-    <h2>FIRSTLIGHT jugable</h2>
-    <p class="standfirst">La Célula Puget con reglas de Cazador: La Venganza: cómo se juega, los pregenerados, el arsenal y la continuación tras FIN-D. Los interludios están al final de la aventura.</p>
+    <p class="kicker">${L("La Segunda Inquisición", "The Second Inquisition")}</p>
+    <h2>${L("FIRSTLIGHT jugable", "Playable FIRSTLIGHT")}</h2>
+    <p class="standfirst">${L("La Célula Puget con reglas de Cazador: La Venganza: cómo se juega, los pregenerados, el arsenal y la continuación tras FIN-D. Los interludios están al final de la aventura.", "The Puget Cell with Hunter: The Reckoning rules: how to play it, the pregens, the arsenal and what comes after FIN-D. The interludes are at the end of the adventure.")}</p>
   </div>
   <div class="pagina sin-arriba">${["FIRSTLIGHT-JUGABLE", "FIRSTLIGHT-PREGENERADOS", "FIRSTLIGHT-MAREA-ROJA"].map(id => journalPlegado(id, { kicker: "FIRSTLIGHT" })).join("")}</div>
-  ${celula ? `<div class="seccion-cab chica-cab"><p class="kicker">FIRSTLIGHT</p><h2>La Célula Puget</h2></div>${celula}` : ""}
-  <div class="pagina"><h3>El arsenal</h3><p class="chica">Ítems del compendio «FIRSTLIGHT — Arsenal».</p><div class="arsenal">${arsenal}</div></div>
+  ${celula ? `<div class="seccion-cab chica-cab"><p class="kicker">FIRSTLIGHT</p><h2>${L("La Célula Puget", "The Puget Cell")}</h2></div>${celula}` : ""}
+  <div class="pagina"><h3>${L("El arsenal", "The arsenal")}</h3><p class="chica">${L("Ítems del compendio «FIRSTLIGHT — Arsenal».", "Items from the “The Ward File — FIRSTLIGHT arsenal” compendium.")}</p><div class="arsenal">${arsenal}</div></div>
 </section>`;
 
 /* ------------------------------------------------- 9. pantalla */
 const pantallaJ = J.get("PANTALLA");
 const pantalla = pantallaJ ? `
 <section class="pagina" id="pantalla">
-  <p class="kicker">En la mesa</p>
-  <h2>Pantalla del Narrador</h2>
+  <p class="kicker">${L("En la mesa", "At the table")}</p>
+  <h2>${L("Pantalla del Narrador", "Storyteller Screen")}</h2>
   <div class="cuerpo ancho" id="${anclaJournal(pantallaJ)}">${paginas(pantallaJ).map(p => subpagina(pantallaJ, p)).join("")}</div>
 </section>` : "";
 
 /* ------------------------------------------------- 10. en Foundry */
-const captura = (archivo, alt, pie) => existe(`assets/guia/capturas/${archivo}`)
-  ? `<figure class="captura"><img src="${A}/guia/capturas/${archivo}" alt="${esc(alt)}" loading="lazy"><figcaption>${pie}</figcaption></figure>` : "";
-const foundry = `
+// En inglés, las capturas de assets/guia/capturas/en/ si ya están (las saca el e2e con Foundry en inglés).
+const captura = (archivo, alt, pie) => {
+  const rel = [EN && `guia/capturas/en/${archivo}`, `guia/capturas/${archivo}`].filter(Boolean).find(r => existe(`assets/${r}`));
+  return rel ? `<figure class="captura"><img src="${A}/${rel}" alt="${esc(alt)}" loading="lazy"><figcaption>${pie}</figcaption></figure>` : "";
+};
+const foundry = EN ? `
+<section class="pagina" id="foundry">
+  <p class="kicker">The module</p>
+  <h2>How to use the module in Foundry</h2>
+  <div class="pasos">
+    <div class="paso"><div class="paso-texto"><h3>1. Import the chronicle</h3><p>Enable <strong>El Expediente Ward / The Ward File</strong> in a <em>wod5e</em> world. The first time the Storyteller logs in, the module offers to import the whole adventure with its folders, in Spanish or in English: journals, actors, scenes, FIRSTLIGHT items, macros and the ambient music. If you leave it for later, it's in the “The Ward File — Import the chronicle” compendium. Importing again updates without duplicating and without overwriting the players' PCs or what you've revealed. To switch the chronicle's language mid-game, use <em>Chronicle language</em> in the module settings: it's the same update, in the other language.</p></div>${captura("importar.webp", "The “Import the chronicle” dialog", "The import dialog, with the Dark Pack notice.")}</div>
+    <div class="paso"><div class="paso-texto"><h3>2. The indicator</h3><p>Above the macro bar, for the Storyteller only: the Thermometer with its ten segments, the night on Halloway's Clock and the clues found, with plus and minus buttons. It collapses into a pill and opens the Storyteller Panel.</p></div>${captura("indicador.webp", "The Storyteller indicator", "Thermometer 2, night 1 (Thursday, November 12), 0 of 15 clues.")}</div>
+    <div class="paso"><div class="paso-texto"><h3>3. The Storyteller Panel</h3><p>Four tabs: <strong>Thermometer</strong> (value, thresholds, set, freeze, what moves it tonight and history), <strong>Clock</strong> (the eight nights with their event and scenes), <strong>Clues</strong> (P-01 to P-15 and the evidence without an ID) and <strong>Key tests</strong> (A3-E04 and A4-E01, with the pool worked out from the clues and the Primogen Council vote). When a threshold is crossed, the Storyteller gets a notice and a whisper with what happens in the city; at 3 and 9, with the FIRSTLIGHT interlude that's due.</p></div>${captura("panel-termometro.webp", "The Storyteller Panel on the Thermometer tab", "Thermometer at 3: the panel says it's time for interlude INT-01.")}${captura("susurro.webp", "Whisper to the Storyteller when crossing threshold 3", "The threshold whisper, for the Storyteller only.")}${captura("panel-tiradas.webp", "The Key tests tab at the Council", "Key tests: margins and the Primogen Council vote.")}</div>
+    <div class="paso"><div class="paso-texto"><h3>4. The journal buttons</h3><p>Scenes have test buttons (they roll with the selected token or the player's character), Thermometer buttons (with the reason; the body-camera one respects its cap), clue buttons (they mark the clue as found) and Clock night buttons. Links take you to the scene, the location, the NPC or the document. In this guide, the same buttons move The table.</p></div>${captura("journal.webp", "A journal with Thermometer and clue buttons", "Adjustment to Part 1: Thermometer buttons, clues and links.")}</div>
+    <div class="paso"><div class="paso-texto"><h3>5. The FIRSTLIGHT interludes</h3><p>When the Thermometer crosses 3 or 9, the players can take the Puget Cell through a short interlude (INT-01 to INT-03). What comes out of it leaves advantages or cracks for the raid (INT-00).</p></div>${captura("interludio.webp", "The playable FIRSTLIGHT journal with INT-00", "INT-00: advantages and cracks for the raid.")}</div>
+  </div>
+  <p class="chica">The scenes come with this guide's maps, with walls, doors, lights and placed tokens, and their ambient music, which plays when you activate them (the “The Ward File — Ambiences” playlist also has tracks to start by hand: Seattle at night, Combat, The raid and Epilogue). The compendium macros open the panel, move the Thermometer, mark clues and advance the night.</p>
+</section>` : `
 <section class="pagina" id="foundry">
   <p class="kicker">El módulo</p>
   <h2>Cómo usar el módulo en Foundry</h2>
@@ -552,33 +650,36 @@ const DATOS = {
     destino: [u.escena, u.interludio].filter(Boolean).map(id => ({ id, ancla: ancla(id) }))
   })),
   noches: (R.noches ?? []).map(n => ({ n: Number(n.n), dia: n.dia ?? n.fecha, evento: plano(n.evento), ancla: anclaNoche(n.n) })),
-  pistas: PISTAS.map(p => ({ id: p.id, nombre: plano(p.nombre), ancla: ancla(p.id) }))
+  pistas: PISTAS.map(p => ({ id: p.id, nombre: plano(p.nombre), ancla: ancla(p.id) })),
+  // Los textos fijos de guia/guia.js (T("…")), sólo en la guía en inglés.
+  ...(EN ? { textos: TEXTOS_MESA_EN } : {})
 };
 for (const n of DATOS.noches) if (!n.ancla) avisos.push(`noche ${n.n} sin página en el journal TRACKERS`);
 const mesa = `
 <aside class="mesa" id="mesa" role="dialog" aria-labelledby="mesa-titulo" hidden>
-  <div class="mesa-cab"><h2 id="mesa-titulo">La mesa</h2><button type="button" data-cerrar-mesa aria-label="Cerrar">Cerrar</button></div>
+  <div class="mesa-cab"><h2 id="mesa-titulo">${MESA}</h2><button type="button" data-cerrar-mesa aria-label="${L("Cerrar", "Close")}">${L("Cerrar", "Close")}</button></div>
   <div class="mesa-cuerpo">
-    <h3>Termómetro</h3>
-    <div class="termo"><button type="button" data-termo="-1" aria-label="Bajar">−</button><b data-termo-valor>${DATOS.inicio}</b><button type="button" data-termo="+1" aria-label="Subir">+</button><button type="button" class="congelar" data-termo-congelar aria-pressed="false">Congelar</button></div>
+    <h3>${L("Termómetro", "Thermometer")}</h3>
+    <div class="termo"><button type="button" data-termo="-1" aria-label="${L("Bajar", "Lower")}">−</button><b data-termo-valor>${DATOS.inicio}</b><button type="button" data-termo="+1" aria-label="${L("Subir", "Raise")}">+</button><button type="button" class="congelar" data-termo-congelar aria-pressed="false">${L("Congelar", "Freeze")}</button></div>
     ${escala(true)}
     <p class="umbral-actual" data-termo-umbral aria-live="polite"></p>
-    <details class="registro"><summary>Lo que lo movió</summary><ol data-termo-registro></ol></details>
-    <h3>Reloj de Halloway</h3>
-    <div class="contador" data-noche><span>Noche</span><button type="button" data-menos aria-label="Noche anterior">−</button><b>1</b><button type="button" data-mas aria-label="Noche siguiente">+</button></div>
+    <details class="registro"><summary>${L("Lo que lo movió", "What moved it")}</summary><ol data-termo-registro></ol></details>
+    <h3>${L("Reloj de Halloway", "Halloway's Clock")}</h3>
+    <div class="contador" data-noche><span>${L("Noche", "Night")}</span><button type="button" data-menos aria-label="${L("Noche anterior", "Previous night")}">−</button><b>1</b><button type="button" data-mas aria-label="${L("Noche siguiente", "Next night")}">+</button></div>
     <p class="noche-texto" data-noche-texto></p>
-    <h3>Pistas <span class="cuenta" data-pistas-cuenta></span></h3>
+    <h3>${L("Pistas", "Clues")} <span class="cuenta" data-pistas-cuenta></span></h3>
     <div class="pistas-mesa">${DATOS.pistas.map(p => `<label><input type="checkbox" data-pista-mesa="${esc(p.id)}"><span><b>${esc(p.id)}</b> ${esc(p.nombre)}</span></label>`).join("")}</div>
-    <h3>Avance</h3>
+    <h3>${L("Avance", "Progress")}</h3>
     <p class="progreso" data-progreso="todo" aria-live="polite"></p>
-    <h3>Notas de la sesión</h3>
-    <label class="etiqueta-notas" for="notas-sesion">Lo que pasó, lo pendiente, a quién vieron</label><textarea id="notas-sesion" name="notas-sesion" data-notas="sesion" rows="8" autocomplete="off" placeholder="Ej.: Helen les dio la lista; Krell vio la camioneta de Bear…"></textarea>
-    <div class="mesa-acciones"><button type="button" data-exportar>Exportar</button><label class="boton">Importar<input type="file" accept="application/json" data-importar hidden></label><button type="button" data-reiniciar>Reiniciar</button></div>
+    <h3>${L("Notas de la sesión", "Session notes")}</h3>
+    <label class="etiqueta-notas" for="notas-sesion">${L("Lo que pasó, lo pendiente, a quién vieron", "What happened, what's pending, who they saw")}</label><textarea id="notas-sesion" name="notas-sesion" data-notas="sesion" rows="8" autocomplete="off" placeholder="${L("Ej.: Helen les dio la lista; Krell vio la camioneta de Bear…", "E.g.: Helen gave them the list; Krell saw Bear's van…")}"></textarea>
+    <div class="mesa-acciones"><button type="button" data-exportar>${L("Exportar", "Export")}</button><label class="boton">${L("Importar", "Import")}<input type="file" accept="application/json" data-importar hidden></label><button type="button" data-reiniciar>${L("Reiniciar", "Reset")}</button></div>
   </div>
 </aside>`;
 
 /* --------------------------------------------------------------- HTML */
-const LEGAL = "El Expediente Ward — una crónica en Seattle es material fan y no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.";
+const LEGAL = L("El Expediente Ward — una crónica en Seattle es material fan y no oficial de World of Darkness, publicado bajo el Dark Pack. Partes de estos materiales son copyright y marcas registradas de Paradox Interactive AB, y se usan con permiso. Todos los derechos reservados. Más información en worldofdarkness.com.",
+  "The Ward File — a Seattle chronicle is fan-made, unofficial World of Darkness material, published under the Dark Pack.");
 // El texto en inglés, literal, como lo pide el acuerdo del Dark Pack.
 const LEGAL_EN = ["Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com.",
   "This is not official World of Darkness material."];
@@ -587,12 +688,12 @@ const LOGO_DARK_PACK = existe("assets/legal/dark-pack-logo.webp")
   ? `<a class="pie-logo" href="https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement"><img src="${A}/legal/dark-pack-logo.webp" alt="Dark Pack" width="96" height="97"></a>` : "";
 if (!LOGO_DARK_PACK) avisos.push("falta assets/legal/dark-pack-logo.webp (el acuerdo del Dark Pack lo exige)");
 let html = `<!doctype html>
-<html lang="es">
+<html lang="${EN ? "en" : "es"}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El Expediente Ward — Guía del Narrador</title>
-<meta name="description" content="El Expediente Ward, una crónica fan y no oficial en Seattle para Vampiro: La Mascarada 5ª edición, completa y con seguimiento de la partida.">
+<title>${L("El Expediente Ward — Guía del Narrador", "The Ward File — Storyteller Guide")}</title>
+<meta name="description" content="${L("El Expediente Ward, una crónica fan y no oficial en Seattle para Vampiro: La Mascarada 5ª edición, completa y con seguimiento de la partida.", "The Ward File, a fan-made, unofficial Seattle chronicle for Vampire: The Masquerade 5th Edition, complete and with game tracking.")}">
 <meta name="theme-color" content="#0d0f12">
 <link rel="stylesheet" href="../src/styles/sbn.css">
 <link rel="stylesheet" href="../src/styles/sbn-ui.css">
@@ -602,13 +703,13 @@ let html = `<!doctype html>
 </style>
 </head>
 <body>
-<a class="saltar" href="#libro">Saltar al contenido</a>
+<a class="saltar" href="#libro">${L("Saltar al contenido", "Skip to content")}</a>
 ${cabecera}
-<nav class="barra" aria-label="Navegación fija" data-barra>
-  <a class="barra-logo" href="#inicio" aria-label="Volver a la portada">EW</a>
+<nav class="barra" aria-label="${L("Navegación fija", "Sticky navigation")}" data-barra>
+  <a class="barra-logo" href="#inicio" aria-label="${L("Volver a la portada", "Back to the cover")}">${L("EW", "WF")}</a>
   <div class="barra-links">${navLinks}</div>
-  <form class="buscar" role="search" data-buscar><label for="buscar" class="visualmente-oculto">Ir a una escena, un personaje o un lugar</label><input id="buscar" name="buscar" type="search" list="destinos" placeholder="Ir a… (escena, PNJ, lugar, ID)" autocomplete="off" spellcheck="false"><datalist id="destinos"></datalist></form>
-  <button class="t-accion" type="button" data-abrir-mesa>La mesa</button>
+  <form class="buscar" role="search" data-buscar><label for="buscar" class="visualmente-oculto">${L("Ir a una escena, un personaje o un lugar", "Go to a scene, a character or a location")}</label><input id="buscar" name="buscar" type="search" list="destinos" placeholder="${L("Ir a… (escena, PNJ, lugar, ID)", "Go to… (scene, NPC, location, ID)")}" autocomplete="off" spellcheck="false"><datalist id="destinos"></datalist></form>
+  <button class="t-accion" type="button" data-abrir-mesa>${MESA}</button>
 </nav>
 <main id="contenido">
 ${libro}
@@ -621,11 +722,12 @@ ${firstlight}
 ${pantalla}
 ${foundry}
 </main>
-<footer class="pie">${LOGO_DARK_PACK}<div class="pie-texto"><p>${esc(LEGAL)}</p>${LEGAL_EN.map(t => `<p lang="en">${esc(t)}</p>`).join("")}<p>Es gratuito. Todo el arte (retratos, mapas, tokens, ilustraciones, portada) se generó con IA en local, con modelos de licencia comercial; no hay arte de Paradox ni de White Wolf, y el único logo es el del Dark Pack, como lo pide el acuerdo. Fuentes Oswald, IBM Plex Sans y Amiri (OFL).</p></div></footer>
+<footer class="pie">${LOGO_DARK_PACK}<div class="pie-texto"><p>${esc(LEGAL)}</p>${LEGAL_EN.map(t => `<p lang="en">${esc(t)}</p>`).join("")}<p>${L("Es gratuito. Todo el arte (retratos, mapas, tokens, ilustraciones, portada) se generó con IA en local, con modelos de licencia comercial; no hay arte de Paradox ni de White Wolf, y el único logo es el del Dark Pack, como lo pide el acuerdo. Fuentes Oswald, IBM Plex Sans y Amiri (OFL).",
+  "It's free. All the art (portraits, maps, tokens, illustrations, cover) was generated locally with AI, using commercially licensed models; there's no Paradox or White Wolf art, and the only logo is the Dark Pack's, as the agreement requires. Fonts: Oswald, IBM Plex Sans and Amiri (OFL).")}</p></div></footer>
 ${mesa}
 <div class="aviso" data-aviso role="status" aria-live="polite" hidden></div>
-<button type="button" class="arriba" data-arriba hidden aria-label="Volver arriba">▲</button>
-<dialog class="visor" data-visor><div class="visor-cab"><span data-visor-titulo></span><button type="button" data-visor-cerrar>Cerrar</button></div><div class="visor-cuerpo"><img src="" alt=""></div></dialog>
+<button type="button" class="arriba" data-arriba hidden aria-label="${L("Volver arriba", "Back to top")}">▲</button>
+<dialog class="visor" data-visor><div class="visor-cab"><span data-visor-titulo></span><button type="button" data-visor-cerrar>${L("Cerrar", "Close")}</button></div><div class="visor-cuerpo"><img src="" alt=""></div></dialog>
 <script type="application/json" id="datos-guia">${JSON.stringify(DATOS).replace(/</g, "\\u003c")}</script>
 <script src="guia.js"></script>
 </body>
@@ -674,7 +776,7 @@ if (!ENLAZADO) {
 }
 fs.writeFileSync(SALIDA, final);
 const kb = Math.round(fs.statSync(SALIDA).size / 1024);
-console.log(`✓ guia/index.html (${kb} KB${ENLAZADO ? ", enlazado" : ", autocontenido"}): ${partes.length} partes, ${todosPerfiles.length} perfiles, ${MENORES.length} menores, ${CELULA.length} de la Célula, ${LUGARES.length} lugares, ${PLANOS.length} mapas, ${docs.length} documentos, ${PISTAS.length} pistas, ${FOTOS.size} imágenes`);
+console.log(`✓ ${NOMBRE_SALIDA} (${kb} KB${ENLAZADO ? ", enlazado" : ", autocontenido"}): ${partes.length} partes, ${todosPerfiles.length} perfiles, ${MENORES.length} menores, ${CELULA.length} de la Célula, ${LUGARES.length} lugares, ${PLANOS.length} mapas, ${docs.length} documentos, ${PISTAS.length} pistas, ${FOTOS.size} imágenes`);
 const problemas = [
   ...avisos,
   ...(ROTOS.length ? [`${ROTOS.length} @UUID sin destino en la guía: ${[...new Set(ROTOS)].join("; ")}`] : []),

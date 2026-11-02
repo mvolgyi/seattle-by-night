@@ -1,0 +1,42 @@
+{
+  "_id": "HCx4szH0aCe9bd7u",
+  "_key": "!items!HCx4szH0aCe9bd7u",
+  "name": "Artificial sunlight generator",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>2 aggravated</td></tr></tbody></table><p>In the van. Lights up a 20-meter area. Inside it: 2 aggravated damage per turn and an automatic Terror Frenzy test (Difficulty 3) on entering. Takes two turns to power up.</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "The Ward File",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "generador-luz-solar",
+      "agravado": true
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 30,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

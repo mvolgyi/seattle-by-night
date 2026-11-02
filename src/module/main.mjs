@@ -4,14 +4,15 @@
  * Sólo cablea: las constantes viven en constantes.mjs y cada mecánica en su
  * propio archivo.
  *
- *   importacion.mjs   ofrecer e importar la Aventura del compendio
+ *   importacion.mjs   ofrecer e importar la Aventura del compendio (castellano o inglés)
+ *   idioma.mjs        idioma de la crónica del mundo (setting sbn-idioma-cronica) y sus packs/datos
  *   datos.mjs         data/cronica.json: umbrales, noches, pistas, tiradas (lo genera el build)
  *   estado.mjs        Termómetro, pistas, Reloj, pruebas y votos (settings de mundo; lo secreto, sellado)
  *   botones.mjs       botones de los journals (.sbn-tirada, -termometro, -pista, -reloj)
  *   indicador.mjs     barrita del Narrador con el Termómetro y la noche
  *   panel.mjs         Panel del Narrador (Termómetro, Reloj, pistas, tiradas clave)
  *   vision.mjs        el Narrador lee el mapa en escenas oscuras (sólo en su cliente)
- *   textos.mjs        respaldo de lang/es.json si el cliente no está en español
+ *   textos.mjs        respaldo de lang/es.json si el cliente no tiene ni su idioma ni el inglés
  */
 
 import { SBN } from "./constantes.mjs";
@@ -22,6 +23,7 @@ import { Indicador } from "./indicador.mjs";
 import { Panel } from "./panel.mjs";
 import { Vision } from "./vision.mjs";
 import * as Importacion from "./importacion.mjs";
+import * as Idioma from "./idioma.mjs";
 import { asegurarTextos, textosListos } from "./textos.mjs";
 
 export { SBN, Datos, Estado, Botones, Indicador, Panel };
@@ -29,6 +31,15 @@ export { SBN, Datos, Estado, Botones, Indicador, Panel };
 Hooks.once("init", () => {
   console.log(`${SBN.ID} | Inicializando El Expediente Ward`);
   Importacion.registrarSettings();
+  Idioma.registrarSettings();
+  game.settings.registerMenu(SBN.ID, "sbn-idioma-menu", {
+    name: "SBN.idioma.menu.Name",
+    label: "SBN.idioma.menu.Label",
+    hint: "SBN.idioma.menu.Hint",
+    icon: "fa-solid fa-language",
+    type: Importacion.MenuIdioma,
+    restricted: true
+  });
   Estado.registrarSettings();
   Indicador.registrarSettings();
   Vision.registrarSettings();
@@ -57,6 +68,8 @@ Hooks.once("ready", async () => {
     noche: n => Estado.noche(n),
     estado: () => Estado.estado(),
     importarCronica: opciones => Importacion.importarCronica(opciones),
+    /** "es" o "en": el idioma de la crónica de este mundo. */
+    idioma: () => Idioma.idiomaCronica(),
     tirada: dataset => Botones.tirada(dataset),
     indicador: () => Indicador.sincronizar(),
     abrirPanel: opciones => Panel.abrir(opciones)
@@ -90,6 +103,17 @@ Hooks.on(SBN.HOOK_ESTADO, (_estado, detalle) => {
   Indicador.refrescar();
   Panel.refrescar();
   if (game.user.isGM) Estado.notificarUmbrales(detalle);
+});
+
+/**
+ * Cambió el idioma de la crónica (otra Aventura importada): los datos del Panel
+ * son los del idioma nuevo. Los ids son los mismos, así que el estado sigue.
+ */
+Hooks.on(SBN.HOOK_IDIOMA, async () => {
+  await Datos.recargar();
+  Botones.refrescar(document);
+  Indicador.refrescar();
+  Panel.refrescar();
 });
 
 /**

@@ -1,0 +1,481 @@
+{
+  "_id": "sJciq5am1WxfcRbZ",
+  "_key": "!scenes!sJciq5am1WxfcRbZ",
+  "name": "Part 2 · The Larchmont: Boiler Room",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 111,
+  "width": 1900,
+  "height": 1100,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 1,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "ge0MQ0dCyCEIvJOw",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/larchmont-sotano.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!sJciq5am1WxfcRbZ.ge0MQ0dCyCEIvJOw"
+    }
+  ],
+  "journal": "Oiln4o98kvxKbOvS",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "DsVydESCpQV3Sd63",
+      "c": [
+        0,
+        50,
+        1800,
+        50
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.DsVydESCpQV3Sd63"
+    },
+    {
+      "_id": "QLNytCEuaF7Wv60r",
+      "c": [
+        0,
+        260,
+        300,
+        260
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.QLNytCEuaF7Wv60r"
+    },
+    {
+      "_id": "gtBTbinjwnjWetA4",
+      "c": [
+        0,
+        50,
+        0,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.gtBTbinjwnjWetA4"
+    },
+    {
+      "_id": "GN9lTTleFnNsRdnb",
+      "c": [
+        300,
+        50,
+        300,
+        260
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.GN9lTTleFnNsRdnb"
+    },
+    {
+      "_id": "qeNt16072AMOKctk",
+      "c": [
+        300,
+        420,
+        300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.qeNt16072AMOKctk"
+    },
+    {
+      "_id": "4T5HOfHHLY8XTCSR",
+      "c": [
+        0,
+        420,
+        300,
+        420
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.4T5HOfHHLY8XTCSR"
+    },
+    {
+      "_id": "uElLupGiX7IoYHT7",
+      "c": [
+        0,
+        1050,
+        1800,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.uElLupGiX7IoYHT7"
+    },
+    {
+      "_id": "acTLsf3ZRAbiYSmv",
+      "c": [
+        1300,
+        300,
+        1800,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.acTLsf3ZRAbiYSmv"
+    },
+    {
+      "_id": "sAvG3E7rHI2UQ2y8",
+      "c": [
+        1300,
+        50,
+        1300,
+        315
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.sAvG3E7rHI2UQ2y8"
+    },
+    {
+      "_id": "XXUstMxfuqPY86nF",
+      "c": [
+        1300,
+        495,
+        1300,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.XXUstMxfuqPY86nF"
+    },
+    {
+      "_id": "fxsQmgGQNUGimiTP",
+      "c": [
+        1800,
+        50,
+        1800,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!sJciq5am1WxfcRbZ.fxsQmgGQNUGimiTP"
+    }
+  ],
+  "lights": [],
+  "regions": [
+    {
+      "_id": "RbwEzf55eazk7Q3m",
+      "name": "Arrival from the ground floor (foot of the stairs)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1320,
+          "y": 410,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "desde-planta",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.RbwEzf55eazk7Q3m"
+    },
+    {
+      "_id": "DtU4MZFcoXI6w9gY",
+      "name": "Climb to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1320,
+          "y": 740,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "yoE6yGoDksuslDpb",
+          "name": "Climb to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.VNvOky037IwV7jBl.Region.VKGdFwN8HDaFd7Hz"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!sJciq5am1WxfcRbZ.DtU4MZFcoXI6w9gY.yoE6yGoDksuslDpb"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "subir-planta",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.DtU4MZFcoXI6w9gY"
+    },
+    {
+      "_id": "GitBw0m5DScFoHz8",
+      "name": "Drop down the stairwell (rubble)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1560,
+          "y": 620,
+          "width": 120,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "caida-hueco",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.GitBw0m5DScFoHz8"
+    },
+    {
+      "_id": "2frEgYgW9NsZQwmF",
+      "name": "Drain to the Sound",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 260,
+          "width": 120,
+          "height": 160,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "larchmont-sotano",
+          "region": "desague",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the drain or the Sound (GAN-09, MEN-08)"
+        }
+      },
+      "_key": "!scenes.regions!sJciq5am1WxfcRbZ.2frEgYgW9NsZQwmF"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "VOT7dvYkXpn5likP",
+      "entryId": "Oiln4o98kvxKbOvS",
+      "pageId": null,
+      "x": 1610,
+      "y": 485,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-11",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "larchmont-sotano",
+          "id": "LUG-11"
+        }
+      },
+      "_key": "!scenes.notes!sJciq5am1WxfcRbZ.VOT7dvYkXpn5likP"
+    },
+    {
+      "_id": "4iRBheH70FsFr8vI",
+      "entryId": "FttkHsYSSaCpIugu",
+      "pageId": "9fTKL8Oeq36BCfU9",
+      "x": 810,
+      "y": 560,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A2-E05",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "larchmont-sotano",
+          "id": "A2-E05"
+        }
+      },
+      "_key": "!scenes.notes!sJciq5am1WxfcRbZ.4iRBheH70FsFr8vI"
+    }
+  ],
+  "tiles": [],
+  "tokens": [
+    {
+      "_id": "7K9Xfw00Ztf4vndF",
+      "name": "The Larchmont Survivor",
+      "displayName": 30,
+      "actorId": "wop4zqE8KwywxhTL",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-08.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 150,
+      "y": 290,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "ge0MQ0dCyCEIvJOw",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": true,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "larchmont-sotano",
+          "id": "MEN-08",
+          "escenas": [
+            "A2-E05"
+          ],
+          "nota": "Only if the Storyteller brings GAN-09 forward: hiding in the drain (Obfuscate 3); flees toward the water when he sees the coterie."
+        }
+      },
+      "_key": "!scenes.tokens!sJciq5am1WxfcRbZ.7K9Xfw00Ztf4vndF"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "b8n2wyIDPtuZIekc",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "larchmont-sotano",
+      "id": "LUG-11",
+      "plano": "larchmont-sotano",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont}</p>\n<p><strong>The basement (A2-E05).</strong> You reach it by the half-collapsed stairs (at the bottom, under the stairwell, a heap of wet rubble where the rain falls in) or by dropping down the stairwell. Total darkness: there&#39;s no light. Running water can be heard: an open <strong>channel</strong> in the floor carries the water from the rubble to the <strong>mouth of the large drain</strong> in the west wall, which empties into the Sound.</p>\n<p><strong>The sealed cistern.</strong> In the center of the boiler room, <strong>a slab of new concrete, lighter than the rest of the floor</strong> (Wits + Investigation Diff. 3; no roll if David came along: he goes straight to the slab). Beneath it are the seven tenants, Danny Ruiz (REF-02) among them. <strong>It isn&#39;t drawn open:</strong> if the coterie lifts it (Strength + Athletics Diff. 4, or automatic with Potence 2), the Storyteller places the <code>tile-cisterna-abierta</code> tile (Pending) on top and applies Thermometer +2. If David is there, he doesn&#39;t help open it and, afterward, doesn&#39;t speak again for the rest of the night. <strong>Auspex 4</strong> on the slab: seven presences, cold, water, “Helen will come.”</p>\n<p><strong>The new flower.</strong> Wits + Awareness Diff. 4: beside the slab, recent bare footprints and a very faint smell of stale Vitae (MEN-08). <strong>They aren&#39;t drawn and have no tile</strong>: they&#39;re the reward for the roll, like the repeater at LUG-05.</p>\n<p><strong>The survivor (MEN-08, GAN-09).</strong> If the Storyteller wants to bring GAN-09 forward, he&#39;s hiding in the drain (Obfuscate 3) and flees toward the water when he sees the coterie: the drain region has no map yet.</p>\n<p><strong>Boilers.</strong> Two riveted iron boilers and a fuel-oil tank against the north wall, cold and rusted: they provide cover.</p>\n\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.wop4zqE8KwywxhTL]{The Larchmont Survivor} · <em>hidden</em> (A2-E05): Only if the Storyteller brings GAN-09 forward: hiding in the drain (Obfuscate 3); flees toward the water when he sees the coterie.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Drain to the Sound.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

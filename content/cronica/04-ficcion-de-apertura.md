@@ -111,7 +111,7 @@ Su padre decía que en esta ciudad la lluvia lo borra todo. Helen llevaba diez a
 
 ## Notas del Narrador · CAP-00 {narrador}
 
-El relato ocurre justo antes de @ID[A0-E01]. La llamada a SAFE es el arranque de la aventura. Si jugás en coterie, David convoca a los demás tras colgar.
+El relato ocurre justo antes de @ID[A0-E01]. La llamada a SAFE es el arranque de la aventura. Tras colgar, David convoca a la coterie.
 
 **Los ladrones** son el equipo @ID[MEN-01], contratado por Preston Gale (@ID[PNJ-19]). El que olfatea la escalera es un ghoul de Gale (@ID[MEN-04]). Su Vitae es el rastro P-02.
 

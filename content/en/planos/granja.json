@@ -1,0 +1,504 @@
+{
+  "_fuente": {
+    "granja": "95adeac72327d550",
+    "granja-sotano": "74b0c16942c40766"
+  },
+  "planos": {
+    "granja": {
+      "nombre": "Part 1 · The Sheriff's Farm",
+      "nota": "**What it is.** Montgomery's haven (Haven 3, Herd 2): main house, a barn converted into the Wolves' meeting hall, kennels with a dozen ghouled dogs, and, behind the barn, the bounty hunters' trailers (MEN-03). The cellar, with the 300 m tunnel to the river boat landing, is the **granja-sotano** map (the stairwell hall leads down there).\n\n**A1-E03 · The Sheriff Asks (on the porch).** “The gravel road ends at a dark wooden farmhouse among flooded fields. There are dogs everywhere, motionless, not barking: watching. On the porch, in a rocking chair, sits a heavyset man…” Montgomery doesn't get up from the **rocking chair** (tile); the sheet with the list is on the **porch railing** beside him. “When the last of you climbs the steps” (the porch steps, at the center). He doesn't invite them in: what's said on the porch doesn't go into the house (Hal knows this without a roll). The dogs: tokens spread across the yard and the gravel.\n\n**A3-E04 · The Pack Hesitates (inside).** “This time, the farmhouse door is open. Inside is a room with a cold fireplace, a long wooden table, and, on the table, a tablet, switched on… The dogs lie down on the porch, their backs to the house… Montgomery is standing by the window.” The front door opens straight into the **living room**: the cold fireplace against the west wall, the long table (tile) with the tablet (tile, “screen” light) and the envelope with the “M.V.” letter, and the front window, which looks out on the porch. Open the front door manually for this scene.\n\n**Combat (A3-E04, or if the coterie attacks the Sheriff).** The twelve dogs come out of the **kennels** (behind the house: five wire pens with gates, doors you can see through) and off the porch; the six bounty hunters come out of the **three trailers** behind the barn (door on the west side of each). Montgomery: Blood Potency 5, Fortitude 4.\n\n**A4-E02 · The Raid (if it's the farm).** FIRSTLIGHT comes in by the **gravel road** (south). Escape: the cellar tunnel to the river boat landing (down the stairwell hall stairs; granja-sotano map); the dogs cover the retreat. Animalism on the farm dogs creates chaos among the operators. The trailers and the barn are the other “save the mortals” objectives.\n\n**The barn.** Sliding door to the west (open), back door to the north toward the trailers, and a small door to the south. Inside, the Wolves' long table with its benches (tiles), the wood stove, and, at the far end, the old stalls converted into storage (low wooden partitions: they block movement, not sight).\n\n**The house.** Ground floor: living room, kitchen, the Sheriff's office (glass-front gun cabinet), the hall with the stairs down to the cellar, and the mudroom with the back door toward the kennels.\n\n**Detail.** Montgomery receives visitors sitting on the porch even in the rain. If he invites someone inside, the matter is serious. If anyone attempts Dominate or Presence in A1-E03, he gets up from the rocking chair for the first time: “Do that again and I'll bury you in the back field.”",
+      "habitaciones": [
+        {
+          "nombre": "Sheriff's office"
+        },
+        {
+          "nombre": "Hall with the cellar stairs"
+        },
+        {
+          "nombre": "Mudroom (back door)"
+        },
+        {
+          "nombre": "Living room (fireplace and long table)"
+        },
+        {
+          "nombre": "Kitchen"
+        },
+        {
+          "nombre": "Porch"
+        },
+        {
+          "nombre": "Kennels"
+        },
+        {
+          "nombre": "Barn · stalls and storage"
+        },
+        {
+          "nombre": "Barn · meeting hall"
+        },
+        {
+          "nombre": "Trailer 1"
+        },
+        {
+          "nombre": "Trailer 2"
+        },
+        {
+          "nombre": "Trailer 3"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Yard and end of the gravel road"
+        },
+        {
+          "nombre": "Gravel lane between the house and the barn (path to the river)"
+        },
+        {
+          "nombre": "Gravel lot by the trailers"
+        },
+        {
+          "nombre": "Gravel path behind the house"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Front door (open in A3-E04)"
+        },
+        {
+          "nombre": "Living room window onto the porch (Montgomery, standing beside it in A3-E04)"
+        },
+        {
+          "nombre": "Kitchen window onto the porch"
+        },
+        {
+          "nombre": "Living room west window"
+        },
+        {
+          "nombre": "Kitchen window toward the barn"
+        },
+        {
+          "nombre": "Office window"
+        },
+        {
+          "nombre": "Living room ↔ kitchen"
+        },
+        {
+          "nombre": "Living room → stairwell hall"
+        },
+        {
+          "nombre": "Hall → office"
+        },
+        {
+          "nombre": "Hall → mudroom"
+        },
+        {
+          "nombre": "Kitchen → mudroom"
+        },
+        {
+          "nombre": "Back door (toward the kennels)"
+        },
+        {
+          "nombre": "Porch railing (the sheet with the list, in A1-E03)"
+        },
+        {
+          "nombre": "Porch steps"
+        },
+        {
+          "nombre": "Porch railing"
+        },
+        {
+          "nombre": "West porch railing"
+        },
+        {
+          "nombre": "East porch railing"
+        },
+        {
+          "nombre": "East kennel fence"
+        },
+        {
+          "nombre": "Kennel fence"
+        },
+        {
+          "nombre": "Pen 1 gate"
+        },
+        {
+          "nombre": "Kennel fence"
+        },
+        {
+          "nombre": "Pen 2 gate"
+        },
+        {
+          "nombre": "Kennel fence"
+        },
+        {
+          "nombre": "Pen 3 gate"
+        },
+        {
+          "nombre": "Kennel fence"
+        },
+        {
+          "nombre": "Pen 4 gate"
+        },
+        {
+          "nombre": "Kennel fence"
+        },
+        {
+          "nombre": "Pen 5 gate"
+        },
+        {
+          "nombre": "Kennel fence"
+        },
+        {
+          "nombre": "Fence between pens"
+        },
+        {
+          "nombre": "Fence between pens"
+        },
+        {
+          "nombre": "Fence between pens"
+        },
+        {
+          "nombre": "Fence between pens"
+        },
+        {
+          "nombre": "Barn sliding door"
+        },
+        {
+          "nombre": "Barn back door (toward the trailers)"
+        },
+        {
+          "nombre": "Small barn door (yard)"
+        },
+        {
+          "nombre": "Stall aisle ↔ meeting hall"
+        },
+        {
+          "nombre": "Low stall partition"
+        },
+        {
+          "nombre": "Low stall partition"
+        },
+        {
+          "nombre": "Trailer 1 door"
+        },
+        {
+          "nombre": "Trailer 2 door"
+        },
+        {
+          "nombre": "Trailer 3 door"
+        },
+        {
+          "nombre": "Trailer 1 window"
+        },
+        {
+          "nombre": "Trailer 2 window"
+        },
+        {
+          "nombre": "Trailer 3 window"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a dark wooden gun cabinet with a glass front holding hunting rifles and shotguns"
+        },
+        {
+          "desc": "an old oak desk with a few folded papers"
+        },
+        null,
+        {
+          "desc": "a steep narrow wooden staircase going down to the cellar"
+        },
+        {
+          "desc": "a deep enamel utility sink"
+        },
+        {
+          "desc": "a boot rack and coat hooks with waxed canvas jackets"
+        },
+        {
+          "desc": "sacks of dog feed"
+        },
+        {
+          "desc": "a cold fieldstone fireplace with an iron grate and dead grey ashes"
+        },
+        {
+          "desc": "a dark wooden shelf with old books, jars and an oil lamp"
+        },
+        {
+          "desc": "the long wooden table (A3-E04: the tablet and the envelope with the “M.V.” letter)"
+        },
+        {
+          "desc": "the tablet, switched on, showing the image of the silos (A3-E04)"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "an old white refrigerator"
+        },
+        {
+          "desc": "a worn farmhouse kitchen counter with a sink and a gas hob"
+        },
+        null,
+        null,
+        {
+          "desc": "Montgomery's rocking chair"
+        },
+        {
+          "desc": "wooden porch bench"
+        },
+        null,
+        null,
+        {
+          "desc": "three wide wooden porch steps down to the gravel"
+        },
+        {
+          "desc": "the Sheriff's pickup truck"
+        },
+        {
+          "desc": "a weathered wooden dog house"
+        },
+        {
+          "desc": "a weathered wooden dog house"
+        },
+        {
+          "desc": "a weathered wooden dog house"
+        },
+        {
+          "desc": "a weathered wooden dog house"
+        },
+        {
+          "desc": "a weathered wooden dog house"
+        },
+        {
+          "desc": "a wall rack of old farm tools, ropes and chains"
+        },
+        {
+          "desc": "a rough plank shelf with cans and boxes"
+        },
+        {
+          "desc": "a rough plank workbench with a vice"
+        },
+        {
+          "desc": "hay bales"
+        },
+        {
+          "desc": "hay bales"
+        },
+        {
+          "desc": "the Wolves' long table"
+        },
+        {
+          "desc": "long bench"
+        },
+        {
+          "desc": "long bench"
+        },
+        {
+          "desc": "a black cast-iron wood stove with its flue pipe, cold"
+        },
+        {
+          "desc": "hay bales"
+        },
+        {
+          "desc": "hay bales"
+        },
+        {
+          "desc": "a cramped trailer bed with a rumpled sleeping bag"
+        },
+        {
+          "desc": "a tiny trailer kitchenette with a sink and a two-burner hob"
+        },
+        {
+          "desc": "a cramped trailer bed with a rumpled sleeping bag"
+        },
+        {
+          "desc": "a tiny trailer kitchenette with a sink and a two-burner hob"
+        },
+        {
+          "desc": "a cramped trailer bed with a rumpled sleeping bag"
+        },
+        {
+          "desc": "a tiny trailer kitchenette with a sink and a two-burner hob"
+        },
+        {
+          "desc": "the FIRSTLIGHT van with the generator, at the end of the gravel road (A4-E02, if the raid is at the farm)"
+        },
+        {
+          "desc": "the thermal camera drone (A4-E02, if the raid is at the farm)"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Porch bulb"
+        },
+        {
+          "nombre": "Living room lamp"
+        },
+        {
+          "nombre": "Kitchen light"
+        },
+        {
+          "nombre": "Office lamp"
+        },
+        {
+          "nombre": "Back door floodlight (kennels)"
+        },
+        {
+          "nombre": "Barn sodium floodlight (yard)"
+        },
+        {
+          "nombre": "Hanging barn bulb"
+        },
+        {
+          "nombre": "Hanging barn bulb"
+        },
+        {
+          "nombre": "Trailer 1 light"
+        },
+        {
+          "nombre": "Trailer 2 light"
+        },
+        {
+          "nombre": "Trailer 3 light"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival from the cellar (stair landing)"
+        },
+        {
+          "nombre": "Down to the cellar"
+        },
+        {
+          "nombre": "Arrival by the gravel road"
+        },
+        {
+          "nombre": "Leave by the gravel road into the valley",
+          "pendiente": "Snohomish Valley zone map (t2i, no floor plan): its twin road region is missing"
+        },
+        {
+          "nombre": "Path to the river and the boat landing",
+          "pendiente": "the river and the boat landing are on the valley zone map (t2i, no floor plan)"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "In the porch rocking chair (A1-E03). In A3-E04, standing by the living room window: move him inside, to (2,5; 13,4)."
+        },
+        {
+          "nota": "“Motionless, not barking: watching.” In A3-E04 they lie down on the porch, their backs to the house."
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "nota": "Six of the twelve; the rest come out of the kennels if there's combat."
+        },
+        {
+          "nota": "Dutch Lindqvist, in trailer 1. The bounty hunters come out if there's combat or a raid."
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "nota": "If the raid is at the farm: the team comes in by the gravel road."
+        },
+        null,
+        null,
+        {
+          "nota": "Pak, inside the van, with the drone."
+        },
+        {
+          "nota": "The pair circling the house toward the back door."
+        }
+      ]
+    },
+    "granja-sotano": {
+      "nombre": "Part 1 · The Sheriff's Farm: The Cellar and the Tunnel",
+      "nota": "**The farm cellar.** Under the house (same footprint as the ground floor, shifted +0,5 m in x and −1 m in y). Old flagstone floor, shelves of preserves, the furnace, a chest freezer, and the steel gun locker. You get down by the stairs in the hall (region “Up to the house” / “Arrival”).\n\n**The Sheriff's chamber.** Dirt floor, an iron cot: Montgomery sleeps here by day. Heavy door.\n\n**The tunnel to the boat landing.** Behind the **preserves shelf** on the north wall (tile: it slides like a door) is a **hidden door** (wall with door=2: it looks like a wall) to the roughly **300 m** tunnel that comes out at the private boat landing on the Snohomish River. In A4-E02, “through the farm: the tunnel to the river boat landing. The dogs cover the retreat.” Montgomery and Hal know about it; the rest only if someone shows them. The tunnel region has no destination: the boat landing is on the zone map (t2i).",
+      "habitaciones": [
+        {
+          "nombre": "Cellar"
+        },
+        {
+          "nombre": "Sheriff's chamber"
+        },
+        {
+          "nombre": "Tunnel to the boat landing"
+        },
+        {
+          "nombre": "Foot of the stairs"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Door of the Sheriff's chamber"
+        },
+        {
+          "nombre": "Stair railing"
+        },
+        {
+          "nombre": "Hidden door behind the shelf (tunnel to the boat landing)"
+        },
+        {
+          "nombre": "The tunnel continues toward the river"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a steep narrow wooden staircase coming down from the house"
+        },
+        {
+          "desc": "a plain iron cot with a grey wool blanket"
+        },
+        {
+          "desc": "preserves shelf: it slides and covers the tunnel door"
+        },
+        {
+          "desc": "a sturdy wooden shelf of preserve jars and tins"
+        },
+        {
+          "desc": "sturdy wooden shelves of preserve jars, tins and sacks"
+        },
+        {
+          "desc": "an old oil-fired furnace"
+        },
+        {
+          "desc": "an old white chest freezer"
+        },
+        {
+          "desc": "a grey steel gun locker and stacked ammunition boxes"
+        },
+        {
+          "desc": "boxes and drums"
+        },
+        {
+          "desc": "a rough wooden workbench against the wall with a few tools"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Cellar bulb"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival at the foot of the stairs"
+        },
+        {
+          "nombre": "Up to the house"
+        },
+        {
+          "nombre": "Tunnel to the river boat landing (300 m)",
+          "pendiente": "the tunnel runs 300 m to the private boat landing on the Snohomish River, which is on the valley zone map (t2i, no floor plan): the twin region is missing"
+        }
+      ]
+    }
+  }
+}

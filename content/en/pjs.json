@@ -1,0 +1,145 @@
+{
+  "_fuente": {
+    "PJ-02": "cb7535c45ca01d35",
+    "PJ-03": "302aa25b6a888166",
+    "PJ-04": "7761f6fef13fffea",
+    "PJ-05": "fea010e51ac42d2a",
+    "PJ-06": "fd024aa7b8e5c3fb"
+  },
+  "pjs": {
+    "PJ-02": {
+      "nombre": "Celeste Arden",
+      "concepto": "investment analyst and childe of Charles Halloway, the Ventrue Primogen.",
+      "sire": "PNJ-03",
+      "ambicion": "make her name worth more than her sire's",
+      "deseo": "have Halloway recognize her as his equal",
+      "convicciones": [
+        "Never let anyone fall alone"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "her mother",
+          "descripcion": "her mother, who lives in a memory care home and still calls her by her name"
+        }
+      ],
+      "ventajas": [
+        "Resources 3",
+        "Contacts (finance) 2",
+        "Influence (Eastside) 1",
+        "Mawla (Halloway) 2"
+      ],
+      "defectos": [
+        "Level 2 Blood Bond to Halloway"
+      ],
+      "cita": "The Glass Heiress",
+      "brillaEn": "A2-E01, A3-E02, and A4-E01.",
+      "secreto": "Halloway picked her as his scapegoat. The fragments leaked to FIRSTLIGHT go out through accounts in the names of her companies. At the Council (A4-E01), he will offer her up as the traitor. Celeste will have to choose between her sire, the coterie, and the truth."
+    },
+    "PJ-03": {
+      "nombre": "Ezra Lund",
+      "apodo": "Static",
+      "concepto": "network security engineer, Embraced by the Underground's information broker.",
+      "sire": "PNJ-13",
+      "ambicion": "expose whoever controls the city's cameras",
+      "deseo": "have someone see his face and not look away",
+      "depredador": "Bagger",
+      "convicciones": [
+        "Information belongs to whoever needs it, not whoever pays for it"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "his sister Maja",
+          "descripcion": "his sister Maja, a night-shift nurse, who leaves food at his door even though she knows he doesn't eat it"
+        }
+      ],
+      "ventajas": [
+        "Contacts (hackers) 2",
+        "Herd 1",
+        "Haven 2 (in the Underground)",
+        "Mawla (Thornquist) 1",
+        "Feeds from blood bags without penalty"
+      ],
+      "cita": "The Ghost in the Network",
+      "brillaEn": "A1-E04, A1-E05, and A3-E02. He's the natural specialist for LOR-03 *The City's Eyes*.",
+      "secreto": "In 2017, as a contractor, Ezra wrote the firmware for Gale Sentinel's cameras. The back door Preston Gale uses is his code. Ezra suspects it, but he's never confirmed it."
+    },
+    "PJ-04": {
+      "nombre": "Nadia Ferro",
+      "concepto": "sound producer on Helen's podcast and childe of Prince Whitmore.",
+      "sire": "PNJ-02",
+      "ambicion": "record something that outlives the Masquerade",
+      "deseo": "see Helen finish her big story",
+      "convicciones": [
+        "Never silence someone who tells the truth"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Theo",
+          "descripcion": "Theo, her old bandmate, who still plays Thursdays at a dive bar on Capitol Hill"
+        }
+      ],
+      "ventajas": [
+        "Fame 1 (music scene)",
+        "Contacts (media) 2",
+        "Status (Camarilla) 1",
+        "Mawla (Whitmore) 2",
+        "Herd 1"
+      ],
+      "cita": "The Voice Behind the Mic",
+      "brillaEn": "A0-E01 (she knows the apartment), A2-E01, and A4-E01.",
+      "secreto": "Episode 112 (DOC-02), the one that woke FIRSTLIGHT up, was built from material Nadia leaked to Helen. And the thieves pulled Helen's schedule from the production calendar Nadia syncs to the cloud."
+    },
+    "PJ-05": {
+      "nombre": "Halvard Brekke",
+      "apodo": "Hal",
+      "concepto": "former crab fisherman, childe of Sheriff Montgomery, and member of his pack.",
+      "sire": "PNJ-01",
+      "ambicion": "earn a domain of his own",
+      "deseo": "for Montgomery to tell him, just once, that he did well",
+      "depredador": "Alleycat",
+      "convicciones": [
+        "Leave no one in the water"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "his niece Ingrid",
+          "descripcion": "his niece Ingrid, who now captains the family boat and saves him a seat at the Christmas table even though he never comes"
+        }
+      ],
+      "ventajas": [
+        "Allies (longshoremen) 2",
+        "Contacts (port police) 1",
+        "Mawla (Montgomery) 2",
+        "Haven 1 (a boat moored in Salmon Bay)"
+      ],
+      "cita": "The Wolf of Ballard",
+      "brillaEn": "A1-E02 (tracking), A3-E01, A3-E04, and A4-E02.",
+      "secreto": "Years ago, Montgomery ordered him to watch David and report back. Hal has done it every month. Now that David runs with the coterie, every report covers them too. In A3-E04, when the Sheriff wavers, he'll ask for Hal's reports. Hal has to decide what to tell him."
+    },
+    "PJ-06": {
+      "nombre": "Dr. Ruth Abernathy",
+      "concepto": "night-shift pathologist at the county medical examiner's office and member of Voight's chantry.",
+      "sire": "PNJ-15",
+      "ambicion": "find the body that disappeared in 2004",
+      "deseo": "one night without corpses",
+      "convicciones": [
+        "The dead deserve the truth, even if the living don't"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "her ex-husband",
+          "descripcion": "her ex-husband, a retired homicide detective, who still calls her when he can't sleep"
+        }
+      ],
+      "ventajas": [
+        "Influence (medical examiner's office) 2",
+        "Contacts (police) 2",
+        "Resources 2",
+        "Mawla (Voight) 1"
+      ],
+      "cita": "The On-Call Medical Examiner",
+      "brillaEn": "A1-E02, A2-E02 (forensic analysis of *Controlled Fury*), and A4-E02.",
+      "secreto": "Agent Dana Okafor (PNJ-18) already has a file on her. FIRSTLIGHT considers her “statistical anomaly number one.” She's the first person they'll come looking for."
+    }
+  }
+}

@@ -1,0 +1,697 @@
+{
+  "_id": "XuP20cPC3T1EiCxD",
+  "_key": "!actors!XuP20cPC3T1EiCxD",
+  "name": "Wendell Fry",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-16.webp",
+  "folder": "u4acwxkmRyzs1UQV",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Wendell Fry",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 10,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-16.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Malkavian Primogen (by habit)",
+      "chronicle": "The Ward File",
+      "ambition": "To decipher what the city is trying to tell him.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>Never interrupt someone who is telling the truth</li></ul><h3>Touchstones</h3><ul><li><strong>Helen Ward (PNJ-04)</strong>: Though she doesn&#39;t know it.</li></ul>",
+      "sire": "A nameless Malkavian who used to call in from Fremont",
+      "generation": "10"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1938",
+        "death": "1971"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.AeAhHuCNHL9KWVnT]{Profile: Wendell Fry}</p><blockquote><p><em>“You&#39;re not crazy, Helen. And the rain has ears.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Three A.M. Voice</td></tr><tr><th>Concept</th><td>Malkavian Primogen (by habit)</td></tr><tr><th>Clan</th><td>Malkavian</td></tr><tr><th>Sect</th><td>Camarilla</td></tr><tr><th>Sire</th><td>A nameless Malkavian who used to call in from Fremont</td></tr><tr><th>Born</th><td>1938</td></tr><tr><th>Embraced</th><td>1971</td></tr><tr><th>Ambition</th><td>To decipher what the city is trying to tell him.</td></tr></tbody></table><h3>Demeanor</h3><p>Looks about thirty-three. Thin, a scruffy beard, thick-framed glasses, corduroy, and a cap from a team that no longer exists; headphones around his neck and a radio voice.</p>",
+    "appearance": "<p>Looks about thirty-three. Thin, a scruffy beard, thick-framed glasses, corduroy, and a cap from a team that no longer exists; headphones around his neck and a radio voice.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: doc 06 said “looks about fifty-five” and “white beard”; the decision was to use his age at the Embrace (about 33, no gray in his beard). Doc 06 gave him “Mask 1 (eccentric Fremont retiree)”; the decision was that his Mask is a late-night host at a community radio station.</p>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 2,
+      "generation": "10"
+    },
+    "humanity": {
+      "value": 7,
+      "stains": 0
+    },
+    "disciplines": {
+      "auspex": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "dominate": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "obfuscate": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 2,
+        "active": false
+      }
+    },
+    "skills": {
+      "academics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Music",
+            "value": 1,
+            "paths": [
+              "skills.academics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "What goes unsaid",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "etiquette": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "performance": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Radio",
+            "value": 1,
+            "paths": [
+              "skills.performance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "occult": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Prophecy",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Voices",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "stealth": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Analog radio",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "malkavian"
+        }
+      },
+      "name": "Malkavian",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "JqTs7hg0ScPVd6Ca",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.JqTs7hg0ScPVd6Ca"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-16"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "mwmMs9jfn67wSxTD",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.mwmMs9jfn67wSxTD"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-16"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "1i8iBL7BrVYyriNU",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.1i8iBL7BrVYyriNU"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Scry the Soul",
+          "homebrew": false
+        }
+      },
+      "name": "Scry the Soul",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Auspex 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-16"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "BfWfHQclHUVnYT0K",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.BfWfHQclHUVnYT0K"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloud Memory",
+          "homebrew": false
+        }
+      },
+      "name": "Cloud Memory",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-16"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "VuuxIN3lMowpgGOl",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.VuuxIN3lMowpgGOl"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloak of Shadows",
+          "homebrew": false
+        }
+      },
+      "name": "Cloak of Shadows",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Obfuscate 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-16"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "rzGqzB2fVoivxcEN",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.rzGqzB2fVoivxcEN"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unseen Passage",
+          "homebrew": false
+        }
+      },
+      "name": "Unseen Passage",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Obfuscate 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-16"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "X1bXbUnjYxFJRgBW",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.X1bXbUnjYxFJRgBW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 2 (abandoned radio studio on the top floor of a Fremont building)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 2 (abandoned radio studio on the top floor of a Fremont building)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "FtwzJxbsSD3VIt54",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.FtwzJxbsSD3VIt54"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Herd 1 (the listeners: a dozen insomniacs)"
+        }
+      },
+      "name": "Herd",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Herd 1 (the listeners: a dozen insomniacs)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "AMBC3evYTdfA8KZc",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.AMBC3evYTdfA8KZc"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 1 (police, port, and emergency scanners)"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 1 (police, port, and emergency scanners)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "QivZBuyzZFRC3AFZ",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.QivZBuyzZFRC3AFZ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Fame 1 (old radio listeners still recognize his voice)"
+        }
+      },
+      "name": "Fame",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Fame 1 (old radio listeners still recognize his voice)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "Nt5Rv2HyhYJKVTwx",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.Nt5Rv2HyhYJKVTwx"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 1 (late-night host at a community radio station)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 1 (late-night host at a community radio station)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "lTiuHAibUXLK60oA",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.lTiuHAibUXLK60oA"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Derangement (Malkavian): he can't leave a sentence unfinished. If someone interrupts him, he repeats what he was saying from the beginning."
+        }
+      },
+      "name": "Derangement",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Derangement (Malkavian): he can&#39;t leave a sentence unfinished. If someone interrupts him, he repeats what he was saying from the beginning.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "4n7fSLEhVYtMyjzH",
+      "_key": "!actors.items!XuP20cPC3T1EiCxD.4n7fSLEhVYtMyjzH"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-16",
+      "journal": "JournalEntry.AeAhHuCNHL9KWVnT",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

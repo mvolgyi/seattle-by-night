@@ -1,0 +1,741 @@
+{
+  "_id": "NDI68PA4J59Be6ts",
+  "_key": "!actors!NDI68PA4J59Be6ts",
+  "name": "Abel Thornquist",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-13.webp",
+  "folder": "yFd3Qhc0Q4y8Svax",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Abel Thornquist",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp"
+    }
+  },
+  "system": {
+    "group": "BZHKi8od2TMxi33B",
+    "headers": {
+      "concept": "Nosferatu Primogen",
+      "chronicle": "The Ward File",
+      "ambition": "For no one to be able to rule Seattle without going through what lies below.",
+      "desire": "",
+      "touchstones": "<h3>Convictions</h3><ul><li>A deal is a deal</li><li>What is buried is not lost</li></ul><h3>Touchstones</h3><ul><li><strong>Dee Watkins</strong>: A shelter worker in Pioneer Square who leaves the back door open for “the ones below” and never asks questions.</li></ul>",
+      "sire": "“The Mother Below”",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1863",
+        "death": "1890"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Profile: Abel Thornquist}</p><blockquote><p><em>“Everything&#39;s for sale below. The only thing that changes is who pays.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Owner Below</td></tr><tr><th>Concept</th><td>Nosferatu Primogen</td></tr><tr><th>Clan</th><td>Nosferatu</td></tr><tr><th>Sect</th><td>Camarilla</td></tr><tr><th>Sire</th><td>“The Mother Below”</td></tr><tr><th>Born</th><td>1863</td></tr><tr><th>Embraced</th><td>1890</td></tr><tr><th>Ambition</th><td>For no one to be able to rule Seattle without going through what lies below.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.Dy9L39SvdB7rns0t]{The Moles}</td></tr></tbody></table><h3>Demeanor</h3><p>Huge and hunched, skin like cracked, wet gray wood, a twisted jaw, and fingers like roots; a patched three-piece suit and a carbide lamp.</p>",
+    "appearance": "<p>Huge and hunched, skin like cracked, wet gray wood, a twisted jaw, and fingers like roots; a patched three-piece suit and a carbide lamp.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 4,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "animalism": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "obfuscate": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 4,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 4,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 4,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "craft": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Carpentry",
+            "value": 1,
+            "paths": [
+              "skills.craft"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "streetwise": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Black market",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "finance": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Favors",
+            "value": 1,
+            "paths": [
+              "skills.finance"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Lies",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Haggling",
+            "value": 1,
+            "paths": [
+              "skills.persuasion"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "stealth": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tunnels",
+            "value": 1,
+            "paths": [
+              "skills.stealth"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "subterfuge": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "nosferatu"
+        }
+      },
+      "name": "Nosferatu",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "NbtpofhPxkaitnbZ",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.NbtpofhPxkaitnbZ"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Sense the Beast",
+          "homebrew": false
+        }
+      },
+      "name": "Sense the Beast",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalism 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "6f4JZPvlXkpW9svU",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.6f4JZPvlXkpW9svU"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Feral Whispers",
+          "homebrew": false
+        }
+      },
+      "name": "Feral Whispers",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Animalism 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "animalism",
+        "selected": false
+      },
+      "_id": "lkA5mbRrhhsSl5xh",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.lkA5mbRrhhsSl5xh"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloak of Shadows",
+          "homebrew": false
+        }
+      },
+      "name": "Cloak of Shadows",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Obfuscate 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "ak2xLXpqC1boPnB7",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.ak2xLXpqC1boPnB7"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Unseen Passage",
+          "homebrew": false
+        }
+      },
+      "name": "Unseen Passage",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Obfuscate 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "3eQJn26DfE9pO9qD",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.3eQJn26DfE9pO9qD"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Mask of a Thousand Faces",
+          "homebrew": false
+        }
+      },
+      "name": "Mask of a Thousand Faces",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Obfuscate 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "QehG89R89bP7cNpS",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.QehG89R89bP7cNpS"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Vanish",
+          "homebrew": false
+        }
+      },
+      "name": "Vanish",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Obfuscate 4. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "obfuscate",
+        "selected": false
+      },
+      "_id": "IkY2OVCf5bIjVsdE",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.IkY2OVCf5bIjVsdE"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "o8y16ie7TRav9aV9",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.o8y16ie7TRav9aV9"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-13"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "jCz5IeJbMueQ4bST",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.jCz5IeJbMueQ4bST"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 4 (the Sealed Underground, beneath Pioneer Square; LUG-04)"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 4 (the Sealed Underground, beneath Pioneer Square; LUG-04)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "8tciBYAuxlWDSqhQ",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.8tciBYAuxlWDSqhQ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence 3 (the underground: the Undermarket)"
+        }
+      },
+      "name": "Influence",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence 3 (the underground: the Undermarket)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "5lsxowNytYLiZnuo",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.5lsxowNytYLiZnuo"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Allies 2 (the thin-bloods: a dozen young ones who gather information on the surface)"
+        }
+      },
+      "name": "Allies",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Allies 2 (the thin-bloods: a dozen young ones who gather information on the surface)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "4UZwrQ8whQBqpZCQ",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.4UZwrQ8whQBqpZCQ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 4 (cops, doormen, night cleaning staff, and maintenance techs all over the city)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 4 (cops, doormen, night cleaning staff, and maintenance techs all over the city)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "3bv0oK2AplypAhUn",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.3bv0oK2AplypAhUn"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mask 0 (he has no mortal Mask)"
+        }
+      },
+      "name": "Mask",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mask 0 (he has no mortal Mask)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "background"
+      },
+      "_id": "7ZsMGjcgb2Wiuq8v",
+      "_key": "!actors.items!NDI68PA4J59Be6ts.7ZsMGjcgb2Wiuq8v"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-13",
+      "journal": "JournalEntry.dj4gIszHHTN1QRKk",
+      "doc": null,
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

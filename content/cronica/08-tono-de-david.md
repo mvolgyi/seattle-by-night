@@ -3,13 +3,15 @@ id: TONO-DAVID
 nombre: "Tono general: el profesional sobrenatural"
 carpeta: "Seattle by Night"
 orden: 85
-jugadores: si
+jugadores: no
 origen: "19"
 ---
 
 # 🩸 Tono general: «El profesional sobrenatural»
 
-*Guía para interpretar a @ID[PJ-01|David Smith] en escenas sociales. Fuente: doc 19 (fuente previa). Complementa las sinergias tácticas de su ficha.*
+*Guía para que el Narrador interprete a @ID[PJ-01|David Smith], PNJ aliado de la coterie, en escenas sociales. Fuente: doc 19 (fuente previa), escrita para quien lo jugaba y adaptada aquí al Narrador. Complementa las sinergias tácticas de su ficha.*
+
+**Con la coterie, David ayuda, pero no manda.** Opina, presiona y reacciona; las decisiones son de los jugadores. Su ayuda es +1 dado al PJ que tira, o una acción que narrás sin tirar. Nunca resuelve solo lo que le toca a la coterie.
 
 **David Smith no discute — define.**
 Cuando socializa, no busca simpatía ni poder político; busca eficiencia y verdad.
@@ -24,15 +26,15 @@ Su presencia debe transmitir que:
 **Recursos narrativos:**
 
 - Entra despacio. Observa primero, habla después.
-  *(Describe cómo sus ojos recorren el lugar como si midiera líneas de tiro o salidas).*
+  *(Describí cómo sus ojos recorren el lugar como si midiera líneas de tiro o salidas).*
 
-- Mantén la voz baja, pero clara. Obliga al otro a escucharte con atención.
+- Hablá por él con la voz baja, pero clara. Que el otro tenga que escucharlo con atención.
 
-- Evita gesticular. Todo movimiento debe parecer medido.
+- No gesticula. Todo movimiento suyo debe parecer medido.
 
-- No te sientes primero. Si lo haces, que sea tras evaluar el entorno.
+- No se sienta primero. Si lo hace, es tras evaluar el entorno.
 
-- Si el otro se mueve demasiado, seguilo con la mirada, no con el cuerpo: *como si lo marcaras en combate*.
+- Si el otro se mueve demasiado, lo sigue con la mirada, no con el cuerpo: *como si lo marcara en combate*.
 
 💬 **Ejemplo:**
 
@@ -46,11 +48,11 @@ Su presencia debe transmitir que:
 
 - Responde con frases cortas o ambiguas: *“Veremos”, “Depende de lo que traigas a la mesa”, “Eso no me suena bien”*.
 
-- Usa pausas largas, pero naturales.
+- Usá pausas largas, pero naturales.
 
-- Evita explicarte: deja que los otros se desgasten justificándose.
+- No se explica: deja que los otros se desgasten justificándose. También los PJs.
 
-- Si te preguntan algo que no querés responder, desviá:
+- Si le preguntan algo que no quiere responder, desvía:
 
   - “No es relevante para la misión.”
   - “Lo importante es que cumplamos con el objetivo.”
@@ -62,20 +64,20 @@ Su presencia debe transmitir que:
 
 ## ⚖️ 3. VINCULAR SIN SOMETERSE (Colaboración condicionada)
 
-> Cooperás, pero bajo tus propios parámetros.
+> Coopera, pero bajo sus propios parámetros.
 
 **Recursos narrativos:**
 
-- Mantené el lenguaje **operativo**, no emocional: *‘Objetivo’, ‘fase’, ‘contacto’, ‘tiempo límite’*.
+- Su lenguaje es **operativo**, no emocional: *‘Objetivo’, ‘fase’, ‘contacto’, ‘tiempo límite’*.
 
-- Evitá las promesas; usá acuerdos temporales:
+- No promete; propone acuerdos temporales:
 
   - “Por ahora, trabajamos juntos.”
   - “Después veremos si seguimos del mismo lado.”
 
-- Reforzá la jerarquía implícita: tratá al otro como un colega, no un superior, salvo que sea inevitable.
+- Trata a los PJs como colegas, no como superiores ni subordinados, salvo que sea inevitable.
 
-- Mostrá respeto sólo por la eficiencia o la lealtad. No por el linaje ni el poder.
+- Respeta sólo la eficiencia o la lealtad. No el linaje ni el poder.
 
 💬 **Ejemplo:**
 
@@ -90,13 +92,13 @@ Su presencia debe transmitir que:
 - Describí que **observa microdetalles**:
   *‘Ve cómo el otro toca el anillo cuando miente’, ‘El olor a sangre vieja en su abrigo le dice que alimentó hace poco’*.
 
-- Antes de hablar, hacé pequeñas afirmaciones que revelen observación:
+- Antes de hablar, suelta pequeñas afirmaciones que revelan observación:
 
-  - “Has cambiado de perfume. Esperás ver a alguien más.”
+  - “Cambiaste de perfume. Esperás ver a alguien más.”
   - “Esa pistola no la llevás por costumbre.”
   - “Tenés hambre. Y los hambrientos cometen errores.”
 
-💬 *Esto no es para intimidar directamente, sino para demostrar que nada pasa desapercibido.*
+💬 *Esto no es para intimidar directamente, sino para demostrar que nada pasa desapercibido.* Si un PJ tira para leer a alguien con David al lado, lo que él nota vale +1 dado.
 
 ## 🩶 5. HONOR DE GUERRA (Moral Brujah madura)
 
@@ -108,13 +110,13 @@ Su presencia debe transmitir que:
 
   - “He visto lo que pasa cuando los Cainitas se creen dioses. Sangre en las alcantarillas, polvo en el amanecer.”
 
-- Rechazá la violencia gratuita con naturalidad:
+- Rechaza la violencia gratuita con naturalidad, también la de la coterie:
 
-  - “Si quieres demostrar tu fuerza, hay cementerios llenos de idiotas que lo intentaron.”
+  - “Si querés demostrar tu fuerza, hay cementerios llenos de idiotas que lo intentaron.”
 
-- Reconocé la habilidad ajena sin perder terreno:
+- Reconoce la habilidad ajena sin perder terreno:
 
-  - “No me caes bien. Pero sabés hacer tu trabajo. Eso basta.”
+  - “No me caés bien. Pero sabés hacer tu trabajo. Eso basta.”
 
 ## 💀 6. AMENAZA CONTROLADA (Presencia y Potencia narradas)
 
@@ -126,7 +128,7 @@ Su presencia debe transmitir que:
 
 - Los gestos físicos (crujir los nudillos, mover una silla con una mano) son más elocuentes que las palabras.
 
-- Dejá que el silencio posterior a una frase dure *un poco más de lo normal*.
+- Dejá que el silencio posterior a una frase suya dure *un poco más de lo normal*.
 
 - En combate verbal, no desafía: **advierte**.
 
@@ -162,7 +164,7 @@ Su presencia debe transmitir que:
 - Cierra con frases que implican final, no despedida:
 
   - “El trabajo está hecho.”
-  - “Si me necesitas, sabés cómo no encontrarme.”
+  - “Si me necesitás, sabés cómo no encontrarme.”
   - “Nos vemos en la próxima noche, si la ciudad sigue en pie.”
 
 💬 *Así mantiene la mística de sabueso solitario, sin romper del todo los lazos operativos.*

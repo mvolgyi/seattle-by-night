@@ -1,0 +1,330 @@
+{
+  "_id": "sEdBfHzj0JBxHNAa",
+  "_key": "!actors!sEdBfHzj0JBxHNAa",
+  "name": "Sasha Hale",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-21.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 20,
+  "prototypeToken": {
+    "name": "Sasha Hale",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-21.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "Former signals intelligence analyst, thirty-two",
+      "chronicle": "The Ward File",
+      "ambition": "Make her report on ARCHER the one they read at the national office.",
+      "desire": "One whole night without headphones.",
+      "touchstones": "<h3>Touchstones</h3><ul><li>Her younger brother, who&#39;s in college in Spokane and thinks she audits banks.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Gaining information during the Hunt: research, breaking and entering, and interrogation.",
+      "cellname": "Puget Cell"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.D611Mcr17F6HHEUw]{Profile: Sasha Hale}</p><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>Analyst S. Hale</td></tr><tr><th>Concept</th><td>Former signals intelligence analyst, thirty-two</td></tr><tr><th>Ambition</th><td>Make her report on ARCHER the one they read at the national office.</td></tr><tr><th>Desire</th><td>One whole night without headphones.</td></tr><tr><th>Dice pools</th><td>Physical 2 · Social 3 · Mental 7 · Investigation 8 · Technology 7 · Academics 5 · Occult (Kindred) 4</td></tr></tbody></table><h3>Demeanor</h3><p>Thirty-two, former signals intelligence analyst. Headphones around her neck, eyes on another screen.</p><h3>Hunter</h3><table class=\"sbn-ficha\"><tbody><tr><th>Cell</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Puget Cell}</td></tr><tr><th>Creed</th><td>Inquisitive. <em>Desperation:</em> Gaining information during the Hunt: research, breaking and entering, and interrogation.</td></tr><tr><th>Drive</th><td>Curiosity. <em>Redemption:</em> She finds redemption when she uncovers something someone wanted to hide from the Cell and puts it in writing, with her signature.</td></tr><tr><th>Edges</th><td>Library (Close Listening) · Thwart the Unnatural</td></tr></tbody></table><p>She listened to episode 112 three times. There&#39;s a pattern in this city, and someone is handing it to the Cell in installments. She wants to know who and why, even if nobody likes the answer.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.lsusKQmTy3IEDb5J]{Pregen: Sasha Hale · Analyst}</p>",
+    "appearance": "<p>Thirty-two, former signals intelligence analyst. Headphones around her neck, eyes on another screen.</p>",
+    "equipment": "<ul><li>Encrypted phone</li><li>Laptop with access to the ANOMALY feed</li><li>Northline “consulting” ID badge</li></ul>",
+    "notes": "",
+    "privatenotes": "<h3>Proposed (not in the docs)</h3><ul><li>Attributes and Skills: the doc gives NPC pools (Physical 2, Social 3, Mental 7; Investigation 8, Technology 7, Academics 5, Occult 4 (Kindred); Health 5, Willpower 6). Conversion: Intelligence 4 + Investigation 4, Intelligence 4 + Technology 3, Intelligence 4 + Academics 1, Wits 3 + Occult 1; Health = Stamina 2 + 3; Willpower = Composure 3 + Resolve 3. The social skills and Awareness are proposed.</li><li>Inquisitive Creed (her job is pulling out information: the podcast, ANOMALY, the chain of custody) and Curiosity Drive (DOC-07, point 6: “why is it giving us this?”).</li><li>Edges: Library (the Cell&#39;s archive) and Thwart the Unnatural for her Faith from the doc. The “Close Listening” Perk is proposed.</li><li>Equipment, appearance (except age and profession, which are from the doc), ambition, desire, and Touchstone.</li></ul>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 1,
+        "active": false
+      },
+      "dexterity": {
+        "value": 2,
+        "active": false
+      },
+      "stamina": {
+        "value": 2,
+        "active": false
+      },
+      "charisma": {
+        "value": 2,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 3,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 3,
+        "active": false
+      },
+      "resolve": {
+        "value": 3,
+        "active": false
+      }
+    },
+    "skills": {
+      "investigation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "technology": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "academics": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Kindred",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "library": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>The Puget Cell&#39;s archive at Northline: the corkboard, the podcast transcripts, the “R. A.” statistical anomaly, and whatever ANOMALY has sent every night since September 2026.</p>"
+      },
+      "thwarttheunnatural": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>This is her Faith (doc 14): −1 die to mental Disciplines against her.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Faith (−1 die to mental Disciplines against her)"
+        }
+      },
+      "name": "Faith",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Faith (−1 die to mental Disciplines against her)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "qqtyn5dVVrBQQZxl",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.qqtyn5dVVrBQQZxl"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "inquisitive"
+        }
+      },
+      "name": "Inquisitive",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Gaining information during the Hunt: research, breaking and entering, and interrogation."
+      },
+      "_id": "GtFlQ4m9Vo2tHSLh",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.GtFlQ4m9Vo2tHSLh"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "curiosity"
+        }
+      },
+      "name": "Curiosity",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>She listened to episode 112 three times. There&#39;s a pattern in this city, and someone is handing it to the Cell in installments. She wants to know who and why, even if nobody likes the answer.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "redemption": "<p>She finds redemption when she uncovers something someone wanted to hide from the Cell and puts it in writing, with her signature.</p>"
+      },
+      "_id": "r0BW8sRlcyYl0ztm",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.r0BW8sRlcyYl0ztm"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Close Listening: +2 dice when she cross-references a new fact against the Cell's archive (Helen Ward's podcast, the “R. A.” reports, ANOMALY's cold subject logs)."
+        }
+      },
+      "name": "Close Listening",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>+2 dice when she cross-references a new fact against the Cell&#39;s archive (Helen Ward&#39;s podcast, the “R. A.” reports, ANOMALY&#39;s cold subject logs).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-21"
+        },
+        "edge": "library",
+        "selected": false
+      },
+      "_id": "TwMMQl4kk06FGNTc",
+      "_key": "!actors.items!sEdBfHzj0JBxHNAa.TwMMQl4kk06FGNTc"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-21",
+      "journal": "JournalEntry.D611Mcr17F6HHEUw",
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

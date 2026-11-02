@@ -10,14 +10,15 @@
  * auto-update de Foundry siempre ve la última), y `download` al zip del tag.
  *
  * El zip lleva SÓLO lo que el módulo carga en tiempo de juego: module.json,
- * README, LICENSE, src/ (código y estilos), templates/, lang/, data/
- * (cronica.json y publico.json, que se piden con fetch), los packs/ compilados
- * y assets/ (de assets/musica/, sólo los .ogg). Nada de content/, packs-src/,
+ * README, LICENSE, src/ (código y estilos), templates/, lang/ (es.json y
+ * en.json), data/ (cronica.json y publico.json, y los mismos en data/en/, que
+ * se piden con fetch según el idioma de la crónica), los packs/ compilados (los
+ * castellanos y los -en) y assets/ (de assets/musica/, sólo los .ogg). Nada de content/, packs-src/,
  * tools/, cache/, los .docx ni node_modules. Hay que correr `npm run pack` antes: sin packs/ no hay zip.
  *
  * La Guía del Narrador NO va en el zip (dentro del módulo, un jugador podría
- * abrirla por URL): se arma aparte en <salida>/guia-del-narrador.html y se sube
- * a la release como un archivo más.
+ * abrirla por URL): se arma aparte, una por idioma, en <salida>/guia-del-narrador.html
+ * y <salida>/narrator-guide.html, y se suben a la release como archivos sueltos.
  *
  * Después de armarlo lo lee de vuelta (unzip -Z1) y comprueba que esté todo
  * lo que nombra module.json (esmodules, scripts, styles, languages, packs,
@@ -87,7 +88,7 @@ const PROHIBIDO = [/^content\//, /^packs-src\//, /^tools\//, /^cache\//, /^node_
   /^scratch\//, /\.docx$/i, /^Seattle by Night - El Expediente Ward\//];
 
 /** Lo que el módulo pide con fetch o por ruta sin que module.json lo nombre (constantes.mjs). */
-const REQUERIDOS = ["data/cronica.json", "data/publico.json"];
+const REQUERIDOS = ["data/cronica.json", "data/publico.json", "data/en/cronica.json", "data/en/publico.json", "lang/en.json"];
 
 /**
  * El audio de content/musica.json (assets/musica/<id>.ogg). Sin él, el build
@@ -186,10 +187,12 @@ if (errores.length) {
 
 fs.copyFileSync(rutaManifest, path.join(salida, "module.json"));
 
-// La guía, aparte: se arma desde packs-src (lo dejó al día `npm run pack`).
-execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs")], { cwd: RAIZ, stdio: "inherit" });
-const guia = path.join(salida, "guia-del-narrador.html");
-fs.copyFileSync(path.join(RAIZ, "guia/index.html"), guia);
+// Las guías, aparte: se arman desde packs-src y packs-src/*-en (los dejó al día `npm run pack`).
+const GUIAS = [["es", "guia/index.html", "guia-del-narrador.html"], ["en", "guia/narrator-guide.html", "narrator-guide.html"]];
+for (const [idioma, origen, destino] of GUIAS) {
+  execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs"), "--idioma", idioma], { cwd: RAIZ, stdio: "inherit" });
+  fs.copyFileSync(path.join(RAIZ, origen), path.join(salida, destino));
+}
 const raiz = new Map();
 for (const f of enZip) {
   const k = f.includes("/") ? f.split("/")[0] + "/" : f;
@@ -198,5 +201,8 @@ for (const f of enZip) {
 const mb = (fs.statSync(zip).size / 1024 / 1024).toFixed(1);
 console.log(`✓ ${zip} · ${manifest.version} · ${enZip.size} archivos · ${mb} MB`);
 console.log(`  ${[...raiz].map(([k, n]) => `${k} ${n}`).join(" · ")}`);
-console.log(`✓ ${guia} · ${(fs.statSync(guia).size / 1024 / 1024).toFixed(1)} MB (se sube aparte)`);
+for (const [, , destino] of GUIAS) {
+  const guia = path.join(salida, destino);
+  console.log(`✓ ${guia} · ${(fs.statSync(guia).size / 1024 / 1024).toFixed(1)} MB (se sube aparte)`);
+}
 console.log(`  module.json: ${delManifest.length + (manifest.packs?.length ?? 0)} rutas · ${pedidos.size} rutas pedidas por src/, templates/ y packs: todas adentro`);

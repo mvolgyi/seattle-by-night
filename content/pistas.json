@@ -87,7 +87,7 @@
         {
           "escena": "A1-E02",
           "tipo": "principal",
-          "como": "Inteligencia + Pelea (Dificultad 4): abolladuras a la altura del pecho, siempre en la misma secuencia (costillas, esternón, garganta). David, con LOR-01 a nivel 4, lo reconoce sin tirar.",
+          "como": "Inteligencia + Pelea (Dificultad 4): abolladuras a la altura del pecho, siempre en la misma secuencia (costillas, esternón, garganta). Si un PJ le muestra las abolladuras a David y le pregunta qué ve, la pista sale sin tirar (LOR-01 a nivel 4).",
           "origen": "01, 10"
         },
         {
@@ -187,7 +187,7 @@
         {
           "escena": "A2-E01",
           "tipo": "principal",
-          "como": "Inteligencia + Academicismo (Dificultad 3), o automático para David: Halloway cita «el agua fría por las mañanas», que solo está en los diarios privados de Vance. Astucia + Perspicacia (Dificultad 4) para notar que miente al explicarlo.",
+          "como": "Inteligencia + Academicismo (Dificultad 3), o automático si un PJ le pregunta a David después (o le repite la frase): Halloway cita «el agua fría por las mañanas», que solo está en los diarios privados de Vance. Astucia + Perspicacia (Dificultad 4) para notar que miente al explicarlo.",
           "lugar": "LUG-03",
           "origen": "01, 11"
         }
@@ -239,13 +239,13 @@
         {
           "escena": "A2-E02",
           "tipo": "principal",
-          "como": "Inteligencia + Pelea (Dificultad 4) sobre las cenizas de Corwin: la Furia Controlada con la guardia invertida, la mano débil adelante. David, con LOR-01 a nivel 4: automático.",
+          "como": "Inteligencia + Pelea (Dificultad 4) sobre las cenizas de Corwin: la Furia Controlada con la guardia invertida, la mano débil adelante. Automático si un PJ le pide a David que mire las cenizas (LOR-01 a nivel 4).",
           "origen": "01, 11"
         },
         {
           "escena": "A3-E01",
           "tipo": "refuerzo",
-          "como": "Si la coterie llega a tiempo, David reconoce la guardia invertida automáticamente con LOR-01 a nivel 4.",
+          "como": "Si la coterie llega a tiempo con David, él reconoce la guardia invertida sin tirar (LOR-01 a nivel 4); un PJ con LOR-01 a nivel 4, también.",
           "origen": "12"
         },
         {
@@ -423,7 +423,7 @@
         {
           "escena": "A3-E03",
           "tipo": "principal",
-          "como": "Con Krell a 3 «pasos», la oferta «Testigo»: Manipulación + Persuasión (Dificultad 3); Krell acepta si David le promete que nadie lo va a destruir después. La oferta «La otra guardia» (LOR-01 a nivel 4 y P-15, o el folio 42) también lo convierte en testigo, sin tirada.",
+          "como": "Con Krell a 3 «pasos», la oferta «Testigo»: Manipulación + Persuasión (Dificultad 3), +1 dado si David la respalda en voz alta. Krell exige que David le prometa que nadie lo va a destruir después; si la coterie se lo pide, David lo promete. La oferta «La otra guardia» (la coterie encontró P-15 y David leyó el folio 42; David tiene LOR-01 a nivel 4) también lo convierte en testigo, sin tirada.",
           "lugar": "LUG-16",
           "origen": "01, 12"
         }
@@ -601,7 +601,7 @@
       "efectos": [
         {
           "escena": "A3-E03",
-          "efecto": "Enseñarle P-15 a Krell suma 3 «pasos» de golpe. La oferta «La otra guardia» necesita LOR-01 a nivel 4 y P-15 (o que David conozca el folio 42).",
+          "efecto": "Enseñarle P-15 a Krell suma 3 «pasos» de golpe. La oferta «La otra guardia» necesita que la coterie haya encontrado P-15 y que David haya leído el folio 42 (David tiene LOR-01 a nivel 4).",
           "origen": "12"
         },
         {
@@ -795,9 +795,10 @@
     },
     {
       "id": "PRUEBA-HONESTIDAD-DAVID",
-      "nombre": "David admite algo que le cuesta (lo que sabe de Krell, lo que sintió en los silos, lo del Larchmont)",
+      "nombre": "Sale delante de Montgomery algo que a David le cuesta admitir (lo que sabe de Krell, lo que sintió en los silos, lo del Larchmont)",
       "escena": "A3-E04",
-      "pj": "PJ-01",
+      "como": "Un PJ convence a David de hablar (Carisma + Perspicacia, Dificultad 3) y David lo dice, o un PJ lo dice por él, con David delante y sin tirada: David no lo niega.",
+      "pnj": "PJ-01",
       "valores": [
         {
           "tirada": "A3-E04",
@@ -810,9 +811,10 @@
     },
     {
       "id": "PRUEBA-HERMANO-DE-SANGRE",
-      "nombre": "«Es mi hermano de sangre» (si David lo sabe y lo dice)",
+      "nombre": "«Krell es su hermano de sangre» (si la coterie lo sabe)",
       "escena": "A3-E04",
-      "pj": "PJ-01",
+      "como": "Lo dice un PJ, o David si un PJ lo convenció de decirlo. Montgomery mira a David, que no lo niega.",
+      "pnj": "PJ-01",
       "valores": [
         {
           "tirada": "A3-E04",
@@ -946,7 +948,7 @@
         },
         {
           "resultado": "Fallo",
-          "efecto": "La coterie es fugitiva. Los cazarrecompensas buscan a David. En A4-E01, David necesita entrar al Consejo sin que lo detengan en la puerta."
+          "efecto": "La coterie es fugitiva. Los cazarrecompensas buscan a David. En A4-E01, la coterie tiene que meter a David en el Consejo sin que lo detengan en la puerta."
         }
       ],
       "variantes": {

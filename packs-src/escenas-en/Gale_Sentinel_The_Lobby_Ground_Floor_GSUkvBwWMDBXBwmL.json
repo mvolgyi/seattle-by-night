@@ -1,0 +1,1908 @@
+{
+  "_id": "GSUkvBwWMDBXBwmL",
+  "_key": "!scenes!GSUkvBwWMDBXBwmL",
+  "name": "Gale Sentinel · The Lobby (Ground Floor)",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 70,
+  "width": 1900,
+  "height": 1400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.7,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "Jom4pLT2Tdz9F9OV",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/gale-sentinel.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!GSUkvBwWMDBXBwmL.Jom4pLT2Tdz9F9OV"
+    }
+  ],
+  "journal": "zSkwEUUtkNGhfXun",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "rzUAQwqoLy15MRwE",
+      "c": [
+        50,
+        200,
+        800,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.rzUAQwqoLy15MRwE"
+    },
+    {
+      "_id": "Ag353SCxAoelklB5",
+      "c": [
+        900,
+        200,
+        1850,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.Ag353SCxAoelklB5"
+    },
+    {
+      "_id": "eD72WMNLuXqhkdyN",
+      "c": [
+        50,
+        600,
+        400,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.eD72WMNLuXqhkdyN"
+    },
+    {
+      "_id": "YMPEDjgSwUglc4kH",
+      "c": [
+        1650,
+        600,
+        1850,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.YMPEDjgSwUglc4kH"
+    },
+    {
+      "_id": "xUuPOU0OKfL7o6ru",
+      "c": [
+        50,
+        200,
+        50,
+        640
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.xUuPOU0OKfL7o6ru"
+    },
+    {
+      "_id": "yM4UhFGa8A0WZWYO",
+      "c": [
+        50,
+        1110,
+        50,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.yM4UhFGa8A0WZWYO"
+    },
+    {
+      "_id": "XfRnXGyqs59NtY6E",
+      "c": [
+        400,
+        200,
+        400,
+        460
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.XfRnXGyqs59NtY6E"
+    },
+    {
+      "_id": "JXXEMCFapuvdJUvT",
+      "c": [
+        400,
+        550,
+        400,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.JXXEMCFapuvdJUvT"
+    },
+    {
+      "_id": "cy7gcEZ6o6MkKKgE",
+      "c": [
+        400,
+        400,
+        430,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.cy7gcEZ6o6MkKKgE"
+    },
+    {
+      "_id": "J8UkGFtv8ch3CY3g",
+      "c": [
+        520,
+        400,
+        1250,
+        400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.J8UkGFtv8ch3CY3g"
+    },
+    {
+      "_id": "ttGqQMxw5LPkvlTF",
+      "c": [
+        1250,
+        200,
+        1250,
+        250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.ttGqQMxw5LPkvlTF"
+    },
+    {
+      "_id": "t1mtt19MmI8SlrZ6",
+      "c": [
+        1250,
+        340,
+        1250,
+        440
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.t1mtt19MmI8SlrZ6"
+    },
+    {
+      "_id": "cjapNk3QD7FdHclp",
+      "c": [
+        1250,
+        750,
+        1250,
+        940
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.cjapNk3QD7FdHclp"
+    },
+    {
+      "_id": "P2YRGZvFoWIyB7WW",
+      "c": [
+        1250,
+        1060,
+        1250,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.P2YRGZvFoWIyB7WW"
+    },
+    {
+      "_id": "8WXE2dvHIjlE3Fkq",
+      "c": [
+        1250,
+        1150,
+        1270,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.8WXE2dvHIjlE3Fkq"
+    },
+    {
+      "_id": "itFHXhlTh39bR6RF",
+      "c": [
+        1630,
+        1150,
+        1850,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.itFHXhlTh39bR6RF"
+    },
+    {
+      "_id": "93SX3xHq8TzJAYSa",
+      "c": [
+        1250,
+        750,
+        1850,
+        750
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.93SX3xHq8TzJAYSa"
+    },
+    {
+      "_id": "DjDfY4Sy0zR7GKne",
+      "c": [
+        1650,
+        200,
+        1650,
+        280
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.DjDfY4Sy0zR7GKne"
+    },
+    {
+      "_id": "jtPsMuTFDL671Hms",
+      "c": [
+        1650,
+        370,
+        1650,
+        475
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.jtPsMuTFDL671Hms"
+    },
+    {
+      "_id": "HWqNYNooIFLK7D90",
+      "c": [
+        1650,
+        575,
+        1650,
+        625
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.HWqNYNooIFLK7D90"
+    },
+    {
+      "_id": "cPuF1tDMgOgN9Mpf",
+      "c": [
+        1650,
+        725,
+        1650,
+        810
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.cPuF1tDMgOgN9Mpf"
+    },
+    {
+      "_id": "xEywpnI5fzzcp7Dh",
+      "c": [
+        1650,
+        890,
+        1650,
+        1010
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.xEywpnI5fzzcp7Dh"
+    },
+    {
+      "_id": "OMfWLipFkrn572qv",
+      "c": [
+        1650,
+        1090,
+        1650,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.OMfWLipFkrn572qv"
+    },
+    {
+      "_id": "qAM8P2PO7ZyuU3oV",
+      "c": [
+        1650,
+        450,
+        1850,
+        450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.qAM8P2PO7ZyuU3oV"
+    },
+    {
+      "_id": "n1XIIZMBM3CxwfLh",
+      "c": [
+        1850,
+        200,
+        1850,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.n1XIIZMBM3CxwfLh"
+    },
+    {
+      "_id": "Nbs47mBmkosePDCQ",
+      "c": [
+        1650,
+        950,
+        1850,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.Nbs47mBmkosePDCQ"
+    },
+    {
+      "_id": "oEGsaz2vN0I69z24",
+      "c": [
+        50,
+        1150,
+        560,
+        1150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.oEGsaz2vN0I69z24"
+    },
+    {
+      "_id": "qs8fJkMvmdWnzwpT",
+      "c": [
+        560,
+        1150,
+        740,
+        1150
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.qs8fJkMvmdWnzwpT"
+    },
+    {
+      "_id": "BDwT6Fayzf5DArah",
+      "c": [
+        740,
+        1150,
+        1250,
+        1150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.BDwT6Fayzf5DArah"
+    },
+    {
+      "_id": "ZWV8SxlJxpyqHvSq",
+      "c": [
+        50,
+        640,
+        50,
+        1110
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.ZWV8SxlJxpyqHvSq"
+    },
+    {
+      "_id": "vkeKUNVb28FD0WA2",
+      "c": [
+        400,
+        460,
+        400,
+        550
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.vkeKUNVb28FD0WA2"
+    },
+    {
+      "_id": "ovnuDFMN3XLwu63s",
+      "c": [
+        430,
+        400,
+        520,
+        400
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.ovnuDFMN3XLwu63s"
+    },
+    {
+      "_id": "YNme1EZHLsNTaqTB",
+      "c": [
+        800,
+        200,
+        900,
+        200
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.YNme1EZHLsNTaqTB"
+    },
+    {
+      "_id": "1AFiTO8hP6LW2VJG",
+      "c": [
+        1250,
+        250,
+        1250,
+        340
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.1AFiTO8hP6LW2VJG"
+    },
+    {
+      "_id": "zqGVrWt04BIL0tgk",
+      "c": [
+        1250,
+        440,
+        1250,
+        500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.zqGVrWt04BIL0tgk"
+    },
+    {
+      "_id": "xJmSpvKzOgkWZnwV",
+      "c": [
+        1250,
+        500,
+        1250,
+        570
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.xJmSpvKzOgkWZnwV"
+    },
+    {
+      "_id": "B1RNkX7Xk3rWyNVW",
+      "c": [
+        1250,
+        570,
+        1250,
+        620
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.B1RNkX7Xk3rWyNVW"
+    },
+    {
+      "_id": "SzJ5GHaIDE9dtjal",
+      "c": [
+        1250,
+        620,
+        1250,
+        690
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.SzJ5GHaIDE9dtjal"
+    },
+    {
+      "_id": "YmYNm63UD75lpeNu",
+      "c": [
+        1250,
+        690,
+        1250,
+        750
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.YmYNm63UD75lpeNu"
+    },
+    {
+      "_id": "3oUBBy4nXwq3hSxN",
+      "c": [
+        1650,
+        280,
+        1650,
+        370
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.3oUBBy4nXwq3hSxN"
+    },
+    {
+      "_id": "v27AcUj5f67fr5W2",
+      "c": [
+        1650,
+        475,
+        1650,
+        575
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.v27AcUj5f67fr5W2"
+    },
+    {
+      "_id": "IFxHmvFYRdyCzhdz",
+      "c": [
+        1650,
+        625,
+        1650,
+        725
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.IFxHmvFYRdyCzhdz"
+    },
+    {
+      "_id": "g5hawgSN5V5pEXRH",
+      "c": [
+        1250,
+        940,
+        1250,
+        1060
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.g5hawgSN5V5pEXRH"
+    },
+    {
+      "_id": "342vPcMr6xdYaCyw",
+      "c": [
+        1270,
+        1150,
+        1630,
+        1150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.342vPcMr6xdYaCyw"
+    },
+    {
+      "_id": "NmnF67zUAGgplrxr",
+      "c": [
+        1650,
+        810,
+        1650,
+        890
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.NmnF67zUAGgplrxr"
+    },
+    {
+      "_id": "MahLkLpga4TRMda5",
+      "c": [
+        1650,
+        1010,
+        1650,
+        1090
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!GSUkvBwWMDBXBwmL.MahLkLpga4TRMda5"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "eAvNAc9L37Xzjd3o",
+      "name": "Video wall (live mosaic), west",
+      "x": 660,
+      "y": 460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#8fb3f0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 2,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.eAvNAc9L37Xzjd3o"
+    },
+    {
+      "_id": "WBYyQuUl2tcMrliP",
+      "name": "Video wall (live mosaic), center",
+      "x": 875,
+      "y": 460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#8fb3f0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 2,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.WBYyQuUl2tcMrliP"
+    },
+    {
+      "_id": "BX2i2QAinph1c2Ib",
+      "name": "Video wall (live mosaic), east",
+      "x": 1090,
+      "y": 460,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 2,
+        "dim": 6,
+        "color": "#8fb3f0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.4,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 2,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.BX2i2QAinph1c2Ib"
+    },
+    {
+      "_id": "MkPqUvNbbsA2X9Xb",
+      "name": "The guard's phone, on the desk",
+      "x": 790,
+      "y": 730,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.MkPqUvNbbsA2X9Xb"
+    },
+    {
+      "_id": "AnLdc9pGkYC0sL3P",
+      "name": "Lobby night light",
+      "x": 850,
+      "y": 960,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.AnLdc9pGkYC0sL3P"
+    },
+    {
+      "_id": "fuQwvbARe1dVnRyg",
+      "name": "Security office monitors",
+      "x": 190,
+      "y": 260,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.fuQwvbARe1dVnRyg"
+    },
+    {
+      "_id": "9sEEuAa0LWzr60GB",
+      "name": "Elevator hall",
+      "x": 1450,
+      "y": 450,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.9sEEuAa0LWzr60GB"
+    },
+    {
+      "_id": "pL9wYqlJbZoknhWF",
+      "name": "Service hallway",
+      "x": 800,
+      "y": 300,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.pL9wYqlJbZoknhWF"
+    },
+    {
+      "_id": "vBNwGRm5a2uZ6Yrk",
+      "name": "Service exit wall light",
+      "x": 850,
+      "y": 160,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.vBNwGRm5a2uZ6Yrk"
+    },
+    {
+      "_id": "nYS5iASmjvs59H01",
+      "name": "Parking lot light pole (west)",
+      "x": 300,
+      "y": 1360,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.nYS5iASmjvs59H01"
+    },
+    {
+      "_id": "W7NlVnpPTT632hLN",
+      "name": "Parking lot light pole (east)",
+      "x": 1550,
+      "y": 1360,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.W7NlVnpPTT632hLN"
+    },
+    {
+      "_id": "ftgIJBEk21pvD3Gc",
+      "name": "Fire stairs ceiling light",
+      "x": 1750,
+      "y": 325,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.ftgIJBEk21pvD3Gc"
+    },
+    {
+      "_id": "QWMNztIwFVKmva2v",
+      "name": "Elevator A car light",
+      "x": 1750,
+      "y": 525,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.QWMNztIwFVKmva2v"
+    },
+    {
+      "_id": "ckIR1JL4D23GTShV",
+      "name": "Elevator B car light",
+      "x": 1750,
+      "y": 675,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!GSUkvBwWMDBXBwmL.ckIR1JL4D23GTShV"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "Xy44nVkgKwjYQUdC",
+      "name": "To the campus parking lot",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 100,
+          "y": 1280,
+          "width": 400,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "al-estacionamiento",
+          "estado": "pendiente",
+          "pendiente": "campus zone map (t2i, LUG-07): the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.Xy44nVkgKwjYQUdC"
+    },
+    {
+      "_id": "XHof51BuIGp4KLQZ",
+      "name": "Arrival from the service yard",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 800,
+          "y": 100,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "llegada-desde-patio",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.XHof51BuIGp4KLQZ"
+    },
+    {
+      "_id": "GLZ2V71TQflwjRCq",
+      "name": "Cross the yard to the data center",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 0,
+          "width": 300,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "8rll4VMmJgxsWr4A",
+          "name": "Cross the yard to the data center",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.xu45BHZ9kyhLpo0e.Region.4R8bEHw9asCGvOPX"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!GSUkvBwWMDBXBwmL.GLZ2V71TQflwjRCq.8rll4VMmJgxsWr4A"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "al-centro-de-datos",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.GLZ2V71TQflwjRCq"
+    },
+    {
+      "_id": "TRz9hX0jdL9QkGy7",
+      "name": "Arrival by the stairs",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1530,
+          "y": 250,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "llegada-escalera",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.TRz9hX0jdL9QkGy7"
+    },
+    {
+      "_id": "illFhKyfeKdoeEd2",
+      "name": "Up the stairs to the third floor",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1700,
+          "y": 200,
+          "width": 150,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "IUg1dwCqIWCmipX4",
+          "name": "Up the stairs to the third floor",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.UodjWchaAasV1xwf.Region.scpXlsccjxJXqJLf"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!GSUkvBwWMDBXBwmL.illFhKyfeKdoeEd2.IUg1dwCqIWCmipX4"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "subir-escalera",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.illFhKyfeKdoeEd2"
+    },
+    {
+      "_id": "jRFW9yUVWltQx8fu",
+      "name": "Arrival by elevator",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1530,
+          "y": 500,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "llegada-ascensor",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.jRFW9yUVWltQx8fu"
+    },
+    {
+      "_id": "NppqJmkAiS9CmGwJ",
+      "name": "Elevator A to the third floor",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1680,
+          "y": 460,
+          "width": 150,
+          "height": 130,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "bsTJzPnK2aCrSalF",
+          "name": "Elevator A to the third floor",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.UodjWchaAasV1xwf.Region.mvwHspwPHukot32l"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!GSUkvBwWMDBXBwmL.NppqJmkAiS9CmGwJ.bsTJzPnK2aCrSalF"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "subir-ascensor-a",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.NppqJmkAiS9CmGwJ"
+    },
+    {
+      "_id": "JbRRXjioYOz22cAs",
+      "name": "Elevator B to the third floor",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1680,
+          "y": 610,
+          "width": 150,
+          "height": 130,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "oWipywxPVBI8eVYV",
+          "name": "Elevator B to the third floor",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.UodjWchaAasV1xwf.Region.mvwHspwPHukot32l"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!GSUkvBwWMDBXBwmL.JbRRXjioYOz22cAs.oWipywxPVBI8eVYV"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "gale-sentinel",
+          "region": "subir-ascensor-b",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!GSUkvBwWMDBXBwmL.JbRRXjioYOz22cAs"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "5ByzrYW95b3YhGQu",
+      "entryId": "zSkwEUUtkNGhfXun",
+      "pageId": null,
+      "x": 735,
+      "y": 810,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-07",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "gale-sentinel",
+          "id": "LUG-07"
+        }
+      },
+      "_key": "!scenes.notes!GSUkvBwWMDBXBwmL.5ByzrYW95b3YhGQu"
+    },
+    {
+      "_id": "njunALW6zOU743Kl",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "wIpc0OR2nQf7WDFO",
+      "x": 835,
+      "y": 810,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E05",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "gale-sentinel",
+          "id": "A1-E05"
+        }
+      },
+      "_key": "!scenes.notes!GSUkvBwWMDBXBwmL.njunALW6zOU743Kl"
+    },
+    {
+      "_id": "K6BzlFFTZrLaANMC",
+      "entryId": "C7cxKf7kcAELzuJ1",
+      "pageId": "EjJ0vfVBCjTTb0QV",
+      "x": 935,
+      "y": 810,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A3-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "gale-sentinel",
+          "id": "A3-E02"
+        }
+      },
+      "_key": "!scenes.notes!GSUkvBwWMDBXBwmL.K6BzlFFTZrLaANMC"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "qJyJxWqW62JAxN7b",
+      "name": "the guard's chair, behind the desk",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 793,
+      "y": 643,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.qJyJxWqW62JAxN7b"
+    },
+    {
+      "_id": "oCVpKLAY5Mnshd6d",
+      "name": "sofa moderno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-moderno.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 118,
+      "y": 800,
+      "width": 200,
+      "height": 85,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 1,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.oCVpKLAY5Mnshd6d"
+    },
+    {
+      "_id": "CupVAJoYpiP4GJvd",
+      "name": "sofa moderno",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-moderno.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 118,
+      "y": 1020,
+      "width": 180,
+      "height": 85,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 2,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.CupVAJoYpiP4GJvd"
+    },
+    {
+      "_id": "soTDu7vIo3e30cng",
+      "name": "mesa baja cuadrada",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-baja-cuadrada.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 250,
+      "y": 880,
+      "width": 80,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.soTDu7vIo3e30cng"
+    },
+    {
+      "_id": "ZLXmKd2aKhps6t8h",
+      "name": "silla oficina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-oficina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 188,
+      "y": 338,
+      "width": 55,
+      "height": 55,
+      "elevation": 0,
+      "levels": [
+        "Jom4pLT2Tdz9F9OV"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "gale-sentinel",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!GSUkvBwWMDBXBwmL.ZLXmKd2aKhps6t8h"
+    }
+  ],
+  "tokens": [],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "TSyoaj8209JtPAKj",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "gale-sentinel",
+      "id": "LUG-07",
+      "plano": "gale-sentinel",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel Campus and Data Center}<br><strong>Scenes:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}</p>\n<p><strong>Layer 1 of A3-E02: the perimeter.</strong> “Two a.m. The Gale Sentinel lobby is empty except for a guard looking at his phone behind the desk. The wall screen is still on: a mosaic of thousands of live feeds, porches, hallways, rain.” The <strong>video wall</strong> takes up the north wall of the lobby, facing the main entrance; on the map it&#39;s off, and three “video wall” lights turn it on. Beneath it runs the motto “We see what the city doesn&#39;t.” (it isn&#39;t painted: no text on the map). The guard (one of the <strong>two mortal guards</strong>) sits in the chair behind the <strong>reception desk</strong>; the other is in the <strong>security office</strong> in the west wing, with the camera monitors.</p>\n<p><strong>ANOMALY cameras (at every entrance)</strong>, marked as <code>anomaly</code> objects with no light: ① above the main entrance, outside; ② in the southeast corner of the lobby, aimed at the door; ③ above the service exit to the yard, outside; ④ in the elevator hall, aimed at the turnstiles. Every Kindred who passes in front of one with the module active is logged as a “cold subject”: Thermometer +1 in total (A3-E02, layer 1). Disabling it from outside: Intelligence + Technology Diff. 4 (Ezra +2 dice if he already knows the firmware is his; LOR-03 at level 4: automatic). Obfuscate doesn&#39;t fool it.</p>\n<p><strong>Entrances.</strong> The main entrance (sliding glass door) opens onto the plaza and the parking lot: the “To the campus parking lot” region leads to the campus zone map (pending, t2i). The <strong>service exit</strong> off the north hallway opens onto the service yard, and from the yard you cross to the <strong>data center</strong> (region → <code>gale-datos</code>). The <strong>turnstiles</strong> (two card-access lanes, glass gates between railings) separate the lobby from the elevator hall; the service hallway also reaches the hall through a door with an electronic lock. Stairs and elevators go up to the <strong>third floor</strong> (<code>gale-planta3</code>).</p>\n<p><strong>A1-E05 (physical access).</strong> If the coterie uses Dominate on an on-call technician to get in, they come in this way and pass camera ① or ③: Thermometer +1 unless the cameras are disabled first.</p>\n<p><strong>Running out</strong> through the lobby and the plaza in front of the cameras: Thermometer +1. If the alarm goes off, Bellevue police take twelve minutes.</p>\n<p>The ground-floor café and restrooms (hatched block to the southeast) are closed and aren&#39;t played.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (5) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> To the campus parking lot.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

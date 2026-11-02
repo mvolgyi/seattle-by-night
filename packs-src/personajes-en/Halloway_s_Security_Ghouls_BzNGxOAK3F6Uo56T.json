@@ -1,0 +1,142 @@
+{
+  "_id": "BzNGxOAK3F6Uo56T",
+  "_key": "!actors!BzNGxOAK3F6Uo56T",
+  "name": "Halloway's Security Ghouls",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+  "folder": "YWm2LWWrpHgOUZLn",
+  "sort": 60,
+  "prototypeToken": {
+    "name": "Security Guard",
+    "actorLink": false,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Four in total; two go with Dawson",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Four in total; two go with Dawson</td></tr><tr><th>Number</th><td>4</td></tr></tbody></table><p><strong>Gear:</strong> pistols, extendable batons, vests (armor 2), radios.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>MEN-04 is the “Dawson and the security ghouls” entry in doc 14 (newest record). Doc 11 assigned it to Dawson alone and doc 01 to Gale&#39;s security ghouls; doc 14 wins. This actor carries the pools for the four ghouls; Dawson goes in MEN-04-DAWSON.</p>",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 3,
+      "value": 3,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {
+      "potence": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "ghoul",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "firearms": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-04",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 4,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

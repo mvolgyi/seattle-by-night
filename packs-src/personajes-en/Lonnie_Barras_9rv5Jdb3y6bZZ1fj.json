@@ -1,0 +1,146 @@
+{
+  "_id": "9rv5Jdb3y6bZZ1fj",
+  "_key": "!actors!9rv5Jdb3y6bZZ1fj",
+  "name": "Lonnie Barras",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-01.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Lonnie Barras",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-01.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "The Thief Who Kept One",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>The Thief Who Kept One</td></tr></tbody></table><p>Forty-something, former alarm technician. Chain-smokes. He opened Helen&#39;s door and copied the drive in the car.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>MEN-01 is Lonnie Barras per the records in docs 11 and 14 (the newest). Doc 01 (and docs 03, 06, and 10, which talk about “the MEN-01 crew”) used it for the whole crew of thieves; doc 14 wins.</p>",
+    "health": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 2,
+      "value": 2,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 2
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 4
+      }
+    },
+    "exceptionaldicepools": {
+      "larceny": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "electronic locks",
+            "value": 1,
+            "paths": [
+              "skills.larceny"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-01",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

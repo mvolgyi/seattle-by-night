@@ -29,9 +29,9 @@ Krell pasó cincuenta años de mercenario. Trabajó para Arcontes, para el Sabba
 
 **Limpiar las copias.** Destruye a los Vástagos que compran o transportan copias del Expediente, usando la Furia Controlada para que parezca obra de Vance (@ID[A1-E02], @ID[A2-E02]). Jun Takeda es su siguiente objetivo (Noche 4).
 
-**Que el hermano lo vea.** No quiere ganarle a David; quiere que David lo reconozca. En @ID[A3-E01] va a por una Piedra de toque de la coterie para obligarlo a mirarlo a la cara. En @ID[A3-E03] le ofrece hablar.
+**Que el hermano lo vea.** No quiere ganarle a David; quiere que David lo reconozca. En @ID[A3-E01] va a por una Piedra de toque de la coterie para obligarlo a mirarlo a la cara. En @ID[A3-E03] le ofrece hablar. Exige a David; la coterie decide si lo lleva y cómo. Krell solo lo mira a él: los PJs hablan y David confirma.
 
-**Los folios.** Halloway le prometió las páginas del diario que hablan de él y todavía no se las dio. Krell empieza a sospechar que no existen, o que dicen algo que Halloway no quiere que lea. Si la coterie le enseña esos folios, cambia de bando (@ID[P-12]).
+**Los folios.** Halloway le prometió las páginas del diario que hablan de él y todavía no se las dio. Krell empieza a sospechar que no existen, o que dicen algo que Halloway no quiere que lea. Si la coterie le enseña esos folios, cambia de bando (@ID[P-12]). Si además aprende la otra guardia, puede ser Aliado 2 de la coterie.
 
 **El dominio prometido.** Halloway le prometió Harbor Island, el dominio de David. Krell todavía no se ha preguntado cómo piensa Halloway cumplir esa promesa.
 
@@ -101,7 +101,7 @@ El doc 07 decía «aparenta unos treinta y cinco años»; se decidió que aparen
 - Celeridad 3: Gracia felina (*Cat's Grace*), Rapidez (*Fleetness*), Parpadeo (*Blink*)
 - Presencia 2: Pavor (*Daunt*), Beso persistente (*Lingering Kiss*)
 
-**La guardia invertida (regla especial):** contra un rival que conozca la doctrina completa de la Furia Controlada (David, o cualquier PJ con @ID[LOR-01] a nivel 4 o más), Krell pierde 2 dados en todas sus reservas de defensa cuerpo a cuerpo. Él lo sabe, y por eso evita pelear con David de frente si puede.
+**La guardia invertida (regla especial):** contra un rival que conozca la doctrina completa de la Furia Controlada (cualquier PJ con @ID[LOR-01] a nivel 4 o más), Krell pierde 2 dados en todas sus reservas de defensa cuerpo a cuerpo. David también la conoce, pero no tira: el Narrador narra lo que hace, y Krell pierde esos 2 dados contra el PJ que ataque junto a David. Él lo sabe, y por eso evita pelear con David de frente si puede.
 
 :::recuadro Nota de edición · Nivel de LOR-01 y Disciplinas
 La ficha del capítulo 4 (doc 07) pedía LOR-01 a nivel 3 o más. El capítulo 7 (doc 10) y la versión de combate del capítulo 8 (doc 14) piden nivel 4 o más, que es el nivel de «La guardia completa» en la Loresheet (doc 08). Manda el doc más nuevo: nivel 4.

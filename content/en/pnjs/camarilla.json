@@ -1,0 +1,405 @@
+{
+  "_fuente": {
+    "PNJ-01": "58dd0c929fb5d338",
+    "PNJ-16": "c4b070ff48b50794",
+    "PNJ-13": "3b7cc1e1a34e6b12",
+    "PNJ-14": "8777d3d2e0516ace",
+    "PNJ-02": "6f0809c39f3ab2ce",
+    "PNJ-15": "d64ffddb95a6ecd7",
+    "PNJ-03": "b4287fb9900b6af5"
+  },
+  "pnjs": {
+    "PNJ-01": {
+      "nombre": "Ethan Montgomery",
+      "apodo": "The Sentinel of Puget Sound",
+      "concepto": "Sheriff of Seattle",
+      "secta": "Camarilla (out of personal loyalty to the Prince)",
+      "sire": "Elijah Kane (PNJ-09)",
+      "nacimiento": "1845",
+      "abrazado": "1885",
+      "ambicion": "For Seattle to outlive its Prince.",
+      "convicciones": [
+        "The Beast does not rule: it is mastered",
+        "No lawless monster deserves the gift of the night"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Dr. Lucy Harlan",
+          "descripcion": "A Snohomish veterinarian who looks after his dogs and makes him coffee he never drinks."
+        }
+      ],
+      "ventajas": [
+        "Status 4 (Camarilla): respected Sheriff of the domain (earlier source, doc 22)",
+        "Haven 3 (farm in the Snohomish Valley, with a tunnel to a boat landing; LUG-02)",
+        "Herd 2 (the bounty hunters, MEN-03)",
+        "Contacts 3 (state police, the port, and security firms)",
+        "Ally 3 (David Smith, PJ-01)",
+        "Mask 2 (retired private security consultant and working-dog breeder)"
+      ],
+      "defectos": [
+        "Shapeshifter's scars (amber eyes under stress)",
+        "Predator's instinct (frenzy test when he smells fresh human blood, Difficulty 2)",
+        "Distrust of neonates (−1 die on Social tests with Kindred under 50 years old)"
+      ],
+      "cita": "“I am the guardian between the Beast and the city. If one wakes, the other falls.”",
+      "semblante": "Heavyset, weathered skin, a short salt-and-pepper beard, and huge hands; flannel, a waxed jacket, boots; amber eyes under strain.",
+      "provisional": [
+        "David came to Seattle in the '80s (per the whisper “Montgomery and the Hound have been lovers since the seventies”)"
+      ],
+      "habilidades": {
+        "firearms": [
+          null,
+          "Sniper"
+        ],
+        "awareness": [
+          null,
+          "Supernatural tracking"
+        ],
+        "leadership": [
+          null,
+          "Authority through respect"
+        ],
+        "occult": [
+          null,
+          "Limits of the Beast"
+        ],
+        "brawl": [
+          null,
+          "Savage fighting"
+        ],
+        "survival": [
+          null,
+          "Tracking"
+        ],
+        "animalken": [
+          null,
+          "Dogs"
+        ]
+      }
+    },
+    "PNJ-16": {
+      "nombre": "Wendell Fry",
+      "apodo": "The Three A.M. Voice",
+      "concepto": "Malkavian Primogen (by habit)",
+      "secta": "Camarilla",
+      "sire": "A nameless Malkavian who used to call in from Fremont",
+      "nacimiento": "1938",
+      "abrazado": "1971",
+      "ambicion": "To decipher what the city is trying to tell him.",
+      "convicciones": [
+        "Never interrupt someone who is telling the truth"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Helen Ward (PNJ-04)",
+          "descripcion": "Though she doesn't know it."
+        }
+      ],
+      "ventajas": [
+        "Haven 2 (abandoned radio studio on the top floor of a Fremont building)",
+        "Herd 1 (the listeners: a dozen insomniacs)",
+        "Resources 1 (police, port, and emergency scanners)",
+        "Fame 1 (old radio listeners still recognize his voice)",
+        "Mask 1 (late-night host at a community radio station)"
+      ],
+      "defectos": [
+        "Derangement (Malkavian): he can't leave a sentence unfinished. If someone interrupts him, he repeats what he was saying from the beginning."
+      ],
+      "cita": "“You're not crazy, Helen. And the rain has ears.”",
+      "semblante": "Looks about thirty-three. Thin, a scruffy beard, thick-framed glasses, corduroy, and a cap from a team that no longer exists; headphones around his neck and a radio voice.",
+      "nota": "Editor's Note: doc 06 said “looks about fifty-five” and “white beard”; the decision was to use his age at the Embrace (about 33, no gray in his beard). Doc 06 gave him “Mask 1 (eccentric Fremont retiree)”; the decision was that his Mask is a late-night host at a community radio station.",
+      "habilidades": {
+        "academics": [
+          null,
+          "Music"
+        ],
+        "awareness": [
+          null,
+          "What goes unsaid"
+        ],
+        "performance": [
+          null,
+          "Radio"
+        ],
+        "occult": [
+          null,
+          "Prophecy"
+        ],
+        "insight": [
+          null,
+          "Voices"
+        ],
+        "technology": [
+          null,
+          "Analog radio"
+        ]
+      }
+    },
+    "PNJ-13": {
+      "nombre": "Abel Thornquist",
+      "apodo": "The Owner Below",
+      "concepto": "Nosferatu Primogen",
+      "secta": "Camarilla",
+      "sire": "“The Mother Below”",
+      "nacimiento": "1863",
+      "abrazado": "1890",
+      "ambicion": "For no one to be able to rule Seattle without going through what lies below.",
+      "convicciones": [
+        "A deal is a deal",
+        "What is buried is not lost"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Dee Watkins",
+          "descripcion": "A shelter worker in Pioneer Square who leaves the back door open for “the ones below” and never asks questions."
+        }
+      ],
+      "ventajas": [
+        "Haven 4 (the Sealed Underground, beneath Pioneer Square; LUG-04)",
+        "Influence 3 (the underground: the Undermarket)",
+        "Allies 2 (the thin-bloods: a dozen young ones who gather information on the surface)",
+        "Contacts 4 (cops, doormen, night cleaning staff, and maintenance techs all over the city)",
+        "Mask 0 (he has no mortal Mask)"
+      ],
+      "cita": "“Everything's for sale below. The only thing that changes is who pays.”",
+      "semblante": "Huge and hunched, skin like cracked, wet gray wood, a twisted jaw, and fingers like roots; a patched three-piece suit and a carbide lamp.",
+      "habilidades": {
+        "craft": [
+          null,
+          "Carpentry"
+        ],
+        "streetwise": [
+          null,
+          "Black market"
+        ],
+        "finance": [
+          null,
+          "Favors"
+        ],
+        "insight": [
+          null,
+          "Lies"
+        ],
+        "persuasion": [
+          null,
+          "Haggling"
+        ],
+        "stealth": [
+          null,
+          "Tunnels"
+        ]
+      }
+    },
+    "PNJ-14": {
+      "nombre": "Solène Marchetti",
+      "apodo": "She Who Takes Notes",
+      "concepto": "Keeper of Elysium and Toreador Primogen",
+      "secta": "Camarilla",
+      "sire": "A Toreador from Montreal, since destroyed",
+      "nacimiento": "1884",
+      "abrazado": "1912",
+      "ambicion": "For Seattle's record to reach the twenty-second century intact.",
+      "convicciones": [
+        "What is written is not erased"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Tomás Arriaga",
+          "descripcion": "A glassblower who makes the Gallery's jellyfish and believes he works for an eccentric foundation."
+        }
+      ],
+      "ventajas": [
+        "Haven 2 (apartment above the archive of the Glass Gallery)",
+        "Allies 2 (the Gallery staff: five ghouls who serve Elysium)",
+        "Status 3 (Camarilla)",
+        "Mask 2 (director of the Gallery foundation's archive)"
+      ],
+      "cita": "“I don't judge. I record. Time does the judging, and time always reads my books.”",
+      "semblante": "Looks about twenty-eight. Tall, dark hair in a low bun, old-fashioned dresses in grays, and glasses on a chain; she writes with a fountain pen.",
+      "nota": "Editor's Note: doc 06 said “looks about forty”; the decision was to use her age at the Embrace (about 28).",
+      "habilidades": {
+        "academics": [
+          null,
+          "Camarilla history"
+        ],
+        "craft": [
+          null,
+          "Calligraphy"
+        ],
+        "etiquette": [
+          null,
+          "Elysium protocol"
+        ],
+        "investigation": [
+          null,
+          "Archives"
+        ],
+        "politics": [
+          null,
+          "Seattle"
+        ]
+      }
+    },
+    "PNJ-02": {
+      "nombre": "Marcus Whitmore",
+      "apodo": "The Glass Prince",
+      "concepto": "Prince of Seattle",
+      "secta": "Camarilla",
+      "sire": "Clémence Aubert, a soprano with the San Francisco Opera",
+      "nacimiento": "1838",
+      "abrazado": "1871",
+      "ambicion": "For his reign to be remembered as a golden age.",
+      "convicciones": [
+        "Beauty justifies almost anything"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Ruby Kessler",
+          "descripcion": "81, a former dancer whose scholarship he funded in the '60s and who now lives in a nursing home. He still sends her flowers."
+        }
+      ],
+      "ventajas": [
+        "Haven 4 (Capitol Hill penthouse in the name of his cultural foundation)",
+        "Resources 4 (the cultural foundation)",
+        "Influence 3 (arts and culture)",
+        "Status 5 (Camarilla)",
+        "Herd 2 (Club Cinder's loyal crowd)",
+        "Mask 3 (Marcus Whitmore III, philanthropist, with a fictitious family line that is renewed every forty years)"
+      ],
+      "cita": "“A Prince doesn't rule. He chooses who rules in his name, and applauds.”",
+      "semblante": "Looks about thirty-three. Tall, hair slicked back with no gray, very pale gray eyes; an impeccable suit with no tie and a ring with a black stone.",
+      "nota": "Editor's Note: doc 06 said “looks about forty-five” and “silver hair”; the decision was to use his age at the Embrace (about 33, no gray). Doc 06 gave him six powers with Presence 5; Daunt was removed (one per dot).",
+      "habilidades": {
+        "academics": [
+          null,
+          "Art history"
+        ],
+        "etiquette": [
+          null,
+          "Courts"
+        ],
+        "performance": [
+          null,
+          "Theater"
+        ],
+        "persuasion": [
+          null,
+          "Seduction"
+        ],
+        "politics": [
+          null,
+          "Camarilla"
+        ]
+      }
+    },
+    "PNJ-15": {
+      "nombre": "Dr. Anneliese Voight",
+      "apodo": "She Who Watches the Net",
+      "concepto": "Regent of the Observatory Chantry and Tremere Primogen",
+      "secta": "Camarilla",
+      "sire": "Regent Friedrich Ahlers of Vienna (destroyed in 1945)",
+      "nacimiento": "1891",
+      "abrazado": "1924",
+      "ambicion": "For the Seattle Camarilla to survive the age of data.",
+      "convicciones": [
+        "Never ignore a pattern",
+        "Knowledge without action is complicity"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Mateo Ruiz-Okoye",
+          "descripcion": "An epidemiology PhD candidate whose dissertation she advises by email without him knowing who she is."
+        }
+      ],
+      "ventajas": [
+        "Haven 3 (the Observatory Chantry in Queen Anne, with blood sorcery wards; LUG-13)",
+        "Resources 3 (the dome's servers)",
+        "Contacts 2 (technology)",
+        "Influence 2 (the university, through the research lab)",
+        "Mask 2 (Dr. A. Voight, director of a private computational epidemiology lab)"
+      ],
+      "cita": "“An epidemic never starts with the first death. It starts with the first data point nobody wanted to look at.”",
+      "semblante": "Looks about thirty-three. Petite, very short hair in its natural color, rimless glasses, a black turtleneck, and a lab coat; Viennese accent.",
+      "nota": "Editor's Note: doc 06 said “looks about fifty” and “white hair”; the decision was to use her age at the Embrace (about 33, hair in its natural color).",
+      "habilidades": {
+        "academics": [
+          null,
+          "Epidemiology"
+        ],
+        "science": [
+          null,
+          "Statistics"
+        ],
+        "investigation": [
+          null,
+          "Patterns"
+        ],
+        "occult": [
+          null,
+          "Thaumaturgy"
+        ],
+        "technology": [
+          null,
+          "Networks"
+        ]
+      }
+    },
+    "PNJ-03": {
+      "nombre": "Charles Halloway",
+      "apodo": "The Uncrowned King",
+      "concepto": "Ventrue Primogen",
+      "secta": "Camarilla",
+      "sire": "Adelaide Grange (PNJ-22)",
+      "nacimiento": "1921",
+      "abrazado": "1958",
+      "ambicion": "The crown of Seattle.",
+      "convicciones": [
+        "Order is a service, not a privilege",
+        "Never let them see you get your hands dirty"
+      ],
+      "piedrasDeToque": [
+        {
+          "nombre": "Margaret Halloway",
+          "descripcion": "His 22-year-old grandniece, a journalism student, who believes her great-uncle is the anonymous benefactor behind her scholarship."
+        }
+      ],
+      "ventajas": [
+        "Haven 4 (Halloway Tower, with a penthouse and a vault; LUG-06)",
+        "Ally 3 (Preston Gale, PNJ-19)",
+        "Resources 5 (Halloway Meridian Capital)",
+        "Influence 4 (finance and media)",
+        "Contacts 3 (the press, city hall, and a state senator's office)",
+        "Mask 3 (Charles Halloway Jr., reclusive chairman of an investment fund)"
+      ],
+      "cita": "“This city doesn't need a Prince who looks. It needs one who sees.”",
+      "semblante": "Slim, medium height, black hair parted on the side, and tired brown eyes; a classic dark suit, white shirt, and thin tie.",
+      "nota": "Editor's Note: doc 06 gave him five powers with Dominate 4 and three with Fortitude 2; Cloud Memory (Forgetful Mind covers it) and Resilience (his Health 6 doesn't include it) were removed, one per dot.",
+      "habilidades": {
+        "etiquette": [
+          null,
+          "Camarilla"
+        ],
+        "finance": [
+          null,
+          "Shell companies"
+        ],
+        "intimidation": [
+          null,
+          "Silences"
+        ],
+        "persuasion": [
+          null,
+          "Negotiation"
+        ],
+        "politics": [
+          null,
+          "Power grabs"
+        ],
+        "subterfuge": [
+          null,
+          "Lying without lying"
+        ]
+      }
+    }
+  }
+}

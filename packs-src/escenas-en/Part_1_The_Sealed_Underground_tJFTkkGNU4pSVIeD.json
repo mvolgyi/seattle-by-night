@@ -1,0 +1,1145 @@
+{
+  "_id": "tJFTkkGNU4pSVIeD",
+  "_key": "!scenes!tJFTkkGNU4pSVIeD",
+  "name": "Part 1 · The Sealed Underground",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 40,
+  "width": 2400,
+  "height": 1400,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.9,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "54mErQY2DeqhQfwI",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/subterraneo.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!tJFTkkGNU4pSVIeD.54mErQY2DeqhQfwI"
+    }
+  ],
+  "journal": "jg1zpvYlDFMJRY8Q",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "Ctf0kReWEwTrj0C0",
+      "c": [
+        0,
+        0,
+        2400,
+        0
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.Ctf0kReWEwTrj0C0"
+    },
+    {
+      "_id": "fjhTjDgNCXrCYNv8",
+      "c": [
+        0,
+        650,
+        735,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.fjhTjDgNCXrCYNv8"
+    },
+    {
+      "_id": "CDyuL4yCOGrc9rnr",
+      "c": [
+        855,
+        650,
+        885,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.CDyuL4yCOGrc9rnr"
+    },
+    {
+      "_id": "wVJoh8lRQ0yGA3o1",
+      "c": [
+        1005,
+        650,
+        1035,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.wVJoh8lRQ0yGA3o1"
+    },
+    {
+      "_id": "mbZhATZlqvCDQJfT",
+      "c": [
+        1155,
+        650,
+        1185,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.mbZhATZlqvCDQJfT"
+    },
+    {
+      "_id": "vUTn2jBx5S2V6TEi",
+      "c": [
+        1305,
+        650,
+        1335,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.vUTn2jBx5S2V6TEi"
+    },
+    {
+      "_id": "zA1GrHixCrwYjXwn",
+      "c": [
+        1455,
+        650,
+        1850,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.zA1GrHixCrwYjXwn"
+    },
+    {
+      "_id": "9PIP5EfnVerTob3T",
+      "c": [
+        1940,
+        650,
+        2010,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.9PIP5EfnVerTob3T"
+    },
+    {
+      "_id": "EVQNBrAzIuprZv3g",
+      "c": [
+        2290,
+        650,
+        2400,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.EVQNBrAzIuprZv3g"
+    },
+    {
+      "_id": "ZPRtvdhobCpb7IVB",
+      "c": [
+        0,
+        0,
+        0,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.ZPRtvdhobCpb7IVB"
+    },
+    {
+      "_id": "zmCzG8T9IB9mgKxB",
+      "c": [
+        300,
+        0,
+        300,
+        740
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.zmCzG8T9IB9mgKxB"
+    },
+    {
+      "_id": "bN5LFCNS8eLpTK3O",
+      "c": [
+        300,
+        860,
+        300,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.bN5LFCNS8eLpTK3O"
+    },
+    {
+      "_id": "mD23DeJGSGG1RUZY",
+      "c": [
+        0,
+        950,
+        850,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.mD23DeJGSGG1RUZY"
+    },
+    {
+      "_id": "t28PDfc4LzSadnVd",
+      "c": [
+        950,
+        950,
+        1820,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.t28PDfc4LzSadnVd"
+    },
+    {
+      "_id": "NW9uIgRUJ8wiOMin",
+      "c": [
+        1910,
+        950,
+        2400,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.NW9uIgRUJ8wiOMin"
+    },
+    {
+      "_id": "wZEDc0QIsEUVH24G",
+      "c": [
+        0,
+        1400,
+        2400,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.wZEDc0QIsEUVH24G"
+    },
+    {
+      "_id": "0tSXW8VwPl3Zrq3P",
+      "c": [
+        600,
+        950,
+        600,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.0tSXW8VwPl3Zrq3P"
+    },
+    {
+      "_id": "myUVhOZGtcwJmIlv",
+      "c": [
+        2400,
+        0,
+        2400,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.myUVhOZGtcwJmIlv"
+    },
+    {
+      "_id": "1IbJIgkhSVyjVZ9y",
+      "c": [
+        700,
+        0,
+        700,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.1IbJIgkhSVyjVZ9y"
+    },
+    {
+      "_id": "HZiFl3vdtESehjRp",
+      "c": [
+        1500,
+        0,
+        1500,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.HZiFl3vdtESehjRp"
+    },
+    {
+      "_id": "7y8zI1UZxat2k7RG",
+      "c": [
+        1800,
+        0,
+        1800,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.7y8zI1UZxat2k7RG"
+    },
+    {
+      "_id": "AyxSkr82XTwCUALv",
+      "c": [
+        1300,
+        950,
+        1300,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.AyxSkr82XTwCUALv"
+    },
+    {
+      "_id": "18SW60rzx8JeCVzv",
+      "c": [
+        1750,
+        950,
+        1750,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.18SW60rzx8JeCVzv"
+    },
+    {
+      "_id": "8ozswDywqLfq5NIk",
+      "c": [
+        300,
+        740,
+        300,
+        860
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.8ozswDywqLfq5NIk"
+    },
+    {
+      "_id": "nFiEjGd2f8nxCMHM",
+      "c": [
+        1850,
+        650,
+        1940,
+        650
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.nFiEjGd2f8nxCMHM"
+    },
+    {
+      "_id": "RRKbp8VBDfxZGwwg",
+      "c": [
+        2010,
+        650,
+        2290,
+        650
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.RRKbp8VBDfxZGwwg"
+    },
+    {
+      "_id": "hdf8HqDcZX4s16vx",
+      "c": [
+        850,
+        950,
+        950,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.hdf8HqDcZX4s16vx"
+    },
+    {
+      "_id": "IbDEesPbI145hji3",
+      "c": [
+        1820,
+        950,
+        1910,
+        950
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!tJFTkkGNU4pSVIeD.IbDEesPbI145hji3"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "xBPDnP7yh1sJta3I",
+      "name": "Violet glass skylight (dirty light from the street)",
+      "x": 550,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.xBPDnP7yh1sJta3I"
+    },
+    {
+      "_id": "LwzKH1rV6vxtUAWZ",
+      "name": "Violet glass skylight",
+      "x": 1050,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.LwzKH1rV6vxtUAWZ"
+    },
+    {
+      "_id": "4Qx3G0DypxZYc2bG",
+      "name": "Violet glass skylight",
+      "x": 1550,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.4Qx3G0DypxZYc2bG"
+    },
+    {
+      "_id": "daMk8pAKSgwrCTvd",
+      "name": "Violet glass skylight",
+      "x": 2050,
+      "y": 800,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.5,
+        "dim": 3,
+        "color": "#8a5cc8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.daMk8pAKSgwrCTvd"
+    },
+    {
+      "_id": "xo33LZozQhwJ6JEE",
+      "name": "Market stall lantern",
+      "x": 880,
+      "y": 150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.xo33LZozQhwJ6JEE"
+    },
+    {
+      "_id": "TqmUVOkiuIKYfYgy",
+      "name": "Market stall lantern",
+      "x": 1240,
+      "y": 410,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.TqmUVOkiuIKYfYgy"
+    },
+    {
+      "_id": "iZHhvWIGh0td64x6",
+      "name": "Thin-blood shelter candles",
+      "x": 1060,
+      "y": 1160,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.7,
+        "color": "#ffc547",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 4,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.iZHhvWIGh0td64x6"
+    },
+    {
+      "_id": "qeOWusU7Dg63BOlW",
+      "x": 2205,
+      "y": 55,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 2,
+        "dim": 5,
+        "color": "#f1f3ec",
+        "coloration": 1,
+        "attenuation": 0.25,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.qeOWusU7Dg63BOlW"
+    },
+    {
+      "_id": "dbFOv7500qjkCTED",
+      "x": 2340,
+      "y": 1160,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.8,
+        "color": "#3fd6a8",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 6,
+          "intensity": 3,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.dbFOv7500qjkCTED"
+    },
+    {
+      "_id": "UU8oUHjpnrkAlyFn",
+      "x": 2050,
+      "y": 1340,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!tJFTkkGNU4pSVIeD.UU8oUHjpnrkAlyFn"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "cvazZTnsTBdgjXbj",
+      "name": "Up to Pioneer Square",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 15,
+          "y": 710,
+          "width": 100,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "subterraneo",
+          "region": "subir-pioneer",
+          "estado": "pendiente",
+          "pendiente": "no street map (Pioneer Square): the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!tJFTkkGNU4pSVIeD.cvazZTnsTBdgjXbj"
+    },
+    {
+      "_id": "2pb2m6oCwOgZNR1t",
+      "name": "Arrival from Pioneer Square (in front of the iron door)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 205,
+          "y": 710,
+          "width": 90,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "subterraneo",
+          "region": "desde-pioneer",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!tJFTkkGNU4pSVIeD.2pb2m6oCwOgZNR1t"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "kutIReO8M0idLnql",
+      "entryId": "jg1zpvYlDFMJRY8Q",
+      "pageId": null,
+      "x": 1360,
+      "y": 810,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-04",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "subterraneo",
+          "id": "LUG-04"
+        }
+      },
+      "_key": "!scenes.notes!tJFTkkGNU4pSVIeD.kutIReO8M0idLnql"
+    },
+    {
+      "_id": "7vjs2LZv9hcrgQcQ",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "lM1EiE1FoXMkf3Uo",
+      "x": 2110,
+      "y": 360,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E04",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "subterraneo",
+          "id": "A1-E04"
+        }
+      },
+      "_key": "!scenes.notes!tJFTkkGNU4pSVIeD.7vjs2LZv9hcrgQcQ"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "uOybtnG7nNyqOntV",
+      "name": "Thornquist's carbide lamp, lit on the counter",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-lampara-carburo.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2205,
+      "y": 55,
+      "width": 30,
+      "height": 30,
+      "elevation": 0,
+      "levels": [
+        "54mErQY2DeqhQfwI"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "subterraneo",
+          "tipo": "lampara"
+        }
+      },
+      "_key": "!scenes.tiles!tJFTkkGNU4pSVIeD.uOybtnG7nNyqOntV"
+    },
+    {
+      "_id": "HxL8vjH7tJOmWce3",
+      "name": "a pallet with candles, cans, and a backpack",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1010,
+      "y": 1150,
+      "width": 100,
+      "height": 80,
+      "elevation": 0,
+      "levels": [
+        "54mErQY2DeqhQfwI"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "subterraneo",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!tJFTkkGNU4pSVIeD.HxL8vjH7tJOmWce3"
+    },
+    {
+      "_id": "P3weaaWGABPblOyL",
+      "name": "silla escritorio",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-escritorio.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2050,
+      "y": 1265,
+      "width": 50,
+      "height": 50,
+      "elevation": 0,
+      "levels": [
+        "54mErQY2DeqhQfwI"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "subterraneo",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!tJFTkkGNU4pSVIeD.P3weaaWGABPblOyL"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "yp1Q1aM8bQzFYdoy",
+      "name": "Abel Thornquist",
+      "displayName": 30,
+      "actorId": "NDI68PA4J59Be6ts",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-13.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2040,
+      "y": 225,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "54mErQY2DeqhQfwI",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "subterraneo",
+          "id": "PNJ-13",
+          "escenas": [
+            "A1-E04"
+          ],
+          "nota": "In the barber's chair, “as if it were a throne.”"
+        }
+      },
+      "_key": "!scenes.tokens!tJFTkkGNU4pSVIeD.yp1Q1aM8bQzFYdoy"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "WVoeKFDEdKOLYfk0",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "subterraneo",
+      "id": "LUG-04",
+      "plano": "subterraneo",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{The Sealed Underground (Seattle Underground)}<br><strong>Scenes:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below}</p>\n<p><strong>Arrival (A1-E04, Nights 2 to 4).</strong> A staircase leads down from a Pioneer Square basement (west) to the <strong>iron door</strong> that appears on no map. Behind it, the 1889 brick sidewalk runs east beneath the city: boarded-up shopfronts on both sides of the Market&#39;s entrance, <strong>violet glass skylights</strong> in the ceiling (Foundry lights over the sidewalk, nothing painted), and a <strong>network cable</strong> running along the top of the south wall to Ezra&#39;s door. It smells of mold, of damp, and, every so often, of server ozone.</p>\n<p><strong>The Undermarket.</strong> The big shop in the middle, open to the sidewalk through its cast-iron columns. Stalls of information and favors (fixed, painted) and two stall lanterns. <strong>Rules Below:</strong> no fighting in the Market, everything has a price, and nobody asks about anybody&#39;s face. Fighting here turns Thornquist and a dozen runners against the coterie and shuts off LOR-02.</p>\n<p><strong>The barbershop (Thornquist&#39;s office).</strong> At the far east end of the sidewalk, “there&#39;s a carbide lamp burning”: you can see it from a distance through the shopfront window, the only one that still has its glass. Thornquist receives visitors seated in the <strong>barber&#39;s chair</strong> (fixed, bolted to the floor) “as if it were a throne.” The carbide lamp is a lit tile (<code>tile-lampara-carburo</code>) on the counter. In the back corner, the <strong>safe</strong> with the duplicates of USB drives 1 and 2 (AVE-01-AJUSTE; Krell doesn&#39;t know they exist). Tests: Manipulation + Persuasion Diff. 4 (Ezra +2), Wits + Insight Diff. 3.</p>\n<p><strong>Ezra&#39;s nest (PJ-03, Haven 2).</strong> Under the street, across from the barbershop: racks of salvaged servers, the desk with his monitors (“screen” light), and the cot. The network cable from the sidewalk comes in through his door; the cables “come down through nineteenth-century holes” in the ceiling.</p>\n<p><strong>The thin-blood shelter.</strong> An old coal vault under the street: mattresses, blankets, candles, and the heap of coal nobody ever cleared out. Jun Takeda (PNJ-20) hasn&#39;t been back since the Pier 46 business: if they look for her here, she isn&#39;t here (she sleeps in a storage unit in SoDo).</p>\n<p><strong>LOR-02.</strong> The boarded-up shopfronts open onto abandoned shops with no door (the boards are nailed over the wall); if a PC has “Sealed Haven” (•••), the Storyteller can open one with a secret door.</p>\n<p><strong>Off the map.</strong> The staircase climbs to Pioneer Square (no street map). The sidewalk continues east behind a brick partition wall.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (3) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.NDI68PA4J59Be6ts]{Abel Thornquist} (A1-E04): In the barber&#39;s chair, “as if it were a throne.”</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Up to Pioneer Square.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

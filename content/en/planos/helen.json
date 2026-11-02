@@ -1,0 +1,477 @@
+{
+  "_fuente": {
+    "helen": "0b366143fee92d1c"
+  },
+  "planos": {
+    "helen": {
+      "nombre": "Prologue · Helen Ward's Apartment",
+      "nota": "**Arrival (A0-E01, 3:34 a.m.).** The street door on Market Street is open; the common stairway climbs along the front of the building and comes out in the third-floor hallway, right beside the door of 3A. It smells of damp, wet wool, and coins (a ghoul's watered-down Vitae, **P-02**: Resolve + Awareness Diff. 2, or Auspex 1). Helen is sitting on the floor of the **entryway**, hood up, facing the door, counting under her breath.\n\n**The cameras (P-01).** All four doors on the hallway have a Gale Sentinel doorbell camera with its little blue light (“led-timbre” lights). The one on **3B**, across from Helen's, is the only one aimed at her door, and it also has a blinking green light: it's streaming live (Wits + Awareness Diff. 3). Helen's keeps the disconnection log from 2:52 to 3:03 a.m. (Intelligence + Technology Diff. 3). Smashing the 3B camera: Thermometer +1; opening it up and disconnecting it: Dexterity + Larceny Diff. 3. Leaving through the hallway without dealing with it: ANOMALY tags each Kindred as a “cold subject” (Thermometer +1).\n\n**The door of 3A.** It wasn't forced: someone opened it with an electronic pick and locked it again with a single turn (the handle was left level, not drooping). The outside handle carries the ghoul's Vitae (P-02; Auspex 4, Spirit's Touch). With 3 or more successes on Intelligence + Investigation (A1-E01), a tiny black sticker turns up on the frame: the repeater that knocked out the cameras. **It isn't drawn on the map and has no tile**: it's the reward for the roll.\n\n**Study.** Walls covered in maps with red pins (deaths), blue (disappearances), and yellow. On the desk, against the north wall, the open laptop with the audio paused (tile; Intelligence + Technology Diff. 4: the cloud was wiped from an IP at an Eastside data center, part of P-06) and the frayed cable hanging there, plugged into nothing: that's where the drive was. In the **right-hand drawer**, the flip phone with a single number, SAFE (DOC-05). On the east wall, the **built-in closet**, whose door sticks halfway and creaks (door with the “woodCreaky” sound): at the back was the shoebox with the second copy; it's gone. Only the closet and the desk were opened. The **sash window** on the west wall opens onto the fire escape; Helen's ashtray is outside, on the grating.\n\n**Living room and kitchen.** The TV is still on its cabinet and the jar of bills is still on the counter: nothing worth money was taken. The kitchen table is the one from A3-E01 if Krell arrives late: overturned chair, a phone with a cracked screen on the floor, and, on the table, the paper held down by a shell casing. The window onto Market Street is the only lit window on the third floor (floor lamp).\n\n**Escaping without the 3B camera.** Through the study window to the fire escape, and from there to the service alley (Dexterity + Stealth Diff. 2 so nobody in the building sees them climb down). On the fire escape, the “Down” region leads to the foot of the ladder in the alley and the “Up” one brings them back; the drop ladder has to be lowered from above or reached with a jump from the alley. The alley comes out onto Market Street to the south.\n\n**The roof landing.** Beside the flight going down, another flight goes up to a landing with the roof door (locked; there's no map of the roof). That's where Helen hid, behind the railing, where the hallway light doesn't reach; from the hallway, the ghoul raised his head toward it and sniffed.\n\n**Off the map.** Bear waits in the van on Market Street; half a block down there's a gray electric car with someone inside (MEN-04, leaves at 4:10 a.m. if nobody does anything). In A3-E01, Krell waits on the sidewalk across the street.\n\nApartments 3B, 3C, and 3D belong to the neighbors: furnished, dark, and locked (their doors, locked). At 3:34 a.m. they're asleep; the book only says that someone in the building might see the coterie climbing down the fire escape. The windows of 3C face the service alley. If someone forces a door, the Storyteller handles it: the book doesn't cover it.",
+      "habitaciones": [
+        {
+          "nombre": "Third-floor hallway"
+        },
+        {
+          "nombre": "Common stairway (down to the street door)"
+        },
+        {
+          "nombre": "Roof stairs and landing"
+        },
+        {
+          "nombre": "3A · Entryway"
+        },
+        {
+          "nombre": "3A · Bathroom"
+        },
+        {
+          "nombre": "3A · Study closet"
+        },
+        {
+          "nombre": "3A · Study"
+        },
+        {
+          "nombre": "3A · Living room and kitchen"
+        },
+        {
+          "nombre": "3A · Kitchen (linoleum)"
+        },
+        {
+          "nombre": "3B · Living room and kitchen (neighbors)"
+        },
+        {
+          "nombre": "3C · Living room (neighbors)"
+        },
+        {
+          "nombre": "3D · Living room (neighbors)"
+        },
+        {
+          "nombre": "Fire escape · third-floor landing"
+        },
+        {
+          "nombre": "3B · Bathroom"
+        },
+        {
+          "nombre": "3B · Entryway"
+        },
+        {
+          "nombre": "3B · Bedroom"
+        },
+        {
+          "nombre": "3B · Kitchen (tile)"
+        },
+        {
+          "nombre": "3C · Kitchen"
+        },
+        {
+          "nombre": "3C · Entryway"
+        },
+        {
+          "nombre": "3C · Bedroom"
+        },
+        {
+          "nombre": "3C · Bathroom"
+        },
+        {
+          "nombre": "3D · Bathroom"
+        },
+        {
+          "nombre": "3D · Bedroom"
+        },
+        {
+          "nombre": "3D · Entryway"
+        },
+        {
+          "nombre": "3D · Kitchen"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Service alley (ground floor)"
+        },
+        {
+          "nombre": "Back alley (ground floor)"
+        },
+        {
+          "nombre": "Market Street sidewalk (ground floor)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Door of 3A (Helen): Vitae on the handle (P-02), repeater on the frame"
+        },
+        {
+          "nombre": "Door of 3B (its camera is streaming)"
+        },
+        {
+          "nombre": "Door of 3C"
+        },
+        {
+          "nombre": "Door of 3D"
+        },
+        {
+          "nombre": "Hallway → stairs"
+        },
+        {
+          "nombre": "Railing between the flight going down and the flight up to the roof"
+        },
+        {
+          "nombre": "Window at the end of the hallway (back alley)"
+        },
+        {
+          "nombre": "Entryway → living room and kitchen"
+        },
+        {
+          "nombre": "Bathroom"
+        },
+        {
+          "nombre": "Study"
+        },
+        {
+          "nombre": "Study closet (sticks halfway and creaks)"
+        },
+        {
+          "nombre": "Study sash window → fire escape"
+        },
+        {
+          "nombre": "Living room window onto the alley"
+        },
+        {
+          "nombre": "Living room window onto Market Street (the lit one)"
+        },
+        {
+          "nombre": "Living room window onto Market Street"
+        },
+        {
+          "nombre": "North railing of the fire escape"
+        },
+        {
+          "nombre": "West railing of the fire escape"
+        },
+        {
+          "nombre": "South railing of the fire escape"
+        },
+        {
+          "nombre": "3B · Bathroom"
+        },
+        {
+          "nombre": "3B · Bedroom"
+        },
+        {
+          "nombre": "3B · Entryway → living room and kitchen"
+        },
+        {
+          "nombre": "3B window onto Market Street (dark)"
+        },
+        {
+          "nombre": "3B window onto Market Street (dark)"
+        },
+        {
+          "nombre": "3B bedroom window (over the neighboring roof)"
+        },
+        {
+          "nombre": "3C · Entryway → living room"
+        },
+        {
+          "nombre": "3C · Entryway → kitchen"
+        },
+        {
+          "nombre": "3C · Bathroom"
+        },
+        {
+          "nombre": "3C · Bedroom"
+        },
+        {
+          "nombre": "3C living room window onto the service alley"
+        },
+        {
+          "nombre": "3C living room window onto the back alley"
+        },
+        {
+          "nombre": "3C kitchen window onto the back alley"
+        },
+        {
+          "nombre": "3C bedroom window onto the service alley"
+        },
+        {
+          "nombre": "3D · Bathroom"
+        },
+        {
+          "nombre": "3D · Bedroom"
+        },
+        {
+          "nombre": "3D · Entryway → living room"
+        },
+        {
+          "nombre": "3D · Kitchen → living room"
+        },
+        {
+          "nombre": "Small 3D bathroom window onto the back alley"
+        },
+        {
+          "nombre": "3D bedroom window onto the back alley"
+        },
+        {
+          "nombre": "3D living room window (over the neighboring roof)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a small black doorbell camera beside the door frame"
+        },
+        {
+          "desc": "a small black doorbell camera beside the door frame"
+        },
+        {
+          "desc": "a small black doorbell camera beside the door frame"
+        },
+        {
+          "desc": "a small black doorbell camera beside the door frame"
+        },
+        {
+          "desc": "a narrow old wooden staircase going down to the street door"
+        },
+        {
+          "desc": "a narrow old wooden staircase going up to the roof landing"
+        },
+        {
+          "desc": "printed city maps pinned edge to edge along the wall with red, blue and yellow pins"
+        },
+        {
+          "desc": "printed city maps pinned to the wall"
+        },
+        {
+          "desc": "printed city maps pinned to the wall"
+        },
+        {
+          "desc": "printed city maps pinned to the wall"
+        },
+        {
+          "desc": "printed city maps pinned to the wall"
+        },
+        {
+          "desc": "an old wooden desk cluttered with papers and cold coffee mugs, a frayed cable hanging off its edge plugged into nothing"
+        },
+        {
+          "desc": "Helen's laptop, open, with the audio paused"
+        },
+        null,
+        {
+          "desc": "a narrow unmade single bed against the wall"
+        },
+        {
+          "desc": "clothes hanging on a rail at the back of a shallow built-in closet"
+        },
+        {
+          "desc": "an old enamel clawfoot bathtub"
+        },
+        null,
+        null,
+        {
+          "desc": "an old humming refrigerator"
+        },
+        {
+          "desc": "a worn kitchen counter with a sink and a gas hob"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "a low wooden TV cabinet with a switched-off flat television on it"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        {
+          "desc": "Helen's ashtray, on the grating beside the window"
+        },
+        {
+          "desc": "a steel fire-escape stair going down"
+        },
+        {
+          "desc": "the folded drop ladder of the fire escape"
+        },
+        {
+          "desc": "a dented commercial dumpster"
+        },
+        {
+          "desc": "a wheelie bin"
+        },
+        {
+          "desc": "the FIRSTLIGHT thermal drone over Market Street (INT-01, passive surveillance: “occasional drones”)"
+        },
+        {
+          "desc": "a square shower tray behind a plastic curtain"
+        },
+        null,
+        null,
+        {
+          "desc": "a narrow coat stand and a shoe rack"
+        },
+        {
+          "desc": "a made-up double bed with a dark grey duvet"
+        },
+        {
+          "desc": "a tall plain wooden wardrobe"
+        },
+        {
+          "desc": "a small white desk with a stack of mail and a closed laptop"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        {
+          "desc": "a low TV cabinet with a switched-off flat television on it"
+        },
+        {
+          "desc": "a grey three-seat fabric sofa with a folded throw"
+        },
+        {
+          "desc": "a low wooden coffee table with a remote and a magazine"
+        },
+        {
+          "desc": "a small square dining table with two chairs pushed in under it"
+        },
+        {
+          "desc": "a kitchen counter with a sink and an electric hob"
+        },
+        {
+          "desc": "a white refrigerator"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        {
+          "desc": "a sagging brown-grey corduroy sofa"
+        },
+        {
+          "desc": "a low wooden coffee table with a few magazines and an empty mug"
+        },
+        {
+          "desc": "an old wooden TV stand with a small switched-off television"
+        },
+        {
+          "desc": "a low bookcase full of paperbacks and vinyl records under the window"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        {
+          "desc": "a narrow galley kitchen counter with a sink and a gas hob"
+        },
+        {
+          "desc": "a small old refrigerator"
+        },
+        {
+          "desc": "a row of coat hooks with coats and an umbrella stand"
+        },
+        {
+          "desc": "an unmade double bed with a dark quilt"
+        },
+        {
+          "desc": "a tall old wooden wardrobe"
+        },
+        {
+          "desc": "a low chest of drawers"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        null,
+        null,
+        {
+          "desc": "a narrow shower with a tiled tray"
+        },
+        {
+          "desc": "an old enamel bathtub"
+        },
+        null,
+        null,
+        {
+          "desc": "a neatly made double bed with a pale grey quilt"
+        },
+        {
+          "desc": "a tall wooden wardrobe"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        {
+          "desc": "a shoe rack with coat hooks above it"
+        },
+        {
+          "desc": "a dark leather two-seat sofa"
+        },
+        {
+          "desc": "a low TV cabinet with a switched-off flat television on it"
+        },
+        {
+          "desc": "a low glass-topped coffee table"
+        },
+        {
+          "desc": "a narrow bookshelf"
+        },
+        {
+          "desc": "an old cast-iron radiator under the window"
+        },
+        {
+          "desc": "a kitchen counter with a sink and a gas hob"
+        },
+        {
+          "desc": "a refrigerator covered in magnets"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Hallway ceiling light (north)"
+        },
+        {
+          "nombre": "Hallway ceiling light (across from 3A)"
+        },
+        {
+          "nombre": "3B camera: streaming live"
+        },
+        {
+          "nombre": "Alley sodium wall light"
+        },
+        {
+          "nombre": "Market Street streetlight"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival from the Market Street street door"
+        },
+        {
+          "nombre": "Down to the Market Street street door",
+          "pendiente": "there's no map of the street (Market Street) in SPEC §5: the Storyteller moves the tokens by hand"
+        },
+        {
+          "nombre": "Roof landing (door locked)",
+          "pendiente": "there's no map of the roof"
+        },
+        {
+          "nombre": "Arrival at the fire-escape landing"
+        },
+        {
+          "nombre": "Down the fire escape to the alley"
+        },
+        {
+          "nombre": "Up the fire-escape ladder"
+        },
+        {
+          "nombre": "Foot of the fire escape (alley)"
+        },
+        {
+          "nombre": "Alley exit to Market Street",
+          "pendiente": "there's no map of the street (Market Street)"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "Sitting on the entryway floor, hood up, facing the door, counting under her breath (A0-E01). In A1-E01, with her notebook in front of the maps in the study. In A3-E01, if Krell took her and the coterie arrives late, take her out."
+        }
+      ]
+    }
+  }
+}

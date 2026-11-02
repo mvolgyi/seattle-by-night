@@ -161,7 +161,7 @@ Halloway necesita 3 votos a favor de 5. Cada Primogénito tiene un voto por defe
 | Voight | Sí. Cree que Whitmore falló. | La coterie le demuestra que ARQUERO es Halloway (@ID[P-10], el correo de C.H., o el testimonio de Gale o Dawson). |
 | Thornquist | Sí. Halloway le pagó. | La coterie le demuestra que Krell, el hombre de Halloway, destruyó a Pike, su recadero (@ID[P-03] más @ID[P-12] o el testimonio de Krell). O le ofrece algo mejor: un favor mayor de toda la coterie. |
 | Marchetti | Abstención. | Ve @ID[DOC-08], con la nota de Whitmore («C.H. — vigilar»), o la coterie cita su registro de la Noche 3 (@ID[DOC-03]). Entonces vota «no»: el registro es lo que más respeta. |
-| Fry | Imprevisible: tira 1 dado; par, sí; impar, no. | Alguien dice una verdad difícil en voz alta durante el debate. Por ejemplo, David reconociendo a Krell como hermano, Hal admitiendo sus informes o Celeste admitiendo que firmó sin mirar. Entonces Fry vota con quien dijo esa verdad. |
+| Fry | Imprevisible: tira 1 dado; par, sí; impar, no. | Alguien dice una verdad difícil en voz alta durante el debate. Por ejemplo, un PJ contando que Krell es hermano de David (o David diciéndolo, si un PJ lo convenció), Hal admitiendo sus informes o Celeste admitiendo que firmó sin mirar. Entonces Fry vota con quien dijo esa verdad. |
 
 **Por defecto, si la coterie no hace nada, Halloway gana 3 a 0**, con dos abstenciones o un voto de Fry en contra.
 
@@ -169,8 +169,8 @@ Halloway necesita 3 votos a favor de 5. Cada Primogénito tiene un voto por defe
 
 | Opción | Qué pasa |
 |---|---|
-| **Escapar** | Si la coterie es fugitiva y Halloway da la orden, los ghouls de seguridad (@ID[MEN-04]) intentan detener a @ID[PJ-01|David]. Salir de la torre: el ascensor privado (necesita la llave de Halloway o de Pell) o las escaleras de emergencia (cuarenta y dos pisos; @tirada{attributes.stamina+skills.athletics|3|Resistencia + Atletismo (Dificultad 3)}, para no llegar abajo con el Hambre a 5). |
-| **Manipular** | La tirada del caso y la votación son el núcleo. Además:<br>**Negociar con Halloway antes del Consejo**, en privado: Halloway ofrece a David el cargo de Sheriff si se pone de su lado. A la coterie entera, dominio sobre Harbor Island y Estatus 2. Si aceptan, ver @ID[FIN-B].<br>**Que hable Nadia por el Príncipe:** si @ID[PJ-04|Nadia] es PJ, Whitmore le pide que hable en su nombre. Usa @tirada{attributes.charisma+skills.performance|4|Carisma + Interpretación} en lugar de Política, y si sale bien suma +2 dados a la tirada del caso. |
+| **Escapar** | Si la coterie es fugitiva y Halloway da la orden, los ghouls de seguridad (@ID[MEN-04]) intentan detener a @ID[PJ-01|David], y sacarlo es cosa de la coterie. Salir de la torre: el ascensor privado (necesita la llave de Halloway o de Pell) o las escaleras de emergencia (cuarenta y dos pisos; @tirada{attributes.stamina+skills.athletics|3|Resistencia + Atletismo (Dificultad 3)}, para no llegar abajo con el Hambre a 5). |
+| **Manipular** | La tirada del caso y la votación son el núcleo. Además:<br>**Negociar con Halloway antes del Consejo**, en privado: Halloway le hace la oferta a la coterie, porque sabe quién decide esta semana. Para David, el cargo de Sheriff. Para la coterie entera, dominio sobre Harbor Island y Estatus 2. David escucha y no dice nada delante de Halloway. Si la coterie acepta, David la sigue. Ver @ID[FIN-B].<br>**Que hable Nadia por el Príncipe:** si @ID[PJ-04|Nadia] es PJ, Whitmore le pide que hable en su nombre. Usa @tirada{attributes.charisma+skills.performance|4|Carisma + Interpretación} en lugar de Política, y si sale bien suma +2 dados a la tirada del caso. |
 | **Combate** | Atacar a Halloway en su torre, delante de la Primogenitura, es una brecha de las Tradiciones y le da la razón: «¿Ven lo que les decía?». La votación sale «sí» automáticamente. Solo es una opción si Halloway ya está expuesto y huye. |
 | **Disciplinas** | Halloway tiene Dominación 4 y Presencia 3. Si se siente perdido, usa Mirada aterradora sobre quien hable por la coterie. Usar Dominación sobre un Primogénito durante el Consejo es un crimen: si se descubre (@tirada{attributes.wits+skills.awareness|0|Voight: Astucia + Consciencia (7 dados)}), el voto de esa persona cambia en contra de quien lo intentó. **Auspex** de Fry: si alguien miente en la sala, Fry dice en voz alta «Eso no es verdad». |
 
@@ -215,7 +215,7 @@ La travesía dura 35 minutos. A bordo hay unos cuarenta pasajeros mortales, una 
 
 **Quién más puede aparecer:**
 
-- **@ID[PNJ-12|Krell]**, si sobrevivió y llegó a 3 pasos en @ID[A3-E03]: aparece en la cubierta de coches para ayudar a @ID[PJ-01|David]. Si no llegó a 3 pasos, aparece para recuperar los folios, y es una tercera fuerza imprevisible.
+- **@ID[PNJ-12|Krell]**, si sobrevivió y llegó a 3 pasos en @ID[A3-E03]: aparece en la cubierta de coches para ayudar a @ID[PJ-01|David] y, por él, a la coterie. Si no llegó a 3 pasos, aparece para recuperar los folios, y es una tercera fuerza imprevisible.
 - **Salitre** (@ID[COT-03]), si la coterie se ganó a @ID[PNJ-11|Rosa] (@ID[A2-E03]): una lancha de los Anarquistas sigue al ferry. Puede recoger a quien salte al agua o abordar por popa.
 - **@ID[PNJ-01|Montgomery]**, si está con la coterie: espera en el muelle de Bainbridge con dos cazarrecompensas. Lo que llegue a esa orilla, lo intercepta.
 - **@ID[PNJ-16|Fry]**: si votó con la coterie, está sentado en el salón de pasajeros con sus auriculares puestos, sin que nadie sepa cómo llegó. Le dice a David: «El último barco de la noche. Te lo dije».
@@ -255,5 +255,5 @@ El doc 13 decía que Pell sirve a Halloway desde 1950 («setenta años»); se de
 ### Notas del Narrador
 
 - **Lo que la coterie haga con el maletín** decide el desenlace. Recuperarlo y quedárselo, recuperarlo y destruirlo (tirarlo al agua es lo más rápido), perderlo en manos de Duval o perderlo en manos de Okafor llevan cada uno a un final distinto. Ver Desenlaces (@ID[AVE-01-FIN]).
-- **Krell en el ferry.** Si Krell está del lado de la coterie, es el momento de pagarle a David la lección: se pone entre Dawson y él con la otra guardia, la de @ID[PNJ-06|Vance], la completa. Si David se la enseñó, la usa bien por primera vez.
+- **Krell en el ferry.** Si Krell está del lado de la coterie, es el momento de pagarle a David la lección: se pone entre Dawson y él con la otra guardia, la de @ID[PNJ-06|Vance], la completa. Si David se la enseñó, la usa bien por primera vez. Krell y David no tiran: el Narrador lo narra, y el PJ que pelee contra Dawson en ese momento gana +1 dado.
 - **Destruir a Halloway** en el ferry, si cae: 1 Mancha para quien lo haga fuera de combate. Si la coterie lo entrega a Montgomery en Bainbridge, el Sheriff tacha el primer nombre de su lista.

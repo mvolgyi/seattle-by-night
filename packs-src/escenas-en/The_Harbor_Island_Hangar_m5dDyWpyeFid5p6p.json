@@ -1,0 +1,2715 @@
+{
+  "_id": "m5dDyWpyeFid5p6p",
+  "_key": "!scenes!m5dDyWpyeFid5p6p",
+  "name": "The Harbor Island Hangar",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 12,
+  "width": 2400,
+  "height": 2300,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.8,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "CxiUd3A3NSuvZF7A",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/hangar.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!m5dDyWpyeFid5p6p.CxiUd3A3NSuvZF7A"
+    }
+  ],
+  "journal": "104UV0anmZHNCTrD",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "IH5sAKslY1dGhvKY",
+      "c": [
+        300,
+        300,
+        1450,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.IH5sAKslY1dGhvKY"
+    },
+    {
+      "_id": "UKUvfP4mxGTww5Be",
+      "c": [
+        1540,
+        300,
+        1600,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.UKUvfP4mxGTww5Be"
+    },
+    {
+      "_id": "UlgVq4ApsxWKNe6A",
+      "c": [
+        2000,
+        300,
+        2200,
+        300
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.UlgVq4ApsxWKNe6A"
+    },
+    {
+      "_id": "8ylj7kEo9xjJSScQ",
+      "c": [
+        300,
+        1900,
+        900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.8ylj7kEo9xjJSScQ"
+    },
+    {
+      "_id": "nd87zhYiRSy550N2",
+      "c": [
+        990,
+        1900,
+        1600,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.nd87zhYiRSy550N2"
+    },
+    {
+      "_id": "VIlUnFQcx3ZiuX9c",
+      "c": [
+        2100,
+        1900,
+        2200,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.VIlUnFQcx3ZiuX9c"
+    },
+    {
+      "_id": "Zv3ikqlHjOZgeyLJ",
+      "c": [
+        300,
+        300,
+        300,
+        1790
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.Zv3ikqlHjOZgeyLJ"
+    },
+    {
+      "_id": "k8DBMKFVjFDoW26B",
+      "c": [
+        300,
+        1880,
+        300,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.k8DBMKFVjFDoW26B"
+    },
+    {
+      "_id": "VHVUq9bXDaYrnPtl",
+      "c": [
+        1400,
+        300,
+        1400,
+        850
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.VHVUq9bXDaYrnPtl"
+    },
+    {
+      "_id": "j2OMr0Ty42fxx8kk",
+      "c": [
+        1400,
+        940,
+        1400,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.j2OMr0Ty42fxx8kk"
+    },
+    {
+      "_id": "UKK3WyGu0EjEdIKK",
+      "c": [
+        300,
+        700,
+        700,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.UKK3WyGu0EjEdIKK"
+    },
+    {
+      "_id": "BTI1gbqnovup4JME",
+      "c": [
+        700,
+        300,
+        700,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.BTI1gbqnovup4JME"
+    },
+    {
+      "_id": "EV3PpfExu8ehX8iq",
+      "c": [
+        700,
+        610,
+        700,
+        950
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.EV3PpfExu8ehX8iq"
+    },
+    {
+      "_id": "TbwZMUx9ku3BNe0k",
+      "c": [
+        700,
+        1040,
+        700,
+        1295
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.TbwZMUx9ku3BNe0k"
+    },
+    {
+      "_id": "I7PY87FoDSzaHohH",
+      "c": [
+        700,
+        1375,
+        700,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.I7PY87FoDSzaHohH"
+    },
+    {
+      "_id": "b9e41Xk8XNsofSVA",
+      "c": [
+        300,
+        1150,
+        700,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.b9e41Xk8XNsofSVA"
+    },
+    {
+      "_id": "JIpkqG37wKFRuzv0",
+      "c": [
+        300,
+        1400,
+        700,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.JIpkqG37wKFRuzv0"
+    },
+    {
+      "_id": "TNgRl3r1AD80woAE",
+      "c": [
+        1400,
+        1100,
+        1650,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.TNgRl3r1AD80woAE"
+    },
+    {
+      "_id": "fkISPLWlf2bFNOiD",
+      "c": [
+        1950,
+        1100,
+        2200,
+        1100
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.fkISPLWlf2bFNOiD"
+    },
+    {
+      "_id": "EDY2jvWXNZShUhl5",
+      "c": [
+        2200,
+        300,
+        2200,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.EDY2jvWXNZShUhl5"
+    },
+    {
+      "_id": "5JtpP7VbXwD2aMbg",
+      "c": [
+        1600,
+        300,
+        2000,
+        300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.5JtpP7VbXwD2aMbg"
+    },
+    {
+      "_id": "vX2xu2hWCjdMwgym",
+      "c": [
+        1450,
+        300,
+        1540,
+        300
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.vX2xu2hWCjdMwgym"
+    },
+    {
+      "_id": "pTXYGWgXYSkrPzko",
+      "c": [
+        1400,
+        850,
+        1400,
+        940
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.pTXYGWgXYSkrPzko"
+    },
+    {
+      "_id": "lAjsjIFLeNAsKiLJ",
+      "c": [
+        1650,
+        1100,
+        1950,
+        1100
+      ],
+      "door": 1,
+      "ds": 1,
+      "doorSound": "slidingMetal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.lAjsjIFLeNAsKiLJ"
+    },
+    {
+      "_id": "mrAbufKFmhyUcU0H",
+      "c": [
+        1600,
+        1900,
+        2100,
+        1900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.mrAbufKFmhyUcU0H"
+    },
+    {
+      "_id": "u7xzyM9fLIByociR",
+      "c": [
+        900,
+        1900,
+        990,
+        1900
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.u7xzyM9fLIByociR"
+    },
+    {
+      "_id": "U5nhakUQI4yaZSTi",
+      "c": [
+        300,
+        1790,
+        300,
+        1880
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.U5nhakUQI4yaZSTi"
+    },
+    {
+      "_id": "hgKxY7DT587xdhsJ",
+      "c": [
+        700,
+        520,
+        700,
+        610
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingMetalHeavy",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.hgKxY7DT587xdhsJ"
+    },
+    {
+      "_id": "sshNBqWYb4w5qwLf",
+      "c": [
+        700,
+        950,
+        700,
+        1040
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.sshNBqWYb4w5qwLf"
+    },
+    {
+      "_id": "ZUGepTrQkrYz10i8",
+      "c": [
+        700,
+        1295,
+        700,
+        1375
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "industrial",
+      "flags": {},
+      "_key": "!scenes.walls!m5dDyWpyeFid5p6p.ZUGepTrQkrYz10i8"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "ZlCR3Ow54FormclS",
+      "name": "Hanging work light (armory)",
+      "x": 1050,
+      "y": 550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.ZlCR3Ow54FormclS"
+    },
+    {
+      "_id": "yOSRwWSc0TzYp5zR",
+      "name": "Hanging work light (table)",
+      "x": 1050,
+      "y": 1250,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.yOSRwWSc0TzYp5zR"
+    },
+    {
+      "_id": "Yx7xak9WzhoubmrG",
+      "name": "Hanging work light (east bay)",
+      "x": 1800,
+      "y": 1550,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.Yx7xak9WzhoubmrG"
+    },
+    {
+      "_id": "Z1sodbWOwxecJyF9",
+      "name": "Covered dock bulb (west walkway)",
+      "x": 1500,
+      "y": 700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.Z1sodbWOwxecJyF9"
+    },
+    {
+      "_id": "bxQK7G0HksS9haFo",
+      "name": "Armored room bulb",
+      "x": 500,
+      "y": 500,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.bxQK7G0HksS9haFo"
+    },
+    {
+      "_id": "WuxPUUatQHdT3uCB",
+      "name": "Bear's lamp",
+      "x": 520,
+      "y": 920,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.WuxPUUatQHdT3uCB"
+    },
+    {
+      "_id": "DcDahtDrjekilj2z",
+      "name": "Restroom tube light",
+      "x": 500,
+      "y": 1280,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.DcDahtDrjekilj2z"
+    },
+    {
+      "_id": "LHH2I3xsF0vgV8WL",
+      "name": "Coffee corner bulb",
+      "x": 500,
+      "y": 1630,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.LHH2I3xsF0vgV8WL"
+    },
+    {
+      "_id": "B9M3PixqhGPaRKUH",
+      "name": "Back pier sodium wall light",
+      "x": 800,
+      "y": 265,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.B9M3PixqhGPaRKUH"
+    },
+    {
+      "_id": "ei6d2TFDxE1tQvZV",
+      "name": "Container yard light tower",
+      "x": 1250,
+      "y": 2250,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.ei6d2TFDxE1tQvZV"
+    },
+    {
+      "_id": "29c0B9oohswkJ9er",
+      "name": "FIRSTLIGHT van's sunlight floodlight (A4-E02: it gets in under the roll-up door), OFF",
+      "x": 1850,
+      "y": 2000,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 3,
+        "dim": 7,
+        "color": "#ffe1b5",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": true,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.29c0B9oohswkJ9er"
+    },
+    {
+      "_id": "n4Y43A0rB8sIv9oC",
+      "name": "Covered dock bulb (east walkway)",
+      "x": 2100,
+      "y": 700,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 0.9,
+        "dim": 3.4,
+        "color": "#ffb35c",
+        "coloration": 1,
+        "attenuation": 0.85,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "torch",
+          "speed": 1,
+          "intensity": 1,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!m5dDyWpyeFid5p6p.n4Y43A0rB8sIv9oC"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "CqMkrJNFpAWE7fVe",
+      "name": "Go Down into the Cargo Tunnel (Comes Out Next to Terminal 46)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 810,
+          "y": 1570,
+          "width": 130,
+          "height": 130,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "tunel-carga",
+          "estado": "pendiente",
+          "pendiente": "the cargo tunnel comes out 200 m away, next to Terminal 46 (A4-E02): there's no map of the tunnel or the exit; the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.CqMkrJNFpAWE7fVe"
+    },
+    {
+      "_id": "fXYZh6GWdK8g1xYN",
+      "name": "Leave by Boat into Elliott Bay",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1600,
+          "y": 0,
+          "width": 400,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "lancha-bahia",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the bay; in A4-E02 the drone sees the boat"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.fXYZh6GWdK8g1xYN"
+    },
+    {
+      "_id": "KkzA4kkF0l13c5yM",
+      "name": "The Back Pier Continues West",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 0,
+          "y": 120,
+          "width": 100,
+          "height": 180,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "muelle-oeste",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the pier: this is where the two pier operators come in (A4-E02)"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.KkzA4kkF0l13c5yM"
+    },
+    {
+      "_id": "zDsRu51Fj1uOMhJ7",
+      "name": "Out to the Harbor Island Container Yard",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 800,
+          "y": 2200,
+          "width": 800,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "hangar",
+          "region": "patio-contenedores",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the container yard (Terminal 46 in A1-E02 is an exterior described in text only)"
+        }
+      },
+      "_key": "!scenes.regions!m5dDyWpyeFid5p6p.zDsRu51Fj1uOMhJ7"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "K1RHEb327snJF7tj",
+      "entryId": "104UV0anmZHNCTrD",
+      "pageId": null,
+      "x": 810,
+      "y": 960,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "LUG-01"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.K1RHEb327snJF7tj"
+    },
+    {
+      "_id": "KS5WP9fGT4QIlb7H",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "ogKpm1VYgcVGCw1T",
+      "x": 810,
+      "y": 1060,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E02",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "A4-E02"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.KS5WP9fGT4QIlb7H"
+    },
+    {
+      "_id": "iSYI3GfLNdnOV1ze",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "T8gJWjZpOnL4OisP",
+      "x": 810,
+      "y": 1160,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "A1-E01"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.iSYI3GfLNdnOV1ze"
+    },
+    {
+      "_id": "N5GlSmYFbV6d5SHE",
+      "entryId": "asQ9jeLO1qmdEJrG",
+      "pageId": null,
+      "x": 810,
+      "y": 1260,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "AVE-01-EPI",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "hangar",
+          "id": "AVE-01-EPI"
+        }
+      },
+      "_key": "!scenes.notes!m5dDyWpyeFid5p6p.N5GlSmYFbV6d5SHE"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "skGVkFK3A4U8eXF6",
+      "name": "stool at Bear's workbench",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1013,
+      "y": 863,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 0,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.skGVkFK3A4U8eXF6"
+    },
+    {
+      "_id": "LnZk8sKy66T3XSjM",
+      "name": "folding operations table (phones, Helen's papers, the USB drive)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 960,
+      "y": 1170,
+      "width": 220,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 1,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.LnZk8sKy66T3XSjM"
+    },
+    {
+      "_id": "GnU1iwc5hvLCs7Gt",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 898,
+      "y": 1083,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.GnU1iwc5hvLCs7Gt"
+    },
+    {
+      "_id": "nTu4Hrq3sCWar4x5",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1007,
+      "y": 1083,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 3,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.nTu4Hrq3sCWar4x5"
+    },
+    {
+      "_id": "63RCg7Xoccg4D5Re",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 898,
+      "y": 1253,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.63RCg7Xoccg4D5Re"
+    },
+    {
+      "_id": "Yly65XiwEm7YDsrV",
+      "name": "silla plegable",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1007,
+      "y": 1253,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 5,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.Yly65XiwEm7YDsrV"
+    },
+    {
+      "_id": "xtc5TkJUU5BX4vLn",
+      "name": "pallet of crates: hides the cargo-tunnel hatch",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 875,
+      "y": 1635,
+      "width": 170,
+      "height": 170,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.xtc5TkJUU5BX4vLn"
+    },
+    {
+      "_id": "StOXgeLIi2qXvr0w",
+      "name": "loose ammo cases",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-cajas-municion.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1240,
+      "y": 1500,
+      "width": 120,
+      "height": 100,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.StOXgeLIi2qXvr0w"
+    },
+    {
+      "_id": "0bEsYgWbSJvOz8Ij",
+      "name": "David's army cot",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-catre.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 358,
+      "y": 422,
+      "width": 195,
+      "height": 75,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 8,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "catre"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.0bEsYgWbSJvOz8Ij"
+    },
+    {
+      "_id": "VxnXV4yu2pl893ue",
+      "name": "the corner cot (Bear's nights staring at the ceiling)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-catre.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 550,
+      "y": 1848,
+      "width": 200,
+      "height": 75,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 9,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "catre"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.VxnXV4yu2pl893ue"
+    },
+    {
+      "_id": "J6aYpULyFUfcT02G",
+      "name": "David's folding chair",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-plegable.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 543,
+      "y": 1573,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 10,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.J6aYpULyFUfcT02G"
+    },
+    {
+      "_id": "0alHQO12V7am3Ptx",
+      "name": "Bear's pickup truck",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-camioneta.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1605,
+      "y": 1555,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 11,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.0alHQO12V7am3Ptx"
+    },
+    {
+      "_id": "4FrApMql4plJwDmk",
+      "name": "palet cajas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2000,
+      "y": 1280,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 12,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.4FrApMql4plJwDmk"
+    },
+    {
+      "_id": "Z8tHGu6EEiPM9aMN",
+      "name": "palet cajas",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-palet-cajas.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 2000,
+      "y": 1420,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 13,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.Z8tHGu6EEiPM9aMN"
+    },
+    {
+      "_id": "xC4b6vDf0RZHjXJ6",
+      "name": "drums of oil and diesel",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-bidones.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1300,
+      "y": 1780,
+      "width": 120,
+      "height": 120,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 14,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "palet"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.xC4b6vDf0RZHjXJ6"
+    },
+    {
+      "_id": "OPUAbvAoIkJI9l7H",
+      "name": "the covered dock's boat",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-lancha.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1800,
+      "y": 650,
+      "width": 540,
+      "height": 200,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 15,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.OPUAbvAoIkJI9l7H"
+    },
+    {
+      "_id": "VnQVA55YnwzCvhHw",
+      "name": "the FIRSTLIGHT van with the artificial sunlight generator, in front of the big door (A4-E02)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-furgoneta-firstlight.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1850,
+      "y": 2095,
+      "width": 530,
+      "height": 210,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 16,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "auto"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.VnQVA55YnwzCvhHw"
+    },
+    {
+      "_id": "XpOtnYzZeBJ8tJuS",
+      "name": "the thermal-camera drone, “right above the sheet-metal roof” (A4-E02)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-dron.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1830,
+      "y": 1630,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "CxiUd3A3NSuvZF7A"
+      ],
+      "sort": 17,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "hangar",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!m5dDyWpyeFid5p6p.XpOtnYzZeBJ8tJuS"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "E41mVWyVObtzggYG",
+      "name": "Tom Whitman",
+      "displayName": 30,
+      "actorId": "TJOGIKk4Ehe5kwXA",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-05.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1080,
+      "y": 835,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "PNJ-05",
+          "escenas": [
+            "A1-E01",
+            "A4-E02",
+            "AVE-01-EPI"
+          ],
+          "nota": "At his workbench, cleaning a pistol (A4-E02 and Coda 3)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.E41mVWyVObtzggYG"
+    },
+    {
+      "_id": "1S8U4d35sogXShhT",
+      "name": "Helen Ward",
+      "displayName": 30,
+      "actorId": "cHnmNaT8zN7q4yvy",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1080,
+      "y": 1120,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": true,
+      "disposition": 1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "PNJ-04",
+          "escenas": [
+            "A1-E01",
+            "A4-E02"
+          ],
+          "nota": "Only if the coterie brought her to the hangar (A1-E01) or if she's here when the raid hits (A4-E02)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.1S8U4d35sogXShhT"
+    },
+    {
+      "_id": "HdGh7tjTJvR4n3Yy",
+      "name": "Teresa “Tess” Navarro",
+      "displayName": 30,
+      "actorId": "cacjzuu13Bv7mJH5",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-01.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1440,
+      "y": 1950,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "CAZ-01",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Navarro, on point for the big-door team (INT-03)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.HdGh7tjTJvR4n3Yy"
+    },
+    {
+      "_id": "FnRUw0c730AgrrOf",
+      "name": "Lena Sorensen",
+      "displayName": 30,
+      "actorId": "2hdWrhkD65ZNl4Xs",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1440,
+      "y": 2070,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "CAZ-03",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Sorensen, with the breaching charge for the big door (INT-03)."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.FnRUw0c730AgrrOf"
+    },
+    {
+      "_id": "RTlILAi8IFpIAVle",
+      "name": "Cole Ransom",
+      "displayName": 30,
+      "actorId": "5ywnpdrw93wmy235",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-11.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1320,
+      "y": 2010,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "MEN-11",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Ransom, third man on the big-door team; if he said in INT-03 that he knows Bear, move him to the perimeter."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.RTlILAi8IFpIAVle"
+    },
+    {
+      "_id": "wFWKjw30b4FYv7YW",
+      "name": "Owen Pak",
+      "displayName": 30,
+      "actorId": "yyJApTmnANPPdw3O",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/CAZ-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1900,
+      "y": 2050,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 5,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "CAZ-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "Pak, inside the van, with the drone."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.wFWKjw30b4FYv7YW"
+    },
+    {
+      "_id": "WPeEjq43oWHPA7HQ",
+      "name": "FIRSTLIGHT Tactical Team 1",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1250,
+      "y": 160,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 6,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "“Two by the dock”: the back-pier team."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.WPeEjq43oWHPA7HQ"
+    },
+    {
+      "_id": "xstJr6Cwnc9Z9nrG",
+      "name": "FIRSTLIGHT Tactical Team 2",
+      "displayName": 30,
+      "actorId": "abaWg7NwNQvM0sDc",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-02.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1130,
+      "y": 160,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "CxiUd3A3NSuvZF7A",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 7,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 20,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "light": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.55,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0,
+        "color": "#7a3cff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.3,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "hangar",
+          "id": "MEN-02",
+          "escenas": [
+            "A4-E02"
+          ],
+          "nota": "“Two by the dock”: the back-pier team."
+        }
+      },
+      "_key": "!scenes.tokens!m5dDyWpyeFid5p6p.xstJr6Cwnc9Z9nrG"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "qGuObg7VsPzsegN3",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "hangar",
+      "id": "LUG-01",
+      "plano": "hangar",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}<br><strong>Scenes:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took} · @UUID[JournalEntry.asQ9jeLO1qmdEJrG]{Epilogue · What the Water Doesn't Take}</p>\n<p><strong>What it is.</strong> David&#39;s haven (Haven 3, with Water Access and Hidden Armory) and the coterie&#39;s base. From outside, a corrugated-metal hangar among stacked containers, with the faded logo of a logistics company that no longer exists. Inside it smells of gun oil, salt, and reheated coffee; the lights are work lights hung from cables (“lampara” lights). Inside the hangar, nobody argues about clans or sires (COT-00).</p>\n<p><strong>Main bay.</strong> Against the north wall, the armory: the rifle rack (four AR/M4s, one with stripes of white paint; the bolt-action rifle on top; the pump shotgun), the blade panel (machetes, long knives, two swords, the katana in its saya, three bats) and, in the corner, the shelves of <strong>ammo cases sorted by caliber</strong>. On the west wall, the panel of pistols and revolvers with the magazines beside them (the one with red tape on the grip, the revolver with the marked cylinder). In the middle, <strong>Bear&#39;s workbench</strong>: that&#39;s where he cleans the pistol in A4-E02 and in Coda 3. The folding operations table and the chairs are movable.</p>\n<p><strong>The cargo-tunnel hatch.</strong> In the bay floor, to the southwest, <strong>under a pallet of crates</strong> (tile): a steel hatch to an old cargo tunnel that comes out <strong>200 m away, next to Terminal 46</strong>. Bear knows about it. Escaping that way in A4-E02: Dexterity + Stealth Diff. 3 for the whole group. The “Go down into the tunnel” region has no destination: there&#39;s no map of the tunnel.</p>\n<p><strong>Armored room.</strong> No windows, steel door. David sleeps here (the army cot is movable). It&#39;s the safest spot against the raid&#39;s UV light.</p>\n<p><strong>Bear&#39;s room.</strong> Bed, locker, a small table, and the <strong>safe</strong> (DOC-12: the note folded in quarters, under a pistol). In Coda 3 Bear has taken it out and has it on the workbench.</p>\n<p><strong>Coffee corner.</strong> Counter with a sink and the coffee maker; in the <strong>coffee tin</strong>, the truck key (DOC-12). The cot in this corner is the one from Bear&#39;s nights “staring at the hangar ceiling.” The folding chair is David&#39;s.</p>\n<p><strong>Covered dock.</strong> The slip runs into the building from the bay; a sheet-metal roll-up door closes it off over the water. Wooden walkways on both sides and at the far end. <strong>The boat</strong> (tile) is the other escape route in A4-E02, but the thermal-camera drone sees it: they get away, the Thermometer doesn&#39;t go down. The “Leave by boat” region has no destination (there&#39;s no map of the bay).</p>\n<p><strong>The raid (A4-E02, 9:40 p.m.).</strong> The work lights flicker and die (turn them off by hand); the drone hums over the sheet-metal roof. “Six. Two by the dock, four by the door”: two operators come in by the <strong>back pier</strong> (the pier door and the slip&#39;s roll-up door) and four by the <strong>yard</strong> (the big door and the south service door); the van with the artificial sunlight generator stops in front of the big door and the white light gets in underneath. Okafor directs from a car a block away (off the map). Destroying evidence (the armory, the phones, the USB drive, Helen&#39;s papers): Dexterity + Craft or Intelligence + Technology Diff. 2, one turn each. Hangar rats: Animalism.</p>\n<p><strong>A1-E01 in the hangar.</strong> If the coterie brings Helen here right away, she sees Bear&#39;s armory and David&#39;s cot for the first time (GAN-02).</p>\n<p><strong>Access.</strong> Big door (5 m roll-up door) and service door to the south, side door to the container alley to the west, pier door to the north, and the slip&#39;s roll-up door over the water.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (18) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.TJOGIKk4Ehe5kwXA]{Tom Whitman} (A1-E01, A4-E02, AVE-01-EPI): At his workbench, cleaning a pistol (A4-E02 and Coda 3).</li><li>@UUID[Actor.cHnmNaT8zN7q4yvy]{Helen Ward} · <em>hidden</em> (A1-E01, A4-E02): Only if the coterie brought her to the hangar (A1-E01) or if she&#39;s here when the raid hits (A4-E02).</li><li>@UUID[Actor.cacjzuu13Bv7mJH5]{Teresa “Tess” Navarro} · <em>hidden</em> (A4-E02): Navarro, on point for the big-door team (INT-03).</li><li>@UUID[Actor.2hdWrhkD65ZNl4Xs]{Lena Sorensen} · <em>hidden</em> (A4-E02): Sorensen, with the breaching charge for the big door (INT-03).</li><li>@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} · <em>hidden</em> (A4-E02): Ransom, third man on the big-door team; if he said in INT-03 that he knows Bear, move him to the perimeter.</li><li>@UUID[Actor.yyJApTmnANPPdw3O]{Owen Pak} · <em>hidden</em> (A4-E02): Pak, inside the van, with the drone.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team 1} · <em>hidden</em> (A4-E02): “Two by the dock”: the back-pier team.</li><li>@UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team 2} · <em>hidden</em> (A4-E02): “Two by the dock”: the back-pier team.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Go Down into the Cargo Tunnel (Comes Out Next to Terminal 46) · Leave by Boat into Elliott Bay · The Back Pier Continues West · Out to the Harbor Island Container Yard.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "_id": "D611Mcr17F6HHEUw",
+  "_key": "!journal!D611Mcr17F6HHEUw",
+  "name": "Sasha Hale",
+  "folder": "U14g3yo4N4JwXcQT",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-21",
+      "archivo": "content/personajes/PNJ-21.md",
+      "actor": "Actor.sEdBfHzj0JBxHNAa"
+    }
+  },
+  "pages": [
+    {
+      "_id": "PcYYfoym6chIIDVO",
+      "_key": "!journal.pages!D611Mcr17F6HHEUw.PcYYfoym6chIIDVO",
+      "name": "Sasha Hale",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-21.webp\" alt=\"Sasha Hale\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.sEdBfHzj0JBxHNAa]{Sasha Hale}</p>\n<p>Puget Cell analyst</p>\n<p>Sasha Hale, thirty-two, former signals intelligence analyst. She&#39;s listened to episode 112 three times. She believes in patterns and distrusts gifts.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "DaOZEZkAJqLRVRhQ",
+      "_key": "!journal.pages!D611Mcr17F6HHEUw.DaOZEZkAJqLRVRhQ",
+      "name": "Stats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Standard Dice Pools:</strong> Physical 2 · Social 3 · Mental 7</p>\n<p><strong>Exceptional Dice Pools:</strong> Investigation 8, Technology 7, Academics 5, Occult 4 (Kindred)</p>\n<p><strong>Health</strong> 5 · <strong>Willpower</strong> 6 · <strong>Advantage:</strong> Faith (−1 die to mental Disciplines used against her)</p>\n<p><strong>Note:</strong> if the coterie cuts Northline&#39;s access to ANOMALY with Ezra&#39;s code (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}), Hale recognizes the style of the code later on. Chronicle hook.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

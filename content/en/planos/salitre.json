@@ -1,0 +1,250 @@
+{
+  "_fuente": {
+    "salitre": "9766a6b592381982"
+  },
+  "planos": {
+    "salitre": {
+      "nombre": "Part 2 · Salt's Bar",
+      "nota": "**A2-E03 · Salt's.** “The road dies at a shuttered shipyard, rusted cranes cut out against a slate-colored sky. Beside the gate stands a bar with a neon sign missing a letter: SAL S. Inside are scarred wooden tables, a bar counter built from the split hull of a boat, and black-and-white photos of strikes.” The sign is a “neon” light on the façade (it isn't painted: there's no text on the map). Rosa waits with her elbows on the **bar** and a welder on top of it (tile or token).\n\n**The barroom.** Open to the mortal public until two. The **bar** is half the shell of a boat hull, with the bottle shelf behind it; the **strike photos** hang on the north and south walls. Tables, chairs, and stools are movable (tiles): a dozen Anarchs use them for cover if things break down (Combat: Rosa stops it on the second round, “Not here.”). Tavi Mercer (MEN-05) doesn't take his eyes off them.\n\n**The back room.** A meeting table (the assembly votes on whether to help the coterie) and a cork board with clippings: that's where Rosa keeps her 1996 clipping (AYU-04: “if it comes up in A2-E03, let her be the one to bring it out”). It's the place for the “private” confession (to a PC, or to David if they let him stay last). The door opens onto the barroom, on the public side; another door leads to the storeroom.\n\n**The back.** Bas Okonjo hides in the **storeroom** (kegs, the keg cooler) so Hal won't see him; the **back door** opens onto the shipyard yard. Hal can talk to him alone there.\n\n**The shipyard.** The sliding gate closes off the road; the bar sits outside, right up against it. Inside is the **head of the slipway**: it lines up with the road, and from there you can see any car coming down the only road (the Anarchs' lookout). The slipway continues toward the water, to the north, off the map; the **three hulls in dry dock** (Salt's havens, Rosa's among them; Ray Dorsey slept there in 1996) are the shipyard exterior (t2i): regions with no destination.\n\n**Escape.** Nobody holds them back: the bar door opens onto the road.",
+      "habitaciones": [
+        {
+          "nombre": "Barroom"
+        },
+        {
+          "nombre": "Behind the bar"
+        },
+        {
+          "nombre": "Back room (meetings)"
+        },
+        {
+          "nombre": "Storeroom"
+        },
+        {
+          "nombre": "Restroom"
+        },
+        {
+          "nombre": "Slipway (head)"
+        }
+      ],
+      "exteriores": [
+        {
+          "nombre": "Shipyard yard"
+        },
+        {
+          "nombre": "The only road"
+        },
+        {
+          "nombre": "Bar sidewalk"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Bar door (to the road)"
+        },
+        {
+          "nombre": "Bar window to the road"
+        },
+        {
+          "nombre": "Bar window to the road"
+        },
+        {
+          "nombre": "Bar south window"
+        },
+        {
+          "nombre": "Back-room window to the alley"
+        },
+        {
+          "nombre": "Barroom → back room"
+        },
+        {
+          "nombre": "Back room → storeroom"
+        },
+        {
+          "nombre": "Restroom"
+        },
+        {
+          "nombre": "Back door (to the shipyard yard)"
+        },
+        {
+          "nombre": "Bar alley chain-link fence"
+        },
+        {
+          "nombre": "Gate chain-link fence"
+        },
+        {
+          "nombre": "Shipyard sliding gate"
+        },
+        {
+          "nombre": "Gate chain-link fence"
+        },
+        {
+          "nombre": "Slipway west railing"
+        },
+        {
+          "nombre": "Slipway east railing"
+        },
+        {
+          "nombre": "Slipway head railing"
+        },
+        {
+          "nombre": "Slipway steps"
+        },
+        {
+          "nombre": "Slipway head railing"
+        },
+        {
+          "nombre": "The slipway continues toward the water"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a long bar counter built from half of a split wooden boat hull, its curved, scarred planking facing the room, with a small steel sink behind it"
+        },
+        {
+          "desc": "a back-bar shelf crowded with bottles and glasses"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "scarred wooden table"
+        },
+        null,
+        {
+          "desc": "scarred wooden table"
+        },
+        null,
+        {
+          "desc": "scarred wooden table"
+        },
+        null,
+        null,
+        {
+          "desc": "scarred wooden table"
+        },
+        {
+          "desc": "scarred wooden table"
+        },
+        null,
+        {
+          "desc": "the assembly's meeting table"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "desc": "a cork board of yellowed newspaper clippings and old union posters (no legible writing)"
+        },
+        {
+          "desc": "a shelf of binders, a welding mask and a toolbox"
+        },
+        {
+          "desc": "a steel beer-keg cooler"
+        },
+        {
+          "desc": "beer kegs"
+        },
+        {
+          "desc": "steel shelving with crates of bottles"
+        },
+        null,
+        null,
+        {
+          "desc": "a rusted steel launching rail with timber sleepers running down the slipway"
+        },
+        {
+          "desc": "a rusted steel launching rail with timber sleepers running down the slipway"
+        },
+        {
+          "desc": "a stack of old timber keel blocks"
+        },
+        {
+          "desc": "a stack of old timber keel blocks"
+        },
+        {
+          "desc": "worn concrete steps up to the head of the slipway"
+        },
+        {
+          "desc": "the rusted steel base of a shipyard crane on its rail bogies"
+        },
+        {
+          "desc": "a rusted 40-foot shipping container used as a welding shed"
+        },
+        {
+          "desc": "a longshoreman's pickup truck"
+        },
+        {
+          "desc": "car parked in the yard"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "“SAL S” neon sign (missing a letter)"
+        },
+        {
+          "nombre": "Bar hanging lamp"
+        },
+        {
+          "nombre": "Bar hanging lamp"
+        },
+        {
+          "nombre": "Light behind the bar"
+        },
+        {
+          "nombre": "Back-room bare bulb"
+        },
+        {
+          "nombre": "Storeroom fluorescent tube"
+        },
+        {
+          "nombre": "Restroom fluorescent tube"
+        },
+        {
+          "nombre": "Back-door wall lamp"
+        },
+        {
+          "nombre": "Gate sodium streetlight"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival by the road"
+        },
+        {
+          "nombre": "Leaving by the only road",
+          "pendiente": "there's no map of the Everett road: the Storyteller moves the tokens by hand"
+        },
+        {
+          "nombre": "The slipway runs down to the water",
+          "pendiente": "shipyard exterior (t2i, no floor plan): the slipway, the three hulls in dry dock, and the water"
+        },
+        {
+          "nombre": "To the shipyard: the three hulls in dry dock",
+          "pendiente": "shipyard exterior (t2i, no floor plan): the havens in the hulls"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "Behind the bar, elbows resting on it, the welder on top."
+        },
+        {
+          "nota": "He doesn't take his eyes off them; fists clenched."
+        },
+        {
+          "nota": "Four of the bar's dozen Anarchs."
+        },
+        null,
+        null,
+        null,
+        {
+          "nota": "Hiding in the storeroom so Hal won't see him."
+        }
+      ]
+    }
+  }
+}

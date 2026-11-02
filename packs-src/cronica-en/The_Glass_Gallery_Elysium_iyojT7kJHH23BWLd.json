@@ -1,0 +1,109 @@
+{
+  "_id": "iyojT7kJHH23BWLd",
+  "_key": "!journal!iyojT7kJHH23BWLd",
+  "name": "The Glass Gallery (Elysium)",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-03",
+      "archivo": "content/ciudad/LUG-03.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "ID6yF177fokZpSmj",
+      "_key": "!journal.pages!iyojT7kJHH23BWLd.ID6yF177fokZpSmj",
+      "name": "The Glass Gallery (Elysium)",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Seattle Center · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ii9kr82A0rahb18r",
+      "_key": "!journal.pages!iyojT7kJHH23BWLd.ii9kr82A0rahb18r",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The Gallery is a 1962 pavilion of glass and steel, its curved walls reflecting the city at night. Inside, hundreds of pieces of blown glass hang from the ceiling like jellyfish frozen mid-drift: red, amber, black. The light passes through them and paints the floor in colors that shift whenever someone walks by. Strings are playing somewhere. At the entrance, an elegant woman with an open register holds out a velvet tray to you: “Your phones, please.”</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CQIIAtnT4aSKCsHf",
+      "_key": "!journal.pages!iyojT7kJHH23BWLd.CQIIAtnT4aSKCsHf",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> lobby (the Keeper and the device tray), the great hall of the jellyfish, a terrace looking out on the World&#39;s Fair tower, the Prince&#39;s private salon, and the Keeper&#39;s archive in the basement.</p>\n<p><strong>Owner:</strong> a cultural foundation belonging to the Prince. The mortal staff are all ghouls (@UUID[JournalEntry.ZUud4rgap2FTsiKB]{Law 3}).</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night} (Elysium Night). If the Council in @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council} moves here instead of to Halloway Tower, it&#39;s a sign the Prince has regained the initiative.</p>\n<p><strong>Detail:</strong> the glass walls make it impossible to know who&#39;s listening from outside. A <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.awareness\" data-dificultad=\"4\" data-label=\"Wits + Awareness (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Wits + Awareness (Difficulty 4)</a> test lets a character notice that someone on the terrace with a telephoto lens could read lips in the private salon.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,1095 @@
+{
+  "_comentario": "Glosario castellano → inglés de El Expediente Ward / The Ward File. Fuente de verdad del vocabulario: va entero en el system prompt de tools/traducir.mjs (cacheado) y lo usa verificar-traduccion.mjs. Terminología oficial de V5 y H5 en inglés. `dudoso: true` = decisión que el autor debería mirar. Cambiar una entrada no retraduce nada solo: hay que correr traducir.mjs --forzar --solo <glob> sobre lo afectado.",
+  "terminos": [
+    {
+      "categoria": "crónica",
+      "es": "El Expediente Ward",
+      "en": "The Ward File",
+      "nota": "Título del módulo en inglés (TRADUCCION.md). «el Expediente» a secas → «the File», con mayúscula cuando es el archivo de Helen."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Seattle by Night",
+      "en": "Seattle by Night",
+      "nota": "Nombre viejo del módulo; ya está en inglés."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Narrador",
+      "en": "Storyteller",
+      "nota": "Como en los libros de V5. «Notas del Narrador» → «Storyteller Notes»; «Pantalla del Narrador» → «Storyteller Screen»."
+    },
+    {
+      "categoria": "crónica",
+      "es": "jugador / jugadora",
+      "en": "player",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "PJ / personaje jugador",
+      "en": "PC / player character",
+      "nota": "Sólo en prosa. Los IDs PJ-01…PJ-06 NO cambian."
+    },
+    {
+      "categoria": "crónica",
+      "es": "PNJ / personaje no jugador",
+      "en": "NPC / Storyteller character",
+      "nota": "Sólo en prosa. Los IDs PNJ-xx NO cambian. V5 dice «Storyteller character (SPC)»; usamos «NPC» en prosa corta y «Storyteller character» donde el texto es más formal."
+    },
+    {
+      "categoria": "crónica",
+      "es": "coterie",
+      "en": "coterie",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Leer en voz alta",
+      "en": "Read Aloud",
+      "nota": "Título de página y de recuadro."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Notas del Narrador",
+      "en": "Storyteller Notes",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Contexto para el Narrador",
+      "en": "Storyteller Context",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Nota de edición",
+      "en": "Editor's Note",
+      "nota": "Los recuadros que explican qué doc manda."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Para el Narrador",
+      "en": "For the Storyteller",
+      "nota": "Página final de los documentos."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Guía de diálogo",
+      "en": "Dialogue Guide",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Opciones de la coterie: Escapar / Manipular / Combate / Disciplinas",
+      "en": "Coterie Options: Escape / Manipulate / Combat / Disciplines",
+      "nota": "Las cuatro filas de las tablas de escena."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Tiradas",
+      "en": "Tests",
+      "nota": "Encabezado «### Tiradas». V5 habla de «tests»; «roll» en prosa suelta («the roll»)."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Salidas",
+      "en": "Exits",
+      "nota": "Encabezado de las escenas: a dónde sigue."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Pistas (encabezado)",
+      "en": "Clues",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "pista",
+      "en": "clue",
+      "nota": "P-01…P-15."
+    },
+    {
+      "categoria": "crónica",
+      "es": "prueba (de un caso)",
+      "en": "evidence / piece of evidence",
+      "nota": "PRUEBA-xx: lo que se presenta en el Consejo."
+    },
+    {
+      "categoria": "crónica",
+      "es": "escena",
+      "en": "scene",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Prólogo / Parte 1… / Epílogo",
+      "en": "Prologue / Part 1… / Epilogue",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Desenlace",
+      "en": "Ending",
+      "nota": "FIN-A…FIN-D: «Endings of the Climax»."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Consecuencias para la crónica",
+      "en": "Consequences for the Chronicle",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "preludio",
+      "en": "prelude",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "interludio",
+      "en": "interlude",
+      "nota": "INT-xx de FIRSTLIGHT."
+    },
+    {
+      "categoria": "crónica",
+      "es": "gancho (de crónica)",
+      "en": "hook / chronicle hook",
+      "nota": "GAN-xx."
+    },
+    {
+      "categoria": "crónica",
+      "es": "ayuda de juego",
+      "en": "handout",
+      "nota": "AYU-xx. «Documentos del mundo» → «In-World Documents»."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Documentos del mundo",
+      "en": "In-World Documents",
+      "nota": "Carpeta y concepto."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Ayudas de juego",
+      "en": "Handouts",
+      "nota": "Carpeta."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Ficción de apertura",
+      "en": "Opening Fiction",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "Herramientas de seguridad",
+      "en": "Safety Tools",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "pregenerado",
+      "en": "pregenerated character / pregen",
+      "nota": "PRE-xx."
+    },
+    {
+      "categoria": "crónica",
+      "es": "recuadro",
+      "en": "sidebar",
+      "nota": "Sólo en prosa; la palabra clave `:::recuadro` no se traduce."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Termómetro (de FIRSTLIGHT)",
+      "en": "the Thermometer (FIRSTLIGHT's Thermometer)",
+      "nota": "Marcador 0–10 propio de la crónica. Mantengo la imagen del original. Alternativa: «Heat», pero choca con el uso de «Heat» en libros de V5/H5 para otra cosa.",
+      "dudoso": true
+    },
+    {
+      "categoria": "crónica",
+      "es": "Reloj de Halloway",
+      "en": "Halloway's Clock",
+      "nota": "«el Reloj» → «the Clock». «Noche 4» → «Night 4»."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Noche N (del Reloj)",
+      "en": "Night N",
+      "nota": "Con mayúscula, como en el original."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Consejo de Primogenitura",
+      "en": "Primogen Council",
+      "nota": "Terminología V5 («Primogen Council»)."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Sabueso / el Sabueso de la Mascarada",
+      "en": "the Hound / the Hound of the Masquerade",
+      "nota": "Apodo de David. «Hound» es además el cargo V5 del ayudante del Sheriff: encaja."
+    },
+    {
+      "categoria": "crónica",
+      "es": "la Furia Controlada / la Doctrina de la Furia Controlada",
+      "en": "Controlled Fury / the Doctrine of Controlled Fury",
+      "nota": "Técnica de Vance (LOR-01, P-03). En cursiva cuando lo está en el original."
+    },
+    {
+      "categoria": "crónica",
+      "es": "la guardia invertida",
+      "en": "the inverted guard",
+      "nota": "P-08: la guardia de Krell."
+    },
+    {
+      "categoria": "crónica",
+      "es": "lo del agua fría",
+      "en": "the cold-water business",
+      "nota": "P-07 «Halloway sabe lo del agua fría» → «Halloway Knows About the Cold Water».",
+      "dudoso": true
+    },
+    {
+      "categoria": "crónica",
+      "es": "Los ojos de la ciudad",
+      "en": "The City's Eyes",
+      "nota": "LOR-03 (las cámaras)."
+    },
+    {
+      "categoria": "crónica",
+      "es": "El Seattle subterráneo / Seattle subterráneo",
+      "en": "the Seattle Underground",
+      "nota": "Lugar real (Pioneer Square). LOR-02 «The Seattle Underground»."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Mercado de Abajo",
+      "en": "the Undermarket",
+      "nota": "El mercado de información de los Nosferatu en las Galerías Selladas."
+    },
+    {
+      "categoria": "crónica",
+      "es": "ARQUERO",
+      "en": "ARCHER",
+      "nota": "Nombre en clave de la fuente que filtra a FIRSTLIGHT. En el mundo es un nombre en clave de un informe interno en inglés: se traduce."
+    },
+    {
+      "categoria": "crónica",
+      "es": "ANOMALY",
+      "en": "ANOMALY",
+      "nota": "Ya en inglés."
+    },
+    {
+      "categoria": "crónica",
+      "es": "SAFE",
+      "en": "SAFE",
+      "nota": "El contacto del teléfono de Helen. Ya en inglés."
+    },
+    {
+      "categoria": "crónica",
+      "es": "SEA-0411",
+      "en": "SEA-0411",
+      "nota": "Código de envíos; no se toca."
+    },
+    {
+      "categoria": "crónica",
+      "es": "sujeto frío",
+      "en": "cold subject",
+      "nota": "Etiqueta de ANOMALY para un Vástago en cámara."
+    },
+    {
+      "categoria": "crónica",
+      "es": "el disco (del Expediente)",
+      "en": "the drive",
+      "nota": "El disco duro robado. «USB» → «USB drive» / «thumb drive»."
+    },
+    {
+      "categoria": "crónica",
+      "es": "teléfono de tapa",
+      "en": "flip phone",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "cámara de timbre",
+      "en": "doorbell camera",
+      "nota": ""
+    },
+    {
+      "categoria": "crónica",
+      "es": "«Lo que la ciudad olvida»",
+      "en": "“What the City Forgets”",
+      "nota": "El podcast de Helen."
+    },
+    {
+      "categoria": "crónica",
+      "es": "Los que no envejecen",
+      "en": "The Ones Who Don't Age",
+      "nota": "Episodio 112 del podcast."
+    },
+    {
+      "categoria": "crónica",
+      "es": "r/SeattleNocturna",
+      "en": "r/SeattleAfterDark",
+      "nota": "Subreddit ficticio: en un Seattle angloparlante el nombre sería inglés.",
+      "dudoso": true
+    },
+    {
+      "categoria": "crónica",
+      "es": "Ironjaw",
+      "en": "Ironjaw",
+      "nota": "Apodo de Marcus Vance; ya en inglés."
+    },
+    {
+      "categoria": "crónica",
+      "es": "El Comandante Rojo",
+      "en": "the Red Commander",
+      "nota": "Alias de Vance."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El Centinela de Puget Sound",
+      "en": "The Sentinel of Puget Sound",
+      "nota": "Montgomery (PNJ-01)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El Príncipe de cristal",
+      "en": "The Glass Prince",
+      "nota": "Whitmore (PNJ-02)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El rey sin corona",
+      "en": "The Uncrowned King",
+      "nota": "Halloway (PNJ-03)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La que mira donde no se debe",
+      "en": "She Who Looks Where She Shouldn't",
+      "nota": "Helen (PNJ-04). Mismo molde que los demás apodos «La que…» → «She Who…»."
+    },
+    {
+      "categoria": "apodos",
+      "es": "Bear",
+      "en": "Bear",
+      "nota": "Tom Whitman (PNJ-05)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El otro hijo",
+      "en": "The Other Son",
+      "nota": "Krell (PNJ-12)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El dueño de abajo",
+      "en": "The Owner Below",
+      "nota": "Thornquist (PNJ-13).",
+      "dudoso": true
+    },
+    {
+      "categoria": "apodos",
+      "es": "La que anota",
+      "en": "She Who Takes Notes",
+      "nota": "Marchetti (PNJ-14)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La que mira la red",
+      "en": "She Who Watches the Net",
+      "nota": "Voight (PNJ-15)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La voz de las tres de la mañana",
+      "en": "The Three A.M. Voice",
+      "nota": "Fry (PNJ-16)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El Sheriff que fue",
+      "en": "The Sheriff That Was",
+      "nota": "O'Connor (PNJ-17)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La que no regala nada",
+      "en": "She Who Gives Nothing Away",
+      "nota": "Okafor (PNJ-18)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La que no sabe lo que lleva",
+      "en": "She Who Doesn't Know What She Carries",
+      "nota": "Jun Takeda (PNJ-20)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La que no se arrodilla",
+      "en": "She Who Doesn't Kneel",
+      "nota": "Rosa Iturbe (PNJ-11)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "Rosa «Salitre» Iturbe / Salitre (apodo)",
+      "en": "Rosa “Salt” Iturbe / Salt",
+      "nota": "La llamaban así en el astillero «porque decía que tenía la sangre salada». En un astillero de Everett le habrían dicho «Salt». Alternativa: «Brine».",
+      "dudoso": true
+    },
+    {
+      "categoria": "apodos",
+      "es": "Estática",
+      "en": "Static",
+      "nota": "Ezra Lund (PJ-03)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "Hal",
+      "en": "Hal",
+      "nota": "Halvard Brekke (PJ-05)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La heredera del cristal",
+      "en": "The Glass Heiress",
+      "nota": "Celeste (PJ-02)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El fantasma en la red",
+      "en": "The Ghost in the Network",
+      "nota": "Ezra (PJ-03)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La voz detrás del micrófono",
+      "en": "The Voice Behind the Mic",
+      "nota": "Nadia (PJ-04)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El lobo de Ballard",
+      "en": "The Wolf of Ballard",
+      "nota": "Hal (PJ-05)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "La forense de guardia",
+      "en": "The On-Call Medical Examiner",
+      "nota": "Ruth (PJ-06). «forense» → «medical examiner» / «M.E.» (en Seattle el cargo es del King County Medical Examiner)."
+    },
+    {
+      "categoria": "apodos",
+      "es": "El ladrón que se guardó una",
+      "en": "The Thief Who Kept One",
+      "nota": "Lonnie Barras (MEN-01): se quedó una copia."
+    },
+    {
+      "categoria": "apodos",
+      "es": "el señor Pell",
+      "en": "Mr. Pell",
+      "nota": "MEN-09."
+    },
+    {
+      "categoria": "apodos",
+      "es": "Dra. / Dr.",
+      "en": "Dr.",
+      "nota": "Dra. Ruth Abernathy → Dr. Ruth Abernathy."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Los del Archivo",
+      "en": "The Archived",
+      "nota": "COT-00, la coterie de los PJs: «los que estaban en el disco». Juego de palabras: los archivados en el Expediente.",
+      "dudoso": true
+    },
+    {
+      "categoria": "coteries",
+      "es": "Los Lobos de Whitmore",
+      "en": "Whitmore's Wolves",
+      "nota": "COT-01. «la jauría» → «the pack»."
+    },
+    {
+      "categoria": "coteries",
+      "es": "El Consejo de Cristal",
+      "en": "The Glass Council",
+      "nota": "COT-02."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Salitre (coterie) / los Anarquistas de Salitre",
+      "en": "Salt's / Salt's Anarchs",
+      "nota": "COT-03, por el bar y por Rosa. Va con la decisión de «Salitre» → «Salt».",
+      "dudoso": true
+    },
+    {
+      "categoria": "coteries",
+      "es": "Los Topos",
+      "en": "The Moles",
+      "nota": "COT-04, los corredores Nosferatu del Seattle Underground."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Comando / Sbirri / Regencia / Cerbero",
+      "en": "Commando / Sbirri / Regency / Cerberus",
+      "nota": "Tipos de coterie de V5 (los da el original entre paréntesis)."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Corredores (tipo de coterie)",
+      "en": "Brokers",
+      "nota": "Tipo propio del libro (Mercenary Company + Questari)."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Caza / Lien / Portillón (dominio)",
+      "en": "Chasse / Lien / Portillon",
+      "nota": "Rasgos de dominio de coterie en V5."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Célula Puget",
+      "en": "Puget Cell",
+      "nota": "CEL-01 (FIRSTLIGHT)."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Equipo táctico de FIRSTLIGHT",
+      "en": "FIRSTLIGHT Tactical Team",
+      "nota": "MEN-02."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Los cazarrecompensas de Montgomery",
+      "en": "Montgomery's Bounty Hunters",
+      "nota": "MEN-03."
+    },
+    {
+      "categoria": "coteries",
+      "es": "Ghouls de seguridad de Halloway",
+      "en": "Halloway's Security Ghouls",
+      "nota": "MEN-04; el token dice «Security Guard»."
+    },
+    {
+      "categoria": "lugares",
+      "es": "La Galería de Vidrio",
+      "en": "The Glass Gallery",
+      "nota": "LUG-03, el Elíseo (Seattle Center). «la Galería» → «the Gallery»."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Las Galerías Selladas",
+      "en": "The Sealed Underground",
+      "nota": "LUG-04: el tramo del Seattle Underground que no está en las visitas, detrás de una puerta de hierro. «Galleries» en inglés sugiere arte (y choca con la Glass Gallery); «Sealed Underground» dice qué es. Alternativa: «the Sealed Blocks».",
+      "dudoso": true
+    },
+    {
+      "categoria": "lugares",
+      "es": "Bar Salitre",
+      "en": "Salt's Bar",
+      "nota": "LUG-10 (Everett): el bar de Rosa «Salt» Iturbe. «el astillero viejo» → «the old shipyard».",
+      "dudoso": true
+    },
+    {
+      "categoria": "lugares",
+      "es": "Club Ceniza",
+      "en": "Club Cinder",
+      "nota": "LUG-09 (Capitol Hill). Nombre de club en inglés; «Cinder» suena a club y conserva la ceniza. Alternativa literal: «Club Ash».",
+      "dudoso": true
+    },
+    {
+      "categoria": "lugares",
+      "es": "La Capilla del Observatorio",
+      "en": "The Observatory Chantry",
+      "nota": "LUG-13 (Queen Anne). «Capilla» es la Chantry de los Tremere en V5."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Torre Halloway",
+      "en": "Halloway Tower",
+      "nota": "LUG-06."
+    },
+    {
+      "categoria": "lugares",
+      "es": "El hangar de Harbor Island",
+      "en": "The Harbor Island Hangar",
+      "nota": "LUG-01."
+    },
+    {
+      "categoria": "lugares",
+      "es": "La granja del Sheriff y su embarcadero",
+      "en": "The Sheriff's Farm and Boat Landing",
+      "nota": "LUG-02 (Snohomish Valley)."
+    },
+    {
+      "categoria": "lugares",
+      "es": "El apartamento de Helen Ward",
+      "en": "Helen Ward's Apartment",
+      "nota": "LUG-05 (Ballard, Market Street)."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Gale Sentinel, campus y centro de datos",
+      "en": "Gale Sentinel Campus and Data Center",
+      "nota": "LUG-07 (Bellevue)."
+    },
+    {
+      "categoria": "lugares",
+      "es": "El mercado de Pike Place de noche",
+      "en": "Pike Place Market by Night",
+      "nota": "LUG-08."
+    },
+    {
+      "categoria": "lugares",
+      "es": "El edificio Larchmont",
+      "en": "The Larchmont Building",
+      "nota": "LUG-11 (Tacoma)."
+    },
+    {
+      "categoria": "lugares",
+      "es": "La tumba de Emily Smith",
+      "en": "Emily Smith's Grave",
+      "nota": "LUG-12."
+    },
+    {
+      "categoria": "lugares",
+      "es": "La terminal de ferris y el último ferry",
+      "en": "The Ferry Terminal and the Last Ferry / The Ferry Terminal and the Last Night Ferry",
+      "nota": "LUG-15 (Colman Dock). El índice (doc 03) dice «el último ferry nocturno»: «the Last Night Ferry»."
+    },
+    {
+      "categoria": "lugares",
+      "es": "El elevador de grano de la Terminal 86",
+      "en": "The Terminal 86 Grain Elevator",
+      "nota": "LUG-16. Lugar real."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Valle del Snohomish",
+      "en": "Snohomish Valley",
+      "nota": ""
+    },
+    {
+      "categoria": "lugares",
+      "es": "el estrecho de Puget",
+      "en": "Puget Sound",
+      "nota": ""
+    },
+    {
+      "categoria": "lugares",
+      "es": "Oficina Forense del Condado de King",
+      "en": "King County Medical Examiner's Office",
+      "nota": "Real."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Terminal 46 / muelle 46",
+      "en": "Terminal 46 / Pier 46",
+      "nota": "Real."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Nombres reales (Colman Dock, Harbor Island, Capitol Hill, Pioneer Square, Ballard, Market Street, Elliott Bay, Seattle Center, Queen Anne, Fremont, SoDo, Georgetown, Rainier Valley, South Lake Union, Bellevue, Everett, Tacoma, Bainbridge)",
+      "en": "(sin cambios)",
+      "nota": "Los nombres propios reales quedan. «Downtown» ya está en inglés."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Halloway Meridian / Cascade Holdings LLC / Northline Cyber Advisory / Gale Sentinel",
+      "en": "(sin cambios)",
+      "nota": "Empresas de la ficción con nombre en inglés."
+    },
+    {
+      "categoria": "lugares",
+      "es": "Marsella / Berlín / Rumanía / Nueva York / Haití / Luisiana",
+      "en": "Marseille / Berlin / Romania / New York / Haiti / Louisiana",
+      "nota": "Topónimos en su forma inglesa. «El fantasma de Marsella» → «The Ghost of Marseille»."
+    },
+    {
+      "categoria": "V5",
+      "es": "Vástago / Vástagos",
+      "en": "Kindred",
+      "nota": "Invariable en inglés (singular y plural)."
+    },
+    {
+      "categoria": "V5",
+      "es": "Elíseo",
+      "en": "Elysium",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Mascarada",
+      "en": "the Masquerade",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Segunda Inquisición",
+      "en": "the Second Inquisition",
+      "nota": "FIRSTLIGHT queda igual (es el nombre oficial del brazo estadounidense)."
+    },
+    {
+      "categoria": "V5",
+      "es": "Camarilla / Anarquistas / Sabbat",
+      "en": "Camarilla / Anarchs / Sabbat",
+      "nota": "«Anarquista» → «Anarch»."
+    },
+    {
+      "categoria": "V5",
+      "es": "Príncipe",
+      "en": "Prince",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Primogénito / Primogénita / Primogénitos",
+      "en": "Primogen",
+      "nota": "Invariable: «the Ventrue Primogen», «the Primogen» (plural)."
+    },
+    {
+      "categoria": "V5",
+      "es": "Sheriff",
+      "en": "Sheriff",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Guardián del Elíseo / Guardiana del Elíseo",
+      "en": "Keeper of Elysium",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Regente (Tremere)",
+      "en": "Regent",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Arconte / Justicar",
+      "en": "Archon / Justicar",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Barón / Baronesa",
+      "en": "Baron / Baroness",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "sire / chiquillo / chiquilla",
+      "en": "sire / childe",
+      "nota": "«childer» en plural."
+    },
+    {
+      "categoria": "V5",
+      "es": "Abrazo / Abrazado",
+      "en": "the Embrace / Embraced",
+      "nota": "Con mayúscula."
+    },
+    {
+      "categoria": "V5",
+      "es": "ghoul",
+      "en": "ghoul",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "sangre débil",
+      "en": "thin-blood",
+      "nota": "Sustantivo «thin-blood(s)», adjetivo «thin-blooded»."
+    },
+    {
+      "categoria": "V5",
+      "es": "Caitiff",
+      "en": "Caitiff",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Brujah, Gangrel, Malkavian, Nosferatu, Toreador, Tremere, Ventrue",
+      "en": "Brujah, Gangrel, Malkavian, Nosferatu, Toreador, Tremere, Ventrue",
+      "nota": "Clanes: iguales."
+    },
+    {
+      "categoria": "V5",
+      "es": "la Bestia",
+      "en": "the Beast",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Vitae",
+      "en": "Vitae",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Hambre",
+      "en": "Hunger",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Humanidad",
+      "en": "Humanity",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Mancha / Manchas",
+      "en": "Stain / Stains",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Potencia de Sangre",
+      "en": "Blood Potency",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Generación",
+      "en": "Generation",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Piedra de toque / Piedras de toque",
+      "en": "Touchstone / Touchstones",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Convicción / Convicciones",
+      "en": "Conviction / Convictions",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Ambición / Deseo",
+      "en": "Ambition / Desire",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Enardecimiento / tirada de Enardecimiento",
+      "en": "Rouse Check",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Frenesí",
+      "en": "frenzy",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Compulsión",
+      "en": "Compulsion",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Vínculo de sangre",
+      "en": "Blood Bond",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Resonancia (Colérica, Melancólica, Flemática, Sanguínea)",
+      "en": "Resonance (Choleric, Melancholic, Phlegmatic, Sanguine)",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Discrasia",
+      "en": "Dyscrasia",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "letargo",
+      "en": "torpor",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "tipo de depredador",
+      "en": "Predator Type",
+      "nota": "Gato Callejero → Alleycat, Ensacador → Bagger, Sanguijuela → Blood Leech, Granjero → Farmer, Sirena → Siren, Consensual → Consensualist, Reina de la Escena → Scene Queen, Osiris → Osiris, Sandman → Sandman."
+    },
+    {
+      "categoria": "V5",
+      "es": "Salud / Fuerza de Voluntad / Voluntad",
+      "en": "Health / Willpower",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "daño superficial / daño agravado",
+      "en": "superficial damage / aggravated damage",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Dificultad",
+      "en": "Difficulty",
+      "nota": "«(Dificultad 3)» → «(Difficulty 3)». «Dif 3» → «Diff. 3»."
+    },
+    {
+      "categoria": "V5",
+      "es": "reserva (de dados)",
+      "en": "dice pool / pool",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "éxito / éxitos",
+      "en": "success / successes",
+      "nota": "«3 o más éxitos» → «3 or more successes»."
+    },
+    {
+      "categoria": "V5",
+      "es": "crítico / crítico sucio / fallo total / fallo bestial / tirada enfrentada",
+      "en": "critical win / messy critical / total failure / bestial failure / contested test",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Trasfondos: Refugio, Rebaño, Contactos, Aliados, Recursos, Estatus, Influencia, Fama, Máscara, Mawla, Criados",
+      "en": "Backgrounds: Haven, Herd, Contacts, Allies, Resources, Status, Influence, Fame, Mask, Mawla, Retainers",
+      "nota": "«Máscara 2» (trasfondo) → «Mask 2». Ventajas → Advantages (Merits y Backgrounds); Defectos → Flaws."
+    },
+    {
+      "categoria": "V5",
+      "es": "dominio",
+      "en": "domain",
+      "nota": ""
+    },
+    {
+      "categoria": "V5",
+      "es": "Atributos: Fuerza, Destreza, Resistencia, Carisma, Manipulación, Compostura, Inteligencia, Astucia, Resolución",
+      "en": "Strength, Dexterity, Stamina, Charisma, Manipulation, Composure, Intelligence, Wits, Resolve",
+      "nota": "En la etiqueta de @tirada y en prosa."
+    },
+    {
+      "categoria": "V5",
+      "es": "Habilidades: Atletismo, Pelea, Artesanía, Conducir, Armas de fuego, Latrocinio, Pelea con armas, Sigilo, Supervivencia, Trato con animales, Etiqueta, Perspicacia, Intimidación, Liderazgo, Interpretación, Persuasión, Callejeo, Subterfugio, Academicismo, Consciencia, Finanzas, Investigación, Medicina, Ocultismo, Política, Ciencia, Tecnología",
+      "en": "Athletics, Brawl, Craft, Drive, Firearms, Larceny, Melee, Stealth, Survival, Animal Ken, Etiquette, Insight, Intimidation, Leadership, Performance, Persuasion, Streetwise, Subterfuge, Academics, Awareness, Finance, Investigation, Medicine, Occult, Politics, Science, Technology",
+      "nota": "Mismo orden en las dos listas."
+    },
+    {
+      "categoria": "V5",
+      "es": "especialidad",
+      "en": "specialty",
+      "nota": "«Investigación 4 (Casos fríos)» → «Investigation 4 (Cold Cases)»."
+    },
+    {
+      "categoria": "V5",
+      "es": "Disciplinas: Animalismo, Auspex, Celeridad, Dominación, Fortaleza, Ofuscación, Potencia, Presencia, Metamorfosis/Protean, Hechicería de Sangre, Oblivion, Alquimia de Sangre Débil",
+      "en": "Animalism, Auspex, Celerity, Dominate, Fortitude, Obfuscate, Potence, Presence, Protean, Blood Sorcery, Oblivion, Thin-Blood Alchemy",
+      "nota": "Rituales → Rituals; Ceremonias → Ceremonies."
+    },
+    {
+      "categoria": "V5",
+      "es": "Poderes en castellano (Manto de sombras, Toque espiritual, Sentidos agudizados, Mirada aterradora, Gracia felina, Reflejos Felinos, Golpe Relámpago…)",
+      "en": "Nombre oficial de V5 (Cloak of Shadows, Spirit's Touch, Heightened Senses, Daunt, Cat's Grace, Rapid Reflexes, Lightning Strike…)",
+      "nota": "Si el original da el inglés entre paréntesis o en cursiva, ése manda. Poderes homebrew: traducción libre, con «(homebrew)» intacto."
+    },
+    {
+      "categoria": "H5",
+      "es": "cazador / cazadora",
+      "en": "hunter",
+      "nota": ""
+    },
+    {
+      "categoria": "H5",
+      "es": "Célula",
+      "en": "cell",
+      "nota": "Con mayúscula en «the Cell» cuando es la Célula Puget."
+    },
+    {
+      "categoria": "H5",
+      "es": "Credo (Inquisitiva, Fiel, Emprendedor, Marcial, Clandestino)",
+      "en": "Creed (Inquisitive, Faithful, Entrepreneurial, Martial, Underground)",
+      "nota": ""
+    },
+    {
+      "categoria": "H5",
+      "es": "Impulso (Expiación, Curiosidad, Venganza, Juramento, Codicia, Orgullo, Envidia)",
+      "en": "Drive (Atonement, Curiosity, Vengeance, Oath, Greed, Pride, Envy)",
+      "nota": "«Redención» del Impulso → «Redemption»."
+    },
+    {
+      "categoria": "H5",
+      "es": "Facultad / Facultades",
+      "en": "Edge / Edges",
+      "nota": "Arsenal, Fleet, Ordnance, Library, Improvised Gear, Global Access, Drone Jockey, Beast Whisperer, Sense the Unnatural, Repel the Unnatural, Thwart the Unnatural, Artifact…"
+    },
+    {
+      "categoria": "H5",
+      "es": "Beneficio / Beneficios",
+      "en": "Perk / Perks",
+      "nota": ""
+    },
+    {
+      "categoria": "H5",
+      "es": "Desesperación",
+      "en": "Desperation",
+      "nota": ""
+    },
+    {
+      "categoria": "H5",
+      "es": "Peligro",
+      "en": "Danger",
+      "nota": ""
+    },
+    {
+      "categoria": "H5",
+      "es": "Fe inquebrantable",
+      "en": "Unshakable Faith",
+      "nota": "Ventaja de Okafor."
+    },
+    {
+      "categoria": "H5",
+      "es": "presa",
+      "en": "quarry",
+      "nota": "Lo que caza la Célula."
+    },
+    {
+      "categoria": "objetos",
+      "es": "Munición incendiaria / Linterna UV de alta intensidad / cámaras corporales / gafas térmicas / dron térmico / generador de luz solar artificial / armadura ligera / fusil corto incendiario",
+      "en": "Incendiary ammunition / High-intensity UV flashlight / body cameras / thermal goggles / thermal drone / artificial sunlight generator / light body armor / incendiary carbine",
+      "nota": "Equipo de FIRSTLIGHT (firstlight.json)."
+    },
+    {
+      "categoria": "objetos",
+      "es": "los diarios de Vance",
+      "en": "Vance's journals",
+      "nota": "«folio» → «folio»; «copia mecanografiada» → «typewritten copy»."
+    },
+    {
+      "categoria": "objetos",
+      "es": "la copia 2 de 3",
+      "en": "copy 2 of 3",
+      "nota": "Las tres copias de los diarios."
+    },
+    {
+      "categoria": "objetos",
+      "es": "la medalla de San Miguel",
+      "en": "the Saint Michael medal",
+      "nota": ""
+    },
+    {
+      "categoria": "objetos",
+      "es": "el maletín (de Halloway)",
+      "en": "the briefcase",
+      "nota": ""
+    }
+  ]
+}

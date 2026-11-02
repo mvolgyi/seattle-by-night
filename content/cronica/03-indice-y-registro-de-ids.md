@@ -16,7 +16,7 @@ Relato de 2.000–2.500 palabras. Es la noche del robo vista por los ojos de Hel
 ## 1 · Introducción
 
 - De qué va este libro
-- Cómo usar este libro: crónica para un jugador, con la variante para coterie en un recuadro
+- Cómo usar este libro: crónica para una coterie de 4–5 jugadores, con David y Bear como PNJs aliados *(el índice del doc 01 decía «para un jugador, con la variante para coterie en un recuadro»)*
 - Temas y ambiente: la ciudad que todo lo registra
 - Herramientas de seguridad: Líneas y Velos, la carta X y las advertencias de contenido de @ID[AVE-01]
 - Glosario rápido de Seattle (barrios, jerga local, cómo se pronuncian los nombres)
@@ -101,10 +101,10 @@ Relato de 2.000–2.500 palabras. Es la noche del robo vista por los ojos de Hel
 | @ID[GAN-05] | Frenesí | **Luna sobre el Snohomish.** La Feralidad de Montgomery se desata cerca de mortales. |
 | @ID[GAN-06] | Jerarquía | **Caza de Sangre en Everett.** El Príncipe ordena una Caza de Sangre contra un Anarquista que podría ser inocente. |
 | @ID[GAN-07] | Jerarquía | **El Arconte llama.** Duval pide un favor que obliga a David a salir de la ciudad. |
-| @ID[GAN-08] | Mascarada | **El vídeo viral.** Un vídeo de 11 segundos en el que David parece demasiado rápido. |
+| @ID[GAN-08] | Mascarada | **El vídeo viral.** Un vídeo de 11 segundos en el que uno de los PJs parece demasiado rápido. |
 | @ID[GAN-09] | Mascarada | **Los restos de Tacoma.** Señales de una manada Sabbat superviviente. |
 | @ID[GAN-10] | Sangre | **Cartas desde Cluj.** Llega un mensaje firmado «M.V.». ¿Es otra mentira o es la primera verdad? |
-| @ID[GAN-11] | Hambre | **El ayuno de Jun.** La sangre débil rescatada pide a David que la enseñe a cazar. |
+| @ID[GAN-11] | Hambre | **El ayuno de Jun.** La sangre débil rescatada pide a quien la salvó que la enseñe a cazar. |
 | @ID[GAN-12] | Humanidad | **La tumba visitada.** Alguien deja flores frescas cada semana en la tumba de Emily. |
 
 ## 7 · La aventura: ***El Expediente Ward*** (AVE-01)
@@ -137,7 +137,7 @@ Manda el registro más nuevo, el del capítulo 8 (doc 14): **@ID[MEN-01]** es Lo
 
 | ID | Entidad |
 |---|---|
-| @ID[PJ-01] | David Smith (Brujah, jugador) |
+| @ID[PJ-01] | David Smith (Brujah). Era el PJ; ahora es PNJ aliado de la coterie y conserva el ID |
 | @ID[PNJ-01] | Ethan Montgomery, Sheriff (Gangrel) |
 | @ID[PNJ-02] | Marcus Whitmore, Príncipe (clan pendiente) |
 | @ID[PNJ-03] | Charles Halloway, Primogénito (Ventrue) |

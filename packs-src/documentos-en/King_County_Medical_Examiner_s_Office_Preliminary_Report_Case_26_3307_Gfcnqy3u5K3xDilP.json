@@ -1,0 +1,86 @@
+{
+  "_id": "Gfcnqy3u5K3xDilP",
+  "_key": "!journal!Gfcnqy3u5K3xDilP",
+  "name": "King County Medical Examiner's Office, Preliminary Report, Case 26-3307",
+  "folder": "5efDL7MULAxvZxrL",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "DOC-09",
+      "archivo": "content/documentos/DOC-09.md",
+      "soporte": "informe",
+      "entrega": [
+        "A1-E02",
+        "A2-E02"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "3qSYBlucB3yLhrQH",
+      "_key": "!journal.pages!Gfcnqy3u5K3xDilP.3qSYBlucB3yLhrQH",
+      "name": "King County Medical Examiner's Office, Preliminary Report, Case 26-3307",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-informe\"><p class=\"sbn-doc-titulo\">OFFICE OF THE MEDICAL EXAMINER · KING COUNTY, WASHINGTON</p>\n<p>PRELIMINARY EXAMINATION REPORT · INTERNAL USE ONLY</p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-informe-tabla\">\n<thead>\n<tr>\n<th><strong>Case No.</strong></th>\n<th>26-3307</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Date received</strong></td>\n<td>11/13/2026, 6:52 AM</td>\n</tr>\n<tr>\n<td><strong>Recovery site</strong></td>\n<td>Terminal 46, Harbor Island, beside container MSKU-4471192</td>\n</tr>\n<tr>\n<td><strong>Identity</strong></td>\n<td>Unidentified (John Doe No. 41-26)</td>\n</tr>\n<tr>\n<td><strong>Pathologist</strong></td>\n<td>Dr. M. Kowalski (covering). Assigned night-shift pathologist: on leave.</td>\n</tr>\n</tbody></table>\n<p><strong>Findings.</strong> Received: gray particulate material, approximately 4.1 kg, collected from a concrete surface of about 2 m². Contains calcined bone fragments (phalanges, a portion of mandible with three teeth consistent with an adult), unburned remnants of synthetic fabric, and an intact USB drive (released to police as evidence, chain of custody 26-3307-A).</p>\n<p><strong>Observations.</strong> The degree of calcination is consistent with prolonged exposure to temperatures above 1,000 °C. No ignition source, accelerant residue, or heat marking was found at the scene, either on the concrete or on the adjacent container. The fabric present among the ashes shows no signs of combustion.</p>\n<p>These findings are inconsistent with known combustion mechanisms. External review is recommended.</p>\n<p class=\"sbn-informe-firma\">Signed: <span class=\"sbn-firma-manuscrita\">M. Kowalski, MD</span></p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-postit\"><p class=\"sbn-acotacion\">[Yellow sticky note, handwritten:]</p>\n<p><em>Marek: DO NOT send for review until Ruth&#39;s back. She handles these. — J.</em></p>\n<p><span class=\"sbn-acotacion\">[Below, in different handwriting:]</span> <em>Already sent it. Sorry. Some guy named Hale, from a consulting firm, asked for it. He had authorization. — M.</em></p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CDAuo6EO2VQpPUam",
+      "_key": "!journal.pages!Gfcnqy3u5K3xDilP.CDAuo6EO2VQpPUam",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> printed official form, with a stamp and a sticky note. <strong>When:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46} or @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Assess. Execute.”}. Ruth (@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Dr. Ruth Abernathy}) finds it in her inbox when she returns from leave; other characters can obtain it with Influence or Contacts (police) 2.</p>\n<p><strong>Foreshadows:</strong> the crack in the Masquerade that FIRSTLIGHT slips through.</p>\n<p><strong>Truth:</strong> these are the remains of the Nosferatu destroyed on Pier 46. The covering pathologist did his job well, and that&#39;s the problem. The report has already been copied to an outside address (Northline). If the coterie intercepts it before Night 3, Thermometer −1: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-1\" data-motivo=\"Medical examiner's report intercepted before Night 3\"><span class=\"sbn-termometro-cambio\">−1</span> <span class=\"sbn-termometro-motivo\">Medical examiner&#39;s report intercepted before Night 3</span></button>.</p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

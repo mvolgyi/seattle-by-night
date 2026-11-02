@@ -1,0 +1,1546 @@
+{
+  "_id": "g4XbpMuCHwxVhzeC",
+  "_key": "!actors!g4XbpMuCHwxVhzeC",
+  "name": "David Smith",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-01.webp",
+  "folder": "aMxEpfQ4AWpWbYKv",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "David Smith",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 10,
+      "angle": 360,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": -1,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PJ-01.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Former Navy commando Embraced in Haiti in 1960 by Marcus Vance, now the Seattle Sheriff's outside enforcer.",
+      "chronicle": "The Ward File",
+      "ambition": "Keep the balance between the Kindred and the Masquerade.",
+      "desire": "Root out those who break the veil, even if they're old allies.",
+      "touchstones": "<h3>Convictions</h3><ul><li>The Masquerade is the last shield between order and chaos.</li><li>Only the monster you know can be controlled.</li><li>I don&#39;t hunt out of hate, but for balance.</li></ul><h3>Touchstones</h3><ul><li><strong>Helen Ward</strong>: Alive (PNJ-04). Human journalist, a source of information on supernatural events.</li><li><strong>Emily Smith</strong>: Lost, 1996 (REF-01). His daughter; lost Anchor: occasional Remorse tests and nightmares.</li><li><strong>Tom “Bear” Whitman</strong>: Ghoul ex-SEAL (PNJ-05); loyal, but dependent on his Vitae. The sheet lists him as a Touchstone; docs 00–16 treat him as an anchor, even though he&#39;s a ghoul.</li></ul>",
+      "sire": "Marcus “Ironjaw” Vance (PNJ-06)",
+      "generation": "9"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "March 15, 1935, Boston",
+        "death": "July 8, 1960, Haiti"
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{Profile: David Smith}</p><blockquote><p><em>“Some have to burn so the rest can see the light.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Hound of the Masquerade</td></tr><tr><th>Concept</th><td>Former Navy commando Embraced in Haiti in 1960 by Marcus Vance, now the Seattle Sheriff&#39;s outside enforcer.</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Sect</th><td>independent, operational ally of the Camarilla</td></tr><tr><th>Sire</th><td>Marcus “Ironjaw” Vance (PNJ-06)</td></tr><tr><th>Born</th><td>March 15, 1935, Boston</td></tr><tr><th>Embraced</th><td>July 8, 1960, Haiti</td></tr><tr><th>Predator Type</th><td>Silent Hunter (custom: Alleycat + Blood Leech)</td></tr><tr><th>Resonance</th><td>Choleric</td></tr><tr><th>Ambition</th><td>Keep the balance between the Kindred and the Masquerade.</td></tr><tr><th>Desire</th><td>Root out those who break the veil, even if they&#39;re old allies.</td></tr></tbody></table><h3>Demeanor</h3><p>Square, tense jaw, a scar from his right cheekbone to his lip, short dark hair graying at the temples, dark gray eyes that are almost black; black tactical jacket with no insignia; he smells of gunpowder, rust, and dried blood.</p>",
+    "appearance": "<p>Square, tense jaw, a scar from his right cheekbone to his lip, short dark hair graying at the temples, dark gray eyes that are almost black; black tactical jacket with no insignia; he smells of gunpowder, rust, and dried blood.</p>",
+    "equipment": "<ul><li>Black tactical jacket with the insignia removed</li><li>Old military knife (a keepsake from his mortal life; he was carrying it the day of his Embrace)</li></ul>",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: adjusted to V5. Rapid Reflexes drops to level 1; Lightning Strike (level 5) doesn&#39;t fit with Celerity 4 and was swapped for Blink (level 3); Blurred Momentum (homebrew) stays at level 3, with a homemade description in the profile.</p><h3>Provisional (doc 16)</h3><ul><li>David arrived in Seattle in the &#39;80s.</li><li>David has LOR-01 at level 4.</li></ul>",
+    "health": {
+      "max": 8,
+      "value": 8,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 4,
+      "generation": "9"
+    },
+    "humanity": {
+      "value": 6,
+      "stains": 0
+    },
+    "disciplines": {
+      "celerity": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "presence": {
+        "value": 3,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "fortitude": {
+        "value": 4,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "auspex": {
+        "value": 2,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "attributes": {
+      "strength": {
+        "value": 5,
+        "active": false
+      },
+      "dexterity": {
+        "value": 4,
+        "active": false
+      },
+      "stamina": {
+        "value": 5,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 2,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 3,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 4,
+        "active": false
+      }
+    },
+    "skills": {
+      "athletics": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Prolonged combat",
+            "value": 1,
+            "paths": [
+              "skills.athletics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "brawl": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Kindred",
+            "value": 1,
+            "paths": [
+              "skills.brawl"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tailing",
+            "value": 1,
+            "paths": [
+              "skills.drive"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tactical combat",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "larceny": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Alarms",
+            "value": 1,
+            "paths": [
+              "skills.larceny"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "melee": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Disarming strikes",
+            "value": 1,
+            "paths": [
+              "skills.melee"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "stealth": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tailing",
+            "value": 1,
+            "paths": [
+              "skills.stealth"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "survival": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Tracking",
+            "value": 1,
+            "paths": [
+              "skills.survival"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "animalken": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Dogs",
+            "value": 1,
+            "paths": [
+              "skills.animalken"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Detect lies",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Intimidating stares",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "leadership": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Inspiration",
+            "value": 1,
+            "paths": [
+              "skills.leadership"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "performance": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Personal reputation",
+            "value": 1,
+            "paths": [
+              "skills.streetwise"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Ambushes",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Deduction",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "medicine": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Cainite symbology",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "politics": {
+        "value": 1,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Camarilla",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Surveillance systems",
+            "value": 1,
+            "paths": [
+              "skills.technology"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "brujah"
+        }
+      },
+      "name": "Brujah",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "Ukur6S4MZRL8tXpe",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.Ukur6S4MZRL8tXpe"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Silent Hunter (custom: Alleycat + Blood Leech)",
+      "type": "predatorType",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "dicepool": {}
+      },
+      "_id": "8RlxIxozw33OI4eZ",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.8RlxIxozw33OI4eZ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "name": "Choleric",
+      "type": "resonance",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        }
+      },
+      "_id": "EM1dou3PPQ5q51WE",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.EM1dou3PPQ5q51WE"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Rapid Reflexes",
+          "homebrew": false
+        }
+      },
+      "name": "Rapid Reflexes",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Increases your defense and reaction against gunfire and ambushes.</p><p><em>Celerity 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "5yIv3o6UVLZqkIyR",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.5yIv3o6UVLZqkIyR"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Blink",
+          "homebrew": false
+        }
+      },
+      "name": "Blink",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Crosses a street, a pier, or an entire warehouse in one burst, in a straight line, and arrives with his guard already up, like the soldier who comes through the breach before the smoke clears.</p><p><em>Celerity 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "E5VCf0ai0wQzKW20",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.E5VCf0ai0wQzKW20"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Ráfaga Temporal (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Temporal Burst",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>You stop the world for an instant; you act outside of time for the blink of an eye. Perfect for stopping a shot or carrying out a surgical action.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 4,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "1FCrUJ1sZKTTrC9u",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.1FCrUJ1sZKTTrC9u"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Ímpetu Borroso (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Blurring Rush",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>A homebrew power. A burst of speed over a few steps to close to melee range and strike in the same action, before the opponent finishes reacting. Where Blink crosses a street, Blurring Rush crosses an arm&#39;s length: it&#39;s how Controlled Fury opens.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "celerity",
+        "selected": false
+      },
+      "_id": "EFreT9oRjRRg9Rzm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.EFreT9oRjRRg9Rzm"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Lethal Body",
+          "homebrew": false
+        }
+      },
+      "name": "Lethal Body",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Your blows hit like a jackhammer. Superficial damage converted to lethal.</p><p><em>Potence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "nXtvavwgysb2DggR",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.nXtvavwgysb2DggR"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Prowess",
+          "homebrew": false
+        }
+      },
+      "name": "Prowess",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Lets you perform impossible feats of strength or lift up to a ton. Perfect for breaching, rescuing, or opening armored entrances.</p><p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "c4kMnSwVHY5uNZqj",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.c4kMnSwVHY5uNZqj"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Golpe Destructor (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Crushing Blow",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>A single concentrated impact that can bring down walls or incapacitate with one hit. Ideal as a finishing execution.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "h3j9iFkkjtYRbfBo",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.h3j9iFkkjtYRbfBo"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Bala Cinética (homebrew, amalgama Celeridad 2)",
+          "homebrew": true
+        }
+      },
+      "name": "Kinetic Bullet",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew (amalgama Celeridad 2).</em></p><ul>\n<li><strong>Cost:</strong> 1 Rouse Check to activate. Lasts one scene. Allows up to Potence (4) shots at no extra cost; more shots require new Rouse Checks (1 per additional shot).</li>\n<li><strong>Effect:</strong> David can throw any small/medium object (marble, stone, nut, small stake, etc.) as if it were a heavy pistol shot.</li>\n<li><strong>Range:</strong> up to Potence × 10 m (40 m); no penalty within half that distance.</li>\n<li><strong>Attack:</strong> Dexterity + Athletics + Potence (or Strength + Athletics, table&#39;s choice); the target uses normal defense.</li>\n<li><strong>Damage:</strong> as a .45 → base damage 3 + net successes; lethal against mortals/ghouls, and against Kindred without Fortitude.</li>\n<li>Once per scene you can make an “Execution Shot”: +1 Diff.; with 3+ net successes, a mortal/ghoul is left dead or unconscious; a Kindred suffers a heavy penalty (-2) to the body part hit.</li>\n<li>With stakes / bolts and +2 Diff., with 4+ net successes you can stake or pin the Kindred&#39;s chest (Storyteller ruling).</li>\n<li>It also works for breaking cameras, lights, weapons in mortals&#39; hands, etc., with no visible firearms and no shell casings.</li>\n</ul>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 4,
+        "cost": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.athletics"
+          },
+          "d3": {
+            "path": "disciplines.potence"
+          }
+        },
+        "discipline": "potence",
+        "selected": false
+      },
+      "_id": "bPRNqOPPT03AZ7qm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.bPRNqOPPT03AZ7qm"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Daunt",
+          "homebrew": false
+        }
+      },
+      "name": "Daunt",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Instills supernatural fear. Ideal for interrogations or controlling a crowd.</p><p><em>Presence 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "Z96ssAXfqaIpmF84",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.Z96ssAXfqaIpmF84"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Autoridad Instintiva (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Instinctive Authority",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Your voice alone commands obedience and respect. Perfect for coordinating other Cainites.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "QgP53BI28RiAsqcg",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.QgP53BI28RiAsqcg"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Majestad de Guerra / Encender Emociones (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "War Majesty / Kindle Emotions",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>Your presence dominates the room; mortals and neonates are left enthralled or cowed.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "presence",
+        "selected": false
+      },
+      "_id": "rPbBZyd9X4Az6iC0",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.rPbBZyd9X4Az6iC0"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Resilience",
+          "homebrew": false
+        }
+      },
+      "name": "Resilience",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Add your Fortitude to your Health.</p><p><em>Fortitude 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "wfixC09wl8Zn1GuG",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.wfixC09wl8Zn1GuG"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Negar el Dolor (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Deny the Pain",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>You ignore wound penalties; ideal for continuing to fight after taking damage.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "wM1eKHMVP7FnVBYM",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.wM1eKHMVP7FnVBYM"
+    },
+    {
+      "effects": [],
+      "sort": 300,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Defy Bane",
+          "homebrew": false
+        }
+      },
+      "name": "Defy Bane",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Lets you resist aggravated damage, fire, and sunlight.</p><p><em>Fortitude 3. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 3,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "UlyTWinxy1o4UZds",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.UlyTWinxy1o4UZds"
+    },
+    {
+      "effects": [],
+      "sort": 400,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Último Bastión de la Mascarada (homebrew)",
+          "homebrew": true
+        }
+      },
+      "name": "Last Bastion of the Masquerade",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Homebrew.</em></p><p>see the next page.</p><p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr.JournalEntryPage.nyaVnQSG4rVgzoFI]{Last Bastion of the Masquerade}</p><p><em>Source: doc 17. Last Bastion of the Masquerade (Fortitude ••••). Homebrew – optional Amalgam with Presence or Auspex, if you want to fine-tune it further.</em></p>\n<p><em>“I don&#39;t fall until the job is done.”</em></p>\n<p><strong>Theme / fiction.</strong> When David marks someone as an enemy of the Masquerade, his body and his will refuse to fall. Broken bones, bullets, fire… it all holds together on sheer refusal. It isn&#39;t blind Brujah fury: it&#39;s the brutal calm of the executioner who won&#39;t let himself die until he&#39;s finished off the condemned.</p>\n<h3>Mechanical Version (V5-Friendly)</h3>\n<p><strong>Requirements</strong></p>\n<ul>\n<li>Fortitude 4</li>\n<li>Humanity 6+ (or at least 1 Conviction tied to “protecting the Masquerade / the balance”)</li>\n<li>Optional as an Amalgam: Presence 2 or Auspex 2 (Presence if you want it more “imposing,” Auspex if you see it as an almost mystical focus on his mission).</li>\n</ul>\n<p><strong>Cost</strong></p>\n<ul>\n<li>1 Rouse Check on activation.</li>\n<li>It can only be used once per scene, and once per night for its big effect.</li>\n</ul>\n<p><strong>Activation.</strong> You must declare a target a “Veil-breaker”:</p>\n<ul>\n<li>It must be someone who, in David&#39;s judgment (and the Storyteller&#39;s), is actively endangering the Masquerade:<ul>\n<li>a Kindred using Disciplines in front of mortals,</li>\n<li>a Sabbat committing massacres,</li>\n<li>a Cainite about to expose the existence of vampires, etc.</li>\n</ul>\n</li>\n<li>Quick action: David locks his gaze / pronounces the “sentence” (a whisper, a final, stony line, whatever you like) and activates the power.</li>\n</ul>\n<p>As long as this sentenced target remains in the scene (or David is pursuing them directly), the power is active.</p>\n<h3>Effects</h3>\n<p><strong>1. I won&#39;t fall yet.</strong> While the sentenced target remains in the scene or in direct pursuit:</p>\n<ul>\n<li>If David would be Incapacitated by damage (superficial or aggravated) on a damage roll:<ul>\n<li>Instead of falling, he stays at 1 superficial Health level.</li>\n<li>He automatically gains the Dazed / Staggered condition (the Storyteller can impose -2 on complex physical actions, he can&#39;t take multiple actions, etc.).</li>\n<li>This effect can only happen once per scene and per night.</li>\n</ul>\n</li>\n</ul>\n<p>In short: 👉 The first time someone “would drop him” while he&#39;s executing an enemy of the Masquerade… he doesn&#39;t fall. He stays on his feet at 1 Health.</p>\n<p><strong>2. Executioner&#39;s Flesh.</strong> While the sentenced target remains present:</p>\n<ul>\n<li>David gets +Fortitude (4) dice on rolls to:<ul>\n<li>Resist frenzy from damage or provocation by the target.</li>\n<li>Resist Dominate / Presence / Auspex from the target (or from their direct allies in the scene, at the Storyteller&#39;s discretion).</li>\n</ul>\n</li>\n<li>In addition, he ignores wound penalties (as if Deny the Pain were “boosted”) against that specific target.</li>\n<li>Outside that hunt, Deny the Pain works normally.</li>\n</ul>\n<p>Narrative effect: 👉 While he&#39;s hunting a real danger to the Masquerade, he doesn&#39;t break, doesn&#39;t run, doesn&#39;t bend mentally at that enemy&#39;s hands.</p>\n<p><strong>3. Moral limit.</strong> Because otherwise it gets out of hand:</p>\n<ul>\n<li>If the Storyteller considers that David activated it against someone who isn&#39;t really a threat to the Masquerade, or out of pure personal spite:<ul>\n<li>The power works the same, but at the end of the night David must make a Remorse roll with +1 die of difficulty.</li>\n<li>If he fails, he gains at least 1 additional Stain: he has twisted his Conviction, using “the Masquerade” as an excuse to kill.</li>\n</ul>\n</li>\n</ul>\n<p>This nails him to the concept of an enforcer with a code, not a thug justifying himself.</p>\n<p><em>As an NPC, there&#39;s no roll and no Stain. If he activated it out of spite, David breaks that night (see “When He Breaks”). If a PC saw it, they decide whether to tell him.</em></p>\n<h3>Is It Broken or Reasonable?</h3>\n<p>If you compare it with the official Fortitude 4 powers:</p>\n<ul>\n<li>Draught of Endurance: grants Fortitude and powers to another Kindred for one night.</li>\n<li>Gorgon Scales: grants brutal defenses, but very situational and tied to Resonance.</li>\n</ul>\n<p>Last Bastion of the Masquerade:</p>\n<ul>\n<li>It&#39;s very strong, but:<ul>\n<li>It only works in scenes where there&#39;s a real threat to the Masquerade.</li>\n<li>The “I don&#39;t fall” is once per night, and it leaves you wrecked.</li>\n<li>It doesn&#39;t increase damage or grant super attacks; it only keeps David standing to finish the job.</li>\n<li>It has a moral cost if abused.</li>\n</ul>\n</li>\n</ul>\n<p>At the table, it&#39;s a power that:</p>\n<ul>\n<li>Reinforces his role as the “Black Dog of the Masquerade.”</li>\n<li>Delivers a very cinematic moment: the blow that should put him on the ground… and he gets up at 1 Health with his jaw broken and his eyes locked on.</li>\n<li>Doesn&#39;t unbalance things as much as a constant brute-force damage-reduction buff against everything and everyone.</li>\n</ul>\n<h3>Simpler / Quicker Version</h3>\n<p>If you&#39;d rather have something even easier to use, the same concept can be boiled down to:</p>\n<p><strong>Lite Version:</strong></p>\n<ul>\n<li><strong>Cost:</strong> 1 Rouse Check.</li>\n<li><strong>Effect:</strong> Once per night, when you take damage that would leave you Incapacitated while fighting someone who is endangering the Masquerade, you stay at 1 Health instead of falling.</li>\n<li><strong>Extra:</strong> +2 dice to resist frenzy and mental Disciplines from that enemy until the end of the scene.</li>\n</ul>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 4,
+        "cost": 1,
+        "dicepool": {},
+        "discipline": "fortitude",
+        "selected": false
+      },
+      "_id": "F8EfuyT9OJNKAnU2",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.F8EfuyT9OJNKAnU2"
+    },
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Heightened Senses",
+          "homebrew": false
+        }
+      },
+      "name": "Heightened Senses",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Hears breathing, footsteps, pulses of vitae.</p><p><em>Auspex 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "R4ux4fryCovCQYHs",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.R4ux4fryCovCQYHs"
+    },
+    {
+      "effects": [],
+      "sort": 200,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Premonition",
+          "homebrew": false
+        }
+      },
+      "name": "Premonition",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p>Brief visions of immediate danger; ideal for anticipating attacks or ambushes.</p><p><em>Auspex 2. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PJ-01"
+        },
+        "level": 2,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "auspex",
+        "selected": false
+      },
+      "_id": "yt8ZOUgnvlE6dZnz",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.yt8ZOUgnvlE6dZnz"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Ally 4 (the Sheriff of Seattle): trust and direct collaboration"
+        }
+      },
+      "name": "Ally",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Ally 4 (the Sheriff of Seattle): trust and direct collaboration</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 4,
+        "featuretype": "background"
+      },
+      "_id": "mUsfZG2pnyvSXHA0",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.mUsfZG2pnyvSXHA0"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Haven 3 (the Harbor Island hangar, LUG-01; with Maritime Access and Armory). The earlier sheet gives Secure Haven 4: armored, tunnel access"
+        }
+      },
+      "name": "Haven",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Haven 3 (the Harbor Island hangar, LUG-01; with Maritime Access and Armory). The earlier sheet gives Secure Haven 4: armored, tunnel access</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "ubtF48Vn36BjRGEp",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.ubtF48Vn36BjRGEp"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 3 (Police / ex-military ghouls): information network"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 3 (Police / ex-military ghouls): information network</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "DELiDySVtnZ0Adqq",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.DELiDySVtnZ0Adqq"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 3 (military contraband): weapons, vehicles, tactical tech"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 3 (military contraband): weapons, vehicles, tactical tech</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "NcHt1s2wXwTO18fm",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.NcHt1s2wXwTO18fm"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Hidden Fame 3 (“The Black Dog of the Masquerade”)"
+        }
+      },
+      "name": "Hidden Fame",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Hidden Fame 3 (“The Black Dog of the Masquerade”)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "Fh5ozRakYVU63bPp",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.Fh5ozRakYVU63bPp"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Iron Will 3: reroll one Willpower test per scene"
+        }
+      },
+      "name": "Iron Will",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Iron Will 3: reroll one Willpower test per scene</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "merit"
+      },
+      "_id": "sNh34NKSWeSOslTL",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.sNh34NKSWeSOslTL"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Pent-Up Rage 2: +2 Difficulty to resist Brujah Compulsions in combat"
+        }
+      },
+      "name": "Pent-Up Rage",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Pent-Up Rage 2: +2 Difficulty to resist Brujah Compulsions in combat</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "flaw"
+      },
+      "_id": "dP8zYK8UhoILMsaf",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.dP8zYK8UhoILMsaf"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "War Scars 2: inhuman appearance under direct light"
+        }
+      },
+      "name": "War Scars",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>War Scars 2: inhuman appearance under direct light</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "flaw"
+      },
+      "_id": "EdZ8OKvjsNsbggI9",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.EdZ8OKvjsNsbggI9"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Moral Hardliner 1: refuses to cooperate with those who use the Beast as an excuse"
+        }
+      },
+      "name": "Moral Hardliner",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Moral Hardliner 1: refuses to cooperate with those who use the Beast as an excuse</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "flaw"
+      },
+      "_id": "DZjcEL5wL25K6kco",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.DZjcEL5wL25K6kco"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "War Dreams (Embrace trauma) 2: −1 to the first Resolve or Composure test after waking if his self-control failed"
+        }
+      },
+      "name": "War Dreams (Embrace trauma)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>War Dreams (Embrace trauma) 2: −1 to the first Resolve or Composure test after waking if his self-control failed</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "flaw"
+      },
+      "_id": "dhPmK9f1KdoA2ZV4",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.dhPmK9f1KdoA2ZV4"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Dependent Relationship (Tom “Bear” Whitman) 1: if the ghoul is captured or hurt, he loses his composure or risks frenzy"
+        }
+      },
+      "name": "Dependent Relationship (Tom “Bear” Whitman)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Dependent Relationship (Tom “Bear” Whitman) 1: if the ghoul is captured or hurt, he loses his composure or risks frenzy</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "flaw"
+      },
+      "_id": "4vqmOAsxCnjyP2eW",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.4vqmOAsxCnjyP2eW"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Distrust of Magic / Tremere: refuses to work with sorcery or Blood rituals"
+        }
+      },
+      "name": "Distrust of Magic / Tremere",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Distrust of Magic / Tremere: refuses to work with sorcery or Blood rituals</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "S86ZKL0jUGhscbnd",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.S86ZKL0jUGhscbnd"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Lost Anchor (dead Touchstone): his daughter died and he feels guilty"
+        }
+      },
+      "name": "Lost Anchor",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Lost Anchor (dead Touchstone): his daughter died and he feels guilty</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "ymfIuXpOwBfU8or7",
+      "_key": "!actors.items!g4XbpMuCHwxVhzeC.ymfIuXpOwBfU8or7"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-01",
+      "journal": "JournalEntry.3zcQLj7aEAxHT0Yr",
+      "doc": "07",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

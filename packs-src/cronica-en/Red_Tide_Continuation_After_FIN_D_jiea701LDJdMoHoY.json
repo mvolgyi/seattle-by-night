@@ -1,0 +1,339 @@
+{
+  "_id": "jiea701LDJdMoHoY",
+  "_key": "!journal!jiea701LDJdMoHoY",
+  "name": "Red Tide · Continuation After FIN-D",
+  "folder": "U14g3yo4N4JwXcQT",
+  "sort": 140,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "FIRSTLIGHT-MAREA-ROJA",
+      "archivo": "content/cronica/firstlight/03-marea-roja.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "1aYgDkwArttFxe15",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.1aYgDkwArttFxe15",
+      "name": "Red Tide · Continuation After FIN-D",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A chronicle sketch for after @UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Red Tide}. It isn&#39;t a complete adventure: it&#39;s the premise, how to use the Puget Cell (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{The Puget Cell}) on either side, six hooks, and the optional crossover with <em>Del Velo a la Vigilia</em>. Everything is <strong>Proposed</strong> except what&#39;s quoted from FIN-D.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iir94cl3UPXot6wR",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.iir94cl3UPXot6wR",
+      "name": "Premise",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The File ended up in the hands of @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}. Twelve years of evidence, hunting maps, photos, and names. The Puget Cell requests reinforcements from national headquarters, and within two weeks there are three cells in Seattle. The Thermometer is at 10: Purge. In the first week at least one Camarilla haven falls. PCs who appear in the File lose Mask and Haven until they relocate. The Prince, if still Prince, closes Elysium and the court scatters. @UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Halloway}, if he survived, disappears. And @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} gets a visit from Okafor with a job offer.</p>\n<p>That&#39;s what FIN-D says. “Red Tide” begins the next morning, when the rain washes Northline&#39;s windows and Okafor, for the first time in two years, has more than she can use.</p>\n<p><strong>The chronicle&#39;s question:</strong> when the hunters win, what&#39;s left of them? And of the quarry, what&#39;s left when it has nowhere left to hide?</p>\n<p><strong>The tone shifts.</strong> The Ward File was intrigue with a clock. Red Tide is survival, whichever side you play. The rain stays the same.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "vaOxZENqGqtpvOvV",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.vaOxZENqGqtpvOvV",
+      "name": "The Cell: Protagonist or Antagonist",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>There are three ways to run Red Tide. Pick one before you start and tell the table.</p>\n<h3>A · The Coterie Is the Quarry (V5)</h3>\n<p>The chronicle continues with the vampires. The Puget Cell is the antagonist with a face: the players know it, because they played it in the interludes. The other two cells have no face. They&#39;re worse.</p>\n<ul>\n<li><strong>The Thermometer</strong> stops rising and falling: it sits at 10. It&#39;s replaced by the <strong>Cell&#39;s Danger</strong> (@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{The Puget Cell}), read in reverse: now it measures how close the coterie is to striking back. At Danger 5, the Puget Cell has a problem of its own (see @UUID[JournalEntry.jiea701LDJdMoHoY.JournalEntryPage.q1x9tjEwYnEBxpZ0]{MR-02 · Three Cells}).</li>\n<li>The Cell&#39;s <strong>Desperation</strong> starts at 0. They have everything. It rises every time the coterie tears something away from them.</li>\n<li>Okafor doesn&#39;t want a massacre. The new cells don&#39;t share that concern.</li>\n</ul>\n<h3>B · The Hunters Are the Protagonists (H5)</h3>\n<p>The table continues with the pregenerated characters (@UUID[JournalEntry.LfywH6qtS3GxDxJx]{The Puget Cell · Pregenerated Characters}) as <em>Hunter: The Reckoning</em> characters. The coterie becomes NPCs: the quarry the players know better than anyone, because they played it for eight nights.</p>\n<ul>\n<li>It works best if the table played all three interludes: the hunters already have history.</li>\n<li>The Cell&#39;s Desperation and Danger are H5&#39;s, unchanged. The Cell starts with Desperation 0 and Danger 2: the whole city knows something is going on.</li>\n<li>Mind the Veils: hunting your own characters is heavy material. Talk it through in session zero (@UUID[JournalEntry.BPqr3MwJXyy5lXZz]{Safety Tools}).</li>\n</ul>\n<h3>C · Both Tables in One</h3>\n<p>Alternating sessions: one with the coterie, one with the Cell. What one side does lands on the other the following session. It&#39;s the most demanding option and the best one if the table can sustain it. Use the Cell&#39;s Desperation and Danger as the shared clock.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "dl3xlLkZRTqph1SG",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.dl3xlLkZRTqph1SG",
+      "name": "MR-01 · The Offer",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Loyalty</p>\n<p><strong>Cast:</strong> Helen Ward (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}), Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}), Sasha Hale (@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}).</p>\n<p><strong>What happened:</strong> this is FIN-D&#39;s first hook. Okafor visits Helen and offers her a job with FIRSTLIGHT. It isn&#39;t a threat: she needs her. Twelve years of files don&#39;t read themselves, and Helen knows which folder goes with which night. Hale has already flagged the ones she doesn&#39;t understand.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Helen accepts.</strong> She works at Northline, at the desk next to Hale&#39;s. From there she can protect some names, not all of them. In mode A, she&#39;s the coterie&#39;s source inside the Cell, for as long as it lasts. In mode B, she&#39;s the analyst who lies to the Cell for someone.</li>\n<li><strong>Helen refuses.</strong> Okafor lets her go and parks a van outside her door. The white one. Helen recognizes it.</li>\n<li><strong>Helen disappears.</strong> Someone got there before Okafor: the coterie, Montgomery, or whatever is left of Halloway. FIRSTLIGHT assumes it was “them.” Desperation +1 for the Cell.</li>\n</ul>\n<p><strong>Focus:</strong> Social.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "MR-01"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "q1x9tjEwYnEBxpZ0",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.q1x9tjEwYnEBxpZ0",
+      "name": "MR-02 · Three Cells",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Hierarchy</p>\n<p><strong>Cast:</strong> Dana Okafor, the Puget Cell, two new FIRSTLIGHT cells, and their supervisor from national headquarters (<em>Proposed:</em> Supervisory Agent Marion Kessler, fifty-eight, who has never seen a Kindred and is in a hurry).</p>\n<p><strong>What happened:</strong> the reinforcements Okafor requested arrive. With them, someone from higher up. The new cells want results in weeks and don&#39;t know the city. Kessler strips Okafor of operational command and leaves her the analysis. The Puget Cell ends up caught between the two things Okafor fears most: the quarry and the rush.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Okafor falls in line.</strong> The new cells hit havens on the list with generators and no questions. People who had nothing to do with it go down: thin-bloods, ghouls, mortals. The Purge turns into noise, and the noise wakes up all of Seattle.</li>\n<li><strong>Okafor rebels.</strong> She keeps part of the File and works it on her own, with Hale and the operators who stay loyal to her. In mode B, the players have to choose: Okafor or the agency.</li>\n<li><strong>Someone leaks.</strong> One of the new cells loses a laptop. In mode A, it&#39;s the best gift the coterie will get all chronicle.</li>\n</ul>\n<p><strong>Focus:</strong> Social and Mental.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "MR-02"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "QfTuhZLVuCpIDbxb",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.QfTuhZLVuCpIDbxb",
+      "name": "MR-03 · The First Haven",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Survival</p>\n<p><strong>Cast:</strong> the Puget Cell, the owner of whichever haven the Storyteller chooses (FIN-D: if the coterie doesn&#39;t move, theirs), Ethan Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}) and his dogs.</p>\n<p><strong>What happened:</strong> FIN-D says that in the first week at least one Camarilla haven falls. This hook is that night. If the table plays the hunters, it&#39;s their first real raid. If it plays the coterie, it&#39;s the first time they run without knowing where to.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The raid goes well.</strong> FIRSTLIGHT captures a Kindred. They take them to Northline&#39;s white room (see @UUID[JournalEntry.jiea701LDJdMoHoY.JournalEntryPage.tsBFltmHvveuqpKp]{MR-06 · The White Room}).</li>\n<li><strong>The raid goes badly.</strong> Operators die. The Puget Cell buries someone with a name (Navarro, Pak, or Sorensen, if nobody&#39;s playing them). Desperation +2.</li>\n<li><strong>The haven is empty.</strong> Someone tipped them off. From that night on, Okafor looks at her team differently.</li>\n</ul>\n<p><strong>Focus:</strong> Physical.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "MR-03"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "BiiMYbD3VrTFitJz",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.BiiMYbD3VrTFitJz",
+      "name": "MR-04 · What Hale Found",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Truth</p>\n<p><strong>Cast:</strong> Sasha Hale (@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}), Preston Gale (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}), Ezra Lund (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}) if he was played, the vault in Halloway Tower (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Halloway Tower}).</p>\n<p><strong>What happened:</strong> with the whole File in hand, Hale goes back to the question she asked herself in @UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.hcNJvEh25hCamG2B]{INT-02 · SEA-0411}: who was ARCHER? She cross-references the shipping records, Okafor&#39;s notebook, and, if FIRSTLIGHT had Lonnie, the word “Cascade.” The thread leads to the Eastside and to a security company with cameras all over the city. Halloway is gone. His ghoul isn&#39;t. And if the coterie cut off ANOMALY with Ezra&#39;s code (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}), Hale now recognizes that style somewhere else: it&#39;s the hook doc 14 left behind.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Hale reaches Gale.</strong> A ghoul without a master, running out of Vitae and scared. He can tell FIRSTLIGHT everything in exchange for protection. Or he can try to kill her.</li>\n<li><strong>Hale reaches Ezra.</strong> The trail of a programmer who doesn&#39;t exist in any record. In mode A, Ezra knows they&#39;re looking for him a week before they arrive.</li>\n<li><strong>Hale keeps it to herself.</strong> If ARCHER was someone inside the court, FIRSTLIGHT has been someone else&#39;s weapon for two years. Hale decides whether that goes in a report. Her Drive, Curiosity, says yes.</li>\n</ul>\n<p><strong>Focus:</strong> Mental.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "MR-04"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oD212QNOBzWLlWjl",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.oD212QNOBzWLlWjl",
+      "name": "MR-05 · The Old Buddy, Part Two",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Loyalty</p>\n<p><strong>Cast:</strong> Cole Ransom (@UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom}), Tom “Bear” Whitman (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom “Bear” Whitman}), David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}).</p>\n<p><strong>What happened:</strong> this follows @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.NONJmwNuBweLPdPQ]{GAN-04 · The Old Comrade}. After the raid, Ransom knows what they&#39;re hunting. And he knows Bear works for one. His oath says nobody gets left behind, and to Ransom, Bear has been left behind: trapped in something that makes him move like he&#39;s twenty-five again and that&#39;s going to make him pay for it.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>Ransom tries to get him out.</strong> Without telling Okafor. A rescue Bear didn&#39;t ask for. In mode B, it&#39;s the best session of the chronicle.</li>\n<li><strong>Ransom turns him in.</strong> To the Cell, to save him from himself. Bear in the white room.</li>\n<li><strong>Bear chooses.</strong> He tells Ransom the truth, all of it. What Ransom does with it decides whether he stays in FIRSTLIGHT. If he covered the camera during the raid (@UUID[JournalEntry.I3XsZ233TNTuehzS.JournalEntryPage.mZqnxdlJulTDtmtx]{INT-03 · Artificial Daylight}), he&#39;s already out, and this is what he has left.</li>\n</ul>\n<p><strong>Focus:</strong> Social and Physical.</p>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "MR-05"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "tsBFltmHvveuqpKp",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.tsBFltmHvveuqpKp",
+      "name": "MR-06 · The White Room",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Theme:</strong> Humanity</p>\n<p><strong>Cast:</strong> the Puget Cell, a captured Kindred (from the raid in @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}, from @UUID[JournalEntry.jiea701LDJdMoHoY.JournalEntryPage.QfTuhZLVuCpIDbxb]{MR-03 · The First Haven}, or three thin-bloods from the docks, as in @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.c5BCc8zELaNV3QV3]{GAN-03 · Marked Blood}), Abel Thornquist (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}).</p>\n<p><strong>What happened:</strong> Northline has an “interview room” with high-intensity UV lamps (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}). Until now nobody had really used it. Now there&#39;s someone inside. Okafor wants answers. The new cells want an example.</p>\n<p><strong>What could happen:</strong></p>\n<ul>\n<li><strong>The interrogation.</strong> Okafor is a good interrogator, and her Faith shields her from whatever the prisoner tries. The question is what she&#39;s willing to do with the lamp. If she crosses the line, her Drive (Atonement) turns against her.</li>\n<li><strong>The rescue.</strong> Thornquist wants his people back. If they&#39;re thin-bloods, he offers something in return to whoever gets them out, from either side. Rosa offers Everett.</li>\n<li><strong>The prisoner talks.</strong> What they say changes what the Cell believes it&#39;s hunting. In mode B, it&#39;s the moment in the chronicle when the hunters stop being sure who the monsters are.</li>\n</ul>\n<p><strong>Focus:</strong> Mental and Social.</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina",
+          "id": "MR-06"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "F534PawPwfUVvni9",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.F534PawPwfUVvni9",
+      "name": "Crossover with Del Velo a la Vigilia",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Optional.</em> The chronicle works without it. If the <em>Del Velo a la Vigilia</em> module (<code>del-velo-a-la-vigilia</code>) is active in the world, the hunters of Red Tide can take one of its <strong>Three Paths</strong>, that module&#39;s hunter powers. You don&#39;t need to bring in anything from its plot: just the rules for the Paths.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>DVV Path</th>\n<th>In Seattle</th>\n<th>Who</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Illuminated</strong> · <em>The Science of the Threshold</em> (Illuminated Artifacts)</td>\n<td>Northline is a full-fledged workshop. DVV&#39;s Advance calls for study material from a creature, and Northline has it: ANOMALY&#39;s cold subject logs, the body camera footage from the raid, whatever is in the white room. The Signature Tracker is ANOMALY built by hand; the Spectral Lens, a pair of modified thermal goggles; the Treated Ammunition, the next step after the incendiary rounds</td>\n<td>Hale, no contest. Pak, if he gets obsessed with what he saw in gray</td>\n</tr>\n<tr>\n<td><strong>Imbued</strong> · <em>The Mark of the Heralds</em></td>\n<td>Okafor&#39;s Faith and Navarro&#39;s medal are already something neither of them understands. With DVV, that can be the beginning of the Imbuing</td>\n<td>Navarro. Okafor, if the table wants</td>\n</tr>\n<tr>\n<td><strong>Modified</strong> · <em>The Tempered Flesh</em></td>\n<td>The new cells bring a lab. National headquarters has programs Okafor knows nothing about</td>\n<td>Sorensen, for the money. Ransom, to have the knees he had at twenty-five</td>\n</tr>\n</tbody></table>\n<p><strong>What changes with the crossover:</strong></p>\n<ul>\n<li>Hunters can take a Path when its narrative trigger is met in play, as DVV says. The pregens&#39; Edges stay as they are; the Path is added on top.</li>\n<li>The Desperation the Paths use (activating an Artifact, kindling the Spark, pushing the flesh) is the Puget Cell&#39;s. It&#39;s a group actor of type cell, the same kind DVV&#39;s panel looks for, so the panel finds it without any setup. If there&#39;s another cell in the world, the panel uses the first one it finds: leave only one.</li>\n<li><strong>Northline and the Illuminated Artifacts.</strong> If the Storyteller uses this, @UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory} becomes the Illuminated&#39;s workshop. Breaking in there stops being just the fastest way to raise the Thermometer: it&#39;s stealing a hunter&#39;s tools.</li>\n</ul>\n<p><strong>What changes without the crossover:</strong> nothing. The Artifacts, the Faith, and the white room are fiction, with no rules of their own. The hunters use their H5 Edges.</p>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "orAvP3x4BhPM0LJt",
+      "_key": "!journal.pages!jiea701LDJdMoHoY.orAvP3x4BhPM0LJt",
+      "name": "ID Registry (Playable FIRSTLIGHT)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>New IDs from this folder and from <code>content/pnjs/cazadores.json</code>. All of it is new content; none of it comes from the docs.</p>\n<ul>\n<li><strong>Journals:</strong> @UUID[JournalEntry.dnsWkdXVJ19riBLa]{Playable FIRSTLIGHT} · Playable FIRSTLIGHT · @UUID[JournalEntry.I3XsZ233TNTuehzS]{From the Other Side · FIRSTLIGHT Interludes} · The Other Side · @UUID[JournalEntry.LfywH6qtS3GxDxJx]{The Puget Cell · Pregenerated Characters} · Pregenerated Characters · @UUID[JournalEntry.jiea701LDJdMoHoY]{Red Tide · Continuation After FIN-D} · Red Tide</li>\n<li><strong>CEL-01</strong> · The Puget Cell (group actor, type cell, and its page)</li>\n<li><strong>INT-00</strong> · Advantages and Cracks for the Raid (V1–V6, F1–F6) · <strong>INT-01</strong> · The White Van · <strong>INT-02</strong> · SEA-0411 · <strong>INT-03</strong> · Artificial Daylight</li>\n<li><strong>CAZ-01</strong> · Teresa “Tess” Navarro · <strong>CAZ-02</strong> · Owen Pak · <strong>CAZ-03</strong> · Lena Sorensen (named operators from @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team})</li>\n<li><strong>PRE-01</strong> to <strong>PRE-06</strong> · Pregenerated characters: Okafor, Hale, Ransom, Navarro, Pak, Sorensen</li>\n<li><strong>MR-01</strong> to <strong>MR-06</strong> · Red Tide hooks</li>\n<li><strong>Hunter sheets that replace others</strong> (<code>reemplaza: true</code>): @UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor} (Okafor), @UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale} (Hale), and @UUID[Actor.5ywnpdrw93wmy235]{Cole Ransom} (Ransom). Their mortal and minor NPC sheets remain in <code>fuera.json</code> and <code>menores.json</code>, untouched.</li>\n</ul>\n<p><strong>Proposed items the Storyteller has to approve:</strong> the Creed, Drive, Edges, and Perks of the six hunters; Navarro, Pak, and Sorensen in their entirety; the conversion of Hale&#39;s and the tactical team&#39;s pools to Attributes and Skills; the starting Desperation 1 and Danger 0 and their rules; the white van and its schedule; the encrypted drop box and the delivery time (8:12 p.m.); the port warehouse as the briefing room; Supervisory Agent Marion Kessler.</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

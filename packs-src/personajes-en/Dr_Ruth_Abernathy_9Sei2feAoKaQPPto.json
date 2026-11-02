@@ -1,0 +1,260 @@
+{
+  "_id": "9Sei2feAoKaQPPto",
+  "_key": "!actors!9Sei2feAoKaQPPto",
+  "name": "Dr. Ruth Abernathy",
+  "type": "vampire",
+  "img": "modules/seattle-by-night/assets/retratos/PJ-06.webp",
+  "folder": "DBVWeCZJkvu0ZpyU",
+  "sort": 60,
+  "prototypeToken": {
+    "name": "Dr. Ruth Abernathy",
+    "actorLink": true,
+    "disposition": 1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.4,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#ffe6bf",
+      "coloration": 1,
+      "attenuation": 0.55,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PJ-06.webp"
+    }
+  },
+  "system": {
+    "group": "OcrZOcFhKk0qDrF5",
+    "headers": {
+      "concept": "night-shift pathologist at the county medical examiner's office and member of Voight's chantry.",
+      "chronicle": "The Ward File",
+      "ambition": "find the body that disappeared in 2004",
+      "desire": "one night without corpses",
+      "touchstones": "<h3>Convictions</h3><ul><li>The dead deserve the truth, even if the living don&#39;t</li></ul><h3>Touchstones</h3><ul><li>her ex-husband, a retired homicide detective, who still calls her when he can&#39;t sleep</li></ul>",
+      "sire": "Dr. Anneliese Voight",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Profile: Dr. Ruth Abernathy}</p><blockquote><p><em>The On-Call Medical Examiner</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>night-shift pathologist at the county medical examiner&#39;s office and member of Voight&#39;s chantry.</td></tr><tr><th>Clan</th><td>Tremere</td></tr><tr><th>Sire</th><td>@UUID[JournalEntry.yaAsxCkCLf8CANL5]{Dr. Anneliese Voight}</td></tr><tr><th>Ambition</th><td>find the body that disappeared in 2004</td></tr><tr><th>Desire</th><td>one night without corpses</td></tr><tr><th>Template</th><td>alternate</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{The Archived}</td></tr></tbody></table>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "disciplines": {},
+    "attributes": {},
+    "skills": {}
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "clan": "tremere"
+        }
+      },
+      "name": "Tremere",
+      "type": "clan",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "bane": ""
+      },
+      "_id": "R1UsSPgaZGYw1NLZ",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.R1UsSPgaZGYw1NLZ"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Influence (medical examiner's office) 2"
+        }
+      },
+      "name": "Influence (medical examiner's office)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Influence (medical examiner&#39;s office) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "s0Ho7F6siEIfyEV2",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.s0Ho7F6siEIfyEV2"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts (police) 2"
+        }
+      },
+      "name": "Contacts (police)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts (police) 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "iL3RCsxKYTs0Fzjw",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.iL3RCsxKYTs0Fzjw"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 2"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 2</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 2,
+        "featuretype": "background"
+      },
+      "_id": "YRjvvNasbA9TiS8Q",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.YRjvvNasbA9TiS8Q"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Mawla (Voight) 1"
+        }
+      },
+      "name": "Mawla (Voight)",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Mawla (Voight) 1</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 1,
+        "featuretype": "background"
+      },
+      "_id": "1OxkH7Ijsin8Hra7",
+      "_key": "!actors.items!9Sei2feAoKaQPPto.1OxkH7Ijsin8Hra7"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PJ-06",
+      "journal": "JournalEntry.gRfqeOIXEHOcLemr",
+      "doc": null,
+      "cantidad": 1,
+      "pj": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

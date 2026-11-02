@@ -12,7 +12,7 @@ genera en local** con modelos de licencia comercial.
 | Sistema | `wod5e` ≥ 5.3 (local: 5.3.28) |
 | Foundry | v14 (local: 14.365) |
 | Idioma | español |
-| Mesa | coterie de 4–5 (David PJ-01 + 3–4 PJs nuevos; Bear es PNJ). Variante de un jugador en una página aparte |
+| Mesa | coterie de 4–5 PJs nuevos (PJ-02…PJ-06). David (PJ-01, el ID no cambia) y Bear son PNJ aliados: decisión del autor del 2026-11-02, manda sobre el doc 02. Variante de un jugador en una página aparte |
 | Licencia de publicación | Dark Pack (no comercial). Se permiten donaciones/Patreon. Si no, uso personal |
 | Fuente | `Seattle by Night - El Expediente Ward/*.docx` (docs 00–16) |
 
@@ -24,7 +24,7 @@ genera en local** con modelos de licencia comercial.
 |---|---|---|
 | 1 | ¿Cómo se distribuye? | Dark Pack con donaciones; si no, uso personal. **No** Storytellers Vault: prohíbe arte IA |
 | 2 | ¿Cuánto Cazador? | FIRSTLIGHT jugable: Termómetro, Célula Puget como actores cazador, su arsenal como ítems, interludios jugables con cazadores, y FIN-D abre una continuación H5 |
-| 3 | ¿Cuántos jugadores? | Coterie de 4–5 (doc 02, versión 3). La variante de un jugador va como página aparte |
+| 3 | ¿Cuántos jugadores? | Coterie de 4–5 con los cinco conceptos nuevos; David es PNJ y ayuda a la coterie (autor, 2026-11-02, sobre el doc 02). La variante de un jugador va como página aparte |
 | 4 | ¿Dónde se genera el arte? | En local, ComfyUI (`~/ComfyUI`), RTX 5080 16 GB + 60 GB de RAM. Sólo modelos con licencia comercial (§4) |
 | 5 | ¿De dónde sale el contenido? | De los `.docx`. El `seattle_by_night_manifest.json` que cita el doc 16 **no existe** (ni local ni en Drive); lo reemplaza `content/` |
 
@@ -62,8 +62,8 @@ permitan.
 
 ### Inventario (para dimensionar)
 
-- **PJs:** David (PJ-01) + Celeste Arden (Ventrue), Ezra «Estática» Lund (Nosferatu), Nadia
-  Ferro (Toreador), Hal Brekke (Gangrel), Dra. Ruth Abernathy (Tremere, alternativa).
+- **PJs:** Celeste Arden (Ventrue), Ezra «Estática» Lund (Nosferatu), Nadia
+  Ferro (Toreador), Hal Brekke (Gangrel), Dra. Ruth Abernathy (Tremere). David (PJ-01) es PNJ aliado.
 - **PNJs con ficha:** PNJ-01 a 05, 11 a 22 (Montgomery, Whitmore, Halloway, Helen, Bear,
   Rosa, Krell, Thornquist, Marchetti, Voight, Fry, O'Connor, Okafor, Gale, Jun, Hale, Grange).
 - **PNJs menores:** MEN-01 a MEN-14 (Lonnie Barras, equipo táctico, Dutch Lindqvist, Dawson,

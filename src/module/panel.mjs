@@ -320,13 +320,13 @@ export class Panel extends HandlebarsApplicationMixin(ApplicationV2) {
   /* -------------------------------------------- */
 
   /**
-   * Actores que pueden tirar: los PJ del libro (PJ-01…), los de jugadores y
-   * los que tienen token en la escena; si no hay ninguno, todos los que el
-   * Narrador controla. Primero los PJ.
+   * Actores que pueden tirar: los PJ del libro (flag `pj`; David, PJ-01, es
+   * un PNJ), los de jugadores y los que tienen token en la escena; si no hay
+   * ninguno, todos los que el Narrador controla. Primero los PJ.
    */
   static actoresParaTirar() {
     const tiran = game.actors.filter(a => TIPOS_QUE_TIRAN.has(a.type) && a.isOwner);
-    const esPJ = a => String(a.getFlag(SBN.ID, SBN.FLAGS.ID_LIBRO) ?? "").startsWith("PJ-");
+    const esPJ = a => a.getFlag(SBN.ID, SBN.FLAGS.PJ) === true;
     const enEscena = new Set(canvas?.scene?.tokens.map(tk => tk.actorId) ?? []);
     const cerca = tiran.filter(a => esPJ(a) || a.hasPlayerOwner || enEscena.has(a.id));
     const lista = cerca.length ? cerca : tiran;

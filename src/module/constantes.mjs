@@ -21,6 +21,8 @@ export class SBN {
     ORIGEN: "origen",
     /** id del libro (PNJ-12, LUG-05, A1-E01…) dentro de los documentos generados. */
     ID_LIBRO: "id",
+    /** En los actores: `true` si la ficha es de PJ (content/pjs.json), las que lleva un jugador. */
+    PJ: "pj",
     /** En la escena que se activa al importar la crónica por primera vez. */
     LANDING: "landing",
     /**
@@ -53,13 +55,21 @@ export class SBN {
     /** Cliente: si el indicador está plegado. */
     INDICADOR_PLEGADO: "indicador-plegado",
     /** Cliente del GM: aclarar la oscuridad de la escena cuando no mira por un token (vision.mjs). */
-    VISTA_NARRADOR: "vista-narrador"
+    VISTA_NARRADOR: "vista-narrador",
+    /** Idioma de la crónica importada en el mundo: "es", "en" o "" (todavía no se eligió). idioma.mjs. */
+    IDIOMA: "sbn-idioma-cronica"
   };
 
   /** Hook que se dispara en todos los clientes cuando cambia el estado de la crónica. */
   static HOOK_ESTADO = "sbnEstado";
 
-  /** Compendios del módulo, por nombre corto (los de module.json). */
+  /** Hook que se dispara en todos los clientes cuando cambia el idioma de la crónica (con el idioma nuevo). */
+  static HOOK_IDIOMA = "sbnIdioma";
+
+  /**
+   * Compendios del módulo, por nombre corto (los de module.json). Cada uno
+   * tiene su gemelo en inglés con sufijo «-en» (idioma.mjs#packDe).
+   */
   static PACKS = {
     AVENTURA: "aventura",
     CRONICA: "cronica",
@@ -73,7 +83,7 @@ export class SBN {
   /**
    * Datos de la crónica para el tiempo de juego (umbrales, noches, pistas,
    * tiradas): los genera tools/contenido/datos.mjs desde content/ y los lee
-   * datos.mjs. Acá no se repiten.
+   * datos.mjs. Acá no se repiten. En inglés, los mismos en data/en/.
    */
   static DATOS = "data/cronica.json";
 

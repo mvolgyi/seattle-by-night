@@ -104,10 +104,12 @@ for (const archivo of archivos) {
       if (doc._id && id !== doc._id) {
         problemas.push(`${rel}: _key termina en "${id}" pero _id es "${doc._id}".`);
       }
-      if (clavesVistas.has(doc._key)) {
-        problemas.push(`${rel}: _key duplicada, ya usada por ${clavesVistas.get(doc._key)}.`);
+      // Por pack: los packs -en repiten a propósito los _id del castellano (TRADUCCION.md).
+      const clave = `${path.relative(path.join(RAIZ, "packs-src"), archivo).split(path.sep)[0]}|${doc._key}`;
+      if (clavesVistas.has(clave)) {
+        problemas.push(`${rel}: _key duplicada, ya usada por ${clavesVistas.get(clave)}.`);
       }
-      clavesVistas.set(doc._key, rel);
+      clavesVistas.set(clave, rel);
     }
   }
 

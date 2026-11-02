@@ -1,0 +1,139 @@
+{
+  "_id": "k2TLqQkkzzjSLzkp",
+  "_key": "!actors!k2TLqQkkzzjSLzkp",
+  "name": "Salt's Anarchs",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/tokens/MEN-05.webp",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 100,
+  "prototypeToken": {
+    "name": "Salt's Anarchs",
+    "actorLink": false,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-05.webp"
+    }
+  },
+  "system": {
+    "group": "1bO7d7GAsCR0I3Q3",
+    "headers": {
+      "concept": "About fifteen Kindred: longshoremen, mechanics, a nurse, two thin-bloods",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>About fifteen Kindred: longshoremen, mechanics, a nurse, two thin-bloods</td></tr><tr><th>Number</th><td>15</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{Salt&#39;s}</td></tr></tbody></table><p>Longshoremen, mechanics, a nurse, two thin-bloods. They vote every Friday. Use these pools for anyone unnamed.</p>\n<p><strong>Disciplines:</strong> Potence 1 or Celerity 1 (one or the other, Storyteller&#39;s choice).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>MEN-05 is the Salt&#39;s Anarchs group (doc 14, newest record). Doc 08 used it for Bas Okonjo and Tavi Mercer as named members; doc 14 wins, and it gives them their own pools within MEN-05.</p>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 1,
+      "generation": ""
+    },
+    "disciplines": {},
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 3
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "craft": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "streetwise": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-05",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 15,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_fuente": {
+    "COT-00": "1b5a82e8eba996ed",
+    "COT-01": "dbb6bbd876476d4e",
+    "COT-02": "08840fd1ad6b92fd",
+    "COT-03": "5d00bb45adb17319",
+    "COT-04": "26c10432b1e484ce"
+  },
+  "coteries": {
+    "COT-00": {
+      "nombre": "The Archived",
+      "lema": "The ones who were on the drive.",
+      "tipo": "Commando (Commando)",
+      "tipoNota": "Commando: a unit assembled for one mission that became permanent (doc 02). If it survives AVE-01, it can become a Cerberus or Regency coterie, depending on the Ending (doc 08).",
+      "dominio": "The Harbor Island docks, around David's hangar",
+      "descripcion": "A coterie born of a shared threat: every one of them is in the Ward File, and either they get it back together or they go down together.",
+      "trasfondos": [
+        "Haven 3 (the hangar, on loan from David): with Water Access and Arsenal",
+        "Contacts 1 (port): through Bear",
+        "Ally: David Smith (PJ-01), built in. He helps because he goes down with them",
+        "Ally: Tom “Bear” Whitman (PNJ-05), shared with David"
+      ],
+      "trasfondosDoc02": [
+        "Haven (the hangar, on loan from David)",
+        "Contacts (port) 1"
+      ],
+      "alternativas": [
+        "B) it's a coterie that already existed, and Montgomery uses it as a strike force",
+        "C) they're strangers who happen to be in Helen's apartment the night of the theft"
+      ],
+      "dominioNotas": {
+        "caza": "Night-shift workers. Feeding is possible, but you have to be careful.",
+        "lien": "The coterie has barely any sway over the mortals at the port. Bear knows a few of them.",
+        "portillon": "Lots of access points, containers, and water. Easy to get in and out. For enemies, too."
+      }
+    },
+    "COT-01": {
+      "nombre": "Whitmore's Wolves",
+      "lema": "The Sheriff's pack.",
+      "tipo": "Sbirri",
+      "dominio": "The farm and the Snohomish Valley",
+      "descripcion": "The ones who clean up the city while the Prince raises a glass in the Gallery.",
+      "trasfondos": [
+        "Haven 3",
+        "Herd 2",
+        "Contacts 3 (state police, port, private security)",
+        "Status 4 (from Montgomery)",
+        "Ally 3 (David)"
+      ],
+      "dominioNotas": {
+        "caza": "truckers, hunters, rest areas",
+        "lien": "the town sees them as an odd family of dog breeders",
+        "portillon": "open fields, dogs, a single gravel road, and the tunnel to the river"
+      }
+    },
+    "COT-02": {
+      "nombre": "The Glass Council",
+      "lema": "The ones who look down from above.",
+      "tipo": "Regency",
+      "dominio": "Halloway Tower and the Eastside",
+      "descripcion": "A Primogen, his childe, two ghouls, and an investment fund. None of them uses the word “conspiracy.”",
+      "trasfondos": [
+        "Resources 5",
+        "Influence 4 (finance, media)",
+        "Contacts 3",
+        "Ally 3 (Gale Sentinel)",
+        "Haven 4",
+        "Herd 1"
+      ],
+      "dominioNotas": {
+        "caza": "employees and contracted partners only",
+        "lien": "half of Bellevue works for someone who works for Halloway",
+        "portillon": "private elevators, ghoul security, ANOMALY cameras"
+      }
+    },
+    "COT-03": {
+      "nombre": "Salt's",
+      "lema": "The ones who don't kneel.",
+      "tipo": "Cerberus",
+      "dominio": "The old shipyard and the Port of Everett",
+      "descripcion": "The Anarchs of the Everett shipyard: they vote, they weld, and they owe nothing to any Prince.",
+      "trasfondos": [
+        "Haven 2",
+        "Herd 2",
+        "Allies 3 (the union)",
+        "Influence 2 (Port of Everett)",
+        "Contacts 1 (naval base)"
+      ],
+      "dominioNotas": {
+        "caza": "welders and longshoremen, some of them willing",
+        "lien": "the union is theirs",
+        "portillon": "a single highway, but the water has no doors"
+      }
+    },
+    "COT-04": {
+      "nombre": "The Moles",
+      "lema": "Everything's for sale down below.",
+      "tipo": "Brokers",
+      "dominio": "The Sealed Underground",
+      "descripcion": "The brokers of the Seattle Underground: the stone of 1889 and the cables of 2026.",
+      "trasfondos": [
+        "Haven 4",
+        "Contacts 4",
+        "Influence 3 (the underground)",
+        "Allies 2 (the thin-bloods)",
+        "Resources 2"
+      ],
+      "dominioNotas": {
+        "caza": "homeless people, in exchange for shelter",
+        "lien": "doormen, cleaners, and technicians all over the city",
+        "portillon": "nobody enters the Sealed Underground without Thornquist knowing"
+      }
+    }
+  }
+}

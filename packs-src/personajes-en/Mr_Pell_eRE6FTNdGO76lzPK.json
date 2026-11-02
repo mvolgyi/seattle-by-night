@@ -1,0 +1,135 @@
+{
+  "_id": "eRE6FTNdGO76lzPK",
+  "_key": "!actors!eRE6FTNdGO76lzPK",
+  "name": "Mr. Pell",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-09.webp",
+  "folder": "YWm2LWWrpHgOUZLn",
+  "sort": 80,
+  "prototypeToken": {
+    "name": "Mr. Pell",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-09.webp"
+    }
+  },
+  "system": {
+    "group": "YrFSWeqhbymzT7q4",
+    "headers": {
+      "concept": "Halloway's ghoul archivist since 1958",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Halloway&#39;s ghoul archivist since 1958</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{The Glass Council}</td></tr></tbody></table><p>Ninety-six years old, looks sixty. Polite, sad, meticulous. He typed up Vance&#39;s journals and knows where every one of his master&#39;s papers is.</p>\n<p><strong>Blood Bond</strong> to Halloway, level 3 (+3 dice to resist others&#39; Disciplines).</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "<p>Editor&#39;s Note: doc 14 said “since 1950,” before Halloway&#39;s Embrace (1958); 1958 was chosen. The 96 years and the appearance of 60 stay (he was made a ghoul at 28).</p>",
+    "health": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 5,
+      "value": 5,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {},
+    "spcType": "ghoul",
+    "standarddicepools": {
+      "physical": {
+        "value": 2
+      },
+      "social": {
+        "value": 4
+      },
+      "mental": {
+        "value": 6
+      }
+    },
+    "exceptionaldicepools": {
+      "academics": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "investigation": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "etiquette": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-09",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

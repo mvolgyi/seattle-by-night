@@ -1,0 +1,137 @@
+{
+  "_id": "LqMKPCSaUzAWcGYi",
+  "_key": "!journal!LqMKPCSaUzAWcGYi",
+  "name": "Ray Dorsey",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 230,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "REF-03",
+      "archivo": "content/personajes/REF-03.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "dBUHAAVW5NbD96sC",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.dBUHAAVW5NbD96sC",
+      "name": "Ray Dorsey",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/REF-03.webp\" alt=\"Ray Dorsey\">\n<p><strong>Reference</strong> (Kindred destroyed in 1996, no actor) · Seattle Anarch · killed @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith} and was destroyed by @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David}.</p>\n<p><em>This page gathers what docs 00–16 say about Dorsey. The source doc for each fact is in parentheses. The docs give him no clan, sire, or stats.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hdE6i0URDxKceYKh",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.hdE6i0URDxKceYKh",
+      "name": "What Is Known",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>ID registry: “REF-03 · Ray Dorsey, the Anarch who killed Emily in 1996 (destroyed by David)” (doc 07).</li>\n<li>He used teenagers from Rainier Valley as his herd (doc 05, story: “Emily&#39;s Night (1996)”).</li>\n<li>In the fall of 1996 he asked @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa Iturbe} in Everett to put him up for a week: “he said the Sheriff was after him” (doc 07, Rosa&#39;s profile). Rosa gave him a bed at the shipyard (doc 11, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}).</li>\n<li>A week later he killed Emily Smith, a social worker, in a half-abandoned apartment in Rainier Valley (doc 05; doc 07; doc 11). The obituary dates the death to October 21, 1996 (doc 15, @UUID[JournalEntry.woF61Oy8f19xxrkA]{Emily Smith's Obituary}; a provisional detail according to doc 16).</li>\n<li>David arrived minutes too late and destroyed him with a single shot (doc 05; doc 07: “the Hound destroyed him with a single shot”).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LDY2x5w2759T7vK5",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.LDY2x5w2759T7vK5",
+      "name": "Emily's Night",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>The backup who arrived afterward and cleaned up the scene while David was still on the ground was @UUID[JournalEntry.B4nqUk8dojvCw97H]{Hal Brekke}, a Gangrel two years into his unlife (doc 05; doc 02: “he was the one who cleaned up the scene while David was still on his knees”).</li>\n<li>To the city, it was a score being settled between gangs. To Montgomery, it was the reason he started keeping an eye on his Hound (doc 05). The obituary says the police are investigating it “as a gang-related confrontation” and that “one of the juveniles was unharmed” (doc 15, AYU-04).</li>\n<li>That juvenile was @UUID[Actor.rOqsigq4dAfIYQMh]{Marcos Delgado}, fifteen years old, the only kid who survived. Before he passed out, he saw a man with a scar on his face shoot Dorsey and kneel beside the social worker (doc 09, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived}).</li>\n</ul>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "KlnwJTFo2mk4jeiR",
+      "_key": "!journal.pages!LqMKPCSaUzAWcGYi.KlnwJTFo2mk4jeiR",
+      "name": "What He Left Behind",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Rosa.</strong> She didn&#39;t know what Dorsey was going to do. She never forgave herself. Since then she has one rule in Everett: nobody who uses minors as a herd (doc 07). Her agenda in Salt&#39;s is “to settle the debt of 1996” (doc 08, @UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.SSDCSJFv8Esl6Ki5]{COT-03 · Salt's}).</li>\n<li><strong>Rumor 11:</strong> “Rosa Iturbe sheltered the Anarch who killed the Hound&#39;s daughter.” <em>(True. It was in 1996, a week before Emily&#39;s death. Rosa didn&#39;t know what he was going to do. She never forgave herself)</em> (doc 05).</li>\n<li><strong>The confession</strong> (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}, doc 11): “There&#39;s something I have to tell you. Thirty years ago. A guy named Ray Dorsey asked me to put him up for a week. Said the Sheriff was after him. I gave him a bed at the shipyard. A week later he killed a social worker in Rainier Valley. You know which one.” Doc 01 summed it up like this: “Rosa knew the Anarch who killed Emily.”</li>\n</ul>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

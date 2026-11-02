@@ -1,0 +1,85 @@
+{
+  "_id": "nQtxnzIyUlqjnv8f",
+  "_key": "!journal!nQtxnzIyUlqjnv8f",
+  "name": "The SAFE Card",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-05",
+      "archivo": "content/documentos/AYU-05.md",
+      "soporte": "tarjeta",
+      "entrega": [
+        "A0-E01"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "1v983F0rPqek87ud",
+      "_key": "!journal.pages!nQtxnzIyUlqjnv8f.1v983F0rPqek87ud",
+      "name": "The SAFE Card",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-tarjeta\"><div class=\"sbn-pantalla\"><p class=\"sbn-acotacion\">[ SCREEN ]</p>\n<p>CONTACTS</p>\n<hr class=\"sbn-pantalla-raya\">\n<p>▶ SAFE</p>\n<hr class=\"sbn-pantalla-raya\">\n<p>1 contact</p>\n\n<p class=\"sbn-pantalla-estado\">[Battery: ▮▮▮▯ · Last charged: Sunday]</p>\n</div><aside class=\"sbn-manuscrito sbn-manuscrito-cinta\"><p class=\"sbn-acotacion\">[Turning the phone over, on the lid, a strip of painter&#39;s tape:]</p>\n<p>NOT FOR THE POLICE.</p>\n<p>NOT FOR THE PODCAST.</p></aside></div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "y0DmykzMjoB9znlQ",
+      "_key": "!journal.pages!nQtxnzIyUlqjnv8f.y0DmykzMjoB9znlQ",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> Flip phone. <strong>Delivery:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE}.</p>\n<p><em>Storyteller: Helen&#39;s flip phone. If you use it at the table, a printed card showing the screen works well. @UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{SAFE: Saved Messages} contains the messages.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,2565 @@
+{
+  "_id": "YbfYS93oKtH7vbMN",
+  "_key": "!scenes!YbfYS93oKtH7vbMN",
+  "name": "Prologue · Helen Ward's Apartment",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 10,
+  "width": 2100,
+  "height": 2000,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.75,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "pXj0ZJVQR7zoch40",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/helen.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!YbfYS93oKtH7vbMN.pXj0ZJVQR7zoch40"
+    }
+  ],
+  "journal": "YD0Td8Y9aJyIpGSl",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "bxIwxJ6bYj1XfA8h",
+      "c": [
+        500,
+        200,
+        620,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.bxIwxJ6bYj1XfA8h"
+    },
+    {
+      "_id": "dhaO8PvPj1m3pikb",
+      "c": [
+        740,
+        200,
+        985,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.dhaO8PvPj1m3pikb"
+    },
+    {
+      "_id": "CdjkIi8S5yLiFVX6",
+      "c": [
+        1065,
+        200,
+        1150,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.CdjkIi8S5yLiFVX6"
+    },
+    {
+      "_id": "tXaa6EDzdg3fS154",
+      "c": [
+        1250,
+        200,
+        1360,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.tXaa6EDzdg3fS154"
+    },
+    {
+      "_id": "7ZzE9XUVV9wWhjm9",
+      "c": [
+        1430,
+        200,
+        1530,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.7ZzE9XUVV9wWhjm9"
+    },
+    {
+      "_id": "zVG2avDct5UIDgL5",
+      "c": [
+        1630,
+        200,
+        1900,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.zVG2avDct5UIDgL5"
+    },
+    {
+      "_id": "BOsVFx0Jp31vRB0K",
+      "c": [
+        1300,
+        1450,
+        1330,
+        1450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.BOsVFx0Jp31vRB0K"
+    },
+    {
+      "_id": "K7ut9JWQlZbHgwqg",
+      "c": [
+        1470,
+        1450,
+        1900,
+        1450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.K7ut9JWQlZbHgwqg"
+    },
+    {
+      "_id": "m3cFyogLLh0XQTnm",
+      "c": [
+        1100,
+        200,
+        1100,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.m3cFyogLLh0XQTnm"
+    },
+    {
+      "_id": "fLP21ePU5pyi6Ul7",
+      "c": [
+        1100,
+        590,
+        1100,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.fLP21ePU5pyi6Ul7"
+    },
+    {
+      "_id": "d7V9e2pdtjFW0kAU",
+      "c": [
+        1100,
+        1360,
+        1100,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.d7V9e2pdtjFW0kAU"
+    },
+    {
+      "_id": "PQKxqOzXvCAy0utH",
+      "c": [
+        1300,
+        200,
+        1300,
+        500
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.PQKxqOzXvCAy0utH"
+    },
+    {
+      "_id": "UuZ2cAfDKpu1Kpl5",
+      "c": [
+        1300,
+        590,
+        1300,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.UuZ2cAfDKpu1Kpl5"
+    },
+    {
+      "_id": "T6wCKRnKJIqWuWMF",
+      "c": [
+        1300,
+        1360,
+        1300,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.T6wCKRnKJIqWuWMF"
+    },
+    {
+      "_id": "fLlGhpj50TrQG5E3",
+      "c": [
+        500,
+        1900,
+        580,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.fLlGhpj50TrQG5E3"
+    },
+    {
+      "_id": "W7Q1rogVC2Fp0L0X",
+      "c": [
+        700,
+        1900,
+        840,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.W7Q1rogVC2Fp0L0X"
+    },
+    {
+      "_id": "wb5meYKxGdg2J02Y",
+      "c": [
+        960,
+        1900,
+        1400,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.wb5meYKxGdg2J02Y"
+    },
+    {
+      "_id": "b2KScMw7UHDN5DLr",
+      "c": [
+        1520,
+        1900,
+        1660,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.b2KScMw7UHDN5DLr"
+    },
+    {
+      "_id": "bfn64FGOzg1675gK",
+      "c": [
+        1780,
+        1900,
+        1900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.bfn64FGOzg1675gK"
+    },
+    {
+      "_id": "AEhQ4dAn52lehM5U",
+      "c": [
+        850,
+        1200,
+        960,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.AEhQ4dAn52lehM5U"
+    },
+    {
+      "_id": "u3zzA6wrLuLpqFih",
+      "c": [
+        1040,
+        1200,
+        1100,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.u3zzA6wrLuLpqFih"
+    },
+    {
+      "_id": "rKYWGwpliW1wFOGT",
+      "c": [
+        1300,
+        1200,
+        1390,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rKYWGwpliW1wFOGT"
+    },
+    {
+      "_id": "rFN5fW3ZXY0IWTC6",
+      "c": [
+        1470,
+        1200,
+        1550,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rFN5fW3ZXY0IWTC6"
+    },
+    {
+      "_id": "5jdngq6n5biPWEV3",
+      "c": [
+        500,
+        1400,
+        880,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.5jdngq6n5biPWEV3"
+    },
+    {
+      "_id": "TSJhDQLci0HcKSZe",
+      "c": [
+        1080,
+        1400,
+        1100,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.TSJhDQLci0HcKSZe"
+    },
+    {
+      "_id": "OdgH5yB8j3m9B33M",
+      "c": [
+        850,
+        1000,
+        850,
+        1060
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.OdgH5yB8j3m9B33M"
+    },
+    {
+      "_id": "tAhRsaG0p6mToJXQ",
+      "c": [
+        850,
+        1140,
+        850,
+        1270
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.tAhRsaG0p6mToJXQ"
+    },
+    {
+      "_id": "GfmAo37dmbg3dlKC",
+      "c": [
+        850,
+        1350,
+        850,
+        1400
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.GfmAo37dmbg3dlKC"
+    },
+    {
+      "_id": "3VKRQaoMWarCU7wu",
+      "c": [
+        500,
+        1000,
+        1100,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.3VKRQaoMWarCU7wu"
+    },
+    {
+      "_id": "vEsRFArCuBUy3URi",
+      "c": [
+        1300,
+        1000,
+        1900,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.vEsRFArCuBUy3URi"
+    },
+    {
+      "_id": "H7ifFfYFwUNFSjKS",
+      "c": [
+        930,
+        1000,
+        930,
+        1200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.H7ifFfYFwUNFSjKS"
+    },
+    {
+      "_id": "jxtiEcSWPp34J9HY",
+      "c": [
+        500,
+        200,
+        500,
+        320
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.jxtiEcSWPp34J9HY"
+    },
+    {
+      "_id": "y1gTE3tEfndRUDzk",
+      "c": [
+        500,
+        440,
+        500,
+        730
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.y1gTE3tEfndRUDzk"
+    },
+    {
+      "_id": "7IBsFhjMyLk9ag6X",
+      "c": [
+        500,
+        850,
+        500,
+        1120
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.7IBsFhjMyLk9ag6X"
+    },
+    {
+      "_id": "ufwHvRpLfTq3aSjU",
+      "c": [
+        500,
+        1240,
+        500,
+        1620
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.ufwHvRpLfTq3aSjU"
+    },
+    {
+      "_id": "qMXXcHvVfeEDJmpH",
+      "c": [
+        500,
+        1720,
+        500,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.qMXXcHvVfeEDJmpH"
+    },
+    {
+      "_id": "PzNj5wZORMog6bv4",
+      "c": [
+        1900,
+        200,
+        1900,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.PzNj5wZORMog6bv4"
+    },
+    {
+      "_id": "pbvTLyqXoYPpKILx",
+      "c": [
+        1900,
+        820,
+        1900,
+        1150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.pbvTLyqXoYPpKILx"
+    },
+    {
+      "_id": "Dxb8C2xqWYOi1EhQ",
+      "c": [
+        1900,
+        1270,
+        1900,
+        1900
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.Dxb8C2xqWYOi1EhQ"
+    },
+    {
+      "_id": "GuZRRceKEWlYJoqr",
+      "c": [
+        500,
+        650,
+        780,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.GuZRRceKEWlYJoqr"
+    },
+    {
+      "_id": "rSUlryftrCL5HPGk",
+      "c": [
+        860,
+        650,
+        950,
+        650
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rSUlryftrCL5HPGk"
+    },
+    {
+      "_id": "Pw7H8aYjiPt9Cs7H",
+      "c": [
+        950,
+        200,
+        950,
+        480
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.Pw7H8aYjiPt9Cs7H"
+    },
+    {
+      "_id": "hB6qZ4BdwkBZh5Np",
+      "c": [
+        950,
+        600,
+        950,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.hB6qZ4BdwkBZh5Np"
+    },
+    {
+      "_id": "1lCYMCOv1We0dRUv",
+      "c": [
+        1500,
+        550,
+        1900,
+        550
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.1lCYMCOv1We0dRUv"
+    },
+    {
+      "_id": "CsNzRy1D4nELMSz4",
+      "c": [
+        1500,
+        200,
+        1500,
+        460
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.CsNzRy1D4nELMSz4"
+    },
+    {
+      "_id": "WdYVvLNbHPDPS93g",
+      "c": [
+        1500,
+        540,
+        1500,
+        580
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.WdYVvLNbHPDPS93g"
+    },
+    {
+      "_id": "pu01HSrdprSVTDnA",
+      "c": [
+        1500,
+        680,
+        1500,
+        760
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.pu01HSrdprSVTDnA"
+    },
+    {
+      "_id": "DpztGplpA74Cpyp6",
+      "c": [
+        1500,
+        920,
+        1500,
+        1000
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.DpztGplpA74Cpyp6"
+    },
+    {
+      "_id": "PgkuN2i3pQFNRgZW",
+      "c": [
+        1550,
+        1000,
+        1550,
+        1250
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.PgkuN2i3pQFNRgZW"
+    },
+    {
+      "_id": "rSjldkIPlXj4w1mS",
+      "c": [
+        1550,
+        1330,
+        1550,
+        1450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.rSjldkIPlXj4w1mS"
+    },
+    {
+      "_id": "pYG6FRH0uxJL9FNn",
+      "c": [
+        950,
+        450,
+        970,
+        450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.pYG6FRH0uxJL9FNn"
+    },
+    {
+      "_id": "LUm1uY93Wwl1EOnp",
+      "c": [
+        1080,
+        450,
+        1100,
+        450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.LUm1uY93Wwl1EOnp"
+    },
+    {
+      "_id": "hFWLwO8abNfbHH55",
+      "c": [
+        1300,
+        450,
+        1360,
+        450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.hFWLwO8abNfbHH55"
+    },
+    {
+      "_id": "FWUIehGrkYh2c3vr",
+      "c": [
+        1440,
+        450,
+        1500,
+        450
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.FWUIehGrkYh2c3vr"
+    },
+    {
+      "_id": "tHOZ7FX8eRC8L0ai",
+      "c": [
+        950,
+        700,
+        980,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.tHOZ7FX8eRC8L0ai"
+    },
+    {
+      "_id": "Ti3KXu4rnhc9uwFL",
+      "c": [
+        1060,
+        700,
+        1100,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.Ti3KXu4rnhc9uwFL"
+    },
+    {
+      "_id": "iEGZ4ayLNnqmkJtP",
+      "c": [
+        1300,
+        700,
+        1500,
+        700
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.iEGZ4ayLNnqmkJtP"
+    },
+    {
+      "_id": "T1x9bDzjBzeaa9P8",
+      "c": [
+        1100,
+        1270,
+        1100,
+        1360
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.T1x9bDzjBzeaa9P8"
+    },
+    {
+      "_id": "RtXYi2ihcFPGK1Fq",
+      "c": [
+        1300,
+        1270,
+        1300,
+        1360
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.RtXYi2ihcFPGK1Fq"
+    },
+    {
+      "_id": "UZkeP1SPnJ3NjBQX",
+      "c": [
+        1100,
+        500,
+        1100,
+        590
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.UZkeP1SPnJ3NjBQX"
+    },
+    {
+      "_id": "dwsBorKNAGJMo5ou",
+      "c": [
+        1300,
+        500,
+        1300,
+        590
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.dwsBorKNAGJMo5ou"
+    },
+    {
+      "_id": "KirFc9ljLaxF0bXL",
+      "c": [
+        1200,
+        1450,
+        1200,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.KirFc9ljLaxF0bXL"
+    },
+    {
+      "_id": "AGrhLQqFXSSTUSmX",
+      "c": [
+        1150,
+        200,
+        1250,
+        200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.AGrhLQqFXSSTUSmX"
+    },
+    {
+      "_id": "kGEKGJEoLSDooCDw",
+      "c": [
+        960,
+        1200,
+        1040,
+        1200
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.kGEKGJEoLSDooCDw"
+    },
+    {
+      "_id": "0A9DWgKD475dg1r9",
+      "c": [
+        850,
+        1270,
+        850,
+        1350
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.0A9DWgKD475dg1r9"
+    },
+    {
+      "_id": "gJ2MwmqDs4kW3v03",
+      "c": [
+        850,
+        1060,
+        850,
+        1140
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodCreaky",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.gJ2MwmqDs4kW3v03"
+    },
+    {
+      "_id": "BNNjqafPidx8M64B",
+      "c": [
+        500,
+        1120,
+        500,
+        1240
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "slidingWood",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.BNNjqafPidx8M64B"
+    },
+    {
+      "_id": "MGBdNHKCrcbSivst",
+      "c": [
+        500,
+        1620,
+        500,
+        1720
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.MGBdNHKCrcbSivst"
+    },
+    {
+      "_id": "p9spQ18MXWEWioVB",
+      "c": [
+        580,
+        1900,
+        700,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.p9spQ18MXWEWioVB"
+    },
+    {
+      "_id": "9FyXvhP6RNCwsCUL",
+      "c": [
+        840,
+        1900,
+        960,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.9FyXvhP6RNCwsCUL"
+    },
+    {
+      "_id": "wsW9TB6KhFzdc2y1",
+      "c": [
+        380,
+        1000,
+        500,
+        1000
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.wsW9TB6KhFzdc2y1"
+    },
+    {
+      "_id": "3KsUkzZIVa2pfhNx",
+      "c": [
+        380,
+        1000,
+        380,
+        1450
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.3KsUkzZIVa2pfhNx"
+    },
+    {
+      "_id": "ffSC0dssyzGh2qE8",
+      "c": [
+        380,
+        1450,
+        500,
+        1450
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.ffSC0dssyzGh2qE8"
+    },
+    {
+      "_id": "8UaYIOYXeDtoCjw5",
+      "c": [
+        1390,
+        1200,
+        1470,
+        1200
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.8UaYIOYXeDtoCjw5"
+    },
+    {
+      "_id": "AHrQueUldhFC9FqE",
+      "c": [
+        1550,
+        1250,
+        1550,
+        1330
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.AHrQueUldhFC9FqE"
+    },
+    {
+      "_id": "jQe5ppr0gkyAAfCM",
+      "c": [
+        1400,
+        1900,
+        1520,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.jQe5ppr0gkyAAfCM"
+    },
+    {
+      "_id": "L3dJtQ0Mjo4GH2c7",
+      "c": [
+        1660,
+        1900,
+        1780,
+        1900
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.L3dJtQ0Mjo4GH2c7"
+    },
+    {
+      "_id": "oxBuKiE1ab6NvPeI",
+      "c": [
+        1900,
+        1150,
+        1900,
+        1270
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.oxBuKiE1ab6NvPeI"
+    },
+    {
+      "_id": "zRFfy24JmvUYcocN",
+      "c": [
+        980,
+        700,
+        1060,
+        700
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.zRFfy24JmvUYcocN"
+    },
+    {
+      "_id": "kOP0AxmqQF3Ddrng",
+      "c": [
+        780,
+        650,
+        860,
+        650
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.kOP0AxmqQF3Ddrng"
+    },
+    {
+      "_id": "cRJPnlJrZVJxwwFC",
+      "c": [
+        500,
+        320,
+        500,
+        440
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.cRJPnlJrZVJxwwFC"
+    },
+    {
+      "_id": "3FOm5CFCRnzUyHVG",
+      "c": [
+        620,
+        200,
+        740,
+        200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.3FOm5CFCRnzUyHVG"
+    },
+    {
+      "_id": "9YM0dtiBQu5p2Ofy",
+      "c": [
+        985,
+        200,
+        1065,
+        200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.9YM0dtiBQu5p2Ofy"
+    },
+    {
+      "_id": "LQ3KOFM3REZchWHe",
+      "c": [
+        500,
+        730,
+        500,
+        850
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.LQ3KOFM3REZchWHe"
+    },
+    {
+      "_id": "zKq9EFuNRPHd1zTD",
+      "c": [
+        1360,
+        450,
+        1440,
+        450
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.zKq9EFuNRPHd1zTD"
+    },
+    {
+      "_id": "LqYPVCOT3ydhphvk",
+      "c": [
+        1500,
+        460,
+        1500,
+        540
+      ],
+      "door": 1,
+      "ds": 0,
+      "doorSound": "woodBasic",
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.LqYPVCOT3ydhphvk"
+    },
+    {
+      "_id": "e1ak4Lrx8j6QZByV",
+      "c": [
+        1360,
+        200,
+        1430,
+        200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.e1ak4Lrx8j6QZByV"
+    },
+    {
+      "_id": "vts1FVpDlSHZF869",
+      "c": [
+        1530,
+        200,
+        1630,
+        200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.vts1FVpDlSHZF869"
+    },
+    {
+      "_id": "DDFOxBUXQJG0zOVl",
+      "c": [
+        1900,
+        700,
+        1900,
+        820
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YbfYS93oKtH7vbMN.DDFOxBUXQJG0zOVl"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "RMI6FllihQLZ44Ri",
+      "name": "Hallway ceiling light (north)",
+      "x": 1200,
+      "y": 650,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.RMI6FllihQLZ44Ri"
+    },
+    {
+      "_id": "y9MUmCoEuq9wpkGp",
+      "name": "Hallway ceiling light (across from 3A)",
+      "x": 1200,
+      "y": 1150,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.4,
+        "angle": 360,
+        "bright": 1.2,
+        "dim": 4.2,
+        "color": "#e8c46a",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.35,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.y9MUmCoEuq9wpkGp"
+    },
+    {
+      "_id": "EljmOKgTDNlyx6yJ",
+      "name": "3B camera: streaming live",
+      "x": 1278,
+      "y": 1372,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.3,
+        "color": "#3fe07a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 3,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.EljmOKgTDNlyx6yJ"
+    },
+    {
+      "_id": "JZh1TPps7MMQQuPC",
+      "name": "Alley sodium wall light",
+      "x": 465,
+      "y": 1540,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.JZh1TPps7MMQQuPC"
+    },
+    {
+      "_id": "8knjBgUsV6O0pRLm",
+      "name": "Market Street streetlight",
+      "x": 800,
+      "y": 1980,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.8knjBgUsV6O0pRLm"
+    },
+    {
+      "_id": "KzwsncKvnWDfXW1f",
+      "x": 1122,
+      "y": 1252,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.KzwsncKvnWDfXW1f"
+    },
+    {
+      "_id": "o5Xtws6rGv9mkB2u",
+      "x": 1278,
+      "y": 1372,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.o5Xtws6rGv9mkB2u"
+    },
+    {
+      "_id": "76x0OO4GTjO3UFyZ",
+      "x": 1122,
+      "y": 482,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.76x0OO4GTjO3UFyZ"
+    },
+    {
+      "_id": "G8uvt4b6ZbKFZkk3",
+      "x": 1278,
+      "y": 602,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.6,
+        "angle": 360,
+        "bright": 0,
+        "dim": 0.5,
+        "color": "#3d7bff",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.2,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.G8uvt4b6ZbKFZkk3"
+    },
+    {
+      "_id": "KKNQR8bYGlgB7oM3",
+      "x": 595,
+      "y": 1040,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.KKNQR8bYGlgB7oM3"
+    },
+    {
+      "_id": "2dPilJbLqwyOMTJY",
+      "x": 825,
+      "y": 1835,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 2.4,
+        "dim": 6,
+        "color": "#ffc77a",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YbfYS93oKtH7vbMN.2dPilJbLqwyOMTJY"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "FvEN8PCleBZEKaOU",
+      "name": "Arrival from the Market Street street door",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 1450,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "desde-portal",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.FvEN8PCleBZEKaOU"
+    },
+    {
+      "_id": "MJzszCfPoPHgqOoy",
+      "name": "Down to the Market Street street door",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1100,
+          "y": 1800,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "bajar-al-portal",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the street (Market Street) in SPEC §5: the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.MJzszCfPoPHgqOoy"
+    },
+    {
+      "_id": "R7lhMQ60ppBxuaQf",
+      "name": "Roof landing (door locked)",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1200,
+          "y": 1760,
+          "width": 100,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "rellano-azotea",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the roof"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.R7lhMQ60ppBxuaQf"
+    },
+    {
+      "_id": "zs5TC9H32Cu3uW7S",
+      "name": "Arrival at the fire-escape landing",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1230,
+          "width": 120,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-llegada-descanso",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.zs5TC9H32Cu3uW7S"
+    },
+    {
+      "_id": "8C8Nl0ZNbIE2h4Vk",
+      "name": "Down the fire escape to the alley",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1340,
+          "width": 120,
+          "height": 110,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "bJfdpL553QyVyZLG",
+          "name": "Down the fire escape to the alley",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YbfYS93oKtH7vbMN.Region.QmZcw03mVMCNQSgO"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YbfYS93oKtH7vbMN.8C8Nl0ZNbIE2h4Vk.bJfdpL553QyVyZLG"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-bajar",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.8C8Nl0ZNbIE2h4Vk"
+    },
+    {
+      "_id": "jZ9KkEkQPhvz7QDy",
+      "name": "Up the fire-escape ladder",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1480,
+          "width": 110,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "60hHF6CIQ3zWeM30",
+          "name": "Up the fire-escape ladder",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YbfYS93oKtH7vbMN.Region.zs5TC9H32Cu3uW7S"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YbfYS93oKtH7vbMN.jZ9KkEkQPhvz7QDy.60hHF6CIQ3zWeM30"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-subir",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.jZ9KkEkQPhvz7QDy"
+    },
+    {
+      "_id": "QmZcw03mVMCNQSgO",
+      "name": "Foot of the fire escape (alley)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 380,
+          "y": 1590,
+          "width": 110,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "incendios-llegada-callejon",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.QmZcw03mVMCNQSgO"
+    },
+    {
+      "_id": "SNNVRqeWVF19hdfn",
+      "name": "Alley exit to Market Street",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 100,
+          "y": 1900,
+          "width": 400,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "helen",
+          "region": "callejon-a-market",
+          "estado": "pendiente",
+          "pendiente": "there's no map of the street (Market Street)"
+        }
+      },
+      "_key": "!scenes.regions!YbfYS93oKtH7vbMN.SNNVRqeWVF19hdfn"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "bksG04311rktHbD6",
+      "entryId": "YD0Td8Y9aJyIpGSl",
+      "pageId": null,
+      "x": 1210,
+      "y": 785,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-05",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "LUG-05"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.bksG04311rktHbD6"
+    },
+    {
+      "_id": "OOD4bamNHYxqod7L",
+      "entryId": "w9xeQJg6psfiMjFU",
+      "pageId": "yyXMKcpDOIhGuZIB",
+      "x": 1210,
+      "y": 885,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A0-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "A0-E01"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.OOD4bamNHYxqod7L"
+    },
+    {
+      "_id": "vukDtbSHPF4KTHhn",
+      "entryId": "5hwXPdn0tUJ3NaKZ",
+      "pageId": "T8gJWjZpOnL4OisP",
+      "x": 685,
+      "y": 1210,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A1-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "A1-E01"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.vukDtbSHPF4KTHhn"
+    },
+    {
+      "_id": "RnuQA3WdT7Rj387q",
+      "entryId": "C7cxKf7kcAELzuJ1",
+      "pageId": "7brn5AgmWggUl420",
+      "x": 760,
+      "y": 1660,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A3-E01",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "helen",
+          "id": "A3-E01"
+        }
+      },
+      "_key": "!scenes.notes!YbfYS93oKtH7vbMN.RnuQA3WdT7Rj387q"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "izBbC5EJ10s04aMa",
+      "name": "Helen's laptop, open, with the audio paused",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-portatil.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 595,
+      "y": 1040,
+      "width": 40,
+      "height": 30,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 0,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "portatil"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.izBbC5EJ10s04aMa"
+    },
+    {
+      "_id": "CRpL3OMYdhsPoLj0",
+      "name": "silla escritorio",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-escritorio.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 600,
+      "y": 1120,
+      "width": 50,
+      "height": 50,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 1,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.CRpL3OMYdhsPoLj0"
+    },
+    {
+      "_id": "jYUTFd3A2VMOi2Zl",
+      "name": "mesa cocina",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-mesa-cocina.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 615,
+      "y": 1605,
+      "width": 110,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 2,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "mesa"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.jYUTFd3A2VMOi2Zl"
+    },
+    {
+      "_id": "99vW2Ckos4d9Gwzr",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 698,
+      "y": 1603,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 3,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.99vW2Ckos4d9Gwzr"
+    },
+    {
+      "_id": "6PWvrFFPCQEJoq1M",
+      "name": "silla madera",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 613,
+      "y": 1678,
+      "width": 45,
+      "height": 45,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 4,
+      "rotation": 180,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.6PWvrFFPCQEJoq1M"
+    },
+    {
+      "_id": "r2suJLofBKwvgqyW",
+      "name": "sofa gastado",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-sofa-gastado.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 845,
+      "y": 1690,
+      "width": 200,
+      "height": 90,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 5,
+      "rotation": 270,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "sofa"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.r2suJLofBKwvgqyW"
+    },
+    {
+      "_id": "fQPP6DOlHhVyF3u7",
+      "name": "lampara pie",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-lampara-pie.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 825,
+      "y": 1835,
+      "width": 40,
+      "height": 40,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 6,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "lampara"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.fQPP6DOlHhVyF3u7"
+    },
+    {
+      "_id": "TCMwYhOJwB5e40uL",
+      "name": "Helen's ashtray, on the grating beside the window",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-cenicero.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 464,
+      "y": 1164,
+      "width": 18,
+      "height": 18,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 7,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "cenicero"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.TCMwYhOJwB5e40uL"
+    },
+    {
+      "_id": "CwzjreHLGKtRa4DR",
+      "name": "the FIRSTLIGHT thermal drone over Market Street (INT-01, passive surveillance: “occasional drones”)",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-dron.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1650,
+      "y": 1950,
+      "width": 60,
+      "height": 60,
+      "elevation": 0,
+      "levels": [
+        "pXj0ZJVQR7zoch40"
+      ],
+      "sort": 8,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": true,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "helen",
+          "tipo": "vehiculo"
+        }
+      },
+      "_key": "!scenes.tiles!YbfYS93oKtH7vbMN.CwzjreHLGKtRa4DR"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "VWmWlPwRWaZxOeH4",
+      "name": "Helen Ward",
+      "displayName": 30,
+      "actorId": "cHnmNaT8zN7q4yvy",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 900,
+      "y": 1270,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "pXj0ZJVQR7zoch40",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "helen",
+          "id": "PNJ-04",
+          "escenas": [
+            "A0-E01",
+            "A1-E01",
+            "A3-E01"
+          ],
+          "nota": "Sitting on the entryway floor, hood up, facing the door, counting under her breath (A0-E01). In A1-E01, with her notebook in front of the maps in the study. In A3-E01, if Krell took her and the coterie arrives late, take her out."
+        }
+      },
+      "_key": "!scenes.tokens!YbfYS93oKtH7vbMN.VWmWlPwRWaZxOeH4"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "3lJPPXBfYRQmDrvT",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "helen",
+      "id": "LUG-05",
+      "plano": "helen",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{Helen Ward's Apartment}<br><strong>Scenes:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE} · @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took} · @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}</p>\n<p><strong>Arrival (A0-E01, 3:34 a.m.).</strong> The street door on Market Street is open; the common stairway climbs along the front of the building and comes out in the third-floor hallway, right beside the door of 3A. It smells of damp, wet wool, and coins (a ghoul&#39;s watered-down Vitae, <strong>P-02</strong>: Resolve + Awareness Diff. 2, or Auspex 1). Helen is sitting on the floor of the <strong>entryway</strong>, hood up, facing the door, counting under her breath.</p>\n<p><strong>The cameras (P-01).</strong> All four doors on the hallway have a Gale Sentinel doorbell camera with its little blue light (“led-timbre” lights). The one on <strong>3B</strong>, across from Helen&#39;s, is the only one aimed at her door, and it also has a blinking green light: it&#39;s streaming live (Wits + Awareness Diff. 3). Helen&#39;s keeps the disconnection log from 2:52 to 3:03 a.m. (Intelligence + Technology Diff. 3). Smashing the 3B camera: Thermometer +1; opening it up and disconnecting it: Dexterity + Larceny Diff. 3. Leaving through the hallway without dealing with it: ANOMALY tags each Kindred as a “cold subject” (Thermometer +1).</p>\n<p><strong>The door of 3A.</strong> It wasn&#39;t forced: someone opened it with an electronic pick and locked it again with a single turn (the handle was left level, not drooping). The outside handle carries the ghoul&#39;s Vitae (P-02; Auspex 4, Spirit&#39;s Touch). With 3 or more successes on Intelligence + Investigation (A1-E01), a tiny black sticker turns up on the frame: the repeater that knocked out the cameras. <strong>It isn&#39;t drawn on the map and has no tile</strong>: it&#39;s the reward for the roll.</p>\n<p><strong>Study.</strong> Walls covered in maps with red pins (deaths), blue (disappearances), and yellow. On the desk, against the north wall, the open laptop with the audio paused (tile; Intelligence + Technology Diff. 4: the cloud was wiped from an IP at an Eastside data center, part of P-06) and the frayed cable hanging there, plugged into nothing: that&#39;s where the drive was. In the <strong>right-hand drawer</strong>, the flip phone with a single number, SAFE (DOC-05). On the east wall, the <strong>built-in closet</strong>, whose door sticks halfway and creaks (door with the “woodCreaky” sound): at the back was the shoebox with the second copy; it&#39;s gone. Only the closet and the desk were opened. The <strong>sash window</strong> on the west wall opens onto the fire escape; Helen&#39;s ashtray is outside, on the grating.</p>\n<p><strong>Living room and kitchen.</strong> The TV is still on its cabinet and the jar of bills is still on the counter: nothing worth money was taken. The kitchen table is the one from A3-E01 if Krell arrives late: overturned chair, a phone with a cracked screen on the floor, and, on the table, the paper held down by a shell casing. The window onto Market Street is the only lit window on the third floor (floor lamp).</p>\n<p><strong>Escaping without the 3B camera.</strong> Through the study window to the fire escape, and from there to the service alley (Dexterity + Stealth Diff. 2 so nobody in the building sees them climb down). On the fire escape, the “Down” region leads to the foot of the ladder in the alley and the “Up” one brings them back; the drop ladder has to be lowered from above or reached with a jump from the alley. The alley comes out onto Market Street to the south.</p>\n<p><strong>The roof landing.</strong> Beside the flight going down, another flight goes up to a landing with the roof door (locked; there&#39;s no map of the roof). That&#39;s where Helen hid, behind the railing, where the hallway light doesn&#39;t reach; from the hallway, the ghoul raised his head toward it and sniffed.</p>\n<p><strong>Off the map.</strong> Bear waits in the van on Market Street; half a block down there&#39;s a gray electric car with someone inside (MEN-04, leaves at 4:10 a.m. if nobody does anything). In A3-E01, Krell waits on the sidewalk across the street.</p>\n<p>Apartments 3B, 3C, and 3D belong to the neighbors: furnished, dark, and locked (their doors, locked). At 3:34 a.m. they&#39;re asleep; the book only says that someone in the building might see the coterie climbing down the fire escape. The windows of 3C face the service alley. If someone forces a door, the Storyteller handles it: the book doesn&#39;t cover it.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (9) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.cHnmNaT8zN7q4yvy]{Helen Ward} (A0-E01, A1-E01, A3-E01): Sitting on the entryway floor, hood up, facing the door, counting under her breath (A0-E01). In A1-E01, with her notebook in front of the maps in the study. In A3-E01, if Krell took her and the coterie arrives late, take her out.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Down to the Market Street street door · Roof landing (door locked) · Alley exit to Market Street.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "_id": "VYpDoFtqKkL7FlqL",
+  "_key": "!journal!VYpDoFtqKkL7FlqL",
+  "name": "Emily Smith",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 210,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "REF-01",
+      "archivo": "content/personajes/REF-01.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "xvtVH4dD1PLZCIjx",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.xvtVH4dD1PLZCIjx",
+      "name": "Emily Smith",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/REF-01.webp\" alt=\"Emily Smith\">\n<p><em>“She kept the ones nobody wanted.”</em> (her headstone, @UUID[JournalEntry.uhtM1iF2WrHHlcd8]{Emily Smith's Grave})</p>\n<p>Daughter of @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}. Background character, no actor. Main source: doc 24, “Emily Smith” (Touchstones, earlier source), filled in with docs 00–16.</p>\n<p>His daughter is the reason David takes the Masquerade so seriously. And also the reason that, some nights, he&#39;d rather not wake up.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UBop4IcqtPgEOys7",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.UBop4IcqtPgEOys7",
+      "name": "What Docs 00–16 Establish",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Birth:</strong> February 14, 1958 (@UUID[JournalEntry.woF61Oy8f19xxrkA]{Emily Smith's Obituary}). February 14 is the date on SAFE&#39;s messages to Helen (@UUID[JournalEntry.EQ3lkuiGnEvoSW7x]{SAFE: Saved Messages}); Helen doesn&#39;t know that.</li>\n<li><strong>Death:</strong> fall of 1996, in Rainier Valley. She was 38. The exact date, October 21, 1996, is provisional (doc 16).</li>\n<li><strong>Obituary</strong> (@UUID[JournalEntry.woF61Oy8f19xxrkA]{Emily Smith's Obituary}, <em>The Puget Courier</em>, 10/24/1996): social worker with the King County Department of Youth Services; bachelor&#39;s in Social Work from the University of Washington in 1981; fifteen years with at-risk youth in the south end; “the one who never hung up the phone” and “the one who took the cases nobody wanted.” Born in San Diego and raised in Seattle by her mother, Anne Smith, who died in 1989 (<em>San Diego and Anne Smith: provisional, doc 16</em>). Her father, “Marine Sergeant David Smith,” died in the line of duty in 1960, when she was two. Next to “She is survived by no immediate family,” David wrote by hand: <em>Yes.</em></li>\n<li><strong>The killer:</strong> Ray Dorsey (@UUID[JournalEntry.LqMKPCSaUzAWcGYi]{Ray Dorsey}), an Anarch who used Rainier Valley teenagers as his herd. A week earlier, @UUID[JournalEntry.WHkwE8CYfaKW5WyO]{Rosa Iturbe} had given him shelter at the Everett shipyard without knowing what he was going to do. She never forgave herself.</li>\n<li><strong>The night:</strong> David arrived minutes too late and destroyed the Anarch with a single shot. The backup who cleaned the scene while David was still on his knees was @UUID[JournalEntry.B4nqUk8dojvCw97H]{Hal Brekke}, two years into his unlife. To the city, it was a gang score being settled. To Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}), it was the reason he started keeping an eye on his Hound.</li>\n<li><strong>The survivor:</strong> Marcos Delgado (@UUID[Actor.rOqsigq4dAfIYQMh]{Marcos Delgado}), fifteen at the time, the only kid who survived. Before he passed out, he saw a man with a scar on his face shoot Dorsey and kneel beside the social worker. Today he&#39;s a youth counselor in the same neighborhood (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.pCLncsxglYsxJtbu]{GAN-01 · The Boy Who Survived}).</li>\n<li><strong>The grave:</strong> @UUID[JournalEntry.uhtM1iF2WrHHlcd8]{Emily Smith's Grave}, in a cemetery north of the city. Someone leaves fresh flowers every Sunday (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cGEW4b4hCJlaDeSK]{GAN-12 · The Visited Grave}).</li>\n<li><strong>In the adventure:</strong> Emily&#39;s night is one of David&#39;s two late arrivals (the other is the Larchmont). It&#39;s told only in memories, never in detail (Safety Tools). Vance mentions her in his journal: “He has a daughter across the sea and doesn&#39;t talk about her” (@UUID[JournalEntry.kzeWNRBY6tgLP37S]{Journal of M. Vance, Marseille, 1963, Folio 14 (Typewritten Copy)}). With Krell, a PC telling him about Emily, with David beside them, counts as one step (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}). The letters from @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Letters from Cluj} arrive every February 14.</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kgHeDpr12OoJ5Otu",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.kgHeDpr12OoJ5Otu",
+      "name": "Who She Was",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Name:</strong> Emily Smith</li>\n<li><strong>Year of birth:</strong> 1958</li>\n<li><strong>Tie to David:</strong> Biological daughter, his only child.</li>\n<li><strong>Profession:</strong> Social worker in Seattle, specializing in at-risk youth, addiction, and domestic violence.</li>\n</ul>\n<p>David knew her alive for only a few years.</p>\n<p>When the girl was 2, he was Embraced in Haiti (1960). He came back to the U.S. as <strong>a dead man with a new face</strong>, and the official version was simple:</p>\n<blockquote>\n<p>“Your father died in a classified operation. A hero. There&#39;s no body.”</p>\n</blockquote>\n<p>Emily grew up with the image of the absent hero, the black-and-white photo in the living room, the folded flag. David, meanwhile, watched her from a distance when he could:</p>\n<ul>\n<li>Watching her leave school from his car.</li>\n<li>Following her school records through contacts.</li>\n<li>Making sure money never ran out completely, through “anonymous payments” or help that always showed up at just the right moment.</li>\n</ul>\n<p>When she grew up:</p>\n<ul>\n<li>She became a social worker because <strong>she hated seeing kids broken by poverty and violence</strong>.</li>\n<li>She set her jaw the same way he did when something struck her as unfair.</li>\n</ul>\n<p>To David, Emily was:</p>\n<ul>\n<li>His <strong>primary Touchstone</strong>: living proof that something worth protecting still existed.</li>\n<li>The reminder that <em>he was once truly human</em>.</li>\n</ul>\n<p>He never revealed himself. He always watched her from afar. He never wanted to poison her life with what he was.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hQ9GIscYDtGhMjnF",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.hQ9GIscYDtGhMjnF",
+      "name": "The Night That Broke Everything",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The tragedy started the way many things do in the World of Darkness: with <strong>something small that nobody took seriously</strong>.</p>\n<ul>\n<li>Emily worked with teenagers from rough neighborhoods.</li>\n<li>One of them, a kid named Marcos, started talking about a guy who:<ul>\n<li>gave them drugs for free,</li>\n<li>asked them for “weird favors” now and then,</li>\n<li>made them drink from a shared bottle, and then the nights went blurry.</li>\n</ul>\n</li>\n</ul>\n<p>Emily, being Emily, didn&#39;t let it go.</p>\n<p>What she didn&#39;t know was that this “guy” was an out-of-control <strong>Anarch Kindred</strong> who used the kids as his <strong>personal herd</strong>, and sometimes as messengers in business that brushed up against the Masquerade.</p>\n<p>She did what she knew how to do:</p>\n<ul>\n<li>She took notes,</li>\n<li>talked to other kids,</li>\n<li>cross-checked names,</li>\n<li>and started building a file to report him—her way, legal, human.</li>\n</ul>\n<p>One of those reports, too detailed, ended up on the wrong desk. Or rather: on <strong>the wrong screen</strong>, with cameras and microphones the Camarilla was watching too.</p>\n<h3>David&#39;s Failure</h3>\n<p>David got an indirect warning:</p>\n<ul>\n<li>“Human social worker asking too many questions about a problem asset. Anarch. Possible exposure. Watch or clean up.”</li>\n</ul>\n<p>His initial plan:</p>\n<ul>\n<li>Move fast,</li>\n<li>take the Anarch off the board,</li>\n<li>steer Emily away without having to touch her.</li>\n</ul>\n<p>But he underestimated two things:</p>\n<ol>\n<li><strong>The Anarch&#39;s own paranoia</strong>: he realized someone was tying him to his crimes.</li>\n<li>How fast human affairs can go bad without any need for fangs.</li>\n</ol>\n<p>The key night:</p>\n<ul>\n<li>Emily went to see the kid, Marcos, at an apartment in a half-abandoned building.</li>\n<li>The Anarch decided to <strong>tie off loose ends</strong> and turn the scene into a “gang score being settled.”</li>\n<li>The police would log it as a fight between gangs.</li>\n<li>The Anarch didn&#39;t know David was already in the area, on the Sheriff&#39;s orders.</li>\n</ul>\n<p>David arrived minutes too late.</p>\n<ul>\n<li>When he burst into the apartment:<ul>\n<li>the smell of gunpowder and blood was already in the air,</li>\n<li>the hallway lights were flickering,</li>\n<li>the bodies of two kids lay on the floor,</li>\n<li>Emily was against the wall, trying to put pressure on someone else&#39;s wound, her hands covered in blood that wasn&#39;t hers.</li>\n</ul>\n</li>\n</ul>\n<p>The Anarch took her hostage, laughing out loud, fangs half out, the Beast halfway there.</p>\n<p>David had to choose:</p>\n<ul>\n<li>A clean shot to the Anarch&#39;s head,</li>\n<li>or try to get closer and negotiate.</li>\n</ul>\n<p>He chose the shot.</p>\n<p>The Anarch went down.</p>\n<p>But first, he pulled the trigger with the hand holding the gun against Emily&#39;s neck.</p>\n<p>It wasn&#39;t a dramatic death. It was fast, ugly, with no speech. That&#39;s what hurts David most.</p>\n<p>When he reached her, she was already on the floor.</p>\n<p>Emily, dying, looked at him. And in that second, her ears filling with noise and the world closing in, <strong>she recognized him</strong>:</p>\n<p>Not as a “vampire,” not as a “monster.”</p>\n<p>She recognized him as <strong>her father</strong>.</p>\n<p>The words that came out, in a broken voice, weren&#39;t epic. They were simple:</p>\n<blockquote>\n<p>“So you did… come after all…”</p>\n</blockquote>\n<p>And she was gone.</p>\n<p>In theory, David had another option: he could have <strong>Embraced</strong> her.</p>\n<p>He didn&#39;t.</p>\n<p>He knew that wouldn&#39;t be saving her, but condemning her to the same hell as him.</p>\n<p>And that&#39;s what really haunts him: that he decided it was better to let her die than to drag her into his world.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "QYF29riovXGG3DsN",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.QYF29riovXGG3DsN",
+      "name": "Why She Is a Lost Anchor",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Since then:</p>\n<ul>\n<li>Emily is no longer alive.</li>\n<li>He can&#39;t call her, can&#39;t visit her, can&#39;t spy on her life and console himself thinking <em>“at least she&#39;s still out there.”</em></li>\n<li>All that&#39;s left is:<ul>\n<li>the grave,</li>\n<li>the case file,</li>\n<li>the memories of watching her as a little girl, playing with toys he paid for anonymously.</li>\n</ul>\n</li>\n</ul>\n<p>Mechanically, as a <strong>Lost Anchor / dead Touchstone</strong>:</p>\n<ul>\n<li><p>Every time the chronicle touches on:</p>\n<ul>\n<li><strong>daughters</strong>,</li>\n<li>broken families,</li>\n<li>people who die for getting too close to the truth,</li>\n</ul>\n<p>David may suffer:</p>\n<ul>\n<li><strong>Remorse tests</strong> (the Storyteller can impose them as a strong emotional reaction),</li>\n<li><strong>extra Stains (blots)</strong> if a situation reminds him too much of Emily and he responds with disproportionate harshness or, on the other hand, with a compassion that breaks his code.</li>\n</ul>\n</li>\n</ul>\n<p><em>David is an NPC: he doesn&#39;t roll Remorse or gain Stains. When the story touches Emily, he goes quiet, leaves, or turns hard, and that night he doesn&#39;t help the coterie (see “When He Breaks” in @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}).</em></p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "CM6YZnSbRXIhfrLI",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.CM6YZnSbRXIhfrLI",
+      "name": "Nightmares",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The nightmares aren&#39;t subtle. They&#39;re variations on the same hell:</p>\n<ol>\n<li><strong>The hallway nightmare</strong><ul>\n<li>He&#39;s in the same apartment building.</li>\n<li>He hears gunshots, footsteps, young voices.</li>\n<li>He always arrives a few seconds too late.</li>\n<li>Sometimes he sees Emily standing, sometimes already on the floor, but the worst is when she turns her back on him and walks out through a door David never reaches.</li>\n</ul>\n</li>\n<li><strong>The nightmare of the Embrace that wasn&#39;t</strong><ul>\n<li>Emily is dying and he feeds her his blood.</li>\n<li>She opens her eyes, gets up…</li>\n<li>but she isn&#39;t his daughter: she&#39;s a Brujah run wild who hates him for turning her.</li>\n<li>She accuses him: “You didn&#39;t save me. You stole my death.”</li>\n<li>He wakes up with high Hunger, his hands dug into the mattress.</li>\n</ul>\n</li>\n<li><strong>The replacement nightmare</strong><ul>\n<li>He sees Helen, or any other young human, in Emily&#39;s place.</li>\n<li>The apartment scene plays out again.</li>\n<li>Sometimes he misses the shot, sometimes he kills the innocent, sometimes everyone dies.</li>\n<li>The feeling when he wakes is always the same: <em>“I&#39;m going to do it again. I&#39;m going to repeat the pattern.”</em></li>\n</ul>\n</li>\n</ol>\n<p>The Storyteller can use these nightmares to:</p>\n<ul>\n<li>justify <strong>one-time penalties to the first Resolve/Composure roll</strong> after waking,</li>\n<li>force <strong>Remorse</strong> tests when his present actions recall that night too closely.</li>\n</ul>\n<p><em>As an NPC, the nightmares aren&#39;t rolled: they&#39;re seen. David shows up late to the meeting, knuckles split from the hangar wall, and explains nothing. Bear knows why, if someone asks.</em></p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "d6XexpXY8cCkdBCw",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.d6XexpXY8cCkdBCw",
+      "name": "How She Affects David at the Table",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>He feels a mix of <strong>hatred and need</strong> toward his role as enforcer:<ul>\n<li>he knows that life indirectly killed his daughter,</li>\n<li>but he also believes that if he&#39;d been faster, more brutal, more unbending… maybe he would have saved her.</li>\n</ul>\n</li>\n<li>With young women who remind him of Emily:<ul>\n<li>he tends to be <strong>overprotective</strong>,</li>\n<li>or brutally cold, so as not to repeat the attachment.</li>\n</ul>\n</li>\n<li>When someone suggests “using” mortals as bait, as hostages, as tools:<ul>\n<li>the Storyteller can have him roll to resist <strong>frenzy</strong>,</li>\n<li>or have his Brujah anger flare against whoever treats mortals as disposable, even if it&#39;s a PC.</li>\n</ul>\n</li>\n</ul>\n<p>Emily, as a Lost Anchor, is no longer there to “raise his Humanity.” What she does is the opposite:</p>\n<ul>\n<li>Remind him that <strong>he can lose everything even when he does “the right thing.”</strong></li>\n<li>Sharpen the question: “Is the Masquerade really worth it, if the cost is lives like hers?”</li>\n</ul>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "nXxzalpApPVWf62p",
+      "_key": "!journal.pages!VYpDoFtqKkL7FlqL.nXxzalpApPVWf62p",
+      "name": "Differences from Docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Seattle and her childhood.</strong> Doc 24 says David watched her leave school from his car and kept a close eye on her as she grew up (the &#39;60s and &#39;70s). The doc 17 timeline puts him outside the U.S. from 1970 to 2010, folio 14 of @UUID[JournalEntry.kzeWNRBY6tgLP37S]{Journal of M. Vance, Marseille, 1963, Folio 14 (Typewritten Copy)} places him in Marseille in 1963 with “a daughter across the sea,” and doc 16 gives as provisional that he arrived in Seattle in the &#39;80s.</li>\n<li><strong>The mother.</strong> Doc 24 doesn&#39;t name the mother or say where Emily was born; Anne Smith and San Diego come from @UUID[JournalEntry.woF61Oy8f19xxrkA]{Emily Smith's Obituary} and are provisional (doc 16).</li>\n<li><strong>The father in the obituary.</strong> @UUID[JournalEntry.woF61Oy8f19xxrkA]{Emily Smith's Obituary} calls him a “Marine sergeant”; the earlier sources, a SEAL commando.</li>\n<li><strong>The Anarch.</strong> Doc 24 doesn&#39;t name him; docs 00–16 call him Ray Dorsey (@UUID[JournalEntry.LqMKPCSaUzAWcGYi]{Ray Dorsey}) and add Rosa and Hal.</li>\n<li><strong>The kid.</strong> Doc 24 mentions “two kids” dead on the floor and Marcos; in docs 00–16 Marcos Delgado is the only kid who survived (consistent).</li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

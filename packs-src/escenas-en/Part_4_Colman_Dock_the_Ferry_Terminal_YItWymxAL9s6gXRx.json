@@ -1,0 +1,1525 @@
+{
+  "_id": "YItWymxAL9s6gXRx",
+  "_key": "!scenes!YItWymxAL9s6gXRx",
+  "name": "Part 4 · Colman Dock, the Ferry Terminal",
+  "folder": "quCoahsl3hNHzyUm",
+  "navigation": true,
+  "navOrder": 150,
+  "width": 2400,
+  "height": 1600,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "style": "solidLines",
+    "thickness": 1,
+    "color": "#000000",
+    "alpha": 0,
+    "distance": 1,
+    "units": "m"
+  },
+  "tokenVision": true,
+  "fog": {
+    "mode": 1
+  },
+  "environment": {
+    "darknessLevel": 0.55,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "levels": [
+    {
+      "_id": "1OoZ1eHWQlaP37BD",
+      "name": "Ground",
+      "elevation": {
+        "bottom": 0,
+        "top": 20
+      },
+      "background": {
+        "src": "modules/seattle-by-night/assets/mapas/terminal-ferry.webp",
+        "color": "#000000"
+      },
+      "sort": 0,
+      "_key": "!scenes.levels!YItWymxAL9s6gXRx.1OoZ1eHWQlaP37BD"
+    }
+  ],
+  "journal": "IDd94316DhSx3ptV",
+  "journalEntryPage": null,
+  "walls": [
+    {
+      "_id": "mv1GmVkG9gzFciyE",
+      "c": [
+        950,
+        150,
+        1000,
+        150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.mv1GmVkG9gzFciyE"
+    },
+    {
+      "_id": "kE48WS4UHAcek76N",
+      "c": [
+        1750,
+        150,
+        2350,
+        150
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.kE48WS4UHAcek76N"
+    },
+    {
+      "_id": "XI92ll588SF5ceYI",
+      "c": [
+        950,
+        1050,
+        1000,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.XI92ll588SF5ceYI"
+    },
+    {
+      "_id": "wRW2ur0SsShwd4Sz",
+      "c": [
+        2050,
+        1050,
+        2350,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.wRW2ur0SsShwd4Sz"
+    },
+    {
+      "_id": "vwZ5yIHdfgcjhm7U",
+      "c": [
+        950,
+        150,
+        950,
+        170
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.vwZ5yIHdfgcjhm7U"
+    },
+    {
+      "_id": "nv7JhpyZ9xPDuji8",
+      "c": [
+        950,
+        460,
+        950,
+        520
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.nv7JhpyZ9xPDuji8"
+    },
+    {
+      "_id": "BrQMq15452MRgSXh",
+      "c": [
+        950,
+        680,
+        950,
+        740
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.BrQMq15452MRgSXh"
+    },
+    {
+      "_id": "vreZCCTsifH57EUV",
+      "c": [
+        950,
+        1030,
+        950,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.vreZCCTsifH57EUV"
+    },
+    {
+      "_id": "fAzEayDUS8ZY7pol",
+      "c": [
+        2100,
+        150,
+        2100,
+        200
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.fAzEayDUS8ZY7pol"
+    },
+    {
+      "_id": "bw54JYKwF570Cf1j",
+      "c": [
+        2100,
+        560,
+        2100,
+        660
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.bw54JYKwF570Cf1j"
+    },
+    {
+      "_id": "L5Onw79DjvVYLdDg",
+      "c": [
+        2100,
+        740,
+        2100,
+        910
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.L5Onw79DjvVYLdDg"
+    },
+    {
+      "_id": "JobQVLxO1q8vuLca",
+      "c": [
+        2100,
+        990,
+        2100,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.JobQVLxO1q8vuLca"
+    },
+    {
+      "_id": "YaQvmZH8z64kuFPt",
+      "c": [
+        2100,
+        600,
+        2350,
+        600
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.YaQvmZH8z64kuFPt"
+    },
+    {
+      "_id": "78UC7FZh3nNWYWky",
+      "c": [
+        2350,
+        150,
+        2350,
+        1050
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.78UC7FZh3nNWYWky"
+    },
+    {
+      "_id": "eWLvYShYSdelsBYJ",
+      "c": [
+        2100,
+        825,
+        2350,
+        825
+      ],
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.eWLvYShYSdelsBYJ"
+    },
+    {
+      "_id": "7cDL9gidRspOR78M",
+      "c": [
+        950,
+        170,
+        950,
+        460
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.7cDL9gidRspOR78M"
+    },
+    {
+      "_id": "LT5tAPXir8lQBHmN",
+      "c": [
+        950,
+        520,
+        950,
+        680
+      ],
+      "door": 1,
+      "ds": 1,
+      "doorSound": "slidingModern",
+      "sight": 0,
+      "light": 0,
+      "sound": 10,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.LT5tAPXir8lQBHmN"
+    },
+    {
+      "_id": "fx2BRdP1L8T1Jmue",
+      "c": [
+        950,
+        740,
+        950,
+        1030
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.fx2BRdP1L8T1Jmue"
+    },
+    {
+      "_id": "bWaSy1DlRVelABzM",
+      "c": [
+        1000,
+        150,
+        1750,
+        150
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.bWaSy1DlRVelABzM"
+    },
+    {
+      "_id": "wcLpIo9ZF3KTvW27",
+      "c": [
+        1000,
+        1050,
+        2050,
+        1050
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.wcLpIo9ZF3KTvW27"
+    },
+    {
+      "_id": "BsQIRMXpf3PO04xh",
+      "c": [
+        100,
+        475,
+        950,
+        475
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.BsQIRMXpf3PO04xh"
+    },
+    {
+      "_id": "VtKDlPaH450n2FUd",
+      "c": [
+        100,
+        725,
+        950,
+        725
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 20,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.VtKDlPaH450n2FUd"
+    },
+    {
+      "_id": "DUi6hNdH8nIYU29m",
+      "c": [
+        50,
+        1200,
+        900,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.DUi6hNdH8nIYU29m"
+    },
+    {
+      "_id": "2BoDB9BdfMWZ9kQn",
+      "c": [
+        50,
+        1500,
+        900,
+        1500
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.2BoDB9BdfMWZ9kQn"
+    },
+    {
+      "_id": "k39ACYe9udUBIJGN",
+      "c": [
+        900,
+        1100,
+        900,
+        1200
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.k39ACYe9udUBIJGN"
+    },
+    {
+      "_id": "5XLzw5VLB71UItod",
+      "c": [
+        900,
+        1500,
+        900,
+        1600
+      ],
+      "move": 20,
+      "sight": 0,
+      "light": 0,
+      "sound": 0,
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.5XLzw5VLB71UItod"
+    },
+    {
+      "_id": "jYPruwZDrSLgbQbT",
+      "c": [
+        2100,
+        660,
+        2100,
+        740
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.jYPruwZDrSLgbQbT"
+    },
+    {
+      "_id": "H5UcoLjOmbbaKyN6",
+      "c": [
+        2100,
+        910,
+        2100,
+        990
+      ],
+      "door": 1,
+      "ds": 2,
+      "doorSound": "metal",
+      "flags": {},
+      "_key": "!scenes.walls!YItWymxAL9s6gXRx.H5UcoLjOmbbaKyN6"
+    }
+  ],
+  "lights": [
+    {
+      "_id": "LOK4WVqbaiQbbnrL",
+      "name": "Waiting room fluorescents (north)",
+      "x": 1250,
+      "y": 430,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.LOK4WVqbaiQbbnrL"
+    },
+    {
+      "_id": "ipnbRl9VRkItNQ7g",
+      "name": "Waiting room fluorescents (center)",
+      "x": 1700,
+      "y": 430,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.ipnbRl9VRkItNQ7g"
+    },
+    {
+      "_id": "9rsZ3w1ysDihflCD",
+      "name": "Flickering fluorescent (south)",
+      "x": 1350,
+      "y": 860,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.25,
+        "angle": 360,
+        "bright": 0.6,
+        "dim": 3.7,
+        "color": "#cfe3ee",
+        "coloration": 1,
+        "attenuation": 0.8,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "flame",
+          "speed": 8,
+          "intensity": 4,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.9rsZ3w1ysDihflCD"
+    },
+    {
+      "_id": "Of0qQKIRBljKMGrN",
+      "name": "The coffee machine, blinking “out of service”",
+      "x": 1900,
+      "y": 210,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.2,
+        "color": "#c9dcf0",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.25,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": "pulse",
+          "speed": 8,
+          "intensity": 8,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.Of0qQKIRBljKMGrN"
+    },
+    {
+      "_id": "qRX64uuZmOKcnpYs",
+      "name": "The guard's phone",
+      "x": 1060,
+      "y": 810,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.35,
+        "angle": 360,
+        "bright": 0,
+        "dim": 1.6,
+        "color": "#a9c8e6",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.qRX64uuZmOKcnpYs"
+    },
+    {
+      "_id": "M2UZXdbf39Chc8v7",
+      "name": "Walkway light",
+      "x": 500,
+      "y": 600,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.3,
+        "angle": 360,
+        "bright": 3,
+        "dim": 6,
+        "color": "#dbe6ee",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.M2UZXdbf39Chc8v7"
+    },
+    {
+      "_id": "5OQPTGdRMRUlsXE4",
+      "name": "Vehicle holding lot streetlight",
+      "x": 1500,
+      "y": 1360,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 4,
+        "dim": 12,
+        "color": "#ffb46b",
+        "coloration": 1,
+        "attenuation": 0.6,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.5OQPTGdRMRUlsXE4"
+    },
+    {
+      "_id": "eDlwClge89Kb55pj",
+      "name": "Vehicle ramp floodlight",
+      "x": 500,
+      "y": 1350,
+      "elevation": 0,
+      "rotation": 0,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "negative": false,
+        "priority": 0,
+        "alpha": 0.45,
+        "angle": 360,
+        "bright": 1.5,
+        "dim": 6,
+        "color": "#ffa95a",
+        "coloration": 1,
+        "attenuation": 0.7,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "type": null,
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "hidden": false,
+      "locked": false,
+      "flags": {},
+      "_key": "!scenes.lights!YItWymxAL9s6gXRx.eDlwClge89Kb55pj"
+    }
+  ],
+  "regions": [
+    {
+      "_id": "vdKYOuWpbAgYXOkt",
+      "name": "Board the ferry via the passenger ramp",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 100,
+          "y": 475,
+          "width": 120,
+          "height": 250,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "yJy2EbXdJQqRV1o4",
+          "name": "Board the ferry via the passenger ramp",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.nO6PgIBKh3qBWQVV.Region.NH6AaEoOh6yWjhz5"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.vdKYOuWpbAgYXOkt.yJy2EbXdJQqRV1o4"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "a-la-rampa-del-ferry",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.vdKYOuWpbAgYXOkt"
+    },
+    {
+      "_id": "P37qpCdnMOsDV6r5",
+      "name": "Arrival from the ferry (passenger ramp)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 240,
+          "y": 475,
+          "width": 120,
+          "height": 250,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-desde-ferry",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.P37qpCdnMOsDV6r5"
+    },
+    {
+      "_id": "rz3vyiwDpayiAQs8",
+      "name": "Board the ferry via the vehicle ramp",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 50,
+          "y": 1200,
+          "width": 150,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "1LWG679PStrJFzBa",
+          "name": "Board the ferry via the vehicle ramp",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.67ExO7p40rqtAUeC.Region.iKsUsK3yObOwDEEa"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.rz3vyiwDpayiAQs8.1LWG679PStrJFzBa"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "a-rampa-vehiculos",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.rz3vyiwDpayiAQs8"
+    },
+    {
+      "_id": "HTXzwurHRGKB08qB",
+      "name": "Arrival from the car deck",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 220,
+          "y": 1200,
+          "width": 150,
+          "height": 300,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-rampa-vehiculos",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.HTXzwurHRGKB08qB"
+    },
+    {
+      "_id": "XB5Tvncjd9yzbsin",
+      "name": "Go down to the street and the vehicle holding lot",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2160,
+          "y": 430,
+          "width": 160,
+          "height": 100,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "776ALELxv5d9qlaE",
+          "name": "Go down to the street and the vehicle holding lot",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YItWymxAL9s6gXRx.Region.X4ocOVrstEL1uZjs"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.XB5Tvncjd9yzbsin.776ALELxv5d9qlaE"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "bajar-a-la-explanada",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.XB5Tvncjd9yzbsin"
+    },
+    {
+      "_id": "MoD7T5LnvKz9QOiA",
+      "name": "Arrival at the waiting room (from the street)",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2000,
+          "y": 250,
+          "width": 100,
+          "height": 200,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-sala",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.MoD7T5LnvKz9QOiA"
+    },
+    {
+      "_id": "Zrvg9EujlnznskyA",
+      "name": "Go up to the waiting room",
+      "color": "#b23030",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2160,
+          "y": 1440,
+          "width": 200,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [
+        {
+          "_id": "QVvg4jkC1EOZeyEt",
+          "name": "Go up to the waiting room",
+          "type": "teleportToken",
+          "system": {
+            "destinations": [
+              "Scene.YItWymxAL9s6gXRx.Region.MoD7T5LnvKz9QOiA"
+            ],
+            "placement": "center",
+            "snap": true,
+            "choice": false
+          },
+          "disabled": false,
+          "flags": {},
+          "_key": "!scenes.regions.behaviors!YItWymxAL9s6gXRx.Zrvg9EujlnznskyA.QVvg4jkC1EOZeyEt"
+        }
+      ],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "subir-a-la-sala",
+          "estado": "transicion"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.Zrvg9EujlnznskyA"
+    },
+    {
+      "_id": "X4ocOVrstEL1uZjs",
+      "name": "Arrival at the vehicle holding lot",
+      "color": "#2f7f8c",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 1980,
+          "y": 1440,
+          "width": 150,
+          "height": 140,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "llegada-explanada",
+          "estado": "llegada"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.X4ocOVrstEL1uZjs"
+    },
+    {
+      "_id": "CxkIUQO63BOphTez",
+      "name": "Exit to Alaskan Way",
+      "color": "#7a7a7a",
+      "shapes": [
+        {
+          "type": "rectangle",
+          "x": 2200,
+          "y": 1110,
+          "width": 200,
+          "height": 120,
+          "rotation": 0,
+          "hole": false
+        }
+      ],
+      "elevation": {
+        "bottom": null,
+        "top": null
+      },
+      "behaviors": [],
+      "visibility": 2,
+      "locked": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "region",
+          "escena": "terminal-ferry",
+          "region": "a-alaskan-way",
+          "estado": "pendiente",
+          "pendiente": "there's no street map (Alaskan Way): the Storyteller moves the tokens by hand"
+        }
+      },
+      "_key": "!scenes.regions!YItWymxAL9s6gXRx.CxkIUQO63BOphTez"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "ItUzvfr4M2shr8Po",
+      "entryId": "IDd94316DhSx3ptV",
+      "pageId": null,
+      "x": 1485,
+      "y": 510,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/house.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "LUG-15",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "terminal-ferry",
+          "id": "LUG-15"
+        }
+      },
+      "_key": "!scenes.notes!YItWymxAL9s6gXRx.ItUzvfr4M2shr8Po"
+    },
+    {
+      "_id": "LFX4hj1xPdn4BhAE",
+      "entryId": "doItxeK8y7M1PufU",
+      "pageId": "tG1m5PTkmBA1pvmc",
+      "x": 1585,
+      "y": 510,
+      "elevation": 0,
+      "sort": 0,
+      "locked": false,
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "iconSize": 40,
+      "text": "A4-E03",
+      "fontFamily": "Signika",
+      "fontSize": 24,
+      "textAnchor": 1,
+      "textColor": "#ffffff",
+      "global": false,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pin",
+          "escena": "terminal-ferry",
+          "id": "A4-E03"
+        }
+      },
+      "_key": "!scenes.notes!YItWymxAL9s6gXRx.LFX4hj1xPdn4BhAE"
+    }
+  ],
+  "tiles": [
+    {
+      "_id": "wGtbb5XY3AZ7RMr4",
+      "name": "the security guard's stool",
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tiles/tile-taburete.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 1105,
+      "y": 825,
+      "width": 50,
+      "height": 50,
+      "elevation": 0,
+      "levels": [
+        "1OoZ1eHWQlaP37BD"
+      ],
+      "sort": 0,
+      "rotation": 90,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "occlusion": {
+        "modes": [],
+        "alpha": 0
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "tile",
+          "escena": "terminal-ferry",
+          "tipo": "silla"
+        }
+      },
+      "_key": "!scenes.tiles!YItWymxAL9s6gXRx.wGtbb5XY3AZ7RMr4"
+    }
+  ],
+  "tokens": [
+    {
+      "_id": "m0wj8NMPs5nItJhE",
+      "name": "Mr. Pell",
+      "displayName": 30,
+      "actorId": "eRE6FTNdGO76lzPK",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-09.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 470,
+      "y": 490,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 0,
+      "hidden": false,
+      "disposition": 0,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-09",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Climbs the walkway slowly with the aluminum briefcase."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.m0wj8NMPs5nItJhE"
+    },
+    {
+      "_id": "rG6AjhTtmSBNnm78",
+      "name": "Dawson",
+      "displayName": 30,
+      "actorId": "Nq5NRC7yFhdkA5Er",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04-DAWSON.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 470,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 1,
+      "hidden": false,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 10,
+        "angle": 360,
+        "visionMode": "darkvision",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": -1,
+        "contrast": 0
+      },
+      "detectionModes": {
+        "feelTremor": {
+          "enabled": true,
+          "range": 20
+        }
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-04-DAWSON",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Pell leans on his arm; he looks back and sniffs the air."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.rG6AjhTtmSBNnm78"
+    },
+    {
+      "_id": "CdZHtfQ2KiwULENN",
+      "name": "Security Guard 1",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 350,
+      "y": 490,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 2,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "The two ghouls with Dawson, ahead on the walkway."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.CdZHtfQ2KiwULENN"
+    },
+    {
+      "_id": "qjewgP5x32gaVt4S",
+      "name": "Security Guard 2",
+      "displayName": 30,
+      "actorId": "BzNGxOAK3F6Uo56T",
+      "actorLink": false,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/MEN-04.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 350,
+      "y": 610,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 3,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "MEN-04",
+          "escenas": [
+            "A4-E03"
+          ]
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.qjewgP5x32gaVt4S"
+    },
+    {
+      "_id": "LoXbF7PIqPriVYWu",
+      "name": "Charles Halloway",
+      "displayName": 30,
+      "actorId": "ys08GDwMs80NuOlf",
+      "actorLink": true,
+      "texture": {
+        "src": "modules/seattle-by-night/assets/tokens/PNJ-03.webp",
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0,
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
+      },
+      "x": 610,
+      "y": 550,
+      "width": 1,
+      "height": 1,
+      "elevation": 0,
+      "level": "1OoZ1eHWQlaP37BD",
+      "rotation": 0,
+      "alpha": 1,
+      "lockRotation": true,
+      "locked": false,
+      "sort": 4,
+      "hidden": true,
+      "disposition": -1,
+      "sight": {
+        "enabled": true,
+        "range": 3,
+        "angle": 360,
+        "visionMode": "basic",
+        "color": null,
+        "attenuation": 0,
+        "brightness": 0,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "token",
+          "escena": "terminal-ferry",
+          "id": "PNJ-03",
+          "escenas": [
+            "A4-E03"
+          ],
+          "nota": "Only if he lost the vote or was exposed at the Council (A4-E01)."
+        }
+      },
+      "_key": "!scenes.tokens!YItWymxAL9s6gXRx.LoXbF7PIqPriVYWu"
+    }
+  ],
+  "sounds": [],
+  "drawings": [],
+  "playlist": "RREVIAminsF37jT3",
+  "playlistSound": "m006soGLvOVuXxdQ",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "escena",
+      "escena": "terminal-ferry",
+      "id": "LUG-15",
+      "plano": "terminal-ferry",
+      "provisional": false,
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.IDd94316DhSx3ptV]{The Ferry Terminal and the Last Ferry}<br><strong>Scenes:</strong> @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}</p>\n<p><strong>A4-E03, 12:55 a.m.</strong> “The terminal is almost empty under the fluorescents. A guard looks at his phone; a coffee machine blinks behind an ‘out of service’ sign. Outside, the last ferry of the night waits with every light on, like a four-story white building floating on black water. The horn sounds once, long. On the passenger ramp, an old man in a dark suit with an aluminum briefcase climbs slowly, leaning on the arm of an enormous man who looks back and sniffs the air.”</p>\n<p><strong>The waiting room</strong> is on the upper floor. Fixed <strong>benches</strong> in three double rows; a handful of sleepy-looking passengers (tokens). The <strong>security guard</strong> is at his podium beside the <strong>boarding door</strong> (west), looking at his phone. The <strong>broken coffee machine</strong> stands against the north wall (dark on the map; the “screen” light makes it blink). The “out of service” sign isn&#39;t painted on.</p>\n<p><strong>The passenger ramp.</strong> From the boarding door, the <strong>elevated walkway</strong>, glassed in on both sides, runs west: at its far end it rests on the ferry&#39;s stern. When the coterie enters the waiting room, <strong>Pell and Dawson are climbing the walkway</strong> (place them halfway along): they can be seen through the glass from the room. At the end of the walkway, the “Board the ferry” region leads to the stern deck of the passenger cabin (<code>ferry</code>). Boarding without Dawson seeing them: Dexterity + Stealth Diff. 4 against his Wits + Awareness (6 dice); Obfuscate doesn&#39;t fool his nose, but the wind off the Sound does (+1 die for the windward side: the wind comes in from the west, off the water).</p>\n<p><strong>The vehicle ramp</strong> (below, at dock level, in the southern strip): the vehicle holding lot and the ramp that crosses the water to the car deck. Anyone arriving by car (Dexterity + Drive Diff. 3 to get there before 12:55 a.m.) appears in the holding lot; the region at the end of the ramp leads to the stern of the car deck (<code>ferry-coches</code>). The east stairs go down to the street and the holding lot (twin regions on this same map), and the holding lot exits onto Alaskan Way (no map).</p>\n<p>The restrooms (hatched block) aren&#39;t played. The horn sounds at 12:50 a.m.: five minutes.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (1) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.eRE6FTNdGO76lzPK]{Mr. Pell} (A4-E03): Climbs the walkway slowly with the aluminum briefcase.</li><li>@UUID[Actor.Nq5NRC7yFhdkA5Er]{Dawson} (A4-E03): Pell leans on his arm; he looks back and sniffs the air.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Security Guard 1} · <em>hidden</em> (A4-E03): The two ghouls with Dawson, ahead on the walkway.</li><li>@UUID[Actor.BzNGxOAK3F6Uo56T]{Security Guard 2} · <em>hidden</em> (A4-E03)</li><li>@UUID[Actor.ys08GDwMs80NuOlf]{Charles Halloway} · <em>hidden</em> (A4-E03): Only if he lost the vote or was exposed at the Council (A4-E01).</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Exit to Alaskan Way.</p>",
+      "moviles": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

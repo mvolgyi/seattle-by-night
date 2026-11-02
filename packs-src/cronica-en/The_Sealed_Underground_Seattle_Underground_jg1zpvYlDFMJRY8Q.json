@@ -1,0 +1,109 @@
+{
+  "_id": "jg1zpvYlDFMJRY8Q",
+  "_key": "!journal!jg1zpvYlDFMJRY8Q",
+  "name": "The Sealed Underground (Seattle Underground)",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 40,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-04",
+      "archivo": "content/ciudad/LUG-04.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "9t7L1cTiRMv5caLF",
+      "_key": "!journal.pages!jg1zpvYlDFMJRY8Q.9t7L1cTiRMv5caLF",
+      "name": "The Sealed Underground (Seattle Underground)",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Pioneer Square · Abel Thornquist&#39;s domain · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "mvxLc0BpuyE4e2B9",
+      "_key": "!journal.pages!jg1zpvYlDFMJRY8Q.mvxLc0BpuyE4e2B9",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The guided tours cover three blocks of the Seattle Underground. This isn&#39;t that. Past an iron door that appears on no blueprint, the sidewalks of 1889 run on beneath the ground, with boarded-up storefronts, hand-painted signs, and violet glass skylights that let a dirty light down from the street above. It smells of mold, of damp, and, every so often, of server ozone. A network cable climbs along the ceiling like a vine.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4xzei9plqTGJqrua",
+      "_key": "!journal.pages!jg1zpvYlDFMJRY8Q.4xzei9plqTGJqrua",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> the Undermarket (stalls trading in information and favors), Thornquist&#39;s office in an old barbershop, Ezra&#39;s server nest (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}), and the thin-bloods&#39; haven in an old coal storeroom.</p>\n<p><strong>Backgrounds:</strong> Haven 4 (Thornquist), Haven 2 (Ezra).</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below}. It&#39;s also the natural place for @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.2fax8pORxdPqKspO]{LOR-02 · The Seattle Underground}.</p>\n<p><strong>The Rules Below:</strong> no fighting in the Market, everything has a price, and nobody asks about anybody&#39;s face.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

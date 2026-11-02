@@ -9,7 +9,7 @@ origen: "10"
 
 # Capítulo 7 · El Expediente Ward
 
-*Aventura para una coterie de 4 o 5 personajes, incluido @ID[PJ-01|David Smith]. Duración estimada: 6–8 sesiones. ID: AVE-01.*
+*Aventura para una coterie de 4 o 5 personajes, con @ID[PJ-01|David Smith] y @ID[PNJ-05|Bear] como aliados PNJ. Duración estimada: 6–8 sesiones. ID: AVE-01.*
 
 ## Introducción
 
@@ -68,10 +68,11 @@ Las Noches 2 a 6 de esta tabla cambian con la cadena de las copias (Sal Medeiros
 
 ## Consejos de personaje
 
-La aventura está escrita para «Los del Archivo» (@ID[COT-00|COT-00]): David y 3 o 4 personajes nuevos que aparecen en el Expediente. Los conceptos @ID[PJ-02|PJ-02] a @ID[PJ-06|PJ-06] encajan directamente. Si los jugadores crean sus propios personajes, tené en cuenta esto:
+La aventura está escrita para «Los del Archivo» (@ID[COT-00|COT-00]): 4 o 5 personajes que aparecen en el Expediente. Los conceptos @ID[PJ-02|PJ-02] a @ID[PJ-06|PJ-06] encajan directamente; con 4 jugadores queda uno sin usar. David no es de la coterie: es su aliado, el Sabueso del Sheriff, que los acompaña toda la historia y les presta el hangar como refugio. Lo lleva el Narrador, igual que a Bear. Si los jugadores crean sus propios personajes, tené en cuenta esto:
 
 - **Clanes que funcionan mejor:** Ventrue (acceso al círculo de @ID[PNJ-03|Halloway]), Nosferatu (información y vigilancia), Toreador (la corte y el entorno de @ID[PNJ-04|Helen]), Gangrel (la jauría del Sheriff), Tremere (forense y hechicería de sangre). Malkavian y Banu Haqim también encajan. Conviene evitar más Brujah: la ciudad ya tiene cuatro.
 - **Trasfondos útiles:** Contactos (policía, prensa, puerto, tecnología), Influencia, Rebaño, Estatus en la Camarilla y cualquier Mawla en la corte. Una Máscara sólida (2 o más) ayuda: en esta aventura, la vigilancia es el peligro principal.
 - **Habilidades clave:** Investigación, Tecnología, Perspicacia, Sigilo, Persuasión, Política y Pelea. Al menos un personaje con Tecnología 2 o más facilita mucho las cosas.
 - **Motivaciones:** todos los personajes tienen algo en el Expediente. Antes de empezar, que cada jugador decida qué contiene su carpeta (@ID[AYU-09|AYU-09]) y una Piedra de toque que podría estar en peligro en la Parte 3.
-- **Para el jugador de @ID[PJ-01|David]:** conviene acordar en privado, antes de la sesión 1, dos cosas que su personaje sabe y los demás no: el mensaje del 9 de noviembre (@ID[DOC-05|DOC-05]) y lo que pasó realmente en el Larchmont (@ID[LUG-11|LUG-11]).
+- **Cómo llevar a @ID[PJ-01|David]:** es el centro emocional de la trama, pero la trama la viven los PJs. Sabe dos cosas que la coterie no: por qué mandó el mensaje del 9 de noviembre (@ID[DOC-05|DOC-05]) y lo que pasó realmente en el Larchmont (@ID[LUG-11|LUG-11]). No las cuenta por su cuenta: los PJs las descubren y deciden qué hacer con ellas. Cuando ayuda, suma +1 dado al que tira o hace algo que narrás sin tirar. Nunca resuelve solo lo que tienen que resolver los jugadores, y las decisiones grandes (perdonar, entregar, matar, mentir) son de ellos. David opina, presiona o reacciona.
+- **Propuesto · De qué conocen a David:** en la sesión cero, que cada jugador diga de qué conoce su PJ al Sabueso, aunque sea de lejos. Hal lo conoce desde hace treinta años (@ID[PJ-05|PJ-05]); los demás, lo que acuerde la mesa. Sirve para que David pueda convocarlos en @ID[A0-E01].

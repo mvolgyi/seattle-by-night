@@ -1,0 +1,334 @@
+{
+  "_id": "AeAhHuCNHL9KWVnT",
+  "_key": "!journal!AeAhHuCNHL9KWVnT",
+  "name": "Wendell Fry",
+  "folder": "TyiHjoWtr5JBbz73",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-16",
+      "archivo": "content/personajes/PNJ-16.md",
+      "actor": "Actor.XuP20cPC3T1EiCxD"
+    }
+  },
+  "pages": [
+    {
+      "_id": "XD0I4NyFgPJvPWO9",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.XD0I4NyFgPJvPWO9",
+      "name": "Wendell Fry",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-16.webp\" alt=\"Wendell Fry\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.XuP20cPC3T1EiCxD]{Wendell Fry}</p>\n<p><em>“You&#39;re not crazy, Helen. And the rain has ears.”</em></p>\n<p><strong>Clan:</strong> Malkavian · <strong>Position:</strong> Primogen (by custom) · <strong>Sect:</strong> Camarilla</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SWWfZoYvaKfKzZl6",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.SWWfZoYvaKfKzZl6",
+      "name": "Mortal Days: The Graveyard-Shift DJ",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>For nine years Wendell Fry hosted the overnight show on a Seattle AM station, one to five a.m., the slot nobody wanted. He played jazz, blues, and rare records, and he took calls from insomniacs, truckers, nurses, and drunks. What made the show famous was that Wendell listened. He let people talk for ten, fifteen minutes, and then he said one sentence that stuck with them for the rest of their lives. Listeners said he could guess things. He said he just paid attention.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Emec7IMUIGE9SwA6",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.Emec7IMUIGE9SwA6",
+      "name": "Kindred Nights: The Listener",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>In 1971, a Malkavian who called the show every night from a phone booth in Fremont waited for him outside the station one night. She told him she had chosen him because his was the only voice in the city that didn&#39;t lie, and she Embraced him in the parking lot. His sire disappeared a few weeks later. Wendell kept the show going for two more years, until the station went off the air. Today he has an overnight show again, on a community radio station.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note</h4><p>Doc 06 ended his radio career with the station&#39;s closing; it was decided that today he has a late-night show on a community radio station, which is his Mask.</p>\n</aside>\n<p>Now he listens to the city another way: police radios, podcasts, voicemails, bar conversations. He believes Seattle speaks in code and that he is the only one who understands it. Sometimes he&#39;s right. He holds the Malkavian seat among the Primogen because nobody else wanted it, and he votes based on things nobody understands. For years he has been calling in to Helen&#39;s podcast under the name “W.”</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kyOTJOVTImDChuk0",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.kyOTJOVTImDChuk0",
+      "name": "Plans and Schemes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The prophecy of the fist.</strong> For a month now he has been hearing, in the static of the port radio, that “the fist has two sons.” He doesn&#39;t know what it means, but he had it entered in the Elysium log (@UUID[JournalEntry.lcO0CdwUlZHg2wAX]{Register of the Keeper of Elysium, November Folio}) and wrote it on a napkin (@UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: “Song for the Son of the Fist”}).</p>\n<p><strong>Protect the prophet.</strong> He believes Helen Ward is a sibyl, someone who hears the city&#39;s truth without knowing she hears it. If he learns she&#39;s in danger, he&#39;ll try to help her in his own way, which may not be the best way.</p>\n<p><strong>The deciding vote.</strong> At the Council (@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}) his vote can tip the balance. He&#39;ll vote for whoever has told him something true out loud.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "sMZOhJ2NmzYg4vK8",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.sMZOhJ2NmzYg4vK8",
+      "name": "Domain and Haven",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>An abandoned radio studio on the top floor of a building in Fremont, full of old equipment left switched on (Haven 2). He feeds on insomniacs: people who can&#39;t sleep and go out walking at three in the morning. He gives them conversation first. Some come back looking for him.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LDr66ZLXGppfPQF8",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.LDr66ZLXGppfPQF8",
+      "name": "Servants and Tools",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The listeners</strong> (Herd 1): a dozen insomniacs who cross paths with him on the same streets and think he&#39;s an odd neighbor.</p>\n<p><strong>Scanners</strong> (Resources 1): police, port, and emergency radios, all on at once.</p>\n<p><strong>Fame 1</strong>: old listeners of the station still recognize his voice.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "M5SBEwai0TLRKTaa",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.M5SBEwai0TLRKTaa",
+      "name": "Kindred Relations",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}</strong> (tenderness). He calls him “the son of the fist” without knowing exactly why.</p>\n<p><strong>@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}</strong> (pity). He has never seen him, but he hears him in the static: “the one who learned half.”</p>\n<p><strong>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</strong> (amusement). He considers him an actor who forgot he was in a play.</p>\n<p><strong>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</strong> (unease). He says his voice “has no bottom.”</p>\n<p><strong>@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia Ferro}</strong> (kinship). He knows her work on the podcast. He likes the mix.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "bDdoOlbthArRFpAZ",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.bDdoOlbthArRFpAZ",
+      "name": "Whispers",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“Fry hears the future on the radio.” <em>(Half true: he hears the present with a clarity that seems like the future.)</em></li>\n<li>“Fry is the listener ‘W.’ on Helen Ward&#39;s podcast.” <em>(True.)</em></li>\n<li>“Fry will always vote with the Prince.” <em>(False.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "N4sfabWBAwT5ZvYt",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.N4sfabWBAwT5ZvYt",
+      "name": "Mask and Appearance",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>To mortals he&#39;s the late-night host on a community radio station (Mask 1). He looks about thirty-three. He&#39;s thin, with an unkempt beard, thick-framed glasses, corduroy jackets, and a baseball cap from a team that no longer exists. He speaks in a radio voice, deep and slow, that contrasts with his scruffy look. He always has headphones hanging around his neck. Sometimes he puts them on in the middle of a conversation.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note</h4><p>Doc 06 said “looks about fifty-five” and “white beard”; it was decided that he looks the age he was at his Embrace (1971, born in 1938): about thirty-three, with an unkempt beard but no gray. It also said that to mortals he&#39;s “an eccentric retiree from Fremont”; it was decided that he&#39;s the late-night host on a community radio station.</p>\n</aside>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "EqB0n8zeebFFM4hz",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.EqB0n8zeebFFM4hz",
+      "name": "Reference Data",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> an unnamed Malkavian who called in from Fremont</li>\n<li><strong>Embraced:</strong> 1971 (born in 1938)</li>\n<li><strong>Ambition:</strong> decipher what the city is trying to tell him.</li>\n<li><strong>Conviction:</strong> “Never interrupt someone who is telling the truth.”</li>\n<li><strong>Touchstone:</strong> Helen Ward (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}), though she doesn&#39;t know it.</li>\n<li><strong>Humanity:</strong> 7</li>\n<li><strong>Generation:</strong> 10th</li>\n<li><strong>Blood Potency:</strong> 2</li>\n</ul>\n<p><strong>Derangement (Malkavian):</strong> he can&#39;t leave a sentence unfinished. If someone interrupts him, he repeats what he was saying from the beginning.</p>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hsSVWVqkoTrGSjeE",
+      "_key": "!journal.pages!AeAhHuCNHL9KWVnT.hsSVWVqkoTrGSjeE",
+      "name": "Stats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Attributes:</strong> Strength 1, Dexterity 2, Stamina 2 · Charisma 3, Manipulation 2, Composure 3 · Intelligence 3, Wits 4, Resolve 2</p>\n<p><strong>Secondary Attributes:</strong> Health 5 · Willpower 5</p>\n<p><strong>Skills:</strong> Academics 2 (Music), Awareness 4 (What Goes Unsaid), Etiquette 1, Performance 4 (Radio), Occult 3 (Prophecy), Insight 5 (Voices), Persuasion 2, Stealth 2, Technology 2 (Analog Radio)</p>\n<p><strong>Disciplines:</strong></p>\n<ul>\n<li>Auspex 3: Heightened Senses (<em>Heightened Senses</em>), Premonition (<em>Premonition</em>), Scry the Soul (<em>Scry the Soul</em>)</li>\n<li>Dominate 1: Cloud Memory (<em>Cloud Memory</em>)</li>\n<li>Obfuscate 2: Cloak of Shadows (<em>Cloak of Shadows</em>), Unseen Passage (<em>Unseen Passage</em>)</li>\n</ul>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

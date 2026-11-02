@@ -260,7 +260,7 @@ Con David:
 
    - Las pistas nuevas apuntan a un grupo de vampiros que David conoce muy bien.
 
-   - Helen se mete hasta el cuello; si David no la orienta, puede llegar demasiados pasos cerca de la verdad.
+   - Helen se mete hasta el cuello; si nadie la orienta, ni David ni la coterie, puede llegar demasiados pasos cerca de la verdad.
 
 2. **El archivo Helen** *(es el Expediente Ward: la premisa de @ID[AVE-01])*
 
@@ -308,7 +308,7 @@ Para David, Helen es:
 
   - si muere, probablemente será por estar demasiado cerca de él o de los suyos.
 
-  - su muerte sería una **Mácula** en la Humanidad de David.
+  - su muerte sería una **Mácula** en la Humanidad de David. Como es PNJ, no se tira: David pierde su única Piedra de toque viva y se rompe (ver «Cuándo se quiebra» en @ID[PJ-01]).
 
 ## Diferencias con los docs 00–16
 

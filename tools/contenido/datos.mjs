@@ -16,11 +16,14 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { RAIZ, MODULO, leerJson, slug } from "../util.mjs";
+import { RAIZ, MODULO, slug } from "../util.mjs";
+import { EN, es, leerContenido, dataDe } from "./idioma.mjs";
 
-const SALIDA = "data/cronica.json";
+const leerJson = leerContenido;
+// En inglés, data/en/… (el módulo lee los del idioma de la crónica: src/module/datos.mjs).
+const SALIDA = dataDe("data/cronica.json");
 /** Lo que pueden saber los jugadores: lo que cargan sus clientes (src/module/datos.mjs). */
-const SALIDA_PUBLICA = "data/publico.json";
+const SALIDA_PUBLICA = dataDe("data/publico.json");
 
 /** Texto sin marcas de Markdown (*cursiva*, **negrita**). */
 const plano = t => (typeof t === "string" ? t.replace(/\*+([^*]+)\*+/g, "$1").trim() : t);
@@ -87,6 +90,7 @@ function termometro(t, ctx) {
       if (!c) return; // «cantidad 0»: no mueve nada, queda como texto en el journal TRACKERS.
       // «GAN-01: la analista…» ya nombra su gancho: no se repite.
       const donde = m.escena ?? m.lugar ?? m.gancho;
+      // (En inglés el id se pisa con el del castellano: datos.mjs#copiarLogica.)
       const id = idMov(tipo, donde && !slug(String(m.motivo ?? "")).startsWith(slug(donde)) ? donde : null, m.motivo);
       movimientos.push({ id, tipo, cambio: c, ...tomar(m, CAMPOS_MOV) });
     });
@@ -240,7 +244,9 @@ function tiradas(p, listaPistas, listaPruebas, ctx) {
         primogenitos: (votacion.primogenitos ?? []).map(pr => {
           // Qué pistas y pruebas pueden cambiar este voto: las que nombra el libro en
           // «cambia» y las que en sus efectos de A4-E01 dicen «Votación: <apellido> cambia».
-          const apellido = (ctx.reg.get(pr.pnj)?.nombre ?? "").split(/\s+/).filter(w => w.length > 3).at(-1);
+          // (En inglés esto se calcula sobre el castellano: ver construir.)
+          const r = ctx.reg.get(pr.pnj);
+          const apellido = (r?.nombreEs ?? r?.nombre ?? "").split(/\s+/).filter(w => w.length > 3).at(-1);
           const nombrados = String(pr.cambia ?? "").match(/\bP-\d{2}\b/g) ?? [];
           const porEfecto = apellido ? fuentes.filter(f => f.efectos.some(e =>
             e.escena === "A4-E01" && new RegExp(`^votaci[oó]n:\\s*${apellido}\\b`, "i").test(e.efecto ?? ""))).map(f => f.id) : [];
@@ -295,6 +301,25 @@ function uuids(datos, ctx) {
   return { uuids: out, actores };
 }
 
+/**
+ * Copia, recorriendo los dos cuerpos en paralelo (misma forma: las listas se
+ * filtran por números, no por texto), lo que el castellano decide leyendo su
+ * prosa. Así data/en/cronica.json tiene los mismos ids que data/cronica.json y
+ * el estado del mundo (que los guarda) vale en los dos idiomas.
+ */
+const LOGICA = new Set(["id", "pistas", "prueba", "min", "max", "necesita", "total", "voto", "apoyos", "cambio", "porPista"]);
+function copiarLogica(destino, origen) {
+  if (Array.isArray(destino) && Array.isArray(origen)) {
+    destino.forEach((v, i) => (v && typeof v === "object" ? copiarLogica(v, origen[i]) : null));
+    return;
+  }
+  if (!destino || typeof destino !== "object" || !origen || typeof origen !== "object") return;
+  for (const k of Object.keys(origen)) {
+    if (LOGICA.has(k) && (typeof origen[k] !== "object" || Array.isArray(origen[k]) && origen[k].every(x => typeof x === "string"))) destino[k] = origen[k];
+    else if (destino[k] && typeof destino[k] === "object") copiarLogica(destino[k], origen[k]);
+  }
+}
+
 /* -------------------------------------------- */
 
 export async function construir(ctx) {
@@ -306,15 +331,30 @@ export async function construir(ctx) {
   const t = leerJson("content/trackers.json");
   const p = leerJson("content/pistas.json");
 
-  const listaPistas = pistas(p);
-  const listaPruebas = pruebas(p);
-  const cuerpo = {
-    termometro: termometro(t.termometro ?? {}, ctx),
-    reloj: reloj(t.reloj ?? {}),
-    pistas: listaPistas,
-    pruebas: listaPruebas,
-    tiradas: tiradas(p, listaPistas, listaPruebas, ctx)
+  /** El cuerpo de data/cronica.json desde trackers y pistas (de un idioma). */
+  const armar = (t, p, ctx) => {
+    const listaPistas = pistas(p);
+    const listaPruebas = pruebas(p);
+    return {
+      termometro: termometro(t.termometro ?? {}, ctx),
+      reloj: reloj(t.reloj ?? {}),
+      pistas: listaPistas,
+      pruebas: listaPruebas,
+      tiradas: tiradas(p, listaPistas, listaPruebas, ctx)
+    };
   };
+  let cuerpo;
+  if (!EN) cuerpo = armar(t, p, ctx);
+  else {
+    // Los ids (que guarda el mundo), los márgenes, los votos por defecto y los apoyos
+    // salen de leer el TEXTO castellano: se arma también el castellano (con sus avisos)
+    // y se copian sobre el inglés (armado sin avisos: su texto no se parsea).
+    const cuerpoEs = armar(es(t), es(p), ctx);
+    cuerpo = armar(t, p, { ...ctx, avisos: [], log: () => {} });
+    copiarLogica(cuerpo, cuerpoEs);
+  }
+  const listaPistas = cuerpo.pistas;
+  const listaPruebas = cuerpo.pruebas;
   const { uuids: mapa, actores } = uuids(cuerpo, ctx);
 
   // Coherencia mínima: lo que las tiradas cuentan tiene que existir.
@@ -325,7 +365,9 @@ export async function construir(ctx) {
   if (cuerpo.reloj.noches.length !== 8) ctx.avisos.push(`datos: el Reloj tiene ${cuerpo.reloj.noches.length} noches (se esperaban 8)`);
 
   const salida = {
-    $generado: `tools/contenido/datos.mjs desde content/trackers.json y content/pistas.json. No editar a mano: npm run contenido.`,
+    $generado: EN
+      ? "tools/contenido/datos.mjs desde content/trackers.json y content/pistas.json, con content/en/. No editar a mano: npm run contenido."
+      : `tools/contenido/datos.mjs desde content/trackers.json y content/pistas.json. No editar a mano: npm run contenido.`,
     modulo: MODULO,
     ...cuerpo,
     uuids: mapa,

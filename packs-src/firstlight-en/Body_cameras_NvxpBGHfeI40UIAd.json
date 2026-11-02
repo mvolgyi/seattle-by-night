@@ -1,0 +1,42 @@
+{
+  "_id": "NvxpBGHfeI40UIAd",
+  "_key": "!items!NvxpBGHfeI40UIAd",
+  "name": "Body cameras",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<p>Everything they see goes to Northline in real time. Each visible supernatural action in front of a camera: Thermometer +1 (maximum +2 per scene).</p><p><button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+1\" data-motivo=\"visible supernatural action in front of a body camera\"><i class=\"fa-solid fa-temperature-half\"></i> Thermometer +1</button> (maximum +2 per scene)</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "The Ward File",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "camaras-corporales",
+      "agravado": false
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 60,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

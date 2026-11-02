@@ -13,7 +13,8 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { RAIZ, idEstable, slug, separarFrontmatter, archivosMd } from "../util.mjs";
+import { RAIZ, idEstable, slug, archivosMd } from "../util.mjs";
+import { EN, es, leerContenido, leerMd, emparejarPaginas, copia } from "./idioma.mjs";
 
 /* -------------------------------------------- */
 /*  Compendios                                  */
@@ -111,31 +112,53 @@ export function paginar(cuerpo) {
     .filter((p, i) => i > 0 || p.md);
 }
 
-/** Clave estable de una página dentro de su journal. */
-export const clavePagina = p => p.ancla ?? (p.nombre ? `t:${slug(p.nombre)}` : "intro");
+/**
+ * Clave estable de una página dentro de su journal. En inglés la trae la
+ * página (`clave`, la del castellano: idioma.mjs#emparejarPaginas), así el
+ * título traducido no cambia el _id.
+ */
+export const clavePagina = p => p.clave ?? p.ancla ?? (p.nombre ? `t:${slug(p.nombre)}` : "intro");
 
 /* -------------------------------------------- */
 /*  Lectura de content/                         */
 /* -------------------------------------------- */
 
-const leer = rel => JSON.parse(fs.readFileSync(path.join(RAIZ, rel), "utf8"));
+const leer = rel => leerContenido(rel);
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
 
-/** Todos los journals de content/ con su pack, metadatos y páginas. */
+/**
+ * Todos los journals de content/ con su pack, metadatos y páginas. En inglés,
+ * cada uno trae además `es`: el mismo journal en castellano (las páginas
+ * inglesas llevan la clave, el ancla y la visibilidad de las castellanas).
+ * Mismos objetos en cada llamada.
+ */
+let JOURNALS = null;
 export function journals() {
+  if (JOURNALS) return JOURNALS;
   const out = [];
   for (const [pack, carpetas] of Object.entries(JOURNALS_POR_PACK)) {
     for (const carpeta of carpetas) {
       for (const archivo of archivosMd(path.join(RAIZ, "content", carpeta))) {
         const rel = path.relative(RAIZ, archivo);
-        const { meta, cuerpo } = separarFrontmatter(fs.readFileSync(archivo, "utf8"));
+        const leido = leerMd(archivo);
+        const { meta, cuerpo } = leido;
         const id = meta.id ?? slug(path.basename(archivo, ".md"));
-        out.push({ pack, rel, id, meta, cuerpo, paginas: paginar(cuerpo) });
+        if (!EN) { out.push({ pack, rel, id, meta, cuerpo, paginas: paginar(cuerpo) }); continue; }
+        const jes = { pack, rel, id, meta: leido.es.meta, cuerpo: leido.es.cuerpo, paginas: paginar(leido.es.cuerpo) };
+        const pares = leido.traducido ? emparejarPaginas(rel, jes.paginas, paginar(cuerpo), clavePagina) : null;
+        const j = pares && !pares.includes(null)
+          ? { pack, rel, id, meta, cuerpo, paginas: pares, es: jes }
+          : { pack, rel, id, meta: jes.meta, cuerpo: jes.cuerpo, paginas: jes.paginas, es: jes };
+        out.push(j);
       }
     }
   }
+  JOURNALS = out;
   return out;
 }
+
+/** El journal castellano de uno de journals() (el mismo en castellano). */
+export const journalEs = j => j?.es ?? j;
 
 /** Fichas con estadísticas (las que se vuelven actores). */
 export function fichas() {
@@ -144,16 +167,27 @@ export function fichas() {
   for (const f of fs.existsSync(dir) ? fs.readdirSync(dir).sort() : []) {
     if (!f.endsWith(".json") || f === "combate.json") continue;
     const d = leer(`content/pnjs/${f}`);
-    for (const p of d.pnjs ?? []) out.push({ ...p, _origen: `pnjs/${f}`, _clase: "ficha" });
-    for (const p of d.menores ?? []) out.push({ ...p, _origen: `pnjs/${f}`, _clase: "menor" });
+    for (const p of d.pnjs ?? []) out.push(copia(p, { _origen: `pnjs/${f}`, _clase: "ficha" }));
+    for (const p of d.menores ?? []) out.push(copia(p, { _origen: `pnjs/${f}`, _clase: "menor" }));
   }
   if (existe("content/pjs.json")) {
-    for (const p of leer("content/pjs.json").pjs ?? []) out.push({ ...p, pj: true, _origen: "pjs.json", _clase: "ficha" });
+    for (const p of leer("content/pjs.json").pjs ?? []) out.push(copia(p, { pj: true, _origen: "pjs.json", _clase: "ficha" }));
   }
   // Una ficha con `reemplaza: true` gana sobre las demás con el mismo id
   // (la versión de cazador de Okafor reemplaza a la de mortal sin borrarla).
   const ganadoras = new Set(out.filter(f => f.reemplaza).map(f => f.id));
   return out.filter(f => f.reemplaza || !ganadoras.has(f.id));
+}
+
+/**
+ * Los planos de content/planos (como cargarPlanos de tools/construir-planos.mjs),
+ * fundidos con content/en/planos en inglés: misma geometría, nombres y notas
+ * del idioma. Lo que decide algo por texto (la sala de un pin) usa es().
+ */
+export function planos() {
+  const dir = path.join(RAIZ, "content/planos");
+  return (fs.existsSync(dir) ? fs.readdirSync(dir) : []).filter(f => f.endsWith(".json")).sort()
+    .flatMap(f => leer(`content/planos/${f}`).planos ?? []);
 }
 
 /**
@@ -177,24 +211,26 @@ export const tieneActor = f =>
 export function registro() {
   const reg = new Map();
   const poner = (clave, valor) => { if (!reg.has(clave)) reg.set(clave, valor); };
+  // En inglés, el nombre castellano al lado (datos.mjs lee apellidos en la prosa castellana).
+  const conEs = (valor, nombreEs) => (EN ? { ...valor, nombreEs } : valor);
   const actores = new Map();
 
   for (const f of fichas().filter(tieneActor)) {
-    actores.set(f.id, { uuid: `Actor.${ID.actor(f.id)}`, nombre: f.nombre, tipo: "actor", pack: "personajes" });
+    actores.set(f.id, conEs({ uuid: `Actor.${ID.actor(f.id)}`, nombre: f.nombre, tipo: "actor", pack: "personajes" }, es(f).nombre));
   }
 
   for (const j of journals()) {
     const jid = ID.journal(j.id);
     for (const p of j.paginas) {
       if (!p.ancla) continue;
-      poner(p.ancla, {
+      poner(p.ancla, conEs({
         uuid: `JournalEntry.${jid}.JournalEntryPage.${ID.pagina(jid, clavePagina(p))}`,
         nombre: p.nombre, tipo: "pagina", pack: j.pack
-      });
+      }, es(p).nombre));
     }
   }
   for (const j of journals()) {
-    poner(j.id, { uuid: `JournalEntry.${ID.journal(j.id)}`, nombre: j.meta.nombre ?? j.id, tipo: "journal", pack: j.pack });
+    poner(j.id, conEs({ uuid: `JournalEntry.${ID.journal(j.id)}`, nombre: j.meta.nombre ?? j.id, tipo: "journal", pack: j.pack }, journalEs(j).meta.nombre ?? j.id));
   }
   for (const [k, v] of actores) poner(k, v);
 

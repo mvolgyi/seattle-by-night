@@ -1,0 +1,109 @@
+{
+  "_id": "lIohEQe1KFTOCQ0U",
+  "_key": "!journal!lIohEQe1KFTOCQ0U",
+  "name": "The Terminal 86 Grain Elevator",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 160,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-16",
+      "archivo": "content/ciudad/LUG-16.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "u1faFKEb4kGZepXI",
+      "_key": "!journal.pages!lIohEQe1KFTOCQ0U.u1faFKEb4kGZepXI",
+      "name": "The Terminal 86 Grain Elevator",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>North of downtown · Silos and conveyor gallery · Map: yes</em></p>\n<p><em>Chapter 3 doesn&#39;t describe this location. What follows comes from @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell} and the Part 3 ID registry (doc 12); on the domain map (@UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Map of Seattle with the Domains}) it&#39;s point ⑯ “Terminal 86.”</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oz0b5rE7SLheWEMQ",
+      "_key": "!journal.pages!lIohEQe1KFTOCQ0U.oz0b5rE7SLheWEMQ",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>The service stairs zigzag up the outside of the silo to a long, narrow gallery of sheet metal and grimy glass. Inside, a stopped conveyor belt runs end to end. It smells of old grain and the sea. At the far end, a hatch hangs open over the bay, letting in the wind and the rain, and facing it is a chair with someone tied to it. Sitting on the belt, elbows on his knees, gray coat hanging open, a man with a shaved head watches you arrive. He doesn&#39;t get up. “Come,” he tells David. “Sit. I&#39;ve wanted to ask you something for fifty years.”</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "dPvZnPOgd75Qf8ff",
+      "_key": "!journal.pages!lIohEQe1KFTOCQ0U.dPvZnPOgd75Qf8ff",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Read Aloud is the arrival sidebar from @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}.</p>\n<p>The location is the Terminal 86 grain elevator, north of downtown: a row of forty-meter concrete silos by the water, with a conveyor gallery up top that links the silos to the pier. @UUID[JournalEntry.OmK2qlPVNl758u6h]{Krell} waits in the gallery. The hostage, if there is one, is tied to a chair beside an open loading hatch over the bay, thirty meters above the water.</p>\n<p><strong>Access:</strong> there are three ways in: the outside stairs (the ones the meeting calls for, in Krell&#39;s line of sight), the inside of the neighboring silo (Athletics, Difficulty 3, to climb), and the water (bringing a boat in under the hatch).</p>\n<p><strong>The hatch:</strong> anyone who falls through it takes 4 blunt damage on hitting the water, thirty meters down.</p>\n<p><strong>Scene:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell} (Night 7, <span class=\"sbn-reloj\" data-sbn-reloj=\"7\" title=\"Night 7 · Wed, Nov 18 (early hours of Nov 18, 2026)\">Night 7</span>, Wednesday, November 18, midnight).</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

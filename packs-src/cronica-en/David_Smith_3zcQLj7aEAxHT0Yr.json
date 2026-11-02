@@ -1,0 +1,726 @@
+{
+  "_id": "3zcQLj7aEAxHT0Yr",
+  "_key": "!journal!3zcQLj7aEAxHT0Yr",
+  "name": "David Smith",
+  "folder": "hkrJy9733wVp7V16",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PJ-01",
+      "archivo": "content/personajes/PJ-01.md",
+      "actor": "Actor.g4XbpMuCHwxVhzeC"
+    }
+  },
+  "pages": [
+    {
+      "_id": "1SBNlkca68lYEjFf",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.1SBNlkca68lYEjFf",
+      "name": "David Smith",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PJ-01.webp\" alt=\"David Smith\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.g4XbpMuCHwxVhzeC]{David Smith}</p>\n<p><em>“Some must burn so the rest can see the light.”</em></p>\n<p><strong>Clan:</strong> Brujah · <strong>Sect:</strong> independent, operational ally of the Camarilla · <strong>Role in @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}:</strong> coterie ally; the emotional center of the story</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "14U4mB4BGkAk23Rm",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.14U4mB4BGkAk23Rm",
+      "name": "In One Sentence",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>former Navy commando Embraced in Haiti in 1960 by Marcus Vance, now the outside enforcer for the Sheriff of Seattle.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hgmzjF5XOLALWNiy",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.hgmzjF5XOLALWNiy",
+      "name": "In This Adventure",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>he&#39;s the emotional center of @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}, but no player runs him. He&#39;s an allied NPC, like @UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Bear}: he calls the coterie in @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE}, Montgomery assigns him to accompany it in @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks}, and he stays with it until the last ferry. Krell is his blood brother, though he doesn&#39;t know it; Helen is his Touchstone; the Larchmont and Emily&#39;s night are the two times he got there too late.</p>\n<p>The PCs live that plot. They uncover the truth about Krell, about Rosa, about the Larchmont, and about Hal&#39;s reports. They decide what to tell David, when, and how. And they carry whatever happens next.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "au02m5ZjnFHhBNng",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.au02m5ZjnFHhBNng",
+      "name": "How to Run Him",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>He helps; he doesn&#39;t take the lead.</strong> If David assists on a roll, the PC rolling adds +1 die. If he does something on his own (covering an exit, opening an armored door, recognizing a guard), narrate it without rolling. He never resolves on his own what the coterie should resolve. If a scene said “automatic for David,” it&#39;s now +1 die for the PC who has David beside them.</p>\n<p><strong>He weighs in; he doesn&#39;t decide.</strong> Forgiving, handing someone over, killing, lying: the players decide those. David pushes, argues, or keeps quiet. If the coterie chooses something he wouldn&#39;t, he says so once, briefly, and then goes along or leaves the scene. He doesn&#39;t undercut it in front of others.</p>\n<p><strong>What he doesn&#39;t know.</strong> That Krell is Vance&#39;s childe. That Rosa sheltered Ray Dorsey in 1996. What folios 41 and 42 say. What Hal tells Montgomery every month. Each of those things reaches David from a PC&#39;s mouth, or not at all.</p>\n<p><strong>The voice.</strong> Short sentences, long silences, operational language: “target,” “exit,” “time.” He treats the coterie as colleagues, not subordinates. The rest is in @UUID[JournalEntry.zmabWuRnBZLfmd9l]{General Tone: The Supernatural Professional}.</p>\n<p><strong>Everyone else looks at him.</strong> Montgomery calls him “Hound.” Halloway, “Mr. Smith.” Krell only talks to him. Use it: let it bother the PCs that the city looks at David and not at them, and make them talk through him or make themselves heard.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "eXWtTtM5tK2y2Fy1",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.eXWtTtM5tK2y2Fy1",
+      "name": "What He Does for the Coterie",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Haven and domain.</strong> He lends them the Harbor Island hangar (@UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}) as a haven. The coterie&#39;s domain is the surrounding docks.</li>\n<li><strong>The arsenal and Bear.</strong> Weapons, vehicles, and a ghoul who drives, repairs, and covers the door (@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom “Bear” Whitman}).</li>\n<li><strong>Contacts.</strong> Police and ex-military ghouls. A word from him gets Montgomery to see them.</li>\n<li><strong>Reading violence.</strong> He looks at a combat scene and knows who did it and how. With @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · The Doctrine of Controlled Fury} at level 4, he recognizes the inverted guard the moment he sees it.</li>\n<li><strong>The name.</strong> “The Black Dog of the Masquerade” opens doors in the Camarilla and shuts them among the Anarchs.</li>\n</ul>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ef1vdzoyUvo3ucFV",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.ef1vdzoyUvo3ucFV",
+      "name": "Scenes Where He Helps",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Scene</th>\n<th>What David does</th>\n<th>What&#39;s left for the coterie</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE}</td>\n<td>Calls the coterie in and arrives with Bear. Helen trusts him more than anyone.</td>\n<td>Convince Helen, read the apartment.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46}</td>\n<td>Reads the blows on the shipping container: +1 die.</td>\n<td>Figure out what they mean.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks}</td>\n<td>Montgomery asks him about his sire and assigns him to accompany the coterie. David lends them the hangar.</td>\n<td>What the coterie tells the Sheriff.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}</td>\n<td>Halloway provokes him. David notices something off in the Vance quote and tenses up: +1 die to whoever&#39;s watching him.</td>\n<td>Spot the error and understand it.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Assess. Execute.”}</td>\n<td>Krell runs the moment he sees him.</td>\n<td>Fight him or follow him.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}</td>\n<td>Rosa looks at him with guilt.</td>\n<td>Rosa confesses 1996 to a PC: decide whether to tell David.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was}</td>\n<td>O&#39;Connor wants to see him fight.</td>\n<td>Work his corner and win O&#39;Connor over.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont}</td>\n<td>Knows the Larchmont: +1 die to find the cistern.</td>\n<td>Open it and decide what to tell Helen.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.5Vgl8slqjXlVRbie]{A2-E06 · The One Who Kept One}</td>\n<td>USB drive 3 has his folder.</td>\n<td>Decide whether to show it to him.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}</td>\n<td>Recognizes the guard. No roll: Krell loses 2 dice on defense against the PC who attacks alongside him.</td>\n<td>Save the hostage.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}</td>\n<td>Krell demands him and looks only at him. The PCs talk; David confirms, breaks, or gets angry.</td>\n<td>Decide whether to bring him, win the steps, and choose the offer.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers}</td>\n<td>Montgomery wants to believe him.</td>\n<td>Convince the Sheriff.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council}</td>\n<td>Halloway offers him the post of Sheriff.</td>\n<td>Present the case and decide whether to make a deal.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}</td>\n<td>Defends his home.</td>\n<td>Get out alive.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry}</td>\n<td>Krell and Fry come looking for him.</td>\n<td>Recover the briefcase.</td>\n</tr>\n</tbody></table>\n<p><em>The exact consequences are in each scene.</em></p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "FaMi9zRc0RRQTJPF",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.FaMi9zRc0RRQTJPF",
+      "name": "Relationships with the PCs",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.zQMt8VMfKPoL6INq]{Celeste}.</strong> Her sire wants David off the board (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}). David doesn&#39;t know.</li>\n<li><strong>@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra}.</strong> His sire, Thornquist, sells David information on out-of-control Kindred (@UUID[JournalEntry.dj4gIszHHTN1QRKk]{Abel Thornquist}).</li>\n<li><strong>@UUID[JournalEntry.rg50DlMYSzgbZeBv]{Nadia}.</strong> They both orbit Helen. David keeps her away from the truth; Nadia pushes her toward it.</li>\n<li><strong>@UUID[JournalEntry.B4nqUk8dojvCw97H]{Hal}.</strong> They&#39;ve known each other for thirty years. Hal cleaned up the scene on Emily&#39;s night while David was still on his knees. They never talked about it. Hal reports on him to Montgomery every month.</li>\n<li><strong>@UUID[JournalEntry.gRfqeOIXEHOcLemr]{Ruth}.</strong> They have no history. She covers up in her reports what he cleans up on the street. She&#39;s Tremere, and David distrusts blood sorcery (see “Flaws”).</li>\n</ul>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UprBczRoDMJYlK5C",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.UprBczRoDMJYlK5C",
+      "name": "When He Breaks",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>David doesn&#39;t roll Remorse or gain Stains: he&#39;s an NPC. What the story costs him shows at the table.</p>\n<ul>\n<li><strong>When they hit him where it hurts</strong> (Emily, the Larchmont, Rosa, Vance): he goes quiet, walks out onto the dock, and doesn&#39;t come back until dawn. That night he doesn&#39;t help: no +1 die and no advice.</li>\n<li><strong>When the Beast squeezes</strong> (Bear hurt, Helen in danger, an order he thinks is unjust): the Storyteller rolls the Compulsion (see “Compulsion and Bane”) or the fury frenzy. If David goes under, stopping him is the coterie&#39;s problem.</li>\n<li><strong>When he crosses a line</strong> (kills Krell with his own hands, Dominates Helen, makes a deal with Halloway): he stops talking about the Masquerade as something worth it. Bear notices first (@UUID[JournalEntry.5mQIPoGa4I0tQtbR]{Note Kept in Bear's Safe}).</li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Ms1NsmMZBHjbnBh4",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.Ms1NsmMZBHjbnBh4",
+      "name": "How He Changes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>He doesn&#39;t spend experience or buy Backgrounds. What grows or breaks is his relationship with the coterie.</p>\n<ul>\n<li><strong>He trusts.</strong> If the PCs tell him the truth when it costs them (Krell, Rosa, the Larchmont, the reports), at the end of the adventure David becomes Allies 2 for the coterie.</li>\n<li><strong>He stops volunteering.</strong> If he finds out they hid something big from him, he keeps helping, but he no longer offers what he knows. They have to ask.</li>\n<li><strong>He stops trusting the Sheriff.</strong> If Montgomery brands him a traitor (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers}), David stays with the coterie and outside the law. He never calls him “Sheriff” again.</li>\n<li><strong>Mentor.</strong> He can train a PC in Vance&#39;s doctrine. That PC meets the prerequisite for @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · The Doctrine of Controlled Fury} and can buy it with David as mentor.</li>\n<li><strong>New Convictions.</strong> If @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's} or @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell} end well, David can gain “Debts are paid with deeds, not blood” or “Finish what he didn&#39;t finish.” Write it down and let it show in how he talks.</li>\n<li><strong>Heir to the fist.</strong> If the coterie offers Krell the other guard and David teaches it to him, David raises @UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · The Doctrine of Controlled Fury} to level 5 and Krell can become Allies 2 for the coterie.</li>\n</ul>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xNLrbXPAzmNjZKML",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.xNLrbXPAzmNjZKML",
+      "name": "Touchstones",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Helen Ward (alive) and Emily Smith (lost, 1996). Tom “Bear” Whitman works as an anchor, even though he&#39;s a ghoul.</p>\n<p><em>Earlier profile (docs 17 and 18):</em></p>\n<ul>\n<li>@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}, human journalist, a source of data on supernatural events.</li>\n<li>@UUID[JournalEntry.sP1Adp7t6FvaF4zw]{Tom “Bear” Whitman}, ex-SEAL ghoul; loyal, but dependent on his Vitae.</li>\n<li><strong>Lost anchor (dead Touchstone):</strong> one of his mortal bonds, his daughter @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily}, died and he feels guilt; it triggers occasional Remorse rolls and nightmares.</li>\n</ul>\n<p><em>As an NPC, those rolls aren&#39;t made: the nightmares and the guilt play out as in “When He Breaks.”</em></p>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "jZmKUSg7mBXRgjh3",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.jZmKUSg7mBXRgjh3",
+      "name": "Reference Data",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>9th Generation · Blood Potency 4 · Humanity 6 · Willpower 7.</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "f5iIBRf92u72QGQr",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.f5iIBRf92u72QGQr",
+      "name": "Documents",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>“🩸 David Smith — Brujah,” “General Tone: The Supernatural Professional,” and the profiles of his Touchstones and his sire.</p>\n<p><em>The earlier sources are in “Earlier Sources” (docs 17 to 26). The tone for playing him is in @UUID[JournalEntry.zmabWuRnBZLfmd9l]{General Tone: The Supernatural Professional}; his sire, in @UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus “Ironjaw” Vance}; his daughter, in @UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith}; the hangar&#39;s arsenal, in @UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}.</em></p>\n"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "T0Tp8yibCE5N0OiM",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.T0Tp8yibCE5N0OiM",
+      "name": "Concept",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 17, “🩸 David Smith — The Hound of the Masquerade.”</em></p>\n<p><strong>Clan:</strong> Brujah · <strong>Generation:</strong> 9th · <strong>Sect:</strong> Independent (operational ally of the Camarilla) · <strong>Coterie:</strong> Collaborator of the Seattle Sheriff</p>\n<p><strong>Ambition:</strong> Maintain the balance between the Kindred and the Masquerade.</p>\n<p><strong>Desire:</strong> Eradicate those who break the veil, even if they&#39;re former allies.</p>\n<p><strong>Humanity:</strong> 6 · <strong>Blood Potency:</strong> 4 · <strong>Willpower:</strong> 7 (Iron Will •••). Despite the horror, he still holds a tactical view of good and evil.</p>\n<p><em>“Some must burn, so the rest can see the light.”</em></p>\n<p>David Smith is the kind of vampire they call when other vampires become a problem. His training as a Navy commando was only the beginning.</p>\n<p>After his Embrace in 1960, he traveled for decades honing his personal war against the corruption of the Blood: he learned hand-to-hand combat from the Brujah of Marseille, spiritual discipline from Assamite monks in the Maghreb, and control of the body from Japanese Gangrel on Mount Osore.</p>\n<p>His reputation is that of an incorruptible enforcer. A hound who answers not to Princes but to a code he wrote himself in blood and fire.</p>\n<p><strong>In short:</strong> a Brujah veteran turned enforcer. Ex-Navy commando, Embraced in 1960 in Haiti. He has served the Masquerade as a hunter of rogue Kindred on three continents. In Seattle he works as the Sheriff&#39;s free agent: judge, executioner, and ghost.</p>\n<p><strong>Concept (profile):</strong> Veteran. <strong>Affiliation (profile):</strong> Independent — Camarilla collaborator. <strong>Sire:</strong> Marcus “Ironjaw” Vance (@UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus “Ironjaw” Vance}).</p>\n"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "txaEw0F6jFcaK5t5",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.txaEw0F6jFcaK5t5",
+      "name": "Silent Hunter (Predator Type)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Silent Hunter (custom Predator Type inspired by Alleycat + Blood Leech).</p>\n<p>It perfectly reflects his role as the hound of the Masquerade: an enforcer who feeds only on those who cross the line, with a rigid personal code and a reputation feared among his own kind.</p>\n<p><em>The Camarilla&#39;s file records him as “Hunter of Hunters (authorized to eliminate Kindred who violate the Masquerade).”</em></p>\n<p><strong>Blood data:</strong> Blood Potency 4 · Feedings per night: 2 · Blood powers per turn: 3 without a Rouse Check · Preferred Resonance: Choleric (soldiers, killers, predators). <em>On the sheet (doc 18):</em> Blood Surge: add 2 dice; Resonance: Choleric; Hunger: unmarked.</p>\n"
+      },
+      "sort": 1400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "5cyol0GYttCWMDMN",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.5cyol0GYttCWMDMN",
+      "name": "Attributes and Skills",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: character sheet (doc 18), which matches the Attributes in doc 17.</em></p>\n<p><strong>Attributes:</strong> Strength 5, Dexterity 4, Stamina 5 · Charisma 3, Manipulation 2, Composure 4 · Intelligence 3, Wits 4, Resolve 4</p>\n<p><strong>Health</strong> 8 · <strong>Willpower</strong> 7 · <strong>Humanity</strong> 6</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Physical</th>\n<th></th>\n<th>Social</th>\n<th></th>\n<th>Mental</th>\n<th></th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Firearms (Tactical Combat)</td>\n<td>4</td>\n<td>Streetwise (Personal Reputation)</td>\n<td>3</td>\n<td>Academics</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Craft</td>\n<td>0</td>\n<td>Etiquette</td>\n<td>0</td>\n<td>Science</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Athletics (Prolonged Combat)</td>\n<td>4</td>\n<td>Performance</td>\n<td>4</td>\n<td>Awareness (Ambushes)</td>\n<td>4</td>\n</tr>\n<tr>\n<td>Drive (Tailing)</td>\n<td>2</td>\n<td>Intimidation (Intimidating Stares)</td>\n<td>4</td>\n<td>Finance</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Larceny (Alarms)</td>\n<td>1</td>\n<td>Leadership (Inspiration)</td>\n<td>1</td>\n<td>Investigation (Deduction)</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Brawl (Kindred)</td>\n<td>5</td>\n<td>Insight (Detect Lies)</td>\n<td>3</td>\n<td>Medicine</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Melee (Disarming Strikes)</td>\n<td>4</td>\n<td>Persuasion</td>\n<td>0</td>\n<td>Occult (Cainite Symbology)</td>\n<td>3</td>\n</tr>\n<tr>\n<td>Stealth (Tailing)</td>\n<td>3</td>\n<td>Subterfuge</td>\n<td>0</td>\n<td>Politics (Camarilla)</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Survival (Tracking)</td>\n<td>3</td>\n<td>Animal Ken (Dogs)</td>\n<td>1</td>\n<td>Technology (Surveillance Systems)</td>\n<td>2</td>\n</tr>\n</tbody></table>\n<p><strong>Key skills according to doc 17</strong> (with other specialties):</p>\n<ul>\n<li>Brawl 5 — Lethal techniques against Kindred</li>\n<li>Firearms 4 — Tactical combat</li>\n<li>Athletics 4 — Prolonged combat</li>\n<li>Intimidation 4 — Vampiric interrogations</li>\n<li>Alertness 4 — Sensing the Beast or hidden threats</li>\n<li>Investigation 3 — Vitae trails and urban tracking</li>\n<li>Occult 3 — Cainite symbology and minor rituals</li>\n</ul>\n<p><strong>Experience (doc 17):</strong> XP: 11 · XP spent: 24 (=1 Fortitude). <em>As an NPC he doesn&#39;t spend experience: see “How He Changes.”</em></p>\n"
+      },
+      "sort": 1500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "mG4LsWbbb7KblV5l",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.mG4LsWbbb7KblV5l",
+      "name": "Disciplines",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 17 (“Disciplines of David Smith, the Hound of the Masquerade”) and the sheet (doc 18). Powers marked homebrew don&#39;t exist in the rulebook; the English name in parentheses is the equivalent official power when there is one.</em></p>\n<p><strong>Sheet (doc 18):</strong> Celerity 4 (Rapid Reflexes, Blink, Temporal Burst, Blurring Rush) · Potence 4 (Lethal Body, Prowess, Crushing Blow, Kinetic Bullet) · Presence 3 (Daunt, Instinctive Authority, War Majesty - Kindle Emotions) · Fortitude 4 (Resilience, Deny the Pain, Defy Bane, Last Bastion) · Auspex 2 (Heightened Senses, Premonition).</p>\n<h3>🩸 Potence 4 — Supernatural Strength</h3>\n<ul>\n<li><strong>Lethal Body</strong> (Potence 1 homebrew; <em>Lethal Body</em>): Your blows hit like a jackhammer. Superficial damage converted to lethal.</li>\n<li><strong>Prowess</strong> (Potence 2; <em>Prowess</em>): Lets you perform impossible feats of strength or lift up to a ton. Perfect for breaching, rescuing, or opening armored entrances.</li>\n<li><strong>Crushing Blow</strong> (Potence 3 homebrew): A single concentrated impact that can bring down walls or incapacitate with one hit. Ideal as a finishing execution.</li>\n<li><strong>Kinetic Bullet</strong> (Potence ••••, Amalgam Celerity 2 – Homebrew):<ul>\n<li><strong>Cost:</strong> 1 Rouse Check to activate. Lasts one scene. Allows up to Potence (4) shots at no extra cost; more shots require new Rouse Checks (1 per additional shot).</li>\n<li><strong>Effect:</strong> David can throw any small/medium object (marble, stone, nut, small stake, etc.) as if it were a heavy pistol shot.</li>\n<li><strong>Range:</strong> up to Potence × 10 m (40 m); no penalty within half that distance.</li>\n<li><strong>Attack:</strong> Dexterity + Athletics + Potence (or Strength + Athletics, table&#39;s choice); the target uses normal defense.</li>\n<li><strong>Damage:</strong> as a .45 → base damage 3 + net successes; lethal against mortals/ghouls, and against Kindred without Fortitude.</li>\n<li>Once per scene you can make an “Execution Shot”: +1 Diff.; with 3+ net successes, a mortal/ghoul is left dead or unconscious; a Kindred suffers a heavy penalty (-2) to the body part hit.</li>\n<li>With stakes / bolts and +2 Diff., with 4+ net successes you can stake or pin the Kindred&#39;s chest (Storyteller ruling).</li>\n<li>It also works for breaking cameras, lights, weapons in mortals&#39; hands, etc., with no visible firearms and no shell casings.</li>\n</ul>\n</li>\n</ul>\n<p>💬 <em>Note: “Lethal Body + Crushing Blow” is a valid and brutal combination, but Potence 4 is usually used with Prowess or Superhuman Assault. In his case, Crushing Blow is better for a hunter of the Masquerade.</em></p>\n<h3>⚡ Celerity 4 — The Predator&#39;s Speed</h3>\n<ul>\n<li><strong>Rapid Reflexes</strong> (Celerity 1; <em>Rapid Reflexes</em>): Increases your defense and reaction against gunfire and ambushes.</li>\n<li><strong>Lightning Movement</strong> (Celerity 3): You can move double, dodge attacks, and move among enemies like a blur.</li>\n<li><strong>Temporal Burst</strong> (Celerity 4): You stop the world for an instant; you act outside of time for the blink of an eye. Perfect for stopping a shot or carrying out a surgical action.</li>\n</ul>\n<p>💬 <em>Note: “Lightning Strike” replaced with “Temporal Burst.” The former doesn&#39;t appear as an official V5 power; it&#39;s a popular mistranslation of the 3rd or 4th power. Temporal Burst is the correct one in the official edition.</em></p>\n<p><em>The sheet (doc 18) doesn&#39;t have Lightning Movement. Its other two Celerity powers, which doc 17 doesn&#39;t describe:</em></p>\n<ul>\n<li><strong>Blink</strong> (Celerity 3; <em>Blink</em>): Crosses a street, a pier, or an entire warehouse in one burst, in a straight line, and arrives with his guard already up, like the soldier who comes through the breach before the smoke clears.</li>\n<li><strong>Blurring Rush</strong> (Celerity 3 homebrew): A homebrew power. A burst of speed over a few steps to close to melee range and strike in the same action, before the opponent finishes reacting. Where Blink crosses a street, Blurring Rush crosses an arm&#39;s length: it&#39;s how Controlled Fury opens.</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note</h4><p>V5 adjustment. The sheet put Rapid Reflexes at level 2; in V5 it&#39;s level 1. The sheet had <em>Lightning Strike</em>, which is level 5 and doesn&#39;t fit with Celerity 4: it was swapped for <em>Blink</em> (level 3), which David didn&#39;t have and which suits the way he fights. Blurring Rush had no level or description: it was given level 3 and the homebrew description above. There are still four Celerity powers, one per dot.</p>\n</aside>\n<h3>🔥 Presence 3 — The Veteran Predator&#39;s Aura</h3>\n<ul>\n<li><strong>Daunt</strong> (Presence 1; <em>Daunt</em>): Instills supernatural fear. Ideal for interrogations or controlling a crowd.</li>\n<li><strong>Instinctive Authority</strong> (Presence 2): Your voice alone commands obedience and respect. Perfect for coordinating other Cainites.</li>\n<li><strong>War Majesty / Kindle Emotions</strong> (Presence 3): Your presence dominates the room; mortals and neonates are left enthralled or cowed.</li>\n</ul>\n<p>💬 <em>“War Majesty” doesn&#39;t exist in the current official canon; it&#39;s a homebrew amalgam. The real version is Majesty, and it can be adapted narratively as “War Majesty” when David uses it in combat or tactics.</em></p>\n<h3>💀 Fortitude 4 — The Flesh That Doesn&#39;t Die</h3>\n<ul>\n<li><strong>Resilience</strong> (Fortitude 1; <em>Resilience</em>): Add your Fortitude to your Health.</li>\n<li><strong>Deny the Pain</strong> (Fortitude 2): You ignore wound penalties; ideal for continuing to fight after taking damage.</li>\n<li><strong>Defy Bane</strong> (Fortitude 3; <em>Defy Bane</em>): Lets you resist aggravated damage, fire, and sunlight.</li>\n<li><strong>Last Bastion of the Masquerade</strong> (Fortitude ••••, homebrew): see the next page.</li>\n</ul>\n<h3>👁️ Auspex 2 (Learned from a Hecata)</h3>\n<ul>\n<li><strong>Heightened Senses</strong> (Auspex 1; <em>Heightened Senses</em>): Hears breathing, footsteps, pulses of vitae.</li>\n<li><strong>Premonition</strong> (Auspex 2; <em>Premonition</em>): Brief visions of immediate danger; ideal for anticipating attacks or ambushes.</li>\n</ul>\n"
+      },
+      "sort": 1600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "nyaVnQSG4rVgzoFI",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.nyaVnQSG4rVgzoFI",
+      "name": "Last Bastion of the Masquerade",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 17. Last Bastion of the Masquerade (Fortitude ••••). Homebrew – optional Amalgam with Presence or Auspex, if you want to fine-tune it further.</em></p>\n<p><em>“I don&#39;t fall until the job is done.”</em></p>\n<p><strong>Theme / fiction.</strong> When David marks someone as an enemy of the Masquerade, his body and his will refuse to fall. Broken bones, bullets, fire… it all holds together on sheer refusal. It isn&#39;t blind Brujah fury: it&#39;s the brutal calm of the executioner who won&#39;t let himself die until he&#39;s finished off the condemned.</p>\n<h3>Mechanical Version (V5-Friendly)</h3>\n<p><strong>Requirements</strong></p>\n<ul>\n<li>Fortitude 4</li>\n<li>Humanity 6+ (or at least 1 Conviction tied to “protecting the Masquerade / the balance”)</li>\n<li>Optional as an Amalgam: Presence 2 or Auspex 2 (Presence if you want it more “imposing,” Auspex if you see it as an almost mystical focus on his mission).</li>\n</ul>\n<p><strong>Cost</strong></p>\n<ul>\n<li>1 Rouse Check on activation.</li>\n<li>It can only be used once per scene, and once per night for its big effect.</li>\n</ul>\n<p><strong>Activation.</strong> You must declare a target a “Veil-breaker”:</p>\n<ul>\n<li>It must be someone who, in David&#39;s judgment (and the Storyteller&#39;s), is actively endangering the Masquerade:<ul>\n<li>a Kindred using Disciplines in front of mortals,</li>\n<li>a Sabbat committing massacres,</li>\n<li>a Cainite about to expose the existence of vampires, etc.</li>\n</ul>\n</li>\n<li>Quick action: David locks his gaze / pronounces the “sentence” (a whisper, a final, stony line, whatever you like) and activates the power.</li>\n</ul>\n<p>As long as this sentenced target remains in the scene (or David is pursuing them directly), the power is active.</p>\n<h3>Effects</h3>\n<p><strong>1. I won&#39;t fall yet.</strong> While the sentenced target remains in the scene or in direct pursuit:</p>\n<ul>\n<li>If David would be Incapacitated by damage (superficial or aggravated) on a damage roll:<ul>\n<li>Instead of falling, he stays at 1 superficial Health level.</li>\n<li>He automatically gains the Dazed / Staggered condition (the Storyteller can impose -2 on complex physical actions, he can&#39;t take multiple actions, etc.).</li>\n<li>This effect can only happen once per scene and per night.</li>\n</ul>\n</li>\n</ul>\n<p>In short: 👉 The first time someone “would drop him” while he&#39;s executing an enemy of the Masquerade… he doesn&#39;t fall. He stays on his feet at 1 Health.</p>\n<p><strong>2. Executioner&#39;s Flesh.</strong> While the sentenced target remains present:</p>\n<ul>\n<li>David gets +Fortitude (4) dice on rolls to:<ul>\n<li>Resist frenzy from damage or provocation by the target.</li>\n<li>Resist Dominate / Presence / Auspex from the target (or from their direct allies in the scene, at the Storyteller&#39;s discretion).</li>\n</ul>\n</li>\n<li>In addition, he ignores wound penalties (as if Deny the Pain were “boosted”) against that specific target.</li>\n<li>Outside that hunt, Deny the Pain works normally.</li>\n</ul>\n<p>Narrative effect: 👉 While he&#39;s hunting a real danger to the Masquerade, he doesn&#39;t break, doesn&#39;t run, doesn&#39;t bend mentally at that enemy&#39;s hands.</p>\n<p><strong>3. Moral limit.</strong> Because otherwise it gets out of hand:</p>\n<ul>\n<li>If the Storyteller considers that David activated it against someone who isn&#39;t really a threat to the Masquerade, or out of pure personal spite:<ul>\n<li>The power works the same, but at the end of the night David must make a Remorse roll with +1 die of difficulty.</li>\n<li>If he fails, he gains at least 1 additional Stain: he has twisted his Conviction, using “the Masquerade” as an excuse to kill.</li>\n</ul>\n</li>\n</ul>\n<p>This nails him to the concept of an enforcer with a code, not a thug justifying himself.</p>\n<p><em>As an NPC, there&#39;s no roll and no Stain. If he activated it out of spite, David breaks that night (see “When He Breaks”). If a PC saw it, they decide whether to tell him.</em></p>\n<h3>Is It Broken or Reasonable?</h3>\n<p>If you compare it with the official Fortitude 4 powers:</p>\n<ul>\n<li>Draught of Endurance: grants Fortitude and powers to another Kindred for one night.</li>\n<li>Gorgon Scales: grants brutal defenses, but very situational and tied to Resonance.</li>\n</ul>\n<p>Last Bastion of the Masquerade:</p>\n<ul>\n<li>It&#39;s very strong, but:<ul>\n<li>It only works in scenes where there&#39;s a real threat to the Masquerade.</li>\n<li>The “I don&#39;t fall” is once per night, and it leaves you wrecked.</li>\n<li>It doesn&#39;t increase damage or grant super attacks; it only keeps David standing to finish the job.</li>\n<li>It has a moral cost if abused.</li>\n</ul>\n</li>\n</ul>\n<p>At the table, it&#39;s a power that:</p>\n<ul>\n<li>Reinforces his role as the “Black Dog of the Masquerade.”</li>\n<li>Delivers a very cinematic moment: the blow that should put him on the ground… and he gets up at 1 Health with his jaw broken and his eyes locked on.</li>\n<li>Doesn&#39;t unbalance things as much as a constant brute-force damage-reduction buff against everything and everyone.</li>\n</ul>\n<h3>Simpler / Quicker Version</h3>\n<p>If you&#39;d rather have something even easier to use, the same concept can be boiled down to:</p>\n<p><strong>Lite Version:</strong></p>\n<ul>\n<li><strong>Cost:</strong> 1 Rouse Check.</li>\n<li><strong>Effect:</strong> Once per night, when you take damage that would leave you Incapacitated while fighting someone who is endangering the Masquerade, you stay at 1 Health instead of falling.</li>\n<li><strong>Extra:</strong> +2 dice to resist frenzy and mental Disciplines from that enemy until the end of the scene.</li>\n</ul>\n"
+      },
+      "sort": 1700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "l1h2cMWj2l7Q2mcF",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.l1h2cMWj2l7Q2mcF",
+      "name": "Tactics in Play",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 17.</em></p>\n<ul>\n<li><strong>Cainite Hunt Mode:</strong> activates Celerity + Fortitude when fighting another Kindred (total defense and lightning attacks).</li>\n<li><strong>Controlled Fury:</strong> he can channel his Brujah Compulsion as combat energy (Resolve + Composure to keep from losing control).</li>\n<li><strong>Blood Tracker:</strong> detects Vitae trails up to 24h old with Auspex.</li>\n<li><strong>Iron Will:</strong> rerolls one Willpower roll per scene.</li>\n</ul>\n"
+      },
+      "sort": 1800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "irARVPOoWYO2BxbX",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.irARVPOoWYO2BxbX",
+      "name": "Convictions, Advantages, and Flaws",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Convictions</strong></p>\n<ul>\n<li>“The Masquerade is the last shield between order and chaos.”</li>\n<li>“Only the monster you know can be controlled.”</li>\n<li>“I don&#39;t hunt out of hate, but for balance.”</li>\n</ul>\n<p><em>For the Storyteller:</em> these are what make him react. If a PC breaks the Masquerade in front of him, David stops them, even if they&#39;re in the coterie. If someone uses the Beast as an excuse, he stops listening to them. If the coterie asks him for revenge (against Rosa, against Krell, against Halloway), the third one is the one put to the test: let it show how much it costs him.</p>\n<p><strong>Backgrounds (doc 17; dots from the sheet, doc 18)</strong></p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Rating</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Allies (Seattle Sheriff)</td>\n<td>••••</td>\n<td>Direct trust and collaboration</td>\n</tr>\n<tr>\n<td>Secure Haven (Harbor hangar)</td>\n<td>••••</td>\n<td>Armored, tunnel access</td>\n</tr>\n<tr>\n<td>Contacts (Police / Ex-military ghouls)</td>\n<td>•••</td>\n<td>Information network</td>\n</tr>\n<tr>\n<td>Resources (military contraband)</td>\n<td>•••</td>\n<td>Weapons, vehicles, tactical tech</td>\n</tr>\n<tr>\n<td>Hidden Fame</td>\n<td>•••</td>\n<td>“The Black Dog of the Masquerade”</td>\n</tr>\n<tr>\n<td>Iron Will</td>\n<td>•••</td>\n<td>Rerolls one Willpower roll per scene</td>\n</tr>\n</tbody></table>\n<p><em>Other data from doc 17:</em> Anarch ally in Argentina. Enemy of the Camarilla in Argentina.</p>\n<p><strong>Flaws</strong></p>\n<ul>\n<li><strong>Contained Rage</strong> (••): +2 difficulty to resist Brujah Compulsions in combat.</li>\n<li><strong>War Scars</strong> (••): inhuman appearance under direct light.</li>\n<li><strong>Moral Hardliner</strong> (•): refuses to cooperate with those who use the Beast as an excuse.</li>\n<li><strong>War Dreams (Embrace trauma)</strong> (••): Relives past missions or executions. Slight penalty (–1) on the first Resolve or Composure roll after waking if his self-control failed.</li>\n<li><strong>Dependent Relationship (ghoul Tom “Bear” Whitman)</strong> (•): If the ghoul is captured or hurt, he loses his composure or risks fury frenzy. Reinforces the human bond but creates a vulnerability.</li>\n<li><strong>Distrust of Magic / Tremere:</strong> Refuses to work with sorcery or Blood rituals; hinders cross-clan cooperation.</li>\n<li><strong>Lost Anchor (dead Touchstone):</strong> One of his mortal bonds (his daughter) died and he feels guilt; it triggers occasional Remorse rolls and nightmares.</li>\n</ul>\n"
+      },
+      "sort": 1900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "obo7SLkkJUb2I2yZ",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.obo7SLkkJUb2I2yZ",
+      "name": "Compulsion and Bane",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>💢 Brujah Compulsion — Rebellion.</strong> If he feels dominated or unjustly ordered around, he must pass Resolve + Composure (Difficulty 3) or explode into verbal or physical violence. (He can redirect it if he considers the cause “just.”)</p>\n<a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.resolve attributes.composure\" data-dificultad=\"3\" data-label=\"Resolve + Composure (Difficulty 3) to resist the Compulsion\"><i class=\"fa-solid fa-dice-d10\"></i> Resolve + Composure (Difficulty 3) to resist the Compulsion</a>\n<p>The Storyteller rolls it. A PC who gives him orders like a subordinate can set it off; one who asks him for things like a colleague doesn&#39;t.</p>\n<p><strong>Clan Bane (sheet):</strong> Subtract dice equal to the Bane Severity from any roll to resist fury frenzy, to a minimum of 1 die.</p>\n"
+      },
+      "sort": 2000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "t7pkFziZ3VojEXFG",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.t7pkFziZ3VojEXFG",
+      "name": "Timeline",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 17. The dates on the sheet (doc 18): true age 90; apparent age 28/30; born March 15, 1935; died July 8, 1960.</em></p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Year</th>\n<th>Event</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1935</td>\n<td>Born in Boston</td>\n</tr>\n<tr>\n<td>1955–1960</td>\n<td>SEAL commando in Asia</td>\n</tr>\n<tr>\n<td>1960</td>\n<td>Embraced in Haiti during a mission</td>\n</tr>\n<tr>\n<td>1970–1990</td>\n<td>Training with Brujah and Assamites</td>\n</tr>\n<tr>\n<td>1990–2000</td>\n<td>Itinerant Sabbat hunter</td>\n</tr>\n<tr>\n<td>2000–2010</td>\n<td>Camarilla contacts in Marseille and London</td>\n</tr>\n<tr>\n<td>2010–Present</td>\n<td>Seattle: the Sheriff&#39;s enforcer, guardian of the Masquerade</td>\n</tr>\n</tbody></table>\n<section class=\"secret\" id=\"secret-lnoVTJlQGasYIrxt\"><p>This timeline predates docs 00–16 and clashes with them: in the adventure David is already in Seattle in 1996 (Emily&#39;s night), and doc 16 gives as provisional that he arrived in the &#39;80s. Docs 00–16 win. See “Differences from Docs 00–16.”</p>\n</section>\n"
+      },
+      "sort": 2100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SuZE7OALJBB054kd",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.SuZE7OALJBB054kd",
+      "name": "Camarilla Confidential File",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 17.</em></p>\n<p>📜 <strong>CONFIDENTIAL FILE — CAMARILLA / SEATTLE</strong></p>\n<p><strong>Classification:</strong> TOP SECRET — For use by the Sheriff and authorized Archons only</p>\n<p><strong>Source:</strong> Cross-referenced compilation of data from the Seattle Primogen, military records, and reports from Archon Duval.</p>\n<p><strong>Internal reference:</strong> Dossier V-9A-BRUJAH-SEATTLE/SMITH.D</p>\n<h3>🩸 Kindred Identification</h3>\n<p><strong>Name:</strong> David Smith</p>\n<p><strong>Known aliases:</strong> The Hound of the Masquerade, The Black Dog, The Ex-Commando.</p>\n<p><strong>Clan:</strong> Brujah</p>\n<p><strong>Generation:</strong> 9th</p>\n<p><strong>Sect:</strong> Independent — Operational Camarilla collaborator (Sheriff of Seattle).</p>\n<p><strong>Coterie:</strong> Urban Containment Unit (designated by the Sheriff before 2018).</p>\n<p><strong>Nature of role:</strong> Enforcer / Tracker of Masquerade violators.</p>\n<p><strong>Current status:</strong> Active (under observation, special permit to operate outside his domain).</p>\n<h3>⚰️ Chronological Data</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Item</th>\n<th>Date</th>\n<th>Detail</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mortal birth</td>\n<td>March 15, 1935</td>\n<td>Boston, Massachusetts, USA.</td>\n</tr>\n<tr>\n<td>Military service</td>\n<td>1955 – 1960</td>\n<td>Special Operations — US Navy SEALs.</td>\n</tr>\n<tr>\n<td>Embrace / Physical death</td>\n<td>July 8, 1960</td>\n<td>Haiti, during a covert operation. Reports indicate contact with a Brujah vampiric entity.</td>\n</tr>\n<tr>\n<td>Age at death (apparent)</td>\n<td>27 years</td>\n<td>Peak physical condition, full military training.</td>\n</tr>\n<tr>\n<td>True age (current)</td>\n<td>90 years</td>\n<td>Active for six decades; unchanging appearance.</td>\n</tr>\n<tr>\n<td>First vampiric record</td>\n<td>1962, Marseille (France)</td>\n<td>Detected by Archon Claude Renaud; not hostile.</td>\n</tr>\n<tr>\n<td>Last confirmed location</td>\n<td>Seattle, Washington State, USA (harbor haven)</td>\n<td>Coordinates classified.</td>\n</tr>\n</tbody></table>\n<h3>🧬 Blood Profile</h3>\n<ul>\n<li><strong>Blood Potency:</strong> 4</li>\n<li><strong>Dominant Resonance:</strong> Choleric (predators, fighters, soldiers).</li>\n<li><strong>Recorded Willpower:</strong> 7 • (Iron Will •••)</li>\n<li><strong>Estimated Humanity:</strong> 6</li>\n<li><strong>Predator Type:</strong> Hunter of Hunters (authorized to eliminate Kindred who violate the Masquerade).</li>\n</ul>\n<h3>⚖️ Official Observations</h3>\n<blockquote>\n<p>“Smith is a functional anachronism. A soldier who understood the meaning of the Masquerade better than many Princes: it isn&#39;t a rule, it&#39;s a border between order and anarchy. He doesn&#39;t drink for pleasure, he doesn&#39;t hunt out of need; he hunts on principle.”\n— Excerpt from Archon Duval&#39;s report, 2019.</p>\n</blockquote>\n<blockquote>\n<p>“He maintains a relationship of respect with Sheriff O&#39;Connor, but rejects political ties and clan favors. His haven is more arsenal than home. He has destroyed at least twelve Kindred in authorized Blood Hunts between 2005 and 2023.”\n— Internal note from the Keeper of Elysium of Seattle.</p>\n</blockquote>\n<h3>🕯️ Current Condition</h3>\n<ul>\n<li><strong>Status:</strong> Active.</li>\n<li><strong>Loyalty:</strong> Masquerade / Sheriff.</li>\n<li><strong>Potential threat:</strong> Moderate-High (only if provoked or if his moral code is contradicted).</li>\n<li><strong>Motivation:</strong> Preserve the city&#39;s stability and prevent human exposure.</li>\n<li><strong>Recorded conduct:</strong> Strict, cold, disciplined. Little social interaction with other Kindred.</li>\n<li><strong>Psychological note:</strong> Controls his Brujah Fury with martial discipline; however, any attempt at mental domination or hierarchical manipulation could trigger an immediate Rebellion Compulsion.</li>\n</ul>\n<h3>🩸 File Epitaph</h3>\n<blockquote>\n<p>“David Smith died in Haiti. What came back out of the jungle was not a man, nor a monster. It was a guardian. And guardians don&#39;t rest.”\n— Marginal note found in the original file on his Embrace.</p>\n</blockquote>\n"
+      },
+      "sort": 2200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "dDPNKUokmiCxGiLk",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.dDPNKUokmiCxGiLk",
+      "name": "Look and Presence",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>🎭 Look and presence (docs 17 and 18)</strong></p>\n<ul>\n<li>Black tactical jacket with the insignia removed.</li>\n<li>Old military knife (a keepsake from his mortal life).</li>\n<li>He has no reflection, but he always looks at mirrors.</li>\n<li>Smell: gunpowder, rust, and dried blood.</li>\n<li>Expression: clenched jaw, the gaze of a rational predator.</li>\n</ul>\n<p><strong>Narrative description of David Smith</strong></p>\n<p>Standing in dim light, David Smith looks like a statue carved from steel and shadow. His face, angular and set, is that of a man who has seen too many battles and forgets none of them. The square jaw, clenched tight, seems made for biting rather than talking. His weathered skin has the pallor of someone who hasn&#39;t felt the sun in years; a jagged scar runs across his right cheek, from the cheekbone to the corner of his lip, a dry line that never quite finished healing.</p>\n<p>His hair, short and dark, shows the first gray at the temples, witness to an age when reflexes still outrun thought. His eyes—dark gray, almost black—don&#39;t look: they assess, calculate, weigh every movement. There&#39;s something unsettling in them, a dull gleam, like a hunter&#39;s who has learned to pick out prey even in total darkness.</p>\n<p>He wears a black tactical jacket, heavy, reinforced at the shoulders and chest, with multiple pockets and Velcro closures and no insignia. It&#39;s a uniform without a flag, fitting for someone who serves only his own cause. Every fold seems designed for combat, every buckle cinched with the precision of a soldier who leaves nothing to chance. Beneath it, his frame reveals a strong, contained body, muscles tense more from habit than effort.</p>\n<p>The air seems to smell of gunpowder, rust, and dried blood. It&#39;s the scent that has followed him for decades, the same one that soaks into his clothes and his soul. David Smith needs neither words nor weapons to command respect. His presence alone, still but charged with contained tension, makes you think he&#39;s one heartbeat away from unleashing a storm.</p>\n<p><em>Doc 17 also includes three images of the haven (“Safe Heaven,” “Interior,” “Armory”) and the arsenal inventory: they&#39;re in @UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}.</em></p>\n"
+      },
+      "sort": 2300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "kwvOxq2QXv6Psgrz",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.kwvOxq2QXv6Psgrz",
+      "name": "Tactical Synergies Between Disciplines and Skills",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 20, written for the player who ran him. It&#39;s now the Storyteller&#39;s guide for when David fights alongside the coterie. Let him shine, but let a PC land the decisive blow.</em></p>\n<h3>1. Celerity (Quick Reflexes, Blink, Lightning Movement)</h3>\n<ul>\n<li><strong>Best use:</strong> pursuit, ambushes, evasion, and surprise attacks.</li>\n<li><strong>Synergy:</strong><ul>\n<li><strong>Athletics + Celerity:</strong> moves from cover to cover before enemies react.</li>\n<li><strong>Brawl or Melee + Blurring Rush:</strong> closes the distance and strikes in the same action, before the opponent finishes reacting.</li>\n<li><strong>Stealth + Celerity:</strong> moves through shadows or closes distance unseen.</li>\n</ul>\n</li>\n<li><strong>How he uses it:</strong> <em>Blink</em> the turn before attacking and <em>Blurring Rush</em> when striking: an appear-and-attack sequence that&#39;s nearly impossible to stop.</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note</h4><p>Doc 20 used <em>Lightning Strike</em>, which was cut from the profile (see Disciplines). Where the doc combined it with Lightning Movement, Blink and Blurring Rush now go instead.</p>\n</aside>\n<h3>2. Potence (Lethal Body, Crushing Blow)</h3>\n<ul>\n<li><strong>Best use:</strong> melee combat, physical intimidation, breaking structures or equipment.</li>\n<li><strong>Synergy:</strong><ul>\n<li><strong>Brawl + Lethal Body:</strong> lethal damage even unarmed.</li>\n<li><strong>Melee + Crushing Blow:</strong> multiplies the weapon&#39;s damage; breaks bones or armor effortlessly.</li>\n<li><strong>Intimidation + Potence:</strong> backs up a threat with supernatural strength (breaking a table or a door as a gesture).</li>\n</ul>\n</li>\n<li><strong>Tactical combination:</strong> <em>Lethal Body</em> and <em>Crushing Blow</em> together against tough enemies, then <em>Fortitude</em> (Deny the Pain) to weather the counterattacks.</li>\n</ul>\n<h3>3. Fortitude (Toughness, Deny the Pain)</h3>\n<ul>\n<li><strong>Best use:</strong> resisting physical damage, fire, and lethal damage, and staying on his feet when others would fall.</li>\n<li><strong>Synergy:</strong><ul>\n<li><strong>Stamina + Fortitude:</strong> each level adds an automatic success to his soak or endurance rolls.</li>\n<li><strong>Prolonged Combat + Deny the Pain:</strong> keeps fighting through serious penalties.</li>\n<li><strong>Prowess + Fortitude:</strong> keeps control even in the middle of frenzy.</li>\n</ul>\n</li>\n<li><strong>Narrative use:</strong> David can take bullets, keep advancing, grab the enemy by the throat, and deliver a precise blow with Potence.</li>\n</ul>\n<h3>4. Presence (Instinctive Authority, War Majesty)</h3>\n<ul>\n<li><strong>Best use:</strong> intimidating, subduing, or controlling the social environment in seconds.</li>\n<li><strong>Synergy:</strong><ul>\n<li><strong>Intimidation + Instinctive Authority:</strong> subdues enemies or ghouls without raising his voice.</li>\n<li><strong>Persuasion + War Majesty (Kindle Emotions):</strong> imposes his will in social scenes or interrogations.</li>\n<li><strong>Intimidating Stares + Presence:</strong> forces a “halt” before the fight.</li>\n</ul>\n</li>\n<li><strong>Key combination:</strong> before combat, <em>Instinctive Authority</em> to intimidate or scatter the weaker enemies. If it fails, he switches to Celerity or Potence without losing rhythm.</li>\n</ul>\n<h3>5. Auspex (Heightened Senses, Premonition)</h3>\n<ul>\n<li><strong>Best use:</strong> tracking, detecting traps, anticipating attacks.</li>\n<li><strong>Synergy:</strong><ul>\n<li><strong>Awareness + Heightened Senses:</strong> detects snipers, heartbeats, or slight movements.</li>\n<li><strong>Tailing + Premonition:</strong> anticipates ambushes or the target&#39;s movements.</li>\n<li><strong>Investigation + Premonition:</strong> tracks down Masquerade violators or prepares for a night hunt.</li>\n</ul>\n</li>\n<li><strong>Strategy:</strong> <em>Premonition</em> before the hunt or a confrontation. If he has a vision, he tells the coterie in two words: it&#39;s a clue, not a solution.</li>\n</ul>\n<h3>💀 Standout Tactical Combos for David Smith</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Situation</th>\n<th>Disciplines + Skills</th>\n<th>Result</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Silent ambush</strong></td>\n<td><em>Celerity + Stealth + Auspex (Premonition)</em></td>\n<td>Gets ahead of the victim, predicts their movement, and attacks before they react.</td>\n</tr>\n<tr>\n<td><strong>Close combat (1v1)</strong></td>\n<td><em>Potence + Fortitude + Brawl (Tactical Combat)</em></td>\n<td>More damage, ignores wounds, and lands devastating blows.</td>\n</tr>\n<tr>\n<td><strong>Surprise attack from above</strong></td>\n<td><em>Celerity (Lightning Movement) + Athletics (Jumping)</em></td>\n<td>Launches from a rooftop and strikes before being seen.</td>\n</tr>\n<tr>\n<td><strong>Hunting a Masquerade violator</strong></td>\n<td><em>Auspex (Premonition) + Stealth + Presence (Instinctive Authority)</em></td>\n<td>Follows the trail, locates them, and neutralizes them without open combat.</td>\n</tr>\n<tr>\n<td><strong>Against multiple enemies</strong></td>\n<td><em>Fortitude (Flesh of Marble) + Celerity (Quick Reflexes) + Potence (Crushing Blow)</em></td>\n<td>Takes minimal damage, acts before them, and drops them one by one.</td>\n</tr>\n<tr>\n<td><strong>Intimidating an entire room</strong></td>\n<td><em>Presence (War Majesty) + Intimidation + Iron Will</em></td>\n<td>Silences everyone and commands respect or terror even among elder vampires.</td>\n</tr>\n</tbody></table>\n<h3>🧠 How He Fights Alongside the Coterie</h3>\n<ol>\n<li><strong>Before the confrontation:</strong> <em>Auspex</em>. He reads the surroundings and says where the exits are.</li>\n<li><strong>Start of the conflict:</strong> <em>Presence (Instinctive Authority)</em> to cut off the social flow or disorient the enemy.</li>\n<li><strong>Physical combat:</strong> <em>Celerity + Potence + Fortitude</em> in tandem. He takes the toughest enemy or covers the most exposed PC.</li>\n<li><strong>Finish:</strong> when the opponent falls or surrenders, he stops before frenzy. If a PC keeps hitting, he reins them in.</li>\n<li><strong>Afterward:</strong> <em>Auspex</em> or <em>Premonition</em> to see whether the Masquerade held.</li>\n</ol>\n"
+      },
+      "sort": 2400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ojeKU9SwBI7MVfQz",
+      "_key": "!journal.pages!3zcQLj7aEAxHT0Yr.ojeKU9SwBI7MVfQz",
+      "name": "Differences from Docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The earlier sources (docs 17–20) predate docs 00–16. Where they clash, docs 00–16 win:</p>\n<ul>\n<li><p><strong>PC or NPC.</strong> The docs write him as a player character. By the author&#39;s decision (2026-11-02), newer than all the docs, he&#39;s an allied NPC of the coterie. That decision wins.</p>\n</li>\n<li><p><strong>Arrival in Seattle.</strong> Doc 17 places David in Seattle from 2010 on (and before that, from 1970 to 2010, between Europe, the Maghreb, and Sabbat hunts). In the adventure he&#39;s already in Seattle in 1996 (@UUID[JournalEntry.VYpDoFtqKkL7FlqL]{Emily Smith}), and doc 16 marks as provisional that he arrived in the &#39;80s. Emily&#39;s profile (doc 24) also says he watched her from his car outside school.</p>\n</li>\n<li><p><strong>The Sheriff.</strong> The file cites a “relationship of respect with Sheriff O&#39;Connor”; in docs 00–16, O&#39;Connor stopped being Sheriff in 1978 and the Sheriff is Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}).</p>\n</li>\n<li><p><strong>Haven.</strong> The sheet gives Secure Haven 4; @UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar} (doc 05) gives Haven 3 with Water Access and Arsenal.</p>\n</li>\n<li><p><strong>Age at death.</strong> Born 03/15/1935 and dead 07/08/1960, he&#39;d be 25; the file says 27 and the sheet, 28/30.</p>\n</li>\n<li><p><strong>Predator Type.</strong> The profile says Silent Hunter; the file, Hunter of Hunters.</p>\n</li>\n<li><p><strong>Touchstones.</strong> The sheet lists Helen and Bear; docs 00–16 give Helen and Emily, with Bear as an anchor.</p>\n</li>\n<li><p><strong>Celerity.</strong> The sheet and doc 20 use <em>Lightning Strike</em> (level 5 in V5) and Lightning Movement; doc 17 swaps it for Temporal Burst. The sheet adds Blurring Rush, with no description. Doc 20 also names Toughness and Flesh of Marble (Fortitude) and Quick Reflexes, which aren&#39;t on the sheet. By editorial decision, the profile swaps Lightning Strike for Blink and sets Blurring Rush at level 3 (see Disciplines).</p>\n</li>\n<li><p><strong>LOR-01.</strong> No earlier source mentions the Loresheet; doc 17 calls channeling the Brujah Compulsion “Controlled Fury,” while in docs 00–16 it&#39;s Vance&#39;s doctrine (@UUID[JournalEntry.x7rVnQfKbb3HdbG5.JournalEntryPage.oGnroV6R68YdMQyD]{LOR-01 · The Doctrine of Controlled Fury}).</p>\n</li>\n</ul>\n"
+      },
+      "sort": 2500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_id": "j4MhqWVhWECuqaA3",
+  "_key": "!journal!j4MhqWVhWECuqaA3",
+  "name": "The City · Truths and Lies",
+  "folder": "fsRaat4QsKDcRd6L",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "CIUDAD-RUMORES",
+      "archivo": "content/ciudad/02-verdades-y-mentiras.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "PO6OqgPVI6nXxEJx",
+      "_key": "!journal.pages!j4MhqWVhWECuqaA3.PO6OqgPVI6nXxEJx",
+      "name": "The City · Truths and Lies",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>These rumors circulate through Elysium, the Underground, and the harbor bars. The Storyteller can drop them into any social scene. Each one is marked <strong>T</strong> (true), <strong>F</strong> (false), or <strong>H</strong> (half-true), with an explanation for the Storyteller.</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LkYcEY0cWstoSnHP",
+      "_key": "!journal.pages!j4MhqWVhWECuqaA3.LkYcEY0cWstoSnHP",
+      "name": "The Rumors and Their Truth",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>#</th>\n<th>Rumor</th>\n<th>T/F/H</th>\n<th>For the Storyteller</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>“Vance, the Hound&#39;s sire, is back in town.”</td>\n<td>F</td>\n<td>Halloway spreads it through Krell. Vance is not in Seattle.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>“The Prince didn&#39;t open Voight&#39;s envelope because he already knows what it says.”</td>\n<td>H</td>\n<td>He opened it two nights later, read it, and did nothing.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>“Halloway brought O&#39;Connor down in &#39;78.”</td>\n<td>T</td>\n<td>It&#39;s true, but there&#39;s no proof except @UUID[JournalEntry.4858IAb89fTokFfV]{Letter from Sheriff O'Connor to Prince Whitmore, 1978} and O&#39;Connor&#39;s memory.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>“Halloway has the backing of Justicar Panhard.”</td>\n<td>H</td>\n<td>He&#39;s been writing to her for a year. She doesn&#39;t answer, but she doesn&#39;t tell him no, either.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>“Montgomery has a list of Kindred he&#39;ll destroy if the Prince falls.”</td>\n<td>T</td>\n<td>He has eleven names. The first is Halloway.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>“The Nosferatu can see through any camera in the city.”</td>\n<td>H</td>\n<td>They can see through many. Ezra (@UUID[JournalEntry.PBJeE9T9n0BjB6ag]{Ezra “Static” Lund}) could see through Gale Sentinel&#39;s if he checked his own code.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>“The Second Inquisition has an office in South Lake Union.”</td>\n<td>T</td>\n<td>Northline Cyber Advisory, 11th floor (@UUID[JournalEntry.KioeAEZP78U0Coz5]{Northline Cyber Advisory}).</td>\n</tr>\n<tr>\n<td>8</td>\n<td>“The new doorbell cameras don&#39;t record Kindred.”</td>\n<td>F</td>\n<td>They do. And the ANOMALY model flags them as “cold subjects” (@UUID[JournalEntry.YhmNvLugMfCZezEH]{Gale Sentinel: 2027 Product Roadmap, Confidential}).</td>\n</tr>\n<tr>\n<td>9</td>\n<td>“What&#39;s left of the Sabbat in Tacoma is three scared childer.”</td>\n<td>F</td>\n<td>There&#39;s an old, patient one who survived the Larchmont (@UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}, @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.18vJtyOOVZe1Uk41]{GAN-09 · The Larchmont Survivor}).</td>\n</tr>\n<tr>\n<td>10</td>\n<td>“The Hound destroyed his own sire to take his position.”</td>\n<td>F</td>\n<td>An old rumor that Halloway revives in @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}.</td>\n</tr>\n<tr>\n<td>11</td>\n<td>“Rosa Iturbe sheltered the Anarch who killed the Hound&#39;s daughter.”</td>\n<td>T</td>\n<td>It was in 1996, a week before Emily&#39;s death. Rosa didn&#39;t know what he was going to do. She never forgave herself.</td>\n</tr>\n<tr>\n<td>12</td>\n<td>“A thin-blood sells secrets in the Underground.”</td>\n<td>T</td>\n<td>Jun Takeda (@UUID[JournalEntry.BRQMU0Tf8VSNaZ5o]{Jun Takeda}). She carries copies of the File without knowing what they are.</td>\n</tr>\n<tr>\n<td>13</td>\n<td>“Club Cinder belongs to the Prince.”</td>\n<td>T</td>\n<td>Through a cultural foundation, the same one listed in @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, Internal Memo SEA-0411}.</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3pBGpfsV1AkxLh9H",
+      "_key": "!journal.pages!j4MhqWVhWECuqaA3.3pBGpfsV1AkxLh9H",
+      "name": "What the City Is Saying",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Rumors from Elysium, the Underground, and the harbor bars. Nobody knows which ones are true.</em></p>\n<ol>\n<li>“Vance, the Hound&#39;s sire, is back in town.”</li>\n<li>“The Prince didn&#39;t open Voight&#39;s envelope because he already knows what it says.”</li>\n<li>“Halloway brought O&#39;Connor down in &#39;78.”</li>\n<li>“Halloway has the backing of Justicar Panhard.”</li>\n<li>“Montgomery has a list of Kindred he&#39;ll destroy if the Prince falls.”</li>\n<li>“The Nosferatu can see through any camera in the city.”</li>\n<li>“The Second Inquisition has an office in South Lake Union.”</li>\n<li>“The new doorbell cameras don&#39;t record Kindred.”</li>\n<li>“What&#39;s left of the Sabbat in Tacoma is three scared childer.”</li>\n<li>“The Hound destroyed his own sire to take his position.”</li>\n<li>“Rosa Iturbe sheltered the Anarch who killed the Hound&#39;s daughter.”</li>\n<li>“A thin-blood sells secrets in the Underground.”</li>\n<li>“Club Cinder belongs to the Prince.”</li>\n</ol>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

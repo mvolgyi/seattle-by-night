@@ -23,7 +23,7 @@ origen: "01"
 
 ## El Termómetro de FIRSTLIGHT (AYU-03)
 
-Es un marcador de 0 a 10 que mide cuánto sabe la Segunda Inquisición. Empieza en 2. Sube con las brechas de Mascarada, con la violencia pública, con el contacto entre Helen y FIRSTLIGHT y con los fragmentos que Halloway filtra cada noche que la trama avanza sin respuesta. Baja cuando David limpia rastros, recupera copias del Expediente o neutraliza al topo.
+Es un marcador de 0 a 10 que mide cuánto sabe la Segunda Inquisición. Empieza en 2. Sube con las brechas de Mascarada, con la violencia pública, con el contacto entre Helen y FIRSTLIGHT y con los fragmentos que Halloway filtra cada noche que la trama avanza sin respuesta. Baja cuando la coterie limpia rastros, recupera copias del Expediente o neutraliza al topo.
 
 | Umbral | Qué pasa en la ciudad |
 |---|---|
@@ -39,13 +39,13 @@ Las entregas posteriores precisan esta tabla y mandan sobre ella. En 7, la inves
 
 ## Esqueleto de la aventura
 
-**Duración:** 6–8 sesiones. **Formato:** un jugador (David) con Bear como compañero PNJ; el recuadro de coterie explica cómo adaptarla.
+**Duración:** 6–8 sesiones. **Formato:** coterie de 4–5 jugadores con los PJs nuevos; David y Bear la acompañan como PNJs aliados (decisión 4 actualizada, @ID[COMO-USAR]). El esquema original era para un jugador, David, con Bear.
 
 **Estructura:** Prólogo y cuatro partes. Las partes 1 y 2 se pueden jugar en orden libre. La ciudad avanza sola: cada noche sin respuesta, Halloway filtra un fragmento (Termómetro +1) y Krell da un paso más.
 
 ## Reloj de Halloway
 
-*Lo que pasa si David no interviene.*
+*Lo que pasa si la coterie no interviene.*
 
 | Noche | Evento |
 |---|---|
@@ -64,7 +64,7 @@ Este es el Reloj del esquema (doc 01). Manda el Reloj del capítulo 7 (@ID[AVE-0
 
 ## Prólogo — «Lluvia sobre Ballard»
 
-- **@ID[A0-E01] · La llamada de SAFE.** Son las 3:19 de la mañana. Helen llama al único número de su móvil de tapa: alguien ha entrado en su apartamento (@ID[LUG-05]). David y Bear llegan antes que la policía. Tiradas: rastreo, limpieza de la escena y manejar a Helen. *Salidas:* @ID[A1-E01].
+- **@ID[A0-E01] · La llamada de SAFE.** Son las 3:19 de la mañana. Helen llama al único número de su móvil de tapa: alguien ha entrado en su apartamento (@ID[LUG-05]). La coterie llega antes que la policía, con David y Bear. Tiradas: rastreo, limpieza de la escena y manejar a Helen. *Salidas:* @ID[A1-E01].
 
 :::recuadro Nota de edición · La hora de la llamada
 El esquema (doc 01) ponía la llamada de SAFE a las 3:12. Se corrige a las 3:19, la hora del capítulo 7 (doc 10, @ID[A0-E01]): el robo es a las 3:04 y las cámaras están apagadas de 2:52 a 3:03.
@@ -74,24 +74,24 @@ El esquema (doc 01) ponía la llamada de SAFE a las 3:12. Se corrige a las 3:19,
 
 - **@ID[A1-E01] · Lo que se llevaron.** El apartamento de Helen. Los ladrones eran profesionales mortales y las cámaras del edificio entraron en bucle (P-01). Helen hace la lista de lo robado (@ID[AYU-02]). Hay un olor a Vitae ajena en el picaporte: es de un ghoul (P-02). *Salidas:* @ID[A1-E02], @ID[A1-E04], @ID[A1-E05].
 - **@ID[A1-E02] · Ceniza en el muelle 46.** Un Nosferatu menor aparece destruido en Harbor Island, a 900 metros del refugio de David. Los golpes siguen la doctrina de la *Furia Controlada* (P-03). En el cadáver hay un USB con una copia parcial del Expediente (P-04). Testigo: @ID[DOC-06]. *Salidas:* @ID[A1-E03].
-- **@ID[A1-E03] · El Sheriff pregunta.** En la granja de Montgomery (@ID[LUG-02]). Él reconoce la técnica y pregunta lo que nadie quiere oír: «¿Tu sire está vivo?». Le da a David tres noches. Si el Termómetro está en 4 o más, Montgomery está de peor humor. *Salidas:* @ID[A2-E01], @ID[A2-E04].
-- **@ID[A1-E04] · Todo se vende abajo.** En el subterráneo (@ID[LUG-04]). Thornquist confirma que hay copias del Expediente en el mercado y que la mensajera es una sangre débil, Jun (P-05). *Ramificación:* rescatar a Jun abre @ID[GAN-11]; si David no lo hace, Krell la destruye en la noche 4. *Salidas:* @ID[A2-E02], @ID[A3-E02].
-- **@ID[A1-E05] · Los ojos de la ciudad** *(opcional; saltala si David no sigue el rastro tecnológico).* Las cámaras de timbre del edificio de Helen son todas Gale Sentinel. La empresa recibió un pedido de datos que no figura en ningún registro (P-06). *Salidas:* @ID[A3-E02].
+- **@ID[A1-E03] · El Sheriff pregunta.** En la granja de Montgomery (@ID[LUG-02]). Él reconoce la técnica y pregunta lo que nadie quiere oír: «¿Tu sire está vivo?». Les da tres noches a David y a la coterie, y asigna a David a acompañarla. Si el Termómetro está en 4 o más, Montgomery está de peor humor. *Salidas:* @ID[A2-E01], @ID[A2-E04].
+- **@ID[A1-E04] · Todo se vende abajo.** En el subterráneo (@ID[LUG-04]). Thornquist confirma que hay copias del Expediente en el mercado y que la mensajera es una sangre débil, Jun (P-05). *Ramificación:* rescatar a Jun abre @ID[GAN-11]; si la coterie no lo hace, Krell la destruye en la noche 4. *Salidas:* @ID[A2-E02], @ID[A3-E02].
+- **@ID[A1-E05] · Los ojos de la ciudad** *(opcional; saltala si la coterie no sigue el rastro tecnológico).* Las cámaras de timbre del edificio de Helen son todas Gale Sentinel. La empresa recibió un pedido de datos que no figura en ningún registro (P-06). *Salidas:* @ID[A3-E02].
 
 ## Parte 2 — «El fantasma de Marsella»
 
 - **@ID[A2-E01] · Noche de Elíseo.** En la Galería de Vidrio (@ID[LUG-03]). Es una escena social: Halloway, Marchetti, Voight y Fry. Halloway menciona a Vance con un detalle que no debería conocer (P-07). Fry recita @ID[DOC-10]. Voight avisa en privado de que FIRSTLIGHT ha abierto un expediente. *Salidas:* @ID[A2-E02], @ID[A2-E04].
 - **@ID[A2-E02] · «Localiza. Evalúa. Ejecuta.»** La segunda víctima tiene la consigna de Vance escrita en la pared. Una tirada de @tirada{attributes.intelligence+skills.brawl|4|Inteligencia + Pelea (Dificultad 4)} revela que la técnica está mal: Krell golpea con la guardia invertida, como Vance enseñaba a los alumnos que no terminaban el entrenamiento (P-08). *Salidas:* @ID[A2-E04], @ID[A3-E01].
-- **@ID[A2-E03] · Salitre** *(opcional).* En Everett (@ID[LUG-10]). Rosa Iturbe recibe a David con hostilidad: Halloway hizo correr que los Anarquistas están detrás de las muertes. Rosa conoció al Anarquista que mató a Emily. Hay tirada de Remordimiento. *Ramificación:* alianza con Rosa (aliados en el clímax) o enfrentamiento (@ID[GAN-06]). *Salidas:* @ID[A2-E04].
-- **@ID[A2-E04] · El Sheriff que fue.** En Tacoma, donde vive exiliado O'Connor. Cuenta que los diarios de Vance no se quemaron: en 1986 se los vendieron a «un Ventrue de Seattle con paciencia» (P-09). Entrega @ID[DOC-08]. Si David se acerca al edificio Larchmont (@ID[LUG-11]), pasa a @ID[A2-E05]. *Salidas:* @ID[A3-E01], @ID[A3-E02].
-- **@ID[A2-E05] · Las cenizas del Larchmont** *(opcional; depende de la decisión 5).* El edificio quemado que marcó la carrera de Helen. El Expediente tiene una carpeta sobre él. Lo que David encuentra depende de la verdad del incendio.
+- **@ID[A2-E03] · Salitre** *(opcional).* En Everett (@ID[LUG-10]). Rosa Iturbe recibe a la coterie y a David con hostilidad: Halloway hizo correr que los Anarquistas están detrás de las muertes. Rosa conoció al Anarquista que mató a Emily. Si David lo oye, se quiebra o estalla: lo interpreta el Narrador, y la coterie tiene que sostenerlo. *Ramificación:* alianza con Rosa (aliados en el clímax) o enfrentamiento (@ID[GAN-06]). *Salidas:* @ID[A2-E04].
+- **@ID[A2-E04] · El Sheriff que fue.** En Tacoma, donde vive exiliado O'Connor. Cuenta que los diarios de Vance no se quemaron: en 1986 se los vendieron a «un Ventrue de Seattle con paciencia» (P-09). Entrega @ID[DOC-08]. Si la coterie se acerca al edificio Larchmont (@ID[LUG-11]), pasa a @ID[A2-E05]. *Salidas:* @ID[A3-E01], @ID[A3-E02].
+- **@ID[A2-E05] · Las cenizas del Larchmont** *(opcional; depende de la decisión 5).* El edificio quemado que marcó la carrera de Helen. El Expediente tiene una carpeta sobre él. Lo que la coterie encuentra depende de la verdad del incendio, y qué le cuenta a David, de los jugadores.
 
 ## Parte 3 — «Las dos manos»
 
-- **@ID[A3-E01] · El otro hijo.** Krell embosca a Bear o a Helen (la que esté más expuesta) con el abrigo de Vance puesto. Es una escena de combate y persecución. Si David llega a tiempo, Krell huye y deja un mensaje. Si no llega, Bear resulta gravemente herido o Helen es secuestrada. *Salidas:* @ID[A3-E03].
-- **@ID[A3-E02] · El centro de datos.** Infiltración en Gale Sentinel (@ID[LUG-07]). David encuentra la copia maestra del Expediente, el registro de envíos a «SEA-0411» (P-10) y la firma digital de Preston Gale, ghoul de Halloway (P-11). *Opciones:* sigilo, Dominación sobre los guardias o asalto, que sube el Termómetro +2. @termometro{+2|A3-E02: asalto a Gale Sentinel}
-- **@ID[A3-E03] · Cara a cara con Krell.** En la terminal de carga del puerto o en el lugar que elija Krell. Krell no quiere ganar: quiere que David lo vea. Ofrece intercambiar información por reconocimiento. *Ramificación:* destruirlo, ponerlo en manos del Sheriff o convertirlo en testigo contra Halloway (P-12).
-- **@ID[A3-E04] · La jauría duda.** Halloway le entrega a Montgomery "pruebas" de que David protege a su sire. Montgomery convoca a David. *Ramificación:* convencerlo (Manipulación + Persuasión, Dificultad 4, +1 dado por cada pista P-07 a P-15: @tirada{attributes.manipulation+skills.persuasion|4|Manipulación + Persuasión (Dificultad 4)}), enfrentarse a él o huir. Si sale mal, David llega al clímax como fugitivo.
+- **@ID[A3-E01] · El otro hijo.** Krell embosca a Bear o a Helen (la que esté más expuesta) con el abrigo de Vance puesto. Es una escena de combate y persecución. Si la coterie llega a tiempo, Krell huye y deja un mensaje. Si no llega, Bear resulta gravemente herido o Helen es secuestrada. *Salidas:* @ID[A3-E03].
+- **@ID[A3-E02] · El centro de datos.** Infiltración en Gale Sentinel (@ID[LUG-07]). La coterie encuentra la copia maestra del Expediente, el registro de envíos a «SEA-0411» (P-10) y la firma digital de Preston Gale, ghoul de Halloway (P-11). *Opciones:* sigilo, Dominación sobre los guardias o asalto, que sube el Termómetro +2. @termometro{+2|A3-E02: asalto a Gale Sentinel}
+- **@ID[A3-E03] · Cara a cara con Krell.** En la terminal de carga del puerto o en el lugar que elija Krell. Krell exige a David; la coterie decide si lo lleva y cómo. Krell no quiere ganar: quiere que David lo vea. Ofrece intercambiar información por reconocimiento. Lo ablandan las verdades que los PJs le cuentan, con David al lado. *Ramificación (la eligen los jugadores):* destruirlo, ponerlo en manos del Sheriff o convertirlo en testigo contra Halloway (P-12).
+- **@ID[A3-E04] · La jauría duda.** Halloway le entrega a Montgomery "pruebas" de que David protege a su sire. Montgomery convoca a la coterie y a David. *Ramificación:* convencerlo (tira el PJ que hable por la coterie: Manipulación + Persuasión, Dificultad 4, +1 dado por cada pista P-07 a P-15: @tirada{attributes.manipulation+skills.persuasion|4|Manipulación + Persuasión (Dificultad 4)}), enfrentarse a él o huir. Si sale mal, la coterie llega al clímax como fugitiva, y David con ella.
 
 :::recuadro Nota de edición · Pistas de A3-E04
 El esquema (doc 01) daba +1 dado por cada pista de P-07 a P-12. La Parte 3 (doc 12) amplía la lista a P-07 hasta P-15 y suma otros modificadores (Krell como testigo, el favor del Sheriff, la mentira de A1-E03): manda el doc 12. Ver @ID[A3-E04].
@@ -99,7 +99,7 @@ El esquema (doc 01) daba +1 dado por cada pista de P-07 a P-12. La Parte 3 (doc 
 
 ## Parte 4 — «Marea alta»
 
-- **@ID[A4-E01] · Consejo de Primogenitura.** En el ático de la Torre Halloway (@ID[LUG-06]). Halloway presenta su moción contra el Príncipe. David puede interrumpirla con pruebas, mantenerse en silencio o negociar antes en privado.
+- **@ID[A4-E01] · Consejo de Primogenitura.** En el ático de la Torre Halloway (@ID[LUG-06]). Halloway presenta su moción contra el Príncipe. La coterie puede interrumpirla con pruebas, mantenerse en silencio o negociar antes en privado.
 - **@ID[A4-E02] · La redada** *(se activa si el Termómetro llega a 9).* FIRSTLIGHT asalta un objetivo del Expediente: la granja del Sheriff (@ID[LUG-02]) o el hangar de David (@ID[LUG-01]). Hay que escapar, salvar a Bear y destruir pruebas.
 - **@ID[A4-E03] · El último ferry.** En la terminal (@ID[LUG-15]). Halloway intenta sacar la copia original de la ciudad, para entregarla a la Justicar o a FIRSTLIGHT. Es el enfrentamiento final.
 
@@ -107,9 +107,9 @@ El esquema (doc 01) daba +1 dado por cada pista de P-07 a P-12. La Parte 3 (doc 
 
 | ID | Desenlace | Consecuencias |
 |---|---|---|
-| @ID[FIN-A] | **La verdad ante el trono.** David expone a Halloway con pruebas. | Halloway es destruido o desterrado. David gana Estatus (Camarilla) +1. Montgomery le debe una. El Termómetro baja 2. @termometro{-2|FIN-A: la verdad ante el trono} |
-| @ID[FIN-B] | **El Sabueso cambia de amo.** Pacto con Halloway. | Whitmore cae. David se convierte en Sheriff o en el *Hound* del nuevo régimen. Mancha y riesgo de Humanidad. Montgomery pasa a ser enemigo. |
-| @ID[FIN-C] | **Fuego purificador.** El Expediente se destruye junto con todas sus copias. | La Mascarada se salva. La obra de toda la vida de Helen desaparece y la relación de Piedra de toque queda dañada (tirada de Remordimiento). |
+| @ID[FIN-A] | **La verdad ante el trono.** La coterie expone a Halloway con pruebas. | Halloway es destruido o desterrado. La coterie gana Estatus (Camarilla) +1. Montgomery les debe una. El Termómetro baja 2. @termometro{-2|FIN-A: la verdad ante el trono} |
+| @ID[FIN-B] | **El Sabueso cambia de amo.** La coterie pacta con Halloway. | Whitmore cae. David se convierte en Sheriff o en el *Hound* del nuevo régimen. Mancha y riesgo de Humanidad para quien pacta. Montgomery pasa a ser enemigo. |
+| @ID[FIN-C] | **Fuego purificador.** El Expediente se destruye junto con todas sus copias. | La Mascarada se salva. La obra de toda la vida de Helen desaparece. Su relación con David, que tiene en ella su Piedra de toque, queda dañada. |
 | @ID[FIN-D] | **Marea roja.** El Expediente llega a FIRSTLIGHT. | Purga. Pérdida de Refugio o Recursos. La crónica continúa como campaña de supervivencia (variante con H5). |
 
 ## Epílogo — «Lo que el agua no se lleva»

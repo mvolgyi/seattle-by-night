@@ -1,0 +1,145 @@
+{
+  "_id": "Q2t6M2IxrRHCJCnC",
+  "_key": "!actors!Q2t6M2IxrRHCJCnC",
+  "name": "Corwin",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-14.webp",
+  "folder": "AhjkvJXSWuUUcpLr",
+  "sort": 140,
+  "prototypeToken": {
+    "name": "Corwin",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-14.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Caitiff, Sal's protector (destroyed on Night 4 if nobody steps in)",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Caitiff, Sal&#39;s protector (destroyed on Night 4 if nobody steps in)</td></tr></tbody></table><p>Former nightclub bouncer Embraced in 2011. Guards the warehouse in exchange for bagged blood and a corner to sleep in. <em>Destroyed on <span class=\"sbn-reloj\" data-sbn-reloj=\"4\">Night 4</span> if nobody steps in.</em></p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 7,
+      "value": 7,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 3,
+      "value": 3,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "blood": {
+      "potency": 1,
+      "generation": ""
+    },
+    "disciplines": {
+      "fortitude": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      },
+      "potence": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "vampire",
+    "standarddicepools": {
+      "physical": {
+        "value": 5
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 2
+      }
+    },
+    "exceptionaldicepools": {
+      "brawl": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "intimidation": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-14",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

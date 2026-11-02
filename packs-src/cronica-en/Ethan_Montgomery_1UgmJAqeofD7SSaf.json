@@ -1,0 +1,418 @@
+{
+  "_id": "1UgmJAqeofD7SSaf",
+  "_key": "!journal!1UgmJAqeofD7SSaf",
+  "name": "Ethan Montgomery",
+  "folder": "f7Oampxpe5xKWxGY",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-01",
+      "archivo": "content/personajes/PNJ-01.md",
+      "actor": "Actor.dd9CRIHVGO38YUhN"
+    }
+  },
+  "pages": [
+    {
+      "_id": "OBgKQTC463WNjaGN",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.OBgKQTC463WNjaGN",
+      "name": "Ethan Montgomery",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-01.webp\" alt=\"Ethan Montgomery\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.dd9CRIHVGO38YUhN]{Ethan Montgomery}</p>\n<p><em>“I am the guardian between the Beast and the city. If one wakes, the other falls.”</em></p>\n<p><strong>Clan:</strong> Gangrel · <strong>Position:</strong> Sheriff of Seattle · <strong>Sect:</strong> Camarilla (out of personal loyalty to the Prince)</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "lO61JtUWeP0AFFge",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.lO61JtUWeP0AFFge",
+      "name": "Mortal Days: The Man Who Could Smell Footsteps",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>He was born in 1845 to a family of settlers on the Rogue River, in Oregon Territory. He learned to track before he learned to read. By twenty he was already working for the army and the railroad companies, running down outlaws, deserters, and horse thieves, and on the frontier they said that if Montgomery was on your trail, it didn&#39;t matter how fast you ran. In 1885 he spent three weeks hunting a killer of travelers near Eureka. When he finally caught up with him, he discovered that his quarry wasn&#39;t a man.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "0FVub4cYropfI1w4",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.0FVub4cYropfI1w4",
+      "name": "Kindred Nights: Whitmore's Wolf",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The nomad Gangrel Elijah Kane (@UUID[JournalEntry.dHE63u1Rtqst0CLb]{Elijah Kane}) spared his life because he found him interesting and Embraced him because he found him useful. Montgomery spent eighteen years roaming the coast with him. In 1903, after the San Francisco earthquake, he entered the service of the Camarilla and never left it. In 1978, Whitmore named him Sheriff of Seattle to replace O&#39;Connor.</p>\n<p>Since then he has kept the city clean without asking for anything in return. When his clan broke with the Camarilla, he stayed. He didn&#39;t do it for the Prince, whom he considers weak, but for the city, which he considers his. Now he is tired and afraid, though he would never say so. The theft of the File and the ashes on the docks smell to him like something he can&#39;t name.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "OLWA9ZrJwsXBunIP",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.OLWA9ZrJwsXBunIP",
+      "name": "Plans and Schemes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The list.</strong> Montgomery has written down the names of eleven Kindred he will destroy the night Whitmore falls, before anyone can stop him. The first is Halloway.</p>\n<p><strong>Watching the Hound.</strong> Since 1996 he has received a monthly report on David, first from several bounty hunters and, for years now, from his childe Hal (@UUID[JournalEntry.B4nqUk8dojvCw97H]{Halvard “Hal” Brekke}). He trusts David more than anyone, and that is exactly why he never stops watching him.</p>\n<p><strong>Vance?</strong> He knows Vance only by reputation and genuinely fears him. If David&#39;s sire is alive and in the city, Montgomery believes David&#39;s loyalty will split in two. Halloway exploits exactly that fear.</p>\n<p><strong>The Larchmont.</strong> He was the one who ordered the cistern sealed with seven bodies inside (@UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}). If that comes out, he falls, and probably the Prince with him.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "4KLk100A0LZt0suR",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.4KLk100A0LZt0suR",
+      "name": "Domain and Haven",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A farm in the Snohomish Valley with a tunnel down to a boat landing on the river (@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{The Sheriff's Farm and Boat Landing}; Haven 3). He feeds on the line between rural and urban: truckers at rest areas, hunters in the woods, the occasional deer when the Hunger bites and there are no humans around. He never feeds inside the city, because he says the Sheriff doesn&#39;t hunt where he patrols.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Y49hjyhwzzYrhQT3",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.Y49hjyhwzzYrhQT3",
+      "name": "Servants and Tools",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The bounty hunters</strong> (@UUID[Actor.L1oU4dlqHg8Yszon]{Montgomery's Bounty Hunters}; Herd 2): six mortals, ex-military and ex-cops, who know him as “the Boss.”</p>\n<p><strong>The dogs</strong>: twelve ghouled working dogs that sense and obey his will (Animalism).</p>\n<p><strong>Contacts 3</strong>: state police, the port, and security firms. They cover up deaths and steer investigations elsewhere.</p>\n<p><strong>Allies 3</strong>: David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}).</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "xRTpupAuHxhMJcga",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.xRTpupAuHxhMJcga",
+      "name": "Relationships with Kindred",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}</strong> (respect). He calls him “Hound,” and he doesn&#39;t mean it as an insult. He sees in him what he himself would be if he lost his soul.</p>\n<p><strong>@UUID[JournalEntry.B4nqUk8dojvCw97H]{Hal Brekke}</strong> (pride). He has never told him so. He makes Hal hand over the reports on David and knows Hal hates him for it.</p>\n<p><strong>@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}</strong> (loyalty). He doesn&#39;t respect him. He serves him because the alternative is worse.</p>\n<p><strong>@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}</strong> (contempt). He thinks he&#39;s a snake in a suit. What he lacks is the proof to act.</p>\n<p><strong>@UUID[JournalEntry.oQ2AhEeDkwdPRv71]{Liam O'Connor}</strong> (guilt). He took his post without asking questions. He knows he should have asked them.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "SftV5HLFTGYqM531",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.SftV5HLFTGYqM531",
+      "name": "Whispers",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“Montgomery turns into a wolf on moonlit nights and hunts in the Snohomish woods.” <em>(Half true: he doesn&#39;t turn into a wolf, but he does hunt in the woods.)</em></li>\n<li>“The Sheriff has a list of eleven names.” <em>(True.)</em></li>\n<li>“Montgomery and the Hound have been lovers since the &#39;70s.” <em>(False: David came to Seattle in the &#39;80s. What binds them is respect and debt.)</em></li>\n<li>“The Sheriff knows what happened at the Larchmont and covered it up.” <em>(True.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "eu2lxeIQWsKSyY12",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.eu2lxeIQWsKSyY12",
+      "name": "Mask and Appearance",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>To the mortal world he is Ethan Montgomery, a retired private security consultant and breeder of working dogs (Mask 2). He looks about forty. He&#39;s heavyset, with weathered skin, a short graying beard, and enormous hands. He wears flannel shirts, a waxed jacket, and work boots. He speaks little and slowly, and holds your gaze one second longer than is comfortable. Under stress, his eyes turn amber (metamorphosis scars).</p>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "076Mvoo89llpeyOZ",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.076Mvoo89llpeyOZ",
+      "name": "Reference Data",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> @UUID[JournalEntry.dHE63u1Rtqst0CLb]{Elijah Kane}</li>\n<li><strong>Embraced:</strong> 1885 (born 1845)</li>\n<li><strong>Ambition:</strong> for Seattle to outlive its Prince.</li>\n<li><strong>Convictions:</strong> “The Beast doesn&#39;t rule: it is mastered” · “No lawless monster deserves the gift of the night”.</li>\n<li><strong>Touchstones:</strong> Dr. Lucy Harlan, a Snohomish veterinarian who treats his dogs and makes him coffee he never drinks.</li>\n<li><strong>Humanity:</strong> 5</li>\n<li><strong>Generation:</strong> 8th</li>\n<li><strong>Blood Potency:</strong> 5</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "hU5chHXCTHWBrMc8",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.hU5chHXCTHWBrMc8",
+      "name": "Statistics",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Attributes:</strong> Strength 4, Dexterity 4, Stamina 5 · Charisma 2, Manipulation 3, Composure 5 · Intelligence 3, Wits 4, Resolve 3</p>\n<p><strong>Secondary Attributes:</strong> Health 8 · Willpower 8</p>\n<p><strong>Skills:</strong> Firearms 4 (Sniper), Athletics 3, Awareness 4 (Supernatural tracking), Streetwise 2, Intimidation 3, Leadership 3 (Authority through respect), Occult 2 (Limits of the Beast), Brawl 4 (Savage combat), Stealth 3, Survival 5 (Tracking), Animal Ken 4 (Dogs)</p>\n<p><strong>Disciplines:</strong></p>\n<ul>\n<li>Animalism 3: Bond Famulus (<em>Bond Famulus</em>), Feral Whispers (<em>Feral Whispers</em>), Quell the Beast (<em>Quell the Beast</em>)</li>\n<li>Fortitude 4: Resilience (<em>Resilience</em>), Unswayable Mind (<em>Unswayable Mind</em>), Toughness (<em>Toughness</em>), Defy Bane (<em>Defy Bane</em>)</li>\n<li>Protean 3: Eyes of the Beast (<em>Eyes of the Beast</em>), Feral Weapons (<em>Feral Weapons</em>), Earth Meld (<em>Earth Meld</em>)</li>\n</ul>\n<p><strong>Flaws:</strong> metamorphosis scars (amber eyes under stress); Predatory instinct (frenzy test when he smells fresh human blood, Difficulty 2); Distrust of neonates (−1 die on Social tests with Kindred under 50 years old).</p>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3dhrujVGSAgPVjqf",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.3dhrujVGSAgPVjqf",
+      "name": "Earlier Source: Ethan Montgomery's Sheet",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Source: doc 22, “⚖️ Sheriff Ethan Montgomery” (earlier source, predating docs 00–16). Where it conflicts with doc 06, doc 06 wins; see the last page.</em></p>\n<p><strong>Alias:</strong> <em>“The Sentinel of Puget Sound”</em></p>\n<p><strong>Clan:</strong> Gangrel</p>\n<p><strong>Generation:</strong> 8th</p>\n<p><strong>Sect:</strong> Camarilla</p>\n<p><strong>Position:</strong> Sheriff of Seattle</p>\n<p><strong>Apparent age:</strong> 40</p>\n<p><strong>Actual age:</strong> ~180</p>\n<p><strong>Date of birth:</strong> 1845</p>\n<p><strong>Date of Embrace:</strong> 1885</p>\n<p><strong>Place of Embrace:</strong> Northern California coast, Oregon border</p>\n<h3>🩸 Background and History</h3>\n<p>Ethan Montgomery was a <strong>tracker</strong> before he was a hunter. He was born into a family of pioneers of the American West who settled near the Rogue River.</p>\n<p>He grew up close to nature and to the violence that survival demanded in territories contested by humans, beasts, and, unbeknownst to him, the children of Caine.</p>\n<p>During the railroad expansion, Montgomery worked as a <strong>tracker and outlaw hunter</strong> for the army and private companies.</p>\n<p>His talent for following human quarry made him a local legend:</p>\n<blockquote>\n<p>“If Montgomery&#39;s on your trail, it doesn&#39;t matter how fast you run, he can already smell you.”</p>\n</blockquote>\n<p>In 1885, he hunted a killer who was slaughtering travelers near Eureka.</p>\n<p>When he finally caught up with him, he discovered that his quarry <strong>wasn&#39;t human</strong>. The vampire he was hunting beat him easily, but before killing him, found him... fascinating.</p>\n<p>He offered him “a new way to hunt.”</p>\n<p>That was his Embrace, under the tutelage of a <strong>nomad Gangrel named Elijah Kane</strong>, who trained him in Cainite survival.</p>\n<p>For decades, Ethan roamed the West Coast eliminating Sabbat, out-of-control childer, and monsters that threatened the Masquerade.</p>\n<p>His disciplined nature caught the attention of the Prince of Seattle, <strong>Marcus Whitmore</strong>, who named him <strong>Sheriff</strong> in 1978.</p>\n<h3>🧠 Personality</h3>\n<p>Montgomery is a man of few words, with an almost animal presence.</p>\n<p>His calm is as unsettling as his restrained violence.</p>\n<p>He treats the city&#39;s vampires as <strong>predators allowed to live under his watch</strong>, not as citizens.</p>\n<p>He has a professional respect for @UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}, whom he considers <em>“the younger version of what I&#39;d be if I lost my soul.”</em></p>\n<p>To neonates, Sheriff Montgomery is a figure of fear and respect.</p>\n<p>To the Elders, he is a <strong>living weapon of the Camarilla</strong> that keeps both the Sabbat and the rebel Brujah in check.</p>\n<h3>🩸 Ethan Montgomery&#39;s Sheet (V5)</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Attributes</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Physical:</strong> Strength 4, Dexterity 4, Stamina 5</td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Social:</strong> Charisma 2, Manipulation 3, Composure 5</td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Mental:</strong> Perception 4, Intelligence 3, Wits 3</td>\n<td></td>\n</tr>\n</tbody></table>\n<h3>🦴 Key Skills</h3>\n<ul>\n<li><p>Brawl 4 (Savage combat)</p>\n</li>\n<li><p>Survival 5 (Urban and wilderness environments)</p>\n</li>\n<li><p>Alertness 4 (Supernatural tracking)</p>\n</li>\n<li><p>Firearms 4 (Sniper)</p>\n</li>\n<li><p>Intimidation 3</p>\n</li>\n<li><p>Occult 2 (Limits of the Beast)</p>\n</li>\n<li><p>Leadership 3 (Authority through respect, not rank)</p>\n</li>\n</ul>\n<h3>🐺 Disciplines</h3>\n<p><strong>Fortitude 4</strong> – Supernatural resilience</p>\n<ul>\n<li><p><em>Resilience</em></p>\n</li>\n<li><p><em>Deny Pain</em></p>\n</li>\n<li><p><em>Marble Skin</em></p>\n</li>\n<li><p><em>Unbreakable Armor</em></p>\n</li>\n</ul>\n<p><strong>Animalism 3</strong> – Control of and communication with beasts</p>\n<ul>\n<li><p><em>Feral Whispers</em></p>\n</li>\n<li><p><em>Call of the Alpha</em></p>\n</li>\n<li><p><em>Pack Bond</em> (senses and coordinates his hunters like a pack)</p>\n</li>\n</ul>\n<p><strong>Protean 3</strong> – The mutable flesh</p>\n<ul>\n<li><p><em>Eyes of the Beast</em></p>\n</li>\n<li><p><em>Feral Weapons</em></p>\n</li>\n<li><p><em>Earth Meld</em></p>\n</li>\n</ul>\n<h3>⚔️ Blood Traits</h3>\n<ul>\n<li><p><strong>Blood Potency:</strong> 5</p>\n</li>\n<li><p><strong>Humanity:</strong> 5</p>\n</li>\n<li><p><strong>Willpower:</strong> 8</p>\n</li>\n<li><p><strong>Conviction:</strong> “The Beast must not rule; not mine, not yours.”</p>\n</li>\n<li><p><strong>Gangrel Compulsion:</strong> <em>Feral Impulses</em>—when he loses control, his animal senses take over, making speech or social interaction difficult.</p>\n</li>\n</ul>\n<h3>🕯️ Backgrounds</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Status (Camarilla)</strong></td>\n<td>••••</td>\n<td>Respected Sheriff, Prince Whitmore&#39;s enforcer.</td>\n</tr>\n<tr>\n<td><strong>Herd</strong></td>\n<td>••</td>\n<td>A network of bounty hunters and human watchers under his command.</td>\n</tr>\n<tr>\n<td><strong>Haven</strong></td>\n<td>•••</td>\n<td>Fortified farm on the outskirts of Seattle, with tunnels connected to a private boat landing.</td>\n</tr>\n<tr>\n<td><strong>Allies (David Smith)</strong></td>\n<td>•••</td>\n<td>A relationship of tactical trust and mutual respect.</td>\n</tr>\n<tr>\n<td><strong>Contacts (State police, private agencies)</strong></td>\n<td>•••</td>\n<td>Uses his human networks to cover up deaths and conceal operations.</td>\n</tr>\n</tbody></table>\n<h3>⚠️ Flaws</h3>\n<ul>\n<li><p><strong>Metamorphosis scars:</strong> his eyes change color under the moon or under stress (2 pts).</p>\n</li>\n<li><p><strong>Predatory instinct:</strong> must make frenzy tests when he smells fresh human blood (2 pts).</p>\n</li>\n<li><p><strong>Distrust of neonates:</strong> –1 penalty to Social tests with vampires under 50 years old (1 pt).</p>\n</li>\n</ul>\n<p><strong>Total:</strong> 5 points of Flaws—a balance against his power.</p>\n<h3>🩸 Relationship with David Smith</h3>\n<ul>\n<li><p>Considers Smith his “unofficial right hand.”</p>\n</li>\n<li><p>Calls him <em>“Hound”</em> (out of respect).</p>\n</li>\n<li><p>Montgomery avoids manipulating him: he trusts his morals and his coldness.</p>\n</li>\n<li><p>In combat, they&#39;re the perfect duo: <em>the beast and the reason.</em></p>\n</li>\n</ul>\n<blockquote>\n<p>“Smith hunts to keep the balance.</p>\n<p>I hunt so the balance doesn&#39;t destroy him.”</p>\n<p>— <em>Ethan Montgomery, private conversation with Archon Duval (@UUID[JournalEntry.CRdeqlwyfpxGPyzT]{Archon Duval}) (2017).</em></p>\n</blockquote>\n<p><em>(Doc 22 includes a portrait of Montgomery here, not exported.)</em></p>\n"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LH6P3A7fDA6R92bt",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.LH6P3A7fDA6R92bt",
+      "name": "Earlier Source: Confidential File",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>📜 <strong>CONFIDENTIAL FILE — CAMARILLA / DOMAIN OF SEATTLE</strong></p>\n<p><strong>Classification:</strong> SECRET — For Justicar, Archons, and Primogen Only</p>\n<p><strong>Reference:</strong> Dossier V-8A-GANGREL / MONTGOMERY.E</p>\n<p><strong>Status:</strong> ACTIVE — With full operational privileges within the domain.</p>\n<p><strong>Supervising authority:</strong> Prince Marcus Whitmore (Camarilla – Seattle).</p>\n<h3>🩸 KINDRED IDENTIFICATION</h3>\n<p><strong>Name:</strong> Ethan Montgomery</p>\n<p><strong>Known aliases:</strong> <em>The Sentinel of Puget Sound</em>, <em>Whitmore&#39;s Wolf</em></p>\n<p><strong>Clan:</strong> Gangrel</p>\n<p><strong>Generation:</strong> 8th</p>\n<p><strong>Sect:</strong> Camarilla</p>\n<p><strong>Position:</strong> Sheriff of Seattle</p>\n<p><strong>Known residences:</strong> Fortified haven on the outskirts of the city, underground connection to a private boat landing.</p>\n<p><strong>Current status:</strong> Active, in permanent service since 1978.</p>\n<h3>⚰️ CHRONOLOGICAL DATA</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Event</th>\n<th>Date</th>\n<th>Detail</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Mortal birth</strong></td>\n<td>1845</td>\n<td>Oregon Territory, USA — son of settlers.</td>\n</tr>\n<tr>\n<td><strong>Mortal occupation</strong></td>\n<td>1865–1885</td>\n<td>Professional tracker and hunter; known as “the man who sniffs out the footsteps of the dead.”</td>\n</tr>\n<tr>\n<td><strong>Embrace</strong></td>\n<td>1885</td>\n<td>By Elijah Kane (nomad Gangrel), after surviving an attack by a predatory Kindred on the frontier.</td>\n</tr>\n<tr>\n<td><strong>Age at death (apparent)</strong></td>\n<td>40</td>\n<td>Sturdy build, weather-beaten features.</td>\n</tr>\n<tr>\n<td><strong>True age</strong></td>\n<td>approx. 180</td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Joined the Camarilla</strong></td>\n<td>1903</td>\n<td>Joint operations in San Francisco after the earthquake.</td>\n</tr>\n<tr>\n<td><strong>Appointed Sheriff</strong></td>\n<td>1978</td>\n<td>By direct decree of Prince Whitmore.</td>\n</tr>\n<tr>\n<td><strong>Last confirmed activity</strong></td>\n<td>2025</td>\n<td>Confirmed in an operation against an Anarch cell in Everett.</td>\n</tr>\n</tbody></table>\n<h3>⚔️ BLOOD PROFILE</h3>\n<ul>\n<li><p><strong>Blood Potency:</strong> 5</p>\n</li>\n<li><p><strong>Humanity:</strong> 5</p>\n</li>\n<li><p><strong>Willpower:</strong> 8</p>\n</li>\n<li><p><strong>Convictions:</strong></p>\n<ol>\n<li><p>“The Beast doesn&#39;t rule: it is mastered.”</p>\n</li>\n<li><p>“Only balance keeps the hunt alive.”</p>\n</li>\n<li><p>“No lawless monster deserves the gift of the night.”</p>\n</li>\n</ol>\n</li>\n<li><p><strong>Gangrel Compulsion:</strong> <em>Feral Impulses</em>—his Beast manifests physically during moments of frenzy or rage.</p>\n</li>\n</ul>\n<h3>🦴 PSYCHOLOGICAL AND BEHAVIORAL PROFILE</h3>\n<p>Montgomery displays an unusual balance between discipline and wild nature.</p>\n<p>He speaks little and observes much.</p>\n<p>His temperament is not explosive like a Brujah&#39;s, but <strong>glacial and methodical</strong>, with an instinctive command of his surroundings.</p>\n<p>He treats the Kindred of the domain as predators under control, not as subjects.</p>\n<p>He maintains a silent chain of command:</p>\n<ul>\n<li><p>Ghouls and human bounty hunters know him only as <em>“the Boss.”</em></p>\n</li>\n<li><p>Vampires see him as the <strong>invisible authority</strong> behind the executions that cleanse the city.</p>\n</li>\n</ul>\n<p>His sense of justice is pragmatic, not moral: he doesn&#39;t judge, he <strong>neutralizes</strong>.</p>\n<p>The Primogen recognize his effectiveness but fear his independence.</p>\n<h3>🐺 DOMINANT DISCIPLINES</h3>\n<p><strong>Fortitude (4):</strong> Supernatural resilience and physical dominance.</p>\n<p><strong>Animalism (3):</strong> Communication with beasts and instinctive control of groups.</p>\n<p><strong>Protean (3):</strong> Physical mutability, animal senses, and blending into the terrain.</p>\n<blockquote>\n<p>💬 <em>“Montgomery doesn&#39;t need weapons.</em></p>\n<p><em>His body is the weapon, and the Beast his shield.”</em></p>\n<p>— Report by the Ventrue Primogen, Charles Halloway.</p>\n</blockquote>\n<h3>🩸 KEY SKILLS</h3>\n<ul>\n<li><p>Survival 5—<em>Supernatural tracking and total adaptation to the environment.</em></p>\n</li>\n<li><p>Brawl 4—<em>Brutal close-quarters combat, geared toward incapacitating quickly.</em></p>\n</li>\n<li><p>Alertness 4—<em>Advanced, instinctive night perception.</em></p>\n</li>\n<li><p>Firearms 4—<em>Effective sniper, though he prefers live quarry.</em></p>\n</li>\n<li><p>Intimidation 3—<em>Predatory presence with no need for words.</em></p>\n</li>\n<li><p>Leadership 3—<em>Respect earned through effectiveness, not rank.</em></p>\n</li>\n</ul>\n<h3>🕯️ BACKGROUNDS</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Trait</th>\n<th>Value</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Status (Camarilla)</strong></td>\n<td>••••</td>\n<td>Respected Sheriff of the domain.</td>\n</tr>\n<tr>\n<td><strong>Allies (David Smith)</strong></td>\n<td>•••</td>\n<td>A relationship of mutual trust; uses him as an outside enforcer.</td>\n</tr>\n<tr>\n<td><strong>Herd</strong></td>\n<td>••</td>\n<td>A network of bounty hunters and human watchers.</td>\n</tr>\n<tr>\n<td><strong>Contacts (State police / ports / contractors)</strong></td>\n<td>•••</td>\n<td>Covering up vampire incidents.</td>\n</tr>\n<tr>\n<td><strong>Haven</strong></td>\n<td>•••</td>\n<td>Fortified property on the outskirts of the city, with underground access.</td>\n</tr>\n</tbody></table>\n<h3>⚠️ RECORDED FLAWS</h3>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Flaw</th>\n<th>Level</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Metamorphosis scars</strong></td>\n<td>2</td>\n<td>Animal features (amber eyes, hardened nails) visible under stress.</td>\n</tr>\n<tr>\n<td><strong>Predatory instinct</strong></td>\n<td>2</td>\n<td>Prone to frenzy when he smells fresh blood.</td>\n</tr>\n<tr>\n<td><strong>Distrust of neonates</strong></td>\n<td>1</td>\n<td>Social penalty in dealings with young vampires.</td>\n</tr>\n<tr>\n<td><strong>Total</strong></td>\n<td><strong>5 points</strong></td>\n<td>Offsets his high Potency status and abilities.</td>\n</tr>\n</tbody></table>\n<h3>💀 JUSTICAR&#39;S ASSESSMENT</h3>\n<blockquote>\n<p>“Montgomery represents what the Camarilla needs and fears in equal measure:</p>\n<p>a predator who remembers why we&#39;re still alive.</p>\n<p>If he ever turns against us, the city will not see the dawn.”</p>\n<p>— <em>Justicar Helena Panhard (@UUID[JournalEntry.gSMgBLLYggWyAN2W]{Justicar Helena Panhard}), confidential assessment, 2019.</em></p>\n</blockquote>\n<h3>📎 INTERNAL COMMENTS</h3>\n<ul>\n<li><p><strong>Relationship with David Smith:</strong> close, based on tactical respect.</p>\n<ul>\n<li><p>Montgomery trusts him with cleanup operations.</p>\n</li>\n<li><p>Both share a philosophy: <em>violence as balance, not chaos.</em></p>\n</li>\n</ul>\n</li>\n<li><p><strong>Attitude toward the Prince:</strong> loyal, but critical.</p>\n<ul>\n<li>Considers Whitmore a weak politician, but necessary to maintain the facade.</li>\n</ul>\n</li>\n<li><p><strong>Current situation:</strong> keeps Anarch cells in Everett and rumors of a residual Sabbat in Tacoma under surveillance.</p>\n</li>\n</ul>\n<h3>🩸 FILE EPITAPH</h3>\n<blockquote>\n<p>“I am the guardian between the Beast and the city.</p>\n<p>If one wakes, the other falls.”</p>\n<p>— <em>Ethan Montgomery, record of his oath before Prince Whitmore (1978).</em></p>\n</blockquote>\n"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "opU3ohRM9ZPJDiRo",
+      "_key": "!journal.pages!1UgmJAqeofD7SSaf.opU3ohRM9ZPJDiRo",
+      "name": "Differences from Docs 00–16",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The doc 06 wins. What the earlier source (doc 22) says differently:</p>\n<ul>\n<li><strong>Mental Attributes.</strong> Doc 22 gives “Perception 4, Intelligence 3, Wits 3” (Perception doesn&#39;t exist in V5); doc 06, Intelligence 3, Wits 4, Resolve 3.</li>\n<li><strong>Disciplines.</strong> Doc 22 gives Fortitude 4 (Resilience, Deny Pain, Marble Skin, Unbreakable Armor) and Animalism 3 (Feral Whispers, Call of the Alpha, Pack Bond); doc 06, Fortitude (<em>Resilience, Unswayable Mind, Toughness, Defy Bane</em>) and Animalism (<em>Bond Famulus, Feral Whispers, Quell the Beast</em>). Protean matches.</li>\n<li><strong>Skills.</strong> Doc 22 has no Athletics, Streetwise, Stealth, or Animal Ken; it gives Survival 5 with the specialty “Urban and wilderness environments” (doc 06: “Tracking”).</li>\n<li><strong>Convictions.</strong> Doc 22 gives three; doc 06 keeps two and leaves out “Only balance keeps the hunt alive.” Doc 22 also has another: “The Beast must not rule; not mine, not yours.”</li>\n<li><strong>Backgrounds.</strong> Doc 22 adds Status (Camarilla) 4, which doc 06 doesn&#39;t give. The rest matches (Herd 2, Haven 3, Allies 3 David Smith, Contacts 3).</li>\n<li><strong>Flaws.</strong> They match; doc 22 assigns them values (2, 2, and 1 points).</li>\n<li><strong>Place of Embrace.</strong> Doc 22 says “Northern California coast, Oregon border” and, in the file, “Oregon Territory” as his place of birth; doc 06 places it near Eureka (the pursuit) and gives the Rogue River as his origin. Compatible.</li>\n<li><strong>Current situation.</strong> Doc 22 mentions Anarch cells in Everett and rumors of a residual Sabbat in Tacoma (verified in 2025). Docs 00–16 don&#39;t mention that Sabbat in Tacoma.</li>\n</ul>\n"
+      },
+      "sort": 1400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

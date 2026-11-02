@@ -1,0 +1,629 @@
+{
+  "_id": "15UcuyhvNvNqkCOf",
+  "_key": "!actors!15UcuyhvNvNqkCOf",
+  "name": "Dana Okafor",
+  "type": "hunter",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-18.webp",
+  "folder": "kkxcazkzuAwrYdB0",
+  "sort": 10,
+  "prototypeToken": {
+    "name": "Dana Okafor",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.55,
+      "angle": 360,
+      "bright": 0,
+      "dim": 0,
+      "color": "#7a3cff",
+      "coloration": 1,
+      "attenuation": 0.6,
+      "luminosity": 0.3,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-18.webp"
+    }
+  },
+  "system": {
+    "group": "HreoEGHHF8fvUBHd",
+    "headers": {
+      "concept": "FIRSTLIGHT, head of the Puget Cell; latent antagonist",
+      "chronicle": "The Ward File",
+      "ambition": "Get the national office to send reinforcements and tear Seattle's structure out by the roots.",
+      "desire": "Find out what ARCHER wants before the next delivery.",
+      "touchstones": "<h3>Touchstones</h3><ul><li>Her mother, the schoolteacher from Louisiana, now retired. Okafor calls her on Sundays and tells her the job is boring.</li></ul>",
+      "sire": "",
+      "generation": "",
+      "creedfields": "Gaining information during the Hunt: research, breaking and entering, and interrogation.",
+      "cellname": "Puget Cell"
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "1981",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Profile: Dana Okafor}</p><blockquote><p><em>“Every source wants something. Until you know what, it&#39;s bait.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>She Who Gives Nothing Away</td></tr><tr><th>Concept</th><td>FIRSTLIGHT, head of the Puget Cell; latent antagonist</td></tr><tr><th>Born</th><td>1981</td></tr><tr><th>Ambition</th><td>Get the national office to send reinforcements and tear Seattle&#39;s structure out by the roots.</td></tr><tr><th>Desire</th><td>Find out what ARCHER wants before the next delivery.</td></tr></tbody></table><h3>Demeanor</h3><p>Forty-five. Tall, very short graying hair, gray blazer; her left hand is missing the ring and little fingers, and she almost always keeps it in her pocket.</p><h3>Hunter</h3><table class=\"sbn-ficha\"><tbody><tr><th>Cell</th><td>@UUID[JournalEntry.dnsWkdXVJ19riBLa.JournalEntryPage.O8yPSIYLlTrKHm8G]{Puget Cell}</td></tr><tr><th>Creed</th><td>Inquisitive. <em>Desperation:</em> Gaining information during the Hunt: research, breaking and entering, and interrogation.</td></tr><tr><th>Drive</th><td>Atonement. <em>Redemption:</em> She finds redemption when the Cell gets someone out alive whom the quarry had already marked, before they become one more name in a file.</td></tr><tr><th>Edges</th><td>Thwart the Unnatural · Global Access (Federal Liaison)</td></tr></tbody></table><p>Chicago, 2017. She found the pattern behind the South Side disappearances, and she found the basement where it ended. What she went down looking for was no longer alive. The hand is the least of it: what she&#39;s been paying for ever since are the names she didn&#39;t cross off in time.</p><p>@UUID[JournalEntry.LfywH6qtS3GxDxJx.JournalEntryPage.DJN9P8LlpGP0UXuu]{Pregen: Dana Okafor · Special Agent}</p>",
+    "appearance": "<p>Forty-five. Tall, very short graying hair, gray blazer; her left hand is missing the ring and little fingers, and she almost always keeps it in her pocket.</p>",
+    "equipment": "<ul><li>Glock 19 pistol with incendiary ammunition (aggravated damage against Kindred)</li><li>Pocket UV flashlight</li><li>Light bulletproof vest (armor 2)</li><li>Encrypted phone</li></ul>",
+    "notes": "",
+    "privatenotes": "<h3>Proposed (not in the docs)</h3><ul><li>Inquisitive Creed: Investigation 5 (Patterns), Intimidation 3 (Interrogations), and Insight 4 (Lies) are an investigator&#39;s skills; the Cell lives on getting information.</li><li>Atonement Drive: the doc says she found the pattern and the basement; that she got there too late for the missing is proposed.</li><li>Edges: the doc&#39;s Unshakable Faith is modeled as Thwart the Unnatural (the effect is the doc&#39;s, not the rulebook&#39;s); Contacts 3 and ANOMALY, as Global Access. The “Federal Liaison” Perk is proposed.</li><li>Ambition, desire, and Touchstone (the mother, a schoolteacher from Louisiana, comes from the doc; the Sunday call is proposed).</li></ul>",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 9,
+      "value": 9,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "attributes": {
+      "strength": {
+        "value": 2,
+        "active": false
+      },
+      "dexterity": {
+        "value": 3,
+        "active": false
+      },
+      "stamina": {
+        "value": 3,
+        "active": false
+      },
+      "charisma": {
+        "value": 3,
+        "active": false
+      },
+      "manipulation": {
+        "value": 3,
+        "active": false
+      },
+      "composure": {
+        "value": 4,
+        "active": false
+      },
+      "intelligence": {
+        "value": 4,
+        "active": false
+      },
+      "wits": {
+        "value": 4,
+        "active": false
+      },
+      "resolve": {
+        "value": 5,
+        "active": false
+      }
+    },
+    "skills": {
+      "firearms": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Pistol",
+            "value": 1,
+            "paths": [
+              "skills.firearms"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "athletics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "drive": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "awareness": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Ambushes",
+            "value": 1,
+            "paths": [
+              "skills.awareness"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "intimidation": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Interrogations",
+            "value": 1,
+            "paths": [
+              "skills.intimidation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "investigation": {
+        "value": 5,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Patterns",
+            "value": 1,
+            "paths": [
+              "skills.investigation"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "leadership": {
+        "value": 3,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "occult": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Kindred",
+            "value": 1,
+            "paths": [
+              "skills.occult"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "insight": {
+        "value": 4,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Lies",
+            "value": 1,
+            "paths": [
+              "skills.insight"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "persuasion": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "brawl": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "politics": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "Agencies",
+            "value": 1,
+            "paths": [
+              "skills.politics"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "technology": {
+        "value": 2,
+        "active": false,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "edges": {
+      "thwarttheunnatural": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>This is her Unshakable Faith (doc 14): Dominate and Presence take −2 dice against her; if they fail, she notices. She doesn&#39;t explain it or understand it. She uses it.</p>"
+      },
+      "globalaccess": {
+        "value": 1,
+        "visible": true,
+        "selected": false,
+        "description": "<p>Contacts 3 (FBI, Homeland Security, Seattle police), the liaison with the FBI&#39;s Seattle field office, and access to ANOMALY through the pilot program with Gale Sentinel.</p>"
+      }
+    },
+    "despair": {
+      "value": 0
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Unshakable Faith (Dominate and Presence take −2 dice against her; if they fail, she notices)"
+        }
+      },
+      "name": "Unshakable Faith",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Unshakable Faith (Dominate and Presence take −2 dice against her; if they fail, she notices)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "merit"
+      },
+      "_id": "ioo1ktjmOSwJ7IIr",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.ioo1ktjmOSwJ7IIr"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Contacts 3 (FBI, Homeland Security, Seattle police)"
+        }
+      },
+      "name": "Contacts",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Contacts 3 (FBI, Homeland Security, Seattle police)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "pa2gpVxS1EYjX7aG",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.pa2gpVxS1EYjX7aG"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "Resources 3 (federal budget)"
+        }
+      },
+      "name": "Resources",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>Resources 3 (federal budget)</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 3,
+        "featuretype": "background"
+      },
+      "_id": "oEOzoOOaZoJp4aHT",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.oEOzoOOaZoJp4aHT"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "municion-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Incendiary ammunition",
+      "type": "gear",
+      "img": "icons/containers/bags/pack-leather-black-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Firearms damage against Kindred is aggravated instead of superficial. Each hit forces a Terror Frenzy test (Difficulty 2).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {}
+      },
+      "_id": "J4KQNneG1PMOCruh",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.J4KQNneG1PMOCruh"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "glock-19-incendiaria",
+          "agravado": true
+        }
+      },
+      "name": "Glock 19 pistol with incendiary ammunition",
+      "type": "weapon",
+      "img": "icons/weapons/guns/gun-pistol-brass.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>aggravated against Kindred</td></tr></tbody></table><p>Aggravated damage against Kindred (incendiary ammunition).</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "weaponType": "ranged",
+        "weaponvalue": 0,
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "quantity": 1,
+        "dicepool": {
+          "d1": {
+            "path": "attributes.dexterity"
+          },
+          "d2": {
+            "path": "skills.firearms"
+          }
+        }
+      },
+      "_id": "neQAte77jiwOaM1t",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.neQAte77jiwOaM1t"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "firstlight",
+          "id": "chaleco-ligero",
+          "agravado": false
+        }
+      },
+      "name": "Light bulletproof vest",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+      "system": {
+        "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Armor</th><td>2</td></tr></tbody></table><p>Armor 2.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "FIRSTLIGHT (doc 14)"
+        },
+        "armorvalue": 2,
+        "quantity": 1
+      },
+      "_id": "3qCbsfcUtjw7Ntae",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.3qCbsfcUtjw7Ntae"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "credo": "inquisitive"
+        }
+      },
+      "name": "Inquisitive",
+      "type": "creed",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "edges": "",
+        "drives": "",
+        "desperationFields": "Gaining information during the Hunt: research, breaking and entering, and interrogation."
+      },
+      "_id": "xUX4LMIDtyONzbSS",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.xUX4LMIDtyONzbSS"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "impulso": "atonement"
+        }
+      },
+      "name": "Atonement",
+      "type": "drive",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>Chicago, 2017. She found the pattern behind the South Side disappearances, and she found the basement where it ended. What she went down looking for was no longer alive. The hand is the least of it: what she&#39;s been paying for ever since are the names she didn&#39;t cross off in time.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "redemption": "<p>She finds redemption when the Cell gets someone out alive whom the quarry had already marked, before they become one more name in a file.</p>"
+      },
+      "_id": "RekNyiMBXnCKs3zc",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.RekNyiMBXnCKs3zc"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "beneficio": "Federal Liaison: once per story, Okafor gets within an hour a record that would cost anyone else a court order (phone records, city cameras, property records, passenger lists). No roll needed; it does leave a trail in Washington."
+        }
+      },
+      "name": "Federal Liaison",
+      "type": "perk",
+      "img": "systems/wod5e/assets/icons/items/item-default.svg",
+      "system": {
+        "description": "<p>once per story, Okafor gets within an hour a record that would cost anyone else a court order (phone records, city cameras, property records, passenger lists). No roll needed; it does leave a trail in Washington.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-18"
+        },
+        "edge": "globalaccess",
+        "selected": false
+      },
+      "_id": "j1t1qxvUm62OwLF2",
+      "_key": "!actors.items!15UcuyhvNvNqkCOf.j1t1qxvUm62OwLF2"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-18",
+      "journal": "JournalEntry.bJA2iRyDgbm2TcuK",
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

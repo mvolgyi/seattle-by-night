@@ -29,7 +29,7 @@ En los años cincuenta, el Brujah Marcus «Ironjaw» Vance (@ID[PNJ-06]) desarro
 
 **Tiradas:** Evalúa: @tirada{attributes.wits+skills.insight|0|Astucia + Perspicacia (contra Compostura + Subterfugio)} · el objetivo resiste con @tirada{attributes.composure+skills.subterfuge|0|Compostura + Subterfugio}.
 
-*Nota: David Smith (@ID[PJ-01]) tiene esta Loresheet a nivel 4 si el jugador está de acuerdo. Krell (@ID[PNJ-12]) tiene el nivel 2 y la guardia invertida, sin el nivel 4.*
+*Nota: David Smith (@ID[PJ-01]), PNJ, tiene esta Loresheet a nivel 4. Krell (@ID[PNJ-12]) tiene el nivel 2 y la guardia invertida, sin el nivel 4. Un PJ puede comprarla con David como mentor, porque él cumple el requisito: normalmente hasta el nivel 3. Pero David elige a quién se la enseña. Si Krell aprende la otra guardia (@ID[A3-E03]), David sube a nivel 5.*
 
 ## LOR-02 · El Seattle subterráneo {#LOR-02}
 

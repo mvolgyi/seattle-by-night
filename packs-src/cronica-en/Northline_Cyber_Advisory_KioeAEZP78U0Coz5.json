@@ -1,0 +1,109 @@
+{
+  "_id": "KioeAEZP78U0Coz5",
+  "_key": "!journal!KioeAEZP78U0Coz5",
+  "name": "Northline Cyber Advisory",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 140,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-14",
+      "archivo": "content/ciudad/LUG-14.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "HMdl7lSUYzV0hFbh",
+      "_key": "!journal.pages!KioeAEZP78U0Coz5.HMdl7lSUYzV0hFbh",
+      "name": "Northline Cyber Advisory",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>South Lake Union, office tower, 11th floor · FIRSTLIGHT front · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "VWCt5iDLvLGJ3bCi",
+      "_key": "!journal.pages!KioeAEZP78U0Coz5.VWCt5iDLvLGJ3bCi",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>An office like any other in South Lake Union: gray carpet, plastic plants, standing desks, a welcome sign with the logo of a cybersecurity consultancy. At three in the morning, three lights are on on the 11th floor. One of them belongs to a conference room with the blinds drawn.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "1kPXVToInZey741R",
+      "_key": "!journal.pages!KioeAEZP78U0Coz5.1kPXVToInZey741R",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> reception, open-plan desks (the analysts), a conference room with a corkboard covered in photos (Helen&#39;s podcast included), a locked armory, and a white room with high-intensity UV lamps, an “interview room.”</p>\n<p><strong>Occupants:</strong> Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}), S. Hale (@UUID[JournalEntry.D611Mcr17F6HHEUw]{Sasha Hale}), and the tactical team @UUID[Actor.abaWg7NwNQvM0sDc]{FIRSTLIGHT Tactical Team}, which spends its nights in a warehouse at the port, not here.</p>\n<p><strong>Danger:</strong> breaking in here is the fastest way to raise the Thermometer (+3 if the intrusion is discovered: <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+3\" data-motivo=\"Intrusion discovered at Northline\"><span class=\"sbn-termometro-cambio\">+3</span> <span class=\"sbn-termometro-motivo\">Intrusion discovered at Northline</span></button>). Watching the place is more useful than going in.</p>\n<p>It doesn&#39;t appear in any set scene. Save it for the chronicle or for a very bold coterie.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

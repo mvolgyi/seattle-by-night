@@ -1,0 +1,86 @@
+{
+  "_id": "oIF9UlwtOCvcz9Sf",
+  "_key": "!journal!oIF9UlwtOCvcz9Sf",
+  "name": "Map of Seattle with the Domains",
+  "folder": "7J3F8mfZdM34Dpv6",
+  "sort": 10,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "AYU-01",
+      "archivo": "content/documentos/AYU-01.md",
+      "soporte": "mapa",
+      "entrega": [
+        "sesion-cero",
+        "A1-E03"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "_id": "rVjUu57CNaaYF00F",
+      "_key": "!journal.pages!oIF9UlwtOCvcz9Sf.rVjUu57CNaaYF00F",
+      "name": "Map of Seattle with the Domains",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-doc sbn-doc-mapa\"><img class=\"sbn-doc-imagen\" src=\"modules/seattle-by-night/assets/handouts/MAP-00.webp\" alt=\"\"><p class=\"sbn-doc-titulo\">SEATTLE · NOVEMBER 2026</p>\n<p><em>Domains of the night</em></p>\n<table class=\"sbn-tabla sbn-doc-tabla sbn-mapa-tabla\">\n<thead>\n<tr>\n<th>Color</th>\n<th>Zone</th>\n<th>Who rules</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Gold</td>\n<td>Downtown, Capitol Hill, Seattle Center</td>\n<td>Prince Whitmore</td>\n</tr>\n<tr>\n<td>Stone gray</td>\n<td>Beneath Pioneer Square</td>\n<td>The Moles (Thornquist)</td>\n</tr>\n<tr>\n<td>Dark green</td>\n<td>Snohomish Valley</td>\n<td>Sheriff Montgomery</td>\n</tr>\n<tr>\n<td>Steel blue</td>\n<td>Harbor Island and Elliott Bay</td>\n<td>The Hound (granted by the Sheriff)</td>\n</tr>\n<tr>\n<td>Emerald green</td>\n<td>Bellevue and the Eastside</td>\n<td>Halloway</td>\n</tr>\n<tr>\n<td>Rust red</td>\n<td>Everett</td>\n<td>Salt&#39;s (Anarchs)</td>\n</tr>\n<tr>\n<td>No color, hatched</td>\n<td>Ballard, South Lake Union, Tacoma</td>\n<td>Nobody, or everybody</td>\n</tr>\n</tbody></table>\n<p><strong>Marked locations:</strong> ① The Hangar · ② The Farm · ③ The Glass Gallery · ④ The Sealed Underground · ⑤ Market Street, Ballard · ⑥ Halloway Tower · ⑦ Gale Sentinel · ⑧ Pike Place · ⑨ Club Cinder · ⑩ Salt&#39;s Bar · ⑪ The Larchmont · ⑫ The Cedar Cemetery · ⑬ The Observatory · ⑭ Northline · ⑮ Colman Dock · ⑯ Terminal 86</p>\n<aside class=\"sbn-manuscrito sbn-manuscrito-lapiz\"><p><span class=\"sbn-acotacion\">In one corner, in pencil, in Hal&#39;s handwriting:</span> “South Lake Union: no hunting. Cameras everywhere.”</p></aside>\n</div>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "oQewOGrG0TaIkSrE",
+      "_key": "!journal.pages!oIF9UlwtOCvcz9Sf.oQewOGrG0TaIkSrE",
+      "name": "For the Storyteller",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"sbn-para-narrador\"><p><strong>Format:</strong> Illustrated map. <strong>Delivery:</strong> Session zero or @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks}.</p>\n<p><em>Storyteller: illustrated regional map. Generated from prompt @UUID[JournalEntry.oIF9UlwtOCvcz9Sf]{Map of Seattle with the Domains}. The legend is printed separately or overlaid in Foundry.</em></p>\n</div>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

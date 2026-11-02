@@ -3,6 +3,8 @@
 import json, re, sys, pathlib
 raiz = pathlib.Path(sys.argv[1]) / "content"
 ignorar = set(sys.argv[2:])
+# content/en/ es la traducción (overlays y .md en inglés): la controla tools/contenido/verificar-traduccion.mjs.
+fuera_en = lambda f: raiz / "en" not in f.parents
 ids, errores = {}, []
 def decl(i, donde): ids.setdefault(i, donde)
 def recorrer(o, f):
@@ -12,7 +14,7 @@ def recorrer(o, f):
     elif isinstance(o, list):
         for v in o: recorrer(v, f)
 pistas = set()
-for f in sorted(raiz.rglob("*.json")):
+for f in sorted(filter(fuera_en, raiz.rglob("*.json"))):
     try:
         d = json.loads(f.read_text())
     except Exception as e:
@@ -22,7 +24,7 @@ for f in sorted(raiz.rglob("*.json")):
         for k in d: decl(k, f)
     if f.name == "pistas.json":
         pistas = {p["id"] for p in d["pistas"]}
-mds = sorted(raiz.rglob("*.md"))
+mds = sorted(filter(fuera_en, raiz.rglob("*.md")))
 for f in mds:
     t = f.read_text()
     m = re.match(r"---\n(.*?)\n---", t, re.S)

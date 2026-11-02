@@ -72,7 +72,7 @@ Los interludios son opcionales. Si no se juegan, pasa lo que dicen los docs: en 
 
 ### Con un solo jugador
 
-El jugador lleva a Okafor en @ID[INT-02] y a Ransom en @ID[INT-01] e @ID[INT-03]. El Narrador hace de los demás por radio. Los interludios quedan en 20 minutos.
+El jugador lleva a uno de los PJs nuevos, con David y Bear como compañeros PNJ. En los interludios, a Okafor en @ID[INT-02] y a Ransom en @ID[INT-01] e @ID[INT-03]. El Narrador hace de los demás por radio. Los interludios quedan en 20 minutos.
 
 ### Seguridad
 

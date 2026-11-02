@@ -1,0 +1,42 @@
+{
+  "_id": "AGXa9osudctdvrJl",
+  "_key": "!items!AGXa9osudctdvrJl",
+  "name": "High-intensity UV flashlight",
+  "type": "gear",
+  "img": "icons/containers/bags/pack-leather-black-brown.webp",
+  "system": {
+    "description": "<table class=\"sbn-ficha\"><tbody><tr><th>Damage</th><td>1 aggravated</td></tr></tbody></table><p>A Kindred caught directly in the beam takes 1 aggravated damage per turn and −2 dice to all actions. Fortitude (Defy Bane) reduces the damage.</p><p>Condition: @UUID[Item.CbbejNJnKXKf8gbq]{Lit by the UV flashlight}</p>",
+    "macroid": "",
+    "bonuses": [],
+    "dataItemId": "",
+    "source": {
+      "book": "The Ward File",
+      "page": "FIRSTLIGHT (doc 14)"
+    },
+    "uses": {
+      "current": 0,
+      "max": 0,
+      "enabled": false
+    },
+    "quantity": 1,
+    "dicepool": {}
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "firstlight",
+      "id": "linterna-uv",
+      "agravado": true
+    }
+  },
+  "folder": "JecVkTl1J6saSiwz",
+  "sort": 10,
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

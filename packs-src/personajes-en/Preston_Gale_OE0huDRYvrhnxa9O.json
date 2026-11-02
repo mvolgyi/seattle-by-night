@@ -1,0 +1,213 @@
+{
+  "_id": "OE0huDRYvrhnxa9O",
+  "_key": "!actors!OE0huDRYvrhnxa9O",
+  "name": "Preston Gale",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/PNJ-19.webp",
+  "folder": "CnV2nZgZZRdzG6KO",
+  "sort": 30,
+  "prototypeToken": {
+    "name": "Preston Gale",
+    "actorLink": true,
+    "disposition": -1,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/PNJ-19.webp"
+    }
+  },
+  "system": {
+    "group": "YrFSWeqhbymzT7q4",
+    "headers": {
+      "concept": "Halloway's ghoul, CEO of Gale Sentinel",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<p>@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Profile: Preston Gale}</p><table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Halloway&#39;s ghoul, CEO of Gale Sentinel</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.zWDnUlWxPHfXyIA2]{The Glass Council}</td></tr></tbody></table><h3>Demeanor</h3><p>Early fifties, investor-pitch smile, talks in slogans.</p>",
+    "appearance": "<p>Early fifties, investor-pitch smile, talks in slogans.</p>",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "disciplines": {
+      "dominate": {
+        "value": 1,
+        "visible": true,
+        "description": "",
+        "selected": false
+      }
+    },
+    "spcType": "ghoul",
+    "standarddicepools": {
+      "physical": {
+        "value": 3
+      },
+      "social": {
+        "value": 5
+      },
+      "mental": {
+        "value": 5
+      }
+    },
+    "exceptionaldicepools": {
+      "technology": {
+        "value": 7,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "finance": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "persuasion": {
+        "value": 6,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      },
+      "subterfuge": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": true
+    }
+  },
+  "items": [
+    {
+      "effects": [],
+      "sort": 100,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "poder": "Cloud Memory",
+          "homebrew": false
+        }
+      },
+      "name": "Cloud Memory",
+      "type": "power",
+      "img": "systems/wod5e/assets/icons/items/discipline.png",
+      "system": {
+        "description": "<p><em>Dominate 1. Power from the V5 core rulebook.</em></p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": "PNJ-19"
+        },
+        "level": 1,
+        "cost": 0,
+        "dicepool": {},
+        "discipline": "dominate",
+        "selected": false
+      },
+      "_id": "WgQI35sxlWo7XA0P",
+      "_key": "!actors.items!OE0huDRYvrhnxa9O.WgQI35sxlWo7XA0P"
+    },
+    {
+      "effects": [],
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "actor",
+          "rasgo": "His dose of Vitae is three days overdue: −1 die to everything until he gets it."
+        }
+      },
+      "name": "His dose of Vitae is three days overdue",
+      "type": "feature",
+      "img": "systems/wod5e/assets/icons/items/feature.svg",
+      "system": {
+        "description": "<p>His dose of Vitae is three days overdue: −1 die to everything until he gets it.</p>",
+        "macroid": "",
+        "bonuses": [],
+        "dataItemId": "",
+        "source": {
+          "book": "The Ward File",
+          "page": ""
+        },
+        "uses": {
+          "current": 0,
+          "max": 0,
+          "enabled": false
+        },
+        "points": 0,
+        "featuretype": "flaw"
+      },
+      "_id": "laMEx6Lscyoh5IeM",
+      "_key": "!actors.items!OE0huDRYvrhnxa9O.laMEx6Lscyoh5IeM"
+    }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "PNJ-19",
+      "journal": "JournalEntry.y8Ao3xEHH3W11EJe",
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

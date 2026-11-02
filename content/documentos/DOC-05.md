@@ -36,6 +36,6 @@ SAFE
 
 **Presagia:** la relación entre David y Helen y la culpa de David. El último mensaje plantea una pregunta: ¿cómo sabía David que algo iba a pasar?
 
-**Verdad:** Helen nunca contestó. El 9 de noviembre, un contacto de Montgomery en el puerto avisó de que alguien había pedido datos de vigilancia del edificio de Helen. David mandó el mensaje y no fue a comprobarlo. Fue Gale Sentinel (@ID[P-06]). Si el jugador de David no conocía este mensaje, el Narrador debe acordarlo con él en privado antes de la sesión 1.
+**Verdad:** Helen nunca contestó. El 9 de noviembre, un contacto de Montgomery en el puerto avisó de que alguien había pedido datos de vigilancia del edificio de Helen. David mandó el mensaje y no fue a comprobarlo. Fue Gale Sentinel (@ID[P-06]). David no se lo cuenta a nadie. Si un PJ le pregunta por qué no fue, se calla; si insiste, dice: «Pensé que tenía tiempo».
 
-*Nota para el Narrador: el 14 de febrero es el cumpleaños de Emily Smith (@ID[REF-01]). Helen no lo sabe. El jugador de David puede saberlo o descubrirlo.*
+*Nota para el Narrador: el 14 de febrero es el cumpleaños de Emily Smith (@ID[REF-01]). Helen no lo sabe. David sí. Un PJ puede descubrirlo y decidir si se lo dice a Helen.*

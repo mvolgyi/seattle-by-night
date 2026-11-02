@@ -1,0 +1,109 @@
+{
+  "_id": "dHE63u1Rtqst0CLb",
+  "_key": "!journal!dHE63u1Rtqst0CLb",
+  "name": "Elijah Kane",
+  "folder": "nssYoe60koOlDSju",
+  "sort": 90,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-09",
+      "archivo": "content/personajes/PNJ-09.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "tr9TuprUhtcDeNXL",
+      "_key": "!journal.pages!dHE63u1Rtqst0CLb.tr9TuprUhtcDeNXL",
+      "name": "Elijah Kane",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-09.webp\" alt=\"Elijah Kane\">\n<p><strong>Background figure</strong> (no actor sheet) · nomadic Gangrel · sire of @UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}.</p>\n<p><em>This page collects what docs 00–16 say about Kane. The source doc for each fact is in parentheses. The docs give him no sheet, no Generation, and no current whereabouts.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "anE3rElxek1YMwQO",
+      "_key": "!journal.pages!dHE63u1Rtqst0CLb.anE3rElxek1YMwQO",
+      "name": "What Is Known",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>Number PNJ-09 was reserved for “Elijah Kane, Montgomery&#39;s sire” (doc 01, note to the ID registry v2) and set as “PNJ-09 · Elijah Kane, Montgomery&#39;s sire (background)” (doc 06, ID registry).</li>\n<li>He was a nomadic Gangrel. In 1885, Montgomery, a frontier tracker, spent three weeks hunting a killer of travelers near Eureka and discovered that his quarry wasn&#39;t a man. Kane “spared his life because he found him interesting and Embraced him because he found him useful” (doc 06, Montgomery&#39;s sheet).</li>\n<li>Montgomery spent eighteen years roaming the coast with him. In 1903, after the San Francisco earthquake, Montgomery entered the service of the Camarilla and never left it (doc 06). The city timeline dates that move to 1903, in San Francisco (doc 05).</li>\n<li>Montgomery&#39;s sheet: “<strong>Sire:</strong> Elijah Kane · <strong>Embraced:</strong> 1885 (born 1845)” (doc 06).</li>\n</ul>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "eq546nLwb6x3qfjH",
+      "_key": "!journal.pages!dHE63u1Rtqst0CLb.eq546nLwb6x3qfjH",
+      "name": "Using Him",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>No doc has him appear in @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File} or in the hooks. He explains where Montgomery got his tracking and his habit of following a trail to the end.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

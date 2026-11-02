@@ -1,0 +1,741 @@
+{
+  "_fuente": {
+    "ferry": "29afca2238ba2641",
+    "ferry-coches": "443f1370ac917d45",
+    "ferry-puente": "079778e027011f89"
+  },
+  "planos": {
+    "ferry": {
+      "nombre": "Part 4 · The Last Ferry: Passenger Cabin and Aft Deck",
+      "nota": "**A4-E03, aboard.** The last ferry to Bainbridge: a 35-minute crossing, some **forty passengers**, all mortal, six crew, and **security cameras in the cabin** (three “CCTV” objects on the map; they aren't ANOMALY). This map is the **passenger deck** (the boat's second level), cropped to the stern: the cabin continues forward (hatched strip) and isn't played.\n\n**Pell** “is in the second-floor passenger cabin, by a window, with the briefcase handcuffed to his wrist” (Wits + Investigation Diff. 3 to find him): put him in the marked **port booth**, by the window, with Dawson and the ghouls nearby. If they voted with the coterie, **Fry** is in another booth with headphones on (“The last boat of the night. I told you.”). In the cabin, forty witnesses: any visible supernatural act is **Thermometer +2**. Presence (Daunt) to keep the passengers in the cabin: Charisma + Intimidation Diff. 3. Potence to break the briefcase cuff without taking off Pell's hand: Strength + Larceny Diff. 3.\n\n**Aft outer deck.** When the ferry casts off, the gangway pulls back: the **gate** in the rail stays shut and the “Down the ramp” region only works while docked (disable it on departure, at 12:55 a.m.). This is where the negotiation with Halloway happens if he's aboard (“He offers everything: money, domain, the Sheriff's post”). **Jumping into the water from the stern: 6 meters**; the water is in the high forties and the current is strong: Stamina + Athletics Diff. 3 to reach shore or Salt's launch, which follows the ferry and can board over the stern. Jump with the briefcase and the drive is lost. Throwing the briefcase overboard is the fastest way to destroy it.\n\n**Transitions.** The starboard and port stairs (by the aft end of the cabin) go down to the **car deck** (`ferry-coches`). The **bridge stair**, in the middle of the cabin, goes up to the upper deck and the **bridge** (`ferry-puente`): that's where Halloway runs (“uses Daunt and flees toward the bridge to take control of the ship”).\n\n**Galley** in the middle of the cabin (fixed counters). The booth benches and tables are bolted to the floor (they're fixed; there's no movable furniture on this map).",
+      "habitaciones": [
+        {
+          "nombre": "The cabin continues forward (not played)"
+        },
+        {
+          "nombre": "Starboard outer promenade"
+        },
+        {
+          "nombre": "Port outer promenade"
+        },
+        {
+          "nombre": "Passenger cabin"
+        },
+        {
+          "nombre": "Passenger cabin (aft)"
+        },
+        {
+          "nombre": "Starboard stair (to the car deck)"
+        },
+        {
+          "nombre": "Port stair (to the car deck)"
+        },
+        {
+          "nombre": "Bridge stair"
+        },
+        {
+          "nombre": "Aft outer deck"
+        },
+        {
+          "nombre": "The starboard promenade continues forward (not played)"
+        },
+        {
+          "nombre": "The port promenade continues forward (not played)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Starboard rail"
+        },
+        {
+          "nombre": "Port rail"
+        },
+        {
+          "nombre": "Stern rail (north)"
+        },
+        {
+          "nombre": "Passenger gangway gate (shut on departure)"
+        },
+        {
+          "nombre": "Stern rail (south)"
+        },
+        {
+          "nombre": "Starboard promenade → aft deck"
+        },
+        {
+          "nombre": "Port promenade → aft deck"
+        },
+        {
+          "nombre": "Cabin ↔ cabin (aft)"
+        },
+        {
+          "nombre": "Cabin window (starboard)"
+        },
+        {
+          "nombre": "Cabin window (starboard)"
+        },
+        {
+          "nombre": "Cabin window (starboard)"
+        },
+        {
+          "nombre": "Cabin window (starboard)"
+        },
+        {
+          "nombre": "Cabin window (starboard)"
+        },
+        {
+          "nombre": "Cabin window (starboard)"
+        },
+        {
+          "nombre": "Cabin window (port)"
+        },
+        {
+          "nombre": "Cabin window (port)"
+        },
+        {
+          "nombre": "Cabin window (port)"
+        },
+        {
+          "nombre": "Cabin window (port)"
+        },
+        {
+          "nombre": "Cabin window (port)"
+        },
+        {
+          "nombre": "Cabin window (port)"
+        },
+        {
+          "nombre": "Starboard stair → cabin"
+        },
+        {
+          "nombre": "Port stair → cabin"
+        },
+        {
+          "nombre": "Bridge stair → cabin"
+        },
+        {
+          "nombre": "Cabin door to the aft deck (starboard)"
+        },
+        {
+          "nombre": "Cabin aft picture window (north)"
+        },
+        {
+          "nombre": "Cabin double door to the aft deck"
+        },
+        {
+          "nombre": "Cabin aft picture window (south)"
+        },
+        {
+          "nombre": "Cabin door to the aft deck (port)"
+        },
+        {
+          "nombre": "Forward chain: the cabin and promenades continue forward (play stops here)"
+        },
+        {
+          "nombre": "Starboard rail (continues forward)"
+        },
+        {
+          "nombre": "Port rail (continues forward)"
+        },
+        {
+          "nombre": "Cabin window (starboard, forward)"
+        },
+        {
+          "nombre": "Cabin window (port, forward)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "nombre": "Pell's Booth, by the Window (A4-E03)",
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a small fixed table bolted under the window"
+        },
+        {
+          "desc": "a fixed upholstered ferry bench seat"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "the back counter of a small ferry galley with a sink and coffee urns"
+        },
+        {
+          "desc": "the front serving counter of a small ferry galley"
+        },
+        {
+          "desc": "a drinks fridge"
+        },
+        {
+          "desc": "a steel ship's stair going up"
+        },
+        {
+          "desc": "a steel ship's stair going down"
+        },
+        {
+          "desc": "a steel ship's stair going down"
+        },
+        {
+          "nombre": "Cabin security camera (forward)",
+          "desc": "a small black CCTV dome on the ceiling"
+        },
+        {
+          "nombre": "Cabin security camera (port)",
+          "desc": "a small black CCTV dome on the ceiling"
+        },
+        {
+          "nombre": "Cabin security camera (aft doors)",
+          "desc": "a small black CCTV dome on the ceiling"
+        },
+        {
+          "desc": "a white life-raft canister in a steel cradle against the railing"
+        },
+        {
+          "desc": "a white life-raft canister in a steel cradle against the railing"
+        },
+        {
+          "desc": "a slatted deck bench against the cabin wall"
+        },
+        {
+          "desc": "a slatted deck bench against the cabin wall"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        },
+        {
+          "desc": "a long row of fixed upholstered ferry bench seats"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Cabin fluorescents (starboard, forward)"
+        },
+        {
+          "nombre": "Cabin fluorescents (starboard)"
+        },
+        {
+          "nombre": "Cabin fluorescents (port, forward)"
+        },
+        {
+          "nombre": "Cabin fluorescents (port)"
+        },
+        {
+          "nombre": "Cabin fluorescents (aft)"
+        },
+        {
+          "nombre": "Galley light"
+        },
+        {
+          "nombre": "Aft deck floodlight (north)"
+        },
+        {
+          "nombre": "Aft deck floodlight (south)"
+        },
+        {
+          "nombre": "Starboard stair tube light (to the car deck)"
+        },
+        {
+          "nombre": "Port stair tube light (to the car deck)"
+        },
+        {
+          "nombre": "Bridge stair tube light"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival from the passenger ramp"
+        },
+        {
+          "nombre": "Down the ramp to the terminal (docked only)"
+        },
+        {
+          "nombre": "Down to the car deck (starboard)"
+        },
+        {
+          "nombre": "Arrival by the starboard stair"
+        },
+        {
+          "nombre": "Down to the car deck (port)"
+        },
+        {
+          "nombre": "Arrival by the port stair"
+        },
+        {
+          "nombre": "Up to the bridge"
+        },
+        {
+          "nombre": "Arrival from the bridge"
+        },
+        {
+          "nombre": "Jump into the water from the stern (6 m)",
+          "pendiente": "no water map: Stamina + Athletics Diff. 3 to reach shore or Salt's launch"
+        },
+        {
+          "nombre": "Jump into the water from the stern (6 m)",
+          "pendiente": "no water map: Stamina + Athletics Diff. 3 to reach shore or Salt's launch"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "In the port booth, by the window, with the briefcase handcuffed to his wrist (Wits + Investigation Diff. 3 to find him)."
+        },
+        {
+          "nota": "Near Pell."
+        },
+        null,
+        null,
+        {
+          "nota": "Only if he's aboard (he lost the vote or was exposed). Negotiates on the aft deck; flees toward the bridge."
+        },
+        {
+          "nota": "Only if they voted with the coterie: in another booth, headphones on."
+        }
+      ]
+    },
+    "ferry-coches": {
+      "nombre": "Part 4 · The Last Ferry: Car Deck",
+      "nota": "**A4-E03, the car deck.** “On the car deck, among the vehicles, there are few witnesses: normal Masquerade Difficulty.” It's the best place to fight: Dawson and the ghouls fight to protect the briefcase. **Krell**, if he survived and reached 3 steps in A3-E03, “shows up on the car deck to help David”; if not, he shows up to recover the folios, as a third force.\n\nCrop: the aft ~22 m of the deck (the rest of the boat continues forward: the strip along the west edge, behind a chain, isn't played). Along the sides, the **casings** (ventilation and machinery: you see their sheet-metal tops with the grilles; not played) with the starboard and port **stairs** up to the cabin (`ferry`). The **cars** are movable tiles (thirteen, in five lanes): they can be pushed, used as cover, and have their windows smashed; the Storyteller moves them or removes them.\n\n**The open stern.** The deck ends at the **stern chain**; the center section unhooks when docking, and that's where the terminal's **vehicle ramp** comes in (the “Down the vehicle ramp” region, docked only: disable it on departure). Anyone who arrives late by car and reaches the ferry before it casts off comes in here. Jumping into the water from the open stern is a shorter drop than from the passenger deck (about 2 m), with the same swimming roll.",
+      "habitaciones": [
+        {
+          "nombre": "The vehicle deck continues forward (not played)"
+        },
+        {
+          "nombre": "Starboard casing: ventilation and machinery roof (not played)"
+        },
+        {
+          "nombre": "Starboard stair (to the cabin)"
+        },
+        {
+          "nombre": "Port casing: ventilation and machinery roof (not played)"
+        },
+        {
+          "nombre": "Port stair (to the cabin)"
+        },
+        {
+          "nombre": "Vehicle deck"
+        },
+        {
+          "nombre": "Vehicle deck · stern"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Deck ↔ stern"
+        },
+        {
+          "nombre": "Starboard stair → deck"
+        },
+        {
+          "nombre": "Port stair → deck"
+        },
+        {
+          "nombre": "Stern chain (north)"
+        },
+        {
+          "nombre": "Stern chain: vehicle ramp opening (unhooks when docking)"
+        },
+        {
+          "nombre": "Stern chain (south)"
+        },
+        {
+          "nombre": "Forward chain: the deck continues forward (play stops here)"
+        }
+      ],
+      "muebles": [
+        {
+          "desc": "parked car (sedan), lane 1"
+        },
+        {
+          "desc": "parked car (SUV), lane 1"
+        },
+        {
+          "desc": "parked car (sedan), lane 1"
+        },
+        {
+          "desc": "parked car (van), lane 2"
+        },
+        {
+          "desc": "parked car (sedan), lane 2"
+        },
+        {
+          "desc": "parked car (sedan), lane 3"
+        },
+        {
+          "desc": "parked car (sedan), lane 3"
+        },
+        {
+          "desc": "parked car (pickup), lane 3"
+        },
+        {
+          "desc": "parked car (SUV), lane 4"
+        },
+        {
+          "desc": "parked car (sedan), lane 4"
+        },
+        {
+          "desc": "parked car (SUV), lane 5"
+        },
+        {
+          "desc": "parked car (sedan), lane 5"
+        },
+        {
+          "desc": "parked car (sedan), lane 5"
+        },
+        {
+          "desc": "a steel ship's stair going up"
+        },
+        {
+          "desc": "a steel ship's stair going up"
+        },
+        {
+          "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres"
+        },
+        {
+          "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres"
+        },
+        {
+          "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres"
+        },
+        {
+          "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres"
+        },
+        {
+          "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres"
+        },
+        {
+          "desc": "a large louvred steel ventilation grille set into the steel casing top, dark slots between the louvres"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Deck fluorescents (starboard, forward)"
+        },
+        {
+          "nombre": "Deck fluorescents (starboard)"
+        },
+        {
+          "nombre": "Deck fluorescents (port, forward)"
+        },
+        {
+          "nombre": "Flickering fluorescent (port)"
+        },
+        {
+          "nombre": "Deck fluorescents (center)"
+        },
+        {
+          "nombre": "Open stern floodlight"
+        },
+        {
+          "nombre": "Starboard stair tube light (to the cabin)"
+        },
+        {
+          "nombre": "Port stair tube light (to the cabin)"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival by the vehicle ramp"
+        },
+        {
+          "nombre": "Down the vehicle ramp to the terminal (docked only)"
+        },
+        {
+          "nombre": "Up to the cabin (starboard)"
+        },
+        {
+          "nombre": "Arrival by the starboard stair"
+        },
+        {
+          "nombre": "Up to the cabin (port)"
+        },
+        {
+          "nombre": "Arrival by the port stair"
+        },
+        {
+          "nombre": "Jump into the water from the open stern",
+          "pendiente": "no water map: Stamina + Athletics Diff. 3 to reach shore or Salt's launch"
+        }
+      ],
+      "figuras": [
+        {
+          "nota": "If he survived A3-E03: with 3 steps, he comes to help David; without them, to recover the folios."
+        }
+      ]
+    },
+    "ferry-puente": {
+      "nombre": "Part 4 · The Last Ferry: The Bridge",
+      "nota": "**The bridge.** Halloway “doesn't fight: he uses Daunt and flees toward the bridge to take control of the ship.” He climbs the stair in the middle of the cabin to the **upper deck** and enters the **bridge** (wheelhouse) through the aft door; the crew can lock it from inside. Inside are the captain and a deckhand (two of the six crew): Dominate on them, or Halloway forces them (“Stop.” “Let go of that.”). The **helm station** is in the center, facing the **console** under the forward windows. The starboard and port **bridge wings** (open, with rails) each have a control pedestal.\n\nAt night the bridge runs **dark** (only the screens, turned all the way down, to protect night vision): high darkness on purpose. The navigation lights are on the wing rails: green to starboard (north), red to port (south). The two deck lights hang from the wheelhouse's aft bulkhead and light the upper deck; a little of that light gets in through the bridge's aft windows.\n\nCrop: the ferry has two bridges, one at each end; this is the forward one during the crossing (the one steering). Between the cabin stair and the bridge there's more ship that isn't played; the upper deck continues aft (hatched strip). If Halloway falls into the coterie's hands, see Endings (AVE-01-FIN).",
+      "habitaciones": [
+        {
+          "nombre": "Starboard bridge wing"
+        },
+        {
+          "nombre": "Bridge (wheelhouse)"
+        },
+        {
+          "nombre": "Port bridge wing"
+        },
+        {
+          "nombre": "Upper deck"
+        },
+        {
+          "nombre": "Stair housing"
+        },
+        {
+          "nombre": "The upper deck continues aft (not played)"
+        }
+      ],
+      "vanos": [
+        {
+          "nombre": "Bridge forward windows"
+        },
+        {
+          "nombre": "Bridge window to the starboard wing (west)"
+        },
+        {
+          "nombre": "Starboard wing door"
+        },
+        {
+          "nombre": "Bridge window to the starboard wing (east)"
+        },
+        {
+          "nombre": "Bridge window to the port wing (west)"
+        },
+        {
+          "nombre": "Port wing door"
+        },
+        {
+          "nombre": "Bridge window to the port wing (east)"
+        },
+        {
+          "nombre": "Starboard wing rail"
+        },
+        {
+          "nombre": "Port wing rail"
+        },
+        {
+          "nombre": "Starboard rail"
+        },
+        {
+          "nombre": "Port rail"
+        },
+        {
+          "nombre": "Starboard wing → upper deck"
+        },
+        {
+          "nombre": "Port wing → upper deck"
+        },
+        {
+          "nombre": "Bridge aft windows (north)"
+        },
+        {
+          "nombre": "Bridge door (the crew can lock it)"
+        },
+        {
+          "nombre": "Bridge aft windows (south)"
+        },
+        {
+          "nombre": "Stair housing → deck"
+        },
+        {
+          "nombre": "Aft chain: the upper deck continues (play stops here)"
+        },
+        {
+          "nombre": "Starboard rail (continues aft)"
+        },
+        {
+          "nombre": "Port rail (continues aft)"
+        }
+      ],
+      "muebles": [
+        {
+          "nombre": "Bridge console",
+          "desc": "the long bridge console under the front windows, with dark switched-off radar and chart screens"
+        },
+        {
+          "nombre": "Helm station",
+          "desc": "the ship's steering stand"
+        },
+        {
+          "desc": "a chart table"
+        },
+        {
+          "desc": "the captain's chair"
+        },
+        {
+          "desc": "a small bridge-wing control pedestal"
+        },
+        {
+          "desc": "a small bridge-wing control pedestal"
+        },
+        {
+          "desc": "a white life-raft canister in a steel cradle against the railing"
+        },
+        {
+          "desc": "a white life-raft canister in a steel cradle against the railing"
+        },
+        {
+          "desc": "a steel ship's stair going down"
+        }
+      ],
+      "luces": [
+        {
+          "nombre": "Radar and chart screens (turned down)"
+        },
+        {
+          "nombre": "Radar and chart screens (turned down)"
+        },
+        {
+          "nombre": "Deck light (starboard), on the wheelhouse aft bulkhead"
+        },
+        {
+          "nombre": "Deck light (port), on the wheelhouse aft bulkhead"
+        },
+        {
+          "nombre": "Stair housing ceiling light"
+        },
+        {
+          "nombre": "Starboard navigation light (green), on the wing"
+        },
+        {
+          "nombre": "Port navigation light (red), on the wing"
+        }
+      ],
+      "regiones": [
+        {
+          "nombre": "Arrival from the cabin"
+        },
+        {
+          "nombre": "Down to the passenger cabin"
+        }
+      ]
+    }
+  }
+}

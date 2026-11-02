@@ -1,0 +1,109 @@
+{
+  "_id": "YD0Td8Y9aJyIpGSl",
+  "_key": "!journal!YD0Td8Y9aJyIpGSl",
+  "name": "Helen Ward's Apartment",
+  "folder": "jVWzRpmb0ydhlfRf",
+  "sort": 50,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "LUG-05",
+      "archivo": "content/ciudad/LUG-05.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "Ilx1OHcSNPHIpHrz",
+      "_key": "!journal.pages!YD0Td8Y9aJyIpGSl.Ilx1OHcSNPHIpHrz",
+      "name": "Helen Ward's Apartment",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Ballard, Market Street · Map: yes</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LRWrQGB7yKGrrY0h",
+      "_key": "!journal.pages!YD0Td8Y9aJyIpGSl.LRWrQGB7yKGrrY0h",
+      "name": "Read Aloud",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<section class=\"sbn-leer\"><p>Third floor, above a closed-down hardware store. A one-bedroom apartment someone has turned into an investigation room: walls covered in maps stuck with red, blue, and yellow pins, mugs of cold coffee, an ashtray on the sill of the fire-escape window. On the desk, a stripped cable hangs plugged into nothing. The woman sitting on the floor, hood up, looks toward the door and doesn&#39;t seem surprised.</p>\n</section>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 2
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "3meYT7d2lxqu22X0",
+      "_key": "!journal.pages!YD0Td8Y9aJyIpGSl.3meYT7d2lxqu22X0",
+      "name": "Storyteller Notes",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Layout:</strong> third-floor hallway (Gale Sentinel doorbells on every door), living room and kitchen, study with the maps and the creaking closet, bathroom, and a fire escape that lets out into the alley.</p>\n<p><strong>Clues:</strong> <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-01\"><span class=\"sbn-pista-id\">P-01</span> <span class=\"sbn-pista-nombre\">Professional Mortal Thieves; Looped Cameras</span></button> (the camera lights), <button type=\"button\" class=\"sbn-pista\" data-sbn-pista=\"P-02\"><span class=\"sbn-pista-id\">P-02</span> <span class=\"sbn-pista-nombre\">Ghoul Vitae on the Doorknob</span></button> (ghoul Vitae on the doorknob; spotted with <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.wits skills.awareness\" data-dificultad=\"3\" data-label=\"Wits + Awareness (Difficulty 3)\"><i class=\"fa-solid fa-dice-d10\"></i> Wits + Awareness (Difficulty 3)</a>, or with Auspex). In the hallway, the camera at 3B is still streaming.</p>\n<p><strong>Scenes:</strong> @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE} and @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took}.</p>\n<p><strong>Careful:</strong> any visible use of Disciplines in front of @UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen} sets @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.j1wUSqY1dsP0iFfp]{GAN-02 · The Night She Beholds the Beast} in motion.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

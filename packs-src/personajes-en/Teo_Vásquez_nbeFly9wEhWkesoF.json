@@ -1,0 +1,139 @@
+{
+  "_id": "nbeFly9wEhWkesoF",
+  "_key": "!actors!nbeFly9wEhWkesoF",
+  "name": "Teo Vásquez",
+  "type": "spc",
+  "img": "modules/seattle-by-night/assets/retratos/MEN-06.webp",
+  "folder": "TFDASGyUPT6MBacx",
+  "sort": 150,
+  "prototypeToken": {
+    "name": "Teo Vásquez",
+    "actorLink": true,
+    "disposition": 0,
+    "lockRotation": true,
+    "sight": {
+      "enabled": true,
+      "range": 3,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "texture": {
+      "src": "modules/seattle-by-night/assets/tokens/MEN-06.webp"
+    }
+  },
+  "system": {
+    "group": "",
+    "headers": {
+      "concept": "Terminal 46 crane operator",
+      "chronicle": "The Ward File",
+      "ambition": "",
+      "desire": "",
+      "touchstones": "",
+      "sire": "",
+      "generation": ""
+    },
+    "bio": {
+      "age": {
+        "trueage": "",
+        "apparent": ""
+      },
+      "dateof": {
+        "birth": "",
+        "death": ""
+      },
+      "history": ""
+    },
+    "biography": "<table class=\"sbn-ficha\"><tbody><tr><th>Concept</th><td>Terminal 46 crane operator</td></tr></tbody></table><p>Forty, three kids. He saw Krell destroy Pike (@UUID[Actor.IdLdXpR0cpQaUeFd]{Pike}) from the cab. He&#39;s sure of what he saw.</p>",
+    "appearance": "",
+    "equipment": "",
+    "notes": "",
+    "privatenotes": "",
+    "health": {
+      "max": 6,
+      "value": 6,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "willpower": {
+      "max": 4,
+      "value": 4,
+      "aggravated": 0,
+      "superficial": 0
+    },
+    "spcType": "mortal",
+    "standarddicepools": {
+      "physical": {
+        "value": 4
+      },
+      "social": {
+        "value": 2
+      },
+      "mental": {
+        "value": 3
+      }
+    },
+    "exceptionaldicepools": {
+      "drive": {
+        "value": 5,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": [
+          {
+            "source": "cranes and heavy vehicles",
+            "value": 1,
+            "paths": [
+              "skills.drive"
+            ],
+            "displayWhenInactive": true,
+            "activeWhen": {
+              "check": "never"
+            }
+          }
+        ]
+      },
+      "awareness": {
+        "value": 4,
+        "active": true,
+        "description": "",
+        "macroid": "",
+        "bonuses": []
+      }
+    },
+    "power": {
+      "value": 0
+    },
+    "generaldifficulty": {
+      "normal": 0,
+      "strongest": 0
+    },
+    "settings": {
+      "enableDisciplines": false
+    }
+  },
+  "items": [],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "actor",
+      "id": "MEN-06",
+      "journal": null,
+      "doc": "14",
+      "cantidad": 1,
+      "pj": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

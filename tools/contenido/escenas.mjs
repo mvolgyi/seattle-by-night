@@ -35,9 +35,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { marked } from "marked";
-import { RAIZ, MODULO, STATS, idEstable, escribirDoc, Carpetas } from "../util.mjs";
-import { ID } from "./ids.mjs";
-import { cargarPlanos } from "../construir-planos.mjs";
+import { RAIZ, MODULO, STATS, idEstable, Carpetas } from "../util.mjs";
+import { ID, planos as cargarPlanos } from "./ids.mjs";
+import { es, packDe } from "./idioma.mjs";
+import { T, escribir as escribirDoc, escribirCarpetas } from "./fijos.mjs";
 import { derivarMuros, derivarRegiones, mueblesMoviles, dentroDeHabitacion, normalizar, GRID_PX, PX_POR_M } from "../planos.mjs";
 import { lucesDePlano } from "../iluminacion.mjs";
 import { ambienteDe } from "./musica.mjs";
@@ -115,7 +116,7 @@ function docEscena({ id, nombre, carpeta, orden, w, h, sinGrid = false, oscurida
     // En v14 el fondo vive en un Level embebido, no en la escena.
     levels: [{
       _id: idEstable(`nivel:${id}`),
-      name: "Suelo",
+      name: T("Suelo"),
       elevation: { bottom: 0, top: 20 },
       background: { src: fondo ? `modules/${MODULO}/${fondo}` : null, color: colorFondo },
       sort: 0
@@ -265,17 +266,19 @@ function nota({ id, entryId, pageId, x, y, texto, icono, tam = 40, extra = {} })
  */
 function pinesDe(plano, ctx) {
   const pedidos = [];
-  if (plano.lugar) pedidos.push({ clave: plano.lugar, icono: "icons/svg/house.svg", sala: plano.salaLugar });
+  if (plano.lugar) pedidos.push({ clave: plano.lugar, icono: "icons/svg/house.svg", sala: es(plano).salaLugar });
   for (const e of plano.escenas ?? []) {
     const def = typeof e === "string" ? { id: e } : e;
-    pedidos.push({ clave: def.id, icono: "icons/svg/book.svg", sala: def.sala });
+    pedidos.push({ clave: def.id, icono: "icons/svg/book.svg", sala: es(def).sala });
   }
   const porSala = new Map();
   for (const p of pedidos) {
     const ent = ctx.reg.get(p.clave);
     const ids = idsDeUuid(ent?.uuid);
     if (!ids) { ctx.avisos.push(`plano ${plano.id}: «${p.clave}» no resuelve a un journal o página; sin pin`); continue; }
-    let hab = p.sala ? plano.habitaciones.find(h => h.nombre === p.sala) : null;
+    // La sala, por su nombre castellano (en inglés, la habitación en la misma posición).
+    const iSala = p.sala ? es(plano).habitaciones.findIndex(h => h.nombre === p.sala) : -1;
+    let hab = iSala >= 0 ? plano.habitaciones[iSala] : null;
     if (p.sala && !hab) ctx.avisos.push(`plano ${plano.id}: la sala «${p.sala}» del pin ${p.clave} no existe`);
     hab ??= salaDePines(plano);
     if (!porSala.has(hab)) porSala.set(hab, []);
@@ -306,7 +309,7 @@ function pinesDe(plano, ctx) {
  * corre antes que este constructor (tools/construir-contenido.mjs#PARTES).
  */
 function actoresConstruidos() {
-  const dir = path.join(RAIZ, "packs-src", "personajes");
+  const dir = path.join(RAIZ, "packs-src", packDe("personajes"));
   const out = new Map();
   for (const f of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
     if (!f.endsWith(".json")) continue;
@@ -410,10 +413,9 @@ function htmlFiguras(lista) {
   if (!lista.length) return "";
   const items = lista.map(f => {
     const escenas = f.escena ? ` (${[f.escena].flat().join(", ")})` : "";
-    return `<li>@UUID[${f.uuid}]{${f.nombre}}${f.oculto ? " · <em>oculto</em>" : ""}${escenas}${f.nota ? `: ${md2html(f.nota).replace(/^<p>|<\/p>\s*$/g, "")}` : ""}</li>`;
+    return `<li>@UUID[${f.uuid}]{${f.nombre}}${f.oculto ? ` · <em>${T("oculto")}</em>` : ""}${escenas}${f.nota ? `: ${md2html(f.nota).replace(/^<p>|<\/p>\s*$/g, "")}` : ""}</li>`;
   }).join("");
-  return `<div class="sbn-figuras"><p><strong>Tokens colocados.</strong> Los ocultos se revelan desde la capa de tokens; ` +
-    `los que dependen de cómo vino la noche dicen cuándo.</p><ul>${items}</ul></div>`;
+  return `<div class="sbn-figuras"><p><strong>${T("Tokens colocados.")}</strong> ${T("Los ocultos se revelan desde la capa de tokens; los que dependen de cómo vino la noche dicen cuándo.")}</p><ul>${items}</ul></div>`;
 }
 
 /* -------------------------------------------- */
@@ -471,15 +473,15 @@ function escenasDePlanos(ctx, carpetas) {
     const idsLugar = idsDeUuid(lugar?.uuid);
     if (plano.lugar && !idsLugar) ctx.avisos.push(`plano ${plano.id}: el lugar ${plano.lugar} no está en el registro`);
     const enlaces = [];
-    if (idsLugar) enlaces.push(`<strong>Lugar:</strong> @UUID[${lugar.uuid}]{${lugar.nombre}}`);
+    if (idsLugar) enlaces.push(`<strong>${T("Lugar")}:</strong> @UUID[${lugar.uuid}]{${lugar.nombre}}`);
     const escenasLibro = (plano.escenas ?? []).map(e => (typeof e === "string" ? e : e.id))
       .map(e => ctx.reg.get(e)).filter(Boolean);
-    if (escenasLibro.length) enlaces.push(`<strong>Escenas:</strong> ${escenasLibro.map(e => `@UUID[${e.uuid}]{${e.nombre}}`).join(" · ")}`);
+    if (escenasLibro.length) enlaces.push(`<strong>${T("Escenas")}:</strong> ${escenasLibro.map(e => `@UUID[${e.uuid}]{${e.nombre}}`).join(" · ")}`);
     const cuenta = sinTile.reduce((acc, m) => ({ ...acc, [m.tipo]: (acc[m.tipo] ?? 0) + 1 }), {});
     const textoMoviles = [
-      tiles.length ? `Los muebles móviles (${tiles.length}) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.` : "",
-      sinTile.length ? `Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): ${Object.entries(cuenta)
-        .map(([t, n]) => (n > 1 ? `${t} ×${n}` : t)).join(", ")}.` : ""
+      tiles.length ? T("Los muebles móviles ({n}) son tiles desbloqueados: se pueden mover, tirar o usar de barricada.", { n: tiles.length }) : "",
+      sinTile.length ? T("Muebles móviles sin pintar y todavía sin tile (colocarlos a mano): {lista}.", { lista: Object.entries(cuenta)
+        .map(([t, n]) => (n > 1 ? `${t} ×${n}` : t)).join(", ") }) : ""
     ].filter(Boolean).join(" ");
     const pendientes = regiones.filter(r => !r.destino && !r.llegada);
     const htmlNota = [
@@ -487,7 +489,7 @@ function escenasDePlanos(ctx, carpetas) {
       md2html(plano.nota),
       textoMoviles ? `<p class="sbn-moviles">${textoMoviles}</p>` : "",
       htmlFiguras(figuras),
-      pendientes.length ? `<p class="sbn-pendientes"><strong>Accesos sin mapa (región gris, no lleva a ningún lado):</strong> ${pendientes.map(r => r.nombre).join(" · ")}.</p>` : ""
+      pendientes.length ? `<p class="sbn-pendientes"><strong>${T("Accesos sin mapa (región gris, no lleva a ningún lado):")}</strong> ${pendientes.map(r => r.nombre).join(" · ")}.</p>` : ""
     ].filter(Boolean).join("\n");
 
     escribirDoc(PACK, docEscena({
@@ -549,10 +551,10 @@ function portada(ctx) {
   });
 
   escribirDoc(PACK, docEscena({
-    id: "portada", nombre: "El Expediente Ward", carpeta: null, orden: -10,
+    id: "portada", nombre: T("El Expediente Ward"), carpeta: null, orden: -10,
     w, h, sinGrid: true, oscuridad: 0, luzGlobal: true, visionToken: false,
     fondo: arte, colorFondo: COLOR_PORTADA, notes,
-    extra: { landing: true, provisional: !arte, nota: "<p>Portada de la crónica. Los pines abren cómo usar el módulo, la aventura y la Pantalla del Narrador.</p>" }
+    extra: { landing: true, provisional: !arte, nota: `<p>${T("Portada de la crónica. Los pines abren cómo usar el módulo, la aventura y la Pantalla del Narrador.")}</p>` }
   }));
 }
 
@@ -562,6 +564,6 @@ export async function construir(ctx) {
   const carpetas = new Carpetas(PACK, "Scene");
   portada(ctx);
   const n = escenasDePlanos(ctx, carpetas) + 1;
-  carpetas.escribir();
+  escribirCarpetas(carpetas);
   console.log(`escenas: ${n} (portada + ${n - 1} de planos)`);
 }

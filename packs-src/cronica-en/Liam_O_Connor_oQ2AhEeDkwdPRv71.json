@@ -1,0 +1,334 @@
+{
+  "_id": "oQ2AhEeDkwdPRv71",
+  "_key": "!journal!oQ2AhEeDkwdPRv71",
+  "name": "Liam O'Connor",
+  "folder": "hkrJy9733wVp7V16",
+  "sort": 20,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "PNJ-17",
+      "archivo": "content/personajes/PNJ-17.md",
+      "actor": "Actor.J2aw6dqzOFuc9ac8"
+    }
+  },
+  "pages": [
+    {
+      "_id": "LTgH51y5DPk8EXya",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.LTgH51y5DPk8EXya",
+      "name": "Liam O'Connor",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<img class=\"sbn-retrato\" src=\"modules/seattle-by-night/assets/retratos/PNJ-17.webp\" alt=\"Liam O'Connor\">\n<p class=\"sbn-enlace-actor\"><i class=\"fa-solid fa-user\"></i> Sheet: @UUID[Actor.J2aw6dqzOFuc9ac8]{Liam O'Connor}</p>\n<p><em>“I wore this badge before there was a port. They took it from me with three photos.”</em></p>\n<p><strong>Clan:</strong> Brujah · <strong>Sect:</strong> independent · <strong>Role in @UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}:</strong> witness and informant (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was})</p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "iOVuX1re5HaqNuWf",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.iOVuX1re5HaqNuWf",
+      "name": "Mortal Days: The Longshoreman from Cork",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Liam O&#39;Connor was born in Cork in 1868 and crossed the ocean at nineteen with his brother, who died of typhus on the ship. He reached Seattle just after the Great Fire and worked the docks hauling lumber, coal, and salmon. He was big, he had the loudest voice on the waterfront, and he was afraid of nothing. In 1897 he organized the city&#39;s first longshoremen&#39;s strike. They beat him half to death in an alley and left him for dead.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "UPPX9qaqD1lpilDi",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.UPPX9qaqD1lpilDi",
+      "name": "Kindred Nights: The Badge and the South",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A union Brujah who had been following the strike found him in the alley and Embraced him in 1899. O&#39;Connor went on defending the longshoremen for thirty years, only now by night. In 1931 Prince Grange named him Sheriff because nobody knew the port better, and because it kept him on her side. He was a hard Sheriff, but a fair one. He survived Grange&#39;s fall and served Whitmore for sixteen more years.</p>\n<p>In 1978 he fell over some photos nobody saw being taken (@UUID[JournalEntry.4858IAb89fTokFfV]{Letter from Sheriff O'Connor to Prince Whitmore, 1978}). He left for Tacoma. He opened a boxing gym on that city&#39;s waterfront, where he trains neighborhood kids and drinks blood with whiskey. When the Brujah broke with the Camarilla, he didn&#39;t join the Anarchs: he said he&#39;d already lost one badge and had no intention of pinning on another. Today he lives like an old lion in a small zoo, waiting for someone to ask him what he knows.</p>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "va8oo4jrTyRgE9x8",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.va8oo4jrTyRgE9x8",
+      "name": "Plans and Machinations",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The Truth About &#39;78.</strong> He wants it known that Halloway brought him down. He doesn&#39;t want to be Sheriff again. He wants it on the record.</p>\n<p><strong>The Journals.</strong> He has known since 1986 that Halloway bought Vance&#39;s journals; an old contact from the port who saw the shipment come in from Lyon told him (@UUID[JournalEntry.j32Ohis1qKJB3jcx.JournalEntryPage.TOvLdg2zhgDzjOAG]{The Journals Bought in 1986}). Nobody ever asked him. If the coterie asks, he tells them, in exchange for someone taking @UUID[JournalEntry.4858IAb89fTokFfV]{Letter from Sheriff O'Connor to Prince Whitmore, 1978} before the Primogen.</p>\n<p><strong>The Survivor.</strong> He knows an old, patient Sabbat Kindred lives in Tacoma (@UUID[Actor.wop4zqE8KwywxhTL]{The Larchmont Survivor}). He watches him from a distance. He hasn&#39;t told the Sheriff anything, because the Sheriff doesn&#39;t ask him anything.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "Am1avZsdGVkwCHCj",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.Am1avZsdGVkwCHCj",
+      "name": "Domain and Haven",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Shamrock Gym, on the Tacoma waterfront: two brick stories, a ring, heavy bags, and a windowless room in the basement (Haven 2). He feeds at the underground fights he runs on Saturdays: he drinks from the losers while he stitches up their eyebrows. He pays them double.</p>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "581DB0mMMotZoxrc",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.581DB0mMMotZoxrc",
+      "name": "Servants and Tools",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>The gym kids</strong> (Herd 1, Allies 1): young boxers who take him for an old trainer with insomnia.</p>\n<p><strong>Contacts 2</strong>: the Port of Tacoma and retired old longshoremen.</p>\n<p><strong>@UUID[JournalEntry.4858IAb89fTokFfV]{Letter from Sheriff O'Connor to Prince Whitmore, 1978}</strong>: the original letter, kept in a plastic sleeve under the ring.</p>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "PMfmalPs3Tbmq9YK",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.PMfmalPs3Tbmq9YK",
+      "name": "Kindred Relationships",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Charles Halloway</strong> (patient hatred). He&#39;s been waiting forty-eight years.</p>\n<p><strong>Marcus Whitmore</strong> (bitterness). He read the letter and filed it away.</p>\n<p><strong>Ethan Montgomery</strong> (resentment without hatred). He took his post. He&#39;s done it well. That hurts more.</p>\n<p><strong>Rosa Iturbe</strong> (fondness). A union woman. She reminds him of himself.</p>\n<p><strong>David Smith</strong> (curiosity). He&#39;s heard about the Hound. He wants to see whether he&#39;s a dog or a man.</p>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "FFmu6q1RpBFiZfAV",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.FFmu6q1RpBFiZfAV",
+      "name": "Whispers",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li>“O&#39;Connor lost the badge protecting a childe of his clan.” <em>(Half true: he protected him, but he fell because of Halloway&#39;s photos.)</em></li>\n<li>“O&#39;Connor is working with the Everett Anarchs.” <em>(False.)</em></li>\n<li>“O&#39;Connor knows things about Halloway nobody else knows.” <em>(True.)</em></li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "K2Uhi40x1rbWwqNY",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.K2Uhi40x1rbWwqNY",
+      "name": "Mask and Mien",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>To mortals he&#39;s Liam O&#39;Connor, the owner of the gym, “an Irishman who doesn&#39;t sleep” (Mask 2); among Kindred, “the Irish ancilla.” He looks about thirty-one. He&#39;s huge and round-shouldered, with red hair and a short beard, a nose broken several times over, and cauliflower ears. He wears an undershirt, suspenders, and a wool cap. He smells of liniment and whiskey. He talks loud, laughs louder, and has a voice that&#39;s plainly used to silencing arenas.</p>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note</h4><p>Doc 07 said “looks about fifty” and “graying red hair”; it was decided that he looks the age he was at his Embrace (1899, born in 1868): about thirty-one, with red hair and no gray. For the same reason, “an old Irishman” became “an Irishman” for mortals and “the Irish ancilla” among Kindred (also in Rosa&#39;s line in A2-E04).</p>\n</aside>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "5vqHF9xJt7L1WNPf",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.5vqHF9xJt7L1WNPf",
+      "name": "Reference Data",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>Sire:</strong> a union Brujah, destroyed in 1934</li>\n<li><strong>Embraced:</strong> 1899 (born in 1868)</li>\n<li><strong>Ambition:</strong> to get the truth about 1978 on the record.</li>\n<li><strong>Convictions:</strong> “Nobody gets left alone in the alley” · “A badge is a promise, not a license.”</li>\n<li><strong>Touchstone:</strong> Dani Okeke, his best boxer, 19, whom he&#39;s preparing for her first professional fight.</li>\n<li><strong>Humanity:</strong> 6</li>\n<li><strong>Generation:</strong> 9th</li>\n<li><strong>Blood Potency:</strong> 3</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TylVZT6djM2t96mz",
+      "_key": "!journal.pages!oQ2AhEeDkwdPRv71.TylVZT6djM2t96mz",
+      "name": "Stats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Attributes:</strong> Strength 5, Dexterity 3, Stamina 4 · Charisma 4, Manipulation 2, Composure 3 · Intelligence 2, Wits 3, Resolve 4</p>\n<p><strong>Secondary Attributes:</strong> Health 7 · Willpower 7</p>\n<p><strong>Skills:</strong> Athletics 3, Streetwise 4 (Docks), Awareness 2, Intimidation 3, Leadership 4 (Unions), Medicine 1 (Cuts), Brawl 5 (Boxing), Insight 3, Persuasion 3, Politics 3 (Camarilla, 1931 to 1978)</p>\n<p><strong>Disciplines:</strong></p>\n<ul>\n<li>Potence 3: Lethal Body (<em>Lethal Body</em>), Prowess (<em>Prowess</em>), Uncanny Grip (<em>Uncanny Grip</em>)</li>\n<li>Presence 3: Awe (<em>Awe</em>), Daunt (<em>Daunt</em>), Entrancement (<em>Entrancement</em>)</li>\n<li>Celerity 1: Rapid Reflexes (<em>Rapid Reflexes</em>)</li>\n</ul>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

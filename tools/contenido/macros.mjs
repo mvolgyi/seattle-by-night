@@ -11,14 +11,16 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { RAIZ, MODULO, STATS, escribirDoc } from "../util.mjs";
+import { RAIZ, MODULO, STATS } from "../util.mjs";
 import { ID } from "./ids.mjs";
+import { leerContenido } from "./idioma.mjs";
+import { T, escribir as escribirDoc } from "./fijos.mjs";
 
 const PACK = "macros";
 
 /** Preámbulo común: la API tiene que estar (el módulo activo y `ready`). */
 const API = `const api = game.modules.get("${MODULO}")?.api;
-if (!api) return ui.notifications.error("El Expediente Ward: el módulo no está activo en este mundo.");`;
+if (!api) return ui.notifications.error("${T("El Expediente Ward: el módulo no está activo en este mundo.")}");`;
 
 /** Nombre de pista sin marcas de Markdown (*cursiva*, **negrita**). */
 const plano = t => t.replace(/\*+([^*]+)\*+/g, "$1").trim();
@@ -29,7 +31,7 @@ function pistas(ctx) {
     ctx.avisos.push(`macros: falta ${rel}; «Marcar pista…» sale sin pistas`);
     return [];
   }
-  return (JSON.parse(fs.readFileSync(path.join(RAIZ, rel), "utf8")).pistas ?? [])
+  return (leerContenido(rel).pistas ?? [])
     .map(p => ({ id: p.id, nombre: plano(p.nombre) }));
 }
 
@@ -48,10 +50,10 @@ const filas = PISTAS.map(p => \`<label class="sbn-macro-pista" style="display:fl
   <input type="checkbox" name="\${p.id}" \${marcada(estado[p.id]) ? "checked" : ""}>
   <span><strong>\${p.id}</strong> · \${esc(p.nombre)}</span></label>\`).join("");
 const datos = await foundry.applications.api.DialogV2.input({
-  window: { title: "Marcar pista…", icon: "fa-solid fa-magnifying-glass" },
+  window: { title: "${T("Marcar pista…")}", icon: "fa-solid fa-magnifying-glass" },
   position: { width: 520 },
-  content: \`<p>Marcá las pistas que la coterie ya obtuvo; desmarcá para quitarla.</p><div class="sbn-macro-pistas">\${filas}</div>\`,
-  ok: { label: "Guardar", icon: "fa-solid fa-check" }
+  content: \`<p>${T("Marcá las pistas que la coterie ya obtuvo; desmarcá para quitarla.")}</p><div class="sbn-macro-pistas">\${filas}</div>\`,
+  ok: { label: "${T("Guardar")}", icon: "fa-solid fa-check" }
 });
 if (!datos) return;
 for (const p of PISTAS) {
@@ -63,20 +65,20 @@ for (const p of PISTAS) {
 const comandoNoche = `${API}
 const NOCHES = api.Datos?.totalNoches ?? 8;
 const actual = Number((await api.estado())?.noche) || 0;
-if (actual >= NOCHES) return ui.notifications.warn("El Reloj de Halloway ya está en la última noche (" + NOCHES + ").");
+if (actual >= NOCHES) return ui.notifications.warn("${T("El Reloj de Halloway ya está en la última noche (")}" + NOCHES + ").");
 await api.noche(actual + 1);`;
 
 export async function construir(ctx) {
   const macros = [
-    { id: "panel", nombre: "Panel del Narrador", icono: "icons/svg/book.svg",
+    { id: "panel", nombre: T("Panel del Narrador"), icono: "icons/svg/book.svg",
       comando: `${API}\napi.abrirPanel();` },
-    { id: "termometro-mas", nombre: "Termómetro +1", icono: "icons/svg/upgrade.svg",
-      comando: `${API}\nawait api.termometro(+1, "Macro «Termómetro +1»");` },
-    { id: "termometro-menos", nombre: "Termómetro −1", icono: "icons/svg/downgrade.svg",
-      comando: `${API}\nawait api.termometro(-1, "Macro «Termómetro −1»");` },
-    { id: "pista", nombre: "Marcar pista…", icono: "icons/svg/eye.svg", comando: comandoPistas(pistas(ctx)) },
-    { id: "noche", nombre: "Avanzar noche", icono: "icons/svg/clockwork.svg", comando: comandoNoche },
-    { id: "importar", nombre: "Importar la crónica", icono: "icons/svg/down.svg",
+    { id: "termometro-mas", nombre: T("Termómetro +1"), icono: "icons/svg/upgrade.svg",
+      comando: `${API}\nawait api.termometro(+1, "${T("Macro «Termómetro +1»")}");` },
+    { id: "termometro-menos", nombre: T("Termómetro −1"), icono: "icons/svg/downgrade.svg",
+      comando: `${API}\nawait api.termometro(-1, "${T("Macro «Termómetro −1»")}");` },
+    { id: "pista", nombre: T("Marcar pista…"), icono: "icons/svg/eye.svg", comando: comandoPistas(pistas(ctx)) },
+    { id: "noche", nombre: T("Avanzar noche"), icono: "icons/svg/clockwork.svg", comando: comandoNoche },
+    { id: "importar", nombre: T("Importar la crónica"), icono: "icons/svg/down.svg",
       comando: `${API}\nawait api.importarCronica();` }
   ];
   macros.forEach((m, i) => {
