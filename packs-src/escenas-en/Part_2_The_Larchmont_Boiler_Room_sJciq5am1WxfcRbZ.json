@@ -205,7 +205,7 @@
     },
     {
       "_id": "DtU4MZFcoXI6w9gY",
-      "name": "Climb up to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)",
+      "name": "Climb to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)",
       "color": "#b23030",
       "shapes": [
         {
@@ -225,7 +225,7 @@
       "behaviors": [
         {
           "_id": "yoE6yGoDksuslDpb",
-          "name": "Climb up to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)",
+          "name": "Climb to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)",
           "type": "teleportToken",
           "system": {
             "destinations": [
@@ -254,7 +254,7 @@
     },
     {
       "_id": "GitBw0m5DScFoHz8",
-      "name": "Fall from the shaft (rubble)",
+      "name": "Drop down the stairwell (rubble)",
       "color": "#2f7f8c",
       "shapes": [
         {
@@ -286,7 +286,7 @@
     },
     {
       "_id": "2frEgYgW9NsZQwmF",
-      "name": "Storm drain to the Sound",
+      "name": "Drain to the Sound",
       "color": "#7a7a7a",
       "shapes": [
         {
@@ -469,7 +469,7 @@
       "id": "LUG-11",
       "plano": "larchmont-sotano",
       "provisional": false,
-      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont}</p>\n<p><strong>The basement (A2-E05).</strong> You get here by the half-collapsed stairs (at the foot, under the shaft, a pile of wet rubble where the rain falls) or by falling down the shaft. Total darkness: there&#39;s no light. You can hear water running: an open <strong>channel</strong> in the floor carries the water from the rubble to the <strong>mouth of the big storm drain</strong> in the west wall, which lets out into the Sound.</p>\n<p><strong>The sealed cistern.</strong> In the middle of the boiler room, <strong>a slab of new concrete, lighter than the rest of the floor</strong> (Wits + Investigation Diff. 3; automatic for David). Beneath it are the seven tenants, Danny Ruiz (REF-02) among them. <strong>It isn&#39;t painted open:</strong> if the coterie lifts it (Strength + Athletics Diff. 4, or automatic with Potence 2), the Storyteller places the tile <code>tile-cisterna-abierta</code> (Pending) on top and applies Thermometer +2 and David&#39;s Remorse test. <strong>Auspex 4</strong> on the slab: seven presences, cold, water, “Helen is going to come.”</p>\n<p><strong>The new flower.</strong> Wits + Awareness Diff. 4: beside the slab, fresh barefoot prints and a very faint smell of stale Vitae (MEN-08). <strong>They aren&#39;t painted and have no tile</strong>: they&#39;re the reward for the roll, like the repeater in LUG-05.</p>\n<p><strong>The survivor (MEN-08, GAN-09).</strong> If the Storyteller wants to bring GAN-09 forward, he&#39;s hiding in the drain (Obfuscate 3) and flees toward the water when he sees the coterie: the drain region has no map yet.</p>\n<p><strong>Boilers.</strong> Two riveted iron boilers and a fuel-oil tank against the north wall, cold and rusted: they provide cover.</p>\n\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.wop4zqE8KwywxhTL]{The Larchmont Survivor} · <em>hidden</em> (A2-E05): Only if the Storyteller brings GAN-09 forward: hiding in the drain (Obfuscate 3); flees toward the water when he sees the coterie.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Storm drain to the Sound.</p>",
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont}</p>\n<p><strong>The basement (A2-E05).</strong> You reach it by the half-collapsed stairs (at the bottom, under the stairwell, a heap of wet rubble where the rain falls in) or by dropping down the stairwell. Total darkness: there&#39;s no light. Running water can be heard: an open <strong>channel</strong> in the floor carries the water from the rubble to the <strong>mouth of the large drain</strong> in the west wall, which empties into the Sound.</p>\n<p><strong>The sealed cistern.</strong> In the center of the boiler room, <strong>a slab of new concrete, lighter than the rest of the floor</strong> (Wits + Investigation Diff. 3; no roll if David came along: he goes straight to the slab). Beneath it are the seven tenants, Danny Ruiz (REF-02) among them. <strong>It isn&#39;t drawn open:</strong> if the coterie lifts it (Strength + Athletics Diff. 4, or automatic with Potence 2), the Storyteller places the <code>tile-cisterna-abierta</code> tile (Pending) on top and applies Thermometer +2. If David is there, he doesn&#39;t help open it and, afterward, doesn&#39;t speak again for the rest of the night. <strong>Auspex 4</strong> on the slab: seven presences, cold, water, “Helen will come.”</p>\n<p><strong>The new flower.</strong> Wits + Awareness Diff. 4: beside the slab, recent bare footprints and a very faint smell of stale Vitae (MEN-08). <strong>They aren&#39;t drawn and have no tile</strong>: they&#39;re the reward for the roll, like the repeater at LUG-05.</p>\n<p><strong>The survivor (MEN-08, GAN-09).</strong> If the Storyteller wants to bring GAN-09 forward, he&#39;s hiding in the drain (Obfuscate 3) and flees toward the water when he sees the coterie: the drain region has no map yet.</p>\n<p><strong>Boilers.</strong> Two riveted iron boilers and a fuel-oil tank against the north wall, cold and rusted: they provide cover.</p>\n\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.wop4zqE8KwywxhTL]{The Larchmont Survivor} · <em>hidden</em> (A2-E05): Only if the Storyteller brings GAN-09 forward: hiding in the drain (Obfuscate 3); flees toward the water when he sees the coterie.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Drain to the Sound.</p>",
       "moviles": []
     }
   },

@@ -27,7 +27,7 @@ Rosa no sabía lo que Dorsey iba a hacer. Nunca se lo perdonó. Desde entonces t
 
 **Limpiar el nombre de Everett.** Los rumores dicen que el asesino de los muelles es uno de los suyos. Si el Sheriff decide creerlo, habrá Caza de Sangre (@ID[GAN-06]). Rosa está buscando al verdadero asesino por su cuenta.
 
-**La deuda con el Sabueso.** No le ha dicho nunca a David lo de 1996. No sabe si decírselo es valentía o egoísmo. Si David llega a Salitre (@ID[A2-E03]), puede que decida.
+**La deuda con el Sabueso.** No le ha dicho nunca a David lo de 1996. No sabe si decírselo es valentía o egoísmo. Si la coterie llega a Salitre (@ID[A2-E03]), se lo confiesa a un PJ. Ese PJ decide si se lo dice a David.
 
 **Los sangre débil.** Les ofrece refugio en Everett a cambio de trabajo, sin pedirles favores como Thornquist. Si Jun sobrevive, Rosa puede acogerla.
 

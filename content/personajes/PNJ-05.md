@@ -21,7 +21,7 @@ Estos tres personajes ya tienen su documentación completa en la carpeta del pro
 
 ## En esta aventura
 
-logística, armas, conductor y escudo. Es un objetivo posible de Krell en @ID[A3-E01]. Su nota en la caja fuerte (@ID[DOC-12]) espera en el hangar. *Recordatorio: el gancho de racionarle la Vitae está excluido.*
+acompaña a @ID[PJ-01|David] y a la coterie: logística, armas, conductor y escudo. Como David, ayuda sin protagonizar: +1 dado al PJ que tira con él al lado, o una acción que el Narrador narra. Es un objetivo posible de Krell en @ID[A3-E01]. Su nota en la caja fuerte (@ID[DOC-12]) espera en el hangar. *Recordatorio: el gancho de racionarle la Vitae está excluido.*
 
 ## Documento
 
@@ -266,6 +266,12 @@ Tom es:
 
   - prepara rutas de entrada y salida.
 
+- **El de la coterie**, desde que David les presta el hangar:
+
+  - les tiene las armas listas y el café hecho,
+
+  - los trata como a la unidad de David: con respeto, sin confianza, hasta que se la ganen.
+
 - **Escudo humano**:
 
   - se interpone entre David y balas, explosiones o peligros físicos que a veces éste podría esquivar… pero que prefieren que no le den.
@@ -337,6 +343,12 @@ Pero a ratos, cuando mira el arma que guarda en la caja fuerte personal, se preg
   - a @ID[PNJ-04|Helen] si la tiene delante,
 
   - a David incluso cuando sabe que él sobreviviría igual.
+
+**Con la coterie:**
+
+- A veces les dice a ellos lo que no se anima a decirle a David. Si algo no le cuadra en el encargo, lo dice delante de todos.
+
+- Si un PJ pone a David en peligro por nada, Bear no lo olvida.
 
 **Relación con Helen (si coinciden):**
 

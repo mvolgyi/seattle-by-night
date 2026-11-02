@@ -487,7 +487,7 @@
   "lights": [
     {
       "_id": "ndgAveCE03ispGGI",
-      "name": "“SAL 'S” neon sign (missing a letter)",
+      "name": "“SAL S” neon sign (missing a letter)",
       "x": 1035,
       "y": 1640,
       "elevation": 0,
@@ -760,7 +760,7 @@
     },
     {
       "_id": "iTTJdrilqi6QH4P2",
-      "name": "Back-door wall light",
+      "name": "Back-door wall lamp",
       "x": 900,
       "y": 765,
       "elevation": 0,
@@ -799,7 +799,7 @@
     },
     {
       "_id": "86JVavXFp2zYTZd1",
-      "name": "Sodium streetlight at the gate",
+      "name": "Gate sodium streetlight",
       "x": 1700,
       "y": 1140,
       "elevation": 0,
@@ -872,7 +872,7 @@
     },
     {
       "_id": "splFo8wM22szfnDz",
-      "name": "Leave by the only road",
+      "name": "Leaving by the only road",
       "color": "#7a7a7a",
       "shapes": [
         {
@@ -931,7 +931,7 @@
           "escena": "salitre",
           "region": "grada-agua",
           "estado": "pendiente",
-          "pendiente": "shipyard exterior (t2i, no map): the slipway, the three hulls in dry dock, and the water"
+          "pendiente": "shipyard exterior (t2i, no floor plan): the slipway, the three hulls in dry dock, and the water"
         }
       },
       "_key": "!scenes.regions!AqYnfwMlYuNBE40h.EfHXYGiNhz1SkYba"
@@ -964,7 +964,7 @@
           "escena": "salitre",
           "region": "astillero",
           "estado": "pendiente",
-          "pendiente": "shipyard exterior (t2i, no map): the havens in the hulls"
+          "pendiente": "shipyard exterior (t2i, no floor plan): the havens in the hulls"
         }
       },
       "_key": "!scenes.regions!AqYnfwMlYuNBE40h.poxE5SMLQBE8X1LW"
@@ -2377,7 +2377,7 @@
           "escenas": [
             "A2-E03"
           ],
-          "nota": "Behind the bar, elbows propped on it, the welding torch on top."
+          "nota": "Behind the bar, elbows resting on it, the welder on top."
         }
       },
       "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.oDrnI2pc5ADNz3Hd"
@@ -2433,7 +2433,7 @@
           "escenas": [
             "A2-E03"
           ],
-          "nota": "Never looks away from them; fists clenched."
+          "nota": "He doesn't take his eyes off them; fists clenched."
         }
       },
       "_key": "!scenes.tokens!AqYnfwMlYuNBE40h.u2XcLmEUJimZsf9s"
@@ -2730,7 +2730,7 @@
       "id": "LUG-10",
       "plano": "salitre",
       "provisional": false,
-      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt's Bar and the Old Shipyard}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}</p>\n<p><strong>A2-E03 · Salt&#39;s.</strong> “The road dies at a closed shipyard, rusted cranes cut out against a slate-colored sky. By the gate there&#39;s a bar with a neon sign missing a letter: SAL &#39;S. Inside are scarred wooden tables, a bar built from the split hull of a boat, and black-and-white photos of strikes.” The sign is a “neon” light on the façade (it isn&#39;t painted: there&#39;s no text on the map). Rosa waits with her elbows on the <strong>bar</strong> and a welding torch on top of it (tile or token).</p>\n<p><strong>The barroom.</strong> Open to the mortal public until two. The <strong>bar</strong> is half the shell of a boat&#39;s hull, with the bottle shelf behind it; the <strong>strike photos</strong> hang on the north and south walls. Tables, chairs, and stools are movable (tiles): a dozen Anarchs use them as cover if things break (Combat: Rosa stops it on the second round, “Not here.”). Tavi Mercer (MEN-05) never looks away from them.</p>\n<p><strong>The back room.</strong> A meeting table (the assembly votes on whether to help the coterie) and a cork board with clippings: that&#39;s where Rosa keeps her 1996 clipping (AYU-04: “if it comes up in A2-E03, let her be the one to take it out”). It&#39;s the place for the confession to David “alone.” The door opens onto the barroom, on the public side; another door leads to the storeroom.</p>\n<p><strong>The back.</strong> Bas Okonjo hides in the <strong>storeroom</strong> (kegs, the keg cooler) so Hal won&#39;t see him; the <strong>back door</strong> opens onto the shipyard yard. Hal can talk to him alone there.</p>\n<p><strong>The shipyard.</strong> The sliding gate closes off the road; the bar sits outside, right up against it. Inside is the <strong>head of the slipway</strong>: it&#39;s lined up with the road, and from there you can see any car coming down the only road (the Anarchs&#39; lookout). The slipway continues toward the water, to the north, off the map; the <strong>three hulls in dry dock</strong> (Salt&#39;s havens, Rosa&#39;s among them; Ray Dorsey slept there in 1996) are the shipyard exterior (t2i): regions with no destination.</p>\n<p><strong>Escape.</strong> Nobody holds them back: the bar door opens onto the road.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (25) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.JtFCjV4kHyARORQl]{Rosa Iturbe} (A2-E03): Behind the bar, elbows propped on it, the welding torch on top.</li><li>@UUID[Actor.FoPBa0JoGJzoM2E6]{Tavi Mercer} (A2-E03): Never looks away from them; fists clenched.</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 1} (A2-E03): Four of the bar&#39;s dozen Anarchs.</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 2} (A2-E03)</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 3} (A2-E03)</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 4} (A2-E03)</li><li>@UUID[Actor.01GwkksMEQcbAbe9]{Bas Okonjo} · <em>hidden</em> (A2-E03): Hiding in the storeroom so Hal won&#39;t see him.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Leave by the only road · The slipway runs down to the water · To the shipyard: the three hulls in dry dock.</p>",
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt's Bar and the Old Shipyard}<br><strong>Scenes:</strong> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's}</p>\n<p><strong>A2-E03 · Salt&#39;s.</strong> “The road dies at a shuttered shipyard, rusted cranes cut out against a slate-colored sky. Beside the gate stands a bar with a neon sign missing a letter: SAL S. Inside are scarred wooden tables, a bar counter built from the split hull of a boat, and black-and-white photos of strikes.” The sign is a “neon” light on the façade (it isn&#39;t painted: there&#39;s no text on the map). Rosa waits with her elbows on the <strong>bar</strong> and a welder on top of it (tile or token).</p>\n<p><strong>The barroom.</strong> Open to the mortal public until two. The <strong>bar</strong> is half the shell of a boat hull, with the bottle shelf behind it; the <strong>strike photos</strong> hang on the north and south walls. Tables, chairs, and stools are movable (tiles): a dozen Anarchs use them for cover if things break down (Combat: Rosa stops it on the second round, “Not here.”). Tavi Mercer (MEN-05) doesn&#39;t take his eyes off them.</p>\n<p><strong>The back room.</strong> A meeting table (the assembly votes on whether to help the coterie) and a cork board with clippings: that&#39;s where Rosa keeps her 1996 clipping (AYU-04: “if it comes up in A2-E03, let her be the one to bring it out”). It&#39;s the place for the “private” confession (to a PC, or to David if they let him stay last). The door opens onto the barroom, on the public side; another door leads to the storeroom.</p>\n<p><strong>The back.</strong> Bas Okonjo hides in the <strong>storeroom</strong> (kegs, the keg cooler) so Hal won&#39;t see him; the <strong>back door</strong> opens onto the shipyard yard. Hal can talk to him alone there.</p>\n<p><strong>The shipyard.</strong> The sliding gate closes off the road; the bar sits outside, right up against it. Inside is the <strong>head of the slipway</strong>: it lines up with the road, and from there you can see any car coming down the only road (the Anarchs&#39; lookout). The slipway continues toward the water, to the north, off the map; the <strong>three hulls in dry dock</strong> (Salt&#39;s havens, Rosa&#39;s among them; Ray Dorsey slept there in 1996) are the shipyard exterior (t2i): regions with no destination.</p>\n<p><strong>Escape.</strong> Nobody holds them back: the bar door opens onto the road.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (25) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.JtFCjV4kHyARORQl]{Rosa Iturbe} (A2-E03): Behind the bar, elbows resting on it, the welder on top.</li><li>@UUID[Actor.FoPBa0JoGJzoM2E6]{Tavi Mercer} (A2-E03): He doesn&#39;t take his eyes off them; fists clenched.</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 1} (A2-E03): Four of the bar&#39;s dozen Anarchs.</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 2} (A2-E03)</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 3} (A2-E03)</li><li>@UUID[Actor.k2TLqQkkzzjSLzkp]{Salt's Anarchs 4} (A2-E03)</li><li>@UUID[Actor.01GwkksMEQcbAbe9]{Bas Okonjo} · <em>hidden</em> (A2-E03): Hiding in the storeroom so Hal won&#39;t see him.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Leaving by the only road · The slipway runs down to the water · To the shipyard: the three hulls in dry dock.</p>",
       "moviles": []
     }
   },

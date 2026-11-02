@@ -1,7 +1,7 @@
 ---
 nombre: "SAFE: Saved Messages"
 nota: "A0-E01 or A1-E01, when Helen shows the phone."
-fuente: de7dc4cb06b3710e
+fuente: 89a59d3bab58cf3b
 ---
 
 # DOC-05 · SAFE: Saved Messages
@@ -12,7 +12,7 @@ SAFE
 
 *(6 messages received · 0 sent)*
 
-**[02/14/2023 · 11:58 PM] SAFE:** It works. You don't have to answer.
+**[02/14/2023 · 11:58 PM] SAFE:** It works. No need to reply.
 
 **[09/30/2023 · 2:11 AM] SAFE:** The piece on the foundry was good. Too good. Don't go back to that neighborhood at night.
 
@@ -26,10 +26,10 @@ SAFE
 
 ## For the Storyteller {narrador}
 
-**Medium:** screenshot of the SMS history on Helen's flip phone. **When:** @ID[A0-E01] or @ID[A1-E01], when Helen shows the phone.
+**Format:** a screenshot of the SMS history on Helen's flip phone. **When:** @ID[A0-E01] or @ID[A1-E01], when Helen shows the phone.
 
 **Foreshadows:** the relationship between David and Helen, and David's guilt. The last message raises a question: how did David know something was going to happen?
 
-**Truth:** Helen never replied. On November 9, one of Montgomery's contacts at the port warned him that someone had requested surveillance data on Helen's building. David sent the message and didn't go check. It was Gale Sentinel (@ID[P-06]). If David's player didn't know about this message, the Storyteller should settle it with them privately before session 1.
+**Truth:** Helen never replied. On November 9, one of Montgomery's contacts at the port warned that someone had requested surveillance data on Helen's building. David sent the message and didn't go check. It was Gale Sentinel (@ID[P-06]). David doesn't tell anyone. If a PC asks him why he didn't go, he goes quiet; if they press, he says: “I thought I had time.”
 
-*Note for the Storyteller: February 14 is Emily Smith's birthday (@ID[REF-01]). Helen doesn't know. David's player may know or find out.*
+*Storyteller note: February 14 is Emily Smith's birthday (@ID[REF-01]). Helen doesn't know. David does. A PC can find out and decide whether to tell Helen.*

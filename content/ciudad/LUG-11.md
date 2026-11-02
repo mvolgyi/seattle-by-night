@@ -27,4 +27,4 @@ Montgomery ordenó sellar la cisterna sin sacar los cuerpos: siete cadáveres si
 
 La foto de David de espaldas al fuego, en el Expediente, es de esa noche.
 
-**Escena:** @ID[A2-E05] (opcional). Si la coterie abre la cisterna, Termómetro +2 (@termometro{+2|Abrir la cisterna del Larchmont}) y tirada de Remordimiento para David. Si @ID[PNJ-04|Helen] llega a saberlo, la relación de Piedra de toque cambia para siempre.
+**Escena:** @ID[A2-E05] (opcional). Si la coterie abre la cisterna, Termómetro +2 (@termometro{+2|Abrir la cisterna del Larchmont}). Si David está o se entera, se quiebra: lo interpreta el Narrador. Qué le cuentan a Helen lo deciden los jugadores. Si @ID[PNJ-04|Helen] llega a saberlo, la relación de Piedra de toque cambia para siempre.

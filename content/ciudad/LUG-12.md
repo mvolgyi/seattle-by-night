@@ -23,4 +23,4 @@ Las flores frescas son el núcleo de @ID[GAN-12]. Quién las deja queda abierto 
 
 Aparece en el Epílogo de @ID[AVE-01] como una de las tres codas posibles.
 
-Uso de Piedra de toque perdida: una visita permite a David hacer una tirada de Remordimiento con un dado extra, pero también hacerse una pregunta que no quiere hacerse.
+Uso de Piedra de toque perdida: si la coterie trae a David, la visita lo deja un poco más en paz, pero también le hace hacerse una pregunta que no quiere hacerse. Puede que se la haga en voz alta, a quien lo trajo.

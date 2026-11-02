@@ -9,11 +9,11 @@ origen: "02"
 
 # Personajes jugadores y coterie
 
-*Para 4–5 jugadores: David Smith (@ID[PJ-01]) y 3 o 4 personajes nuevos. Bear (@ID[PNJ-05]) sigue siendo PNJ. Estos son conceptos con trasfondo; los jugadores construyen la ficha mecánica con el manual básico. Las secciones marcadas «Secreto» son solo para el Narrador.*
+*Para 4–5 jugadores con los cinco conceptos nuevos (@ID[PJ-02] a @ID[PJ-06]); con cuatro, queda uno sin usar. David Smith (@ID[PJ-01]) y Bear (@ID[PNJ-05]) son PNJs aliados de la coterie. Estos son conceptos con trasfondo; los jugadores construyen la ficha mecánica con el manual básico. Las secciones marcadas «Secreto» son solo para el Narrador.*
 
 ## Qué clanes recomiendo y por qué
 
-David ya es el Brujah del grupo, y en la ciudad hay tres Brujah PNJ más (Rosa, Krell y O'Connor), así que conviene no repetir clan. Cada clan de abajo da acceso a un frente distinto de la trama, para que todos tengan su momento.
+La coterie no lleva Brujah: en la ciudad ya hay cuatro, todos PNJs (David, que la acompaña, Rosa, Krell y O'Connor), así que conviene no repetir clan. Cada clan de abajo da acceso a un frente distinto de la trama, para que todos tengan su momento.
 
 | Clan | Frente de la trama | Por qué funciona |
 |---|---|---|
@@ -21,40 +21,42 @@ David ya es el Brujah del grupo, y en la ciudad hay tres Brujah PNJ más (Rosa, 
 | **Nosferatu** | Información, el subterráneo y la red de vigilancia | Seattle es la ciudad de los datos, y un Nosferatu informático es el contrapeso natural de Gale Sentinel y de FIRSTLIGHT. |
 | **Toreador** | La corte del Príncipe y el entorno de Helen | Con el Príncipe Toreador, este personaje vive en el centro del golpe de Estado. Además puede estar ligado al pódcast. |
 | **Gangrel** | La jauría del Sheriff, rastreo y combate | Conecta con Montgomery y con el pasado de David. Le da peso a la escena en que el Sheriff duda (@ID[A3-E04]). |
-| **Tremere** *(alternativa)* | Forense, hechicería de sangre y la grieta en la Mascarada | Es la quinta opción si hay cinco jugadores, o la sustituta de cualquiera de los anteriores. |
+| **Tremere** *(alternativa)* | Forense, hechicería de sangre y la grieta en la Mascarada | Con cinco jugadores entra en la mesa. Con cuatro, puede sustituir a cualquiera de los anteriores. |
 
-**Recomendación para 4 jugadores:** David, Ventrue, Nosferatu y Toreador. **Para 5:** añadí el Gangrel. El Tremere queda como recambio.
+**Recomendación para 4 jugadores:** Ventrue, Nosferatu, Toreador y Gangrel. El Tremere queda como recambio. **Para 5:** los cinco.
 
 ## La coterie: «Los del Archivo» (COT-00) {jugadores}
 
-Todos los personajes aparecen en el Expediente Ward. Cuando roban el disco, todos quedan expuestos a la vez, y el Sheriff Montgomery no tarda en decírselo: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos». Es una coterie de tipo *Comando*, con dominio en los muelles de Harbor Island, alrededor del hangar de David, y cada jugador recibe su carpeta (@ID[AYU-09]).
+Todos los personajes aparecen en el Expediente Ward. Cuando roban el disco, todos quedan expuestos a la vez, y el Sheriff Montgomery no tarda en decírselo: «Están todos en el mismo disco. O lo recuperan juntos o caen juntos». Es una coterie de tipo *Comando*, con dominio en los muelles de Harbor Island, alrededor del hangar que David les presta como refugio, y cada jugador recibe su carpeta (@ID[AYU-09]).
 
 La página completa de la coterie (idea, alternativas, miembros y agendas, costumbres, tipo, dominio y Trasfondos compartidos, con lo que dice el doc 02 y lo que fija el doc 08) está en @ID[COT-00|Los del Archivo].
 
 ## Ajustes del esquema para una coterie
 
+- **David y Bear son PNJs.** Ayudan: +1 dado al PJ que tira, o una acción que narrás sin tirar. No resuelven solos lo que le toca a la coterie ni toman sus decisiones; opinan, presionan, reaccionan. La trama de David (Vance, Emily, Helen, el Larchmont, Krell) la descubren los PJs, y son ellos los que deciden qué le cuentan.
 - **@ID[A0-E01]:** Helen llama a SAFE; David convoca a la coterie. Nadia, si está, llega por su cuenta: conoce el apartamento.
-- **@ID[A1-E03]:** pasa a ser la escena de formación de la coterie. Montgomery los reúne a todos en su granja.
+- **@ID[A1-E03]:** pasa a ser la escena de formación de la coterie. Montgomery los reúne a todos en su granja y asigna a David a acompañarlos; David les presta el hangar.
 - **@ID[A3-E01]:** Krell va a por la Piedra de toque más expuesta de cualquier personaje (Helen, Bear, Maja, Theo, Ingrid…), no solo a por Bear o Helen.
+- **@ID[A3-E03]:** Krell exige a David. La coterie decide si lo lleva y cómo. Los pasos hacia el giro de Krell los ganan los PJs con lo que le cuentan; David confirma, se quiebra o se enoja.
 - **@ID[A3-E04]:** si Hal está en juego, la escena se vuelve contra él: Montgomery le pide los informes delante de todos.
 - **@ID[A4-E01]:** si Celeste está en juego, Halloway la ofrece como traidora. Si Nadia está en juego, Whitmore la usa como su voz ante el Consejo.
 - **Escala de las tiradas:** las dificultades del esquema se mantienen; los enemigos se escalan añadiendo un PNJ menor por cada jugador por encima de dos.
 
 ## Foco por personaje
 
-| Escena | David | Celeste | Ezra | Nadia | Hal | Ruth |
-|---|---|---|---|---|---|---|
-| @ID[A0-E01] | ● |  |  | ● |  |  |
-| @ID[A1-E02] | ● |  |  |  | ● | ● |
-| @ID[A1-E04] |  |  | ● |  |  |  |
-| @ID[A1-E05] |  |  | ● |  |  |  |
-| @ID[A2-E01] |  | ● |  | ● |  |  |
-| @ID[A2-E02] | ● |  |  |  |  | ● |
-| @ID[A2-E04] | ● |  |  |  |  |  |
-| @ID[A2-E05] | ● |  |  | ● |  |  |
-| @ID[A3-E01] | ● |  |  |  | ● |  |
-| @ID[A3-E02] |  | ● | ● |  |  |  |
-| @ID[A3-E03] | ● |  |  |  |  |  |
-| @ID[A3-E04] | ● |  |  |  | ● |  |
-| @ID[A4-E01] |  | ● |  | ● |  |  |
-| @ID[A4-E02] |  |  |  |  | ● | ● |
+| Escena | Celeste | Ezra | Nadia | Hal | Ruth |
+|---|---|---|---|---|---|
+| @ID[A0-E01] |  |  | ● |  |  |
+| @ID[A1-E02] |  |  |  | ● | ● |
+| @ID[A1-E04] |  | ● |  |  |  |
+| @ID[A1-E05] |  | ● |  |  |  |
+| @ID[A2-E01] | ● |  | ● |  |  |
+| @ID[A2-E02] |  |  |  |  | ● |
+| @ID[A2-E04] |  |  |  | ● |  |
+| @ID[A2-E05] |  |  | ● |  |  |
+| @ID[A3-E01] |  |  |  | ● |  |
+| @ID[A3-E02] | ● | ● |  |  |  |
+| @ID[A3-E03] | ● |  |  | ● |  |
+| @ID[A3-E04] |  |  |  | ● |  |
+| @ID[A4-E01] | ● |  | ● |  |  |
+| @ID[A4-E02] |  |  |  | ● | ● |

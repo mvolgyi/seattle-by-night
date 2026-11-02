@@ -21,7 +21,7 @@ Entre contenedores apilados como fichas de dominó gigantes hay un hangar de cha
 
 **Estructura:** nave principal (arsenal y zona de trabajo), cuarto blindado sin ventanas donde duerme David, habitación de Bear con su caja fuerte (@ID[DOC-12]), muelle cubierto con una lancha y un túnel de carga antiguo que sale a 200 metros, junto a la Terminal 46.
 
-**Trasfondos:** Refugio 3 (de David), con Acceso marítimo y Arsenal.
+**Trasfondos:** Refugio 3 (de David, que se lo presta a la coterie), con Acceso marítimo y Arsenal.
 
 **Riesgo:** figura en @ID[DOC-07]. Si el Termómetro llega a 7, FIRSTLIGHT investiga la sociedad propietaria. Si llega a 9, puede ser el objetivo de la redada (@ID[A4-E02]).
 

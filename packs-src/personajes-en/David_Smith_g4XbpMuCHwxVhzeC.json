@@ -4,7 +4,7 @@
   "name": "David Smith",
   "type": "vampire",
   "img": "modules/seattle-by-night/assets/retratos/PJ-01.webp",
-  "folder": "DBVWeCZJkvu0ZpyU",
+  "folder": "aMxEpfQ4AWpWbYKv",
   "sort": 10,
   "prototypeToken": {
     "name": "David Smith",
@@ -22,37 +22,12 @@
       "saturation": -1,
       "contrast": 0
     },
-    "light": {
-      "negative": false,
-      "priority": 0,
-      "alpha": 0.4,
-      "angle": 360,
-      "bright": 0,
-      "dim": 0,
-      "color": "#ffe6bf",
-      "coloration": 1,
-      "attenuation": 0.55,
-      "luminosity": 0.5,
-      "saturation": 0,
-      "contrast": 0,
-      "shadows": 0,
-      "animation": {
-        "type": null,
-        "speed": 5,
-        "intensity": 5,
-        "reverse": false
-      },
-      "darkness": {
-        "min": 0,
-        "max": 1
-      }
-    },
     "texture": {
       "src": "modules/seattle-by-night/assets/tokens/PJ-01.webp"
     }
   },
   "system": {
-    "group": "OcrZOcFhKk0qDrF5",
+    "group": "",
     "headers": {
       "concept": "Former Navy commando Embraced in Haiti in 1960 by Marcus Vance, now the Seattle Sheriff's outside enforcer.",
       "chronicle": "The Ward File",
@@ -73,11 +48,11 @@
       },
       "history": ""
     },
-    "biography": "<p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{Profile: David Smith}</p><blockquote><p><em>“Some have to burn so the rest can see the light.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Hound of the Masquerade</td></tr><tr><th>Concept</th><td>Former Navy commando Embraced in Haiti in 1960 by Marcus Vance, now the Seattle Sheriff&#39;s outside enforcer.</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Sect</th><td>independent, operational ally of the Camarilla</td></tr><tr><th>Sire</th><td>Marcus “Ironjaw” Vance (PNJ-06)</td></tr><tr><th>Born</th><td>March 15, 1935, Boston</td></tr><tr><th>Embraced</th><td>July 8, 1960, Haiti</td></tr><tr><th>Predator Type</th><td>Silent Hunter (custom: Alleycat + Blood Leech)</td></tr><tr><th>Resonance</th><td>Choleric</td></tr><tr><th>Ambition</th><td>Keep the balance between the Kindred and the Masquerade.</td></tr><tr><th>Desire</th><td>Root out those who break the veil, even if they&#39;re old allies.</td></tr><tr><th>Coterie</th><td>@UUID[JournalEntry.azX1hjbc0PUp2AA2.JournalEntryPage.kiaygGF4KgylB6fb]{The Archived}</td></tr></tbody></table><h3>Demeanor</h3><p>Square, tense jaw, a scar from his right cheekbone to his lip, short dark hair graying at the temples, dark gray eyes that are almost black; black tactical jacket with no insignia; he smells of gunpowder, rust, and dried blood.</p>",
+    "biography": "<p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{Profile: David Smith}</p><blockquote><p><em>“Some have to burn so the rest can see the light.”</em></p></blockquote><table class=\"sbn-ficha\"><tbody><tr><th>Epithet</th><td>The Hound of the Masquerade</td></tr><tr><th>Concept</th><td>Former Navy commando Embraced in Haiti in 1960 by Marcus Vance, now the Seattle Sheriff&#39;s outside enforcer.</td></tr><tr><th>Clan</th><td>Brujah</td></tr><tr><th>Sect</th><td>independent, operational ally of the Camarilla</td></tr><tr><th>Sire</th><td>Marcus “Ironjaw” Vance (PNJ-06)</td></tr><tr><th>Born</th><td>March 15, 1935, Boston</td></tr><tr><th>Embraced</th><td>July 8, 1960, Haiti</td></tr><tr><th>Predator Type</th><td>Silent Hunter (custom: Alleycat + Blood Leech)</td></tr><tr><th>Resonance</th><td>Choleric</td></tr><tr><th>Ambition</th><td>Keep the balance between the Kindred and the Masquerade.</td></tr><tr><th>Desire</th><td>Root out those who break the veil, even if they&#39;re old allies.</td></tr></tbody></table><h3>Demeanor</h3><p>Square, tense jaw, a scar from his right cheekbone to his lip, short dark hair graying at the temples, dark gray eyes that are almost black; black tactical jacket with no insignia; he smells of gunpowder, rust, and dried blood.</p>",
     "appearance": "<p>Square, tense jaw, a scar from his right cheekbone to his lip, short dark hair graying at the temples, dark gray eyes that are almost black; black tactical jacket with no insignia; he smells of gunpowder, rust, and dried blood.</p>",
     "equipment": "<ul><li>Black tactical jacket with the insignia removed</li><li>Old military knife (a keepsake from his mortal life; he was carrying it the day of his Embrace)</li></ul>",
     "notes": "",
-    "privatenotes": "",
+    "privatenotes": "<p>Editor&#39;s Note: adjusted to V5. Rapid Reflexes drops to level 1; Lightning Strike (level 5) doesn&#39;t fit with Celerity 4 and was swapped for Blink (level 3); Blurred Momentum (homebrew) stays at level 3, with a homemade description in the profile.</p><h3>Provisional (doc 16)</h3><ul><li>David arrived in Seattle in the &#39;80s.</li><li>David has LOR-01 at level 4.</li></ul>",
     "health": {
       "max": 8,
       "value": 8,
@@ -640,7 +615,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p>Crosses a street, a pier, or a whole warehouse in one burst, in a straight line, and arrives with his guard already up, like the soldier who comes through the breach before the smoke clears.</p><p><em>Celerity 3. Power from the V5 core rulebook.</em></p>",
+        "description": "<p>Crosses a street, a pier, or an entire warehouse in one burst, in a straight line, and arrives with his guard already up, like the soldier who comes through the breach before the smoke clears.</p><p><em>Celerity 3. Power from the V5 core rulebook.</em></p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -667,11 +642,11 @@
           "homebrew": true
         }
       },
-      "name": "Split Second",
+      "name": "Temporal Burst",
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew.</em></p><p>You stop the world for an instant; you act outside time for the space of a blink. Perfect for stopping a shot or carrying out a surgical action.</p>",
+        "description": "<p><em>Homebrew.</em></p><p>You stop the world for an instant; you act outside of time for the blink of an eye. Perfect for stopping a shot or carrying out a surgical action.</p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -702,7 +677,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew.</em></p><p>Homebrew power. A burst of speed over a few steps to close to melee range and strike in the same action, before the opponent finishes reacting. Where Blink crosses a street, Blurring Rush crosses an arm&#39;s length: it&#39;s Controlled Fury&#39;s way in.</p>",
+        "description": "<p><em>Homebrew.</em></p><p>A homebrew power. A burst of speed over a few steps to close to melee range and strike in the same action, before the opponent finishes reacting. Where Blink crosses a street, Blurring Rush crosses an arm&#39;s length: it&#39;s how Controlled Fury opens.</p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -764,7 +739,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p>Lets you perform impossible feats of strength or lift up to a ton. Perfect for breaching, rescuing, or opening armored entry points.</p><p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
+        "description": "<p>Lets you perform impossible feats of strength or lift up to a ton. Perfect for breaching, rescuing, or opening armored entrances.</p><p><em>Potence 2. Power from the V5 core rulebook.</em></p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -791,11 +766,11 @@
           "homebrew": true
         }
       },
-      "name": "Shattering Blow",
+      "name": "Crushing Blow",
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew.</em></p><p>A single concentrated impact that can bring down walls or incapacitate in one hit. Ideal as a final execution.</p>",
+        "description": "<p><em>Homebrew.</em></p><p>A single concentrated impact that can bring down walls or incapacitate with one hit. Ideal as a finishing execution.</p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -826,7 +801,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew (amalgama Celeridad 2).</em></p><ul>\n<li><strong>Cost:</strong> 1 Rouse Check to activate. Lasts one scene. Allows up to Potence (4) shots at no extra cost; more shots require new Rouse Checks (1 per additional shot).</li>\n<li><strong>Effect:</strong> David can throw any small/medium object (marble, stone, nut, small stake, etc.) as if it were a heavy pistol shot.</li>\n<li><strong>Range:</strong> up to Potence × 10 m (40 m); no penalty within half that distance.</li>\n<li><strong>Attack:</strong> Dexterity + Athletics + Potence (or Strength + Athletics, at the table&#39;s choice); the target uses normal defense.</li>\n<li><strong>Damage:</strong> as a .45 → base damage 3 + net successes; lethal against mortals/ghouls, and against Kindred without Fortitude.</li>\n<li>Once per scene you can make an “Execution Shot”: +1 Diff.; with 3+ net successes, a mortal/ghoul is left dead or unconscious; a Kindred suffers a heavy penalty (-2) to the body part hit.</li>\n<li>With stakes / bolts and +2 Diff., with 4+ net successes you can stake or pin the Kindred&#39;s chest (Storyteller ruling).</li>\n<li>It also works for breaking cameras, lights, weapons in mortal hands, etc., with no visible firearms and no shell casings.</li>\n</ul>",
+        "description": "<p><em>Homebrew (amalgama Celeridad 2).</em></p><ul>\n<li><strong>Cost:</strong> 1 Rouse Check to activate. Lasts one scene. Allows up to Potence (4) shots at no extra cost; more shots require new Rouse Checks (1 per additional shot).</li>\n<li><strong>Effect:</strong> David can throw any small/medium object (marble, stone, nut, small stake, etc.) as if it were a heavy pistol shot.</li>\n<li><strong>Range:</strong> up to Potence × 10 m (40 m); no penalty within half that distance.</li>\n<li><strong>Attack:</strong> Dexterity + Athletics + Potence (or Strength + Athletics, table&#39;s choice); the target uses normal defense.</li>\n<li><strong>Damage:</strong> as a .45 → base damage 3 + net successes; lethal against mortals/ghouls, and against Kindred without Fortitude.</li>\n<li>Once per scene you can make an “Execution Shot”: +1 Diff.; with 3+ net successes, a mortal/ghoul is left dead or unconscious; a Kindred suffers a heavy penalty (-2) to the body part hit.</li>\n<li>With stakes / bolts and +2 Diff., with 4+ net successes you can stake or pin the Kindred&#39;s chest (Storyteller ruling).</li>\n<li>It also works for breaking cameras, lights, weapons in mortals&#39; hands, etc., with no visible firearms and no shell casings.</li>\n</ul>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -925,7 +900,7 @@
           "homebrew": true
         }
       },
-      "name": "Majesty of War / Kindle Emotions",
+      "name": "War Majesty / Kindle Emotions",
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
@@ -987,11 +962,11 @@
           "homebrew": true
         }
       },
-      "name": "Deny Pain",
+      "name": "Deny the Pain",
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew.</em></p><p>You ignore wound penalties; ideal for fighting on after taking damage.</p>",
+        "description": "<p><em>Homebrew.</em></p><p>You ignore wound penalties; ideal for continuing to fight after taking damage.</p>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -1053,7 +1028,7 @@
       "type": "power",
       "img": "systems/wod5e/assets/icons/items/discipline.png",
       "system": {
-        "description": "<p><em>Homebrew.</em></p><p>see the next page.</p><p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr.JournalEntryPage.nyaVnQSG4rVgzoFI]{Last Bastion of the Masquerade}</p><p><em>Source: doc 17. Last Bastion of the Masquerade (Fortitude ••••). Homebrew – optional Amalgam with Presence or Auspex, if you want to fine-tune it further.</em></p>\n<p><em>“I don&#39;t fall until the job is done.”</em></p>\n<p><strong>Theme / fiction.</strong> When David marks someone as an enemy of the Masquerade, his body and his will refuse to fall. Broken bones, bullets, fire… everything holds together on sheer refusal. It isn&#39;t blind Brujah fury: it&#39;s the brutal calm of the executioner who won&#39;t let himself die until he&#39;s finished off the condemned.</p>\n<h3>Mechanical Version (V5-Friendly)</h3>\n<p><strong>Requirements</strong></p>\n<ul>\n<li>Fortitude 4</li>\n<li>Humanity 6+ (or at least 1 Conviction tied to “protecting the Masquerade / the balance”)</li>\n<li>Optional as an Amalgam: Presence 2 or Auspex 2 (Presence if you want it more “imposing,” Auspex if you see it as an almost mystical focus on his mission).</li>\n</ul>\n<p><strong>Cost</strong></p>\n<ul>\n<li>1 Rouse Check on activation.</li>\n<li>It can only be used once per scene, and once per night for its big effect.</li>\n</ul>\n<p><strong>Activation.</strong> You must declare a target a “Veil-breaker”:</p>\n<ul>\n<li>It must be someone who, in David&#39;s judgment (and the Storyteller&#39;s), is actively endangering the Masquerade:<ul>\n<li>a Kindred using Disciplines in front of mortals,</li>\n<li>a Sabbat carrying out butchery,</li>\n<li>a Cainite about to expose the existence of vampires, etc.</li>\n</ul>\n</li>\n<li>Quick action: David locks his gaze / pronounces the “sentence” (a whisper, a stone-cold line, whatever works for you) and activates the power.</li>\n</ul>\n<p>While this sentenced target remains present in the scene (or David is directly pursuing it), the power is active.</p>\n<h3>Effects</h3>\n<p><strong>1. I Won&#39;t Fall Yet.</strong> While the sentenced target remains in the scene or in direct pursuit:</p>\n<ul>\n<li>If David would be Incapacitated by damage (superficial or aggravated) from a damage roll:<ul>\n<li>Instead of falling, he stays at 1 superficial Health level.</li>\n<li>He automatically gains the Stunned / Staggered condition (the Storyteller can impose -2 on complex physical actions, he can&#39;t take multiple actions, etc.).</li>\n<li>This effect can only happen once per scene and per night.</li>\n</ul>\n</li>\n</ul>\n<p>In short: 👉 The first time someone “would drop him” while he&#39;s executing an enemy of the Masquerade… he doesn&#39;t fall. He stays standing at 1 Health.</p>\n<p><strong>2. Executioner&#39;s Flesh.</strong> While the sentenced target remains present:</p>\n<ul>\n<li>David gains +Fortitude (4) dice on tests to:<ul>\n<li>Resist frenzy from damage or provocation by the target.</li>\n<li>Resist Dominate / Presence / Auspex from the target (or from its direct allies in the scene, at the Storyteller&#39;s discretion).</li>\n</ul>\n</li>\n<li>In addition, he ignores wound penalties (as if Deny Pain were “boosted”) against that specific target.</li>\n<li>Outside that hunt, Deny Pain works normally.</li>\n</ul>\n<p>Narrative effect: 👉 While he&#39;s hunting a real danger to the Masquerade, he doesn&#39;t break, doesn&#39;t flee, doesn&#39;t bend mentally at that enemy&#39;s hands.</p>\n<p><strong>3. Moral Limit.</strong> Because otherwise it gets out of hand:</p>\n<ul>\n<li>If the Storyteller considers that David activated it against someone who isn&#39;t really a threat to the Masquerade, or out of pure personal grudge:<ul>\n<li>The power works the same, but at the end of the night David must make a Remorse test with +1 die of difficulty.</li>\n<li>If he fails, he gains at least 1 additional Stain: he has twisted his Conviction, using “the Masquerade” as an excuse to kill.</li>\n</ul>\n</li>\n</ul>\n<p>This nails it to the concept of an enforcer with a code, not a thug justifying himself.</p>\n<h3>Is It Broken or Reasonable?</h3>\n<p>If you compare it with the official Fortitude 4 powers:</p>\n<ul>\n<li>Draught of Endurance: grants Fortitude and powers to another Kindred for a night.</li>\n<li>Gorgon Scales: grants brutal defenses, but very situational and tied to Resonance.</li>\n</ul>\n<p>Last Bastion of the Masquerade:</p>\n<ul>\n<li>It&#39;s very strong, but:<ul>\n<li>It only works in scenes where there&#39;s a real threat to the Masquerade.</li>\n<li>The “I don&#39;t fall” is once per night, and it leaves you wrecked.</li>\n<li>It doesn&#39;t increase damage or grant super attacks; it only keeps David on his feet to finish the job.</li>\n<li>It has a moral cost if abused.</li>\n</ul>\n</li>\n</ul>\n<p>At the table, it&#39;s a power that:</p>\n<ul>\n<li>Reinforces his role as the “Black Dog of the Masquerade.”</li>\n<li>Gives a very cinematic moment: the blow that should knock him to the ground… and he gets up at 1 Health with a broken jaw and a fixed stare.</li>\n<li>Doesn&#39;t unbalance things as much as a constant buff of raw damage reduction against everything and everyone.</li>\n</ul>\n<h3>Simpler / Faster Version</h3>\n<p>If you&#39;d prefer something even easier to use, the same concept can be reduced to:</p>\n<p><strong>Lite Version:</strong></p>\n<ul>\n<li><strong>Cost:</strong> 1 Rouse Check.</li>\n<li><strong>Effect:</strong> Once per night, when you take damage that would leave you Incapacitated while fighting someone who&#39;s endangering the Masquerade, you stay at 1 Health instead of falling.</li>\n<li><strong>Extra:</strong> +2 dice to resist frenzy and mental Disciplines from that enemy until the end of the scene.</li>\n</ul>",
+        "description": "<p><em>Homebrew.</em></p><p>see the next page.</p><p>@UUID[JournalEntry.3zcQLj7aEAxHT0Yr.JournalEntryPage.nyaVnQSG4rVgzoFI]{Last Bastion of the Masquerade}</p><p><em>Source: doc 17. Last Bastion of the Masquerade (Fortitude ••••). Homebrew – optional Amalgam with Presence or Auspex, if you want to fine-tune it further.</em></p>\n<p><em>“I don&#39;t fall until the job is done.”</em></p>\n<p><strong>Theme / fiction.</strong> When David marks someone as an enemy of the Masquerade, his body and his will refuse to fall. Broken bones, bullets, fire… it all holds together on sheer refusal. It isn&#39;t blind Brujah fury: it&#39;s the brutal calm of the executioner who won&#39;t let himself die until he&#39;s finished off the condemned.</p>\n<h3>Mechanical Version (V5-Friendly)</h3>\n<p><strong>Requirements</strong></p>\n<ul>\n<li>Fortitude 4</li>\n<li>Humanity 6+ (or at least 1 Conviction tied to “protecting the Masquerade / the balance”)</li>\n<li>Optional as an Amalgam: Presence 2 or Auspex 2 (Presence if you want it more “imposing,” Auspex if you see it as an almost mystical focus on his mission).</li>\n</ul>\n<p><strong>Cost</strong></p>\n<ul>\n<li>1 Rouse Check on activation.</li>\n<li>It can only be used once per scene, and once per night for its big effect.</li>\n</ul>\n<p><strong>Activation.</strong> You must declare a target a “Veil-breaker”:</p>\n<ul>\n<li>It must be someone who, in David&#39;s judgment (and the Storyteller&#39;s), is actively endangering the Masquerade:<ul>\n<li>a Kindred using Disciplines in front of mortals,</li>\n<li>a Sabbat committing massacres,</li>\n<li>a Cainite about to expose the existence of vampires, etc.</li>\n</ul>\n</li>\n<li>Quick action: David locks his gaze / pronounces the “sentence” (a whisper, a final, stony line, whatever you like) and activates the power.</li>\n</ul>\n<p>As long as this sentenced target remains in the scene (or David is pursuing them directly), the power is active.</p>\n<h3>Effects</h3>\n<p><strong>1. I won&#39;t fall yet.</strong> While the sentenced target remains in the scene or in direct pursuit:</p>\n<ul>\n<li>If David would be Incapacitated by damage (superficial or aggravated) on a damage roll:<ul>\n<li>Instead of falling, he stays at 1 superficial Health level.</li>\n<li>He automatically gains the Dazed / Staggered condition (the Storyteller can impose -2 on complex physical actions, he can&#39;t take multiple actions, etc.).</li>\n<li>This effect can only happen once per scene and per night.</li>\n</ul>\n</li>\n</ul>\n<p>In short: 👉 The first time someone “would drop him” while he&#39;s executing an enemy of the Masquerade… he doesn&#39;t fall. He stays on his feet at 1 Health.</p>\n<p><strong>2. Executioner&#39;s Flesh.</strong> While the sentenced target remains present:</p>\n<ul>\n<li>David gets +Fortitude (4) dice on rolls to:<ul>\n<li>Resist frenzy from damage or provocation by the target.</li>\n<li>Resist Dominate / Presence / Auspex from the target (or from their direct allies in the scene, at the Storyteller&#39;s discretion).</li>\n</ul>\n</li>\n<li>In addition, he ignores wound penalties (as if Deny the Pain were “boosted”) against that specific target.</li>\n<li>Outside that hunt, Deny the Pain works normally.</li>\n</ul>\n<p>Narrative effect: 👉 While he&#39;s hunting a real danger to the Masquerade, he doesn&#39;t break, doesn&#39;t run, doesn&#39;t bend mentally at that enemy&#39;s hands.</p>\n<p><strong>3. Moral limit.</strong> Because otherwise it gets out of hand:</p>\n<ul>\n<li>If the Storyteller considers that David activated it against someone who isn&#39;t really a threat to the Masquerade, or out of pure personal spite:<ul>\n<li>The power works the same, but at the end of the night David must make a Remorse roll with +1 die of difficulty.</li>\n<li>If he fails, he gains at least 1 additional Stain: he has twisted his Conviction, using “the Masquerade” as an excuse to kill.</li>\n</ul>\n</li>\n</ul>\n<p>This nails him to the concept of an enforcer with a code, not a thug justifying himself.</p>\n<p><em>As an NPC, there&#39;s no roll and no Stain. If he activated it out of spite, David breaks that night (see “When He Breaks”). If a PC saw it, they decide whether to tell him.</em></p>\n<h3>Is It Broken or Reasonable?</h3>\n<p>If you compare it with the official Fortitude 4 powers:</p>\n<ul>\n<li>Draught of Endurance: grants Fortitude and powers to another Kindred for one night.</li>\n<li>Gorgon Scales: grants brutal defenses, but very situational and tied to Resonance.</li>\n</ul>\n<p>Last Bastion of the Masquerade:</p>\n<ul>\n<li>It&#39;s very strong, but:<ul>\n<li>It only works in scenes where there&#39;s a real threat to the Masquerade.</li>\n<li>The “I don&#39;t fall” is once per night, and it leaves you wrecked.</li>\n<li>It doesn&#39;t increase damage or grant super attacks; it only keeps David standing to finish the job.</li>\n<li>It has a moral cost if abused.</li>\n</ul>\n</li>\n</ul>\n<p>At the table, it&#39;s a power that:</p>\n<ul>\n<li>Reinforces his role as the “Black Dog of the Masquerade.”</li>\n<li>Delivers a very cinematic moment: the blow that should put him on the ground… and he gets up at 1 Health with his jaw broken and his eyes locked on.</li>\n<li>Doesn&#39;t unbalance things as much as a constant brute-force damage-reduction buff against everything and everyone.</li>\n</ul>\n<h3>Simpler / Quicker Version</h3>\n<p>If you&#39;d rather have something even easier to use, the same concept can be boiled down to:</p>\n<p><strong>Lite Version:</strong></p>\n<ul>\n<li><strong>Cost:</strong> 1 Rouse Check.</li>\n<li><strong>Effect:</strong> Once per night, when you take damage that would leave you Incapacitated while fighting someone who is endangering the Masquerade, you stay at 1 Health instead of falling.</li>\n<li><strong>Extra:</strong> +2 dice to resist frenzy and mental Disciplines from that enemy until the end of the scene.</li>\n</ul>",
         "macroid": "",
         "bonuses": [],
         "dataItemId": "",
@@ -1560,7 +1535,7 @@
       "journal": "JournalEntry.3zcQLj7aEAxHT0Yr",
       "doc": "07",
       "cantidad": 1,
-      "pj": true
+      "pj": false
     }
   },
   "_stats": {

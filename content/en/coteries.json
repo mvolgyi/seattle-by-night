@@ -1,6 +1,6 @@
 {
   "_fuente": {
-    "COT-00": "756238aab910043b",
+    "COT-00": "1b5a82e8eba996ed",
     "COT-01": "dbb6bbd876476d4e",
     "COT-02": "08840fd1ad6b92fd",
     "COT-03": "5d00bb45adb17319",
@@ -10,27 +10,28 @@
     "COT-00": {
       "nombre": "The Archived",
       "lema": "The ones who were on the drive.",
-      "tipo": "Commando",
-      "tipoNota": "Commando: a unit assembled for a mission that became permanent (doc 02). If it survives AVE-01, it can become Cerberus or Regency depending on the ending (doc 08).",
+      "tipo": "Commando (Commando)",
+      "tipoNota": "Commando: a unit assembled for one mission that became permanent (doc 02). If it survives AVE-01, it can become a Cerberus or Regency coterie, depending on the Ending (doc 08).",
       "dominio": "The Harbor Island docks, around David's hangar",
-      "descripcion": "A coterie born of a shared threat: they all appear in the Ward File, and either they recover it together or they go down together.",
+      "descripcion": "A coterie born of a shared threat: every one of them is in the Ward File, and either they get it back together or they go down together.",
       "trasfondos": [
-        "Haven 3 (the hangar, provided by David): with Water Access and Arsenal",
+        "Haven 3 (the hangar, on loan from David): with Water Access and Arsenal",
         "Contacts 1 (port): through Bear",
+        "Ally: David Smith (PJ-01), built in. He helps because he goes down with them",
         "Ally: Tom “Bear” Whitman (PNJ-05), shared with David"
       ],
       "trasfondosDoc02": [
-        "Haven (the hangar, provided by David)",
+        "Haven (the hangar, on loan from David)",
         "Contacts (port) 1"
       ],
       "alternativas": [
-        "B) they're an existing coterie that Montgomery uses as a strike force",
-        "C) they're strangers who cross paths at Helen's apartment the night of the theft"
+        "B) it's a coterie that already existed, and Montgomery uses it as a strike force",
+        "C) they're strangers who happen to be in Helen's apartment the night of the theft"
       ],
       "dominioNotas": {
-        "caza": "Night-shift workers. Hunting is possible, but you have to be careful.",
-        "lien": "The coterie has barely any influence over the mortals at the port. Bear knows a few.",
-        "portillon": "Lots of access points, containers, and water. Easy to get in and out. For enemies too."
+        "caza": "Night-shift workers. Feeding is possible, but you have to be careful.",
+        "lien": "The coterie has barely any sway over the mortals at the port. Bear knows a few of them.",
+        "portillon": "Lots of access points, containers, and water. Easy to get in and out. For enemies, too."
       }
     },
     "COT-01": {

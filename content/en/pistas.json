@@ -2,19 +2,19 @@
   "_fuente": {
     "P-01": "48f28ca64693c325",
     "P-02": "c56ae6c4f6c3fd0f",
-    "P-03": "3aab7e8b8deaa9f4",
+    "P-03": "4c9def31009f9f55",
     "P-04": "9dfcd9414f7bb1a0",
     "P-05": "bd5bbb8825d0032f",
     "P-06": "bdc9692050fddf11",
-    "P-07": "afea0ad8a523e285",
-    "P-08": "a201456a817215fb",
+    "P-07": "b5bc0ec7d2e837a3",
+    "P-08": "f4795dd2f6d2db50",
     "P-09": "953eb9be4cd47ea2",
     "P-10": "8e9df83248b89853",
     "P-11": "c07416730ab73c93",
-    "P-12": "35b72f142d7db198",
+    "P-12": "a73f0211712f9503",
     "P-13": "9408d3371b443e30",
     "P-14": "e3eaf8e3bdc9aebe",
-    "P-15": "046da7d229586fa5",
+    "P-15": "7dbac46226fbcfd4",
     "PRUEBA-CORREO-CH": "6bd311d2c80eadcf",
     "PRUEBA-DOC-08": "fd623214b15e4b2a",
     "PRUEBA-DOC-03": "a8455a0b34ed073f",
@@ -25,15 +25,15 @@
     "PRUEBA-KRELL-PRESENTE": "7327928d65fa2f0b",
     "PRUEBA-FAVOR-MONTGOMERY": "c3d9d0fac5da9334",
     "PRUEBA-MENTIRA-A1-E03": "f5853db9c493d15b",
-    "PRUEBA-HONESTIDAD-DAVID": "cc5bd348532dc451",
-    "PRUEBA-HERMANO-DE-SANGRE": "5e4986d41c251711",
+    "PRUEBA-HONESTIDAD-DAVID": "57e645fb3aa4be84",
+    "PRUEBA-HERMANO-DE-SANGRE": "3e6184007b8b027f",
     "PRUEBA-FALSIFICACION": "9400407a934abdc3",
     "PRUEBA-INFORMES-HAL": "1a8b9e2ee3b94b8c",
     "PRUEBA-CELESTE-VERDAD": "0843490b6af1a346",
     "PRUEBA-NADIA-PRINCIPE": "cbd14ea699e31aae",
     "PRUEBA-ASHBY": "e5c1934e2fa77859",
     "PRUEBA-OKAFOR-LONNIE": "45534ecd73a2b774",
-    "A3-E04": "990bbc0f50356c6b",
+    "A3-E04": "aabd32a304a2e058",
     "A4-E01": "b5a241ffc5858921"
   },
   "pistas": {
@@ -76,13 +76,13 @@
     },
     "P-03": {
       "nombre": "The *Controlled Fury* Technique",
-      "texto": "The blows that destroyed the minor Nosferatu at Pier 46 follow the doctrine of *Controlled Fury*.",
+      "texto": "The blows that destroyed the lesser Nosferatu at Pier 46 follow the doctrine of *Controlled Fury*.",
       "obtencion": [
         {
-          "como": "Intelligence + Brawl (Difficulty 4): dents at chest height, always in the same sequence (ribs, sternum, throat). David, with LOR-01 at level 4, recognizes it without rolling."
+          "como": "Intelligence + Brawl (Difficulty 4): dents at chest height, always in the same sequence (ribs, sternum, throat). If a PC shows David the dents and asks him what he sees, the clue comes out without a roll (LOR-01 at level 4)."
         },
         {
-          "como": "LOR-01 level 4 “The Complete Guard”: you recognize the doctrine the moment you see it."
+          "como": "LOR-01 level 4 “The Full Guard”: you recognize the doctrine the moment you see it."
         }
       ],
       "efectos": [
@@ -130,7 +130,7 @@
     },
     "P-07": {
       "nombre": "Halloway Knows About the Cold Water",
-      "texto": "Halloway mentions Vance with a detail he shouldn't know. (Doc 11: Halloway knows about the cold-water business.)",
+      "texto": "Halloway mentions Vance with a detail he shouldn't know. (Doc 11: Halloway Knows About the Cold Water.)",
       "nombres": {
         "11": "Halloway Knows About the Cold Water",
         "13": "P-07 · Halloway Knows About the Cold Water",
@@ -138,26 +138,26 @@
       },
       "obtencion": [
         {
-          "como": "Intelligence + Academics (Difficulty 3), or automatic for David: Halloway quotes “the cold water in the mornings,” which appears only in Vance's private journals. Wits + Insight (Difficulty 4) to notice he's lying when he explains it."
+          "como": "Intelligence + Academics (Difficulty 3), or automatic if a PC asks David afterward (or repeats the line to him): Halloway quotes “cold water in the mornings,” which appears only in Vance's private journals. Wits + Insight (Difficulty 4) to notice he's lying when he explains it."
         }
       ],
       "efectos": [
         {
-          "efecto": "Winning over the assembly at Salt's: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
+          "efecto": "Winning over Salt's assembly: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
         }
       ],
       "dados": [
         {
-          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+          "texto": "+1 die to the central Manipulation + Persuasion roll (Difficulty 4) to convince Montgomery"
         },
         {
-          "texto": "+1 die to the case test at the Council"
+          "texto": "+1 die to the case roll at the Council"
         }
       ]
     },
     "P-08": {
       "nombre": "The Inverted Guard",
-      "texto": "An Intelligence + Brawl (Difficulty 4) test reveals that the technique is wrong: Krell strikes with the inverted guard, the way Vance taught the students who never finished their training. (Doc 10: hint in A1-E02.)",
+      "texto": "An Intelligence + Brawl test (Difficulty 4) reveals that the technique is wrong: Krell strikes with the inverted guard, the way Vance taught the students who never finished their training. (Doc 10: hint in A1-E02.)",
       "nombres": {
         "11": "The Inverted Guard",
         "13": "P-08 · The Inverted Guard",
@@ -165,32 +165,32 @@
       },
       "obtencion": [
         {
-          "como": "With 4 or more successes on Intelligence + Brawl, or LOR-01 at level 4 and one success on Wits + Brawl (Difficulty 3): the last blow came in from the left, as if the attacker's guard were switched. Teo: “He hit with his left out front, like southpaws in boxing.”"
+          "como": "With 4 or more successes on Intelligence + Brawl, or LOR-01 at level 4 and one success on Wits + Brawl (Difficulty 3): the last blow came in from the left, as if the attacker's guard were switched. Teo: “He hit with his left out front, like a southpaw in boxing.”"
         },
         {
-          "como": "Intelligence + Brawl (Difficulty 4) on Corwin's ashes: Controlled Fury with the inverted guard, weak hand forward. David, with LOR-01 at level 4: automatic."
+          "como": "Intelligence + Brawl (Difficulty 4) on Corwin's ashes: Controlled Fury with the inverted guard, the weak hand forward. Automatic if a PC asks David to look at the ashes (LOR-01 at level 4)."
         },
         {
-          "como": "If the coterie arrives in time, David automatically recognizes the inverted guard with LOR-01 at level 4."
+          "como": "If the coterie reaches David in time, he recognizes the inverted guard without a roll (LOR-01 at level 4); so does a PC with LOR-01 at level 4."
         },
         {
           "como": "DOC-04: the doctrine of Controlled Fury and the inverted guard, which gives Krell away (P-08)."
         },
         {
-          "como": "LOR-01 level 4 “The Complete Guard”: you recognize the doctrine the moment you see it (P-03, P-08)."
+          "como": "LOR-01 level 4 “The Full Guard”: you recognize the doctrine the moment you see it (P-03, P-08)."
         }
       ],
       "efectos": [
         {
-          "efecto": "Winning over the assembly at Salt's: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
+          "efecto": "Winning over Salt's assembly: the Difficulty drops by 1 for each clue the coterie brings (P-08 or P-07)."
         }
       ],
       "dados": [
         {
-          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+          "texto": "+1 die to the central Manipulation + Persuasion roll (Difficulty 4) to convince Montgomery"
         },
         {
-          "texto": "+1 die to the case test at the Council"
+          "texto": "+1 die to the case roll at the Council"
         }
       ]
     },
@@ -281,12 +281,12 @@
       },
       "obtencion": [
         {
-          "como": "With Krell at 3 “steps,” the “Witness” offer: Manipulation + Persuasion (Difficulty 3); Krell accepts if David promises him nobody will destroy him afterward. The “The Other Guard” offer (LOR-01 at level 4 and P-15, or folio 42) also turns him into a witness, no roll needed."
+          "como": "With Krell at 3 “steps,” the “Witness” offer: Manipulation + Persuasion (Difficulty 3), +1 die if David backs it out loud. Krell demands that David promise him nobody will destroy him afterward; if the coterie asks him to, David promises. The “Other Guard” offer (the coterie found P-15 and David read folio 42; David has LOR-01 at level 4) also makes him a witness, no roll needed."
         }
       ],
       "efectos": [
         {
-          "efecto": "Krell present as a witness: +2 more dice to the central test."
+          "efecto": "Krell present as a witness: +2 more dice to the central roll."
         },
         {
           "efecto": "Vote: Thornquist switches to “no” with P-03 plus P-12 or Krell's testimony. If Krell testifies, Halloway loses his composure for the first time."
@@ -294,10 +294,10 @@
       ],
       "dados": [
         {
-          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+          "texto": "+1 die to the central Manipulation + Persuasion roll (Difficulty 4) to convince Montgomery"
         },
         {
-          "texto": "+3 dice to the case test at the Council (Krell as a witness)"
+          "texto": "+3 dice to the case roll at the Council (Krell as a witness)"
         }
       ]
     },
@@ -363,29 +363,29 @@
       ]
     },
     "P-15": {
-      "nombre": "The Folios About the German",
-      "texto": "Folios 41 and 42 of Vance's journal about “the German,” with Pell's note and Halloway's reply (“No. — C.H.”).",
+      "nombre": "The Folios on the German",
+      "texto": "Folios 41 and 42 of Vance's journal about “the German,” with Pell's note and Halloway's reply (“No. —C.H.”).",
       "nota": "GAN-07: copy 3 of the journals, held by the Justicar, has folios that aren't in the other two, including the ones that talk about Krell (doc 09).",
-      "ayuda": "Given out as a handout: two folios from Vance's journal (Marseille, 1976), in French, with Pell's typewritten translation (doc 12).",
+      "ayuda": "Given to the players as a handout: two folios from Vance's journal (Marseille, 1976), in French, with Pell's typewritten translation (doc 12).",
       "obtencion": [
         {
-          "como": "Layer 3, private archive (air-gapped server): copying the files takes Intelligence + Technology (Difficulty 3); finding the folios among thousands of images takes Intelligence + Investigation (Difficulty 4), or it's automatic by searching for the word “allemand.”"
+          "como": "Layer 3, private archive (air-gapped server): copy the files with Intelligence + Technology (Difficulty 3); find the folios among thousands of images with Intelligence + Investigation (Difficulty 4), or automatically by searching for the word “allemand.”"
         }
       ],
       "efectos": [
         {
-          "efecto": "Showing P-15 to Krell adds 3 “steps” at once. The “The Other Guard” offer requires LOR-01 at level 4 and P-15 (or David knowing folio 42)."
+          "efecto": "Showing P-15 to Krell adds 3 “steps” at once. The “Other Guard” offer requires that the coterie has found P-15 and that David has read folio 42 (David has LOR-01 at level 4)."
         },
         {
-          "efecto": "Spotting the forgery of the “M.V.” letter is automatic with P-15 or DOC-04. If the coterie already showed P-15 or the C.H. email to Montgomery, the scene skips its first half."
+          "efecto": "Spotting the forgery of the “M.V.” letter is automatic with P-15 or DOC-04. If the coterie has already shown Montgomery P-15 or C.H.'s email, the scene skips the first half."
         }
       ],
       "dados": [
         {
-          "texto": "+1 die to the central Manipulation + Persuasion (Difficulty 4) test to convince Montgomery"
+          "texto": "+1 die to the central Manipulation + Persuasion roll (Difficulty 4) to convince Montgomery"
         },
         {
-          "texto": "+1 die to the case test at the Council (and the “No. — C.H.” note)"
+          "texto": "+1 die to the case roll at the Council (and the “No. —C.H.” note)"
         }
       ]
     }
@@ -497,18 +497,20 @@
       ]
     },
     "PRUEBA-HONESTIDAD-DAVID": {
-      "nombre": "David admits something that costs him (what he knows about Krell, what he felt in the silos, the Larchmont business)",
+      "nombre": "Something David finds hard to admit comes out in front of Montgomery (what he knows about Krell, what he felt in the silos, the Larchmont business)",
+      "como": "A PC convinces David to speak (Charisma + Insight, Difficulty 3) and David says it, or a PC says it for him, with David present and without a roll: David doesn't deny it.",
       "valores": [
         {
-          "texto": "+1 die to the central test"
+          "texto": "+1 die to the central roll"
         }
       ]
     },
     "PRUEBA-HERMANO-DE-SANGRE": {
-      "nombre": "“He's my blood brother” (if David knows it and says so)",
+      "nombre": "“Krell is his blood brother” (if the coterie knows)",
+      "como": "A PC says it, or David does if a PC convinced him to. Montgomery looks at David, who doesn't deny it.",
       "valores": [
         {
-          "texto": "+1 die to the central test"
+          "texto": "+1 die to the central roll"
         }
       ]
     },
@@ -560,25 +562,25 @@
   },
   "tiradas": {
     "A3-E04": {
-      "nombre": "The Pack Hesitates: The Central Test",
-      "tirada": "Manipulation + Persuasion (Difficulty 4), rolled by whoever speaks for the coterie",
-      "automatico": "If anyone attempts Dominate or Presence on Montgomery (Fortitude 4, Unswayable Mind), he notices and the central test automatically fails.",
+      "nombre": "The Pack Wavers: The Central Roll",
+      "tirada": "Manipulation + Persuasion (Difficulty 4), made by whoever speaks for the coterie",
+      "automatico": "If anyone attempts Dominate or Presence on Montgomery (Fortitude 4, Unswayable Mind), he notices and the central roll automatically fails.",
       "nota": "Doc 12 wins: +1 die for each clue from P-07 to P-15.",
       "variantes": {
         "01": "Manipulation + Persuasion, Difficulty 4, +1 die for each clue P-07 to P-12."
       },
       "resultados": [
         {
-          "resultado": "Success with 3 or more successes",
-          "efecto": "The Wolves (COT-01) are with the coterie: Montgomery enters the Council alongside David; during the raid, the bounty hunters help evacuate; in A4-E03, Montgomery waits on the dock."
+          "resultado": "Win with 3 or more successes",
+          "efecto": "The Wolves (COT-01) side with the coterie: Montgomery enters the Council alongside David; during the raid, the bounty hunters help evacuate; in A4-E03, Montgomery waits at the pier."
         },
         {
-          "resultado": "Simple success",
-          "efecto": "Montgomery doesn't turn against them, but he doesn't help openly either: “Prove it to me tomorrow in front of everyone.”"
+          "resultado": "Simple win",
+          "efecto": "Montgomery doesn't turn against them, but he doesn't openly help either: “Prove it to me tomorrow. In front of everyone.”"
         },
         {
           "resultado": "Failure",
-          "efecto": "The coterie are fugitives. The bounty hunters are hunting David. In A4-E01, David needs to get into the Council without being stopped at the door."
+          "efecto": "The coterie are fugitives. The bounty hunters are hunting for David. In A4-E01, the coterie has to get David into the Council without him being stopped at the door."
         }
       ]
     },

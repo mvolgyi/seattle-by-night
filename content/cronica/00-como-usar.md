@@ -15,11 +15,11 @@ origen: "00"
 
 **Ciudad:** Seattle y el estrecho de Puget, noviembre de 2026. Zonas principales: Elliott Bay y Harbor Island, Pioneer Square y el Seattle subterráneo, Capitol Hill, Ballard, el Eastside, Tacoma y Everett.
 
-**Formato de juego:** crónica para un solo jugador (David Smith, @ID[PJ-01]), con Tom "Bear" Whitman (@ID[PNJ-05]) como compañero.
+**Formato de juego:** coterie de 4–5 jugadores con los PJs nuevos (@ID[PJ-02] a @ID[PJ-06]). David Smith (@ID[PJ-01]) y Tom "Bear" Whitman (@ID[PNJ-05]) son PNJs aliados que acompañan a la coterie.
 
 ## Premisa
 
-Seattle es la ciudad que más sabe de sus habitantes: cada teléfono, cada cámara de timbre y cada algoritmo de reparto deja un rastro. La Camarilla del Príncipe Marcus Whitmore sobrevive gracias a la lluvia, a la indiferencia y a que el Sheriff Montgomery y su Sabueso, David Smith, borran todo lo que sobra. Una noche roban de un apartamento de Ballard el disco duro de Helen Ward: diez años de notas, fotos borrosas y patrones geográficos. Es, sin que nadie lo haya querido así, el mapa más completo que existe de los cotos de caza y de los fallos de Mascarada de la ciudad. Al mismo tiempo, en los muelles empiezan a aparecer Vástagos destruidos con la técnica de la *Furia Controlada*, la doctrina que a David le enseñó un sire al que dan por muerto desde 1985. Si el Expediente Ward llega a la Segunda Inquisición, la ciudad arde. Si llega a la Primogenitura, alguien gana un arma para derribar al Príncipe. Y si David lo recupera, tendrá que leer lo que dice el archivo.
+Seattle es la ciudad que más sabe de sus habitantes: cada teléfono, cada cámara de timbre y cada algoritmo de reparto deja un rastro. La Camarilla del Príncipe Marcus Whitmore sobrevive gracias a la lluvia, a la indiferencia y a que el Sheriff Montgomery y su Sabueso, David Smith, borran todo lo que sobra. Una noche roban de un apartamento de Ballard el disco duro de Helen Ward: diez años de notas, fotos borrosas y patrones geográficos. Es, sin que nadie lo haya querido así, el mapa más completo que existe de los cotos de caza y de los fallos de Mascarada de la ciudad. Al mismo tiempo, en los muelles empiezan a aparecer Vástagos destruidos con la técnica de la *Furia Controlada*, la doctrina que a David le enseñó un sire al que dan por muerto desde 1985. Si el Expediente Ward llega a la Segunda Inquisición, la ciudad arde. Si llega a la Primogenitura, alguien gana un arma para derribar al Príncipe. Y si la coterie lo recupera, va a tener que leer lo que dice el archivo. Y decidir qué le cuenta a David.
 
 ## Temas
 
@@ -38,6 +38,8 @@ Aventura central: 6–8 sesiones. Ganchos de crónica: 12 adicionales, para llev
 
 ## Decisiones tomadas
 
+*Las del doc 00. Donde una fila cambia, manda la tabla siguiente.*
+
 | # | Pregunta | Decisión |
 |---|---|---|
 | 1 | ¿Quién mueve los hilos? | **Charles Halloway**, Primogénito Ventrue (@ID[PNJ-03]). Las señales de Vance son una pista falsa que planta él. Vance no está en la ciudad. |
@@ -55,7 +57,7 @@ Aventura central: 6–8 sesiones. Ganchos de crónica: 12 adicionales, para llev
 | 1 | ¿Quién mueve los hilos? | Charles Halloway (@ID[PNJ-03]). Las señales de Vance son falsas; las deja August Krell (@ID[PNJ-12]). |
 | 2 | Sheriff O'Connor | Fue el Sheriff anterior, hasta 1978 (@ID[PNJ-17]). |
 | 3 | Muerte de Emily | En los años 90. |
-| 4 | Jugadores | **4–5 jugadores.** David y 3–4 personajes nuevos. Bear es PNJ. |
+| 4 | Jugadores | **4–5 jugadores** con los PJs nuevos (@ID[PJ-02] a @ID[PJ-06]). **David y Bear son PNJ.** *Decisión del autor posterior al doc 02: manda sobre él.* |
 | 5 | Incendio del Larchmont | **David no llegó a tiempo.** |
 | 6 | Clan del Príncipe Whitmore | **Toreador.** |
 | 7 | Ficción de apertura | Desde el punto de vista de **Helen Ward**. |

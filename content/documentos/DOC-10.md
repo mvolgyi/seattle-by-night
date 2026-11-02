@@ -6,7 +6,7 @@ orden: 100
 soporte: poema
 entrega: [A2-E01]
 jugadores: si
-nota: "A2-E01. Fry (PNJ-16) se la deja a David o al PJ que más le haya hecho caso."
+nota: "A2-E01. Fry (PNJ-16) se la deja al PJ que más le haya hecho caso. Va dirigida al Sabueso: ese PJ decide si se la da a David."
 origen: "04"
 ---
 
@@ -58,7 +58,7 @@ llegá esta vez.
 
 ## Para el Narrador {narrador}
 
-**Soporte:** poema escrito con bolígrafo en una servilleta de papel del Club Ceniza, con una mancha de vino. **Cuándo:** @ID[A2-E01]. Fry (@ID[PNJ-16]) se la deja a David o al PJ que más le haya hecho caso.
+**Soporte:** poema escrito con bolígrafo en una servilleta de papel del Club Ceniza, con una mancha de vino. **Cuándo:** @ID[A2-E01]. Fry (@ID[PNJ-16]) se la deja al PJ que más le haya hecho caso. Va dirigida al Sabueso: ese PJ decide si se la da a David.
 
 **Presagia:** a Krell y a David, los dos hijos de Vance; la ausencia de Vance; y el último ferry (@ID[A4-E03]).
 

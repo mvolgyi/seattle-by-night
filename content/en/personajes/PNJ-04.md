@@ -1,6 +1,6 @@
 ---
 nombre: "Helen Ward"
-fuente: cb07c46d0bed2f38
+fuente: fb09b54962067871
 ---
 
 # Helen Ward · She Who Looks Where She Shouldn't
@@ -9,15 +9,15 @@ fuente: cb07c46d0bed2f38
 
 **Mortal** · Investigative journalist and host of “What the City Forgets”
 
-These three characters already have full documentation in the project folder. Here's a summary to keep them at hand during play.
+These three characters already have their full documentation in the project folder. Here's a summary to keep them on hand during play.
 
 ## In One Sentence
 
-34 years old, daughter of a cop and a nurse from Tacoma, she has spent ten years documenting what the city would rather not see.
+34 years old, the daughter of a cop and a nurse from Tacoma, she has spent ten years documenting what the city would rather not see.
 
 ## In This Adventure
 
-her archive is the File. She doesn't know what David is, but she has fourteen photos of him. FIRSTLIGHT is watching her. She is David's Touchstone, and Fry's.
+her archive is the File. She doesn't know what David is, but she has fourteen photos of him. FIRSTLIGHT is watching her. She is David's and Fry's Touchstone.
 
 ## Document
 
@@ -29,9 +29,9 @@ her archive is the File. She doesn't know what David is, but she has fourteen ph
 
 **Skills:** Academics 2, Streetwise 3, Drive 2, Awareness 3, Investigation 4 (Cold Cases), Insight 4 (Contradictions), Persuasion 3 (Interviews), Subterfuge 2, Technology 2
 
-## 🧬 Basic Facts
+## 🧬 The Basics
 
-*Earlier source: doc 26, “Helen Ward” (Touchstones). Where it clashes with docs 00–16, those win; see the last page.*
+*Previous source: doc 26, “Helen Ward” (Touchstones). Where it clashes with docs 00–16, those win; see the last page.*
 
 Helen Ward wasn't born looking for monsters. She found them because nobody else wanted to look.
 
@@ -46,27 +46,27 @@ Helen Ward wasn't born looking for monsters. She found them because nobody else 
 
 - **Specialty:** Cold cases, disappearances, “unexplained” incidents, police and corporate corruption.
 
-- **Status:** Human, without knowing exactly what David is (she knows he isn't normal, but she doesn't put the “vampire” label on him yet).
+- **Status:** Human, without knowing exactly what David is (she knows he isn't normal, but she hasn't put the “vampire” label on him yet).
 
 ## 🎓 Origins
 
-Helen grew up in a gray neighborhood in Tacoma, the daughter of a patrol cop and an ER nurse. The house always smelled of cold coffee, Betadine, and exhaustion.
+Helen grew up in a gray Tacoma neighborhood, the daughter of a patrol cop and an ER nurse. The house always smelled of cold coffee, Betadine, and exhaustion.
 
-- From her father she learned to **smell a lie** in a statement.
+- From her father she learned to **smell the lie** in a statement.
 
 - From her mother, that **most victims never make the news**.
 
 As a teenager she became obsessed with the crime pages:
 
-unsolved murders, disappearances of girls the police wrote off as “she probably ran off with her boyfriend,” fires of “unknown” cause.
+unsolved murders, disappearances of girls the police wrote off as “she probably ran off with the boyfriend,” fires with “unknown” causes.
 
 She studied journalism with the naive idea of “bringing the truth to light.” What she found was:
 
 - Editors who told her:
 
-   “This is too dark, it doesn't sell. Give me some light corruption or a sex scandal instead.”
+   “This is too dark, it doesn't sell. Give me some light corruption or sex scandals instead.”
 
-- Law enforcement that shut doors… or flat-out asked her to “drop it.”
+- Law enforcement that shut doors… or asked her outright to “drop it.”
 
 She didn't drop it.
 
@@ -76,11 +76,11 @@ Helen specialized in:
 
 - **Strange disappearances in specific neighborhoods**
 
-- **Deaths classified as overdoses** with no prior history
+- **Deaths ruled overdoses** with no prior history
 
 - **“Accidental” fires** in buildings with shady records
 
-- **Cases of extreme violence** with details that didn't fit (blood in strange patterns, bodies nearly drained of blood, witnesses talking about “glowing eyes” or “impossible shadows”).
+- **Cases of extreme violence** with details that didn't fit (blood in strange patterns, bodies with almost no blood left, witnesses talking about “glowing eyes” or “impossible shadows”).
 
 She started publishing in:
 
@@ -88,7 +88,7 @@ She started publishing in:
 
 - Small digital outlets with some prestige.
 
-- Later, a cult **true crime podcast** focused on “what the city would rather forget.”
+- Later, a cult **true crime podcast**, focused on “what the city would rather forget.”
 
 Her reputation split in two:
 
@@ -100,7 +100,7 @@ Her reputation split in two:
 
 The first time she crossed into David's orbit was over a case that **shouldn't have existed**:
 
-- A series of “animal” attacks near the port, with bodies nearly drained of blood but **no clear signs of an actual predator**.
+- A series of “animal” attacks near the port, with bodies drained of almost all their blood but **no clear signs of a real predator**.
 
 - The police quickly closed the cases as “stray dog attacks” and “bad trips.”
 
@@ -108,7 +108,7 @@ The first time she crossed into David's orbit was over a case that **shouldn't h
 
   - camera footage where the figures looked **blurry or too fast**,
 
-  - witnesses who said “the streetlights went out all at once” right before the attack.
+  - witnesses who said “the streetlights suddenly went out” right before the attack.
 
 At one of the scenes, she arrived **too early**.
 
@@ -116,19 +116,19 @@ David was there.
 
 Not in the middle of the crime, but “cleaning up”:
 
-a tall guy, too calm for the hour, in a jacket with no insignia but with a soldier's posture.
+a tall guy, too calm for the hour, in a jacket with no insignia but with a soldier's bearing.
 
 She pointed her phone at him, recording.
 
-He looked at her, and for a second Helen felt she'd aimed at a black hole.
+He looked at her, and for a second Helen felt she had aimed at a black hole.
 
 Instead of killing her, David did something different:
 
-- He walked over, unhurried, without raising his voice.
+- He walked up to her, unhurried, without raising his voice.
 
-- He said her name (which he already knew) and mentioned a couple of her articles, one of them pulled from the web.
+- He told her her name (which he already knew), mentioned a couple of her articles, one of them pulled from the web.
 
-- He described details of the scene that **nobody** outside the police and the M.E.'s office could know.
+- He described details of the scene that **nobody** outside the police and the medical examiners could know.
 
 And then he offered her a very simple deal:
 
@@ -140,7 +140,7 @@ And then he offered her a very simple deal:
 >
 > Not the police. Not your podcast. Me.”
 
-He left her an old flip phone with a single number saved:
+He left her an old flip phone, with a single number saved:
 
 **SAFE – no ID.** *(The saved messages are @ID[DOC-05].)*
 
@@ -152,19 +152,19 @@ Helen is:
 
 - **A source of information**:
 
-  - she checks forums, listens to police scanners, reads reports, snoops around hospitals.
+  - she checks forums, listens to police scanners, reads reports, pokes around hospitals.
 
   - When something “smells like a monster,” she sends an encrypted message:
 
      “Another rabid dog in Ballard. Two drained. Info attached.”
 
-- **An early warning for a broken Masquerade**:
+- **Early warning for a broken Masquerade**:
 
-  - if she sees strange viral videos, paranoid threads, or testimony that “gets too close,” she warns David.
+  - if she sees strange viral videos, paranoid threads, or testimonies that “get too close,” she warns David.
 
-- **An inconvenient conscience**:
+- **An uncomfortable conscience**:
 
-  - sometimes she asks too many questions,
+  - sometimes she asks too much,
 
   - sometimes she wants to save someone David would consider “collateral damage.”
 
@@ -178,13 +178,13 @@ But she knows that:
 
 - He moves too fast, sees too much, and sometimes his gaze is **too old** for someone “thirty-something.”
 
-In her head, she shuffles explanations:
+In her head, she juggles explanations:
 
-- Government black ops.
+- Black government ops.
 
 - Military experiments.
 
-- Something… not human, but she can't bring herself to say the word “vampire” and believe it.
+- Something… not human, but she doesn't dare put the word “vampire” to it and believe it.
 
 ## ⚖️ Motivations and Wounds
 
@@ -194,7 +194,7 @@ Helen is driven by a mix of:
 
   - she hates that victims are invisible,
 
-  - she despises whitewashed headlines.
+  - she loathes sanitized headlines.
 
 - **Self-destructive curiosity**:
 
@@ -204,9 +204,9 @@ Helen is driven by a mix of:
 
 Core wound:
 
-- Years ago she investigated a **mass disappearance** in a building that ended up burning down. *(It's the Larchmont, 2014: @ID[LUG-11]; the friend is Danny Ruiz, @ID[REF-02].)*
+- Years ago she investigated a **multiple disappearance** in a building that ended up burning down. *(It's the Larchmont, 2014: @ID[LUG-11]; the friend is Danny Ruiz, @ID[REF-02].)*
 
-  - Her article got killed,
+  - They killed her article,
 
   - the paper paid for silence,
 
@@ -222,17 +222,17 @@ he sees in Helen what his daughter (@ID[REF-01]) could have been: human, brillia
 
 ## 🎭 How Helen Behaves at the Table
 
-- **Style**: ironic, sarcastic, smokes too much, sleeps too little. Wears glasses when she's exhausted, but won't admit it.
+- **Style**: ironic, sarcastic, smokes too much, sleeps too little. She wears glasses when she's exhausted, but won't admit it.
 
-- She talks fast, but **listens better**: she's trained to spot contradictions.
+- She talks fast, but **listens better**: she's trained to catch contradictions.
 
-- She's no combat badass: if fists fly, she protects herself as best she can. Her real weapons are:
+- She's no combat badass: if fists fly, she protects herself however she can. Her real weapon is:
 
   - a recorder,
 
   - a notepad,
 
-  - three contacts in the police,
+  - three contacts on the force,
 
   - and a memory for things others have tried to bury.
 
@@ -240,9 +240,9 @@ With David:
 
 - Sometimes they argue.
 
-  - Her: “You can't just make people disappear.”
+  - She: “You can't just make people disappear.”
 
-  - Him: “Neither can you, and yet sometimes your work gets them killed anyway.”
+  - He: “Neither can you, and yet sometimes your work kills them all the same.”
 
 - She senses that he drags his own dead behind him too.
 
@@ -256,15 +256,15 @@ With David:
 
    - The new clues point to a group of vampires David knows very well.
 
-   - Helen gets in up to her neck; if David doesn't steer her, she may get far too close to the truth.
+   - Helen gets in up to her neck; if nobody steers her, neither David nor the coterie, she could get several steps too close to the truth.
 
-2. **The Helen File** *(this is the Ward File: the premise of @ID[AVE-01])*
+2. **The Helen Archive** *(it's the Ward File: the premise of @ID[AVE-01])*
 
    - She has a hard drive with years of notes, names, blurry photos, geographic patterns…
 
-   - For a vampire, that material is a near-perfect map of the city's **hunting grounds** and **Masquerade breaches**.
+   - To a vampire, that material is an almost perfect map of the city's **hunting grounds** and **Masquerade breaches**.
 
-   - If someone from the Camarilla or the Sabbat gets their hands on it, or gets rid of her, it becomes a ticking time bomb.
+   - If someone from the Camarilla or the Sabbat gets their hands on it, or eliminates her, it becomes a ticking time bomb.
 
 3. **The Night She Beholds the Beast** *(developed as @ID[GAN-02])*
 
@@ -284,11 +284,11 @@ With David:
 
      - does she double down, because she's finally found something “real”?
 
-     - does she start investigating who she's been feeding all these years?
+     - does she start investigating who she's been feeding for years?
 
 ## ❤️ As a Touchstone
 
-For David, Helen is:
+To David, Helen is:
 
 - **A reminder of why he does what he does**:
 
@@ -300,16 +300,16 @@ For David, Helen is:
 
   - she reminds him that he, too, chose a code when he could have been just another killer.
 
-- **A permanent risk**:
+- **A constant risk**:
 
   - if she dies, it will probably be for getting too close to him or his kind.
 
-  - her death would be a **Stain** on David's Humanity.
+  - her death would be a **Stain** on David's Humanity. Since she's an NPC, there's no roll: David loses his only living Touchstone and breaks (see “When He Breaks” in @ID[PJ-01]).
 
 ## Differences from Docs 00–16
 
-- **The podcast.** Doc 26 talks about “a cult true crime podcast focused on ‘what the city would rather forget’”; in docs 00–16 it's called “What the City Forgets” and Helen hosts it.
+- **The podcast.** Doc 26 talks about “a cult true crime podcast, focused on ‘what the city would rather forget’”; in docs 00–16 it's called “What the City Forgets” and Helen hosts it.
 - **What she knows about David.** They agree: she doesn't know what he is. Docs 00–16 add that she has fourteen photos of him, the first from 2014 (the Larchmont).
 - **The SAFE phone.** Doc 26 doesn't date the first encounter; the first message in @ID[DOC-05] is from February 14, 2023.
-- **Hook 3.** It mentions the powers “Executioner's Verdict” and “Last Bastion”; the first isn't on David's sheet (doc 18), and the second is his Fortitude 4 power (see @ID[PJ-01]).
-- **Touchstone.** Docs 00–16 also make her Fry's Touchstone (@ID[PNJ-16]); doc 26 only mentions David.
+- **Hook 3.** It mentions the powers “Executioner's Verdict” and “Last Bastion”; the first doesn't appear on David's sheet (doc 18), the second is his Fortitude 4 power (see @ID[PJ-01]).
+- **Touchstone.** Docs 00–16 also make her Fry's Touchstone (@ID[PNJ-16]); doc 26 only talks about David.

@@ -23,7 +23,7 @@ El final depende de dos cosas: cómo terminó el Consejo (@ID[A4-E01]) y qué pa
 
 **Consecuencias:**
 
-- Cada miembro de la coterie gana Estatus (Camarilla) +1. @ID[PJ-01|David], +2 si fue él quien presentó el caso.
+- Cada miembro de la coterie gana Estatus (Camarilla) +1; +2 quien presentó el caso. @ID[PJ-01|David] queda limpio ante la corte, y la corte sabe ahora con quién trabaja.
 - @ID[PNJ-01|Montgomery] le debe un favor mayor a la coterie. Tacha el primer nombre de la lista.
 - @termometro{-2|Halloway cae como ARQUERO (FIN-A)} (FIRSTLIGHT pierde a su fuente).
 - @ID[PNJ-15|Voight] propone a la coterie una alianza estable contra la Inquisición: Contactos 1 o Mawla (Voight) 1 para quien lo acepte.
@@ -38,9 +38,9 @@ El final depende de dos cosas: cómo terminó el Consejo (@ID[A4-E01]) y qué pa
 **Consecuencias:**
 
 - @ID[PNJ-01|Montgomery] se convierte en enemigo declarado. Esa misma noche empieza a cumplir su lista. La crónica pasa a ser una guerra fría entre la nueva corte y el viejo Sheriff y sus Lobos (@ID[COT-01]).
-- Si David pactó: Estatus +2, pero 2 Manchas por traicionar a quien lo protegió. Tirada de Remordimiento al final de la sesión. @ID[PNJ-05|Bear] le pide una conversación esa noche, en el hangar.
+- Si la coterie pactó: cada PJ que aceptó gana Estatus +2, pero sufre 2 Manchas por vender a quienes los protegieron, y hace la tirada de Remordimiento al final de la sesión. David acepta el cargo y deja de ser el mismo: interpretalo como alguien que cambió de amo porque se lo pidieron los suyos. @ID[PNJ-05|Bear] le pide una conversación esa noche, en el hangar (ver la Coda 3 del epílogo).
 - FIRSTLIGHT sigue teniendo a ARQUERO dentro de la corte, ahora como Príncipe. La Inquisición y la Camarilla de Seattle están, sin saberlo, del mismo lado. Termómetro sin cambios, pero no vuelve a subir mientras Halloway reine.
-- @ID[PJ-02|Celeste], si fue entregada como traidora y sobrevivió, queda bajo custodia de la nueva Sheriff... que es la coterie.
+- @ID[PJ-02|Celeste], si fue entregada como traidora y sobrevivió, queda bajo custodia del nuevo Sheriff... que es David, y con él la coterie.
 - @ID[PNJ-04|Helen] sigue viva, pero el nuevo Príncipe sabe quién es. La crónica tiene un problema permanente.
 
 ## FIN-C · Fuego purificador {#FIN-C}
@@ -50,7 +50,7 @@ El Expediente desaparece: tirado al estrecho, quemado o borrado. La coterie tamb
 **Consecuencias:**
 
 - @termometro{-3|El Expediente se destruye (FIN-C)}. La Mascarada de Seattle está más segura que nunca.
-- Doce años de trabajo de @ID[PNJ-04|Helen] desaparecen. Las madres de Lake City, Danny Ruiz, todos los casos que nadie más miró. Si se lo cuentan, Helen tiene que decidir qué hacer con lo que queda: su memoria. Tirada de Remordimiento para @ID[PJ-01|David], y para @ID[PJ-04|Nadia] si se juega. La relación de Piedra de toque queda dañada: el Narrador y el jugador de David deciden si se puede reparar.
+- Doce años de trabajo de @ID[PNJ-04|Helen] desaparecen. Las madres de Lake City, Danny Ruiz, todos los casos que nadie más miró. Si se lo cuentan, Helen tiene que decidir qué hacer con lo que queda: su memoria. Tirada de Remordimiento para @ID[PJ-04|Nadia], si se juega. Helen es la Piedra de toque de @ID[PJ-01|David], y la coterie destruyó lo que ella hizo: David queda tocado, y su relación con Helen, dañada. Si se puede reparar depende de lo que haga la coterie después.
 - Si Halloway ganó el Consejo, su regencia no tiene la prueba que pedía la Justicar: @ID[PNJ-08|Panhard] no la reconoce. Seattle queda en un limbo político, con dos Vástagos que dicen ser la autoridad. Gancho de crónica.
 - La coterie gana +1 Humanidad si alguien de ella se ofrece a contárselo a Helen en persona, sin Disciplinas.
 

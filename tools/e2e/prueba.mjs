@@ -25,7 +25,8 @@
  *      con ellas, y tirar A3-E04 con WOD5E (sin mirar el resultado);
  *   6. reimportar como actualización conserva lo del mundo (ownership y
  *      system de un PJ con dueño jugador, ownership de un PNJ, un handout
- *      revelado, la escena activa); el panel no pierde los <details>
+ *      revelado, la escena activa); David (PJ-01) sale como PNJ aliado (fuera
+ *      de «Personajes jugadores», token amistoso, sin linterna); el panel no pierde los <details>
  *      abiertos ni se repinta con un actor ajeno; el voto al azar de Fry se
  *      susurra; y un JUGADOR (se crea «Jugador e2e») carga data/publico.json
  *      y nunca pide data/cronica.json, y ve como texto los enlaces que no
@@ -870,7 +871,15 @@ if (hayPacks) {
   });
   const antes6 = await page.evaluate(async ([MOD, jugadorId]) => {
     const porId = id => game.actors.find(a => a.getFlag(MOD, "id") === id);
-    const pj = porId("PJ-01");
+    // Mundos de prueba viejos: David (PJ-01) era el PJ con dueño y, con
+    // dueño jugador, la importación no lo toca. Sin el jugador, se actualiza a PNJ.
+    const david = porId("PJ-01");
+    if (david && david._source.ownership[jugadorId] != null) {
+      const ownership = { ...david._source.ownership };
+      delete ownership[jugadorId];
+      await david.update({ ownership }, { recursive: false, diff: false });
+    }
+    const pj = porId("PJ-02");
     const pnj = porId("PNJ-03");
     const hambre = (pj.system.hunger?.value ?? 1) === 4 ? 3 : 4;
     await pj.update({ ownership: { [jugadorId]: 3 }, "system.hunger.value": hambre, "system.exp.value": 7 });
@@ -903,7 +912,17 @@ if (hayPacks) {
   const despues6 = await page.evaluate(([MOD, a, jugadorId]) => {
     const pj = game.actors.get(a.pj);
     const handout = game.journal.get(a.handout);
+    const david = game.actors.find(x => x.getFlag(MOD, "id") === "PJ-01");
+    const carpetaPJ = game.folders.get(pj.folder?.id);
     return {
+      david: david ? {
+        pj: david.getFlag(MOD, "pj"), conDueño: david.hasPlayerOwner, carpeta: david.folder?.name ?? null,
+        conLosPJ: !!pj.folder && david.folder?.id === pj.folder.id,
+        amistoso: david.prototypeToken.disposition === CONST.TOKEN_DISPOSITIONS.FRIENDLY,
+        linterna: !!david.prototypeToken.light?.color
+      } : null,
+      enPersonajesJugadores: (carpetaPJ?.contents ?? []).filter(x => x.getFlag(MOD, "origen") === "actor")
+        .map(x => x.getFlag(MOD, "id")).sort(),
       pjDueño: pj.ownership[jugadorId],
       hambre: pj.system.hunger?.value,
       exp: pj.system.exp?.value,
@@ -920,6 +939,11 @@ if (hayPacks) {
   }, [MOD, antes6, jugadorId]);
   console.log("  ", JSON.stringify(despues6));
   comprobar(despues6.pjDueño === 3, "el PJ sigue siendo del jugador después de actualizar");
+  comprobar(despues6.david && despues6.david.pj === false && !despues6.david.conDueño && !despues6.david.conLosPJ
+    && despues6.david.amistoso && !despues6.david.linterna,
+    `David (PJ-01) es un PNJ aliado: sin flag pj, fuera de los PJ, token amistoso y sin linterna (${JSON.stringify(despues6.david)})`);
+  comprobar(despues6.enPersonajesJugadores.join() === "PJ-02,PJ-03,PJ-04,PJ-05,PJ-06",
+    `en la carpeta de los PJ quedan PJ-02 a PJ-06 (${despues6.enPersonajesJugadores.join(", ")})`);
   comprobar(despues6.hambre === antes6.hambre && despues6.exp === 7, `el system del PJ se conserva (Hambre ${despues6.hambre}, PX ${despues6.exp})`);
   comprobar(despues6.pnjObservador === 2, "el ownership de un PNJ se conserva");
   comprobar(despues6.handout === 2 && despues6.pagina === 2, "el handout entregado sigue revelado (journal y página)");
@@ -1030,8 +1054,8 @@ if (hayPacks) {
       await pj.sheet.close();
       return r;
     };
-    out.propio = await fichaDe("PJ-01");
-    out.ajeno = await fichaDe("PJ-02");
+    out.propio = await fichaDe("PJ-02");
+    out.ajeno = await fichaDe("PJ-03");
     return out;
   }, MOD);
   console.log("  ", JSON.stringify(enlaces));
@@ -1317,7 +1341,7 @@ if (hayPacks && r.packs["aventura-en"] > 0) {
   // Antes: un PJ con dueño jugador, un handout entregado, la escena activa.
   const antes8 = await page.evaluate(async MOD => {
     const jugador = game.users.getName("Jugador e2e") ?? await User.create({ name: "Jugador e2e", role: CONST.USER_ROLES.PLAYER });
-    const pj = game.actors.find(a => a.getFlag(MOD, "id") === "PJ-01");
+    const pj = game.actors.find(a => a.getFlag(MOD, "id") === "PJ-02");
     if (pj.ownership[jugador.id] !== 3) await pj.update({ ownership: { [jugador.id]: 3 } });
     const handout = game.journal.find(j => j.getFlag(MOD, "soporte"));
     await handout.update({ "ownership.default": 2 });

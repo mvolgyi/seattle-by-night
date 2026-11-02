@@ -1,15 +1,17 @@
 ---
 nombre: "General Tone: The Supernatural Professional"
-fuente: a8f57be2f48bd3b9
+fuente: 504be42ee4a1b3f9
 ---
 
 # 🩸 General Tone: “The Supernatural Professional”
 
-*A guide to playing @ID[PJ-01|David Smith] in social scenes. Source: doc 19 (earlier source). It complements the tactical synergies on his character sheet.*
+*A guide for the Storyteller to portray @ID[PJ-01|David Smith], the coterie's allied NPC, in social scenes. Source: doc 19 (earlier source), written for whoever played him and adapted here for the Storyteller. It complements the tactical synergies on his sheet.*
+
+**With the coterie, David helps, but he doesn't lead.** He weighs in, pushes, and reacts; the decisions belong to the players. His help is +1 die to the PC who's rolling, or an action you narrate without a roll. He never resolves on his own what's the coterie's to resolve.
 
 **David Smith doesn't argue—he defines.**
 When he socializes, he isn't after sympathy or political power; he's after efficiency and truth.
-His presence should convey this:
+His presence should convey that:
 
 > “I'm not your enemy, but I'm not your friend either. I'm here to finish the job.”
 
@@ -19,20 +21,20 @@ His presence should convey this:
 
 **Narrative tools:**
 
-- Enter slowly. Watch first, speak second.
+- He comes in slowly. He observes first, speaks later.
   *(Describe how his eyes sweep the room as if he were measuring lines of fire or exits.)*
 
-- Keep your voice low but clear. Make the other person listen closely.
+- Speak for him in a low but clear voice. Make the other person have to listen closely.
 
-- Avoid gesturing. Every movement should look measured.
+- He doesn't gesture. Every movement he makes should seem measured.
 
-- Don't sit first. If you do, do it only after sizing up the surroundings.
+- He doesn't sit first. If he does, it's after sizing up the surroundings.
 
-- If the other person moves too much, follow them with your eyes, not your body: *as if you were marking them in combat*.
+- If the other person moves around too much, he follows them with his eyes, not his body: *as if marking them in combat*.
 
 💬 **Example:**
 
-> “David rests both hands on the table, without pressing down. His knuckles look like marble. He doesn't interrupt, but every time the other person pauses, the silence turns uncomfortable.”
+> “David rests both hands on the table, without pressing. His knuckles look like marble. He doesn't interrupt, but every time the other man pauses, the silence turns uncomfortable.”
 
 ## 🔥 2. ECONOMY OF WORDS (The Weight of Silence)
 
@@ -40,42 +42,42 @@ His presence should convey this:
 
 **Narrative tools:**
 
-- Answer with short or ambiguous lines: *“We'll see,” “Depends on what you bring to the table,” “That doesn't sound right to me.”*
+- He answers with short or ambiguous lines: *“We'll see,” “Depends on what you bring to the table,” “I don't like the sound of that”*.
 
 - Use long pauses, but natural ones.
 
-- Avoid explaining yourself: let the others wear themselves out justifying themselves.
+- He doesn't explain himself: he lets the others wear themselves out justifying themselves. The PCs too.
 
-- If someone asks you something you don't want to answer, deflect:
+- If someone asks him something he doesn't want to answer, he deflects:
 
   - “It's not relevant to the mission.”
   - “What matters is that we meet the objective.”
-  - “Why exactly are you interested in that?”
+  - “Why exactly do you want to know?”
 
 💬 **Example:**
 
 > “The Brujah listens to him talk for minutes. Then he nods, once. ‘You done?’ His tone isn't aggressive, but something in the way he says it sounds like a verdict.”
 
-## ⚖️ 3. BIND WITHOUT SUBMITTING (Conditional Collaboration)
+## ⚖️ 3. BOND WITHOUT SUBMITTING (Conditional Collaboration)
 
-> You cooperate, but on your own terms.
+> He cooperates, but on his own terms.
 
 **Narrative tools:**
 
-- Keep the language **operational**, not emotional: *“objective,” “phase,” “contact,” “deadline.”*
+- His language is **operational**, not emotional: *‘Objective,’ ‘phase,’ ‘contact,’ ‘deadline’*.
 
-- Avoid promises; use temporary arrangements:
+- He doesn't make promises; he proposes temporary arrangements:
 
   - “For now, we work together.”
   - “Later we'll see if we're still on the same side.”
 
-- Reinforce the implicit hierarchy: treat the other person as a colleague, not a superior, unless it's unavoidable.
+- He treats the PCs as colleagues, not as superiors or subordinates, unless it can't be helped.
 
-- Show respect only for efficiency or loyalty. Not for lineage or power.
+- He respects only efficiency or loyalty. Not lineage or power.
 
 💬 **Example:**
 
-> “Smith doesn't argue with the Ventrue's order. He just says, ‘Understood. But if the Masquerade breaks, the report has your signature on it, not mine.’”
+> “Smith doesn't argue with the Ventrue's order. He just says: ‘Understood. But if the Masquerade breaks, the report carries your signature, not mine.’”
 
 ## 🕯️ 4. HUNTER'S INTUITION (Auspex + Insight, Narrated)
 
@@ -83,32 +85,32 @@ His presence should convey this:
 
 **Narrative tools:**
 
-- Describe how he **notices microdetails**:
-  *“He sees how the other one touches his ring when he lies,” “The smell of old blood on his coat tells him he fed recently.”*
+- Describe how he **picks up on microdetails**:
+  *‘He sees the other man touch his ring when he lies,’ ‘The smell of old blood on his coat tells him he fed recently’*.
 
-- Before speaking, make small statements that reveal what you've observed:
+- Before speaking, he drops small remarks that show what he's noticed:
 
-  - “You've changed your perfume. You're expecting to see someone else.”
+  - “You changed your perfume. You're expecting to see someone else.”
   - “You don't carry that gun out of habit.”
   - “You're hungry. And hungry people make mistakes.”
 
-💬 *This isn't meant to intimidate directly, but to show that nothing goes unnoticed.*
+💬 *This isn't meant to intimidate directly, but to show that nothing gets past him.* If a PC rolls to read someone with David beside them, what he notices is worth +1 die.
 
 ## 🩶 5. HONOR OF WAR (Mature Brujah Morality)
 
-> He doesn't seek domination; he seeks respect earned through results.
+> He isn't after domination; he's after respect earned through results.
 
 **Narrative tools:**
 
-- Speak from **experience**, not from ideology.
+- He speaks from **experience**, not from ideology.
 
-  - “I've seen what happens when Cainites think they're gods. Blood in the sewers, dust at dawn.”
+  - “I've seen what happens when Cainites think they're gods. Blood in the gutters, dust at dawn.”
 
-- Reject gratuitous violence as a matter of course:
+- He rejects pointless violence matter-of-factly, the coterie's included:
 
   - “If you want to prove how strong you are, there are cemeteries full of idiots who tried.”
 
-- Acknowledge other people's skill without giving ground:
+- He acknowledges other people's skill without giving ground:
 
   - “I don't like you. But you know how to do your job. That's enough.”
 
@@ -118,13 +120,13 @@ His presence should convey this:
 
 **Narrative tools:**
 
-- When he gets angry, **he doesn't shout**: his voice gets lower and slower.
+- When he gets angry, he **doesn't shout**: his voice gets lower and slower.
 
 - Physical gestures (cracking his knuckles, moving a chair with one hand) say more than words.
 
-- Let the silence after a line last *a little longer than normal*.
+- Let the silence after one of his lines last *a little longer than normal*.
 
-- In verbal combat, he doesn't challenge: **he warns**.
+- In a war of words, he doesn't challenge: he **warns**.
 
   - “Don't bring that up again.”
   - “Lie to me again and I'll know.”
@@ -136,18 +138,18 @@ His presence should convey this:
 
 **Narrative tools:**
 
-- When he receives an instruction, he rephrases it in tactical terms:
+- When he's given an instruction, he rephrases it in tactical terms:
 
   - “Fine. You open, I clean up. Then we go our separate ways.”
 
 - If the other person tries to get close emotionally, he redirects:
 
-  - “Let's not mix the past with work.”
+  - “Let's not mix the past with the job.”
 
-- If he notices manipulation, **he doesn't confront it directly**: he files it away for later.
- (David doesn't react: *he plans*.)
+- If he notices manipulation, he **doesn't confront it directly**: he files it away for later.
+ (David doesn't react: he *plans*.)
 
-## 🩸 8. FAREWELL OR MISSION WRAP-UP
+## 🩸 8. FAREWELL OR END OF MISSION
 
 > His narrative signature: leaving the other person wondering whether he was an ally or a threat.
 
@@ -161,14 +163,14 @@ His presence should convey this:
   - “If you need me, you know how not to find me.”
   - “See you next night, if the city's still standing.”
 
-💬 *That's how he keeps the mystique of the lone hound without fully cutting his operational ties.*
+💬 *That's how he keeps the mystique of the lone hound without fully cutting the operational ties.*
 
-## 🎭 In Summary—The Perfect Balance for Cooperation
+## 🎭 In Summary—The Perfect Balance for Cooperating
 
 | Aspect | Narrative tool | Discipline it enhances |
 |---|---|---|
-| Control of the environment | Silence, fixed stare, measured movements | **Presence (Instinctive Authority)** |
-| Reading the other person | Micro-gestures, active observation | **Auspex (Heightened Senses)** |
+| Control of the surroundings | Silence, fixed stare, measured movements | **Presence (Instinctive Authority)** |
+| Reading the other person | Microgestures, active observation | **Auspex (Heightened Senses)** |
 | Tactical cooperation | Professional language, temporary arrangements | **Resolve + Leadership** |
 | Handling tension | Veiled threats, long pause | **Fortitude + Composure** |
-| Graceful exit | Short lines, cutting endings | **Potence + Intimidation** |
+| Graceful exit | Short lines, blunt endings | **Potence + Intimidation** |

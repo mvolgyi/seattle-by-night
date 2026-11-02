@@ -15,24 +15,24 @@ Cada gancho tiene el mismo formato: **Reparto** (quién aparece), **Qué pasó**
 
 | ID | Tema | Gancho | Cuándo | Foco |
 |---|---|---|---|---|
-| @ID[GAN-01] | Humanidad | El chico que sobrevivió | Después | David, Hal |
-| @ID[GAN-02] | Humanidad | La noche en que contempla a la Bestia | Durante o después | David, Nadia |
-| @ID[GAN-12] | Humanidad | La tumba visitada | Después | David |
+| @ID[GAN-01] | Humanidad | El chico que sobrevivió | Después | Hal, con David |
+| @ID[GAN-02] | Humanidad | La noche en que contempla a la Bestia | Durante o después | Nadia, con David |
+| @ID[GAN-12] | Humanidad | La tumba visitada | Después | Hal, con David |
 | @ID[GAN-03] | Hambre | Sangre marcada | Después | Toda la coterie, Ezra, Ruth |
 | @ID[GAN-11] | Hambre | El ayuno de Jun | Después (si Jun vive) | Cualquiera |
-| @ID[GAN-04] | Bestia | El viejo compañero | Después | David, Bear |
-| @ID[GAN-05] | Frenesí | Luna sobre el Snohomish | Después | Hal, David |
-| @ID[GAN-06] | Jerarquía | Caza de Sangre en Everett | Durante o después | David, Hal, Nadia |
-| @ID[GAN-07] | Jerarquía | El Arconte llama | Después | David, Celeste |
+| @ID[GAN-04] | Bestia | El viejo compañero | Después | Cualquiera, con Bear y David |
+| @ID[GAN-05] | Frenesí | Luna sobre el Snohomish | Después | Hal |
+| @ID[GAN-06] | Jerarquía | Caza de Sangre en Everett | Durante o después | Hal, Nadia |
+| @ID[GAN-07] | Jerarquía | El Arconte llama | Después | Celeste, con David |
 | @ID[GAN-08] | Mascarada | El vídeo viral | Durante o después | Cualquiera, Ezra |
-| @ID[GAN-09] | Mascarada | El superviviente del Larchmont | Después | David, Ruth |
-| @ID[GAN-10] | Sangre | Cartas desde Cluj | Final de la aventura | David |
+| @ID[GAN-09] | Mascarada | El superviviente del Larchmont | Después | Ruth, con David |
+| @ID[GAN-10] | Sangre | Cartas desde Cluj | Final de la aventura | Toda la coterie, con David |
 
 ## GAN-01 · El chico que sobrevivió {#GAN-01}
 
 **Tema:** Humanidad
 
-**Reparto:** Marcos Delgado (mortal, 45 años), David Smith (@ID[PJ-01]), Hal Brekke (@ID[PJ-05]), analista S. Hale (@ID[PNJ-21]).
+**Reparto:** Marcos Delgado (mortal, 45 años), Hal Brekke (@ID[PJ-05]), David Smith (@ID[PJ-01]), analista S. Hale (@ID[PNJ-21]).
 
 **Qué pasó:** en 1996, Marcos tenía quince años y estaba en el piso de Rainier Valley la noche en que Ray Dorsey mató a Emily Smith. Fue el único chico que sobrevivió. Antes de desmayarse vio a un hombre con una cicatriz en la cara disparar a Dorsey y arrodillarse junto a la trabajadora social. Hoy Marcos es consejero de jóvenes en el mismo barrio. Lleva treinta años buscando a ese hombre para darle las gracias.
 
@@ -40,7 +40,7 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Qué podría pasar:**
 
-- **David llega primero y se deja ver.** Marcos lo reconoce treinta años después, igual. David puede convertirlo en una nueva Piedra de toque y la pérdida de Emily duele un poco menos (+1 dado en la siguiente tirada de Remordimiento). Pero Marcos ahora sabe algo y FIRSTLIGHT va a preguntarle.
+- **La coterie llega primero y deja que David se vea.** Marcos lo reconoce treinta años después, igual. Puede convertirse en una nueva Piedra de toque para David, y la pérdida de Emily le duele un poco menos: interpretalo más entero, menos solo. Pero Marcos ahora sabe algo y FIRSTLIGHT va a preguntarle.
 - **Hal le borra el recuerdo.** Hal ya limpió esa escena una vez. Puede volver a hacerlo, esta vez con Dominación o Presencia. La Mascarada queda a salvo, pero quitarle a Marcos el único recuerdo que lo hizo ser quien es vale 1 Mancha.
 - **Hale llega primero.** Marcos le cuenta todo. El Termómetro de FIRSTLIGHT sube 2 y la Inquisición tiene un retrato robot de David. @termometro{+2|GAN-01: Hale llega primero}
 
@@ -56,7 +56,7 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Qué podría pasar:**
 
-- **Se aleja.** Helen deja de contestar, se muda, apaga el teléfono de tapa. Sigue viva, pero David pierde a su Piedra de toque. Tirada de Remordimiento al final de la historia.
+- **Se aleja.** Helen deja de contestar, se muda, apaga el teléfono de tapa. Sigue viva, pero David pierde a su Piedra de toque. Queda tocado: más callado, más duro, más cerca de la Bestia. La coterie lo nota.
 - **Dobla la apuesta.** Por fin encontró algo real. Helen exige respuestas y amenaza con publicar si no se las dan. Hay que negociar con ella: @tirada{attributes.manipulation+skills.persuasion|4|Manipulación + Persuasión (Dificultad 4)} para mantenerla callada sin usar Disciplinas. Si se usa Dominación, 1 Mancha.
 - **Empieza a investigar a quién estuvo ayudando.** Helen comienza a cruzar las fechas de los mensajes de SAFE con sus casos y encuentra el Larchmont. Si Nadia le pasa información, el descubrimiento llega antes. Si llega al fondo, la relación cambia para siempre (ver @ID[LUG-11]).
 
@@ -66,7 +66,7 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Tema:** Humanidad
 
-**Reparto:** David Smith (@ID[PJ-01]) y una persona que el Narrador elige.
+**Reparto:** Hal Brekke (@ID[PJ-05]) o el PJ que esté más cerca de David, David Smith (@ID[PJ-01]) y una persona que el Narrador elige.
 
 **Qué pasó:** desde hace unos meses, alguien deja flores frescas cada domingo en la tumba de Emily Smith (@ID[LUG-12]), envueltas en papel de periódico. David nunca deja flores. Nadie más debería saber que esa tumba importa.
 
@@ -78,8 +78,8 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Qué podría pasar:**
 
-- **David vigila la tumba y encuentra a quien deja las flores.** La conversación que sigue puede valer una nueva Convicción o romper una vieja.
-- **David deja que siga.** No pregunta. Gana +1 dado en las tiradas de Remordimiento mientras las flores sigan llegando.
+- **La coterie vigila la tumba y encuentra a quien deja las flores.** Los jugadores deciden si se lo cuentan a David o lo llevan a la tumba. Si David está en esa conversación, sale distinto: más en paz o más roto. Decidilo según lo que se diga.
+- **Nadie pregunta.** La coterie deja que siga. David lo sabe y no dice nada; mientras las flores sigan llegando, está un poco más en paz.
 - **Alguien lo usa contra él.** Si FIRSTLIGHT descubre la tumba, tiene un sitio donde esperar al Sabueso.
 
 **Enfoque:** Social.
@@ -129,7 +129,7 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 **Qué podría pasar:**
 
 - **Agente doble.** Bear mantiene la amistad con Ransom y le saca información sobre la Célula Puget. La coterie gana una fuente dentro de FIRSTLIGHT (Contactos 2 temporales). Bear tiene que mentirle a un hermano de armas todas las semanas. Si Ransom lo descubre, se acaba de golpe.
-- **La Bestia decide.** Ransom se acerca demasiado al hangar. David tiene que decidir qué hacer con él. Si lo mata, 2 Manchas y Bear deja de mirarlo igual. Si lo convierte en ghoul, Bear sabe exactamente lo que le espera a su amigo.
+- **La Bestia decide.** Ransom se acerca demasiado al hangar. David, con la Bestia cerca, quiere cerrarlo esa misma noche. La coterie decide qué hacer con él. Si lo matan, 2 Manchas para quien lo haga, y Bear deja de mirarlos igual. Si lo convierten en ghoul, Bear sabe exactamente lo que le espera a su amigo.
 - **Ransom informa.** Ransom le cuenta a Okafor lo de Bear. Termómetro +2. @termometro{+2|GAN-04: Ransom informa} Bear queda marcado y no puede volver a moverse por el puerto de día sin que lo sigan.
 
 **Enfoque:** Social y Físico.
@@ -176,8 +176,9 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Qué podría pasar:**
 
-- **David viaja.** Duval le enseña la copia 3. Tiene folios que no están en las otras dos, incluidos los que hablan de Krell. David gana el favor de un Arconte (Mawla 2 temporal), pero se ausenta de Seattle durante una historia y la ciudad sigue moviéndose sin él.
-- **David se niega.** Duval no insiste, pero toma nota. La próxima vez será una orden. Celeste, si se juega, recibe una invitación paralela de la Justicar, a quien Halloway le habló de ella.
+- **La coterie viaja con David.** Duval les enseña la copia 3. Tiene folios que no están en las otras dos, incluidos los que hablan de Krell. El PJ que trate con Duval gana el favor de un Arconte (Mawla 2 temporal), pero la coterie se ausenta de Seattle durante una historia y la ciudad sigue moviéndose sin ella.
+- **David va solo.** Si nadie lo acompaña, viaja igual. La coterie pasa una historia sin el Sabueso: sin su ayuda y con el hangar a su cargo. Vuelve con los folios de Krell.
+- **David no va.** La coterie lo convence de quedarse, o él se niega. Duval no insiste, pero toma nota. La próxima vez será una orden. Celeste, si se juega, recibe una invitación paralela de la Justicar, a quien Halloway le habló de ella.
 - **Panhard se interesa por Seattle.** Si el desenlace de @ID[AVE-01] fue @ID[FIN-B] (pacto con Halloway), la Justicar manda a Duval a la ciudad a investigar. Llega con una pregunta: ¿quién es el Príncipe ahora?
 
 **Enfoque:** Social y Mental.
@@ -208,7 +209,7 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Qué podría pasar:**
 
-- **David termina el trabajo.** Lo encuentra con ayuda de O'Connor y lo destruye. David recupera algo de lo que perdió en 2014: puede hacer una tirada de Remordimiento con +1 dado. Y antes de morir, el superviviente le cuenta algo sobre los siete inquilinos que David no sabía.
+- **Terminar el trabajo.** La coterie lo encuentra con ayuda de O'Connor y lo destruye; quién da el golpe lo deciden los jugadores. Si David está, recupera algo de lo que perdió en 2014: interpretalo más entero. Y antes de morir, el superviviente cuenta algo sobre los siete inquilinos que ni David sabía.
 - **Ruth lo encubre.** Ruth firma las tres muertes como sobredosis. La Mascarada queda a salvo por ahora, pero FIRSTLIGHT ya tenía a «R. A.» en su lista: el Termómetro sube 1 por cada informe falso. @termometro{+1|GAN-09: informe falso de «R. A.»}
 - **La familia Hecata.** Los Hecata de Tacoma saben dónde está y piden algo a cambio: que alguien abra la cisterna del Larchmont y les entregue los siete cuerpos para enterrarlos como es debido. Eso significa contarle a Helen lo de Danny Ruiz, o al menos arriesgarse a que lo sepa.
 
@@ -218,21 +219,21 @@ Ahora alguien más lo busca. La analista Hale, cruzando fragmentos del Expedient
 
 **Tema:** Sangre
 
-**Reparto:** David Smith (@ID[PJ-01]), August Krell (@ID[PNJ-12]), y quien firme las cartas.
+**Reparto:** la coterie, David Smith (@ID[PJ-01]), August Krell (@ID[PNJ-12]) y quien firme las cartas.
 
-**Qué pasó:** semanas después del final de la aventura, llega al hangar un sobre sin remitente con matasellos de Cluj-Napoca, Rumanía. Dentro hay una hoja de papel con una sola línea, escrita a mano con la letra de Marcus Vance: *«Hay dos. Ya lo sabes. Termina la lección.»* Firmado: *«M. V.»*
+**Qué pasó:** semanas después del final de la aventura, llega al hangar un sobre sin remitente con matasellos de Cluj-Napoca, Rumanía. Dentro hay una hoja de papel con una sola línea, escrita a mano con la letra de Marcus Vance: *«Hay dos. Ya lo sabes. Termina la lección.»* Firmado: *«M. V.»* Lo encuentra un PJ, no David. Qué hace con él es la primera decisión.
 
 **¿Quién la escribió?** El Narrador decide según lo que quiera hacer con la crónica:
 
-- **Vance está vivo.** Sobrevivió en 1985, cambiado de alguna forma, y sabe lo que pasó en Seattle. Abre un arco internacional en el que David tendrá que decidir si busca a su sire o lo deja enterrado.
+- **Vance está vivo.** Sobrevivió en 1985, cambiado de alguna forma, y sabe lo que pasó en Seattle. Abre un arco internacional. Si David lo sabe, la coterie tiene que decidir si lo ayuda a buscar a su sire o lo convence de dejarlo enterrado.
 - **Es Krell.** Si Krell sobrevivió a la aventura, esta es su última jugada: quiere que David crea que el padre sigue vivo para que lo busquen juntos.
 - **Es la Justicar.** Panhard leyó la copia 3 de los diarios (@ID[GAN-07]) y quiere saber qué hace el Sabueso cuando cree que su sire lo llama.
 
 **Qué podría pasar:**
 
-- **David ignora la carta.** La quema. Gana 1 punto de Fuerza de Voluntad temporal. Las cartas siguen llegando cada 14 de febrero.
-- **David responde.** Envía una respuesta a la dirección del sello. Lo que llegue de vuelta depende de quién la escribió.
-- **David busca a Krell.** Si Krell vive, lo encuentra y le enseña la carta. La conversación entre los dos hijos de Vance puede convertir a Krell en aliado o en enemigo definitivo.
+- **La queman.** Quien la encontró, o David si se la dan. Si la quema David, sale de esa noche más firme: interpretalo sin dudas durante la historia siguiente. Las cartas siguen llegando cada 14 de febrero.
+- **Responden.** La coterie, o David si se la dan, envía una respuesta a la dirección del sello. Lo que llegue de vuelta depende de quién la escribió.
+- **Buscan a Krell.** Si Krell vive, la coterie lo encuentra y le enseña la carta, con David delante o sin él. La conversación entre los dos hijos de Vance puede convertir a Krell en aliado o en enemigo definitivo.
 
 **Enfoque:** Mental y Social.
 

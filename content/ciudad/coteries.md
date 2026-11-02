@@ -27,12 +27,6 @@ Cada coterie sigue el mismo formato: nombre y apodo, miembros y agendas, costumb
 
 *Según qué personajes se jueguen. Cada agenda incluye el secreto que solo conoce el Narrador.*
 
-**David Smith** (@ID[PJ-01], Brujah). *Agenda:* recuperar el Expediente sin que Helen pague el precio.
-
-:::secreto
-*Lo que no sabe:* que tiene un hermano de sangre en la ciudad.
-:::
-
 **Celeste Arden** (@ID[PJ-02], Ventrue). *Agenda:* demostrar que vale más que su sire.
 
 :::secreto
@@ -63,6 +57,16 @@ Cada coterie sigue el mismo formato: nombre y apodo, miembros y agendas, costumb
 *Lo que no sabe:* que FIRSTLIGHT la tiene en el número uno de su lista.
 :::
 
+### Aliados, no miembros
+
+**David Smith** (@ID[PJ-01], Brujah), PNJ. El Sabueso del Sheriff. Está en el mismo disco que ellos, los convoca la noche del robo y les presta el hangar como refugio. Acompaña y ayuda a la coterie durante toda la historia, pero no es miembro. *Agenda:* recuperar el Expediente sin que Helen pague el precio.
+
+:::secreto
+*Lo que no sabe:* que tiene un hermano de sangre en la ciudad. Qué le cuenta la coterie de Krell y de Vance cuando lo descubra lo deciden los jugadores.
+:::
+
+**Tom «Bear» Whitman** (@ID[PNJ-05]), PNJ. Ghoul de David. Viene con el hangar.
+
 ### Costumbres sugeridas
 
 *Los jugadores pueden cambiarlas en la sesión cero. Son un punto de partida.*
@@ -92,9 +96,12 @@ Los muelles de Harbor Island.
 
 ### Trasfondos compartidos sugeridos
 
-- **Refugio 3** (el hangar, aportado por David): con Acceso marítimo y Arsenal.
+- **Refugio 3** (el hangar, que les presta David): con Acceso marítimo y Arsenal.
 - **Contactos 1** (puerto): a través de Bear.
-- **Aliado**: Tom «Bear» Whitman (@ID[PNJ-05]), compartido con David.
+- **Aliado**: David Smith (@ID[PJ-01]), de base. Ayuda porque cae con ellos.
+- **Aliado**: Tom «Bear» Whitman (@ID[PNJ-05]), ghoul de David, compartido con él.
+
+Según cómo termine la aventura, Rosa Iturbe (@ID[PNJ-11]) y August Krell (@ID[PNJ-12]) pueden sumarse como Aliado 2.
 
 Cada jugador puede aportar 1 punto de sus Trasfondos al fondo común.
 

@@ -21,6 +21,8 @@ export class SBN {
     ORIGEN: "origen",
     /** id del libro (PNJ-12, LUG-05, A1-E01…) dentro de los documentos generados. */
     ID_LIBRO: "id",
+    /** En los actores: `true` si la ficha es de PJ (content/pjs.json), las que lleva un jugador. */
+    PJ: "pj",
     /** En la escena que se activa al importar la crónica por primera vez. */
     LANDING: "landing",
     /**

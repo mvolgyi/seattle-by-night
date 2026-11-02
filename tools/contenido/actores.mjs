@@ -167,7 +167,8 @@ export function parsearBeneficio(texto) {
   const i = texto.indexOf(":");
   return i < 0 ? { nombre: texto.trim(), descripcion: "" } : { nombre: texto.slice(0, i).trim(), descripcion: texto.slice(i + 1).trim() };
 }
-const AMISTOSOS = new Set(["PNJ-04", "PNJ-05"]);
+// David (PJ-01) es un PNJ aliado de la coterie: amistoso, como Bear.
+const AMISTOSOS = new Set(["PJ-01", "PNJ-04", "PNJ-05"]);
 
 /** Ventajas que son Trasfondos de V5; el resto de las ventajas son Méritos. */
 const TRASFONDO = /^(Aliados?|Contactos|Fama|Influencia|Refugio|Rebaño|Recursos|Máscara|Mawla|Estatus)\b/i;
@@ -1071,6 +1072,9 @@ export async function construir(ctx) {
   }
 
   const carpetas = new Carpetas("personajes", "Actor");
+  // La carpeta de los PJ, primera (el orden sale del de creación; antes la abría
+  // David, que está en content/pnjs y ahora es PNJ).
+  carpetas.id("Personajes jugadores");
   const cuenta = {};
   for (const f of fichas().filter(tieneActor)) {
     const doc = construirActor(f, local, carpetas);

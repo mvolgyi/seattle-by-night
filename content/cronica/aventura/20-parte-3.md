@@ -39,7 +39,7 @@ La escena tiene dos versiones. **La coterie llega a tiempo** si alguien vigila a
 *Si llegan a tiempo:*
 
 :::leer
-La lluvia cae en diagonal bajo las farolas. Hay alguien en la acera de enfrente, quieto, con un abrigo largo y gris que le queda grande de hombros. No se esconde. Tiene las manos en los bolsillos y los mira como si los estuviera esperando. Cuando dan un paso hacia él, saca la mano izquierda despacio y la pone delante del cuerpo, abierta, en una guardia que David conoce. Que conoce casi.
+La lluvia cae en diagonal bajo las farolas. Hay alguien en la acera de enfrente, quieto, con un abrigo largo y gris que le queda grande de hombros. No se esconde. Tiene las manos en los bolsillos y los mira como si los estuviera esperando. Cuando dan un paso hacia él, saca la mano izquierda despacio y la pone delante del cuerpo, abierta, en una guardia. A su lado, David se queda quieto. Conoce esa guardia. Casi.
 :::
 
 *Si llegan tarde:*
@@ -50,7 +50,7 @@ La puerta está abierta. No forzada: abierta, como si quien salió quisiera que 
 
 ### Tiradas
 
-- **Si llegan a tiempo, reconocer la guardia: automático para David con @ID[LOR-01] a nivel 4.** Es la guardia invertida. El que la usa es un alumno de @ID[PNJ-06|Vance] que no terminó la lección. Y David sabe exactamente cómo romperla.
+- **Si llegan a tiempo, reconocer la guardia: sin tirada si David está con ellos.** David tiene @ID[LOR-01] a nivel 4 y lo dice en voz baja, sin dejar de mirar: «Es de Vance». Es la guardia invertida. El que la usa es un alumno de @ID[PNJ-06|Vance] que no terminó la lección. Y David sabe exactamente cómo romperla. Un PJ con @ID[LOR-01] a nivel 4 también la reconoce sin tirar.
 - **Si llegan tarde, leer la escena: @tirada{attributes.wits+skills.investigation|3|Astucia + Investigación (Dificultad 3)}.** Hubo lucha, pero breve. No hay sangre, o muy poca. Quien se llevó al rehén lo hizo con cuidado. «No lo quiere muerto», dice la escena.
 - **Seguir el rastro: @tirada{attributes.wits+skills.survival|4|Astucia + Supervivencia (Dificultad 4)}, @ID[PJ-05|Hal] con +2 dados.** Olor a lana mojada hasta un coche eléctrico que esperaba en la esquina. Las ruedas mojadas dejaron marcas hacia el sur. Si la coterie va tras él esta misma noche, llega a la Terminal 86 antes de lo previsto: ver @ID[A3-E03], «Si la coterie llega antes».
 - **El papel: @tirada{attributes.intelligence+skills.academics|2|Inteligencia + Academicismo (Dificultad 2)}.** La letra coincide con la nota a lápiz del margen de @ID[DOC-04], si la coterie la tiene.
@@ -60,9 +60,9 @@ La puerta está abierta. No forzada: abierta, como si quien salió quisiera que 
 | Opción | Qué pasa |
 |---|---|
 | **Escapar** | Poner al objetivo a salvo mientras otro distrae a Krell: @tirada{attributes.dexterity+skills.athletics|3|Destreza + Atletismo (Dificultad 3)} para llegar hasta él, y otra tirada igual para salir. Krell no persigue: si el rehén se le escapa, retrocede y vuelve a intentarlo en la Noche 7 con otro objetivo. |
-| **Manipular** | Hablar con Krell en la calle: no funciona. Solo habla con David y solo en sus condiciones. Si David le dice algo sobre Vance que Krell no sabe (por ejemplo, lo del agua fría o una frase de @ID[LOR-01]), Krell duda un turno: es el momento para que otro PJ ponga al rehén a salvo. |
-| **Combate** | Krell pelea para salir, no para ganar. Si David está en el combate, aplica la regla de la guardia invertida (Krell −2 dados en defensa cuerpo a cuerpo). Krell usa Celeridad para separarse y Salto prodigioso para subirse a un tejado. Si la coterie lo reduce a la mitad de su Salud, huye por los tejados hacia el agua. Si lo dejan incapacitado aquí, la escena @ID[A3-E03] cambia: ver allí. |
-| **Disciplinas** | **Presencia** (Pavor) sobre Krell: tiene Compostura 3 y una sola cosa que le da miedo, que es la mirada de David. Si quien lo usa es David, Krell retrocede un paso sin querer. **Dominación** sobre Krell: tiene que mirar a los ojos. Krell mira siempre a David y a nadie más. **Ofuscación**: alguien que se acerque oculto puede llevarse al rehén sin que Krell lo note (@tirada{attributes.wits+skills.stealth|4|Astucia + Sigilo, Dificultad 4}). |
+| **Manipular** | Hablar con Krell en la calle: no contesta. Solo habla con David y solo en sus condiciones. Pero escucha. Si un PJ dice algo sobre Vance que Krell no sabe (por ejemplo, lo del agua fría o una frase de @ID[LOR-01]) y David lo confirma, aunque sea con un gesto, Krell duda un turno: es el momento para que otro PJ ponga al rehén a salvo. |
+| **Combate** | Krell pelea para salir, no para ganar. Si David está en el combate, no tira: el Narrador narra cómo lo presiona con la guardia completa. Mientras tanto, Krell pierde 2 dados en defensa cuerpo a cuerpo contra el PJ que lo ataque junto a David (regla de la guardia invertida). Krell usa Celeridad para separarse y Salto prodigioso para subirse a un tejado. Si la coterie lo reduce a la mitad de su Salud, huye por los tejados hacia el agua. Si lo dejan incapacitado aquí, la escena @ID[A3-E03] cambia: ver allí. |
+| **Disciplinas** | **Presencia** (Pavor) sobre Krell: tiene Compostura 3 y una sola cosa que le da miedo, que es la mirada de David. Si quien lo usa tiene a David al lado, Krell retrocede un paso sin querer: no es la mirada del PJ la que lo asusta. **Dominación** sobre Krell: tiene que mirar a los ojos. Krell mira siempre a David y a nadie más. **Ofuscación**: alguien que se acerque oculto puede llevarse al rehén sin que Krell lo note (@tirada{attributes.wits+skills.stealth|4|Astucia + Sigilo, Dificultad 4}). |
 
 ### Guía de diálogo: August Krell
 
@@ -72,7 +72,7 @@ La puerta está abierta. No forzada: abierta, como si quien salió quisiera que 
 - **«Soltalo.»** — «Lo suelto cuando vengas. Solo. Mañana.»
 - **«¿Trabajás para Halloway?»** — Una pausa. «Trabajo para mí. Él paga.»
 - **«¿Por qué no lo mataste?»** — «Porque me lo ordenaron. —Lo mira—. Él tampoco terminaba nunca lo que le mandaban. ¿Lo sabías? Vance. Nunca obedecía del todo. Me lo enseñó eso también.»
-- **(Si alguien que no es David le habla)** — No contesta. Ni siquiera mira.
+- **(Si alguien que no es David le habla)** — No contesta. Ni siquiera mira. Si lo que dice es verdad sobre Vance, le busca la cara a David para ver si es cierto.
 
 ### Pistas
 
@@ -84,7 +84,7 @@ Ninguna nueva sobre @ID[PNJ-03|Halloway]. La escena confirma que Krell actúa po
 
 ### Notas del Narrador
 
-- **Si el rehén es Bear:** Bear se defiende. Krell lo derrota, pero Bear le rompe dos costillas y le arranca un trozo del abrigo de Vance. Bear queda con Salud a la mitad y despierta en los silos furioso consigo mismo. Si David llega tarde, este es un buen momento para entregarle en privado al jugador @ID[DOC-12], la nota de la caja fuerte. No porque Bear muera, sino porque la coterie va a buscar algo en su habitación.
+- **Si el rehén es Bear:** Bear se defiende. Krell lo derrota, pero Bear le rompe dos costillas y le arranca un trozo del abrigo de Vance. Bear queda con Salud a la mitad y despierta en los silos furioso consigo mismo. Si la coterie llega tarde, va a buscar algo en la habitación de Bear, y el PJ que abra la caja fuerte encuentra @ID[DOC-12], la nota dirigida a David. Dásela a ese jugador en privado. Si se la enseña a David, y cuándo, lo decide él.
 - **Si el rehén es Helen:** Helen ve a Krell de cerca. No sabe qué es, pero sabe que no es un hombre. Cuenta para @ID[GAN-02].
 - **Si el rehén es Lonnie:** Krell lo mantiene vivo porque cree que David lo quiere como testigo. Es verdad. Krell está empezando a pensar como David.
 
@@ -203,11 +203,23 @@ Si alguna vez el americano y el alemán se encuentran, que el americano le ense�
 
 El lugar es el elevador de grano de la Terminal 86 (@ID[LUG-16]), al norte del centro: una hilera de silos de hormigón de cuarenta metros junto al agua, con una galería de cintas transportadoras en lo alto que une los silos con el muelle. Krell espera en la galería. El rehén, si hay, está atado en una silla junto a una compuerta de carga abierta sobre la bahía, a treinta metros del agua.
 
+**Krell exige a David. La coterie decide si lo lleva y cómo.** Si la nota la encontró la coterie, también decide si se la enseña.
+
+| La coterie... | Qué pasa |
+|---|---|
+| **Lleva a David solo, como pidió Krell, y se esconde** | David sube por la escalera exterior. Los demás se acercan con la tirada de Sigilo (ver Tiradas). Escondidos, los PJs no ganan pasos: o se dejan ver, o le dan a David un teléfono abierto en el bolsillo y le soplan qué decir. Cada verdad que David repite cuenta como dicha por ese PJ. Lo de @ID[REF-01|Emily] no lo repite: eso tiene que decírselo alguien a la cara. |
+| **Llega con David, todos a la vista** | Krell lo sabe y empuja la silla hasta el borde, sin dejarla caer. Habla igual, con David. Los demás son muebles, pero los oye. |
+| **Va sin David** | Krell no habla con nadie. Pregunta una sola vez: «¿Dónde está el americano?». Después se levanta. No hay pasos ni ofertas: la escena es rescatar al rehén o pelear (Escapar o Combate). Si David se entera después, que se lo explique la coterie. |
+
 Krell dijo «solo el americano». Si la coterie viene entera y se deja ver, Krell lo sabe (@tirada{attributes.wits+skills.awareness|0|Krell: Astucia + Consciencia (7 dados)}) y empuja la silla hacia el borde, aunque no la deja caer. Quiere hablar, no matar. Pero si siente que es una trampa, se va por la compuerta y se lleva al rehén con él.
 
 **Lo que Krell quiere:** que @ID[PJ-01|David] lo vea. Que diga en voz alta que existen dos hijos de @ID[PNJ-06|Vance]. Y saber por qué Vance eligió al otro.
 
 **Lo que Krell no sabe:** que @ID[PNJ-03|Halloway] nunca le iba a dar los folios, ni el dominio de Harbor Island.
+
+**Si David no sabe que Krell es su hermano de sangre** (la coterie se guardó la pista de @ID[A2-E02]), se entera acá, de boca de Krell o de un PJ. Quién se lo dice, y si es antes de subir o arriba, delante de Krell, lo decide la coterie. Si se entera por Krell, David mira a la coterie y entiende que ellos ya lo sabían.
+
+**Lo que hace David:** está, mira, confirma. No lleva la conversación: la llevan los PJs. Krell le habla a él y no los mira a ellos nunca. Que eso incomode.
 
 :::leer
 La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería larga y estrecha, de chapa y vidrio sucio. Dentro, una cinta transportadora detenida corre de punta a punta. Huele a grano viejo y a mar. Al fondo hay una compuerta abierta sobre la bahía, por donde entran el viento y la lluvia, y frente a ella una silla con alguien atado. Sentado sobre la cinta, con los codos en las rodillas y el abrigo gris abierto, un hombre de cabeza rapada los mira llegar. No se levanta. «Ven», le dice a David. «Siéntate. Hace cincuenta años que quiero preguntarte algo.»
@@ -217,29 +229,30 @@ La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería l
 
 - **Que el resto de la coterie llegue sin ser vista:** @tirada{attributes.dexterity+skills.stealth|4|Destreza + Sigilo (Dificultad 4)} contra la @tirada{attributes.wits+skills.awareness|0|Astucia + Consciencia de Krell (7 dados)}. Hay tres accesos: la escalera exterior (la que usa David), el interior del silo vecino (@tirada{skills.athletics|3|Atletismo, Dificultad 3}, para trepar) y el agua (llegar en lancha bajo la compuerta).
 - **Leer a Krell durante la conversación:** @tirada{attributes.wits+skills.insight|3|Astucia + Perspicacia (Dificultad 3)}. Con éxito, el Narrador le dice al jugador si Krell está a punto de atacar, de irse o de llorar.
-- **La conversación:** no es una sola tirada. El Narrador lleva la cuenta de lo que dice David. Cada cosa verdadera que David le dice sobre Vance suma 1 «paso» hacia el giro de Krell. Al llegar a 3 pasos, Krell está dispuesto a escuchar una oferta. Enseñarle @ID[P-15] suma 3 pasos de golpe.
+- **La conversación:** no es una sola tirada. El Narrador lleva la cuenta de **pasos** hacia el giro de Krell. Cada cosa verdadera que un PJ le dice sobre Vance, sobre Emily o sobre la guardia, con David presente, suma 1 paso. Krell no le cree a la coterie: le cree a la cara de David. Por eso cuenta igual si David confirma, se quiebra o se enoja. Lo que cambia es lo que David piensa después de quien lo dijo. Una mentira no suma: David no la sostiene y Krell lo ve. Los pasos salen de lo que la coterie descubrió y decide contar: @ID[P-07], @ID[P-08], @ID[DOC-04], lo de @ID[REF-01|Emily] y el Larchmont. David sabe esas cosas, pero no las cuenta por su cuenta. Al llegar a 3 pasos, Krell está dispuesto a escuchar una oferta. Enseñarle @ID[P-15] suma 3 pasos de golpe.
 
 ### Opciones de la coterie
 
 | Opción | Qué pasa |
 |---|---|
-| **Escapar** | Liberar al rehén mientras David habla: un PJ escondido en el silo vecino puede llegar a la silla con @tirada{attributes.dexterity+skills.stealth|4|Destreza + Sigilo (Dificultad 4)}. Si lo logra sin que Krell lo note, el rehén está a salvo y la conversación sigue. Si Krell lo nota, se levanta y la escena pasa a Combate. |
-| **Manipular** | Esta escena es una conversación. Ver la guía de diálogo y los «pasos». Hay tres ofertas posibles cuando Krell llega a 3 pasos:<br>**1. Testigo.** «Ven conmigo ante la Primogenitura y di quién te contrató.» @tirada{attributes.manipulation+skills.persuasion|3|Manipulación + Persuasión (Dificultad 3)}. Krell acepta si David le promete que nadie lo va a destruir después. (@ID[P-12])<br>**2. Entregarlo.** «Te llevo ante el Sheriff.» Krell no acepta. Hay que reducirlo.<br>**3. La otra guardia.** «Te enseño lo que él no te enseñó.» Solo funciona si David tiene @ID[LOR-01] a nivel 4 y la coterie ha encontrado P-15, o si David conoce el folio 42. Sin tirada: Krell se queda callado un rato muy largo. Después acepta. Se convierte en testigo y en algo parecido a un hermano. |
-| **Combate** | Si la conversación se rompe o la coterie ataca, Krell pelea en serio. En la galería estrecha, la regla de la guardia invertida se aplica contra David. Krell intenta tirar a sus rivales por la compuerta (@tirada{attributes.strength+skills.brawl|0|Krell: Fuerza + Pelea} contra @tirada{attributes.dexterity+skills.athletics|0|Destreza + Atletismo}; quien cae sufre 4 de daño contundente al llegar al agua, a treinta metros). Si cae a la mitad de su Salud, se tira él al agua y desaparece. **Destruirlo** es posible si la coterie lo inmoviliza: 1 Mancha para quien dé el golpe final, salvo que lo haga en combate. |
-| **Disciplinas** | **Dominación**: Krell solo mira a David. Si David usa Dominación sobre él, funciona, pero Krell lo nota cuando termina y lo considera una traición imperdonable. Ninguna oferta posterior es posible. **Presencia** (Asombro) de David sobre Krell: +1 paso, porque es exactamente lo que Krell quiere sentir. **Auspex 4** (Toque espiritual) sobre el abrigo: Vance llevándolo en una mañana fría de Marsella, de espaldas, alejándose. |
+| **Escapar** | Liberar al rehén mientras Krell habla con David: un PJ escondido en el silo vecino puede llegar a la silla con @tirada{attributes.dexterity+skills.stealth|4|Destreza + Sigilo (Dificultad 4)}. Si lo logra sin que Krell lo note, el rehén está a salvo y la conversación sigue. Si Krell lo nota, se levanta y la escena pasa a Combate. |
+| **Manipular** | Esta escena es una conversación. Ver la guía de diálogo y los «pasos». Cuando Krell llega a 3 pasos, la coterie elige qué le ofrece. Habla un PJ. David está al lado, y Krell lo mira a él:<br>**1. Testigo.** «Vení con nosotros ante la Primogenitura y decí quién te contrató.» @tirada{attributes.manipulation+skills.persuasion|3|Manipulación + Persuasión (Dificultad 3)}, +1 dado si David lo respalda en voz alta. Krell pone una condición: que David le prometa que nadie lo va a destruir después. Si la coterie se lo pide, David lo promete. Pero cumplirlo después le toca a la coterie. (@ID[P-12])<br>**2. Entregarlo.** «Te llevamos ante el Sheriff.» Krell no acepta. Hay que reducirlo.<br>**3. La otra guardia.** «David te enseña lo que Vance no te enseñó.» La ofrece la coterie en nombre de David. Solo funciona si la coterie encontró P-15 y David leyó el folio 42: es lo que Vance le pidió, y David lo cumple. Sin tirada: Krell se queda callado un rato muy largo. Después acepta. Se convierte en testigo y en algo parecido a un hermano.<br>**4. Destruirlo.** Ver Combate. |
+| **Combate** | Si la conversación se rompe o la coterie ataca, Krell pelea en serio. David pelea con la coterie, sin tirar: el Narrador narra lo que hace. En la galería estrecha, la regla de la guardia invertida se aplica contra el PJ que ataque junto a David: Krell pierde 2 dados en defensa cuerpo a cuerpo. Krell intenta tirar a sus rivales por la compuerta (@tirada{attributes.strength+skills.brawl|0|Krell: Fuerza + Pelea} contra @tirada{attributes.dexterity+skills.athletics|0|Destreza + Atletismo}; quien cae sufre 4 de daño contundente al llegar al agua, a treinta metros). Si cae a la mitad de su Salud, se tira él al agua y desaparece. **Destruirlo** es posible si la coterie lo inmoviliza: 1 Mancha para quien dé el golpe final, salvo que lo haga en combate. Si los jugadores le piden a David que lo haga, David lo hace sin decir nada. La Mancha es de quien se lo pidió. |
+| **Disciplinas** | **Dominación**: Krell solo mira a David. Para Dominarlo, un PJ tiene que conseguir que lo mire a él. Si lo logra, funciona, pero Krell lo nota cuando termina y lo considera una traición imperdonable, de la coterie y de David. Ninguna oferta posterior es posible. **Presencia** (Asombro) de un PJ no sirve: Krell no quiere sentir eso por nadie más. Si la coterie le pide a David que use su Presencia, el Narrador lo narra sin tirar: +1 paso, porque es exactamente lo que Krell quiere sentir. **Auspex 4** (Toque espiritual) sobre el abrigo: Vance llevándolo en una mañana fría de Marsella, de espaldas, alejándose. |
 
 ### Guía de diálogo: August Krell
 
-*Muy bajo, muy despacio. Habla con David como si los demás no existieran. No hace amenazas: dice cosas.*
+*Muy bajo, muy despacio. Habla con David como si los demás no existieran. No hace amenazas: dice cosas. Cuando un PJ le habla, contesta mirando a David.*
 
-- **«¿Qué querés preguntarme?»** — «¿Por qué tú? —Pausa larga—. Yo era más rápido. Yo no le temía al agua fría. Yo le obedecía en todo. Y se fue una mañana sin decir adiós, y a ti te terminó la lección. ¿Por qué tú?»
-- **«No lo sé.»** — «Esa es la primera respuesta honesta que me dan en cincuenta años.» *(+1 paso.)*
-- **«Porque yo tenía una hija.»** — Silencio. «¿Tenía?» Si David le cuenta lo de @ID[REF-01|Emily], Krell baja la mirada por primera vez. *(+1 paso.)*
-- **«Halloway te está usando.»** — «Todos usan a todos. Él me prometió los folios donde Vance habla de mí. Y tu dominio.»
+- **«¿Qué querés preguntarle?»** — «¿Por qué tú? —Pausa larga, a David—. Yo era más rápido. Yo no le temía al agua fría. Yo le obedecía en todo. Y se fue una mañana sin decir adiós, y a ti te terminó la lección. ¿Por qué tú?»
+- **«No lo sabe.»** (un PJ, por él) — Krell mira a David. David niega con la cabeza, despacio. «Esa es la primera respuesta honesta que me dan en cincuenta años.» *(+1 paso.)*
+- **«Porque tenía una hija.»** — Silencio. «¿Tenía?» Si un PJ le cuenta lo de @ID[REF-01|Emily], Krell busca en la cara de David si es verdad. La encuentra. Baja la mirada por primera vez. *(+1 paso.)* Si quien lo cuenta es @ID[PJ-05|Hal], que estuvo en aquel piso en 1996, es la primera vez que alguno de los dos habla de esa noche. David no lo mira.
+- **«La guardia que te dejó es una cerradura.»** (si la coterie leyó @ID[DOC-04] o vio @ID[P-08]) — Krell mira a David. David levanta la mano derecha y le enseña la guardia completa, sin decir nada. Krell la mira mucho rato. «Una cerradura. —Asiente—. Y tú tienes la llave.» *(+1 paso.)*
+- **«Halloway te está usando.»** — «Todos usan a todos. Él me prometió los folios donde Vance habla de mí. Y tu dominio», dice a David.
 - **«Nunca te los iba a dar.»** (con P-15) — Krell lee los folios. Lee la nota del final dos veces. No dice nada durante mucho rato. Después: «"Un arma perfecta sin nada que la sujete." —Se ríe, una sola vez—. Tenía razón el viejo.» *(+3 pasos.)*
 - **«¿Dónde está Vance?»** — «No lo sé. Lo busqué en Cluj en el 87. No había nada. Ni ceniza.»
-- **«¿Qué querés ahora?»** (a 3 pasos o más) — «Que alguien diga en voz alta que existí. Que fui su hijo también.»
-- **(Si David acepta enseñarle la otra guardia)** — Se levanta. Por primera vez, le ofrece la mano derecha. «Entonces termina tú lo que él empezó, americano.»
+- **«¿Qué querés ahora?»** (a 3 pasos o más) — A David: «Que alguien diga en voz alta que existí. Que fui su hijo también.» Si lo dice un PJ, Krell espera a que lo diga David. Si la coterie se lo pide, David lo dice.
+- **(Si la coterie le ofrece la otra guardia)** — Se levanta. Por primera vez, le ofrece a David la mano derecha. «Entonces termina tú lo que él empezó, americano.»
 
 ### Pistas
 
@@ -249,10 +262,10 @@ La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería l
 
 | Desenlace | Consecuencias |
 |---|---|
-| **Krell como testigo** | Testifica en @ID[A4-E01]. Es la prueba más fuerte posible contra Halloway: +3 dados en la tirada final del Consejo. @ID[PNJ-01|Montgomery] quiere destruirlo después; si David lo protege, tensión con el Sheriff. |
-| **Krell aprende la otra guardia** | Igual que el anterior, y además Krell se convierte en Aliado 2 de David. David puede comprar @ID[LOR-01] a nivel 5 (Heredero del puño) sin requisito adicional. Nueva Convicción posible para David: «Terminar lo que él no terminó». |
-| **Krell entregado al Sheriff** | Montgomery lo destruye sin juicio. La coterie gana el favor del Sheriff para @ID[A3-E04] (+2 dados). Pero sin testimonio, el Consejo es más difícil. David hace una tirada de Remordimiento. |
-| **Krell destruido por la coterie** | Igual que el anterior, sin el favor del Sheriff si nadie se lo cuenta. Si quien da el golpe es David: 1 Mancha y tirada de Remordimiento. @ID[PNJ-16|Fry], en el Elíseo siguiente, lleva luto. |
+| **Krell como testigo** | Testifica en @ID[A4-E01]. Es la prueba más fuerte posible contra Halloway: +3 dados en la tirada final del Consejo. @ID[PNJ-01|Montgomery] quiere destruirlo después. David prometió que no, así que si la coterie protege a Krell, hay tensión con el Sheriff. Si no lo protege, David faltó a su palabra con su hermano, y no se lo perdona a la coterie. |
+| **Krell aprende la otra guardia** | Igual que el anterior, y además Krell pasa a ser Aliado 2 de la coterie. David sube @ID[LOR-01] a nivel 5 (Heredero del puño): desde esa noche, un PJ puede comprar LOR-01 hasta el nivel 3 con David como mentor. Para interpretarlo: David tiene algo que hacer por primera vez en años, terminar lo que Vance no terminó. |
+| **Krell entregado al Sheriff** | Montgomery lo destruye sin juicio. La coterie gana el favor del Sheriff para @ID[A3-E04] (+2 dados). Pero sin testimonio, el Consejo es más difícil. David no lo impide, pero queda tocado: la coterie entregó a su hermano para que lo destruyeran sin juicio. Desde esa noche deja de confiar en el Sheriff, y un poco en la coterie. |
+| **Krell destruido por la coterie** | Igual que el anterior, sin el favor del Sheriff si nadie se lo cuenta. Si los jugadores le pidieron a David que diera el golpe, la Mancha es de quien se lo pidió, y David no vuelve a hablar de Vance con ellos. @ID[PNJ-16|Fry], en el Elíseo siguiente, lleva luto. |
 | **Krell huye** | Vuelve a aparecer en @ID[A4-E03], de un lado o del otro, según cómo terminó la conversación. Si llegó a 3 pasos, aparece para ayudar. |
 
 ### Salidas
@@ -261,19 +274,22 @@ La escalera de servicio sube por fuera del silo, en zigzag, hasta una galería l
 
 ### Notas del Narrador
 
-- Esta es la escena más importante de la aventura para David. Dale tiempo. No hace falta que la coterie la resuelva rápido.
-- El dron de @ID[PNJ-19|Gale] graba desde fuera, a doscientos metros, sin sonido. Lo que se ve en las imágenes es a David sentado junto al asesino de los muelles, hablando tranquilamente. Eso es lo que Halloway le enseña a Montgomery.
-- Si el rehén es @ID[PNJ-05|Bear] y queda libre, Bear no le perdona a Krell la emboscada. Pero si Krell aprende la otra guardia, Bear dice, de mala gana: «Cuando lo entrenes, que sea lejos de mi taller».
+- Esta es la escena más importante de la aventura para David, y la coterie es la que carga con ella: qué le cuentan, qué dicen por él, qué le ofrecen a Krell en su nombre. Dale tiempo. No hace falta que la coterie la resuelva rápido.
+- David no resuelve la escena. Si los jugadores esperan que hable él, que el silencio dure. David mira a Krell, Krell mira a David, y la lluvia entra por la compuerta.
+- El dron de @ID[PNJ-19|Gale] graba desde fuera, a doscientos metros, sin sonido. Lo que se ve en las imágenes es a David sentado junto al asesino de los muelles, hablando tranquilamente. Eso es lo que Halloway le enseña a Montgomery. Si la coterie fue sin David, el dron graba a la coterie del Sabueso con el asesino, y a Halloway le sirve igual.
+- Si el rehén es @ID[PNJ-05|Bear] y queda libre, Bear no le perdona a Krell la emboscada. Pero si Krell aprende la otra guardia, Bear le dice a David, de mala gana: «Cuando lo entrenes, que sea lejos de mi taller».
 
 ## A3-E04 · La jauría duda {#A3-E04}
 
 ### Contexto para el Narrador
 
-@reloj{7}, al final, o comienzo de la @reloj{8}. @ID[PNJ-03|Halloway] le entrega a @ID[PNJ-01|Montgomery] lo que ha preparado durante una semana: las imágenes del dron de @ID[PJ-01|David] con @ID[PNJ-12|Krell] en los silos, una foto del abrigo de @ID[PNJ-06|Vance] sobre los hombros de Krell, una carta falsa firmada «M.V.» y dirigida a David, encontrada «en el hangar» por un ghoul de Gale (es mentira), y el rumor del Elíseo de que el Sabueso destruyó a su sire. Halloway no acusa. Solo pregunta: «¿No es curioso?».
+@reloj{7}, al final, o comienzo de la @reloj{8}. @ID[PNJ-03|Halloway] le entrega a @ID[PNJ-01|Montgomery] lo que ha preparado durante una semana: las imágenes del dron de @ID[PJ-01|David] con @ID[PNJ-12|Krell] en los silos (o de la coterie con Krell, si fue sin David), una foto del abrigo de @ID[PNJ-06|Vance] sobre los hombros de Krell, una carta falsa firmada «M.V.» y dirigida a David, encontrada «en el hangar» por un ghoul de Gale (es mentira), y el rumor del Elíseo de que el Sabueso destruyó a su sire. Halloway no acusa. Solo pregunta: «¿No es curioso?».
 
 Montgomery convoca a la coterie en la granja (@ID[LUG-02]). Esta vez los invita a entrar. Eso, como sabe @ID[PJ-05|Hal], es mala señal.
 
 La escena es un juicio sin jueces. Montgomery quiere creer a David. Pero tiene pruebas en la mesa y cuarenta y ocho años de oficio diciéndole que no crea a nadie.
+
+Montgomery le pregunta a David. David contesta lo justo («Fui a buscar al rehén») y no se explica: nunca lo hace. El resto lo tiene que decir la coterie.
 
 *Si la coterie ya le contó a Montgomery lo de Krell y le enseñó @ID[P-15] o el correo de C.H., saltá la primera mitad: Montgomery ya está convencido y la escena se convierte en una planificación del clímax.*
 
@@ -291,8 +307,8 @@ Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chim
 
 | Opción | Qué pasa |
 |---|---|
-| **Escapar** | Si la tirada central falla y la coterie decide irse, Montgomery no los detiene esa noche. Pero da una orden a sus cazarrecompensas (@ID[MEN-03]): «Que el Sabueso no vuelva al hangar». La coterie llega a la Parte 4 como fugitiva. David y cualquier PJ que lo defienda pierden 1 Estatus. |
-| **Manipular** | Ver la tirada central. Lo que más funciona con Montgomery no son los argumentos: es la honestidad. Si David admite algo que le cuesta (lo que sabe de Krell, lo que sintió en los silos, lo del Larchmont), +1 dado. |
+| **Escapar** | Si la tirada central falla y la coterie decide irse, Montgomery no los detiene esa noche. Pero da una orden a sus cazarrecompensas (@ID[MEN-03]): «Que el Sabueso no vuelva al hangar». La coterie llega a la Parte 4 como fugitiva. Cualquier PJ que defienda a David pierde 1 Estatus. David deja de ser el Sabueso hasta que esto se aclare. |
+| **Manipular** | Ver la tirada central. Lo que más funciona con Montgomery no son los argumentos: es la honestidad. Y la verdad que le cuesta es la de David. +1 dado si sale delante de Montgomery algo que a David le cuesta admitir (lo que sabe de Krell, lo que sintió en los silos, lo del Larchmont), de una de estas dos formas:<br>**Un PJ convence a David de hablar:** @tirada{attributes.charisma+skills.insight|3|Carisma + Perspicacia (Dificultad 3)}, antes de la escena o aparte, en el porche. Con éxito, David lo dice él, con pocas palabras.<br>**Un PJ lo dice por él,** con David delante. No hace falta tirada. David no lo niega, pero no le gusta que se lo saquen, y se lo hace notar a ese PJ después. |
 | **Combate** | Atacar al Sheriff en su casa: los doce perros, los seis cazarrecompensas en las caravanas y un Gangrel de Potencia de Sangre 5 con Fortaleza 4. Es una mala idea. Si la coterie sobrevive, Montgomery queda incapacitado para la Parte 4 y Halloway gana el Consejo sin oposición. |
 | **Disciplinas** | Montgomery tiene Fortaleza 4 (Mente inquebrantable). Si alguien intenta Dominación o Presencia, lo nota, y la tirada central falla automáticamente. |
 
@@ -300,8 +316,8 @@ Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chim
 
 - **(Abre él, señala la tableta)** — «Explicame esto, Sabueso.»
 - **«Es una trampa.»** — «Puede. Las trampas también son verdad a veces. —Pausa—. Te sentaste a hablar con el que mató a tres de los nuestros. Te vi hablar como hablás conmigo.»
-- **«Es mi hermano de sangre.»** (si David lo sabe y lo dice) — Montgomery se queda inmóvil. «¿Vance tuvo otro?» Larga pausa. «Por eso pelea igual. Por eso dudabas.» *(+1 dado.)*
-- **«Halloway está detrás de todo.»** — «Ya lo sé. —Los mira—. Hace cuarenta y ocho años que sé que Halloway está detrás de todo. Lo que no sé es si esta vez vos estás con él.»
+- **«Krell es su hermano de sangre.»** (si la coterie lo sabe: lo dice un PJ, o David si un PJ lo convenció de decirlo) — Montgomery se queda inmóvil. Mira a David. David no lo niega. «¿Vance tuvo otro?» Larga pausa. «Por eso pelea igual. Por eso dudabas.» *(+1 dado.)*
+- **«Halloway está detrás de todo.»** — «Ya lo sé. —Los mira—. Hace cuarenta y ocho años que sé que Halloway está detrás de todo. —A David—: Lo que no sé es si esta vez vos estás con él.»
 - **(Sobre la carta «M.V.»)** — «La encontraron en tu hangar, dicen.» Si alguien demuestra la falsificación: Montgomery coge la carta, la mira de cerca, la huele. «Tóner.» La rompe. *(+2 dados.)*
 - **(Si la tirada central sale bien)** — Se sienta por primera vez. «Bien. Entonces lo hacemos a mi manera. Mañana es el Consejo. Halloway va a pedir la regencia. —Saca un papel doblado del bolsillo: la lista de once nombres—. Si mañana sale mal, esta noche ya no importa. Si sale bien, esto se queda en mi bolsillo.»
 - **(Si la tirada central falla)** — «No te creo, Sabueso. Y eso es lo peor que me ha pasado en cincuenta años. Andate. Y no vuelvas al hangar.»
@@ -312,7 +328,7 @@ Esta vez, la puerta de la granja está abierta. Dentro hay una sala con una chim
 |---|---|
 | **Éxito con 3 o más éxitos** | Los Lobos (@ID[COT-01]) están con la coterie. En @ID[A4-E01], Montgomery entra al Consejo junto a David. En @ID[A4-E02], si hay redada, los cazarrecompensas ayudan a evacuar. En @ID[A4-E03], Montgomery espera en el muelle. |
 | **Éxito simple** | Montgomery no se pone en contra, pero tampoco ayuda abiertamente: «Demostrámelo mañana delante de todos». |
-| **Fallo** | La coterie es fugitiva. Los cazarrecompensas buscan a David. Dutch Lindqvist (@ID[MEN-03]) puede avisarles de dónde y cuándo, si la coterie se lo ganó antes. En A4-E01, David necesita entrar al Consejo sin que lo detengan en la puerta. |
+| **Fallo** | La coterie es fugitiva. Los cazarrecompensas buscan a David. Dutch Lindqvist (@ID[MEN-03]) puede avisarles de dónde y cuándo, si la coterie se lo ganó antes. En A4-E01, la coterie tiene que meter a David en el Consejo sin que lo detengan en la puerta. |
 | **Combate** | Ver Opciones. La peor salida posible. |
 
 ### Notas del Narrador

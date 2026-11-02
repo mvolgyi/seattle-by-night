@@ -15,7 +15,7 @@ Seattle es una ciudad que se mira a sí misma todo el tiempo. Tiene cámaras en 
 
 Este libro describe esa ciudad en el momento en que deja de funcionar. Presenta a los Vástagos que la gobiernan y a los que quieren gobernarla, los lugares donde se caza y se negocia, los rumores que circulan por el Elíseo y una aventura completa, *El Expediente Ward* (@ID[AVE-01]), en la que los personajes descubren que su existencia está registrada en el disco duro de una periodista mortal, y que alguien lo robó para usarlo.
 
-El libro está pensado para una coterie de 3 a 4 personajes nuevos junto a David Smith (@ID[PJ-01]), el ejecutor Brujah del Sheriff. También funciona para un solo jugador con Bear (@ID[PNJ-05]) como compañero, y en los recuadros se explica cómo adaptar cada parte.
+El libro está pensado para una coterie de 4 o 5 personajes nuevos. Los acompañan dos PNJs: David Smith (@ID[PJ-01]), el ejecutor Brujah del Sheriff, y su ghoul, Tom «Bear» Whitman (@ID[PNJ-05]). La historia gira alrededor de David, pero la viven los personajes: descubren su pasado, deciden qué le cuentan y cargan con lo que eso cueste. También funciona con un solo jugador, con uno de los personajes nuevos y David y Bear como compañeros.
 
 ## Temas y ambiente
 
@@ -28,7 +28,7 @@ Cada secreto que los Vástagos guardan lo paga un mortal: la madre que nunca sab
 Vance y David. David y Bear. Halloway y su chiquilla, Montgomery y el suyo, el Príncipe y la suya. Y Emily, la hija de David, muerta en los noventa. La aventura gira alrededor de lo que se hereda: las técnicas, las lealtades, las culpas.
 
 :::secreto
-August Krell (@ID[PNJ-12]) existe para que David vea lo que podría haber sido si Vance no lo hubiera elegido.
+August Krell (@ID[PNJ-12]) existe para que David vea lo que podría haber sido si Vance no lo hubiera elegido. Y para que la coterie tenga que decidir qué hace con los dos.
 :::
 
 ### La ciudad que todo lo registra

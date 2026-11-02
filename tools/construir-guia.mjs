@@ -411,7 +411,7 @@ const termometro = `
 /* ----------------------------------------------------- 5. personajes */
 // [clave del grupo (y de su ancla), regex sobre la carpeta castellana, nombre visible, entradilla]
 const GRUPOS = [
-  ["Personajes jugadores", /Personajes jugadores$/, L("Personajes jugadores", "Player characters"), L("La coterie: David y los conceptos nuevos. Las fichas están en el compendio de personajes.", "The coterie: David and the new concepts. The sheets are in the characters compendium.")],
+  ["Personajes jugadores", /Personajes jugadores$/, L("Personajes jugadores", "Player characters"), L("La coterie: los cinco conceptos nuevos (David y Bear, sus aliados, están más abajo). Las fichas están en el compendio de personajes.", "The coterie: the five new concepts (David and Bear, their allies, are further down). The sheets are in the characters compendium.")],
   ["Vástagos", /Vástagos/, L("Vástagos", "Kindred"), L("La Camarilla de Seattle y los que vienen de fuera.", "Seattle's Camarilla and those who come from outside.")],
   ["Mortales y ghouls", /Mortales y ghouls$/, L("Mortales y ghouls", "Mortals and ghouls"), ""],
   ["FIRSTLIGHT", /FIRSTLIGHT$/, "FIRSTLIGHT", L("La Segunda Inquisición en Seattle. La Célula Puget y su arsenal están en la sección FIRSTLIGHT.", "The Second Inquisition in Seattle. The Puget Cell and its arsenal are in the FIRSTLIGHT section.")],

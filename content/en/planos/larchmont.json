@@ -1,7 +1,7 @@
 {
   "_fuente": {
     "larchmont-planta": "9776b97525f382e5",
-    "larchmont-sotano": "3720d173f2e7a6f2"
+    "larchmont-sotano": "e1ff949e61ca52ef"
   },
   "planos": {
     "larchmont-planta": {
@@ -127,19 +127,19 @@
     },
     "larchmont-sotano": {
       "nombre": "Part 2 · The Larchmont: Boiler Room",
-      "nota": "**The basement (A2-E05).** You get here by the half-collapsed stairs (at the foot, under the shaft, a pile of wet rubble where the rain falls) or by falling down the shaft. Total darkness: there's no light. You can hear water running: an open **channel** in the floor carries the water from the rubble to the **mouth of the big storm drain** in the west wall, which lets out into the Sound.\n\n**The sealed cistern.** In the middle of the boiler room, **a slab of new concrete, lighter than the rest of the floor** (Wits + Investigation Diff. 3; automatic for David). Beneath it are the seven tenants, Danny Ruiz (REF-02) among them. **It isn't painted open:** if the coterie lifts it (Strength + Athletics Diff. 4, or automatic with Potence 2), the Storyteller places the tile `tile-cisterna-abierta` (Pending) on top and applies Thermometer +2 and David's Remorse test. **Auspex 4** on the slab: seven presences, cold, water, “Helen is going to come.”\n\n**The new flower.** Wits + Awareness Diff. 4: beside the slab, fresh barefoot prints and a very faint smell of stale Vitae (MEN-08). **They aren't painted and have no tile**: they're the reward for the roll, like the repeater in LUG-05.\n\n**The survivor (MEN-08, GAN-09).** If the Storyteller wants to bring GAN-09 forward, he's hiding in the drain (Obfuscate 3) and flees toward the water when he sees the coterie: the drain region has no map yet.\n\n**Boilers.** Two riveted iron boilers and a fuel-oil tank against the north wall, cold and rusted: they provide cover.",
+      "nota": "**The basement (A2-E05).** You reach it by the half-collapsed stairs (at the bottom, under the stairwell, a heap of wet rubble where the rain falls in) or by dropping down the stairwell. Total darkness: there's no light. Running water can be heard: an open **channel** in the floor carries the water from the rubble to the **mouth of the large drain** in the west wall, which empties into the Sound.\n\n**The sealed cistern.** In the center of the boiler room, **a slab of new concrete, lighter than the rest of the floor** (Wits + Investigation Diff. 3; no roll if David came along: he goes straight to the slab). Beneath it are the seven tenants, Danny Ruiz (REF-02) among them. **It isn't drawn open:** if the coterie lifts it (Strength + Athletics Diff. 4, or automatic with Potence 2), the Storyteller places the `tile-cisterna-abierta` tile (Pending) on top and applies Thermometer +2. If David is there, he doesn't help open it and, afterward, doesn't speak again for the rest of the night. **Auspex 4** on the slab: seven presences, cold, water, “Helen will come.”\n\n**The new flower.** Wits + Awareness Diff. 4: beside the slab, recent bare footprints and a very faint smell of stale Vitae (MEN-08). **They aren't drawn and have no tile**: they're the reward for the roll, like the repeater at LUG-05.\n\n**The survivor (MEN-08, GAN-09).** If the Storyteller wants to bring GAN-09 forward, he's hiding in the drain (Obfuscate 3) and flees toward the water when he sees the coterie: the drain region has no map yet.\n\n**Boilers.** Two riveted iron boilers and a fuel-oil tank against the north wall, cold and rusted: they provide cover.",
       "habitaciones": [
         {
-          "nombre": "Earth (northwest)"
+          "nombre": "Dirt (northwest)"
         },
         {
-          "nombre": "Earth (southwest)"
+          "nombre": "Dirt (southwest)"
         },
         {
           "nombre": "Collapsed coal bin"
         },
         {
-          "nombre": "Storm drain mouth (lets out into the Sound)"
+          "nombre": "Drain mouth (empties into the Sound)"
         },
         {
           "nombre": "Boiler room"
@@ -153,7 +153,7 @@
       ],
       "vanos": [
         {
-          "nombre": "Mouth of the big storm drain"
+          "nombre": "Mouth of the large drain"
         },
         {
           "nombre": "Foot of the stairs → boiler room"
@@ -196,13 +196,13 @@
           "nombre": "Arrival from the ground floor (foot of the stairs)"
         },
         {
-          "nombre": "Climb up to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)"
+          "nombre": "Climb to the ground floor by the half-collapsed stairs (Dexterity + Athletics Diff. 2)"
         },
         {
-          "nombre": "Fall from the shaft (rubble)"
+          "nombre": "Drop down the stairwell (rubble)"
         },
         {
-          "nombre": "Storm drain to the Sound",
+          "nombre": "Drain to the Sound",
           "pendiente": "there's no map of the drain or the Sound (GAN-09, MEN-08)"
         }
       ],

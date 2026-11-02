@@ -532,7 +532,7 @@
   "lights": [
     {
       "_id": "e9no2G5qVsFA345c",
-      "name": "Dock sodium floodlight (below, shining in through the cargo door)",
+      "name": "Dock sodium floodlight (below, shines in through the loading door)",
       "x": 2350,
       "y": 600,
       "elevation": 0,
@@ -571,7 +571,7 @@
     },
     {
       "_id": "FXZByBuaP2UmjHLt",
-      "name": "Service wall light over the gallery door",
+      "name": "Service light over the gallery door",
       "x": 290,
       "y": 440,
       "elevation": 0,
@@ -612,7 +612,7 @@
   "regions": [
     {
       "_id": "UtP4o5h2IXatltwy",
-      "name": "Arrival by the service stairs (top landing)",
+      "name": "Arrival by the service stair (top landing)",
       "color": "#2f7f8c",
       "shapes": [
         {
@@ -644,7 +644,7 @@
     },
     {
       "_id": "obTakhPgkWjzJbbv",
-      "name": "Down the service stairs (40 m to the yard)",
+      "name": "Go down the service stair (40 m to the yard)",
       "color": "#7a7a7a",
       "shapes": [
         {
@@ -670,14 +670,14 @@
           "escena": "terminal86",
           "region": "escalera-bajar",
           "estado": "pendiente",
-          "pendiente": "there's no map of the foot of the silos (the Terminal 86 yard)"
+          "pendiente": "there's no map of the foot of the silos (Terminal 86 yard)"
         }
       },
       "_key": "!scenes.regions!EaOPFdGgUnCRTLQh.obTakhPgkWjzJbbv"
     },
     {
       "_id": "gn289wGaLfSWi2jm",
-      "name": "Hatch of the neighboring silo (climbed from inside: Athletics Diff. 3)",
+      "name": "Neighboring silo hatch (climb up the inside: Athletics Diff. 3)",
       "color": "#7a7a7a",
       "shapes": [
         {
@@ -703,14 +703,14 @@
           "escena": "terminal86",
           "region": "silo-vecino",
           "estado": "pendiente",
-          "pendiente": "there's no map of the inside of the silo: whoever climbs up appears here"
+          "pendiente": "there's no map of the silo's interior: whoever climbs appears here"
         }
       },
       "_key": "!scenes.regions!EaOPFdGgUnCRTLQh.gn289wGaLfSWi2jm"
     },
     {
       "_id": "Fl3YG2fiq8FH9tpq",
-      "name": "Outside the cargo door: fall into the water, 30 m (4 blunt) / arrival from the boat",
+      "name": "Outside the loading door: fall to the water, 30 m (4 bashing) / arrival from the boat",
       "color": "#7a7a7a",
       "shapes": [
         {
@@ -823,7 +823,7 @@
   "tiles": [
     {
       "_id": "KaWVtcDZfGNvBhJz",
-      "name": "the hostage's chair, in front of the cargo door",
+      "name": "the hostage's chair, in front of the loading door",
       "texture": {
         "src": "modules/seattle-by-night/assets/tiles/tile-silla-madera.webp",
         "anchorX": 0.5,
@@ -925,7 +925,7 @@
           "escenas": [
             "A3-E03"
           ],
-          "nota": "Sitting on the belt, gray coat open. The hostage from A3-E01 is tied to the chair by the cargo door: put their token there."
+          "nota": "Sitting on the belt, his gray coat open. The hostage from A3-E01 is tied to the chair by the loading door: put their token there."
         }
       },
       "_key": "!scenes.tokens!EaOPFdGgUnCRTLQh.C9ILZNaNHACOSkFx"
@@ -945,7 +945,7 @@
       "id": "LUG-16",
       "plano": "terminal86",
       "provisional": false,
-      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.lIohEQe1KFTOCQ0U]{The Terminal 86 Grain Elevator}<br><strong>Scenes:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}</p>\n<p><strong>Arrival (A3-E03, Night 7, midnight).</strong> “The service stairs zigzag up the outside of the silo to a long, narrow gallery of sheet metal and dirty glass. Inside, a stopped conveyor belt runs end to end.” David comes in through the <strong>sheet-metal door</strong> on the west. At the far end, to the east, is the <strong>open cargo door</strong> over the bay (an open door: the Storyteller can close it), and in front of it the <strong>chair</strong> with the hostage (tile <code>tile-silla-madera</code>; Krell pushes it toward the edge if he sees the whole coterie). Krell waits, sitting on the belt. The scene has <strong>rain and wind weather</strong>: they blow in through the cargo door.</p>\n<p><strong>Heights (one floor per map).</strong> The gallery is <strong>40 m</strong> above the terminal yard (the height of the silos). The cargo door at the end opens over the water, <strong>30 m</strong> down (A3-E03). What shows through the windows and through the stair grating is painted exterior: it can&#39;t be walked; it&#39;s reached through regions.</p>\n<p><strong>The three approaches</strong> (Dexterity + Stealth Diff. 4 against Krell&#39;s Wits + Awareness, 7 dice):</p>\n<ul>\n<li><strong>The outside stairs</strong> (the ones David uses): the region “Down the service stairs” on the flight that keeps going down; the arrival point is the top landing, in front of the door.</li>\n<li><strong>The inside of the neighboring silo</strong> (Athletics Diff. 3 to climb): comes out through the floor loading hatch marked in the south aisle, about 8 m from the chair. A PC hidden there reaches the chair with Dexterity + Stealth Diff. 4.</li>\n<li><strong>The water</strong> (a boat below the cargo door): the region in front of the cargo door, on the outside.</li>\n</ul>\n<p><strong>The cargo door.</strong> Anyone who falls through it takes 4 blunt damage on hitting the water, thirty meters down. In combat, Krell tries to throw his opponents out through it (Strength + Brawl against Dexterity + Athletics); if he drops to half his Health, he jumps himself and disappears. The region outside the cargo door is the fall.</p>\n<p><strong>Off the map.</strong> Gale&#39;s drone films from 200 m away, without sound: it isn&#39;t on the map.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (1) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.Y53IKZpt8sl2sl65]{August Krell} (A3-E03): Sitting on the belt, gray coat open. The hostage from A3-E01 is tied to the chair by the cargo door: put their token there.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Down the service stairs (40 m to the yard) · Hatch of the neighboring silo (climbed from inside: Athletics Diff. 3) · Outside the cargo door: fall into the water, 30 m (4 blunt) / arrival from the boat.</p>",
+      "nota": "<p><strong>Location:</strong> @UUID[JournalEntry.lIohEQe1KFTOCQ0U]{The Terminal 86 Grain Elevator}<br><strong>Scenes:</strong> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}</p>\n<p><strong>Arrival (A3-E03, Night 7, midnight).</strong> “The service stair zigzags up the outside of the silo to a long, narrow gallery of sheet metal and dirty glass. Inside, a stopped conveyor belt runs end to end.” Krell expects David to come in through the west <strong>sheet-metal door</strong>; the coterie decides whether to bring him and who goes up with him. At the far end, to the east, is the <strong>open loading door</strong> over the bay (an open door: the Storyteller can close it), and in front of it, the <strong>chair</strong> with the hostage (tile <code>tile-silla-madera</code>; Krell pushes it toward the edge if he sees the whole coterie). Krell waits sitting on the belt. The scene has <strong>rain and wind weather</strong>: it blows in through the loading door.</p>\n<p><strong>Heights (one floor per map).</strong> The gallery is <strong>40 m</strong> above the terminal yard (the height of the silos). The loading door at the end opens over the water, <strong>30 m</strong> down (A3-E03). What you see through the windows and through the stair grating is painted exterior: you don&#39;t walk there, you reach it through regions.</p>\n<p><strong>The three approaches</strong> (Dexterity + Stealth Diff. 4 vs. Krell&#39;s Wits + Awareness, 7 dice):</p>\n<ul>\n<li><strong>The outside stair</strong> (the one David uses): region “Go down the service stair” on the flight that keeps going down; the arrival is the top landing, in front of the door.</li>\n<li><strong>The inside of the neighboring silo</strong> (Athletics Diff. 3 to climb): comes out through the floor loading hatch marked in the south aisle, about 8 m from the chair. A PC hidden there reaches the chair with Dexterity + Stealth Diff. 4.</li>\n<li><strong>The water</strong> (a boat below the loading door): region in front of the loading door, on the outside.</li>\n</ul>\n<p><strong>The loading door.</strong> Anyone who falls through it takes 4 bashing damage on hitting the water, thirty meters down. In combat, Krell tries to throw his opponents out through it (Strength + Brawl vs. Dexterity + Athletics); if he drops to half his Health, he jumps himself and disappears. The region outside the loading door is the fall.</p>\n<p><strong>Off the map.</strong> Gale&#39;s drone films from 200 m away, without sound: it isn&#39;t on the map.</p>\n\n<p class=\"sbn-moviles\">The movable furniture (1) are unlocked tiles: they can be moved, knocked over or used as a barricade.</p>\n<div class=\"sbn-figuras\"><p><strong>Placed tokens.</strong> Hidden ones are revealed from the token layer; the ones that depend on how the night went say when.</p><ul><li>@UUID[Actor.Y53IKZpt8sl2sl65]{August Krell} (A3-E03): Sitting on the belt, his gray coat open. The hostage from A3-E01 is tied to the chair by the loading door: put their token there.</li></ul></div>\n<p class=\"sbn-pendientes\"><strong>Exits without a map (grey region, leads nowhere):</strong> Go down the service stair (40 m to the yard) · Neighboring silo hatch (climb up the inside: Athletics Diff. 3) · Outside the loading door: fall to the water, 30 m (4 bashing) / arrival from the boat.</p>",
       "moviles": []
     }
   },

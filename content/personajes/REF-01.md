@@ -24,7 +24,7 @@ Su hija es la razón por la que David se toma tan en serio la Mascarada. Y tambi
 - **La noche:** David llegó minutos tarde y destruyó al Anarquista de un disparo. El refuerzo que limpió la escena mientras David seguía de rodillas fue @ID[PJ-05|Hal Brekke], con dos años de no-vida. Para la ciudad fue un ajuste de cuentas entre pandillas. Para Montgomery (@ID[PNJ-01]), el motivo por el que empezó a vigilar a su Sabueso.
 - **El superviviente:** Marcos Delgado (@ID[MEN-10]), entonces de quince años, el único chico que sobrevivió. Antes de desmayarse vio a un hombre con una cicatriz en la cara disparar a Dorsey y arrodillarse junto a la trabajadora social. Hoy es consejero de jóvenes en el mismo barrio (@ID[GAN-01]).
 - **La tumba:** @ID[LUG-12], en un cementerio al norte de la ciudad. Alguien deja flores frescas cada domingo (@ID[GAN-12]).
-- **En la aventura:** la noche de Emily es una de las dos llegadas tarde de David (la otra, el Larchmont). Se narra solo en recuerdos, nunca en detalle (herramientas de seguridad). Vance la menciona en su diario: «Tiene una hija al otro lado del mar y no habla de ella» (@ID[DOC-04]). Con Krell, «Porque yo tenía una hija» suma un paso (@ID[A3-E03]). Las cartas de @ID[GAN-10] llegan cada 14 de febrero.
+- **En la aventura:** la noche de Emily es una de las dos llegadas tarde de David (la otra, el Larchmont). Se narra solo en recuerdos, nunca en detalle (herramientas de seguridad). Vance la menciona en su diario: «Tiene una hija al otro lado del mar y no habla de ella» (@ID[DOC-04]). Con Krell, que un PJ le cuente lo de Emily, con David al lado, suma un paso (@ID[A3-E03]). Las cartas de @ID[GAN-10] llegan cada 14 de febrero.
 
 ## Quién era ella
 
@@ -171,6 +171,8 @@ Mecánicamente, como **Ancla perdida / Piedra de Toque muerta**:
   - **tiradas de Remordimiento** (el Narrador puede imponerlas como reacción emocional fuerte),
   - **Manchas extra (máculas)** si una situación le recuerda demasiado a Emily y responde con una dureza desproporcionada o, al contrario, con una compasión que rompa su código.
 
+*David es PNJ: no tira Remordimiento ni gana Manchas. Cuando la historia toca a Emily, se calla, se va o se pone duro, y esa noche no ayuda a la coterie (ver «Cuándo se quiebra» en @ID[PJ-01]).*
+
 ## Pesadillas
 
 Las pesadillas no son sutiles. Son variaciones del mismo infierno:
@@ -197,6 +199,8 @@ El Narrador puede usar estas pesadillas para:
 - justificar **penalizadores puntuales a la primera tirada de Resolución/Compostura** al despertar,
 - forzar tiradas de **Remordimiento** cuando su acción presente recuerde demasiado a esa noche.
 
+*Como PNJ, las pesadillas no se tiran: se ven. David llega tarde a la reunión, con los nudillos rotos contra la pared del hangar, y no explica nada. Bear sabe por qué, si se lo preguntan.*
+
 ## Cómo afecta a David en mesa
 
 - Siente una mezcla de **odio y necesidad** hacia su rol de ejecutor:
@@ -206,8 +210,8 @@ El Narrador puede usar estas pesadillas para:
   - tiende a ser **sobreprotector**,
   - o brutalmente frío, para no repetir el apego.
 - Cuando alguien le sugiere «usar» a mortales como cebo, como rehenes, como herramientas:
-  - puedes marcar una **tirada para resistir Frenesí o Remordimiento**,
-  - o hacer que su ira Brujah se encienda contra quien trate a los mortales como desechables.
+  - el Narrador puede tirar para que resista el **frenesí**,
+  - o hacer que su ira Brujah se encienda contra quien trate a los mortales como desechables, aunque sea un PJ.
 
 Emily, como Ancla perdida, ya no está disponible para «subirle la Humanidad». Lo que hace es lo contrario:
 

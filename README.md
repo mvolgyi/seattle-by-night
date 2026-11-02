@@ -133,6 +133,15 @@ imágenes reducidas quedan en `cache/guia/` (ignorado por git).
   V5 y H5 en inglés. Cada traducción guarda la huella del castellano del que salió:
   `npm run verificar:traduccion` avisa qué quedó desactualizado. Plan completo en
   `TRADUCCION.md`.
+- **David Smith pasa a ser PNJ.** La crónica es para 4–5 jugadores con los cinco personajes
+  nuevos (Celeste, Ezra, Nadia, Hal y Ruth). David, el Sabueso del Sheriff, los acompaña y
+  ayuda como aliado, igual que Bear. Las escenas que giraban alrededor de él (los silos con
+  Krell, el Larchmont, Salitre, el Consejo) ahora las deciden los jugadores, y su ficha tiene
+  una guía para que el Narrador lo interprete.
+- **Si ya tenías la crónica importada y un jugador llevaba a David:** «Actualizar la crónica»
+  no toca a un actor que tiene dueño jugador. Para que David pase a PNJ, sacale el dueño y
+  actualizá. Fijate también en su perfil (journal «David Smith»): si los jugadores lo veían, las
+  páginas que ya existían siguen visibles y ahora tienen texto del Narrador. Ocultalo a mano.
 
 ### 1.1.0
 
