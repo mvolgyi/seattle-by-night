@@ -1,0 +1,206 @@
+{
+  "_comentario": "Parámetros de generación de la música (tools/generar-musica.mjs, ACE-Step 1.5 XL turbo en ComfyUI). Keyed por id de pista de content/musica.json: ese archivo dice QUÉ pistas hay y su clima en castellano; éste dice CÓMO se generan. Prompt = estilos[estilo].prefijo + sujeto + estilos[estilo].sufijo + sufijo global (como tools/arte.config.json). `letra: [Instrumental]` es lo que evita que ACE-Step cante. Cada pista prueba las `semillas` y se queda con `elegida` (o con la de mejor puntaje si no hay; las `elegida` actuales salieron del puntaje y se revisaron con espectrograma y detector de voces). `duracion` es lo que se pide al modelo; bucle.mjs recorta entrada, final y cambios de sección, así que el .ogg dura menos. `descartadas` (semilla → motivo) saca semillas de la elección automática (voces, ruidos raros).",
+  "modelo": {
+    "archivos": [
+      "acestep_v1.5_xl_turbo_bf16.safetensors",
+      "qwen_0.6b_ace15.safetensors",
+      "qwen_4b_ace15.safetensors",
+      "ace_1.5_vae.safetensors"
+    ],
+    "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)"
+  },
+  "defaults": {
+    "duracion": 150,
+    "compas": "4",
+    "letra": "[Instrumental]",
+    "cfg_lm": 2,
+    "temperatura": 0.85,
+    "lufs": -20,
+    "kbps": 112,
+    "semillas": [101, 202, 303]
+  },
+  "sufijo": "Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+  "estilos": {
+    "ambiente": {
+      "prefijo": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night.",
+      "sufijo": "Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb."
+    },
+    "noir": {
+      "prefijo": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night.",
+      "sufijo": "Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation."
+    },
+    "tension": {
+      "prefijo": "Dark cinematic thriller underscore for a vampire noir story set in Seattle at night.",
+      "sufijo": "Relentless steady groove from start to end, no build-up, no drop, no breakdown, modern dark film score."
+    }
+  },
+  "pistas": {
+    "portada": {
+      "estilo": "noir",
+      "sujeto": "Slow melancholic Pacific Northwest noir theme: Seattle harbor at night in the rain, cranes and a lit ferry crossing black water. Clean electric guitar with deep reverb playing a few sparse notes, low sustained cello, warm analog synth pad, soft rain texture, a very distant ship horn. Elegant and nocturnal with an undercurrent of menace. No drums.",
+      "bpm": 60,
+      "tonalidad": "D minor",
+      "elegida": 101
+    },
+    "helen": {
+      "estilo": "ambiente",
+      "sujeto": "Intimate, sad and tense chamber ambient for a small damp apartment at 3:30 in the morning. Muted felt piano with sparse single notes, very soft low strings in pianissimo, rain against a window, the low hum of an old refrigerator. Close, fragile, grief and contained fear. No dissonant stabs, no hits.",
+      "bpm": 56,
+      "tonalidad": "A minor",
+      "elegida": 303
+    },
+    "hangar": {
+      "estilo": "noir",
+      "sujeto": "Tired late-night workshop noir in a corrugated metal hangar between shipping containers on the waterfront. Electric bass playing few notes, tremolo electric guitar, a very soft low pulse, creaking metal in the wind, water lapping against a pier, a distant cargo ship horn. Worn but safe, calm and weary.",
+      "bpm": 70,
+      "tonalidad": "E minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 606
+    },
+    "granja": {
+      "estilo": "noir",
+      "sujeto": "Dark Americana for an isolated farm in a wet Pacific Northwest forest at night, ruled by a dangerous sheriff. Slide guitar and dobro over low drones, bowed double bass, wind through wet trees, an occasional very distant dog bark. Rural authority and animal menace, brooding and slow. No banjo, no upbeat country, no western heroics.",
+      "bpm": 64,
+      "tonalidad": "G minor",
+      "elegida": 303
+    },
+    "granja-sotano": {
+      "estilo": "ambiente",
+      "sujeto": "Claustrophobic underground drone for an old stone basement and a long earthen tunnel under a farmhouse. Low sustained string drone, water drops, the slow heartbeat thump of an old boiler, wood creaking overhead. Confinement, weight, damp earth.",
+      "bpm": 50,
+      "tonalidad": "C minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 505
+    },
+    "subterraneo": {
+      "estilo": "ambiente",
+      "sujeto": "Mysterious underground ambience for the buried 1889 streets beneath Pioneer Square: brick sidewalks, boarded shop windows, violet glass skylights, a clandestine market. Detuned celesta and music box with heavy echo, pizzicato double bass, dripping water, a faraway old upright piano. Strange and ancient but not hostile. No horror stingers, no electronic beat.",
+      "bpm": 60,
+      "tonalidad": "F# minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 505
+    },
+    "eliseo": {
+      "estilo": "noir",
+      "sujeto": "Elegant, cold and hypnotic chamber music for a glass art gallery full of illuminated jellyfish sculptures where vampire nobility gathers in formal wear. Muted string quartet, harp and vibraphone, crystalline glass pads, faint distant bubbles, aquatic shimmer. Icy courtesy with knives underneath. No waltz, no aggressive bass, no danceable rhythm.",
+      "bpm": 66,
+      "tonalidad": "B minor",
+      "elegida": 303
+    },
+    "archivo": {
+      "estilo": "ambiente",
+      "sujeto": "Quiet library tension for a basement archive of old ledgers, searching papers against the clock. A ticking clock, low piano with few notes, a dusty soft pad, the rustle of pages. Silence, secrets, careful and slow. No loud percussion, no romantic melody.",
+      "bpm": 60,
+      "tonalidad": "D minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 505
+    },
+    "salitre": {
+      "estilo": "noir",
+      "sujeto": "Slow instrumental jukebox blues in a dockworkers' dive bar next to a closed shipyard, a flickering neon sign. Electric guitar with a little crunch playing laid-back licks, bass, brushed drums, quiet Hammond organ. Warm, worn, nostalgic, a little distrustful. Background for conversation, no long solos, no energetic rock.",
+      "bpm": 80,
+      "tonalidad": "A minor",
+      "elegida": 303
+    },
+    "larchmont": {
+      "estilo": "ambiente",
+      "sujeto": "Mournful haunted ambience for a burned-out four-story brick building and its dark flooded boiler room. Drone of detuned strings, ash and wind through glassless windows, running water, a broken piano striking one note now and then. Grief and lingering presence. No jump scares, no screams.",
+      "bpm": 50,
+      "tonalidad": "Bb minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 505
+    },
+    "gale-sentinel": {
+      "estilo": "tension",
+      "sujeto": "Cold corporate stealth music for infiltrating a surveillance company at two in the morning: a wall of security monitors, electronic locks, a windowless data center. Low synth pulse, muted electronic arpeggio, server room hum, relay clicks. Being watched, quiet and precise, minimal and hypnotic, can play for forty minutes without tiring. No heavy drums, no catchy melody.",
+      "bpm": 90,
+      "tonalidad": "F minor",
+      "elegida": 303
+    },
+    "firstlight": {
+      "estilo": "noir",
+      "sujeto": "Clinical, disciplined underscore for a covert hunter cell hidden inside a cybersecurity consultancy office at three in the morning: grey carpet, fluorescent lights, blinds down. Cold electronic pad, cold piano with repeated notes, a very low military pulse of brushed snare and distant timpani, fluorescent hum. Conviction, fatigue and professional fear. No action-movie epic, no religious choir.",
+      "bpm": 76,
+      "tonalidad": "C minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 505
+    },
+    "terminal86": {
+      "estilo": "tension",
+      "sujeto": "Heavy confrontation underscore in a corrugated metal gallery above grain silos at the harbor at midnight, wind blowing through an open hatch over the bay. Sparse low metallic percussion hits on sheet metal, string drone, sustained low distorted guitar, wind. Contained menace, violence about to break out, slow and heavy. No fast fight rhythm.",
+      "bpm": 70,
+      "tonalidad": "D minor",
+      "semillas": [101, 202, 303, 404, 505, 606, 707, 808, 909],
+      "descartadas": {
+        "101": "el detector de voces (AST/AudioSet) marca «Mantra»/«Chant» 0,31 a los 90 s y 0,24 a los 140 s: posible canto difónico"
+      },
+      "elegida": 707
+    },
+    "consejo": {
+      "estilo": "noir",
+      "sujeto": "Solemn underscore for a council of vampire elders in a penthouse with a glass wall over Elliott Bay. Low organ and harmonium, long sustained string chords, a very occasional soft timpani, cold celesta. Power, ceremony and judgement, restrained and slow. No full orchestral epic, nothing loud.",
+      "bpm": 60,
+      "tonalidad": "C# minor",
+      "elegida": 303
+    },
+    "boveda": {
+      "estilo": "ambiente",
+      "sujeto": "Cold secret vault three levels underground: bare concrete, a steel combination door. Low synth drone, ventilation air, transformer hum, a string chord that takes forever to resolve. Buried guilt, cold and still. No melody, no percussion.",
+      "bpm": 50,
+      "tonalidad": "F minor",
+      "elegida": 101
+    },
+    "colman": {
+      "estilo": "noir",
+      "sujeto": "Waiting and countdown in an almost empty ferry terminal under fluorescent lights at one in the morning, the last ferry lit up on black water. Fluorescent hum pad, electric piano with repeated notes ticking like a clock, a pulsing bass, a distant ship horn. Suspense, patience, the clock running out. No action, no triumphant melody.",
+      "bpm": 72,
+      "tonalidad": "A minor",
+      "elegida": 303
+    },
+    "ferry": {
+      "estilo": "noir",
+      "sujeto": "Calm-surface tension aboard a night ferry crossing Puget Sound with forty passengers in the lounge. The deep hum of ship engines as the base, nocturnal synth pad, clean electric guitar with delay, water against the hull. Quiet social tension, nobody must see anything strange. Steady, medium-slow. No fight percussion, no jump scares.",
+      "bpm": 78,
+      "tonalidad": "E minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 505
+    },
+    "ferry-climax": {
+      "estilo": "tension",
+      "sujeto": "Tense dark chase and fight underscore on the car deck of a night ferry crossing Puget Sound. Ship engine rumble as the base, insistent industrial percussion, driving low staccato strings ostinato, distorted bass, metal clanging. Urgent violence in a closed moving space. No heroic epic, no stadium rock guitars.",
+      "bpm": 120,
+      "tonalidad": "E minor",
+      "elegida": 202
+    },
+    "ciudad": {
+      "estilo": "noir",
+      "sujeto": "Urban noir in motion: driving through Seattle at night in the rain, windshield wipers, neon of Pioneer Square, the harbor. Electric bass, brushed drums, tremolo electric guitar, synth pad, rain and wet traffic texture. Moody, cool, moving forward. No elevator jazz, no catchy melody.",
+      "bpm": 76,
+      "tonalidad": "G minor",
+      "elegida": 303
+    },
+    "combate": {
+      "estilo": "tension",
+      "sujeto": "Fast, dirty supernatural fight music. Heavy percussion of taiko and low war drums, metallic hits, low string ostinato, distorted bass, aggressive dark synth. Violent, brutal, driving. No fantasy epic, no metal guitars, no cheerful rock.",
+      "bpm": 130,
+      "tonalidad": "D minor",
+      "semillas": [101, 202, 303, 404, 505, 606, 707, 808, 909],
+      "elegida": 707
+    },
+    "redada": {
+      "estilo": "tension",
+      "sujeto": "Tactical night raid by a paramilitary team with UV flashlights and a drone buzzing over the roof: precise, mechanical, fearful, the night turning into day. Military electronic pulse, dry tight percussion, drone buzz, white noise swells that rise and fall, deep low hits. No heroic epic, no melody.",
+      "bpm": 120,
+      "tonalidad": "F minor",
+      "elegida": 202
+    },
+    "epilogo": {
+      "estilo": "noir",
+      "sujeto": "Aftermath and epilogue: what remains when the tide goes out. Solo piano with lots of air and space, a cello, rain slowly easing, water of the bay. Grief, fatigue and a bitter calm, very slow. No triumphant resolution, nothing sentimental, no drums.",
+      "bpm": 54,
+      "tonalidad": "A minor",
+      "semillas": [101, 202, 303, 404, 505, 606],
+      "elegida": 606
+    }
+  }
+}

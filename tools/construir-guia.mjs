@@ -36,6 +36,7 @@ import { execFileSync } from "node:child_process";
 import crypto from "node:crypto";
 import { RAIZ, MODULO, leerJson } from "./util.mjs";
 import { ID, journals, fichas } from "./contenido/ids.mjs";
+import { pistasPorEscena, archivoDe } from "./contenido/musica.mjs";
 
 const SALIDA = path.join(RAIZ, "guia/index.html");
 const A = "../assets";
@@ -402,13 +403,17 @@ const dramatis = `
 /* --------------------------------------------------------- 6. la ciudad */
 const CIUDAD = ["CIUDAD-HISTORIA", "CIUDAD-POLITICA", "CIUDAD-RUMORES", "CIUDAD-LEYES", "CIUDAD-DISTRITOS"];
 const planosDe = lug => PLANOS.filter(p => p.lugar === lug);
+const MUSICA = pistasPorEscena();
 const figuraPlano = (pl, grande = false) => {
   const img = mapaDe(pl.id);
   if (!img) { avisos.push(`plano ${pl.id} sin mapa pintado en assets/mapas/`); return ""; }
   const escenas = (pl.escenas ?? []).map(e => enlaceLibro(typeof e === "string" ? e : e.id)).join(" · ");
+  // La pista de ambiente que suena al activar la escena (content/musica.json), si ya tiene audio.
+  const pista = MUSICA.get(pl.id)?.pista;
+  const musica = pista && fs.existsSync(path.join(RAIZ, archivoDe(pista))) ? pista.nombre : null;
   return `<figure class="plano${grande ? " grande" : ""}" id="${ANCLA.get(`Scene.${ID.escena(pl.id)}`)}">
     <button type="button" class="ampliar ${img}" data-ampliar="${esc(pl.nombre)}" style="aspect-ratio: ${pl.ancho ?? 4} / ${pl.alto ?? 3}" aria-label="Ampliar el mapa: ${esc(pl.nombre)}"><span class="lupa">Ampliar</span></button>
-    <figcaption><b>${esc(pl.nombre)}</b>${escenas ? `<span>${escenas}</span>` : ""}</figcaption>
+    <figcaption><b>${esc(pl.nombre)}</b>${escenas ? `<span>${escenas}</span>` : ""}${musica ? `<span>Música: <i>${esc(musica)}</i></span>` : ""}</figcaption>
   </figure>`;
 };
 const lugaresHtml = LUGARES.map((l, i) => {
@@ -527,13 +532,13 @@ const foundry = `
   <p class="kicker">El módulo</p>
   <h2>Cómo usar el módulo en Foundry</h2>
   <div class="pasos">
-    <div class="paso"><div class="paso-texto"><h3>1. Importar la crónica</h3><p>Activá <strong>El Expediente Ward</strong> en un mundo de <em>wod5e</em>. La primera vez que entra el Narrador, el módulo ofrece importar la aventura entera con sus carpetas: journals, actores, escenas, ítems de FIRSTLIGHT y macros. Si lo dejás para después, está en el compendio «Importar la crónica». Reimportar actualiza sin duplicar y sin pisar los PJ de los jugadores ni lo que hayas revelado.</p></div>${captura("importar.webp", "El diálogo «Importar la crónica»", "El diálogo de importación, con el aviso del Dark Pack.")}</div>
+    <div class="paso"><div class="paso-texto"><h3>1. Importar la crónica</h3><p>Activá <strong>El Expediente Ward</strong> en un mundo de <em>wod5e</em>. La primera vez que entra el Narrador, el módulo ofrece importar la aventura entera con sus carpetas: journals, actores, escenas, ítems de FIRSTLIGHT, macros y la música de ambiente. Si lo dejás para después, está en el compendio «Importar la crónica». Reimportar actualiza sin duplicar y sin pisar los PJ de los jugadores ni lo que hayas revelado.</p></div>${captura("importar.webp", "El diálogo «Importar la crónica»", "El diálogo de importación, con el aviso del Dark Pack.")}</div>
     <div class="paso"><div class="paso-texto"><h3>2. El indicador</h3><p>Sobre la barra de macros, sólo para el Narrador: el Termómetro con sus diez segmentos, la noche del Reloj de Halloway y las pistas obtenidas, con botones de más y menos. Se pliega a una píldora y abre el Panel del Narrador.</p></div>${captura("indicador.webp", "El indicador del Narrador", "Termómetro 2, noche 1 (jueves 12 de noviembre), 0 de 15 pistas.")}</div>
     <div class="paso"><div class="paso-texto"><h3>3. El Panel del Narrador</h3><p>Cuatro pestañas: <strong>Termómetro</strong> (valor, umbrales, fijar, congelar, lo que lo mueve esta noche e historial), <strong>Reloj</strong> (las ocho noches con su evento y sus escenas), <strong>Pistas</strong> (P-01 a P-15 y las pruebas sin ID) y <strong>Tiradas clave</strong> (A3-E04 y A4-E01, con la reserva calculada según las pistas y la votación del Consejo). Al cruzar un umbral, el Narrador recibe un aviso y un susurro con lo que pasa en la ciudad; en 3 y 9, con el interludio de FIRSTLIGHT que toca.</p></div>${captura("panel-termometro.webp", "El Panel del Narrador en la pestaña Termómetro", "Termómetro en 3: el panel avisa que toca el interludio INT-01.")}${captura("susurro.webp", "Susurro al Narrador al cruzar el umbral 3", "El susurro del umbral, sólo para el Narrador.")}${captura("panel-tiradas.webp", "La pestaña Tiradas clave en el Consejo", "Tiradas clave: márgenes y votación del Consejo de Primogenitura.")}</div>
     <div class="paso"><div class="paso-texto"><h3>4. Los botones de los journals</h3><p>En las escenas hay botones de tirada (tiran con el token seleccionado o el personaje del jugador), del Termómetro (con el motivo; el de las cámaras corporales respeta su tope), de pistas (marcan la pista como obtenida) y de noches del Reloj. Los enlaces llevan a la escena, el lugar, el PNJ o el documento. En esta guía, los mismos botones mueven La mesa.</p></div>${captura("journal.webp", "Un journal con botones del Termómetro y de pistas", "Ajuste a la Parte 1: botones del Termómetro, pistas y enlaces.")}</div>
     <div class="paso"><div class="paso-texto"><h3>5. Los interludios de FIRSTLIGHT</h3><p>Cuando el Termómetro cruza el 3 o el 9, los jugadores pueden llevar a la Célula Puget en un interludio corto (INT-01 a INT-03). Lo que salga deja ventajas o fisuras para la redada (INT-00).</p></div>${captura("interludio.webp", "El journal de FIRSTLIGHT jugable con INT-00", "INT-00: ventajas y fisuras para la redada.")}</div>
   </div>
-  <p class="chica">Las escenas traen los mapas de esta guía con muros, puertas, luces y los tokens colocados. Las macros del compendio abren el panel, mueven el Termómetro, marcan pistas y avanzan la noche.</p>
+  <p class="chica">Las escenas traen los mapas de esta guía con muros, puertas, luces y los tokens colocados, y su música de ambiente, que suena al activarlas (la lista «El Expediente Ward — Ambientes» tiene además pistas para lanzar a mano: Seattle de noche, Combate, La redada y Epílogo). Las macros del compendio abren el panel, mueven el Termómetro, marcan pistas y avanzan la noche.</p>
 </section>`;
 
 /* --------------------------------------------------------- 11. la mesa */

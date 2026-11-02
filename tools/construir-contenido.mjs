@@ -10,6 +10,7 @@
  *   actores.mjs    content/pnjs, pjs.json, firstlight.json      → personajes, firstlight
  *   escenas.mjs    content/planos                               → escenas
  *   macros.mjs     macros del módulo                             → macros
+ *   musica.mjs     content/musica.json                          → playlists (las escenas ya enlazan su pista)
  *   datos.mjs      pistas, tiradas y trackers para el Panel      → data/cronica.json (lo lee el módulo)
  *   aventura.mjs   todo lo anterior                             → aventura (va último)
  *
@@ -31,7 +32,7 @@ const ctx = {
 for (const p of Object.keys(PACKS)) limpiarGenerados(path.join(RAIZ, "packs-src", p));
 
 // El orden importa sólo para la Aventura, que lee lo que escribieron los demás.
-const PARTES = ["journals", "actores", "escenas", "macros", "datos", "aventura"];
+const PARTES = ["journals", "actores", "escenas", "macros", "musica", "datos", "aventura"];
 for (const parte of PARTES) {
   const archivo = path.join(import.meta.dirname, "contenido", `${parte}.mjs`);
   if (!fs.existsSync(archivo)) {

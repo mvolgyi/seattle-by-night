@@ -17,6 +17,9 @@
  *   - Los pines (Note) van a las páginas de las escenas del libro que pasan en
  *     el plano (`plano.escenas`) y al journal del lugar (`plano.lugar`), que
  *     además queda como journal de la escena (Scene.journal).
+ *   - La música de ambiente (Scene.playlist/playlistSound) sale de
+ *     content/musica.json vía tools/contenido/musica.mjs#ambienteDe, con la
+ *     clave del plano («portada» para la portada).
  *   - Los tokens salen de `plano.figuras` (posición en metros, por persona) y
  *     no de una línea `tokens:` por sala como en DVV (pinesYTokensDe): el
  *     libro dice dónde está cada uno («detrás de la barra», «en la mecedora»)
@@ -37,6 +40,7 @@ import { ID } from "./ids.mjs";
 import { cargarPlanos } from "../construir-planos.mjs";
 import { derivarMuros, derivarRegiones, mueblesMoviles, dentroDeHabitacion, normalizar, GRID_PX, PX_POR_M } from "../planos.mjs";
 import { lucesDePlano } from "../iluminacion.mjs";
+import { ambienteDe } from "./musica.mjs";
 
 const PACK = "escenas";
 const existe = rel => fs.existsSync(path.join(RAIZ, rel));
@@ -120,7 +124,8 @@ function docEscena({ id, nombre, carpeta, orden, w, h, sinGrid = false, oscurida
     journalEntryPage: null,
     walls, lights, regions, notes, tiles, tokens,
     sounds: [], drawings: [],
-    playlist: null, playlistSound: null,
+    // Ambiente (content/musica.json): suena al activar la escena. Nulo si falta el .ogg.
+    ...ambienteDe(id),
     ownership: { default: 0 },
     flags: flags("escena", { escena: id, ...extra }),
     _stats: STATS

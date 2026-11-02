@@ -12,8 +12,8 @@
  * El zip lleva SÓLO lo que el módulo carga en tiempo de juego: module.json,
  * README, LICENSE, src/ (código y estilos), templates/, lang/, data/
  * (cronica.json y publico.json, que se piden con fetch), los packs/ compilados
- * y assets/. Nada de content/, packs-src/, tools/, cache/, los .docx ni
- * node_modules. Hay que correr `npm run pack` antes: sin packs/ no hay zip.
+ * y assets/ (de assets/musica/, sólo los .ogg). Nada de content/, packs-src/,
+ * tools/, cache/, los .docx ni node_modules. Hay que correr `npm run pack` antes: sin packs/ no hay zip.
  *
  * La Guía del Narrador NO va en el zip (dentro del módulo, un jugador podría
  * abrirla por URL): se arma aparte en <salida>/guia-del-narrador.html y se sube
@@ -22,7 +22,9 @@
  * Después de armarlo lo lee de vuelta (unzip -Z1) y comprueba que esté todo
  * lo que nombra module.json (esmodules, scripts, styles, languages, packs,
  * license) y todo lo que el código y los packs piden por ruta
- * (`modules/seattle-by-night/…`, `SBN.ruta("…")`). Si falta algo, o se coló
+ * (`modules/seattle-by-night/…`, `SBN.ruta("…")`: los PlaylistSound.path de
+ * packs-src/playlists entran por acá), y que esté el .ogg de cada pista de
+ * content/musica.json. Si falta algo, o se coló
  * algo que no va, sale con error y no deja el zip.
  */
 import fs from "node:fs";
@@ -76,7 +78,8 @@ const EXCLUIR = [
   /(^|\/)\.gitkeep$/,
   /\.lock$/,          // el bloqueo que deja Foundry al abrir un paquete en desarrollo
   /^assets\/[^/]+-crudo\//, // arte sin procesar (tokens-crudo/…): se regenera, no se publica
-  /^assets\/guia\//         // capturas de la guía: van embebidas en la guía, que se publica aparte
+  /^assets\/guia\//,        // capturas de la guía: van embebidas en la guía, que se publica aparte
+  /^assets\/musica\/(?![^/]+\.ogg$)/ // de la música sólo los .ogg de la raíz (ni .wav/.flac crudos ni subcarpetas de candidatas)
 ];
 
 /** Lo que nunca puede aparecer en el zip (por si alguien amplía INCLUIR). */
@@ -85,6 +88,16 @@ const PROHIBIDO = [/^content\//, /^packs-src\//, /^tools\//, /^cache\//, /^node_
 
 /** Lo que el módulo pide con fetch o por ruta sin que module.json lo nombre (constantes.mjs). */
 const REQUERIDOS = ["data/cronica.json", "data/publico.json"];
+
+/**
+ * El audio de content/musica.json (assets/musica/<id>.ogg). Sin él, el build
+ * deja la pista afuera y la escena muda sin error (es sólo un aviso, para
+ * poder construir antes de tener la música); en un release, no.
+ */
+const MUSICA = fs.existsSync(path.join(RAIZ, "content/musica.json"))
+  ? JSON.parse(fs.readFileSync(path.join(RAIZ, "content/musica.json"), "utf8")).listas
+    .flatMap(l => l.pistas.map(p => `assets/musica/${p.id}.ogg`))
+  : [];
 
 function recorrer(rel, out = []) {
   const abs = path.join(RAIZ, rel);
@@ -141,6 +154,7 @@ for (const p of manifest.packs ?? []) {
   if (!hay(`${p.path}/CURRENT`)) errores.push(`module.json packs: «${p.path}» no está compilado en el zip`);
 }
 for (const rel of REQUERIDOS) if (!hay(rel)) errores.push(`«${rel}» (lo pide el módulo con fetch) no está en el zip`);
+for (const rel of MUSICA) if (!hay(rel)) errores.push(`«${rel}» (una pista de content/musica.json) no está en el zip: falta generar el audio`);
 
 // 2. Lo que el código, las plantillas y los packs piden por ruta.
 const PREFIJO = new RegExp(`modules/${MODULO}/([^"'\\s)<>\\\\]+)`, "g");

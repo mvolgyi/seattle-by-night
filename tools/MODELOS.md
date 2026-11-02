@@ -41,6 +41,7 @@ y se convierte a WebP del lado de `comfy.mjs`. `plano-controlnet` guarda tambié
 (`{{PREFIJO}}-control`) y `recortar-birefnet` la máscara (`{{PREFIJO}}-mascara`), para revisar.
 
 ### Qué hace cada workflow
+| `musica-acestep.json` | ACE-Step 1.5 XL turbo + LM 4B (nativos: `DualCLIPLoader` tipo `ace`, `TextEncodeAceStepAudio1.5`, `EmptyAceStep1.5LatentAudio`, `VAEDecodeAudio`) | 8 pasos, cfg 1, `euler`/`simple`, shift 3 (AuraFlow), LM cfg `CFG_LM` 2, temperatura 0,85, top_p 0,9 | Calcado del template oficial `audio_ace_step1_5_xl_turbo` de ComfyUI. Marcadores propios: `TAGS` (prompt), `LETRA` (`[Instrumental]`: sin eso canta), `BPM`, `DURACION` (s), `TONALIDAD` («D minor»), `COMPAS` («4»), `CFG_LM`, `TEMPERATURA`. Antes de guardar baja 12 dB (`AudioAdjustVolume`): el decodificador da picos de hasta +3,5 dBFS y el FLAC de 16 bits de `SaveAudio` los recorta. Sale FLAC 48 kHz estéreo; `generar-musica.mjs` lo pasa por `bucle.mjs` (bucle, −20 LUFS, Ogg Vorbis 112 kbps). |
 
 | Workflow | Modelo | Ajustes fijos | Notas |
 |---|---|---|---|
@@ -76,6 +77,10 @@ Rutas relativas a `~/ComfyUI/models/`. Tamaño en bytes.
 | `seedvr2_7b_fp8_e4m3fn.safetensors` | `diffusion_models/` | [Comfy-Org/SeedVR2](https://huggingface.co/Comfy-Org/SeedVR2) (original [ByteDance-Seed/SeedVR2-7B](https://huggingface.co/ByteDance-Seed/SeedVR2-7B)) | Apache 2.0 | 8240979248 | `5065e77d647dd553d9090a81e20d6de590d931a61df79d785e008433926ee418` | Alternativa 7B: más suave/limpio, menos textura de pincel que el 3B |
 | `seedvr2_ema_vae_fp16.safetensors` | `vae/` | [Comfy-Org/SeedVR2](https://huggingface.co/Comfy-Org/SeedVR2) | Apache 2.0 | 501324814 | `20678548f420d98d26f11442d3528f8b8c94e57ee046ef93dbb7633da8612ca1` | VAE de SeedVR2 |
 | `birefnet.safetensors` | `background_removal/` | [Comfy-Org/BiRefNet](https://huggingface.co/Comfy-Org/BiRefNet) (original [ZhengPeng7/BiRefNet](https://huggingface.co/ZhengPeng7/BiRefNet)) | MIT (ambas páginas) | 444473596 | `9ab37426bf4de0567af6b5d21b16151357149139362e6e8992021b8ce356a154` | Recorte con alfa de tokens y tiles. Nodos nativos `LoadBackgroundRemovalModel` + `RemoveBackground` |
+| `acestep_v1.5_xl_turbo_bf16.safetensors` | `diffusion_models/` | [Comfy-Org/ACE-Step-1.5](https://huggingface.co/Comfy-Org/ACE-Step-1.5) (antes `Comfy-Org/ace_step_1.5_ComfyUI_files`, que redirige; original [ACE-Step/acestep-v15-xl-turbo](https://huggingface.co/ACE-Step/acestep-v15-xl-turbo)) | MIT (original; la tarjeta dice «Generated music can be used for commercial purposes») + Apache 2.0 (reempaquetado). Código: MIT ([LICENSE](https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE)). Leído el 2026-11-01 | 9974719892 | `86a1afb0a1f711f0e3304ff65d874df3ae6783db683dcf982513fb9b6d14ae71` | Música: DiT de ACE-Step 1.5 XL destilado a 8 pasos (`musica-acestep`) |
+| `qwen_4b_ace15.safetensors` | `text_encoders/` | [Comfy-Org/ACE-Step-1.5](https://huggingface.co/Comfy-Org/ACE-Step-1.5) (original [ACE-Step/acestep-5Hz-lm-4B](https://huggingface.co/ACE-Step/acestep-5Hz-lm-4B)) | MIT + Apache 2.0 (reempaquetado) | 8379154232 | `ffe5ffb855086c2ab55e467e9859fb01894781020a0376484dd19de166b79873` | LM de ACE-Step que planifica la pieza (códigos de audio a 5 Hz); el más grande y el que mejor sigue el prompt |
+| `qwen_0.6b_ace15.safetensors` | `text_encoders/` | [Comfy-Org/ACE-Step-1.5](https://huggingface.co/Comfy-Org/ACE-Step-1.5) (original: `Qwen3-Embedding-0.6B` dentro de [ACE-Step/Ace-Step1.5](https://huggingface.co/ACE-Step/Ace-Step1.5); base [Qwen/Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)) | MIT (ACE-Step) / Apache 2.0 (Qwen y reempaquetado) | 1191588248 | `fd4590c82153b8ddb67e15a2e7aaa8afa8b83a858c8a9b82a4831063156aa7a7` | Codificador del texto (tags) y de la letra de ACE-Step |
+| `ace_1.5_vae.safetensors` | `vae/` | [Comfy-Org/ACE-Step-1.5](https://huggingface.co/Comfy-Org/ACE-Step-1.5) (original: `vae/` de [ACE-Step/Ace-Step1.5](https://huggingface.co/ACE-Step/Ace-Step1.5)) | MIT + Apache 2.0 (reempaquetado) | 337431732 | `6de92e3a862acd287e08b024ac90f0783a8635451b728721a33ff03565bcb2bb` | VAE de audio de ACE-Step 1.5 (48 kHz estéreo) |
 
 Instalado y **prohibido**: `checkpoints/flux1-dev-fp8.safetensors` (FLUX.1 [dev] Non-Commercial).
 No se usa ni se borra.
@@ -92,6 +97,23 @@ BiRefNet (`comfy_extras/nodes_bg_removal.py`, carpeta `models/background_removal
 de Z-Image (`comfy_extras/nodes_model_patch.py`: `ModelPatchLoader` detecta el archivo por sus
 claves; la 2.0 tiene el refiner en cero y ComfyUI la marca como `broken`), FLUX.2 klein
 (`CLIPLoader` tipo `flux2`, `Flux2Scheduler`, `EmptyFlux2LatentImage`).
+
+## Música (ACE-Step 1.5) y análisis de audio
+
+`tools/generar-musica.mjs` genera las pistas de `content/musica.json` con los parámetros de
+`tools/musica.config.json` (ver los comentarios de esos archivos). Por qué XL turbo + LM 4B: es la
+combinación de más calidad que publica ACE-Step; según su tarjeta el XL pide ≥ 20 GB sin
+descarga a RAM, pero con la DynamicVRAM de ComfyUI anda en los 16 GB (LM de 8,4 GB y DiT de 10 GB no entran juntos:
+ComfyUI descarga a RAM lo que no entra). No se bajaron el turbo común (`acestep_v1.5_turbo`) ni el LM 1.7B.
+
+Para revisar las pistas sin escucharlas (la elección de semilla y la detección de voces) se usó
+un clasificador de AudioSet. **No genera nada que se publique**; vive fuera de ComfyUI, en
+`cache/modelos/ast-audioset/` (ignorado por git):
+
+| Archivo | Repo | Licencia | Tamaño | sha256 | Para qué |
+|---|---|---|---|---|---|
+| `model.safetensors` (+ `config.json`, `preprocessor_config.json`), revisión `f826b80d` | [MIT/ast-finetuned-audioset-10-10-0.4593](https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593) (código [YuanGongND/ast](https://github.com/YuanGongND/ast)) | BSD 3-Clause (ambas páginas; leído el 2026-11-01) | 346404948 | `ae0c1e2ad4e1381d851fa9bf298ba13ebc9c5a914cdee2dbe427a6583869924d` | Detector de voces: probabilidad por tramo de 10 s de «Singing», «Choir», «Vocal music», «Humming»… Control positivo (ACE-Step con letra cantada): 0,25; pistas instrumentales: ≤ 0,05. Corre con `transformers` del venv de ComfyUI, en CPU |
+
 
 ## Datos geográficos
 
@@ -149,3 +171,4 @@ después de `POST /free` (modelos fuera de VRAM, pero en caché de disco/RAM).
 | `plano-zimage` como pasada de detalle (canny, 8 pasos) | mosaico 1152×1152 | — | 8–16 s por mosaico | ≈15 GB |
 | `detalle-klein` (8 pasos, denoise 0,4–0,75) | mosaico 1152×1152 | — | 4–12 s por mosaico | ≈15 GB |
 | `pintar-planos --solo helen` completo (klein + SeedVR2 7B + detalle 16+12 mosaicos + grading) | 21×20 m | — | ≈400 s (16 + 8 + ≈300 s de detalle) | — |
+| `musica-acestep` (XL turbo + LM 4B, 8 pasos) + `generar-musica` | 150 s de audio, 48 kHz estéreo (2026-11-01/02) | ≈ 20 s (la primera de cada tanda) | 17,6–22,6 s, mediana 17,9 s por candidato (≈ 8× tiempo real); 102 candidatos = 31 min de GPU, ≈ 1 h con análisis | 15,5–15,8 GB (base escritorio ≈ 3,1–3,5 GB). GPU 37–50 °C; RAM disponible ≥ 22 GB |

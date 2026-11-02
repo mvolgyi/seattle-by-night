@@ -14,7 +14,9 @@
  *      pistas, noche, el hook sbnEstado y los susurros al Narrador;
  *   3. el indicador del Narrador (+/− y plegado);
  *   4. si los packs están compilados: importar la Aventura (por el diálogo
- *      de bienvenida o por la API), que haya journals/actores/escenas, un
+ *      de bienvenida o por la API), que haya journals/actores/escenas, que
+ *      cada escena con pista en content/musica.json quede con su
+ *      playlist/playlistSound (y el .ogg se sirva), un
  *      botón de Termómetro y uno de pista apretados desde un journal real,
  *      y la escena de Helen (LUG-05) abierta;
  *   5. el Panel del Narrador: se abre desde la API, el indicador y la barra
@@ -47,10 +49,12 @@ import { chromium } from "playwright-core";
 import os from "node:os";
 import path from "node:path";
 import fs from "node:fs";
+import { idEstable } from "../util.mjs";
 
 const URL = process.env.SBN_FOUNDRY_URL ?? "http://localhost:30099";
 const MOD = "seattle-by-night";
 const CAPTURAS = path.resolve(import.meta.dirname, "capturas");
+const RAIZ_REPO = path.resolve(import.meta.dirname, "../..");
 fs.mkdirSync(CAPTURAS, { recursive: true });
 
 /** El Chromium que Playwright deja en ~/.cache/ms-playwright, el más nuevo. */
@@ -319,6 +323,38 @@ if (hayPacks) {
     else console.log(`  · (no es la primera importación: la escena activa no se toca: ${imp.activa})`);
   }
   else console.log("  · (ninguna escena con flag landing)");
+
+  // Música (content/musica.json): cada escena con pista quedó enlazada a una
+  // Playlist y un PlaylistSound que existen en el mundo, con el audio servido.
+  const musica = JSON.parse(fs.readFileSync(path.join(RAIZ_REPO, "content/musica.json"), "utf8"));
+  const esperadas = musica.listas.flatMap(l => l.pistas.flatMap(p => (p.escenas ?? []).map(escena => ({
+    escena, pista: p.id, nombre: p.nombre, playlist: idEstable(`playlist:${l.id}`), sound: idEstable(`pista:${l.id}:${p.id}`),
+    audio: fs.existsSync(path.join(RAIZ_REPO, `assets/musica/${p.id}.ogg`))
+  }))));
+  const sinAudio = [...new Set(esperadas.filter(e => !e.audio).map(e => e.pista))];
+  comprobar(!sinAudio.length, `todas las pistas con escena tienen su .ogg en assets/musica${sinAudio.length ? ` (faltan: ${sinAudio.join(", ")})` : ""}`);
+  const mus = await page.evaluate(async ([MOD, esperadas]) => {
+    const malas = [];
+    const rutas = new Set();
+    for (const e of esperadas.filter(x => x.audio)) {
+      const s = game.scenes.find(x => x.getFlag(MOD, "escena") === e.escena);
+      if (!s) { malas.push(`${e.escena}: no está en el mundo`); continue; }
+      const pl = s.playlist, snd = s.playlistSound;
+      if (pl?.id !== e.playlist) malas.push(`${e.escena}: playlist ${pl?.id ?? "null"} (esperaba ${e.playlist})`);
+      else if (snd?.id !== e.sound || snd.parent !== pl) malas.push(`${e.escena}: playlistSound ${snd?.id ?? "null"} (esperaba ${e.sound}, «${e.nombre}»)`);
+      else if (!snd.repeat || !snd.path?.endsWith(`/assets/musica/${e.pista}.ogg`)) malas.push(`${e.escena}: el sonido no repite o apunta a ${snd.path}`);
+      else rutas.add(snd.path);
+    }
+    // El audio se sirve (no basta con que el pack lo nombre).
+    for (const r of rutas) {
+      const res = await fetch(r, { method: "HEAD" }).catch(() => null);
+      if (!res?.ok) malas.push(`${r}: HTTP ${res?.status ?? "error"}`);
+    }
+    return { listas: game.playlists.filter(p => p.getFlag(MOD, "origen")).length, enlazadas: esperadas.filter(x => x.audio).length, malas };
+  }, [MOD, esperadas]);
+  comprobar(mus.listas > 0, `hay playlists importadas (${mus.listas})`);
+  comprobar(!mus.malas.length, `cada escena con pista suena con su playlist/playlistSound (${mus.enlazadas} escenas)` +
+    (mus.malas.length ? `: ${mus.malas.join("; ")}` : ""));
 
   // Journal real con botones de Termómetro y de pista.
   const buscar = async marcador => page.evaluate(([MOD, marcador]) => {
@@ -822,7 +858,17 @@ if (hayPacks) {
     // Una página agregada a mano a un journal del módulo.
     const conAgregada = game.journal.find(j => j.getFlag(MOD, "id") === "COMO-USAR");
     const [agregada] = await conAgregada.createEmbeddedDocuments("JournalEntryPage", [{ name: "e2e: nota de mesa", type: "text", ownership: { default: 0 }, text: { content: "<p>a mano</p>" } }]);
+    // Playlist: un volumen tocado por el Narrador y un sonido agregado a mano.
+    const lista = game.playlists.find(p => p.getFlag(MOD, "origen") === "playlist");
+    let musica = null;
+    if (lista?.sounds.size) {
+      const sonido = lista.sounds.contents[0];
+      await sonido.update({ volume: 0.11 });
+      const [mano] = await lista.createEmbeddedDocuments("PlaylistSound", [{ name: "e2e: a mano", path: sonido.path }]);
+      musica = { lista: lista.id, sonido: sonido.id, mano: mano.id };
+    }
     return {
+      musica,
       pj: pj.id, pnj: pnj.id, hambre, handout: handout.id, pagina: handout.pages.contents[0].id,
       agregada: agregada.id, journalAgregada: conAgregada.id, activa: game.scenes.active?.id ?? null
     };
@@ -841,7 +887,11 @@ if (hayPacks) {
       handout: handout.ownership.default,
       pagina: handout.pages.get(a.pagina)?.ownership.default,
       agregada: !!game.journal.get(a.journalAgregada).pages.get(a.agregada),
-      activa: game.scenes.active?.id ?? null
+      activa: game.scenes.active?.id ?? null,
+      musica: a.musica ? {
+        volumen: game.playlists.get(a.musica.lista)?.sounds.get(a.musica.sonido)?.volume,
+        mano: !!game.playlists.get(a.musica.lista)?.sounds.get(a.musica.mano)
+      } : null
     };
   }, [MOD, antes6, jugadorId]);
   console.log("  ", JSON.stringify(despues6));
@@ -851,6 +901,9 @@ if (hayPacks) {
   comprobar(despues6.handout === 2 && despues6.pagina === 2, "el handout entregado sigue revelado (journal y página)");
   comprobar(despues6.agregada, "la página agregada a mano a un journal del módulo se conserva");
   comprobar(despues6.activa === antes6.activa, "la escena activa no cambia al actualizar");
+  if (antes6.musica) {
+    comprobar(despues6.musica?.volumen === 0.11 && despues6.musica?.mano, "la playlist conserva el volumen tocado y el sonido agregado a mano");
+  } else console.log("  · (sin pistas en la playlist: falta el audio)");
 
   // Panel: los <details> abiertos sobreviven a un cambio; un actor ajeno no lo repinta.
   await page.evaluate(MOD => game.modules.get(MOD).api.abrirPanel({ tab: "termometro" }), MOD);

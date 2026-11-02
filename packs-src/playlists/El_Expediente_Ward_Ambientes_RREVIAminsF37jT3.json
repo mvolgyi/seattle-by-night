@@ -1,0 +1,532 @@
+{
+  "_id": "RREVIAminsF37jT3",
+  "_key": "!playlists!RREVIAminsF37jT3",
+  "name": "El Expediente Ward — Ambientes",
+  "description": "Una pista de ambiente por escena: suena sola al activar la escena. Las que no tienen escena (Seattle de noche, Combate, La redada, Epílogo) se lanzan a mano.",
+  "sounds": [
+    {
+      "_id": "xwXmdQcUscUgRj1S",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.xwXmdQcUscUgRj1S",
+      "name": "Portada · Lluvia sobre Seattle",
+      "description": "Suena al activar: El Expediente Ward (portada)",
+      "path": "modules/seattle-by-night/assets/musica/portada.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 0,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "portada",
+          "escenas": [
+            "portada"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "3lJPPXBfYRQmDrvT",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.3lJPPXBfYRQmDrvT",
+      "name": "Prólogo · El apartamento de Helen",
+      "description": "Suena al activar: Prólogo · El apartamento de Helen Ward",
+      "path": "modules/seattle-by-night/assets/musica/helen.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 1000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "helen",
+          "escenas": [
+            "helen"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "qGuObg7VsPzsegN3",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.qGuObg7VsPzsegN3",
+      "name": "El hangar de Harbor Island",
+      "description": "Suena al activar: El hangar de Harbor Island",
+      "path": "modules/seattle-by-night/assets/musica/hangar.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 2000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "hangar",
+          "escenas": [
+            "hangar"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "83usJsoFqfDGQEnX",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.83usJsoFqfDGQEnX",
+      "name": "Parte 1 · La granja del Sheriff",
+      "description": "Suena al activar: Parte 1 · La granja del Sheriff",
+      "path": "modules/seattle-by-night/assets/musica/granja.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 3000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "granja",
+          "escenas": [
+            "granja"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "SLKAbs95OkZaM0HJ",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.SLKAbs95OkZaM0HJ",
+      "name": "Parte 1 · El sótano del Sheriff y el túnel",
+      "description": "Suena al activar: Parte 1 · La granja del Sheriff: el sótano y el túnel",
+      "path": "modules/seattle-by-night/assets/musica/granja-sotano.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 4000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "granja-sotano",
+          "escenas": [
+            "granja-sotano"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "WVoeKFDEdKOLYfk0",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.WVoeKFDEdKOLYfk0",
+      "name": "Parte 1 · Las Galerías Selladas",
+      "description": "Suena al activar: Parte 1 · Las Galerías Selladas",
+      "path": "modules/seattle-by-night/assets/musica/subterraneo.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 5000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "subterraneo",
+          "escenas": [
+            "subterraneo"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "LnFYbWYpHAT0Yq5Q",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.LnFYbWYpHAT0Yq5Q",
+      "name": "Parte 2 · La Galería de Vidrio (Elíseo)",
+      "description": "Suena al activar: Parte 2 · La Galería de Vidrio (Elíseo)",
+      "path": "modules/seattle-by-night/assets/musica/eliseo.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 6000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "eliseo",
+          "escenas": [
+            "galeria"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "PGOgu9ZW5Unt7wqg",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.PGOgu9ZW5Unt7wqg",
+      "name": "Parte 2 · El archivo de la Guardiana",
+      "description": "Suena al activar: Parte 2 · La Galería de Vidrio: el archivo de la Guardiana",
+      "path": "modules/seattle-by-night/assets/musica/archivo.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 7000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "archivo",
+          "escenas": [
+            "galeria-archivo"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "tW1WLQrXEtNKMK5p",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.tW1WLQrXEtNKMK5p",
+      "name": "Parte 2 · Bar Salitre",
+      "description": "Suena al activar: Parte 2 · Bar Salitre",
+      "path": "modules/seattle-by-night/assets/musica/salitre.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 8000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "salitre",
+          "escenas": [
+            "salitre"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "b8n2wyIDPtuZIekc",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.b8n2wyIDPtuZIekc",
+      "name": "Parte 2 · Las cenizas del Larchmont",
+      "description": "Suena al activar: Parte 2 · El Larchmont: planta baja · Parte 2 · El Larchmont: sala de calderas",
+      "path": "modules/seattle-by-night/assets/musica/larchmont.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 9000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "larchmont",
+          "escenas": [
+            "larchmont-planta",
+            "larchmont-sotano"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "TSyoaj8209JtPAKj",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.TSyoaj8209JtPAKj",
+      "name": "Parte 3 · Infiltración en Gale Sentinel",
+      "description": "Suena al activar: Gale Sentinel · El vestíbulo (planta baja) · Gale Sentinel · Planta 3, el despacho de Gale · Gale Sentinel · El centro de datos",
+      "path": "modules/seattle-by-night/assets/musica/gale-sentinel.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 10000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "gale-sentinel",
+          "escenas": [
+            "gale-sentinel",
+            "gale-planta3",
+            "gale-datos"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "Qo84gsuNSWN9r2i1",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.Qo84gsuNSWN9r2i1",
+      "name": "FIRSTLIGHT · Northline Cyber Advisory",
+      "description": "Suena al activar: FIRSTLIGHT · Northline Cyber Advisory (piso 11)",
+      "path": "modules/seattle-by-night/assets/musica/firstlight.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 11000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "firstlight",
+          "escenas": [
+            "northline"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "zDBMMLPl6pvgPixG",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.zDBMMLPl6pvgPixG",
+      "name": "Parte 3 · Los silos de la Terminal 86",
+      "description": "Suena al activar: Parte 3 · Los silos de la Terminal 86",
+      "path": "modules/seattle-by-night/assets/musica/terminal86.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.4,
+      "fade": 2000,
+      "sort": 12000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "terminal86",
+          "escenas": [
+            "terminal86"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "MBego262nR40j2je",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.MBego262nR40j2je",
+      "name": "Parte 4 · Consejo de Primogenitura",
+      "description": "Suena al activar: Parte 4 · Torre Halloway, el ático (piso 42)",
+      "path": "modules/seattle-by-night/assets/musica/consejo.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 13000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "consejo",
+          "escenas": [
+            "torre-atico"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "wbsdkw14jhNzQtFD",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.wbsdkw14jhNzQtFD",
+      "name": "Parte 4 · La bóveda de la Torre Halloway",
+      "description": "Suena al activar: Parte 4 · Torre Halloway, la bóveda (nivel −3)",
+      "path": "modules/seattle-by-night/assets/musica/boveda.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 14000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "boveda",
+          "escenas": [
+            "torre-boveda"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "m006soGLvOVuXxdQ",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.m006soGLvOVuXxdQ",
+      "name": "Parte 4 · Colman Dock",
+      "description": "Suena al activar: Parte 4 · Colman Dock, la terminal de ferris",
+      "path": "modules/seattle-by-night/assets/musica/colman.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 15000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "colman",
+          "escenas": [
+            "terminal-ferry"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "yu3cuuaSqpJ9eKEZ",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.yu3cuuaSqpJ9eKEZ",
+      "name": "Parte 4 · El último ferry: la travesía",
+      "description": "Suena al activar: Parte 4 · El último ferry: salón y cubierta de popa",
+      "path": "modules/seattle-by-night/assets/musica/ferry.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.35,
+      "fade": 2000,
+      "sort": 16000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "ferry",
+          "escenas": [
+            "ferry"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "mIHo75xMWMbS7H3D",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.mIHo75xMWMbS7H3D",
+      "name": "Parte 4 · El último ferry: cubierta de coches y puente",
+      "description": "Suena al activar: Parte 4 · El último ferry: cubierta de coches · Parte 4 · El último ferry: el puente",
+      "path": "modules/seattle-by-night/assets/musica/ferry-climax.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.4,
+      "fade": 2000,
+      "sort": 17000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "ferry-climax",
+          "escenas": [
+            "ferry-coches",
+            "ferry-puente"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "VI0kIA9PRUhaLhe2",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.VI0kIA9PRUhaLhe2",
+      "name": "Seattle de noche",
+      "description": "Para lanzar a mano.",
+      "path": "modules/seattle-by-night/assets/musica/ciudad.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 18000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "ciudad",
+          "escenas": []
+        }
+      }
+    },
+    {
+      "_id": "RXTdnR5vIKg0EkZb",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.RXTdnR5vIKg0EkZb",
+      "name": "Combate",
+      "description": "Para lanzar a mano.",
+      "path": "modules/seattle-by-night/assets/musica/combate.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.45,
+      "fade": 2000,
+      "sort": 19000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "combate",
+          "escenas": []
+        }
+      }
+    },
+    {
+      "_id": "dRvBlJsb60FqarN5",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.dRvBlJsb60FqarN5",
+      "name": "FIRSTLIGHT · La redada",
+      "description": "Para lanzar a mano.",
+      "path": "modules/seattle-by-night/assets/musica/redada.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.45,
+      "fade": 2000,
+      "sort": 20000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "redada",
+          "escenas": []
+        }
+      }
+    },
+    {
+      "_id": "eCfjs1P6c4jUMpZP",
+      "_key": "!playlists.sounds!RREVIAminsF37jT3.eCfjs1P6c4jUMpZP",
+      "name": "Epílogo · Lo que el agua no se lleva",
+      "description": "Para lanzar a mano.",
+      "path": "modules/seattle-by-night/assets/musica/epilogo.ogg",
+      "channel": "",
+      "playing": false,
+      "pausedTime": null,
+      "repeat": true,
+      "volume": 0.3,
+      "fade": 2000,
+      "sort": 21000,
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pista",
+          "pista": "epilogo",
+          "escenas": []
+        }
+      }
+    }
+  ],
+  "channel": "music",
+  "mode": -1,
+  "playing": false,
+  "fade": 2000,
+  "folder": null,
+  "sorting": "m",
+  "seed": 0,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "playlist",
+      "lista": "ambientes"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

@@ -2,7 +2,7 @@
  * Todo lo generado → pack `aventura` (un Adventure). Va ÚLTIMO.
  *
  * Lee lo que escribieron los otros constructores en packs-src/ (cronica,
- * documentos, personajes, escenas, macros, firstlight) y lo empaqueta con sus
+ * documentos, personajes, escenas, macros, firstlight, playlists) y lo empaqueta con sus
  * carpetas, para importar la crónica entera en un click desde el compendio o
  * desde el quickstart de Foundry 14. Adaptado de construirAventura de DVV.
  *
@@ -35,7 +35,8 @@ const FUENTES = [
   { pack: "personajes", campo: "actors", tipo: "Actor" },
   { pack: "escenas", campo: "scenes", tipo: "Scene" },
   { pack: "firstlight", campo: "items", tipo: "Item" },
-  { pack: "macros", campo: "macros", tipo: "Macro" }
+  { pack: "macros", campo: "macros", tipo: "Macro" },
+  { pack: "playlists", campo: "playlists", tipo: "Playlist" }
 ];
 
 // El logo del Dark Pack lo exige el acuerdo (assets/legal/LEEME.md). La
@@ -69,7 +70,7 @@ function leerPack(pack) {
 
 export async function construir(ctx) {
   const aid = ID.aventura(CLAVE);
-  const contenido = { actors: [], journal: [], scenes: [], items: [], macros: [] };
+  const contenido = { actors: [], journal: [], scenes: [], items: [], macros: [], playlists: [] };
   const folders = [];
   const raices = {};
   const raiz = tipo => (raices[tipo] ??= {
@@ -136,7 +137,7 @@ export async function construir(ctx) {
     }
   }
 
-  const { actors, journal, scenes, items, macros } = contenido;
+  const { actors, journal, scenes, items, macros, playlists } = contenido;
   const portada = ["assets/portadas/portada.webp", "assets/mapas/portada.webp", "assets/mapas/helen.webp"]
     .find(rel => fs.existsSync(path.join(RAIZ, rel)));
   if (!portada || !portada.includes("portada")) ctx.avisos.push(`aventura: sin arte de portada; uso ${portada ?? "un icono del core"}`);
@@ -152,11 +153,12 @@ export async function construir(ctx) {
     description:
       `<p>Importa al mundo ${n(scenes, "escena", "escenas")}, ${n(actors, "actor", "actores")} (PJs, PNJs y la Célula Puget), ` +
       `${n(journal, "journal", "journals")} (la aventura, la ciudad, los personajes y los documentos para entregar), ` +
-      `${n(items, "ítem", "ítems")} de FIRSTLIGHT y ${n(macros, "macro", "macros")}, con sus carpetas.</p>` +
+      `${n(items, "ítem", "ítems")} de FIRSTLIGHT, ${n(macros, "macro", "macros")} y ` +
+      `${n(playlists, "lista", "listas")} de música (cada escena suena con su ambiente al activarla), con sus carpetas.</p>` +
       "<p>Reimportar actualiza los documentos existentes sin duplicarlos.</p>" +
       AVISO_DARK_PACK,
-    actors, journal, scenes, items, macros, folders,
-    playlists: [], tables: [], cards: [], combats: [],
+    actors, journal, scenes, items, macros, playlists, folders,
+    tables: [], cards: [], combats: [],
     folder: null, sort: 0,
     flags: { [MODULO]: { origen: "aventura", aventura: CLAVE } },
     _stats: STATS
@@ -172,5 +174,5 @@ export async function construir(ctx) {
   }
 
   console.log(`aventura: ${scenes.length} escenas, ${actors.length} actores, ${journal.length} journals, ` +
-    `${items.length} ítems, ${macros.length} macros, ${folders.length} carpetas`);
+    `${items.length} ítems, ${macros.length} macros, ${playlists.length} playlists, ${folders.length} carpetas`);
 }

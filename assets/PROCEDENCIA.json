@@ -1,5 +1,5 @@
 {
-  "_comentario": "Procedencia de cada imagen generada (CLAUDE.md, Licencias): modelo, licencia, workflow, semilla y prompt. La clave es la ruta del archivo; regenerar pisa la entrada.",
+  "_comentario": "Procedencia de cada imagen (`imagenes`) y pista de música (`musica`) generada (CLAUDE.md, Licencias): modelo, licencia, workflow, semilla y prompt. La clave es la ruta del archivo; regenerar pisa la entrada.",
   "imagenes": {
     "assets/handouts/AYU-06-IMG.webp": {
       "fecha": "2026-11-01T15:18:18.152Z",
@@ -13116,6 +13116,1078 @@
       "referencia": "assets/retratos/PNJ-21.webp",
       "segundos": 24,
       "prompt": "Change the camera angle: show the same person from Picture 1 in a top-down view, the camera directly overhead looking straight down at the floor, 90 degrees. We see only the top of the head and the hair, the shoulders, the arms and hands, the clothes spreading out below them and the tips of the shoes. The face is hidden by the top of the head. Same clothes, same build, same colours as in Picture 1. Full figure, centred.\n\nThe person: Sasha Hale: brown hair in a ponytail, a plain grey sweater, headphones around her neck, a paper cup of coffee.\n\nA perfectly flat plain light-grey background, no floor texture, no shadow. Dark painted illustration with ink outlines, cold desaturated palette. No text, no frame, no circle, no second figure."
+    }
+  },
+  "musica": {
+    "assets/musica/archivo.ogg": {
+      "fecha": "2026-11-02T00:07:41.494Z",
+      "id": "archivo",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 505,
+      "prompt": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night. Quiet library tension for a basement archive of old ledgers, searching papers against the clock. A ticking clock, low piano with few notes, a dusty soft pad, the rustle of pages. Silence, secrets, careful and slow. No loud percussion, no romantic melody. Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 60,
+        "tonalidad": "D minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 6.73,
+        "largo": 132.3,
+        "compases": 33,
+        "ajuste_ms": 300,
+        "alineacion": 0.83,
+        "fundido": 4
+      },
+      "duracion": 132.3,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -2.7
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 21.1,
+      "vram_pico_mib": 15578
+    },
+    "assets/musica/boveda.ogg": {
+      "fecha": "2026-11-02T00:08:08.080Z",
+      "id": "boveda",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 101,
+      "prompt": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night. Cold secret vault three levels underground: bare concrete, a steel combination door. Low synth drone, ventilation air, transformer hum, a string chord that takes forever to resolve. Buried guilt, cold and still. No melody, no percussion. Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 50,
+        "tonalidad": "F minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 2.46,
+        "largo": 134.614,
+        "compases": 28,
+        "ajuste_ms": 214,
+        "alineacion": 0.85,
+        "fundido": 4
+      },
+      "duracion": 134.61,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -10.1
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15732
+    },
+    "assets/musica/ciudad.ogg": {
+      "fecha": "2026-11-02T00:08:22.069Z",
+      "id": "ciudad",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Urban noir in motion: driving through Seattle at night in the rain, windshield wipers, neon of Pioneer Square, the harbor. Electric bass, brushed drums, tremolo electric guitar, synth pad, rain and wet traffic texture. Moody, cool, moving forward. No elevator jazz, no catchy melody. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 76,
+        "tonalidad": "G minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 2.36,
+        "largo": 137.212,
+        "compases": 43,
+        "ajuste_ms": -388,
+        "alineacion": 0.77,
+        "fundido": 4
+      },
+      "duracion": 137.21,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -3.3
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15706
+    },
+    "assets/musica/colman.ogg": {
+      "fecha": "2026-11-02T00:08:11.091Z",
+      "id": "colman",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Waiting and countdown in an almost empty ferry terminal under fluorescent lights at one in the morning, the last ferry lit up on black water. Fluorescent hum pad, electric piano with repeated notes ticking like a clock, a pulsing bass, a distant ship horn. Suspense, patience, the clock running out. No action, no triumphant melody. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 72,
+        "tonalidad": "A minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 19.48,
+        "largo": 113.882,
+        "compases": 34,
+        "ajuste_ms": -358,
+        "alineacion": 0.87,
+        "fundido": 4
+      },
+      "duracion": 113.88,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -4.8
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15732
+    },
+    "assets/musica/combate.ogg": {
+      "fecha": "2026-11-02T00:08:27.708Z",
+      "id": "combate",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 707,
+      "prompt": "Dark cinematic thriller underscore for a vampire noir story set in Seattle at night. Fast, dirty supernatural fight music. Heavy percussion of taiko and low war drums, metallic hits, low string ostinato, distorted bass, aggressive dark synth. Violent, brutal, driving. No fantasy epic, no metal guitars, no cheerful rock. Relentless steady groove from start to end, no build-up, no drop, no breakdown, modern dark film score. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 130,
+        "tonalidad": "D minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808,
+        909
+      ],
+      "bucle": {
+        "desde": 2.46,
+        "largo": 138.046,
+        "compases": 72,
+        "ajuste_ms": -194,
+        "alineacion": 0.79,
+        "fundido": 4
+      },
+      "duracion": 138.05,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -7.7
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": null
+    },
+    "assets/musica/consejo.ogg": {
+      "fecha": "2026-11-02T00:08:04.860Z",
+      "id": "consejo",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Solemn underscore for a council of vampire elders in a penthouse with a glass wall over Elliott Bay. Low organ and harmonium, long sustained string chords, a very occasional soft timpani, cold celesta. Power, ceremony and judgement, restrained and slow. No full orchestral epic, nothing loud. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 60,
+        "tonalidad": "C# minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 10.78,
+        "largo": 124.35,
+        "compases": 31,
+        "ajuste_ms": 350,
+        "alineacion": 0.84,
+        "fundido": 4
+      },
+      "duracion": 124.35,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -7
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15734
+    },
+    "assets/musica/eliseo.ogg": {
+      "fecha": "2026-11-02T00:07:36.947Z",
+      "id": "eliseo",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Elegant, cold and hypnotic chamber music for a glass art gallery full of illuminated jellyfish sculptures where vampire nobility gathers in formal wear. Muted string quartet, harp and vibraphone, crystalline glass pads, faint distant bubbles, aquatic shimmer. Icy courtesy with knives underneath. No waltz, no aggressive bass, no danceable rhythm. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 66,
+        "tonalidad": "B minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 13.69,
+        "largo": 113.27,
+        "compases": 31,
+        "ajuste_ms": 430,
+        "alineacion": 0.77,
+        "fundido": 4
+      },
+      "duracion": 113.27,
+      "sonoridad": {
+        "lufs": -19.9,
+        "pico_dbfs": -3.7
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15711
+    },
+    "assets/musica/epilogo.ogg": {
+      "fecha": "2026-11-02T00:08:35.176Z",
+      "id": "epilogo",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 606,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Aftermath and epilogue: what remains when the tide goes out. Solo piano with lots of air and space, a cello, rain slowly easing, water of the bay. Grief, fatigue and a bitter calm, very slow. No triumphant resolution, nothing sentimental, no drums. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 54,
+        "tonalidad": "A minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 16.52,
+        "largo": 119.212,
+        "compases": 27,
+        "ajuste_ms": 412,
+        "alineacion": 0.81,
+        "fundido": 4
+      },
+      "duracion": 119.21,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -4.5
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.7,
+      "vram_pico_mib": 15698
+    },
+    "assets/musica/ferry-climax.ogg": {
+      "fecha": "2026-11-02T00:08:18.774Z",
+      "id": "ferry-climax",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 202,
+      "prompt": "Dark cinematic thriller underscore for a vampire noir story set in Seattle at night. Tense dark chase and fight underscore on the car deck of a night ferry crossing Puget Sound. Ship engine rumble as the base, insistent industrial percussion, driving low staccato strings ostinato, distorted bass, metal clanging. Urgent violence in a closed moving space. No heroic epic, no stadium rock guitars. Relentless steady groove from start to end, no build-up, no drop, no breakdown, modern dark film score. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 120,
+        "tonalidad": "E minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 2.77,
+        "largo": 137.054,
+        "compases": 70,
+        "ajuste_ms": -146,
+        "alineacion": 0.83,
+        "fundido": 4
+      },
+      "duracion": 137.05,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -6.1
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15738
+    },
+    "assets/musica/ferry.ogg": {
+      "fecha": "2026-11-02T00:08:15.488Z",
+      "id": "ferry",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 505,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Calm-surface tension aboard a night ferry crossing Puget Sound with forty passengers in the lounge. The deep hum of ship engines as the base, nocturnal synth pad, clean electric guitar with delay, water against the hull. Quiet social tension, nobody must see anything strange. Steady, medium-slow. No fight percussion, no jump scares. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 78,
+        "tonalidad": "E minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 5.36,
+        "largo": 128.718,
+        "compases": 44,
+        "ajuste_ms": 238,
+        "alineacion": 0.86,
+        "fundido": 4
+      },
+      "duracion": 128.72,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -5.9
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.7,
+      "vram_pico_mib": 15694
+    },
+    "assets/musica/firstlight.ogg": {
+      "fecha": "2026-11-02T00:07:56.342Z",
+      "id": "firstlight",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 505,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Clinical, disciplined underscore for a covert hunter cell hidden inside a cybersecurity consultancy office at three in the morning: grey carpet, fluorescent lights, blinds down. Cold electronic pad, cold piano with repeated notes, a very low military pulse of brushed snare and distant timpani, fluorescent hum. Conviction, fatigue and professional fear. No action-movie epic, no religious choir. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 76,
+        "tonalidad": "C minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 12.12,
+        "largo": 124.646,
+        "compases": 39,
+        "ajuste_ms": -154,
+        "alineacion": 0.81,
+        "fundido": 4
+      },
+      "duracion": 124.65,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -7.8
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.6,
+      "vram_pico_mib": 15790
+    },
+    "assets/musica/gale-sentinel.ogg": {
+      "fecha": "2026-11-02T00:07:52.068Z",
+      "id": "gale-sentinel",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark cinematic thriller underscore for a vampire noir story set in Seattle at night. Cold corporate stealth music for infiltrating a surveillance company at two in the morning: a wall of security monitors, electronic locks, a windowless data center. Low synth pulse, muted electronic arpeggio, server room hum, relay clicks. Being watched, quiet and precise, minimal and hypnotic, can play for forty minutes without tiring. No heavy drums, no catchy melody. Relentless steady groove from start to end, no build-up, no drop, no breakdown, modern dark film score. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 90,
+        "tonalidad": "F minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 16.52,
+        "largo": 121.382,
+        "compases": 49,
+        "ajuste_ms": -138,
+        "alineacion": 0.86,
+        "fundido": 4
+      },
+      "duracion": 121.38,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -7.4
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15744
+    },
+    "assets/musica/granja-sotano.ogg": {
+      "fecha": "2026-11-02T00:07:29.646Z",
+      "id": "granja-sotano",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 505,
+      "prompt": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night. Claustrophobic underground drone for an old stone basement and a long earthen tunnel under a farmhouse. Low sustained string drone, water drops, the slow heartbeat thump of an old boiler, wood creaking overhead. Confinement, weight, damp earth. Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 50,
+        "tonalidad": "C minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 2.35,
+        "largo": 130.496,
+        "compases": 27,
+        "ajuste_ms": -184,
+        "alineacion": 0.84,
+        "fundido": 4
+      },
+      "duracion": 130.5,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -6.9
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 21,
+      "vram_pico_mib": 15514
+    },
+    "assets/musica/granja.ogg": {
+      "fecha": "2026-11-02T00:07:25.288Z",
+      "id": "granja",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Dark Americana for an isolated farm in a wet Pacific Northwest forest at night, ruled by a dangerous sheriff. Slide guitar and dobro over low drones, bowed double bass, wind through wet trees, an occasional very distant dog bark. Rural authority and animal menace, brooding and slow. No banjo, no upbeat country, no western heroics. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 64,
+        "tonalidad": "G minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 2.13,
+        "largo": 134.908,
+        "compases": 36,
+        "ajuste_ms": -452,
+        "alineacion": 0.8,
+        "fundido": 4
+      },
+      "duracion": 134.91,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -0.4
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 18.4,
+      "vram_pico_mib": 15730
+    },
+    "assets/musica/hangar.ogg": {
+      "fecha": "2026-11-02T00:07:21.976Z",
+      "id": "hangar",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 606,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Tired late-night workshop noir in a corrugated metal hangar between shipping containers on the waterfront. Electric bass playing few notes, tremolo electric guitar, a very soft low pulse, creaking metal in the wind, water lapping against a pier, a distant cargo ship horn. Worn but safe, calm and weary. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 70,
+        "tonalidad": "E minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 12.04,
+        "largo": 123.712,
+        "compases": 36,
+        "ajuste_ms": -128,
+        "alineacion": 0.82,
+        "fundido": 4
+      },
+      "duracion": 123.71,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -4.4
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.7,
+      "vram_pico_mib": null
+    },
+    "assets/musica/helen.ogg": {
+      "fecha": "2026-11-02T00:07:17.436Z",
+      "id": "helen",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night. Intimate, sad and tense chamber ambient for a small damp apartment at 3:30 in the morning. Muted felt piano with sparse single notes, very soft low strings in pianissimo, rain against a window, the low hum of an old refrigerator. Close, fragile, grief and contained fear. No dissonant stabs, no hits. Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 56,
+        "tonalidad": "A minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 10.13,
+        "largo": 131.214,
+        "compases": 29,
+        "ajuste_ms": 134,
+        "alineacion": 0.92,
+        "fundido": 4
+      },
+      "duracion": 131.21,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -1.6
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 18.4,
+      "vram_pico_mib": 15582
+    },
+    "assets/musica/larchmont.ogg": {
+      "fecha": "2026-11-02T00:07:48.937Z",
+      "id": "larchmont",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 505,
+      "prompt": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night. Mournful haunted ambience for a burned-out four-story brick building and its dark flooded boiler room. Drone of detuned strings, ash and wind through glassless windows, running water, a broken piano striking one note now and then. Grief and lingering presence. No jump scares, no screams. Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 50,
+        "tonalidad": "Bb minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 14.42,
+        "largo": 120.082,
+        "compases": 25,
+        "ajuste_ms": 82,
+        "alineacion": 0.83,
+        "fundido": 4
+      },
+      "duracion": 120.08,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -9
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 21.3,
+      "vram_pico_mib": 15570
+    },
+    "assets/musica/portada.ogg": {
+      "fecha": "2026-11-02T00:07:14.145Z",
+      "id": "portada",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 101,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Slow melancholic Pacific Northwest noir theme: Seattle harbor at night in the rain, cranes and a lit ferry crossing black water. Clean electric guitar with deep reverb playing a few sparse notes, low sustained cello, warm analog synth pad, soft rain texture, a very distant ship horn. Elegant and nocturnal with an undercurrent of menace. No drums. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 60,
+        "tonalidad": "D minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 2.16,
+        "largo": 136.31,
+        "compases": 34,
+        "ajuste_ms": 310,
+        "alineacion": 0.88,
+        "fundido": 4
+      },
+      "duracion": 136.31,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -5.2
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 18.6,
+      "vram_pico_mib": 15540
+    },
+    "assets/musica/redada.ogg": {
+      "fecha": "2026-11-02T00:08:30.964Z",
+      "id": "redada",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 202,
+      "prompt": "Dark cinematic thriller underscore for a vampire noir story set in Seattle at night. Tactical night raid by a paramilitary team with UV flashlights and a drone buzzing over the roof: precise, mechanical, fearful, the night turning into day. Military electronic pulse, dry tight percussion, drone buzz, white noise swells that rise and fall, deep low hits. No heroic epic, no melody. Relentless steady groove from start to end, no build-up, no drop, no breakdown, modern dark film score. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 120,
+        "tonalidad": "F minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 3.9,
+        "largo": 135.94,
+        "compases": 74,
+        "ajuste_ms": -220,
+        "alineacion": 0.76,
+        "fundido": 4
+      },
+      "duracion": 135.94,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -7.8
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15674
+    },
+    "assets/musica/salitre.ogg": {
+      "fecha": "2026-11-02T00:07:44.705Z",
+      "id": "salitre",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 303,
+      "prompt": "Dark neo-noir instrumental film score for a vampire noir story set in rainy Seattle at night. Slow instrumental jukebox blues in a dockworkers' dive bar next to a closed shipyard, a flickering neon sign. Electric guitar with a little crunch playing laid-back licks, bass, brushed drums, quiet Hammond organ. Warm, worn, nostalgic, a little distrustful. Background for conversation, no long solos, no energetic rock. Sparse, atmospheric, warm analog recording, lots of space between notes, background music under conversation. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 80,
+        "tonalidad": "A minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303
+      ],
+      "bucle": {
+        "desde": 2.25,
+        "largo": 131.398,
+        "compases": 45,
+        "ajuste_ms": -2,
+        "alineacion": 0.82,
+        "fundido": 4
+      },
+      "duracion": 131.4,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -4.7
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": 15649
+    },
+    "assets/musica/subterraneo.ogg": {
+      "fecha": "2026-11-02T00:07:33.972Z",
+      "id": "subterraneo",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 505,
+      "prompt": "Dark ambient cinematic soundscape, slow evolving instrumental underscore for a gothic noir vampire story set in rainy Seattle at night. Mysterious underground ambience for the buried 1889 streets beneath Pioneer Square: brick sidewalks, boarded shop windows, violet glass skylights, a clandestine market. Detuned celesta and music box with heavy echo, pizzicato double bass, dripping water, a faraway old upright piano. Strange and ancient but not hostile. No horror stingers, no electronic beat. Free time, no beat, no drums, no melody hooks, sparse and spacious, deep reverb. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 60,
+        "tonalidad": "F# minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606
+      ],
+      "bucle": {
+        "desde": 14.03,
+        "largo": 124.282,
+        "compases": 31,
+        "ajuste_ms": 282,
+        "alineacion": 0.9,
+        "fundido": 4
+      },
+      "duracion": 124.28,
+      "sonoridad": {
+        "lufs": -20,
+        "pico_dbfs": -6.4
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 21.1,
+      "vram_pico_mib": 15514
+    },
+    "assets/musica/terminal86.ogg": {
+      "fecha": "2026-11-02T00:08:01.770Z",
+      "id": "terminal86",
+      "modelos": [
+        "acestep_v1.5_xl_turbo_bf16.safetensors",
+        "qwen_0.6b_ace15.safetensors",
+        "qwen_4b_ace15.safetensors",
+        "ace_1.5_vae.safetensors"
+      ],
+      "licencia": "MIT (ACE-Step 1.5: modelos y código; salida apta para uso comercial según la tarjeta del modelo) + Apache 2.0 (reempaquetado de Comfy-Org y Qwen3-Embedding-0.6B)",
+      "workflow": "tools/workflows/musica-acestep.json",
+      "semilla": 707,
+      "prompt": "Dark cinematic thriller underscore for a vampire noir story set in Seattle at night. Heavy confrontation underscore in a corrugated metal gallery above grain silos at the harbor at midnight, wind blowing through an open hatch over the bay. Sparse low metallic percussion hits on sheet metal, string drone, sustained low distorted guitar, wind. Contained menace, violence about to break out, slow and heavy. No fast fight rhythm. Relentless steady groove from start to end, no build-up, no drop, no breakdown, modern dark film score. Instrumental only, no vocals, no singing, no voice, no choir. Steady volume from start to end, constant tempo, no intro, no outro, no fade-in, no fade-out, no build-up, seamlessly loopable background music for a tabletop role-playing game.",
+      "letra": "[Instrumental]",
+      "parametros": {
+        "bpm": 70,
+        "tonalidad": "D minor",
+        "compas": "4",
+        "duracion_pedida": 150,
+        "cfg_lm": 2,
+        "temperatura": 0.85,
+        "pasos": 8,
+        "sampler": "euler/simple",
+        "shift": 3
+      },
+      "candidatos": [
+        101,
+        202,
+        303,
+        404,
+        505,
+        606,
+        707,
+        808,
+        909
+      ],
+      "bucle": {
+        "desde": 20.44,
+        "largo": 115.018,
+        "compases": 35,
+        "ajuste_ms": 218,
+        "alineacion": 0.84,
+        "fundido": 4
+      },
+      "duracion": 115.02,
+      "sonoridad": {
+        "lufs": -20.1,
+        "pico_dbfs": -3.4
+      },
+      "formato": "Ogg Vorbis 112 kbps, estéreo, 48 kHz",
+      "segundos": 17.9,
+      "vram_pico_mib": null
     }
   }
 }
