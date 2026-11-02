@@ -55,6 +55,7 @@ const esNuestra = adventure => adventure?.collection?.metadata?.packageName === 
 const EMBEBIDOS = {
   Actor: ["items", "effects"],
   JournalEntry: ["pages"],
+  Playlist: ["sounds"],
   Scene: ["tokens", "drawings", "notes", "templates"]
 };
 
@@ -69,6 +70,8 @@ const EMBEBIDOS = {
  *     revelada); las que no vienen en la Aventura (agregadas a mano) se quedan;
  *   - escenas: `active` y `navigation` del mundo, y los tokens, dibujos y
  *     notas que no son de la Aventura;
+ *   - playlists: lo que está sonando, el volumen de cada pista y los sonidos
+ *     agregados a mano;
  *   - actores e ítems embebidos agregados a mano, igual.
  *
  * @returns {{ conservados: string[], documentos: number }}
@@ -92,6 +95,18 @@ export function conservarMundo(toCreate, toUpdate) {
       if (documentName === "Scene") {
         datos.active = fuente.active;
         datos.navigation = fuente.navigation;
+      }
+      if (documentName === "Playlist") {
+        // Lo que suena y los volúmenes que tocó el Narrador no se pisan.
+        datos.playing = fuente.playing;
+        const sonidos = new Map(fuente.sounds.map(s => [s._id, s]));
+        for (const s of datos.sounds ?? []) {
+          const viejo = sonidos.get(s._id);
+          if (!viejo) continue;
+          s.volume = viejo.volume;
+          s.playing = viejo.playing;
+          s.pausedTime = viejo.pausedTime;
+        }
       }
       if (documentName === "JournalEntry") {
         const paginas = new Map(fuente.pages.map(p => [p._id, p]));

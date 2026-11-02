@@ -15,7 +15,7 @@ jugable con reglas de *Cazador: La Venganza*.
 | Foundry | v14 (verificado en 14.365) |
 | Idioma | español |
 | Mesa | coterie de 4–5 jugadores |
-| Estado | 1.0.0 — la crónica completa importable, el Panel del Narrador, FIRSTLIGHT jugable, 21 mapas pintados con luces, muros y tokens, y la Guía del Narrador. Plan y fases en `SPEC.md` |
+| Estado | 1.1.0 — la crónica completa importable, el Panel del Narrador, FIRSTLIGHT jugable, 21 mapas pintados con luces, muros y tokens, música de ambiente por escena y la Guía del Narrador. Plan y fases en `SPEC.md` |
 
 ## Cómo instalarlo
 
@@ -51,7 +51,7 @@ lang/                es.json
 content/             FUENTE ÚNICA: crónica, ciudad, documentos, PNJs, planos…
 packs-src/           fuente versionable de los compendios (JSON generado)
 packs/               compendios compilados (LevelDB) — GITIGNORED
-assets/              mapas, retratos, tokens, tiles, handouts
+assets/              mapas, retratos, tokens, tiles, handouts, música (assets/musica/*.ogg)
 tools/               build, verificación, arte local (ComfyUI), release
 Seattle by Night - El Expediente Ward/   los documentos de origen (.docx)
 ```
@@ -108,6 +108,19 @@ página. Al terminar avisa si queda algún enlace sin destino o algún marcador 
 imágenes reducidas quedan en `cache/guia/` (ignorado por git).
 
 ## Notas de versión
+
+### 1.1.0
+
+- **Música de ambiente por escena.** Un compendio nuevo, *El Expediente Ward — Música*, con la
+  lista «El Expediente Ward — Ambientes»: una pista en loop para cada mapa y para la portada
+  (las escenas con el mismo clima comparten pista: los tres pisos de Gale Sentinel, las dos
+  plantas del Larchmont, la cubierta de coches y el puente del ferry), más cuatro para lanzar a
+  mano (Seattle de noche, Combate, La redada de FIRSTLIGHT, Epílogo). Al activar una escena
+  suena su pista; pasar entre dos escenas que la comparten no la corta. Viene en la Aventura:
+  «Actualizar la crónica» la agrega a un mundo que ya tenía la 1.0.0. La fuente es
+  `content/musica.json`.
+- **Actualizar la crónica no pisa la música:** se conservan lo que está sonando, el volumen que
+  tocó el Narrador en cada pista y los sonidos agregados a mano.
 
 ### 1.0.0
 
@@ -170,6 +183,10 @@ Primera versión completa.
   uso comercial (lista y licencias en `tools/MODELOS.md`). Cada imagen tiene su procedencia
   registrada en `assets/PROCEDENCIA.json`: modelo, licencia, workflow, semilla y prompt. No
   contiene arte oficial de Paradox ni de White Wolf.
+- **Música generada con IA.** Toda la música (`assets/musica/`) es original y está **generada
+  en local con ACE-Step 1.5** (licencia MIT, permite uso comercial), sin voces ni muestras de
+  terceros. Su procedencia (modelo, licencia, prompt y semilla) está en
+  `assets/PROCEDENCIA.json`, como la del arte.
 - **Logo del Dark Pack.** El único logo oficial es el del Dark Pack
   (`assets/legal/dark-pack-logo.webp`), que se muestra como lo pide el acuerdo; procedencia en
   `assets/legal/LEEME.md`.

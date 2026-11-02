@@ -1,0 +1,163 @@
+{
+  "_comentario": "Música de ambiente de El Expediente Ward. Cada pista es assets/musica/<id>.ogg (generada en local con ACE-Step 1.5; los prompts en inglés están en tools/musica.config.json, que es del generador). `escenas` son los ids de plano de content/planos (y «portada» para la portada): al activar esa escena suena la pista. Las pistas sin `escenas` son para que el Narrador las lance a mano desde la lista. `clima` es la consigna en castellano para el que escribe el prompt: qué se siente, ritmo, instrumentos y qué evitar. Todas en loop, sin voces.",
+  "listas": [
+    {
+      "id": "ambientes",
+      "nombre": "El Expediente Ward — Ambientes",
+      "modo": "soundboard",
+      "descripcion": "Una pista de ambiente por escena: suena sola al activar la escena. Las que no tienen escena (Seattle de noche, Combate, La redada, Epílogo) se lanzan a mano.",
+      "pistas": [
+        {
+          "id": "portada",
+          "nombre": "Portada · Lluvia sobre Seattle",
+          "escenas": ["portada"],
+          "volumen": 0.3,
+          "clima": "Noir del Pacífico Noroeste: Seattle de noche bajo la lluvia, el puerto con sus grúas, un ferry iluminado cruzando el agua negra. Melancólico y elegante, con un fondo de amenaza. Lento (~60 bpm). Guitarra eléctrica limpia con mucha reverb tocando pocas notas, violonchelo grave sostenido, colchón de sintetizador cálido, lluvia suave y una sirena de barco muy lejana. Evitar: batería, melodía heroica, cualquier cosa de terror explícito; tiene que invitar a sentarse a la mesa."
+        },
+        {
+          "id": "helen",
+          "nombre": "Prólogo · El apartamento de Helen",
+          "escenas": ["helen"],
+          "volumen": 0.3,
+          "clima": "A0-E01, 3:34 de la mañana en Ballard: una amiga mortal (ghoul) sentada en el suelo del recibidor, empapada, asustada; un departamento chico, íntimo, con olor a humedad. Triste y tenso a la vez, cercano. Muy lento. Piano apagado (felt piano) con notas sueltas, cuerdas graves en pianissimo, lluvia contra la ventana, el zumbido de una heladera. Evitar: sustos, golpes, disonancias fuertes; es pena y miedo contenido, no horror."
+        },
+        {
+          "id": "hangar",
+          "nombre": "El hangar de Harbor Island",
+          "escenas": ["hangar"],
+          "volumen": 0.3,
+          "clima": "El refugio de David y la base de la coterie: un hangar de chapa entre contenedores, luces de obra colgando de cables, olor a aceite de armas, sal y café recalentado. Refugio gastado pero seguro: calma cansada, de taller nocturno. Lento-medio (~70 bpm). Bajo eléctrico con pocas notas, guitarra con trémolo, un pulso grave muy suave, chapa que cruje con el viento, agua contra el muelle, bocina de carguero lejana. Evitar: tensión de acción (la redada tiene su propia pista), melodía alegre."
+        },
+        {
+          "id": "granja",
+          "nombre": "Parte 1 · La granja del Sheriff",
+          "escenas": ["granja"],
+          "volumen": 0.35,
+          "clima": "El refugio de Montgomery, el Sheriff: una granja aislada, un granero convertido en sala de reuniones de los Lobos, perreras con una docena de perros ghoul, caravanas de cazarrecompensas. Autoridad rural y amenaza animal; el bosque mojado alrededor. Lento. Americana oscura: guitarra slide o dobro con drones, contrabajo con arco, viento entre los árboles, perros que ladran muy a lo lejos de vez en cuando. Evitar: country alegre, banjo rápido, cualquier tono de western heroico."
+        },
+        {
+          "id": "granja-sotano",
+          "nombre": "Parte 1 · El sótano del Sheriff y el túnel",
+          "escenas": ["granja-sotano"],
+          "volumen": 0.35,
+          "clima": "Bajo la granja: lajas viejas, la caldera, el armero, la cámara de tierra donde duerme Montgomery y un túnel de 300 m al embarcadero del río. Encierro, peso, tierra húmeda; en A4-E02 es la vía de escape de la redada. Sin tempo marcado. Drone grave de cuerdas, gotas de agua, el latido de la caldera, madera que cruje arriba. Evitar: melodía, percusión de acción, sonidos de monstruo."
+        },
+        {
+          "id": "subterraneo",
+          "nombre": "Parte 1 · Las Galerías Selladas",
+          "escenas": ["subterraneo"],
+          "volumen": 0.35,
+          "clima": "A1-E04 «Todo se vende abajo»: la Seattle de 1889 enterrada bajo Pioneer Square, aceras de ladrillo, escaparates tapiados, claraboyas de vidrio violeta, el mercado de los Nosferatu. Misterio, comercio clandestino, algo antiguo y raro pero no hostil. Lento. Celesta o caja de música desafinada con mucho eco, contrabajo pizzicato, ecos de pasos y goteo, un viejo piano vertical lejano. Evitar: horror explícito, gritos, ritmo electrónico."
+        },
+        {
+          "id": "eliseo",
+          "nombre": "Parte 2 · La Galería de Vidrio (Elíseo)",
+          "escenas": ["galeria"],
+          "volumen": 0.3,
+          "clima": "A2-E01, Noche de Elíseo: la Galería de Vidrio, la gran sala de las medusas, vidrio iluminado, Vástagos con sus mejores galas, cortesía helada y cuchillos debajo. Elegante, frío, acuático, hipnótico. Lento (~66 bpm). Cuarteto de cuerdas en sordina o arpa con vibráfono, pads de vidrio cristalino, burbujas lejanas. Evitar: vals de salón obvio, bajos agresivos, nada de ritmo bailable."
+        },
+        {
+          "id": "archivo",
+          "nombre": "Parte 2 · El archivo de la Guardiana",
+          "escenas": ["galeria-archivo"],
+          "volumen": 0.3,
+          "clima": "El sótano de la Galería: estanterías del suelo al techo con los libros de registro del Elíseo, una mesa de lectura, una caja fuerte. Silencio de biblioteca, secretos, revisar papeles con el reloj en contra. Muy lento. Reloj que hace tictac, piano grave con pocas notas, pad de polvo, el roce de páginas. Evitar: percusión fuerte, melodía romántica."
+        },
+        {
+          "id": "salitre",
+          "nombre": "Parte 2 · Bar Salitre",
+          "escenas": ["salitre"],
+          "volumen": 0.35,
+          "clima": "A2-E03: un bar de estibadores junto a un astillero cerrado, neón con una letra muerta (SAL TRE), barra hecha con el casco de un barco, fotos de huelgas. Cálido, gastado, nostálgico, con desconfianza. Medio-lento (~80 bpm). Blues lento de rocola: guitarra eléctrica con un poco de crunch, bajo, batería con escobillas, órgano Hammond bajito. Evitar: voces, rock enérgico, solos largos; tiene que quedar de fondo para conversar."
+        },
+        {
+          "id": "larchmont",
+          "nombre": "Parte 2 · Las cenizas del Larchmont",
+          "escenas": ["larchmont-planta", "larchmont-sotano"],
+          "volumen": 0.35,
+          "clima": "A2-E05: un edificio de cuatro pisos quemado, ladrillo ennegrecido, siete flores de plástico atadas a la valla por los muertos del incendio; abajo, la sala de calderas a oscuras y una cisterna sellada con agua corriendo al estrecho. Duelo y presencia: algo pasó acá y no terminó. Sin tempo. Drone de cuerdas desafinadas, ceniza y viento por ventanas sin vidrio, agua que corre, un piano roto con una nota cada tanto. Evitar: sustos con golpes, gritos, coros."
+        },
+        {
+          "id": "gale-sentinel",
+          "nombre": "Parte 3 · Infiltración en Gale Sentinel",
+          "escenas": ["gale-sentinel", "gale-planta3", "gale-datos"],
+          "volumen": 0.35,
+          "clima": "A3-E02, dos de la madrugada en la empresa de vigilancia de Preston Gale: el vestíbulo con la videopared de miles de cámaras, oficinas con cerraduras electrónicas, el centro de datos sin ventanas con biometría y una esclusa; rondas cada 40 minutos. Infiltración: tensión fría, corporativa, de ser mirado. Medio (~90 bpm) y constante. Pulso de sintetizador grave, arpegio electrónico apagado, zumbido de servidores, clics de relé. Evitar: drop, percusión de acción a pleno, melodía pegadiza; tiene que poder sonar 40 minutos sin cansar."
+        },
+        {
+          "id": "firstlight",
+          "nombre": "FIRSTLIGHT · Northline Cyber Advisory",
+          "escenas": ["northline"],
+          "volumen": 0.3,
+          "clima": "INT-02 y los interludios de FIRSTLIGHT: la fachada de la Segunda Inquisición, una consultora de ciberseguridad en el piso 11, moqueta gris, plantas de plástico, tres luces encendidas a las tres de la mañana y una sala de reuniones con persianas bajadas. Los cazadores: disciplina, convicción, cansancio y miedo profesional. Medio-lento. Pad electrónico clínico, piano frío con notas repetidas, un pulso militar muy bajo (redoblante con escobilla o timbal lejano), zumbido de fluorescentes. Evitar: épica de película de acción, coros religiosos explícitos."
+        },
+        {
+          "id": "terminal86",
+          "nombre": "Parte 3 · Los silos de la Terminal 86",
+          "escenas": ["terminal86"],
+          "volumen": 0.4,
+          "clima": "A3-E03, Noche 7, medianoche: cara a cara con Krell, el otro hijo, en una galería de chapa y vidrio sucio sobre los silos de grano, una cinta transportadora detenida, la compuerta abierta sobre la bahía y el viento. Confrontación entre hermanos: amenaza contenida, violencia a punto de estallar. Lento con peso (~70 bpm). Percusión metálica grave y espaciada (golpes sobre chapa), drone de cuerdas, guitarra baja distorsionada sostenida, viento. Evitar: ritmo rápido de pelea, melodía triste explícita."
+        },
+        {
+          "id": "consejo",
+          "nombre": "Parte 4 · Consejo de Primogenitura",
+          "escenas": ["torre-atico"],
+          "volumen": 0.3,
+          "clima": "A4-E01, Noche 8, 22:30: el ático del piso 42 de la Torre Halloway, una pared de cristal sobre Elliott Bay, la Primogenitura reunida, la moción de Halloway; la coterie pone sus pruebas sobre la mesa. Poder, ceremonia y juicio. Lento y solemne (~60 bpm). Órgano o armonio grave, cuerdas en acordes largos, un timbal muy ocasional, una celesta fría. Evitar: épica orquestal a pleno, coros, cualquier cosa que tape la discusión."
+        },
+        {
+          "id": "boveda",
+          "nombre": "Parte 4 · La bóveda de la Torre Halloway",
+          "escenas": ["torre-boveda"],
+          "volumen": 0.35,
+          "clima": "El nivel −3, sólo accesible con el ascensor privado: hormigón, una puerta de acero con combinación y lo que Halloway guarda. Frío, secreto, culpa enterrada. Sin tempo. Drone grave de sintetizador, ventilación, zumbido de transformador, un acorde de cuerdas que tarda en resolver. Evitar: melodía, percusión."
+        },
+        {
+          "id": "colman",
+          "nombre": "Parte 4 · Colman Dock",
+          "escenas": ["terminal-ferry"],
+          "volumen": 0.35,
+          "clima": "A4-E03, 00:55: la terminal de ferris casi vacía bajo los fluorescentes, una máquina de café fuera de servicio, el último ferry esperando con todas las luces encendidas sobre el agua negra; la sirena suena una vez, larga. Espera y cuenta regresiva: el maletín se va. Lento con pulso de reloj (~72 bpm). Pad de fluorescente, piano eléctrico con notas repetidas, bajo que late, sirena de barco lejana. Evitar: acción, melodía triunfal."
+        },
+        {
+          "id": "ferry",
+          "nombre": "Parte 4 · El último ferry: la travesía",
+          "escenas": ["ferry"],
+          "volumen": 0.35,
+          "clima": "A4-E03, a bordo: 35 minutos a Bainbridge, cuarenta pasajeros mortales en el salón, cámaras de seguridad, el señor Pell con el maletín. Calma en la superficie y la Mascarada en juego: tensión social, nadie puede ver nada raro. Medio-lento, constante. El zumbido grave de los motores del barco como base, pad nocturno, guitarra limpia con delay, el agua contra el casco. Evitar: percusión de pelea, sustos."
+        },
+        {
+          "id": "ferry-climax",
+          "nombre": "Parte 4 · El último ferry: cubierta de coches y puente",
+          "escenas": ["ferry-coches", "ferry-puente"],
+          "volumen": 0.4,
+          "clima": "El clímax de A4-E03: la pelea entre los coches por el maletín (Dawson y los ghouls; Krell como tercera fuerza) y la huida de Halloway al puente para tomar el barco. Urgencia y violencia en un lugar cerrado que se mueve. Rápido (~120 bpm) pero oscuro. Motores del barco como base, percusión industrial insistente, ostinato de cuerdas graves, bajo distorsionado, metal que golpea. Evitar: épica heroica, guitarras de rock de estadio, coros."
+        },
+        {
+          "id": "ciudad",
+          "nombre": "Seattle de noche",
+          "volumen": 0.3,
+          "clima": "Para moverse por la ciudad y las escenas sin mapa (el muelle 46, ir de un lado a otro, el mapa regional MAP-00): manejar bajo la lluvia, limpiaparabrisas, neones de Pioneer Square, el puerto. Noir urbano, en marcha. Medio-lento (~76 bpm). Bajo eléctrico, batería con escobillas, guitarra con trémolo, pad de sintetizador, lluvia y tráfico mojado. Evitar: jazz de ascensor, voces, melodía pegadiza."
+        },
+        {
+          "id": "combate",
+          "nombre": "Combate",
+          "volumen": 0.45,
+          "clima": "Para cualquier pelea o persecución entre Vástagos, ghouls o cazarrecompensas. Violencia sobrenatural, rápida y sucia. Rápido (~130 bpm). Percusión pesada (taikos o tambores graves, golpes metálicos), ostinato de cuerdas graves, bajo distorsionado, sintetizador agresivo. Evitar: épica de fantasía, coros, metal con voces, rock alegre."
+        },
+        {
+          "id": "redada",
+          "nombre": "FIRSTLIGHT · La redada",
+          "volumen": 0.45,
+          "clima": "A4-E02 (u otro golpe de FIRSTLIGHT): las luces se apagan, un dron zumba sobre el techo, seis operadores con munición incendiaria y linternas UV, y por debajo de la puerta entra una luz blanca que no es de linterna (el generador de luz solar). Asalto táctico: miedo, precisión, la noche que se vuelve día. Rápido (~120 bpm) y mecánico. Pulso electrónico militar, percusión seca, zumbido de dron, ruido blanco que crece y vuelve a bajar, golpes graves. Evitar: épica heroica, melodía, coros."
+        },
+        {
+          "id": "epilogo",
+          "nombre": "Epílogo · Lo que el agua no se lleva",
+          "volumen": 0.3,
+          "clima": "Desenlaces y epílogo: la tumba, el episodio 113 del podcast, el hangar después, la carta. Lo que queda cuando pasa la marea: duelo, cansancio y una calma amarga. Muy lento. Piano solo con mucho aire, violonchelo, lluvia que amaina, el agua de la bahía. Evitar: resolución triunfal, final feliz, cualquier cosa sentimental de más."
+        }
+      ]
+    }
+  ]
+}

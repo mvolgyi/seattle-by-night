@@ -27,7 +27,8 @@ export const PACKS = {
   personajes: "Actor",
   escenas: "Scene",
   firstlight: "Item",
-  macros: "Macro"
+  macros: "Macro",
+  playlists: "Playlist"
 };
 
 /** Qué carpeta de content/ va a qué compendio de journals. */
@@ -54,6 +55,9 @@ export const ID = {
   itemDe: (actorId, clave) => idEstable(`item:${actorId}:${clave}`),
   escena: id => idEstable(`escena:${id}`),
   macro: id => idEstable(`macro:${id}`),
+  /** Lista de música (content/musica.json) y su pista: mismas semillas que DVV. */
+  lista: id => idEstable(`playlist:${id}`),
+  pista: (lista, id) => idEstable(`pista:${lista}:${id}`),
   aventura: id => idEstable(`aventura:${id}`)
 };
 
