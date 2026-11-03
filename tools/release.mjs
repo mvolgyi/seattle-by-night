@@ -188,10 +188,14 @@ if (errores.length) {
 fs.copyFileSync(rutaManifest, path.join(salida, "module.json"));
 
 // Las guías, aparte: se arman desde packs-src y packs-src/*-en (los dejó al día `npm run pack`).
+// El enlace de idioma de cada una apunta al nombre publicado de la otra (--otra).
 const GUIAS = [["es", "guia/index.html", "guia-del-narrador.html"], ["en", "guia/narrator-guide.html", "narrator-guide.html"]];
 for (const [idioma, origen, destino] of GUIAS) {
-  execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs"), "--idioma", idioma], { cwd: RAIZ, stdio: "inherit" });
+  const otra = GUIAS.find(g => g[0] !== idioma)[2];
+  execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs"), "--idioma", idioma, "--otra", otra], { cwd: RAIZ, stdio: "inherit" });
   fs.copyFileSync(path.join(RAIZ, origen), path.join(salida, destino));
+  // Las de guia/ vuelven a enlazarse entre sí con sus nombres locales.
+  execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs"), "--idioma", idioma], { cwd: RAIZ, stdio: "ignore" });
 }
 const raiz = new Map();
 for (const f of enZip) {

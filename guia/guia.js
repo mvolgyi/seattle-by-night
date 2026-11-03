@@ -167,6 +167,11 @@
   for (const t of document.querySelectorAll("button.sbn-termometro")) t.title = T("Mueve el Termómetro de La mesa");
   for (const t of document.querySelectorAll("button.sbn-pista")) t.title = T("Marca o desmarca la pista en La mesa");
 
+  /* ---- cambio de idioma: la otra guía, en el mismo punto (las anclas son las mismas) ---- */
+  for (const a of document.querySelectorAll("a[data-idioma]")) {
+    a.addEventListener("click", () => { a.href = a.getAttribute("href").split("#")[0] + location.hash; });
+  }
+
   /* ---- notas ---- */
   for (const t of document.querySelectorAll("textarea[data-notas]")) {
     t.value = estado.notas[t.dataset.notas] ?? "";

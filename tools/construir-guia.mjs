@@ -32,8 +32,12 @@
  * content/en/ fundido (tools/contenido/idioma.mjs), con los textos fijos de la
  * guía en inglés (L() acá y DATOS.textos para guia/guia.js), y sale en
  * guia/narrator-guide.html. Se relanza con SBN_IDIOMA=en, como el build.
+ * Arriba a la derecha va el enlace a la otra guía. Las anclas son las mismas
+ * en los dos idiomas, así que lleva al mismo punto (guia/guia.js).
  *
- * Uso: node tools/construir-guia.mjs [--enlazado] [--idioma es|en]   (--enlazado: sin embeber, para depurar)
+ * Uso: node tools/construir-guia.mjs [--enlazado] [--idioma es|en] [--otra <archivo>]
+ *   --enlazado  sin embeber, para depurar
+ *   --otra      nombre de la otra guía para el enlace de idioma (la release las renombra)
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -88,6 +92,12 @@ const leerJson = leerContenido;
 
 const NOMBRE_SALIDA = EN ? "guia/narrator-guide.html" : "guia/index.html";
 const SALIDA = path.join(RAIZ, NOMBRE_SALIDA);
+/** La otra guía: el enlace de idioma. En guia/ están lado a lado; tools/release.mjs pasa el nombre publicado. */
+const iOtra = process.argv.indexOf("--otra");
+const OTRA_HREF = iOtra >= 0 ? process.argv[iOtra + 1] : (EN ? "index.html" : "narrator-guide.html");
+const OTRA = EN ? { href: OTRA_HREF, lang: "es", texto: "Español", largo: "Leer esta guía en castellano" }
+  : { href: OTRA_HREF, lang: "en", texto: "English", largo: "Read this guide in English" };
+const enlaceIdioma = `<a class="t-idioma" href="${OTRA.href}" hreflang="${OTRA.lang}" lang="${OTRA.lang}" aria-label="${OTRA.largo}" data-idioma><span class="largo">${OTRA.texto}</span><span class="corto" aria-hidden="true">${OTRA.lang.toUpperCase()}</span></a>`;
 const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
 const CACHE = path.join(RAIZ, "cache/guia");
@@ -320,6 +330,7 @@ const cabecera = `
   <div class="fila">
     <a class="t-logo" href="#inicio" aria-label="${L("Inicio", "Home")}">${L("EW", "WF")}</a>
     <nav class="t-nav" aria-label="${L("Secciones", "Sections")}">${navLinks}</nav>
+    ${enlaceIdioma}
     <button class="t-accion" type="button" data-abrir-mesa>${MESA}</button>
   </div>
   <div class="banda-hero">
@@ -716,6 +727,7 @@ let html = `<!doctype html>
 <title>${L("El Expediente Ward — Guía del Narrador", "The Ward File — Storyteller Guide")}</title>
 <meta name="description" content="${L("El Expediente Ward, una crónica fan y no oficial en Seattle para Vampiro: La Mascarada 5ª edición, completa y con seguimiento de la partida.", "The Ward File, a fan-made, unofficial Seattle chronicle for Vampire: The Masquerade 5th Edition, complete and with game tracking.")}">
 <meta name="theme-color" content="#0d0f12">
+<link rel="alternate" hreflang="${OTRA.lang}" href="${OTRA.href}">
 <link rel="stylesheet" href="../src/styles/sbn.css">
 <link rel="stylesheet" href="../src/styles/sbn-ui.css">
 <link rel="stylesheet" href="guia.css">
@@ -730,6 +742,7 @@ ${cabecera}
   <a class="barra-logo" href="#inicio" aria-label="${L("Volver a la portada", "Back to the cover")}">${L("EW", "WF")}</a>
   <div class="barra-links">${navLinks}</div>
   <form class="buscar" role="search" data-buscar><label for="buscar" class="visualmente-oculto">${L("Ir a una escena, un personaje o un lugar", "Go to a scene, a character or a location")}</label><input id="buscar" name="buscar" type="search" list="destinos" placeholder="${L("Ir a… (escena, PNJ, lugar, ID)", "Go to… (scene, NPC, location, ID)")}" autocomplete="off" spellcheck="false"><datalist id="destinos"></datalist></form>
+  ${enlaceIdioma}
   <button class="t-accion" type="button" data-abrir-mesa>${MESA}</button>
 </nav>
 <main id="contenido">
@@ -744,7 +757,7 @@ ${pantalla}
 ${foundry}
 </main>
 <footer class="pie">${LOGO_DARK_PACK}<div class="pie-texto"><p>${esc(LEGAL)}</p>${LEGAL_EN.map(t => `<p lang="en">${esc(t)}</p>`).join("")}<p>${L("Es gratuito. Todo el arte (retratos, mapas, tokens, ilustraciones, portada) se generó con IA en local, con modelos de licencia comercial; no hay arte de Paradox ni de White Wolf, y el único logo es el del Dark Pack, como lo pide el acuerdo. Fuentes IBM Plex Sans, IBM Plex Mono y Amiri (OFL).",
-  "It's free. All the art (portraits, maps, tokens, illustrations, cover) was generated locally with AI, using commercially licensed models; there's no Paradox or White Wolf art, and the only logo is the Dark Pack's, as the agreement requires. Fonts: IBM Plex Sans, IBM Plex Mono and Amiri (OFL).")}</p></div></footer>
+  "It's free. All the art (portraits, maps, tokens, illustrations, cover) was generated locally with AI, using commercially licensed models; there's no Paradox or White Wolf art, and the only logo is the Dark Pack's, as the agreement requires. Fonts: IBM Plex Sans, IBM Plex Mono and Amiri (OFL).")}</p><p><a href="${OTRA.href}" hreflang="${OTRA.lang}" lang="${OTRA.lang}" data-idioma>${OTRA.largo}</a></p></div></footer>
 ${mesa}
 <div class="aviso" data-aviso role="status" aria-live="polite" hidden></div>
 <button type="button" class="arriba" data-arriba hidden aria-label="${L("Volver arriba", "Back to top")}">▲</button>

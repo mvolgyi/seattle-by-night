@@ -118,11 +118,19 @@ h5 { font-family: var(--etiqueta); font-weight: 600; font-size: 17px; margin: 1.
 
 /* ---------- cabecera ---------- */
 .tablero { background: var(--fondo); }
-.fila { display: grid; grid-template-columns: 64px 1fr auto; align-items: stretch; height: 60px; border-bottom: 1px solid var(--panel-3); }
+.fila { display: grid; grid-template-columns: 64px 1fr auto auto; align-items: stretch; height: 60px; border-bottom: 1px solid var(--panel-3); }
 .t-logo, .barra-logo { display: grid; place-items: center; background: var(--carmesi); color: var(--texto); text-decoration: none; font-family: var(--serif); font-weight: 700; font-size: 22px; }
 .t-nav { min-width: 0; display: flex; align-items: center; gap: 22px; padding: 0 24px; overflow-x: auto; scrollbar-width: none; }
 .t-nav a, .barra-links a { font-family: var(--etiqueta); font-weight: 500; text-transform: uppercase; letter-spacing: 0.02em; font-size: 12.5px; text-decoration: none; white-space: nowrap; }
 .t-accion { padding: 0 24px; }
+/* El otro idioma, arriba a la derecha, antes de La mesa. */
+.t-idioma { display: grid; place-items: center; padding: 0 20px; font-family: var(--etiqueta); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 12.5px; color: var(--texto); text-decoration: none; border-left: 1px solid var(--panel-3); white-space: nowrap; }
+.t-idioma:hover, .t-idioma:focus-visible { color: var(--lluvia, var(--texto)); }
+.t-idioma .corto { display: none; }
+.barra .t-idioma { align-self: stretch; border-left: 0; padding: 0 12px; }
+/* En la barra fija no sobra lugar: el código corto. */
+.barra .t-idioma .largo { display: none; }
+.barra .t-idioma .corto { display: inline; }
 /* Portada partida: la foto con el título gigante a la izquierda, el texto a la derecha. */
 .banda-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); min-height: calc(100svh - 60px); }
 .hero-foto { position: relative; margin: 0; overflow: hidden; min-height: 420px; }
@@ -357,7 +365,7 @@ button.sbn-pista { color: var(--texto); }
 .visor-cuerpo.encajar img { max-width: 100%; max-height: calc(100svh - 56px); object-fit: contain; }
 
 /* ---------- barra fija, volver arriba, aviso ---------- */
-.barra { position: sticky; top: 0; z-index: 9; display: grid; grid-template-columns: 56px 1fr auto auto; align-items: stretch; gap: 8px; height: 56px; padding: 0 8px 0 0; background: var(--fondo); border-bottom: 1px solid var(--panel-3); transform: translateY(-100%); transition: transform 320ms cubic-bezier(.2,.7,.2,1); margin-bottom: -57px; }
+.barra { position: sticky; top: 0; z-index: 9; display: grid; grid-template-columns: 56px 1fr auto auto auto; align-items: stretch; gap: 8px; height: 56px; padding: 0 8px 0 0; background: var(--fondo); border-bottom: 1px solid var(--panel-3); transform: translateY(-100%); transition: transform 320ms cubic-bezier(.2,.7,.2,1); margin-bottom: -57px; }
 .barra:not(.visible) { visibility: hidden; }
 .barra.visible { transform: none; }
 .barra-logo { font-size: 18px; }
@@ -420,7 +428,7 @@ button.sbn-pista { color: var(--texto); }
   .tabs { flex-direction: row; overflow-x: auto; top: 56px; z-index: 3; background: var(--fondo); padding: 8px var(--margen); scrollbar-width: none; width: 100%; }
   .tab { flex: 0 0 auto; width: auto; min-width: 150px; border-left: 0; border-top: 3px solid transparent; }
   .tab.activa { border-top-color: var(--sangre); }
-  .barra { grid-template-columns: 48px 1fr auto; }
+  .barra { grid-template-columns: 48px 1fr auto auto; }
   .buscar { display: none; }
   .escala { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .escala.chica { grid-template-columns: repeat(11, minmax(0, 1fr)); }
@@ -466,6 +474,9 @@ button.sbn-pista { color: var(--texto); }
   .escala { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .t-nav { gap: 16px; padding: 0 14px; }
   .t-accion { padding: 0 14px; }
+  .t-idioma { padding: 0 14px; }
+  .t-idioma .largo { display: none; }
+  .t-idioma .corto { display: inline; }
   .barra-links { gap: 14px; }
   .sbn-doc { padding: 1.1em 1em; }
   .paso, .tarjeta { padding: 24px 16px; }
@@ -475,7 +486,7 @@ button.sbn-pista { color: var(--texto); }
 @media print {
   :root { color-scheme: light; }
   body { background: #fff; color: #111; font-size: 11pt; }
-  .tablero, .mesa, .t-accion, .cta, .hecho, .tabs, .barra, .arriba, .visor, .lupa, .indice, .bf-foto, .ficha-foto, .planos, .aviso { display: none !important; }
+  .tablero, .mesa, .t-accion, .t-idioma, .cta, .hecho, .tabs, .barra, .arriba, .visor, .lupa, .indice, .bf-foto, .ficha-foto, .planos, .aviso { display: none !important; }
   .banda-foto { grid-template-columns: 1fr; min-height: auto; }
   .bf-texto, .banda-foto.invertido .bf-texto { margin: 0; box-shadow: none; }
   .bf-texto::before, .bf-texto::after, .paso::before, .tarjeta::before { display: none; }
