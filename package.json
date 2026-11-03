@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "seattle-by-night",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Módulo fan y no oficial de Foundry VTT para Vampiro: La Mascarada 5e (wod5e): El Expediente Ward, una crónica en Seattle, con FIRSTLIGHT jugable",
   "type": "module",
   "scripts": {
@@ -21,6 +21,7 @@
     "verificar:traduccion": "node tools/contenido/verificar-traduccion.mjs",
     "release": "node tools/release.mjs",
     "guia": "node tools/construir-guia.mjs",
+    "duotono": "node tools/duotono.mjs",
     "e2e": "node tools/e2e/prueba.mjs",
     "verificar:contenido": "python3 tools/verificar-contenido.py .",
     "comfy": "node tools/comfy.mjs",

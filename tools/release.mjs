@@ -17,7 +17,7 @@
  * tools/, cache/, los .docx ni node_modules. Hay que correr `npm run pack` antes: sin packs/ no hay zip.
  *
  * La Guía del Narrador NO va en el zip (dentro del módulo, un jugador podría
- * abrirla por URL): se arma aparte, una por idioma, en <salida>/guia-del-narrador.html
+ * abrirla por URL): se arma aparte, con los dos idiomas, en <salida>/guia-del-narrador.html
  * y <salida>/narrator-guide.html, y se suben a la release como archivos sueltos.
  *
  * Después de armarlo lo lee de vuelta (unzip -Z1) y comprueba que esté todo
@@ -188,11 +188,10 @@ if (errores.length) {
 fs.copyFileSync(rutaManifest, path.join(salida, "module.json"));
 
 // Las guías, aparte: se arman desde packs-src y packs-src/*-en (los dejó al día `npm run pack`).
-const GUIAS = [["es", "guia/index.html", "guia-del-narrador.html"], ["en", "guia/narrator-guide.html", "narrator-guide.html"]];
-for (const [idioma, origen, destino] of GUIAS) {
-  execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs"), "--idioma", idioma], { cwd: RAIZ, stdio: "inherit" });
-  fs.copyFileSync(path.join(RAIZ, origen), path.join(salida, destino));
-}
+// Un solo build arma las dos: el mismo HTML con los dos idiomas, cada una abre en el suyo.
+const GUIAS = [["guia/index.html", "guia-del-narrador.html"], ["guia/narrator-guide.html", "narrator-guide.html"]];
+execFileSync(process.execPath, [path.join(RAIZ, "tools/construir-guia.mjs")], { cwd: RAIZ, stdio: "inherit" });
+for (const [origen, destino] of GUIAS) fs.copyFileSync(path.join(RAIZ, origen), path.join(salida, destino));
 const raiz = new Map();
 for (const f of enZip) {
   const k = f.includes("/") ? f.split("/")[0] + "/" : f;
@@ -201,7 +200,7 @@ for (const f of enZip) {
 const mb = (fs.statSync(zip).size / 1024 / 1024).toFixed(1);
 console.log(`✓ ${zip} · ${manifest.version} · ${enZip.size} archivos · ${mb} MB`);
 console.log(`  ${[...raiz].map(([k, n]) => `${k} ${n}`).join(" · ")}`);
-for (const [, , destino] of GUIAS) {
+for (const [, destino] of GUIAS) {
   const guia = path.join(salida, destino);
   console.log(`✓ ${guia} · ${(fs.statSync(guia).size / 1024 / 1024).toFixed(1)} MB (se sube aparte)`);
 }

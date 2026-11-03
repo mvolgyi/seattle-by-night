@@ -1,0 +1,389 @@
+{
+  "_id": "cqMsahaazpJ1Ydsk",
+  "_key": "!journal!cqMsahaazpJ1Ydsk",
+  "name": "The Truth and the Adventure Outline",
+  "folder": "6HgCsgxtaVxFMM6U",
+  "sort": 30,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "seattle-by-night": {
+      "origen": "journal",
+      "id": "VERDAD",
+      "archivo": "content/cronica/02-la-verdad-y-el-esquema.md"
+    }
+  },
+  "pages": [
+    {
+      "_id": "KtluswHyeqBFTMrN",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.KtluswHyeqBFTMrN",
+      "name": "The Truth and the Adventure Outline",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>Phase 2. Working document for the Storyteller. All cross-references go by ID.</em></p>\n"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9Ub5rD3XXQb6z08X",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.9Ub5rD3XXQb6z08X",
+      "name": "The Truth Behind the Adventure",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Charles Halloway</strong> (@UUID[JournalEntry.uDNdrVnGBbAh18Tt]{Charles Halloway}), the Ventrue Primogen, wants the crown of Seattle. He can&#39;t bring down Prince Whitmore (@UUID[JournalEntry.sCVTjJFrnyyVnQDt]{Marcus Whitmore}) while Sheriff Montgomery (@UUID[JournalEntry.1UgmJAqeofD7SSaf]{Ethan Montgomery}) and his Hound, David Smith (@UUID[JournalEntry.3zcQLj7aEAxHT0Yr]{David Smith}), keep the city clean. His plan has three pieces:</p>\n<ul>\n<li><strong>The File.</strong> His ghoul Preston Gale (@UUID[JournalEntry.y8Ao3xEHH3W11EJe]{Preston Gale}), owner of a home camera and security company, locates the archive of Helen Ward (@UUID[JournalEntry.fVXK7vOoqn0ZL0uf]{Helen Ward}) through his own customers&#39; data. A team of mortals steals it.</li>\n<li><strong>The Ghost.</strong> In 1986, Halloway bought the journals of Marcus Vance (@UUID[JournalEntry.WIihWwv4LCOX68B1]{Marcus “Ironjaw” Vance}), which were never burned. With them he hires August Krell (@UUID[JournalEntry.OmK2qlPVNl758u6h]{August Krell}), a Brujah whom Vance trained and abandoned in the &#39;70s. Krell destroys the Kindred who could expose the theft, imitating <em>Controlled Fury</em>. That gets Halloway two things: David chasing a dead man, and Montgomery starting to distrust him.</li>\n<li><strong>The Leak.</strong> Halloway hands the Second Inquisition (FIRSTLIGHT) selected fragments of the File. They only point at Whitmore&#39;s and Montgomery&#39;s assets. When the raid comes, he&#39;ll convene the Primogen to demand a regent “capable of protecting the Masquerade”: himself.</li>\n</ul>\n<p><strong>Vance is not in Seattle.</strong> Every sign of him is false. What is real is Krell, the other son, the one who wasn&#39;t chosen.</p>\n"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "OBSzMoeRLlU80LqU",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.OBSzMoeRLlU80LqU",
+      "name": "FIRSTLIGHT's Thermometer (AYU-03)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>It&#39;s a 0-to-10 tracker that measures how much the Second Inquisition knows. It starts at 2. It rises with Masquerade breaches, public violence, contact between Helen and FIRSTLIGHT, and the fragments Halloway leaks each night the plot advances unanswered. It drops when the coterie cleans up traces, recovers copies of the File, or neutralizes the mole.</p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Threshold</th>\n<th>What happens in the city</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>3</td>\n<td>FIRSTLIGHT puts Helen under surveillance: vans, drones, and an analyst who listens closely to her podcast.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Agent Dana Okafor (@UUID[JournalEntry.bJA2iRyDgbm2TcuK]{Dana Okafor}) contacts Helen and offers her protection in exchange for the archive.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>They investigate one of David&#39;s mortal assets (Bear&#39;s contacts or the hangar&#39;s cover). Resources or Haven at risk.</td>\n</tr>\n<tr>\n<td>9</td>\n<td>The raid, @UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid}, triggers.</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Purge. At least one Camarilla haven falls and the city enters a Masquerade crisis for the rest of the chronicle.</td>\n</tr>\n</tbody></table>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · Thresholds</h4><p>Later installments refine this table and take precedence over it. At 7, the investigation targets “a coterie asset: the hangar partnership, the medical examiner&#39;s office, Nadia&#39;s calendar” (doc 10), with Okafor&#39;s visit to the M.E. “R. A.” (doc 14). At 10, “the chronicle continues in survival mode” (doc 10). The current version is in @UUID[JournalEntry.b13NIR35K7HpthZv]{FIRSTLIGHT's Thermometer} and on the @UUID[JournalEntry.LkbsP03WDYiTwRRX]{Storyteller Screen}.</p>\n</aside>\n"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "9Sr8zRMzLgGT9p8N",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.9Sr8zRMzLgGT9p8N",
+      "name": "Adventure Skeleton",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><strong>Length:</strong> 6–8 sessions. <strong>Format:</strong> a coterie of 4–5 players with the five PCs; David and Bear accompany it as allied NPCs.</p>\n<p><strong>Structure:</strong> Prologue and four parts. Parts 1 and 2 can be played in any order. The city moves on its own: each unanswered night, Halloway leaks a fragment (Thermometer +1) and Krell takes another step.</p>\n"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ahN8JKkJ3pvGxClm",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.ahN8JKkJ3pvGxClm",
+      "name": "Halloway's Clock",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p><em>What happens if the coterie doesn&#39;t intervene.</em></p>\n<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>Night</th>\n<th>Event</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>The break-in (Prologue).</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Krell destroys the first buyer of a copy (@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46}).</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Halloway sows doubts about Montgomery in Elysium (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}).</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Second victim, bearing Vance&#39;s signature (@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Evaluate. Execute.”}).</td>\n</tr>\n<tr>\n<td>5</td>\n<td>First fragment leaked to FIRSTLIGHT. Okafor contacts Helen.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Krell goes after Bear or Helen (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}).</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Montgomery receives “evidence” against David (@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers}).</td>\n</tr>\n<tr>\n<td>8</td>\n<td>FIRSTLIGHT raid and Primogen Council (A4).</td>\n</tr>\n</tbody></table>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · Clock and Installments</h4><p>This is the outline&#39;s Clock (doc 01). The Clock from chapter 7 wins (@UUID[JournalEntry.ll97TEj4MRjtM595]{Chapter 7 · The Ward File}, doc 10), with Nights 2 to 6 updated in @UUID[JournalEntry.nuyiQmnE32yq4wOG]{Revision to Part 1 · The Chain of Copies} (doc 11). Halloway doesn&#39;t leak a fragment every night: he makes two drops as ARCHER, on Nights 2 and 5 (Thermometer +1 each; docs 10 and 14). The raid and the Council fall on Night 8, but the raid only happens if the Thermometer is at 9 or higher.</p>\n</aside>\n"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "F68KPEHjRz6tyhbG",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.F68KPEHjRz6tyhbG",
+      "name": "Prologue—“Rain over Ballard”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE} · The Call from SAFE.</strong> It&#39;s 3:19 a.m. Helen calls the only number on her flip phone: someone has broken into her apartment (@UUID[JournalEntry.YD0Td8Y9aJyIpGSl]{Helen Ward's Apartment}). The coterie arrives before the police, with David and Bear. Tests: tracking, cleaning up the scene, and handling Helen. <em>Exits:</em> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took}.</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · The Time of the Call</h4><p>The outline (doc 01) put SAFE&#39;s call at 3:12. It&#39;s corrected to 3:19, the time in chapter 7 (doc 10, @UUID[JournalEntry.w9xeQJg6psfiMjFU.JournalEntryPage.yyXMKcpDOIhGuZIB]{A0-E01 · The Call from SAFE}): the break-in is at 3:04 and the cameras are off from 2:52 to 3:03.</p>\n</aside>\n"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "RWxb6rqCJE3KZVcd",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.RWxb6rqCJE3KZVcd",
+      "name": "Part 1—“A Trail of Water”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took} · What They Took.</strong> Helen&#39;s apartment. The thieves were mortal professionals, and the building&#39;s cameras were put on a loop (P-01). Helen makes a list of what was stolen (@UUID[JournalEntry.ifdmxLzsoLizs9uN]{Index of the Ward File}). There&#39;s a smell of foreign Vitae on the doorknob: it belongs to a ghoul (P-02). <em>Exits:</em> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46}, @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below}, @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes}.</li>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46} · Ash on Pier 46.</strong> A minor Nosferatu turns up destroyed on Harbor Island, half a mile from David&#39;s haven. The blows follow the doctrine of <em>Controlled Fury</em> (P-03). On the body there&#39;s a USB drive with a partial copy of the File (P-04). Witness: @UUID[JournalEntry.BxMkvzNl7Yt8OyTI]{r/SeattleAfterDark: “Anyone Else See This on Harbor Island?”}. <em>Exits:</em> @UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks}.</li>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.xWx5IoPih8fX83b1]{A1-E03 · The Sheriff Asks} · The Sheriff Asks.</strong> At Montgomery&#39;s farm (@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{The Sheriff's Farm and Boat Landing}). He recognizes the technique and asks what nobody wants to hear: “Is your sire alive?” He gives David and the coterie three nights, and assigns David to go with it. If the Thermometer is at 4 or higher, Montgomery is in a worse mood. <em>Exits:</em> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was}.</li>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below} · Everything Sells Below.</strong> In the Underground (@UUID[JournalEntry.jg1zpvYlDFMJRY8Q]{The Sealed Underground (Seattle Underground)}). Thornquist confirms there are copies of the File on the market and that the courier is a thin-blood, Jun (P-05). <em>Branch:</em> rescuing Jun opens @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.cjmyT3bfPbka0X6O]{GAN-11 · Jun's Fast}; if the coterie doesn&#39;t, Krell destroys her on Night 4. <em>Exits:</em> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Evaluate. Execute.”}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}.</li>\n<li><strong>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes} · The City&#39;s Eyes</strong> <em>(optional; skip it if the coterie doesn&#39;t follow the tech trail).</em> The doorbell cameras in Helen&#39;s building are all Gale Sentinel. The company received a data request that appears in no record (P-06). <em>Exits:</em> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}.</li>\n</ul>\n"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "TTxPkiBNftibA7JX",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.TTxPkiBNftibA7JX",
+      "name": "Part 2—“The Ghost of Marseille”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night} · Elysium Night.</strong> At the Glass Gallery (@UUID[JournalEntry.iyojT7kJHH23BWLd]{The Glass Gallery (Elysium)}). It&#39;s a social scene: Halloway, Marchetti, Voight, and Fry. Halloway mentions Vance with a detail he shouldn&#39;t know (P-07). Fry recites @UUID[JournalEntry.FVBnf3yE87K4BOhh]{Wendell Fry: “Song for the Son of the Fist”}. Voight warns privately that FIRSTLIGHT has opened a file. <em>Exits:</em> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Evaluate. Execute.”}, @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was}.</li>\n<li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Evaluate. Execute.”} · “Locate. Assess. Execute.”</strong> The second victim has Vance&#39;s motto written on the wall. A roll of <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.intelligence skills.brawl\" data-dificultad=\"4\" data-label=\"Intelligence + Brawl (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Intelligence + Brawl (Difficulty 4)</a> reveals that the technique is wrong: Krell strikes from the inverted guard, the way Vance taught the students who never finished their training (P-08). <em>Exits:</em> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}.</li>\n<li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.aJxUAHXcYpRWrhmG]{A2-E03 · Salt's} · Salt&#39;s</strong> <em>(optional).</em> In Everett (@UUID[JournalEntry.JMwTSsJAcyYdCs3m]{Salt's Bar and the Old Shipyard}). Rosa Iturbe receives the coterie and David with hostility: Halloway has spread word that the Anarchs are behind the deaths. Rosa knew the Anarch who killed Emily. If David hears it, he breaks or explodes: the Storyteller plays him, and the coterie has to hold him together. <em>Branch:</em> an alliance with Rosa (allies in the climax) or a confrontation (@UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.0e8h94hwnGDTnixI]{GAN-06 · Blood Hunt in Everett}). <em>Exits:</em> @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was}.</li>\n<li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was} · The Sheriff That Was.</strong> In Tacoma, where O&#39;Connor lives in exile. He says Vance&#39;s journals weren&#39;t burned: in 1986 they were sold to “a patient Seattle Ventrue” (P-09). He hands over @UUID[JournalEntry.4858IAb89fTokFfV]{Letter from Sheriff O'Connor to Prince Whitmore, 1978}. If the coterie approaches the Larchmont Building (@UUID[JournalEntry.Oiln4o98kvxKbOvS]{The Larchmont Building}), go to @UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont}. <em>Exits:</em> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son}, @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}.</li>\n<li><strong>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.9fTKL8Oeq36BCfU9]{A2-E05 · The Ashes of the Larchmont} · The Ashes of the Larchmont</strong> <em>(optional; depends on decision 5).</em> The burned building that marked Helen&#39;s career. The File has a folder on it. What the coterie finds depends on the truth about the fire; what it tells David depends on the players.</li>\n</ul>\n"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "PRibhqYXGYn4A8Xu",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.PRibhqYXGYn4A8Xu",
+      "name": "Part 3—“The Two Hands”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.7brn5AgmWggUl420]{A3-E01 · The Other Son} · The Other Son.</strong> Krell ambushes Bear or Helen (whoever is more exposed), wearing Vance&#39;s coat. It&#39;s a combat and chase scene. If the coterie arrives in time, Krell flees and leaves a message. If it doesn&#39;t, Bear is badly wounded or Helen is kidnapped. <em>Exits:</em> @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}.</li>\n<li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center} · The Data Center.</strong> Infiltration of Gale Sentinel (@UUID[JournalEntry.zSkwEUUtkNGhfXun]{Gale Sentinel Campus and Data Center}). The coterie finds the master copy of the File, the shipping log to “SEA-0411” (P-10), and the digital signature of Preston Gale, Halloway&#39;s ghoul (P-11). <em>Options:</em> stealth, Dominate on the guards, or an assault, which raises the Thermometer +2. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"+2\" data-motivo=\"A3-E02: assault on Gale Sentinel\"><span class=\"sbn-termometro-cambio\">+2</span> <span class=\"sbn-termometro-motivo\">A3-E02: assault on Gale Sentinel</span></button></li>\n<li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell} · Face to Face with Krell.</strong> At the port&#39;s cargo terminal or wherever Krell chooses. Krell demands David; the coterie decides whether to bring him and how. Krell doesn&#39;t want to win: he wants David to see him. He offers to trade information for recognition. What softens him are the truths the PCs tell him, with David beside them. <em>Branch (the players choose):</em> destroy him, hand him over to the Sheriff, or turn him into a witness against Halloway (P-12).</li>\n<li><strong>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers} · The Pack Doubts.</strong> Halloway hands Montgomery “evidence” that David is protecting his sire. Montgomery summons the coterie and David. <em>Branch:</em> convince him (the PC who speaks for the coterie rolls Manipulation + Persuasion, Difficulty 4, +1 die for each clue from P-07 to P-15: <a class=\"sbn-tirada\" data-sbn-tirada=\"attributes.manipulation skills.persuasion\" data-dificultad=\"4\" data-label=\"Manipulation + Persuasion (Difficulty 4)\"><i class=\"fa-solid fa-dice-d10\"></i> Manipulation + Persuasion (Difficulty 4)</a>), confront him, or flee. If it goes wrong, the coterie reaches the climax as fugitives, and David with them.</li>\n</ul>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · Clues for A3-E04</h4><p>The outline (doc 01) gave +1 die for each clue from P-07 to P-12. Part 3 (doc 12) expands the list to P-07 through P-15 and adds other modifiers (Krell as a witness, the Sheriff&#39;s favor, the lie from A1-E03): doc 12 wins. See @UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.aGN9NHO00wmdUzVn]{A3-E04 · The Pack Wavers}.</p>\n</aside>\n"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "LISTOCViOBvIogcD",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.LISTOCViOBvIogcD",
+      "name": "Part 4—“High Tide”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<ul>\n<li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.snrsN5RkdAklRIDn]{A4-E01 · Primogen Council} · Primogen Council.</strong> In the penthouse of Halloway Tower (@UUID[JournalEntry.L6Fl1S0tjkWno2we]{Halloway Tower}). Halloway presents his motion against the Prince. The coterie can interrupt it with evidence, stay silent, or negotiate privately beforehand.</li>\n<li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.ogKpm1VYgcVGCw1T]{A4-E02 · The Raid} · The Raid</strong> <em>(triggers if the Thermometer reaches 9).</em> FIRSTLIGHT assaults a target from the File: the Sheriff&#39;s farm (@UUID[JournalEntry.NNzMhIvsavpG0iTQ]{The Sheriff's Farm and Boat Landing}) or David&#39;s hangar (@UUID[JournalEntry.104UV0anmZHNCTrD]{The Harbor Island Hangar}). The coterie has to escape, save Bear, and destroy evidence.</li>\n<li><strong>@UUID[JournalEntry.doItxeK8y7M1PufU.JournalEntryPage.tG1m5PTkmBA1pvmc]{A4-E03 · The Last Ferry} · The Last Ferry.</strong> At the terminal (@UUID[JournalEntry.IDd94316DhSx3ptV]{The Ferry Terminal and the Last Ferry}). Halloway tries to get the original copy out of the city, to hand it to the Justicar or to FIRSTLIGHT. This is the final showdown.</li>\n</ul>\n"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "ONFbTimAzfbjQrWr",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.ONFbTimAzfbjQrWr",
+      "name": "Endings of the Climax",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>ID</th>\n<th>Ending</th>\n<th>Consequences</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.UnOqmjERvnxNb7gL]{FIN-A · The Truth Before the Throne}</td>\n<td><strong>Truth Before the Throne.</strong> The coterie exposes Halloway with evidence.</td>\n<td>Halloway is destroyed or banished. The coterie gains Status (Camarilla) +1. Montgomery owes them one. The Thermometer drops 2. <button type=\"button\" class=\"sbn-termometro\" data-sbn-termometro=\"-2\" data-motivo=\"FIN-A: truth before the throne\"><span class=\"sbn-termometro-cambio\">−2</span> <span class=\"sbn-termometro-motivo\">FIN-A: truth before the throne</span></button></td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.RqeQkW5KfFjPYFhg]{FIN-B · The Hound Changes Masters}</td>\n<td><strong>The Hound Changes Masters.</strong> The coterie makes a pact with Halloway.</td>\n<td>Whitmore falls. David becomes Sheriff or the <em>Hound</em> of the new regime. A Stain and Humanity risk for whoever makes the pact. Montgomery becomes an enemy.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.xgVY2zlstK7IN1Rp]{FIN-C · Cleansing Fire}</td>\n<td><strong>Purifying Fire.</strong> The File is destroyed along with all its copies.</td>\n<td>The Masquerade is saved. Helen&#39;s life&#39;s work is gone. Her relationship with David, whose Touchstone she is, is damaged.</td>\n</tr>\n<tr>\n<td>@UUID[JournalEntry.oyw1B5aZ7G2vFDuO.JournalEntryPage.on9MlxGjJpFF8yf2]{FIN-D · Red Tide}</td>\n<td><strong>Red Tide.</strong> The File reaches FIRSTLIGHT.</td>\n<td>Purge. Loss of Haven or Resources. The chronicle continues as a survival campaign (H5 variant).</td>\n</tr>\n</tbody></table>\n"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "J5zFwlekHT9l7WP6",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.J5zFwlekHT9l7WP6",
+      "name": "Epilogue—“What the Water Doesn't Take”",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>There are three codas, depending on the ending: Emily&#39;s grave (@UUID[JournalEntry.uhtM1iF2WrHHlcd8]{Emily Smith's Grave}), Helen&#39;s podcast, or the silence of the hangar. They plant @UUID[JournalEntry.AnZpyM4onyACPwiC.JournalEntryPage.Y1E4i0kdsA7wcPIj]{GAN-10 · Letters from Cluj} (the letter from “M.V.”) as a seed for the chronicle.</p>\n"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    },
+    {
+      "_id": "bqtYtFJNs4aieeL0",
+      "_key": "!journal.pages!cqMsahaazpJ1Ydsk.bqtYtFJNs4aieeL0",
+      "name": "Clues",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table class=\"sbn-tabla\">\n<thead>\n<tr>\n<th>ID</th>\n<th>Clue</th>\n<th>Where it appears</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>P-01</td>\n<td>Professional Mortal Thieves; Looped Cameras</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took}</td>\n</tr>\n<tr>\n<td>P-02</td>\n<td>Ghoul Vitae on the Doorknob</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.T8gJWjZpOnL4OisP]{A1-E01 · What They Took}</td>\n</tr>\n<tr>\n<td>P-03</td>\n<td>The <em>Controlled Fury</em> Technique</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46}</td>\n</tr>\n<tr>\n<td>P-04</td>\n<td>Partial Copy of the File on a USB Drive</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.DtetdHiBnOLQaM6Y]{A1-E02 · Ash on Pier 46}</td>\n</tr>\n<tr>\n<td>P-05</td>\n<td>Jun, the Thin-Blood Courier</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.lM1EiE1FoXMkf3Uo]{A1-E04 · Everything Sells Below}</td>\n</tr>\n<tr>\n<td>P-06</td>\n<td>Unrecorded Gale Sentinel Data Request</td>\n<td>@UUID[JournalEntry.5hwXPdn0tUJ3NaKZ.JournalEntryPage.wIpc0OR2nQf7WDFO]{A1-E05 · The City's Eyes}</td>\n</tr>\n<tr>\n<td>P-07</td>\n<td>Halloway Knows About the Cold Water</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.uL8F2YNogcToiFc6]{A2-E01 · Elysium Night}</td>\n</tr>\n<tr>\n<td>P-08</td>\n<td>The Inverted Guard</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.j4TnqYOwVuSCeQ0z]{A2-E02 · “Locate. Evaluate. Execute.”}</td>\n</tr>\n<tr>\n<td>P-09</td>\n<td>The Journals Bought in 1986</td>\n<td>@UUID[JournalEntry.FttkHsYSSaCpIugu.JournalEntryPage.wQ2BqzruUybEIhSO]{A2-E04 · The Sheriff That Was}</td>\n</tr>\n<tr>\n<td>P-10</td>\n<td>SEA-0411 Shipments / @UUID[JournalEntry.WW7eg88I0uDGj8ks]{FIRSTLIGHT, Internal Memo SEA-0411}</td>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}</td>\n</tr>\n<tr>\n<td>P-11</td>\n<td>Gale&#39;s Signature</td>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.EjJ0vfVBCjTTb0QV]{A3-E02 · The Data Center}</td>\n</tr>\n<tr>\n<td>P-12</td>\n<td>Krell&#39;s Testimony</td>\n<td>@UUID[JournalEntry.C7cxKf7kcAELzuJ1.JournalEntryPage.hAX2tLfjRPJ2o4Tr]{A3-E03 · Face to Face with Krell}</td>\n</tr>\n</tbody></table>\n<aside class=\"sbn-recuadro sbn-nota-edicion\"><h4>Editor&#39;s Note · Clue Names</h4><p>The names of P-07 to P-11 are the ones from the newest installments (docs 11 to 13). In the outline (doc 01) they were: P-07 “Halloway Knows Too Much About Vance,” P-08 “Krell&#39;s Inverted Guard,” P-09 “The Journals Sold in 1986,” P-10 “Shipments to ‘SEA-0411’,” and P-11 “Preston Gale&#39;s Digital Signature.” Installments 2 and 3 add P-13 (Sal&#39;s ledger), P-14 (the payment from Cascade Holdings), and P-15 (the German&#39;s folios).</p>\n</aside>\n"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "seattle-by-night": {
+          "origen": "pagina"
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.365",
+        "systemId": "wod5e",
+        "systemVersion": "5.3.28"
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.365",
+    "systemId": "wod5e",
+    "systemVersion": "5.3.28"
+  }
+}

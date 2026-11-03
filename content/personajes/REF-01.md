@@ -160,18 +160,15 @@ Desde entonces:
   - el dossier del caso,
   - los recuerdos de cuando la veía de niña, jugando con juguetes que él pagó anónimamente.
 
-Mecánicamente, como **Ancla perdida / Piedra de Toque muerta**:
+Como **Ancla perdida / Piedra de Toque muerta**:
 
 - Cada vez que la crónica toca temas de:
   - **hijas**,
   - familias rotas,
   - gente que muere por estar demasiado cerca de la verdad,
 
-  David puede sufrir:
-  - **tiradas de Remordimiento** (el Narrador puede imponerlas como reacción emocional fuerte),
-  - **Manchas extra (máculas)** si una situación le recuerda demasiado a Emily y responde con una dureza desproporcionada o, al contrario, con una compasión que rompa su código.
-
-*David es PNJ: no tira Remordimiento ni gana Manchas. Cuando la historia toca a Emily, se calla, se va o se pone duro, y esa noche no ayuda a la coterie (ver «Cuándo se quiebra» en @ID[PJ-01]).*
+  David se calla, se va o se pone duro, y esa noche no ayuda a la coterie (ver «Cuándo se quiebra» en @ID[PJ-01]).
+- Si una situación le recuerda demasiado a Emily, responde con una dureza desproporcionada o, al contrario, con una compasión que rompe su código.
 
 ## Pesadillas
 
@@ -194,12 +191,9 @@ Las pesadillas no son sutiles. Son variaciones del mismo infierno:
    - A veces falla el disparo, a veces mata al inocente, a veces mueren todos.
    - La sensación al despertar es siempre la misma: *«Voy a volver a hacerlo. Voy a repetir el patrón.»*
 
-El Narrador puede usar estas pesadillas para:
+Las pesadillas no se tiran: se ven. David llega tarde a la reunión, con los nudillos rotos contra la pared del hangar, y no explica nada. Bear sabe por qué, si se lo preguntan.
 
-- justificar **penalizadores puntuales a la primera tirada de Resolución/Compostura** al despertar,
-- forzar tiradas de **Remordimiento** cuando su acción presente recuerde demasiado a esa noche.
-
-*Como PNJ, las pesadillas no se tiran: se ven. David llega tarde a la reunión, con los nudillos rotos contra la pared del hangar, y no explica nada. Bear sabe por qué, si se lo preguntan.*
+Si esa noche el Narrador tiene que tirarle la Compulsión o el frenesí, la primera tirada de Resolución o Compostura lleva un **penalizador puntual**.
 
 ## Cómo afecta a David en mesa
 

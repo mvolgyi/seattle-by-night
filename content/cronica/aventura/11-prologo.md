@@ -44,8 +44,6 @@ Los que no lleguen esta noche se reúnen en @ID[A1-E03].
 
 El objetivo de la escena es sencillo: asegurar a @ID[PNJ-04|Helen], entender qué pasó y salir de ahí antes de que la situación empeore. Lo que la coterie no sabe es que la cámara de timbre del 3B, frente a la puerta de Helen, sigue transmitiendo.
 
-*Con un solo jugador: es la puerta de entrada. David pasa a buscar al PJ de camino y llegan juntos, con Bear. David y Bear lo acompañan toda la aventura. Que hable el PJ: David abre la puerta y se queda detrás.*
-
 :::leer
 Market Street brilla bajo la lluvia. La ferretería está cerrada con la persiana bajada y, encima, en el tercer piso, hay una sola ventana iluminada. El portal está abierto. En la escalera huele a humedad, a lana mojada y a algo más, metálico y dulce, como monedas apretadas en un puño. En el pasillo del tercer piso hay timbres con cámara en todas las puertas, cada uno con su lucecita azul. La puerta de Helen está cerrada. Del otro lado se oye a alguien contando en voz baja: «...ciento cuarenta y uno, ciento cuarenta y dos...»
 :::

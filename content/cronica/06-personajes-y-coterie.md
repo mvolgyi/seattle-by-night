@@ -31,16 +31,16 @@ Todos los personajes aparecen en el Expediente Ward. Cuando roban el disco, todo
 
 La página completa de la coterie (idea, alternativas, miembros y agendas, costumbres, tipo, dominio y Trasfondos compartidos, con lo que dice el doc 02 y lo que fija el doc 08) está en @ID[COT-00|Los del Archivo].
 
-## Ajustes del esquema para una coterie
+## La coterie en escena
 
 - **David y Bear son PNJs.** Ayudan: +1 dado al PJ que tira, o una acción que narrás sin tirar. No resuelven solos lo que le toca a la coterie ni toman sus decisiones; opinan, presionan, reaccionan. La trama de David (Vance, Emily, Helen, el Larchmont, Krell) la descubren los PJs, y son ellos los que deciden qué le cuentan.
 - **@ID[A0-E01]:** Helen llama a SAFE; David convoca a la coterie. Nadia, si está, llega por su cuenta: conoce el apartamento.
-- **@ID[A1-E03]:** pasa a ser la escena de formación de la coterie. Montgomery los reúne a todos en su granja y asigna a David a acompañarlos; David les presta el hangar.
-- **@ID[A3-E01]:** Krell va a por la Piedra de toque más expuesta de cualquier personaje (Helen, Bear, Maja, Theo, Ingrid…), no solo a por Bear o Helen.
+- **@ID[A1-E03]:** es la escena de formación de la coterie. Montgomery los reúne a todos en su granja y asigna a David a acompañarlos; David les presta el hangar.
+- **@ID[A3-E01]:** Krell va a por la Piedra de toque más expuesta de cualquier personaje (Helen, Bear, Maja, Theo, Ingrid…).
 - **@ID[A3-E03]:** Krell exige a David. La coterie decide si lo lleva y cómo. Los pasos hacia el giro de Krell los ganan los PJs con lo que le cuentan; David confirma, se quiebra o se enoja.
 - **@ID[A3-E04]:** si Hal está en juego, la escena se vuelve contra él: Montgomery le pide los informes delante de todos.
 - **@ID[A4-E01]:** si Celeste está en juego, Halloway la ofrece como traidora. Si Nadia está en juego, Whitmore la usa como su voz ante el Consejo.
-- **Escala de las tiradas:** las dificultades del esquema se mantienen; los enemigos se escalan añadiendo un PNJ menor por cada jugador por encima de dos.
+- **Escala de las tiradas:** las dificultades son las del esquema; los enemigos se escalan añadiendo un PNJ menor por cada jugador por encima de dos.
 
 ## Foco por personaje
 

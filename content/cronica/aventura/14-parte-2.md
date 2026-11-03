@@ -21,8 +21,6 @@ Halloway tiene tres objetivos esta noche: sembrar dudas sobre el Sheriff, reaviv
 
 La escena funciona como una ronda de conversaciones. El Narrador decide el orden según quién se acerque a quién. Al final, el Príncipe toma la palabra.
 
-*Con un solo jugador: el PJ llega con David y @ID[PNJ-05|Bear], que se queda en el vestíbulo con los teléfonos. Las conversaciones son las mismas; las que van dirigidas a David, el PJ las oye a su lado.*
-
 :::leer
 En la entrada, una mujer de gris les tiende una bandeja de terciopelo: «Sus teléfonos, por favor». Dentro, cientos de piezas de vidrio soplado cuelgan del techo como medusas detenidas, rojas, ámbar y negras, y la luz que las atraviesa se mueve por el suelo cada vez que alguien pasa. Suena un cuarteto de cuerdas que nadie ve. Hay copas en las manos de todos, y nadie bebe de ellas. Al fondo, junto a la terraza, un hombre de pelo plateado se ríe de algo, y la sala entera parece girar un poco hacia él.
 :::

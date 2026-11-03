@@ -97,7 +97,21 @@ archivo con el CSS (el de la guía y el del módulo), el JS, las fuentes y las i
 embebidas (un navegador Flatpak abre el archivo por el portal y no ve la carpeta). Guarda el
 seguimiento de la partida en el navegador (escenas jugadas, Termómetro con su registro, noche
 del Reloj, pistas, notas), con exportación a un archivo; los botones del Termómetro y de las
-pistas que hay en el texto mueven esa mesa.
+pistas que hay en el texto mueven esa mesa. Trae los dos idiomas: el botón de arriba a la
+derecha («English» / «Español») cambia de uno a otro en el mismo punto, sin otro archivo.
+
+Sigue el patrón de la guía de DVV (el de la web de World of Darkness) con los colores de esta
+crónica: fondo negro y bandas de mitad foto y mitad texto, alternando el lado, con la foto fija
+mientras el texto baja, una etiqueta de contorno y el nombre en mayúsculas grandes sobre la foto,
+y el texto en un panel oscuro con una línea y un punto carmesí. Como DVV, evita el «trade dress»
+de Paradox: nada de naranja en la interfaz (el acento es la sangre, el segundo un azul lluvia) ni
+de letra condensada (etiquetas en IBM Plex Mono, títulos en Amiri, texto en IBM Plex Sans). Las
+fotos de las bandas (retratos, mapas, lugares, la portada y el mapa regional) van tratadas en
+tintas frías, azul de puerto, pizarra y hueso frío, con grano y viñeta; conservan el rojo vivo (la
+boya, los neones, la sangre) y el sodio sólo en las farolas y sus reflejos: `tools/duotono.mjs`,
+ImageMagick sin GPU, deja el resultado en `assets/guia/` (fuera del zip del módulo) y la guía lo
+corre sola antes de armarse; son derivadas de imágenes ya registradas en
+`assets/PROCEDENCIA.json`.
 
 No va dentro del módulo: instalada en Foundry, cualquier jugador podría abrirla por URL. Se
 publica como un archivo aparte de cada release (`guia-del-narrador.html`, lo arma
@@ -105,7 +119,8 @@ publica como un archivo aparte de cada release (`guia-del-narrador.html`, lo arm
 
 ```bash
 npm run contenido    # content/ → packs-src/ (la guía lee el HTML ya generado de los journals)
-npm run guia         # packs-src/ + content/ → guia/index.html
+npm run guia         # packs-src/ + content/ → guia/index.html y guia/narrator-guide.html (las dos con los dos idiomas)
+npm run duotono -- --forzar   # rehace todas las fotos tratadas (después de tocar la tabla de color)
 node tools/construir-guia.mjs --enlazado   # sin embeber nada, para depurar el CSS y el JS
 ```
 
@@ -116,6 +131,10 @@ página. Al terminar avisa si queda algún enlace sin destino o algún marcador 
 imágenes reducidas quedan en `cache/guia/` (ignorado por git).
 
 ## Notas de versión
+
+### 2.0.1
+
+- Revisión de texto del libro, la aventura y las fichas, en castellano y en inglés.
 
 ### 2.0.0
 
@@ -133,15 +152,6 @@ imágenes reducidas quedan en `cache/guia/` (ignorado por git).
   V5 y H5 en inglés. Cada traducción guarda la huella del castellano del que salió:
   `npm run verificar:traduccion` avisa qué quedó desactualizado. Plan completo en
   `TRADUCCION.md`.
-- **David Smith pasa a ser PNJ.** La crónica es para 4–5 jugadores con los cinco personajes
-  nuevos (Celeste, Ezra, Nadia, Hal y Ruth). David, el Sabueso del Sheriff, los acompaña y
-  ayuda como aliado, igual que Bear. Las escenas que giraban alrededor de él (los silos con
-  Krell, el Larchmont, Salitre, el Consejo) ahora las deciden los jugadores, y su ficha tiene
-  una guía para que el Narrador lo interprete.
-- **Si ya tenías la crónica importada y un jugador llevaba a David:** «Actualizar la crónica»
-  no toca a un actor que tiene dueño jugador. Para que David pase a PNJ, sacale el dueño y
-  actualizá. Fijate también en su perfil (journal «David Smith»): si los jugadores lo veían, las
-  páginas que ya existían siguen visibles y ahora tienen texto del Narrador. Ocultalo a mano.
 
 ### 1.1.0
 

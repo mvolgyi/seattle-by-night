@@ -1,23 +1,23 @@
 {
   "_fuente": {
-    "termometro": "6abff43df631d03b",
+    "termometro": "fd7d3275e04c5bd5",
     "reloj": "8fc874b542748b64"
   },
   "termometro": {
-    "descripcion": "A 0-to-10 track that measures how much the Second Inquisition knows. It rises with Masquerade breaches, with public violence, with contact between Helen and FIRSTLIGHT, and with the fragments Halloway leaks every night the plot moves forward without a response. It drops when the coterie cleans up traces, recovers copies of the File, or neutralizes the mole.",
-    "visibilidad": "Players can see it; better if they don't see the exact number (AYU-03, doc 15). It helps for them to know it exists (doc 03).",
+    "descripcion": "A 0-to-10 tracker that measures how much the Second Inquisition knows. It rises with Masquerade breaches, with public violence, with contact between Helen and FIRSTLIGHT, and with the fragments Halloway leaks each night the plot moves forward without a response. It drops when the coterie cleans up traces, recovers copies of the File, or neutralizes the mole.",
+    "visibilidad": "The players can see it; better that they don't see the exact number (AYU-03, doc 15). It's best if they know it exists (doc 03).",
     "umbrales": [
       {
         "texto": "Start."
       },
       {
         "texto": "Passive surveillance on Helen.",
-        "jugadores": "Someone is watching the journalist.",
+        "jugadores": "Someone's watching the journalist.",
         "ciudad": "Passive surveillance on Helen: a van outside her building, occasional drones.",
         "variantes": {
           "10": "Passive surveillance on Helen: a van outside her building, occasional drones.",
           "14": "Passive surveillance on Helen.",
-          "15": "👁 3 · Someone is watching the journalist.",
+          "15": "👁 3 · Someone's watching the journalist.",
           "01": "FIRSTLIGHT puts Helen under surveillance: vans, drones, and an analyst who listens closely to her podcast."
         }
       },
@@ -31,18 +31,18 @@
           "14": "Okafor contacts Helen.",
           "15": "☎ 5 · Someone calls the journalist.",
           "01": "Agent Dana Okafor (PNJ-18) contacts Helen and offers her protection in exchange for the file.",
-          "14-PNJ-18": "At Thermometer 5 she contacts her. She offers her protection and a salary. She truly believes Helen is in danger, and she's right."
+          "14-PNJ-18": "At Thermometer 5 she contacts her. She offers her protection and a salary. She genuinely believes Helen is in danger, and she's right."
         }
       },
       {
         "texto": "Active investigation of a coterie asset. Visit to the medical examiner “R. A.”",
-        "jugadores": "Someone is pulling the thread on one of ours.",
-        "ciudad": "Active investigation of a coterie asset: the company that owns the hangar, the Medical Examiner's Office, Nadia's calendar.",
-        "nota": "Doc 14 (the newest) wins for the short text; doc 10 details the assets. Doc 01 spoke of “a mortal asset of David's” because it was written for a single player.",
+        "jugadores": "Someone's pulling the thread on one of ours.",
+        "ciudad": "Active investigation of a coterie asset: the hangar's holding company, the medical examiner's office, Nadia's calendar.",
+        "nota": "Doc 14 (the newest) wins for the short text; doc 10 details the assets.",
         "variantes": {
-          "10": "Active investigation of a coterie asset: the company that owns the hangar, the Medical Examiner's Office, Nadia's calendar.",
+          "10": "Active investigation of a coterie asset: the hangar's holding company, the medical examiner's office, Nadia's calendar.",
           "14": "Active investigation of a coterie asset. Visit to the medical examiner “R. A.”",
-          "15": "🔍 7 · Someone is pulling the thread on one of ours.",
+          "15": "🔍 7 · Someone's pulling the thread on one of ours.",
           "01": "They investigate one of David's mortal assets (Bear's contacts or the hangar's cover). Resources or Haven at risk."
         },
         "efectos": [
@@ -50,7 +50,7 @@
             "texto": "FIRSTLIGHT investigates the company that owns the hangar."
           },
           {
-            "texto": "Okafor pays the visit she's spent months preparing to the medical examiner behind the fifteen impossible reports (“R. A.”, PJ-06)."
+            "texto": "Okafor makes the visit she's spent months preparing: to the medical examiner behind the fifteen impossible reports (“R. A.”, PJ-06)."
           }
         ]
       },
@@ -62,7 +62,7 @@
           "10": "Raid (A4-E02).",
           "14": "Raid (A4-E02).",
           "15": "🚨 9 · There's a knock at the door.",
-          "01": "The A4-E02 raid is triggered."
+          "01": "The A4-E02 raid triggers."
         },
         "efectos": [
           {
@@ -76,19 +76,19 @@
         "ciudad": "Purge: at least one Camarilla haven falls. The chronicle continues in survival mode.",
         "variantes": {
           "10": "Purge: at least one Camarilla haven falls. The chronicle continues in survival mode.",
-          "13": "Thermometer 10. Purge. In the first week at least one Camarilla haven falls (the Storyteller chooses; if the coterie doesn't move, theirs).",
+          "13": "Thermometer 10. Purge. Within the first week at least one Camarilla haven falls (the Storyteller chooses; if the coterie doesn't act, theirs).",
           "14": "Purge (FIN-D).",
           "15": "🔥 10 · There's no door anymore.",
-          "01": "Purge. At least one Camarilla haven falls and the city enters a Masquerade crisis for the entire chronicle."
+          "01": "Purge. At least one Camarilla haven falls and the city enters a Masquerade crisis for the rest of the chronicle."
         }
       }
     ],
     "sube": [
       {
         "motivo": "Each ARCHER delivery (Nights 2 and 5)",
-        "nota": "Doc 10 wins (corrected by 11 and confirmed by 14): two deliveries, on Nights 2 and 5.",
+        "nota": "Doc 10 wins (corrected by doc 11 and confirmed by doc 14): two deliveries, on Nights 2 and 5.",
         "variantes": {
-          "01": "The city moves on its own: every night without a response, Halloway leaks a fragment (Thermometer +1). Clock from doc 01: “First fragment leaked to FIRSTLIGHT” on Night 5."
+          "01": "The city moves on its own: each night without a response, Halloway leaks a fragment (Thermometer +1). Doc 01 Clock: “First fragment leaked to FIRSTLIGHT” on Night 5."
         }
       },
       {
@@ -99,22 +99,22 @@
         "por": "scene"
       },
       {
-        "motivo": "Leaving Helen's apartment through the hallway without dealing with the 3B camera: ANOMALY records each Kindred as a “cold subject”"
+        "motivo": "Leaving Helen's apartment through the hallway without dealing with the 3B camera: ANOMALY logs each Kindred as a “cold subject”"
       },
       {
-        "motivo": "Smashing the 3B camera: the last image is a hand moving faster than normal"
+        "motivo": "Smashing the 3B camera: the last frame is a hand moving faster than it should"
       },
       {
-        "motivo": "Running out of Terminal 46 at supernatural speed: the cameras, back up by now, record them"
+        "motivo": "Running out of Terminal 46 at supernatural speed: the cameras, back online by then, record them"
       },
       {
         "motivo": "Failed intrusion attempt on Gale Sentinel's test server (applies the following night: Gale shares those logs with Northline)"
       },
       {
-        "motivo": "Dominate on an on-call technician at the Gale campus, in front of the ANOMALY cameras, if they weren't disabled first"
+        "motivo": "Dominate on an on-duty technician at the Gale campus, in front of the ANOMALY cameras, if they weren't disabled first"
       },
       {
-        "motivo": "Entering Gale Sentinel without disabling ANOMALY: each Kindred is recorded as a “cold subject” (+1 total)",
+        "motivo": "Entering Gale Sentinel without disabling ANOMALY: each Kindred is logged as a “cold subject” (+1 total)",
         "nota": "Doc 05 (LUG-07) gives it for the main entrance; doc 12 (layer 1) specifies that it's +1 total."
       },
       {
@@ -128,20 +128,20 @@
         "motivo": "Failing to get Lonnie out in front of FIRSTLIGHT's body cameras"
       },
       {
-        "motivo": "Pike's USB drive stays in the chain of custody: Hale copies it on Night 3 with her “consulting authorization” (DOC-09)"
+        "motivo": "The Pike USB drive stays in the chain of custody: Hale copies it on Night 3 with her “consulting authorization” (DOC-09)"
       },
       {
-        "motivo": "Teo Vásquez answers nrthln_research (if nobody deals with him before Night 4)"
+        "motivo": "Teo Vásquez replies to nrthln_research (if nobody deals with him before Night 4)"
       },
       {
-        "motivo": "The Thornquist auction takes place (Night 5)",
-        "nota": "Doc 11: the auction sells Thornquist's duplicates; Thermometer +2 regardless, because one of the buyers is Hale."
+        "motivo": "Thornquist's auction takes place (Night 5)",
+        "nota": "Doc 11: the auction sells Thornquist's duplicates; Thermometer +2 anyway, because one of the buyers is Hale."
       },
       {
-        "motivo": "The scene at Sal's warehouse left uncleaned: the police find the phrase written in blood"
+        "motivo": "Sal's warehouse scene left uncleaned: the police find the words written in blood"
       },
       {
-        "motivo": "Ruth signs Sal's autopsy: FIRSTLIGHT's “R. A.” anomaly adds a report"
+        "motivo": "Ruth signs Sal's autopsy: FIRSTLIGHT's “R. A.” anomaly adds another report"
       },
       {
         "motivo": "Each additional false report signed by “R. A.”"
@@ -154,14 +154,14 @@
       },
       {
         "motivo": "Combat in the Denny's parking lot",
-        "nota": "Doc 14: “Visible breach on the ferry or at the Denny's: +2 or +3.” The +3 is the Denny's one (doc 11)."
+        "nota": "Doc 14: “Visible breach on the ferry or at the Denny's: +2 or +3.” The +3 is the Denny's (doc 11)."
       },
       {
-        "motivo": "Loud assault on Gale Sentinel (Gale warns Halloway, who moves the original that same night if they don't take it)"
+        "motivo": "Loud assault on Gale Sentinel (Gale alerts Halloway, who moves the original that same night if they don't take it)"
       },
       {
         "motivo": "Visible supernatural action in the ferry's passenger cabin (forty witnesses)",
-        "nota": "Doc 14: “Visible breach on the ferry or at the Denny's: +2 or +3.” The +2 is the ferry one (doc 13)."
+        "nota": "Doc 14: “Visible breach on the ferry or at the Denny's: +2 or +3.” The +2 is the ferry (doc 13)."
       },
       {
         "motivo": "Intrusion discovered at Northline"
@@ -176,7 +176,7 @@
         "motivo": "The File ends up in Okafor's hands (FIN-D · Red Tide)"
       },
       {
-        "motivo": "GAN-01: analyst Hale gets to Marcos Delgado first (and has a composite sketch of David)"
+        "motivo": "GAN-01: the analyst Hale reaches Marcos Delgado first (and has a composite sketch of David)"
       },
       {
         "motivo": "GAN-03: a PC who drank the marked blood is seen under UV light (per scene)",
@@ -200,13 +200,13 @@
         "motivo": "Removing the marked blood (GAN-03); the coterie also earns a favor from Thornquist"
       },
       {
-        "motivo": "Destroying evidence in the raid: the coterie escapes with everything destroyed (Haven −2 for the owner)"
+        "motivo": "Destroying evidence in the raid: the coterie escapes with everything destroyed (Haven −2 for its owner)"
       },
       {
-        "motivo": "Wiping the cold-subject database (Intelligence + Technology, Difficulty 4); Gale detects it the next day"
+        "motivo": "Wiping the cold subject database (Intelligence + Technology, Difficulty 4); Gale detects it the next day"
       },
       {
-        "motivo": "Halloway goes down as ARCHER (FIN-A · The Truth Before the Throne): FIRSTLIGHT loses its source"
+        "motivo": "Halloway falls as ARCHER (FIN-A · The Truth Before the Throne): FIRSTLIGHT loses its source"
       },
       {
         "motivo": "The File is destroyed (FIN-C · Purifying Fire)"
@@ -221,10 +221,10 @@
         "alcance": "cameras"
       },
       {
-        "motivo": "The coterie escapes the raid but leaves evidence"
+        "motivo": "The coterie escapes the raid but leaves evidence behind"
       },
       {
-        "motivo": "Fleeing the raid in the boat at the covered dock: the drone sees it; they escape, but the Thermometer doesn't go down"
+        "motivo": "Fleeing the raid in the boat from the covered dock: the drone sees it; they escape, but the Thermometer doesn't drop"
       }
     ],
     "evitar": [
@@ -232,13 +232,13 @@
         "motivo": "Taking Helen out by the fire escape avoids the 3B camera; opening the camera carefully and disconnecting it (Dexterity + Larceny, Difficulty 3) doesn't raise it; Obfuscate (Cloak of Shadows) keeps it from recording whoever uses it, but not the others"
       },
       {
-        "motivo": "Convincing the officers at Terminal 46 that it's “a funeral home dumping ashes”: the case is closed, DOC-09 doesn't exist, and the Thermometer doesn't rise on Night 3"
+        "motivo": "Convincing the officers at Terminal 46 that it's “a funeral home dumping ashes”: the case is closed, DOC-09 never exists, and the Thermometer doesn't rise on Night 3"
       },
       {
-        "motivo": "Dealing with Teo before Night 4: buying him off, convincing him, or wiping his memory (the last one, 1 Stain to anyone without a good reason)"
+        "motivo": "Dealing with Teo before Night 4: buying him off, convincing him, or wiping his memory (the last one costs 1 Stain to anyone without a good reason)"
       },
       {
-        "motivo": "Cleaning up the scene at Sal's warehouse: staging it as a robbery (Intelligence + Subterfuge, Difficulty 3) or calling Montgomery"
+        "motivo": "Fixing Sal's warehouse scene: staging it as a robbery (Intelligence + Subterfuge, Difficulty 3) or calling Montgomery"
       },
       {
         "motivo": "Disabling ANOMALY from outside (Intelligence + Technology, Difficulty 4; Ezra +2 dice if he discovered the firmware is his; automatic with LOR-03 at level 4)"
@@ -260,10 +260,10 @@
       },
       {
         "valor": "9 or more at the end of A3-E04",
-        "efecto": "The raid is triggered (A4-E02): it happens at 9:40 p.m. on Night 8, before the Council.",
-        "nota": "Editor's Note: doc 12 put the raid “in the small hours of that same night” at the end of A3-E04, and doc 13 at 9:40 p.m. on Night 8; a single version was chosen: if the Thermometer is at 9 or more at the end of A3-E04, the raid happens at 9:40 p.m. on Night 8.",
+        "efecto": "The raid (A4-E02) triggers: it happens at 9:40 p.m. on Night 8, before the Council.",
+        "nota": "Editor's Note: doc 12 put the raid “before dawn that same night” at the end of A3-E04, and doc 13 at 9:40 p.m. on Night 8; a single version was chosen: if the Thermometer is at 9 or more at the end of A3-E04, the raid happens at 9:40 p.m. on Night 8.",
         "variantes": {
-          "12": "The raid (A4-E02) happens in the small hours of that same night, before the Council."
+          "12": "The raid (A4-E02) happens before dawn that same night, before the Council."
         }
       },
       {
@@ -272,7 +272,7 @@
       },
       {
         "valor": "any",
-        "efecto": "LOR-03 level 5 “The Eye Inside”: once per story, the character can learn the Thermometer's current value and FIRSTLIGHT's next target."
+        "efecto": "LOR-03 level 5 “The Eye Within”: once per story, the character can learn the current value of the Thermometer and FIRSTLIGHT's next target."
       }
     ]
   },

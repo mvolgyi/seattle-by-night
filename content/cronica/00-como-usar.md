@@ -15,7 +15,7 @@ origen: "00"
 
 **Ciudad:** Seattle y el estrecho de Puget, noviembre de 2026. Zonas principales: Elliott Bay y Harbor Island, Pioneer Square y el Seattle subterráneo, Capitol Hill, Ballard, el Eastside, Tacoma y Everett.
 
-**Formato de juego:** coterie de 4–5 jugadores con los PJs nuevos (@ID[PJ-02] a @ID[PJ-06]). David Smith (@ID[PJ-01]) y Tom "Bear" Whitman (@ID[PNJ-05]) son PNJs aliados que acompañan a la coterie.
+**Formato de juego:** coterie de 4–5 jugadores con los cinco PJs (@ID[PJ-02] a @ID[PJ-06]). David Smith (@ID[PJ-01]) y Tom "Bear" Whitman (@ID[PNJ-05]) son PNJs aliados que acompañan a la coterie.
 
 ## Premisa
 
@@ -38,29 +38,17 @@ Aventura central: 6–8 sesiones. Ganchos de crónica: 12 adicionales, para llev
 
 ## Decisiones tomadas
 
-*Las del doc 00. Donde una fila cambia, manda la tabla siguiente.*
-
 | # | Pregunta | Decisión |
 |---|---|---|
-| 1 | ¿Quién mueve los hilos? | **Charles Halloway**, Primogénito Ventrue (@ID[PNJ-03]). Las señales de Vance son una pista falsa que planta él. Vance no está en la ciudad. |
-| 2 | El Sheriff O'Connor | Fue el **Sheriff anterior**, hasta 1978. Ahora es una pieza de trasfondo (@ID[PNJ-17]). |
+| 1 | ¿Quién mueve los hilos? | **Charles Halloway**, Primogénito Ventrue (@ID[PNJ-03]). Las señales de Vance son falsas; las deja August Krell (@ID[PNJ-12]). Vance no está en la ciudad. |
+| 2 | El Sheriff O'Connor | Fue el **Sheriff anterior**, hasta 1978. Es una pieza de trasfondo (@ID[PNJ-17]). |
 | 3 | Muerte de Emily | En los **años 90**. Ella tenía unos 35 años. |
-| 4 | Jugadores | **David solo**. Bear lo acompaña como PNJ. |
-| 5 | ¿El incendio de Helen fue obra de David? | *Pendiente.* |
-| — | Segunda Inquisición | Latente durante toda la aventura. Se mide con el Termómetro de FIRSTLIGHT. |
-| — | Gancho de racionar la Vitae de Bear | Excluido, como pide su ficha. |
-
-## Decisiones actualizadas (doc 02)
-
-| # | Pregunta | Decisión |
-|---|---|---|
-| 1 | ¿Quién mueve los hilos? | Charles Halloway (@ID[PNJ-03]). Las señales de Vance son falsas; las deja August Krell (@ID[PNJ-12]). |
-| 2 | Sheriff O'Connor | Fue el Sheriff anterior, hasta 1978 (@ID[PNJ-17]). |
-| 3 | Muerte de Emily | En los años 90. |
-| 4 | Jugadores | **4–5 jugadores** con los PJs nuevos (@ID[PJ-02] a @ID[PJ-06]). **David y Bear son PNJ.** *Decisión del autor posterior al doc 02: manda sobre él.* |
+| 4 | Jugadores | **4–5 jugadores** con los cinco PJs (@ID[PJ-02] a @ID[PJ-06]). **David y Bear son PNJs aliados.** |
 | 5 | Incendio del Larchmont | **David no llegó a tiempo.** |
 | 6 | Clan del Príncipe Whitmore | **Toreador.** |
 | 7 | Ficción de apertura | Desde el punto de vista de **Helen Ward**. |
+| — | Segunda Inquisición | Latente durante toda la aventura. Se mide con el Termómetro de FIRSTLIGHT. |
+| — | Gancho de racionar la Vitae de Bear | Excluido, como pide su ficha. |
 
 ## Cómo usar este libro {jugadores}
 

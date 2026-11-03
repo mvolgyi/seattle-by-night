@@ -308,7 +308,7 @@ Para David, Helen es:
 
   - si muere, probablemente será por estar demasiado cerca de él o de los suyos.
 
-  - su muerte sería una **Mácula** en la Humanidad de David. Como es PNJ, no se tira: David pierde su única Piedra de toque viva y se rompe (ver «Cuándo se quiebra» en @ID[PJ-01]).
+  - su muerte dejaría a David sin su única Piedra de toque viva, y David se rompería (ver «Cuándo se quiebra» en @ID[PJ-01]).
 
 ## Diferencias con los docs 00–16
 

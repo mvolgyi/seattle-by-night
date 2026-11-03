@@ -5,7 +5,22 @@
    el texto (.sbn-termometro, .sbn-pista, .sbn-reloj) mueven esta mesa, no la
    de Foundry. Los datos fijos (umbrales, noches, pistas) los pone el build en
    <script id="datos-guia">, con `textos` (castellano → inglés) en la guía en
-   inglés (tools/construir-guia.mjs --idioma en). */
+   inglés. */
+
+/* ---- idioma: el archivo trae las dos guías en <template> (tools/construir-guia.mjs).
+   Se monta la pedida con ?idioma=es|en o, si no, la del archivo (<html lang>). ---- */
+(() => {
+  const pedido = new URLSearchParams(location.search).get("idioma");
+  const idioma = pedido === "es" || pedido === "en" ? pedido : document.documentElement.lang;
+  const t = document.getElementById(`guia-${idioma}`) ?? document.querySelector("template[id^='guia-']");
+  if (!t) return;
+  document.documentElement.lang = t.id.slice(5);
+  document.title = t.dataset.titulo;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", t.dataset.descripcion);
+  for (const x of document.querySelectorAll("template[id^='guia-']")) if (x !== t) x.remove();
+  t.replaceWith(document.importNode(t.content, true));
+})();
+
 (() => {
   const CLAVE = "sbn-guia";
   const DATOS = JSON.parse(document.getElementById("datos-guia")?.textContent || "{}");
@@ -167,6 +182,11 @@
   for (const t of document.querySelectorAll("button.sbn-termometro")) t.title = T("Mueve el Termómetro de La mesa");
   for (const t of document.querySelectorAll("button.sbn-pista")) t.title = T("Marca o desmarca la pista en La mesa");
 
+  /* ---- cambio de idioma: este mismo archivo con ?idioma=…, en el mismo punto (las anclas son las mismas) ---- */
+  for (const a of document.querySelectorAll("a[data-idioma]")) {
+    a.addEventListener("click", () => { a.href = a.getAttribute("href").split("#")[0] + location.hash; });
+  }
+
   /* ---- notas ---- */
   for (const t of document.querySelectorAll("textarea[data-notas]")) {
     t.value = estado.notas[t.dataset.notas] ?? "";
@@ -190,17 +210,61 @@
   });
   if (estado.tab && tabs.some(t => t.dataset.tab === estado.tab)) activar(estado.tab, false);
   /** Un enlace a algo dentro de una pestaña inactiva o de un desplegable cerrado lo abre. */
-  const abrirDestino = () => {
+  // Al cargar, sin scroll suave: el suave se corta cuando la página termina de cargar.
+  const abrirDestino = (suave = true) => {
     const el = location.hash.length > 1 ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
     if (!el) return;
     const panel = el.closest(".panel");
     if (panel && !panel.classList.contains("activa")) activar(panel.dataset.panel);
     for (let d = el.closest("details"); d; d = d.parentElement?.closest("details")) d.open = true;
     if (el.tagName === "DETAILS") el.open = true;
-    requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
+    requestAnimationFrame(() => el.scrollIntoView({ block: "start", behavior: suave === false ? "instant" : "smooth" }));
   };
   window.addEventListener("hashchange", abrirDestino);
-  abrirDestino();
+
+  /* ---- posición: al recargar (F5) o cambiar de idioma se vuelve al punto de lectura,
+     no al ancla de la dirección. Se guarda el elemento con id que está en el borde de
+     arriba y cuánto se leyó de él (en fracción: en el otro idioma mide distinto). ---- */
+  const POS = "sbn-guia-pos";
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  const medir = () => {
+    let el = null, alto = 0, arriba = -Infinity;
+    for (const x of document.querySelectorAll("main [id]")) {
+      const r = x.getBoundingClientRect();
+      // El más adentro de los que cruzan el borde de arriba de la ventana.
+      if (!r.height || r.top > 1 || r.bottom <= 1 || r.top <= arriba) continue;
+      el = x; alto = r.height; arriba = r.top;
+    }
+    return { id: el?.id ?? null, fraccion: el ? -arriba / alto : 0, y: scrollY, hash: location.hash,
+      abiertos: [...document.querySelectorAll("main details[open][id]")].map(d => d.id) };
+  };
+  const restaurar = p => {
+    for (const id of p.abiertos ?? []) { const d = document.getElementById(id); if (d) d.open = true; }
+    const el = p.id ? document.getElementById(p.id) : null;
+    const panel = el?.closest(".panel");
+    if (panel && !panel.classList.contains("activa")) activar(panel.dataset.panel, false);
+    let tocado = false;
+    for (const t of ["wheel", "touchstart", "keydown", "mousedown"]) window.addEventListener(t, () => { tocado = true; }, { once: true, passive: true });
+    const ir = () => {
+      if (tocado) return;
+      const r = el?.getBoundingClientRect();
+      window.scrollTo({ top: r?.height ? scrollY + r.top + p.fraccion * r.height : p.y, behavior: "instant" });
+    };
+    ir();
+    requestAnimationFrame(ir);
+    // Las fuentes y las imágenes terminan de cargar después y mueven el texto.
+    document.fonts?.ready.then(ir);
+    window.addEventListener("load", () => { ir(); setTimeout(ir, 150); }, { once: true });
+  };
+  let guardada = null;
+  try { guardada = JSON.parse(sessionStorage.getItem(POS) || "null"); sessionStorage.removeItem(POS); } catch { /* sin sessionStorage */ }
+  // Si la dirección trae otra ancla (se siguió un enlace), manda el ancla.
+  if (guardada && guardada.hash === location.hash) restaurar(guardada);
+  else if (location.hash.length > 1) {
+    abrirDestino(false);
+    window.addEventListener("load", () => abrirDestino(false), { once: true });
+  }
+  window.addEventListener("pagehide", () => { try { sessionStorage.setItem(POS, JSON.stringify(medir())); } catch { /* sin sessionStorage */ } });
 
   /* ---- la mesa ---- */
   const mesa = document.getElementById("mesa");

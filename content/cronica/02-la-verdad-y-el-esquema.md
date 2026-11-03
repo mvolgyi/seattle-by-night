@@ -39,7 +39,7 @@ Las entregas posteriores precisan esta tabla y mandan sobre ella. En 7, la inves
 
 ## Esqueleto de la aventura
 
-**Duración:** 6–8 sesiones. **Formato:** coterie de 4–5 jugadores con los PJs nuevos; David y Bear la acompañan como PNJs aliados (decisión 4 actualizada, @ID[COMO-USAR]). El esquema original era para un jugador, David, con Bear.
+**Duración:** 6–8 sesiones. **Formato:** coterie de 4–5 jugadores con los cinco PJs; David y Bear la acompañan como PNJs aliados.
 
 **Estructura:** Prólogo y cuatro partes. Las partes 1 y 2 se pueden jugar en orden libre. La ciudad avanza sola: cada noche sin respuesta, Halloway filtra un fragmento (Termómetro +1) y Krell da un paso más.
 

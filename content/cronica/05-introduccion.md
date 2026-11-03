@@ -15,7 +15,7 @@ Seattle es una ciudad que se mira a sí misma todo el tiempo. Tiene cámaras en 
 
 Este libro describe esa ciudad en el momento en que deja de funcionar. Presenta a los Vástagos que la gobiernan y a los que quieren gobernarla, los lugares donde se caza y se negocia, los rumores que circulan por el Elíseo y una aventura completa, *El Expediente Ward* (@ID[AVE-01]), en la que los personajes descubren que su existencia está registrada en el disco duro de una periodista mortal, y que alguien lo robó para usarlo.
 
-El libro está pensado para una coterie de 4 o 5 personajes nuevos. Los acompañan dos PNJs: David Smith (@ID[PJ-01]), el ejecutor Brujah del Sheriff, y su ghoul, Tom «Bear» Whitman (@ID[PNJ-05]). La historia gira alrededor de David, pero la viven los personajes: descubren su pasado, deciden qué le cuentan y cargan con lo que eso cueste. También funciona con un solo jugador, con uno de los personajes nuevos y David y Bear como compañeros.
+El libro está pensado para una coterie de 4 o 5 personajes nuevos. Los acompañan dos PNJs: David Smith (@ID[PJ-01]), el ejecutor Brujah del Sheriff, y su ghoul, Tom «Bear» Whitman (@ID[PNJ-05]). La historia gira alrededor de David, pero la viven los personajes: descubren su pasado, deciden qué le cuentan y cargan con lo que eso cueste.
 
 ## Temas y ambiente
 
