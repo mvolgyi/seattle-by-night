@@ -210,19 +210,61 @@
   });
   if (estado.tab && tabs.some(t => t.dataset.tab === estado.tab)) activar(estado.tab, false);
   /** Un enlace a algo dentro de una pestaña inactiva o de un desplegable cerrado lo abre. */
-  const abrirDestino = () => {
+  // Al cargar, sin scroll suave: el suave se corta cuando la página termina de cargar.
+  const abrirDestino = (suave = true) => {
     const el = location.hash.length > 1 ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
     if (!el) return;
     const panel = el.closest(".panel");
     if (panel && !panel.classList.contains("activa")) activar(panel.dataset.panel);
     for (let d = el.closest("details"); d; d = d.parentElement?.closest("details")) d.open = true;
     if (el.tagName === "DETAILS") el.open = true;
-    requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
+    requestAnimationFrame(() => el.scrollIntoView({ block: "start", behavior: suave === false ? "instant" : "smooth" }));
   };
   window.addEventListener("hashchange", abrirDestino);
-  abrirDestino();
-  // La guía se monta con JS: al terminar de cargar (fuentes, imágenes) el ancla pudo correrse.
-  window.addEventListener("load", () => { if (location.hash.length > 1) abrirDestino(); }, { once: true });
+
+  /* ---- posición: al recargar (F5) o cambiar de idioma se vuelve al punto de lectura,
+     no al ancla de la dirección. Se guarda el elemento con id que está en el borde de
+     arriba y cuánto se leyó de él (en fracción: en el otro idioma mide distinto). ---- */
+  const POS = "sbn-guia-pos";
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  const medir = () => {
+    let el = null, alto = 0, arriba = -Infinity;
+    for (const x of document.querySelectorAll("main [id]")) {
+      const r = x.getBoundingClientRect();
+      // El más adentro de los que cruzan el borde de arriba de la ventana.
+      if (!r.height || r.top > 1 || r.bottom <= 1 || r.top <= arriba) continue;
+      el = x; alto = r.height; arriba = r.top;
+    }
+    return { id: el?.id ?? null, fraccion: el ? -arriba / alto : 0, y: scrollY, hash: location.hash,
+      abiertos: [...document.querySelectorAll("main details[open][id]")].map(d => d.id) };
+  };
+  const restaurar = p => {
+    for (const id of p.abiertos ?? []) { const d = document.getElementById(id); if (d) d.open = true; }
+    const el = p.id ? document.getElementById(p.id) : null;
+    const panel = el?.closest(".panel");
+    if (panel && !panel.classList.contains("activa")) activar(panel.dataset.panel, false);
+    let tocado = false;
+    for (const t of ["wheel", "touchstart", "keydown", "mousedown"]) window.addEventListener(t, () => { tocado = true; }, { once: true, passive: true });
+    const ir = () => {
+      if (tocado) return;
+      const r = el?.getBoundingClientRect();
+      window.scrollTo({ top: r?.height ? scrollY + r.top + p.fraccion * r.height : p.y, behavior: "instant" });
+    };
+    ir();
+    requestAnimationFrame(ir);
+    // Las fuentes y las imágenes terminan de cargar después y mueven el texto.
+    document.fonts?.ready.then(ir);
+    window.addEventListener("load", () => { ir(); setTimeout(ir, 150); }, { once: true });
+  };
+  let guardada = null;
+  try { guardada = JSON.parse(sessionStorage.getItem(POS) || "null"); sessionStorage.removeItem(POS); } catch { /* sin sessionStorage */ }
+  // Si la dirección trae otra ancla (se siguió un enlace), manda el ancla.
+  if (guardada && guardada.hash === location.hash) restaurar(guardada);
+  else if (location.hash.length > 1) {
+    abrirDestino(false);
+    window.addEventListener("load", () => abrirDestino(false), { once: true });
+  }
+  window.addEventListener("pagehide", () => { try { sessionStorage.setItem(POS, JSON.stringify(medir())); } catch { /* sin sessionStorage */ } });
 
   /* ---- la mesa ---- */
   const mesa = document.getElementById("mesa");
