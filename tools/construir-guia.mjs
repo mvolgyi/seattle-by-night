@@ -28,16 +28,16 @@
  * abre con doble clic en cualquier máquina. Cada imagen va UNA vez, como
  * clase CSS (`.ft-…`), aunque se use en varias secciones.
  *
- * En inglés (`--idioma en`), la Guía de The Ward File: lee packs-src/<pack>-en y
- * content/en/ fundido (tools/contenido/idioma.mjs), con los textos fijos de la
- * guía en inglés (L() acá y DATOS.textos para guia/guia.js), y sale en
- * guia/narrator-guide.html. Se relanza con SBN_IDIOMA=en, como el build.
- * Arriba a la derecha va el enlace a la otra guía. Las anclas son las mismas
- * en los dos idiomas, así que lleva al mismo punto (guia/guia.js).
+ * Los dos idiomas van en el MISMO archivo. Esta pasada arma el castellano y
+ * lanza la inglesa (`--parte`, con SBN_IDIOMA=en: lee packs-src/<pack>-en y
+ * content/en/ fundido, con los textos fijos de L() y DATOS.textos en inglés).
+ * Cada cuerpo va en un <template>; guia/guia.js monta el pedido (?idioma=en)
+ * o el del archivo. Así el botón de idioma no necesita otro archivo al lado,
+ * que el portal de Flatpak no deja ver. Las anclas son las mismas en los dos
+ * idiomas: el botón lleva al mismo punto. Salen guia/index.html (abre en
+ * castellano) y guia/narrator-guide.html (abre en inglés), iguales salvo eso.
  *
- * Uso: node tools/construir-guia.mjs [--enlazado] [--idioma es|en] [--otra <archivo>]
- *   --enlazado  sin embeber, para depurar
- *   --otra      nombre de la otra guía para el enlace de idioma (la release las renombra)
+ * Uso: node tools/construir-guia.mjs [--enlazado]   (--enlazado: sin embeber, para depurar)
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -49,13 +49,12 @@ import { pistasPorEscena, archivoDe } from "./contenido/musica.mjs";
 import { EN, packDe, leerContenido } from "./contenido/idioma.mjs";
 import { tratar } from "./duotono.mjs";
 
+/** Pasada inglesa, lanzada por la principal: deja su página en cache/guia y no escribe guia/. */
+const PARTE = process.argv.includes("--parte");
 {
-  const i = process.argv.indexOf("--idioma");
-  const idioma = i >= 0 ? process.argv[i + 1] : "es";
-  if (!["es", "en"].includes(idioma)) { console.error("Uso: node tools/construir-guia.mjs [--enlazado] [--idioma es|en]"); process.exit(1); }
-  // idioma.mjs lee SBN_IDIOMA al importarse: en inglés se relanza con la variable puesta.
-  if ((idioma === "en") !== EN) {
-    const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env: { ...process.env, SBN_IDIOMA: idioma } });
+  // idioma.mjs lee SBN_IDIOMA al importarse: la pasada principal es la castellana.
+  if (PARTE !== EN) {
+    const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: "inherit", env: { ...process.env, SBN_IDIOMA: PARTE ? "en" : "es" } });
     process.exit(r.status ?? 1);
   }
 }
@@ -90,13 +89,11 @@ const TEXTOS_MESA_EN = {
 };
 const leerJson = leerContenido;
 
-const NOMBRE_SALIDA = EN ? "guia/narrator-guide.html" : "guia/index.html";
-const SALIDA = path.join(RAIZ, NOMBRE_SALIDA);
-/** La otra guía: el enlace de idioma. En guia/ están lado a lado; tools/release.mjs pasa el nombre publicado. */
-const iOtra = process.argv.indexOf("--otra");
-const OTRA_HREF = iOtra >= 0 ? process.argv[iOtra + 1] : (EN ? "index.html" : "narrator-guide.html");
-const OTRA = EN ? { href: OTRA_HREF, lang: "es", texto: "Español", largo: "Leer esta guía en castellano" }
-  : { href: OTRA_HREF, lang: "en", texto: "English", largo: "Read this guide in English" };
+/** Las dos salidas: el mismo HTML, cada una abre en su idioma. */
+const SALIDAS = [["guia/index.html", "es"], ["guia/narrator-guide.html", "en"]];
+/** El otro idioma: el botón recarga este mismo archivo con ?idioma=… (guia/guia.js le pega el ancla). */
+const OTRA = EN ? { href: "?idioma=es", lang: "es", texto: "Español", largo: "Leer esta guía en castellano" }
+  : { href: "?idioma=en", lang: "en", texto: "English", largo: "Read this guide in English" };
 const enlaceIdioma = `<a class="t-idioma" href="${OTRA.href}" hreflang="${OTRA.lang}" lang="${OTRA.lang}" aria-label="${OTRA.largo}" data-idioma><span class="largo">${OTRA.texto}</span><span class="corto" aria-hidden="true">${OTRA.lang.toUpperCase()}</span></a>`;
 const A = "../assets";
 const ENLAZADO = process.argv.includes("--enlazado");
@@ -727,7 +724,6 @@ let html = `<!doctype html>
 <title>${L("El Expediente Ward — Guía del Narrador", "The Ward File — Storyteller Guide")}</title>
 <meta name="description" content="${L("El Expediente Ward, una crónica fan y no oficial en Seattle para Vampiro: La Mascarada 5ª edición, completa y con seguimiento de la partida.", "The Ward File, a fan-made, unofficial Seattle chronicle for Vampire: The Masquerade 5th Edition, complete and with game tracking.")}">
 <meta name="theme-color" content="#0d0f12">
-<link rel="alternate" hreflang="${OTRA.lang}" href="${OTRA.href}">
 <link rel="stylesheet" href="../src/styles/sbn.css">
 <link rel="stylesheet" href="../src/styles/sbn-ui.css">
 <link rel="stylesheet" href="guia.css">
@@ -804,15 +800,51 @@ function embeber(html) {
   html = html.replace(/url\("\.\.\/(assets\/[^"]+)"\)/g, (_, rel) => `url("${uri(rel)}")`);
   return html;
 }
-fs.mkdirSync(path.dirname(SALIDA), { recursive: true });
-const final = ENLAZADO ? html : embeber(html);
-if (!ENLAZADO) {
-  const sueltas = [...new Set(final.match(/(?:modules\/seattle-by-night\/|\.\.\/)assets\/[^"')\s]+/g) ?? [])];
-  if (sueltas.length) avisos.push(`imágenes sin embeber: ${sueltas.join(", ")}`);
+const resumen = `${partes.length} partes, ${todosPerfiles.length} perfiles, ${MENORES.length} menores, ${CELULA.length} de la Célula, ${LUGARES.length} lugares, ${PLANOS.length} mapas, ${docs.length} documentos, ${PISTAS.length} pistas, ${FOTOS.size} imágenes`;
+const PAGINA_EN = path.join(CACHE, "pagina-en.html");
+if (PARTE) {
+  fs.mkdirSync(CACHE, { recursive: true });
+  fs.writeFileSync(PAGINA_EN, html);
+  console.log(`✓ inglés: ${resumen}`);
+} else {
+  console.log(`✓ castellano: ${resumen}`);
+  fs.rmSync(PAGINA_EN, { force: true });
+  const r = spawnSync(process.execPath, [process.argv[1], "--parte"], { stdio: "inherit", env: { ...process.env, SBN_IDIOMA: "en" } });
+  if (r.status !== 0 || !fs.existsSync(PAGINA_EN)) { console.error("✗ falló la pasada en inglés"); process.exit(1); }
+  const unida = unir(html, fs.readFileSync(PAGINA_EN, "utf8"));
+  const final = ENLAZADO ? unida : embeber(unida);
+  if (!ENLAZADO) {
+    const sueltas = [...new Set(final.match(/(?:modules\/seattle-by-night\/|\.\.\/)assets\/[^"')\s]+/g) ?? [])];
+    if (sueltas.length) avisos.push(`imágenes sin embeber: ${sueltas.join(", ")}`);
+  }
+  const titulos = Object.fromEntries(["es", "en"].map(i => [i, unida.match(new RegExp(`<template id="guia-${i}" data-titulo="([^"]*)"`))[1]]));
+  for (const [rel, idioma] of SALIDAS) {
+    const salida = path.join(RAIZ, rel);
+    fs.mkdirSync(path.dirname(salida), { recursive: true });
+    fs.writeFileSync(salida, final.replace('<html lang="es">', `<html lang="${idioma}">`).replace(/<title>[^<]*<\/title>/, `<title>${titulos[idioma]}</title>`));
+    console.log(`✓ ${rel} (${Math.round(fs.statSync(salida).size / 1024)} KB${ENLAZADO ? ", enlazado" : ", autocontenido"}): castellano e inglés, abre en ${idioma === "es" ? "castellano" : "inglés"}`);
+  }
 }
-fs.writeFileSync(SALIDA, final);
-const kb = Math.round(fs.statSync(SALIDA).size / 1024);
-console.log(`✓ ${NOMBRE_SALIDA} (${kb} KB${ENLAZADO ? ", enlazado" : ", autocontenido"}): ${partes.length} partes, ${todosPerfiles.length} perfiles, ${MENORES.length} menores, ${CELULA.length} de la Célula, ${LUGARES.length} lugares, ${PLANOS.length} mapas, ${docs.length} documentos, ${PISTAS.length} pistas, ${FOTOS.size} imágenes`);
+
+/**
+ * Las dos páginas en una: la cabecera de la castellana, las fotos de las dos,
+ * y cada cuerpo en un <template> que guia/guia.js monta según el idioma.
+ */
+function unir(es, en) {
+  const trozos = h => ({
+    titulo: h.match(/<title>([^<]*)<\/title>/)[1],
+    descripcion: h.match(/<meta name="description" content="([^"]*)">/)[1],
+    fotos: h.match(/<style>\n([\s\S]*?)\n<\/style>/)[1],
+    cuerpo: h.match(/<body>\n([\s\S]*?)<script src="guia\.js"><\/script>\n<\/body>/)[1]
+  });
+  const p = { es: trozos(es), en: trozos(en) };
+  if (/<\/template>/.test(p.es.cuerpo + p.en.cuerpo)) throw new Error("un cuerpo trae </template>");
+  const fotos = [...new Set([...p.es.fotos.split("\n"), ...p.en.fotos.split("\n")])].filter(Boolean).join("\n");
+  const plantillas = ["es", "en"].map(i => `<template id="guia-${i}" data-titulo="${p[i].titulo}" data-descripcion="${p[i].descripcion}">\n${p[i].cuerpo}</template>`).join("\n");
+  return es
+    .replace(/<style>\n[\s\S]*?\n<\/style>/, () => `<style>\n${fotos}\n</style>`)
+    .replace(/<body>\n[\s\S]*<\/body>/, () => `<body>\n${plantillas}\n<noscript><p style="padding:24px">Esta guía necesita JavaScript. · This guide needs JavaScript.</p></noscript>\n<script src="guia.js"></script>\n</body>`);
+}
 const problemas = [
   ...avisos,
   ...(ROTOS.length ? [`${ROTOS.length} @UUID sin destino en la guía: ${[...new Set(ROTOS)].join("; ")}`] : []),

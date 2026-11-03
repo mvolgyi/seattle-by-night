@@ -5,7 +5,22 @@
    el texto (.sbn-termometro, .sbn-pista, .sbn-reloj) mueven esta mesa, no la
    de Foundry. Los datos fijos (umbrales, noches, pistas) los pone el build en
    <script id="datos-guia">, con `textos` (castellano → inglés) en la guía en
-   inglés (tools/construir-guia.mjs --idioma en). */
+   inglés. */
+
+/* ---- idioma: el archivo trae las dos guías en <template> (tools/construir-guia.mjs).
+   Se monta la pedida con ?idioma=es|en o, si no, la del archivo (<html lang>). ---- */
+(() => {
+  const pedido = new URLSearchParams(location.search).get("idioma");
+  const idioma = pedido === "es" || pedido === "en" ? pedido : document.documentElement.lang;
+  const t = document.getElementById(`guia-${idioma}`) ?? document.querySelector("template[id^='guia-']");
+  if (!t) return;
+  document.documentElement.lang = t.id.slice(5);
+  document.title = t.dataset.titulo;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", t.dataset.descripcion);
+  for (const x of document.querySelectorAll("template[id^='guia-']")) if (x !== t) x.remove();
+  t.replaceWith(document.importNode(t.content, true));
+})();
+
 (() => {
   const CLAVE = "sbn-guia";
   const DATOS = JSON.parse(document.getElementById("datos-guia")?.textContent || "{}");
@@ -167,7 +182,7 @@
   for (const t of document.querySelectorAll("button.sbn-termometro")) t.title = T("Mueve el Termómetro de La mesa");
   for (const t of document.querySelectorAll("button.sbn-pista")) t.title = T("Marca o desmarca la pista en La mesa");
 
-  /* ---- cambio de idioma: la otra guía, en el mismo punto (las anclas son las mismas) ---- */
+  /* ---- cambio de idioma: este mismo archivo con ?idioma=…, en el mismo punto (las anclas son las mismas) ---- */
   for (const a of document.querySelectorAll("a[data-idioma]")) {
     a.addEventListener("click", () => { a.href = a.getAttribute("href").split("#")[0] + location.hash; });
   }
@@ -206,6 +221,8 @@
   };
   window.addEventListener("hashchange", abrirDestino);
   abrirDestino();
+  // La guía se monta con JS: al terminar de cargar (fuentes, imágenes) el ancla pudo correrse.
+  window.addEventListener("load", () => { if (location.hash.length > 1) abrirDestino(); }, { once: true });
 
   /* ---- la mesa ---- */
   const mesa = document.getElementById("mesa");

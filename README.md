@@ -97,7 +97,8 @@ archivo con el CSS (el de la guía y el del módulo), el JS, las fuentes y las i
 embebidas (un navegador Flatpak abre el archivo por el portal y no ve la carpeta). Guarda el
 seguimiento de la partida en el navegador (escenas jugadas, Termómetro con su registro, noche
 del Reloj, pistas, notas), con exportación a un archivo; los botones del Termómetro y de las
-pistas que hay en el texto mueven esa mesa.
+pistas que hay en el texto mueven esa mesa. Trae los dos idiomas: el botón de arriba a la
+derecha («English» / «Español») cambia de uno a otro en el mismo punto, sin otro archivo.
 
 Sigue el patrón de la guía de DVV (el de la web de World of Darkness) con los colores de esta
 crónica: fondo negro y bandas de mitad foto y mitad texto, alternando el lado, con la foto fija
@@ -118,7 +119,7 @@ publica como un archivo aparte de cada release (`guia-del-narrador.html`, lo arm
 
 ```bash
 npm run contenido    # content/ → packs-src/ (la guía lee el HTML ya generado de los journals)
-npm run guia         # packs-src/ + content/ → guia/index.html (en inglés: --idioma en)
+npm run guia         # packs-src/ + content/ → guia/index.html y guia/narrator-guide.html (las dos con los dos idiomas)
 npm run duotono -- --forzar   # rehace todas las fotos tratadas (después de tocar la tabla de color)
 node tools/construir-guia.mjs --enlazado   # sin embeber nada, para depurar el CSS y el JS
 ```
